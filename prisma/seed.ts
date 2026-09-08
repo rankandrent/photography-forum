@@ -4,9 +4,10 @@ import sharp from "sharp";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../src/generated/prisma/client.js";
 import { put } from "../src/lib/storage.js";
+import { appDatabaseUrl } from "../src/lib/db-url.js";
 
 const prisma = new PrismaClient({
-  adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL! }),
+  adapter: new PrismaPg({ connectionString: appDatabaseUrl()! }),
 });
 
 /**
@@ -337,7 +338,7 @@ const THREADS: ThreadSeed[] = [
 ];
 
 async function main() {
-  const target = (process.env.DATABASE_URL ?? "").replace(/:[^:@/]*@/, ":****@");
+  const target = (appDatabaseUrl() ?? "").replace(/:[^:@/]*@/, ":****@");
   console.log(`Seeding ${target}`);
   console.log(`Images -> ${process.env.STORAGE_DRIVER === "s3" ? `s3 bucket "${process.env.S3_BUCKET}"` : "public/uploads (local disk)"}`);
   console.log("\nThis DELETES every existing row first. Ctrl-C now if that is not what you want.\n");

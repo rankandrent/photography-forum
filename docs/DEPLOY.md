@@ -8,13 +8,31 @@ Total time: about 20 minutes.
 
 ---
 
-## 1. Database — Neon
+## 1. Database
 
-1. Sign up at <https://neon.tech> and create a project (pick the region closest
-   to your audience).
+### Easiest: attach one from inside Vercel
+
+Vercel can create the database and wire the environment variable for you, so
+there is no connection string to copy:
+
+1. Vercel project → **Storage** → *Create Database* → **Neon** (Serverless Postgres).
+2. Pick the region closest to your audience → *Create*.
+3. *Connect Project* → select this project and all three environments
+   (Production, Preview, Development).
+4. Redeploy. The app reads whichever variable the integration set — `DATABASE_URL`,
+   `POSTGRES_PRISMA_URL` or `POSTGRES_URL` are all accepted (see `src/lib/db-url.ts`).
+
+You still need the connection string once, on your own machine, to create the
+schema — copy it from Vercel → Settings → Environment Variables, or from the
+Neon dashboard. Prefer the **unpooled / direct** URL for migrations; a
+transaction pooler cannot run migration statements.
+
+### Or create it yourself
+
+1. Sign up at <https://neon.tech> and create a project.
 2. Copy the **pooled** connection string. It looks like:
    `postgresql://user:pass@ep-xxx-pooler.region.aws.neon.tech/neondb?sslmode=require`
-3. Keep it — it becomes `DATABASE_URL`.
+3. Add it to Vercel as `DATABASE_URL`.
 
 Supabase, Railway or a plain Postgres box work identically; only the string changes.
 

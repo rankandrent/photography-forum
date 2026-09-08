@@ -1,5 +1,6 @@
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@/generated/prisma/client";
+import { appDatabaseUrl } from "@/lib/db-url";
 
 // One pool per process: Next.js dev reloads the module on every edit, so cache
 // the client on globalThis or you exhaust the database's connection limit
@@ -7,7 +8,7 @@ import { PrismaClient } from "@/generated/prisma/client";
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
 function createClient(): PrismaClient {
-  const connectionString = process.env.DATABASE_URL;
+  const connectionString = appDatabaseUrl();
   if (!connectionString) {
     throw new Error("DATABASE_URL is not set — copy .env.example to .env first.");
   }
