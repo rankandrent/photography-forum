@@ -12,18 +12,36 @@ function escapeXml(value: string): string {
 
 export async function GET() {
   const base = siteUrl();
-  const threads = await prisma.thread.findMany({
-    orderBy: { createdAt: "desc" },
-    take: 50,
-    select: {
-      slug: true,
-      title: true,
-      body: true,
-      createdAt: true,
-      author: { select: { name: true, username: true } },
-      category: { select: { name: true } },
-    },
-  });
+  // Prerendered at build time, so the database may not be reachable yet. An
+  // empty channel is a valid feed; the revalidation fills it in on the first
+  // request after the database is live. The whole access sits inside the try
+  // because an unset DATABASE_URL throws synchronously, before any promise.
+  type FeedThread = {
+    slug: string;
+    title: string;
+    body: string;
+    createdAt: Date;
+    author: { name: string | null; username: string };
+    category: { name: string };
+  };
+  let threads: FeedThread[] = [];
+
+  try {
+    threads = await prisma.thread.findMany({
+      orderBy: { createdAt: "desc" },
+      take: 50,
+      select: {
+        slug: true,
+        title: true,
+        body: true,
+        createdAt: true,
+        author: { select: { name: true, username: true } },
+        category: { select: { name: true } },
+      },
+    });
+  } catch (error) {
+    console.warn("feed: database unavailable, emitting an empty channel", error);
+  }
 
   const items = threads
     .map(

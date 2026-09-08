@@ -31,8 +31,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const categories = await prisma.category.findMany({ select: { slug: true } });
-  return categories.map((c) => ({ slug: c.slug }));
+  // Runs during `next build`, which may happen before the database exists.
+  // These pages render on demand anyway, so an empty list is a safe fallback.
+  try {
+    const categories = await prisma.category.findMany({ select: { slug: true } });
+    return categories.map((c) => ({ slug: c.slug }));
+  } catch {
+    return [];
+  }
 }
 
 export default async function CategoryPage({ params, searchParams }: Props) {

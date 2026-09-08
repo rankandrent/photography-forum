@@ -8,18 +8,33 @@ export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteUrl();
 
-  const [threads, categories, gear, tags, challenges, users] = await Promise.all([
-    prisma.thread.findMany({
-      select: { slug: true, updatedAt: true },
-      orderBy: { lastPostAt: "desc" },
-      take: 20000,
-    }),
-    prisma.category.findMany({ select: { slug: true } }),
-    prisma.gear.findMany({ select: { slug: true } }),
-    prisma.tag.findMany({ select: { slug: true } }),
-    prisma.challenge.findMany({ select: { slug: true, endsAt: true } }),
-    prisma.user.findMany({ select: { username: true }, take: 5000 }),
-  ]);
+  // This route is prerendered during `next build`, which can run before the
+  // database exists or is reachable. A sitemap is not worth failing a deploy
+  // over: fall back to the static pages and let the hourly revalidation pick up
+  // the real content on the first request after the database is live.
+  let threads: { slug: string; updatedAt: Date }[] = [];
+  let categories: { slug: string }[] = [];
+  let gear: { slug: string }[] = [];
+  let tags: { slug: string }[] = [];
+  let challenges: { slug: string; endsAt: Date }[] = [];
+  let users: { username: string }[] = [];
+
+  try {
+    [threads, categories, gear, tags, challenges, users] = await Promise.all([
+      prisma.thread.findMany({
+        select: { slug: true, updatedAt: true },
+        orderBy: { lastPostAt: "desc" },
+        take: 20000,
+      }),
+      prisma.category.findMany({ select: { slug: true } }),
+      prisma.gear.findMany({ select: { slug: true } }),
+      prisma.tag.findMany({ select: { slug: true } }),
+      prisma.challenge.findMany({ select: { slug: true, endsAt: true } }),
+      prisma.user.findMany({ select: { username: true }, take: 5000 }),
+    ]);
+  } catch (error) {
+    console.warn("sitemap: database unavailable, emitting static pages only", error);
+  }
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: base, changeFrequency: "hourly", priority: 1 },

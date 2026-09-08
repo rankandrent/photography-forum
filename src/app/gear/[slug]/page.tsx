@@ -14,8 +14,13 @@ import { urlFor } from "@/lib/storage";
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  const gear = await prisma.gear.findMany({ select: { slug: true } });
-  return gear.map((g) => ({ slug: g.slug }));
+  // See the note in /c/[slug]: the build must not depend on the database.
+  try {
+    const gear = await prisma.gear.findMany({ select: { slug: true } });
+    return gear.map((g) => ({ slug: g.slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
