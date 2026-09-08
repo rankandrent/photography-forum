@@ -1,21 +1,22 @@
 import "dotenv/config";
-import path from "node:path";
-import { mkdir, writeFile } from "node:fs/promises";
 import bcrypt from "bcryptjs";
 import sharp from "sharp";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../src/generated/prisma/client.js";
+import { put } from "../src/lib/storage.js";
 
 const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL! }),
 });
 
-const UPLOAD_ROOT = path.join(process.cwd(), "public", "uploads", "seed");
-
 /**
  * Seed images are generated, not downloaded, so `npm run db:seed` works offline
- * and ships no third-party photographs. Each one is a soft gradient at the same
- * three sizes the real upload pipeline produces.
+ * and ships no third-party photographs. Each one is a soft gradient written at
+ * the same three sizes the real upload pipeline produces.
+ *
+ * They go through lib/storage, so seeding a production database with
+ * STORAGE_DRIVER=s3 uploads them to the bucket instead of a container
+ * filesystem that is about to be thrown away.
  */
 async function makeImage(id: string, hue: number, portrait = false) {
   const w = portrait ? 1200 : 1600;
@@ -41,14 +42,19 @@ async function makeImage(id: string, hue: number, portrait = false) {
     thumbKey: `seed/${id}-400.webp`,
   };
 
-  await mkdir(UPLOAD_ROOT, { recursive: true });
-  await Promise.all([
-    base.clone().jpeg({ quality: 85 }).toBuffer().then((b) => writeFile(path.join(process.cwd(), "public", "uploads", keys.originalKey), b)),
-    base.clone().resize({ width: 1600, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer().then((b) => writeFile(path.join(process.cwd(), "public", "uploads", keys.displayKey), b)),
-    base.clone().resize({ width: 400 }).webp({ quality: 72 }).toBuffer().then((b) => writeFile(path.join(process.cwd(), "public", "uploads", keys.thumbKey), b)),
+  const [original, display, thumb] = await Promise.all([
+    base.clone().jpeg({ quality: 85 }).toBuffer(),
+    base.clone().resize({ width: 1600, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer(),
+    base.clone().resize({ width: 400 }).webp({ quality: 72 }).toBuffer(),
   ]);
 
-  return { ...keys, width: w, height: h, bytes: 900_000 };
+  await Promise.all([
+    put(keys.originalKey, original, "image/jpeg"),
+    put(keys.displayKey, display, "image/webp"),
+    put(keys.thumbKey, thumb, "image/webp"),
+  ]);
+
+  return { ...keys, width: w, height: h, bytes: original.byteLength };
 }
 
 const CATEGORIES = [
@@ -331,6 +337,10 @@ const THREADS: ThreadSeed[] = [
 ];
 
 async function main() {
+  const target = (process.env.DATABASE_URL ?? "").replace(/:[^:@/]*@/, ":****@");
+  console.log(`Seeding ${target}`);
+  console.log(`Images -> ${process.env.STORAGE_DRIVER === "s3" ? `s3 bucket "${process.env.S3_BUCKET}"` : "public/uploads (local disk)"}`);
+  console.log("\nThis DELETES every existing row first. Ctrl-C now if that is not what you want.\n");
   console.log("Clearing existing data…");
   await prisma.$transaction([
     prisma.challengeVote.deleteMany(),

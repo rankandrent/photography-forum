@@ -95,18 +95,34 @@ async function main() {
   );
 
   // --- reply ---------------------------------------------------------------
-  await page.fill('textarea[name="body"]', "Automated reply from the smoke test.");
+  const replyText = `Automated reply from the smoke test ${stamp}.`;
+  await page.fill('textarea[name="body"]', replyText);
   await page.locator('main form:has(textarea[name="body"]) button[type="submit"]').last().click();
-  await page.waitForTimeout(3000);
-  await page.goto(threadUrl);
-  check("reply posted", (await page.locator("body").innerText()).includes("Automated reply from the smoke test."));
+  // Wait for the reply itself rather than a fixed sleep — a server action that
+  // resizes images can take well over any timeout worth hard-coding.
+  const posted = await page
+    .getByText(replyText, { exact: false })
+    .first()
+    .waitFor({ timeout: 30000 })
+    .then(() => true, () => false);
+  check("reply posted", posted);
 
   // --- vote ----------------------------------------------------------------
-  const before = Number((await page.locator('[aria-live="polite"]').first().innerText()).trim());
+  const score = page.locator('[aria-live="polite"]').first();
+  await score.waitFor({ timeout: 15000 });
+  const before = Number((await score.innerText()).trim());
   await page.locator('button[aria-label="Upvote"]').first().click();
-  await page.waitForTimeout(2500);
-  const after = Number((await page.locator('[aria-live="polite"]').first().innerText()).trim());
-  check("upvote registers", after === before + 1, `${before} -> ${after}`);
+  const landed = await page
+    .waitForFunction(
+      (expected) => {
+        const el = document.querySelector('[aria-live="polite"]');
+        return el ? el.textContent?.trim() === expected : false;
+      },
+      String(before + 1),
+      { timeout: 20000 },
+    )
+    .then(() => true, () => false);
+  check("upvote registers", landed, `${before} -> ${before + 1}`);
 
   // --- critique on someone else's photo ------------------------------------
   await page.goto(`${BASE}/c/critique`);
@@ -119,10 +135,15 @@ async function main() {
     for (const dim of ["composition", "lighting", "editing"]) {
       await page.locator(`input[name="${dim}"][value="4"]`).first().click({ force: true });
     }
-    await page.fill('textarea[name="comment"]', "Automated critique: the frame reads well but the horizon line needs a degree of rotation to settle.");
+    const critiqueText = `Automated critique ${stamp}: the frame reads well but the horizon line needs a degree of rotation to settle.`;
+    await page.fill('textarea[name="comment"]', critiqueText);
     await page.locator('main form:has(textarea[name="comment"]) button[type="submit"]').first().click();
-    await page.waitForTimeout(3000);
-    check("critique submitted", (await page.locator("body").innerText()).includes("Automated critique"));
+    const saved = await page
+      .getByText(critiqueText, { exact: false })
+      .first()
+      .waitFor({ timeout: 30000 })
+      .then(() => true, () => false);
+    check("critique submitted", saved);
   } else {
     check("critique form reachable", false, "no critique button found");
   }
@@ -139,8 +160,12 @@ async function main() {
   // --- sign out -------------------------------------------------------------
   await page.goto(`${BASE}/`);
   await page.getByRole("button", { name: "Sign out" }).click();
-  await page.waitForTimeout(2000);
-  check("sign out", (await page.locator("body").innerText()).includes("Join"));
+  const signedOut = await page
+    .getByRole("link", { name: "Join" })
+    .first()
+    .waitFor({ timeout: 20000 })
+    .then(() => true, () => false);
+  check("sign out", signedOut);
 
   await browser.close();
 

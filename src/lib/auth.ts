@@ -45,6 +45,11 @@ export const googleEnabled = Boolean(
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma) as Adapter,
+  // Behind a proxy (Vercel, a load balancer, any reverse proxy) Auth.js cannot
+  // verify the Host header on its own and rejects the request with
+  // UntrustedHost. That breaks every preview deployment, whose hostname is
+  // generated per branch and can never match AUTH_URL.
+  trustHost: true,
   // Credentials providers require JWT sessions even when an adapter is present.
   session: { strategy: "jwt" },
   pages: { signIn: "/login" },
