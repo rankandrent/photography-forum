@@ -1,6 +1,6 @@
 # ApertureTalk — a photography forum
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frankandrent%2Fphotography-forum&env=DATABASE_URL%2CAUTH_SECRET%2CAUTH_URL%2CNEXT_PUBLIC_SITE_URL%2CSTORAGE_DRIVER%2CNEXT_PUBLIC_UPLOAD_BASE_URL%2CS3_BUCKET%2CS3_ENDPOINT%2CS3_REGION%2CS3_ACCESS_KEY_ID%2CS3_SECRET_ACCESS_KEY&envDescription=Database%2C%20auth%20secret%20and%20S3-compatible%20image%20storage&envLink=https%3A%2F%2Fgithub.com%2Frankandrent%2Fphotography-forum%2Fblob%2Fmain%2Fdocs%2FDEPLOY.md&project-name=photography-forum&repository-name=photography-forum)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frankandrent%2Fphotography-forum&env=DATABASE_URL%2CAUTH_SECRET%2CAUTH_URL%2CNEXT_PUBLIC_SITE_URL%2CSTORAGE_DRIVER%2CNEXT_PUBLIC_UPLOAD_BASE_URL%2CS3_BUCKET%2CS3_ENDPOINT%2CS3_REGION%2CS3_ACCESS_KEY_ID%2CS3_SECRET_ACCESS_KEY&envDescription=Database%2C%20auth%20secret%20and%20S3-compatible%20image%20storage&envLink=https%3A%2F%2Fgithub.com%2Frankandrent%2Fphotography-forum&project-name=photography-forum&repository-name=photography-forum)
 
 Clicking that imports this repository into Vercel and prompts for every
 environment variable the app needs. It cannot finish on its own: create the
