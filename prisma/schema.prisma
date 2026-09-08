@@ -1,0 +1,380 @@
+// Photography forum — data model
+//
+// Provider is PostgreSQL. Nothing here uses Postgres-only column types, so you
+// can switch to another provider by editing the `provider` line and re-running
+// `npx prisma migrate dev`.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+  runtime  = "nodejs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------- users/auth
+
+enum Role {
+  USER
+  MOD
+  ADMIN
+}
+
+model User {
+  id            String    @id @default(cuid())
+  /// Defaulted so the Auth.js adapter can create OAuth users before we
+  /// derive a real handle in the `createUser` event.
+  username      String    @unique @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  passwordHash  String?
+  image         String?
+  bio           String?
+  location      String?
+  website       String?
+  instagram     String?
+  role          Role      @default(USER)
+  createdAt     DateTime  @default(now())
+
+  accounts       Account[]
+  sessions       Session[]
+  threads        Thread[]
+  posts          Post[]
+  photos         Photo[]
+  votes          Vote[]
+  critiques      Critique[]
+  gear           UserGear[]
+  entries        ChallengeEntry[]
+  challengeVotes ChallengeVote[]
+  reports        Report[]
+  notifications  Notification[]
+}
+
+// Auth.js adapter models.
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ------------------------------------------------------------------- forum
+
+enum ThreadKind {
+  DISCUSSION
+  CRITIQUE
+  SHOWCASE
+}
+
+model Category {
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
+  description String
+  color       String  @default("#64748b")
+  position    Int     @default(0)
+
+  threads Thread[]
+}
+
+model Thread {
+  id         String     @id @default(cuid())
+  slug       String     @unique
+  title      String
+  body       String
+  kind       ThreadKind @default(DISCUSSION)
+  authorId   String
+  categoryId String
+  pinned     Boolean    @default(false)
+  locked     Boolean    @default(false)
+  viewCount  Int        @default(0)
+  score      Int        @default(0)
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  lastPostAt DateTime   @default(now())
+
+  author   User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  category Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  posts    Post[]
+  photos   Photo[]
+  votes    Vote[]
+  tags     ThreadTag[]
+  reports  Report[]
+
+  @@index([categoryId, lastPostAt])
+  @@index([lastPostAt])
+}
+
+model Post {
+  id        String    @id @default(cuid())
+  threadId  String
+  authorId  String
+  body      String
+  parentId  String?
+  isAnswer  Boolean   @default(false)
+  score     Int       @default(0)
+  createdAt DateTime  @default(now())
+  editedAt  DateTime?
+
+  thread   Thread  @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  author   User    @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  parent   Post?   @relation("PostReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies  Post[]  @relation("PostReplies")
+  photos   Photo[]
+  votes    Vote[]
+  reports  Report[]
+
+  @@index([threadId, createdAt])
+}
+
+model Tag {
+  id      String      @id @default(cuid())
+  slug    String      @unique
+  name    String
+  threads ThreadTag[]
+}
+
+model ThreadTag {
+  threadId String
+  tagId    String
+
+  thread Thread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  tag    Tag    @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([threadId, tagId])
+}
+
+model Vote {
+  id        String   @id @default(cuid())
+  userId    String
+  threadId  String?
+  postId    String?
+  value     Int
+  createdAt DateTime @default(now())
+
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  thread Thread? @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  post   Post?   @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, threadId])
+  @@unique([userId, postId])
+}
+
+// ------------------------------------------------------------------ photos
+
+/// One uploaded image. `*Key` fields are storage keys, resolved to URLs by
+/// lib/storage.ts, so swapping local disk for S3/R2 touches one file.
+model Photo {
+  id         String  @id @default(cuid())
+  uploaderId String
+  threadId   String?
+  postId     String?
+  entryId    String?
+
+  originalKey String
+  displayKey  String
+  thumbKey    String
+  width       Int
+  height      Int
+  bytes       Int
+  caption     String?
+
+  // EXIF, extracted on upload. All optional — phone exports often strip it.
+  cameraMake   String?
+  cameraModel  String?
+  lensModel    String?
+  focalLength  Float?
+  aperture     Float?
+  shutterSpeed String?
+  iso          Int?
+  takenAt      DateTime?
+
+  // Resolved from the EXIF strings above against the gear database.
+  cameraGearId String?
+  lensGearId   String?
+
+  createdAt DateTime @default(now())
+
+  uploader   User            @relation(fields: [uploaderId], references: [id], onDelete: Cascade)
+  thread     Thread?         @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  post       Post?           @relation(fields: [postId], references: [id], onDelete: Cascade)
+  entry      ChallengeEntry? @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  cameraGear Gear?           @relation("PhotoCamera", fields: [cameraGearId], references: [id], onDelete: SetNull)
+  lensGear   Gear?           @relation("PhotoLens", fields: [lensGearId], references: [id], onDelete: SetNull)
+  critiques  Critique[]
+
+  @@index([threadId])
+  @@index([cameraGearId])
+  @@index([lensGearId])
+}
+
+/// Structured feedback: ratings per dimension instead of "nice shot".
+model Critique {
+  id          String   @id @default(cuid())
+  photoId     String
+  authorId    String
+  composition Int
+  lighting    Int
+  editing     Int
+  comment     String
+  createdAt   DateTime @default(now())
+
+  photo  Photo @relation(fields: [photoId], references: [id], onDelete: Cascade)
+  author User  @relation(fields: [authorId], references: [id], onDelete: Cascade)
+
+  @@unique([photoId, authorId])
+}
+
+// -------------------------------------------------------------------- gear
+
+enum GearType {
+  CAMERA
+  LENS
+  LIGHTING
+  ACCESSORY
+}
+
+model Gear {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  brand       String
+  type        GearType
+  description String?
+  releaseYear Int?
+  /// Lowercased EXIF model strings that map to this item, comma separated.
+  exifAliases String   @default("")
+
+  owners       UserGear[]
+  cameraPhotos Photo[]    @relation("PhotoCamera")
+  lensPhotos   Photo[]    @relation("PhotoLens")
+
+  @@index([type, brand])
+}
+
+model UserGear {
+  userId String
+  gearId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  gear Gear @relation(fields: [gearId], references: [id], onDelete: Cascade)
+
+  @@id([userId, gearId])
+}
+
+// --------------------------------------------------------------- challenges
+
+enum ChallengeStatus {
+  UPCOMING
+  OPEN
+  VOTING
+  CLOSED
+}
+
+model Challenge {
+  id          String          @id @default(cuid())
+  slug        String          @unique
+  title       String
+  theme       String
+  description String
+  status      ChallengeStatus @default(OPEN)
+  startsAt    DateTime        @default(now())
+  endsAt      DateTime
+  votingEndsAt DateTime
+
+  entries ChallengeEntry[]
+}
+
+model ChallengeEntry {
+  id          String   @id @default(cuid())
+  challengeId String
+  userId      String
+  caption     String?
+  createdAt   DateTime @default(now())
+
+  challenge Challenge       @relation(fields: [challengeId], references: [id], onDelete: Cascade)
+  user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  photos    Photo[]
+  votes     ChallengeVote[]
+
+  @@unique([challengeId, userId])
+}
+
+model ChallengeVote {
+  id      String @id @default(cuid())
+  entryId String
+  userId  String
+
+  entry ChallengeEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  user  User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([entryId, userId])
+}
+
+// -------------------------------------------------------------- moderation
+
+enum ReportStatus {
+  OPEN
+  RESOLVED
+  DISMISSED
+}
+
+model Report {
+  id         String       @id @default(cuid())
+  reporterId String
+  threadId   String?
+  postId     String?
+  reason     String
+  status     ReportStatus @default(OPEN)
+  createdAt  DateTime     @default(now())
+
+  reporter User    @relation(fields: [reporterId], references: [id], onDelete: Cascade)
+  thread   Thread? @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  post     Post?   @relation(fields: [postId], references: [id], onDelete: Cascade)
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String
+  title     String
+  href      String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, read])
+}

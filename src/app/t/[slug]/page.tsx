@@ -1,0 +1,409 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { prisma } from "@/lib/prisma";
+import { currentUser, isStaff } from "@/lib/session";
+import { PHOTO_SELECT, toPhotoView } from "@/lib/photo-view";
+import { toPlainText } from "@/lib/markdown";
+import { timeAgo, compact } from "@/lib/format";
+import { urlFor } from "@/lib/storage";
+import { absoluteUrl, site } from "@/lib/site";
+import { Avatar } from "@/components/Avatar";
+import { MarkdownContent } from "@/components/MarkdownContent";
+import { PhotoGallery } from "@/components/PhotoGallery";
+import { ExifStrip } from "@/components/ExifStrip";
+import { CritiquePanel } from "@/components/CritiquePanel";
+import { ReplyForm } from "@/components/ReplyForm";
+import { ReplyToggle } from "@/components/ReplyToggle";
+import { VoteButtons } from "@/components/VoteButtons";
+import { ModActions } from "@/components/ModActions";
+import { PostActions } from "@/components/PostActions";
+import { JsonLd } from "@/components/JsonLd";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const thread = await prisma.thread.findUnique({
+    where: { slug },
+    select: {
+      title: true,
+      body: true,
+      createdAt: true,
+      updatedAt: true,
+      author: { select: { name: true, username: true } },
+      photos: { select: { displayKey: true }, take: 1 },
+    },
+  });
+  if (!thread) return { title: "Thread not found" };
+
+  const description = toPlainText(thread.body, 155);
+  const image = thread.photos[0] ? urlFor(thread.photos[0].displayKey) : `/og?title=${encodeURIComponent(thread.title)}`;
+
+  return {
+    title: thread.title,
+    description,
+    alternates: { canonical: `/t/${slug}` },
+    openGraph: {
+      type: "article",
+      title: thread.title,
+      description,
+      url: `/t/${slug}`,
+      publishedTime: thread.createdAt.toISOString(),
+      modifiedTime: thread.updatedAt.toISOString(),
+      authors: [thread.author.name ?? thread.author.username],
+      images: [{ url: image }],
+    },
+    twitter: { card: "summary_large_image", title: thread.title, description, images: [image] },
+  };
+}
+
+export default async function ThreadPage({ params }: Props) {
+  const { slug } = await params;
+  const user = await currentUser();
+
+  // The select is inline rather than shared: Prisma infers the result type from
+  // the literal, and a helper that returns it would widen `true` to `boolean`.
+  const thread = await prisma.thread.findUnique({
+    where: { slug },
+    select: {
+      id: true,
+      slug: true,
+      title: true,
+      body: true,
+      kind: true,
+      pinned: true,
+      locked: true,
+      score: true,
+      viewCount: true,
+      createdAt: true,
+      updatedAt: true,
+      authorId: true,
+      author: {
+        select: { id: true, username: true, name: true, image: true, bio: true, createdAt: true },
+      },
+      category: { select: { slug: true, name: true, color: true } },
+      tags: { select: { tag: { select: { slug: true, name: true } } } },
+      photos: {
+        where: { postId: null },
+        select: {
+          ...PHOTO_SELECT,
+          uploaderId: true,
+          critiques: {
+            select: {
+              id: true,
+              composition: true,
+              lighting: true,
+              editing: true,
+              comment: true,
+              author: { select: { username: true, name: true, image: true } },
+            },
+            orderBy: { createdAt: "asc" },
+          },
+        },
+        orderBy: { createdAt: "asc" },
+      },
+      votes: user ? { where: { userId: user.id }, select: { value: true } } : false,
+      posts: {
+        select: {
+          id: true,
+          body: true,
+          score: true,
+          isAnswer: true,
+          parentId: true,
+          createdAt: true,
+          editedAt: true,
+          authorId: true,
+          author: { select: { id: true, username: true, name: true, image: true } },
+          photos: { select: PHOTO_SELECT },
+          votes: user ? { where: { userId: user.id }, select: { value: true } } : false,
+        },
+        orderBy: [{ isAnswer: "desc" }, { createdAt: "asc" }],
+      },
+    },
+  });
+  if (!thread) notFound();
+
+  // View counting is a write, so it must not block the render or be awaited in
+  // a way that makes the page dynamic-uncacheable per user.
+  void prisma.thread
+    .update({ where: { id: thread.id }, data: { viewCount: { increment: 1 } } })
+    .catch(() => undefined);
+
+  const staff = isStaff(user);
+  const myThreadVote = Array.isArray(thread.votes) ? (thread.votes[0]?.value ?? 0) : 0;
+  const topLevel = thread.posts.filter((p) => !p.parentId);
+  const repliesOf = (id: string) => thread.posts.filter((p) => p.parentId === id);
+
+  const breadcrumbs = [
+    { name: "Home", url: absoluteUrl("/") },
+    { name: thread.category.name, url: absoluteUrl(`/c/${thread.category.slug}`) },
+    { name: thread.title, url: absoluteUrl(`/t/${thread.slug}`) },
+  ];
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-6">
+      <nav aria-label="Breadcrumb" className="mb-4 text-sm text-slate-500 dark:text-slate-400">
+        <ol className="flex flex-wrap items-center gap-1.5">
+          <li><Link href="/" className="hover:underline">Home</Link></li>
+          <li aria-hidden>/</li>
+          <li>
+            <Link href={`/c/${thread.category.slug}`} className="hover:underline">
+              {thread.category.name}
+            </Link>
+          </li>
+        </ol>
+      </nav>
+
+      <article className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+        <div className="flex gap-4">
+          <VoteButtons
+            target="thread"
+            targetId={thread.id}
+            score={thread.score}
+            myVote={myThreadVote}
+            signedIn={Boolean(user)}
+          />
+
+          <div className="min-w-0 flex-1">
+            <h1 className="text-2xl font-bold leading-tight text-slate-900 dark:text-slate-100">
+              {thread.title}
+            </h1>
+
+            <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
+              <Link href={`/u/${thread.author.username}`} className="flex items-center gap-2 hover:underline">
+                <Avatar user={thread.author} size={24} />
+                <span className="font-medium text-slate-700 dark:text-slate-300">
+                  {thread.author.name ?? thread.author.username}
+                </span>
+              </Link>
+              <time dateTime={thread.createdAt.toISOString()}>{timeAgo(thread.createdAt)}</time>
+              <span>{compact(thread.viewCount)} views</span>
+              <span>{thread.posts.length} replies</span>
+              {thread.locked && <span className="text-amber-600">🔒 Locked</span>}
+            </div>
+
+            {thread.tags.length > 0 && (
+              <ul className="mt-3 flex flex-wrap gap-1.5">
+                {thread.tags.map(({ tag }) => (
+                  <li key={tag.slug}>
+                    <Link
+                      href={`/tag/${tag.slug}`}
+                      className="rounded bg-slate-100 px-2 py-0.5 text-xs text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300"
+                    >
+                      #{tag.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <MarkdownContent source={thread.body} className="mt-4" />
+
+            {thread.photos.length > 0 && (
+              <div className="mt-5 space-y-5">
+                <PhotoGallery photos={thread.photos.map(toPhotoView)} />
+                {thread.photos.map((photo) => {
+                  const view = toPhotoView(photo);
+                  return (
+                    <section key={photo.id} className="rounded-xl border border-slate-200 dark:border-slate-700">
+                      <ExifStrip photo={view} />
+                      {thread.kind === "CRITIQUE" && (
+                        <CritiquePanel
+                          photoId={photo.id}
+                          critiques={photo.critiques}
+                          canCritique={Boolean(user) && user?.id !== photo.uploaderId}
+                          signedIn={Boolean(user)}
+                        />
+                      )}
+                    </section>
+                  );
+                })}
+              </div>
+            )}
+
+            <div className="mt-5 border-t border-slate-100 pt-3 dark:border-slate-800">
+              <ModActions
+                threadId={thread.id}
+                pinned={thread.pinned}
+                locked={thread.locked}
+                canDelete={user?.id === thread.authorId || staff}
+                isStaff={staff}
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section className="mt-8" aria-labelledby="replies-heading">
+        <h2 id="replies-heading" className="mb-3 text-lg font-semibold text-slate-900 dark:text-slate-100">
+          {thread.posts.length} {thread.posts.length === 1 ? "reply" : "replies"}
+        </h2>
+
+        <ul className="space-y-4">
+          {topLevel.map((post) => {
+            const myVote = Array.isArray(post.votes) ? (post.votes[0]?.value ?? 0) : 0;
+            const children = repliesOf(post.id);
+            return (
+              <li
+                key={post.id}
+                id={`post-${post.id}`}
+                className={`rounded-2xl border bg-white p-4 dark:bg-slate-900 ${
+                  post.isAnswer
+                    ? "border-emerald-400 dark:border-emerald-600"
+                    : "border-slate-200 dark:border-slate-800"
+                }`}
+              >
+                {post.isAnswer && (
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-600 dark:text-emerald-400">
+                    ✓ Accepted answer
+                  </p>
+                )}
+                <div className="flex gap-4">
+                  <VoteButtons
+                    target="post"
+                    targetId={post.id}
+                    score={post.score}
+                    myVote={myVote}
+                    signedIn={Boolean(user)}
+                  />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-2 text-sm">
+                      <Link href={`/u/${post.author.username}`} className="flex items-center gap-2 hover:underline">
+                        <Avatar user={post.author} size={22} />
+                        <span className="font-medium text-slate-800 dark:text-slate-200">
+                          {post.author.name ?? post.author.username}
+                        </span>
+                      </Link>
+                      <time dateTime={post.createdAt.toISOString()} className="text-xs text-slate-400">
+                        {timeAgo(post.createdAt)}
+                      </time>
+                      {post.editedAt && <span className="text-xs text-slate-400">(edited)</span>}
+                    </div>
+
+                    <MarkdownContent source={post.body} className="mt-2" />
+
+                    {post.photos.length > 0 && (
+                      <div className="mt-3">
+                        <PhotoGallery photos={post.photos.map(toPhotoView)} />
+                      </div>
+                    )}
+
+                    <PostActions
+                      postId={post.id}
+                      body={post.body}
+                      isAnswer={post.isAnswer}
+                      canEdit={user?.id === post.authorId || staff}
+                      canAcceptAnswer={user?.id === thread.authorId || staff}
+                      signedIn={Boolean(user)}
+                    />
+
+                    <div className="mt-2">
+                      <ReplyToggle
+                        threadId={thread.id}
+                        parentId={post.id}
+                        signedIn={Boolean(user)}
+                        locked={thread.locked}
+                      />
+                    </div>
+
+                    {children.length > 0 && (
+                      <ul className="mt-4 space-y-3 border-l-2 border-slate-100 pl-4 dark:border-slate-800">
+                        {children.map((child) => (
+                          <li key={child.id} id={`post-${child.id}`}>
+                            <div className="flex flex-wrap items-center gap-2 text-sm">
+                              <Link href={`/u/${child.author.username}`} className="flex items-center gap-2 hover:underline">
+                                <Avatar user={child.author} size={20} />
+                                <span className="font-medium text-slate-800 dark:text-slate-200">
+                                  {child.author.name ?? child.author.username}
+                                </span>
+                              </Link>
+                              <time dateTime={child.createdAt.toISOString()} className="text-xs text-slate-400">
+                                {timeAgo(child.createdAt)}
+                              </time>
+                            </div>
+                            <MarkdownContent source={child.body} className="mt-1" />
+                            {child.photos.length > 0 && (
+                              <div className="mt-2">
+                                <PhotoGallery photos={child.photos.map(toPhotoView)} />
+                              </div>
+                            )}
+                            <PostActions
+                              postId={child.id}
+                              body={child.body}
+                              isAnswer={child.isAnswer}
+                              canEdit={user?.id === child.authorId || staff}
+                              canAcceptAnswer={false}
+                              signedIn={Boolean(user)}
+                            />
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+
+        <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+          <h3 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">Your reply</h3>
+          <ReplyForm threadId={thread.id} signedIn={Boolean(user)} locked={thread.locked} />
+        </div>
+      </section>
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "DiscussionForumPosting",
+          headline: thread.title,
+          articleBody: toPlainText(thread.body, 1000),
+          url: absoluteUrl(`/t/${thread.slug}`),
+          datePublished: thread.createdAt.toISOString(),
+          dateModified: thread.updatedAt.toISOString(),
+          author: {
+            "@type": "Person",
+            name: thread.author.name ?? thread.author.username,
+            url: absoluteUrl(`/u/${thread.author.username}`),
+          },
+          publisher: { "@type": "Organization", name: site.name },
+          interactionStatistic: [
+            {
+              "@type": "InteractionCounter",
+              interactionType: "https://schema.org/CommentAction",
+              userInteractionCount: thread.posts.length,
+            },
+            {
+              "@type": "InteractionCounter",
+              interactionType: "https://schema.org/LikeAction",
+              userInteractionCount: Math.max(0, thread.score),
+            },
+          ],
+          comment: thread.posts.slice(0, 20).map((p) => ({
+            "@type": "Comment",
+            text: toPlainText(p.body, 500),
+            datePublished: p.createdAt.toISOString(),
+            author: {
+              "@type": "Person",
+              name: p.author.name ?? p.author.username,
+              url: absoluteUrl(`/u/${p.author.username}`),
+            },
+          })),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((b, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: b.name,
+            item: b.url,
+          })),
+        }}
+      />
+    </div>
+  );
+}

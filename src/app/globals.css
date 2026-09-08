@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Theme is driven by a data attribute so the header toggle can override the
+   OS preference; ThemeScript sets it before first paint to avoid a flash. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
+
+[data-theme="dark"] body {
+  @apply bg-slate-950 text-slate-200;
+}
+
+/* Consistent, visible focus ring — keyboard users navigate long threads. */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-brand-500;
+}
+
+.prose-post :where(a) {
+  overflow-wrap: anywhere;
+}
