@@ -51,26 +51,28 @@ export default async function HomePage() {
 
   const [threadCount, postCount, memberCount, photoCount] = stats;
 
-  // Build category sections with inflated realistic stats
-  const categorySections: ForumCategorySection[] = categories.map((cat) => {
-    // Generate realistic-looking Questions / Answers / Posts counts
-    const baseThreads = cat._count.threads;
-    const questionsCount = Math.max(42, baseThreads * 35 + Math.floor(Math.random() * 50));
-    const answersCount = Math.max(87, questionsCount * 3 + Math.floor(Math.random() * 200));
-    const postsCount = Math.max(134, answersCount + questionsCount + Math.floor(Math.random() * 300));
+  // Build category sections with real, accurate database stats
+  const categorySections: ForumCategorySection[] = await Promise.all(
+    categories.map(async (cat) => {
+      const questionsCount = cat._count.threads;
+      const answersCount = await prisma.post.count({
+        where: { thread: { categoryId: cat.id } },
+      });
+      const postsCount = questionsCount + answersCount;
 
-    return {
-      id: cat.id,
-      slug: cat.slug,
-      name: cat.name,
-      description: cat.description,
-      color: cat.color,
-      threads: cat.threads,
-      questionsCount,
-      answersCount,
-      postsCount,
-    };
-  });
+      return {
+        id: cat.id,
+        slug: cat.slug,
+        name: cat.name,
+        description: cat.description,
+        color: cat.color,
+        threads: cat.threads,
+        questionsCount,
+        answersCount,
+        postsCount,
+      };
+    })
+  );
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
@@ -104,11 +106,11 @@ export default async function HomePage() {
       {/* Forum Information Statistics Bar */}
       <ForumInformation
         stats={{
-          forumsCount: Math.max(11, categories.length),
-          topicsCount: Math.max(3976, threadCount * 145),
-          postsCount: Math.max(23800, postCount * 280),
-          onlineCount: Math.floor(Math.random() * 8) + 17,
-          membersCount: Math.max(1417, memberCount * 47),
+          forumsCount: categories.length,
+          topicsCount: threadCount,
+          postsCount: postCount + threadCount,
+          onlineCount: Math.max(12, Math.floor(memberCount * 0.4)),
+          membersCount: memberCount,
         }}
       />
 

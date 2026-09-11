@@ -35,8 +35,8 @@ export function ForumCategoryView({ categories }: { categories: ForumCategorySec
   return (
     <div className="space-y-6">
       {categories.map((cat) => {
-        // Simulated "viewing" count for realism (3-12 per category)
-        const viewingCount = 3 + Math.floor(Math.random() * 10);
+        // Deterministic "viewing" count for realism based on category slug
+        const viewingCount = 3 + (cat.slug.length * 3) % 9;
 
         return (
           <section
