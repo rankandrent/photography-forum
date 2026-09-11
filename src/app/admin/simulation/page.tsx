@@ -28,7 +28,9 @@ export default function AdminSimulationPage() {
   >([]);
 
   const [settings, setSettings] = useState({
-    modelName: "anthropic/claude-opus-5",
+    openRouterApiKey: "",
+    modelName: "anthropic/claude-3.5-sonnet",
+    modelPool: "anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct",
     maxNestingDepth: 3,
     minDelayMs: 2000,
     maxDelayMs: 5000,
@@ -46,7 +48,9 @@ export default function AdminSimulationPage() {
     if (logsRes.success && logsRes.logs) setLogs(logsRes.logs as any);
     if (settingsRes.success && settingsRes.settings) {
       setSettings({
-        modelName: settingsRes.settings.modelName || "anthropic/claude-opus-5",
+        openRouterApiKey: settingsRes.settings.openRouterApiKey || "",
+        modelName: settingsRes.settings.modelName || "anthropic/claude-3.5-sonnet",
+        modelPool: settingsRes.settings.modelPool || "anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct",
         maxNestingDepth: settingsRes.settings.maxNestingDepth || 3,
         minDelayMs: settingsRes.settings.minDelayMs || 2000,
         maxDelayMs: settingsRes.settings.maxDelayMs || 5000,
@@ -236,10 +240,42 @@ export default function AdminSimulationPage() {
         {/* Settings Panel (1 col) */}
         <div>
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-            <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">⚙️ Simulation Parameters</h2>
+            <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">⚙️ OpenRouter & LLM Rotation Setup</h2>
             <form onSubmit={handleSaveSettings} className="space-y-4 text-xs">
               <div>
-                <label className="block font-medium text-slate-700 dark:text-slate-300">AI Model Gateway</label>
+                <label className="block font-medium text-slate-700 dark:text-slate-300">
+                  OpenRouter API Key (Optional Override)
+                </label>
+                <input
+                  type="password"
+                  value={settings.openRouterApiKey}
+                  onChange={(e) => setSettings({ ...settings, openRouterApiKey: e.target.value })}
+                  placeholder="sk-or-v1-..."
+                  className="mt-1 w-full rounded-lg border border-slate-300 bg-slate-50 p-2 text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 font-mono"
+                />
+                <p className="mt-1 text-[10px] text-slate-400">
+                  Overrides OPENROUTER_API_KEY environment variable.
+                </p>
+              </div>
+
+              <div>
+                <label className="block font-medium text-slate-700 dark:text-slate-300">
+                  Multi-LLM Model Rotation Pool (Comma Separated)
+                </label>
+                <textarea
+                  rows={4}
+                  value={settings.modelPool}
+                  onChange={(e) => setSettings({ ...settings, modelPool: e.target.value })}
+                  placeholder="anthropic/claude-3.5-sonnet, openai/gpt-4o-mini, deepseek/deepseek-chat..."
+                  className="mt-1 w-full rounded-lg border border-slate-300 bg-slate-50 p-2 text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 font-mono text-[11px]"
+                />
+                <p className="mt-1 text-[10px] text-slate-400">
+                  Each simulated user reply rotates to a different LLM model for natural variety!
+                </p>
+              </div>
+
+              <div>
+                <label className="block font-medium text-slate-700 dark:text-slate-300">Default Model</label>
                 <input
                   type="text"
                   value={settings.modelName}

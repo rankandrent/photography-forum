@@ -481,7 +481,9 @@ model SimulationSettings {
   id              String   @id @default("default")
   enabled         Boolean  @default(true)
   fastDemoMode    Boolean  @default(false)
-  modelName       String   @default("anthropic/claude-opus-5")
+  openRouterApiKey String?
+  modelName       String   @default("anthropic/claude-3.5-sonnet")
+  modelPool       String   @default("anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct")
   maxNestingDepth Int      @default(3)
   minDelayMs      Int      @default(2000)
   maxDelayMs      Int      @default(5000)

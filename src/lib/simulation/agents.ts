@@ -112,8 +112,21 @@ export async function ensureSimulatedUsers() {
   return users;
 }
 
+export const DEFAULT_MODEL_POOL = [
+  "anthropic/claude-3.5-sonnet",
+  "openai/gpt-4o-mini",
+  "meta-llama/llama-3.3-70b-instruct",
+  "deepseek/deepseek-chat",
+  "google/gemini-2.0-flash-001",
+  "mistralai/mistral-small-24b-instruct-2501",
+  "qwen/qwen-2.5-72b-instruct",
+];
+
 /** Topic Discovery Agent: Generates new photography questions and checks for duplicates */
-export async function topicDiscoveryAgent(customTopic?: string): Promise<{
+export async function topicDiscoveryAgent(
+  customTopic?: string,
+  options?: { modelName?: string; apiKey?: string }
+): Promise<{
   topic: string;
   title: string;
   description: string;
@@ -154,6 +167,8 @@ Categories: "gear-talk", "critique", "editing", "technique", "business", "showca
       system,
       user: userPrompt,
       maxTokens: 500,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
     });
 
     const raw = reply.text.slice(reply.text.indexOf("{"), reply.text.lastIndexOf("}") + 1);
@@ -176,12 +191,17 @@ Categories: "gear-talk", "critique", "editing", "technique", "business", "showca
 }
 
 /** Research Agent: Fact extraction using OpenRouter web search */
-export async function researchAgent(question: string): Promise<string> {
+export async function researchAgent(
+  question: string,
+  options?: { modelName?: string; apiKey?: string }
+): Promise<string> {
   try {
     const reply = await callModel({
       system: "You are a Camera Spec & Pricing Research Agent. Extract 3-4 grounded facts, current prices, and key specs for the cameras or lenses mentioned.",
       user: `Research facts for this question: "${question}"`,
       maxTokens: 600,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
     });
     return reply.text;
   } catch {
@@ -197,8 +217,9 @@ export async function discussionAgent(params: {
   parentPost?: { id: string; authorUsername: string; body: string };
   persona: PersonaDefinition;
   storyType?: "simulated_personal_experience" | "product_recommendation";
+  options?: { modelName?: string; apiKey?: string };
 }): Promise<string> {
-  const { threadTitle, threadBody, researchData, parentPost, persona, storyType } = params;
+  const { threadTitle, threadBody, researchData, parentPost, persona, storyType, options } = params;
 
   const system = `You are writing a forum reply as simulated user "${persona.name}" (@${persona.username}).
 Persona Details:
@@ -221,6 +242,8 @@ WRITING INSTRUCTIONS:
       system,
       user: `Thread: "${threadTitle}"\nOriginal Question: "${threadBody}"`,
       maxTokens: 400,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
     });
 
     return reply.text.trim();

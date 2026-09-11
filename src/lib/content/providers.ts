@@ -22,10 +22,12 @@ export type ModelRequest = {
   system: string;
   user: string;
   maxTokens: number;
+  modelName?: string;
+  apiKey?: string;
 };
 
-export function activeProvider(): "openrouter" | "anthropic" {
-  if (process.env.OPENROUTER_API_KEY) return "openrouter";
+export function activeProvider(overrideKey?: string): "openrouter" | "anthropic" {
+  if (overrideKey || process.env.OPENROUTER_API_KEY) return "openrouter";
   if (process.env.ANTHROPIC_API_KEY) return "anthropic";
   throw new Error(
     "No model API key set — the pipeline needs OPENROUTER_API_KEY (or ANTHROPIC_API_KEY).",
@@ -33,33 +35,22 @@ export function activeProvider(): "openrouter" | "anthropic" {
 }
 
 export async function callModel(request: ModelRequest): Promise<ModelReply> {
-  return activeProvider() === "openrouter" ? viaOpenRouter(request) : viaAnthropic(request);
+  return activeProvider(request.apiKey) === "openrouter" ? viaOpenRouter(request) : viaAnthropic(request);
 }
 
 /* ------------------------------------------------------------- OpenRouter -- */
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
-/**
- * OpenRouter speaks the OpenAI chat shape, not Anthropic's Messages API, so
- * this is a plain fetch rather than an SDK call — there is no official client
- * to reach for.
- *
- * Web search comes from OpenRouter's `web` plugin. On an Anthropic model it
- * routes to Anthropic's own search rather than a third-party index, so the
- * research the post is built on is the same as it would be calling Anthropic
- * directly.
- */
-async function viaOpenRouter({ system, user, maxTokens }: ModelRequest): Promise<ModelReply> {
-  const model = process.env.OPENROUTER_MODEL ?? "anthropic/claude-opus-5";
+async function viaOpenRouter({ system, user, maxTokens, modelName, apiKey }: ModelRequest): Promise<ModelReply> {
+  const key = apiKey || process.env.OPENROUTER_API_KEY;
+  const model = modelName || process.env.OPENROUTER_MODEL || "anthropic/claude-3.5-sonnet";
 
   const response = await fetch(OPENROUTER_URL, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
+      Authorization: `Bearer ${key}`,
       "Content-Type": "application/json",
-      // OpenRouter attributes traffic with these; they show the forum in the
-      // account's usage breakdown instead of an anonymous lump.
       "HTTP-Referer": process.env.NEXT_PUBLIC_SITE_URL ?? "https://localhost",
       "X-Title": "ApertureTalk content pipeline",
     },

@@ -73,7 +73,9 @@ export async function getSimulationSettingsAction() {
           id: "default",
           enabled: true,
           fastDemoMode: false,
-          modelName: process.env.OPENROUTER_MODEL || "anthropic/claude-opus-5",
+          openRouterApiKey: process.env.OPENROUTER_API_KEY || "",
+          modelName: process.env.OPENROUTER_MODEL || "anthropic/claude-3.5-sonnet",
+          modelPool: "anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct",
           maxNestingDepth: 3,
           minDelayMs: 2000,
           maxDelayMs: 5000,
@@ -88,7 +90,9 @@ export async function getSimulationSettingsAction() {
 }
 
 export async function updateSimulationSettingsAction(data: {
+  openRouterApiKey?: string;
   modelName?: string;
+  modelPool?: string;
   maxNestingDepth?: number;
   minDelayMs?: number;
   maxDelayMs?: number;
