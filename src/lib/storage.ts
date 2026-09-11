@@ -9,6 +9,11 @@ import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
  *   STORAGE_DRIVER=local  → public/uploads. Development only. Serverless hosts
  *                           (Vercel, Netlify) give every deploy a fresh, empty,
  *                           read-only-ish filesystem, so uploads vanish.
+ *   STORAGE_DRIVER=blob   → Vercel Blob. The least-setup option when the app is
+ *                           already deployed on Vercel: the store is created
+ *                           from the CLI and injects BLOB_READ_WRITE_TOKEN by
+ *                           itself, so there is no second account to open and
+ *                           no keys to copy around.
  *   STORAGE_DRIVER=s3     → any S3-compatible bucket. Cloudflare R2 is the
  *                           cheapest option because it charges no egress.
  *
@@ -52,6 +57,22 @@ export async function put(key: string, body: Buffer, contentType: string): Promi
     return;
   }
 
+  if (driver === "blob") {
+    // Vercel Blob. Imported lazily so the package is only pulled in when this
+    // driver is actually selected — the local and s3 paths should not carry it.
+    const { put: blobPut } = await import("@vercel/blob");
+    await blobPut(key, body, {
+      access: "public",
+      contentType,
+      // The key already ends in a UUID, and `urlFor` builds the public URL from
+      // the key alone. A random suffix would make the stored path unguessable
+      // from the key and every image on the site would 404.
+      addRandomSuffix: false,
+      cacheControlMaxAge: 31536000,
+    });
+    return;
+  }
+
   if (driver === "s3") {
     await client().send(
       new PutObjectCommand({
@@ -66,7 +87,7 @@ export async function put(key: string, body: Buffer, contentType: string): Promi
     return;
   }
 
-  throw new Error(`Unknown STORAGE_DRIVER "${driver}". Use "local" or "s3".`);
+  throw new Error(`Unknown STORAGE_DRIVER "${driver}". Use "local", "blob" or "s3".`);
 }
 
 export function urlFor(key: string): string {

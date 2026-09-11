@@ -11,3 +11,5 @@ tsconfig.tsbuildinfo
 src/generated/
 public/uploads/*
 !public/uploads/.gitkeep
+.vercel
+.env*

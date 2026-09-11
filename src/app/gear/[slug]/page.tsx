@@ -10,6 +10,7 @@ import { Avatar } from "@/components/Avatar";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl } from "@/lib/site";
 import { urlFor } from "@/lib/storage";
+import { missingPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     where: { slug },
     select: { name: true, brand: true, description: true, type: true },
   });
-  if (!gear) return { title: "Gear not found" };
+  if (!gear) return missingPageMetadata("Gear not found");
 
   const kind = gear.type === "LENS" ? "lens" : "camera";
   return {
@@ -128,11 +129,12 @@ export default async function GearPage({ params }: Props) {
           </p>
         ) : (
           <>
-            <PhotoGallery photos={photos.map(toPhotoView)} />
+            {/* `gear.name` already carries the brand ("Canon EOS R5"). */}
+            <PhotoGallery photos={photos.map(toPhotoView)} context={`Sample photo taken with the ${gear.name}`} />
             <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-400">
               {photos.slice(0, 6).map((p) => (
                 <li key={p.id} className="flex items-center gap-1.5">
-                  <Avatar user={p.uploader} size={16} />
+                  <Avatar user={p.uploader} size={22} />
                   <Link href={`/u/${p.uploader.username}`} className="hover:underline">
                     {p.uploader.name ?? p.uploader.username}
                   </Link>
@@ -171,7 +173,7 @@ export default async function GearPage({ params }: Props) {
                   href={`/u/${user.username}`}
                   className="flex items-center gap-2 rounded-full border border-slate-200 py-1 pl-1 pr-3 text-sm hover:border-brand-500 dark:border-slate-700"
                 >
-                  <Avatar user={user} size={22} />
+                  <Avatar user={user} size={28} />
                   {user.name ?? user.username}
                 </Link>
               </li>

@@ -118,24 +118,39 @@ export async function runDiagnostics(): Promise<{ ok: boolean; checks: Check[] }
     process.env.S3_BUCKET && process.env.S3_ACCESS_KEY_ID && process.env.S3_SECRET_ACCESS_KEY,
   );
   const onServerless = Boolean(process.env.VERCEL);
-  checks.push({
-    name: "Image storage",
-    ok: driver === "s3" ? s3Configured : !onServerless,
-    detail:
-      driver === "s3"
-        ? s3Configured
-          ? "S3-compatible bucket configured"
-          : "STORAGE_DRIVER=s3 but the bucket credentials are incomplete"
-        : onServerless
-          ? "Writing to the container filesystem, which is discarded on every deploy"
-          : "Local disk (fine for development)",
-    fix:
-      driver === "s3" && s3Configured
+  const blobConfigured = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+
+  if (driver === "blob") {
+    checks.push({
+      name: "Image storage",
+      ok: blobConfigured,
+      detail: blobConfigured
+        ? "Vercel Blob store connected"
+        : "STORAGE_DRIVER=blob but BLOB_READ_WRITE_TOKEN is missing",
+      fix: blobConfigured
         ? undefined
-        : onServerless
-          ? "Set STORAGE_DRIVER=s3 plus S3_BUCKET, S3_ENDPOINT, S3_REGION, S3_ACCESS_KEY_ID, S3_SECRET_ACCESS_KEY and NEXT_PUBLIC_UPLOAD_BASE_URL. Uploads are lost on redeploy without this."
-          : undefined,
-  });
+        : "Run `vercel blob create-store <name> --access public` — it links the store and injects the token.",
+    });
+  } else {
+    checks.push({
+      name: "Image storage",
+      ok: driver === "s3" ? s3Configured : !onServerless,
+      detail:
+        driver === "s3"
+          ? s3Configured
+            ? "S3-compatible bucket configured"
+            : "STORAGE_DRIVER=s3 but the bucket credentials are incomplete"
+          : onServerless
+            ? "Writing to the container filesystem, which is discarded on every deploy"
+            : "Local disk (fine for development)",
+      fix:
+        driver === "s3" && s3Configured
+          ? undefined
+          : onServerless
+            ? "Set STORAGE_DRIVER=blob (Vercel Blob, one CLI command) or STORAGE_DRIVER=s3 with the bucket credentials. Uploads are lost on redeploy without one of them."
+            : undefined,
+    });
+  }
 
   return { ok: checks.every((c) => c.ok), checks };
 }

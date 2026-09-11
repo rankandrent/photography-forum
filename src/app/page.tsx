@@ -9,13 +9,15 @@ import { SortTabs } from "@/components/SortTabs";
 import { EmptyState } from "@/components/EmptyState";
 import { JsonLd } from "@/components/JsonLd";
 import { site, siteUrl } from "@/lib/site";
+import { listingCanonical } from "@/lib/seo";
 import { compact } from "@/lib/format";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-};
-
 type Props = { searchParams: Promise<{ sort?: string; page?: string }> };
+
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const { page } = await searchParams;
+  return { alternates: { canonical: listingCanonical("/", page) } };
+}
 
 export default async function HomePage({ searchParams }: Props) {
   const params = await searchParams;

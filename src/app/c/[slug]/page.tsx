@@ -9,24 +9,30 @@ import { SortTabs } from "@/components/SortTabs";
 import { EmptyState } from "@/components/EmptyState";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl } from "@/lib/site";
+import { listingCanonical, missingPageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
   searchParams: Promise<{ sort?: string; page?: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { slug } = await params;
+  const { page } = await searchParams;
   const category = await prisma.category.findUnique({
     where: { slug },
     select: { name: true, description: true },
   });
-  if (!category) return { title: "Category not found" };
+  if (!category) return missingPageMetadata("Category not found");
+  const canonical = listingCanonical(`/c/${slug}`, page);
+  const n = Number(page ?? 1) || 1;
   return {
-    title: category.name,
+    // Page 2 carrying the same <title> as page 1 reads as a duplicate in the
+    // SERP even once the canonical is right, so number it.
+    title: n > 1 ? `${category.name} — page ${n}` : category.name,
     description: category.description,
-    alternates: { canonical: `/c/${slug}` },
-    openGraph: { title: category.name, description: category.description, url: `/c/${slug}` },
+    alternates: { canonical },
+    openGraph: { title: category.name, description: category.description, url: canonical },
   };
 }
 

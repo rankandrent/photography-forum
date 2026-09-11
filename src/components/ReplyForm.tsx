@@ -7,6 +7,7 @@ import { idle } from "@/actions/types";
 import { SubmitButton } from "@/components/SubmitButton";
 import { FormError } from "@/components/FormError";
 import { ImagePicker } from "@/components/ImagePicker";
+import { MarkdownEditor } from "@/components/MarkdownEditor";
 
 export function ReplyForm({
   threadId,
@@ -65,13 +66,13 @@ export function ReplyForm({
       <label htmlFor={`reply-${parentId ?? threadId}`} className="sr-only">
         Your reply
       </label>
-      <textarea
+      <MarkdownEditor
         id={`reply-${parentId ?? threadId}`}
         name="body"
         rows={compact ? 3 : 5}
         required
+        compact={compact}
         placeholder={parentId ? "Write a reply…" : "Share what you know. Markdown supported."}
-        className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-950 dark:text-slate-100"
       />
 
       {showUpload ? (

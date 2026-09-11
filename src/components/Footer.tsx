@@ -36,8 +36,21 @@ export function Footer() {
           </ul>
         </nav>
       </div>
+      {/* Amazon's Associates Operating Agreement requires this sentence
+          verbatim — it is not a phrasing to improve on. It belongs sitewide,
+          but note it does not replace disclosing an affiliate link where the
+          link actually appears, which is what the FTC asks for. */}
       <div className="border-t border-slate-100 px-4 py-4 text-center text-xs text-slate-400 dark:border-slate-800">
-        © {new Date().getFullYear()} {site.name}. Photographs remain the copyright of their authors.
+        <p>
+          {site.name} is a participant in the Amazon Services LLC Associates Program, an affiliate
+          advertising program designed to provide a means for sites to earn advertising fees by
+          advertising and linking to Amazon.com. As an Amazon Associate we earn from qualifying
+          purchases.
+        </p>
+        <p className="mt-2">
+          © {new Date().getFullYear()} {site.name}. Photographs remain the copyright of their
+          authors.
+        </p>
       </div>
     </footer>
   );

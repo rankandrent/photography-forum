@@ -59,7 +59,7 @@ export function ThreadCard({ thread }: { thread: ThreadListItem }) {
 
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
           <Link href={`/u/${thread.author.username}`} className="flex items-center gap-1.5 hover:underline">
-            <Avatar user={thread.author} size={18} />
+            <Avatar user={thread.author} size={26} />
             {thread.author.name ?? thread.author.username}
           </Link>
           <span>{timeAgo(thread.lastPostAt)}</span>

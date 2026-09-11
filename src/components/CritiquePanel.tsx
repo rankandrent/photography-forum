@@ -85,7 +85,7 @@ export function CritiquePanel({
           {critiques.map((c) => (
             <li key={c.id} className="px-4 py-3">
               <div className="mb-1.5 flex items-center gap-2">
-                <Avatar user={c.author} size={24} />
+                <Avatar user={c.author} size={30} />
                 <Link
                   href={`/u/${c.author.username}`}
                   className="text-sm font-medium text-slate-800 hover:underline dark:text-slate-200"

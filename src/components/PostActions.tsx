@@ -6,6 +6,7 @@ import { reportAction } from "@/actions/moderation";
 import { idle } from "@/actions/types";
 import { SubmitButton } from "@/components/SubmitButton";
 import { FormError } from "@/components/FormError";
+import { MarkdownEditor } from "@/components/MarkdownEditor";
 
 const link = "text-xs font-medium text-slate-500 hover:text-brand-600 dark:text-slate-400";
 
@@ -71,13 +72,7 @@ export function PostActions({
       {editing && (
         <form action={editAction} className="space-y-2">
           <input type="hidden" name="postId" value={postId} />
-          <textarea
-            name="body"
-            defaultValue={body}
-            rows={5}
-            required
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-950"
-          />
+          <MarkdownEditor name="body" defaultValue={body} rows={5} required compact />
           <FormError error={editState.error} message={editState.message} />
           <SubmitButton pendingLabel="Saving…">Save changes</SubmitButton>
         </form>

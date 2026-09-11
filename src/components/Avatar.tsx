@@ -3,33 +3,24 @@ type Props = {
   size?: number;
 };
 
-const PALETTE = ["bg-rose-500", "bg-amber-500", "bg-emerald-500", "bg-sky-500", "bg-violet-500", "bg-fuchsia-500"];
-
 export function Avatar({ user, size = 32 }: Props) {
-  const label = user.name ?? user.username;
-  if (user.image) {
-    return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={user.image}
-        alt=""
-        width={size}
-        height={size}
-        loading="lazy"
-        className="shrink-0 rounded-full object-cover"
-        style={{ width: size, height: size }}
-      />
-    );
-  }
-  // Deterministic colour per user so avatars stay stable between renders.
-  const hash = [...user.username].reduce((a, c) => a + c.charCodeAt(0), 0);
+  // An uploaded photo always wins; the generated one is the fallback, and it
+  // comes back the moment someone removes their photo.
+  const src = user.image ?? `/api/avatar/${encodeURIComponent(user.username)}?size=${size * 2}`;
+
   return (
-    <span
-      aria-hidden
-      className={`inline-flex shrink-0 items-center justify-center rounded-full font-semibold text-white ${PALETTE[hash % PALETTE.length]}`}
-      style={{ width: size, height: size, fontSize: size * 0.42 }}
-    >
-      {label.slice(0, 1).toUpperCase()}
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src}
+      alt=""
+      width={size}
+      height={size}
+      loading="lazy"
+      decoding="async"
+      // Requested at 2x so the SVG's own viewBox is generous on retina; the
+      // element is still laid out at `size`, so nothing shifts.
+      className="shrink-0 rounded-full bg-slate-100 object-cover dark:bg-slate-800"
+      style={{ width: size, height: size }}
+    />
   );
 }

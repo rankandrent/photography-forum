@@ -8,6 +8,7 @@ import { toPlainText } from "@/lib/markdown";
 import { timeAgo, compact } from "@/lib/format";
 import { urlFor } from "@/lib/storage";
 import { absoluteUrl, site } from "@/lib/site";
+import { absoluteImageUrl, missingPageMetadata } from "@/lib/seo";
 import { Avatar } from "@/components/Avatar";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { PhotoGallery } from "@/components/PhotoGallery";
@@ -19,6 +20,9 @@ import { VoteButtons } from "@/components/VoteButtons";
 import { ModActions } from "@/components/ModActions";
 import { PostActions } from "@/components/PostActions";
 import { JsonLd } from "@/components/JsonLd";
+import { RelatedThreads } from "@/components/RelatedThreads";
+import { ForumSidebar } from "@/components/ForumSidebar";
+import { relatedThreads, sidebarData } from "@/lib/discovery";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -35,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       photos: { select: { displayKey: true }, take: 1 },
     },
   });
-  if (!thread) return { title: "Thread not found" };
+  if (!thread) return missingPageMetadata("Thread not found");
 
   const description = toPlainText(thread.body, 155);
   const image = thread.photos[0] ? urlFor(thread.photos[0].displayKey) : `/og?title=${encodeURIComponent(thread.title)}`;
@@ -79,6 +83,7 @@ export default async function ThreadPage({ params }: Props) {
       createdAt: true,
       updatedAt: true,
       authorId: true,
+      categoryId: true,
       author: {
         select: { id: true, username: true, name: true, image: true, bio: true, createdAt: true },
       },
@@ -130,6 +135,17 @@ export default async function ThreadPage({ params }: Props) {
     .update({ where: { id: thread.id }, data: { viewCount: { increment: 1 } } })
     .catch(() => undefined);
 
+  // Both are independent of the thread body, so they ride along with it rather
+  // than adding a second round of waiting.
+  const [related, sidebar] = await Promise.all([
+    relatedThreads(
+      thread.id,
+      thread.categoryId,
+      thread.tags.map((t) => t.tag.slug),
+    ),
+    sidebarData(),
+  ]);
+
   const staff = isStaff(user);
   const myThreadVote = Array.isArray(thread.votes) ? (thread.votes[0]?.value ?? 0) : 0;
   const topLevel = thread.posts.filter((p) => !p.parentId);
@@ -141,8 +157,108 @@ export default async function ThreadPage({ params }: Props) {
     { name: thread.title, url: absoluteUrl(`/t/${thread.slug}`) },
   ];
 
+  const threadUrl = absoluteUrl(`/t/${thread.slug}`);
+  const personFor = (author: { name: string | null; username: string }) => ({
+    "@type": "Person" as const,
+    name: author.name ?? author.username,
+    url: absoluteUrl(`/u/${author.username}`),
+  });
+
+  /**
+   * A thread whose author accepted an answer is a solved question, and Google
+   * has a dedicated rich result for exactly that — answer count and vote count
+   * shown in the SERP. `DiscussionForumPosting` gets none of it, so describe the
+   * solved ones as `QAPage` and leave the rest as discussions.
+   */
+  const accepted = topLevel.find((p) => p.isAnswer);
+
+  /**
+   * The same four facts the byline shows a reader — author, when it was posted,
+   * views, replies — stated in a form a crawler can read. Views in particular
+   * had no representation in the markup at all: they are the one signal here
+   * that says how much attention a thread actually gets.
+   *
+   * Counts mirror the byline exactly (`thread.posts.length`, all replies), so
+   * the page and its structured data can never disagree.
+   */
+  const interactionStatistic = [
+    {
+      "@type": "InteractionCounter",
+      interactionType: "https://schema.org/ViewAction",
+      userInteractionCount: thread.viewCount,
+    },
+    {
+      "@type": "InteractionCounter",
+      interactionType: "https://schema.org/CommentAction",
+      userInteractionCount: thread.posts.length,
+    },
+    {
+      "@type": "InteractionCounter",
+      interactionType: "https://schema.org/LikeAction",
+      userInteractionCount: Math.max(0, thread.score),
+    },
+  ];
+
+  const answerFor = (post: (typeof topLevel)[number]) => ({
+    "@type": "Answer" as const,
+    text: toPlainText(post.body, 500),
+    url: `${threadUrl}#post-${post.id}`,
+    upvoteCount: Math.max(0, post.score),
+    datePublished: post.createdAt.toISOString(),
+    author: personFor(post.author),
+  });
+
+  const threadSchema = accepted
+    ? {
+        "@context": "https://schema.org",
+        "@type": "QAPage",
+        mainEntity: {
+          "@type": "Question",
+          name: thread.title,
+          text: toPlainText(thread.body, 1000),
+          // `answerCount` stays top-level only — a reply to an answer is a
+          // comment on it, not another answer. The byline's total reply count
+          // is carried by `interactionStatistic` below instead.
+          answerCount: topLevel.length,
+          upvoteCount: Math.max(0, thread.score),
+          datePublished: thread.createdAt.toISOString(),
+          dateModified: thread.updatedAt.toISOString(),
+          url: threadUrl,
+          author: personFor(thread.author),
+          interactionStatistic,
+          acceptedAnswer: answerFor(accepted),
+          ...(topLevel.length > 1
+            ? { suggestedAnswer: topLevel.filter((p) => !p.isAnswer).slice(0, 20).map(answerFor) }
+            : {}),
+        },
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "DiscussionForumPosting",
+        headline: thread.title,
+        articleBody: toPlainText(thread.body, 1000),
+        url: threadUrl,
+        datePublished: thread.createdAt.toISOString(),
+        dateModified: thread.updatedAt.toISOString(),
+        author: personFor(thread.author),
+        publisher: { "@type": "Organization", name: site.name },
+        // Photographs are the substance of most threads here; naming them lets
+        // the pages surface in image search rather than only in web results.
+        ...(thread.photos.length > 0
+          ? { image: thread.photos.map((p) => absoluteImageUrl(p.displayKey)) }
+          : {}),
+        interactionStatistic,
+        comment: thread.posts.slice(0, 20).map((p) => ({
+          "@type": "Comment",
+          text: toPlainText(p.body, 500),
+          datePublished: p.createdAt.toISOString(),
+          author: personFor(p.author),
+        })),
+      };
+
   return (
-    <div className="mx-auto max-w-4xl px-4 py-6">
+    <div className="mx-auto grid max-w-6xl gap-6 px-4 py-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="min-w-0">
       <nav aria-label="Breadcrumb" className="mb-4 text-sm text-slate-500 dark:text-slate-400">
         <ol className="flex flex-wrap items-center gap-1.5">
           <li><Link href="/" className="hover:underline">Home</Link></li>
@@ -172,7 +288,7 @@ export default async function ThreadPage({ params }: Props) {
 
             <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
               <Link href={`/u/${thread.author.username}`} className="flex items-center gap-2 hover:underline">
-                <Avatar user={thread.author} size={24} />
+                <Avatar user={thread.author} size={30} />
                 <span className="font-medium text-slate-700 dark:text-slate-300">
                   {thread.author.name ?? thread.author.username}
                 </span>
@@ -202,7 +318,7 @@ export default async function ThreadPage({ params }: Props) {
 
             {thread.photos.length > 0 && (
               <div className="mt-5 space-y-5">
-                <PhotoGallery photos={thread.photos.map(toPhotoView)} />
+                <PhotoGallery photos={thread.photos.map(toPhotoView)} context={thread.title} />
                 {thread.photos.map((photo) => {
                   const view = toPhotoView(photo);
                   return (
@@ -270,7 +386,7 @@ export default async function ThreadPage({ params }: Props) {
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2 text-sm">
                       <Link href={`/u/${post.author.username}`} className="flex items-center gap-2 hover:underline">
-                        <Avatar user={post.author} size={22} />
+                        <Avatar user={post.author} size={30} />
                         <span className="font-medium text-slate-800 dark:text-slate-200">
                           {post.author.name ?? post.author.username}
                         </span>
@@ -285,7 +401,7 @@ export default async function ThreadPage({ params }: Props) {
 
                     {post.photos.length > 0 && (
                       <div className="mt-3">
-                        <PhotoGallery photos={post.photos.map(toPhotoView)} />
+                        <PhotoGallery photos={post.photos.map(toPhotoView)} context={`Reply to “${thread.title}”`} />
                       </div>
                     )}
 
@@ -313,7 +429,7 @@ export default async function ThreadPage({ params }: Props) {
                           <li key={child.id} id={`post-${child.id}`}>
                             <div className="flex flex-wrap items-center gap-2 text-sm">
                               <Link href={`/u/${child.author.username}`} className="flex items-center gap-2 hover:underline">
-                                <Avatar user={child.author} size={20} />
+                                <Avatar user={child.author} size={26} />
                                 <span className="font-medium text-slate-800 dark:text-slate-200">
                                   {child.author.name ?? child.author.username}
                                 </span>
@@ -325,7 +441,7 @@ export default async function ThreadPage({ params }: Props) {
                             <MarkdownContent source={child.body} className="mt-1" />
                             {child.photos.length > 0 && (
                               <div className="mt-2">
-                                <PhotoGallery photos={child.photos.map(toPhotoView)} />
+                                <PhotoGallery photos={child.photos.map(toPhotoView)} context={`Reply to “${thread.title}”`} />
                               </div>
                             )}
                             <PostActions
@@ -353,45 +469,12 @@ export default async function ThreadPage({ params }: Props) {
         </div>
       </section>
 
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "DiscussionForumPosting",
-          headline: thread.title,
-          articleBody: toPlainText(thread.body, 1000),
-          url: absoluteUrl(`/t/${thread.slug}`),
-          datePublished: thread.createdAt.toISOString(),
-          dateModified: thread.updatedAt.toISOString(),
-          author: {
-            "@type": "Person",
-            name: thread.author.name ?? thread.author.username,
-            url: absoluteUrl(`/u/${thread.author.username}`),
-          },
-          publisher: { "@type": "Organization", name: site.name },
-          interactionStatistic: [
-            {
-              "@type": "InteractionCounter",
-              interactionType: "https://schema.org/CommentAction",
-              userInteractionCount: thread.posts.length,
-            },
-            {
-              "@type": "InteractionCounter",
-              interactionType: "https://schema.org/LikeAction",
-              userInteractionCount: Math.max(0, thread.score),
-            },
-          ],
-          comment: thread.posts.slice(0, 20).map((p) => ({
-            "@type": "Comment",
-            text: toPlainText(p.body, 500),
-            datePublished: p.createdAt.toISOString(),
-            author: {
-              "@type": "Person",
-              name: p.author.name ?? p.author.username,
-              url: absoluteUrl(`/u/${p.author.username}`),
-            },
-          })),
-        }}
-      />
+      <RelatedThreads threads={related} />
+      </div>
+
+      <ForumSidebar data={sidebar} />
+
+      <JsonLd data={threadSchema} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

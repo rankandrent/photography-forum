@@ -37,6 +37,9 @@ model User {
   website       String?
   instagram     String?
   role          Role      @default(USER)
+  isSimulated   Boolean   @default(false)
+  generatedByAi Boolean   @default(false)
+  personaJson   String?
   createdAt     DateTime  @default(now())
 
   accounts       Account[]
@@ -110,20 +113,22 @@ model Category {
 }
 
 model Thread {
-  id         String     @id @default(cuid())
-  slug       String     @unique
-  title      String
-  body       String
-  kind       ThreadKind @default(DISCUSSION)
-  authorId   String
-  categoryId String
-  pinned     Boolean    @default(false)
-  locked     Boolean    @default(false)
-  viewCount  Int        @default(0)
-  score      Int        @default(0)
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
-  lastPostAt DateTime   @default(now())
+  id          String     @id @default(cuid())
+  slug        String     @unique
+  title       String
+  body        String
+  kind        ThreadKind @default(DISCUSSION)
+  authorId    String
+  categoryId  String
+  pinned      Boolean    @default(false)
+  locked      Boolean    @default(false)
+  viewCount   Int        @default(0)
+  score       Int        @default(0)
+  isSimulated Boolean    @default(false)
+  topic       String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  lastPostAt  DateTime   @default(now())
 
   author   User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
   category Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
@@ -138,15 +143,19 @@ model Thread {
 }
 
 model Post {
-  id        String    @id @default(cuid())
-  threadId  String
-  authorId  String
-  body      String
-  parentId  String?
-  isAnswer  Boolean   @default(false)
-  score     Int       @default(0)
-  createdAt DateTime  @default(now())
-  editedAt  DateTime?
+  id            String    @id @default(cuid())
+  threadId      String
+  authorId      String
+  body          String
+  parentId      String?
+  isAnswer      Boolean   @default(false)
+  score         Int       @default(0)
+  isSimulated   Boolean   @default(false)
+  generatedByAi Boolean   @default(false)
+  aiAgent       String?
+  storyType     String?
+  createdAt     DateTime  @default(now())
+  editedAt      DateTime?
 
   thread   Thread  @relation(fields: [threadId], references: [id], onDelete: Cascade)
   author   User    @relation(fields: [authorId], references: [id], onDelete: Cascade)
@@ -177,12 +186,13 @@ model ThreadTag {
 }
 
 model Vote {
-  id        String   @id @default(cuid())
-  userId    String
-  threadId  String?
-  postId    String?
-  value     Int
-  createdAt DateTime @default(now())
+  id          String   @id @default(cuid())
+  userId      String
+  threadId    String?
+  postId      String?
+  value       Int
+  isSimulated Boolean  @default(false)
+  createdAt   DateTime @default(now())
 
   user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   thread Thread? @relation(fields: [threadId], references: [id], onDelete: Cascade)
@@ -378,3 +388,104 @@ model Notification {
 
   @@index([userId, read])
 }
+
+// ---------------------------------------------------------------- content --
+// The content pipeline: research keywords the forum should have a thread for,
+// draft the opening post, publish it under the owner's account.
+//
+// Everything it writes is attributed to a real account the owner controls — it
+// never invents members. Two rules are enforced in the generator prompt rather
+// than here, because they are what keeps the output publishable: a draft may
+// not claim personal experience the owner has not had, and every factual claim
+// carries a source.
+
+enum ContentStatus {
+  QUEUED
+  DRAFTED
+  PUBLISHED
+  FAILED
+  SKIPPED
+}
+
+/// A keyword the forum wants a thread for, with the metrics that justified it.
+model KeywordTarget {
+  id               String        @id @default(cuid())
+  keyword          String        @unique
+  volume           Int?
+  difficulty       Int?
+  trafficPotential Int?
+  cluster          String?
+  /// Marketing funnel stage: TOFU (awareness), MOFU (consideration), BOFU
+  /// (decision). Drives how the post is framed — a beginner explainer reads
+  /// nothing like a buying question — and lets the queue be balanced across
+  /// stages instead of drowning in one.
+  funnel           String        @default("TOFU")
+  /// Comma-separated SERP features. "discussion" means Google shows a forum
+  /// block for this query — the whole reason a thread here can rank.
+  serpFeatures     String        @default("")
+  /// Category slug the thread should land in. Resolved when the draft is made.
+  categorySlug     String?
+  status           ContentStatus @default(QUEUED)
+  priority         Int           @default(0)
+  createdAt        DateTime      @default(now())
+
+  drafts ContentDraft[]
+
+  @@index([status, priority])
+}
+
+/// One generated opening post. Kept after publishing so the owner can review
+/// what went out, and so a failed run leaves a readable error behind.
+model ContentDraft {
+  id         String        @id @default(cuid())
+  keywordId  String
+  title      String
+  body       String
+  tags       String        @default("")
+  kind       ThreadKind    @default(DISCUSSION)
+  categoryId String
+  /// JSON array of { title, url } the model cited.
+  sources    String        @default("[]")
+  model      String
+  inputTokens  Int?
+  outputTokens Int?
+  status     ContentStatus @default(DRAFTED)
+  /// Set once published. Plain columns rather than a relation so the Thread
+  /// model stays untouched and deleting a thread never cascades into the log.
+  threadId   String?
+  threadSlug String?
+  error      String?
+  createdAt  DateTime      @default(now())
+  publishedAt DateTime?
+
+  keyword KeywordTarget @relation(fields: [keywordId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+}
+
+// ------------------------------------------------------------- simulation ---
+
+model SimulationLog {
+  id        String   @id @default(cuid())
+  agent     String
+  action    String
+  threadId  String?
+  details   String
+  status    String   @default("SUCCESS")
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+model SimulationSettings {
+  id              String   @id @default("default")
+  enabled         Boolean  @default(true)
+  fastDemoMode    Boolean  @default(false)
+  modelName       String   @default("anthropic/claude-opus-5")
+  maxNestingDepth Int      @default(3)
+  minDelayMs      Int      @default(2000)
+  maxDelayMs      Int      @default(5000)
+  upvoteRangeMax  Int      @default(20)
+  updatedAt       DateTime @updatedAt
+}
+

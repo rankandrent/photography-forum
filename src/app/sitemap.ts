@@ -13,24 +13,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // over: fall back to the static pages and let the hourly revalidation pick up
   // the real content on the first request after the database is live.
   let threads: { slug: string; updatedAt: Date }[] = [];
-  let categories: { slug: string }[] = [];
+  let categories: { id: string; slug: string }[] = [];
+  let categoryFreshness: { categoryId: string; _max: { lastPostAt: Date | null } }[] = [];
   let gear: { slug: string }[] = [];
   let tags: { slug: string }[] = [];
   let challenges: { slug: string; endsAt: Date }[] = [];
   let users: { username: string }[] = [];
 
   try {
-    [threads, categories, gear, tags, challenges, users] = await Promise.all([
+    [threads, categories, gear, tags, challenges, users, categoryFreshness] = await Promise.all([
       prisma.thread.findMany({
         select: { slug: true, updatedAt: true },
         orderBy: { lastPostAt: "desc" },
         take: 20000,
       }),
-      prisma.category.findMany({ select: { slug: true } }),
+      prisma.category.findMany({ select: { id: true, slug: true } }),
       prisma.gear.findMany({ select: { slug: true } }),
-      prisma.tag.findMany({ select: { slug: true } }),
+      // Only tags that actually hold a thread. A bulk tag import leaves
+      // hundreds of empty ones behind, and submitting an empty page to Google
+      // is submitting thin content — it costs crawl budget and earns nothing.
+      prisma.tag.findMany({
+        where: { threads: { some: {} } },
+        select: { slug: true },
+      }),
       prisma.challenge.findMany({ select: { slug: true, endsAt: true } }),
       prisma.user.findMany({ select: { username: true }, take: 5000 }),
+      // Category has no timestamp of its own — the page changes when a thread
+      // in it does, so that is the date a crawler should be given.
+      prisma.thread.groupBy({ by: ["categoryId"], _max: { lastPostAt: true } }),
     ]);
   } catch (error) {
     console.warn("sitemap: database unavailable, emitting static pages only", error);
@@ -50,11 +60,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...staticPages,
-    ...categories.map((c) => ({
-      url: `${base}/c/${c.slug}`,
-      changeFrequency: "daily" as const,
-      priority: 0.8,
-    })),
+    ...categories.map((c) => {
+      const lastPostAt = categoryFreshness.find((f) => f.categoryId === c.id)?._max.lastPostAt;
+      return {
+        url: `${base}/c/${c.slug}`,
+        ...(lastPostAt ? { lastModified: lastPostAt } : {}),
+        changeFrequency: "daily" as const,
+        priority: 0.8,
+      };
+    }),
     ...threads.map((t) => ({
       url: `${base}/t/${t.slug}`,
       lastModified: t.updatedAt,

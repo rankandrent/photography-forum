@@ -9,6 +9,8 @@ import { prisma } from "@/lib/prisma";
 import { signIn, signOut } from "@/lib/auth";
 import { requireUser } from "@/lib/session";
 import { slugify } from "@/lib/slug";
+import { processUpload, UploadError } from "@/lib/photos";
+import { urlFor } from "@/lib/storage";
 import { fail, type ActionState } from "@/actions/types";
 
 const registerSchema = z.object({
@@ -111,6 +113,28 @@ export async function updateProfileAction(
     return fail("Website must start with http:// or https://");
   }
 
+  // The avatar is optional: submitting the form without picking a file leaves
+  // whatever is already there, and "remove" clears it back to the generated one.
+  let image: string | null | undefined;
+
+  if (String(formData.get("removeAvatar") ?? "") === "1") {
+    image = null;
+  } else {
+    const file = formData.get("avatar");
+    if (file instanceof File && file.size > 0) {
+      try {
+        const processed = await processUpload(file);
+        // The square thumbnail derivative is exactly what an avatar needs, and
+        // it means profile photos go through the same validation, resizing and
+        // stripping that every other upload does.
+        image = urlFor(processed.thumbKey);
+      } catch (error) {
+        if (error instanceof UploadError) return fail(error.message);
+        throw error;
+      }
+    }
+  }
+
   await prisma.user.update({
     where: { id: user.id },
     data: {
@@ -119,10 +143,12 @@ export async function updateProfileAction(
       location: parsed.data.location || null,
       website: website || null,
       instagram: parsed.data.instagram || null,
+      ...(image !== undefined ? { image } : {}),
     },
   });
 
   revalidatePath(`/u/${user.username}`);
+  revalidatePath("/members");
   return { ok: true, message: "Profile saved." };
 }
 

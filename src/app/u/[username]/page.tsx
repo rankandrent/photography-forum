@@ -12,24 +12,27 @@ import { EmptyState } from "@/components/EmptyState";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl } from "@/lib/site";
 import { urlFor } from "@/lib/storage";
+import { listingCanonical, missingPageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ username: string }>;
   searchParams: Promise<{ page?: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { username } = await params;
+  const { page } = await searchParams;
   const user = await prisma.user.findUnique({
     where: { username },
     select: { username: true, name: true, bio: true },
   });
-  if (!user) return { title: "Member not found" };
+  if (!user) return missingPageMetadata("Member not found");
   const label = user.name ?? user.username;
+  const n = Number(page ?? 1) || 1;
   return {
-    title: `${label} (@${user.username})`,
+    title: n > 1 ? `${label} (@${user.username}) — page ${n}` : `${label} (@${user.username})`,
     description: user.bio ?? `${label}'s photos, threads and gear on the photography forum.`,
-    alternates: { canonical: `/u/${user.username}` },
+    alternates: { canonical: listingCanonical(`/u/${user.username}`, page) },
   };
 }
 
@@ -49,6 +52,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
       website: true,
       instagram: true,
       role: true,
+      isSimulated: true,
       createdAt: true,
       gear: { select: { gear: { select: { id: true, slug: true, name: true, type: true } } } },
       _count: { select: { threads: true, posts: true, photos: true, critiques: true } },
@@ -78,11 +82,18 @@ export default async function ProfilePage({ params, searchParams }: Props) {
             {profile.name ?? profile.username}
           </h1>
           <p className="text-sm text-slate-500">@{profile.username}</p>
-          {profile.role !== "USER" && (
-            <span className="mt-1 inline-block rounded bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
-              {profile.role === "ADMIN" ? "Admin" : "Moderator"}
-            </span>
-          )}
+          <div className="mt-1 flex flex-wrap gap-2">
+            {profile.role !== "USER" && (
+              <span className="inline-block rounded bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
+                {profile.role === "ADMIN" ? "Admin" : "Moderator"}
+              </span>
+            )}
+            {profile.isSimulated && (
+              <span className="inline-block rounded bg-purple-100 px-2 py-0.5 text-xs font-semibold text-purple-800 dark:bg-purple-500/15 dark:text-purple-300 ring-1 ring-purple-500/30">
+                🤖 Simulated AI Profile
+              </span>
+            )}
+          </div>
           {profile.bio && <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">{profile.bio}</p>}
 
           <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">

@@ -6,6 +6,7 @@ import { idle } from "@/actions/types";
 import { SubmitButton } from "@/components/SubmitButton";
 import { FormError } from "@/components/FormError";
 import { ImagePicker } from "@/components/ImagePicker";
+import { MarkdownEditor } from "@/components/MarkdownEditor";
 
 const KINDS = [
   { value: "DISCUSSION", label: "Discussion", help: "A question or conversation" },
@@ -91,14 +92,13 @@ export function NewThreadForm({
         <label htmlFor="body" className="mb-1.5 block text-sm font-medium text-slate-700 dark:text-slate-300">
           Body
         </label>
-        <textarea
+        <MarkdownEditor
           id="body"
           name="body"
           rows={10}
           required
           minLength={10}
-          placeholder={"Markdown supported: **bold**, *italic*, `code`, > quote, - lists, [links](https://example.com)"}
-          className={`${input} font-mono`}
+          placeholder="Ask your question, or share what you have found. Use the toolbar above to format."
         />
       </div>
 

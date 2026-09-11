@@ -10,6 +10,7 @@ const NAV = [
   { href: "/categories", label: "Categories" },
   { href: "/gear", label: "Gear" },
   { href: "/challenges", label: "Challenges" },
+  { href: "/admin/simulation", label: "🤖 AI Simulation" },
 ];
 
 export async function Header() {
@@ -82,7 +83,7 @@ export async function Header() {
               )}
 
               <Link href={`/u/${user.username}`} className="rounded-lg p-1" aria-label="Your profile">
-                <Avatar user={user} size={28} />
+                <Avatar user={user} size={32} />
               </Link>
 
               <form action={logoutAction}>

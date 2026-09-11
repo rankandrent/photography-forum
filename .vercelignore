@@ -1,0 +1,11 @@
+# Deliberately does NOT exclude public/uploads: .gitignore keeps the seeded
+# photos out of git, but they must ship with the deploy or every seeded thread
+# renders a broken image.
+node_modules
+.next
+.git
+.env
+.env.local
+*.log
+.DS_Store
+tsconfig.tsbuildinfo

@@ -8,8 +8,24 @@ import type { PhotoView } from "@/lib/photo-view";
  * dimensions so the layout never jumps while they load (CLS is a ranking
  * signal, and a photo forum is nothing but images).
  */
-export function PhotoGallery({ photos }: { photos: PhotoView[] }) {
+export function PhotoGallery({ photos, context }: { photos: PhotoView[]; context?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  /**
+   * Most uploads have no caption, and `alt=""` marks an image as decorative —
+   * wrong here, where the photograph *is* the post. Fall back to the thread or
+   * gear name plus the camera the shot came from, which is both a truthful
+   * description for a screen reader and the text image search indexes on.
+   */
+  const describe = (photo: PhotoView, index: number) => {
+    if (photo.caption) return photo.caption;
+    const subject = context ?? "Member photo";
+    const nth = photos.length > 1 ? ` (${index + 1} of ${photos.length})` : "";
+    // The gear pages already name the camera in their context string; repeating
+    // it would read as "…Canon EOS R5 — shot on Canon EOS R5".
+    const camera = photo.camera && !subject.includes(photo.camera) ? photo.camera : null;
+    return camera ? `${subject} — shot on ${camera}${nth}` : `${subject}${nth}`;
+  };
 
   const close = useCallback(() => setOpenIndex(null), []);
   const step = useCallback(
@@ -51,12 +67,12 @@ export function PhotoGallery({ photos }: { photos: PhotoView[] }) {
             type="button"
             onClick={() => setOpenIndex(index)}
             className="group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800"
-            aria-label={photo.caption ?? "Open photo"}
+            aria-label={`Open photo: ${describe(photo, index)}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={photos.length === 1 ? photo.src : photo.thumb}
-              alt={photo.caption ?? ""}
+              alt={describe(photo, index)}
               width={photo.width}
               height={photo.height}
               loading="lazy"
@@ -108,7 +124,7 @@ export function PhotoGallery({ photos }: { photos: PhotoView[] }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={active.src}
-              alt={active.caption ?? ""}
+              alt={describe(active, openIndex ?? 0)}
               onClick={(e) => e.stopPropagation()}
               className="max-h-full max-w-full object-contain"
             />

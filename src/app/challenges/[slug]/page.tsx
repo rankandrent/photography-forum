@@ -8,6 +8,7 @@ import { ExifStrip } from "@/components/ExifStrip";
 import { ChallengeEntryForm, EntryVoteButton } from "@/components/ChallengeForms";
 import { Avatar } from "@/components/Avatar";
 import { urlFor } from "@/lib/storage";
+import { missingPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     where: { slug },
     select: { title: true, theme: true, description: true },
   });
-  if (!challenge) return { title: "Challenge not found" };
+  if (!challenge) return missingPageMetadata("Challenge not found");
   return {
     title: challenge.title,
     description: challenge.description || challenge.theme,
@@ -141,7 +142,7 @@ export default async function ChallengePage({ params }: Props) {
                   <div className="p-4">
                     <div className="flex items-center justify-between gap-3">
                       <Link href={`/u/${entry.user.username}`} className="flex items-center gap-2 text-sm hover:underline">
-                        <Avatar user={entry.user} size={24} />
+                        <Avatar user={entry.user} size={30} />
                         <span className="font-medium text-slate-800 dark:text-slate-200">
                           {entry.user.name ?? entry.user.username}
                         </span>

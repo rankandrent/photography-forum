@@ -14,16 +14,24 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "prisma studio",
     "check:exif": "tsx scripts/check-exif.mts",
-    "check:e2e": "tsx scripts/e2e-smoke.mts"
+    "check:e2e": "tsx scripts/e2e-smoke.mts",
+    "seed:keywords": "tsx scripts/seed-keywords.mts",
+    "content:run": "tsx scripts/run-pipeline.mts",
+    "import:flickr": "tsx scripts/import-flickr.mts",
+    "seed:tags": "tsx scripts/seed-tags.mts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.124.0",
     "@auth/prisma-adapter": "2.11.3",
     "@aws-sdk/client-s3": "^3.933.0",
+    "@dicebear/core": "^10.7.0",
+    "@dicebear/styles": "^10.6.0",
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "7.10.0",
+    "@vercel/blob": "^2.8.0",
     "bcryptjs": "3.0.3",
     "exifr": "7.1.3",
     "next": "16.3.4",
