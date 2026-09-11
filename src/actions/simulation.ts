@@ -75,7 +75,7 @@ export async function getSimulationSettingsAction() {
           fastDemoMode: false,
           openRouterApiKey: process.env.OPENROUTER_API_KEY || "",
           modelName: process.env.OPENROUTER_MODEL || "anthropic/claude-3.5-sonnet",
-          modelPool: "anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct",
+          modelPool: "anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct,openai/gpt-4o,anthropic/claude-3-haiku,meta-llama/llama-3.1-8b-instruct,deepseek/deepseek-r1,google/gemini-pro-1.5,cohere/command-r-plus,perplexity/sonar,amazon/nova-micro-v1",
           maxNestingDepth: 3,
           minDelayMs: 2000,
           maxDelayMs: 5000,

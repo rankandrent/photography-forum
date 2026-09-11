@@ -120,6 +120,14 @@ export const DEFAULT_MODEL_POOL = [
   "google/gemini-2.0-flash-001",
   "mistralai/mistral-small-24b-instruct-2501",
   "qwen/qwen-2.5-72b-instruct",
+  "openai/gpt-4o",
+  "anthropic/claude-3-haiku",
+  "meta-llama/llama-3.1-8b-instruct",
+  "deepseek/deepseek-r1",
+  "google/gemini-pro-1.5",
+  "cohere/command-r-plus",
+  "perplexity/sonar",
+  "amazon/nova-micro-v1",
 ];
 
 /** Topic Discovery Agent: Generates new photography questions and checks for duplicates */

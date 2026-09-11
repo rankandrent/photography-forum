@@ -483,7 +483,7 @@ model SimulationSettings {
   fastDemoMode    Boolean  @default(false)
   openRouterApiKey String?
   modelName       String   @default("anthropic/claude-3.5-sonnet")
-  modelPool       String   @default("anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct")
+  modelPool       String   @default("anthropic/claude-3.5-sonnet,openai/gpt-4o-mini,meta-llama/llama-3.3-70b-instruct,deepseek/deepseek-chat,google/gemini-2.0-flash-001,mistralai/mistral-small-24b-instruct-2501,qwen/qwen-2.5-72b-instruct,openai/gpt-4o,anthropic/claude-3-haiku,meta-llama/llama-3.1-8b-instruct,deepseek/deepseek-r1,google/gemini-pro-1.5,cohere/command-r-plus,perplexity/sonar,amazon/nova-micro-v1")
   maxNestingDepth Int      @default(3)
   minDelayMs      Int      @default(2000)
   maxDelayMs      Int      @default(5000)
