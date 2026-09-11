@@ -31,8 +31,40 @@ export async function logSimulationStep(
 }
 
 /**
- * Fast Demo Mode: Executes a complete multi-user thread simulation cycle in seconds
- * for university live demonstration.
+ * Diverse photography topic prompts so each run produces a unique thread.
+ * The engine picks a random one (or uses the user's custom topic).
+ */
+const TOPIC_PROMPTS = [
+  "Best mirrorless camera for travel photography under $1500",
+  "How to photograph the Milky Way for beginners",
+  "Is the Fujifilm X100VI worth the hype in 2024?",
+  "Best lenses for Canon EOS R6 Mark III",
+  "Street photography tips for shy people",
+  "How do you edit golden hour portraits in Lightroom?",
+  "Sony a7CR vs Nikon Z6 III for landscape photography",
+  "What tripod do you recommend for hiking?",
+  "Film simulation recipes for Fujifilm — share your favorites",
+  "Why are my indoor photos always blurry? (beginner help)",
+  "Best budget flash for wedding photography",
+  "Sigma 35mm f/1.4 Art vs Sony 35mm f/1.4 GM comparison",
+  "How to get clients as a new portrait photographer",
+  "Macro photography gear essentials for flower close-ups",
+  "Is full frame really worth it over APS-C in 2024?",
+  "Best camera bag for international travel with 2 bodies",
+  "How to shoot in manual mode — a step by step guide",
+  "Drone photography tips for real estate — DJI Mini 4 Pro",
+  "What's your favorite photo you've ever taken and why?",
+  "Help me choose: Canon R7 vs Sony a6700 for wildlife",
+  "How to create moody dark portrait edits in Capture One",
+  "Best vintage lenses to adapt to Sony E-mount",
+  "Concert photography settings and tips for beginners",
+  "What ND filter do you use for waterfall long exposures?",
+  "How to photograph your kids without them looking awkward",
+];
+
+/**
+ * Fast Demo Mode: Executes a complete multi-user thread simulation cycle
+ * with RANDOMIZED authors, diverse topics, and naturally staggered timestamps.
  */
 export async function runFastDemo(customTopic?: string) {
   // 0. Load Simulation Settings & Model Rotation Pool
@@ -42,28 +74,29 @@ export async function runFastDemo(customTopic?: string) {
   const rawPool = settings?.modelPool || DEFAULT_MODEL_POOL.join(",");
   const pool = rawPool.split(",").map((m: string) => m.trim()).filter(Boolean);
 
-  // Helper to pick model for step i
+  // Helper: pick model for step i (strict rotation)
   const getModel = (index: number) => pool[index % pool.length] || DEFAULT_MODEL_POOL[0];
 
-  // 1. Ensure simulated personas exist in DB
+  // 1. Ensure all 30 simulated personas exist in DB
   const users = await ensureSimulatedUsers();
-  const travelCamGuy = users.find((u) => u.username === "TravelCamGuy") || users[0];
-  const cameraNerd24 = users.find((u) => u.username === "CameraNerd24") || users[1];
-  const beginnerPhotog = users.find((u) => u.username === "BeginnerPhotog") || users[2];
-  const photoMike = users.find((u) => u.username === "PhotoMike") || users[3];
-  const sarahShoots = users.find((u) => u.username === "SarahShoots") || users[4];
-
   await logSimulationStep("PersonaAgent", "Ensure Users", `Verified ${users.length} simulated user accounts.`);
 
-  // 2. Discover Topic & Create Thread (Model 0)
-  const threadModel = getModel(0);
-  const topicData = await topicDiscoveryAgent(customTopic, { modelName: threadModel, apiKey });
+  // 2. Pick a RANDOM topic from pool (avoid repeating the same thread)
+  const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
+
+  // Randomly pick a MODEL offset so each run starts from a different model
+  const modelOffset = Math.floor(Math.random() * pool.length);
+  const threadModel = getModel(modelOffset);
+
+  const topicData = await topicDiscoveryAgent(topicPrompt, { modelName: threadModel, apiKey });
   await logSimulationStep("TopicDiscoveryAgent", "Topic Discovery", `Found topic using [${threadModel}]: ${topicData.title}`);
 
-  // Fetch or fallback category
+  // 3. Fetch or fallback category
   let category = await prisma.category.findUnique({ where: { slug: topicData.categorySlug } });
   if (!category) {
-    category = (await prisma.category.findFirst()) || {
+    // Try to pick a random existing category for variety
+    const allCategories = await prisma.category.findMany();
+    category = allCategories[Math.floor(Math.random() * allCategories.length)] || {
       id: "cmtty57ck000004jop8h91n1e",
       slug: "gear-talk",
       name: "Gear talk",
@@ -77,14 +110,47 @@ export async function runFastDemo(customTopic?: string) {
   const uniqueSuffix = Math.random().toString(36).substring(2, 8);
   const threadSlug = `${baseSlug}-${uniqueSuffix}`;
 
-  // Staggered Timestamps for Time-Lapse Realism
-  const now = new Date();
-  const threadDate = new Date(now.getTime() - 28 * 3600 * 1000); // 28 hours ago (Yesterday)
-  const post1Date = new Date(now.getTime() - 24 * 3600 * 1000);  // 24 hours ago
-  const post2Date = new Date(now.getTime() - 11 * 3600 * 1000);  // 11 hours ago (Today morning)
-  const post3Date = new Date(now.getTime() - 3 * 3600 * 1000);   // 3 hours ago
-  const post4Date = new Date(now.getTime() - 25 * 60 * 1000);    // 25 minutes ago
+  // 4. Pick 5 UNIQUE RANDOM personas for this thread (author + 4 repliers)
+  const shuffled = [...SIMULATED_PERSONAS].sort(() => Math.random() - 0.5);
+  const threadAuthorPersona = shuffled[0];
+  const replier1Persona = shuffled[1];
+  const replier2Persona = shuffled[2];
+  const replier3Persona = shuffled[3];
+  const replier4Persona = shuffled[4];
 
+  const threadAuthorUser = users.find((u) => u.username === threadAuthorPersona.username) || users[0];
+  const replier1User = users.find((u) => u.username === replier1Persona.username) || users[1];
+  const replier2User = users.find((u) => u.username === replier2Persona.username) || users[2];
+  const replier3User = users.find((u) => u.username === replier3Persona.username) || users[3];
+  const replier4User = users.find((u) => u.username === replier4Persona.username) || users[4];
+
+  // 5. STAGGERED TIMESTAMPS — wide spread across 3 days for realism
+  //    Random jitter so every run gets different relative times
+  const now = new Date();
+  const hoursAgo = (h: number) => new Date(now.getTime() - h * 3600 * 1000);
+  const minsAgo = (m: number) => new Date(now.getTime() - m * 60 * 1000);
+
+  // Thread: 2–3 days ago (random between 48–72 hours)
+  const threadHoursAgo = 48 + Math.floor(Math.random() * 24);
+  const threadDate = hoursAgo(threadHoursAgo);
+
+  // Reply 1: 1–2 days ago (random 24–48 hours)
+  const reply1HoursAgo = 24 + Math.floor(Math.random() * 24);
+  const post1Date = hoursAgo(reply1HoursAgo);
+
+  // Reply 2 (nested): 8–18 hours ago
+  const reply2HoursAgo = 8 + Math.floor(Math.random() * 10);
+  const post2Date = hoursAgo(reply2HoursAgo);
+
+  // Reply 3 (nested personal story): 2–6 hours ago
+  const reply3HoursAgo = 2 + Math.floor(Math.random() * 4);
+  const post3Date = hoursAgo(reply3HoursAgo);
+
+  // Reply 4 (top-level): 12–55 minutes ago
+  const reply4MinsAgo = 12 + Math.floor(Math.random() * 43);
+  const post4Date = minsAgo(reply4MinsAgo);
+
+  // 6. Create Thread by RANDOM author
   const thread = await prisma.thread.create({
     data: {
       title: topicData.title,
@@ -92,30 +158,29 @@ export async function runFastDemo(customTopic?: string) {
       slug: threadSlug,
       topic: topicData.topic,
       categoryId: category.id,
-      authorId: travelCamGuy.id,
+      authorId: threadAuthorUser.id,
       isSimulated: true,
       createdAt: threadDate,
       lastPostAt: post4Date,
     },
   });
 
-  await logSimulationStep("ThreadAgent", "Thread Created", `@TravelCamGuy posted thread using [${threadModel}]`, thread.id);
+  await logSimulationStep("ThreadAgent", "Thread Created", `@${threadAuthorUser.username} posted thread using [${threadModel}]`, thread.id);
 
-  // 3. Research Agent (Model 1)
-  const researchModel = getModel(1);
+  // 7. Research Agent (different model)
+  const researchModel = getModel(modelOffset + 1);
   const researchFacts = await researchAgent(topicData.title, { modelName: researchModel, apiKey });
   await logSimulationStep("ResearchAgent", "Fact Extraction", `Grounded facts gathered using [${researchModel}].`, thread.id);
 
   const postIds: string[] = [];
 
-  // 4. First Top-Level Reply by CameraNerd24 (Model 2)
-  const model2 = getModel(2);
-  const personaNerd = SIMULATED_PERSONAS.find((p) => p.username === "CameraNerd24")!;
+  // 8. First Top-Level Reply (Random replier 1, different model)
+  const model2 = getModel(modelOffset + 2);
   const reply1Body = await discussionAgent({
     threadTitle: thread.title,
     threadBody: thread.body,
     researchData: researchFacts,
-    persona: personaNerd,
+    persona: replier1Persona,
     storyType: "product_recommendation",
     categorySlug: category.slug,
     options: { modelName: model2, apiKey },
@@ -124,7 +189,7 @@ export async function runFastDemo(customTopic?: string) {
   const post1 = await prisma.post.create({
     data: {
       threadId: thread.id,
-      authorId: cameraNerd24.id,
+      authorId: replier1User.id,
       body: reply1Body,
       isSimulated: true,
       generatedByAi: true,
@@ -133,17 +198,16 @@ export async function runFastDemo(customTopic?: string) {
     },
   });
   postIds.push(post1.id);
-  await logSimulationStep("AnswerAgent", "First Reply", `@CameraNerd24 replied using [${model2}].`, thread.id);
+  await logSimulationStep("AnswerAgent", "First Reply", `@${replier1User.username} replied using [${model2}].`, thread.id);
 
-  // 5. Nested Reply 1.1 by BeginnerPhotog (Model 3)
-  const model3 = getModel(3);
-  const personaBeginner = SIMULATED_PERSONAS.find((p) => p.username === "BeginnerPhotog")!;
+  // 9. Nested Reply (replier 2 to replier 1)
+  const model3 = getModel(modelOffset + 3);
   const reply2Body = await discussionAgent({
     threadTitle: thread.title,
     threadBody: thread.body,
     researchData: researchFacts,
-    parentPost: { id: post1.id, authorUsername: cameraNerd24.username, body: post1.body },
-    persona: personaBeginner,
+    parentPost: { id: post1.id, authorUsername: replier1User.username, body: post1.body },
+    persona: replier2Persona,
     categorySlug: category.slug,
     options: { modelName: model3, apiKey },
   });
@@ -152,7 +216,7 @@ export async function runFastDemo(customTopic?: string) {
     data: {
       threadId: thread.id,
       parentId: post1.id,
-      authorId: beginnerPhotog.id,
+      authorId: replier2User.id,
       body: reply2Body,
       isSimulated: true,
       generatedByAi: true,
@@ -161,17 +225,16 @@ export async function runFastDemo(customTopic?: string) {
     },
   });
   postIds.push(post2.id);
-  await logSimulationStep("DiscussionAgent", "Nested Reply", `@BeginnerPhotog replied to @CameraNerd24 using [${model3}].`, thread.id);
+  await logSimulationStep("DiscussionAgent", "Nested Reply", `@${replier2User.username} replied to @${replier1User.username} using [${model3}].`, thread.id);
 
-  // 6. Nested Reply 1.1.1 by PhotoMike with simulated personal story (Model 4)
-  const model4 = getModel(4);
-  const personaMike = SIMULATED_PERSONAS.find((p) => p.username === "PhotoMike")!;
+  // 10. Deep Nested Reply with personal story (replier 3)
+  const model4 = getModel(modelOffset + 4);
   const reply3Body = await discussionAgent({
     threadTitle: thread.title,
     threadBody: thread.body,
     researchData: researchFacts,
-    parentPost: { id: post2.id, authorUsername: beginnerPhotog.username, body: post2.body },
-    persona: personaMike,
+    parentPost: { id: post2.id, authorUsername: replier2User.username, body: post2.body },
+    persona: replier3Persona,
     storyType: "simulated_personal_experience",
     categorySlug: category.slug,
     options: { modelName: model4, apiKey },
@@ -181,7 +244,7 @@ export async function runFastDemo(customTopic?: string) {
     data: {
       threadId: thread.id,
       parentId: post2.id,
-      authorId: photoMike.id,
+      authorId: replier3User.id,
       body: reply3Body,
       isSimulated: true,
       generatedByAi: true,
@@ -191,16 +254,15 @@ export async function runFastDemo(customTopic?: string) {
     },
   });
   postIds.push(post3.id);
-  await logSimulationStep("DiscussionAgent", "Personal Story Reply", `@PhotoMike shared personal story using [${model4}].`, thread.id);
+  await logSimulationStep("DiscussionAgent", "Personal Story Reply", `@${replier3User.username} shared personal story using [${model4}].`, thread.id);
 
-  // 7. Top-Level Reply by SarahShoots (Model 5)
-  const model5 = getModel(5);
-  const personaSarah = SIMULATED_PERSONAS.find((p) => p.username === "SarahShoots")!;
+  // 11. Top-Level Reply (replier 4)
+  const model5 = getModel(modelOffset + 5);
   const reply4Body = await discussionAgent({
     threadTitle: thread.title,
     threadBody: thread.body,
     researchData: researchFacts,
-    persona: personaSarah,
+    persona: replier4Persona,
     storyType: category.slug === "critique" ? "critique" : "product_recommendation",
     categorySlug: category.slug,
     options: { modelName: model5, apiKey },
@@ -209,7 +271,7 @@ export async function runFastDemo(customTopic?: string) {
   const post4 = await prisma.post.create({
     data: {
       threadId: thread.id,
-      authorId: sarahShoots.id,
+      authorId: replier4User.id,
       body: reply4Body,
       isSimulated: true,
       generatedByAi: true,
@@ -225,7 +287,7 @@ export async function runFastDemo(customTopic?: string) {
     data: { lastPostAt: post4Date },
   });
 
-  // 8. Engagement Agent (Simulated Upvotes / Downvotes)
+  // 12. Engagement Agent (Simulated Upvotes / Downvotes)
   await engagementAgent(thread.id, postIds);
   await logSimulationStep("EngagementAgent", "Simulated Voting", `Generated simulated upvotes for thread and posts.`, thread.id);
 
