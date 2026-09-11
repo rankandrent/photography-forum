@@ -6,12 +6,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
-        // These produce endless near-duplicate URLs — crawl budget, not content.
-        disallow: ["/api/", "/search", "/notifications", "/moderation", "/new", "/login", "/setup"],
+        disallow: "/",
       },
     ],
-    sitemap: `${siteUrl()}/sitemap.xml`,
     host: siteUrl(),
   };
 }

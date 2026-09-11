@@ -23,7 +23,11 @@ export const metadata: Metadata = {
     "photography community",
   ],
   alternates: {
-    canonical: "/",
+    // Deliberately no `canonical` here. Next inherits it into every page that
+    // does not set its own, so a root canonical of "/" made each of those —
+    // including the not-found states — announce itself as a copy of the
+    // homepage. The home page sets its own; pages that set none now emit none,
+    // which is the correct default.
     types: { "application/rss+xml": "/feed.xml" },
   },
   openGraph: {
@@ -41,9 +45,9 @@ export const metadata: Metadata = {
     description: site.description,
   },
   robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
   },
 };
 
