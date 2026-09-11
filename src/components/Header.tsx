@@ -10,7 +10,6 @@ const NAV = [
   { href: "/categories", label: "Categories" },
   { href: "/gear", label: "Gear" },
   { href: "/challenges", label: "Challenges" },
-  { href: "/admin/simulation", label: "🤖 AI Simulation" },
 ];
 
 export async function Header() {

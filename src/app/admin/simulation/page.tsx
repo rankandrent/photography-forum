@@ -8,9 +8,14 @@ import {
   getSimulationStatsAction,
   getSimulationSettingsAction,
   updateSimulationSettingsAction,
+  verifyAdminPasswordAction,
 } from "@/actions/simulation";
 
 export default function AdminSimulationPage() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [authError, setAuthError] = useState<string | null>(null);
+  const [authPending, setAuthPending] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [customTopic, setCustomTopic] = useState("");
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -112,6 +117,81 @@ export default function AdminSimulationPage() {
       }
     });
   };
+
+  const handleVerifyPassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAuthPending(true);
+    setAuthError(null);
+    const res = await verifyAdminPasswordAction(passwordInput);
+    if (res.success) {
+      setIsAuthenticated(true);
+      sessionStorage.setItem("admin_sim_auth", "1");
+    } else {
+      setAuthError("❌ Incorrect password. Access denied.");
+      setPasswordInput("");
+    }
+    setAuthPending(false);
+  };
+
+  // Check session storage on mount (so refresh doesn't lose auth)
+  useEffect(() => {
+    if (sessionStorage.getItem("admin_sim_auth") === "1") {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  // --- PASSWORD GATE ---
+  if (!isAuthenticated) {
+    return (
+      <div className="flex min-h-[70vh] items-center justify-center px-4">
+        <div className="w-full max-w-md rounded-2xl border border-slate-700 bg-slate-900 p-8 shadow-2xl">
+          <div className="mb-6 text-center">
+            <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-purple-500/20 text-3xl ring-2 ring-purple-500/30">
+              🔒
+            </div>
+            <h1 className="text-xl font-bold text-white">Admin Access Required</h1>
+            <p className="mt-1 text-sm text-slate-400">
+              Enter the admin password to access the AI Simulation Dashboard.
+            </p>
+          </div>
+
+          <form onSubmit={handleVerifyPassword} className="space-y-4">
+            <div>
+              <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-slate-400">
+                Password
+              </label>
+              <input
+                type="password"
+                value={passwordInput}
+                onChange={(e) => setPasswordInput(e.target.value)}
+                placeholder="Enter admin password"
+                required
+                className="w-full rounded-lg border border-slate-600 bg-slate-800 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
+              />
+            </div>
+
+            {authError && (
+              <div className="rounded-lg bg-red-500/10 p-3 text-xs font-semibold text-red-400 ring-1 ring-red-500/30">
+                {authError}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={authPending || !passwordInput}
+              className="w-full rounded-lg bg-purple-600 px-4 py-3 text-sm font-bold text-white shadow-lg shadow-purple-600/30 transition hover:bg-purple-500 disabled:opacity-50"
+            >
+              {authPending ? "Verifying..." : "🔓 Unlock Dashboard"}
+            </button>
+          </form>
+
+          <p className="mt-6 text-center text-xs text-slate-500">
+            Set <code className="rounded bg-slate-800 px-1.5 py-0.5 text-purple-300">ADMIN_SIMULATION_PASSWORD</code> in your <code className="rounded bg-slate-800 px-1.5 py-0.5 text-purple-300">.env.local</code> file.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">

@@ -123,3 +123,14 @@ export async function replyToThreadAsAiAction(threadId: string, parentPostId?: s
     return { success: false, error: String(error) };
   }
 }
+
+export async function verifyAdminPasswordAction(password: string) {
+  const correctPassword = process.env.ADMIN_SIMULATION_PASSWORD;
+  if (!correctPassword) {
+    return { success: false, error: "ADMIN_SIMULATION_PASSWORD not set in environment." };
+  }
+  if (password === correctPassword) {
+    return { success: true };
+  }
+  return { success: false, error: "Incorrect password." };
+}
