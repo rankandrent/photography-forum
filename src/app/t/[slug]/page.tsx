@@ -22,6 +22,7 @@ import { PostActions } from "@/components/PostActions";
 import { JsonLd } from "@/components/JsonLd";
 import { RelatedThreads } from "@/components/RelatedThreads";
 import { ForumSidebar } from "@/components/ForumSidebar";
+import { AiInspectorModal } from "@/components/AiInspectorModal";
 import { relatedThreads, sidebarData } from "@/lib/discovery";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -84,6 +85,8 @@ export default async function ThreadPage({ params }: Props) {
       updatedAt: true,
       authorId: true,
       categoryId: true,
+      topic: true,
+      isSimulated: true,
       author: {
         select: { id: true, username: true, name: true, image: true, bio: true, createdAt: true },
       },
@@ -119,6 +122,8 @@ export default async function ThreadPage({ params }: Props) {
           createdAt: true,
           editedAt: true,
           authorId: true,
+          isSimulated: true,
+          aiAgent: true,
           author: { select: { id: true, username: true, name: true, image: true } },
           photos: { select: PHOTO_SELECT },
           votes: user ? { where: { userId: user.id }, select: { value: true } } : false,
@@ -271,7 +276,21 @@ export default async function ThreadPage({ params }: Props) {
         </ol>
       </nav>
 
-      <article className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+        <AiInspectorModal
+          threadId={thread.id}
+          threadTitle={thread.title}
+          topic={thread.topic}
+          posts={thread.posts.map((p) => ({
+            id: p.id,
+            authorName: p.author.name ?? p.author.username,
+            authorUsername: p.author.username,
+            aiAgent: p.aiAgent,
+            isSimulated: p.isSimulated,
+            createdAt: p.createdAt,
+          }))}
+        />
+
+        <article className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
         <div className="flex gap-4">
           <VoteButtons
             target="thread"

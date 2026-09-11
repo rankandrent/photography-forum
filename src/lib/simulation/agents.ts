@@ -224,10 +224,13 @@ export async function discussionAgent(params: {
   researchData: string;
   parentPost?: { id: string; authorUsername: string; body: string };
   persona: PersonaDefinition;
-  storyType?: "simulated_personal_experience" | "product_recommendation";
+  storyType?: "simulated_personal_experience" | "product_recommendation" | "critique";
+  categorySlug?: string;
   options?: { modelName?: string; apiKey?: string };
 }): Promise<string> {
-  const { threadTitle, threadBody, researchData, parentPost, persona, storyType, options } = params;
+  const { threadTitle, threadBody, researchData, parentPost, persona, storyType, categorySlug, options } = params;
+
+  const isCritique = categorySlug === "critique" || storyType === "critique";
 
   const system = `You are writing a forum reply as simulated user "${persona.name}" (@${persona.username}).
 Persona Details:
@@ -236,7 +239,9 @@ Persona Details:
 - Writing Style: ${persona.writingStyle}
 - Preferred Brands: ${persona.preferredBrands.join(", ")}
 
+${isCritique ? "FORMAT YOUR REPLY WITH A STRUCTURED CRITIQUE SCORECARD at the top:\n📐 **Composition**: X/10 | 💡 **Lighting**: Y/10 | 🖌️ **Editing**: Z/10\nThen write 2-3 constructive feedback sentences." : ""}
 ${storyType === "simulated_personal_experience" ? "Include a short simulated personal story (e.g. 'I took the X-S20 to Turkey last year and the size was great...')." : ""}
+${storyType === "product_recommendation" ? "Include a recommended camera/lens and append an Amazon affiliate check button: `[🛒 Check Price on Amazon](https://amazon.com/dp/B0CB69P88H?tag=photoforum-20)`" : ""}
 
 WRITING INSTRUCTIONS:
 - Write naturally like a real forum member. Use casual wording, short or long sentences, contractions.
@@ -249,27 +254,30 @@ WRITING INSTRUCTIONS:
     const reply = await callModel({
       system,
       user: `Thread: "${threadTitle}"\nOriginal Question: "${threadBody}"`,
-      maxTokens: 400,
+      maxTokens: 450,
       modelName: options?.modelName,
       apiKey: options?.apiKey,
     });
 
     return reply.text.trim();
   } catch {
-    // Rich fallback tailored to persona
+    // Rich fallback tailored to persona & storyType
+    if (isCritique) {
+      return `📐 **Composition**: 8/10 | 💡 **Lighting**: 9/10 | 🖌️ **Editing**: 7/10\n\nI really like the rim lighting on this frame! The composition has strong leading lines, though cropping slightly tighter on the right might remove some dead space. Great effort overall.`;
+    }
     if (persona.username === "CameraNerd24") {
-      return "If you're mainly doing travel and street photography, I'd probably look at the Sony a6700 or Fujifilm X-S20. Both are pretty compact with great autofocus. I think the Fuji is a little more fun for photography because of the controls and film simulations, but Sony is probably the safer choice if autofocus is your top priority.";
+      return "If you're mainly doing travel and street photography, I'd probably look at the **Sony a6700** or **Fujifilm X-S20**. Both are pretty compact with great autofocus.\n\n[🛒 Check Price on Amazon](https://amazon.com/dp/B0CB69P88H?tag=photoforum-20)\n\nI think the Fuji is a little more fun for photography because of the controls and film simulations, but Sony is probably the safer choice if autofocus is your top priority.";
     }
     if (persona.username === "BeginnerPhotog") {
       return "Is the Fuji hard to use? I'm still pretty new to cameras and all the manual dial settings kinda confuse me lol.";
     }
     if (persona.username === "PhotoMike") {
-      return "I actually took the X-S20 with me to Turkey last year and the size was one of the best things about it. I was walking around all day and didn't really feel like I was carrying a big camera. Paired it with the 18-55 kit lens and it handled everything from sunset landscapes to street shots.";
+      return "I actually took the **Fujifilm X-S20** with me to Turkey last year and the size was one of the best things about it. I was walking around all day and didn't really feel like I was carrying a big camera. Paired it with the 18-55mm kit lens and it handled everything from sunset landscapes to street shots.\n\n[🛒 Check Price on Amazon](https://amazon.com/dp/B0CB69P88H?tag=photoforum-20)";
     }
     if (persona.username === "SarahShoots") {
-      return "Canon R10 is also worth considering if your budget is tight! The skin tones straight out of camera are fantastic for portraits, though lens options are a bit more limited than Sony or Fuji right now.";
+      return "The **Canon EOS R10** is also worth considering if your budget is tight! The skin tones straight out of camera are fantastic for portraits, though lens options are a bit more limited than Sony or Fuji right now.\n\n[🛒 Check Price on Amazon](https://amazon.com/dp/B0CB69P88H?tag=photoforum-20)";
     }
-    return `Personally I'd lean towards ${persona.preferredBrands[0] || "Sony"}. I've had great experiences with their compact bodies on travel trips.`;
+    return `Personally I'd lean towards ${persona.preferredBrands[0] || "Sony"}. I've had great experiences with their compact bodies on travel trips.\n\n[🛒 Check Price on Amazon](https://amazon.com/dp/B0CB69P88H?tag=photoforum-20)`;
   }
 }
 

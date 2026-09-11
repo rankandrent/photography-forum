@@ -77,6 +77,14 @@ export async function runFastDemo(customTopic?: string) {
   const uniqueSuffix = Math.random().toString(36).substring(2, 8);
   const threadSlug = `${baseSlug}-${uniqueSuffix}`;
 
+  // Staggered Timestamps for Time-Lapse Realism
+  const now = new Date();
+  const threadDate = new Date(now.getTime() - 28 * 3600 * 1000); // 28 hours ago (Yesterday)
+  const post1Date = new Date(now.getTime() - 24 * 3600 * 1000);  // 24 hours ago
+  const post2Date = new Date(now.getTime() - 11 * 3600 * 1000);  // 11 hours ago (Today morning)
+  const post3Date = new Date(now.getTime() - 3 * 3600 * 1000);   // 3 hours ago
+  const post4Date = new Date(now.getTime() - 25 * 60 * 1000);    // 25 minutes ago
+
   const thread = await prisma.thread.create({
     data: {
       title: topicData.title,
@@ -86,6 +94,8 @@ export async function runFastDemo(customTopic?: string) {
       categoryId: category.id,
       authorId: travelCamGuy.id,
       isSimulated: true,
+      createdAt: threadDate,
+      lastPostAt: post4Date,
     },
   });
 
@@ -107,6 +117,7 @@ export async function runFastDemo(customTopic?: string) {
     researchData: researchFacts,
     persona: personaNerd,
     storyType: "product_recommendation",
+    categorySlug: category.slug,
     options: { modelName: model2, apiKey },
   });
 
@@ -118,6 +129,7 @@ export async function runFastDemo(customTopic?: string) {
       isSimulated: true,
       generatedByAi: true,
       aiAgent: `AnswerAgent [${model2}]`,
+      createdAt: post1Date,
     },
   });
   postIds.push(post1.id);
@@ -132,6 +144,7 @@ export async function runFastDemo(customTopic?: string) {
     researchData: researchFacts,
     parentPost: { id: post1.id, authorUsername: cameraNerd24.username, body: post1.body },
     persona: personaBeginner,
+    categorySlug: category.slug,
     options: { modelName: model3, apiKey },
   });
 
@@ -144,6 +157,7 @@ export async function runFastDemo(customTopic?: string) {
       isSimulated: true,
       generatedByAi: true,
       aiAgent: `DiscussionAgent (Nested) [${model3}]`,
+      createdAt: post2Date,
     },
   });
   postIds.push(post2.id);
@@ -159,6 +173,7 @@ export async function runFastDemo(customTopic?: string) {
     parentPost: { id: post2.id, authorUsername: beginnerPhotog.username, body: post2.body },
     persona: personaMike,
     storyType: "simulated_personal_experience",
+    categorySlug: category.slug,
     options: { modelName: model4, apiKey },
   });
 
@@ -172,6 +187,7 @@ export async function runFastDemo(customTopic?: string) {
       generatedByAi: true,
       aiAgent: `DiscussionAgent (Personal Story) [${model4}]`,
       storyType: "simulated_personal_experience",
+      createdAt: post3Date,
     },
   });
   postIds.push(post3.id);
@@ -185,7 +201,8 @@ export async function runFastDemo(customTopic?: string) {
     threadBody: thread.body,
     researchData: researchFacts,
     persona: personaSarah,
-    storyType: "product_recommendation",
+    storyType: category.slug === "critique" ? "critique" : "product_recommendation",
+    categorySlug: category.slug,
     options: { modelName: model5, apiKey },
   });
 
@@ -197,6 +214,7 @@ export async function runFastDemo(customTopic?: string) {
       isSimulated: true,
       generatedByAi: true,
       aiAgent: `AnswerAgent [${model5}]`,
+      createdAt: post4Date,
     },
   });
   postIds.push(post4.id);
@@ -204,7 +222,7 @@ export async function runFastDemo(customTopic?: string) {
   // Update thread lastPostAt
   await prisma.thread.update({
     where: { id: thread.id },
-    data: { lastPostAt: new Date() },
+    data: { lastPostAt: post4Date },
   });
 
   // 8. Engagement Agent (Simulated Upvotes / Downvotes)
@@ -218,6 +236,58 @@ export async function runFastDemo(customTopic?: string) {
     threadTitle: thread.title,
     postsCount: postIds.length + 1,
   };
+}
+
+/** Allows AI personas to reply to a real student thread */
+export async function replyToThreadAsAi(threadId: string, parentPostId?: string) {
+  const settings = await prisma.simulationSettings.findUnique({ where: { id: "default" } });
+  const apiKey = settings?.openRouterApiKey || process.env.OPENROUTER_API_KEY || undefined;
+  const rawPool = settings?.modelPool || DEFAULT_MODEL_POOL.join(",");
+  const pool = rawPool.split(",").map((m: string) => m.trim()).filter(Boolean);
+
+  const thread = await prisma.thread.findUnique({
+    where: { id: threadId },
+    include: { category: true, author: true },
+  });
+  if (!thread) throw new Error("Thread not found");
+
+  const users = await ensureSimulatedUsers();
+  // Pick random persona and model
+  const personaDef = SIMULATED_PERSONAS[Math.floor(Math.random() * SIMULATED_PERSONAS.length)];
+  const personaUser = users.find((u) => u.username === personaDef.username) || users[0];
+  const modelName = pool[Math.floor(Math.random() * pool.length)];
+
+  const researchFacts = await researchAgent(thread.title, { modelName, apiKey });
+  const replyBody = await discussionAgent({
+    threadTitle: thread.title,
+    threadBody: thread.body,
+    researchData: researchFacts,
+    persona: personaDef,
+    categorySlug: thread.category.slug,
+    storyType: thread.category.slug === "critique" ? "critique" : "product_recommendation",
+    options: { modelName, apiKey },
+  });
+
+  const post = await prisma.post.create({
+    data: {
+      threadId: thread.id,
+      parentId: parentPostId || null,
+      authorId: personaUser.id,
+      body: replyBody,
+      isSimulated: true,
+      generatedByAi: true,
+      aiAgent: `DiscussionAgent [${modelName}]`,
+    },
+  });
+
+  await prisma.thread.update({
+    where: { id: thread.id },
+    data: { lastPostAt: new Date() },
+  });
+
+  await logSimulationStep("DiscussionAgent", "AI Auto-Reply to Thread", `@${personaUser.username} replied to thread "${thread.title}" using [${modelName}]`, thread.id);
+
+  return { success: true, postId: post.id };
 }
 
 /** Reset utility to wipe all simulated simulation records */

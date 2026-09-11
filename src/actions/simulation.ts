@@ -113,3 +113,13 @@ export async function updateSimulationSettingsAction(data: {
     return { success: false, error: String(error) };
   }
 }
+
+export async function replyToThreadAsAiAction(threadId: string, parentPostId?: string) {
+  try {
+    const { replyToThreadAsAi } = await import("@/lib/simulation/engine");
+    const result = await replyToThreadAsAi(threadId, parentPostId);
+    return result;
+  } catch (error) {
+    return { success: false, error: String(error) };
+  }
+}
