@@ -1,7 +1,7 @@
 /**
  * Amazon Affiliate helper utility for ApertureTalk forum.
  * Manages random selection of user-provided Associate IDs and transforms
- * product recommendation links into working Amazon search links to prevent 404 errors.
+ * product recommendation links into 100% natural, inline search links.
  */
 
 export const AMAZON_AFFILIATE_TAGS = [
@@ -39,49 +39,81 @@ export function buildAmazonSearchUrl(query: string, tag?: string): string {
 
 /**
  * Processes text (e.g., AI persona forum replies or posts) to:
- * 1. Replace placeholder/fixed affiliate tags with a random tag from the pool.
- * 2. Convert corrupt/dead `/dp/ASIN` links into 100% working Amazon Search URLs.
+ * 1. Remove artificial/unnatural standalone "🛒 Check Price on Amazon" buttons.
+ * 2. Convert gear product mentions into natural, inline hyperlinked text.
+ * 3. Assign a random Amazon Associate Tag to every link.
  */
 export function processAmazonAffiliateLinks(text: string): string {
   if (!text) return text;
 
-  // 1. Process markdown links matching Amazon URLs: [Anchor Text](http...amazon.com...)
-  let processed = text.replace(
+  let result = text;
+
+  // 1. Strip out standalone "Check Price on Amazon" button lines and embed link onto gear name in text
+  const buttonRegex = /\n*\[(?:🛒\s*)?(?:Check Price on Amazon|Buy on Amazon|Check on Amazon)\]\((https?:\/\/(?:www\.)?amazon\.com\/[^\s)]+)\)/gi;
+
+  let match = buttonRegex.exec(result);
+  if (match) {
+    const rawUrl = match[1];
+    let query = "";
+    try {
+      const u = new URL(rawUrl);
+      query = u.searchParams.get("k") || "";
+    } catch {}
+
+    // Remove the standalone line
+    result = result.replace(buttonRegex, "").trim();
+
+    if (query) {
+      const cleanQuery = query.trim();
+      const escapedQuery = cleanQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+      // Check if product is mentioned in bold e.g. **Sony a6700**
+      const boldRegex = new RegExp(`\\*\\*(${escapedQuery})\\*\\*`, "i");
+      if (boldRegex.test(result)) {
+        result = result.replace(boldRegex, `**[$1](${buildAmazonSearchUrl(cleanQuery)})**`);
+      } else {
+        // Find general word mention
+        const wordRegex = new RegExp(`\\b(${escapedQuery})\\b`, "i");
+        if (wordRegex.test(result)) {
+          result = result.replace(wordRegex, `[$1](${buildAmazonSearchUrl(cleanQuery)})`);
+        }
+      }
+    }
+  }
+
+  // 2. Format remaining markdown links so anchor text is natural gear name with random tag
+  result = result.replace(
     /\[([^\]]+)\]\((https?:\/\/(?:www\.)?amazon\.com\/[^\s)]+)\)/gi,
-    (match, anchorText, url) => {
+    (matchStr, anchorText, url) => {
+      let cleanAnchor = anchorText.replace(/^🛒\s*/, "").trim();
+      if (
+        cleanAnchor.toLowerCase().includes("check price") ||
+        cleanAnchor.toLowerCase().includes("buy on amazon")
+      ) {
+        cleanAnchor = "Amazon";
+      }
+
       const randomTag = getRandomAffiliateTag();
 
       try {
         const urlObj = new URL(url);
-
-        // If it's already an Amazon search URL: /s?k=...
         if (urlObj.pathname.startsWith("/s")) {
           const searchParam = urlObj.searchParams.get("k");
           if (searchParam) {
-            return `[${anchorText}](https://www.amazon.com/s?k=${encodeURIComponent(searchParam)}&tag=${randomTag})`;
+            return `[${cleanAnchor}](https://www.amazon.com/s?k=${encodeURIComponent(searchParam)}&tag=${randomTag})`;
           }
         }
 
-        // Try extracting product name from context/anchor or URL
-        let productName = anchorText
-          .replace(/🛒|Check Price on Amazon|Buy on Amazon|Check on Amazon/gi, "")
-          .trim();
-
-        if (!productName || productName.toLowerCase() === "amazon") {
-          productName = "photography camera lens gear";
-        }
-
-        const workingSearchUrl = buildAmazonSearchUrl(productName, randomTag);
-        return `[${anchorText}](${workingSearchUrl})`;
+        const searchQuery = cleanAnchor !== "Amazon" ? cleanAnchor : "photography camera gear";
+        return `[${cleanAnchor}](${buildAmazonSearchUrl(searchQuery, randomTag)})`;
       } catch {
-        const workingSearchUrl = buildAmazonSearchUrl("camera lens", randomTag);
-        return `[${anchorText}](${workingSearchUrl})`;
+        return `[${cleanAnchor}](${buildAmazonSearchUrl("camera gear", randomTag)})`;
       }
     }
   );
 
-  // 2. Also handle any remaining `photoforum-20` or fixed tag instances
-  processed = processed.replace(/tag=[a-zA-Z0-9_-]+/g, () => `tag=${getRandomAffiliateTag()}`);
+  // 3. Guarantee randomized tag assignment across all Amazon URLs
+  result = result.replace(/tag=[a-zA-Z0-9_-]+/g, () => `tag=${getRandomAffiliateTag()}`);
 
-  return processed;
+  return result;
 }
