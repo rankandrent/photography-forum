@@ -35,8 +35,8 @@ export function ForumCategoryView({ categories }: { categories: ForumCategorySec
   return (
     <div className="space-y-6">
       {categories.map((cat) => {
-        // Deterministic "viewing" count for realism based on category slug
-        const viewingCount = 3 + (cat.slug.length * 3) % 9;
+        // Dynamic "viewing" count derived 100% from database questions and threads
+        const viewingCount = Math.max(1, Math.round(cat.questionsCount * 0.3 + cat.threads.length));
 
         return (
           <section

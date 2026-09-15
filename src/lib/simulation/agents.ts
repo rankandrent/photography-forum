@@ -487,8 +487,8 @@ STRICT WRITING RULES:
 export async function engagementAgent(threadId: string, postIds: string[]) {
   const simulatedUsers = await ensureSimulatedUsers();
 
-  // Add random votes to thread (15 to 145 votes range)
-  const threadVotesCount = Math.floor(Math.random() * 25) + 12;
+  // Add random votes to thread (up to simulatedUsers.length)
+  const threadVotesCount = Math.floor(Math.random() * (simulatedUsers.length - 2)) + 3;
   for (let i = 0; i < Math.min(threadVotesCount, simulatedUsers.length); i++) {
     const u = simulatedUsers[i];
     const existing = await prisma.vote.findUnique({
@@ -506,22 +506,19 @@ export async function engagementAgent(threadId: string, postIds: string[]) {
     }
   }
 
-  // Update thread score with realistic score boosting for display
+  // Update thread score to match exact sum of Vote records in DB
   const aggregateThread = await prisma.vote.aggregate({
     where: { threadId },
     _sum: { value: true },
   });
-  const baseScore = aggregateThread._sum.value || 0;
-  const displayScore = baseScore + (Math.floor(Math.random() * 35) + 5);
-
   await prisma.thread.update({
     where: { id: threadId },
-    data: { score: displayScore },
+    data: { score: aggregateThread._sum.value || 0 },
   });
 
   // Vote on posts
   for (const postId of postIds) {
-    const postVotesCount = Math.floor(Math.random() * 12) + 3;
+    const postVotesCount = Math.floor(Math.random() * (simulatedUsers.length / 2)) + 2;
     for (let j = 0; j < Math.min(postVotesCount, simulatedUsers.length); j++) {
       const u = simulatedUsers[j];
       const existing = await prisma.vote.findUnique({
@@ -539,16 +536,15 @@ export async function engagementAgent(threadId: string, postIds: string[]) {
       }
     }
 
+    // Update post score to match exact sum of Vote records in DB
     const aggregatePost = await prisma.vote.aggregate({
       where: { postId },
       _sum: { value: true },
     });
-    const postBaseScore = aggregatePost._sum.value || 0;
-    const postDisplayScore = postBaseScore + Math.floor(Math.random() * 15);
 
     await prisma.post.update({
       where: { id: postId },
-      data: { score: postDisplayScore },
+      data: { score: aggregatePost._sum.value || 0 },
     });
   }
 }
