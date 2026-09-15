@@ -74,6 +74,15 @@ export default async function HomePage() {
     })
   );
 
+  // Dynamic organic online count that fluctuates by time of day & minute jitter
+  const date = new Date();
+  const hour = date.getHours();
+  const minute = date.getMinutes();
+  const timeFactor = 0.65 + 0.35 * Math.sin(((hour - 8) * Math.PI) / 12);
+  const minuteJitter = ((minute * 7 + hour * 13) % 9) - 4;
+  const baseOnline = Math.floor((memberCount * 0.45 + 10) * timeFactor);
+  const dynamicOnlineCount = Math.max(7, baseOnline + minuteJitter);
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
       {/* Hero Banner (only for logged-out visitors) */}
@@ -109,7 +118,7 @@ export default async function HomePage() {
           forumsCount: categories.length,
           topicsCount: threadCount,
           postsCount: postCount + threadCount,
-          onlineCount: Math.max(12, Math.floor(memberCount * 0.4)),
+          onlineCount: dynamicOnlineCount,
           membersCount: memberCount,
         }}
       />
