@@ -31,55 +31,60 @@ export async function logSimulationStep(
 }
 
 /**
- * High Search Volume (HSV) & Low Keyword Difficulty (KD) photography buyer-intent topics
- * categorized across Tripods, Cameras, Lenses, Lighting, Bags, and Accessories.
+ * High-converting, search-engine-optimized buyer-intent topics strictly matching:
+ * 1. "How to..."
+ * 2. "What..."
+ * 3. "What to know about..." / "All about..."
+ * 4. "[Product A] vs [Product B]"
+ * 5. "Best [Product] for [Use Case]"
  */
 const TOPIC_PROMPTS = [
-  // --- Tripods & Supports (High Volume / Low KD) ---
-  "Best lightweight carbon fiber tripod for hiking under $200",
-  "Peak Design travel tripod vs Peak Design aluminum - is carbon fiber worth it?",
-  "Best budget travel tripod for landscape long exposures",
-  "Heavy duty tripod for 100-400mm telephoto wildlife lenses",
-  "Best tabletop tripod for macro and product photography",
-  "What's the best tripod head for panoramic landscape photography?",
-  "Manfrotto Befree Advanced vs Peak Design Travel Tripod comparison",
-
-  // --- Cameras & Bodies ---
-  "Best mirrorless camera for travel photography under $1000",
-  "Sony a6700 vs Fujifilm X-S20 for hybrid video and travel photo",
-  "Best camera for beginner portrait photography 2024",
-  "Is Canon EOS R50 good for low light street photography?",
-  "Nikon Z fc vs Fujifilm X-T30 II for everyday carry",
-  "Is full frame really worth it over APS-C in 2024?",
-  "Sony a7CR vs Nikon Z6 III for high resolution landscape photography",
-
-  // --- Lenses & Optics ---
-  "Best budget portrait lens for Sony E mount (85mm f/1.8 vs 50mm f/1.8)",
-  "Sigma 18-50mm f/2.8 DC DN vs Fuji 18-55mm kit lens comparison",
-  "Best landscape lens for Canon EOS R6 Mark II",
-  "Tamron 28-75mm f/2.8 G2 vs Sony 24-70mm f/2.8 GM II",
-  "Best prime lens for night street photography",
-  "Sigma 35mm f/1.4 Art vs Sony 35mm f/1.4 GM comparison",
-  "Best macro lens for flower and insect photography under $600",
-  "Best vintage manual lenses to adapt to mirrorless cameras",
-
-  // --- Lighting & Flashes ---
-  "Best budget speedlight flash for wedding photographers (Godox V860III vs V1)",
-  "Softbox vs Octabox for indoor portrait lighting setup",
-  "Best continuous LED light panel for portrait photography",
+  // --- 1. "How to..." Topics ---
+  "How to photograph the Milky Way for beginners",
+  "How to shoot sharp portraits in low light with a prime lens",
+  "How to clean a camera sensor safely at home without scratching glass",
   "How to use off-camera flash for outdoor portraits in bright sunlight",
+  "How to choose your first tripod for outdoor hiking and landscape photo",
+  "How to edit golden hour portraits in Lightroom for warm skin tones",
+  "How to photograph fast moving kids without motion blur",
+  "How to capture long exposure waterfall shots using ND filters",
 
-  // --- Camera Bags & Travel Gear ---
-  "Best camera backpack for international travel with 2 camera bodies",
-  "Peak Design Everyday Backpack 20L vs 30L size comparison",
-  "Best waterproof camera shoulder bag for outdoor landscape shooters",
-  "How to pack camera gear safely for airline carry-on",
+  // --- 2. "What..." Topics ---
+  "What is the best lens for portrait photography under $500?",
+  "What tripod do you recommend for heavy telephoto wildlife lenses?",
+  "What ND filter strength is best for waterfall long exposures?",
+  "What camera settings should I use for indoor concert photography?",
+  "What is the best budget flash for wedding photographers?",
+  "What tripod head is best for panoramic landscape photography?",
+  "What prime lens length is best for street photography (35mm vs 50mm)?",
 
-  // --- Filters & Accessories ---
-  "Best ND filter set for waterfall long exposures (NiSi vs Breakthrough)",
-  "Variable ND vs fixed ND filter - which is better for portrait bokeh in sunlight?",
-  "Best fast SD card for 4K video recording and high speed raw bursts",
-  "How to clean camera sensor safely at home",
+  // --- 3. "What to know about..." / "All about..." Topics ---
+  "What to know about full frame vs APS-C mirrorless cameras in 2024",
+  "All about Fujifilm film simulation recipes for travel photography",
+  "What to know about adapting vintage manual focus lenses to mirrorless",
+  "What to know about variable ND filters vs fixed ND filters",
+  "All about camera sensor sizes and low light noise performance",
+
+  // --- 4. "Vs..." Topics ---
+  "Sony a6700 vs Fujifilm X-S20 for travel photography and video",
+  "Sigma 18-50mm f/2.8 vs Fuji 18-55mm f/2.8-4 kit lens",
+  "Peak Design Travel Tripod aluminum vs carbon fiber version",
+  "Canon EOS R50 vs Sony a6100 for beginner content creation",
+  "Tamron 28-75mm f/2.8 G2 vs Sony 24-70mm f/2.8 GM II",
+  "Godox V860III vs Godox V1 round head speedlight flash",
+  "Nikon Z fc vs Fujifilm X-T30 II for everyday street carry",
+  "Peak Design Everyday Backpack 20L vs 30L for camera gear",
+
+  // --- 5. "Best [Product] for [Use Case]" Topics ---
+  "Best lightweight carbon fiber tripod for hiking under $200",
+  "Best budget portrait lens for Sony E mount shooters",
+  "Best mirrorless camera for travel photography under $1000",
+  "Best landscape lens for Canon EOS R6 Mark II",
+  "Best camera backpack for international carry-on travel",
+  "Best budget travel tripod for landscape long exposures",
+  "Best macro lens for flower and close-up photography under $600",
+  "Best prime lens for night street photography in low light",
+  "Best waterproof camera shoulder bag for outdoor photography",
 ];
 
 /**
@@ -181,7 +186,7 @@ export async function runFastDemo(customTopic?: string) {
     };
   }
 
-  // Mode A: Create New Thread with dynamic length (3 to 9 replies) using HSV/Low-KD topics
+  // Mode A: Create New Thread with dynamic length (3 to 9 replies) using structured title formats
   const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
   const modelOffset = Math.floor(Math.random() * pool.length);
   const threadModel = getModel(modelOffset);
@@ -199,7 +204,6 @@ export async function runFastDemo(customTopic?: string) {
   const uniqueSuffix = Math.random().toString(36).substring(2, 8);
   const threadSlug = `${baseSlug}-${uniqueSuffix}`;
 
-  // Re-use personas dynamically so accounts accumulate posts over time
   const shuffledPersonas = [...SIMULATED_PERSONAS].sort(() => Math.random() - 0.5);
   const threadAuthorPersona = shuffledPersonas[0];
   const threadAuthorUser = users.find((u) => u.username === threadAuthorPersona.username) || users[0];
@@ -229,7 +233,6 @@ export async function runFastDemo(customTopic?: string) {
   const researchModel = getModel(modelOffset + 1);
   const researchFacts = await researchAgent(topicData.title, { modelName: researchModel, apiKey });
 
-  // Dynamic reply count: between 3 and 9 replies per thread
   const numReplies = Math.floor(Math.random() * 7) + 3;
   const postIds: string[] = [];
   let lastReplyId: string | undefined = undefined;
@@ -241,7 +244,6 @@ export async function runFastDemo(customTopic?: string) {
     const replierUser = users.find((u) => u.username === replierPersona.username) || users[(i + 1) % users.length];
     const replyModel = getModel(modelOffset + i + 2);
 
-    // Only 15-20% chance of gear product recommendation link
     const storyType = i === 0 ? "product_recommendation" : (Math.random() < 0.20 ? "simulated_personal_experience" : undefined);
 
     const parentInfo: { id: string; authorUsername: string; body: string } | undefined =
@@ -278,7 +280,6 @@ export async function runFastDemo(customTopic?: string) {
 
     postIds.push(postItem.id);
 
-    // 50% chance next reply nests under this reply
     if (Math.random() < 0.5) {
       lastReplyId = postItem.id;
       lastReplyUsername = replierUser.username;

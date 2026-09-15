@@ -348,8 +348,15 @@ export async function topicDiscoveryAgent(
   const existingTitlesStr = existingThreads.map((t) => `- ${t.title}`).join("\n");
 
   const system = `You are the Topic Discovery Agent for a photography forum.
-Your job is to generate a realistic forum question topic typed by a real photographer or beginner.
-Topics should be specific, engaging, and cover topics like mirrorless cameras, travel photography, portrait lenses, street setups, or editing.
+Your job is to generate a realistic, search-engine-friendly forum question topic typed by a real photographer or beginner.
+
+STRICT TITLE STRUCTURE RULE:
+Your thread title MUST follow one of these 5 exact high-converting title structures:
+1. "How to..." (e.g., "How to photograph the Milky Way for beginners")
+2. "What..." (e.g., "What is the best lens for portrait photography under $500?")
+3. "What to know about..." or "All about..." (e.g., "What to know about full frame vs APS-C in 2024")
+4. "[Product A] vs [Product B]" (e.g., "Sony a6700 vs Fujifilm X-S20 for travel photography")
+5. "Best [Product] for [Use Case]" (e.g., "Best lightweight carbon fiber tripod for hiking under $200")
 
 HARD RULE: Avoid generating topics similar to existing threads below:
 ${existingTitlesStr || "None"}
@@ -358,7 +365,7 @@ Return ONLY a JSON block:
 \`\`\`json
 {
   "topic": "Travel Photography",
-  "title": "Natural human forum thread title (8-140 chars)",
+  "title": "Natural thread title matching one of the 5 structures (8-140 chars)",
   "description": "Short 2-4 sentence opening question describing the user's situation and budget",
   "categorySlug": "gear-talk"
 }
