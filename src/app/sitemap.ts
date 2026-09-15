@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 import { siteUrl } from "@/lib/site";
 
-/** Revalidate hourly — new threads should appear in the sitemap the same day. */
-export const revalidate = 3600;
+/** Dynamic sitemap — new threads appear in the sitemap instantly upon creation. */
+export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteUrl();

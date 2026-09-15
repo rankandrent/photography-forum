@@ -252,10 +252,11 @@ export default async function ThreadPage({ params }: Props) {
           ? { image: thread.photos.map((p) => absoluteImageUrl(p.displayKey)) }
           : {}),
         interactionStatistic,
-        comment: thread.posts.slice(0, 20).map((p) => ({
+        comment: thread.posts.slice(0, 100).map((p) => ({
           "@type": "Comment",
-          text: toPlainText(p.body, 500),
+          text: toPlainText(p.body, 1000),
           datePublished: p.createdAt.toISOString(),
+          upvoteCount: Math.max(0, p.score),
           author: personFor(p.author),
         })),
       };
