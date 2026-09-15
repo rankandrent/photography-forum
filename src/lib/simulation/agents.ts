@@ -404,6 +404,92 @@ Categories: "gear-talk", "critique", "editing", "technique", "business", "showca
   }
 }
 
+/**
+ * Real-Time Photography Pain-Point Mining Agent:
+ * Mines authentic photographer troubleshooting problems, lighting issues, editing frustrations,
+ * outdoor weather challenges, and technique questions (NOT just gear buying recommendations).
+ */
+export async function painPointMiningAgent(options?: {
+  modelName?: string;
+  apiKey?: string;
+}): Promise<{
+  topic: string;
+  title: string;
+  description: string;
+  categorySlug: string;
+}> {
+  const categories = ["technique", "editing", "critique", "business", "showcase", "gear-talk"];
+  const chosenCategory = categories[Math.floor(Math.random() * categories.length)];
+
+  const existingThreads = await prisma.thread.findMany({
+    take: 20,
+    orderBy: { createdAt: "desc" },
+    select: { title: true },
+  });
+  const existingTitlesStr = existingThreads.map((t) => `- ${t.title}`).join("\n");
+
+  const system = `You are the Real-Time Photography Pain-Point Mining Agent for PhotographyForum.net.
+Your job is to identify a REAL, authentic photography pain point, technical frustration, editing struggle, or outdoor shooting problem faced by photographers in recent community discussions.
+
+DO NOT generate pure gear buying questions. Focus on practical pain points like:
+- "Why are my sunset landscape shots coming out blurry even on a tripod?"
+- "How to remove noise in Lightroom shadows without losing fine details in dark hair"
+- "What settings prevent camera sensor overheating during 4K video recording?"
+- "How to pose non-professional couples during outdoor portrait shoots without looking awkward"
+- "What to do when shooting outdoor sports under harsh midday sun with harsh shadows"
+- "How to protect camera gear in heavy rain or humid tropical weather"
+
+STRICT TITLE STRUCTURE RULE:
+Title MUST follow one of these 5 structures:
+1. "How to..."
+2. "What..."
+3. "What to know about..." or "All about..."
+4. "[Scenario/Product A] vs [Scenario/Product B]"
+5. "Best [Solution/Setting/Tool] for [Use Case/Pain Point]"
+
+Avoid duplicate topics from this list:
+${existingTitlesStr || "None"}
+
+Target Category: "${chosenCategory}"
+
+Return ONLY a JSON block:
+\`\`\`json
+{
+  "topic": "Troubleshooting & Technique",
+  "title": "Natural title describing the pain point (8-140 chars)",
+  "description": "Short 2-4 sentence opening post describing the exact problem situation, camera settings used, and asking for community help.",
+  "categorySlug": "${chosenCategory}"
+}
+\`\`\``;
+
+  try {
+    const reply = await callModel({
+      system,
+      user: `Find a fresh, realistic photography pain point for category: "${chosenCategory}"`,
+      maxTokens: 500,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
+    });
+
+    const raw = reply.text.slice(reply.text.indexOf("{"), reply.text.lastIndexOf("}") + 1);
+    const parsed = JSON.parse(raw);
+
+    return {
+      topic: String(parsed.topic || "Photography Technique"),
+      title: String(parsed.title || "How to shoot sharp portraits in high wind without camera shake"),
+      description: String(parsed.description || "I was shooting outdoor portraits on a windy beach yesterday and noticed micro-blur on 30% of my shots even at 1/250s. Should I bump my shutter speed higher or switch to a heavier tripod setup?"),
+      categorySlug: String(parsed.categorySlug || chosenCategory),
+    };
+  } catch {
+    return {
+      topic: "Photography Technique",
+      title: "How to fix blurry sunset photos taken on a lightweight tripod",
+      description: "I took several landscape long exposures at golden hour yesterday, but when zooming in 100% on Lightroom the trees look soft. I used a shutter speed of 2 seconds and image stabilization was off. What could be causing this blur?",
+      categorySlug: chosenCategory,
+    };
+  }
+}
+
 /** Research Agent: Fact extraction using OpenRouter web search */
 export async function researchAgent(
   question: string,
@@ -555,3 +641,277 @@ export async function engagementAgent(threadId: string, postIds: string[]) {
     });
   }
 }
+
+/** SEO Internal Linking Agent: Scans content and contextually interlinks to relevant existing threads */
+export async function internalLinkingAgent(params: {
+  content: string;
+  currentThreadId?: string;
+  options?: { modelName?: string; apiKey?: string };
+}): Promise<string> {
+  const { content, currentThreadId, options } = params;
+
+  // If content already has internal thread link, keep it as is to avoid link cluttering
+  if (content.includes("](/t/")) {
+    return content;
+  }
+
+  try {
+    const candidateThreads = await prisma.thread.findMany({
+      where: currentThreadId ? { id: { not: currentThreadId } } : undefined,
+      orderBy: { createdAt: "desc" },
+      take: 20,
+      select: { slug: true, title: true, topic: true },
+    });
+
+    if (candidateThreads.length === 0) return content;
+
+    const threadListStr = candidateThreads
+      .map((t) => `- Title: "${t.title}" | Path: /t/${t.slug}`)
+      .join("\n");
+
+    const system = `You are an SEO Internal Linking Agent for PhotographyForum.net.
+Your task is to naturally insert ONE relevant internal Markdown link to another forum thread if it genuinely relates to the content.
+
+Available target forum threads:
+${threadListStr}
+
+STRICT RULES:
+1. ONLY insert a link if it fits standard natural conversational context (e.g., "If you are comparing travel cameras, check out our discussion on [Sony a6700 vs Fuji X-S20](/t/sony-a6700-vs-fujifilm-x-s20)...").
+2. DO NOT alter the original meaning, tone, or first-person narrative.
+3. DO NOT insert links if none of the available target threads are relevant.
+4. DO NOT use em-dashes ("—") or double hyphens ("--").
+5. Return ONLY the updated post text.`;
+
+    const reply = await callModel({
+      system,
+      user: `Original Post Text:\n"${content}"`,
+      maxTokens: 500,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
+    });
+
+    const text = reply.text.trim();
+    if (text.includes("](/t/")) {
+      return text;
+    }
+    return content;
+  } catch {
+    return content;
+  }
+}
+
+/** Audits existing database posts and adds SEO internal links to posts lacking them */
+export async function optimizeDatabaseInternalLinks(limit = 10) {
+  const posts = await prisma.post.findMany({
+    where: {
+      isSimulated: true,
+      body: { not: { contains: "](/t/" } },
+    },
+    take: limit,
+    orderBy: { createdAt: "desc" },
+    include: { thread: { select: { id: true, title: true } } },
+  });
+
+  let updatedCount = 0;
+  for (const post of posts) {
+    const linkedBody = await internalLinkingAgent({
+      content: post.body,
+      currentThreadId: post.threadId,
+    });
+
+    if (linkedBody !== post.body) {
+      await prisma.post.update({
+        where: { id: post.id },
+        data: { body: linkedBody },
+      });
+      updatedCount++;
+    }
+  }
+
+  return updatedCount;
+}
+
+export type CritiqueResult = {
+  score: number; // 0 to 100
+  passed: boolean;
+  flaws: string[];
+  suggestedFixes: string[];
+};
+
+/** Tier 2: Realism Review & Critique Agent - Scans content for robotic AI artifacts or flaws */
+export async function realismCritiqueAgent(params: {
+  content: string;
+  contextTitle?: string;
+  options?: { modelName?: string; apiKey?: string };
+}): Promise<CritiqueResult> {
+  const { content, contextTitle, options } = params;
+
+  // Deterministic rule checks
+  const flaws: string[] = [];
+  if (content.includes("—") || content.includes("--")) {
+    flaws.push("Contains forbidden em-dash ('—') or double hyphen ('--')");
+  }
+  if (/🛒|Check Price|Buy Now/i.test(content)) {
+    flaws.push("Contains unnatural shopping buttons or cart emojis");
+  }
+  if (!/\b(I|my|mine|I've|I'm|in my experience)\b/i.test(content)) {
+    flaws.push("Lacks authentic first-person narrative tone");
+  }
+  if (/as an ai|language model|in conclusion|to summarize|overall/i.test(content)) {
+    flaws.push("Contains generic AI conversational fluff or disclaimers");
+  }
+
+  const system = `You are the Realism Review & Critique Agent for PhotographyForum.net.
+Your job is to strictly evaluate forum posts to detect any robotic AI artifacts, fake tone, or spammy formatting.
+
+Check for:
+1. Is it written in 100% natural 1st-person photographer voice?
+2. Does it sound like a real person sharing authentic experience?
+3. Are there repetitive phrases or fake marketing fluff?
+
+Return ONLY a JSON block:
+\`\`\`json
+{
+  "score": 95,
+  "passed": true,
+  "flaws": ["List of specific flaws found or empty array if perfect"],
+  "suggestedFixes": ["List of specific instructions to fix the flaws"]
+}
+\`\`\``;
+
+  try {
+    const reply = await callModel({
+      system,
+      user: `Context: "${contextTitle || "Photography Discussion"}"\nPost Content:\n"${content}"`,
+      maxTokens: 400,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
+    });
+
+    const raw = reply.text.slice(reply.text.indexOf("{"), reply.text.lastIndexOf("}") + 1);
+    const parsed = JSON.parse(raw);
+
+    const score = Math.min(100, Math.max(0, Number(parsed.score) || 85));
+    const combinedFlaws = Array.from(new Set([...flaws, ...(parsed.flaws || [])]));
+    const suggestedFixes = Array.isArray(parsed.suggestedFixes) ? parsed.suggestedFixes : [];
+
+    return {
+      score: combinedFlaws.length === 0 ? Math.max(score, 90) : Math.min(score, 80),
+      passed: combinedFlaws.length === 0 && score >= 90,
+      flaws: combinedFlaws,
+      suggestedFixes,
+    };
+  } catch {
+    return {
+      score: flaws.length === 0 ? 90 : 75,
+      passed: flaws.length === 0,
+      flaws,
+      suggestedFixes: flaws.map((f) => `Fix issue: ${f}`),
+    };
+  }
+}
+
+/** Tier 3: Self-Correction & Refinement Agent - Automatically rewrites draft to solve critique flaws */
+export async function autoRefinementAgent(params: {
+  content: string;
+  critique: CritiqueResult;
+  personaName?: string;
+  options?: { modelName?: string; apiKey?: string };
+}): Promise<string> {
+  const { content, critique, options } = params;
+
+  if (critique.passed || critique.flaws.length === 0) {
+    return content;
+  }
+
+  const system = `You are the Auto-Refinement Agent for PhotographyForum.net.
+Your job is to rewrite and fix a forum post based on specific critique points from the Review Agent.
+
+CRITIQUE POINTS TO FIX:
+${critique.flaws.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+${critique.suggestedFixes.map((sf, i) => `Fix Instruction ${i + 1}: ${sf}`).join("\n")}
+
+STRICT RULES:
+1. Write 100% in authentic first-person ("I", "my", "in my experience").
+2. ABSOLUTELY NO EM-DASHES ("—") or double hyphens ("--").
+3. DO NOT use generic phrases like "Personally I'd lean towards" or "In conclusion".
+4. Keep original links if any, but clean up bad brand links.
+5. Return ONLY the polished post text.`;
+
+  try {
+    const reply = await callModel({
+      system,
+      user: `Original Draft:\n"${content}"`,
+      maxTokens: 500,
+      modelName: options?.modelName,
+      apiKey: options?.apiKey,
+    });
+
+    const refined = reply.text.trim();
+    return processAmazonAffiliateLinks(refined);
+  } catch {
+    let fallback = content
+      .replace(/—/g, ",")
+      .replace(/--/g, ",")
+      .replace(/🛒|Check Price|Buy Now/gi, "");
+    return processAmazonAffiliateLinks(fallback);
+  }
+}
+
+/** Tier 4: Master Quality Auditor Agent - Audits thread posts, logs quality metrics, and auto-improves DB records */
+export async function masterAuditorAgent(params: {
+  threadId: string;
+  postIds: string[];
+}): Promise<{
+  auditedCount: number;
+  fixedCount: number;
+  qualityScoreAverage: number;
+  logSummary: string[];
+}> {
+  const { threadId, postIds } = params;
+  const posts = await prisma.post.findMany({
+    where: { id: { in: postIds } },
+  });
+
+  let totalScore = 0;
+  let fixedCount = 0;
+  const logSummary: string[] = [];
+
+  for (const post of posts) {
+    // 1. Review with Tier 2 Agent
+    const critique = await realismCritiqueAgent({ content: post.body });
+    totalScore += critique.score;
+
+    if (!critique.passed) {
+      logSummary.push(`[Post ${post.id.slice(-6)}] Flagged flaws: ${critique.flaws.join("; ")}`);
+
+      // 2. Refine with Tier 3 Agent
+      const polishedBody = await autoRefinementAgent({
+        content: post.body,
+        critique,
+      });
+
+      if (polishedBody !== post.body) {
+        await prisma.post.update({
+          where: { id: post.id },
+          data: { body: polishedBody },
+        });
+        fixedCount++;
+        logSummary.push(`[Post ${post.id.slice(-6)}] Auto-Improved & Saved to DB.`);
+      }
+    } else {
+      logSummary.push(`[Post ${post.id.slice(-6)}] Passed Realism Audit (Score: ${critique.score}/100).`);
+    }
+  }
+
+  const avgScore = posts.length ? Math.round(totalScore / posts.length) : 100;
+
+  return {
+    auditedCount: posts.length,
+    fixedCount,
+    qualityScoreAverage: avgScore,
+    logSummary,
+  };
+}
+
+

@@ -74,11 +74,20 @@ export default async function HomePage() {
     })
   );
 
-  // Derive online members 100% dynamically from real database member count & time of day
+  // Derive real active human users + dynamic time-of-day guest presence
+  const fifteenMinsAgo = new Date(Date.now() - 15 * 60 * 1000);
+  const realActiveUsersCount = await prisma.user.count({
+    where: {
+      isSimulated: false,
+      notificationsSeenAt: { gte: fifteenMinsAgo },
+    },
+  });
+
   const date = new Date();
   const hour = date.getHours();
-  const activeRatio = 0.25 + 0.35 * Math.sin(((hour - 8) * Math.PI) / 12);
-  const dynamicOnlineCount = Math.max(1, Math.round(memberCount * activeRatio));
+  const activeRatio = 0.20 + 0.25 * Math.sin(((hour - 8) * Math.PI) / 12);
+  const guestVisitors = Math.max(3, Math.round(memberCount * activeRatio));
+  const dynamicOnlineCount = realActiveUsersCount + guestVisitors;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">

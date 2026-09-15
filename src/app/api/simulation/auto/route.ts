@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import { runFastDemo } from "@/lib/simulation/engine";
+import { optimizeDatabaseInternalLinks } from "@/lib/simulation/agents";
 
 export const dynamic = "force-dynamic";
 
 /**
  * Background Auto-Simulation Trigger.
  * Can be called by Vercel Cron, background timers, or periodic background tasks.
- * Automatically generates or updates forum threads in the background.
+ * Automatically generates or updates forum threads in the background and optimizes SEO internal links.
  */
 export async function GET(request: Request) {
   try {
@@ -19,10 +20,13 @@ export async function GET(request: Request) {
     }
 
     const result = await runFastDemo();
+    const updatedLinksCount = await optimizeDatabaseInternalLinks(5).catch(() => 0);
+
     return NextResponse.json({
       success: true,
       timestamp: new Date().toISOString(),
       simulation: result,
+      internalLinksOptimized: updatedLinksCount,
     });
   } catch (error) {
     console.error("Auto simulation error:", error);

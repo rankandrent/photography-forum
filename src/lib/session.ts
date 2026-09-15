@@ -14,8 +14,16 @@ export async function currentUser(): Promise<SessionUser | null> {
   if (!session?.user?.id) return null;
   const user = await prisma.user.findUnique({
     where: { id: session.user.id },
-    select: { id: true, username: true, name: true, image: true, role: true },
+    select: { id: true, username: true, name: true, image: true, role: true, isSimulated: true },
   });
+  if (user && !user.isSimulated) {
+    void prisma.user
+      .update({
+        where: { id: user.id },
+        data: { notificationsSeenAt: new Date() },
+      })
+      .catch(() => undefined);
+  }
   return user ?? null;
 }
 

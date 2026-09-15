@@ -1,10 +1,15 @@
 import { prisma } from "@/lib/prisma";
+import { triggerRealUserReplyNotification } from "@/lib/email";
 import {
   ensureSimulatedUsers,
   topicDiscoveryAgent,
+  painPointMiningAgent,
   researchAgent,
   discussionAgent,
   engagementAgent,
+  internalLinkingAgent,
+  optimizeDatabaseInternalLinks,
+  masterAuditorAgent,
   SIMULATED_PERSONAS,
   DEFAULT_MODEL_POOL,
 } from "./agents";
@@ -162,6 +167,16 @@ export async function runFastDemo(customTopic?: string) {
       });
 
       postIds.push(postItem.id);
+
+      // Trigger email notification if replying to a real registered user's thread/comment
+      void triggerRealUserReplyNotification({
+        threadId: targetThread.id,
+        parentPostId: lastPost ? lastPost.id : null,
+        replierUserId: personaUser.id,
+        replierName: personaUser.name || personaUser.username,
+        replyBody,
+      }).catch(() => undefined);
+
       lastPost = { id: postItem.id, authorUsername: personaUser.username, body: postItem.body } as any;
       await logSimulationStep("DiscussionAgent", "Thread Updated", `@${personaUser.username} replied to existing thread "${targetThread.title}"`, targetThread.id);
     }
@@ -176,6 +191,15 @@ export async function runFastDemo(customTopic?: string) {
 
     await engagementAgent(targetThread.id, postIds);
 
+    // Multi-Tier Audit & Self-Correction Step
+    const auditResult = await masterAuditorAgent({ threadId: targetThread.id, postIds });
+    await logSimulationStep(
+      "MasterAuditorAgent",
+      "Quality Audit & Auto-Improvement",
+      `Audited ${auditResult.auditedCount} posts. Avg Score: ${auditResult.qualityScoreAverage}/100. Auto-Fixed: ${auditResult.fixedCount}.\nSummary: ${auditResult.logSummary.join(" | ")}`,
+      targetThread.id
+    );
+
     return {
       success: true,
       mode: "updated_existing",
@@ -183,16 +207,25 @@ export async function runFastDemo(customTopic?: string) {
       threadSlug: targetThread.slug,
       threadTitle: targetThread.title,
       postsCount: postIds.length,
+      audit: auditResult,
     };
   }
 
-  // Mode A: Create New Thread with dynamic length (3 to 9 replies) using structured title formats
-  const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
+  // Mode A: Create New Thread (60% Real Pain-Point Troubleshooting, 40% Buyer-Intent Comparison)
   const modelOffset = Math.floor(Math.random() * pool.length);
   const threadModel = getModel(modelOffset);
 
-  const topicData = await topicDiscoveryAgent(topicPrompt, { modelName: threadModel, apiKey });
-  await logSimulationStep("TopicDiscoveryAgent", "Topic Discovery", `Found topic using [${threadModel}]: ${topicData.title}`);
+  let topicData;
+  const usePainPointMining = !customTopic && Math.random() < 0.60;
+
+  if (usePainPointMining) {
+    topicData = await painPointMiningAgent({ modelName: threadModel, apiKey });
+    await logSimulationStep("PainPointMiningAgent", "Photography Pain Point Mined", `Mined pain point [${threadModel}]: ${topicData.title}`);
+  } else {
+    const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
+    topicData = await topicDiscoveryAgent(topicPrompt, { modelName: threadModel, apiKey });
+    await logSimulationStep("TopicDiscoveryAgent", "Topic Discovery", `Found buyer intent topic [${threadModel}]: ${topicData.title}`);
+  }
 
   let category = await prisma.category.findUnique({ where: { slug: topicData.categorySlug } });
   if (!category) {
@@ -228,6 +261,27 @@ export async function runFastDemo(customTopic?: string) {
     },
   });
 
+  // Seed SEO tags for interlinking & related threads discovery
+  const tagKeywords = ["sony", "fujifilm", "canon", "nikon", "travel", "portrait", "landscape", "tripod", "lens", "astrophotography", "street", "lightroom", "macro", "wildlife", "full-frame", "aps-c"];
+  const matchedTags = tagKeywords.filter((w) => topicData.title.toLowerCase().includes(w) || topicData.topic.toLowerCase().includes(w));
+  if (matchedTags.length === 0) matchedTags.push("gear-discussion");
+
+  for (const tagName of matchedTags) {
+    const tagSlug = slugify(tagName);
+    try {
+      const tag = await prisma.tag.upsert({
+        where: { slug: tagSlug },
+        create: { slug: tagSlug, name: tagName.toUpperCase() },
+        update: {},
+      });
+      await prisma.threadTag.create({
+        data: { threadId: thread.id, tagId: tag.id },
+      });
+    } catch {
+      // Ignore tag duplicate edge cases
+    }
+  }
+
   await logSimulationStep("ThreadAgent", "Thread Created", `@${threadAuthorUser.username} created thread "${thread.title}"`, thread.id);
 
   const researchModel = getModel(modelOffset + 1);
@@ -251,7 +305,7 @@ export async function runFastDemo(customTopic?: string) {
         ? { id: lastReplyId, authorUsername: lastReplyUsername, body: lastReplyBody }
         : undefined;
 
-    const replyBody = await discussionAgent({
+    let replyBody = await discussionAgent({
       threadTitle: thread.title,
       threadBody: thread.body,
       researchData: researchFacts,
@@ -261,6 +315,15 @@ export async function runFastDemo(customTopic?: string) {
       categorySlug: category.slug,
       options: { modelName: replyModel, apiKey },
     });
+
+    // 25% chance of contextual internal link to another thread
+    if (Math.random() < 0.25) {
+      replyBody = await internalLinkingAgent({
+        content: replyBody,
+        currentThreadId: thread.id,
+        options: { modelName: replyModel, apiKey },
+      });
+    }
 
     const replyHours = Math.max(0.2, threadHoursAgo - (i + 1) * (threadHoursAgo / (numReplies + 1)));
     const postDate = hoursAgo(replyHours);
@@ -299,6 +362,18 @@ export async function runFastDemo(customTopic?: string) {
   await engagementAgent(thread.id, postIds);
   await logSimulationStep("EngagementAgent", "Simulated Voting", `Generated realistic upvotes and view counts.`, thread.id);
 
+  // Multi-Tier Audit & Self-Correction Step
+  const auditResult = await masterAuditorAgent({ threadId: thread.id, postIds });
+  await logSimulationStep(
+    "MasterAuditorAgent",
+    "Quality Audit & Auto-Improvement",
+    `Audited ${auditResult.auditedCount} posts. Avg Score: ${auditResult.qualityScoreAverage}/100. Auto-Fixed: ${auditResult.fixedCount}.\nSummary: ${auditResult.logSummary.join(" | ")}`,
+    thread.id
+  );
+
+  // Background SEO Interlinking Optimization Pass
+  void optimizeDatabaseInternalLinks(3).catch(() => undefined);
+
   return {
     success: true,
     mode: "created_new",
@@ -306,6 +381,7 @@ export async function runFastDemo(customTopic?: string) {
     threadSlug: thread.slug,
     threadTitle: thread.title,
     postsCount: postIds.length + 1,
+    audit: auditResult,
   };
 }
 
@@ -349,6 +425,15 @@ export async function replyToThreadAsAi(threadId: string, parentPostId?: string)
       aiAgent: `DiscussionAgent [${modelName}]`,
     },
   });
+
+  // Trigger email notification if the thread or comment owner is a real registered user
+  void triggerRealUserReplyNotification({
+    threadId: thread.id,
+    parentPostId: parentPostId || null,
+    replierUserId: personaUser.id,
+    replierName: personaUser.name || personaUser.username,
+    replyBody,
+  }).catch(() => undefined);
 
   await prisma.thread.update({
     where: { id: thread.id },

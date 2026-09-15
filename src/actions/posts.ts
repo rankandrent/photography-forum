@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { requireUser, isStaff } from "@/lib/session";
 import { filesFrom, processUpload, UploadError } from "@/lib/photos";
 import { notify, notifyEach } from "@/lib/notify";
+import { triggerRealUserReplyNotification } from "@/lib/email";
 import { toPlainText } from "@/lib/markdown";
 import { fail, type ActionState } from "@/actions/types";
 
@@ -80,6 +81,15 @@ export async function createPostAction(
     href,
   });
   await notifyEach(recipients);
+
+  // Trigger real user email notification if the recipient is a real registered user
+  void triggerRealUserReplyNotification({
+    threadId: thread.id,
+    parentPostId: parentId,
+    replierUserId: user.id,
+    replierName: actor,
+    replyBody: body,
+  }).catch(() => undefined);
 
   revalidatePath(`/t/${thread.slug}`);
   return { ok: true, message: "Reply posted." };
