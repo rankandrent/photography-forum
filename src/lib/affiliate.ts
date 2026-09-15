@@ -1,7 +1,7 @@
 /**
- * Amazon Affiliate helper utility for ApertureTalk forum.
+ * Amazon Affiliate helper utility for the forum.
  * Manages random selection of user-provided Associate IDs and transforms
- * product recommendation links into 100% natural, inline search links.
+ * product recommendation links into clean, short Amazon associate URLs.
  */
 
 export const AMAZON_AFFILIATE_TAGS = [
@@ -24,8 +24,8 @@ export function getRandomAffiliateTag(): string {
 }
 
 /**
- * Builds a 100% reliable Amazon Search URL for a given product query.
- * Search URLs never return 404 "Page Not Found" errors on Amazon.
+ * Builds a clean, short, 100% working Amazon Search URL for a given product query.
+ * Format: https://amazon.com/s?k=QUERY&tag=RANDOM_TAG
  */
 export function buildAmazonSearchUrl(query: string, tag?: string): string {
   const selectedTag = tag || getRandomAffiliateTag();
@@ -33,20 +33,24 @@ export function buildAmazonSearchUrl(query: string, tag?: string): string {
     .replace(/[*_#`[\]()]/g, "")
     .replace(/^(🛒|Check Price on Amazon|Buy on Amazon|Check on Amazon|Amazon)/gi, "")
     .trim();
-  const searchKeywords = cleanQuery || "camera photography gear";
-  return `https://www.amazon.com/s?k=${encodeURIComponent(searchKeywords)}&tag=${selectedTag}`;
+  const searchKeywords = cleanQuery || "camera gear";
+  return `https://amazon.com/s?k=${encodeURIComponent(searchKeywords)}&tag=${selectedTag}`;
 }
 
 /**
  * Processes text (e.g., AI persona forum replies or posts) to:
  * 1. Remove artificial/unnatural standalone "🛒 Check Price on Amazon" buttons.
- * 2. Convert gear product mentions into natural, inline hyperlinked text.
- * 3. Assign a random Amazon Associate Tag to every link.
+ * 2. Convert gear product mentions into short, natural, inline hyperlinked text.
+ * 3. Guarantee randomized tag assignment across all Amazon URLs.
+ * 4. Remove em-dash characters (— or --) to enforce clean text presentation.
  */
 export function processAmazonAffiliateLinks(text: string): string {
   if (!text) return text;
 
   let result = text;
+
+  // Remove em-dashes (— or --) and replace with standard punctuation
+  result = result.replace(/—|--/g, " - ");
 
   // 1. Strip out standalone "Check Price on Amazon" button lines and embed link onto gear name in text
   const buttonRegex = /\n*\[(?:🛒\s*)?(?:Check Price on Amazon|Buy on Amazon|Check on Amazon)\]\((https?:\/\/(?:www\.)?amazon\.com\/[^\s)]+)\)/gi;
@@ -81,7 +85,7 @@ export function processAmazonAffiliateLinks(text: string): string {
     }
   }
 
-  // 2. Format remaining markdown links so anchor text is natural gear name with random tag
+  // 2. Format remaining markdown links so anchor text is natural gear name with short URL & random tag
   result = result.replace(
     /\[([^\]]+)\]\((https?:\/\/(?:www\.)?amazon\.com\/[^\s)]+)\)/gi,
     (matchStr, anchorText, url) => {
@@ -100,11 +104,11 @@ export function processAmazonAffiliateLinks(text: string): string {
         if (urlObj.pathname.startsWith("/s")) {
           const searchParam = urlObj.searchParams.get("k");
           if (searchParam) {
-            return `[${cleanAnchor}](https://www.amazon.com/s?k=${encodeURIComponent(searchParam)}&tag=${randomTag})`;
+            return `[${cleanAnchor}](https://amazon.com/s?k=${encodeURIComponent(searchParam)}&tag=${randomTag})`;
           }
         }
 
-        const searchQuery = cleanAnchor !== "Amazon" ? cleanAnchor : "photography camera gear";
+        const searchQuery = cleanAnchor !== "Amazon" ? cleanAnchor : "camera gear";
         return `[${cleanAnchor}](${buildAmazonSearchUrl(searchQuery, randomTag)})`;
       } catch {
         return `[${cleanAnchor}](${buildAmazonSearchUrl("camera gear", randomTag)})`;

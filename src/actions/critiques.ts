@@ -41,13 +41,20 @@ export async function critiqueAction(
   if (!photo) return fail("Photo not found.");
   if (photo.uploaderId === user.id) return fail("You cannot critique your own photo.");
 
+  const alreadyCritiqued = await prisma.critique.findUnique({
+    where: { photoId_authorId: { photoId, authorId: user.id } },
+    select: { id: true },
+  });
+
   await prisma.critique.upsert({
     where: { photoId_authorId: { photoId, authorId: user.id } },
     create: { photoId, authorId: user.id, ...parsed.data },
     update: parsed.data,
   });
 
-  if (photo.thread) {
+  // Saving is an upsert, so tweaking a score re-runs this. Only the first
+  // critique is news to the photographer; revisions aren't.
+  if (photo.thread && !alreadyCritiqued) {
     await notify({
       userId: photo.uploaderId,
       actorId: user.id,
@@ -55,8 +62,8 @@ export async function critiqueAction(
       title: `${user.name ?? user.username} critiqued your photo on "${photo.thread.title}"`,
       href: `/t/${photo.thread.slug}`,
     });
-    revalidatePath(`/t/${photo.thread.slug}`);
   }
+  if (photo.thread) revalidatePath(`/t/${photo.thread.slug}`);
 
   return { ok: true, message: "Critique saved." };
 }

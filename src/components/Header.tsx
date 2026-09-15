@@ -5,6 +5,8 @@ import { logoutAction } from "@/actions/account";
 import { Avatar } from "@/components/Avatar";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { site } from "@/lib/site";
+import { Logo } from "@/components/Logo";
+import { unseenCount } from "@/lib/notify";
 
 const NAV = [
   { href: "/categories", label: "Categories" },
@@ -14,19 +16,22 @@ const NAV = [
 
 export async function Header() {
   const user = await currentUser();
-  const unread = user
-    ? await prisma.notification.count({ where: { userId: user.id, read: false } })
-    : 0;
+  // The badge shows what arrived since the member last opened the list, not
+  // every unread item — otherwise it never clears until each one is clicked.
+  let unread = 0;
+  if (user) {
+    const me = await prisma.user.findUnique({
+      where: { id: user.id },
+      select: { notificationsSeenAt: true },
+    });
+    unread = await unseenCount(user.id, me?.notificationsSeenAt ?? null);
+  }
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90">
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4">
-        <Link href="/" className="flex items-center gap-2 font-bold text-slate-900 dark:text-slate-100">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-600" aria-hidden>
-            <circle cx="12" cy="12" r="9" />
-            <path d="M12 3v18M3.5 8h17M3.5 16h17M7 3.8 17 20.2M17 3.8 7 20.2" strokeWidth="1" />
-          </svg>
-          <span>{site.name}</span>
+        <Link href="/" aria-label={site.name} className="text-slate-900 dark:text-slate-100">
+          <Logo />
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-1 md:flex">

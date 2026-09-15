@@ -27,7 +27,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         orderBy: { lastPostAt: "desc" },
         take: 20000,
       }),
-      prisma.category.findMany({ select: { id: true, slug: true } }),
+      // Same rule as tags: a board with no threads is an empty page, and
+      // sending it to Google is sending thin content.
+      prisma.category.findMany({
+        where: { threads: { some: {} } },
+        select: { id: true, slug: true },
+      }),
       prisma.gear.findMany({ select: { slug: true } }),
       // Only tags that actually hold a thread. A bulk tag import leaves
       // hundreds of empty ones behind, and submitting an empty page to Google

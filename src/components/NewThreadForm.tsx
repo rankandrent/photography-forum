@@ -21,7 +21,7 @@ export function NewThreadForm({
   categories,
   defaultCategoryId,
 }: {
-  categories: { id: string; name: string; slug: string }[];
+  categories: { id: string; name: string; slug: string; section: string }[];
   defaultCategoryId?: string;
 }) {
   const [state, formAction] = useActionState(createThreadAction, idle);
@@ -65,10 +65,17 @@ export function NewThreadForm({
           Category
         </label>
         <select id="categoryId" name="categoryId" defaultValue={defaultCategoryId} required className={input}>
-          {categories.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.name}
-            </option>
+          {/* Grouped so twenty-odd boards stay scannable in a native select. */}
+          {[...new Set(categories.map((c) => c.section))].map((section) => (
+            <optgroup key={section} label={section}>
+              {categories
+                .filter((c) => c.section === section)
+                .map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+            </optgroup>
           ))}
         </select>
       </div>

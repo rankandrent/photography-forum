@@ -31,8 +31,7 @@ export async function logSimulationStep(
 }
 
 /**
- * Diverse photography topic prompts so each run produces a unique thread.
- * The engine picks a random one (or uses the user's custom topic).
+ * Diverse photography topic prompts for creating new threads.
  */
 const TOPIC_PROMPTS = [
   "Best mirrorless camera for travel photography under $1500",
@@ -43,7 +42,7 @@ const TOPIC_PROMPTS = [
   "How do you edit golden hour portraits in Lightroom?",
   "Sony a7CR vs Nikon Z6 III for landscape photography",
   "What tripod do you recommend for hiking?",
-  "Film simulation recipes for Fujifilm — share your favorites",
+  "Film simulation recipes for Fujifilm - share your favorites",
   "Why are my indoor photos always blurry? (beginner help)",
   "Best budget flash for wedding photography",
   "Sigma 35mm f/1.4 Art vs Sony 35mm f/1.4 GM comparison",
@@ -51,8 +50,8 @@ const TOPIC_PROMPTS = [
   "Macro photography gear essentials for flower close-ups",
   "Is full frame really worth it over APS-C in 2024?",
   "Best camera bag for international travel with 2 bodies",
-  "How to shoot in manual mode — a step by step guide",
-  "Drone photography tips for real estate — DJI Mini 4 Pro",
+  "How to shoot in manual mode - a step by step guide",
+  "Drone photography tips for real estate - DJI Mini 4 Pro",
   "What's your favorite photo you've ever taken and why?",
   "Help me choose: Canon R7 vs Sony a6700 for wildlife",
   "How to create moody dark portrait edits in Capture One",
@@ -63,8 +62,9 @@ const TOPIC_PROMPTS = [
 ];
 
 /**
- * Fast Demo Mode: Executes a complete multi-user thread simulation cycle
- * with RANDOMIZED authors, diverse topics, and naturally staggered timestamps.
+ * Executes a simulation cycle:
+ * 50% chance: Creates a new thread with varied reply depth (3 to 9 replies) and re-uses persona accounts.
+ * 50% chance: Updates an existing thread (student thread or older thread) with fresh, realistic responses.
  */
 export async function runFastDemo(customTopic?: string) {
   // 0. Load Simulation Settings & Model Rotation Pool
@@ -74,83 +74,121 @@ export async function runFastDemo(customTopic?: string) {
   const rawPool = settings?.modelPool || DEFAULT_MODEL_POOL.join(",");
   const pool = rawPool.split(",").map((m: string) => m.trim()).filter(Boolean);
 
-  // Helper: pick model for step i (strict rotation)
   const getModel = (index: number) => pool[index % pool.length] || DEFAULT_MODEL_POOL[0];
 
-  // 1. Ensure all 30 simulated personas exist in DB
+  // 1. Ensure simulated persona accounts exist in DB
   const users = await ensureSimulatedUsers();
   await logSimulationStep("PersonaAgent", "Ensure Users", `Verified ${users.length} simulated user accounts.`);
 
-  // 2. Pick a RANDOM topic from pool (avoid repeating the same thread)
-  const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
+  // Decide mode: if no custom topic, check if we should update an existing thread
+  const existingThreads = await prisma.thread.findMany({
+    orderBy: { lastPostAt: "asc" },
+    take: 10,
+    include: { category: true, posts: true },
+  });
 
-  // Randomly pick a MODEL offset so each run starts from a different model
+  const shouldUpdateExisting = !customTopic && existingThreads.length > 3 && Math.random() < 0.45;
+
+  if (shouldUpdateExisting) {
+    // Mode B: Update Existing Thread
+    const targetThread = existingThreads[Math.floor(Math.random() * existingThreads.length)];
+    const replyCount = Math.floor(Math.random() * 3) + 1; // 1 to 3 replies
+    const postIds: string[] = [];
+
+    const modelOffset = Math.floor(Math.random() * pool.length);
+    const researchModel = getModel(modelOffset);
+    const researchFacts = await researchAgent(targetThread.title, { modelName: researchModel, apiKey });
+
+    let lastPost = targetThread.posts[targetThread.posts.length - 1];
+
+    for (let i = 0; i < replyCount; i++) {
+      const modelName = getModel(modelOffset + i + 1);
+      const personaDef = SIMULATED_PERSONAS[Math.floor(Math.random() * SIMULATED_PERSONAS.length)];
+      const personaUser = users.find((u) => u.username === personaDef.username) || users[i % users.length];
+
+      // 15% chance of gear recommendation link
+      const storyType = Math.random() < 0.15 ? "product_recommendation" : "simulated_personal_experience";
+
+      const replyBody = await discussionAgent({
+        threadTitle: targetThread.title,
+        threadBody: targetThread.body,
+        researchData: researchFacts,
+        parentPost: lastPost ? { id: lastPost.id, authorUsername: personaUser.username, body: lastPost.body } : undefined,
+        persona: personaDef,
+        categorySlug: targetThread.category.slug,
+        storyType,
+        options: { modelName, apiKey },
+      });
+
+      const postDate = new Date(Date.now() - (replyCount - i) * 15 * 60 * 1000);
+
+      const post = await prisma.post.create({
+        data: {
+          threadId: targetThread.id,
+          parentId: lastPost ? lastPost.id : null,
+          authorId: personaUser.id,
+          body: replyBody,
+          isSimulated: true,
+          generatedByAi: true,
+          aiAgent: `DiscussionAgent [${modelName}]`,
+          createdAt: postDate,
+        },
+      });
+
+      postIds.push(post.id);
+      lastPost = post;
+      await logSimulationStep("DiscussionAgent", "Thread Updated", `@${personaUser.username} replied to existing thread "${targetThread.title}"`, targetThread.id);
+    }
+
+    await prisma.thread.update({
+      where: { id: targetThread.id },
+      data: {
+        lastPostAt: new Date(),
+        viewCount: { increment: Math.floor(Math.random() * 25) + 10 },
+      },
+    });
+
+    await engagementAgent(targetThread.id, postIds);
+
+    return {
+      success: true,
+      mode: "updated_existing",
+      threadId: targetThread.id,
+      threadSlug: targetThread.slug,
+      threadTitle: targetThread.title,
+      postsCount: postIds.length,
+    };
+  }
+
+  // Mode A: Create New Thread with dynamic length (3 to 9 replies)
+  const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
   const modelOffset = Math.floor(Math.random() * pool.length);
   const threadModel = getModel(modelOffset);
 
   const topicData = await topicDiscoveryAgent(topicPrompt, { modelName: threadModel, apiKey });
   await logSimulationStep("TopicDiscoveryAgent", "Topic Discovery", `Found topic using [${threadModel}]: ${topicData.title}`);
 
-  // 3. Fetch or fallback category
   let category = await prisma.category.findUnique({ where: { slug: topicData.categorySlug } });
   if (!category) {
-    // Try to pick a random existing category for variety
     const allCategories = await prisma.category.findMany();
-    category = allCategories[Math.floor(Math.random() * allCategories.length)] || {
-      id: "cmtty57ck000004jop8h91n1e",
-      slug: "gear-talk",
-      name: "Gear talk",
-      description: "Gear discussions",
-      color: "#0ea5e9",
-      position: 0,
-    };
+    category = allCategories[Math.floor(Math.random() * allCategories.length)];
   }
 
   const baseSlug = slugify(topicData.title);
   const uniqueSuffix = Math.random().toString(36).substring(2, 8);
   const threadSlug = `${baseSlug}-${uniqueSuffix}`;
 
-  // 4. Pick 5 UNIQUE RANDOM personas for this thread (author + 4 repliers)
-  const shuffled = [...SIMULATED_PERSONAS].sort(() => Math.random() - 0.5);
-  const threadAuthorPersona = shuffled[0];
-  const replier1Persona = shuffled[1];
-  const replier2Persona = shuffled[2];
-  const replier3Persona = shuffled[3];
-  const replier4Persona = shuffled[4];
-
+  // Re-use personas dynamically so accounts accumulate posts over time
+  const shuffledPersonas = [...SIMULATED_PERSONAS].sort(() => Math.random() - 0.5);
+  const threadAuthorPersona = shuffledPersonas[0];
   const threadAuthorUser = users.find((u) => u.username === threadAuthorPersona.username) || users[0];
-  const replier1User = users.find((u) => u.username === replier1Persona.username) || users[1];
-  const replier2User = users.find((u) => u.username === replier2Persona.username) || users[2];
-  const replier3User = users.find((u) => u.username === replier3Persona.username) || users[3];
-  const replier4User = users.find((u) => u.username === replier4Persona.username) || users[4];
 
-  // 5. STAGGERED TIMESTAMPS — wide spread across 3 days for realism
-  //    Random jitter so every run gets different relative times
+  // Staggered timestamps spanning up to 3 days
   const now = new Date();
   const hoursAgo = (h: number) => new Date(now.getTime() - h * 3600 * 1000);
-  const minsAgo = (m: number) => new Date(now.getTime() - m * 60 * 1000);
-
-  // Thread: 2–3 days ago (random between 48–72 hours)
-  const threadHoursAgo = 48 + Math.floor(Math.random() * 24);
+  const threadHoursAgo = 24 + Math.floor(Math.random() * 48);
   const threadDate = hoursAgo(threadHoursAgo);
 
-  // Reply 1: 1–2 days ago (random 24–48 hours)
-  const reply1HoursAgo = 24 + Math.floor(Math.random() * 24);
-  const post1Date = hoursAgo(reply1HoursAgo);
-
-  // Reply 2 (nested): 8–18 hours ago
-  const reply2HoursAgo = 8 + Math.floor(Math.random() * 10);
-  const post2Date = hoursAgo(reply2HoursAgo);
-
-  // Reply 3 (nested personal story): 2–6 hours ago
-  const reply3HoursAgo = 2 + Math.floor(Math.random() * 4);
-  const post3Date = hoursAgo(reply3HoursAgo);
-
-  // Reply 4 (top-level): 12–55 minutes ago
-  const reply4MinsAgo = 12 + Math.floor(Math.random() * 43);
-  const post4Date = minsAgo(reply4MinsAgo);
-
-  // 6. Create Thread by RANDOM author
   const thread = await prisma.thread.create({
     data: {
       title: topicData.title,
@@ -160,139 +198,91 @@ export async function runFastDemo(customTopic?: string) {
       categoryId: category.id,
       authorId: threadAuthorUser.id,
       isSimulated: true,
+      viewCount: Math.floor(Math.random() * 120) + 25,
       createdAt: threadDate,
-      lastPostAt: post4Date,
+      lastPostAt: threadDate,
     },
   });
 
-  await logSimulationStep("ThreadAgent", "Thread Created", `@${threadAuthorUser.username} posted thread using [${threadModel}]`, thread.id);
+  await logSimulationStep("ThreadAgent", "Thread Created", `@${threadAuthorUser.username} created thread "${thread.title}"`, thread.id);
 
-  // 7. Research Agent (different model)
   const researchModel = getModel(modelOffset + 1);
   const researchFacts = await researchAgent(topicData.title, { modelName: researchModel, apiKey });
-  await logSimulationStep("ResearchAgent", "Fact Extraction", `Grounded facts gathered using [${researchModel}].`, thread.id);
 
+  // Dynamic reply count: between 3 and 9 replies per thread
+  const numReplies = Math.floor(Math.random() * 7) + 3;
   const postIds: string[] = [];
+  let lastReplyId: string | undefined = undefined;
+  let lastReplyUsername: string | undefined = undefined;
+  let lastReplyBody: string | undefined = undefined;
 
-  // 8. First Top-Level Reply (Random replier 1, different model)
-  const model2 = getModel(modelOffset + 2);
-  const reply1Body = await discussionAgent({
-    threadTitle: thread.title,
-    threadBody: thread.body,
-    researchData: researchFacts,
-    persona: replier1Persona,
-    storyType: "product_recommendation",
-    categorySlug: category.slug,
-    options: { modelName: model2, apiKey },
-  });
+  for (let i = 0; i < numReplies; i++) {
+    const replierPersona = shuffledPersonas[(i + 1) % shuffledPersonas.length];
+    const replierUser = users.find((u) => u.username === replierPersona.username) || users[(i + 1) % users.length];
+    const replyModel = getModel(modelOffset + i + 2);
 
-  const post1 = await prisma.post.create({
-    data: {
-      threadId: thread.id,
-      authorId: replier1User.id,
-      body: reply1Body,
-      isSimulated: true,
-      generatedByAi: true,
-      aiAgent: `AnswerAgent [${model2}]`,
-      createdAt: post1Date,
-    },
-  });
-  postIds.push(post1.id);
-  await logSimulationStep("AnswerAgent", "First Reply", `@${replier1User.username} replied using [${model2}].`, thread.id);
+    // Only 15-20% chance of gear product recommendation link
+    const storyType = i === 0 ? "product_recommendation" : (Math.random() < 0.20 ? "simulated_personal_experience" : undefined);
 
-  // 9. Nested Reply (replier 2 to replier 1)
-  const model3 = getModel(modelOffset + 3);
-  const reply2Body = await discussionAgent({
-    threadTitle: thread.title,
-    threadBody: thread.body,
-    researchData: researchFacts,
-    parentPost: { id: post1.id, authorUsername: replier1User.username, body: post1.body },
-    persona: replier2Persona,
-    categorySlug: category.slug,
-    options: { modelName: model3, apiKey },
-  });
+    const parentInfo: { id: string; authorUsername: string; body: string } | undefined =
+      lastReplyId && lastReplyUsername && lastReplyBody
+        ? { id: lastReplyId, authorUsername: lastReplyUsername, body: lastReplyBody }
+        : undefined;
 
-  const post2 = await prisma.post.create({
-    data: {
-      threadId: thread.id,
-      parentId: post1.id,
-      authorId: replier2User.id,
-      body: reply2Body,
-      isSimulated: true,
-      generatedByAi: true,
-      aiAgent: `DiscussionAgent (Nested) [${model3}]`,
-      createdAt: post2Date,
-    },
-  });
-  postIds.push(post2.id);
-  await logSimulationStep("DiscussionAgent", "Nested Reply", `@${replier2User.username} replied to @${replier1User.username} using [${model3}].`, thread.id);
+    const replyBody = await discussionAgent({
+      threadTitle: thread.title,
+      threadBody: thread.body,
+      researchData: researchFacts,
+      parentPost: parentInfo,
+      persona: replierPersona,
+      storyType,
+      categorySlug: category.slug,
+      options: { modelName: replyModel, apiKey },
+    });
 
-  // 10. Deep Nested Reply with personal story (replier 3)
-  const model4 = getModel(modelOffset + 4);
-  const reply3Body = await discussionAgent({
-    threadTitle: thread.title,
-    threadBody: thread.body,
-    researchData: researchFacts,
-    parentPost: { id: post2.id, authorUsername: replier2User.username, body: post2.body },
-    persona: replier3Persona,
-    storyType: "simulated_personal_experience",
-    categorySlug: category.slug,
-    options: { modelName: model4, apiKey },
-  });
+    const replyHours = Math.max(0.2, threadHoursAgo - (i + 1) * (threadHoursAgo / (numReplies + 1)));
+    const postDate = hoursAgo(replyHours);
 
-  const post3 = await prisma.post.create({
-    data: {
-      threadId: thread.id,
-      parentId: post2.id,
-      authorId: replier3User.id,
-      body: reply3Body,
-      isSimulated: true,
-      generatedByAi: true,
-      aiAgent: `DiscussionAgent (Personal Story) [${model4}]`,
-      storyType: "simulated_personal_experience",
-      createdAt: post3Date,
-    },
-  });
-  postIds.push(post3.id);
-  await logSimulationStep("DiscussionAgent", "Personal Story Reply", `@${replier3User.username} shared personal story using [${model4}].`, thread.id);
+    const postItem: { id: string; body: string } = await prisma.post.create({
+      data: {
+        threadId: thread.id,
+        parentId: parentInfo ? parentInfo.id : null,
+        authorId: replierUser.id,
+        body: replyBody,
+        isSimulated: true,
+        generatedByAi: true,
+        aiAgent: `AnswerAgent [${replyModel}]`,
+        createdAt: postDate,
+      },
+    });
 
-  // 11. Top-Level Reply (replier 4)
-  const model5 = getModel(modelOffset + 5);
-  const reply4Body = await discussionAgent({
-    threadTitle: thread.title,
-    threadBody: thread.body,
-    researchData: researchFacts,
-    persona: replier4Persona,
-    storyType: category.slug === "critique" ? "critique" : "product_recommendation",
-    categorySlug: category.slug,
-    options: { modelName: model5, apiKey },
-  });
+    postIds.push(postItem.id);
 
-  const post4 = await prisma.post.create({
-    data: {
-      threadId: thread.id,
-      authorId: replier4User.id,
-      body: reply4Body,
-      isSimulated: true,
-      generatedByAi: true,
-      aiAgent: `AnswerAgent [${model5}]`,
-      createdAt: post4Date,
-    },
-  });
-  postIds.push(post4.id);
+    // 50% chance next reply nests under this reply
+    if (Math.random() < 0.5) {
+      lastReplyId = postItem.id;
+      lastReplyUsername = replierUser.username;
+      lastReplyBody = postItem.body;
+    } else {
+      lastReplyId = undefined;
+      lastReplyUsername = undefined;
+      lastReplyBody = undefined;
+    }
+  }
 
   // Update thread lastPostAt
   await prisma.thread.update({
     where: { id: thread.id },
-    data: { lastPostAt: post4Date },
+    data: { lastPostAt: new Date() },
   });
 
-  // 12. Engagement Agent (Simulated Upvotes / Downvotes)
+  // Apply randomized engagement (upvotes up to 1-150 range)
   await engagementAgent(thread.id, postIds);
-  await logSimulationStep("EngagementAgent", "Simulated Voting", `Generated simulated upvotes for thread and posts.`, thread.id);
+  await logSimulationStep("EngagementAgent", "Simulated Voting", `Generated realistic upvotes and view counts.`, thread.id);
 
   return {
     success: true,
+    mode: "created_new",
     threadId: thread.id,
     threadSlug: thread.slug,
     threadTitle: thread.title,
@@ -314,7 +304,6 @@ export async function replyToThreadAsAi(threadId: string, parentPostId?: string)
   if (!thread) throw new Error("Thread not found");
 
   const users = await ensureSimulatedUsers();
-  // Pick random persona and model
   const personaDef = SIMULATED_PERSONAS[Math.floor(Math.random() * SIMULATED_PERSONAS.length)];
   const personaUser = users.find((u) => u.username === personaDef.username) || users[0];
   const modelName = pool[Math.floor(Math.random() * pool.length)];
@@ -326,7 +315,7 @@ export async function replyToThreadAsAi(threadId: string, parentPostId?: string)
     researchData: researchFacts,
     persona: personaDef,
     categorySlug: thread.category.slug,
-    storyType: thread.category.slug === "critique" ? "critique" : "product_recommendation",
+    storyType: Math.random() < 0.20 ? "product_recommendation" : "simulated_personal_experience",
     options: { modelName, apiKey },
   });
 
@@ -347,7 +336,7 @@ export async function replyToThreadAsAi(threadId: string, parentPostId?: string)
     data: { lastPostAt: new Date() },
   });
 
-  await logSimulationStep("DiscussionAgent", "AI Auto-Reply to Thread", `@${personaUser.username} replied to thread "${thread.title}" using [${modelName}]`, thread.id);
+  await logSimulationStep("DiscussionAgent", "AI Auto-Reply to Thread", `@${personaUser.username} replied to thread "${thread.title}"`, thread.id);
 
   return { success: true, postId: post.id };
 }

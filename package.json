@@ -18,7 +18,8 @@
     "seed:keywords": "tsx scripts/seed-keywords.mts",
     "content:run": "tsx scripts/run-pipeline.mts",
     "import:flickr": "tsx scripts/import-flickr.mts",
-    "seed:tags": "tsx scripts/seed-tags.mts"
+    "seed:tags": "tsx scripts/seed-tags.mts",
+    "seed:categories": "tsx scripts/seed-categories.mts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -29,6 +30,7 @@
     "@aws-sdk/client-s3": "^3.933.0",
     "@dicebear/core": "^10.7.0",
     "@dicebear/styles": "^10.6.0",
+    "@next/third-parties": "^16.3.5",
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "7.10.0",
     "@vercel/blob": "^2.8.0",

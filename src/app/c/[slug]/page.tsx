@@ -21,12 +21,16 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   const { page } = await searchParams;
   const category = await prisma.category.findUnique({
     where: { slug },
-    select: { name: true, description: true },
+    select: { name: true, description: true, _count: { select: { threads: true } } },
   });
   if (!category) return missingPageMetadata("Category not found");
   const canonical = listingCanonical(`/c/${slug}`, page);
   const n = Number(page ?? 1) || 1;
+  // A new board is a real page with nothing on it yet. Keep it out of the index
+  // until its first thread lands; it becomes indexable on its own after that.
+  const empty = category._count.threads === 0;
   return {
+    ...(empty ? { robots: { index: false, follow: true } } : {}),
     // Page 2 carrying the same <title> as page 1 reads as a duplicate in the
     // SERP even once the canonical is right, so number it.
     title: n > 1 ? `${category.name} — page ${n}` : category.name,

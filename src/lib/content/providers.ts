@@ -52,7 +52,7 @@ async function viaOpenRouter({ system, user, maxTokens, modelName, apiKey }: Mod
       Authorization: `Bearer ${key}`,
       "Content-Type": "application/json",
       "HTTP-Referer": process.env.NEXT_PUBLIC_SITE_URL ?? "https://localhost",
-      "X-Title": "ApertureTalk content pipeline",
+      "X-Title": "PhotographyForum.net content pipeline",
     },
     body: JSON.stringify({
       model,

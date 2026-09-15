@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { requireUser, isStaff } from "@/lib/session";
 import { filesFrom, processUpload, UploadError } from "@/lib/photos";
-import { notify } from "@/lib/notify";
+import { notify, notifyEach } from "@/lib/notify";
 import { toPlainText } from "@/lib/markdown";
 import { fail, type ActionState } from "@/actions/types";
 
@@ -51,29 +51,35 @@ export async function createPostAction(
     data: { lastPostAt: new Date() },
   });
 
-  // Notify the thread author, and the parent commenter if this is a nested reply.
-  await notify({
-    userId: thread.authorId,
-    actorId: user.id,
-    type: "reply",
-    title: `${user.name ?? user.username} replied to "${thread.title}"`,
-    href: `/t/${thread.slug}#post-${post.id}`,
-  });
+  // The parent commenter goes first: when they also own the thread they get the
+  // more specific "replied to your comment", once, instead of two notifications
+  // for the same reply.
+  const actor = user.name ?? user.username;
+  const href = `/t/${thread.slug}#post-${post.id}`;
+  const recipients: Parameters<typeof notifyEach>[0] = [];
   if (parentId) {
     const parent = await prisma.post.findUnique({
       where: { id: parentId },
       select: { authorId: true, body: true },
     });
     if (parent) {
-      await notify({
+      recipients.push({
         userId: parent.authorId,
         actorId: user.id,
         type: "reply",
-        title: `${user.name ?? user.username} replied to your comment: "${toPlainText(parent.body, 40)}"`,
-        href: `/t/${thread.slug}#post-${post.id}`,
+        title: `${actor} replied to your comment: "${toPlainText(parent.body, 40)}"`,
+        href,
       });
     }
   }
+  recipients.push({
+    userId: thread.authorId,
+    actorId: user.id,
+    type: "reply",
+    title: `${actor} replied to "${thread.title}"`,
+    href,
+  });
+  await notifyEach(recipients);
 
   revalidatePath(`/t/${thread.slug}`);
   return { ok: true, message: "Reply posted." };
@@ -146,6 +152,9 @@ export async function markAnswerAction(postId: string) {
       type: "answer",
       title: `Your reply was accepted as the answer on "${post.thread.title}"`,
       href: `/t/${post.thread.slug}#post-${post.id}`,
+      // Accept, un-accept, accept again is one event to the person answering.
+      groupKey: `answer:post:${post.id}`,
+      count: 1,
     });
   }
 

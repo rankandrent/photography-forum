@@ -20,7 +20,7 @@ export default async function NewThreadPage({
   const { category } = await searchParams;
   const categories = await prisma.category.findMany({
     orderBy: { position: "asc" },
-    select: { id: true, name: true, slug: true },
+    select: { id: true, name: true, slug: true, section: true },
   });
   const preselected = categories.find((c) => c.slug === category)?.id ?? categories[0]?.id;
 

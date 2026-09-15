@@ -41,19 +41,27 @@ export async function voteAction(
     delta = value * 2;
   }
 
+  // Notify on the resulting state, not the score delta. Removing your own
+  // downvote raises the score by one but is not an upvote, and used to send
+  // "Someone upvoted" anyway.
+  const nowUpvoted = value === 1 && existing?.value !== 1;
+
   if (target === "thread") {
     const thread = await prisma.thread.update({
       where: { id: targetId },
       data: { score: { increment: delta } },
-      select: { slug: true, authorId: true, title: true },
+      select: { id: true, slug: true, authorId: true, title: true },
     });
-    if (delta > 0) {
+    if (nowUpvoted) {
+      const upvotes = await prisma.vote.count({ where: { threadId: thread.id, value: 1 } });
       await notify({
         userId: thread.authorId,
         actorId: user.id,
         type: "vote",
-        title: `Someone upvoted "${thread.title}"`,
+        title: upvoteTitle(upvotes, `"${thread.title}"`),
         href: `/t/${thread.slug}`,
+        groupKey: `vote:thread:${thread.id}`,
+        count: upvotes,
       });
     }
     revalidatePath(`/t/${thread.slug}`);
@@ -61,9 +69,26 @@ export async function voteAction(
     const post = await prisma.post.update({
       where: { id: targetId },
       data: { score: { increment: delta } },
-      select: { thread: { select: { slug: true } } },
+      select: { id: true, authorId: true, thread: { select: { slug: true, title: true } } },
     });
+    if (nowUpvoted) {
+      const upvotes = await prisma.vote.count({ where: { postId: post.id, value: 1 } });
+      await notify({
+        userId: post.authorId,
+        actorId: user.id,
+        type: "vote",
+        title: upvoteTitle(upvotes, `your reply on "${post.thread.title}"`),
+        href: `/t/${post.thread.slug}#post-${post.id}`,
+        groupKey: `vote:post:${post.id}`,
+        count: upvotes,
+      });
+    }
     revalidatePath(`/t/${post.thread.slug}`);
   }
   revalidatePath("/");
+}
+
+/** Anonymous by design: who voted is not something the forum reveals. */
+function upvoteTitle(count: number, what: string): string {
+  return count <= 1 ? `Someone upvoted ${what}` : `${count} people upvoted ${what}`;
 }

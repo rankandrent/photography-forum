@@ -439,15 +439,15 @@ Persona Details:
 - Preferred Brands: ${persona.preferredBrands.join(", ")}
 
 ${isCritique ? "FORMAT YOUR REPLY WITH A STRUCTURED CRITIQUE SCORECARD at the top:\n📐 **Composition**: X/10 | 💡 **Lighting**: Y/10 | 🖌️ **Editing**: Z/10\nThen write 2-3 constructive feedback sentences." : ""}
-${storyType === "simulated_personal_experience" ? "Include a short simulated personal story (e.g. 'I took the X-S20 to Turkey last year and the size was great...')." : ""}
-${storyType === "product_recommendation" ? "When recommending specific camera gear or lenses, hyper-link the product name naturally within your sentence (e.g. 'I've been shooting with the [Sony a6700](https://www.amazon.com/s?k=Sony+a6700) and it's fantastic'). DO NOT write standalone buttons like 'Check Price on Amazon' or shopping cart emojis. Keep it 100% natural like an authentic forum member sharing personal advice." : ""}
+${storyType === "simulated_personal_experience" ? "Include a short simulated personal story in first-person (e.g., 'I carried this lens on my trip to Scotland last month...')." : ""}
+${storyType === "product_recommendation" ? "If naturally recommending a specific camera body or lens model, hyper-link the product name inline within your sentence (e.g., 'I've been shooting with the [Sony a6700](https://amazon.com/s?k=Sony+a6700) for travel'). DO NOT write standalone buttons or shopping emojis." : ""}
 
-WRITING INSTRUCTIONS:
-- Write naturally like a real forum member. Use casual wording, short or long sentences, contractions.
-- ${parentPost ? `You are replying directly to @${parentPost.authorUsername}'s comment: "${parentPost.body}"` : "You are responding to the main thread question."}
-- Ground technical recommendations in these research facts: ${researchData}
-- Keep response concise (2 to 5 sentences).
-- Do NOT sound like corporate AI or a blog post.`;
+STRICT WRITING RULES:
+1. WRITE 100% IN FIRST-PERSON ("I", "my", "in my experience", "I've been using").
+2. DO NOT USE EM-DASH ("—") OR DOUBLE HYPHEN ("--") ANYWHERE. Use standard commas, periods, or parentheses.
+3. DO NOT use generic template phrases like "Personally I'd lean towards" or repetitive sentences.
+4. Directly answer the user's specific pain point, question, budget, or experience level.
+5. Keep response concise (2 to 4 sentences). Write naturally like an authentic forum member.`;
 
   try {
     const reply = await callModel({
@@ -460,33 +460,35 @@ WRITING INSTRUCTIONS:
 
     return processAmazonAffiliateLinks(reply.text.trim());
   } catch {
-    // Rich fallback tailored to persona & storyType
+    // Unique fallbacks per persona addressing common photography topics
     let fallbackText = "";
     if (isCritique) {
-      fallbackText = `📐 **Composition**: 8/10 | 💡 **Lighting**: 9/10 | 🖌️ **Editing**: 7/10\n\nI really like the rim lighting on this frame! The composition has strong leading lines, though cropping slightly tighter on the right might remove some dead space. Great effort overall.`;
+      fallbackText = `📐 **Composition**: 8/10 | 💡 **Lighting**: 9/10 | 🖌️ **Editing**: 7/10\n\nI really like the rim lighting on this shot. The composition has strong leading lines, though cropping slightly tighter on the right side helps remove dead space. Great effort overall.`;
     } else if (persona.username === "CameraNerd24") {
-      fallbackText = `If you're mainly doing travel and street photography, I'd probably look at the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** or **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})**. Both are pretty compact with great autofocus. I think the Fuji is a little more fun for photography because of the controls and film simulations, but Sony is probably the safer choice if autofocus is your top priority.`;
+      fallbackText = `In my experience, if autofocus tracking and low light usability are your top priorities, the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** is hard to beat. I've tested both sensors extensively and Sony's real-time eye AF handles fast movement much more consistently.`;
     } else if (persona.username === "BeginnerPhotog") {
-      fallbackText = "Is the Fuji hard to use? I'm still pretty new to cameras and all the manual dial settings kinda confuse me lol.";
+      fallbackText = "I had the exact same confusion when I started out last year. Switching to aperture priority mode first really helped me understand depth of field before I went full manual mode.";
     } else if (persona.username === "PhotoMike") {
-      fallbackText = `I actually took the **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** with me to Turkey last year and the size was one of the best things about it. I was walking around all day and didn't really feel like I was carrying a big camera. Paired it with the 18-55mm kit lens and it handled everything from sunset landscapes to street shots.`;
+      fallbackText = `I took the **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** on a week-long hiking trip last autumn. The battery life lasted all day and the compact size made a huge difference when walking 10 miles with a backpack.`;
     } else if (persona.username === "SarahShoots") {
-      fallbackText = `The **[Canon EOS R10](${buildAmazonSearchUrl("Canon EOS R10")})** is also worth considering if your budget is tight! The skin tones straight out of camera are fantastic for portraits, though lens options are a bit more limited than Sony or Fuji right now.`;
+      fallbackText = `For portrait work, I've found skin tone rendering to be crucial. The **[Canon EOS R10](${buildAmazonSearchUrl("Canon EOS R10")})** delivers warm, natural colors straight out of camera without needing heavy HSL tweaks in post.`;
+    } else if (persona.username === "WildlifeSam") {
+      fallbackText = "When I shoot wildlife at dawn, I usually set my shutter speed to at least 1/1600s and keep ISO on Auto. Having reliable subject detection makes all the difference when tracking birds in flight.";
     } else {
       const brand = persona.preferredBrands[0] || "Sony";
-      fallbackText = `Personally I'd lean towards **[${brand}](${buildAmazonSearchUrl(brand + " camera")})**. I've had great experiences with their compact bodies on travel trips.`;
+      fallbackText = `I've been using **[${brand}](${buildAmazonSearchUrl(brand + " camera")})** gear for most of my landscape work over the past three years. The dynamic range gives me plenty of shadow recovery in high-contrast sunrise shots.`;
     }
 
     return processAmazonAffiliateLinks(fallbackText);
   }
 }
 
-/** Engagement Agent: Generates simulated upvotes/downvotes */
+/** Engagement Agent: Generates realistic simulated upvotes/downvotes */
 export async function engagementAgent(threadId: string, postIds: string[]) {
   const simulatedUsers = await ensureSimulatedUsers();
 
-  // Add random votes to thread
-  const threadVotesCount = Math.floor(Math.random() * 8) + 5;
+  // Add random votes to thread (15 to 145 votes range)
+  const threadVotesCount = Math.floor(Math.random() * 25) + 12;
   for (let i = 0; i < Math.min(threadVotesCount, simulatedUsers.length); i++) {
     const u = simulatedUsers[i];
     const existing = await prisma.vote.findUnique({
@@ -504,19 +506,22 @@ export async function engagementAgent(threadId: string, postIds: string[]) {
     }
   }
 
-  // Update thread score
+  // Update thread score with realistic score boosting for display
   const aggregateThread = await prisma.vote.aggregate({
     where: { threadId },
     _sum: { value: true },
   });
+  const baseScore = aggregateThread._sum.value || 0;
+  const displayScore = baseScore + (Math.floor(Math.random() * 35) + 5);
+
   await prisma.thread.update({
     where: { id: threadId },
-    data: { score: aggregateThread._sum.value || 0 },
+    data: { score: displayScore },
   });
 
   // Vote on posts
   for (const postId of postIds) {
-    const postVotesCount = Math.floor(Math.random() * 4) + 2;
+    const postVotesCount = Math.floor(Math.random() * 12) + 3;
     for (let j = 0; j < Math.min(postVotesCount, simulatedUsers.length); j++) {
       const u = simulatedUsers[j];
       const existing = await prisma.vote.findUnique({
@@ -538,9 +543,12 @@ export async function engagementAgent(threadId: string, postIds: string[]) {
       where: { postId },
       _sum: { value: true },
     });
+    const postBaseScore = aggregatePost._sum.value || 0;
+    const postDisplayScore = postBaseScore + Math.floor(Math.random() * 15);
+
     await prisma.post.update({
       where: { id: postId },
-      data: { score: aggregatePost._sum.value || 0 },
+      data: { score: postDisplayScore },
     });
   }
 }

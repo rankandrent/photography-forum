@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -40,9 +41,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: site.twitter,
+    ...(site.twitter ? { site: site.twitter } : {}),
     title: site.name,
     description: site.description,
+  },
+  verification: {
+    google: "QIAmsgbYQBb0Fcx_JCSvjQm7bjPI510GebVWDWdBw6s",
   },
   robots: {
     index: true,
@@ -75,6 +79,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+
+        {/* Google Analytics. Loaded via next/script after the page becomes
+            interactive so it never blocks paint, and only in production so a
+            local `next dev` session doesn't pollute the property. */}
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=G-Z6B9BPFDM1"
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z6B9BPFDM1');`}
+            </Script>
+          </>
+        )}
         <JsonLd
           data={{
             "@context": "https://schema.org",
