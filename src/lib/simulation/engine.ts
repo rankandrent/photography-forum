@@ -31,40 +31,61 @@ export async function logSimulationStep(
 }
 
 /**
- * Diverse photography topic prompts for creating new threads.
+ * High Search Volume (HSV) & Low Keyword Difficulty (KD) photography buyer-intent topics
+ * categorized across Tripods, Cameras, Lenses, Lighting, Bags, and Accessories.
  */
 const TOPIC_PROMPTS = [
-  "Best mirrorless camera for travel photography under $1500",
-  "How to photograph the Milky Way for beginners",
-  "Is the Fujifilm X100VI worth the hype in 2024?",
-  "Best lenses for Canon EOS R6 Mark III",
-  "Street photography tips for shy people",
-  "How do you edit golden hour portraits in Lightroom?",
-  "Sony a7CR vs Nikon Z6 III for landscape photography",
-  "What tripod do you recommend for hiking?",
-  "Film simulation recipes for Fujifilm - share your favorites",
-  "Why are my indoor photos always blurry? (beginner help)",
-  "Best budget flash for wedding photography",
-  "Sigma 35mm f/1.4 Art vs Sony 35mm f/1.4 GM comparison",
-  "How to get clients as a new portrait photographer",
-  "Macro photography gear essentials for flower close-ups",
+  // --- Tripods & Supports (High Volume / Low KD) ---
+  "Best lightweight carbon fiber tripod for hiking under $200",
+  "Peak Design travel tripod vs Peak Design aluminum - is carbon fiber worth it?",
+  "Best budget travel tripod for landscape long exposures",
+  "Heavy duty tripod for 100-400mm telephoto wildlife lenses",
+  "Best tabletop tripod for macro and product photography",
+  "What's the best tripod head for panoramic landscape photography?",
+  "Manfrotto Befree Advanced vs Peak Design Travel Tripod comparison",
+
+  // --- Cameras & Bodies ---
+  "Best mirrorless camera for travel photography under $1000",
+  "Sony a6700 vs Fujifilm X-S20 for hybrid video and travel photo",
+  "Best camera for beginner portrait photography 2024",
+  "Is Canon EOS R50 good for low light street photography?",
+  "Nikon Z fc vs Fujifilm X-T30 II for everyday carry",
   "Is full frame really worth it over APS-C in 2024?",
-  "Best camera bag for international travel with 2 bodies",
-  "How to shoot in manual mode - a step by step guide",
-  "Drone photography tips for real estate - DJI Mini 4 Pro",
-  "What's your favorite photo you've ever taken and why?",
-  "Help me choose: Canon R7 vs Sony a6700 for wildlife",
-  "How to create moody dark portrait edits in Capture One",
-  "Best vintage lenses to adapt to Sony E-mount",
-  "Concert photography settings and tips for beginners",
-  "What ND filter do you use for waterfall long exposures?",
-  "How to photograph your kids without them looking awkward",
+  "Sony a7CR vs Nikon Z6 III for high resolution landscape photography",
+
+  // --- Lenses & Optics ---
+  "Best budget portrait lens for Sony E mount (85mm f/1.8 vs 50mm f/1.8)",
+  "Sigma 18-50mm f/2.8 DC DN vs Fuji 18-55mm kit lens comparison",
+  "Best landscape lens for Canon EOS R6 Mark II",
+  "Tamron 28-75mm f/2.8 G2 vs Sony 24-70mm f/2.8 GM II",
+  "Best prime lens for night street photography",
+  "Sigma 35mm f/1.4 Art vs Sony 35mm f/1.4 GM comparison",
+  "Best macro lens for flower and insect photography under $600",
+  "Best vintage manual lenses to adapt to mirrorless cameras",
+
+  // --- Lighting & Flashes ---
+  "Best budget speedlight flash for wedding photographers (Godox V860III vs V1)",
+  "Softbox vs Octabox for indoor portrait lighting setup",
+  "Best continuous LED light panel for portrait photography",
+  "How to use off-camera flash for outdoor portraits in bright sunlight",
+
+  // --- Camera Bags & Travel Gear ---
+  "Best camera backpack for international travel with 2 camera bodies",
+  "Peak Design Everyday Backpack 20L vs 30L size comparison",
+  "Best waterproof camera shoulder bag for outdoor landscape shooters",
+  "How to pack camera gear safely for airline carry-on",
+
+  // --- Filters & Accessories ---
+  "Best ND filter set for waterfall long exposures (NiSi vs Breakthrough)",
+  "Variable ND vs fixed ND filter - which is better for portrait bokeh in sunlight?",
+  "Best fast SD card for 4K video recording and high speed raw bursts",
+  "How to clean camera sensor safely at home",
 ];
 
 /**
  * Executes a simulation cycle:
  * 50% chance: Creates a new thread with varied reply depth (3 to 9 replies) and re-uses persona accounts.
- * 50% chance: Updates an existing thread (student thread or older thread) with fresh, realistic responses.
+ * 50% chance: Updates an existing thread (student thread or older thread) with fresh, research-backed responses.
  */
 export async function runFastDemo(customTopic?: string) {
   // 0. Load Simulation Settings & Model Rotation Pool
@@ -90,9 +111,9 @@ export async function runFastDemo(customTopic?: string) {
   const shouldUpdateExisting = !customTopic && existingThreads.length > 3 && Math.random() < 0.45;
 
   if (shouldUpdateExisting) {
-    // Mode B: Update Existing Thread
+    // Mode B: Update Existing Thread with research-backed answers
     const targetThread = existingThreads[Math.floor(Math.random() * existingThreads.length)];
-    const replyCount = Math.floor(Math.random() * 3) + 1; // 1 to 3 replies
+    const replyCount = Math.floor(Math.random() * 3) + 1;
     const postIds: string[] = [];
 
     const modelOffset = Math.floor(Math.random() * pool.length);
@@ -122,7 +143,7 @@ export async function runFastDemo(customTopic?: string) {
 
       const postDate = new Date(Date.now() - (replyCount - i) * 15 * 60 * 1000);
 
-      const post = await prisma.post.create({
+      const postItem: { id: string; body: string } = await prisma.post.create({
         data: {
           threadId: targetThread.id,
           parentId: lastPost ? lastPost.id : null,
@@ -135,8 +156,8 @@ export async function runFastDemo(customTopic?: string) {
         },
       });
 
-      postIds.push(post.id);
-      lastPost = post;
+      postIds.push(postItem.id);
+      lastPost = { id: postItem.id, authorUsername: personaUser.username, body: postItem.body } as any;
       await logSimulationStep("DiscussionAgent", "Thread Updated", `@${personaUser.username} replied to existing thread "${targetThread.title}"`, targetThread.id);
     }
 
@@ -160,7 +181,7 @@ export async function runFastDemo(customTopic?: string) {
     };
   }
 
-  // Mode A: Create New Thread with dynamic length (3 to 9 replies)
+  // Mode A: Create New Thread with dynamic length (3 to 9 replies) using HSV/Low-KD topics
   const topicPrompt = customTopic || TOPIC_PROMPTS[Math.floor(Math.random() * TOPIC_PROMPTS.length)];
   const modelOffset = Math.floor(Math.random() * pool.length);
   const threadModel = getModel(modelOffset);
@@ -183,7 +204,6 @@ export async function runFastDemo(customTopic?: string) {
   const threadAuthorPersona = shuffledPersonas[0];
   const threadAuthorUser = users.find((u) => u.username === threadAuthorPersona.username) || users[0];
 
-  // Staggered timestamps spanning up to 3 days
   const now = new Date();
   const hoursAgo = (h: number) => new Date(now.getTime() - h * 3600 * 1000);
   const threadHoursAgo = 24 + Math.floor(Math.random() * 48);
@@ -270,13 +290,11 @@ export async function runFastDemo(customTopic?: string) {
     }
   }
 
-  // Update thread lastPostAt
   await prisma.thread.update({
     where: { id: thread.id },
     data: { lastPostAt: new Date() },
   });
 
-  // Apply randomized engagement (upvotes up to 1-150 range)
   await engagementAgent(thread.id, postIds);
   await logSimulationStep("EngagementAgent", "Simulated Voting", `Generated realistic upvotes and view counts.`, thread.id);
 
