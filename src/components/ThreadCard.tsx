@@ -62,7 +62,10 @@ export function ThreadCard({ thread }: { thread: ThreadListItem }) {
             <Avatar user={thread.author} size={26} />
             {thread.author.name ?? thread.author.username}
           </Link>
-          <span>{timeAgo(thread.lastPostAt)}</span>
+          <span>{timeAgo(thread.createdAt)}</span>
+          {new Date(thread.lastPostAt).getTime() - new Date(thread.createdAt).getTime() > 300000 && (
+            <span className="text-slate-400 dark:text-slate-500">(active {timeAgo(thread.lastPostAt)})</span>
+          )}
           <span>{compact(thread._count.posts)} replies</span>
           <span>{compact(thread.viewCount)} views</span>
           <span className="font-medium text-slate-600 dark:text-slate-300">{thread.score} points</span>

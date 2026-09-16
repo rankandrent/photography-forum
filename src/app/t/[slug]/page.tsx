@@ -308,6 +308,9 @@ export default async function ThreadPage({ params }: Props) {
                 </span>
               </Link>
               <time dateTime={thread.createdAt.toISOString()}>{timeAgo(thread.createdAt)}</time>
+              {thread.updatedAt.getTime() - thread.createdAt.getTime() > 300000 && (
+                <span className="text-slate-400 dark:text-slate-500">(active {timeAgo(thread.updatedAt)})</span>
+              )}
               <span>{compact(thread.viewCount)} views</span>
               <span>{thread.posts.length} replies</span>
               {thread.locked && <span className="text-amber-600">🔒 Locked</span>}
