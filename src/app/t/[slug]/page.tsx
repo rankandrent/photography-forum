@@ -153,7 +153,16 @@ export default async function ThreadPage({ params }: Props) {
   const staff = isStaff(user);
   const myThreadVote = Array.isArray(thread.votes) ? (thread.votes[0]?.value ?? 0) : 0;
   const topLevel = thread.posts.filter((p) => !p.parentId);
-  const repliesOf = (id: string) => thread.posts.filter((p) => p.parentId === id);
+
+  // Recursively collect all descendant replies belonging to a parent post branch
+  const getAllDescendants = (parentId: string): typeof thread.posts => {
+    const direct = thread.posts.filter((p) => p.parentId === parentId);
+    let all = [...direct];
+    for (const child of direct) {
+      all = all.concat(getAllDescendants(child.id));
+    }
+    return all;
+  };
 
   const breadcrumbs = [
     { name: "Home", url: absoluteUrl("/") },
@@ -364,7 +373,7 @@ export default async function ThreadPage({ params }: Props) {
         <ul className="space-y-4">
           {topLevel.map((post) => {
             const myVote = Array.isArray(post.votes) ? (post.votes[0]?.value ?? 0) : 0;
-            const children = repliesOf(post.id);
+            const children = getAllDescendants(post.id);
             return (
               <li
                 key={post.id}

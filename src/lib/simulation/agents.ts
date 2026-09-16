@@ -569,7 +569,15 @@ STRICT WRITING RULES:
       fallbackText = "When I shoot wildlife at dawn, I usually set my shutter speed to at least 1/1600s and keep ISO on Auto. Having reliable subject detection makes all the difference when tracking birds in flight.";
     } else {
       const brand = persona.preferredBrands[0] || "Sony";
-      fallbackText = `I've been using **[${brand}](${buildAmazonSearchUrl(brand + " camera")})** gear for most of my landscape work over the past three years. The dynamic range gives me plenty of shadow recovery in high-contrast sunrise shots.`;
+      const topicVariations = [
+        `I've been shooting with **[${brand}](${buildAmazonSearchUrl(brand + " camera")})** for most of my work this year. The handling and optical sharpness make a huge difference out in the field.`,
+        `In my experience, going with **[${brand}](${buildAmazonSearchUrl(brand + " camera")})** gives you plenty of dynamic range and clean details when shooting in high-contrast lighting.`,
+        `I tested a similar setup recently with **[${brand}](${buildAmazonSearchUrl(brand + " gear")})** and found that bumping shutter speed slightly higher resolved most micro-blur issues.`,
+        `Having used **[${brand}](${buildAmazonSearchUrl(brand + " lens")})** on multiple outdoor trips, I recommend double-checking aperture and ISO settings before upgrading your gear.`,
+        `I had a similar issue when I started out. Setting custom white balance and using a lightweight travel tripod made a noticeable improvement in my overall image sharpness.`
+      ];
+      const randomIndex = Math.floor(Math.random() * topicVariations.length);
+      fallbackText = topicVariations[randomIndex];
     }
 
     return processAmazonAffiliateLinks(fallbackText);
