@@ -4,16 +4,7 @@
  * product recommendation links into clean, short Amazon associate URLs.
  */
 
-export const AMAZON_AFFILIATE_TAGS = [
-  "asde3t-20",
-  "trsese34-20",
-  "klel4i4-20",
-  "io34erjwk-20",
-  "uiw4urhf-20",
-  "47398384-20",
-  "93485748-20",
-  "8uherfhjkd-20",
-];
+export const PRIMARY_AMAZON_AFFILIATE_TAG = process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "photographyforum-20";
 
 const GENERIC_BRANDS = [
   "sony",
@@ -31,11 +22,10 @@ const GENERIC_BRANDS = [
 ];
 
 /**
- * Returns a randomly selected Amazon Associate Tag from the configured pool.
+ * Returns the canonical Amazon Associate Tag for the forum.
  */
 export function getRandomAffiliateTag(): string {
-  const index = Math.floor(Math.random() * AMAZON_AFFILIATE_TAGS.length);
-  return AMAZON_AFFILIATE_TAGS[index];
+  return PRIMARY_AMAZON_AFFILIATE_TAG;
 }
 
 /**

@@ -12,6 +12,7 @@ const NAV = [
   { href: "/categories", label: "Categories" },
   { href: "/gear", label: "Gear" },
   { href: "/challenges", label: "Challenges" },
+  { href: "/about", label: "About" },
 ];
 
 export async function Header() {

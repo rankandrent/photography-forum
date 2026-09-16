@@ -554,42 +554,23 @@ STRICT WRITING RULES:
 
     return processAmazonAffiliateLinks(reply.text.trim());
   } catch {
-    // Unique fallbacks per persona addressing common photography topics with specific product models
+    // Context-aware fallbacks addressing the exact thread context
     let fallbackText = "";
+    const isTroubleshooting = /blur|issue|overheat|problem|help|confused|settings|fix|trouble|error/i.test(threadTitle + " " + threadBody);
+    const isComparison = /vs|compare|comparison|versus|which|recommend|best|budget/i.test(threadTitle + " " + threadBody);
+
     if (isCritique) {
       fallbackText = `📐 **Composition**: 8/10 | 💡 **Lighting**: 9/10 | 🖌️ **Editing**: 7/10\n\nI really like the rim lighting on this shot. The composition has strong leading lines, though cropping slightly tighter on the right side helps remove dead space. Great effort overall.`;
-    } else if (persona.username === "CameraNerd24") {
-      fallbackText = `In my experience, if autofocus tracking and low light usability are your top priorities, the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** is hard to beat. I've tested both sensors extensively and Sony's real-time eye AF handles fast movement much more consistently.`;
-    } else if (persona.username === "BeginnerPhotog") {
-      fallbackText = "I had the exact same confusion when I started out last year. Switching to aperture priority mode first really helped me understand depth of field before I went full manual mode.";
+    } else if (isComparison) {
+      fallbackText = `In my experience comparing options in this category, if autofocus tracking and ergonomics are your top priorities, the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** or **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** offer the best performance for the price. Both give excellent dynamic range without feeling bulky in hand.`;
+    } else if (isTroubleshooting) {
+      fallbackText = `I ran into something very similar when shooting high-contrast scenes. Bumping my shutter speed up slightly and turning on electronic front-curtain shutter eliminated the softness without needing a gear change.`;
     } else if (persona.username === "PhotoMike") {
       fallbackText = `I took the **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** on a week-long hiking trip last autumn. The battery life lasted all day and the compact size made a huge difference when walking 10 miles with a backpack.`;
     } else if (persona.username === "SarahShoots") {
       fallbackText = `For portrait work, I've found skin tone rendering to be crucial. The **[Canon EOS R10](${buildAmazonSearchUrl("Canon EOS R10")})** delivers warm, natural colors straight out of camera without needing heavy HSL tweaks in post.`;
-    } else if (persona.username === "WildlifeSam") {
-      fallbackText = "When I shoot wildlife at dawn, I usually set my shutter speed to at least 1/1600s and keep ISO on Auto. Having reliable subject detection makes all the difference when tracking birds in flight.";
     } else {
-      const specificModels = [
-        "Sony a6700",
-        "Fujifilm X-S20",
-        "Panasonic Lumix S5 II",
-        "Canon EOS R10",
-        "Nikon Z fc",
-        "Sigma 18-50mm f/2.8",
-        "Tamron 28-75mm f/2.8 G2",
-        "Ricoh GR IIIx",
-      ];
-      const model = specificModels[Math.floor(Math.random() * specificModels.length)];
-
-      const topicVariations = [
-        `I've been shooting with the **[${model}](${buildAmazonSearchUrl(model)})** for most of my work this year. The handling and optical sharpness make a huge difference out in the field.`,
-        `In my experience, going with the **[${model}](${buildAmazonSearchUrl(model)})** gives you plenty of dynamic range and clean details when shooting in high-contrast lighting.`,
-        `I tested a similar setup recently with the **[${model}](${buildAmazonSearchUrl(model)})** and found that bumping shutter speed slightly higher resolved most micro-blur issues.`,
-        `Having used the **[${model}](${buildAmazonSearchUrl(model)})** on multiple outdoor trips, I recommend double-checking aperture and ISO settings before upgrading your gear.`,
-        `I had a similar issue when I started out. Setting custom white balance and using a solid travel tripod made a noticeable improvement in overall image sharpness.`
-      ];
-      const randomIndex = Math.floor(Math.random() * topicVariations.length);
-      fallbackText = topicVariations[randomIndex];
+      fallbackText = `Based on how I set up my camera out in the field, focusing on aperture priority mode and dialing in exposure compensation gives you clean details in high-contrast light while keeping your workflow fast.`;
     }
 
     return processAmazonAffiliateLinks(fallbackText);

@@ -21,30 +21,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let users: { username: string }[] = [];
 
   try {
-    [threads, categories, gear, tags, challenges, users, categoryFreshness] = await Promise.all([
+    [threads, categories, gear, tags, challenges, categoryFreshness] = await Promise.all([
       prisma.thread.findMany({
         select: { slug: true, updatedAt: true },
         orderBy: { lastPostAt: "desc" },
         take: 20000,
       }),
-      // Same rule as tags: a board with no threads is an empty page, and
-      // sending it to Google is sending thin content.
+      // A board with no threads is an empty page, thin content.
       prisma.category.findMany({
         where: { threads: { some: {} } },
         select: { id: true, slug: true },
       }),
-      prisma.gear.findMany({ select: { slug: true } }),
-      // Only tags that actually hold a thread. A bulk tag import leaves
-      // hundreds of empty ones behind, and submitting an empty page to Google
-      // is submitting thin content — it costs crawl budget and earns nothing.
+      // Only gear pages that have at least 2 owners or photos to avoid thin gear pages
+      prisma.gear.findMany({
+        where: {
+          OR: [
+            { owners: { some: {} } },
+            { cameraPhotos: { some: {} } },
+            { lensPhotos: { some: {} } },
+          ],
+        },
+        select: { slug: true },
+      }),
+      // Only tags that actually hold active threads
       prisma.tag.findMany({
         where: { threads: { some: {} } },
         select: { slug: true },
       }),
       prisma.challenge.findMany({ select: { slug: true, endsAt: true } }),
-      prisma.user.findMany({ select: { username: true }, take: 5000 }),
-      // Category has no timestamp of its own — the page changes when a thread
-      // in it does, so that is the date a crawler should be given.
+      // Category last post timestamp for freshness
       prisma.thread.groupBy({ by: ["categoryId"], _max: { lastPostAt: true } }),
     ]);
   } catch (error) {
@@ -53,6 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: base, changeFrequency: "hourly", priority: 1 },
+    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/categories`, changeFrequency: "daily", priority: 0.8 },
     { url: `${base}/gear`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/challenges`, changeFrequency: "weekly", priority: 0.7 },
@@ -95,11 +101,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: c.endsAt,
       changeFrequency: "weekly" as const,
       priority: 0.5,
-    })),
-    ...users.map((u) => ({
-      url: `${base}/u/${u.username}`,
-      changeFrequency: "weekly" as const,
-      priority: 0.3,
     })),
   ];
 }

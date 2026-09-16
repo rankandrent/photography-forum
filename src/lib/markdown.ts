@@ -31,7 +31,11 @@ function inline(text: string): string {
       // [label](https://…) — http(s) and relative links only
       .replace(
         /\[([^\]\n]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]*)\)/g,
-        '<a class="text-sky-600 underline underline-offset-2 hover:text-sky-500 dark:text-sky-400" href="$2" rel="ugc nofollow noopener">$1</a>',
+        (match, label, href) => {
+          const isExternal = href.startsWith("http://") || href.startsWith("https://");
+          const rel = isExternal ? 'rel="ugc nofollow sponsored noopener" target="_blank"' : 'rel="ugc nofollow"';
+          return `<a class="text-sky-600 underline underline-offset-2 hover:text-sky-500 dark:text-sky-400" href="${href}" ${rel}>${label}</a>`;
+        }
       )
   );
 }

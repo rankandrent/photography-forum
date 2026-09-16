@@ -12,6 +12,7 @@ export function Footer() {
         <nav aria-label="Community">
           <h2 className="mb-2 text-sm font-semibold text-slate-900 dark:text-slate-100">Community</h2>
           <ul className="space-y-1 text-sm text-slate-500 dark:text-slate-400">
+            <li><Link href="/about" className="hover:underline font-medium text-sky-600 dark:text-sky-400">About Us</Link></li>
             <li><Link href="/categories" className="hover:underline">All categories</Link></li>
             <li><Link href="/challenges" className="hover:underline">Weekly challenge</Link></li>
             <li><Link href="/gear" className="hover:underline">Gear database</Link></li>
