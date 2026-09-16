@@ -42,6 +42,36 @@ export default function AdminSimulationPage() {
     upvoteRangeMax: 20,
   });
 
+  const [countdown, setCountdown] = useState<{ hours: string; minutes: string; seconds: string }>({
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
+
+  useEffect(() => {
+    const tick = () => {
+      const now = new Date();
+      const nextRun = new Date(now);
+      nextRun.setUTCHours(0, 0, 0, 0);
+      if (nextRun.getTime() <= now.getTime()) {
+        nextRun.setUTCDate(nextRun.getUTCDate() + 1);
+      }
+      const diffMs = nextRun.getTime() - now.getTime();
+      const h = Math.floor(diffMs / (1000 * 60 * 60));
+      const m = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diffMs % (1000 * 60)) / 1000);
+      setCountdown({
+        hours: String(h).padStart(2, "0"),
+        minutes: String(m).padStart(2, "0"),
+        seconds: String(s).padStart(2, "0"),
+      });
+    };
+
+    tick();
+    const timer = setInterval(tick, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   const loadData = async () => {
     const [statsRes, logsRes, settingsRes] = await Promise.all([
       getSimulationStatsAction(),
@@ -259,6 +289,61 @@ export default function AdminSimulationPage() {
             )}
           </div>
         )}
+      </div>
+
+      {/* Simulation Execution Schedule & Countdown Card */}
+      <div className="mb-8 overflow-hidden rounded-2xl border border-purple-500/30 bg-slate-900 p-5 shadow-xl text-white">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          {/* Last Run Info */}
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/20 text-2xl text-purple-300 ring-1 ring-purple-500/30">
+              ⏱️
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Last Automated Run</p>
+              <p className="text-sm font-bold text-white">
+                {logs[0] ? (
+                  <>
+                    {new Date(logs[0].createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}{" "}
+                    <span className="text-xs font-normal text-slate-400">({new Date(logs[0].createdAt).toLocaleDateString()})</span>
+                  </>
+                ) : (
+                  "No log recorded yet"
+                )}
+              </p>
+              <p className="text-xs font-medium text-purple-400">
+                {logs[0] ? `Agent: ${logs[0].agent} | Action: ${logs[0].action}` : "Ready for next cycle"}
+              </p>
+            </div>
+          </div>
+
+          {/* Next Run Countdown Timer */}
+          <div className="flex items-center gap-4 rounded-xl bg-slate-950/80 p-3.5 ring-1 ring-purple-500/30">
+            <div>
+              <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-purple-300">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Next Auto-Run Countdown
+              </div>
+              <p className="text-xs text-slate-400">Daily Cron @ 05:00 AM PKT (00:00 UTC)</p>
+            </div>
+            <div className="flex items-center gap-1 font-mono text-xl font-bold text-amber-300">
+              <div className="flex flex-col items-center rounded bg-slate-800 px-2.5 py-1">
+                <span>{countdown.hours}</span>
+                <span className="text-[9px] font-sans font-normal text-slate-400 uppercase">HRS</span>
+              </div>
+              <span className="text-slate-500">:</span>
+              <div className="flex flex-col items-center rounded bg-slate-800 px-2.5 py-1">
+                <span>{countdown.minutes}</span>
+                <span className="text-[9px] font-sans font-normal text-slate-400 uppercase">MIN</span>
+              </div>
+              <span className="text-slate-500">:</span>
+              <div className="flex flex-col items-center rounded bg-slate-800 px-2.5 py-1">
+                <span>{countdown.seconds}</span>
+                <span className="text-[9px] font-sans font-normal text-slate-400 uppercase">SEC</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Metrics Cards */}
