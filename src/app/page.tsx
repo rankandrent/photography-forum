@@ -74,12 +74,11 @@ export default async function HomePage() {
     })
   );
 
-  // Derive real active human users + dynamic time-of-day guest presence
-  const fifteenMinsAgo = new Date(Date.now() - 15 * 60 * 1000);
-  const realActiveUsersCount = await prisma.user.count({
+  // Derive real active human logged-in users + dynamic guest presence
+  const realActiveUsersCount = await prisma.session.count({
     where: {
-      isSimulated: false,
-      notificationsSeenAt: { gte: fifteenMinsAgo },
+      expires: { gt: new Date() },
+      user: { isSimulated: false },
     },
   });
 
