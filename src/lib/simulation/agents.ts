@@ -537,10 +537,11 @@ ${storyType === "product_recommendation" ? "If naturally recommending a specific
 
 STRICT WRITING RULES:
 1. WRITE 100% IN FIRST-PERSON ("I", "my", "in my experience", "I've been using").
-2. DO NOT USE EM-DASH ("—") OR DOUBLE HYPHEN ("--") ANYWHERE. Use standard commas, periods, or parentheses.
-3. DO NOT use generic template phrases like "Personally I'd lean towards" or repetitive sentences.
-4. Directly answer the user's specific pain point, question, budget, or experience level.
-5. Keep response concise (2 to 4 sentences). Write naturally like an authentic forum member.`;
+2. ALWAYS SPECIFY EXACT PRODUCT MODEL NAMES when recommending gear (e.g., "Sony a6700", "Fujifilm X-S20", "Panasonic Lumix S5 II", "Canon EOS R10", "Sigma 18-50mm f/2.8", "Tamron 28-75mm f/2.8 G2", "Nikon Z fc"). NEVER mention or link generic brand names alone like 'Sony', 'Panasonic', or 'Canon'.
+3. DO NOT USE EM-DASH ("—") OR DOUBLE HYPHEN ("--") ANYWHERE. Use standard commas, periods, or parentheses.
+4. DO NOT use generic template phrases like "Personally I'd lean towards" or repetitive sentences.
+5. Directly answer the user's specific pain point, question, budget, or experience level.
+6. Keep response concise (2 to 4 sentences). Write naturally like an authentic forum member.`;
 
   try {
     const reply = await callModel({
@@ -553,7 +554,7 @@ STRICT WRITING RULES:
 
     return processAmazonAffiliateLinks(reply.text.trim());
   } catch {
-    // Unique fallbacks per persona addressing common photography topics
+    // Unique fallbacks per persona addressing common photography topics with specific product models
     let fallbackText = "";
     if (isCritique) {
       fallbackText = `📐 **Composition**: 8/10 | 💡 **Lighting**: 9/10 | 🖌️ **Editing**: 7/10\n\nI really like the rim lighting on this shot. The composition has strong leading lines, though cropping slightly tighter on the right side helps remove dead space. Great effort overall.`;
@@ -568,13 +569,24 @@ STRICT WRITING RULES:
     } else if (persona.username === "WildlifeSam") {
       fallbackText = "When I shoot wildlife at dawn, I usually set my shutter speed to at least 1/1600s and keep ISO on Auto. Having reliable subject detection makes all the difference when tracking birds in flight.";
     } else {
-      const brand = persona.preferredBrands[0] || "Sony";
+      const specificModels = [
+        "Sony a6700",
+        "Fujifilm X-S20",
+        "Panasonic Lumix S5 II",
+        "Canon EOS R10",
+        "Nikon Z fc",
+        "Sigma 18-50mm f/2.8",
+        "Tamron 28-75mm f/2.8 G2",
+        "Ricoh GR IIIx",
+      ];
+      const model = specificModels[Math.floor(Math.random() * specificModels.length)];
+
       const topicVariations = [
-        `I've been shooting with **[${brand}](${buildAmazonSearchUrl(brand + " camera")})** for most of my work this year. The handling and optical sharpness make a huge difference out in the field.`,
-        `In my experience, going with **[${brand}](${buildAmazonSearchUrl(brand + " camera")})** gives you plenty of dynamic range and clean details when shooting in high-contrast lighting.`,
-        `I tested a similar setup recently with **[${brand}](${buildAmazonSearchUrl(brand + " gear")})** and found that bumping shutter speed slightly higher resolved most micro-blur issues.`,
-        `Having used **[${brand}](${buildAmazonSearchUrl(brand + " lens")})** on multiple outdoor trips, I recommend double-checking aperture and ISO settings before upgrading your gear.`,
-        `I had a similar issue when I started out. Setting custom white balance and using a lightweight travel tripod made a noticeable improvement in my overall image sharpness.`
+        `I've been shooting with the **[${model}](${buildAmazonSearchUrl(model)})** for most of my work this year. The handling and optical sharpness make a huge difference out in the field.`,
+        `In my experience, going with the **[${model}](${buildAmazonSearchUrl(model)})** gives you plenty of dynamic range and clean details when shooting in high-contrast lighting.`,
+        `I tested a similar setup recently with the **[${model}](${buildAmazonSearchUrl(model)})** and found that bumping shutter speed slightly higher resolved most micro-blur issues.`,
+        `Having used the **[${model}](${buildAmazonSearchUrl(model)})** on multiple outdoor trips, I recommend double-checking aperture and ISO settings before upgrading your gear.`,
+        `I had a similar issue when I started out. Setting custom white balance and using a solid travel tripod made a noticeable improvement in overall image sharpness.`
       ];
       const randomIndex = Math.floor(Math.random() * topicVariations.length);
       fallbackText = topicVariations[randomIndex];
