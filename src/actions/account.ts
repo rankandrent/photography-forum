@@ -88,10 +88,14 @@ export async function googleSignInAction() {
 
 const profileSchema = z.object({
   name: z.string().max(60).optional(),
-  bio: z.string().max(400).optional(),
+  bio: z.string().max(500).optional(),
   location: z.string().max(80).optional(),
   website: z.string().max(200).optional(),
   instagram: z.string().max(60).optional(),
+  twitter: z.string().max(60).optional(),
+  portfolioUrl: z.string().max(200).optional(),
+  experienceLevel: z.string().max(40).optional(),
+  gearList: z.string().max(300).optional(),
 });
 
 export async function updateProfileAction(
@@ -105,12 +109,21 @@ export async function updateProfileAction(
     location: String(formData.get("location") ?? "").trim(),
     website: String(formData.get("website") ?? "").trim(),
     instagram: String(formData.get("instagram") ?? "").trim().replace(/^@/, ""),
+    twitter: String(formData.get("twitter") ?? "").trim().replace(/^@/, ""),
+    portfolioUrl: String(formData.get("portfolioUrl") ?? "").trim(),
+    experienceLevel: String(formData.get("experienceLevel") ?? "INTERMEDIATE").trim(),
+    gearList: String(formData.get("gearList") ?? "").trim(),
   });
   if (!parsed.success) return fail(parsed.error.issues[0].message);
 
   const website = parsed.data.website;
   if (website && !/^https?:\/\//i.test(website)) {
     return fail("Website must start with http:// or https://");
+  }
+
+  const portfolioUrl = parsed.data.portfolioUrl;
+  if (portfolioUrl && !/^https?:\/\//i.test(portfolioUrl)) {
+    return fail("Portfolio URL must start with http:// or https://");
   }
 
   // The avatar is optional: submitting the form without picking a file leaves
@@ -138,11 +151,15 @@ export async function updateProfileAction(
   await prisma.user.update({
     where: { id: user.id },
     data: {
-      name: parsed.data.name || null,
+      name: parsed.data.name || user.username,
       bio: parsed.data.bio || null,
       location: parsed.data.location || null,
       website: website || null,
       instagram: parsed.data.instagram || null,
+      twitter: parsed.data.twitter || null,
+      portfolioUrl: portfolioUrl || null,
+      experienceLevel: parsed.data.experienceLevel || null,
+      gearList: parsed.data.gearList || null,
       ...(image !== undefined ? { image } : {}),
     },
   });

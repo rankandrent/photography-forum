@@ -10,22 +10,24 @@ export function Footer() {
           <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{site.tagline}</p>
         </div>
         <nav aria-label="Community">
-          <h2 className="mb-2 text-sm font-semibold text-slate-900 dark:text-slate-100">Community</h2>
+          <h2 className="mb-2 text-sm font-semibold text-slate-900 dark:text-slate-100">Community &amp; Trust</h2>
           <ul className="space-y-1 text-sm text-slate-500 dark:text-slate-400">
             <li><Link href="/about" className="hover:underline font-medium text-sky-600 dark:text-sky-400">About Us</Link></li>
+            <li><Link href="/team" className="hover:underline">Team &amp; Moderators</Link></li>
+            <li><Link href="/contact" className="hover:underline">Contact &amp; Support</Link></li>
             <li><Link href="/categories" className="hover:underline">All categories</Link></li>
-            <li><Link href="/challenges" className="hover:underline">Weekly challenge</Link></li>
             <li><Link href="/gear" className="hover:underline">Gear database</Link></li>
             <li><Link href="/members" className="hover:underline">Members</Link></li>
           </ul>
         </nav>
         <nav aria-label="Resources">
-          <h2 className="mb-2 text-sm font-semibold text-slate-900 dark:text-slate-100">Resources</h2>
+          <h2 className="mb-2 text-sm font-semibold text-slate-900 dark:text-slate-100">Standards &amp; Verification</h2>
           <ul className="space-y-1 text-sm text-slate-500 dark:text-slate-400">
-            <li><Link href="/guidelines" className="hover:underline">Community guidelines</Link></li>
+            <li><Link href="/editorial-guidelines" className="hover:underline">Editorial Guidelines</Link></li>
+            <li><Link href="/moderation-policy" className="hover:underline">Moderation Policy</Link></li>
+            <li><Link href="/guidelines" className="hover:underline">Community Guidelines</Link></li>
             <li><Link href="/search" className="hover:underline">Search</Link></li>
-            <li><a href="/feed.xml" className="hover:underline">RSS feed</a></li>
-            <li><a href="/sitemap.xml" className="hover:underline">Sitemap</a></li>
+            <li><a href="/sitemap_index.xml" className="hover:underline">Sitemap Index</a></li>
           </ul>
         </nav>
         <nav aria-label="Legal">

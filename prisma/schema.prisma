@@ -36,9 +36,16 @@ model User {
   location      String?
   website       String?
   instagram     String?
-  role          Role      @default(USER)
-  isSimulated   Boolean   @default(false)
-  generatedByAi Boolean   @default(false)
+  twitter       String?
+  portfolioUrl  String?
+  experienceLevel String? @default("INTERMEDIATE")
+  gearList      String?
+  isVerified    Boolean @default(false)
+  isPro         Boolean @default(false)
+  isMentor      Boolean @default(false)
+  role          Role    @default(USER)
+  isSimulated   Boolean @default(false)
+  generatedByAi Boolean @default(false)
   personaJson   String?
   /// When this member last opened their notifications. The header badge only
   /// counts unread notifications newer than this, so opening the list clears the

@@ -83,30 +83,51 @@ export function ProfileForm({
         {remove && <input type="hidden" name="removeAvatar" value="1" />}
       </div>
 
-      <div>
-        <label htmlFor="name" className="mb-1 block text-sm font-medium">Display name</label>
-        <input id="name" name="name" defaultValue={user.name ?? ""} maxLength={60} className={input} />
-      </div>
-      <div>
-        <label htmlFor="bio" className="mb-1 block text-sm font-medium">Bio</label>
-        <textarea id="bio" name="bio" rows={3} defaultValue={user.bio ?? ""} maxLength={400} className={input} />
-      </div>
-      <div className="grid gap-3 sm:grid-cols-2">
         <div>
-          <label htmlFor="location" className="mb-1 block text-sm font-medium">Location</label>
-          <input id="location" name="location" defaultValue={user.location ?? ""} className={input} />
+          <label htmlFor="name" className="mb-1 block text-sm font-medium">Display name</label>
+          <input id="name" name="name" defaultValue={user.name ?? ""} maxLength={60} className={input} />
         </div>
         <div>
-          <label htmlFor="instagram" className="mb-1 block text-sm font-medium">Instagram handle</label>
-          <input id="instagram" name="instagram" defaultValue={user.instagram ?? ""} placeholder="yourhandle" className={input} />
+          <label htmlFor="bio" className="mb-1 block text-sm font-medium">Bio (up to 500 chars)</label>
+          <textarea id="bio" name="bio" rows={3} defaultValue={user.bio ?? ""} maxLength={500} className={input} />
         </div>
-      </div>
-      <div>
-        <label htmlFor="website" className="mb-1 block text-sm font-medium">Portfolio URL</label>
-        <input id="website" name="website" type="url" defaultValue={user.website ?? ""} placeholder="https://" className={input} />
-      </div>
-      <FormError error={state.error} message={state.message} />
-      <SubmitButton pendingLabel="Saving…">Save profile</SubmitButton>
-    </form>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div>
+            <label htmlFor="location" className="mb-1 block text-sm font-medium">Location</label>
+            <input id="location" name="location" defaultValue={user.location ?? ""} className={input} />
+          </div>
+          <div>
+            <label htmlFor="experienceLevel" className="mb-1 block text-sm font-medium">Experience Level</label>
+            <select id="experienceLevel" name="experienceLevel" defaultValue={(user as any).experienceLevel ?? "INTERMEDIATE"} className={input}>
+              <option value="BEGINNER">Beginner (0-2 years)</option>
+              <option value="INTERMEDIATE">Intermediate (2-5 years)</option>
+              <option value="PRO">Pro Photographer</option>
+              <option value="STUDIO">Studio Owner / Commercial</option>
+            </select>
+          </div>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div>
+            <label htmlFor="website" className="mb-1 block text-sm font-medium">Website</label>
+            <input id="website" name="website" type="url" defaultValue={user.website ?? ""} placeholder="https://" className={input} />
+          </div>
+          <div>
+            <label htmlFor="portfolioUrl" className="mb-1 block text-sm font-medium">Portfolio URL</label>
+            <input id="portfolioUrl" name="portfolioUrl" type="url" defaultValue={(user as any).portfolioUrl ?? ""} placeholder="https://" className={input} />
+          </div>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div>
+            <label htmlFor="instagram" className="mb-1 block text-sm font-medium">Instagram Handle</label>
+            <input id="instagram" name="instagram" defaultValue={user.instagram ?? ""} placeholder="yourhandle" className={input} />
+          </div>
+          <div>
+            <label htmlFor="twitter" className="mb-1 block text-sm font-medium">Twitter / X Handle</label>
+            <input id="twitter" name="twitter" defaultValue={(user as any).twitter ?? ""} placeholder="yourhandle" className={input} />
+          </div>
+        </div>
+        <FormError error={state.error} message={state.message} />
+        <SubmitButton pendingLabel="Saving…">Save profile</SubmitButton>
+      </form>
   );
 }

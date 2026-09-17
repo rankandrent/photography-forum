@@ -14,6 +14,8 @@ import { absoluteUrl } from "@/lib/site";
 import { urlFor } from "@/lib/storage";
 import { listingCanonical, missingPageMetadata } from "@/lib/seo";
 
+import { UserBadges } from "@/components/UserBadges";
+
 type Props = {
   params: Promise<{ username: string }>;
   searchParams: Promise<{ page?: string }>;
@@ -51,6 +53,12 @@ export default async function ProfilePage({ params, searchParams }: Props) {
       location: true,
       website: true,
       instagram: true,
+      twitter: true,
+      portfolioUrl: true,
+      experienceLevel: true,
+      isVerified: true,
+      isPro: true,
+      isMentor: true,
       role: true,
       isSimulated: true,
       createdAt: true,
@@ -73,21 +81,37 @@ export default async function ProfilePage({ params, searchParams }: Props) {
     }),
   ]);
 
+  const sameAsUrls = [
+    profile.website,
+    profile.portfolioUrl,
+    profile.twitter ? `https://twitter.com/${profile.twitter.replace(/^@/, "")}` : null,
+    profile.instagram ? `https://instagram.com/${profile.instagram.replace(/^@/, "")}` : null,
+  ].filter(Boolean) as string[];
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-8">
       <header className="flex flex-wrap items-start gap-5 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
         <Avatar user={profile} size={72} />
         <div className="min-w-0 flex-1">
-          <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">
-            {profile.name ?? profile.username}
-          </h1>
+          <div className="flex flex-wrap items-center gap-2">
+            <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">
+              {profile.name ?? profile.username}
+            </h1>
+            <UserBadges
+              user={{
+                role: profile.role,
+                isVerified: profile.isVerified,
+                isPro: profile.isPro,
+                isMentor: profile.isMentor,
+                website: profile.website,
+                portfolioUrl: profile.portfolioUrl,
+                experienceLevel: profile.experienceLevel,
+                postsCount: profile._count.posts,
+              }}
+            />
+          </div>
           <p className="text-sm text-slate-500">@{profile.username}</p>
           <div className="mt-1 flex flex-wrap gap-2">
-            {profile.role !== "USER" && (
-              <span className="inline-block rounded bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
-                {profile.role === "ADMIN" ? "Admin" : "Moderator"}
-              </span>
-            )}
             {profile.isSimulated && (
               <span className="inline-block rounded bg-purple-100 px-2 py-0.5 text-xs font-semibold text-purple-800 dark:bg-purple-500/15 dark:text-purple-300 ring-1 ring-purple-500/30">
                 🤖 Simulated AI Profile
@@ -100,7 +124,14 @@ export default async function ProfilePage({ params, searchParams }: Props) {
             {profile.location && <li>📍 {profile.location}</li>}
             {profile.website && (
               <li>
-                <a href={profile.website} rel="me nofollow noopener" target="_blank" className="text-brand-600 hover:underline">
+                <a href={profile.website} rel="me nofollow noopener" target="_blank" className="text-sky-600 hover:underline">
+                  Website
+                </a>
+              </li>
+            )}
+            {profile.portfolioUrl && (
+              <li>
+                <a href={profile.portfolioUrl} rel="me nofollow noopener" target="_blank" className="text-sky-600 hover:underline">
                   Portfolio
                 </a>
               </li>
@@ -108,12 +139,12 @@ export default async function ProfilePage({ params, searchParams }: Props) {
             {profile.instagram && (
               <li>
                 <a
-                  href={`https://instagram.com/${profile.instagram}`}
+                  href={`https://instagram.com/${profile.instagram.replace(/^@/, "")}`}
                   rel="me nofollow noopener"
                   target="_blank"
-                  className="text-brand-600 hover:underline"
+                  className="text-sky-600 hover:underline"
                 >
-                  @{profile.instagram}
+                  @{profile.instagram.replace(/^@/, "")}
                 </a>
               </li>
             )}
@@ -137,7 +168,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
               <li key={gear.id}>
                 <Link
                   href={`/gear/${gear.slug}`}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm hover:border-brand-500 dark:border-slate-700 dark:bg-slate-900"
+                  className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm hover:border-sky-500 dark:border-slate-700 dark:bg-slate-900"
                 >
                   {gear.name}
                 </Link>
@@ -190,14 +221,14 @@ export default async function ProfilePage({ params, searchParams }: Props) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "ProfilePage",
-          mainEntity: {
-            "@type": "Person",
-            name: profile.name ?? profile.username,
-            alternateName: profile.username,
-            description: profile.bio ?? undefined,
-            url: absoluteUrl(`/u/${profile.username}`),
-          },
+          "@type": "Person",
+          name: profile.name ?? profile.username,
+          alternateName: `@${profile.username}`,
+          url: absoluteUrl(`/u/${profile.username}`),
+          ...(profile.image ? { image: absoluteUrl(profile.image) } : {}),
+          description: profile.bio ?? `${profile.name ?? profile.username} is a photographer and member of PhotographyForum.net community.`,
+          sameAs: sameAsUrls,
+          knowsAbout: ["Photography", "Camera Gear", "Photo Critique", "Digital Post-Processing"],
         }}
       />
     </div>
