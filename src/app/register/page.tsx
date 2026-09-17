@@ -7,6 +7,7 @@ import { googleEnabled } from "@/lib/auth";
 export const metadata: Metadata = {
   title: "Create an account",
   description: "Join the photography forum — ask questions, get structured critique on your work.",
+  robots: { index: false, follow: true },
   alternates: { canonical: "/register" },
 };
 

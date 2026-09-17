@@ -6,17 +6,21 @@ import { NextResponse, type NextRequest } from "next/server";
  * 2. Strips trailing slashes (canonical consistency)
  * 3. Strips junk query params (?sort, ?order, ?direction, ?ref, ?utm_*)
  *    from crawler-visible responses via 301 permanent redirect.
- *
- * Static assets, API routes, and Next.js internals are excluded.
+ * 4. Adds X-Robots-Tag header to API and admin routes.
  */
 export function middleware(request: NextRequest) {
-  const { pathname, search } = request.nextUrl;
+  const { pathname } = request.nextUrl;
 
-  // Skip static files, API, _next internals, and image optimization
+  // Add X-Robots-Tag header to API and admin endpoints
+  if (pathname.startsWith("/api/") || pathname.startsWith("/admin/")) {
+    const response = NextResponse.next();
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    return response;
+  }
+
+  // Skip static files, _next internals, and image optimization
   if (
     pathname.startsWith("/_next") ||
-    pathname.startsWith("/api/") ||
-    pathname.startsWith("/admin/") ||
     pathname.match(/\.\w{2,4}$/) // .css, .js, .png, .ico, .svg, .xml, etc.
   ) {
     return NextResponse.next();
@@ -52,7 +56,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (needsRedirect) {
-    return NextResponse.redirect(url, 308);
+    return NextResponse.redirect(url, 301);
   }
 
   return NextResponse.next();
@@ -61,10 +65,7 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all request paths except:
-     * - _next/static (static files)
-     * - _next/image (image optimization)
-     * - favicon.ico, icon.svg, apple-icon.png
+     * Match all request paths except static assets
      */
     "/((?!_next/static|_next/image|favicon\\.ico|icon\\.svg|apple-icon\\.png).*)",
   ],
