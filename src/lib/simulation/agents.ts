@@ -536,7 +536,7 @@ ${storyType === "simulated_personal_experience" ? "Include a short simulated per
 ${storyType === "product_recommendation" ? "If naturally recommending a specific camera body or lens model, hyper-link the product name inline within your sentence (e.g., 'I've been shooting with the [Sony a6700](https://amazon.com/s?k=Sony+a6700) for travel'). DO NOT write standalone buttons or shopping emojis." : ""}
 
 STRICT WRITING RULES:
-1. WRITE 100% IN FIRST-PERSON ("I", "my", "in my experience", "I've been using").
+1. VARY YOUR SENTENCE STRUCTURE AND OPENERS. Do NOT start every sentence or reply with "I" or "In my experience". Mix technical advice, direct solutions, questions, observations, and personal experience naturally.
 2. ALWAYS SPECIFY EXACT PRODUCT MODEL NAMES when recommending gear (e.g., "Sony a6700", "Fujifilm X-S20", "Panasonic Lumix S5 II", "Canon EOS R10", "Sigma 18-50mm f/2.8", "Tamron 28-75mm f/2.8 G2", "Nikon Z fc"). NEVER mention or link generic brand names alone like 'Sony', 'Panasonic', or 'Canon'.
 3. DO NOT USE EM-DASH ("—") OR DOUBLE HYPHEN ("--") ANYWHERE. Use standard commas, periods, or parentheses.
 4. DO NOT use generic template phrases like "Personally I'd lean towards" or repetitive sentences.
@@ -554,26 +554,46 @@ STRICT WRITING RULES:
 
     return processAmazonAffiliateLinks(reply.text.trim());
   } catch {
-    // Context-aware fallbacks addressing the exact thread context
-    let fallbackText = "";
-    const isTroubleshooting = /blur|issue|overheat|problem|help|confused|settings|fix|trouble|error/i.test(threadTitle + " " + threadBody);
+    // Context-aware randomized fallbacks addressing the exact thread context
+    const isTroubleshooting = /blur|issue|overheat|problem|help|confused|settings|fix|trouble|error|tripod|soft/i.test(threadTitle + " " + threadBody);
     const isComparison = /vs|compare|comparison|versus|which|recommend|best|budget/i.test(threadTitle + " " + threadBody);
 
     if (isCritique) {
-      fallbackText = `📐 **Composition**: 8/10 | 💡 **Lighting**: 9/10 | 🖌️ **Editing**: 7/10\n\nI really like the rim lighting on this shot. The composition has strong leading lines, though cropping slightly tighter on the right side helps remove dead space. Great effort overall.`;
-    } else if (isComparison) {
-      fallbackText = `In my experience comparing options in this category, if autofocus tracking and ergonomics are your top priorities, the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** or **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** offer the best performance for the price. Both give excellent dynamic range without feeling bulky in hand.`;
-    } else if (isTroubleshooting) {
-      fallbackText = `I ran into something very similar when shooting high-contrast scenes. Bumping my shutter speed up slightly and turning on electronic front-curtain shutter eliminated the softness without needing a gear change.`;
-    } else if (persona.username === "PhotoMike") {
-      fallbackText = `I took the **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** on a week-long hiking trip last autumn. The battery life lasted all day and the compact size made a huge difference when walking 10 miles with a backpack.`;
-    } else if (persona.username === "SarahShoots") {
-      fallbackText = `For portrait work, I've found skin tone rendering to be crucial. The **[Canon EOS R10](${buildAmazonSearchUrl("Canon EOS R10")})** delivers warm, natural colors straight out of camera without needing heavy HSL tweaks in post.`;
-    } else {
-      fallbackText = `Based on how I set up my camera out in the field, focusing on aperture priority mode and dialing in exposure compensation gives you clean details in high-contrast light while keeping your workflow fast.`;
+      const critiqueScore = Math.floor(Math.random() * 3) + 7;
+      return processAmazonAffiliateLinks(
+        `📐 **Composition**: ${critiqueScore}/10 | 💡 **Lighting**: ${critiqueScore + 1}/10 | 🖌️ **Editing**: 8/10\n\nThe highlights look well controlled and the subject separation works nicely. Cropping slightly tighter on the right frame edge might clean up negative space.`
+      );
     }
 
-    return processAmazonAffiliateLinks(fallbackText);
+    if (isTroubleshooting) {
+      const troubleshootingOptions = [
+        `One thing worth double checking is image stabilization. If IBIS or lens OIS stays enabled while mounted on a tripod, the sensor can micro-jitter trying to compensate for movement that isn't there.`,
+        `Check whether your camera has electronic front-curtain shutter (EFCS) enabled. Mechanical shutter shock at exposures between 1/2s and 2s often introduces subtle blur on lightweight tripods.`,
+        `Wind micro-vibrations are usually the culprit here. Hanging your backpack on the center column hook adds ballast and keeps the legs anchored securely during exposures.`,
+        `Two seconds is right in the zone where shutter slap causes soft frames. Setting a 2-second or 5-second self-timer delay prevents hand movement from shaking the body when hitting the shutter button.`,
+        `Disabling lens stabilization on a tripod setup made an immediate difference for my long exposures. Also try turning on exposure delay mode if your body supports it.`,
+      ];
+      const selected = troubleshootingOptions[Math.floor(Math.random() * troubleshootingOptions.length)];
+      return processAmazonAffiliateLinks(selected);
+    }
+
+    if (isComparison) {
+      const comparisonOptions = [
+        `Comparing dynamic range and autofocus speed, the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** leads for tracking fast subjects, while the **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** stands out for out-of-camera color profiles.`,
+        `For portrait and everyday walkaround work, pairing a compact body with the **[Sigma 18-50mm f/2.8](${buildAmazonSearchUrl("Sigma 18-50mm f/2.8")})** offers a solid balance of sharpness and portability.`,
+        `Budget and ergonomics usually dictate the choice here. The **[Canon EOS R10](${buildAmazonSearchUrl("Canon EOS R10")})** gives great grip comfort, whereas Fuji systems excel at tactile dial controls.`,
+      ];
+      const selected = comparisonOptions[Math.floor(Math.random() * comparisonOptions.length)];
+      return processAmazonAffiliateLinks(selected);
+    }
+
+    const generalOptions = [
+      `Aperture priority mode with Auto ISO set to a minimum shutter speed threshold works great out in the field when light changes fast.`,
+      `Testing different focal lengths on street walks showed me that a 35mm or 40mm prime keeps things lightweight while forcing creative framing.`,
+      `Shooting RAW + JPEG gives you instant usable previews without losing highlight recovery latitude for tricky lighting setups.`,
+    ];
+    const selected = generalOptions[Math.floor(Math.random() * generalOptions.length)];
+    return processAmazonAffiliateLinks(selected);
   }
 }
 

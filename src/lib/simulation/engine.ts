@@ -151,7 +151,7 @@ export async function runFastDemo(customTopic?: string) {
         options: { modelName, apiKey },
       });
 
-      const postDate = new Date(Date.now() - (replyCount - i) * 15 * 60 * 1000);
+      const postDate = new Date();
 
       const postItem: { id: string; body: string } = await prisma.post.create({
         data: {
