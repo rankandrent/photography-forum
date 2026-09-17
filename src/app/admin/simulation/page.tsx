@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useTransition } from "react";
+import Link from "next/link";
 import {
   runFastDemoAction,
   resetSimulationAction,
@@ -246,6 +247,12 @@ export default function AdminSimulationPage() {
             >
               {isPending ? "⏳ Executing..." : "🚀 Run Fast Demo Mode"}
             </button>
+            <Link
+              href="/admin/content-audit"
+              className="rounded-xl border border-sky-500/40 bg-sky-950/40 px-4 py-3 text-sm font-semibold text-sky-300 hover:bg-sky-900/60"
+            >
+              🛡️ Content Quality Audit
+            </Link>
             <button
               onClick={handleReset}
               disabled={isPending}

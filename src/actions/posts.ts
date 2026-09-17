@@ -9,11 +9,16 @@ import { triggerRealUserReplyNotification } from "@/lib/email";
 import { toPlainText } from "@/lib/markdown";
 import { fail, type ActionState } from "@/actions/types";
 
+import { checkRateLimit } from "@/lib/rate-limit";
+
 export async function createPostAction(
   _prev: ActionState,
   formData: FormData,
 ): Promise<ActionState> {
   const user = await requireUser();
+
+  const rateCheck = await checkRateLimit(user.id, "reply");
+  if (!rateCheck.allowed) return fail(rateCheck.message ?? "Rate limit exceeded.");
   const threadId = String(formData.get("threadId") ?? "");
   const parentId = String(formData.get("parentId") ?? "") || null;
   const body = String(formData.get("body") ?? "").trim();

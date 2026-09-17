@@ -17,11 +17,16 @@ const threadSchema = z.object({
   kind: z.enum(["DISCUSSION", "CRITIQUE", "SHOWCASE"]),
 });
 
+import { checkRateLimit } from "@/lib/rate-limit";
+
 export async function createThreadAction(
   _prev: ActionState,
   formData: FormData,
 ): Promise<ActionState> {
   const user = await requireUser();
+
+  const rateCheck = await checkRateLimit(user.id, "thread");
+  if (!rateCheck.allowed) return fail(rateCheck.message ?? "Rate limit exceeded.");
 
   const parsed = threadSchema.safeParse({
     title: String(formData.get("title") ?? "").trim(),
