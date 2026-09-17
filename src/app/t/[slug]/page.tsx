@@ -37,6 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       updatedAt: true,
       author: { select: { name: true, username: true } },
       photos: { select: { displayKey: true }, take: 1 },
+      posts: { select: { body: true } },
+      _count: { select: { posts: true } },
     },
   });
   if (!thread) return missingPageMetadata("Thread not found");
@@ -44,10 +46,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = toPlainText(thread.body, 155);
   const image = thread.photos[0] ? urlFor(thread.photos[0].displayKey) : `/og?title=${encodeURIComponent(thread.title)}`;
 
+  // Dynamic robots: noindex thin threads (< 2 replies OR < 150 total words)
+  // to prevent Google Helpful Content quality suppression.
+  const replyCount = thread._count.posts;
+  const allText = [thread.body, ...thread.posts.map((p) => p.body)].join(" ");
+  const totalWordCount = allText.split(/\s+/).filter(Boolean).length;
+  const isThinContent = replyCount < 2 || totalWordCount < 150;
+
   return {
     title: thread.title,
     description,
     alternates: { canonical: `/t/${slug}` },
+    ...(isThinContent
+      ? { robots: { index: false, follow: true } }
+      : { robots: { index: true, follow: true } }),
     openGraph: {
       type: "article",
       title: thread.title,
