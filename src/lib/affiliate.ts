@@ -4,7 +4,32 @@
  * product recommendation links into clean, short Amazon associate URLs.
  */
 
-export const PRIMARY_AMAZON_AFFILIATE_TAG = process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "photographyforum-20";
+/**
+ * Associate tracking IDs to rotate between, newest-style comma-separated env
+ * var first, then the older single-tag var, then a last-resort default.
+ *
+ * These live in configuration rather than in this file on purpose: the list was
+ * hardcoded once before and a later refactor silently collapsed it back to one
+ * tag, so every link for weeks credited a single ID. Config survives refactors.
+ *
+ *   NEXT_PUBLIC_AMAZON_AFFILIATE_TAGS="tag-one-20,tag-two-20,tag-three-20"
+ *
+ * All IDs must be tracking IDs belonging to ONE Amazon Associates account.
+ * Multiple tracking IDs per account is a supported Associates Central feature;
+ * operating multiple Associates *accounts* is a violation of the Operating
+ * Agreement and risks all of them being closed.
+ */
+export const AMAZON_AFFILIATE_TAGS: string[] = (
+  process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAGS ||
+  process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG ||
+  "photographyforum-20"
+)
+  .split(",")
+  .map((t) => t.trim())
+  .filter(Boolean);
+
+/** Kept for callers that want a stable tag rather than a rotated one. */
+export const PRIMARY_AMAZON_AFFILIATE_TAG = AMAZON_AFFILIATE_TAGS[0];
 
 const GENERIC_BRANDS = [
   "sony",
@@ -22,10 +47,15 @@ const GENERIC_BRANDS = [
 ];
 
 /**
- * Returns the canonical Amazon Associate Tag for the forum.
+ * Picks one of the configured tracking IDs at random.
+ *
+ * Links are written into the post body once at generation time, so a post keeps
+ * whichever ID it drew — the rotation spreads across posts, not across requests
+ * for the same post.
  */
 export function getRandomAffiliateTag(): string {
-  return PRIMARY_AMAZON_AFFILIATE_TAG;
+  if (AMAZON_AFFILIATE_TAGS.length === 1) return AMAZON_AFFILIATE_TAGS[0];
+  return AMAZON_AFFILIATE_TAGS[Math.floor(Math.random() * AMAZON_AFFILIATE_TAGS.length)];
 }
 
 /**
