@@ -9,7 +9,7 @@ import { MarkNotificationsSeen } from "@/components/MarkNotificationsSeen";
 
 export const metadata: Metadata = {
   title: "Notifications",
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
 };
 
 const ICONS: Record<string, { glyph: string; label: string }> = {

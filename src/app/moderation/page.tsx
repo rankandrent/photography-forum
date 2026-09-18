@@ -9,7 +9,7 @@ import { ResolveButtons, RoleSelect } from "@/components/ModerationTools";
 
 export const metadata: Metadata = {
   title: "Moderation",
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
 };
 
 export default async function ModerationPage() {

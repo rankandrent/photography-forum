@@ -6,7 +6,7 @@ import { NewThreadForm } from "@/components/NewThreadForm";
 
 export const metadata: Metadata = {
   title: "Start a thread",
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
 };
 
 export default async function NewThreadPage({

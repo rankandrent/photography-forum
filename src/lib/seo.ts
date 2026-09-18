@@ -39,7 +39,7 @@ export function listingCanonical(path: string, page?: string | number): string {
 export function missingPageMetadata(title: string) {
   return {
     title,
-    robots: { index: false, follow: false },
+    robots: { index: false, follow: true },
     alternates: { canonical: null },
   };
 }

@@ -8,7 +8,7 @@ import { RunNowButton } from "@/components/ContentTools";
 
 export const metadata: Metadata = {
   title: "Content pipeline",
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
 };
 
 // The "Run pipeline now" server action lives on this route, and a run spends a
