@@ -8,7 +8,7 @@ import { Pagination } from "@/components/Pagination";
 import { SortTabs } from "@/components/SortTabs";
 import { EmptyState } from "@/components/EmptyState";
 import { JsonLd } from "@/components/JsonLd";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, site } from "@/lib/site";
 import { listingCanonical, missingPageMetadata } from "@/lib/seo";
 
 type Props = {
@@ -36,7 +36,13 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
     title: n > 1 ? `${category.name} — page ${n}` : category.name,
     description: category.description,
     alternates: { canonical },
-    openGraph: { title: category.name, description: category.description, url: canonical },
+    openGraph: {
+      title: category.name,
+      description: category.description,
+      url: canonical,
+      images: [{ url: `/og?title=${encodeURIComponent(category.name)}`, width: 1200, height: 630 }],
+    },
+    twitter: { card: "summary_large_image", images: [`/og?title=${encodeURIComponent(category.name)}`] },
   };
 }
 
@@ -100,6 +106,33 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       </div>
 
       <Pagination page={page} pageCount={pageCount} basePath={`/c/${category.slug}`} params={{ sort: sp.sort }} />
+
+      {/*
+        A board is a list of threads, so CollectionPage with an itemList of the
+        threads actually on this page is the honest shape — it tells Google what
+        the page collects rather than leaving it to infer from the markup.
+      */}
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": absoluteUrl(`/c/${slug}`),
+          name: category.name,
+          description: category.description,
+          url: absoluteUrl(`/c/${slug}`),
+          isPartOf: { "@type": "WebSite", name: site.name, url: absoluteUrl("/") },
+          mainEntity: {
+            "@type": "ItemList",
+            numberOfItems: total,
+            itemListElement: threads.map((t, i) => ({
+              "@type": "ListItem",
+              position: (page - 1) * threads.length + i + 1,
+              url: absoluteUrl(`/t/${t.slug}`),
+              name: t.title,
+            })),
+          },
+        }}
+      />
 
       <JsonLd
         data={{

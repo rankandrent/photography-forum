@@ -38,12 +38,24 @@ export const metadata: Metadata = {
     description: site.description,
     url: "/",
     locale: "en_US",
+    // Without this every share of the homepage — and of any page that does not
+    // set its own image — renders as a blank card. /og draws the card at the
+    // 1200x630 both Facebook and X expect.
+    images: [
+      {
+        url: `/og?title=${encodeURIComponent(site.tagline)}`,
+        width: 1200,
+        height: 630,
+        alt: `${site.name} — ${site.tagline}`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     ...(site.twitter ? { site: site.twitter } : {}),
     title: site.name,
     description: site.description,
+    images: [`/og?title=${encodeURIComponent(site.tagline)}`],
   },
   verification: {
     google: "QIAmsgbYQBb0Fcx_JCSvjQm7bjPI510GebVWDWdBw6s",
