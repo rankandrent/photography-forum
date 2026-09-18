@@ -14,7 +14,8 @@ import {
   DEFAULT_MODEL_POOL,
   ContentGenerationError,
 } from "./agents";
-import { findDuplicate } from "./quality";
+import { findDuplicate, findDuplicateThreadTitle } from "./quality";
+import { processAmazonAffiliateLinks } from "@/lib/affiliate";
 import { slugify } from "@/lib/slug";
 
 export async function logSimulationStep(
@@ -265,10 +266,24 @@ export async function runFastDemo(customTopic?: string) {
   const threadHoursAgo = 24 + Math.floor(Math.random() * 48);
   const threadDate = hoursAgo(threadHoursAgo);
 
+  const titleClash = await findDuplicateThreadTitle(topicData.title);
+  if (titleClash) {
+    // Publishing it would put two near-identical pages in the index competing
+    // for the same query. Abandon the run; the next one picks a fresh topic.
+    await logSimulationStep(
+      "QualityGuard",
+      "Rejected duplicate title",
+      `"${topicData.title}" is ${(titleClash.score * 100).toFixed(0)}% similar to "${titleClash.title}"`
+    );
+    return { success: false as const, mode: "skipped_duplicate_title" as const, duplicateOf: titleClash.title };
+  }
+
   const thread = await prisma.thread.create({
     data: {
       title: topicData.title,
-      body: topicData.description,
+      // Gear named in the opening post earns an affiliate link too; this used
+      // to run on replies only.
+      body: processAmazonAffiliateLinks(topicData.description),
       slug: threadSlug,
       topic: topicData.topic,
       categoryId: category.id,

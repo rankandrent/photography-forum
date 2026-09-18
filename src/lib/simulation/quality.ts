@@ -97,3 +97,28 @@ export async function findDuplicate(
   }
   return best;
 }
+
+/**
+ * Two threads with near-identical titles compete with each other in the SERP
+ * and split whatever authority either would have earned alone. The generator
+ * works from a keyword pool, so it drifts onto the same phrasing over time.
+ */
+export async function findDuplicateThreadTitle(
+  title: string,
+  threshold = 0.6
+): Promise<{ threadId: string; score: number; title: string } | null> {
+  const candidates = await prisma.thread.findMany({
+    orderBy: { createdAt: "desc" },
+    take: 1000,
+    select: { id: true, title: true },
+  });
+
+  let best: { threadId: string; score: number; title: string } | null = null;
+  for (const c of candidates) {
+    const score = similarity(title, c.title);
+    if (score >= threshold && (!best || score > best.score)) {
+      best = { threadId: c.id, score, title: c.title };
+    }
+  }
+  return best;
+}
