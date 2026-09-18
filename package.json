@@ -19,7 +19,8 @@
     "content:run": "tsx scripts/run-pipeline.mts",
     "import:flickr": "tsx scripts/import-flickr.mts",
     "seed:tags": "tsx scripts/seed-tags.mts",
-    "seed:categories": "tsx scripts/seed-categories.mts"
+    "seed:categories": "tsx scripts/seed-categories.mts",
+    "check:seo": "tsx scripts/check-seo.mts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

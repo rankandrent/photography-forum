@@ -12,7 +12,9 @@ import {
   masterAuditorAgent,
   SIMULATED_PERSONAS,
   DEFAULT_MODEL_POOL,
+  ContentGenerationError,
 } from "./agents";
+import { findDuplicate } from "./quality";
 import { slugify } from "@/lib/slug";
 
 export async function logSimulationStep(
@@ -140,16 +142,33 @@ export async function runFastDemo(customTopic?: string) {
       // 15% chance of gear recommendation link
       const storyType = Math.random() < 0.15 ? "product_recommendation" : "simulated_personal_experience";
 
-      const replyBody = await discussionAgent({
-        threadTitle: targetThread.title,
-        threadBody: targetThread.body,
-        researchData: researchFacts,
-        parentPost: lastPost ? { id: lastPost.id, authorUsername: personaUser.username, body: lastPost.body } : undefined,
-        persona: personaDef,
-        categorySlug: targetThread.category.slug,
-        storyType,
-        options: { modelName, apiKey },
-      });
+      let replyBody: string;
+      try {
+        replyBody = await discussionAgent({
+          threadTitle: targetThread.title,
+          threadBody: targetThread.body,
+          researchData: researchFacts,
+          parentPost: lastPost ? { id: lastPost.id, authorUsername: personaUser.username, body: lastPost.body } : undefined,
+          persona: personaDef,
+          categorySlug: targetThread.category.slug,
+          storyType,
+          options: { modelName, apiKey },
+        });
+      } catch (error) {
+        if (!(error instanceof ContentGenerationError)) throw error;
+        await logSimulationStep("DiscussionAgent", "Skipped", `Generation failed, no reply posted: ${error.message}`);
+        continue;
+      }
+
+      const duplicate = await findDuplicate(replyBody, { threadId: targetThread.id });
+      if (duplicate) {
+        await logSimulationStep(
+          "QualityGuard",
+          "Rejected duplicate",
+          `Reply ${(duplicate.score * 100).toFixed(0)}% similar to an existing post: "${duplicate.excerpt}…"`
+        );
+        continue;
+      }
 
       const postDate = new Date();
 
@@ -305,16 +324,23 @@ export async function runFastDemo(customTopic?: string) {
         ? { id: lastReplyId, authorUsername: lastReplyUsername, body: lastReplyBody }
         : undefined;
 
-    let replyBody = await discussionAgent({
-      threadTitle: thread.title,
-      threadBody: thread.body,
-      researchData: researchFacts,
-      parentPost: parentInfo,
-      persona: replierPersona,
-      storyType,
-      categorySlug: category.slug,
-      options: { modelName: replyModel, apiKey },
-    });
+    let replyBody: string;
+    try {
+      replyBody = await discussionAgent({
+        threadTitle: thread.title,
+        threadBody: thread.body,
+        researchData: researchFacts,
+        parentPost: parentInfo,
+        persona: replierPersona,
+        storyType,
+        categorySlug: category.slug,
+        options: { modelName: replyModel, apiKey },
+      });
+    } catch (error) {
+      if (!(error instanceof ContentGenerationError)) throw error;
+      await logSimulationStep("DiscussionAgent", "Skipped", `Generation failed, no reply posted: ${error.message}`);
+      continue;
+    }
 
     // 25% chance of contextual internal link to another thread
     if (Math.random() < 0.25) {
@@ -323,6 +349,16 @@ export async function runFastDemo(customTopic?: string) {
         currentThreadId: thread.id,
         options: { modelName: replyModel, apiKey },
       });
+    }
+
+    const duplicateReply = await findDuplicate(replyBody, { threadId: thread.id });
+    if (duplicateReply) {
+      await logSimulationStep(
+        "QualityGuard",
+        "Rejected duplicate",
+        `Reply ${(duplicateReply.score * 100).toFixed(0)}% similar to an existing post: "${duplicateReply.excerpt}…"`
+      );
+      continue;
     }
 
     const replyHours = Math.max(0.2, threadHoursAgo - (i + 1) * (threadHoursAgo / (numReplies + 1)));

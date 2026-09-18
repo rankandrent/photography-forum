@@ -509,6 +509,18 @@ export async function researchAgent(
   }
 }
 
+/**
+ * Raised when a generation agent cannot produce publishable text. Callers skip
+ * the item rather than substituting boilerplate — see the catch in
+ * `discussionAgent` for why.
+ */
+export class ContentGenerationError extends Error {
+  constructor(message: string, options?: { cause?: unknown }) {
+    super(message, options);
+    this.name = "ContentGenerationError";
+  }
+}
+
 /** Discussion Agent: Generates natural top-level or nested replies from distinct personas */
 export async function discussionAgent(params: {
   threadTitle: string;
@@ -553,47 +565,20 @@ STRICT WRITING RULES:
     });
 
     return processAmazonAffiliateLinks(reply.text.trim());
-  } catch {
-    // Context-aware randomized fallbacks addressing the exact thread context
-    const isTroubleshooting = /blur|issue|overheat|problem|help|confused|settings|fix|trouble|error|tripod|soft/i.test(threadTitle + " " + threadBody);
-    const isComparison = /vs|compare|comparison|versus|which|recommend|best|budget/i.test(threadTitle + " " + threadBody);
-
-    if (isCritique) {
-      const critiqueScore = Math.floor(Math.random() * 3) + 7;
-      return processAmazonAffiliateLinks(
-        `📐 **Composition**: ${critiqueScore}/10 | 💡 **Lighting**: ${critiqueScore + 1}/10 | 🖌️ **Editing**: 8/10\n\nThe highlights look well controlled and the subject separation works nicely. Cropping slightly tighter on the right frame edge might clean up negative space.`
-      );
-    }
-
-    if (isTroubleshooting) {
-      const troubleshootingOptions = [
-        `One thing worth double checking is image stabilization. If IBIS or lens OIS stays enabled while mounted on a tripod, the sensor can micro-jitter trying to compensate for movement that isn't there.`,
-        `Check whether your camera has electronic front-curtain shutter (EFCS) enabled. Mechanical shutter shock at exposures between 1/2s and 2s often introduces subtle blur on lightweight tripods.`,
-        `Wind micro-vibrations are usually the culprit here. Hanging your backpack on the center column hook adds ballast and keeps the legs anchored securely during exposures.`,
-        `Two seconds is right in the zone where shutter slap causes soft frames. Setting a 2-second or 5-second self-timer delay prevents hand movement from shaking the body when hitting the shutter button.`,
-        `Disabling lens stabilization on a tripod setup made an immediate difference for my long exposures. Also try turning on exposure delay mode if your body supports it.`,
-      ];
-      const selected = troubleshootingOptions[Math.floor(Math.random() * troubleshootingOptions.length)];
-      return processAmazonAffiliateLinks(selected);
-    }
-
-    if (isComparison) {
-      const comparisonOptions = [
-        `Comparing dynamic range and autofocus speed, the **[Sony a6700](${buildAmazonSearchUrl("Sony a6700")})** leads for tracking fast subjects, while the **[Fujifilm X-S20](${buildAmazonSearchUrl("Fujifilm X-S20")})** stands out for out-of-camera color profiles.`,
-        `For portrait and everyday walkaround work, pairing a compact body with the **[Sigma 18-50mm f/2.8](${buildAmazonSearchUrl("Sigma 18-50mm f/2.8")})** offers a solid balance of sharpness and portability.`,
-        `Budget and ergonomics usually dictate the choice here. The **[Canon EOS R10](${buildAmazonSearchUrl("Canon EOS R10")})** gives great grip comfort, whereas Fuji systems excel at tactile dial controls.`,
-      ];
-      const selected = comparisonOptions[Math.floor(Math.random() * comparisonOptions.length)];
-      return processAmazonAffiliateLinks(selected);
-    }
-
-    const generalOptions = [
-      `Aperture priority mode with Auto ISO set to a minimum shutter speed threshold works great out in the field when light changes fast.`,
-      `Testing different focal lengths on street walks showed me that a 35mm or 40mm prime keeps things lightweight while forcing creative framing.`,
-      `Shooting RAW + JPEG gives you instant usable previews without losing highlight recovery latitude for tricky lighting setups.`,
-    ];
-    const selected = generalOptions[Math.floor(Math.random() * generalOptions.length)];
-    return processAmazonAffiliateLinks(selected);
+  } catch (error) {
+    // Deliberately no canned fallback here.
+    //
+    // This used to fall back to one of three to five hardcoded sentences. When
+    // the model was unreachable — a bad key, a renamed model, a rate limit —
+    // *every* reply took that path, so the forum filled with the same sentence
+    // carrying a different brand name. That is spun content, and publishing it
+    // costs far more ranking than the missing reply ever would.
+    //
+    // Failing here means the caller skips this reply and the run continues.
+    throw new ContentGenerationError(
+      `discussionAgent could not generate a reply for "${threadTitle}"`,
+      { cause: error }
+    );
   }
 }
 

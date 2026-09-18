@@ -10,7 +10,10 @@ import { site, siteUrl } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    // Not the tagline: `${site.name} — ${site.tagline}` runs to 71 characters
+    // and Google truncates the back half, which is where the keywords were.
+    // This states what the forum is in 58, brand included.
+    default: `${site.name} — Photo Critique & Camera Gear Advice`,
     template: `%s · ${site.name}`,
   },
   description: site.description,
