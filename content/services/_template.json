@@ -1,0 +1,75 @@
+{
+  "title": "Short service name (used in menus, cards, breadcrumbs)",
+  "order": 99,
+  "metaTitle": "SEO title, ~60 chars | UIUXDesignServices.us",
+  "metaDescription": "SEO description, ~155 chars",
+  "hero": {
+    "eyebrow": "Small label above H1",
+    "h1": "Main H1 (64px)",
+    "sub": "1–2 sentence sub-heading"
+  },
+  "summary": "1–2 sentences for service cards",
+  "tags": [
+    "Tag 1",
+    "Tag 2",
+    "Tag 3",
+    "Tag 4"
+  ],
+  "stats": [
+    {
+      "value": "40%",
+      "label": "What the number means"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Problem",
+      "body": "Why it happens / what it costs. Inline <a href=\"/services/ux-design/\">links</a> allowed."
+    }
+  ],
+  "subServices": [
+    {
+      "title": "Sub-service",
+      "body": "What's included"
+    }
+  ],
+  "process": [
+    {
+      "title": "Step name",
+      "body": "What happens",
+      "deliverables": "Outputs",
+      "timeline": "1–2 weeks"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Benefit",
+      "body": "Explanation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Question?",
+      "a": "Answer. Inline HTML links allowed."
+    }
+  ],
+  "relatedIndustries": [
+    "healthcare",
+    "saas"
+  ],
+  "relatedServices": [
+    "ux-design",
+    "ui-design"
+  ],
+  "headings": {
+    "stats": "Optional H2 override for this section",
+    "painPoints": "Optional H2 override for this section",
+    "subServices": "Optional H2 override for this section",
+    "process": "Optional H2 override for this section",
+    "benefits": "Optional H2 override for this section",
+    "industries": "Optional H2 override for this section",
+    "caseStudies": "Optional H2 override for this section",
+    "faqs": "Optional H2 override for this section",
+    "posts": "Optional H2 override for this section"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Healthcare",
+  "order": 1,
+  "metaTitle": "Healthcare UI UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "Healthcare is our deepest vertical. The users range from ICU nurses on 12-hour shifts to elderly patients learning a tablet for the first time.",
+  "hero": {
+    "eyebrow": "Healthcare UI UX design",
+    "h1": "UI UX design services for healthcare",
+    "sub": "Healthcare is our deepest vertical. The users range from ICU nurses on 12-hour shifts to elderly patients learning a tablet for the first time."
+  },
+  "summary": "Healthcare is our deepest vertical. The users range from ICU nurses on 12-hour shifts to elderly patients learning a tablet for the first time.",
+  "intro": "Healthcare is our deepest vertical. The users range from ICU nurses on 12-hour shifts to elderly patients learning a tablet for the first time.",
+  "bullets": [
+    "Design provider interfaces with information density that avoids cognitive overload",
+    "Build nursing tools for tablets and mobile, not desktop workstations",
+    "Design patient-facing experiences for elderly and low-digital-literacy users",
+    "Handle PHI visibility at the screen level, not just the backend",
+    "Meet WCAG/AAA accessibility standards across every flow"
+  ]
+}

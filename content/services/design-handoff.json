@@ -1,0 +1,21 @@
+{
+  "title": "Design handoff & QA",
+  "order": 7,
+  "metaTitle": "Design Handoff & Design QA Services | UIUXDesignServices.us",
+  "metaDescription": "We stay alongside engineering through build so nothing is lost in translation.",
+  "hero": {
+    "eyebrow": "Design handoff & QA",
+    "h1": "Design handoff and QA that survives contact with development",
+    "sub": "We stay alongside engineering through build to ensure nothing is lost in translation."
+  },
+  "summary": "Dev-ready specs and QA sessions alongside engineering through launch.",
+  "tags": [
+    "Dev-ready specs",
+    "Design QA",
+    "Storybook"
+  ],
+  "relatedServices": [
+    "ui-design",
+    "design-and-development"
+  ]
+}

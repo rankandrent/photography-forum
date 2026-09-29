@@ -1,0 +1,20 @@
+{
+  "title": "Supply chain",
+  "order": 5,
+  "metaTitle": "Supply chain UI UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "Supply chain and logistics platforms run in warehouses, trucks, and shop floors. Design must match the physical environment.",
+  "hero": {
+    "eyebrow": "Supply chain UI UX design",
+    "h1": "UI UX design services for supply chain",
+    "sub": "Supply chain and logistics platforms run in warehouses, trucks, and shop floors. Design must match the physical environment."
+  },
+  "summary": "Supply chain and logistics platforms run in warehouses, trucks, and shop floors. Design must match the physical environment.",
+  "intro": "Supply chain and logistics platforms run in warehouses, trucks, and shop floors. Design must match the physical environment.",
+  "bullets": [
+    "Design warehouse dashboards for low-light and high-speed environments",
+    "Reduce multi-step workflows to the minimum viable steps",
+    "Design for tablet and handheld form factors, not desktop",
+    "Build real-time dashboards where data accuracy matters as much as layout",
+    "Test error recovery flows with operators, not designers"
+  ]
+}

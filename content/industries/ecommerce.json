@@ -1,0 +1,20 @@
+{
+  "title": "E-commerce",
+  "order": 2,
+  "metaTitle": "E-commerce UI UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "E-commerce design work must reduce friction at every step and drive measurable conversion improvements.",
+  "hero": {
+    "eyebrow": "E-commerce UI UX design",
+    "h1": "UI UX design services for e-commerce",
+    "sub": "E-commerce design work must reduce friction at every step and drive measurable conversion improvements."
+  },
+  "summary": "E-commerce design work must reduce friction at every step and drive measurable conversion improvements.",
+  "intro": "E-commerce design work must reduce friction at every step and drive measurable conversion improvements.",
+  "bullets": [
+    "Streamline product discovery with filters, search, and category navigation",
+    "Reduce checkout friction that drives cart abandonment",
+    "Design for both desktop shoppers and mobile-first audiences",
+    "Build design systems that scale across regional storefronts",
+    "Test checkout and product page variations with real users"
+  ]
+}

@@ -1,0 +1,126 @@
+import type { Metadata } from "next";
+import { SITE, absoluteUrl } from "./site";
+import type { Faq, Step } from "./types";
+
+export function pageMetadata({
+  title,
+  description,
+  path,
+  noindex,
+  type = "website",
+  image = "/og/home.png",
+}: {
+  title: string;
+  description: string;
+  path: string;
+  noindex?: boolean;
+  type?: "website" | "article";
+  /** Path of the share image, e.g. /og/services/ux-design.png */
+  image?: string;
+}): Metadata {
+  const url = absoluteUrl(path);
+  return {
+    title: { absolute: title },
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type,
+      siteName: SITE.name,
+      locale: "en_US",
+      images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: title }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [absoluteUrl(image)] },
+    robots: noindex ? { index: false, follow: true } : undefined,
+  };
+}
+
+const ORG_ID = `${SITE.url}/#organization`;
+
+export const organizationLd = () => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": ORG_ID,
+      name: SITE.name,
+      url: `${SITE.url}/`,
+      description: SITE.description,
+      logo: absoluteUrl("/icon.svg"),
+      image: absoluteUrl("/og/home.png"),
+      ...(SITE.sameAs.length && { sameAs: SITE.sameAs }),
+      ...(SITE.email && { email: SITE.email }),
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      url: `${SITE.url}/`,
+      name: SITE.name,
+      publisher: { "@id": ORG_ID },
+      inLanguage: "en-US",
+    },
+  ],
+});
+
+export const serviceLd = (name: string, description: string, path: string, offers: string[] = []) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name,
+  serviceType: name,
+  description,
+  url: absoluteUrl(path),
+  provider: { "@id": ORG_ID },
+  areaServed: { "@type": "Country", name: "United States" },
+  ...(offers.length && {
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name,
+      itemListElement: offers.map((o) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: o } })),
+    },
+  }),
+});
+
+const stripTags = (s: string) => s.replace(/<[^>]+>/g, "");
+
+export const faqLd = (faqs: Faq[]) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: stripTags(f.a) },
+  })),
+});
+
+export const howToLd = (name: string, steps: Step[]) => ({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name,
+  step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.title, text: stripTags(s.body) })),
+});
+
+export const breadcrumbLd = (items: { name: string; path: string }[]) => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((it, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: it.name,
+    item: absoluteUrl(it.path),
+  })),
+});
+
+export const articleLd = (a: { title: string; description: string; path: string; date: string; author: string; image: string }) => ({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: a.title,
+  description: a.description,
+  image: absoluteUrl(a.image),
+  datePublished: a.date,
+  dateModified: a.date,
+  author: { "@type": "Person", name: a.author },
+  publisher: { "@id": ORG_ID },
+  mainEntityOfPage: absoluteUrl(a.path),
+});

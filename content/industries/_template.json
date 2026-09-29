@@ -1,0 +1,60 @@
+{
+  "title": "Industry name",
+  "order": 99,
+  "metaTitle": "SEO title | UIUXDesignServices.us",
+  "metaDescription": "SEO description",
+  "hero": {
+    "eyebrow": "Label",
+    "h1": "Main H1",
+    "sub": "Sub-heading"
+  },
+  "summary": "1–2 sentences for industry cards",
+  "intro": "Intro line (also used on the home page industry tabs)",
+  "bullets": [
+    "What we design for this industry (5 bullets)"
+  ],
+  "stats": [
+    {
+      "value": "",
+      "label": ""
+    }
+  ],
+  "challenges": [
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "solutions": [
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "benefits": [
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "",
+      "a": ""
+    }
+  ],
+  "relatedServices": [
+    "user-research",
+    "ux-design"
+  ],
+  "headings": {
+    "stats": "Optional H2 override for this section",
+    "challenges": "Optional H2 override for this section",
+    "solutions": "Optional H2 override for this section",
+    "services": "Optional H2 override for this section",
+    "benefits": "Optional H2 override for this section",
+    "caseStudies": "Optional H2 override for this section",
+    "faqs": "Optional H2 override for this section",
+    "posts": "Optional H2 override for this section"
+  }
+}

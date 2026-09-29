@@ -1,0 +1,28 @@
+{
+  "title": "User research & product strategy",
+  "order": 1,
+  "metaTitle": "User Research Services | UIUXDesignServices.us",
+  "metaDescription": "User interviews, observation, journey maps, and Jobs-to-be-Done analysis that define what to build before you build it.",
+  "hero": {
+    "eyebrow": "User research services",
+    "h1": "User research that defines what to build before you build it",
+    "sub": "We interview users, observe real workflows, and analyze competitors before any design decision."
+  },
+  "summary": "Interviews, observation, journey maps, and Jobs-to-be-Done analysis that define what to build before you build it.",
+  "tags": [
+    "User interviews",
+    "Journey mapping",
+    "Personas",
+    "Competitive analysis"
+  ],
+  "relatedIndustries": [
+    "healthcare",
+    "saas",
+    "supply-chain"
+  ],
+  "relatedServices": [
+    "ux-design",
+    "usability-testing",
+    "service-design"
+  ]
+}

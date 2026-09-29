@@ -1,0 +1,27 @@
+{
+  "title": "UI design & design systems",
+  "order": 3,
+  "metaTitle": "UI Design & Design System Services | UIUXDesignServices.us",
+  "metaDescription": "Development-ready component libraries that scale across products, teams, and platforms without inconsistency.",
+  "hero": {
+    "eyebrow": "UI design services",
+    "h1": "UI design and design systems that scale across products",
+    "sub": "Screen design, motion, and a reusable design system so new features ship consistently."
+  },
+  "summary": "Development-ready component libraries that scale across products, teams, and platforms without inconsistency.",
+  "tags": [
+    "Component libraries",
+    "Design tokens",
+    "Style guides",
+    "Motion design"
+  ],
+  "relatedIndustries": [
+    "saas",
+    "ecommerce",
+    "startups"
+  ],
+  "relatedServices": [
+    "ux-design",
+    "design-handoff"
+  ]
+}

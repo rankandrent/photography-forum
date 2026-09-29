@@ -1,0 +1,20 @@
+{
+  "title": "Finance",
+  "order": 3,
+  "metaTitle": "Finance UI UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "Financial services need interfaces that are secure, transparent, and simple even when the underlying data is complex.",
+  "hero": {
+    "eyebrow": "Finance UI UX design",
+    "h1": "UI UX design services for finance",
+    "sub": "Financial services need interfaces that are secure, transparent, and simple even when the underlying data is complex."
+  },
+  "summary": "Financial services need interfaces that are secure, transparent, and simple even when the underlying data is complex.",
+  "intro": "Financial services need interfaces that are secure, transparent, and simple even when the underlying data is complex.",
+  "bullets": [
+    "Design dashboards that present complex data without overwhelming users",
+    "Simplify onboarding and KYC flows while preserving regulatory requirements",
+    "Use visual indicators to help users track tasks and avoid errors",
+    "Design for compliance-aware session handling and audit visibility",
+    "Test account management and transaction flows with real users"
+  ]
+}

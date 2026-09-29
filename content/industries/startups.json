@@ -1,0 +1,20 @@
+{
+  "title": "Startups",
+  "order": 6,
+  "metaTitle": "Startups UI UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "Startups need design that moves fast without sacrificing the research discipline that determines product-market fit.",
+  "hero": {
+    "eyebrow": "Startups UI UX design",
+    "h1": "UI UX design services for startups",
+    "sub": "Startups need design that moves fast without sacrificing the research discipline that determines product-market fit."
+  },
+  "summary": "Startups need design that moves fast without sacrificing the research discipline that determines product-market fit.",
+  "intro": "Startups need design that moves fast without sacrificing the research discipline that determines product-market fit.",
+  "bullets": [
+    "Run design sprints that validate direction before full build investment",
+    "Design MVPs that test assumptions without cutting user research",
+    "Build design systems that scale as the team grows from 3 to 30",
+    "Support fundraise-ready product presentations and demos",
+    "Prepare design for acquisition due diligence"
+  ]
+}
