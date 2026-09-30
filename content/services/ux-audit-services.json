@@ -1,0 +1,22 @@
+{
+  "title": "UX audit",
+  "order": 3,
+  "metaTitle": "UX Audit Services | UIUXDesignServices.us",
+  "metaDescription": "UX audit services: heuristic review, analytics and usability findings, and a prioritized list of fixes with effort estimates.",
+  "hero": {
+    "eyebrow": "UX audit services",
+    "h1": "UX audit services that pinpoint where users struggle and why",
+    "sub": "A heuristic review, analytics deep-dive, and usability findings delivered as a prioritized fix list with effort estimates."
+  },
+  "summary": "Heuristic review, analytics, and usability findings turned into a prioritized fix list.",
+  "tags": [
+    "Heuristic review",
+    "Analytics review",
+    "Accessibility check",
+    "Fix roadmap"
+  ],
+  "relatedIndustries": [
+    "ecommerce",
+    "saas"
+  ]
+}

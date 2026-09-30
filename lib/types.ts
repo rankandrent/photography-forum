@@ -48,6 +48,7 @@ export type Industry = {
   challenges?: Card[];
   solutions?: Card[];
   benefits?: Card[];
+  process?: Step[];
   faqs?: Faq[];
   relatedServices?: string[];
   headings?: SectionHeadings;
@@ -71,6 +72,14 @@ export type CaseStudy = {
   quoteAuthor?: string;
   date: string;
   featured?: boolean;
+  /** Card background: hex (#0B3D2E) or preset: pink | ink | blue | green | orange | purple */
+  color: string;
+  /** Wordmark shown top-left on the card (defaults to client) */
+  logo?: string;
+  /** Card layout: "visual" (UI mock / image) or "quote" (testimonial) */
+  card: "visual" | "quote";
+  /** Optional screenshot under /public, e.g. /work/fortna.webp */
+  image?: string;
   html: string;
 };
 

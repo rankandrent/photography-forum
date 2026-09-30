@@ -4,7 +4,7 @@ description: "TODO: 1–2 sentence summary for cards and meta description."
 date: 2026-09-01
 author: Design Team
 type: Article
-services: [ux-design]
+services: [web-app-design-services]
 industries: [finance]
 tags: []
 draft: true   # remove once the article body is written

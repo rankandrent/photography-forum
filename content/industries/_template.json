@@ -44,8 +44,8 @@
     }
   ],
   "relatedServices": [
-    "user-research",
-    "ux-design"
+    "ux-research-services",
+    "saas-ux-design"
   ],
   "headings": {
     "stats": "Optional H2 override for this section",

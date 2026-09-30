@@ -16,8 +16,11 @@ export const home = {
     h1Before: "UI UX design services that turn interfaces into ",
     h1Em: "measurable outcomes",
     sub: "User research, UX design, UI design, prototyping, and usability testing delivered as one engagement. What gets designed actually ships, and every design decision ties back to a metric.",
-    formTitle: "Get a free design consultation",
-    formSub: "A design lead replies within one business day.",
+    stats: [
+      { value: "200+", label: "UX design projects delivered" },
+      { value: "16 yrs", label: "Average design team experience" },
+      { value: "4.9 / 5", label: "Average client rating across platforms" },
+    ],
   },
   clients: {
     label: "Trusted by teams building complex products",
@@ -66,31 +69,31 @@ export const home = {
     steps: [
       {
         title: "Discovery and research",
-        body: 'We interview users, observe real workflows, and analyze competitors before any design decision. See our <a href="/services/user-research/">user research service</a> for the scope.',
+        body: 'We interview users, observe real workflows, and analyze competitors before any design decision. See our <a href="/services/ux-research-services/">UX research services</a> for the scope.',
         deliverables: "Personas, journey maps, research report",
         timeline: "1–4 weeks",
       },
       {
         title: "UX design and prototyping",
-        body: 'Information architecture, wireframes, and interactive prototypes tested with real users. See our <a href="/services/ux-design/">UX design service</a> for how prototypes reduce rework.',
+        body: 'Information architecture, wireframes, and interactive prototypes tested with real users. See our <a href="/services/digital-product-design-services/">digital product design services</a> for how prototypes reduce rework.',
         deliverables: "Wireframes, interactive prototypes",
         timeline: "3–6 weeks",
       },
       {
         title: "UI design and design system",
-        body: 'Screen design, motion, and a reusable design system so new features ship consistently. See <a href="/services/ui-design/">UI design and design systems</a>.',
+        body: 'Screen design, motion, and a reusable design system so new features ship consistently. See <a href="/services/design-system-services/">design system services</a>.',
         deliverables: "High-fidelity screens, component library",
         timeline: "3–6 weeks",
       },
       {
         title: "Usability testing and validation",
-        body: 'Real users, real tasks, real feedback. We test before development and before launch. See <a href="/services/usability-testing/">usability testing services</a>.',
+        body: 'Real users, real tasks, real feedback. We test before development and before launch. See <a href="/services/usability-testing-services/">usability testing services</a>.',
         deliverables: "Test reports, iteration log",
         timeline: "1–3 weeks",
       },
       {
         title: "Design implementation support",
-        body: 'We stay alongside engineering through build to ensure nothing is lost in translation. See our <a href="/services/design-handoff/">design handoff and QA service</a>.',
+        body: 'We stay alongside engineering through build to ensure nothing is lost in translation. See our <a href="/services/digital-product-design-services/">digital product design services</a>.',
         deliverables: "Dev-ready specs, QA sessions",
         timeline: "Ongoing through launch",
       },
@@ -113,27 +116,27 @@ export const home = {
     items: [
       {
         title: "User research & Jobs-to-be-Done",
-        body: 'We do not design based on what stakeholders think users want. We observe, interview, and map what users actually do. For one healthcare client, that meant 40+ hours shadowing MDS nurses in skilled nursing facilities. For a supply chain platform, 30+ interviews revealed competitors were winning on UX, not functionality. See <a href="/services/user-research/">user research services</a>.',
+        body: 'We do not design based on what stakeholders think users want. We observe, interview, and map what users actually do. For one healthcare client, that meant 40+ hours shadowing MDS nurses in skilled nursing facilities. For a supply chain platform, 30+ interviews revealed competitors were winning on UX, not functionality. See <a href="/services/ux-research-services/">UX research services</a>.',
       },
       {
         title: "Service design",
-        body: 'The screen is one touchpoint. The people, processes, and systems behind it are where most products fail. We map frontstage (what users see) and backstage (what makes it work). For a telehealth platform, the patient-facing app was frontstage. Coordination across 130+ facilities was backstage. Both had to be designed. See <a href="/services/service-design/">service design</a>.',
+        body: 'The screen is one touchpoint. The people, processes, and systems behind it are where most products fail. We map frontstage (what users see) and backstage (what makes it work). For a telehealth platform, the patient-facing app was frontstage. Coordination across 130+ facilities was backstage. Both had to be designed. See <a href="/services/ux-consulting-services/">UX consulting services</a>.',
       },
       {
         title: "UX design & prototyping",
-        body: 'Information architecture, workflows, wireframes, and interactive prototypes tested with real users before engineering starts. For a warehouse client, we reduced a 9-step error resolution workflow to 4 steps. See <a href="/services/ux-design/">UX design and prototyping</a>.',
+        body: 'Information architecture, workflows, wireframes, and interactive prototypes tested with real users before engineering starts. For a warehouse client, we reduced a 9-step error resolution workflow to 4 steps. See <a href="/services/digital-product-design-services/">digital product design services</a>.',
       },
       {
         title: "UI design & design systems",
-        body: 'Development-ready component libraries that scale across products and teams. We build design systems so engineering ships consistent UI without waiting on designers. We reached WCAG/AAA for a healthcare platform. See <a href="/services/ui-design/">UI design and design systems</a>.',
+        body: 'Development-ready component libraries that scale across products and teams. We build design systems so engineering ships consistent UI without waiting on designers. We reached WCAG/AAA for a healthcare platform. See <a href="/services/design-system-services/">design system services</a>.',
       },
       {
         title: "Usability testing & validation",
-        body: 'Concept validation, usability studies, and A/B testing throughout the design process. For a telehealth platform serving elderly patients, we tested on tablet at the bedside, not desktop in an office. See <a href="/services/usability-testing/">usability testing</a>.',
+        body: 'Concept validation, usability studies, and A/B testing throughout the design process. For a telehealth platform serving elderly patients, we tested on tablet at the bedside, not desktop in an office. See <a href="/services/usability-testing-services/">usability testing services</a>.',
       },
       {
         title: "AI experience design",
-        body: 'AI changes the interface fundamentally. We design for trust (how do users know the AI is right?), transparency (what is the system doing?), and actionability (what should the user do next?). We have designed AI-powered clinical documentation tools, recommendation engines, and conversational interfaces. See <a href="/services/ai-experience-design/">AI experience design</a>.',
+        body: 'AI changes the interface fundamentally. We design for trust (how do users know the AI is right?), transparency (what is the system doing?), and actionability (what should the user do next?). We have designed AI-powered clinical documentation tools, recommendation engines, and conversational interfaces. See <a href="/services/interaction-design-agency/">interaction design services</a>.',
       },
     ],
   },
@@ -227,14 +230,14 @@ export const home = {
     { q: "What deliverables can I expect from a UI UX design project?", a: "There are 6 core deliverables across a full engagement: user research report with personas and journey maps, information architecture and user flows, wireframes and interactive prototypes, high-fidelity UI screens, a reusable design system with components and tokens, and usability test reports with iteration logs." },
     { q: "How can I enhance my existing product's UI UX design?", a: 'Enhance an existing product in 4 steps: run a UX audit to identify friction points, observe real users completing key tasks, prioritize fixes by impact and effort, then ship changes in testable increments. We handle platform modernization work for legacy products where the interface has drifted from how users actually work. See our <a href="#process">design process</a>.' },
     { q: "Will my design be fully responsive and ready for development?", a: "Yes. Every design we ship is responsive across mobile, tablet, and desktop, with documented breakpoints. Designs come with dev-ready specs, component libraries, and handoff sessions with engineering." },
-    { q: "Do you only create design or do development too?", a: 'We deliver design and development. Many clients start with design and continue to engineering with us. Others take the design to their own engineering teams. Either way works. See our <a href="/services/design-and-development/">design and development services</a>.' },
+    { q: "Do you only create design or do development too?", a: 'We deliver design and development. Many clients start with design and continue to engineering with us. Others take the design to their own engineering teams. Either way works. See our <a href="/services/web-app-design-services/">web app design services</a>.' },
     { q: "What is a product designer?", a: "A product designer handles both UX and UI work on a product, from user research through final visual design. Product designers work across the full design process instead of specializing in one layer." },
     { q: "What should I look for when choosing a UI UX design service?", a: 'Look for 5 things: a documented research process, portfolios with case studies explaining design decisions and outcomes, industry experience relevant to your product, a clear design system methodology, and usability testing built into the process. See our <a href="#compare">comparison table</a> for how we differ from freelancers and in-house hires.' },
     { q: "Can you describe the typical process involved in UI UX design?", a: 'Our process has 5 phases: discovery and research, UX design and prototyping, UI design and design system, usability testing and validation, and design implementation support. See the full <a href="#process">design process</a> for timelines and deliverables.' },
     { q: "How do I evaluate reviews of UI UX design agencies?", a: "Focus on specific mentions of results, timelines, and communication. Reviews describing how issues were solved or how the agency understood user needs carry more weight than generic praise. Look for reviews on G2, Clutch, and GoodFirms where you can verify the reviewer's organization." },
     { q: "What are the cost factors for hiring a UI UX designer?", a: "Cost factors include project scope and complexity, depth of user research and testing required, number of platforms covered (web, mobile, tablet, voice), design system maturity required, and the seniority of the design team. Research-heavy projects cost more upfront but reduce downstream rework." },
-    { q: "How do you validate designs before development begins?", a: 'We use interactive prototypes and moderated usability testing with real users. Assumptions get tested before engineering starts. Issues related to user behavior surface early, when fixing them costs design hours instead of dev sprints. See <a href="/services/usability-testing/">usability testing</a>.' },
-    { q: "What is a custom design system, and why is it important?", a: 'A custom design system is a library of reusable UI components, design tokens, and rules that keep the interface consistent as products evolve. It lets engineering teams ship new features without waiting on designers for every screen. See our <a href="/services/ui-design/">UI design and design systems service</a>.' },
+    { q: "How do you validate designs before development begins?", a: 'We use interactive prototypes and moderated usability testing with real users. Assumptions get tested before engineering starts. Issues related to user behavior surface early, when fixing them costs design hours instead of dev sprints. See <a href="/services/usability-testing-services/">usability testing services</a>.' },
+    { q: "What is a custom design system, and why is it important?", a: 'A custom design system is a library of reusable UI components, design tokens, and rules that keep the interface consistent as products evolve. It lets engineering teams ship new features without waiting on designers for every screen. See our <a href="/services/design-system-services/">design system services</a>.' },
     { q: "How do you ensure the design aligns with our brand?", a: "We incorporate your color palette, typography, visual style, and brand voice into the interface design. Design tokens enforce consistency across every screen and platform. We review the first 50 screens against your brand guide and adjust before scaling." },
     { q: "How do you measure the success of a UI UX design project?", a: "Success is measured against baselined metrics set during discovery. Common metrics include task completion rate, time on task, error rate, conversion rate, engagement, retention, and CSAT. We report against the baseline post-launch, not against assumptions." },
     { q: "Can you work with in-house development teams?", a: "Yes. We regularly provide design documentation and dev-ready assets to in-house engineering teams, and we stay available through implementation to answer questions during the build." },
@@ -242,4 +245,13 @@ export const home = {
 };
 
 /** Options shown in every lead form's "service" dropdown */
-export const formInterests = ["UX audit", "User research", "UX/UI design", "Design system", "Embedded design team"];
+export const formInterests = [
+  "UX audit",
+  "UX research",
+  "UX consulting",
+  "Mobile app design",
+  "Web app / SaaS design",
+  "Dashboard design",
+  "Design system",
+  "Embedded design team",
+];

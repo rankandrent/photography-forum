@@ -1,0 +1,23 @@
+{
+  "title": "Data visualization",
+  "order": 17,
+  "metaTitle": "Data Visualization Agency | UIUXDesignServices.us",
+  "metaDescription": "Data visualization agency that turns complex data into clear charts, interactive reports and visual stories people understand at a glance.",
+  "hero": {
+    "eyebrow": "Data visualization agency",
+    "h1": "A data visualization agency that makes complex data clear",
+    "sub": "Charts, interactive reports, and visual stories that help people understand complex data at a glance and act on it."
+  },
+  "summary": "Charts, interactive reports, and visual stories that make complex data clear.",
+  "tags": [
+    "Chart design",
+    "Interactive reports",
+    "Data storytelling",
+    "Visualization systems"
+  ],
+  "relatedIndustries": [
+    "finance",
+    "healthcare",
+    "supply-chain"
+  ]
+}

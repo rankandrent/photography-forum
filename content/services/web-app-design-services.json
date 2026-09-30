@@ -1,0 +1,22 @@
+{
+  "title": "Web app design",
+  "order": 7,
+  "metaTitle": "Web App Design Services | UIUXDesignServices.us",
+  "metaDescription": "Web app design services for complex products: information architecture, workflows, and interfaces that stay simple as features grow.",
+  "hero": {
+    "eyebrow": "Web app design services",
+    "h1": "Web app design services for complex products that stay simple",
+    "sub": "Information architecture, workflows, and interfaces for web applications that need to handle complexity without feeling complex."
+  },
+  "summary": "Information architecture, workflows, and UI for complex web applications.",
+  "tags": [
+    "Information architecture",
+    "Workflows",
+    "Responsive UI",
+    "Design handoff"
+  ],
+  "relatedIndustries": [
+    "saas",
+    "finance"
+  ]
+}

@@ -1,7 +1,26 @@
 import type { ReactNode } from "react";
 import { Breadcrumbs, type Crumb } from "@/components/layout/Breadcrumbs";
+import type { Stat } from "@/lib/types";
 
-/** Dark hero for inner pages. Pass `aside` (usually a LeadForm card) to get the two-column layout. */
+/** Row of headline numbers used in light heroes */
+export function StatsRow({ items }: { items?: Stat[] }) {
+  if (!items?.length) return null;
+  return (
+    <div className="stats-row">
+      {items.map((s) => (
+        <div key={s.label} className="stats-row__item">
+          <div className="stats-row__value">{s.value}</div>
+          <div className="stats-row__label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/**
+ * Hero for inner pages. `tone="light"` gives the white Aufait-style hero;
+ * pass `aside` (usually a LeadForm card) for the dark two-column layout.
+ */
 export function PageHero({
   crumbs,
   eyebrow,
@@ -10,14 +29,21 @@ export function PageHero({
   meta,
   actions,
   aside,
+  stats,
+  tone = "dark",
+  children,
 }: {
   crumbs: Crumb[];
   eyebrow?: string;
-  h1: string;
+  h1: ReactNode;
   sub?: string;
   meta?: ReactNode;
   actions?: ReactNode;
   aside?: ReactNode;
+  stats?: Stat[];
+  tone?: "dark" | "light";
+  /** Rendered under the hero copy, e.g. a WorkRail */
+  children?: ReactNode;
 }) {
   const body = (
     <div>
@@ -27,10 +53,12 @@ export function PageHero({
       {sub && <p className="phero__sub">{sub}</p>}
       {actions && <div className="hero__actions">{actions}</div>}
       {meta && <div className="phero__meta">{meta}</div>}
+      <StatsRow items={stats} />
     </div>
   );
+  const cls = ["phero", aside && "phero--split", tone === "light" && "phero--light"].filter(Boolean).join(" ");
   return (
-    <section className={`phero${aside ? " phero--split" : ""}`}>
+    <section className={cls}>
       <div className="container">
         {aside ? (
           <div className="phero__inner">
@@ -40,6 +68,7 @@ export function PageHero({
         ) : (
           body
         )}
+        {children}
       </div>
     </section>
   );

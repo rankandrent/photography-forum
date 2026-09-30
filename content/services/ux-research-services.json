@@ -1,0 +1,22 @@
+{
+  "title": "UX research",
+  "order": 2,
+  "metaTitle": "UX Research Services | UIUXDesignServices.us",
+  "metaDescription": "UX research services: user interviews, field studies, journey mapping and Jobs-to-be-Done analysis that define what to build before you build it.",
+  "hero": {
+    "eyebrow": "UX research services",
+    "h1": "UX research services that define what to build before you build it",
+    "sub": "We interview users, observe real workflows, and analyze competitors so every design decision starts from evidence, not opinion."
+  },
+  "summary": "Interviews, observation, journey maps, and Jobs-to-be-Done analysis that ground every design decision in evidence.",
+  "tags": [
+    "User interviews",
+    "Journey mapping",
+    "Personas",
+    "Competitive analysis"
+  ],
+  "relatedIndustries": [
+    "healthcare",
+    "saas"
+  ]
+}

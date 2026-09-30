@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { Html } from "@/components/ui/Html";
 import { routes } from "@/lib/site";
-import type { Card, CaseStudy, Faq as FaqItem, Post, Service, Stat } from "@/lib/types";
+import type { Card, Faq as FaqItem, Post, Service, Stat } from "@/lib/types";
 
 /* ---------- Clients strip ---------- */
 export function Clients({ label, names }: { label: string; names: string[] }) {
@@ -167,55 +167,6 @@ export function Benefits({ heading, items, ctaTitle, cta = "Book a discovery cal
         </div>
       </div>
     </section>
-  );
-}
-
-/* ---------- Case study cards ---------- */
-export function CaseGrid({
-  heading = "Design that changed the business",
-  items,
-  allHref = routes.caseStudies,
-  tone = "light",
-}: {
-  heading?: string;
-  items: CaseStudy[];
-  allHref?: string | null;
-  tone?: "light" | "warm";
-}) {
-  if (!items.length) return null;
-  return (
-    <section className={`section section--${tone}`} id="cases" aria-labelledby="cases-heading">
-      <div className="container">
-        <div className="cases__head">
-          <h2 id="cases-heading">{heading}</h2>
-          {allHref && <Link href={allHref} className="btn--ghost">All case studies</Link>}
-        </div>
-        <div className="cases__grid">
-          {items.map((c) => <CaseCard key={c.slug} c={c} />)}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function CaseCard({ c }: { c: CaseStudy }) {
-  return (
-    <Link href={routes.caseStudy(c.slug)} className="case">
-      {!!c.tags.length && (
-        <div className="case__tags">
-          {c.tags.map((t) => <span key={t} className="case__tag">{t}</span>)}
-        </div>
-      )}
-      <h3 className="case__result">{c.result}</h3>
-      <p className="case__body">{c.description}</p>
-      {c.quote && (
-        <blockquote className="case__quote">
-          &ldquo;{c.quote}&rdquo;
-          {c.quoteAuthor && <cite className="case__attrib">— {c.quoteAuthor}</cite>}
-        </blockquote>
-      )}
-      <span className="case__link">Read case study</span>
-    </Link>
   );
 }
 

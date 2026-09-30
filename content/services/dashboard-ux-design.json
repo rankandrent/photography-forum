@@ -1,0 +1,23 @@
+{
+  "title": "Dashboard UX design",
+  "order": 9,
+  "metaTitle": "Dashboard UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "Dashboard UX design that turns dense data into clear decisions: information hierarchy, drill-downs and workflows built around real tasks.",
+  "hero": {
+    "eyebrow": "Dashboard UX design",
+    "h1": "Dashboard UX design that turns dense data into clear decisions",
+    "sub": "We design dashboards around the decisions users make, with the right hierarchy, drill-downs, and alerts, instead of every metric at once."
+  },
+  "summary": "Dashboards designed around the decisions users make, not every metric at once.",
+  "tags": [
+    "Information hierarchy",
+    "Drill-downs",
+    "Alerts & states",
+    "Role-based views"
+  ],
+  "relatedIndustries": [
+    "saas",
+    "supply-chain",
+    "finance"
+  ]
+}

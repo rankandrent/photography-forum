@@ -1,0 +1,22 @@
+{
+  "title": "SaaS UX design",
+  "order": 10,
+  "metaTitle": "SaaS UX Design Services | UIUXDesignServices.us",
+  "metaDescription": "SaaS UX design that reduces time-to-value and churn: onboarding, core workflows, admin panels and design systems that scale with your product.",
+  "hero": {
+    "eyebrow": "SaaS UX design",
+    "h1": "SaaS UX design that shortens time-to-value and reduces churn",
+    "sub": "Onboarding, core workflows, settings, and admin experiences designed to get users to value fast and keep them there."
+  },
+  "summary": "Onboarding, core workflows, and admin UX that get users to value fast.",
+  "tags": [
+    "Onboarding",
+    "Feature adoption",
+    "Admin panels",
+    "Retention"
+  ],
+  "relatedIndustries": [
+    "saas",
+    "startups"
+  ]
+}

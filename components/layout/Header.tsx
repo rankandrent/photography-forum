@@ -44,9 +44,9 @@ export function Header({ services, industries }: { services: NavItem[]; industri
               <Link href={routes.industries} className="hdr__dd-all">All industries →</Link>
             </div>
           </div>
-          <Link href={routes.caseStudies}>Work</Link>
+          <Link href={routes.caseStudies}>Our work</Link>
           <Link href={routes.blog}>Insights</Link>
-          <Link href={routes.contact} className="btn hdr__cta">Get in touch</Link>
+          <Link href={routes.contact} className="btn hdr__cta">Schedule a call</Link>
         </nav>
         <button
           type="button"
@@ -62,9 +62,9 @@ export function Header({ services, industries }: { services: NavItem[]; industri
       <nav id="mobile-nav" className="hdr__mobile" aria-label="Mobile">
         <Link href={routes.services} onClick={close}>Services</Link>
         <Link href={routes.industries} onClick={close}>Industries</Link>
-        <Link href={routes.caseStudies} onClick={close}>Work</Link>
+        <Link href={routes.caseStudies} onClick={close}>Our work</Link>
         <Link href={routes.blog} onClick={close}>Insights</Link>
-        <Link href={routes.contact} className="btn" onClick={close}>Get in touch</Link>
+        <Link href={routes.contact} className="btn" onClick={close}>Schedule a call</Link>
       </nav>
     </header>
   );

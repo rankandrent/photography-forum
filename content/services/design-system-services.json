@@ -1,0 +1,22 @@
+{
+  "title": "Design systems",
+  "order": 12,
+  "metaTitle": "Design System Services | UIUXDesignServices.us",
+  "metaDescription": "Design system services: component libraries, design tokens and documentation that keep UI consistent across products, teams and platforms.",
+  "hero": {
+    "eyebrow": "Design system services",
+    "h1": "Design system services that keep every product consistent",
+    "sub": "Development-ready component libraries, design tokens, and documentation so teams ship consistent UI without waiting on designers."
+  },
+  "summary": "Component libraries, tokens, and documentation that scale across teams.",
+  "tags": [
+    "Component libraries",
+    "Design tokens",
+    "Documentation",
+    "Governance"
+  ],
+  "relatedIndustries": [
+    "saas",
+    "ecommerce"
+  ]
+}

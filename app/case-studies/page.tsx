@@ -1,38 +1,49 @@
 import { LeadForm } from "@/components/forms/LeadForm";
-import { CaseCard, FinalCta } from "@/components/sections/Blocks";
+import { CtaBand, FinalCta } from "@/components/sections/Blocks";
 import { PageHero } from "@/components/sections/PageHero";
+import { WorkCard } from "@/components/sections/WorkCards";
+import { WorkFilter } from "@/components/sections/WorkFilter";
 import { formInterests, home } from "@/content/home";
-import { getCaseStudies } from "@/lib/content";
+import { getCaseStudies, getIndustries, getServices } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "UI UX Design Case Studies | UIUXDesignServices.us",
-  description: "UI UX design case studies with the research, decisions, and measurable outcomes behind each product.",
+  title: "Our Work: UI UX Design Case Studies | UIUXDesignServices.us",
+  description: "UI UX design case studies with the research, design decisions, and measurable outcomes behind each product we designed.",
   path: routes.caseStudies,
 });
 
-export default function CaseStudiesHub() {
+export default function WorkPage() {
   const items = getCaseStudies();
+  const used = (key: "industries" | "services") => new Set(items.flatMap((c) => c[key]));
+  const industries = getIndustries().filter((i) => used("industries").has(i.slug)).map(({ slug, title }) => ({ slug, title }));
+  const services = getServices().filter((s) => used("services").has(s.slug)).map(({ slug, title }) => ({ slug, title }));
+
   return (
     <>
       <PageHero
-        crumbs={[{ name: "Case studies", path: routes.caseStudies }]}
+        tone="light"
+        crumbs={[{ name: "Our work", path: routes.caseStudies }]}
         eyebrow="Our work"
-        h1="Design that changed the business"
-        sub="The research, the decisions, and the numbers behind each product we designed."
+        h1={<>Products we designed, and the <em>results they drove</em></>}
+        sub="The research, the design decisions, and the numbers behind each product. Filter by industry or service."
+        stats={home.hero.stats}
       />
-      <section className="section section--light">
+      <section className="section section--light" style={{ paddingTop: 24 }} aria-label="Case studies">
         <div className="container">
           {items.length ? (
-            <div className="cases__grid">{items.map((c) => <CaseCard key={c.slug} c={c} />)}</div>
+            <WorkFilter industries={industries} services={services} keys={items.map((c) => [...c.industries, ...c.services])}>
+              {items.map((c) => <WorkCard key={c.slug} c={c} />)}
+            </WorkFilter>
           ) : (
             <p className="empty-note">Case studies are coming soon.</p>
           )}
         </div>
       </section>
+      <CtaBand {...home.ctaBand} />
       <FinalCta testimonial={home.testimonial}>
-        <LeadForm variant="full" interests={formInterests} source="case studies hub" submitLabel="Submit" />
+        <LeadForm variant="full" interests={formInterests} source="work page" submitLabel="Submit" />
       </FinalCta>
     </>
   );

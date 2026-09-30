@@ -64,6 +64,10 @@ function load() {
       quoteAuthor: data.quoteAuthor,
       date: toDate(data.date),
       featured: Boolean(data.featured),
+      color: data.color ?? "ink",
+      logo: data.logo ?? data.client,
+      card: (data.card === "quote" ? "quote" : "visual") as CaseStudy["card"],
+      image: data.image,
       html,
     }))
     .sort(byDateDesc);

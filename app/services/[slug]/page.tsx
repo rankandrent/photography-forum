@@ -3,7 +3,6 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import {
   Benefits,
   CardList,
-  CaseGrid,
   CtaBand,
   Faq,
   FinalCta,
@@ -14,6 +13,7 @@ import {
 } from "@/components/sections/Blocks";
 import { FormCard, PageHero } from "@/components/sections/PageHero";
 import { Process } from "@/components/sections/Process";
+import { WorkGrid } from "@/components/sections/WorkCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import {
@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: Props) {
         items={industries.map((i) => ({ title: i.title, href: routes.industry(i.slug) }))}
       />
 
-      <CaseGrid heading={h.caseStudies ?? `${s.title} case studies`} items={cases} />
+      <WorkGrid heading={h.caseStudies ?? `${s.title} case studies`} items={cases} />
 
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={[s.title, ...formInterests]} source={`service final CTA: ${s.slug}`} submitLabel="Submit" />

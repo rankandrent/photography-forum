@@ -1,15 +1,6 @@
+import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
-import {
-  Benefits,
-  CaseGrid,
-  Clients,
-  CtaBand,
-  Faq,
-  FinalCta,
-  Resources,
-  ServiceGrid,
-  Stats,
-} from "@/components/sections/Blocks";
+import { Benefits, Clients, CtaBand, Faq, FinalCta, Resources, ServiceGrid } from "@/components/sections/Blocks";
 import {
   Awards,
   Capabilities,
@@ -23,7 +14,9 @@ import {
   WhyUs,
 } from "@/components/sections/HomeSections";
 import { IndustryTabs } from "@/components/sections/IndustryTabs";
+import { StatsRow } from "@/components/sections/PageHero";
 import { Process } from "@/components/sections/Process";
+import { WorkGrid, WorkRail } from "@/components/sections/WorkCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import { getCaseStudies, getIndustries, getPosts, getServices } from "@/lib/content";
@@ -39,42 +32,34 @@ export default function HomePage() {
     .slice(0, 6)
     .map((i) => ({ slug: i.slug, title: i.title, intro: i.intro!, bullets: i.bullets!, href: routes.industry(i.slug) }));
   const all = getCaseStudies();
-  const cases = [...all.filter((c) => c.featured), ...all.filter((c) => !c.featured)].slice(0, 3);
+  const cases = [...all.filter((c) => c.featured), ...all.filter((c) => !c.featured)].slice(0, 8);
   const posts = getPosts().slice(0, 3);
 
   return (
     <>
-      <section className="hero" aria-labelledby="hero-heading">
-        <div className="container">
-          <div className="hero__inner">
-            <div>
-              <span className="tk-eyebrow hero__eyebrow">{home.hero.eyebrow}</span>
-              <h1 id="hero-heading" className="hero__headline">
-                {home.hero.h1Before}
-                <em>{home.hero.h1Em}</em>
-              </h1>
-              <p className="hero__subhead">{home.hero.sub}</p>
-              <div className="hero__actions">
-                <a href="#cta-form" className="btn">Book a design discovery call</a>
-                <a href="#cases" className="btn btn--outline">See our work</a>
-              </div>
-            </div>
-            <div className="hero__form">
-              <p className="hero__form-title">{home.hero.formTitle}</p>
-              <p className="hero__form-sub">{home.hero.formSub}</p>
-              <LeadForm interests={formInterests} source="home hero" />
-            </div>
+      <section className="hero hero--light" aria-labelledby="hero-heading">
+        <div className="container hero__stack">
+          <span className="tk-eyebrow hero__eyebrow">{home.hero.eyebrow}</span>
+          <h1 id="hero-heading" className="hero__headline">
+            {home.hero.h1Before}
+            <em>{home.hero.h1Em}</em>
+          </h1>
+          <p className="hero__subhead">{home.hero.sub}</p>
+          <div className="hero__actions">
+            <a href="#cta-form" className="btn">Schedule a call</a>
+            <Link href={routes.caseStudies} className="btn btn--dark-outline">See our work</Link>
           </div>
+          <StatsRow items={home.hero.stats} />
+          <WorkRail items={cases} id="home-rail" />
         </div>
       </section>
 
       <Clients {...home.clients} />
-      <Stats heading={home.stats.heading} items={home.stats.items} />
       <Challenges />
       <ServiceGrid
         heading={home.servicesHeading}
-        services={services.slice(0, 4)}
-        allHref={services.length > 4 ? routes.services : undefined}
+        services={services.slice(0, 6)}
+        allHref={services.length > 6 ? routes.services : undefined}
       />
       <CtaBand {...home.ctaBand} />
       <Process heading={home.process.heading} steps={home.process.steps} />
@@ -84,7 +69,7 @@ export default function HomePage() {
       <LeadMagnet />
       <Compare />
       <Pricing />
-      <CaseGrid items={cases} />
+      <WorkGrid eyebrow="Featured work" items={cases.slice(0, 4)} cols={2} />
       <WhyUs />
       <Team />
       <Tools />

@@ -1,0 +1,22 @@
+{
+  "title": "UX consulting",
+  "order": 1,
+  "metaTitle": "UX Consulting Services | UIUXDesignServices.us",
+  "metaDescription": "UX consulting services that find what's holding your product back and give your team a prioritized, evidence-based plan to fix it.",
+  "hero": {
+    "eyebrow": "UX consulting services",
+    "h1": "UX consulting services that turn product guesswork into a clear plan",
+    "sub": "Senior UX consultants who review your product, your data, and your users, then give your team a prioritized roadmap it can act on."
+  },
+  "summary": "Senior UX guidance, product reviews, and a prioritized roadmap your team can act on.",
+  "tags": [
+    "UX strategy",
+    "Product reviews",
+    "Roadmapping",
+    "Team coaching"
+  ],
+  "relatedIndustries": [
+    "saas",
+    "startups"
+  ]
+}

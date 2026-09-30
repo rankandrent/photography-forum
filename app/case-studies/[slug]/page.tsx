@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { CaseGrid, FinalCta, Resources } from "@/components/sections/Blocks";
+import { FinalCta, Resources } from "@/components/sections/Blocks";
+import { WorkGrid } from "@/components/sections/WorkCards";
 import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
@@ -70,7 +71,7 @@ export default async function CaseStudyPage({ params }: Props) {
         </div>
       </section>
 
-      <CaseGrid heading="More case studies" items={relatedCaseStudies(c)} tone="warm" />
+      <WorkGrid heading="More case studies" items={relatedCaseStudies(c)} tone="warm" />
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`case study: ${c.slug}`} submitLabel="Submit" />
       </FinalCta>

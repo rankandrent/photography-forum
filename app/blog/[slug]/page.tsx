@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { CaseGrid, CtaBand, FinalCta, Resources } from "@/components/sections/Blocks";
+import { CtaBand, FinalCta, Resources } from "@/components/sections/Blocks";
+import { WorkGrid } from "@/components/sections/WorkCards";
 import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
@@ -52,7 +53,7 @@ export default async function PostPage({ params }: Props) {
       </section>
       <CtaBand {...home.ctaBand} />
       <Resources heading="Keep reading" posts={relatedPosts(p)} />
-      <CaseGrid heading="Related case studies" items={relatedCaseStudies(p)} tone="light" />
+      <WorkGrid heading="Related case studies" items={relatedCaseStudies(p)} />
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}`} submitLabel="Submit" />
       </FinalCta>

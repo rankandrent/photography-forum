@@ -24,7 +24,7 @@
   "painPoints": [
     {
       "title": "Problem",
-      "body": "Why it happens / what it costs. Inline <a href=\"/services/ux-design/\">links</a> allowed."
+      "body": "Why it happens / what it costs. Inline <a href=\"/services/ux-research-services/\">links</a> allowed."
     }
   ],
   "subServices": [
@@ -58,8 +58,8 @@
     "saas"
   ],
   "relatedServices": [
-    "ux-design",
-    "ui-design"
+    "ux-research-services",
+    "design-system-services"
   ],
   "headings": {
     "stats": "Optional H2 override for this section",
