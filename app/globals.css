@@ -824,3 +824,8 @@ html, body { overflow-x: clip; }
 .prose h3 { margin-top: 36px; }
 .wcard__img { min-height: 150px; }
 .wcard--big .wcard__img { min-height: 260px; }
+/* Client logos ship light grey for dark backgrounds — render them as uniform dark grey on the light strip */
+.logo-marquee .clients__logo { height: 30px; filter: brightness(0); opacity: 0.5; transition: opacity 0.2s; }
+.logo-marquee .clients__logo:hover { filter: brightness(0); opacity: 0.9; }
+.logo-marquee__track { animation-duration: 60s; }
+@media (max-width: 900px) { .logo-marquee .clients__logo { height: 24px; } }
