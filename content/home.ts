@@ -24,7 +24,16 @@ export const home = {
   },
   clients: {
     label: "Trusted by teams building complex products",
-    names: ["ToolsGroup", "Fortna", "Apex HCM", "NeverAlone", "CommuniCare", "Sandata", "Fusionetics"],
+    // Drop logo files into public/logos/ with these names; until a file exists the name shows as text.
+    items: [
+      { name: "ToolsGroup", logo: "/logos/toolsgroup.svg" },
+      { name: "Fortna", logo: "/logos/fortna.svg" },
+      { name: "Apex HCM", logo: "/logos/apex-hcm.svg" },
+      { name: "NeverAlone", logo: "/logos/neveralone.svg" },
+      { name: "CommuniCare", logo: "/logos/communicare.svg" },
+      { name: "Sandata", logo: "/logos/sandata.svg" },
+      { name: "Fusionetics", logo: "/logos/fusionetics.svg" },
+    ],
   },
   stats: {
     heading: "Design work backed by research, not opinion",

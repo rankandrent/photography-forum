@@ -1,17 +1,42 @@
+import fs from "node:fs";
+import path from "node:path";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Html } from "@/components/ui/Html";
 import { cap, routes } from "@/lib/site";
 import type { Card, Faq as FaqItem, Post, Service, Stat } from "@/lib/types";
 
-/* ---------- Clients strip ---------- */
-export function Clients({ label, names }: { label: string; names: string[] }) {
+/* ---------- Clients strip: infinite right-to-left logo marquee ---------- */
+type ClientLogo = { name: string; logo?: string };
+const hasFile = (src?: string) => !!src && fs.existsSync(path.join(process.cwd(), "public", src));
+
+function LogoRow({ items, hidden }: { items: ClientLogo[]; hidden?: boolean }) {
+  return (
+    <ul className="logo-marquee__row" aria-hidden={hidden || undefined}>
+      {items.map((c) => (
+        <li key={c.name} className="logo-marquee__item">
+          {hasFile(c.logo) ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={c.logo} alt={hidden ? "" : c.name} className="clients__logo" loading="lazy" />
+          ) : (
+            <span className="clients__word">{c.name}</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function Clients({ label, items }: { label: string; items: ClientLogo[] }) {
   return (
     <section className="clients" aria-label="Clients">
       <div className="container">
         <span className="clients__label">{label}</span>
-        <div className="clients__row">
-          {names.map((n) => <span key={n} className="clients__word">{n}</span>)}
+      </div>
+      <div className="logo-marquee">
+        <div className="logo-marquee__track">
+          <LogoRow items={items} />
+          <LogoRow items={items} hidden />
         </div>
       </div>
     </section>

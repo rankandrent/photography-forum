@@ -69,7 +69,8 @@ Services are grouped by `category` (Research & strategy, Product design, Platfor
 - Replace the placeholder client names, testimonials, team members, awards and ratings in `content/home.ts` and the seed case studies. They came with the design draft.
 - Fill in `content/pages/about|privacy|terms.md` and remove `noindex: true`.
 - Set `SITE.email` and `SITE.sameAs` (LinkedIn, Clutch, G2 …) in `lib/site.ts`.
-- Add real logos and images to `public/`, and submit `sitemap.xml` in Google Search Console.
+- Add client logos to `public/logos/` as SVG, or as PNG about 72px tall on a transparent background. Use the file names in `content/home.ts` (`clients.items`). Until a file exists the client name shows as text in the logo loop.
+- Add real images to `public/`, and submit `sitemap.xml` in Google Search Console.
 
 ## Deploy on Cloudflare (Workers + static assets)
 
