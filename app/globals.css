@@ -814,3 +814,13 @@ html, body { overflow-x: clip; }
   .logo-marquee__row { flex-wrap: wrap; justify-content: center; padding: 0 20px; }
   .logo-marquee__row[aria-hidden] { display: none; }
 }
+
+/* Case study cover + figures */
+.cs-cover { background: linear-gradient(to bottom, var(--black) 0 50%, var(--white) 50% 100%); padding-bottom: 8px; }
+.cs-cover img { width: 100%; height: auto; border-radius: var(--r-lg); box-shadow: 0 30px 60px rgba(2,1,1,0.25); }
+.prose figure { margin: 32px 0; }
+.prose figure img { width: 100%; height: auto; border-radius: var(--r-md); }
+.prose figcaption { font-size: 14px; color: var(--text-m); margin-top: 10px; text-align: center; }
+.prose h3 { margin-top: 36px; }
+.wcard__img { min-height: 150px; }
+.wcard--big .wcard__img { min-height: 260px; }

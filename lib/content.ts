@@ -22,10 +22,19 @@ function readJson<T>(dir: string): T[] {
   }));
 }
 
+/** Turn a paragraph holding a single titled image into <figure> + <figcaption>, and lazy-load images */
+function figures(html: string) {
+  return html
+    .replace(/<p>(<img [^>]*?title="([^"]*)"[^>]*>)<\/p>/g, (_, img: string, cap: string) =>
+      `<figure>${img.replace(/ title="[^"]*"/, "")}<figcaption>${cap}</figcaption></figure>`,
+    )
+    .replace(/<img (?![^>]*loading=)/g, '<img loading="lazy" ');
+}
+
 function readMarkdown(dir: string) {
   return files(dir, ".md").map(({ slug, file }) => {
     const { data, content } = matter(fs.readFileSync(file, "utf8"));
-    return { slug, data, html: marked.parse(content, { async: false }) };
+    return { slug, data, html: figures(marked.parse(content, { async: false })) };
   });
 }
 

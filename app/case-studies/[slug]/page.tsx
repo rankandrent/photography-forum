@@ -43,6 +43,15 @@ export default async function CaseStudyPage({ params }: Props) {
         }
       />
 
+      {c.image && (
+        <section className="cs-cover" aria-label="Project cover">
+          <div className="container">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={c.image} alt={`${c.client ?? c.title} project cover`} fetchPriority="high" />
+          </div>
+        </section>
+      )}
+
       {!!c.results.length && (
         <section className="section section--light" style={{ paddingBottom: 0 }}>
           <div className="container">
