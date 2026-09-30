@@ -85,6 +85,7 @@ Services are grouped by `category` (Research & strategy, Product design, Platfor
    - `NEXT_PUBLIC_SITE_URL` = `https://uiuxdesignservices.us`
    - `NEXT_PUBLIC_FORM_ENDPOINT` = your form endpoint URL
 4. Every push to `main` rebuilds and redeploys.
-5. **Settings → Domains & Routes → Add → Custom domain** → `uiuxdesignservices.us` (and `www.uiuxdesignservices.us`).
+5. Custom domains are declared in `wrangler.jsonc` (`routes`), so every deploy attaches `uiuxdesignservices.us` and `www.uiuxdesignservices.us`, with DNS and SSL. If a deploy fails because a DNS record already exists, delete the old `@` or `www` record under **DNS → Records** and retry.
+6. Add a **Rules → Redirect Rules** "Redirect from WWW to root" rule (301), and turn on **SSL/TLS → Edge Certificates → Always Use HTTPS**.
 
 `public/_headers` sets long-lived caching for hashed assets and OG images, plus basic security headers. The Worker name in `wrangler.jsonc` must match the Cloudflare project name.

@@ -4,6 +4,13 @@
   // No server runtime / OpenNext adapter is needed.
   "name": "uiuxdesignservices-us",
   "compatibility_date": "2026-09-26",
+  // Custom domains: wrangler attaches these (DNS + SSL) on every deploy.
+  // www → apex redirect is a Cloudflare Redirect Rule on the zone (see README).
+  "routes": [
+    { "pattern": "uiuxdesignservices.us", "custom_domain": true },
+    { "pattern": "www.uiuxdesignservices.us", "custom_domain": true }
+  ],
+  "workers_dev": true,
   "assets": {
     "directory": "./out",
     "html_handling": "auto-trailing-slash",
