@@ -20,5 +20,241 @@
   "relatedIndustries": [
     "ecommerce"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "e-commerce UX design",
+  "sourceContext": "US UI/UX design agency; this page sells e-commerce UX design engagements to online retailers that need more shoppers to complete checkout.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "E-commerce UX design services improve the user experience (UX) of an online store across the product listing page (PLP), product detail page (PDP), cart and checkout, using Baymard Institute guidelines and Web Content Accessibility Guidelines (WCAG) 2.2. Our e-commerce UX design engagement takes 4–8 weeks, costs $25,000–$60,000, and ends with tested page designs and a checkout flow ready for development.",
+  "sections": [
+    {
+      "h2": "What is e-commerce UX design?",
+      "format": "paragraph",
+      "answer": "<strong>E-commerce UX design is the design of the shopping experience of an online store, from product discovery to the product detail page, cart and checkout.</strong> Designers remove friction at each funnel step and measure each fix against conversion rate, average order value and cart abandonment.",
+      "body": "<p>E-commerce UX design differs from <a href=\"/services/ui-ux-web-design/\">UI UX web design</a> (user interface and user experience web design) in focus: web design covers marketing pages and brand, while e-commerce UX design covers the purchase funnel and the product catalogue. Each e-commerce UX design recommendation is checked against Baymard Institute guidelines, for example guest checkout and a visible total cost before the payment step.</p>"
+    },
+    {
+      "h2": "What does e-commerce UX design include?",
+      "format": "list",
+      "answer": "<strong>Our e-commerce UX design services include 6 deliverables:</strong> a funnel analytics review, a product listing page design, a product detail page design, a cart and checkout design, an accessibility check and a tested Figma prototype.",
+      "items": [
+        {
+          "title": "Funnel analytics review.",
+          "body": "Google Analytics 4 funnels and Hotjar recordings show where shoppers leave, for example the shipping step of checkout."
+        },
+        {
+          "title": "Product listing page design.",
+          "body": "Category pages, filters and sorting are redesigned, for example filters matched to the attributes shoppers compare, such as size, colour and price."
+        },
+        {
+          "title": "Product detail page design.",
+          "body": "Product images, variant selectors, reviews and delivery information are reorganised, for example a delivery date next to the add-to-cart button."
+        },
+        {
+          "title": "Cart and checkout design.",
+          "body": "Cart, guest checkout, address, shipping and payment steps are simplified, for example address autocomplete and an order summary at every step."
+        },
+        {
+          "title": "Accessibility check.",
+          "body": "Store templates are checked against WCAG 2.2 level AA, for example a 4.5:1 contrast ratio for body text and labelled form fields."
+        },
+        {
+          "title": "Tested Figma prototype.",
+          "body": "A clickable prototype of the purchase path is tested with 5 shoppers per round in Maze, for example the path from search to order confirmation."
+        }
+      ]
+    },
+    {
+      "h2": "How does the e-commerce UX design process work?",
+      "format": "steps",
+      "answer": "<strong>The e-commerce UX design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from funnel discovery to the development handover.",
+      "items": [
+        {
+          "title": "Funnel discovery (3–5 days)",
+          "body": "We review Google Analytics 4 funnels, Hotjar recordings and Core Web Vitals, and agree the templates and devices in scope."
+        },
+        {
+          "title": "Baymard benchmark review (3–5 days)",
+          "body": "Designers score the product listing page, product detail page, cart and checkout against Baymard Institute guidelines."
+        },
+        {
+          "title": "Page design and prototyping (8–15 days)",
+          "body": "Designers produce desktop and mobile layouts for each template as a clickable Figma prototype."
+        },
+        {
+          "title": "Usability testing (4–8 days)",
+          "body": "2 rounds of 5 shoppers complete purchase tasks in Maze, and each round ends with a fix list."
+        },
+        {
+          "title": "Handover (2–7 days)",
+          "body": "Developers receive annotated Figma files, component states and an A/B testing plan for the highest-impact changes."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of e-commerce UX design?",
+      "format": "cards",
+      "answer": "<strong>E-commerce UX design has 4 benefits:</strong> it increases conversion rate, increases checkout completion rate, reduces customer service time and develops an A/B testing backlog.",
+      "items": [
+        {
+          "title": "Increases conversion rate",
+          "body": "Clear filters, product detail pages and add-to-cart actions increase the share of visitors who place an order."
+        },
+        {
+          "title": "Increases checkout completion rate",
+          "body": "Guest checkout, address autocomplete and a visible total cost increase the share of shoppers who finish checkout after adding to cart."
+        },
+        {
+          "title": "Reduces customer service time",
+          "body": "Delivery dates, size guides and return policies on the product detail page answer shopper questions before contact with customer service."
+        },
+        {
+          "title": "Develops an A/B testing backlog",
+          "body": "Every usability finding becomes a testable hypothesis, so the e-commerce team develops a ranked list of experiments, sprint after sprint."
+        }
+      ]
+    },
+    {
+      "h2": "E-commerce UX design vs UX audit",
+      "format": "table",
+      "answer": "<strong>E-commerce UX design redesigns and tests the purchase funnel in 4–8 weeks; a UX audit reviews the existing store and delivers a fix roadmap in 2–3 weeks.</strong> Stores without funnel evidence start with the UX audit, then redesign the weakest templates.",
+      "caption": "Comparison of e-commerce UX design and a UX audit",
+      "columns": [
+        "Criterion",
+        "E-commerce UX design",
+        "UX audit"
+      ],
+      "rows": [
+        [
+          "Main output",
+          "Redesigned and tested funnel templates",
+          "Prioritized fix roadmap"
+        ],
+        [
+          "Coverage",
+          "Product listing page, product detail page, cart and checkout",
+          "Every key user flow"
+        ],
+        [
+          "Who evaluates",
+          "5 shoppers per testing round",
+          "2 senior UX designers"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "2–3 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$5,000–$15,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        },
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does e-commerce UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>E-commerce UX design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of page templates, the number of devices, the e-commerce platform and the number of usability testing rounds.",
+      "body": "<p>A Shopify product detail page and cart redesign with 1 testing round sits near $25,000. A full funnel redesign of a custom store with 6–8 templates, desktop and mobile layouts and 2 testing rounds sits near $60,000. Market context for online retail sits on the <a href=\"/industries/ecommerce/\">e-commerce industry page</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire e-commerce UX design services?",
+      "format": "list",
+      "answer": "<strong>A company should hire e-commerce UX design services in 5 situations:</strong>",
+      "items": [
+        "Cart abandonment rises, if traffic and prices stay the same.",
+        "Mobile conversion rate stays below desktop conversion rate, if both channels sell the same catalogue.",
+        "Shoppers leave the product listing page, if filters do not match the attributes shoppers compare.",
+        "A replatforming project starts, for example a move from a custom store to Shopify.",
+        "Sizing questions and returns rise, if product detail pages have no size guide."
+      ]
+    },
+    {
+      "h2": "E-commerce UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about e-commerce UX design services.</strong>",
+      "faqs": [
+        {
+          "q": "Does e-commerce UX design include checkout UX?",
+          "a": "<p>Yes. E-commerce UX design includes checkout UX for the cart, guest checkout, shipping and payment steps, with each step checked against Baymard Institute guidelines.</p>"
+        },
+        {
+          "q": "Can e-commerce UX design work on Shopify?",
+          "a": "<p>Yes. E-commerce UX design for Shopify stores delivers Figma designs mapped to Shopify theme sections and templates.</p>"
+        },
+        {
+          "q": "Is e-commerce UX design the same as conversion rate optimization?",
+          "a": "<p>No. E-commerce UX design redesigns funnel templates from research, while conversion rate optimization (CRO) tests single changes with A/B tests. E-commerce UX design produces the hypotheses that CRO tests.</p>"
+        },
+        {
+          "q": "What are Baymard Institute guidelines?",
+          "a": "<p>Baymard Institute guidelines are e-commerce usability guidelines built from large-scale usability research, covering the product listing page, the product detail page, the cart and checkout.</p>"
+        },
+        {
+          "q": "How long does e-commerce UX design take?",
+          "a": "<p>E-commerce UX design takes 4–8 weeks, which equals 20–40 working days, from funnel discovery to the development handover.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "e-commerce UX design",
+      "Baymard Institute guidelines",
+      "Shopify",
+      "Google Analytics 4",
+      "Hotjar",
+      "WCAG 2.2",
+      "Core Web Vitals",
+      "Figma",
+      "Maze",
+      "conversion rate"
+    ],
+    "ngrams": [
+      "e-commerce ux design services",
+      "e-commerce ux design",
+      "checkout ux",
+      "product detail page",
+      "product listing page",
+      "cart abandonment"
+    ],
+    "skipgrams": [
+      "e-commerce … checkout",
+      "design … product pages",
+      "ux … online store",
+      "shoppers … conversion rate"
+    ],
+    "nlpKeywords": [
+      "purchase funnel",
+      "guest checkout",
+      "filters",
+      "add-to-cart",
+      "average order value",
+      "size guide",
+      "A/B testing",
+      "friction"
+    ]
+  },
+  "mentions": [
+    "e-commerce UX design",
+    "Baymard Institute guidelines",
+    "Shopify",
+    "Google Analytics 4",
+    "Hotjar",
+    "WCAG 2.2",
+    "Core Web Vitals",
+    "Figma",
+    "Maze",
+    "conversion rate"
+  ]
 }

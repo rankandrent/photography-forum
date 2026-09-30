@@ -21,5 +21,241 @@
     "ecommerce",
     "startups"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "UI UX web design",
+  "sourceContext": "US UI/UX design agency; this page sells marketing website UX and UI design (structure, landing pages, CMS templates, Core Web Vitals) to marketing and growth teams.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "UI UX web design covers the user experience (UX) and user interface (UI) of marketing websites: site structure, landing page design, responsive design and Core Web Vitals performance. Our UI UX web design engagement takes 4–8 weeks, costs $25,000–$60,000, and ends with Figma page templates ready for a content management system (CMS).",
+  "sections": [
+    {
+      "h2": "What is UI UX web design?",
+      "format": "paragraph",
+      "answer": "<strong>UI UX web design is the process of structuring, writing for and visually designing a marketing website so that visitors find information fast and take a clear next step.</strong> The work covers information architecture (IA), messaging hierarchy, page templates, responsive layouts and page speed.",
+      "body": "<p>UI UX web design differs from <a href=\"/services/web-app-design-services/\">web app design services</a> in audience and purpose: a marketing website converts anonymous visitors, while a web app serves logged-in users who complete daily workflows. Website UX focuses on landing pages, navigation and forms; web app UX focuses on tables, permissions and multi-step tasks.</p>"
+    },
+    {
+      "h2": "What does UI UX web design include?",
+      "format": "list",
+      "answer": "<strong>Our UI UX web design services include 6 deliverables:</strong> a website UX audit, an information architecture, messaging wireframes, landing page designs, a responsive UI design and a CMS component set.",
+      "items": [
+        {
+          "title": "Website UX audit.",
+          "body": "The current site is reviewed with Google Analytics 4 and Hotjar data, for example exit pages, scroll depth and form drop-off."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "A sitemap and navigation model are tested in an Optimal Workshop tree test, for example for top-level menu labels."
+        },
+        {
+          "title": "Messaging wireframes.",
+          "body": "Low-fidelity wireframes set the messaging hierarchy of each page, for example headline, proof points and calls to action."
+        },
+        {
+          "title": "Landing page designs.",
+          "body": "Conversion-focused templates cover paid and organic campaigns, for example product, pricing and demo-request pages."
+        },
+        {
+          "title": "Responsive UI design.",
+          "body": "High-fidelity Figma designs cover 3 breakpoints, for example 375 px mobile, 768 px tablet and 1,440 px desktop."
+        },
+        {
+          "title": "CMS component set.",
+          "body": "Reusable page sections map to Webflow, WordPress or Contentful, for example hero, feature grid, logo strip and FAQ blocks."
+        }
+      ]
+    },
+    {
+      "h2": "How does the UI UX web design process work?",
+      "format": "steps",
+      "answer": "<strong>The UI UX web design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from website UX audit to CMS handoff.",
+      "items": [
+        {
+          "title": "Audit and goals (3–5 days)",
+          "body": "We review analytics, heatmaps and the current sitemap, and agree the conversion goals, for example demo requests or sign-ups."
+        },
+        {
+          "title": "Information architecture (3–7 days)",
+          "body": "Designers build the sitemap and test navigation labels in an Optimal Workshop tree test."
+        },
+        {
+          "title": "Messaging wireframes (4–8 days)",
+          "body": "Wireframes set the messaging hierarchy of every page template before visual design starts."
+        },
+        {
+          "title": "UI design and responsive layouts (7–15 days)",
+          "body": "Designers produce responsive Figma designs that meet Web Content Accessibility Guidelines (WCAG) 2.2 level AA, for example 4.5:1 contrast for body text."
+        },
+        {
+          "title": "CMS handoff and launch QA (3–5 days)",
+          "body": "We hand over CMS components, then check the built pages in Google Lighthouse against Core Web Vitals targets: Largest Contentful Paint (LCP) under 2.5 seconds, Interaction to Next Paint (INP) under 200 ms and Cumulative Layout Shift (CLS) under 0.1."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of UI UX web design?",
+      "format": "cards",
+      "answer": "<strong>UI UX web design has 4 benefits:</strong> it increases conversion rate, improves content findability, reduces page load time and develops a scalable page system.",
+      "items": [
+        {
+          "title": "Increases conversion rate",
+          "body": "A clear messaging hierarchy and one primary call to action per page increase the share of visitors who request a demo or sign up."
+        },
+        {
+          "title": "Improves content findability",
+          "body": "A tested navigation model improves how fast visitors find pricing, product and support pages."
+        },
+        {
+          "title": "Reduces page load time",
+          "body": "Lightweight templates, compressed images and reserved image space reduce page load time and keep layouts stable on mobile."
+        },
+        {
+          "title": "Develops a scalable page system",
+          "body": "Reusable CMS sections develop a page system that lets marketing teams publish new landing pages without a designer."
+        }
+      ]
+    },
+    {
+      "h2": "UI UX web design vs web app design",
+      "format": "table",
+      "answer": "<strong>UI UX web design converts visitors on a public marketing website; web app design improves workflows inside a logged-in application.</strong> Companies with both a marketing site and a product run the 2 projects as separate engagements with shared design tokens.",
+      "caption": "Comparison of UI UX web design and web app design",
+      "columns": [
+        "Criterion",
+        "UI UX web design",
+        "Web app design"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Anonymous visitors and prospects",
+          "Logged-in customers and staff"
+        ],
+        [
+          "Main goal",
+          "Conversion rate and lead quality",
+          "Task completion and efficiency"
+        ],
+        [
+          "Core screens",
+          "Home, landing, pricing and blog pages",
+          "Dashboards, tables, forms and settings"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "4–16 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$25,000–$180,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "web app design services",
+          "to": "/services/web-app-design-services/"
+        },
+        {
+          "anchor": "UI UX design services for startups",
+          "to": "/services/ui-ux-design-services-for-startups/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does UI UX web design cost?",
+      "format": "paragraph",
+      "answer": "<strong>UI UX web design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of page templates, the number of landing pages, the depth of the IA work and the CMS platform.",
+      "body": "<p>A website redesign with 6–8 page templates, 1 landing page and a Webflow component set sits near $25,000. A multi-audience site with 15–20 page templates, 5 campaign landing pages, a tree-tested IA and a WordPress or Contentful component set sits near $60,000. Online stores with category, product and checkout pages follow <a href=\"/services/ecommerce-ux-design-services/\">e-commerce UX design services</a> instead.</p>"
+    },
+    {
+      "h2": "When should a company hire UI UX web design?",
+      "format": "list",
+      "answer": "<strong>A company should hire UI UX web design in 5 situations:</strong>",
+      "items": [
+        "Demo requests stay flat, if website traffic grows month after month.",
+        "A rebrand launches, if the current website still carries the old messaging.",
+        "Visitors fail to find pricing or product pages, if the navigation grew without a plan.",
+        "Core Web Vitals fail in Google Search Console, if the templates load heavy images and scripts.",
+        "Marketing teams wait on developers for every page, if the CMS has no reusable sections."
+      ]
+    },
+    {
+      "h2": "UI UX web design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about UI UX web design.</strong>",
+      "faqs": [
+        {
+          "q": "Does UI UX web design include development?",
+          "a": "<p>No. UI UX web design delivers Figma templates and a CMS component set; the client's developers build the website.</p>"
+        },
+        {
+          "q": "Is UI UX web design different from web app design?",
+          "a": "<p>Yes. UI UX web design covers public marketing websites, while web app design covers logged-in applications with workflows, tables and permissions.</p>"
+        },
+        {
+          "q": "Can UI UX web design improve SEO?",
+          "a": "<p>Yes. UI UX web design improves search engine optimization (SEO) inputs, for example page structure, heading hierarchy and Core Web Vitals; content writing and backlinks sit outside the UI UX web design scope.</p>"
+        },
+        {
+          "q": "Which CMS platforms does UI UX web design support?",
+          "a": "<p>UI UX web design supports Webflow, WordPress and Contentful, with page sections designed as reusable CMS components.</p>"
+        },
+        {
+          "q": "How long does a website redesign take?",
+          "a": "<p>A website redesign takes 4–8 weeks, which equals 20–40 working days, from the website UX audit to CMS handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "UI UX web design",
+      "Core Web Vitals",
+      "WCAG 2.2",
+      "Figma",
+      "Webflow",
+      "WordPress",
+      "Contentful",
+      "Google Analytics 4",
+      "Hotjar",
+      "Optimal Workshop"
+    ],
+    "ngrams": [
+      "ui ux web design",
+      "website ux",
+      "landing page design",
+      "web design",
+      "responsive design",
+      "website redesign"
+    ],
+    "skipgrams": [
+      "web … design … website",
+      "design of … landing pages",
+      "website … user experience",
+      "ux … conversion"
+    ],
+    "nlpKeywords": [
+      "information architecture",
+      "messaging hierarchy",
+      "call to action",
+      "conversion goals",
+      "page templates",
+      "sitemap",
+      "CMS components",
+      "responsive layouts"
+    ]
+  },
+  "mentions": [
+    "UI UX web design",
+    "Core Web Vitals",
+    "WCAG 2.2",
+    "Figma",
+    "Webflow",
+    "WordPress",
+    "Contentful",
+    "Google Analytics 4",
+    "Hotjar",
+    "Optimal Workshop"
+  ]
 }

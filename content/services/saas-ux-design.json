@@ -21,5 +21,241 @@
     "saas",
     "startups"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "SaaS UX design",
+  "sourceContext": "US UI/UX design agency; this page sells SaaS UX design engagements to subscription software companies that need higher activation and retention.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "SaaS UX design services shape the user experience (UX) of software-as-a-service (SaaS) products across onboarding, activation, retention and in-app upgrades. Our SaaS UX design engagement takes 4–8 weeks, costs $25,000–$60,000, and ends with tested onboarding flows, core workflows and a pricing page ready for development.",
+  "sections": [
+    {
+      "h2": "What is SaaS UX design?",
+      "format": "paragraph",
+      "answer": "<strong>SaaS UX design is the design of the user experience of a subscription software product across the customer lifecycle, from sign-up and onboarding to activation, retention and plan upgrades.</strong> Designers map each lifecycle stage to a product metric, for example the activation rate of new accounts in week 1.",
+      "body": "<p>SaaS UX design differs from <a href=\"/services/web-app-design-services/\">web app design services</a> in scope: web app design covers logged-in workflows, while SaaS UX design adds the lifecycle moments that decide subscription revenue, for example the trial-to-paid upgrade and the cancellation flow. Each SaaS UX design project defines metrics with the Google HEART framework: happiness, engagement, adoption, retention and task success.</p>"
+    },
+    {
+      "h2": "What does SaaS UX design include?",
+      "format": "list",
+      "answer": "<strong>Our SaaS UX design services include 6 deliverables:</strong> onboarding flows, activation checklists, core workflow designs, pricing and plan pages, retention and cancellation flows and a tested Figma prototype.",
+      "items": [
+        {
+          "title": "Onboarding flows.",
+          "body": "Sign-up, setup and first-session screens guide each new user to the first value moment, for example connecting a data source or inviting a teammate."
+        },
+        {
+          "title": "Activation checklists.",
+          "body": "In-app checklists and empty states show the next action, for example the 3–5 setup tasks a new account completes in week 1."
+        },
+        {
+          "title": "Core workflow designs.",
+          "body": "The 3–5 workflows users repeat every week are redesigned, for example creating a report, approving a request or exporting data."
+        },
+        {
+          "title": "Pricing and plan pages.",
+          "body": "The pricing page, the plan comparison table and in-app upgrade prompts are designed together, for example a usage-limit banner that links to the plan comparison."
+        },
+        {
+          "title": "Retention and cancellation flows.",
+          "body": "Account settings, billing and cancellation screens are redesigned, for example a pause-subscription option before the cancel confirmation."
+        },
+        {
+          "title": "Tested Figma prototype.",
+          "body": "A clickable prototype is tested with 5 users per round in Maze, for example the full path from free trial to paid plan."
+        }
+      ]
+    },
+    {
+      "h2": "How does the SaaS UX design process work?",
+      "format": "steps",
+      "answer": "<strong>The SaaS UX design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from discovery to the Figma handover.",
+      "items": [
+        {
+          "title": "Discovery and metrics (3–5 days)",
+          "body": "We review product funnels in Amplitude or Mixpanel, interview 5–8 customers with the Jobs to be Done method and set 1 target metric per lifecycle stage."
+        },
+        {
+          "title": "Lifecycle journey mapping (3–5 days)",
+          "body": "We map every stage from sign-up to renewal and mark the drop-off points, user roles and upgrade moments."
+        },
+        {
+          "title": "Design and prototyping (8–15 days)",
+          "body": "Designers produce onboarding flows, core workflows and plan pages as a clickable Figma prototype."
+        },
+        {
+          "title": "Usability testing (4–8 days)",
+          "body": "2 rounds of 5 users test the prototype in Maze, and each round ends with a System Usability Scale (SUS) score and a fix list."
+        },
+        {
+          "title": "Handover (2–7 days)",
+          "body": "Developers receive annotated Figma files, interaction states and a Web Content Accessibility Guidelines (WCAG) 2.2 level AA checklist for every screen."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of SaaS UX design?",
+      "format": "cards",
+      "answer": "<strong>SaaS UX design has 4 benefits:</strong> it increases activation rate, increases retention rate, reduces support cost and develops a product-led growth motion.",
+      "items": [
+        {
+          "title": "Increases activation rate",
+          "body": "Guided onboarding flows shorten time-to-value, so more new accounts reach the first value moment in the first session."
+        },
+        {
+          "title": "Increases retention rate",
+          "body": "Redesigned core workflows and cancellation flows give paying users fewer reasons to leave at renewal."
+        },
+        {
+          "title": "Reduces support cost",
+          "body": "Clear empty states, settings and error messages answer setup questions inside the product instead of in support tickets."
+        },
+        {
+          "title": "Develops a product-led growth motion",
+          "body": "In-app upgrade prompts and a clear pricing page develop a self-serve path from free trial to paid plan, quarter after quarter."
+        }
+      ]
+    },
+    {
+      "h2": "SaaS UX design vs web app design",
+      "format": "table",
+      "answer": "<strong>SaaS UX design covers the subscription lifecycle and its revenue metrics; web app design covers the logged-in workflows of any web application.</strong> Subscription products with an activation or churn problem start with SaaS UX design.",
+      "caption": "Comparison of SaaS UX design and web app design",
+      "columns": [
+        "Criterion",
+        "SaaS UX design",
+        "Web app design"
+      ],
+      "rows": [
+        [
+          "Focus",
+          "Onboarding, activation, retention and upgrades",
+          "Workflows, tables, forms and permissions"
+        ],
+        [
+          "Main metrics",
+          "Activation rate, retention rate and churn",
+          "Task success rate and time on task"
+        ],
+        [
+          "Key screens",
+          "Sign-up, checklists, pricing page and billing",
+          "Dashboards, data tables and settings"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "8–16 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$60,000–$180,000 for full design"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "web app design services",
+          "to": "/services/web-app-design-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does SaaS UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>SaaS UX design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of lifecycle stages, the number of user roles, the number of core workflows and the number of usability testing rounds.",
+      "body": "<p>An onboarding and activation redesign for 1 user role with 1 testing round sits near $25,000. A full lifecycle redesign with onboarding, 5 core workflows, the pricing page and 2 user roles sits near $60,000. A SaaS product that also needs a component library moves to a full design and design system engagement of $60,000–$180,000 over 8–16 weeks. Market context for subscription software sits on the <a href=\"/industries/saas/\">SaaS industry page</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire SaaS UX design?",
+      "format": "list",
+      "answer": "<strong>A company should hire SaaS UX design in 5 situations:</strong>",
+      "items": [
+        "Trial users leave before the first value moment, if onboarding has no guided setup.",
+        "Monthly churn rises, if pricing and features stay the same.",
+        "Free-to-paid upgrades stay flat, if the pricing page is the only upgrade path.",
+        "Support tickets about setup and settings rise, if the product adds features every quarter.",
+        "A move to product-led growth is planned, if sales demos still carry onboarding."
+      ]
+    },
+    {
+      "h2": "SaaS UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about SaaS UX design.</strong>",
+      "faqs": [
+        {
+          "q": "Does SaaS UX design include onboarding?",
+          "a": "<p>Yes. SaaS UX design includes sign-up, setup and first-session screens, plus the in-app checklists that guide new accounts to activation.</p>"
+        },
+        {
+          "q": "Do you need product analytics for SaaS UX design?",
+          "a": "<p>No. SaaS UX design works without product analytics, but Amplitude, Mixpanel or Pendo access adds funnel and feature-usage data to the discovery step.</p>"
+        },
+        {
+          "q": "Can SaaS UX design include the pricing page?",
+          "a": "<p>Yes. SaaS UX design covers the pricing page, the plan comparison table and the in-app upgrade prompts.</p>"
+        },
+        {
+          "q": "Is SaaS UX design different from SaaS user interface design?",
+          "a": "<p>Yes. SaaS UX design defines flows, lifecycle stages and metrics, while SaaS user interface design defines the visual layer, for example typography, colour and components. Our SaaS UX design engagements deliver both layers.</p>"
+        },
+        {
+          "q": "How long does SaaS UX design take?",
+          "a": "<p>SaaS UX design takes 4–8 weeks, which equals 20–40 working days, from discovery to the Figma handover.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "SaaS UX design",
+      "Jobs to be Done",
+      "Google HEART framework",
+      "Figma",
+      "Maze",
+      "Amplitude",
+      "Mixpanel",
+      "Pendo",
+      "System Usability Scale (SUS)",
+      "WCAG 2.2"
+    ],
+    "ngrams": [
+      "saas ux design",
+      "saas ux design services",
+      "onboarding flows",
+      "activation rate",
+      "pricing page",
+      "churn"
+    ],
+    "skipgrams": [
+      "saas … onboarding",
+      "design … retention",
+      "ux … subscription software",
+      "trial … paid plan"
+    ],
+    "nlpKeywords": [
+      "time-to-value",
+      "activation",
+      "retention",
+      "churn",
+      "in-app upgrade prompts",
+      "plan comparison",
+      "empty states",
+      "user roles"
+    ]
+  },
+  "mentions": [
+    "SaaS UX design",
+    "Jobs to be Done",
+    "Google HEART framework",
+    "Figma",
+    "Maze",
+    "Amplitude",
+    "Mixpanel",
+    "Pendo",
+    "System Usability Scale (SUS)",
+    "WCAG 2.2"
+  ]
 }

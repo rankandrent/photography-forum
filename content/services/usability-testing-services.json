@@ -21,5 +21,245 @@
     "healthcare",
     "ecommerce"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "usability testing",
+  "sourceContext": "US UI/UX design agency; this page sells task-based usability testing rounds to teams validating prototypes and live products before launch.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "Usability testing services measure how real users complete tasks on a prototype or live product through moderated sessions, unmoderated studies and System Usability Scale (SUS) scoring, before a user experience (UX) team ships the design. Our usability testing engagement takes 4–8 weeks, costs $25,000–$60,000, and runs 2–3 test rounds with design fixes between rounds.",
+  "sections": [
+    {
+      "h2": "What is usability testing?",
+      "format": "paragraph",
+      "answer": "<strong>Usability testing is a research method in which representative users attempt realistic tasks on a product while a researcher observes where the users succeed, hesitate and fail.</strong> Each usability test measures task success rate, time on task and errors, the effectiveness and efficiency measures of ISO 9241-11.",
+      "body": "<p>Usability testing differs from <a href=\"/services/ux-audit-services/\">UX audit services</a> in one way: recruited users evaluate the product, not designers. Nielsen Norman Group guidance sets 5 users per round for a qualitative usability test, so a UX team runs several small rounds instead of 1 large round.</p>"
+    },
+    {
+      "h2": "What do usability testing services include?",
+      "format": "list",
+      "answer": "<strong>Our usability testing services include 6 deliverables:</strong> a test plan, participant recruitment, moderated usability sessions, unmoderated usability studies, SUS and Single Ease Question scoring, and a usability test report.",
+      "items": [
+        {
+          "title": "Test plan.",
+          "body": "Tasks, success criteria and participant profiles are written for each round, for example \"find and book a 30-minute appointment\"."
+        },
+        {
+          "title": "Participant recruitment.",
+          "body": "5–8 participants per round are screened to match real user groups, for example first-time buyers and repeat buyers."
+        },
+        {
+          "title": "Moderated usability sessions.",
+          "body": "A researcher runs 45–60-minute think-aloud sessions over Lookback or Zoom, for example on a clickable Figma prototype."
+        },
+        {
+          "title": "Unmoderated usability studies.",
+          "body": "Maze or UserTesting runs task-based studies with 20–50 participants, for example a first-click test on a new navigation."
+        },
+        {
+          "title": "SUS and Single Ease Question scoring.",
+          "body": "Every participant answers the 10-item System Usability Scale and the 7-point Single Ease Question (SEQ), for example a SUS score out of 100 per round."
+        },
+        {
+          "title": "Usability test report.",
+          "body": "Every finding gets a video clip, a severity rating from 1 to 4 and a recommended design fix."
+        }
+      ]
+    },
+    {
+      "h2": "How does the usability testing process work?",
+      "format": "steps",
+      "answer": "<strong>The usability testing process takes 4–8 weeks (20–40 working days) and runs in 6 steps</strong>, from the test plan to the final report.",
+      "items": [
+        {
+          "title": "Test planning (2–4 days)",
+          "body": "We agree the tasks, user groups, success criteria and the prototype or live build to test."
+        },
+        {
+          "title": "Participant recruitment (5–8 days)",
+          "body": "We screen and schedule 5–8 participants per user group for the first round."
+        },
+        {
+          "title": "Round 1 sessions (3–5 days)",
+          "body": "Moderated and unmoderated sessions run on the prototype, and every session is recorded."
+        },
+        {
+          "title": "Analysis and design fixes (5–12 days)",
+          "body": "Findings are rated by severity, and designers fix the highest-severity issues in Figma."
+        },
+        {
+          "title": "Round 2 sessions (3–6 days)",
+          "body": "A second round with new participants tests the fixed design against the round 1 task success rate."
+        },
+        {
+          "title": "Report and handover (2–5 days)",
+          "body": "We present the usability test report and video highlights in a 60-minute session."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of usability testing?",
+      "format": "cards",
+      "answer": "<strong>Usability testing has 4 benefits:</strong> usability testing increases task success rate, improves design quality before launch, reduces post-launch rework and develops a usability benchmark.",
+      "items": [
+        {
+          "title": "Increases task success rate",
+          "body": "Fixing observed failures between rounds increases the share of participants who complete each task without help."
+        },
+        {
+          "title": "Improves design quality before launch",
+          "body": "Testing prototypes improves interaction patterns, labels and error messages before any code ships."
+        },
+        {
+          "title": "Reduces post-launch rework",
+          "body": "Catching usability issues in a Figma prototype reduces the development days spent fixing live code."
+        },
+        {
+          "title": "Develops a usability benchmark",
+          "body": "SUS scores from each round develop a benchmark that shows usability change release after release."
+        }
+      ]
+    },
+    {
+      "h2": "Usability testing vs A/B testing",
+      "format": "table",
+      "answer": "<strong>Usability testing explains why users fail a task through observed sessions; A/B testing measures which of 2 live versions converts better through a traffic split.</strong> Teams run usability testing first to find the fix, then A/B testing to measure the fix at scale.",
+      "caption": "Comparison of usability testing and A/B testing",
+      "columns": [
+        "Criterion",
+        "Usability testing",
+        "A/B testing"
+      ],
+      "rows": [
+        [
+          "Question answered",
+          "Why users fail a task",
+          "Which version converts better"
+        ],
+        [
+          "Participants",
+          "5–8 recruited users per round",
+          "Live visitors split between 2 versions"
+        ],
+        [
+          "Main output",
+          "Task success rate, SUS score and observed failures",
+          "Conversion rate difference and statistical significance"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks for 2–3 rounds",
+          "2–6 weeks of live traffic"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "Part of the same $25,000–$60,000 sprint"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does usability testing cost?",
+      "format": "paragraph",
+      "answer": "<strong>Usability testing costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of test rounds, the number of participants per round, the number of platforms and the recruitment difficulty.",
+      "body": "<p>An engagement of 2 moderated rounds with 5 participants each on 1 web prototype sits near $25,000. An engagement of 3 rounds on web and mobile, with 8 participants per round, unmoderated Maze studies and hard-to-recruit participants, for example physicians, sits near $60,000. Teams that need broader discovery before testing start with <a href=\"/services/ux-research-services/\">UX research services</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire usability testing services?",
+      "format": "list",
+      "answer": "<strong>A company should hire usability testing services in 5 situations:</strong>",
+      "items": [
+        "A redesign is ready for development, if no real user has tried the new flows.",
+        "Conversion rate drops after a release, if analytics cannot show why users stop.",
+        "A new product enters beta, if the team needs evidence before launch.",
+        "2 design concepts compete, if stakeholders cannot agree on 1 direction.",
+        "A healthcare or finance product launches, if regulators or buyers expect documented usability evidence."
+      ]
+    },
+    {
+      "h2": "Usability testing FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about usability testing services.</strong>",
+      "faqs": [
+        {
+          "q": "How many users are needed for usability testing?",
+          "a": "<p>Usability testing needs 5 users per round for a qualitative test and 40 users for a quantitative test, per Nielsen Norman Group guidance.</p>"
+        },
+        {
+          "q": "What is the difference between moderated and unmoderated usability testing?",
+          "a": "<p>Moderated usability testing has a researcher present to ask follow-up questions, while unmoderated usability testing runs on tools such as Maze without a researcher and reaches more participants in less time.</p>"
+        },
+        {
+          "q": "Can usability testing be done on a prototype?",
+          "a": "<p>Yes. Usability testing on a clickable Figma prototype finds usability issues before development starts.</p>"
+        },
+        {
+          "q": "Does usability testing include A/B testing?",
+          "a": "<p>Yes. Our usability testing services include A/B testing plans and analysis for live products with enough traffic to reach statistical significance.</p>"
+        },
+        {
+          "q": "How long does usability testing take?",
+          "a": "<p>Usability testing takes 4–8 weeks, which equals 20–40 working days, for 2–3 test rounds; a single usability testing round takes 1–3 weeks.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "usability testing",
+      "System Usability Scale (SUS)",
+      "Single Ease Question (SEQ)",
+      "ISO 9241-11",
+      "Nielsen Norman Group",
+      "Maze",
+      "Lookback",
+      "UserTesting",
+      "Figma",
+      "A/B testing"
+    ],
+    "ngrams": [
+      "usability testing services",
+      "usability testing",
+      "usability test",
+      "moderated usability",
+      "task success rate",
+      "system usability scale"
+    ],
+    "skipgrams": [
+      "testing … real users",
+      "usability … prototype",
+      "round … participants",
+      "testing … task success"
+    ],
+    "nlpKeywords": [
+      "task success rate",
+      "think-aloud",
+      "participants",
+      "prototype",
+      "severity rating",
+      "moderated sessions",
+      "unmoderated studies",
+      "SUS score"
+    ]
+  },
+  "mentions": [
+    "usability testing",
+    "System Usability Scale (SUS)",
+    "Single Ease Question (SEQ)",
+    "ISO 9241-11",
+    "Nielsen Norman Group",
+    "Maze",
+    "Lookback",
+    "UserTesting",
+    "Figma",
+    "A/B testing"
+  ]
 }

@@ -21,5 +21,241 @@
     "saas",
     "healthcare"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "interaction design",
+  "sourceContext": "US UI/UX design agency; this page sells interaction design work (micro-interactions, states, motion, prototyping) to product teams whose products feel unclear or unresponsive.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "An interaction design agency defines how a digital product responds to every user action through user flows, micro-interactions, user interface (UI) states and motion design. Our interaction design engagement takes 4–8 weeks, costs $25,000–$60,000, and ends with an interactive prototype and motion specifications for developers.",
+  "sections": [
+    {
+      "h2": "What is interaction design?",
+      "format": "paragraph",
+      "answer": "<strong>Interaction design is the discipline that defines how a digital product responds to user input, including the triggers, feedback, states and transitions of every control.</strong> Interaction designers specify what happens on tap, click, hover, drag, error and loading, and how long each transition lasts.",
+      "body": "<p>Interaction design differs from visual design in focus: visual design sets colour, type and layout, while interaction design sets behaviour over time. An interaction design agency works inside a wider product team, for example alongside <a href=\"/services/digital-product-design-services/\">digital product design services</a> for a new product, and sizes targets with Fitts's law.</p>"
+    },
+    {
+      "h2": "What does an interaction design agency include?",
+      "format": "list",
+      "answer": "<strong>Our interaction design agency services include 6 deliverables:</strong> interaction flows, a micro-interaction library, UI states, a motion system, an interactive prototype and developer motion specifications.",
+      "items": [
+        {
+          "title": "Interaction flows.",
+          "body": "Flow diagrams map every trigger and response, for example form submission, undo and multi-step checkout."
+        },
+        {
+          "title": "Micro-interaction library.",
+          "body": "Each micro-interaction is defined by trigger, rules, feedback and loops, for example a like button, a toggle and pull-to-refresh."
+        },
+        {
+          "title": "UI states.",
+          "body": "Every component gets a full set of UI states, for example default, hover, focus, pressed, disabled, loading, empty and error."
+        },
+        {
+          "title": "Motion system.",
+          "body": "Duration and easing tokens standardize transitions, for example the Material Design 3 short durations of 50–200 ms for small feedback and medium durations of 250–400 ms for larger transitions."
+        },
+        {
+          "title": "Interactive prototype.",
+          "body": "A high-fidelity prototype in Figma or ProtoPie shows real behaviour, for example conditional logic, variables and gesture input."
+        },
+        {
+          "title": "Developer motion specifications.",
+          "body": "Lottie or Rive files and timing tables go to engineering, for example exact duration, easing curve and delay per transition."
+        }
+      ]
+    },
+    {
+      "h2": "How does the interaction design process work?",
+      "format": "steps",
+      "answer": "<strong>The interaction design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from flow audit to developer handoff.",
+      "items": [
+        {
+          "title": "Flow and behaviour audit (3–5 days)",
+          "body": "We review existing flows and components and list every missing state, inconsistent transition and unclear feedback message."
+        },
+        {
+          "title": "Interaction flows and states (5–10 days)",
+          "body": "Designers map triggers and responses for each flow and define the UI states of every component in Figma."
+        },
+        {
+          "title": "Micro-interactions and motion system (5–10 days)",
+          "body": "Designers define duration and easing tokens and design each micro-interaction with a reduced-motion variant for users who set prefers-reduced-motion."
+        },
+        {
+          "title": "Prototype testing (4–10 days)",
+          "body": "5 users per round complete tasks in the interactive prototype, and designers adjust timing and feedback after each round."
+        },
+        {
+          "title": "Developer handoff (3–5 days)",
+          "body": "We hand over motion specifications, Lottie or Rive files and state documentation in Storybook, then review the built interactions with engineers."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of interaction design?",
+      "format": "cards",
+      "answer": "<strong>Interaction design has 4 benefits:</strong> it increases task completion rate, improves perceived responsiveness, reduces development rework time and develops consistent product behaviour.",
+      "items": [
+        {
+          "title": "Increases task completion rate",
+          "body": "Clear feedback on every action shows users what happened and what to do next, which increases the share of users who finish each task."
+        },
+        {
+          "title": "Improves perceived responsiveness",
+          "body": "Visible feedback within 100 ms of each tap or click improves the sense that the product reacts instantly."
+        },
+        {
+          "title": "Reduces development rework time",
+          "body": "Exact duration, easing and state specifications reduce the time engineers spend guessing behaviour and reworking animations."
+        },
+        {
+          "title": "Develops consistent product behaviour",
+          "body": "A shared micro-interaction library develops consistent behaviour across teams, so the same control reacts the same way on every screen."
+        }
+      ]
+    },
+    {
+      "h2": "Interaction design vs design systems",
+      "format": "table",
+      "answer": "<strong>Interaction design defines how components behave; a design system packages components, design tokens and governance rules so teams reuse the components.</strong> Interaction design output, for example motion tokens and UI states, feeds directly into the design system.",
+      "caption": "Comparison of interaction design and design systems",
+      "columns": [
+        "Criterion",
+        "Interaction design",
+        "Design system"
+      ],
+      "rows": [
+        [
+          "Focus",
+          "Behaviour, feedback and motion",
+          "Reusable components and tokens"
+        ],
+        [
+          "Main output",
+          "Interactive prototype and motion specifications",
+          "Component library, tokens and documentation"
+        ],
+        [
+          "Owner after handoff",
+          "Product designers and engineers",
+          "Design system team"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "8–16 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$60,000–$180,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        },
+        {
+          "anchor": "digital product design services",
+          "to": "/services/digital-product-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does interaction design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Interaction design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of user flows, the number of components, the number of platforms and the number of prototype testing rounds.",
+      "body": "<p>An interaction design project for 1 platform, 3–4 user flows and 20 components sits near $25,000. A web and mobile project with 10 user flows, 60 components, a full motion system and 2 testing rounds sits near $60,000. Gesture-heavy iOS and Android work runs through <a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire an interaction design agency?",
+      "format": "list",
+      "answer": "<strong>A company should hire an interaction design agency in 5 situations:</strong>",
+      "items": [
+        "Users report that the product feels slow, if load times already meet the performance target.",
+        "Users tap buttons twice, if buttons and forms show no feedback.",
+        "Engineers build animations by guesswork, if no motion specifications exist.",
+        "Components behave differently across screens, if each team designed its own states.",
+        "An accessibility review flags motion issues, if animations ignore Web Content Accessibility Guidelines (WCAG) 2.2 success criterion 2.3.3."
+      ]
+    },
+    {
+      "h2": "Interaction design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about an interaction design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Does an interaction design agency design animations?",
+          "a": "<p>Yes. An interaction design agency designs micro-interactions and screen transitions and delivers each animation as a Lottie or Rive file with a timing table.</p>"
+        },
+        {
+          "q": "Is interaction design the same as UX design?",
+          "a": "<p>No. Interaction design is one part of user experience (UX) design: UX design also covers research, information architecture and content, while interaction design covers behaviour, feedback and motion.</p>"
+        },
+        {
+          "q": "Can motion design meet accessibility requirements?",
+          "a": "<p>Yes. Motion design meets WCAG 2.2 when every non-essential animation has a reduced-motion variant triggered by the prefers-reduced-motion setting.</p>"
+        },
+        {
+          "q": "Which tools does an interaction design agency use?",
+          "a": "<p>An interaction design agency uses Figma for flows and UI states, ProtoPie for advanced prototypes, and Lottie or Rive for production animations.</p>"
+        },
+        {
+          "q": "How long does an interaction design project take?",
+          "a": "<p>An interaction design project takes 4–8 weeks, which equals 20–40 working days, from flow audit to developer handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "interaction design",
+      "Figma",
+      "ProtoPie",
+      "Lottie",
+      "Rive",
+      "Material Design 3",
+      "WCAG 2.2",
+      "prefers-reduced-motion",
+      "Fitts's law",
+      "Storybook"
+    ],
+    "ngrams": [
+      "interaction design agency",
+      "interaction design",
+      "micro-interactions",
+      "motion design",
+      "interactive prototype",
+      "ui states"
+    ],
+    "skipgrams": [
+      "design of … interactions",
+      "micro … interaction … feedback",
+      "motion … transitions",
+      "states … components"
+    ],
+    "nlpKeywords": [
+      "user flows",
+      "feedback",
+      "transitions",
+      "easing",
+      "animation",
+      "prototyping",
+      "reduced motion",
+      "developer handoff"
+    ]
+  },
+  "mentions": [
+    "interaction design",
+    "Figma",
+    "ProtoPie",
+    "Lottie",
+    "Rive",
+    "Material Design 3",
+    "WCAG 2.2",
+    "prefers-reduced-motion",
+    "Fitts's law",
+    "Storybook"
+  ]
 }

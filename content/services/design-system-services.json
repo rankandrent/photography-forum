@@ -21,5 +21,241 @@
     "saas",
     "ecommerce"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "design system",
+  "sourceContext": "US UI/UX design agency; this page sells the design system engagement (tokens, components, governance) to product organisations whose UI has drifted across teams.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "Design system services build a shared set of design tokens, a development-ready component library and usage documentation so every product team ships a consistent user interface (UI). Our design system engagement takes 8–16 weeks, costs $60,000–$180,000, and ends with a Figma library, tokens in code and a governance model.",
+  "sections": [
+    {
+      "h2": "What is a design system?",
+      "format": "paragraph",
+      "answer": "<strong>A design system is a single source of truth for a product's user interface: design tokens, reusable components, usage guidelines and the governance rules that keep them current.</strong> Designers use the Figma library and engineers use the matching coded components, so both teams build from the same parts.",
+      "body": "<p>A design system differs from a style guide in one way: a style guide documents colours and type, while a design system also ships working components and a process for changing the components. Our design system services follow Atomic Design, from tokens to atoms, molecules and templates, and include the component states defined by an <a href=\"/services/interaction-design-agency/\">interaction design agency</a>.</p>"
+    },
+    {
+      "h2": "What does a design system include?",
+      "format": "list",
+      "answer": "<strong>Our design system services include 6 deliverables:</strong> a UI inventory, design tokens, a Figma component library, a coded component library, design system documentation and a governance model.",
+      "items": [
+        {
+          "title": "UI inventory.",
+          "body": "Every existing screen is captured and grouped, for example duplicate button styles, colour values and spacing values."
+        },
+        {
+          "title": "Design tokens.",
+          "body": "Colour, typography, spacing, radius and motion values are stored as tokens in the Design Tokens Community Group (DTCG) format, for example color.text.primary."
+        },
+        {
+          "title": "Figma component library.",
+          "body": "Components use variants, auto layout and variables, for example buttons, inputs, modals and data tables."
+        },
+        {
+          "title": "Coded component library.",
+          "body": "Components are built with the client's engineers and documented in Storybook, for example with visual regression tests in Chromatic."
+        },
+        {
+          "title": "Design system documentation.",
+          "body": "Each component page in Zeroheight or Storybook lists anatomy, states and accessibility rules, for example the Web Content Accessibility Guidelines (WCAG) 2.2 contrast ratio of 4.5:1 for body text."
+        },
+        {
+          "title": "Governance model.",
+          "body": "A contribution process defines who proposes, reviews and releases changes, for example a monthly release with semantic versioning."
+        }
+      ]
+    },
+    {
+      "h2": "How does the design system process work?",
+      "format": "steps",
+      "answer": "<strong>The design system process takes 8–16 weeks (40–80 working days) and runs in 5 steps</strong>, from UI inventory to governance handover.",
+      "items": [
+        {
+          "title": "UI inventory and audit (5–10 days)",
+          "body": "We collect every screen, list duplicate patterns and agree the products and platforms in scope."
+        },
+        {
+          "title": "Design tokens and foundations (5–10 days)",
+          "body": "Designers define colour, typography, spacing and elevation tokens, managed in Tokens Studio and exported to code with Style Dictionary."
+        },
+        {
+          "title": "Component design (15–30 days)",
+          "body": "Designers build each component in Figma with variants and states, starting with the most used components, for example buttons, inputs and navigation."
+        },
+        {
+          "title": "Code alignment and documentation (10–20 days)",
+          "body": "Engineers match each Figma component to code in Storybook, and designers write usage guidelines and accessibility rules per component."
+        },
+        {
+          "title": "Governance and rollout (5–10 days)",
+          "body": "We set up design system governance, train product teams in 2 workshops and release version 1.0 of the design system."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of a design system?",
+      "format": "cards",
+      "answer": "<strong>A design system has 4 benefits:</strong> it increases component reuse rate, improves UI consistency, reduces design and development time and develops design maturity.",
+      "items": [
+        {
+          "title": "Increases component reuse rate",
+          "body": "Teams pick existing components from the Figma and Storybook libraries instead of building new ones, which increases the share of screens built from shared parts."
+        },
+        {
+          "title": "Improves UI consistency",
+          "body": "Shared tokens and components improve consistency of colour, spacing and behaviour across every product, platform and team."
+        },
+        {
+          "title": "Reduces design and development time",
+          "body": "Designers assemble screens from ready components and engineers reuse tested code, which reduces the time from design to release."
+        },
+        {
+          "title": "Develops design maturity",
+          "body": "The governance model develops a shared design practice, with product teams contributing components through one review process."
+        }
+      ]
+    },
+    {
+      "h2": "Design system vs UI kit",
+      "format": "table",
+      "answer": "<strong>A design system includes tokens, components, code, documentation and governance; a UI kit includes only the visual components in a design file.</strong> Teams with 1 product and 1 designer start with a UI kit, and teams with several products need a design system.",
+      "caption": "Comparison of a design system and a UI kit",
+      "columns": [
+        "Criterion",
+        "Design system",
+        "UI kit"
+      ],
+      "rows": [
+        [
+          "Contents",
+          "Tokens, components, code, documentation and governance",
+          "Visual components in Figma"
+        ],
+        [
+          "Code alignment",
+          "Matching components in Storybook",
+          "None"
+        ],
+        [
+          "Maintenance",
+          "Governance model and versioned releases",
+          "Manual updates by 1 designer"
+        ],
+        [
+          "Timeline",
+          "8–16 weeks",
+          "2–4 weeks"
+        ],
+        [
+          "Price on this site",
+          "$60,000–$180,000",
+          "Part of a $25,000–$60,000 design sprint"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "dashboard design services",
+          "to": "/services/dashboard-design-services/"
+        },
+        {
+          "anchor": "digital product design services",
+          "to": "/services/digital-product-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does a design system cost?",
+      "format": "paragraph",
+      "answer": "<strong>A design system costs $60,000–$180,000 and takes 8–16 weeks.</strong> The price depends on 4 factors: the number of components, the number of platforms, the number of brands or themes and the depth of code alignment.",
+      "body": "<p>A single-brand web design system with 25–30 components, a Figma library and Storybook documentation sits near $60,000. A multi-brand design system with light and dark themes, 60–80 web and mobile components and a governance rollout sits near $180,000. Teams that maintain the design system after release book an embedded user experience (UX) design team for $15,000–$40,000 per month through <a href=\"/services/ux-consulting-services/\">UX consulting services</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire design system services?",
+      "format": "list",
+      "answer": "<strong>A company should hire design system services in 5 situations:</strong>",
+      "items": [
+        "The same component exists in several versions, if each team designed its own buttons and forms.",
+        "A rebrand is planned, if colours and typography are hard-coded across products.",
+        "Design-to-development handoff takes weeks, if engineers rebuild each screen from scratch.",
+        "A second product or platform launches, if the new team needs the existing UI patterns.",
+        "Accessibility fixes repeat on every screen, if no shared component holds the contrast and focus rules."
+      ]
+    },
+    {
+      "h2": "Design system FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about design system services.</strong>",
+      "faqs": [
+        {
+          "q": "Does a design system include code?",
+          "a": "<p>Yes. Our design system includes coded components documented in Storybook, built with the client's engineers to match the Figma library 1:1.</p>"
+        },
+        {
+          "q": "Can a design system work with an existing product?",
+          "a": "<p>Yes. A design system for an existing product starts with a UI inventory and replaces duplicate patterns screen by screen, without a full redesign.</p>"
+        },
+        {
+          "q": "Which tools does a design system use?",
+          "a": "<p>A design system uses Figma for the design library, Tokens Studio and Style Dictionary for design tokens, and Storybook for coded components.</p>"
+        },
+        {
+          "q": "Should a startup build a design system?",
+          "a": "<p>No. A startup with 1 product and 1–2 designers needs a UI kit and design tokens first; a full design system fits when 2 or more teams build on the same product.</p>"
+        },
+        {
+          "q": "How long does a design system take?",
+          "a": "<p>A design system takes 8–16 weeks, which equals 40–80 working days, from UI inventory to the version 1.0 release.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "design system",
+      "Figma",
+      "Storybook",
+      "Chromatic",
+      "Zeroheight",
+      "Tokens Studio",
+      "Style Dictionary",
+      "Design Tokens Community Group (DTCG)",
+      "Atomic Design",
+      "WCAG 2.2"
+    ],
+    "ngrams": [
+      "design system services",
+      "design system",
+      "design tokens",
+      "component library",
+      "design system governance",
+      "design system documentation"
+    ],
+    "skipgrams": [
+      "design … system … components",
+      "tokens … design system",
+      "library of … components",
+      "system … governance"
+    ],
+    "nlpKeywords": [
+      "UI consistency",
+      "reusable components",
+      "UI inventory",
+      "variants",
+      "governance model",
+      "documentation",
+      "themes",
+      "semantic versioning"
+    ]
+  },
+  "mentions": [
+    "design system",
+    "Figma",
+    "Storybook",
+    "Chromatic",
+    "Zeroheight",
+    "Tokens Studio",
+    "Style Dictionary",
+    "Design Tokens Community Group (DTCG)",
+    "Atomic Design",
+    "WCAG 2.2"
+  ]
 }

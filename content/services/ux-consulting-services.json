@@ -21,5 +21,237 @@
     "saas",
     "startups"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "UX consulting",
+  "sourceContext": "US UI/UX design agency; this page sells senior UX strategy and advisory engagements to product leaders who need a prioritized UX roadmap.",
+  "priceRange": "$5,000–$15,000",
+  "abstract": "UX consulting services give product teams senior user experience (UX) guidance through a UX maturity assessment, a product and analytics review and a prioritized UX strategy roadmap. Our UX consulting engagement takes 2–3 weeks and costs $5,000–$15,000; ongoing advisory as an embedded design team costs $15,000–$40,000 per month.",
+  "sections": [
+    {
+      "h2": "What is UX consulting?",
+      "format": "paragraph",
+      "answer": "<strong>UX consulting is a senior advisory service that assesses how a company designs products, identifies the highest-impact UX problems and sets a prioritized plan to fix the problems.</strong> UX consultants review the product, the analytics and the design process, then score UX maturity against the Nielsen Norman Group 6-stage UX maturity model.",
+      "body": "<p>UX consulting differs from <a href=\"/services/ux-audit-services/\">UX audit services</a> in scope: a UX audit evaluates the product interface, while UX consulting evaluates the product, the team and the process that produce the interface. A UX strategy consultant therefore delivers a roadmap for people and process as well as for screens.</p>"
+    },
+    {
+      "h2": "What do UX consulting services include?",
+      "format": "list",
+      "answer": "<strong>Our UX consulting services include 6 deliverables:</strong> stakeholder interviews, a UX maturity assessment, a product and analytics review, a UX metrics framework, a prioritized UX strategy roadmap and team coaching sessions.",
+      "items": [
+        {
+          "title": "Stakeholder interviews.",
+          "body": "6–10 interviews with product, engineering, sales and support leads set the business goals, for example a 45-minute session with the head of product."
+        },
+        {
+          "title": "UX maturity assessment.",
+          "body": "The design process is scored against the Nielsen Norman Group UX maturity model and the human-centred design activities of ISO 9241-210, for example research frequency and design-system adoption."
+        },
+        {
+          "title": "Product and analytics review.",
+          "body": "Key flows are reviewed against usability heuristics and Google Analytics 4 funnels, for example onboarding completion and checkout drop-off."
+        },
+        {
+          "title": "UX metrics framework.",
+          "body": "Goals, signals and metrics are defined with the Google HEART framework (happiness, engagement, adoption, retention and task success), for example an activation rate target for onboarding."
+        },
+        {
+          "title": "Prioritized UX strategy roadmap.",
+          "body": "Initiatives are ranked with RICE prioritization (reach, impact, confidence and effort), for example a quarter-by-quarter plan of research and design work."
+        },
+        {
+          "title": "Team coaching sessions.",
+          "body": "Designers and product managers receive 4–6 working sessions on methods, for example Double Diamond discovery and Jobs to be Done interviews."
+        }
+      ]
+    },
+    {
+      "h2": "How does the UX consulting process work?",
+      "format": "steps",
+      "answer": "<strong>The UX consulting process takes 2–3 weeks (10–15 working days) and runs in 4 steps</strong>, from stakeholder interviews to the roadmap workshop.",
+      "items": [
+        {
+          "title": "Stakeholder interviews (2–3 days)",
+          "body": "We interview 6–10 leads, collect business goals and receive analytics and product access."
+        },
+        {
+          "title": "Product and process review (4–6 days)",
+          "body": "A senior UX consultant reviews key flows, analytics funnels, research history and the design workflow."
+        },
+        {
+          "title": "Maturity scoring and strategy (2–4 days)",
+          "body": "Findings are scored on the UX maturity model and turned into initiatives with RICE scores and HEART metrics."
+        },
+        {
+          "title": "Roadmap workshop (2 days)",
+          "body": "We present the UX strategy roadmap in a 2-hour workshop and agree owners and dates for each initiative."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of UX consulting?",
+      "format": "cards",
+      "answer": "<strong>UX consulting has 4 benefits:</strong> UX consulting increases activation rate, improves team UX skills, reduces rework cost and develops UX maturity.",
+      "items": [
+        {
+          "title": "Increases activation rate",
+          "body": "Fixing the onboarding and first-use problems found in the product review increases the share of new users who reach the first key action."
+        },
+        {
+          "title": "Improves team UX skills",
+          "body": "Coaching sessions improve how designers and product managers run research, design critiques and prioritization."
+        },
+        {
+          "title": "Reduces rework cost",
+          "body": "Validating product direction before development reduces the design and engineering days spent rebuilding shipped features."
+        },
+        {
+          "title": "Develops UX maturity",
+          "body": "Quarterly roadmap reviews develop the company's UX maturity one stage at a time on the Nielsen Norman Group model."
+        }
+      ]
+    },
+    {
+      "h2": "UX consulting vs UX audit",
+      "format": "table",
+      "answer": "<strong>UX consulting sets strategy for the product, the team and the design process; a UX audit evaluates the product interface only.</strong> Companies start with UX consulting if no UX plan exists, and start with a UX audit if the interface problem is already known.",
+      "caption": "Comparison of UX consulting and a UX audit",
+      "columns": [
+        "Criterion",
+        "UX consulting",
+        "UX audit"
+      ],
+      "rows": [
+        [
+          "Scope",
+          "Product, team and design process",
+          "Product interface only"
+        ],
+        [
+          "Who is involved",
+          "Senior UX consultant and company leadership",
+          "2 senior UX designers"
+        ],
+        [
+          "Main output",
+          "UX strategy roadmap and UX metrics framework",
+          "UX audit report and fix roadmap"
+        ],
+        [
+          "Timeline",
+          "2–3 weeks, or ongoing monthly advisory",
+          "2–3 weeks"
+        ],
+        [
+          "Price on this site",
+          "$5,000–$15,000, or $15,000–$40,000 per month",
+          "$5,000–$15,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        },
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does UX consulting cost?",
+      "format": "paragraph",
+      "answer": "<strong>UX consulting costs $5,000–$15,000 and takes 2–3 weeks.</strong> The price depends on 4 factors: the number of products, the number of stakeholder interviews, the number of teams coached and the need for ongoing advisory.",
+      "body": "<p>A UX strategy engagement for 1 product with 6 stakeholder interviews sits near $5,000. An engagement for 3 products, 10 stakeholder interviews and 2 coached teams sits near $15,000. Ongoing UX advisory continues as an embedded design team at $15,000–$40,000 per month, and teams that need new user evidence add <a href=\"/services/ux-research-services/\">UX research services</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire UX consulting services?",
+      "format": "list",
+      "answer": "<strong>A company should hire UX consulting services in 5 situations:</strong>",
+      "items": [
+        "Product decisions rely on opinion, if the company has no UX research or UX metrics.",
+        "A company builds a first design team, if no senior designer sets the design process.",
+        "Activation rate or retention stalls, if the product team cannot name the cause.",
+        "A new product line starts, if leadership needs a UX strategy before funding design work.",
+        "Design and engineering disagree on priorities, if the backlog has no shared scoring method."
+      ]
+    },
+    {
+      "h2": "UX consulting FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about UX consulting services.</strong>",
+      "faqs": [
+        {
+          "q": "What does a UX consultant do?",
+          "a": "<p>A UX consultant assesses a product, the product team and the design process, then delivers a prioritized UX strategy roadmap and coaches the team to execute the roadmap.</p>"
+        },
+        {
+          "q": "Is UX consulting different from a UX audit?",
+          "a": "<p>Yes. UX consulting covers strategy, team process and UX maturity, while a UX audit covers only the usability issues in the product interface.</p>"
+        },
+        {
+          "q": "Can UX consulting be ongoing?",
+          "a": "<p>Yes. Ongoing UX consulting runs as an embedded design team at $15,000–$40,000 per month, with weekly advisory sessions and quarterly roadmap reviews.</p>"
+        },
+        {
+          "q": "Does UX consulting include design work?",
+          "a": "<p>No. UX consulting delivers a UX strategy, a UX metrics framework and a roadmap; interface design work is quoted as a design sprint or a full design engagement.</p>"
+        },
+        {
+          "q": "How long does UX consulting take?",
+          "a": "<p>UX consulting takes 2–3 weeks, which equals 10–15 working days, from the first stakeholder interview to the roadmap workshop.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "UX consulting",
+      "UX strategy",
+      "Nielsen Norman Group UX maturity model",
+      "ISO 9241-210",
+      "Google HEART framework",
+      "RICE prioritization",
+      "Google Analytics 4",
+      "Jobs to be Done",
+      "Double Diamond",
+      "activation rate"
+    ],
+    "ngrams": [
+      "ux consulting services",
+      "ux consulting",
+      "ux strategy",
+      "ux consultant",
+      "ux maturity",
+      "ux strategy roadmap"
+    ],
+    "skipgrams": [
+      "consulting … user experience",
+      "ux … strategy consultant",
+      "consulting … product team",
+      "roadmap … ux maturity"
+    ],
+    "nlpKeywords": [
+      "stakeholder interviews",
+      "UX maturity",
+      "UX metrics",
+      "design process",
+      "strategy roadmap",
+      "team coaching",
+      "prioritization",
+      "activation rate"
+    ]
+  },
+  "mentions": [
+    "UX consulting",
+    "UX strategy",
+    "Nielsen Norman Group UX maturity model",
+    "ISO 9241-210",
+    "Google HEART framework",
+    "RICE prioritization",
+    "Google Analytics 4",
+    "Jobs to be Done",
+    "Double Diamond",
+    "activation rate"
+  ]
 }

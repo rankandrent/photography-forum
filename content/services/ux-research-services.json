@@ -21,5 +21,241 @@
     "healthcare",
     "saas"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "UX research",
+  "sourceContext": "US UI/UX design agency; this page sells generative and evaluative UX research programmes to teams deciding what to build.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "UX research services are user experience (UX) research programmes that combine generative research, for example user interviews and contextual inquiry, with evaluative research, for example card sorting and tree testing. Our UX research programme takes 4–8 weeks, costs $25,000–$60,000, and delivers personas, journey maps and a Jobs to be Done (JTBD) opportunity map.",
+  "sections": [
+    {
+      "h2": "What is UX research?",
+      "format": "paragraph",
+      "answer": "<strong>UX research, also called user research, is the systematic study of user goals, behaviours and problems through interviews, observation and testing, conducted to guide product and design decisions.</strong> UX research runs in 2 modes: generative research finds what to build, and evaluative research checks whether a design works for users.",
+      "body": "<p>UX research differs from <a href=\"/services/usability-testing-services/\">usability testing services</a> in breadth: usability testing measures task success on an existing design, while a UX research programme also studies needs, workflows and markets before any design exists. The UX research method follows the human-centred design process of ISO 9241-210.</p>"
+    },
+    {
+      "h2": "What do UX research services include?",
+      "format": "list",
+      "answer": "<strong>Our UX research services include 6 deliverables:</strong> a research plan, user interviews, a contextual inquiry, a card sort and tree test, personas and journey maps, and a Jobs to be Done opportunity map.",
+      "items": [
+        {
+          "title": "Research plan.",
+          "body": "Research questions, participant criteria and methods are agreed in 1 document, for example 12 user interviews across 2 user groups."
+        },
+        {
+          "title": "User interviews.",
+          "body": "10–15 one-hour interviews uncover goals and pain points, for example the spreadsheet workaround a clinician uses for a missing report."
+        },
+        {
+          "title": "Contextual inquiry.",
+          "body": "Researchers observe 4–6 users in the real work setting, for example a warehouse shift or a hospital ward."
+        },
+        {
+          "title": "Card sort and tree test.",
+          "body": "Optimal Workshop studies test the information architecture (IA), for example the menu labels that 30–50 participants expect."
+        },
+        {
+          "title": "Personas and journey maps.",
+          "body": "Findings become 2–4 personas and 1 journey map per persona, for example the steps, emotions and pain points of first-time setup."
+        },
+        {
+          "title": "Jobs to be Done opportunity map.",
+          "body": "User jobs are ranked by importance and current satisfaction, for example the job \"reconcile invoices at month-end\"."
+        }
+      ]
+    },
+    {
+      "h2": "How does the UX research process work?",
+      "format": "steps",
+      "answer": "<strong>The UX research process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from research framing to the findings readout.",
+      "items": [
+        {
+          "title": "Research framing (2–4 days)",
+          "body": "We agree research questions, user groups and success criteria with stakeholders."
+        },
+        {
+          "title": "Participant recruitment (3–6 days)",
+          "body": "We screen and schedule participants through a recruitment panel or the client's customer list."
+        },
+        {
+          "title": "Generative fieldwork (7–15 days)",
+          "body": "Researchers run user interviews and contextual inquiry sessions and record every session."
+        },
+        {
+          "title": "Evaluative studies (4–8 days)",
+          "body": "Card sorts, tree tests and concept tests check the early information architecture and design concepts."
+        },
+        {
+          "title": "Synthesis and readout (4–7 days)",
+          "body": "Findings are tagged in Dovetail, turned into personas, journey maps and a JTBD opportunity map, and presented in a 90-minute readout."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of UX research?",
+      "format": "cards",
+      "answer": "<strong>UX research has 4 benefits:</strong> UX research increases feature adoption, improves design decisions, reduces development waste and develops a research repository.",
+      "items": [
+        {
+          "title": "Increases feature adoption",
+          "body": "Building features for validated user jobs increases the share of users who adopt each new feature."
+        },
+        {
+          "title": "Improves design decisions",
+          "body": "Evidence from interviews and observation improves how designers and product managers choose between design options."
+        },
+        {
+          "title": "Reduces development waste",
+          "body": "Testing concepts before development reduces the engineering weeks spent on features users do not need."
+        },
+        {
+          "title": "Develops a research repository",
+          "body": "Tagged findings in Dovetail develop a searchable research repository that grows with every study."
+        }
+      ]
+    },
+    {
+      "h2": "UX research vs usability testing",
+      "format": "table",
+      "answer": "<strong>UX research defines what to build through generative and evaluative methods; usability testing checks whether a specific design works through task-based sessions.</strong> A UX research programme includes usability testing as 1 evaluative method.",
+      "caption": "Comparison of UX research and usability testing",
+      "columns": [
+        "Criterion",
+        "UX research",
+        "Usability testing"
+      ],
+      "rows": [
+        [
+          "Question answered",
+          "What to build and why",
+          "Whether a design works"
+        ],
+        [
+          "Methods",
+          "User interviews, contextual inquiry, card sorting and concept tests",
+          "Moderated and unmoderated task-based sessions"
+        ],
+        [
+          "Main output",
+          "Personas, journey maps and a JTBD opportunity map",
+          "Task success rate and observed failures"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "1–3 weeks per round"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "Part of a $25,000–$60,000 research sprint"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        },
+        {
+          "anchor": "UX consulting services",
+          "to": "/services/ux-consulting-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does UX research cost?",
+      "format": "paragraph",
+      "answer": "<strong>UX research costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of user groups, the number of participants, the number of methods and the recruitment difficulty.",
+      "body": "<p>A programme with 1 user group, 10 user interviews and 1 card sort sits near $25,000. A programme with 3 user groups, 20 user interviews, on-site contextual inquiry and hard-to-recruit participants, for example hospital clinicians, sits near $60,000. Teams that need a product strategy built on the findings add <a href=\"/services/ux-consulting-services/\">UX consulting services</a>.</p>"
+    },
+    {
+      "h2": "When should a company hire UX research services?",
+      "format": "list",
+      "answer": "<strong>A company should hire UX research services in 5 situations:</strong>",
+      "items": [
+        "A new product starts, if the team has not interviewed target users.",
+        "A product enters a new market, if the new user group follows different workflows.",
+        "Feature adoption stays low, if analytics show usage but not the reason.",
+        "A redesign is planned, if the navigation and information architecture have never been tested.",
+        "Teams disagree about priorities, if no shared personas or journey maps exist."
+      ]
+    },
+    {
+      "h2": "UX research FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about UX research services.</strong>",
+      "faqs": [
+        {
+          "q": "What is the difference between generative and evaluative research?",
+          "a": "<p>Generative research finds user needs and opportunities before design, for example through user interviews. Evaluative research tests a design against user needs, for example through tree testing or usability testing.</p>"
+        },
+        {
+          "q": "How many participants does UX research need?",
+          "a": "<p>UX research needs 10–15 interview participants per user group and 5 participants per round of qualitative usability testing, per Nielsen Norman Group guidance for usability tests.</p>"
+        },
+        {
+          "q": "Can UX research be done remotely?",
+          "a": "<p>Yes. Remote UX research runs user interviews and card sorts over video calls and online tools, for example Zoom and Optimal Workshop; contextual inquiry needs on-site visits.</p>"
+        },
+        {
+          "q": "Does UX research include personas?",
+          "a": "<p>Yes. Every UX research programme delivers 2–4 personas built from interview data, with 1 journey map per persona.</p>"
+        },
+        {
+          "q": "Is UX research worth it for a startup?",
+          "a": "<p>Yes. UX research for a startup, for example 8–10 user interviews, shows which problem to solve before the startup spends engineering budget on a minimum viable product (MVP).</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "UX research",
+      "Jobs to be Done",
+      "contextual inquiry",
+      "journey mapping",
+      "personas",
+      "card sorting",
+      "tree testing",
+      "Optimal Workshop",
+      "Dovetail",
+      "ISO 9241-210"
+    ],
+    "ngrams": [
+      "ux research services",
+      "ux research",
+      "user research",
+      "user interviews",
+      "journey map",
+      "generative research"
+    ],
+    "skipgrams": [
+      "research … user needs",
+      "research … design decisions",
+      "interviews … pain points",
+      "research programme … personas"
+    ],
+    "nlpKeywords": [
+      "user interviews",
+      "contextual inquiry",
+      "personas",
+      "journey maps",
+      "information architecture",
+      "pain points",
+      "research repository",
+      "participant recruitment"
+    ]
+  },
+  "mentions": [
+    "UX research",
+    "Jobs to be Done",
+    "contextual inquiry",
+    "journey mapping",
+    "personas",
+    "card sorting",
+    "tree testing",
+    "Optimal Workshop",
+    "Dovetail",
+    "ISO 9241-210"
+  ]
 }
