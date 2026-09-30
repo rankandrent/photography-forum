@@ -154,8 +154,10 @@ export type CaseStudy = {
   logo?: string;
   /** Card layout: "visual" (UI mock / image) or "quote" (testimonial) */
   card: "visual" | "quote";
-  /** Optional screenshot under /public, e.g. /work/fortna.webp */
+  /** Optional screenshot under /public, e.g. /work/fortna.webp — fills the card as its background */
   image?: string;
+  /** Card width in the slider: "wide" (default when there is an image) or "narrow" */
+  span: "wide" | "narrow";
   html: string;
 };
 

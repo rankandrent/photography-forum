@@ -77,6 +77,7 @@ function load() {
       logo: data.logo ?? data.client,
       card: (data.card === "quote" ? "quote" : "visual") as CaseStudy["card"],
       image: data.image,
+      span: (data.span ?? (data.image ? "wide" : "narrow")) as CaseStudy["span"],
       html,
     }))
     .sort(byDateDesc);

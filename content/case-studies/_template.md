@@ -16,7 +16,8 @@ featured: false               # featured case studies show first (home hero rail
 color: pink                   # card colour: pink | ink | blue | green | orange | purple, or a hex like "#0B3D2E"
 logo: Client                  # wordmark on the card (defaults to client)
 card: visual                  # visual (UI mock / image) | quote (shows the quote on the card)
-image: /work/client.webp      # optional screenshot in /public; remove if none
+image: /work/client.webp      # optional cover in /public — fills the card; remove if none
+span: wide                    # slider card width: wide | narrow (default: wide with an image)
 draft: true                    # remove this line to publish
 ---
 

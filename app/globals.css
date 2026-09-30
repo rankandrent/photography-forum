@@ -834,3 +834,56 @@ html, body { overflow-x: clip; }
 .wrail.is-pinned .wrail__sticky { position: sticky; top: 110px; }
 .wrail.is-pinned .wrail__track { overflow: visible; scroll-snap-type: none; will-change: transform; }
 .wrail.is-pinned .wcard--rail { flex-basis: 340px; height: 420px; }
+
+/* ===== Work cards v3: equal height, variable width, full-bleed imagery ===== */
+.wcard { padding: 30px 30px 28px; gap: 16px; border-radius: 12px; }
+.wcard::after { display: none; }
+.wcard__logo { font-size: 20px; letter-spacing: -0.02em; position: relative; z-index: 2; }
+.wcard__title { font-size: 25px; font-weight: 500; line-height: 1.22; letter-spacing: -0.01em; max-width: 440px; position: relative; z-index: 2; }
+.wcard__tags { position: relative; z-index: 2; }
+.wcard__tags span { font-size: 14px; font-weight: 500; padding: 9px 16px; background: rgba(20,20,24,0.55); border: none; backdrop-filter: blur(8px); }
+/* image fills the whole card; gradients keep the text readable */
+.wcard__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; transition: transform 0.6s ease; }
+.wcard--image::before { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.25) 38%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.45) 100%); pointer-events: none; }
+.wcard:hover .wcard__bg { transform: scale(1.04); }
+/* UI mock bleeds off the bottom-right edge */
+.wcard__mock { position: relative; z-index: 2; margin: auto -30px -28px 14px; border-radius: 10px 0 0 0; min-height: 0; }
+.wcard--rail .wcard__mock-chart, .wcard--grid .wcard__mock-chart { height: 90px; }
+/* quote cards */
+.wcard__quote { position: relative; z-index: 2; justify-content: flex-start; }
+.wcard__quote p { font-size: 20px; line-height: 1.4; font-weight: 500; }
+.wcard__quote cite { font-size: 14px; }
+/* slider: same height, width by content */
+.wcard--rail { height: 500px; flex: 0 0 auto; width: 364px; scroll-snap-align: start; }
+.wcard--rail.wcard--wide { width: 500px; }
+.wrail.is-pinned .wcard--rail { height: 500px; flex-basis: auto; }
+.wrail__track { gap: 20px; }
+.wcard--grid { min-height: 460px; }
+@media (max-width: 900px) {
+  .wcard--rail, .wrail.is-pinned .wcard--rail { height: 440px; width: 300px; }
+  .wcard--rail.wcard--wide { width: 340px; }
+  .wcard { padding: 24px; }
+  .wcard__title { font-size: 21px; }
+  .wcard__mock { margin: auto -24px -24px 10px; }
+}
+/* image sits in the lower part of the card and bleeds off the edges; title area stays clean */
+.wcard__bg { inset: auto 0 0 0; top: 40%; height: auto; border-radius: 0; }
+.wcard--image::before { background: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 100%); }
+.wcard--big .wcard__bg { top: 34%; }
+.wcard__tags { gap: 6px; }
+.wcard__tags span { font-size: 13px; padding: 8px 14px; }
+@media (max-width: 900px) { .wcard__bg { top: 42%; } }
+.wcard__bg { top: auto; bottom: 0; left: 0; right: 0; height: 60%; }
+.wcard--big .wcard__bg { height: 66%; }
+@media (max-width: 900px) { .wcard__bg { height: 56%; } }
+
+/* Equal-height card rows everywhere; wide cards (with an image) take more width */
+.wgrid, .wmasonry { display: flex; flex-wrap: wrap; gap: 20px; columns: auto; }
+.wgrid > .wcard, .wmasonry__item { flex: 1 1 364px; margin: 0; }
+.wgrid > .wcard--wide, .wmasonry__item:has(.wcard--wide) { flex: 1.4 1 500px; }
+.wgrid > .wcard, .wmasonry__item .wcard, .wmasonry__item:nth-child(3n+2) .wcard, .wgrid--2 > :last-child:nth-child(odd) { height: 500px; min-height: 0; grid-column: auto; }
+.wmasonry__item .wcard { display: flex; }
+@media (max-width: 900px) {
+  .wgrid > .wcard, .wmasonry__item, .wgrid > .wcard--wide, .wmasonry__item:has(.wcard--wide) { flex-basis: 100%; }
+  .wgrid > .wcard, .wmasonry__item .wcard, .wmasonry__item:nth-child(3n+2) .wcard { height: 440px; }
+}

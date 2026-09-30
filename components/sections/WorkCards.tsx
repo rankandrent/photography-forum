@@ -23,10 +23,6 @@ function bars(seed: string, n = 7) {
 }
 
 function Mock({ c }: { c: CaseStudy }) {
-  if (c.image) {
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img className="wcard__img" src={c.image} alt="" loading="lazy" />;
-  }
   return (
     <div className="wcard__mock" aria-hidden="true">
       <div className="wcard__mock-bar" />
@@ -46,21 +42,23 @@ function Mock({ c }: { c: CaseStudy }) {
 }
 
 export function WorkCard({ c, size = "grid" }: { c: CaseStudy; size?: "rail" | "grid" | "big" }) {
+  const hasImage = !!c.image;
+  const cls = ["wcard", `wcard--${size}`, `wcard--${c.card}`, `wcard--${c.span}`, hasImage && "wcard--image"].filter(Boolean).join(" ");
   return (
-    <Link href={routes.caseStudy(c.slug)} className={`wcard wcard--${size} wcard--${c.card}`} style={{ background: background(c.color) }}>
-      <div className="wcard__top">
-        {c.logo && <span className="wcard__logo">{c.logo}</span>}
-        <span className="wcard__arrow" aria-hidden="true">→</span>
-      </div>
+    <Link href={routes.caseStudy(c.slug)} className={cls} style={{ background: background(c.color) }}>
+      {hasImage && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="wcard__bg" src={c.image} alt="" loading="lazy" />
+      )}
+      {c.logo && <span className="wcard__logo">{c.logo}</span>}
       <h3 className="wcard__title">{c.result}</h3>
       {c.card === "quote" && c.quote ? (
         <blockquote className="wcard__quote">
-          <span className="wcard__qmark" aria-hidden="true">&ldquo;</span>
           <p>{c.quote}</p>
           {c.quoteAuthor && <cite>{c.quoteAuthor}</cite>}
         </blockquote>
       ) : (
-        <Mock c={c} />
+        !hasImage && <Mock c={c} />
       )}
       {!!c.tags.length && (
         <div className="wcard__tags">
