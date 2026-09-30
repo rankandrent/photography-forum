@@ -245,7 +245,7 @@ export function FinalCta({
               </div>
             )}
           </div>
-          {children}
+          <div className="hero__form">{children}</div>
         </div>
       </div>
     </section>

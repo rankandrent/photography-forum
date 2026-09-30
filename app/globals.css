@@ -533,3 +533,17 @@ h4 { font-family: var(--font-d); font-size: 24px; font-weight: 700; line-height:
   .hdr.is-open { background: var(--black); bottom: 0; overflow-y: auto; transition: none; }
 }
 @media (max-width: 900px) { .hdr__inner { padding: 0 var(--gut-m); } }
+
+/* Light lead-form card — high contrast on dark hero / CTA sections */
+.hero__form { background: var(--white); border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(2,1,1,0.35); backdrop-filter: none; color: var(--text); }
+.hero__form-title { color: var(--text); }
+.hero__form-sub { color: var(--text-m); }
+.lead-form input, .lead-form select, .lead-form textarea { background: var(--surface); border: 1px solid var(--border); color: var(--text); }
+.lead-form input:focus-visible, .lead-form select:focus-visible, .lead-form textarea:focus-visible { border-color: var(--pink); background: var(--white); box-shadow: 0 0 0 3px var(--pink-s); }
+.lead-form input::placeholder, .lead-form textarea::placeholder { color: var(--text-m); }
+.lead-form select:invalid { color: var(--text-m); }
+.lead-form select option { background: var(--white); color: var(--text); }
+.lead-form__consent, .lead-form__legal { color: var(--text-m); }
+.lead-form__legal a { color: var(--text); }
+.lead-form__status--ok { background: rgba(46,204,113,0.12); color: #1E8E4E; }
+.lead-form__status--err { background: var(--pink-s); color: var(--pink); }
