@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { routes } from "@/lib/site";
 
-type NavItem = { title: string; href: string };
+export type NavItem = { title: string; href: string; summary?: string };
+export type NavGroup = { category: string; items: NavItem[] };
 
-export function Header({ services, industries }: { services: NavItem[]; industries: NavItem[] }) {
+export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[]; industries: NavItem[] }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -26,22 +27,50 @@ export function Header({ services, industries }: { services: NavItem[]; industri
           uiuxdesignservices<span>.us</span>
         </Link>
         <nav className="hdr__nav" aria-label="Main">
-          <div className="hdr__dd">
+          <div className="hdr__dd hdr__dd--mega">
             <Link href={routes.services}>Services</Link>
-            <div className="hdr__dd-panel">
-              {services.map((s) => (
-                <Link key={s.href} href={s.href}>{s.title}</Link>
-              ))}
-              <Link href={routes.services} className="hdr__dd-all">All services →</Link>
+            <div className="hdr__dd-panel mega">
+              <div className="mega__cols">
+                {serviceGroups.map((g) => (
+                  <div key={g.category} className="mega__col">
+                    <p className="mega__cat">{g.category}</p>
+                    <ul>
+                      {g.items.map((s) => (
+                        <li key={s.href}>
+                          <Link href={s.href}>{s.title}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div className="mega__foot">
+                <span>Not sure where to start? A UX audit shows where users struggle first.</span>
+                <span className="mega__foot-links">
+                  <Link href="/services/ux-audit-services/">Book a UX audit →</Link>
+                  <Link href={routes.services}>All services →</Link>
+                </span>
+              </div>
             </div>
           </div>
-          <div className="hdr__dd">
+          <div className="hdr__dd hdr__dd--mega">
             <Link href={routes.industries}>Industries</Link>
-            <div className="hdr__dd-panel">
-              {industries.map((s) => (
-                <Link key={s.href} href={s.href}>{s.title}</Link>
-              ))}
-              <Link href={routes.industries} className="hdr__dd-all">All industries →</Link>
+            <div className="hdr__dd-panel mega mega--ind">
+              <p className="mega__cat">Industries we design for</p>
+              <ul className="mega__grid">
+                {industries.map((i) => (
+                  <li key={i.href}>
+                    <Link href={i.href}>
+                      <strong>{i.title}</strong>
+                      {i.summary && <span>{i.summary}</span>}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mega__foot">
+                <span>Don&apos;t see your industry? We adapt our process to regulated and complex domains.</span>
+                <span className="mega__foot-links"><Link href={routes.industries}>All industries →</Link></span>
+              </div>
             </div>
           </div>
           <Link href={routes.caseStudies}>Our work</Link>
@@ -60,8 +89,23 @@ export function Header({ services, industries }: { services: NavItem[]; industri
         </button>
       </div>
       <nav id="mobile-nav" className="hdr__mobile" aria-label="Mobile">
-        <Link href={routes.services} onClick={close}>Services</Link>
-        <Link href={routes.industries} onClick={close}>Industries</Link>
+        <details className="hdr__mgroup">
+          <summary>Services</summary>
+          {serviceGroups.map((g) => (
+            <div key={g.category} className="hdr__mcat">
+              <p>{g.category}</p>
+              {g.items.map((s) => <Link key={s.href} href={s.href} onClick={close}>{s.title}</Link>)}
+            </div>
+          ))}
+          <Link href={routes.services} onClick={close} className="hdr__mall">All services →</Link>
+        </details>
+        <details className="hdr__mgroup">
+          <summary>Industries</summary>
+          <div className="hdr__mcat">
+            {industries.map((i) => <Link key={i.href} href={i.href} onClick={close}>{i.title}</Link>)}
+          </div>
+          <Link href={routes.industries} onClick={close} className="hdr__mall">All industries →</Link>
+        </details>
         <Link href={routes.caseStudies} onClick={close}>Our work</Link>
         <Link href={routes.blog} onClick={close}>Insights</Link>
         <Link href={routes.contact} className="btn" onClick={close}>Schedule a call</Link>

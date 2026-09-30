@@ -8,9 +8,83 @@ export type SectionHeadings = Partial<
   Record<"stats" | "painPoints" | "subServices" | "challenges" | "solutions" | "process" | "benefits" | "industries" | "services" | "caseStudies" | "faqs" | "posts", string>
 >;
 
+export type Link = { anchor: string; to: string };
+export type Figure = { src: string; alt: string; caption?: string };
+
+/**
+ * One H2 block of a page's heading vector (Koray-style content brief).
+ * `answer` is the extractive first sentence (30–50 words) printed directly under the H2.
+ */
+export type Section = {
+  h2: string;
+  /** Anchor id; defaults to a slug of the h2 */
+  id?: string;
+  format: "paragraph" | "list" | "steps" | "table" | "cards" | "faq";
+  answer?: string;
+  /** Markdown-free HTML paragraph(s); inline <a> links allowed */
+  body?: string;
+  /** list / steps items (strings), cards (title + body) */
+  items?: (string | Card)[];
+  /** table */
+  caption?: string;
+  columns?: string[];
+  rows?: string[][];
+  /** Supporting H3s under this H2 */
+  h3s?: { h3: string; body: string }[];
+  /** faq format */
+  faqs?: Faq[];
+  image?: Figure;
+  /** Contextual links shown at the end of the section */
+  links?: Link[];
+};
+
+/** Page-level on/off switches for shared (boilerplate) blocks */
+export type Blocks = Partial<Record<"ctaBand" | "testimonial" | "related" | "caseStudies" | "posts" | "industries" | "clients", boolean>>;
+export const DEFAULT_BLOCKS: Required<Blocks> = {
+  ctaBand: true,
+  testimonial: true,
+  related: true,
+  caseStudies: true,
+  posts: true,
+  industries: true,
+  clients: true,
+};
+
+/** Fields shared by service and industry briefs */
+type Brief = {
+  /** Main query used as the anchor text for every link to this page */
+  anchor?: string;
+  centralEntity?: string;
+  /** Why the site/page exists for the buyer (documentation for writers; not rendered) */
+  sourceContext?: string;
+  /** Abstractive summary: 2–3 line gist shown under the hero */
+  abstract?: string;
+  /** Per-page heading vector. When present it replaces the templated fallback sections. */
+  sections?: Section[];
+  /** Entities the page mentions (Schema.org WebPage.mentions); defaults to section H2s */
+  mentions?: string[];
+  /** Last content update, YYYY-MM-DD (sitemap lastmod + dateModified) */
+  updated?: string;
+  blocks?: Blocks;
+  cta?: { heading: string; body: string; cta: string };
+};
+
 /** content/services/<slug>.json */
-export type Service = {
+export const SERVICE_CATEGORIES = [
+  "Research & strategy",
+  "Product design",
+  "Platforms",
+  "Dashboards & data",
+  "Industry-specific",
+] as const;
+export type ServiceCategory = (typeof SERVICE_CATEGORIES)[number];
+
+export type Service = Brief & {
   slug: string;
+  /** Topical cluster used to group menus, the hub and related services */
+  category: ServiceCategory;
+  /** e.g. "$5,000–$15,000" (Service schema offers) */
+  priceRange?: string;
   /** Short name for cards, menus and breadcrumbs */
   title: string;
   /** Sort order in menus and grids (lower first) */
@@ -33,8 +107,10 @@ export type Service = {
 };
 
 /** content/industries/<slug>.json */
-export type Industry = {
+export type Industry = Brief & {
   slug: string;
+  /** Reuse the home "why us" + process content when the industry has none of its own */
+  useDefaults?: boolean;
   title: string;
   order: number;
   metaTitle: string;

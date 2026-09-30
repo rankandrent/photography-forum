@@ -1,6 +1,8 @@
 {
   "title": "Mobile app UI UX design",
-  "order": 5,
+  "order": 9,
+  "category": "Platforms",
+  "anchor": "mobile app UI UX design services",
   "metaTitle": "Mobile App UI UX Design Services | UIUXDesignServices.us",
   "metaDescription": "Mobile app UI UX design services for iOS and Android: research, flows, prototypes and polished interfaces users keep coming back to.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "startups",
     "healthcare"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

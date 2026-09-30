@@ -1,6 +1,8 @@
 {
   "title": "UX research",
   "order": 2,
+  "category": "Research & strategy",
+  "anchor": "UX research services",
   "metaTitle": "UX Research Services | UIUXDesignServices.us",
   "metaDescription": "UX research services: user interviews, field studies, journey mapping and Jobs-to-be-Done analysis that define what to build before you build it.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "healthcare",
     "saas"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

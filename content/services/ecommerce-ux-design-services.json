@@ -1,6 +1,8 @@
 {
   "title": "E-commerce UX design",
-  "order": 11,
+  "order": 16,
+  "category": "Industry-specific",
+  "anchor": "e-commerce UX design services",
   "metaTitle": "E-commerce UX Design Services | UIUXDesignServices.us",
   "metaDescription": "E-commerce UX design services that reduce friction from product discovery to checkout and turn more visitors into buyers.",
   "hero": {
@@ -17,5 +19,6 @@
   ],
   "relatedIndustries": [
     "ecommerce"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

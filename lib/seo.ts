@@ -64,7 +64,28 @@ export const organizationLd = () => ({
   ],
 });
 
-export const serviceLd = (name: string, description: string, path: string, offers: string[] = []) => ({
+export const webPageLd = (p: {
+  name: string;
+  description: string;
+  path: string;
+  about: string;
+  mentions?: string[];
+  updated?: string;
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${absoluteUrl(p.path)}#webpage`,
+  url: absoluteUrl(p.path),
+  name: p.name,
+  description: p.description,
+  isPartOf: { "@id": `${SITE.url}/#website` },
+  about: { "@type": "Thing", name: p.about },
+  ...(p.mentions?.length && { mentions: p.mentions.map((m) => ({ "@type": "Thing", name: m })) }),
+  ...(p.updated && { dateModified: p.updated }),
+  inLanguage: "en-US",
+});
+
+export const serviceLd = (name: string, description: string, path: string, offers: string[] = [], priceRange?: string) => ({
   "@context": "https://schema.org",
   "@type": "Service",
   name,
@@ -73,6 +94,9 @@ export const serviceLd = (name: string, description: string, path: string, offer
   url: absoluteUrl(path),
   provider: { "@id": ORG_ID },
   areaServed: { "@type": "Country", name: "United States" },
+  ...(priceRange && {
+    offers: { "@type": "Offer", priceCurrency: "USD", description: priceRange, url: absoluteUrl(path) },
+  }),
   ...(offers.length && {
     hasOfferCatalog: {
       "@type": "OfferCatalog",

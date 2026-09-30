@@ -1,6 +1,8 @@
 {
   "title": "Usability testing",
   "order": 4,
+  "category": "Research & strategy",
+  "anchor": "usability testing services",
   "metaTitle": "Usability Testing Services | UIUXDesignServices.us",
   "metaDescription": "Usability testing services: moderated and unmoderated studies, concept validation and A/B tests that catch problems before they reach production.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "healthcare",
     "ecommerce"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

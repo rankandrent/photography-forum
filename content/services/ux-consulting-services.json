@@ -1,6 +1,8 @@
 {
   "title": "UX consulting",
   "order": 1,
+  "category": "Research & strategy",
+  "anchor": "UX consulting services",
   "metaTitle": "UX Consulting Services | UIUXDesignServices.us",
   "metaDescription": "UX consulting services that find what's holding your product back and give your team a prioritized, evidence-based plan to fix it.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "saas",
     "startups"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

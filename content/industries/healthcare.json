@@ -16,5 +16,7 @@
     "Design patient-facing experiences for elderly and low-digital-literacy users",
     "Handle PHI visibility at the screen level, not just the backend",
     "Meet WCAG/AAA accessibility standards across every flow"
-  ]
+  ],
+  "updated": "2026-09-30",
+  "anchor": "Healthcare UI UX design"
 }

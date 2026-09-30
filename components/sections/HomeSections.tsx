@@ -9,7 +9,7 @@ export function Challenges() {
       <div className="container">
         <h2 id="challenges-heading" className="challenge__headline">{d.heading}</h2>
         <div className="challenge__grid">
-          {d.items.map((c) => (
+          {d.items.filter((c) => c.verified).map((c) => (
             <div key={c.value} className="cstat">
               <div className="cstat__value">{c.value}</div>
               <p className="cstat__claim">{c.claim}</p>

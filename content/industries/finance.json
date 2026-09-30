@@ -16,5 +16,7 @@
     "Use visual indicators to help users track tasks and avoid errors",
     "Design for compliance-aware session handling and audit visibility",
     "Test account management and transaction flows with real users"
-  ]
+  ],
+  "updated": "2026-09-30",
+  "anchor": "Finance UI UX design"
 }

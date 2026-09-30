@@ -28,6 +28,33 @@ Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_FORM_ENDPOINT`. Every l
 - `headings` in a service or industry JSON overrides any generated H2, so you can use your own keyword headings.
 - Home page copy lives in `content/home.ts`.
 
+## Writing a page from a Koray-style content brief
+
+Service and industry JSON files accept a full semantic content brief. See `content/services/_template.json`, and `content/services/ux-audit-services.json` for a worked sample.
+
+| Brief item | JSON field | Where it shows |
+|---|---|---|
+| Central entity | `centralEntity` | WebPage schema `about` |
+| Source context | `sourceContext` | writer note only, not rendered |
+| Main query / anchor | `anchor` | anchor text of every link to the page (menus, cards, chips) |
+| H1 | `hero.h1` (title tag: `metaTitle`) | hero |
+| Abstractive summary | `abstract` | "In short" block under the hero |
+| Heading vector (H2 order) | `sections[]` | rendered top to bottom in this order |
+| Extractive answer per H2 | `sections[].answer` | first sentence under the H2 |
+| Content format | `sections[].format`: `paragraph`, `list`, `steps`, `table`, `cards` or `faq` | layout of the section |
+| H3s | `sections[].h3s` | under the H2 |
+| EAV values | inside `items`, `rows`, `answer` | lists, tables, answers |
+| Visual semantics | `sections[].image {src, alt, caption}`, table `caption` and `columns` | `<figure>`, `<figcaption>`, semantic `<table>` |
+| Internal links | inline `<a>` in `body`, plus `sections[].links` | contextual links and chips |
+| Contextual border | leave it out of the page and link to the page that owns it | |
+| FAQs | `faqs` and/or `format: "faq"` sections | FAQ block + FAQPage schema |
+| Freshness | `updated` | sitemap `lastmod` + `dateModified` |
+| Boilerplate control | `blocks` (turn shared blocks off), `cta` (page-specific CTA copy) | |
+
+Once a page has `sections`, the generic templated sections are no longer generated. `npm run seo:check` warns about thin main content (under 600 words), templated H2s repeated across pages, one page linked with several different anchors, and pages without images.
+
+Services are grouped by `category` (Research & strategy, Product design, Platforms, Dashboards & data, Industry-specific). The mega menu, the footer, the services catalog and the "related services" block all use this grouping.
+
 ## SEO built in
 
 - Per-page `<title>`, meta description, canonical URL (with trailing slash), Open Graph and Twitter tags.

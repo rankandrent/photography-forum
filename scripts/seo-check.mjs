@@ -43,6 +43,56 @@ for (const file of pages) {
   titles.set(title, [...(titles.get(title) || []), route]);
   descs.set(desc, [...(descs.get(desc) || []), route]);
 }
+// ---- Semantic-SEO checks (Koray-style) on service & industry pages ----
+const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/g, " ");
+const words = (t) => (t.match(/[A-Za-z0-9][A-Za-z0-9'’-]*/g) || []).length;
+const BOILERPLATE_H2 = /^(frequently asked questions|related ui ux design services|ready to launch|not sure where your design|send us your project)/i;
+const SUPPLEMENTARY_H2 = /(by industry|case studies|insights|faqs|services for)$/;
+const thin = [], noImage = [], h2Patterns = new Map(), anchors = new Map();
+
+for (const file of pages) {
+  const html = fs.readFileSync(file, "utf8");
+  if (/<meta name="robots" content="noindex/.test(html)) continue;
+  const route = "/" + path.relative(OUT, path.dirname(file)).replace(/\\/g, "/") + "/";
+  const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? "";
+
+  // anchor text per internal target (short anchors only — cards wrap whole blocks)
+  for (const [, href, inner] of main.matchAll(/<a[^>]*href="(\/(?:services|industries)\/[^"#?]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+    const text = strip(inner).replace(/\s+/g, " ").replace(/[→]/g, "").trim().toLowerCase();
+    if (!text || text.length > 60 || /^(all |view all|explore|our )/.test(text)) continue;
+    if (!anchors.has(href)) anchors.set(href, new Set());
+    anchors.get(href).add(text);
+  }
+
+  if (!/^\/(services|industries)\/[^/]+\/$/.test(route)) continue;
+  // main content = hero + abstract + semantic sections + FAQ (shared blocks excluded)
+  const mainBits = [
+    ...main.matchAll(/<section class="phero[\s\S]*?<\/section>/g),
+    ...main.matchAll(/<section class="sem-abstract[\s\S]*?<\/section>/g),
+    ...main.matchAll(/<section[^>]*class="[^"]*\bsem\b[\s\S]*?<\/section>/g),
+    ...main.matchAll(/<section[^>]*id="faq"[\s\S]*?<\/section>/g),
+  ].map((m) => m[0]).join(" ");
+  const wc = words(strip(mainBits));
+  if (wc < 600) thin.push(`${route} (${wc})`);
+  if (!/<img\b/.test(main)) noImage.push(route);
+
+  // templated heading vectors: H2s with the page's own H1 words removed
+  const h1Words = new Set(strip(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "").toLowerCase().match(/[a-z0-9-]+/g) || []);
+  for (const [, h] of main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)) {
+    const text = strip(h).replace(/\s+/g, " ").trim();
+    if (BOILERPLATE_H2.test(text)) continue;
+    const pattern = text.toLowerCase().split(/\s+/).filter((w) => !h1Words.has(w)).join(" ");
+    // supplementary blocks (industry chips, case studies, insights, FAQs) are shared on purpose
+    if (!pattern || SUPPLEMENTARY_H2.test(pattern)) continue;
+    if (!h2Patterns.has(pattern)) h2Patterns.set(pattern, []);
+    h2Patterns.get(pattern).push(route);
+  }
+}
+if (thin.length) report("warn", OUT, `${thin.length} service/industry pages have < 600 words of main content: ${thin.join(", ")}`);
+if (noImage.length) report("warn", OUT, `${noImage.length} service/industry pages have no image (visual semantics)`);
+for (const [pattern, r] of h2Patterns) if (r.length >= 3) report("warn", OUT, `templated H2 "${pattern}" repeated on ${r.length} pages`);
+for (const [href, set] of anchors) if (set.size > 2) report("warn", OUT, `${href} is linked with ${set.size} different anchors: ${[...set].join(" | ")}`);
+
 for (const [t, r] of titles) if (t && r.length > 1) report("warn", OUT, `duplicate title on ${r.join(", ")}`);
 for (const [d, r] of descs) if (d && r.length > 1) report("warn", OUT, `duplicate description on ${r.join(", ")}`);
 

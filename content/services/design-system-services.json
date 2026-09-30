@@ -1,6 +1,8 @@
 {
   "title": "Design systems",
-  "order": 12,
+  "order": 7,
+  "category": "Product design",
+  "anchor": "design system services",
   "metaTitle": "Design System Services | UIUXDesignServices.us",
   "metaDescription": "Design system services: component libraries, design tokens and documentation that keep UI consistent across products, teams and platforms.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "saas",
     "ecommerce"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

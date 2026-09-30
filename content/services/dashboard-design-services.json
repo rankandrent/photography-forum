@@ -1,6 +1,8 @@
 {
   "title": "Dashboard design",
-  "order": 16,
+  "order": 13,
+  "category": "Dashboards & data",
+  "anchor": "dashboard design services",
   "metaTitle": "Dashboard Design Services | UIUXDesignServices.us",
   "metaDescription": "Dashboard design services for analytics, operations and admin dashboards: clean layouts, readable charts and dev-ready components.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "supply-chain",
     "finance"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

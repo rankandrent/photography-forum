@@ -1,6 +1,8 @@
 {
   "title": "Digital product design",
-  "order": 14,
+  "order": 5,
+  "category": "Product design",
+  "anchor": "digital product design services",
   "metaTitle": "Digital Product Design Services | UIUXDesignServices.us",
   "metaDescription": "Digital product design services from research to launch: strategy, UX, UI and validation delivered by one team that stays through development.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "startups",
     "saas"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

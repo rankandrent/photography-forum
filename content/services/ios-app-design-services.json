@@ -1,6 +1,8 @@
 {
   "title": "iOS app design",
-  "order": 6,
+  "order": 10,
+  "category": "Platforms",
+  "anchor": "iOS app design services",
   "metaTitle": "iOS App Design Services | UIUXDesignServices.us",
   "metaDescription": "iOS app design services that follow Apple's Human Interface Guidelines, feel native on iPhone and iPad, and are ready for development.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "startups",
     "ecommerce"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

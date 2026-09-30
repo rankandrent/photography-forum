@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import type { CaseStudy, Industry, Page, Post, Service } from "./types";
+import { SERVICE_CATEGORIES, type CaseStudy, type Industry, type Page, type Post, type Service } from "./types";
 
 const ROOT = path.join(process.cwd(), "content");
 
@@ -132,11 +132,34 @@ export function servicesForIndustry(i: Industry) {
   return unique([...explicit, ...reverse]).sort(byOrder);
 }
 
-export function relatedServices(s: Service) {
+/**
+ * Contextually related services: explicit picks first, then same category,
+ * then services sharing an industry — never just "the first six".
+ */
+export function relatedServices(s: Service, limit = 6) {
   const explicit = pick(getServices(), s.relatedServices);
-  const rest = getServices().filter((x) => x.slug !== s.slug && !explicit.includes(x));
-  return [...explicit, ...rest].slice(0, 6);
+  const score = (x: Service) =>
+    (x.category === s.category ? 10 : 0) +
+    (x.relatedIndustries ?? []).filter((i) => s.relatedIndustries?.includes(i)).length;
+  const rest = getServices()
+    .filter((x) => x.slug !== s.slug && !explicit.includes(x))
+    .map((x) => ({ x, n: score(x) }))
+    .filter(({ n }) => n > 0)
+    .sort((a, b) => b.n - a.n || a.x.order - b.x.order)
+    .map(({ x }) => x);
+  return [...explicit, ...rest].slice(0, limit);
 }
+
+/** Services grouped by topical category, in category order */
+export function servicesByCategory() {
+  return SERVICE_CATEGORIES.map((category) => ({
+    category,
+    services: getServices().filter((s) => s.category === category),
+  })).filter((g) => g.services.length);
+}
+
+/** Anchor text for links to a service/industry: its main query */
+export const anchorOf = (x: { anchor?: string; title: string }) => x.anchor ?? x.title;
 
 export const caseStudiesForService = (slug: string) =>
   getCaseStudies().filter((c) => c.services.includes(slug));

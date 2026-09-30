@@ -1,6 +1,8 @@
 {
   "title": "SaaS UX design",
-  "order": 10,
+  "order": 15,
+  "category": "Industry-specific",
+  "anchor": "SaaS UX design",
   "metaTitle": "SaaS UX Design Services | UIUXDesignServices.us",
   "metaDescription": "SaaS UX design that reduces time-to-value and churn: onboarding, core workflows, admin panels and design systems that scale with your product.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "saas",
     "startups"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

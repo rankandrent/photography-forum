@@ -1,6 +1,8 @@
 {
   "title": "Web app design",
-  "order": 7,
+  "order": 11,
+  "category": "Platforms",
+  "anchor": "web app design services",
   "metaTitle": "Web App Design Services | UIUXDesignServices.us",
   "metaDescription": "Web app design services for complex products: information architecture, workflows, and interfaces that stay simple as features grow.",
   "hero": {
@@ -18,5 +20,6 @@
   "relatedIndustries": [
     "saas",
     "finance"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

@@ -31,3 +31,7 @@ export const lower = (s: string) =>
     .split(" ")
     .map((w) => (/[A-Z].*[A-Z]/.test(w) ? w : w.toLowerCase()))
     .join(" ");
+
+/** Capitalise the first letter (anchors are stored as lower-case queries) */
+export const cap = (s: string) =>
+  /^[a-z][A-Z]/.test(s) ? s : s.charAt(0).toUpperCase() + s.slice(1); // keeps "iOS …" intact

@@ -12,11 +12,13 @@ import {
   Stats,
 } from "@/components/sections/Blocks";
 import { FormCard, PageHero } from "@/components/sections/PageHero";
+import { Abstract, SemanticSections } from "@/components/sections/SemanticSections";
 import { Process } from "@/components/sections/Process";
 import { WorkGrid } from "@/components/sections/WorkCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import {
+  anchorOf,
   caseStudiesForService,
   getService,
   getServices,
@@ -25,8 +27,9 @@ import {
   relatedServices,
   staticParams,
 } from "@/lib/content";
-import { faqLd, howToLd, pageMetadata, serviceLd } from "@/lib/seo";
-import { lower, routes } from "@/lib/site";
+import { faqLd, howToLd, pageMetadata, serviceLd, webPageLd } from "@/lib/seo";
+import { cap, lower, routes } from "@/lib/site";
+import { DEFAULT_BLOCKS } from "@/lib/types";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -49,6 +52,9 @@ export default async function ServicePage({ params }: Props) {
   const posts = postsForService(s.slug).slice(0, 3);
   const others = relatedServices(s);
   const h = s.headings ?? {};
+  const b = { ...DEFAULT_BLOCKS, ...s.blocks };
+  const hasSections = !!s.sections?.length;
+  const allFaqs = [...(s.sections ?? []).flatMap((x) => (x.format === "faq" ? x.faqs ?? [] : [])), ...(s.faqs ?? [])];
 
   return (
     <>
@@ -64,52 +70,56 @@ export default async function ServicePage({ params }: Props) {
         }
       />
 
-      {!!s.stats?.length && <Stats heading={h.stats ?? `${s.title} by the numbers`} items={s.stats} />}
+      <Abstract text={s.abstract} />
 
-      <CardList
-        id="challenges"
-        eyebrow="The problem"
-        heading={h.painPoints ?? `Why ${lower(s.title)} projects go wrong`}
-        items={s.painPoints}
-      />
-      <CardList
-        id="what-we-do"
-        tone="warm"
-        eyebrow="What's included"
-        heading={h.subServices ?? `Our ${lower(s.title)} services`}
-        items={s.subServices}
-      />
+      {hasSections ? (
+        <SemanticSections sections={s.sections} />
+      ) : (
+        <>
+          {!!s.stats?.length && <Stats heading={h.stats ?? `${s.title} by the numbers`} items={s.stats} />}
+          <CardList id="challenges" eyebrow="The problem" heading={h.painPoints ?? `Why ${lower(s.title)} projects go wrong`} items={s.painPoints} />
+          <CardList id="what-we-do" tone="warm" eyebrow="What's included" heading={h.subServices ?? `Our ${lower(s.title)} services`} items={s.subServices} />
+          {!!s.process?.length && <Process heading={h.process ?? `Our ${lower(s.title)} process`} steps={s.process} />}
+          <Benefits heading={h.benefits ?? `What you get from ${lower(s.title)}`} items={s.benefits} ctaTitle="Ready to see your design opportunities?" />
+        </>
+      )}
 
-      <CtaBand {...home.ctaBand} />
+      {b.ctaBand && <CtaBand {...(s.cta ?? home.ctaBand)} />}
 
-      {!!s.process?.length && <Process heading={h.process ?? `Our ${lower(s.title)} process`} steps={s.process} />}
+      {b.industries && (
+        <LinkChips
+          heading={h.industries ?? `${cap(anchorOf(s))} by industry`}
+          tone="warm"
+          items={industries.map((i) => ({ title: anchorOf(i), href: routes.industry(i.slug) }))}
+        />
+      )}
 
-      <Benefits
-        heading={h.benefits ?? `What you get from ${lower(s.title)}`}
-        items={s.benefits}
-        ctaTitle="Ready to see your design opportunities?"
-      />
+      {b.caseStudies && <WorkGrid heading={h.caseStudies ?? `${cap(anchorOf(s))} case studies`} items={cases} />}
 
-      <LinkChips
-        heading={h.industries ?? `${s.title} for your industry`}
-        tone="warm"
-        items={industries.map((i) => ({ title: i.title, href: routes.industry(i.slug) }))}
-      />
-
-      <WorkGrid heading={h.caseStudies ?? `${s.title} case studies`} items={cases} />
-
-      <FinalCta testimonial={home.testimonial}>
+      <FinalCta testimonial={b.testimonial ? home.testimonial : undefined}>
         <LeadForm variant="full" interests={[s.title, ...formInterests]} source={`service final CTA: ${s.slug}`} submitLabel="Submit" />
       </FinalCta>
 
-      <Faq heading={h.faqs ?? `${s.title} FAQs`} items={s.faqs} />
+      <Faq heading={h.faqs ?? `${cap(anchorOf(s))} FAQs`} items={s.faqs} />
 
-      <Resources heading={h.posts ?? `${s.title} insights`} posts={posts} tone="light" />
+      {b.posts && <Resources heading={h.posts ?? `${cap(anchorOf(s))} insights`} posts={posts} tone="light" />}
 
-      <ServiceGrid id="related-services" eyebrow="Explore more" heading="Related UI UX design services" services={others} allHref={routes.services} />
+      {b.related && (
+        <ServiceGrid id="related-services" eyebrow={s.category} heading="Related UI UX design services" services={others} allHref={routes.services} />
+      )}
 
-      <JsonLd data={serviceLd(s.title, s.metaDescription, path, s.subServices?.map((x) => x.title))} />
-      {!!s.faqs?.length && <JsonLd data={faqLd(s.faqs)} />}
+      <JsonLd
+        data={webPageLd({
+          name: s.metaTitle,
+          description: s.metaDescription,
+          path,
+          about: s.centralEntity ?? anchorOf(s),
+          mentions: s.mentions ?? s.sections?.map((x) => x.h2),
+          updated: s.updated,
+        })}
+      />
+      <JsonLd data={serviceLd(cap(anchorOf(s)), s.metaDescription, path, s.subServices?.map((x) => x.title), s.priceRange)} />
+      {!!allFaqs.length && <JsonLd data={faqLd(allFaqs)} />}
       {!!s.process?.length && <JsonLd data={howToLd(`${s.title} process`, s.process)} />}
     </>
   );

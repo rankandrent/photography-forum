@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Html } from "@/components/ui/Html";
-import { routes } from "@/lib/site";
+import { cap, routes } from "@/lib/site";
 import type { Card, Faq as FaqItem, Post, Service, Stat } from "@/lib/types";
 
 /* ---------- Clients strip ---------- */
@@ -49,11 +49,13 @@ export function ServiceGrid({
   services,
   tone = "warm",
   allHref,
+  intro,
 }: {
   id?: string;
+  intro?: string;
   eyebrow?: string;
   heading: string;
-  services: Pick<Service, "slug" | "title" | "summary" | "tags">[];
+  services: Pick<Service, "slug" | "title" | "summary" | "tags" | "anchor">[];
   tone?: "warm" | "light";
   allHref?: string;
 }) {
@@ -62,12 +64,13 @@ export function ServiceGrid({
     <section className={`section section--${tone}`} id={id} aria-labelledby={`${id}-heading`}>
       <div className="container">
         <span className="tk-eyebrow" style={{ display: "block", marginBottom: 20 }}>{eyebrow}</span>
-        <h2 id={`${id}-heading`} className="cat__headline">{heading}</h2>
+        <h2 id={`${id}-heading`} className="cat__headline" style={intro ? { marginBottom: 20 } : undefined}>{heading}</h2>
+        {intro && <p className="cap__intro">{intro}</p>}
         <div className="cat__grid">
           {services.map((s, i) => (
             <Link key={s.slug} href={routes.service(s.slug)} className="cat-card">
               <span className="cat-card__num">{String(i + 1).padStart(2, "0")}</span>
-              <h3 className="cat-card__title">{s.title}</h3>
+              <h3 className="cat-card__title">{cap(s.anchor ?? s.title)}</h3>
               <p className="cat-card__body">{s.summary}</p>
               {!!s.tags?.length && (
                 <div className="cat-card__tags">

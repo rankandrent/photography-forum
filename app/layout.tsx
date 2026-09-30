@@ -3,9 +3,9 @@ import { IBM_Plex_Mono, Manrope } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/ui/JsonLd";
-import { getIndustries, getServices } from "@/lib/content";
+import { anchorOf, getIndustries, servicesByCategory } from "@/lib/content";
 import { organizationLd } from "@/lib/seo";
-import { SITE, routes } from "@/lib/site";
+import { SITE, cap, routes } from "@/lib/site";
 import "./globals.css";
 
 const manrope = Manrope({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-manrope", display: "swap" });
@@ -22,13 +22,16 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#020101", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const services = getServices().map((s) => ({ title: s.title, href: routes.service(s.slug) }));
+  const serviceGroups = servicesByCategory().map((g) => ({
+    category: g.category,
+    items: g.services.map((s) => ({ title: cap(anchorOf(s)), href: routes.service(s.slug) })),
+  }));
   const industries = getIndustries().map((i) => ({ title: i.title, href: routes.industry(i.slug) }));
   return (
     <html lang="en-US" className={`${manrope.variable} ${plexMono.variable}`}>
       <body>
         <a href="#main" className="skip-link">Skip to content</a>
-        <Header services={services} industries={industries} />
+        <Header serviceGroups={serviceGroups} industries={industries} />
         <main id="main">{children}</main>
         <Footer />
         <JsonLd data={organizationLd()} />

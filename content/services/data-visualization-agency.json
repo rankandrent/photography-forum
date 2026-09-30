@@ -1,6 +1,8 @@
 {
   "title": "Data visualization",
-  "order": 17,
+  "order": 14,
+  "category": "Dashboards & data",
+  "anchor": "data visualization agency",
   "metaTitle": "Data Visualization Agency | UIUXDesignServices.us",
   "metaDescription": "Data visualization agency that turns complex data into clear charts, interactive reports and visual stories people understand at a glance.",
   "hero": {
@@ -19,5 +21,6 @@
     "finance",
     "healthcare",
     "supply-chain"
-  ]
+  ],
+  "updated": "2026-09-30"
 }

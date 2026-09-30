@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { EmailCapture } from "@/components/forms/EmailCapture";
-import { getIndustries, getServices } from "@/lib/content";
-import { SITE, routes } from "@/lib/site";
+import { anchorOf, getIndustries, servicesByCategory } from "@/lib/content";
+import { SITE, cap, routes } from "@/lib/site";
 
 export function Footer() {
-  const services = getServices().slice(0, 8);
+  // Two lead services per topical category keeps the footer short but covers every cluster
+  const services = servicesByCategory().flatMap((g) => g.services.slice(0, 2));
   const industries = getIndustries().slice(0, 8);
   return (
     <footer className="ftr">
@@ -16,14 +17,14 @@ export function Footer() {
         <div>
           <h2 className="ftr__title h4-footer">Services</h2>
           <ul className="ftr__list">
-            {services.map((s) => <li key={s.slug}><Link href={routes.service(s.slug)}>{s.title}</Link></li>)}
+            {services.map((s) => <li key={s.slug}><Link href={routes.service(s.slug)}>{cap(anchorOf(s))}</Link></li>)}
             <li><Link href={routes.services}>All services →</Link></li>
           </ul>
         </div>
         <div>
           <h2 className="ftr__title h4-footer">Industries</h2>
           <ul className="ftr__list">
-            {industries.map((s) => <li key={s.slug}><Link href={routes.industry(s.slug)}>{s.title}</Link></li>)}
+            {industries.map((s) => <li key={s.slug}><Link href={routes.industry(s.slug)}>{anchorOf(s)}</Link></li>)}
             <li><Link href={routes.industries}>All industries →</Link></li>
           </ul>
         </div>

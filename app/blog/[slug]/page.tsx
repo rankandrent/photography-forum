@@ -6,9 +6,9 @@ import { WorkGrid } from "@/components/sections/WorkCards";
 import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
-import { getPost, getPosts, staticParams, getService, relatedCaseStudies, relatedPosts } from "@/lib/content";
+import { anchorOf, getPost, getPosts, staticParams, getService, relatedCaseStudies, relatedPosts } from "@/lib/content";
 import { articleLd, pageMetadata } from "@/lib/seo";
-import { routes } from "@/lib/site";
+import { cap, routes } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -45,7 +45,7 @@ export default async function PostPage({ params }: Props) {
             <div className="prose" style={{ marginTop: 48 }}>
               <p><strong>Related services:</strong></p>
               <div className="chips">
-                {services.map((s) => <Link key={s.slug} href={routes.service(s.slug)} className="chip">{s.title}</Link>)}
+                {services.map((s) => <Link key={s.slug} href={routes.service(s.slug)} className="chip">{cap(anchorOf(s))}</Link>)}
               </div>
             </div>
           )}

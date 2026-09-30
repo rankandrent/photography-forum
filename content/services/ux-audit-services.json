@@ -1,6 +1,8 @@
 {
   "title": "UX audit",
   "order": 3,
+  "category": "Research & strategy",
+  "anchor": "UX audit services",
   "metaTitle": "UX Audit Services | UIUXDesignServices.us",
   "metaDescription": "UX audit services: heuristic review, analytics and usability findings, and a prioritized list of fixes with effort estimates.",
   "hero": {
@@ -18,5 +20,119 @@
   "relatedIndustries": [
     "ecommerce",
     "saas"
+  ],
+  "updated": "2026-09-30",
+  "_note": "SAMPLE sections built only from facts already on the site (pricing + home copy). Replace with the Koray content brief from the research file.",
+  "centralEntity": "UX audit",
+  "sourceContext": "US UI/UX design agency; this page sells the UX audit engagement and books audit calls.",
+  "priceRange": "$5,000–$15,000",
+  "abstract": "A UX audit is an expert review of your product's usability. Ours combines a heuristic review, analytics and usability findings into a prioritized fix list with effort estimates, delivered in 2–3 weeks by 1–2 senior designers for $5,000–$15,000.",
+  "sections": [
+    {
+      "h2": "What is a UX audit?",
+      "format": "paragraph",
+      "answer": "A UX audit is a structured expert evaluation of a digital product that finds where users struggle, explains why, and ranks the fixes by impact and effort, so teams improve the product without guessing.",
+      "body": "<p>Unlike <a href=\"/services/usability-testing-services/\">usability testing services</a>, which watch real users complete tasks, an audit is run by experienced designers against established usability heuristics, accessibility guidelines and your product analytics.</p>"
+    },
+    {
+      "h2": "What does our UX audit include?",
+      "format": "list",
+      "answer": "Our UX audit includes 4 parts: a heuristic review, an analytics review, an accessibility check, and a prioritized fix roadmap.",
+      "items": [
+        {
+          "title": "Heuristic review.",
+          "body": "Key flows evaluated against recognized usability heuristics such as Nielsen's 10."
+        },
+        {
+          "title": "Analytics review.",
+          "body": "Funnels and drop-off points checked to show where users leave."
+        },
+        {
+          "title": "Accessibility check.",
+          "body": "Common WCAG issues flagged across the audited screens."
+        },
+        {
+          "title": "Fix roadmap.",
+          "body": "Every finding ranked by impact and effort, with an estimate."
+        }
+      ]
+    },
+    {
+      "h2": "How does the UX audit process work?",
+      "format": "steps",
+      "answer": "The UX audit process takes 2–3 weeks and runs in 4 steps, from agreeing the goals to handing over the prioritized roadmap.",
+      "items": [
+        {
+          "title": "Kick-off and goals",
+          "body": "We agree the flows, metrics and user groups to audit."
+        },
+        {
+          "title": "Review",
+          "body": "Designers run the heuristic, analytics and accessibility reviews."
+        },
+        {
+          "title": "Synthesis",
+          "body": "Findings are grouped, evidenced with screenshots and scored."
+        },
+        {
+          "title": "Roadmap handover",
+          "body": "We walk your team through the prioritized fixes and estimates."
+        }
+      ]
+    },
+    {
+      "h2": "UX audit vs usability testing",
+      "format": "table",
+      "answer": "A UX audit is expert-led and fast; usability testing is user-led and shows real behavior. Most teams run an audit first, then test the riskiest flows with users.",
+      "caption": "Comparison of a UX audit and usability testing",
+      "columns": [
+        "Criterion",
+        "UX audit",
+        "Usability testing"
+      ],
+      "rows": [
+        [
+          "Who evaluates",
+          "Senior UX designers",
+          "Real users"
+        ],
+        [
+          "Main output",
+          "Prioritized fix list",
+          "Observed task failures"
+        ],
+        [
+          "Typical timeline",
+          "2–3 weeks",
+          "1–3 weeks"
+        ],
+        [
+          "Best for",
+          "Finding issues broadly and fast",
+          "Validating specific flows"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        },
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does a UX audit cost?",
+      "format": "paragraph",
+      "answer": "A UX audit costs $5,000–$15,000 and takes 2–3 weeks with 1–2 designers. The price depends on the number of flows, platforms and user groups in scope.",
+      "links": [
+        {
+          "anchor": "UX consulting services",
+          "to": "/services/ux-consulting-services/"
+        }
+      ]
+    }
   ]
 }

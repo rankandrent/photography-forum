@@ -1,50 +1,115 @@
 {
-  "title": "Short service name (used in menus, cards, breadcrumbs)",
+  "title": "Short service name (cards, breadcrumbs)",
   "order": 99,
-  "metaTitle": "SEO title, ~60 chars | UIUXDesignServices.us",
-  "metaDescription": "SEO description, ~155 chars",
+  "category": "Research & strategy | Product design | Platforms | Dashboards & data | Industry-specific",
+  "anchor": "main query, lower-case — used as anchor text for every link to this page",
+  "metaTitle": "Main query + angle | UIUXDesignServices.us (≤ 60 chars)",
+  "metaDescription": "70–160 chars, main query + value + number",
+  "updated": "YYYY-MM-DD",
+  "centralEntity": "Central entity (e.g. UX audit)",
+  "sourceContext": "Why this page exists for the buyer (not rendered)",
+  "priceRange": "$X–$Y (optional, goes into Service schema)",
   "hero": {
-    "eyebrow": "Small label above H1",
-    "h1": "Main H1 (64px)",
+    "eyebrow": "Main query",
+    "h1": "H1 = query + entity + angle",
     "sub": "1–2 sentence sub-heading"
   },
   "summary": "1–2 sentences for service cards",
+  "abstract": "Abstractive summary: 2–3 line gist of the whole page",
   "tags": [
-    "Tag 1",
-    "Tag 2",
-    "Tag 3",
-    "Tag 4"
+    "Card tag 1",
+    "Card tag 2"
   ],
-  "stats": [
+  "sections": [
     {
-      "value": "40%",
-      "label": "What the number means"
-    }
-  ],
-  "painPoints": [
+      "h2": "Definition question?",
+      "format": "paragraph",
+      "answer": "30–50 word extractive answer",
+      "body": "<p>Supporting detail with <a href=\"/services/other/\">contextual link</a>.</p>"
+    },
     {
-      "title": "Problem",
-      "body": "Why it happens / what it costs. Inline <a href=\"/services/ux-research-services/\">links</a> allowed."
-    }
-  ],
-  "subServices": [
+      "h2": "List question?",
+      "format": "list",
+      "answer": "There are N …:",
+      "items": [
+        {
+          "title": "Item.",
+          "body": "Detail"
+        },
+        "Or a plain string item"
+      ]
+    },
     {
-      "title": "Sub-service",
-      "body": "What's included"
-    }
-  ],
-  "process": [
+      "h2": "Process question?",
+      "format": "steps",
+      "answer": "…",
+      "items": [
+        {
+          "title": "Step",
+          "body": "…"
+        }
+      ],
+      "image": {
+        "src": "/img/file.webp",
+        "alt": "Entity-aligned alt text",
+        "caption": "Optional caption"
+      }
+    },
     {
-      "title": "Step name",
-      "body": "What happens",
-      "deliverables": "Outputs",
-      "timeline": "1–2 weeks"
-    }
-  ],
-  "benefits": [
+      "h2": "X vs Y",
+      "format": "table",
+      "answer": "…",
+      "caption": "Table caption",
+      "columns": [
+        "Criterion",
+        "X",
+        "Y"
+      ],
+      "rows": [
+        [
+          "Row",
+          "…",
+          "…"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "target main query",
+          "to": "/services/target/"
+        }
+      ]
+    },
     {
-      "title": "Benefit",
-      "body": "Explanation"
+      "h2": "Sub-topics",
+      "format": "cards",
+      "answer": "…",
+      "items": [
+        {
+          "title": "Card",
+          "body": "…"
+        }
+      ]
+    },
+    {
+      "h2": "Question with H3s",
+      "format": "paragraph",
+      "answer": "…",
+      "h3s": [
+        {
+          "h3": "Supporting question",
+          "body": "<p>…</p>"
+        }
+      ]
+    },
+    {
+      "h2": "Inline FAQ block",
+      "format": "faq",
+      "faqs": [
+        {
+          "q": "…",
+          "a": "…"
+        }
+      ]
     }
   ],
   "faqs": [
@@ -53,23 +118,27 @@
       "a": "Answer. Inline HTML links allowed."
     }
   ],
+  "mentions": [
+    "Optional list of entities for WebPage.mentions (defaults to section H2s)"
+  ],
+  "blocks": {
+    "ctaBand": true,
+    "testimonial": true,
+    "related": true,
+    "caseStudies": true,
+    "posts": true,
+    "industries": true
+  },
+  "cta": {
+    "heading": "Optional page-specific CTA band heading",
+    "body": "…",
+    "cta": "Button label"
+  },
   "relatedIndustries": [
     "healthcare",
     "saas"
   ],
   "relatedServices": [
-    "ux-research-services",
-    "design-system-services"
-  ],
-  "headings": {
-    "stats": "Optional H2 override for this section",
-    "painPoints": "Optional H2 override for this section",
-    "subServices": "Optional H2 override for this section",
-    "process": "Optional H2 override for this section",
-    "benefits": "Optional H2 override for this section",
-    "industries": "Optional H2 override for this section",
-    "caseStudies": "Optional H2 override for this section",
-    "faqs": "Optional H2 override for this section",
-    "posts": "Optional H2 override for this section"
-  }
+    "ux-research-services"
+  ]
 }

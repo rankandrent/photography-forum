@@ -9,9 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     u("/", 1),
     u(routes.services, 0.9),
-    ...getServices().map((s) => u(routes.service(s.slug), 0.9)),
+    ...getServices().map((s) => u(routes.service(s.slug), 0.9, s.updated)),
     u(routes.industries, 0.8),
-    ...getIndustries().map((i) => u(routes.industry(i.slug), 0.8)),
+    ...getIndustries().map((i) => u(routes.industry(i.slug), 0.8, i.updated)),
     u(routes.caseStudies, 0.7),
     ...getCaseStudies().map((c) => u(routes.caseStudy(c.slug), 0.7, c.date)),
     u(routes.blog, 0.6),
