@@ -1,5 +1,7 @@
 import { LeadForm } from "@/components/forms/LeadForm";
-import { CtaBand, FinalCta, ServiceGrid } from "@/components/sections/Blocks";
+import { CtaBand, FinalCta } from "@/components/sections/Blocks";
+import { CategoryTabs } from "@/components/sections/CategoryTabs";
+import { ServiceAccordion } from "@/components/sections/ServiceAccordion";
 import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
@@ -15,11 +17,16 @@ export const metadata = pageMetadata({
 });
 
 const INTRO: Record<ServiceCategory, string> = {
-  "Research & strategy": "Find out what to build and what to fix before design starts.",
-  "Product design": "Design the product itself: flows, interactions, interfaces, and the system behind them.",
-  Platforms: "Design for the platform your users are on: iOS, Android, and the web.",
-  "Dashboards & data": "Turn dense data into dashboards and visuals people can act on.",
-  "Industry-specific": "Design for the business models and users of a specific market.",
+  "Research & strategy":
+    "A design is only as good as the evidence behind it. These services show what users need, where the product loses them, and what to fix first, before a single screen is redesigned.",
+  "Product design":
+    "Design the product itself: the flows, interactions, interfaces and the design system behind them. Every screen is built to hold up under real, daily use.",
+  Platforms:
+    "Users meet your product on a specific platform. We design native-feeling iOS and Android apps and complex web applications around each platform's conventions.",
+  "Dashboards & data":
+    "Dense data only helps when people can read it. These services turn metrics, reports and live data into dashboards and visuals people can act on.",
+  "Industry-specific":
+    "Some markets need their own playbook. These services are shaped around the business models, users and growth stage of SaaS, e-commerce and startup products.",
 };
 
 const idOf = (c: string) => c.toLowerCase().replace(/[^a-z]+/g, "-");
@@ -34,24 +41,10 @@ export default function ServicesHub() {
         eyebrow="Service catalog"
         h1={<>Our design service catalog, <em>grouped by what you need</em></>}
         sub="Pick a single service or combine several into one engagement. Each group below covers one stage or type of product work."
-        actions={
-          <>
-            {groups.map((g) => (
-              <a key={g.category} href={`#${idOf(g.category)}`} className="chip">{g.category}</a>
-            ))}
-          </>
-        }
       />
-      {groups.map((g, n) => (
-        <ServiceGrid
-          key={g.category}
-          id={idOf(g.category)}
-          eyebrow={`${String(n + 1).padStart(2, "0")} · ${g.services.length} services`}
-          intro={INTRO[g.category]}
-          heading={g.category}
-          services={g.services}
-          tone={n % 2 ? "light" : "warm"}
-        />
+      <CategoryTabs items={groups.map((g) => ({ id: idOf(g.category), label: g.category }))} />
+      {groups.map((g) => (
+        <ServiceAccordion key={g.category} id={idOf(g.category)} heading={g.category} intro={INTRO[g.category]} services={g.services} />
       ))}
       <CtaBand {...home.ctaBand} />
       <FinalCta testimonial={home.testimonial}>

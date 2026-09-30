@@ -129,17 +129,22 @@ export function CardList({
   );
 }
 
-/* ---------- Inline dark CTA band ---------- */
+/* ---------- CTA card (black rounded card) ---------- */
 export function CtaBand({ heading, body, cta, href = "#cta-form" }: { heading: string; body: string; cta: string; href?: string }) {
   return (
-    <section className="ctaband" aria-labelledby="inline-cta-heading">
+    <section className="section ctawrap" aria-labelledby="inline-cta-heading">
       <div className="container">
-        <div className="ctaband__inner">
-          <h2 id="inline-cta-heading" className="ctaband__headline">{heading}</h2>
-          <div className="ctaband__right">
-            <p className="ctaband__body">{body}</p>
-            <a href={href} className="btn btn--white">{cta}</a>
+        <div className="ctacard">
+          <div className="ctacard__copy">
+            <h2 id="inline-cta-heading" className="ctacard__title">{heading}</h2>
+            <p className="ctacard__body">{body}</p>
+            <a href={href} className="btn">{cta}</a>
           </div>
+          <svg className="ctacard__art" viewBox="0 0 420 420" aria-hidden="true" focusable="false">
+            <path d="M420 40 H200 A120 120 0 0 0 80 160 V420" />
+            <path d="M420 180 H300 A60 60 0 0 0 240 240 V420" />
+            <circle cx="300" cy="120" r="6" />
+          </svg>
         </div>
       </div>
     </section>
@@ -206,13 +211,30 @@ export function FinalCta({
   );
 }
 
-/* ---------- FAQ ---------- */
-export function Faq({ heading = "Frequently asked questions", items }: { heading?: string; items?: FaqItem[] }) {
+/* ---------- FAQ (two columns: intro + contact card left, questions right) ---------- */
+export function Faq({
+  heading = "Frequently asked questions",
+  intro = "Straight answers about scope, timelines, pricing and how we work with your team.",
+  items,
+}: {
+  heading?: string;
+  intro?: string;
+  items?: FaqItem[];
+}) {
   if (!items?.length) return null;
   return (
     <section className="section section--light" id="faq" aria-labelledby="faq-heading">
-      <div className="container">
-        <h2 id="faq-heading" className="faq__headline">{heading}</h2>
+      <div className="container faq2">
+        <div className="faq2__left">
+          <span className="tk-eyebrow">FAQ</span>
+          <h2 id="faq-heading" className="faq__headline">{heading}</h2>
+          <p className="faq2__intro">{intro}</p>
+          <div className="faq2__card">
+            <p className="faq2__card-title">Still have a question?</p>
+            <p>A design lead answers every message within one business day.</p>
+            <a href="#cta-form" className="btn">Talk to a design lead</a>
+          </div>
+        </div>
         <div className="faq__list">
           {items.map((f, i) => (
             <details key={f.q} className="faq__item" open={i === 0}>
