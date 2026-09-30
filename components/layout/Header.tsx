@@ -19,6 +19,9 @@ export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[
   }, []);
 
   const close = () => setOpen(false);
+  // "Industry-specific" services render as the bottom "Specialization" row
+  const specialGroup = serviceGroups.find((g) => g.category === "Industry-specific");
+  const mainGroups = serviceGroups.filter((g) => g !== specialGroup);
 
   return (
     <header className={`hdr${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
@@ -31,7 +34,7 @@ export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[
             <Link href={routes.services}>Services</Link>
             <div className="hdr__dd-panel mega">
               <div className="mega__cols">
-                {serviceGroups.map((g) => (
+                {mainGroups.map((g) => (
                   <div key={g.category} className="mega__col">
                     <p className="mega__cat">{g.category}</p>
                     <ul>
@@ -44,32 +47,36 @@ export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[
                   </div>
                 ))}
               </div>
-              <div className="mega__foot">
-                <span>Not sure where to start? A UX audit shows where users struggle first.</span>
-                <span className="mega__foot-links">
-                  <Link href="/services/ux-audit-services/">Book a UX audit →</Link>
-                  <Link href={routes.services}>All services →</Link>
-                </span>
-              </div>
+              {specialGroup && (
+                <div className="mega__special">
+                  <p className="mega__cat">Specialization</p>
+                  <ul className="mega__grid">
+                    {specialGroup.items.map((s) => (
+                      <li key={s.href}>
+                        <Link href={s.href}>{s.title}</Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link href={routes.services} className="mega__all">All services →</Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
           <div className="hdr__dd hdr__dd--mega">
             <Link href={routes.industries}>Industries</Link>
             <div className="hdr__dd-panel mega mega--ind">
-              <p className="mega__cat">Industries we design for</p>
+              <p className="mega__cat">Industries</p>
               <ul className="mega__grid">
                 {industries.map((i) => (
                   <li key={i.href}>
-                    <Link href={i.href}>
-                      <strong>{i.title}</strong>
-                      {i.summary && <span>{i.summary}</span>}
-                    </Link>
+                    <Link href={i.href}>{i.title}</Link>
                   </li>
                 ))}
               </ul>
-              <div className="mega__foot">
-                <span>Don&apos;t see your industry? We adapt our process to regulated and complex domains.</span>
-                <span className="mega__foot-links"><Link href={routes.industries}>All industries →</Link></span>
+              <div className="mega__special">
+                <Link href={routes.industries} className="mega__all">All industries →</Link>
               </div>
             </div>
           </div>
