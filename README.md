@@ -44,18 +44,19 @@ Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_FORM_ENDPOINT`. Every l
 - Set `SITE.email` and `SITE.sameAs` (LinkedIn, Clutch, G2 …) in `lib/site.ts`.
 - Add real logos and images to `public/`, and submit `sitemap.xml` in Google Search Console.
 
-## Deploy on Cloudflare Pages
+## Deploy on Cloudflare (Workers + static assets)
 
-1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → pick `rankandrent/uiuxdesignservices.us`, production branch `main`.
+`wrangler.jsonc` tells Cloudflare to upload the static `out/` folder. No server adapter (OpenNext) is used or needed.
+
+1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Import a repository** → `rankandrent/uiuxdesignservices.us`.
 2. Build settings:
-   - Framework preset: **None**
    - Build command: `npm run build`
-   - Build output directory: `out`
-3. Environment variables (Production and Preview):
+   - Deploy command: `npx wrangler deploy`
+   - Root directory: `/`
+3. **Settings → Build → Variables and secrets** (read at build time):
    - `NEXT_PUBLIC_SITE_URL` = `https://uiuxdesignservices.us`
    - `NEXT_PUBLIC_FORM_ENDPOINT` = your form endpoint URL
-   - Node version comes from `.node-version` (22).
-4. **Save and Deploy.** Every push to `main` redeploys, and other branches get preview URLs.
-5. **Custom domains** → add `uiuxdesignservices.us` (and `www`). If the domain's DNS is on Cloudflare, the records are created for you.
+4. Every push to `main` rebuilds and redeploys.
+5. **Settings → Domains & Routes → Add → Custom domain** → `uiuxdesignservices.us` (and `www.uiuxdesignservices.us`).
 
-`public/_headers` sets long-lived caching for hashed assets and OG images, plus basic security headers.
+`public/_headers` sets long-lived caching for hashed assets and OG images, plus basic security headers. The Worker name in `wrangler.jsonc` must match the Cloudflare project name.

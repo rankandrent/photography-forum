@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Static site: `npm run build` writes plain HTML to ./out, and wrangler uploads it as static assets.
+  // No server runtime / OpenNext adapter is needed.
+  "name": "uiuxdesignservices-us",
+  "compatibility_date": "2026-09-26",
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
