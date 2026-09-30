@@ -39,7 +39,7 @@ export function SemanticSections({ sections }: { sections?: Section[] }) {
               <div className={`sem__wrap${s.image ? " sem__wrap--fig" : ""}`}>
                 <div className="sem__main">
                   <h2 id={`${id}-h`}>{s.h2}</h2>
-                  {s.answer && <p className="sem__answer">{s.answer}</p>}
+                  {s.answer && <Html as="p" className="sem__answer" html={s.answer} />}
                   {s.body && <Html className="sem__body" html={s.body} />}
 
                   {s.format === "list" && !!s.items?.length && (

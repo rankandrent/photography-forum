@@ -1,6 +1,39 @@
 import type { ReactNode } from "react";
 import { Breadcrumbs, type Crumb } from "@/components/layout/Breadcrumbs";
+import { home } from "@/content/home";
 import type { Stat } from "@/lib/types";
+
+const TRUST_LOGOS = ["NBCUniversal", "7-Eleven", "Groupon", "Sterne Kessler", "Nitro League"];
+
+/** Rating, client logos and guarantees shown under the hero copy */
+export function HeroTrust() {
+  const rating = home.hero.stats.find((x) => x.value.includes("/ 5"));
+  const logos = home.clients.items.filter((c) => TRUST_LOGOS.includes(c.name));
+  return (
+    <div className="htrust">
+      <div className="htrust__rating">
+        <span className="htrust__stars" aria-hidden="true">★★★★★</span>
+        <span><strong>{rating?.value ?? "4.9 / 5"}</strong> average client rating · 200+ products designed</span>
+      </div>
+      <div className="htrust__logos" aria-label="Clients">
+        <span className="htrust__label">Trusted by teams at</span>
+        {logos.map((l) =>
+          l.logo ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={l.name} src={l.logo} alt={l.name} loading="eager" />
+          ) : (
+            <span key={l.name}>{l.name}</span>
+          ),
+        )}
+      </div>
+      <ul className="htrust__checks">
+        <li>Senior designers only</li>
+        <li>NDA before the first call</li>
+        <li>Reply within 1 business day</li>
+      </ul>
+    </div>
+  );
+}
 
 /** Row of headline numbers used in light heroes */
 export function StatsRow({ items }: { items?: Stat[] }) {
@@ -31,6 +64,7 @@ export function PageHero({
   aside,
   stats,
   tone = "dark",
+  trust,
   children,
 }: {
   crumbs: Crumb[];
@@ -42,6 +76,8 @@ export function PageHero({
   aside?: ReactNode;
   stats?: Stat[];
   tone?: "dark" | "light";
+  /** Show rating, client logos and guarantees under the copy */
+  trust?: boolean;
   /** Rendered under the hero copy, e.g. a WorkRail */
   children?: ReactNode;
 }) {
@@ -54,6 +90,7 @@ export function PageHero({
       {actions && <div className="hero__actions">{actions}</div>}
       {meta && <div className="phero__meta">{meta}</div>}
       <StatsRow items={stats} />
+      {trust && <HeroTrust />}
     </div>
   );
   const cls = ["phero", aside && "phero--split", tone === "light" && "phero--light"].filter(Boolean).join(" ");

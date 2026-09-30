@@ -906,3 +906,18 @@ html, body { overflow-x: clip; }
 .hdr__dd:hover > a, .hdr__dd:focus-within > a { color: var(--text) !important; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 6px; }
 @media (max-width: 1180px) { .mega__cols { grid-template-columns: repeat(2, 1fr); } }
 .mega a.mega__all { padding: 6px 0; margin: 0; display: inline-block; }
+
+/* ---------- Hero trust block (services + industries) ---------- */
+.htrust { display: grid; gap: 22px; margin-top: 8px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); max-width: 640px; }
+.htrust__rating { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 15px; color: rgba(255,255,255,0.75); }
+.htrust__rating strong { color: #fff; }
+.htrust__stars { color: #FFB800; letter-spacing: 2px; font-size: 16px; }
+.htrust__logos { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.htrust__label { font-family: var(--font-m); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); width: 100%; }
+.htrust__logos img { height: 22px; width: auto; max-width: 110px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.7; }
+.htrust__checks { list-style: none; padding: 0; margin: 0; display: flex; gap: 10px 22px; flex-wrap: wrap; font-size: 14px; color: rgba(255,255,255,0.75); }
+.htrust__checks li { display: flex; align-items: center; gap: 8px; }
+.htrust__checks li::before { content: ''; width: 16px; height: 16px; border-radius: 50%; flex: none; background: var(--pink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.2 2.2 4.8-4.8' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat; }
+.phero--split .phero__sub { margin-bottom: 28px; }
+.ind-work .stats-row { margin: 0 0 40px; }
+@media (max-width: 900px) { .htrust__logos { gap: 20px; } .htrust__logos img { height: 18px; } }

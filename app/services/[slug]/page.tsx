@@ -63,6 +63,7 @@ export default async function ServicePage({ params }: Props) {
         eyebrow={s.hero.eyebrow ?? s.title}
         h1={s.hero.h1}
         sub={s.hero.sub}
+        trust
         aside={
           <FormCard title="Get a free consultation" sub="Free consultation · reply within one business day">
             <LeadForm interests={[s.title, ...formInterests.filter((i) => i !== s.title)]} source={`service: ${s.slug}`} />

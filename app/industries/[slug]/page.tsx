@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { Benefits, CardList, Clients, CtaBand, Faq, FinalCta, Resources, ServiceGrid } from "@/components/sections/Blocks";
-import { PageHero } from "@/components/sections/PageHero";
+import { Benefits, CardList, CtaBand, Faq, FinalCta, Resources, ServiceGrid } from "@/components/sections/Blocks";
+import { FormCard, PageHero, StatsRow } from "@/components/sections/PageHero";
 import { Process } from "@/components/sections/Process";
 import { Abstract, SemanticSections } from "@/components/sections/SemanticSections";
 import { WorkRail } from "@/components/sections/WorkCards";
@@ -39,25 +39,32 @@ export default async function IndustryPage({ params }: Props) {
   return (
     <>
       <PageHero
-        tone="light"
         crumbs={[{ name: "Industries", path: routes.industries }, { name: i.title, path }]}
         eyebrow={i.hero.eyebrow ?? `${i.title} UI UX design`}
         h1={i.hero.h1}
         sub={i.hero.sub}
-        stats={i.stats}
-        actions={
-          <>
-            <a href="#cta-form" className="btn">Schedule a call</a>
-            <a href="#industry-services" className="btn btn--dark-outline">Our {lower(i.title)} services</a>
-          </>
+        trust
+        aside={
+          <FormCard title="Get a free consultation" sub="Free consultation · reply within one business day">
+            <LeadForm interests={formInterests} source={`industry: ${i.slug}`} />
+          </FormCard>
         }
-      >
-        <WorkRail items={cases.slice(0, 8)} id="industry-rail" label={`${i.title} case studies`} />
-      </PageHero>
-
-      {b.clients && <Clients {...home.clients} />}
+      />
 
       <Abstract text={i.abstract} />
+
+      {!!cases.length && (
+        <section className="section section--light ind-work" aria-labelledby="ind-work-h">
+          <div className="container">
+            <div className="shead">
+              <span className="tk-eyebrow" style={{ display: "block", marginBottom: 20 }}>Case studies</span>
+              <h2 id="ind-work-h">{i.title} UI UX case studies</h2>
+            </div>
+            <StatsRow items={i.stats} />
+            <WorkRail items={cases.slice(0, 8)} id="industry-rail" label={`${i.title} case studies`} />
+          </div>
+        </section>
+      )}
 
       {i.sections?.length ? (
         <SemanticSections sections={i.sections} />

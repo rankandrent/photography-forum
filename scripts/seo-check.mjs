@@ -77,7 +77,9 @@ for (const file of pages) {
   if (!/<img\b/.test(main)) noImage.push(route);
 
   // templated heading vectors: H2s with the page's own H1 words removed
-  const h1Words = new Set(strip(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "").toLowerCase().match(/[a-z0-9-]+/g) || []);
+  const svcFile = route.startsWith("/services/") && path.join("content", route.replace(/\/$/, "") + ".json");
+  const svc = svcFile && fs.existsSync(svcFile) ? JSON.parse(fs.readFileSync(svcFile, "utf8")) : {};
+  const h1Words = new Set(strip((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "") + " " + (svc.centralEntity ?? "") + " " + (svc.anchor ?? "")).toLowerCase().match(/[a-z0-9-]+/g) || []);
   for (const [, h] of main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)) {
     const text = strip(h).replace(/\s+/g, " ").trim();
     if (BOILERPLATE_H2.test(text)) continue;
@@ -95,6 +97,45 @@ for (const [href, set] of anchors) if (set.size > 2) report("warn", OUT, `${href
 
 for (const [t, r] of titles) if (t && r.length > 1) report("warn", OUT, `duplicate title on ${r.join(", ")}`);
 for (const [d, r] of descs) if (d && r.length > 1) report("warn", OUT, `duplicate description on ${r.join(", ")}`);
+
+// ---- Writing-rule lint (Koray rules) on content/services/*.json ----
+const BANNED = [/\bAlso,/, /\bAs (stated|mentioned|explained)\b/i, /\bAccording to\b/i, /should know/i, /In today's/i, /It is important to note/i, /\bIn conclusion\b/i, /\bdelve\b/i, /\bleverage\b/i, /\bseamless/i, /cutting-edge/i, /world-class/i];
+const HEDGES = /\b(might|may|could|perhaps|possibly)\b/i;
+const BOOL_Q = /^(is|are|do|does|did|can|will|should|would|has|have)\b/i;
+const ABBR = { UX: "user experience", UI: "user interface", IA: "information architecture", WCAG: "Web Content Accessibility Guidelines", SUS: "System Usability Scale", KPI: "key performance indicator", MVP: "minimum viable product", HIG: "Human Interface Guidelines" };
+const SVC_DIR = "content/services";
+let lintCount = 0;
+const lint = (f, msg) => { lintCount++; report("warn", `/services/${f}`, `[writing] ${msg}`); };
+for (const f of fs.readdirSync(SVC_DIR).filter((x) => x.endsWith(".json") && !x.startsWith("_"))) {
+  const d = JSON.parse(fs.readFileSync(path.join(SVC_DIR, f), "utf8"));
+  const slug = f.replace(/\.json$/, "");
+  if (!d.sections?.length) { lint(slug, "no semantic sections"); continue; }
+  const texts = [["abstract", d.abstract ?? ""]];
+  d.sections.forEach((sec, i) => {
+    if (!sec.answer) lint(slug, `section ${i + 1} "${sec.h2}" has no answer`);
+    else if (!/<strong>/.test(sec.answer)) lint(slug, `section ${i + 1} "${sec.h2}" answer is not bold`);
+    texts.push([sec.h2, [sec.answer, sec.body, sec.caption, ...(sec.items ?? []).map((x) => (typeof x === "string" ? x : `${x.title} ${x.body}`)), ...(sec.rows ?? []).flat(), ...(sec.h3s ?? []).map((h) => `${h.h3} ${h.body}`)].filter(Boolean).join(" ")]);
+    for (const q of [...(sec.faqs ?? []), ...(d.faqs ?? [])]) {
+      texts.push([q.q, `${q.q} ${q.a}`]);
+      if (BOOL_Q.test(q.q) && !/^(yes|no)\b/i.test(strip(q.a).trim())) lint(slug, `boolean FAQ "${q.q}" does not start with Yes/No`);
+    }
+  });
+  const all = strip(texts.map((t) => t[1]).join(" ")).replace(/\s+/g, " ");
+  for (const [where, t] of texts) {
+    const plain = strip(t);
+    for (const re of BANNED) if (re.test(plain)) lint(slug, `banned phrase ${re} in "${where}"`);
+    const h = plain.match(HEDGES);
+    if (h) lint(slug, `hedge "${h[0]}" in "${where}"`);
+  }
+  for (const n of d.semantic?.ngrams ?? []) if (!all.toLowerCase().includes(n.toLowerCase())) lint(slug, `n-gram "${n}" missing from page text`);
+  const heroText = strip(`${d.hero?.h1 ?? ""} ${d.hero?.sub ?? ""}`);
+  for (const [ab, full] of Object.entries(ABBR)) {
+    const first = all.search(new RegExp(`\\b${ab}\\b`));
+    if (first < 0) continue;
+    if (!all.toLowerCase().includes(full.toLowerCase()) && !heroText.toLowerCase().includes(full.toLowerCase())) lint(slug, `abbreviation ${ab} is never expanded ("${full} (${ab})")`);
+  }
+}
+if (!lintCount) console.log("✓ writing rules: all service pages pass");
 
 console.log(`\n${pages.length} pages checked · ${errors} errors · ${warnings} warnings`);
 process.exit(errors ? 1 : 0);
