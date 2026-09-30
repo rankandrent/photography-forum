@@ -100,7 +100,7 @@ h4 { font-family: var(--font-d); font-size: 24px; font-weight: 700; line-height:
 }
 
 /* HERO */
-.hero { background: var(--black); color: var(--white); padding: 180px 0 100px; position: relative; overflow: hidden; }
+.hero { background: var(--black); color: var(--white); padding: 180px 0 100px; position: relative; overflow: clip; }
 .hero::before { content: ''; position: absolute; top: -300px; right: -300px; width: 800px; height: 800px; background: radial-gradient(circle, rgba(226,34,95,0.35) 0%, transparent 60%); pointer-events: none; }
 .hero::after { content: ''; position: absolute; bottom: -400px; left: -200px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(8,102,255,0.20) 0%, transparent 60%); pointer-events: none; }
 .hero__inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: center; }
@@ -459,7 +459,7 @@ h4 { font-family: var(--font-d); font-size: 24px; font-weight: 700; line-height:
 .crumbs li + li::before { content: '/'; margin-right: 8px; opacity: 0.5; }
 
 /* Inner-page hero (services, industries, hubs, articles) */
-.phero { background: var(--black); color: var(--white); padding: 170px 0 96px; position: relative; overflow: hidden; }
+.phero { background: var(--black); color: var(--white); padding: 170px 0 96px; position: relative; overflow: clip; }
 .phero::before { content: ''; position: absolute; top: -300px; right: -300px; width: 800px; height: 800px; background: radial-gradient(circle, rgba(226,34,95,0.30) 0%, transparent 60%); pointer-events: none; }
 .phero .container { position: relative; z-index: 1; }
 .phero__eyebrow { color: var(--pink-l); margin-bottom: 24px; display: inline-block; }
@@ -829,3 +829,8 @@ html, body { overflow-x: clip; }
 .logo-marquee .clients__logo:hover { filter: brightness(0); opacity: 0.9; }
 .logo-marquee__track { animation-duration: 60s; }
 @media (max-width: 900px) { .logo-marquee .clients__logo { height: 24px; } }
+
+/* Scroll-driven horizontal rail (desktop): the row pins and slides left as the page scrolls */
+.wrail.is-pinned .wrail__sticky { position: sticky; top: 110px; }
+.wrail.is-pinned .wrail__track { overflow: visible; scroll-snap-type: none; will-change: transform; }
+.wrail.is-pinned .wcard--rail { flex-basis: 340px; height: 420px; }

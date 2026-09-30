@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RailButtons } from "@/components/sections/RailButtons";
+import { ScrollRail } from "@/components/sections/ScrollRail";
 import { routes } from "@/lib/site";
 import type { CaseStudy } from "@/lib/types";
 
@@ -71,16 +71,13 @@ export function WorkCard({ c, size = "grid" }: { c: CaseStudy; size?: "rail" | "
   );
 }
 
-/** Horizontal, scroll-snapping row of cards that bleeds off the right edge */
+/** Row of cards that slides horizontally as the page scrolls (swipeable on mobile) */
 export function WorkRail({ items, id = "work-rail", label = "Featured case studies" }: { items: CaseStudy[]; id?: string; label?: string }) {
   if (!items.length) return null;
   return (
-    <div className="wrail">
-      <div className="wrail__track" id={id} role="region" aria-label={label} tabIndex={0}>
-        {items.map((c) => <WorkCard key={c.slug} c={c} size="rail" />)}
-      </div>
-      {items.length > 2 && <RailButtons target={id} />}
-    </div>
+    <ScrollRail id={id} label={label}>
+      {items.map((c) => <WorkCard key={c.slug} c={c} size="rail" />)}
+    </ScrollRail>
   );
 }
 

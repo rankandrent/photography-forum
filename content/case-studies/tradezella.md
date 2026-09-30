@@ -4,7 +4,7 @@ metaTitle: "TradeZella Case Study: Trading Journal UX Revamp"
 description: "How we revamped TradeZella's trading journal across web and mobile. Clearer dashboards and journaling lifted user interaction by 40% and retention by 25%."
 client: TradeZella
 logo: TradeZella
-result: "40% more user interaction after a trading-journal dashboard revamp"
+result: "40% more user interaction after a dashboard revamp"
 services: [dashboard-ux-design, saas-ux-design, web-app-design-services, mobile-app-ui-ux-design-services, ux-research-services]
 industries: [finance, saas]
 tags: [Fintech, Trading analytics, Web & mobile]
