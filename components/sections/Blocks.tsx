@@ -253,7 +253,7 @@ export function Faq({
         <div className="faq2__left">
           <span className="tk-eyebrow">FAQ</span>
           <h2 id="faq-heading" className="faq__headline">{heading}</h2>
-          <p className="faq2__intro">{intro}</p>
+          <Html as="p" className="faq2__intro" html={intro} />
           <div className="faq2__card">
             <p className="faq2__card-title">Still have a question?</p>
             <p>A design lead answers every message within one business day.</p>

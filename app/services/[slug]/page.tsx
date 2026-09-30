@@ -54,7 +54,10 @@ export default async function ServicePage({ params }: Props) {
   const h = s.headings ?? {};
   const b = { ...DEFAULT_BLOCKS, ...s.blocks };
   const hasSections = !!s.sections?.length;
-  const allFaqs = [...(s.sections ?? []).flatMap((x) => (x.format === "faq" ? x.faqs ?? [] : [])), ...(s.faqs ?? [])];
+  // the FAQ section of the heading vector renders in the two-column FAQ block below
+  const faqSection = s.sections?.find((x) => x.format === "faq");
+  const bodySections = s.sections?.filter((x) => x !== faqSection);
+  const allFaqs = [...(faqSection?.faqs ?? []), ...(s.faqs ?? [])];
 
   return (
     <>
@@ -74,7 +77,7 @@ export default async function ServicePage({ params }: Props) {
       <Abstract text={s.abstract} />
 
       {hasSections ? (
-        <SemanticSections sections={s.sections} />
+        <SemanticSections sections={bodySections} />
       ) : (
         <>
           {!!s.stats?.length && <Stats heading={h.stats ?? `${s.title} by the numbers`} items={s.stats} />}
@@ -101,7 +104,7 @@ export default async function ServicePage({ params }: Props) {
         <LeadForm variant="full" interests={[s.title, ...formInterests]} source={`service final CTA: ${s.slug}`} submitLabel="Submit" />
       </FinalCta>
 
-      <Faq heading={h.faqs ?? `${cap(anchorOf(s))} FAQs`} items={s.faqs} />
+      <Faq heading={faqSection?.h2 ?? h.faqs ?? `${cap(anchorOf(s))} FAQs`} intro={faqSection?.answer} items={allFaqs} />
 
       {b.posts && <Resources heading={h.posts ?? `${cap(anchorOf(s))} insights`} posts={posts} tone="light" />}
 

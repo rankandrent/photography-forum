@@ -21,5 +21,245 @@
     "saas",
     "finance"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "web app design",
+  "sourceContext": "US UI/UX design agency; this page sells design engagements for logged-in web applications with complex workflows, tables and permissions.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "Web app design services plan the information architecture (IA), workflows and user interface (UI) of logged-in web applications, for example admin consoles, customer portals and software as a service (SaaS) products. Our web app design takes 8–16 weeks, costs $60,000–$180,000, and ends with a component library and developer-ready Figma files.",
+  "sections": [
+    {
+      "h2": "What is web app design?",
+      "format": "paragraph",
+      "answer": "<strong>Web app design is the user experience (UX) and UI design of software that runs in a browser after sign-in, for example a customer relationship management (CRM) tool or an admin console.</strong> Designers structure navigation, workflows, data tables and permissions for repeated daily use.",
+      "body": "<p>Web application design differs from <a href=\"/services/ui-ux-web-design/\">UI UX web design</a> in purpose: a marketing website converts visitors, while a web app supports users who complete the same tasks every day. Web app UI therefore prioritizes speed, keyboard access and clear system states over storytelling.</p>"
+    },
+    {
+      "h2": "What does web app design include?",
+      "format": "list",
+      "answer": "<strong>Our web app design services include 6 deliverables:</strong> workflow research, an information architecture, wireframes, a clickable prototype, a web app UI kit and a design handoff package.",
+      "items": [
+        {
+          "title": "Workflow research.",
+          "body": "Interviews and task analysis with 5–8 users per role, for example admins, managers and operators."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "A navigation model and sitemap validated with tree testing in Optimal Workshop, for example 10–15 tasks per test."
+        },
+        {
+          "title": "Wireframes.",
+          "body": "Low-fidelity screens for every workflow, for example list views, detail views, forms and settings."
+        },
+        {
+          "title": "Clickable prototype.",
+          "body": "A Figma prototype tested with 5 users per round in Maze, for example a 5-task test of the core workflow."
+        },
+        {
+          "title": "Web app UI kit.",
+          "body": "Components for complex screens, for example data tables, filters, bulk actions, empty states and permission states."
+        },
+        {
+          "title": "Design handoff package.",
+          "body": "Annotated Figma files, responsive breakpoints and component specs mapped to Storybook, for example 3 breakpoints at 1280, 1440 and 1920 px."
+        }
+      ]
+    },
+    {
+      "h2": "How does the web app design process work?",
+      "format": "steps",
+      "answer": "<strong>The web app design process takes 8–16 weeks (40–80 working days) and runs in 6 steps</strong>, from discovery to design handoff.",
+      "items": [
+        {
+          "title": "Discovery and workflow research (5–10 days)",
+          "body": "We interview users per role, map current workflows as Jobs to be Done and agree the success metrics."
+        },
+        {
+          "title": "Information architecture (5–10 days)",
+          "body": "Designers build the navigation model and validate the navigation model with card sorting and tree testing."
+        },
+        {
+          "title": "Wireframes and prototype (10–20 days)",
+          "body": "Designers wireframe every workflow and build a clickable Figma prototype of the core tasks."
+        },
+        {
+          "title": "Usability testing (5–10 days)",
+          "body": "Each round tests 5 users on the core tasks and scores the prototype with the System Usability Scale (SUS)."
+        },
+        {
+          "title": "Visual UI and component library (10–20 days)",
+          "body": "Designers apply the brand, build the web app UI kit and check every screen against Web Content Accessibility Guidelines (WCAG) 2.2 level AA."
+        },
+        {
+          "title": "Design handoff (5–10 days)",
+          "body": "We hand over Figma files and component specs, then review the first builds with developers."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of web app design?",
+      "format": "cards",
+      "answer": "<strong>Web app design has 4 benefits:</strong> it increases feature adoption, improves task efficiency, reduces training time and develops a scalable component library.",
+      "items": [
+        {
+          "title": "Increases feature adoption",
+          "body": "Clear navigation and discoverable actions increase the share of users who use each new feature."
+        },
+        {
+          "title": "Improves task efficiency",
+          "body": "Keyboard shortcuts, bulk actions and saved filters improve the speed of repeated daily tasks."
+        },
+        {
+          "title": "Reduces training time",
+          "body": "Consistent patterns across screens reduce the hours new users spend learning the web app."
+        },
+        {
+          "title": "Develops a scalable component library",
+          "body": "Each release adds tested components to one library, so the web app UI develops without one-off screens."
+        }
+      ]
+    },
+    {
+      "h2": "Web app design vs UI UX web design",
+      "format": "table",
+      "answer": "<strong>Web app design structures logged-in workflows for repeated use; UI UX web design shapes marketing websites that convert visitors.</strong> Products with a public site and a signed-in app need both services.",
+      "caption": "Comparison of web app design and UI UX web design",
+      "columns": [
+        "Criterion",
+        "Web app design",
+        "UI UX web design"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Signed-in users who return daily",
+          "Visitors who arrive from search and ads"
+        ],
+        [
+          "Core screens",
+          "Tables, forms, dashboards and settings",
+          "Landing pages, service pages and blog posts"
+        ],
+        [
+          "Success metric",
+          "Task success rate and time on task",
+          "Conversion rate and Core Web Vitals"
+        ],
+        [
+          "Timeline",
+          "8–16 weeks",
+          "4–8 weeks"
+        ],
+        [
+          "Price on this site",
+          "$60,000–$180,000",
+          "$25,000–$60,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UI UX web design",
+          "to": "/services/ui-ux-web-design/"
+        },
+        {
+          "anchor": "SaaS UX design",
+          "to": "/services/saas-ux-design/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does web app design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Web app design costs $60,000–$180,000 and takes 8–16 weeks.</strong> The price depends on 4 factors: the number of workflows, the number of user roles, the number of test rounds and the size of the component library.",
+      "body": "<p>A web app with 5–6 workflows and 2 user roles sits near $60,000. A web app with 20 or more workflows, 5 user roles, 3 test rounds and a full component library sits near $180,000. Teams that build a new product from zero compare scope with <a href=\"/services/digital-product-design-services/\">digital product design services</a>.</p>"
+    },
+    {
+      "h2": "When should a software company hire web app design services?",
+      "format": "list",
+      "answer": "<strong>A software company should hire web app design services in 5 situations:</strong>",
+      "items": [
+        "A new web application is planned, if the team has engineers and no product designer.",
+        "Support tickets rise, if users cannot find core features.",
+        "New features ship every sprint, if each feature adds a one-off screen.",
+        "Enterprise buyers ask for roles and permissions, if the current UI has a single user type.",
+        "An accessibility requirement applies, for example a WCAG 2.2 AA clause in a procurement contract."
+      ]
+    },
+    {
+      "h2": "Web app design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about web app design services.</strong>",
+      "faqs": [
+        {
+          "q": "Is web app design different from website design?",
+          "a": "<p>Yes. Web app design supports signed-in users who repeat tasks daily, while website design converts visitors on marketing pages.</p>"
+        },
+        {
+          "q": "Do you design data tables and permissions?",
+          "a": "<p>Yes. Web app design covers data tables, filters, bulk actions, user roles and permission states for every workflow in scope.</p>"
+        },
+        {
+          "q": "Does web app design include responsive layouts?",
+          "a": "<p>Yes. Web app design includes responsive layouts for 3 desktop breakpoints and mobile layouts for the tasks users complete on a phone.</p>"
+        },
+        {
+          "q": "Can you redesign an existing web app in phases?",
+          "a": "<p>Yes. A phased web app redesign starts with the highest-traffic workflow and ships one workflow per release.</p>"
+        },
+        {
+          "q": "How long does web app design take?",
+          "a": "<p>Web app design takes 8–16 weeks, which equals 40–80 working days, from discovery to design handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "web app design",
+      "information architecture",
+      "Jobs to be Done",
+      "Optimal Workshop",
+      "Figma",
+      "Maze",
+      "Storybook",
+      "WCAG 2.2",
+      "System Usability Scale (SUS)",
+      "Core Web Vitals"
+    ],
+    "ngrams": [
+      "web app design services",
+      "web app design",
+      "web application design",
+      "web app ui",
+      "information architecture",
+      "design handoff"
+    ],
+    "skipgrams": [
+      "design … web application",
+      "web app … workflows",
+      "ui … for web apps",
+      "app … information architecture"
+    ],
+    "nlpKeywords": [
+      "workflows",
+      "data tables",
+      "permissions",
+      "empty states",
+      "responsive layouts",
+      "component library",
+      "user roles",
+      "navigation model"
+    ]
+  },
+  "mentions": [
+    "web app design",
+    "information architecture",
+    "Jobs to be Done",
+    "Optimal Workshop",
+    "Figma",
+    "Maze",
+    "Storybook",
+    "WCAG 2.2",
+    "System Usability Scale (SUS)",
+    "Core Web Vitals"
+  ]
 }

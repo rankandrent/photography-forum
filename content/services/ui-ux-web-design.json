@@ -143,12 +143,12 @@
         [
           "Timeline",
           "4–8 weeks",
-          "4–16 weeks"
+          "8–16 weeks"
         ],
         [
           "Price on this site",
           "$25,000–$60,000",
-          "$25,000–$180,000"
+          "$60,000–$180,000"
         ]
       ],
       "links": [
@@ -169,9 +169,9 @@
       "body": "<p>A website redesign with 6–8 page templates, 1 landing page and a Webflow component set sits near $25,000. A multi-audience site with 15–20 page templates, 5 campaign landing pages, a tree-tested IA and a WordPress or Contentful component set sits near $60,000. Online stores with category, product and checkout pages follow <a href=\"/services/ecommerce-ux-design-services/\">e-commerce UX design services</a> instead.</p>"
     },
     {
-      "h2": "When should a company hire UI UX web design?",
+      "h2": "When does a marketing team need UI UX web design?",
       "format": "list",
-      "answer": "<strong>A company should hire UI UX web design in 5 situations:</strong>",
+      "answer": "<strong>A marketing team needs UI UX web design in 5 situations:</strong>",
       "items": [
         "Demo requests stay flat, if website traffic grows month after month.",
         "A rebrand launches, if the current website still carries the old messaging.",

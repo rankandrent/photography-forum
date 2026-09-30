@@ -83,6 +83,8 @@ for (const file of pages) {
   for (const [, h] of main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)) {
     const text = strip(h).replace(/\s+/g, " ").trim();
     if (BOILERPLATE_H2.test(text)) continue;
+    // query-shaped H2s that carry the page's own central entity are intentional
+    if (svc.centralEntity && text.toLowerCase().includes(svc.centralEntity.toLowerCase())) continue;
     const pattern = text.toLowerCase().split(/\s+/).filter((w) => !h1Words.has(w)).join(" ");
     // supplementary blocks (industry chips, case studies, insights, FAQs) are shared on purpose
     if (!pattern || SUPPLEMENTARY_H2.test(pattern)) continue;

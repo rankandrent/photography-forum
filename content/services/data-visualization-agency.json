@@ -22,5 +22,241 @@
     "healthcare",
     "supply-chain"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "data visualization",
+  "sourceContext": "US UI/UX design agency; this page sells custom chart, interactive report and data storytelling projects with accessible visual encoding.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "A data visualization agency turns complex datasets into charts, interactive reports and visual stories, with the chart type, visual encoding and chart accessibility chosen for each question. Our data visualization projects take 4–8 weeks, cost $25,000–$60,000, and end with a visualization style guide and D3.js-ready specs.",
+  "sections": [
+    {
+      "h2": "What is data visualization?",
+      "format": "paragraph",
+      "answer": "<strong>Data visualization is the practice of encoding data as position, length, colour and shape, so people compare values and see patterns without reading a table.</strong> A data visualization agency chooses the chart type, the visual encoding and the annotations for each question in the data.",
+      "body": "<p>Data visualization design goes deeper than <a href=\"/services/dashboard-design-services/\">dashboard design services</a>: a dashboard combines standard charts, while data visualization design builds interactive charts and data storytelling pieces, for example a D3.js network graph or an annotated scrolling report.</p>"
+    },
+    {
+      "h2": "What does data visualization include?",
+      "format": "list",
+      "answer": "<strong>Our data visualization agency services include 6 deliverables:</strong> a data audit, a chart selection matrix, a visualization style guide, interactive chart prototypes, a chart accessibility spec and a developer handoff.",
+      "items": [
+        {
+          "title": "Data audit.",
+          "body": "A review of the datasets, fields and update frequency, for example daily sales by region or hourly sensor readings."
+        },
+        {
+          "title": "Chart selection matrix.",
+          "body": "Rules that match each question to a chart type, for example small multiples for comparisons across 6 regions."
+        },
+        {
+          "title": "Visualization style guide.",
+          "body": "Colour scales, typography, axis and annotation rules, for example ColorBrewer sequential scales for ordered values."
+        },
+        {
+          "title": "Interactive chart prototypes.",
+          "body": "Clickable prototypes in Figma or Observable, for example hover tooltips, brushing and filtering."
+        },
+        {
+          "title": "Chart accessibility spec.",
+          "body": "Rules that meet Web Content Accessibility Guidelines (WCAG) 2.2, for example 3:1 contrast for chart marks, text alternatives and a data table for screen reader users."
+        },
+        {
+          "title": "Developer handoff.",
+          "body": "Specs for D3.js or Vega-Lite, for example scales, domains, margins and transition timings."
+        }
+      ]
+    },
+    {
+      "h2": "How does the data visualization process work?",
+      "format": "steps",
+      "answer": "<strong>The data visualization process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from data audit to developer handoff.",
+      "items": [
+        {
+          "title": "Data audit and questions (3–5 days)",
+          "body": "We review the datasets and list the questions each audience asks of the data."
+        },
+        {
+          "title": "Chart selection and sketches (5–10 days)",
+          "body": "Designers match each question to a chart type and sketch 2–3 visual encodings per question."
+        },
+        {
+          "title": "Interactive prototypes (5–10 days)",
+          "body": "Designers build interactive charts in Figma or Observable with real data samples."
+        },
+        {
+          "title": "Testing and accessibility (5–10 days)",
+          "body": "Users from each audience answer 5 questions with the charts, and designers check every chart against WCAG 2.2."
+        },
+        {
+          "title": "Style guide and handoff (2–5 days)",
+          "body": "We hand over the visualization style guide and D3.js or Vega-Lite specs to developers."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of data visualization?",
+      "format": "cards",
+      "answer": "<strong>Data visualization has 4 benefits:</strong> it increases report engagement, improves data literacy, reduces time to insight and develops a visual language for data.",
+      "items": [
+        {
+          "title": "Increases report engagement",
+          "body": "Annotated charts and data storytelling increase the share of readers who finish a report."
+        },
+        {
+          "title": "Improves data literacy",
+          "body": "Clear chart types and plain annotations improve how accurately non-analysts read the data."
+        },
+        {
+          "title": "Reduces time to insight",
+          "body": "Visual encoding by position and length reduces the time readers spend comparing values."
+        },
+        {
+          "title": "Develops a visual language for data",
+          "body": "A shared style guide develops one colour and chart system across reports, dashboards and presentations."
+        }
+      ]
+    },
+    {
+      "h2": "Data visualization vs dashboard design",
+      "format": "table",
+      "answer": "<strong>Data visualization builds custom charts and visual stories for specific questions; dashboard design builds screens of standard charts for daily monitoring.</strong> Teams that publish data reports choose data visualization.",
+      "caption": "Comparison of data visualization and dashboard design",
+      "columns": [
+        "Criterion",
+        "Data visualization",
+        "Dashboard design"
+      ],
+      "rows": [
+        [
+          "Main output",
+          "Custom charts, interactive reports and visual stories",
+          "Dashboard screens and a component kit"
+        ],
+        [
+          "Chart types",
+          "Custom, for example Sankey, network and small-multiple charts",
+          "Standard line, bar, key performance indicator (KPI) card and table components"
+        ],
+        [
+          "Tools",
+          "D3.js, Vega-Lite and Observable",
+          "Figma, Storybook, Tableau and Power BI"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "4–8 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$25,000–$60,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "dashboard design services",
+          "to": "/services/dashboard-design-services/"
+        },
+        {
+          "anchor": "dashboard UX design",
+          "to": "/services/dashboard-ux-design/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does data visualization cost?",
+      "format": "paragraph",
+      "answer": "<strong>Data visualization costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of charts, the level of interactivity, the number of datasets and the depth of the chart accessibility spec.",
+      "body": "<p>A set of 8–10 static charts with a visualization style guide sits near $25,000. An interactive report with 15 or more interactive charts, 3 datasets and a full chart accessibility spec sits near $60,000. Teams that need the charts inside a product continue with <a href=\"/services/web-app-design-services/\">web app design services</a>.</p>"
+    },
+    {
+      "h2": "When should a data team hire a data visualization agency?",
+      "format": "list",
+      "answer": "<strong>A data team should hire a data visualization agency in 5 situations:</strong>",
+      "items": [
+        "An annual report is planned, if the data needs more than standard bar charts.",
+        "Readers misread existing charts, if the visual encoding does not match the data type.",
+        "A product shows data to customers, if the charts need a branded, interactive design.",
+        "Chart accessibility becomes a requirement, for example a WCAG 2.2 AA clause in a public-sector contract.",
+        "Several teams publish charts, if each team uses different colours and chart styles."
+      ]
+    },
+    {
+      "h2": "Data visualization FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about a data visualization agency.</strong>",
+      "faqs": [
+        {
+          "q": "Do you build charts in D3.js?",
+          "a": "<p>Yes. A data visualization agency project delivers D3.js or Vega-Lite specs, and Observable prototypes use D3.js with real data.</p>"
+        },
+        {
+          "q": "Can data visualizations be accessible?",
+          "a": "<p>Yes. Accessible data visualizations meet WCAG 2.2 with 3:1 contrast for chart marks, text alternatives and a data table for screen reader users.</p>"
+        },
+        {
+          "q": "Is data visualization the same as a dashboard?",
+          "a": "<p>No. Data visualization builds custom charts for specific questions, while a dashboard combines standard charts for daily monitoring.</p>"
+        },
+        {
+          "q": "Do you design charts for Tableau and Power BI?",
+          "a": "<p>Yes. Data visualization design covers Tableau and Power BI, with colour scales and chart rules applied in the formatting settings of each tool.</p>"
+        },
+        {
+          "q": "How long does a data visualization project take?",
+          "a": "<p>A data visualization project takes 4–8 weeks, which equals 20–40 working days, from data audit to developer handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "data visualization",
+      "visual encoding",
+      "D3.js",
+      "Vega-Lite",
+      "Observable",
+      "Tableau",
+      "Power BI",
+      "ColorBrewer",
+      "WCAG 2.2",
+      "Figma"
+    ],
+    "ngrams": [
+      "data visualization agency",
+      "data visualization",
+      "data visualization design",
+      "interactive charts",
+      "data storytelling",
+      "chart accessibility"
+    ],
+    "skipgrams": [
+      "visualization … data",
+      "charts … interactive",
+      "data … visual story",
+      "design … data visualization"
+    ],
+    "nlpKeywords": [
+      "chart types",
+      "visual encoding",
+      "colour scales",
+      "annotations",
+      "interactive reports",
+      "screen reader",
+      "datasets",
+      "small multiples"
+    ]
+  },
+  "mentions": [
+    "data visualization",
+    "visual encoding",
+    "D3.js",
+    "Vega-Lite",
+    "Observable",
+    "Tableau",
+    "Power BI",
+    "ColorBrewer",
+    "WCAG 2.2",
+    "Figma"
+  ]
 }

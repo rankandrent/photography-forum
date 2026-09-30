@@ -21,5 +21,241 @@
     "startups",
     "healthcare"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "mobile app UI UX design",
+  "sourceContext": "US UI/UX design agency; this page sells cross-platform iOS and Android app design engagements and books app design calls.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "Mobile app UI UX design services plan the user experience (UX) and design the user interface (UI) of an iOS and Android app, from user flows to a tested app prototype and developer-ready screens. Our mobile app UI UX design takes 4–8 weeks, costs $25,000–$60,000, and follows Apple Human Interface Guidelines (HIG) and Material Design 3.",
+  "sections": [
+    {
+      "h2": "What is mobile app UI UX design?",
+      "format": "paragraph",
+      "answer": "<strong>Mobile app UI UX design is the process of planning how an app works (UX) and how an app looks (UI) on iPhone and Android phones.</strong> Designers map user flows, size touch targets for thumbs and apply platform guidelines, for example Apple HIG for iOS and Material Design 3 for Android.",
+      "body": "<p>Mobile app UI UX design covers both platforms in one project, while <a href=\"/services/ios-app-design-services/\">iOS app design services</a> focus on Apple devices only. A cross-platform app design shares one user flow map and adapts navigation, typography and controls per platform, for example a tab bar on iOS and a navigation bar on Android.</p>"
+    },
+    {
+      "h2": "What does mobile app UI UX design include?",
+      "format": "list",
+      "answer": "<strong>Our mobile app UI UX design services include 6 deliverables:</strong> user research, user flows, wireframes, an app prototype, a UI kit and app store assets.",
+      "items": [
+        {
+          "title": "User research.",
+          "body": "Interviews with 5–8 target users and a review of competitor apps, for example the 3 apps users already switch between."
+        },
+        {
+          "title": "User flows.",
+          "body": "Diagrams of every path through the app, for example onboarding, sign-in, checkout and push-notification opt-in."
+        },
+        {
+          "title": "Wireframes.",
+          "body": "Low-fidelity screens in Figma for every flow, for example the home screen, search and settings."
+        },
+        {
+          "title": "App prototype.",
+          "body": "A clickable Figma prototype tested with users in Maze, for example a 5-task onboarding test."
+        },
+        {
+          "title": "UI kit.",
+          "body": "Components for iOS and Android, for example buttons, tab bars and bottom sheets, with touch targets of 44×44 pt on iOS and 48×48 dp on Android."
+        },
+        {
+          "title": "App store assets.",
+          "body": "Screenshots and preview frames for the App Store and Google Play, for example 6 screenshots per platform."
+        }
+      ]
+    },
+    {
+      "h2": "How does the mobile app UI UX design process work?",
+      "format": "steps",
+      "answer": "<strong>The mobile app UI UX design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from discovery to developer handoff.",
+      "items": [
+        {
+          "title": "Discovery and research (3–5 days)",
+          "body": "We interview 5–8 target users, review app analytics and agree the core jobs of the app."
+        },
+        {
+          "title": "User flows and wireframes (5–10 days)",
+          "body": "Designers map every flow and wireframe the iOS and Android screens in Figma."
+        },
+        {
+          "title": "Prototype and testing (5–10 days)",
+          "body": "A clickable app prototype is tested with 5 users per round in Maze or in moderated sessions."
+        },
+        {
+          "title": "Visual UI design (5–10 days)",
+          "body": "Designers apply the brand to every screen, build the UI kit and check contrast against Web Content Accessibility Guidelines (WCAG) 2.2 level AA."
+        },
+        {
+          "title": "Developer handoff (2–5 days)",
+          "body": "We hand over Figma files, specs and assets to developers working in Swift, Kotlin, React Native or Flutter, and review the first TestFlight and Google Play Console test builds."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of mobile app UI UX design?",
+      "format": "cards",
+      "answer": "<strong>Mobile app UI UX design has 4 benefits:</strong> it increases retention, improves the mobile UX on both platforms, reduces development rework and develops a reusable UI kit.",
+      "items": [
+        {
+          "title": "Increases retention",
+          "body": "Short onboarding flows and clear navigation increase the share of users who return to the app after the first session."
+        },
+        {
+          "title": "Improves the mobile UX",
+          "body": "Platform-native controls and thumb-zone layouts improve task completion on iPhone and Android phones."
+        },
+        {
+          "title": "Reduces development rework",
+          "body": "Testing an app prototype before coding reduces the number of screens developers rebuild after launch."
+        },
+        {
+          "title": "Develops a reusable UI kit",
+          "body": "Every new feature adds components to one Figma library, so the UI kit develops release by release."
+        }
+      ]
+    },
+    {
+      "h2": "Mobile app UI UX design vs iOS app design",
+      "format": "table",
+      "answer": "<strong>Mobile app UI UX design covers iOS and Android in one project; iOS app design covers iPhone, iPad and Apple Watch only.</strong> Teams that ship to both app stores choose mobile app UI UX design.",
+      "caption": "Comparison of mobile app UI UX design and iOS app design",
+      "columns": [
+        "Criterion",
+        "Mobile app UI UX design",
+        "iOS app design"
+      ],
+      "rows": [
+        [
+          "Platforms",
+          "iOS and Android phones",
+          "iPhone, iPad and Apple Watch"
+        ],
+        [
+          "Guidelines",
+          "Apple HIG and Material Design 3",
+          "Apple HIG only"
+        ],
+        [
+          "Handoff target",
+          "Swift, Kotlin, React Native or Flutter",
+          "SwiftUI and UIKit"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "4–8 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$25,000–$60,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "iOS app design services",
+          "to": "/services/ios-app-design-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does mobile app UI UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Mobile app UI UX design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of user flows, the number of platforms, the number of test rounds and the size of the UI kit.",
+      "body": "<p>A minimum viable product (MVP) app with 4–5 flows on iOS and Android sits near $25,000. An app with 12–15 flows, 3 test rounds and a full UI kit sits near $60,000. Apps that need a full design system move to a $60,000–$180,000 engagement of 8–16 weeks, and early-stage teams compare scope with <a href=\"/services/ui-ux-design-services-for-startups/\">UI UX design services for startups</a>.</p>"
+    },
+    {
+      "h2": "When should an app business hire mobile app UI UX design services?",
+      "format": "list",
+      "answer": "<strong>An app business should hire mobile app UI UX design services in 5 situations:</strong>",
+      "items": [
+        "A new app is planned, if the team has no designer for iOS and Android.",
+        "App store ratings fall, if reviews mention confusing navigation.",
+        "Retention drops after the first week, if onboarding was never tested with users.",
+        "A web product moves to mobile, if the desktop layout does not fit a phone screen.",
+        "An Android version follows an iOS app, if the iOS design ignores Material Design 3."
+      ]
+    },
+    {
+      "h2": "Mobile app UI UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about mobile app UI UX design services.</strong>",
+      "faqs": [
+        {
+          "q": "Do you design for both iOS and Android?",
+          "a": "<p>Yes. Mobile app UI UX design services cover iOS and Android, with one user flow map and platform-specific controls for each operating system.</p>"
+        },
+        {
+          "q": "Is one design enough for a React Native or Flutter app?",
+          "a": "<p>Yes. One mobile app design works for a React Native or Flutter app, with small platform variants, for example date pickers and back navigation.</p>"
+        },
+        {
+          "q": "Do you test the app prototype with real users?",
+          "a": "<p>Yes. Every app prototype is tested with 5 users per round in Maze or in moderated sessions before developer handoff.</p>"
+        },
+        {
+          "q": "Can you redesign an existing mobile app?",
+          "a": "<p>Yes. A mobile app redesign starts with a review of the current app, app store reviews and analytics before any new screens are designed.</p>"
+        },
+        {
+          "q": "How long does mobile app UI UX design take?",
+          "a": "<p>Mobile app UI UX design takes 4–8 weeks, which equals 20–40 working days, from discovery to developer handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "mobile app UI UX design",
+      "Apple Human Interface Guidelines",
+      "Material Design 3",
+      "Figma",
+      "Maze",
+      "TestFlight",
+      "Google Play Console",
+      "WCAG 2.2",
+      "React Native",
+      "Flutter"
+    ],
+    "ngrams": [
+      "mobile app ui ux design services",
+      "mobile app ui ux design",
+      "mobile app design",
+      "mobile ux",
+      "app prototype",
+      "cross-platform app design"
+    ],
+    "skipgrams": [
+      "design … mobile app",
+      "ui … for android",
+      "ux … ios app",
+      "app … user flows"
+    ],
+    "nlpKeywords": [
+      "user flows",
+      "touch targets",
+      "thumb-zone layouts",
+      "onboarding",
+      "push notifications",
+      "app store screenshots",
+      "retention",
+      "UI kit"
+    ]
+  },
+  "mentions": [
+    "mobile app UI UX design",
+    "Apple Human Interface Guidelines",
+    "Material Design 3",
+    "Figma",
+    "Maze",
+    "TestFlight",
+    "Google Play Console",
+    "WCAG 2.2",
+    "React Native",
+    "Flutter"
+  ]
 }

@@ -143,12 +143,12 @@
         [
           "Timeline",
           "8–16 weeks",
-          "4–8 weeks"
+          "8–16 weeks"
         ],
         [
           "Price on this site",
           "$60,000–$180,000",
-          "$25,000–$60,000 design sprint"
+          "$60,000–$180,000"
         ]
       ],
       "links": [
@@ -169,9 +169,9 @@
       "body": "<p>A single-platform web product with 1 user group, 4–5 core flows and 1 validation round sits near $60,000. A web and mobile product with 3 user groups, 10–12 core flows, 3 validation rounds and a starter component library sits near $180,000. Teams that need a full component library with governance add <a href=\"/services/design-system-services/\">design system services</a>.</p>"
     },
     {
-      "h2": "When should a company hire digital product design services?",
+      "h2": "When should a founder hire digital product design services?",
       "format": "list",
-      "answer": "<strong>A company should hire digital product design services in 5 situations:</strong>",
+      "answer": "<strong>A founder should hire digital product design services in 5 situations:</strong>",
       "items": [
         "A new software product needs a design, if the company has no in-house product designers.",
         "A startup funds version 1 of a product, if the launch date sits 3–6 months away.",

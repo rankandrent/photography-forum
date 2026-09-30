@@ -22,5 +22,241 @@
     "supply-chain",
     "finance"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "dashboard UX design",
+  "sourceContext": "US UI/UX design agency; this page sells dashboard structure work (information architecture, decision workflows, alerts, role-based views) to data-heavy product teams.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "Dashboard UX design structures the information hierarchy, decision workflows and alerts of a dashboard, so each user role sees the key performance indicators (KPIs) behind the decisions that role makes. Our dashboard UX design takes 4–8 weeks, costs $25,000–$60,000, and ends with tested role-based views and drill-down paths.",
+  "sections": [
+    {
+      "h2": "What is dashboard UX design?",
+      "format": "paragraph",
+      "answer": "<strong>Dashboard UX design is the user experience (UX) design of a dashboard: the choice of metrics, the hierarchy of metrics and the path from a number to an action.</strong> Designers start from the decisions each role makes, for example approving orders or escalating incidents, and remove metrics no decision needs.",
+      "body": "<p>Dashboard UX design sets the structure, and <a href=\"/services/dashboard-design-services/\">dashboard design services</a> set the visual layer, for example chart styles and component kits. A KPI dashboard with a clear dashboard information architecture shows 5–7 metrics per view, with a drill-down path to the detail behind each metric.</p>"
+    },
+    {
+      "h2": "What does dashboard UX design include?",
+      "format": "list",
+      "answer": "<strong>Our dashboard UX design includes 6 deliverables:</strong> a decision inventory, a KPI map, a dashboard information architecture, role-based views, an alerting model and a tested prototype.",
+      "items": [
+        {
+          "title": "Decision inventory.",
+          "body": "A list of the decisions each user role makes, for example daily stock reorders or weekly budget reviews."
+        },
+        {
+          "title": "KPI map.",
+          "body": "Every metric linked to one decision and one data source, for example on-time delivery rate linked to the weekly carrier review."
+        },
+        {
+          "title": "Dashboard information architecture.",
+          "body": "The hierarchy of overview, summary and detail levels, for example 1 overview screen with 3 drill-down levels."
+        },
+        {
+          "title": "Role-based views.",
+          "body": "Separate views per role built on role-based access control, for example an executive view and an analyst view."
+        },
+        {
+          "title": "Alerting model.",
+          "body": "Thresholds, alert states and notification rules, for example a red state when stock falls below 2 days of cover."
+        },
+        {
+          "title": "Tested prototype.",
+          "body": "A clickable Figma prototype tested with 5 users per role, for example a 5-task decision test in Maze."
+        }
+      ]
+    },
+    {
+      "h2": "How does the dashboard UX design process work?",
+      "format": "steps",
+      "answer": "<strong>The dashboard UX design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from decision discovery to handoff.",
+      "items": [
+        {
+          "title": "Decision discovery (3–5 days)",
+          "body": "We interview 5–8 users per role and list decisions, data sources and workarounds as Jobs to be Done."
+        },
+        {
+          "title": "KPI mapping and information architecture (5–10 days)",
+          "body": "Designers map each KPI to a decision and structure the overview, summary and detail levels."
+        },
+        {
+          "title": "Workflows and alerts (5–10 days)",
+          "body": "Designers wireframe drill-down paths, filters and alert states for each role-based view."
+        },
+        {
+          "title": "Prototype testing (5–10 days)",
+          "body": "Users from each role complete 5 decision tasks in a Figma prototype, and designers fix every failed task."
+        },
+        {
+          "title": "Handoff (2–5 days)",
+          "body": "We hand over the information architecture, annotated wireframes and alert rules to the visual design and engineering teams."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of dashboard UX design?",
+      "format": "cards",
+      "answer": "<strong>Dashboard UX design has 4 benefits:</strong> it increases dashboard adoption, improves decision-making, reduces time to find data and develops shared KPI definitions.",
+      "items": [
+        {
+          "title": "Increases dashboard adoption",
+          "body": "Views built around each role's decisions increase the share of users who open the dashboard every week."
+        },
+        {
+          "title": "Improves decision-making",
+          "body": "A clear information hierarchy puts the metric behind each decision first, so users act on the right number."
+        },
+        {
+          "title": "Reduces time to find data",
+          "body": "Drill-down paths and saved filters reduce the clicks between an alert and the record behind the alert."
+        },
+        {
+          "title": "Develops shared KPI definitions",
+          "body": "The KPI map develops one definition per metric across product, operations and finance teams."
+        }
+      ]
+    },
+    {
+      "h2": "Dashboard UX design vs dashboard design services",
+      "format": "table",
+      "answer": "<strong>Dashboard UX design decides what a dashboard shows and for whom; dashboard design services decide how the dashboard looks and how developers build the dashboard.</strong> Most teams run dashboard UX design first.",
+      "caption": "Comparison of dashboard UX design and dashboard design services",
+      "columns": [
+        "Criterion",
+        "Dashboard UX design",
+        "Dashboard design services"
+      ],
+      "rows": [
+        [
+          "Focus",
+          "Metrics, hierarchy, workflows and alerts",
+          "Layout, chart styles, colour and components"
+        ],
+        [
+          "Main output",
+          "Dashboard information architecture and tested prototype",
+          "High-fidelity screens and a component kit"
+        ],
+        [
+          "Key question",
+          "Which decision does each view support?",
+          "Which chart shows each metric clearly?"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "4–8 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$25,000–$60,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "dashboard design services",
+          "to": "/services/dashboard-design-services/"
+        },
+        {
+          "anchor": "data visualization agency",
+          "to": "/services/data-visualization-agency/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does dashboard UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Dashboard UX design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of user roles, the number of KPIs, the number of data sources and the number of test rounds.",
+      "body": "<p>A single-role KPI dashboard with 10–15 metrics and 1 test round sits near $25,000. A multi-role operations dashboard with 4 role-based views, an alerting model and 3 test rounds sits near $60,000. Dashboards inside a larger product continue with <a href=\"/services/web-app-design-services/\">web app design services</a>.</p>"
+    },
+    {
+      "h2": "When does an operations team need dashboard UX design?",
+      "format": "list",
+      "answer": "<strong>An operations team needs dashboard UX design in 5 situations:</strong>",
+      "items": [
+        "Users export dashboard data to spreadsheets, if the dashboard does not answer daily questions.",
+        "Several roles share one dashboard, if executives and analysts need different levels of detail.",
+        "Operators ignore alerts, if every alert has the same priority.",
+        "A business intelligence (BI) rollout starts, for example a move to Power BI, Tableau or Looker.",
+        "Teams report different numbers for the same KPI, if metric definitions live in separate spreadsheets."
+      ]
+    },
+    {
+      "h2": "Dashboard UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about dashboard UX design.</strong>",
+      "faqs": [
+        {
+          "q": "Is dashboard UX design the same as dashboard visual design?",
+          "a": "<p>No. Dashboard UX design sets metrics, hierarchy and workflows, while dashboard visual design sets colours, chart styles and components.</p>"
+        },
+        {
+          "q": "Do you design dashboards for Power BI, Tableau or Looker?",
+          "a": "<p>Yes. Dashboard UX design works for Power BI, Tableau and Looker dashboards, and for custom dashboards built in code.</p>"
+        },
+        {
+          "q": "Does dashboard UX design include alerts?",
+          "a": "<p>Yes. Dashboard UX design includes an alerting model with thresholds, alert states and notification rules for each user role.</p>"
+        },
+        {
+          "q": "Should every user role see the same dashboard?",
+          "a": "<p>No. Every user role needs a role-based view, because an executive and an analyst make different decisions with different metrics.</p>"
+        },
+        {
+          "q": "How long does dashboard UX design take?",
+          "a": "<p>Dashboard UX design takes 4–8 weeks, which equals 20–40 working days, from decision discovery to handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "dashboard UX design",
+      "information architecture",
+      "key performance indicator (KPI)",
+      "Jobs to be Done",
+      "role-based access control",
+      "Figma",
+      "Maze",
+      "Power BI",
+      "Tableau",
+      "Looker"
+    ],
+    "ngrams": [
+      "dashboard ux design",
+      "dashboard ux",
+      "dashboard information architecture",
+      "role-based views",
+      "drill-down",
+      "kpi dashboard"
+    ],
+    "skipgrams": [
+      "dashboard … user experience",
+      "ux … for dashboards",
+      "dashboard … decision",
+      "alerts … dashboard"
+    ],
+    "nlpKeywords": [
+      "information hierarchy",
+      "decision workflows",
+      "alerting model",
+      "thresholds",
+      "user roles",
+      "drill-down paths",
+      "filters",
+      "KPI map"
+    ]
+  },
+  "mentions": [
+    "dashboard UX design",
+    "information architecture",
+    "key performance indicator (KPI)",
+    "Jobs to be Done",
+    "role-based access control",
+    "Figma",
+    "Maze",
+    "Power BI",
+    "Tableau",
+    "Looker"
+  ]
 }

@@ -169,9 +169,9 @@
       "body": "<p>A single-brand web design system with 25–30 components, a Figma library and Storybook documentation sits near $60,000. A multi-brand design system with light and dark themes, 60–80 web and mobile components and a governance rollout sits near $180,000. Teams that maintain the design system after release book an embedded user experience (UX) design team for $15,000–$40,000 per month through <a href=\"/services/ux-consulting-services/\">UX consulting services</a>.</p>"
     },
     {
-      "h2": "When should a company hire design system services?",
+      "h2": "When does a growing product team need design system services?",
       "format": "list",
-      "answer": "<strong>A company should hire design system services in 5 situations:</strong>",
+      "answer": "<strong>A growing product team needs design system services in 5 situations:</strong>",
       "items": [
         "The same component exists in several versions, if each team designed its own buttons and forms.",
         "A rebrand is planned, if colours and typography are hard-coded across products.",

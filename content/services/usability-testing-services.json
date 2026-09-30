@@ -173,9 +173,9 @@
       "body": "<p>An engagement of 2 moderated rounds with 5 participants each on 1 web prototype sits near $25,000. An engagement of 3 rounds on web and mobile, with 8 participants per round, unmoderated Maze studies and hard-to-recruit participants, for example physicians, sits near $60,000. Teams that need broader discovery before testing start with <a href=\"/services/ux-research-services/\">UX research services</a>.</p>"
     },
     {
-      "h2": "When should a company hire usability testing services?",
+      "h2": "When should a product team run usability testing?",
       "format": "list",
-      "answer": "<strong>A company should hire usability testing services in 5 situations:</strong>",
+      "answer": "<strong>A product team should run usability testing in 5 situations:</strong>",
       "items": [
         "A redesign is ready for development, if no real user has tried the new flows.",
         "Conversion rate drops after a release, if analytics cannot show why users stop.",

@@ -21,5 +21,241 @@
     "supply-chain",
     "finance"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "centralEntity": "dashboard design",
+  "sourceContext": "US UI/UX design agency; this page sells the visual layer of dashboards (layouts, chart selection, component kits, handoff) for analytics, operations and admin products.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "Dashboard design services create the visual user interface (UI) of analytics, operations and admin dashboards on top of a tested user experience (UX) structure: layouts, chart styles and a reusable component kit. Our dashboard design services take 4–8 weeks, cost $25,000–$60,000, and end with high-fidelity Figma screens and a developer-ready handoff.",
+  "sections": [
+    {
+      "h2": "What is dashboard design?",
+      "format": "paragraph",
+      "answer": "<strong>Dashboard design is the visual UI design of a screen that shows metrics, charts and tables for monitoring or analysis.</strong> Designers set the layout grid, chart selection, colour palette and data density, for example a 12-column grid with a row of 4 key performance indicator (KPI) cards over the main chart.",
+      "body": "<p>Dashboard design builds on <a href=\"/services/dashboard-ux-design/\">dashboard UX design</a>, which decides the metrics and hierarchy first. An analytics dashboard, an operations dashboard and an admin dashboard use one dashboard UI kit with different layouts, for example a chart-heavy analytics view and a table-heavy admin view.</p>"
+    },
+    {
+      "h2": "What does dashboard design include?",
+      "format": "list",
+      "answer": "<strong>Our dashboard design services include 6 deliverables:</strong> a layout grid, a chart selection guide, a colour palette for data, high-fidelity screens, a dashboard component kit and a developer handoff package.",
+      "items": [
+        {
+          "title": "Layout grid.",
+          "body": "A responsive grid for each screen size, for example 12 columns at 1440 px and 8 columns at 1024 px."
+        },
+        {
+          "title": "Chart selection guide.",
+          "body": "Rules that match each metric to one chart type, for example line charts for trends and bar charts for comparisons."
+        },
+        {
+          "title": "Colour palette for data.",
+          "body": "Categorical, sequential and status colours checked against Web Content Accessibility Guidelines (WCAG) 2.2, for example 3:1 contrast for chart lines against the background."
+        },
+        {
+          "title": "High-fidelity screens.",
+          "body": "Final Figma screens in light and dark mode, for example the overview, detail and settings screens."
+        },
+        {
+          "title": "Dashboard component kit.",
+          "body": "Reusable components built on design tokens, for example KPI cards, filters, data tables and chart containers."
+        },
+        {
+          "title": "Developer handoff package.",
+          "body": "Specs mapped to Storybook and to the chart library in use, for example Apache ECharts or Highcharts."
+        }
+      ]
+    },
+    {
+      "h2": "How does the dashboard design process work?",
+      "format": "steps",
+      "answer": "<strong>The dashboard design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from audit to developer handoff.",
+      "items": [
+        {
+          "title": "Audit and inputs (3–5 days)",
+          "body": "We review the current dashboard, the data model and the brand, and agree the screens in scope."
+        },
+        {
+          "title": "Layout and chart selection (5–10 days)",
+          "body": "Designers set the layout grid and match every metric to a chart type."
+        },
+        {
+          "title": "Visual design (5–10 days)",
+          "body": "Designers design high-fidelity screens in Figma in light and dark mode and check contrast against WCAG 2.2."
+        },
+        {
+          "title": "Component kit (5–10 days)",
+          "body": "Designers build KPI cards, filters, tables and chart containers on design tokens in one Figma library."
+        },
+        {
+          "title": "Developer handoff (2–5 days)",
+          "body": "We hand over specs mapped to Storybook and review the first coded screens against the Figma files."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of dashboard design?",
+      "format": "cards",
+      "answer": "<strong>Dashboard design has 4 benefits:</strong> it increases dashboard usage, improves chart readability, reduces development time and develops a consistent dashboard UI.",
+      "items": [
+        {
+          "title": "Increases dashboard usage",
+          "body": "Readable layouts and clear charts increase the share of users who open the dashboard each week."
+        },
+        {
+          "title": "Improves chart readability",
+          "body": "One chart type per question and a tested colour palette improve how fast users read each value."
+        },
+        {
+          "title": "Reduces development time",
+          "body": "A component kit on design tokens reduces the front-end hours spent on each new dashboard screen."
+        },
+        {
+          "title": "Develops a consistent dashboard UI",
+          "body": "Every new dashboard reuses the same kit, so the dashboard UI develops as one system across products."
+        }
+      ]
+    },
+    {
+      "h2": "Dashboard design vs dashboard UX design",
+      "format": "table",
+      "answer": "<strong>Dashboard design shapes how a dashboard looks and how developers build the dashboard; dashboard UX design decides which metrics each role sees.</strong> Teams with a validated dashboard structure start with dashboard design services.",
+      "caption": "Comparison of dashboard design and dashboard UX design",
+      "columns": [
+        "Criterion",
+        "Dashboard design",
+        "Dashboard UX design"
+      ],
+      "rows": [
+        [
+          "Focus",
+          "Layout, chart styles, colour and components",
+          "Metrics, hierarchy, workflows and alerts"
+        ],
+        [
+          "Main output",
+          "High-fidelity screens and a component kit",
+          "Dashboard information architecture and tested prototype"
+        ],
+        [
+          "Key question",
+          "Which chart shows each metric clearly?",
+          "Which decision does each view support?"
+        ],
+        [
+          "Timeline",
+          "4–8 weeks",
+          "4–8 weeks"
+        ],
+        [
+          "Price on this site",
+          "$25,000–$60,000",
+          "$25,000–$60,000"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "dashboard UX design",
+          "to": "/services/dashboard-ux-design/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does dashboard design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Dashboard design costs $25,000–$60,000 and takes 4–8 weeks.</strong> The price depends on 4 factors: the number of screens, the number of chart types, the number of themes and the size of the component kit.",
+      "body": "<p>An analytics dashboard with 5–6 screens and 1 theme sits near $25,000. An admin dashboard suite with 20 screens, light and dark mode and a full component kit sits near $60,000. Teams that need custom interactive charts add a <a href=\"/services/data-visualization-agency/\">data visualization agency</a> scope.</p>"
+    },
+    {
+      "h2": "When does a product team need dashboard design services?",
+      "format": "list",
+      "answer": "<strong>A product team needs dashboard design services in 5 situations:</strong>",
+      "items": [
+        "A dashboard looks inconsistent, if each screen was built by a different developer.",
+        "Users misread charts, if chart types do not match the data, for example pie charts with 12 slices.",
+        "A dark mode is planned, if the current colours fail WCAG 2.2 contrast.",
+        "Several products share dashboards, if each product has separate chart styles.",
+        "A Tableau, Power BI or Looker dashboard moves to a custom front end, if the team needs a branded dashboard UI."
+      ]
+    },
+    {
+      "h2": "Dashboard design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions buyers ask most about dashboard design services.</strong>",
+      "faqs": [
+        {
+          "q": "Do you design dashboards in Tableau or Power BI?",
+          "a": "<p>Yes. Dashboard design services cover Tableau, Power BI and Looker dashboards, with layout and colour rules for each tool.</p>"
+        },
+        {
+          "q": "Does dashboard design include dark mode?",
+          "a": "<p>Yes. Dashboard design includes a dark mode option, with every chart colour checked against WCAG 2.2 contrast in both themes.</p>"
+        },
+        {
+          "q": "Is dashboard design the same as dashboard UX design?",
+          "a": "<p>No. Dashboard design sets the visual UI and components, while dashboard UX design sets metrics, hierarchy and workflows.</p>"
+        },
+        {
+          "q": "Can you design an admin dashboard for an existing product?",
+          "a": "<p>Yes. An admin dashboard redesign reuses the product's design tokens and adds dashboard components, for example data tables and filters.</p>"
+        },
+        {
+          "q": "How long does dashboard design take?",
+          "a": "<p>Dashboard design takes 4–8 weeks, which equals 20–40 working days, from audit to developer handoff.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "dashboard design",
+      "Figma",
+      "Storybook",
+      "design tokens",
+      "WCAG 2.2",
+      "Tableau",
+      "Power BI",
+      "Looker",
+      "Apache ECharts",
+      "Highcharts"
+    ],
+    "ngrams": [
+      "dashboard design services",
+      "dashboard design",
+      "admin dashboard",
+      "analytics dashboard",
+      "dashboard ui",
+      "chart selection"
+    ],
+    "skipgrams": [
+      "design … admin dashboard",
+      "dashboard … charts",
+      "ui … for dashboards",
+      "dashboard … components"
+    ],
+    "nlpKeywords": [
+      "layout grid",
+      "chart types",
+      "data density",
+      "colour palette",
+      "component kit",
+      "dark mode",
+      "KPI cards",
+      "developer handoff"
+    ]
+  },
+  "mentions": [
+    "dashboard design",
+    "Figma",
+    "Storybook",
+    "design tokens",
+    "WCAG 2.2",
+    "Tableau",
+    "Power BI",
+    "Looker",
+    "Apache ECharts",
+    "Highcharts"
+  ]
 }
