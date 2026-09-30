@@ -43,3 +43,19 @@ Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_FORM_ENDPOINT`. Every l
 - Fill in `content/pages/about|privacy|terms.md` and remove `noindex: true`.
 - Set `SITE.email` and `SITE.sameAs` (LinkedIn, Clutch, G2 …) in `lib/site.ts`.
 - Add real logos and images to `public/`, and submit `sitemap.xml` in Google Search Console.
+
+## Deploy on Cloudflare Pages
+
+1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → pick `rankandrent/uiuxdesignservices.us`, production branch `main`.
+2. Build settings:
+   - Framework preset: **None**
+   - Build command: `npm run build`
+   - Build output directory: `out`
+3. Environment variables (Production and Preview):
+   - `NEXT_PUBLIC_SITE_URL` = `https://uiuxdesignservices.us`
+   - `NEXT_PUBLIC_FORM_ENDPOINT` = your form endpoint URL
+   - Node version comes from `.node-version` (22).
+4. **Save and Deploy.** Every push to `main` redeploys, and other branches get preview URLs.
+5. **Custom domains** → add `uiuxdesignservices.us` (and `www`). If the domain's DNS is on Cloudflare, the records are created for you.
+
+`public/_headers` sets long-lived caching for hashed assets and OG images, plus basic security headers.
