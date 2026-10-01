@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getServices().map((s) => u(routes.service(s.slug), 0.9, s.updated)),
     u(routes.industries, 0.8),
     ...getIndustries().map((i) => u(routes.industry(i.slug), 0.8, i.updated)),
-    u(routes.locations, 0.7),
+    ...(getLocations().length ? [u(routes.locations, 0.7)] : []),
     ...getLocations().filter((l) => !l.draft).map((l) => u(routes.location(l.slug), 0.8, l.updated)),
     u(routes.caseStudies, 0.7),
     ...getCaseStudies().map((c) => u(routes.caseStudy(c.slug), 0.7, c.date)),

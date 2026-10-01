@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
-import { anchorOf, getIndustries, servicesByCategory } from "@/lib/content";
+import { anchorOf, getIndustries, getLocations, servicesByCategory } from "@/lib/content";
 import { SITE, addressLine, cap, routes } from "@/lib/site";
 
 export function Footer() {
@@ -20,7 +20,7 @@ export function Footer() {
       title: "Company",
       links: [
         { label: "Our work", href: routes.caseStudies },
-        { label: "Locations", href: routes.locations },
+        ...(getLocations().length ? [{ label: "Locations", href: routes.locations }] : []),
         { label: "About", href: "/about/" },
         { label: "Contact", href: routes.contact },
       ],

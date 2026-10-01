@@ -81,7 +81,7 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
               </div>
             </div>
           </div>
-          <div className="hdr__dd hdr__dd--mega">
+          {!!locations.length && <div className="hdr__dd hdr__dd--mega">
             <Link href={routes.locations}>Locations</Link>
             <div className="hdr__dd-panel mega mega--ind mega--loc">
               <p className="mega__cat">UX design agency near you</p>
@@ -96,7 +96,7 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
                 <Link href={routes.locations} className="mega__all">All locations →</Link>
               </div>
             </div>
-          </div>
+          </div>}
           <Link href={routes.caseStudies}>Our work</Link>
           <Link href={routes.blog}>Insights</Link>
           <Link href={routes.contact} className="btn hdr__cta">Schedule a call</Link>
@@ -130,13 +130,13 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
           </div>
           <Link href={routes.industries} onClick={close} className="hdr__mall">All industries →</Link>
         </details>
-        <details className="hdr__mgroup">
+        {!!locations.length && <details className="hdr__mgroup">
           <summary>Locations</summary>
           <div className="hdr__mcat">
             {locations.map((i) => <Link key={i.href} href={i.href} onClick={close}>{i.title}</Link>)}
           </div>
           <Link href={routes.locations} onClick={close} className="hdr__mall">All locations →</Link>
-        </details>
+        </details>}
         <Link href={routes.caseStudies} onClick={close}>Our work</Link>
         <Link href={routes.blog} onClick={close}>Insights</Link>
         <Link href={routes.contact} className="btn" onClick={close}>Schedule a call</Link>

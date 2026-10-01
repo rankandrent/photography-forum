@@ -9,6 +9,7 @@ import { collectionLd, pageMetadata } from "@/lib/seo";
 import { cap, routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
+  noindex: !getLocations().length,
   title: "UX Design Agency Locations | US Cities We Serve",
   description: "UI UX design for product teams across the US: New York, San Francisco, Los Angeles, Chicago, Austin, Boston, Seattle and more. Remote-first, senior-led.",
   path: routes.locations,
@@ -32,6 +33,7 @@ export default function LocationsHub() {
         <div className="container">
           <h2 id="loc-h" className="visually-hidden">Cities we serve</h2>
           <div className="loc-grid">
+            {!cities.length && <p className="empty-note">City pages are on their way.</p>}
             {cities.map((c) => {
               const pages = locations.filter((l) => l.title === c.title);
               return (

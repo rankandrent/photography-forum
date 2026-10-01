@@ -1,7 +1,7 @@
 {
   "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
-  "order": 5,
+  "order": 3,
   "title": "Los Angeles",
   "city": "Los Angeles",
   "state": "CA",

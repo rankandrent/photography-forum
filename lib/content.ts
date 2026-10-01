@@ -115,7 +115,8 @@ function load() {
 
 export const getServices = () => load().services;
 export const getIndustries = () => load().industries;
-export const getLocations = () => load().locations;
+/** Published city pages. Drafts are left out of the build entirely (set SHOW_DRAFTS=1 to preview them locally). */
+export const getLocations = () => load().locations.filter((l) => !l.draft || process.env.SHOW_DRAFTS === "1");
 export const getLocation = (slug: string) => getLocations().find((l) => l.slug === slug);
 /** One menu entry per city: the first page listed for that city */
 export const locationCities = () => getLocations().filter((l, i, all) => all.findIndex((x) => x.title === l.title) === i);

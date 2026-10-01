@@ -1,0 +1,21 @@
+{
+  "_note": "DRAFT: add the supplied SERP-based content (hero, abstract, sections, faqs). The daily publisher sets draft:false once sections exist.",
+  "draft": true,
+  "order": 10,
+  "title": "Columbus",
+  "city": "Columbus",
+  "state": "OH",
+  "keyword": "ux design agency columbus",
+  "anchor": "UX design agency Columbus",
+  "metaTitle": "UX design agency Columbus | Research-Led Product Design",
+  "metaDescription": "UX design agency Columbus for product teams in Columbus: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "hero": {
+    "eyebrow": "ux design agency columbus",
+    "h1": "UX design agency Columbus for products that need to perform",
+    "sub": "Senior UX researchers and designers working with product teams in Columbus: research, UX and UI design, prototypes and usability testing in one engagement."
+  },
+  "summary": "Research-led UI UX design for product teams in Columbus.",
+  "updated": "2026-10-01",
+  "sections": [],
+  "faqs": []
+}

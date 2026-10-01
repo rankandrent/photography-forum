@@ -1,0 +1,21 @@
+{
+  "_note": "DRAFT: add the supplied SERP-based content (hero, abstract, sections, faqs). The daily publisher sets draft:false once sections exist.",
+  "draft": true,
+  "order": 9,
+  "title": "Philadelphia",
+  "city": "Philadelphia",
+  "state": "PA",
+  "keyword": "ux design agency philadelphia",
+  "anchor": "UX design agency Philadelphia",
+  "metaTitle": "UX design agency Philadelphia | Research-Led Product Design",
+  "metaDescription": "UX design agency Philadelphia for product teams in Philadelphia: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "hero": {
+    "eyebrow": "ux design agency philadelphia",
+    "h1": "UX design agency Philadelphia for products that need to perform",
+    "sub": "Senior UX researchers and designers working with product teams in Philadelphia: research, UX and UI design, prototypes and usability testing in one engagement."
+  },
+  "summary": "Research-led UI UX design for product teams in Philadelphia.",
+  "updated": "2026-10-01",
+  "sections": [],
+  "faqs": []
+}
