@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useId, useState, type FormEvent } from "react";
+import { SITE } from "@/lib/site";
 
 const ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "/api/lead";
 
@@ -44,11 +45,13 @@ export function LeadForm({
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ ...data, source, page: window.location.href }),
       });
-      if (!res.ok) throw new Error(String(res.status));
+      if (!res.ok) throw new Error(`${res.status} ${await res.text().catch(() => "")}`);
       form.reset();
       setStatus({ kind: "ok", msg: "Thanks — a design lead will get back to you within one business day." });
-    } catch {
-      setStatus({ kind: "err", msg: "Something went wrong. Please try again or email us directly." });
+    } catch (err) {
+      console.error("Lead form failed:", err);
+      const code = String((err as Error).message).split(" ")[0];
+      setStatus({ kind: "err", msg: `Something went wrong${/^\d+$/.test(code) ? ` (error ${code})` : ""}. Please try again or email ${SITE.email}.` });
     }
   }
 

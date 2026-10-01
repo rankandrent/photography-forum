@@ -32,11 +32,13 @@ export function EmailCapture({
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ email, source, page: window.location.href }),
       });
-      if (!res.ok) throw new Error();
+      if (!res.ok) throw new Error(`${res.status} ${await res.text().catch(() => "")}`);
       form.reset();
       setMsg("Thanks — our team will email you the checklist within one business day.");
-    } catch {
-      setMsg("Something went wrong. Please try again.");
+    } catch (err) {
+      console.error("Checklist form failed:", err);
+      const code = String((err as Error).message).split(" ")[0];
+      setMsg(`Something went wrong${/^\d+$/.test(code) ? ` (error ${code})` : ""}. Please try again.`);
     }
   }
 

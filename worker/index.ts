@@ -116,6 +116,8 @@ function mime(to: string, lead: Record<string, string>) {
 }
 
 async function handleLead(request: Request, env: Env) {
+  // GET is a health check: opening /api/lead in a browser shows whether the Worker and its email binding are live
+  if (request.method === "GET") return json(200, { ok: true, worker: "live", email: env.LEADS ? "binding present" : "binding missing" });
   if (request.method !== "POST") return json(405, { ok: false, error: "Method not allowed" });
   const origin = request.headers.get("origin") ?? "";
   if (origin && !/uiuxdesignservices\.us$|\.workers\.dev$|localhost(:\d+)?$/.test(new URL(origin).host)) return json(403, { ok: false });
@@ -138,7 +140,9 @@ async function handleLead(request: Request, env: Env) {
   const results = await Promise.allSettled(LEAD_RECIPIENTS.map((to) => env.LEADS!.send(new EmailMessage(FROM, to, mime(to, lead)))));
   const sent = results.filter((r) => r.status === "fulfilled").length;
   results.forEach((r, i) => r.status === "rejected" && console.error(`lead email to ${LEAD_RECIPIENTS[i]} failed:`, r.reason));
-  return sent ? json(200, { ok: true }) : json(502, { ok: false, error: "Email could not be sent" });
+  if (sent) return json(200, { ok: true });
+  const reason = results.find((r): r is PromiseRejectedResult => r.status === "rejected")?.reason;
+  return json(502, { ok: false, error: "Email could not be sent", detail: String((reason as Error)?.message ?? reason).slice(0, 300) });
 }
 
 const worker = {
