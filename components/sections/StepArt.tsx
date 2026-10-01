@@ -1,5 +1,5 @@
 /** Small illustration for a process step, picked from the step title. */
-type Kind = "research" | "tree" | "wireframe" | "test" | "ui" | "handoff" | "report";
+export type Kind = "research" | "tree" | "wireframe" | "test" | "ui" | "handoff" | "report";
 
 const ORDER: Kind[] = ["research", "tree", "wireframe", "test", "ui", "handoff", "report"];
 
@@ -15,8 +15,18 @@ const RULES: [RegExp, Kind][] = [
 
 export const stepKind = (title: string, i: number): Kind => RULES.find(([re]) => re.test(title))?.[1] ?? ORDER[i % ORDER.length];
 
-export function StepArt({ title, index }: { title: string; index: number }) {
-  const kind = stepKind(title, index);
+/** One illustration per step, without repeats: a duplicate takes the next unused kind */
+export function stepKinds(titles: string[]): Kind[] {
+  const used = new Set<Kind>();
+  return titles.map((t, i) => {
+    let k = stepKind(t, i);
+    if (used.has(k)) k = ORDER.find((o) => !used.has(o)) ?? k;
+    used.add(k);
+    return k;
+  });
+}
+
+export function StepArt({ kind }: { kind: Kind }) {
   const c = "#E2225F";
   const soft = "#FFE3EC";
   const g = "#E8E8EB";
