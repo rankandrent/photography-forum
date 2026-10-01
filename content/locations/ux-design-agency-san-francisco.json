@@ -1,27 +1,260 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
-  "draft": true,
+  "draft": false,
   "order": 1,
   "title": "San Francisco",
   "city": "San Francisco",
   "state": "CA",
   "keyword": "ux design agency san francisco",
   "anchor": "UX design agency San Francisco",
-  "metaTitle": "UX design agency San Francisco | Research-Led Product Design",
-  "metaDescription": "UX design agency San Francisco for product teams in San Francisco: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency San Francisco | Research-Led UI UX",
+  "metaDescription": "UX design agency for San Francisco and Silicon Valley product teams: user research, UX and UI design, prototyping and usability testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency san francisco",
-    "h1": "UX design agency San Francisco for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in San Francisco, Silicon Valley and the Bay Area: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency for San Francisco product teams",
+    "sub": "Senior UX researchers and designers for SaaS, fintech and AI products in San Francisco, Silicon Valley and the Bay Area. Research, UX and UI design, prototypes and usability testing in one engagement."
   },
-  "summary": "Research-led UI UX design for product teams in San Francisco.",
+  "summary": "Research-led UX design agency for San Francisco and Silicon Valley product teams.",
   "updated": "2026-10-01",
-  "sections": [],
+  "sections": [
+    {
+      "h2": "What does a UX design agency in San Francisco do?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency in San Francisco researches how users behave, then designs and tests the screens of a software product so users finish their tasks faster and with fewer errors.</strong> Our team serves San Francisco, Silicon Valley and the wider Bay Area from a remote-first studio.",
+      "body": "<p>San Francisco product teams build SaaS platforms, fintech apps and AI products for demanding users. A UX design agency adds senior research and design capacity to those teams without a 3–6 month hiring cycle. Our designers work in Figma, test with real users, and hand over files that engineers build directly. See the full scope of our <a href=\"/services/digital-product-design-services/\">digital product design services</a>.</p>"
+    },
+    {
+      "h2": "What do our San Francisco UX design services include?",
+      "format": "list",
+      "answer": "<strong>Our San Francisco UX design services include 6 deliverables:</strong> user research, a UX audit, information architecture, UI design, a design system and usability testing.",
+      "items": [
+        {
+          "title": "User research.",
+          "body": "Interviews and contextual inquiry with 5–12 users per role, for example finance admins and end customers of a fintech app."
+        },
+        {
+          "title": "UX audit.",
+          "body": "An expert review of key flows against usability heuristics and WCAG 2.2, for example the sign-up and onboarding flow."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "Navigation and content structure validated with card sorting and tree testing, for example a SaaS settings area."
+        },
+        {
+          "title": "UI design.",
+          "body": "High-fidelity screens in Figma for web and mobile, for example a dashboard with role-based views."
+        },
+        {
+          "title": "Design system.",
+          "body": "Design tokens, components and documentation, for example a component library shared by 3 product squads."
+        },
+        {
+          "title": "Usability testing.",
+          "body": "Moderated and remote sessions with 5 users per round, for example a prototype test before an engineering sprint."
+        }
+      ]
+    },
+    {
+      "h2": "How does working with a San Francisco UX design agency work?",
+      "format": "steps",
+      "answer": "<strong>Working with our UX design agency takes 4–8 weeks (20–40 working days) for a typical engagement and runs in 5 steps</strong>, from a discovery call to the design handoff.",
+      "items": [
+        {
+          "title": "Discovery call (1–2 days)",
+          "body": "We agree the product goals, users, metrics and timeline with your San Francisco team in a 45-minute call."
+        },
+        {
+          "title": "Research and audit (5–10 days)",
+          "body": "Researchers interview users and audit the current product, then share the findings in a working session."
+        },
+        {
+          "title": "Design workshops (2–3 days)",
+          "body": "Remote workshops on Pacific Time align product, design and engineering; on-site workshops in the Bay Area are available for larger engagements."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Designers produce flows, UI screens and a clickable Figma prototype, reviewed with your team twice a week."
+        },
+        {
+          "title": "Test and hand off (5–10 days)",
+          "body": "We test the prototype with 5 users per round, fix the issues, and hand over specs and components to engineering."
+        }
+      ]
+    },
+    {
+      "h2": "What are the benefits of a UX design agency for San Francisco teams?",
+      "format": "cards",
+      "answer": "<strong>A UX design agency gives San Francisco teams 4 benefits:</strong> it increases conversion and activation, improves the product experience, reduces hiring time and develops a reusable design system.",
+      "items": [
+        {
+          "title": "Increases activation and conversion",
+          "body": "Research-backed onboarding and checkout flows increase the share of new users who reach their first success."
+        },
+        {
+          "title": "Improves the product experience",
+          "body": "Tested flows and accessible UI improve task success for every user group, including users with disabilities."
+        },
+        {
+          "title": "Reduces hiring time",
+          "body": "Senior designers start in 1–2 weeks instead of the 3–6 months a full-time hire takes in the Bay Area market."
+        },
+        {
+          "title": "Develops a reusable design system",
+          "body": "Tokens and components develop into one source of truth that keeps every new feature consistent."
+        }
+      ]
+    },
+    {
+      "h2": "Remote UX design agency vs a local San Francisco studio",
+      "format": "table",
+      "answer": "<strong>A remote-first UX design agency delivers the same research and design work as a local San Francisco studio at a lower cost, with 5–6 hours of daily Pacific Time overlap.</strong> Local studios suit teams that need designers on site every week.",
+      "caption": "Comparison of a remote-first UX design agency and a local San Francisco studio",
+      "columns": [
+        "Criterion",
+        "Remote-first agency (us)",
+        "Local San Francisco studio"
+      ],
+      "rows": [
+        [
+          "Working hours",
+          "5–6 hours of daily overlap with Pacific Time",
+          "Same time zone"
+        ],
+        [
+          "Workshops",
+          "Remote, on-site in the Bay Area for larger engagements",
+          "On site"
+        ],
+        [
+          "Team",
+          "Senior researchers and designers",
+          "Varies by studio"
+        ],
+        [
+          "Start time",
+          "1–2 weeks",
+          "Varies by studio"
+        ],
+        [
+          "Price on this site",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Bay Area senior rates"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does a UX design agency in San Francisco cost?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency engagement costs $5,000–$15,000 for a 2–3 week UX audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> The price depends on 4 factors: the number of flows, the number of platforms, the research depth and the design system scope.",
+      "body": "<p>A full product design with a design system costs $60,000–$180,000 and takes 8–16 weeks. San Francisco teams that need ongoing capacity hire an embedded design team for $15,000–$40,000 per month. Every engagement starts with a free consultation and a fixed-scope proposal. See our <a href=\"/services/saas-ux-design/\">SaaS UX design</a> page for product-lifecycle work.</p>"
+    },
+    {
+      "h2": "Which San Francisco industries does our UX design agency serve?",
+      "format": "list",
+      "answer": "<strong>Our UX design agency serves 5 core San Francisco industries:</strong>",
+      "items": [
+        "SaaS companies, for example B2B platforms that need onboarding, dashboards and admin UX (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Fintech companies, for example trading, lending and payments apps (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "AI products, for example copilots and agent workflows that need clear states, trust signals and error recovery.",
+        "Healthcare technology, for example telehealth and clinical tools (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Startups, for example seed and Series A teams preparing an MVP or a redesign (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency San Francisco FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions San Francisco teams ask most before hiring a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have an office in San Francisco?",
+          "a": "<p>No. Our UX design agency is remote-first with headquarters in Reston, Virginia, and works with San Francisco teams on Pacific Time with 5–6 hours of daily overlap. On-site Bay Area workshops are available for larger engagements.</p>"
+        },
+        {
+          "q": "Do you work with Silicon Valley startups?",
+          "a": "<p>Yes. Our UX design agency works with Silicon Valley and San Francisco startups from pre-seed MVPs to Series B redesigns, with a $25,000–$60,000 sprint as the most common starting point.</p>"
+        },
+        {
+          "q": "How fast can a San Francisco project start?",
+          "a": "<p>A San Francisco project starts 1–2 weeks after the discovery call, once the scope and proposal are signed.</p>"
+        },
+        {
+          "q": "Is remote UX research effective for Bay Area users?",
+          "a": "<p>Yes. Remote UX research reaches Bay Area users through moderated video sessions and unmoderated tests, and recruits 5–12 participants per user group within 1 week.</p>"
+        },
+        {
+          "q": "Which design tools does your UX design agency use?",
+          "a": "<p>Our UX design agency designs in Figma, tests with Maze and Lookback, and documents design systems in Figma and Storybook for engineering teams.</p>"
+        }
+      ]
+    }
+  ],
   "faqs": [],
   "keywords": [
     "ux design agency san francisco",
     "ux design agency silicon valley",
     "ui ux design agency san francisco",
+    "san francisco ux design",
     "bay area ux design agency"
-  ]
+  ],
+  "centralEntity": "UX design agency in San Francisco",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to San Francisco and Bay Area product teams.",
+  "abstract": "Our UX design agency works with San Francisco and Silicon Valley product teams on user research, user experience (UX) and user interface (UI) design, prototyping and usability testing. Engagements start at $5,000 for a 2–3 week UX audit and run remote-first with 5–6 hours of daily overlap with Pacific Time.",
+  "semantic": {
+    "entities": [
+      "San Francisco",
+      "Bay Area",
+      "Silicon Valley",
+      "Pacific Time",
+      "SaaS",
+      "fintech",
+      "AI products",
+      "Figma",
+      "usability testing",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency san francisco",
+      "ux design agency",
+      "san francisco ux design",
+      "silicon valley startups",
+      "bay area"
+    ],
+    "skipgrams": [
+      "agency … san francisco",
+      "design … silicon valley",
+      "ux … bay area"
+    ],
+    "nlpKeywords": [
+      "product teams",
+      "user research",
+      "prototyping",
+      "usability testing",
+      "design system",
+      "remote-first",
+      "on-site workshops"
+    ]
+  },
+  "mentions": [
+    "San Francisco",
+    "Bay Area",
+    "Silicon Valley",
+    "Pacific Time",
+    "SaaS",
+    "fintech",
+    "AI products",
+    "Figma",
+    "usability testing",
+    "WCAG 2.2"
+  ],
+  "published": "2026-10-01",
+  "priceRange": "$5,000–$60,000"
 }

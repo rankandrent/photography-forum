@@ -121,6 +121,8 @@ export type Location = Brief & {
   state: string;
   /** Focus keyword, lower case */
   keyword: string;
+  /** Main engagement price shown in the at-a-glance strip */
+  priceRange?: string;
   order: number;
   metaTitle: string;
   metaDescription: string;

@@ -1225,3 +1225,4 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .loc-card a { font-size: 15px; color: var(--text-m); display: inline-flex; gap: 6px; }
 .loc-card a:hover { color: var(--pink); }
 @media (max-width: 900px) { .loc-grid { grid-template-columns: 1fr; } }
+.semv__checks a { color: var(--pink); text-decoration: underline; text-underline-offset: 3px; }

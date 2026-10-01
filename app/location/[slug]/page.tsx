@@ -62,7 +62,7 @@ export default async function LocationPage({ params }: Props) {
 
       <Abstract text={l.abstract} />
 
-      {!!bodySections?.length && <SemanticSections sections={bodySections} label={`${cap(anchorOf(l))} illustration`} />}
+      {!!bodySections?.length && <SemanticSections sections={bodySections} price={l.priceRange} label={`${cap(anchorOf(l))} illustration`} />}
 
       <ServiceGrid
         id="location-services"
