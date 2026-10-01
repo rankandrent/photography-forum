@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Manrope } from "next/font/google";
+import { FloatingBar } from "@/components/layout/FloatingBar";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/ui/JsonLd";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header serviceGroups={serviceGroups} industries={industries} />
         <main id="main">{children}</main>
         <Footer />
+        <FloatingBar />
         <JsonLd data={organizationLd()} />
       </body>
     </html>
