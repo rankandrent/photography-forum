@@ -1,4 +1,4 @@
-import { TeamSlider } from "@/components/sections/TeamSlider";
+import { ScrollRail } from "@/components/sections/ScrollRail";
 import { EmailCapture } from "@/components/forms/EmailCapture";
 import { Html } from "@/components/ui/Html";
 import { home } from "@/content/home";
@@ -160,7 +160,7 @@ export function Team() {
             {d.heading}
           </h2>
         </div>
-        <TeamSlider label="Team members">
+        <ScrollRail id="team-rail" label="Team members">
           {d.items.map((t) => (
             <article key={t.name} className="tcard">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -176,7 +176,7 @@ export function Team() {
               </div>
             </article>
           ))}
-        </TeamSlider>
+        </ScrollRail>
       </div>
     </section>
   );

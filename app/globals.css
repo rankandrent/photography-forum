@@ -1267,3 +1267,6 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .lm__cover--img { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 1145; object-fit: cover; padding: 0; background: #0A1F2B; border: 0; box-shadow: 0 30px 70px rgba(2,1,1,0.35); transform: rotate(2deg); transition: transform .4s ease; }
 .lm__cover--img:hover { transform: rotate(0deg) translateY(-4px); }
 @media (max-width: 900px) { .lm__cover--img { transform: none; margin: 0 auto; } }
+.team2 .wrail { margin-top: 0; }
+.team2 .wrail__track { gap: 20px; padding-top: 0; }
+.team2__head { padding-right: 0; }
