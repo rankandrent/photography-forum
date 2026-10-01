@@ -11,8 +11,8 @@ import { absoluteUrl, cap, routes } from "@/lib/site";
 import type { ServiceCategory } from "@/lib/types";
 
 export const metadata = pageMetadata({
-  title: "UI UX Design Service Catalog | UIUXDesignServices.us",
-  description: "Browse every design service we offer, grouped by research and strategy, product design, platforms, dashboards and data, and industry-specific work.",
+  title: "UI UX Design Services | Research, UX, UI & Testing",
+  description: "Explore our UI UX design services: UX research, audits, usability testing, product and app design, dashboards and design systems. See pricing and timelines.",
   path: routes.services,
 });
 

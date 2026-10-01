@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Our Work: UI UX Design Case Studies | UIUXDesignServices.us",
+  title: "UI UX Design Case Studies | Our Work & Results",
   description: "UI UX design case studies with the research, design decisions, and measurable outcomes behind each product we designed.",
   path: routes.caseStudies,
 });

@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "UI UX Design Insights & Blog | UIUXDesignServices.us",
+  title: "UI UX Design Insights & Blog",
   description: "Articles on user research, UX design, UI design, design systems, usability testing and AI experience design.",
   path: routes.blog,
 });

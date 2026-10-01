@@ -8,8 +8,8 @@ import { pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Industries We Design For | UIUXDesignServices.us",
-  description: "UI UX design services tailored to healthcare, finance, e-commerce, SaaS, supply chain, startups and more.",
+  title: "UI UX Design by Industry | Healthcare, Fintech & SaaS",
+  description: "UI UX design by industry: healthcare, fintech, SaaS, e-commerce, supply chain and startup products, backed by real case studies and measurable results.",
   path: routes.industries,
 });
 

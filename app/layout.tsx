@@ -13,7 +13,7 @@ const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], var
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: SITE.name, template: `%s | ${SITE.name}` },
+  title: { default: "UI UX Design Services", template: "%s" },
   description: SITE.description,
   applicationName: SITE.name,
   formatDetection: { telephone: false },

@@ -13,7 +13,7 @@ export const generateStaticParams = () => staticParams("page", getPages().map((p
 export async function generateMetadata({ params }: Props) {
   const p = getPage((await params).page);
   if (!p) return {};
-  return pageMetadata({ title: `${p.title} | UIUXDesignServices.us`, description: p.description, path: routes.page(p.slug), noindex: p.noindex });
+  return pageMetadata({ title: p.title, description: p.description, path: routes.page(p.slug), noindex: p.noindex });
 }
 
 export default async function StaticPage({ params }: Props) {

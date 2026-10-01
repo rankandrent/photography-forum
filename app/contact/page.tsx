@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Contact Us | UIUXDesignServices.us",
+  title: "Contact Us | Free UI UX Design Consultation",
   description: "Tell us about your product. A design lead reviews every request and replies within one business day.",
   path: routes.contact,
 });

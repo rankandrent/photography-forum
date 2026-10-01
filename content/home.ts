@@ -7,7 +7,7 @@
  */
 export const home = {
   meta: {
-    title: "UI UX Design Services | UIUXDesignServices.us",
+    title: "UI UX Design Agency | Research-Led UI UX Design Services",
     description:
       "UI UX design services for growing businesses: user research, UX and UI design, prototyping, design systems, and usability testing tied to measurable outcomes.",
   },
