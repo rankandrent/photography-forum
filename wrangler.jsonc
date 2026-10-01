@@ -10,6 +10,8 @@
   // Worker → Settings → Domains & Routes. They are not declared here because the
   // Workers Builds token can't manage zone DNS, which made deploys fail.
   "workers_dev": true,
+  // Worker logs (Observability → Logs) show why a lead email failed.
+  "observability": { "enabled": true },
   "assets": {
     "directory": "./out",
     "binding": "ASSETS",
