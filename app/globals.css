@@ -939,3 +939,108 @@ main > :is(.hero--light, .phero--light, .clients, .sem-abstract, .svc-cat, .sect
 /* edge between two dark blocks (e.g. final CTA → footer) */
 main > :is(.phero:not(.phero--light), .section--dark, .final) + :is(.phero:not(.phero--light), .section--dark, .final),
 .ftr { border-top: 1px solid rgba(255,255,255,0.08); }
+
+/* ---------- Service sections v2 (visual, image-led) ---------- */
+.semv h2 { font-size: 44px; line-height: 1.1; margin-bottom: 18px; }
+.semv__eyebrow { display: inline-block; color: var(--pink); margin-bottom: 16px; }
+.semv__head { max-width: 680px; }
+.semv__head--c { margin: 0 auto 48px; text-align: center; max-width: 760px; }
+.semv__answer { font-size: 18px; line-height: 1.6; color: var(--text-m); }
+.semv__answer strong { color: var(--text); font-weight: 600; }
+.section--dark .semv__answer { color: rgba(255,255,255,0.7); }
+.section--dark .semv__answer strong, .section--dark h2 { color: #fff; }
+.section--dark .semv__eyebrow { color: var(--pink-l); }
+.semv__narrow { max-width: 760px; }
+
+/* split: text + image */
+.semv__split { display: grid; grid-template-columns: 1fr 1.05fr; gap: 64px; align-items: center; }
+.semv__visual { border-radius: 24px; overflow: hidden; background: var(--surface); border: 1px solid var(--border); aspect-ratio: 7 / 5; }
+.semv__visual img, .semv__visual .uimock { width: 100%; height: 100%; object-fit: cover; display: block; }
+.semv__more { margin-top: 20px; }
+.semv__more summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 15px; color: var(--pink); }
+.semv__more summary::-webkit-details-marker { display: none; }
+.semv__more summary::after { content: '+'; font-size: 18px; line-height: 1; }
+.semv__more[open] summary::after { content: '–'; }
+.semv__more-body { margin-top: 12px; font-size: 16px; line-height: 1.65; color: var(--text-m); }
+.semv__more-body a { color: var(--pink); text-decoration: underline; text-underline-offset: 3px; }
+.semv__glance { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 48px; border: 1px solid var(--border); border-radius: 18px; background: var(--white); }
+.semv__glance div { padding: 22px 28px; }
+.semv__glance div + div { border-left: 1px solid var(--border); }
+.semv__glance dt { font-family: var(--font-m); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-m); margin-bottom: 6px; }
+.semv__glance dd { font-family: var(--font-d); font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+
+/* icon card grid */
+.semv__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.semv__grid--4 { grid-template-columns: repeat(4, 1fr); }
+.semv__card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 28px; transition: transform .25s ease, box-shadow .25s ease, border-color .25s; }
+.semv__card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(2,1,1,0.08); border-color: transparent; }
+.semv__icon { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 14px; background: rgba(226,34,95,0.08); color: var(--pink); margin-bottom: 20px; }
+.semv__card h3 { font-size: 20px; margin-bottom: 8px; letter-spacing: -0.01em; }
+.semv__card p { font-size: 15px; line-height: 1.55; color: var(--text-m); }
+.semv__card--dark { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
+.semv__card--dark:hover { box-shadow: none; border-color: rgba(255,255,255,0.25); }
+.semv__card--dark .semv__icon { background: rgba(226,34,95,0.18); color: var(--pink-l); }
+.semv__card--dark h3 { color: #fff; }
+.semv__card--dark p { color: rgba(255,255,255,0.65); }
+
+/* process step cards */
+.semv__steps { list-style: none; padding: 0; margin: 0; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 16px; counter-reset: s; }
+.semv__step { position: relative; background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 26px 22px; }
+.semv__step::after { content: ''; position: absolute; top: 46px; right: -17px; width: 18px; height: 2px; background: var(--border); }
+.semv__step:last-child::after { display: none; }
+.semv__step-n { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--black); color: #fff; font-family: var(--font-m); font-size: 14px; font-weight: 600; margin-bottom: 18px; }
+.semv__step h3 { font-size: 18px; margin-bottom: 10px; }
+.semv__step p { font-size: 14px; line-height: 1.55; color: var(--text-m); margin-top: 12px; }
+.semv__chip { display: inline-block; padding: 5px 12px; border-radius: 999px; background: rgba(226,34,95,0.08); color: var(--pink); font-size: 13px; font-weight: 600; }
+.semv__chip--light { background: rgba(255,255,255,0.12); color: #fff; }
+
+/* comparison table */
+.semv__table { border: 1px solid var(--border); border-radius: 20px; overflow: hidden; background: var(--white); }
+.semv__table table { width: 100%; border-collapse: collapse; }
+.semv__table th, .semv__table td { padding: 18px 24px; text-align: left; font-size: 15px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.semv__table tbody tr:last-child > * { border-bottom: 0; }
+.semv__table thead th { font-family: var(--font-d); font-size: 16px; background: var(--surface); }
+.semv__table tbody th { font-weight: 600; width: 22%; color: var(--text); }
+.semv__table td { color: var(--text-m); }
+.semv__table .is-ours { background: rgba(226,34,95,0.05); color: var(--text); }
+.semv__table thead .is-ours { background: var(--pink); color: #fff; }
+
+/* pricing card */
+.semv__split--price { align-items: center; }
+.semv__price { background: var(--black); color: #fff; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; position: relative; overflow: hidden; }
+.semv__price::before { content: ''; position: absolute; top: -120px; right: -120px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(226,34,95,0.45), transparent 65%); pointer-events: none; }
+.semv__price-label { font-family: var(--font-m); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+.semv__price-value { font-family: var(--font-d); font-size: 48px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.semv__price ul { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 10px; }
+.semv__price li { display: flex; align-items: center; gap: 10px; font-size: 15px; color: rgba(255,255,255,0.85); }
+.semv__price li svg { color: var(--pink-l); flex: none; }
+.semv__price .btn { position: relative; }
+
+/* when-to-hire check grid */
+.semv__checks { list-style: none; padding: 0; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 1000px; }
+.semv__checks li { display: flex; gap: 14px; align-items: flex-start; background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; font-size: 16px; line-height: 1.5; color: var(--text); }
+.semv__check { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--pink); color: #fff; }
+.semv .sem__links { justify-content: center; }
+.semv--definition .sem__links, .semv--pricing .sem__links, .semv--text .sem__links { justify-content: flex-start; }
+.section--dark .sem__links { color: rgba(255,255,255,0.6); }
+
+@media (max-width: 1100px) {
+  .semv__grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .semv__steps { grid-auto-flow: row; grid-template-columns: repeat(2, 1fr); }
+  .semv__step::after { display: none; }
+}
+@media (max-width: 900px) {
+  .semv h2 { font-size: 30px; }
+  .semv__head--c { margin-bottom: 32px; text-align: left; }
+  .semv__split { grid-template-columns: 1fr; gap: 32px; }
+  .semv__grid, .semv__grid--4, .semv__checks { grid-template-columns: 1fr; }
+  .semv__steps { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 20px; gap: 12px; margin: 0 -20px; padding: 0 20px 8px; }
+  .semv__step { flex: 0 0 78%; scroll-snap-align: start; }
+  .semv__glance { grid-template-columns: 1fr; }
+  .semv__glance div + div { border-left: 0; border-top: 1px solid var(--border); }
+  .semv__table { overflow-x: auto; }
+  .semv__table table { min-width: 620px; }
+  .semv__price { padding: 28px; }
+  .semv__price-value { font-size: 38px; }
+  .semv .sem__links { justify-content: flex-start; }
+}

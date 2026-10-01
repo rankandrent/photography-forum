@@ -49,6 +49,7 @@ export default async function ServicePage({ params }: Props) {
   const path = routes.service(s.slug);
   const industries = industriesForService(s);
   const cases = caseStudiesForService(s.slug).slice(0, 3);
+  const visualCase = caseStudiesForService(s.slug).find((c) => c.image);
   const posts = postsForService(s.slug).slice(0, 3);
   const others = relatedServices(s);
   const h = s.headings ?? {};
@@ -77,7 +78,13 @@ export default async function ServicePage({ params }: Props) {
       <Abstract text={s.abstract} />
 
       {hasSections ? (
-        <SemanticSections sections={bodySections} />
+        <SemanticSections
+          sections={bodySections}
+          visual={visualCase ? { src: visualCase.image!, alt: `${visualCase.client} project: ${anchorOf(s)} work` } : null}
+          price={s.priceRange}
+          category={s.category}
+          label={`${cap(anchorOf(s))} illustration`}
+        />
       ) : (
         <>
           {!!s.stats?.length && <Stats heading={h.stats ?? `${s.title} by the numbers`} items={s.stats} />}
