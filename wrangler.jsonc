@@ -3,6 +3,8 @@
   // Static site: `npm run build` writes plain HTML to ./out, and wrangler uploads it as static assets.
   // No server runtime / OpenNext adapter is needed.
   "name": "uiuxdesignservices-us",
+  // Tiny Worker in front of the static assets: only /api/* runs it (form → email).
+  "main": "worker/index.ts",
   "compatibility_date": "2026-09-26",
   // Custom domains (uiuxdesignservices.us + www) are attached in the Cloudflare dashboard:
   // Worker → Settings → Domains & Routes. They are not declared here because the
@@ -10,7 +12,17 @@
   "workers_dev": true,
   "assets": {
     "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
-  }
+  },
+  // Lead emails via Cloudflare Email Routing. Each address must be added and verified
+  // under Email → Email Routing → Destination addresses before mail is delivered.
+  "send_email": [
+    {
+      "name": "LEADS",
+      "allowed_destination_addresses": ["umar.sarwar@corp.tkxel.com", "rizwan.siddiqui@tkxel.com"]
+    }
+  ]
 }

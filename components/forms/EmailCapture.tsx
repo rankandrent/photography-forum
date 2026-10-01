@@ -2,7 +2,7 @@
 
 import { useId, useState, type FormEvent } from "react";
 
-const ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
+const ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "/api/lead";
 
 /** Single-field email form (lead magnet, newsletter). Posts to the same endpoint as LeadForm. */
 export function EmailCapture({

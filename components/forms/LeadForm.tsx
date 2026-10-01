@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useId, useState, type FormEvent } from "react";
 
-const ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
+const ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "/api/lead";
 
 type Status = { kind: "idle" | "sending" | "ok" | "err"; msg?: string };
 
