@@ -926,13 +926,16 @@ html, body { overflow-x: clip; }
    Light top-level blocks alternate white / tint automatically, whatever tone a
    component asks for, so neighbouring sections never share a background.
    Dark blocks (dark heroes, section--dark, final CTA, pink band) are breaks. */
-:root { --surface-alt: #F5F4F7; }
+:root { --surface-alt: #FBFAFB; }
 main > :is(.hero--light, .phero--light, .clients, .sem-abstract, .svc-cat, .section:not(.section--dark, .section--pink, .final)) { background-color: var(--white); }
 main > :nth-child(even of :is(.hero--light, .phero--light, .clients, .sem-abstract, .svc-cat, .section:not(.section--dark, .section--pink, .final))) {
   background-color: var(--surface-alt);
   --surface-warm: #FFFFFF;
 }
 main > :is(.clients, .sem-abstract) { border-top: 0; border-bottom: 0; }
+/* hairline where two light blocks meet, so #FFF / #FBFAFB boundaries stay visible */
+main > :is(.hero--light, .phero--light, .clients, .sem-abstract, .svc-cat, .section:not(.section--dark, .section--pink, .final)) + :is(.hero--light, .phero--light, .clients, .sem-abstract, .svc-cat, .section:not(.section--dark, .section--pink, .final)) { border-top: 1px solid var(--border); }
+
 /* edge between two dark blocks (e.g. final CTA → footer) */
 main > :is(.phero:not(.phero--light), .section--dark, .final) + :is(.phero:not(.phero--light), .section--dark, .final),
 .ftr { border-top: 1px solid rgba(255,255,255,0.08); }
