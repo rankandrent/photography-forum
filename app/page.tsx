@@ -2,13 +2,11 @@ import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Benefits, Clients, CtaBand, Faq, FinalCta, Resources, ServiceGrid } from "@/components/sections/Blocks";
 import {
-  Awards,
   Capabilities,
   Challenges,
   Compare,
   LeadMagnet,
   Pricing,
-  Ratings,
   Team,
   Tools,
   WhyUs,
@@ -91,8 +89,6 @@ export default function HomePage() {
       <WhyUs />
       <Team />
       <Tools />
-      <Awards />
-      <Ratings />
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source="home final CTA" submitLabel="Submit" />
       </FinalCta>
