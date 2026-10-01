@@ -1211,3 +1211,6 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .ftr__logo .logo__word, .ftr__logo .logo__word b { color: #fff; }
 .ftr__cols { grid-template-columns: 1.35fr 1.2fr 0.8fr 0.9fr; }
 @media (max-width: 700px) { .ftr__cols { grid-template-columns: 1fr 1fr; } }
+.ftr__copy { margin-top: 28px; font-size: 13px; color: rgba(255,255,255,0.35); }
+.ftr__top + .ftr__mega { margin-top: 64px; }
+@media (max-width: 700px) { .ftr__top + .ftr__mega { margin-top: 48px; } }

@@ -44,6 +44,7 @@ export function Footer() {
           <p className="ftr__about">Research-led UI UX design for products that need to perform. Designing digital products since {SITE.founded}.</p>
           <address className="ftr__address">{addressLine}</address>
           <Link href={routes.contact} className="ftr__cta">Book a free consultation <span aria-hidden="true">→</span></Link>
+          <p className="ftr__copy">© {new Date().getFullYear()} {SITE.domain}. All rights reserved.</p>
           {!!SITE.sameAs.length && (
             <ul className="ftr__social">
               {SITE.sameAs.map((u) => <li key={u}><a href={u} rel="noopener" target="_blank">{new URL(u).hostname.replace("www.", "")}</a></li>)}
@@ -60,10 +61,6 @@ export function Footer() {
             </div>
           ))}
         </nav>
-      </div>
-      <div className="container ftr__bottom">
-        <span>© {new Date().getFullYear()} {SITE.domain}. All rights reserved.</span>
-        <span>Reston, Virginia · United States</span>
       </div>
       <div className="ftr__mega" aria-hidden="true">
         <svg viewBox="0 0 1000 170" preserveAspectRatio="xMidYMax meet">
