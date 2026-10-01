@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { Team } from "@/components/sections/HomeSections";
 import { PageHero } from "@/components/sections/PageHero";
 import { getPage, getPages, staticParams } from "@/lib/content";
 import { JsonLd } from "@/components/ui/JsonLd";
@@ -28,6 +29,7 @@ export default async function StaticPage({ params }: Props) {
           <article className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
         </div>
       </section>
+      {p.slug === "about" && <Team />}
       <JsonLd data={pageLd(p.slug === "about" ? "AboutPage" : "WebPage", { name: p.title, description: p.description, path: routes.page(p.slug) })} />
     </>
   );

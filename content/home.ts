@@ -20,7 +20,7 @@ export const home = {
     sub: "User research, UX design, UI design, prototyping, and usability testing delivered as one engagement. What gets designed actually ships, and every design decision ties back to a metric.",
     contact: {
       name: "Sahar Asif",
-      role: "Key account manager",
+      role: "Senior Manager UX",
       photo: "/team/sahar-asif-lg.webp",
       note: "Replies within 1 business day",
       cta: "Book a call with Sahar",
@@ -217,15 +217,14 @@ export const home = {
   team: {
     headingMuted: "Real people, not a logo.",
     heading: "Meet the team behind your product.",
-    // role: fill in each person's job title; an empty role is simply not shown
     items: [
-      { name: "Sahar Asif", role: "Key account manager", photo: "/team/sahar-asif.webp", linkedin: "https://www.linkedin.com/in/sahar-asif-284a9955/" },
-      { name: "Shamir Farooq", role: "", photo: "/team/shamir-farooq.webp", linkedin: "https://www.linkedin.com/in/shahmirf/" },
-      { name: "Ahmad Ullah", role: "", photo: "/team/ahmad-ullah.webp", linkedin: "https://www.linkedin.com/in/iahmadullah/" },
-      { name: "Saliha Shahzad", role: "", photo: "/team/saliha-shahzad.webp", linkedin: "https://www.linkedin.com/in/saliha-shahzad-330357217/" },
-      { name: "Talha Saleem", role: "", photo: "/team/talha-saleem.webp", linkedin: "https://www.linkedin.com/in/creativetalha/" },
-      { name: "Faizan Khan", role: "", photo: "/team/faizan-khan.webp", linkedin: "https://www.linkedin.com/in/faizan132/" },
-      { name: "Umar Sarwar", role: "", photo: "/team/umar-sarwar.webp", linkedin: "https://www.linkedin.com/in/umar-sarwar-311aa1237/" },
+      { name: "Sahar Asif", role: "Senior Manager UX | KAM", photo: "/team/sahar-asif.webp", linkedin: "https://www.linkedin.com/in/sahar-asif-284a9955/" },
+      { name: "Shahmir Farooq", role: "Sr. Communication Designer", photo: "/team/shahmir-farooq.webp", linkedin: "https://www.linkedin.com/in/shahmirf/" },
+      { name: "Ahmad Ullah", role: "Principal UX Designer", photo: "/team/ahmad-ullah.webp", linkedin: "https://www.linkedin.com/in/iahmadullah/" },
+      { name: "Saliha Shahzad", role: "UI/UX Designer", photo: "/team/saliha-shahzad.webp", linkedin: "https://www.linkedin.com/in/saliha-shahzad-330357217/" },
+      { name: "Talha Saleem", role: "Senior UI/UX Designer", photo: "/team/talha-saleem.webp", linkedin: "https://www.linkedin.com/in/creativetalha/" },
+      { name: "Faizan Khan", role: "Sr. Product Designer", photo: "/team/faizan-khan.webp", linkedin: "https://www.linkedin.com/in/faizan132/" },
+      { name: "Umar Sarwar", role: "SEO Manager", photo: "/team/umar-sarwar.webp", linkedin: "https://www.linkedin.com/in/umar-sarwar-311aa1237/" },
     ],
   },
   tools: {
