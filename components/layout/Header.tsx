@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Logo } from "@/components/ui/Logo";
 import { useEffect, useState } from "react";
 import { routes } from "@/lib/site";
 
@@ -26,8 +27,8 @@ export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[
   return (
     <header className={`hdr${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
       <div className="hdr__inner">
-        <Link href="/" className="hdr__logo" onClick={close}>
-          uiuxdesignservices<span>.us</span>
+        <Link href="/" className="hdr__logo" aria-label="UI UX design home" onClick={close}>
+          <Logo />
         </Link>
         <nav className="hdr__nav" aria-label="Main">
           <div className="hdr__dd hdr__dd--mega">
