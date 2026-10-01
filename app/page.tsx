@@ -44,39 +44,31 @@ export default function HomePage() {
     <>
       <section className="hero hero--light" aria-labelledby="hero-heading">
         <div className="container hero__stack">
-          <span className="tk-eyebrow hero__eyebrow">{home.hero.eyebrow}</span>
-          <h1 id="hero-heading" className="hero__headline">
-            {home.hero.h1Before}
-            <em>{home.hero.h1Em}</em>
-          </h1>
-          <div className="hero__intro">
+          <div className="hero__split">
             <div>
+              <span className="tk-eyebrow hero__eyebrow">{home.hero.eyebrow}</span>
+              <h1 id="hero-heading" className="hero__headline">
+                {home.hero.h1Before}
+                <em>{home.hero.h1Em}</em>
+              </h1>
               <p className="hero__subhead">{home.hero.sub}</p>
               <div className="hero__actions">
                 <a href="#cta-form" className="btn">Schedule a call</a>
                 <Link href={routes.caseStudies} className="btn btn--dark-outline">See our work</Link>
               </div>
+              <StatsRow items={home.hero.stats} />
             </div>
-            <aside className="hcontact" aria-label={`Talk to ${home.hero.contact.name}`}>
-              <div className="hcontact__person">
-                <span className="hcontact__photo">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={home.hero.contact.photo} alt={`${home.hero.contact.name}, ${home.hero.contact.role.toLowerCase()}`} width={96} height={96} loading="eager" decoding="async" />
-                  <span className="hcontact__dot" aria-hidden="true" />
-                </span>
-                <div>
-                  <p className="hcontact__name">{home.hero.contact.name}</p>
-                  <p className="hcontact__role">{home.hero.contact.role}</p>
-                  <p className="hcontact__note">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
-                    {home.hero.contact.note}
-                  </p>
-                </div>
+            <aside className="hportrait" aria-label={`Talk to ${home.hero.contact.name}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={home.hero.contact.photo} alt={`${home.hero.contact.name}, ${home.hero.contact.role.toLowerCase()}`} width={400} height={400} loading="eager" fetchPriority="high" decoding="async" />
+              <span className="hportrait__badge"><span className="hportrait__dot" aria-hidden="true" />Available for a call</span>
+              <div className="hportrait__info">
+                <p className="hportrait__name">{home.hero.contact.name}</p>
+                <p className="hportrait__role">{home.hero.contact.role} · {home.hero.contact.note}</p>
+                <a href="#cta-form" className="btn hportrait__btn">{home.hero.contact.cta}</a>
               </div>
-              <a href="#cta-form" className="btn hcontact__btn">{home.hero.contact.cta}</a>
             </aside>
           </div>
-          <StatsRow items={home.hero.stats} />
           <WorkRail items={cases} id="home-rail" />
         </div>
       </section>

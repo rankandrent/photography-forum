@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { EmailCapture } from "@/components/forms/EmailCapture";
 import { anchorOf, getIndustries, servicesByCategory } from "@/lib/content";
-import { SITE, cap, routes } from "@/lib/site";
+import { SITE, cap, routes, addressLine } from "@/lib/site";
 
 export function Footer() {
   // Two lead services per topical category keeps the footer short but covers every cluster
@@ -13,6 +13,7 @@ export function Footer() {
         <div>
           <Link href="/" className="ftr__logo">uiuxdesignservices<span>.us</span></Link>
           <p className="ftr__about">{SITE.description}</p>
+          <address className="ftr__address">{addressLine}</address>
         </div>
         <div>
           <h2 className="ftr__title h4-footer">Services</h2>

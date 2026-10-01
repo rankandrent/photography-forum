@@ -1,3 +1,5 @@
+import { yearsInBusiness } from "@/lib/site";
+
 /**
  * Home page copy. Everything here is page-specific; services, industries,
  * case studies and blog posts come from their own content folders.
@@ -25,7 +27,7 @@ export const home = {
     },
     stats: [
       { value: "200+", label: "UX design projects delivered" },
-      { value: "16 yrs", label: "Average design team experience" },
+      { value: `${yearsInBusiness}+ yrs`, label: "Designing digital products since 2017" },
       { value: "4.9 / 5", label: "Average client rating across platforms" },
     ],
   },
@@ -55,7 +57,7 @@ export const home = {
     items: [
       { value: "200+", label: "Products designed and shipped" },
       { value: "40+", label: "Hours of user shadowing per deep engagement" },
-      { value: "16 yrs", label: "Average design team experience" },
+      { value: `${yearsInBusiness}+ yrs`, label: "Designing digital products since 2017" },
       { value: "4.9 / 5", label: "Average client rating across platforms" },
     ],
   },

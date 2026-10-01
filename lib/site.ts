@@ -1,6 +1,16 @@
 export const SITE = {
   name: "UIUXDesignServices.us",
   domain: "uiuxdesignservices.us",
+  /** Year the company started */
+  founded: 2017,
+  address: {
+    street: "11921 Freedom Drive, Two Fountain Square, Center Ste 550",
+    city: "Reston",
+    region: "VA",
+    postalCode: "20190",
+    country: "US",
+    countryName: "United States",
+  },
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://uiuxdesignservices.us").replace(/\/$/, ""),
   /** Public contact email + social/profile URLs (LinkedIn, Clutch, G2 …) for Organization schema */
   email: "",
@@ -8,6 +18,12 @@ export const SITE = {
   description:
     "UI UX design services for growing businesses. User research, UX design, UI design, prototyping, design systems, and usability testing that turn interfaces into measurable business outcomes.",
 };
+
+/** One-line postal address for display */
+export const addressLine = `${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}, ${SITE.address.countryName}`;
+
+/** Whole years since SITE.founded, recomputed on every build */
+export const yearsInBusiness = new Date().getFullYear() - SITE.founded;
 
 export const absoluteUrl = (p = "/") => `${SITE.url}${p.startsWith("/") ? p : `/${p}`}`;
 
