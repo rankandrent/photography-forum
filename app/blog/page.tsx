@@ -1,13 +1,15 @@
 import { PostCard } from "@/components/sections/Blocks";
 import { PageHero } from "@/components/sections/PageHero";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { getPosts } from "@/lib/content";
-import { pageMetadata } from "@/lib/seo";
+import { collectionLd, pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "UI UX Design Insights & Blog",
   description: "Articles on user research, UX design, UI design, design systems, usability testing and AI experience design.",
   path: routes.blog,
+  keywords: ["UI UX design blog", "UX design insights", "user research articles", "design systems"],
 });
 
 export default function BlogHub() {
@@ -29,6 +31,14 @@ export default function BlogHub() {
           )}
         </div>
       </section>
+      <JsonLd
+        data={collectionLd({
+          name: "UI UX design insights",
+          description: metadata.description as string,
+          path: routes.blog,
+          items: posts.map((p) => ({ name: p.title, path: routes.post(p.slug) })),
+        })}
+      />
     </>
   );
 }

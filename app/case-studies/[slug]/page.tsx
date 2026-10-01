@@ -18,7 +18,7 @@ export const generateStaticParams = () => staticParams("slug", getCaseStudies().
 export async function generateMetadata({ params }: Props) {
   const c = getCaseStudy((await params).slug);
   if (!c) return {};
-  return pageMetadata({ title: c.metaTitle ?? (c.title.length <= 48 ? `${c.title} | Case Study` : c.title), description: c.description, path: routes.caseStudy(c.slug), type: "article", image: `/og/case-studies/${c.slug}.png` });
+  return pageMetadata({ title: c.metaTitle ?? (c.title.length <= 48 ? `${c.title} | Case Study` : c.title), description: c.description, path: routes.caseStudy(c.slug), type: "article", image: `/og/case-studies/${c.slug}.png`, published: c.date, keywords: [`${c.client ?? c.title} case study`, ...c.tags, "UI UX design case study"] });
 }
 
 export default async function CaseStudyPage({ params }: Props) {
@@ -86,7 +86,7 @@ export default async function CaseStudyPage({ params }: Props) {
       </FinalCta>
       <Resources heading="Related insights" posts={relatedPosts(c)} />
 
-      <JsonLd data={articleLd({ image: `/og/case-studies/${c.slug}.png`, title: c.title, description: c.description, path, date: c.date, author: "Design Team" })} />
+      <JsonLd data={articleLd({ image: `/og/case-studies/${c.slug}.png`, title: c.title, description: c.description, path, date: c.date, author: "Design Team", keywords: c.tags })} />
     </>
   );
 }

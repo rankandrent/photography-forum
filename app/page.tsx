@@ -20,10 +20,15 @@ import { WorkGrid, WorkRail } from "@/components/sections/WorkCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import { getCaseStudies, getIndustries, getPosts, getServices } from "@/lib/content";
-import { faqLd, howToLd, pageMetadata, serviceLd } from "@/lib/seo";
+import { faqLd, howToLd, pageMetadata, serviceLd, webPageLd } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
-export const metadata = pageMetadata({ title: home.meta.title, description: home.meta.description, path: "/" });
+export const metadata = pageMetadata({
+  title: home.meta.title,
+  description: home.meta.description,
+  path: "/",
+  keywords: ["UI UX design services", "UI UX design agency", "UX design services", "UI design services", "user research", "product design agency"],
+});
 
 export default function HomePage() {
   const services = getServices();
@@ -89,6 +94,7 @@ export default function HomePage() {
           services.map((s) => s.title),
         )}
       />
+      <JsonLd data={webPageLd({ name: home.meta.title, description: home.meta.description, path: "/", about: "UI UX design services" })} />
       <JsonLd data={faqLd(home.faqs)} />
       <JsonLd data={howToLd("UI UX Design Process", home.process.steps)} />
     </>

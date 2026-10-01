@@ -39,7 +39,13 @@ export const generateStaticParams = () => staticParams("slug", getServices().map
 export async function generateMetadata({ params }: Props) {
   const s = getService((await params).slug);
   if (!s) return {};
-  return pageMetadata({ title: s.metaTitle, description: s.metaDescription, path: routes.service(s.slug), image: `/og/services/${s.slug}.png` });
+  return pageMetadata({
+    title: s.metaTitle,
+    description: s.metaDescription,
+    path: routes.service(s.slug),
+    image: `/og/services/${s.slug}.png`,
+    keywords: s.keywords ?? s.semantic?.ngrams ?? [anchorOf(s), ...(s.tags ?? [])],
+  });
 }
 
 export default async function ServicePage({ params }: Props) {

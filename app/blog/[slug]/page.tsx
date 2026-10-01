@@ -18,7 +18,7 @@ export const generateStaticParams = () => staticParams("slug", getPosts().map((p
 export async function generateMetadata({ params }: Props) {
   const p = getPost((await params).slug);
   if (!p) return {};
-  return pageMetadata({ title: p.metaTitle ?? p.title, description: p.description, path: routes.post(p.slug), type: "article", image: `/og/blog/${p.slug}.png` });
+  return pageMetadata({ title: p.metaTitle ?? p.title, description: p.description, path: routes.post(p.slug), type: "article", image: `/og/blog/${p.slug}.png`, published: p.date, keywords: p.tags });
 }
 
 const fmt = (d: string) => new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
@@ -57,7 +57,7 @@ export default async function PostPage({ params }: Props) {
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}`} submitLabel="Submit" />
       </FinalCta>
-      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, author: p.author })} />
+      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, author: p.author, type: "BlogPosting", keywords: p.tags })} />
     </>
   );
 }

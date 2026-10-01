@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/sections/PageHero";
 import { getPage, getPages, staticParams } from "@/lib/content";
-import { pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { pageLd, pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 /** Simple markdown pages from content/pages/*.md (about, privacy, terms…) */
@@ -27,6 +28,7 @@ export default async function StaticPage({ params }: Props) {
           <article className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
         </div>
       </section>
+      <JsonLd data={pageLd(p.slug === "about" ? "AboutPage" : "WebPage", { name: p.title, description: p.description, path: routes.page(p.slug) })} />
     </>
   );
 }

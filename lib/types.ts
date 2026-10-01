@@ -63,6 +63,10 @@ type Brief = {
   sections?: Section[];
   /** Entities the page mentions (Schema.org WebPage.mentions); defaults to section H2s */
   mentions?: string[];
+  /** Meta keywords: focus keyword first, then close variants */
+  keywords?: string[];
+  /** Semantic brief (not rendered): entities, n-grams, skip-grams, NLP keywords */
+  semantic?: { entities?: string[]; ngrams?: string[]; skipgrams?: string[]; nlpKeywords?: string[] };
   /** Last content update, YYYY-MM-DD (sitemap lastmod + dateModified) */
   updated?: string;
   blocks?: Blocks;

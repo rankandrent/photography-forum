@@ -3,15 +3,17 @@ import { CtaBand, FinalCta } from "@/components/sections/Blocks";
 import { PageHero } from "@/components/sections/PageHero";
 import { WorkCard } from "@/components/sections/WorkCards";
 import { WorkFilter } from "@/components/sections/WorkFilter";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import { getCaseStudies, getIndustries, getServices } from "@/lib/content";
-import { pageMetadata } from "@/lib/seo";
+import { collectionLd, pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "UI UX Design Case Studies | Our Work & Results",
   description: "UI UX design case studies with the research, design decisions, and measurable outcomes behind each product we designed.",
   path: routes.caseStudies,
+  keywords: ["UI UX design case studies", "UX case studies", "product design portfolio", "UX design results"],
 });
 
 export default function WorkPage() {
@@ -45,6 +47,14 @@ export default function WorkPage() {
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source="work page" submitLabel="Submit" />
       </FinalCta>
+      <JsonLd
+        data={collectionLd({
+          name: "UI UX design case studies",
+          description: metadata.description as string,
+          path: routes.caseStudies,
+          items: items.map((c) => ({ name: c.title, path: routes.caseStudy(c.slug) })),
+        })}
+      />
     </>
   );
 }

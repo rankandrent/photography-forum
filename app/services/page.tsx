@@ -6,14 +6,15 @@ import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import { anchorOf, servicesByCategory } from "@/lib/content";
-import { pageMetadata } from "@/lib/seo";
-import { absoluteUrl, cap, routes } from "@/lib/site";
+import { collectionLd, pageMetadata } from "@/lib/seo";
+import { cap, routes } from "@/lib/site";
 import type { ServiceCategory } from "@/lib/types";
 
 export const metadata = pageMetadata({
   title: "UI UX Design Services | Research, UX, UI & Testing",
   description: "Explore our UI UX design services: UX research, audits, usability testing, product and app design, dashboards and design systems. See pricing and timelines.",
   path: routes.services,
+  keywords: ["UI UX design services", "UX design services", "UX research services", "UX audit services", "usability testing services", "design system services"],
 });
 
 const INTRO: Record<ServiceCategory, string> = {
@@ -51,17 +52,12 @@ export default function ServicesHub() {
         <LeadForm variant="full" interests={formInterests} source="services hub" submitLabel="Submit" />
       </FinalCta>
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "ItemList",
-          name: "UI UX design service catalog",
-          itemListElement: groups.flatMap((g) => g.services).map((s, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            name: cap(anchorOf(s)),
-            url: absoluteUrl(routes.service(s.slug)),
-          })),
-        }}
+        data={collectionLd({
+          name: "UI UX design services",
+          description: metadata.description as string,
+          path: routes.services,
+          items: groups.flatMap((g) => g.services).map((s) => ({ name: cap(anchorOf(s)), path: routes.service(s.slug) })),
+        })}
       />
     </>
   );

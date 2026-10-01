@@ -9,6 +9,9 @@ export function pageMetadata({
   noindex,
   type = "website",
   image = "/og/home.png",
+  keywords,
+  published,
+  modified,
 }: {
   title: string;
   description: string;
@@ -17,11 +20,17 @@ export function pageMetadata({
   type?: "website" | "article";
   /** Path of the share image, e.g. /og/services/ux-design.png */
   image?: string;
+  /** Focus keyword first, then close variants (meta keywords) */
+  keywords?: string[];
+  /** Article dates, YYYY-MM-DD */
+  published?: string;
+  modified?: string;
 }): Metadata {
   const url = absoluteUrl(path);
   return {
     title: { absolute: title },
     description,
+    ...(keywords?.length && { keywords: [...new Set(keywords.map((k) => k.trim()).filter(Boolean))] }),
     alternates: { canonical: url },
     openGraph: {
       title,
@@ -30,10 +39,17 @@ export function pageMetadata({
       type,
       siteName: SITE.name,
       locale: "en_US",
-      images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: title }],
+      images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: title, type: "image/png" }],
+      ...(type === "article" && published && { publishedTime: published, modifiedTime: modified ?? published }),
     },
     twitter: { card: "summary_large_image", title, description, images: [absoluteUrl(image)] },
-    robots: noindex ? { index: false, follow: true } : undefined,
+    robots: noindex
+      ? { index: false, follow: true, googleBot: { index: false, follow: true } }
+      : {
+          index: true,
+          follow: true,
+          googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+        },
   };
 }
 
@@ -136,9 +152,19 @@ export const breadcrumbLd = (items: { name: string; path: string }[]) => ({
   })),
 });
 
-export const articleLd = (a: { title: string; description: string; path: string; date: string; author: string; image: string }) => ({
+export const articleLd = (a: {
+  title: string;
+  description: string;
+  path: string;
+  date: string;
+  author: string;
+  image: string;
+  type?: "Article" | "BlogPosting";
+  keywords?: string[];
+}) => ({
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": a.type ?? "Article",
+  ...(a.keywords?.length && { keywords: a.keywords.join(", ") }),
   headline: a.title,
   description: a.description,
   image: absoluteUrl(a.image),
@@ -147,4 +173,34 @@ export const articleLd = (a: { title: string; description: string; path: string;
   author: { "@type": "Person", name: a.author },
   publisher: { "@id": ORG_ID },
   mainEntityOfPage: absoluteUrl(a.path),
+});
+
+/** Hub pages: CollectionPage whose main entity is the ItemList of linked pages */
+export const collectionLd = (p: { name: string; description: string; path: string; items: { name: string; path: string }[] }) => ({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${absoluteUrl(p.path)}#webpage`,
+  url: absoluteUrl(p.path),
+  name: p.name,
+  description: p.description,
+  isPartOf: { "@id": `${SITE.url}/#website` },
+  inLanguage: "en-US",
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: p.items.length,
+    itemListElement: p.items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, url: absoluteUrl(it.path) })),
+  },
+});
+
+/** Typed page node, e.g. ContactPage or AboutPage */
+export const pageLd = (type: "ContactPage" | "AboutPage" | "WebPage", p: { name: string; description: string; path: string }) => ({
+  "@context": "https://schema.org",
+  "@type": type,
+  "@id": `${absoluteUrl(p.path)}#webpage`,
+  url: absoluteUrl(p.path),
+  name: p.name,
+  description: p.description,
+  isPartOf: { "@id": `${SITE.url}/#website` },
+  ...(type !== "WebPage" && { about: { "@id": ORG_ID } }),
+  inLanguage: "en-US",
 });

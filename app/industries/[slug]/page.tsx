@@ -20,7 +20,13 @@ export const generateStaticParams = () => staticParams("slug", getIndustries().m
 export async function generateMetadata({ params }: Props) {
   const i = getIndustry((await params).slug);
   if (!i) return {};
-  return pageMetadata({ title: i.metaTitle, description: i.metaDescription, path: routes.industry(i.slug), image: `/og/industries/${i.slug}.png` });
+  return pageMetadata({
+    title: i.metaTitle,
+    description: i.metaDescription,
+    path: routes.industry(i.slug),
+    image: `/og/industries/${i.slug}.png`,
+    keywords: i.keywords ?? [anchorOf(i)],
+  });
 }
 
 export default async function IndustryPage({ params }: Props) {

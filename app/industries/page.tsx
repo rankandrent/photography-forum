@@ -3,14 +3,16 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { FinalCta } from "@/components/sections/Blocks";
 import { PageHero } from "@/components/sections/PageHero";
 import { formInterests, home } from "@/content/home";
-import { getIndustries } from "@/lib/content";
-import { pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { anchorOf, getIndustries } from "@/lib/content";
+import { collectionLd, pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "UI UX Design by Industry | Healthcare, Fintech & SaaS",
   description: "UI UX design by industry: healthcare, fintech, SaaS, e-commerce, supply chain and startup products, backed by real case studies and measurable results.",
   path: routes.industries,
+  keywords: ["UI UX design by industry", "healthcare UI UX design", "fintech UI UX design", "SaaS UI UX design", "e-commerce UI UX design", "supply chain UI UX design"],
 });
 
 export default function IndustriesHub() {
@@ -40,6 +42,14 @@ export default function IndustriesHub() {
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source="industries hub" submitLabel="Submit" />
       </FinalCta>
+      <JsonLd
+        data={collectionLd({
+          name: "UI UX design by industry",
+          description: metadata.description as string,
+          path: routes.industries,
+          items: industries.map((i) => ({ name: anchorOf(i), path: routes.industry(i.slug) })),
+        })}
+      />
     </>
   );
 }
