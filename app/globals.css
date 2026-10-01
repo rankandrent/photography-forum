@@ -1061,6 +1061,12 @@ main > :is(.phero:not(.phero--light), .section--dark, .final) + :is(.phero:not(.
 @media (max-width: 900px) {
   .hero__split { grid-template-columns: 1fr; gap: 40px; }
   .hportrait { width: 100%; max-width: 400px; aspect-ratio: 1 / 1; }
+  /* mobile order: copy, buttons, portrait card, then stats */
+  .hero__split { gap: 0; }
+  .hero__split > div:first-child { display: contents; }
+  .hero__split .hero__actions { order: 1; }
+  .hero__split .hportrait { order: 2; margin-top: 32px; }
+  .hero__split .stats-row { order: 3; }
 }
 .ftr__address { font-style: normal; font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.55); margin-top: 16px; max-width: 320px; }
 .phero__address { font-style: normal; display: flex; gap: 8px; align-items: flex-start; }

@@ -53,7 +53,6 @@ export default function HomePage() {
               </h1>
               <p className="hero__subhead">{home.hero.sub}</p>
               <div className="hero__actions">
-                <a href="#cta-form" className="btn">Schedule a call</a>
                 <Link href={routes.caseStudies} className="btn btn--dark-outline">See our work</Link>
               </div>
               <StatsRow items={home.hero.stats} />
