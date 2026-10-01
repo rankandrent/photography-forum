@@ -215,8 +215,8 @@ export const home = {
     ],
   },
   team: {
-    heading: "Meet the team",
-    intro: "The people who research, design and manage your engagement. Every profile links to the person's LinkedIn.",
+    headingMuted: "Real people, not a logo.",
+    heading: "Meet the team behind your product.",
     // role: fill in each person's job title; an empty role is simply not shown
     items: [
       { name: "Sahar Asif", role: "Key account manager", photo: "/team/sahar-asif.webp", linkedin: "https://www.linkedin.com/in/sahar-asif-284a9955/" },

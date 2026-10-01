@@ -1,3 +1,4 @@
+import { TeamSlider } from "@/components/sections/TeamSlider";
 import { EmailCapture } from "@/components/forms/EmailCapture";
 import { Html } from "@/components/ui/Html";
 import { home } from "@/content/home";
@@ -150,24 +151,31 @@ export function WhyUs() {
 export function Team() {
   const d = home.team;
   return (
-    <section className="section section--light" id="team" aria-labelledby="team-heading">
+    <section className="section section--light team2" id="team" aria-labelledby="team-heading">
       <div className="container">
-        <h2 id="team-heading" className="team__headline">{d.heading}</h2>
-        <p className="team__intro">{d.intro}</p>
-        <div className="team__grid">
-          {d.items.map((t) => (
-            <div key={t.name} className="team-card">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="team-card__img" src={t.photo} alt={`${t.name}${t.role ? `, ${t.role.toLowerCase()}` : ""}`} width={640} height={640} loading="lazy" decoding="async" />
-              <div className="team-card__name">{t.name}</div>
-              {t.role && <div className="team-card__role">{t.role}</div>}
-              <a className="team-card__in" href={t.linkedin} target="_blank" rel="noopener" aria-label={`${t.name} on LinkedIn`}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg>
-                LinkedIn
-              </a>
-            </div>
-          ))}
+        <div className="team2__head">
+          <h2 id="team-heading" className="team2__headline">
+            <span>{d.headingMuted}</span>
+            {d.heading}
+          </h2>
         </div>
+        <TeamSlider label="Team members">
+          {d.items.map((t) => (
+            <article key={t.name} className="tcard">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={t.photo} alt={`${t.name}${t.role ? `, ${t.role.toLowerCase()}` : ""}`} width={900} height={900} loading="lazy" decoding="async" />
+              <div className="tcard__info">
+                <div>
+                  <h3 className="tcard__name">{t.name}</h3>
+                  {t.role && <p className="tcard__role">{t.role}</p>}
+                </div>
+                <a className="tcard__in" href={t.linkedin} target="_blank" rel="noopener" aria-label={`${t.name} on LinkedIn`}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg>
+                </a>
+              </div>
+            </article>
+          ))}
+        </TeamSlider>
       </div>
     </section>
   );

@@ -1236,3 +1236,31 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .team-card__in svg { color: #0A66C2; }
 .team-card__in:hover { color: #0A66C2; }
 @media (max-width: 900px) { .team__grid .team-card { flex-basis: calc((100% - 20px) / 2); } }
+
+/* ---------- Team v2: full-photo slider ---------- */
+.team2 .container { position: relative; }
+.team2__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px; padding-right: 120px; }
+.team2__headline { font-size: 52px; line-height: 1.08; letter-spacing: -0.03em; }
+.team2__headline span { display: block; color: #A3A1A8; }
+.tslider__btns { position: absolute; right: var(--gut, 20px); top: 56px; display: flex; gap: 8px; }
+.tslider__btn { width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; background: var(--surface); border: 1px solid var(--border); color: var(--text); transition: background .2s, color .2s, border-color .2s; }
+.tslider__btn:hover { background: var(--black); color: #fff; border-color: var(--black); }
+.tslider { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-right: calc(50% - 50vw); padding-right: 48px; scroll-padding-left: 0; }
+.tslider::-webkit-scrollbar { display: none; }
+.tslider:focus-visible { outline: 2px solid var(--pink); outline-offset: 4px; }
+.tcard { position: relative; flex: 0 0 420px; aspect-ratio: 1 / 1; border-radius: 20px; overflow: hidden; scroll-snap-align: start; background: var(--surface); }
+.tcard img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.tcard:hover img { transform: scale(1.03); }
+.tcard::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(to bottom, transparent, rgba(2,1,1,0.82)); pointer-events: none; }
+.tcard__info { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; padding: 22px 24px; color: #fff; }
+.tcard__name { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+.tcard__role { font-size: 14px; color: rgba(255,255,255,0.72); margin-top: 2px; }
+.tcard__in { flex: none; width: 38px; height: 38px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.14); color: #fff; backdrop-filter: blur(6px); transition: background .2s; }
+.tcard__in:hover { background: #0A66C2; }
+@media (max-width: 900px) {
+  .team2__head { padding-right: 0; margin-bottom: 28px; }
+  .team2__headline { font-size: 34px; }
+  .tslider__btns { display: none; }
+  .tslider { padding-right: 20px; }
+  .tcard { flex-basis: 82%; }
+}
