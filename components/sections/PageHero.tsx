@@ -1,19 +1,18 @@
 import type { ReactNode } from "react";
 import { Breadcrumbs, type Crumb } from "@/components/layout/Breadcrumbs";
 import { home } from "@/content/home";
+import { SITE } from "@/lib/site";
 import type { Stat } from "@/lib/types";
 
 const TRUST_LOGOS = ["NBCUniversal", "7-Eleven", "Groupon", "Sterne Kessler", "Nitro League"];
 
 /** Rating, client logos and guarantees shown under the hero copy */
 export function HeroTrust() {
-  const rating = home.hero.stats.find((x) => x.value.includes("/ 5"));
   const logos = home.clients.items.filter((c) => TRUST_LOGOS.includes(c.name));
   return (
     <div className="htrust">
       <div className="htrust__rating">
-        <span className="htrust__stars" aria-hidden="true">★★★★★</span>
-        <span><strong>{rating?.value ?? "4.9 / 5"}</strong> average client rating · 200+ products designed</span>
+        <span><strong>200+</strong> products designed · in business since {SITE.founded}</span>
       </div>
       <div className="htrust__logos" aria-label="Clients">
         <span className="htrust__label">Trusted by teams at</span>
@@ -76,7 +75,7 @@ export function PageHero({
   aside?: ReactNode;
   stats?: Stat[];
   tone?: "dark" | "light";
-  /** Show rating, client logos and guarantees under the copy */
+  /** Show track record, client logos and guarantees under the copy */
   trust?: boolean;
   /** Rendered under the hero copy, e.g. a WorkRail */
   children?: ReactNode;

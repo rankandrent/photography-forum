@@ -28,7 +28,7 @@ export const home = {
     stats: [
       { value: "200+", label: "UX design projects delivered" },
       { value: `${yearsInBusiness}+ yrs`, label: "Designing digital products since 2017" },
-      { value: "4.9 / 5", label: "Average client rating across platforms" },
+      { value: "1 day", label: "Reply time on every new inquiry" },
     ],
   },
   clients: {
@@ -58,7 +58,7 @@ export const home = {
       { value: "200+", label: "Products designed and shipped" },
       { value: "40+", label: "Hours of user shadowing per deep engagement" },
       { value: `${yearsInBusiness}+ yrs`, label: "Designing digital products since 2017" },
-      { value: "4.9 / 5", label: "Average client rating across platforms" },
+      { value: "1 day", label: "Reply time on every new inquiry" },
     ],
   },
   challenges: {
