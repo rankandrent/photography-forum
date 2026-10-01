@@ -20,6 +20,7 @@ export function Footer() {
       title: "Company",
       links: [
         { label: "Our work", href: routes.caseStudies },
+        { label: "Locations", href: routes.locations },
         { label: "About", href: "/about/" },
         { label: "Contact", href: routes.contact },
       ],

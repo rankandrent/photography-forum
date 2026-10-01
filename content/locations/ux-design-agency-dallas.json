@@ -1,0 +1,21 @@
+{
+  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
+  "draft": true,
+  "order": 11,
+  "title": "Dallas",
+  "city": "Dallas",
+  "state": "TX",
+  "keyword": "ux design agency dallas",
+  "anchor": "UX design agency Dallas",
+  "metaTitle": "UX design agency Dallas | Research-Led Product Design",
+  "metaDescription": "UX design agency Dallas for product teams in Dallas: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "hero": {
+    "eyebrow": "ux design agency dallas",
+    "h1": "UX design agency Dallas for products that need to perform",
+    "sub": "Senior UX researchers and designers working with product teams in Dallas: research, UX and UI design, prototypes and usability testing in one engagement."
+  },
+  "summary": "Research-led UI UX design for product teams in Dallas.",
+  "updated": "2026-10-01",
+  "sections": [],
+  "faqs": []
+}

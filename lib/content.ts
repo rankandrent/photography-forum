@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import { SERVICE_CATEGORIES, type CaseStudy, type Industry, type Page, type Post, type Service } from "./types";
+import { SERVICE_CATEGORIES, type CaseStudy, type Industry, type Location, type Page, type Post, type Service } from "./types";
 
 const ROOT = path.join(process.cwd(), "content");
 
@@ -49,12 +49,14 @@ let cache: {
   caseStudies: CaseStudy[];
   posts: Post[];
   pages: Page[];
+  locations: Location[];
 } | null = null;
 
 function load() {
   if (cache) return cache;
   const services = readJson<Service>("services").sort(byOrder);
   const industries = readJson<Industry>("industries").sort(byOrder);
+  const locations = readJson<Location>("locations").sort(byOrder);
 
   const caseStudies: CaseStudy[] = readMarkdown("case-studies")
     .filter(({ data }) => !data.draft)
@@ -107,12 +109,16 @@ function load() {
     html,
   }));
 
-  cache = { services, industries, caseStudies, posts, pages };
+  cache = { services, industries, locations, caseStudies, posts, pages };
   return cache;
 }
 
 export const getServices = () => load().services;
 export const getIndustries = () => load().industries;
+export const getLocations = () => load().locations;
+export const getLocation = (slug: string) => getLocations().find((l) => l.slug === slug);
+/** One menu entry per city: the first page listed for that city */
+export const locationCities = () => getLocations().filter((l, i, all) => all.findIndex((x) => x.title === l.title) === i);
 export const getCaseStudies = () => load().caseStudies;
 export const getPosts = () => load().posts;
 export const getPages = () => load().pages;

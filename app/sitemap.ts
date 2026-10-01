@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getCaseStudies, getIndustries, getPages, getPosts, getServices } from "@/lib/content";
+import { getCaseStudies, getIndustries, getLocations, getPages, getPosts, getServices } from "@/lib/content";
 import { absoluteUrl, routes } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getServices().map((s) => u(routes.service(s.slug), 0.9, s.updated)),
     u(routes.industries, 0.8),
     ...getIndustries().map((i) => u(routes.industry(i.slug), 0.8, i.updated)),
+    u(routes.locations, 0.7),
+    ...getLocations().filter((l) => !l.draft).map((l) => u(routes.location(l.slug), 0.8, l.updated)),
     u(routes.caseStudies, 0.7),
     ...getCaseStudies().map((c) => u(routes.caseStudy(c.slug), 0.7, c.date)),
     u(routes.blog, 0.6),

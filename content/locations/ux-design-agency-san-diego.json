@@ -1,0 +1,21 @@
+{
+  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
+  "draft": true,
+  "order": 16,
+  "title": "San Diego",
+  "city": "San Diego",
+  "state": "CA",
+  "keyword": "ux design agency san diego",
+  "anchor": "UX design agency San Diego",
+  "metaTitle": "UX design agency San Diego | Research-Led Product Design",
+  "metaDescription": "UX design agency San Diego for product teams in San Diego: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "hero": {
+    "eyebrow": "ux design agency san diego",
+    "h1": "UX design agency San Diego for products that need to perform",
+    "sub": "Senior UX researchers and designers working with product teams in San Diego: research, UX and UI design, prototypes and usability testing in one engagement."
+  },
+  "summary": "Research-led UI UX design for product teams in San Diego.",
+  "updated": "2026-10-01",
+  "sections": [],
+  "faqs": []
+}

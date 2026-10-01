@@ -1214,3 +1214,14 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .ftr__copy { margin-top: 28px; font-size: 13px; color: rgba(255,255,255,0.35); }
 .ftr__top + .ftr__mega { margin-top: 64px; }
 @media (max-width: 700px) { .ftr__top + .ftr__mega { margin-top: 48px; } }
+
+/* ---------- Locations hub ---------- */
+.loc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.loc-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 28px; transition: border-color .2s, transform .2s; }
+.loc-card:hover { border-color: var(--pink); transform: translateY(-3px); }
+.loc-card__state { font-family: var(--font-m); font-size: 12px; letter-spacing: .14em; color: var(--pink); margin-bottom: 8px; }
+.loc-card__city { font-size: 26px; margin-bottom: 16px; }
+.loc-card ul { display: grid; gap: 10px; }
+.loc-card a { font-size: 15px; color: var(--text-m); display: inline-flex; gap: 6px; }
+.loc-card a:hover { color: var(--pink); }
+@media (max-width: 900px) { .loc-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,21 @@
+{
+  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
+  "draft": true,
+  "order": 7,
+  "title": "Austin",
+  "city": "Austin",
+  "state": "TX",
+  "keyword": "ux design agency austin",
+  "anchor": "UX design agency Austin",
+  "metaTitle": "UX design agency Austin | Research-Led Product Design",
+  "metaDescription": "UX design agency Austin for product teams in Austin: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "hero": {
+    "eyebrow": "ux design agency austin",
+    "h1": "UX design agency Austin for products that need to perform",
+    "sub": "Senior UX researchers and designers working with product teams in Austin: research, UX and UI design, prototypes and usability testing in one engagement."
+  },
+  "summary": "Research-led UI UX design for product teams in Austin.",
+  "updated": "2026-10-01",
+  "sections": [],
+  "faqs": []
+}

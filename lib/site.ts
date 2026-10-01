@@ -33,6 +33,8 @@ export const routes = {
   service: (slug: string) => `/services/${slug}/`,
   industries: "/industries/",
   industry: (slug: string) => `/industries/${slug}/`,
+  locations: "/location/",
+  location: (slug: string) => `/location/${slug}/`,
   caseStudies: "/case-studies/",
   caseStudy: (slug: string) => `/case-studies/${slug}/`,
   blog: "/blog/",

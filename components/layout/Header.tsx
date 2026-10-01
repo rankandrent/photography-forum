@@ -8,7 +8,7 @@ import { routes } from "@/lib/site";
 export type NavItem = { title: string; href: string; summary?: string };
 export type NavGroup = { category: string; items: NavItem[] };
 
-export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[]; industries: NavItem[] }) {
+export function Header({ serviceGroups, industries, locations }: { serviceGroups: NavGroup[]; industries: NavItem[]; locations: NavItem[] }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -81,6 +81,22 @@ export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[
               </div>
             </div>
           </div>
+          <div className="hdr__dd hdr__dd--mega">
+            <Link href={routes.locations}>Locations</Link>
+            <div className="hdr__dd-panel mega mega--ind mega--loc">
+              <p className="mega__cat">UX design agency near you</p>
+              <ul className="mega__grid">
+                {locations.map((i) => (
+                  <li key={i.href}>
+                    <Link href={i.href}>{i.title}</Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mega__special">
+                <Link href={routes.locations} className="mega__all">All locations →</Link>
+              </div>
+            </div>
+          </div>
           <Link href={routes.caseStudies}>Our work</Link>
           <Link href={routes.blog}>Insights</Link>
           <Link href={routes.contact} className="btn hdr__cta">Schedule a call</Link>
@@ -113,6 +129,13 @@ export function Header({ serviceGroups, industries }: { serviceGroups: NavGroup[
             {industries.map((i) => <Link key={i.href} href={i.href} onClick={close}>{i.title}</Link>)}
           </div>
           <Link href={routes.industries} onClick={close} className="hdr__mall">All industries →</Link>
+        </details>
+        <details className="hdr__mgroup">
+          <summary>Locations</summary>
+          <div className="hdr__mcat">
+            {locations.map((i) => <Link key={i.href} href={i.href} onClick={close}>{i.title}</Link>)}
+          </div>
+          <Link href={routes.locations} onClick={close} className="hdr__mall">All locations →</Link>
         </details>
         <Link href={routes.caseStudies} onClick={close}>Our work</Link>
         <Link href={routes.blog} onClick={close}>Insights</Link>

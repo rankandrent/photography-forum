@@ -1,0 +1,21 @@
+{
+  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
+  "draft": true,
+  "order": 4,
+  "title": "San Francisco",
+  "city": "San Francisco",
+  "state": "CA",
+  "keyword": "ux design agency san francisco",
+  "anchor": "UX design agency San Francisco",
+  "metaTitle": "UX design agency San Francisco | Research-Led Product Design",
+  "metaDescription": "UX design agency San Francisco for product teams in San Francisco: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "hero": {
+    "eyebrow": "ux design agency san francisco",
+    "h1": "UX design agency San Francisco for products that need to perform",
+    "sub": "Senior UX researchers and designers working with product teams in San Francisco: research, UX and UI design, prototypes and usability testing in one engagement."
+  },
+  "summary": "Research-led UI UX design for product teams in San Francisco.",
+  "updated": "2026-10-01",
+  "sections": [],
+  "faqs": []
+}

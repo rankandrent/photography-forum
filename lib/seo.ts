@@ -111,7 +111,14 @@ export const webPageLd = (p: {
   inLanguage: "en-US",
 });
 
-export const serviceLd = (name: string, description: string, path: string, offers: string[] = [], priceRange?: string) => ({
+export const serviceLd = (
+  name: string,
+  description: string,
+  path: string,
+  offers: string[] = [],
+  priceRange?: string,
+  area: Record<string, unknown> = { "@type": "Country", name: "United States" },
+) => ({
   "@context": "https://schema.org",
   "@type": "Service",
   name,
@@ -119,7 +126,7 @@ export const serviceLd = (name: string, description: string, path: string, offer
   description,
   url: absoluteUrl(path),
   provider: { "@id": ORG_ID },
-  areaServed: { "@type": "Country", name: "United States" },
+  areaServed: area,
   ...(priceRange && {
     offers: { "@type": "Offer", priceCurrency: "USD", description: priceRange, url: absoluteUrl(path) },
   }),

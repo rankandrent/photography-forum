@@ -111,6 +111,26 @@ export type Service = Brief & {
 };
 
 /** content/industries/<slug>.json */
+/** City landing page: one per target keyword (content/locations/*.json) */
+export type Location = Brief & {
+  slug: string;
+  /** Short city label for menus and chips, e.g. "New York" */
+  title: string;
+  /** City as written in copy and schema, e.g. "New York City" */
+  city: string;
+  state: string;
+  /** Focus keyword, lower case */
+  keyword: string;
+  order: number;
+  metaTitle: string;
+  metaDescription: string;
+  hero: Hero;
+  summary: string;
+  faqs?: Faq[];
+  /** Draft pages render but are noindex and stay out of the sitemap */
+  draft?: boolean;
+};
+
 export type Industry = Brief & {
   slug: string;
   /** Reuse the home "why us" + process content when the industry has none of its own */

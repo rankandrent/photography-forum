@@ -4,7 +4,7 @@ import { FloatingBar } from "@/components/layout/FloatingBar";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/ui/JsonLd";
-import { anchorOf, getIndustries, servicesByCategory } from "@/lib/content";
+import { anchorOf, getIndustries, servicesByCategory, locationCities } from "@/lib/content";
 import { organizationLd } from "@/lib/seo";
 import { SITE, cap, routes } from "@/lib/site";
 import "./globals.css";
@@ -28,11 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     items: g.services.map((s) => ({ title: cap(anchorOf(s)), href: routes.service(s.slug) })),
   }));
   const industries = getIndustries().map((i) => ({ title: i.title, href: routes.industry(i.slug) }));
+  const locations = locationCities().map((l) => ({ title: l.title, href: routes.location(l.slug) }));
   return (
     <html lang="en-US" className={`${manrope.variable} ${plexMono.variable}`}>
       <body>
         <a href="#main" className="skip-link">Skip to content</a>
-        <Header serviceGroups={serviceGroups} industries={industries} />
+        <Header serviceGroups={serviceGroups} industries={industries} locations={locations} />
         <main id="main">{children}</main>
         <Footer />
         <FloatingBar />
