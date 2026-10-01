@@ -168,8 +168,7 @@ export function SemanticSections({
 
               {kind === "process" && (
                 <>
-                  <Head s={s} kind={kind} center />
-                  <ScrollRail id={`${id}-rail`} label={s.h2}>
+                  <ScrollRail id={`${id}-rail`} label={s.h2} head={<Head s={s} kind={kind} center />}>
                     {items.map((c, i, all) => {
                       const kinds = stepKinds(all.map((x) => x.title.replace(/\s*\([^)]*\)\s*$/, "")));
                       const m = c.title.match(/^(.*?)\s*\(([^)]+)\)\s*$/);

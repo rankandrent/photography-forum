@@ -7,7 +7,7 @@ import { useEffect, useRef, type ReactNode } from "react";
  * step with the vertical scroll (desktop only). On small screens, or with
  * prefers-reduced-motion, it falls back to a normal swipeable row.
  */
-export function ScrollRail({ id, label, children }: { id: string; label: string; children: ReactNode }) {
+export function ScrollRail({ id, label, head, children }: { id: string; label: string; head?: ReactNode; children: ReactNode }) {
   const outer = useRef<HTMLDivElement>(null);
   const track = useRef<HTMLDivElement>(null);
 
@@ -71,6 +71,7 @@ export function ScrollRail({ id, label, children }: { id: string; label: string;
   return (
     <div ref={outer} className="wrail">
       <div className="wrail__sticky">
+        {head && <div className="wrail__head">{head}</div>}
         <div ref={track} className="wrail__track" id={id} role="region" aria-label={label} tabIndex={0}>
           {children}
         </div>

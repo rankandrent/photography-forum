@@ -154,13 +154,16 @@ export function Team() {
   return (
     <section className="section section--light team2" id="team" aria-labelledby="team-heading">
       <div className="container">
-        <div className="team2__head">
-          <h2 id="team-heading" className="team2__headline">
-            <span>{d.headingMuted}</span>
-            {d.heading}
-          </h2>
-        </div>
-        <ScrollRail id="team-rail" label="Team members">
+        <ScrollRail
+          id="team-rail"
+          label="Team members"
+          head={
+            <h2 id="team-heading" className="team2__headline">
+              <span>{d.headingMuted}</span>
+              {d.heading}
+            </h2>
+          }
+        >
           {d.items.map((t) => (
             <article key={t.name} className="tcard">
               {/* eslint-disable-next-line @next/next/no-img-element */}
