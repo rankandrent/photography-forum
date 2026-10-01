@@ -50,8 +50,10 @@ export function LeadForm({
       setStatus({ kind: "ok", msg: "Thanks — a design lead will get back to you within one business day." });
     } catch (err) {
       console.error("Lead form failed:", err);
-      const code = String((err as Error).message).split(" ")[0];
-      setStatus({ kind: "err", msg: `Something went wrong${/^\d+$/.test(code) ? ` (error ${code})` : ""}. Please try again or email ${SITE.email}.` });
+      const [code, ...rest] = String((err as Error).message).split(" ");
+      let detail = "";
+      try { detail = JSON.parse(rest.join(" ")).detail ?? ""; } catch {}
+      setStatus({ kind: "err", msg: `Something went wrong${/^\d+$/.test(code) ? ` (error ${code}${detail ? `: ${detail}` : ""})` : ""}. Please try again or email ${SITE.email}.` });
     }
   }
 
