@@ -28,7 +28,13 @@ export function ScrollRail({ id, label, children }: { id: string; label: string;
       }
       wrap.classList.add("is-pinned");
       row.style.transform = "";
-      distance = Math.max(0, row.scrollWidth - row.clientWidth);
+      // Stop when the last card sits as far from the right edge as the first
+      // card starts from the left edge, so the row ends inside the gutter.
+      const last = row.lastElementChild as HTMLElement | null;
+      const start = row.getBoundingClientRect().left;
+      const end = last ? last.getBoundingClientRect().right : start;
+      const viewport = document.documentElement.clientWidth;
+      distance = Math.max(0, Math.ceil(end - viewport + Math.max(start, 48)));
       const sticky = wrap.firstElementChild as HTMLElement;
       wrap.style.height = `${sticky.offsetHeight + distance}px`;
       update();
@@ -47,12 +53,16 @@ export function ScrollRail({ id, label, children }: { id: string; label: string;
     };
 
     layout();
+    // card widths settle once fonts and images are in; measure again then
+    document.fonts?.ready.then(layout);
+    window.addEventListener("load", layout);
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", layout);
     mq.addEventListener("change", layout);
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", layout);
+      window.removeEventListener("load", layout);
       mq.removeEventListener("change", layout);
       cancelAnimationFrame(frame);
     };
