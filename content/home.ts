@@ -16,6 +16,13 @@ export const home = {
     h1Before: "UI UX design services that turn interfaces into ",
     h1Em: "measurable outcomes",
     sub: "User research, UX design, UI design, prototyping, and usability testing delivered as one engagement. What gets designed actually ships, and every design decision ties back to a metric.",
+    contact: {
+      name: "Sahar Asif",
+      role: "Key account manager",
+      photo: "/team/sahar-asif.jpg",
+      note: "Replies within 1 business day",
+      cta: "Book a call with Sahar",
+    },
     stats: [
       { value: "200+", label: "UX design projects delivered" },
       { value: "16 yrs", label: "Average design team experience" },

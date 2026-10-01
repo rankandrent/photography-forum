@@ -49,10 +49,32 @@ export default function HomePage() {
             {home.hero.h1Before}
             <em>{home.hero.h1Em}</em>
           </h1>
-          <p className="hero__subhead">{home.hero.sub}</p>
-          <div className="hero__actions">
-            <a href="#cta-form" className="btn">Schedule a call</a>
-            <Link href={routes.caseStudies} className="btn btn--dark-outline">See our work</Link>
+          <div className="hero__intro">
+            <div>
+              <p className="hero__subhead">{home.hero.sub}</p>
+              <div className="hero__actions">
+                <a href="#cta-form" className="btn">Schedule a call</a>
+                <Link href={routes.caseStudies} className="btn btn--dark-outline">See our work</Link>
+              </div>
+            </div>
+            <aside className="hcontact" aria-label={`Talk to ${home.hero.contact.name}`}>
+              <div className="hcontact__person">
+                <span className="hcontact__photo">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={home.hero.contact.photo} alt={`${home.hero.contact.name}, ${home.hero.contact.role.toLowerCase()}`} width={96} height={96} loading="eager" decoding="async" />
+                  <span className="hcontact__dot" aria-hidden="true" />
+                </span>
+                <div>
+                  <p className="hcontact__name">{home.hero.contact.name}</p>
+                  <p className="hcontact__role">{home.hero.contact.role}</p>
+                  <p className="hcontact__note">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+                    {home.hero.contact.note}
+                  </p>
+                </div>
+              </div>
+              <a href="#cta-form" className="btn hcontact__btn">{home.hero.contact.cta}</a>
+            </aside>
           </div>
           <StatsRow items={home.hero.stats} />
           <WorkRail items={cases} id="home-rail" />
