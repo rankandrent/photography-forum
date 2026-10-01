@@ -41,6 +41,10 @@ export default async function IndustryPage({ params }: Props) {
   const posts = postsForIndustry(i.slug).slice(0, 3);
   const h = i.headings ?? {};
   const b = { ...DEFAULT_BLOCKS, ...i.blocks };
+  // the FAQ section of the heading vector renders in the two-column FAQ block below
+  const faqSection = i.sections?.find((x) => x.format === "faq");
+  const bodySections = i.sections?.filter((x) => x !== faqSection);
+  const allFaqs = [...(faqSection?.faqs ?? []), ...(i.faqs ?? [])];
 
   return (
     <>
@@ -73,7 +77,7 @@ export default async function IndustryPage({ params }: Props) {
       )}
 
       {i.sections?.length ? (
-        <SemanticSections sections={i.sections} />
+        <SemanticSections sections={bodySections} price={i.priceRange} label={`${i.title} UI UX design illustration`} />
       ) : (
         <>
           {i.bullets?.length ? (
@@ -119,7 +123,7 @@ export default async function IndustryPage({ params }: Props) {
         <Process heading={h.process ?? `Our ${lower(i.title)} design process`} steps={(i.process ?? home.process.steps)} />
       )}
 
-      <Faq heading={h.faqs ?? `${i.title} UI UX design FAQs`} items={i.faqs} />
+      <Faq heading={faqSection?.h2 ?? h.faqs ?? `${i.title} UI UX design FAQs`} intro={faqSection?.answer} items={allFaqs} />
 
       <FinalCta testimonial={b.testimonial ? home.testimonial : undefined}>
         <LeadForm variant="full" interests={formInterests} source={`industry final CTA: ${i.slug}`} submitLabel="Submit" />
@@ -138,7 +142,7 @@ export default async function IndustryPage({ params }: Props) {
         })}
       />
       <JsonLd data={serviceLd(`${i.title} UI UX Design Services`, i.metaDescription, path, services.map((s) => anchorOf(s)))} />
-      {!!i.faqs?.length && <JsonLd data={faqLd(i.faqs)} />}
+      {!!allFaqs.length && <JsonLd data={faqLd(allFaqs)} />}
     </>
   );
 }

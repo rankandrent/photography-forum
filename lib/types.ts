@@ -135,6 +135,7 @@ export type Location = Brief & {
 
 export type Industry = Brief & {
   slug: string;
+  priceRange?: string;
   /** Reuse the home "why us" + process content when the industry has none of its own */
   useDefaults?: boolean;
   title: string;

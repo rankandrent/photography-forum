@@ -105,9 +105,12 @@ const BANNED = [/\bAlso,/, /\bAs (stated|mentioned|explained)\b/i, /\bAccording 
 const HEDGES = /\b(might|may|could|perhaps|possibly)\b/i;
 const BOOL_Q = /^(is|are|do|does|did|can|will|should|would|has|have)\b/i;
 const ABBR = { UX: "user experience", UI: "user interface", IA: "information architecture", WCAG: "Web Content Accessibility Guidelines", SUS: "System Usability Scale", KPI: "key performance indicator", MVP: "minimum viable product", HIG: "Human Interface Guidelines" };
-const SVC_DIR = "content/services";
+const LINT_DIRS = ["content/services", "content/industries"];
 let lintCount = 0;
-const lint = (f, msg) => { lintCount++; report("warn", `/services/${f}`, `[writing] ${msg}`); };
+let LINT_PREFIX = "/services/";
+const lint = (f, msg) => { lintCount++; report("warn", `${LINT_PREFIX}${f}`, `[writing] ${msg}`); };
+for (const SVC_DIR of LINT_DIRS) {
+LINT_PREFIX = SVC_DIR.replace("content", "") + "/";
 for (const f of fs.readdirSync(SVC_DIR).filter((x) => x.endsWith(".json") && !x.startsWith("_"))) {
   const d = JSON.parse(fs.readFileSync(path.join(SVC_DIR, f), "utf8"));
   const slug = f.replace(/\.json$/, "");
@@ -137,7 +140,8 @@ for (const f of fs.readdirSync(SVC_DIR).filter((x) => x.endsWith(".json") && !x.
     if (!all.toLowerCase().includes(full.toLowerCase()) && !heroText.toLowerCase().includes(full.toLowerCase())) lint(slug, `abbreviation ${ab} is never expanded ("${full} (${ab})")`);
   }
 }
-if (!lintCount) console.log("✓ writing rules: all service pages pass");
+}
+if (!lintCount) console.log("✓ writing rules: all service and industry pages pass");
 
 console.log(`\n${pages.length} pages checked · ${errors} errors · ${warnings} warnings`);
 process.exit(errors ? 1 : 0);
