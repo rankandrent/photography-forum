@@ -1226,3 +1226,13 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .loc-card a:hover { color: var(--pink); }
 @media (max-width: 900px) { .loc-grid { grid-template-columns: 1fr; } }
 .semv__checks a { color: var(--pink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Team cards with photos ---------- */
+.team__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px 20px; }
+.team__grid .team-card { flex: 0 1 calc((100% - 60px) / 4); gap: 6px; }
+.team-card__img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 20px; background: var(--surface); margin-bottom: 12px; transition: transform .3s ease; }
+.team-card:hover .team-card__img { transform: translateY(-4px); }
+.team-card__in { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--text-m); width: fit-content; }
+.team-card__in svg { color: #0A66C2; }
+.team-card__in:hover { color: #0A66C2; }
+@media (max-width: 900px) { .team__grid .team-card { flex-basis: calc((100% - 20px) / 2); } }

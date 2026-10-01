@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { home } from "@/content/home";
 import { SITE, absoluteUrl } from "./site";
 import type { Faq, Step } from "./types";
 
@@ -79,6 +80,15 @@ export const organizationLd = () => ({
       ...(SITE.sameAs.length && { sameAs: SITE.sameAs }),
       ...(SITE.email && { email: SITE.email }),
     },
+    ...home.team.items.map((t) => ({
+      "@type": "Person",
+      "@id": `${SITE.url}/#${t.name.toLowerCase().replace(/\s+/g, "-")}`,
+      name: t.name,
+      ...(t.role && { jobTitle: t.role }),
+      image: absoluteUrl(t.photo),
+      sameAs: [t.linkedin],
+      worksFor: { "@id": ORG_ID },
+    })),
     {
       "@type": "WebSite",
       "@id": `${SITE.url}/#website`,

@@ -21,7 +21,7 @@ export const home = {
     contact: {
       name: "Sahar Asif",
       role: "Key account manager",
-      photo: "/team/sahar-asif.jpg",
+      photo: "/team/sahar-asif-lg.webp",
       note: "Replies within 1 business day",
       cta: "Book a call with Sahar",
     },
@@ -215,13 +215,17 @@ export const home = {
     ],
   },
   team: {
-    heading: "Meet your design leads",
-    intro: "Named people, not a company-wide team-size figure. These are the leads who run research and design on every engagement.",
+    heading: "Meet the team",
+    intro: "The people who research, design and manage your engagement. Every profile links to the person's LinkedIn.",
+    // role: fill in each person's job title; an empty role is simply not shown
     items: [
-      { name: "Aisha Rahman", role: "Lead UX Researcher", bio: "12 years running research for healthcare and enterprise SaaS products. Runs user shadowing and Jobs-to-be-Done analysis." },
-      { name: "Diego Ferreira", role: "Head of Product Design", bio: "Led design for 60+ products across supply chain, fintech, and B2B SaaS. Owns design decisions from research through engineering handoff." },
-      { name: "Nadia Petrova", role: "Lead UI & Design Systems", bio: "Built component libraries and design systems that ship across multi-product organizations. Specializes in accessibility and motion design." },
-      { name: "Marcus Chen", role: "AI Experience Design Lead", bio: "Designs trust, transparency, and actionability into AI-powered interfaces. Has shipped conversational UIs and recommendation engines." },
+      { name: "Sahar Asif", role: "Key account manager", photo: "/team/sahar-asif.webp", linkedin: "https://www.linkedin.com/in/sahar-asif-284a9955/" },
+      { name: "Shamir Farooq", role: "", photo: "/team/shamir-farooq.webp", linkedin: "https://www.linkedin.com/in/shahmirf/" },
+      { name: "Ahmad Ullah", role: "", photo: "/team/ahmad-ullah.webp", linkedin: "https://www.linkedin.com/in/iahmadullah/" },
+      { name: "Saliha Shahzad", role: "", photo: "/team/saliha-shahzad.webp", linkedin: "https://www.linkedin.com/in/saliha-shahzad-330357217/" },
+      { name: "Talha Saleem", role: "", photo: "/team/talha-saleem.webp", linkedin: "https://www.linkedin.com/in/creativetalha/" },
+      { name: "Faizan Khan", role: "", photo: "/team/faizan-khan.webp", linkedin: "https://www.linkedin.com/in/faizan132/" },
+      { name: "Umar Sarwar", role: "", photo: "/team/umar-sarwar.webp", linkedin: "https://www.linkedin.com/in/umar-sarwar-311aa1237/" },
     ],
   },
   tools: {
