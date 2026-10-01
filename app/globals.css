@@ -1272,8 +1272,8 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .team2__head { padding-right: 0; }
 
 /* ---------- Pinned rails: fill the viewport, cards centred (no empty band below) ---------- */
-.wrail.is-pinned .wrail__sticky { top: 69px; height: calc(100vh - 69px); height: calc(100svh - 69px); display: flex; flex-direction: column; justify-content: center; }
 .wrail__head { margin-bottom: 40px; }
 .wrail__head .semv__head--c { margin-bottom: 0; }
 .team2 .wrail__head .team2__headline { margin: 0; }
 @media (max-width: 900px) { .wrail__head { margin-bottom: 28px; } }
+.hero--light { padding-bottom: 56px; }

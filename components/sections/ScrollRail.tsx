@@ -20,14 +20,21 @@ export function ScrollRail({ id, label, head, children }: { id: string; label: s
     let frame = 0;
 
     const layout = () => {
+      const sticky = wrap.firstElementChild as HTMLElement;
       if (!mq.matches) {
         wrap.classList.remove("is-pinned");
         wrap.style.height = "";
+        sticky.style.top = "";
         row.style.transform = "";
         return;
       }
       wrap.classList.add("is-pinned");
       row.style.transform = "";
+      // pin so the row sits in the middle of the space under the header, without
+      // stretching it (a stretched sticky leaves empty bands above/below once unpinned)
+      const header = 69;
+      const free = window.innerHeight - header - sticky.offsetHeight;
+      sticky.style.top = `${Math.round(header + Math.max(16, free / 2))}px`;
       // Stop when the last card sits as far from the right edge as the first
       // card starts from the left edge, so the row ends inside the gutter.
       const last = row.lastElementChild as HTMLElement | null;
@@ -35,7 +42,6 @@ export function ScrollRail({ id, label, head, children }: { id: string; label: s
       const end = last ? last.getBoundingClientRect().right : start;
       const viewport = document.documentElement.clientWidth;
       distance = Math.max(0, Math.ceil(end - viewport + Math.max(start, 48)));
-      const sticky = wrap.firstElementChild as HTMLElement;
       wrap.style.height = `${sticky.offsetHeight + distance}px`;
       update();
     };
