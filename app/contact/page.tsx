@@ -25,6 +25,7 @@ export default function ContactPage() {
           <>
             <address className="phero__address">{addressLine}</address>
             <a href={`mailto:${SITE.email}`} className="phero__mail">{SITE.email}</a>
+            <a href={`tel:${SITE.phone}`} className="phero__mail">{SITE.phoneDisplay}</a>
           </>
         }
       />

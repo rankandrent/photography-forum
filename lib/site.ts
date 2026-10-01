@@ -14,6 +14,9 @@ export const SITE = {
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://uiuxdesignservices.us").replace(/\/$/, ""),
   /** Public contact email + social/profile URLs (LinkedIn, Clutch, G2 …) for Organization schema */
   email: "hello@uiuxdesignservices.us",
+  /** E.164 for links and schema; display form is formatted in the UI */
+  phone: "+12029783410",
+  phoneDisplay: "(202) 978-3410",
   sameAs: [] as string[],
   description:
     "UI UX design services for growing businesses. User research, UX design, UI design, prototyping, design systems, and usability testing that turn interfaces into measurable business outcomes.",

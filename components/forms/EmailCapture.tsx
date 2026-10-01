@@ -34,7 +34,7 @@ export function EmailCapture({
       });
       if (!res.ok) throw new Error();
       form.reset();
-      setMsg("Thanks — check your inbox.");
+      setMsg("Thanks — our team will email you the checklist within one business day.");
     } catch {
       setMsg("Something went wrong. Please try again.");
     }

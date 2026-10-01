@@ -44,7 +44,10 @@ export function Footer() {
           </Link>
           <p className="ftr__about">Research-led UI UX design for products that need to perform. Designing digital products since {SITE.founded}.</p>
           <address className="ftr__address">{addressLine}</address>
-          <a href={`mailto:${SITE.email}`} className="ftr__mail">{SITE.email}</a>
+          <p className="ftr__contact">
+            <a href={`mailto:${SITE.email}`} className="ftr__mail">{SITE.email}</a>
+            <a href={`tel:${SITE.phone}`} className="ftr__mail">{SITE.phoneDisplay}</a>
+          </p>
           <Link href={routes.contact} className="ftr__cta">Book a free consultation <span aria-hidden="true">→</span></Link>
           <p className="ftr__copy">© {new Date().getFullYear()} {SITE.domain}. All rights reserved.</p>
           {!!SITE.sameAs.length && (

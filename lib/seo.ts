@@ -79,6 +79,15 @@ export const organizationLd = () => ({
       image: absoluteUrl("/og/home.png"),
       ...(SITE.sameAs.length && { sameAs: SITE.sameAs }),
       ...(SITE.email && { email: SITE.email }),
+      telephone: SITE.phone,
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        telephone: SITE.phone,
+        email: SITE.email,
+        areaServed: "US",
+        availableLanguage: ["English"],
+      },
     },
     ...home.team.items.map((t) => ({
       "@type": "Person",
