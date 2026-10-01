@@ -17,7 +17,7 @@
     "Build design systems that scale across regional storefronts",
     "Test checkout and product page variations with real users"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "anchor": "E-commerce UI UX design",
   "keywords": [
     "e-commerce UI UX design agency",
@@ -26,5 +26,241 @@
     "checkout UX",
     "product page design",
     "marketplace UX"
+  ],
+  "centralEntity": "E-commerce UI UX design",
+  "sourceContext": "US UI/UX design agency; this industry page serves retailers, DTC brands, marketplaces and B2B sellers that need commerce design beyond the checkout funnel.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "E-commerce UI UX design shapes the user interface (UI) and user experience (UX) of a retail business beyond the checkout funnel: site search, merchandising, loyalty, omnichannel journeys and seller tools. Our engagements for retailers, direct-to-consumer (DTC) brands, marketplaces and business-to-business (B2B) sellers run 4–8 weeks, cost $25,000–$60,000, and ship on Shopify, Adobe Commerce or Salesforce Commerce Cloud.",
+  "sections": [
+    {
+      "h2": "What is e-commerce UI UX design?",
+      "format": "paragraph",
+      "answer": "<strong>E-commerce UI UX design is the design of every customer-facing and staff-facing screen a retail business runs, from site search and loyalty accounts to the seller dashboard of a marketplace.</strong> The work connects the online store with physical stores and customer service, so shoppers meet 1 brand in every channel.",
+      "body": "<p>Merchandisers manage search rules, store associates fulfil buy online, pick up in store (BOPIS) orders, and marketplace sellers manage payouts, each in a different tool. Conversion work on product listing pages, product detail pages and checkout belongs to our <a href=\"/services/ecommerce-ux-design-services/\">e-commerce UX design services</a>; this page covers the wider commerce operation around that funnel.</p>"
+    },
+    {
+      "h2": "Which commerce experiences do we design beyond checkout?",
+      "format": "list",
+      "answer": "<strong>We design 6 types of e-commerce products:</strong> site search and navigation, merchandising tools, loyalty and account areas, omnichannel journeys, marketplace seller dashboards and B2B commerce portals.",
+      "items": [
+        {
+          "title": "Site search and navigation.",
+          "body": "Autocomplete and zero-result pages turn vague queries into products, for example typo-tolerant suggestions grouped by category and brand."
+        },
+        {
+          "title": "Merchandising tools.",
+          "body": "Merchandisers pin, boost and bury products, for example a rule editor that previews the first 24 results."
+        },
+        {
+          "title": "Loyalty and account areas.",
+          "body": "Members check points, tiers and order history, for example a tier-progress card showing points left before free shipping."
+        },
+        {
+          "title": "Omnichannel journeys.",
+          "body": "Shoppers move between app, website and store, for example BOPIS order status and returns started online."
+        },
+        {
+          "title": "Marketplace seller dashboards.",
+          "body": "Third-party sellers manage listings, stock and payouts, for example a bulk listing upload with row-level errors."
+        },
+        {
+          "title": "B2B commerce portals.",
+          "body": "Trade buyers order against negotiated prices, for example quick order by stock keeping unit (SKU) and purchase-order approval."
+        }
+      ]
+    },
+    {
+      "h2": "What UX challenges are specific to e-commerce?",
+      "format": "cards",
+      "answer": "<strong>4 UX challenges are specific to e-commerce:</strong> search queries in shopper language, catalogue data quality, channel inconsistency and the needs of 2-sided marketplaces.",
+      "items": [
+        {
+          "title": "Search queries in shopper language",
+          "body": "Shoppers type \"red dress for a wedding\" while the catalogue uses internal names, so search design depends on synonyms and zero-result pages."
+        },
+        {
+          "title": "Catalogue data quality",
+          "body": "Missing attributes and inconsistent sizes break filters, so designers specify the attributes each category requires."
+        },
+        {
+          "title": "Channel inconsistency",
+          "body": "Prices, stock and points differ between app, website and store when systems disagree, so screens show when stock data was updated."
+        },
+        {
+          "title": "Two-sided marketplace needs",
+          "body": "Sellers want fewer listing fields and shoppers want complete product information, so research covers both sides together."
+        }
+      ]
+    },
+    {
+      "h2": "How does our e-commerce UI UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our commerce design process takes 4–8 weeks (20–40 working days) and runs in 5 steps</strong>, from the platform and catalogue review to the platform-ready handover.",
+      "items": [
+        {
+          "title": "Platform and catalogue review (3–5 days)",
+          "body": "We review the platform, for example BigCommerce, the search engine such as Algolia, and the product information management (PIM) data behind filters."
+        },
+        {
+          "title": "Shopper and staff research (4–8 days)",
+          "body": "We analyse site search logs for zero-result queries and interview shoppers plus merchandisers, store associates or sellers."
+        },
+        {
+          "title": "Journey and tool design (8–15 days)",
+          "body": "Designers produce search, loyalty or seller screens as a Figma prototype, reusing platform components where the theme supports them."
+        },
+        {
+          "title": "Testing with shoppers and staff (3–7 days)",
+          "body": "5 shoppers per round test search tasks, and 3–5 staff users test merchandising or seller tasks with real catalogue data."
+        },
+        {
+          "title": "Platform-ready handover (2–5 days)",
+          "body": "Developers receive Figma files mapped to Shopify sections or Salesforce Commerce Cloud components."
+        }
+      ]
+    },
+    {
+      "h2": "E-commerce UX vs content website UX",
+      "format": "table",
+      "answer": "<strong>E-commerce UX designs revenue journeys that cross channels and staff tools; general product UX designs tasks inside 1 application.</strong> Catalogue data, promotions and payment rules shape almost every commerce screen.",
+      "caption": "Comparison of e-commerce UX and general product UX",
+      "columns": [
+        "Criterion",
+        "E-commerce UX",
+        "General product UX"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Shoppers, merchandisers, store associates and marketplace sellers",
+          "1 primary user group"
+        ],
+        [
+          "Constraints and regulation",
+          "Payment Card Industry Data Security Standard (PCI DSS) scope, consumer protection rules and platform theme limits",
+          "App store and platform guidelines"
+        ],
+        [
+          "Testing",
+          "Search, account and seller tasks with real catalogue data",
+          "Core tasks with sample data"
+        ],
+        [
+          "Accessibility",
+          "Web Content Accessibility Guidelines (WCAG) 2.2 AA across product images, filters and payment fields, with Americans with Disabilities Act (ADA) Title III exposure",
+          "WCAG 2.2 AA"
+        ],
+        [
+          "Success metrics",
+          "Search exit rate, revenue per visitor, repeat purchase rate and seller listing time",
+          "Task success rate and time on task"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "mobile app UI UX design services",
+          "to": "/services/mobile-app-ui-ux-design-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does e-commerce UI UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Commerce design work costs $25,000–$60,000 for a 4–8 week research and design sprint.</strong> The price depends on 4 factors: the platform's theme limits, the number of channels, the user groups beyond shoppers and catalogue data quality.",
+      "body": "<p>A site search and zero-result redesign for a Shopify store with 1 catalogue sits near $25,000. A marketplace with a shopper app, seller dashboard and loyalty program across 3 channels sits near $60,000.</p>"
+    },
+    {
+      "h2": "Which payment, accessibility and review rules shape e-commerce UX?",
+      "format": "list",
+      "answer": "<strong>5 standards and regulations shape e-commerce UX:</strong>",
+      "items": [
+        "PCI DSS v4.0: requirement 6.4.3 makes teams authorise every script on payment pages, so designers keep third-party widgets out of the payment step.",
+        "WCAG 2.2 level AA: product images need alt text, filters need keyboard access and add-to-cart buttons need targets of at least 24×24 CSS pixels.",
+        "ADA Title III: US courts apply the ADA to online stores, so fixes go into templates instead of an overlay widget.",
+        "California Consumer Privacy Act (CCPA) and General Data Protection Regulation (GDPR): cookie banners and loyalty sign-up consent need choices with equal visual weight.",
+        "Federal Trade Commission (FTC) Rule on Consumer Reviews and Testimonials (16 CFR Part 465): fake reviews and review suppression are banned, so review displays show every star rating and label incentivised reviews."
+      ]
+    },
+    {
+      "h2": "E-commerce UI UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions retail and marketplace teams ask most about commerce design beyond checkout.</strong>",
+      "faqs": [
+        {
+          "q": "Do you design marketplace seller dashboards?",
+          "a": "<p>Yes. Seller dashboard design covers onboarding, bulk listing upload, stock, orders, returns and payouts, and each flow is tested with 3–5 real sellers before development.</p>"
+        },
+        {
+          "q": "Does commerce design work include site search?",
+          "a": "<p>Yes. Site search design covers autocomplete, ranking rules, results filters and zero-result pages, with the top 100 queries from site search logs used as test material.</p>"
+        },
+        {
+          "q": "Can a Shopify store support a custom loyalty program design?",
+          "a": "<p>Yes. Shopify loyalty apps such as Smile.io and Yotpo expose theme blocks and APIs, so a custom points and tiers design ships without a headless rebuild.</p>"
+        },
+        {
+          "q": "Is B2B commerce design different from retail store design?",
+          "a": "<p>Yes. B2B buyers order against negotiated prices, credit terms and approval limits, so B2B portals need quick order by SKU, saved lists, purchase-order approval and invoice history instead of promotional banners.</p>"
+        },
+        {
+          "q": "How long does an e-commerce design project take?",
+          "a": "<p>An e-commerce design project takes 4–8 weeks, which equals 20–40 working days. A multi-brand storefront with a shared design system takes 8–16 weeks and costs $60,000–$180,000.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "e-commerce",
+      "Shopify",
+      "Adobe Commerce",
+      "Salesforce Commerce Cloud",
+      "BigCommerce",
+      "Algolia",
+      "online marketplace",
+      "omnichannel retail",
+      "loyalty program",
+      "PCI DSS"
+    ],
+    "ngrams": [
+      "e-commerce ui ux design",
+      "site search",
+      "seller dashboard",
+      "loyalty program",
+      "omnichannel",
+      "b2b commerce"
+    ],
+    "skipgrams": [
+      "search … zero-result",
+      "seller … listing",
+      "loyalty … points",
+      "omnichannel … store"
+    ],
+    "nlpKeywords": [
+      "merchandising",
+      "zero-result queries",
+      "buy online, pick up in store",
+      "marketplace sellers",
+      "product catalogue",
+      "loyalty tiers",
+      "B2B buyers",
+      "product information management"
+    ]
+  },
+  "mentions": [
+    "e-commerce",
+    "Shopify",
+    "Adobe Commerce",
+    "Salesforce Commerce Cloud",
+    "BigCommerce",
+    "Algolia",
+    "online marketplace",
+    "omnichannel retail",
+    "loyalty program",
+    "PCI DSS"
   ]
 }

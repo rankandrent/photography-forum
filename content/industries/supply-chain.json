@@ -17,7 +17,7 @@
     "Build real-time dashboards where data accuracy matters as much as layout",
     "Test error recovery flows with operators, not designers"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "anchor": "Supply chain UI UX design",
   "keywords": [
     "supply chain UI UX design",
@@ -25,5 +25,233 @@
     "warehouse management UX",
     "supply chain dashboard design",
     "operator workflow design"
+  ],
+  "centralEntity": "Supply chain UI UX design",
+  "sourceContext": "US UI/UX design agency; this page sells UI UX design engagements to logistics, warehouse and supply chain software companies and operators.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "Supply chain UI UX design plans the user experience (UX) and user interface (UI) of warehouse, transportation and planning software used on rugged handhelds, truck tablets and control-room screens. Our supply chain design sprints take 4–8 weeks, cost $25,000–$60,000, and include floor observation, glove-friendly scan flows and exception screens tested with operators.",
+  "sections": [
+    {
+      "h2": "What is supply chain UI UX design?",
+      "format": "paragraph",
+      "answer": "<strong>Supply chain UI UX design is the research, interaction design and visual design of software that receives, stores, picks, ships, plans and tracks goods.</strong> Users include pickers, forklift drivers, dispatchers and planners who work standing, moving, gloved and against time targets.",
+      "body": "<p>A warehouse management system (WMS) screen is read at arm's length on a 4–6 inch handheld while the operator holds a carton, so the scan prompt, quantity and location code matter more than navigation. Planners at desks face thousands of stock keeping units (SKUs) and forecast exceptions on wide monitors. Control-tower views for dispatch teams follow our <a href=\"/services/dashboard-ux-design/\">dashboard UX design</a> method.</p>"
+    },
+    {
+      "h2": "Which warehouse, transport and planning tools do we design?",
+      "format": "list",
+      "answer": "<strong>We design 5 types of supply chain products:</strong> WMS mobile apps, transportation management software, planning tools, fleet and yard apps, and real-time operations dashboards.",
+      "items": [
+        {
+          "title": "WMS mobile apps.",
+          "body": "Receiving, picking and cycle counts run on handheld scanners, for example a pick screen that shows bin location, item image and quantity in 3 lines."
+        },
+        {
+          "title": "Transportation management system (TMS) software.",
+          "body": "Shippers tender loads and track shipments, for example a load board that flags tenders still waiting for carrier acceptance."
+        },
+        {
+          "title": "Planning and forecasting tools.",
+          "body": "Planners override forecasts with a reason, for example an exception list ranking SKUs by forecast error and stockout risk."
+        },
+        {
+          "title": "Fleet and yard apps.",
+          "body": "Drivers capture proof of delivery and yard staff move trailers, for example a yard map that colours each trailer by dwell time."
+        },
+        {
+          "title": "Real-time operations dashboards.",
+          "body": "Supervisors watch throughput on wall displays, for example a dock view showing trucks waiting and orders at risk of missing carrier cut-off."
+        }
+      ]
+    },
+    {
+      "h2": "What UX challenges are specific to supply chain?",
+      "format": "cards",
+      "answer": "<strong>Supply chain UX faces 4 specific challenges:</strong> gloved one-handed use, poor light and noise, interrupted work and exceptions at volume.",
+      "items": [
+        {
+          "title": "Gloves, rugged devices and one-handed use",
+          "body": "Operators wear gloves and hold cartons, so targets are 48 px or larger and key steps map to the hardware scan trigger."
+        },
+        {
+          "title": "Low light, glare and noise",
+          "body": "Freezers, dock doors and night shifts change visibility, so screens use high-contrast themes, large numerals and vibration feedback instead of sounds."
+        },
+        {
+          "title": "Interrupted, task-switching work",
+          "body": "Pickers stop for replenishment or a supervisor question, so every task saves state on each scan and resumes at the exact step after a device sleeps or drops Wi-Fi."
+        },
+        {
+          "title": "Exception handling at volume",
+          "body": "Short picks, damaged goods and late carriers break the happy path, so exception flows offer predefined reason codes, photo capture and a named owner for each issue."
+        }
+      ]
+    },
+    {
+      "h2": "How does our supply chain UI UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our supply chain design process takes 4–8 weeks (20–40 working days) and runs in 4 steps</strong>, with at least 1 site visit.",
+      "items": [
+        {
+          "title": "Floor observation (3–5 days)",
+          "body": "Researchers shadow pickers and dispatchers across shifts and record scan sequences and interruptions."
+        },
+        {
+          "title": "Workflow and exception mapping (3–6 days)",
+          "body": "Each task is mapped scan by scan with exception branches, then checked against WMS or TMS business rules."
+        },
+        {
+          "title": "Device-specific interaction design (8–14 days)",
+          "body": "Designers build handheld, tablet and desktop screens with glove-sized targets, scan-trigger mapping and offline states."
+        },
+        {
+          "title": "On-floor usability testing and handover (6–15 days)",
+          "body": "Operators test the prototype on real devices, wearing their own gloves, in the aisles and docks, then developers receive annotated Figma files and device specs."
+        }
+      ]
+    },
+    {
+      "h2": "Warehouse floor UX vs office software UX",
+      "format": "table",
+      "answer": "<strong>Supply chain UX serves physical work on rugged devices and measures throughput; general product UX serves seated screen use and measures growth.</strong>",
+      "caption": "Comparison of supply chain UX and general product UX",
+      "columns": [
+        "Criterion",
+        "Supply chain UX",
+        "General product UX"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Pickers, drivers, dispatchers and planners on shifts",
+          "Office or consumer users at a desk or on a phone"
+        ],
+        [
+          "Constraints and regulation",
+          "Rugged devices, gloves, offline zones, OSHA and FMCSA rules",
+          "Screen sizes and app store rules"
+        ],
+        [
+          "Testing",
+          "On-floor tests on target devices with gloves, noise and real stock",
+          "Remote or lab tests on a laptop or phone"
+        ],
+        [
+          "Accessibility",
+          "WCAG 2.2 AA plus 48 px glove targets and multilingual labels",
+          "WCAG 2.2 AA with 24 px minimum targets"
+        ],
+        [
+          "Success metrics",
+          "Scans per hour, pick accuracy and training time",
+          "Activation, conversion and retention"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        },
+        {
+          "anchor": "web app design services",
+          "to": "/services/web-app-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does supply chain UI UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>A supply chain research and design sprint costs $25,000–$60,000 over 4–8 weeks.</strong> The price depends on 4 factors: the number of sites visited, the number of device types, the number of operator roles and the number of exception flows.",
+      "body": "<p>A handheld picking app for 1 warehouse and 2 roles sits near $25,000. A WMS suite with picking, shipping, a supervisor dashboard and 2 site visits sits near $60,000. An existing scanner app with high training time starts with <a href=\"/services/ux-audit-services/\">UX audit services</a> at $5,000–$15,000.</p>"
+    },
+    {
+      "h2": "Which safety and data standards shape supply chain UX?",
+      "format": "list",
+      "answer": "<strong>5 standards and regulations shape supply chain UX:</strong> OSHA forklift rules, FMCSA driver rules, GS1 barcodes, DSCSA and WCAG 2.2.",
+      "items": [
+        "Occupational Safety and Health Administration (OSHA) powered industrial truck standard (29 CFR 1910.178): forklift-mounted apps lock non-essential input while the truck moves.",
+        "Federal Motor Carrier Safety Administration (FMCSA) rules (49 CFR 392.80 and 392.82): driver apps block texting and handheld interaction while the vehicle moves.",
+        "GS1 barcode standards: scan flows accept GS1-128, GS1 DataMatrix and Serial Shipping Container Code (SSCC) labels and display parsed lot, expiry and serial fields.",
+        "Drug Supply Chain Security Act (DSCSA): pharmaceutical warehouses verify product identifiers at receiving, so screens show serial-number checks and flag suspect product.",
+        "Web Content Accessibility Guidelines (WCAG) 2.2 level AA: shipper and carrier portals meet 4.5:1 text contrast, and handheld targets exceed the 24×24 CSS pixel minimum."
+      ]
+    },
+    {
+      "h2": "Supply chain UI UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover 5 questions logistics software teams ask before an engagement.</strong>",
+      "faqs": [
+        {
+          "q": "Do you design for Zebra and Honeywell handheld scanners?",
+          "a": "<p>Yes. Designs target the screen size and scan trigger of the customer's devices, for example Zebra TC-series and Honeywell CT-series handhelds, and testing runs on the physical devices.</p>"
+        },
+        {
+          "q": "Can a WMS app work without Wi-Fi?",
+          "a": "<p>Yes. Offline-first designs queue scans on the device, show sync status on every screen and resolve conflicts on reconnection, for freezers, steel racking and yards with weak coverage.</p>"
+        },
+        {
+          "q": "Do warehouse designs need testing on the floor?",
+          "a": "<p>Yes. On-floor tests with gloves, real stock and normal noise expose problems a desk test misses, for example a quantity field too small to read at arm's length.</p>"
+        },
+        {
+          "q": "Is a desktop WMS screen enough for supervisors?",
+          "a": "<p>No. Supervisors walk the floor, so supervisor tools need a tablet view for labour assignment and exceptions, plus a wall-display dashboard for throughput and backlog.</p>"
+        },
+        {
+          "q": "How long does a supply chain design project take?",
+          "a": "<p>A supply chain research and design sprint takes 4–8 weeks, which equals 20–40 working days. A full WMS, TMS or planning platform with a design system takes 8–16 weeks.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "supply chain UI UX design",
+      "warehouse management system (WMS)",
+      "transportation management system (TMS)",
+      "Zebra Technologies",
+      "Honeywell",
+      "GS1",
+      "Occupational Safety and Health Administration (OSHA)",
+      "Federal Motor Carrier Safety Administration (FMCSA)",
+      "Drug Supply Chain Security Act (DSCSA)",
+      "WCAG 2.2"
+    ],
+    "ngrams": [
+      "supply chain ui ux design",
+      "warehouse management system",
+      "exception handling",
+      "handheld scanners",
+      "picking app",
+      "usability testing"
+    ],
+    "skipgrams": [
+      "warehouse … app",
+      "scan … flow",
+      "logistics … software",
+      "dashboard … operations"
+    ],
+    "nlpKeywords": [
+      "glove-friendly targets",
+      "low light",
+      "offline-first",
+      "reason codes",
+      "proof of delivery",
+      "pick accuracy",
+      "floor observation",
+      "control tower"
+    ]
+  },
+  "mentions": [
+    "supply chain UI UX design",
+    "warehouse management system (WMS)",
+    "transportation management system (TMS)",
+    "Zebra Technologies",
+    "Honeywell",
+    "GS1",
+    "Occupational Safety and Health Administration (OSHA)",
+    "Federal Motor Carrier Safety Administration (FMCSA)",
+    "Drug Supply Chain Security Act (DSCSA)",
+    "WCAG 2.2"
   ]
 }

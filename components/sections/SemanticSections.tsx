@@ -30,7 +30,7 @@ export function Abstract({ text }: { text?: string }) {
 }
 
 type Visual = { src: string; alt: string } | null | undefined;
-type Kind = "definition" | "include" | "process" | "benefits" | "compare" | "pricing" | "hire" | "industries" | "faq" | "text";
+type Kind = "definition" | "include" | "process" | "benefits" | "compare" | "pricing" | "hire" | "industries" | "standards" | "faq" | "text";
 
 const EYEBROW: Record<Kind, string> = {
   definition: "Definition",
@@ -41,6 +41,7 @@ const EYEBROW: Record<Kind, string> = {
   pricing: "Pricing",
   hire: "When to hire",
   industries: "Industries",
+  standards: "Standards & compliance",
   faq: "FAQ",
   text: "Overview",
 };
@@ -51,7 +52,7 @@ function kindOf(s: Section, i: number): Kind {
   if (s.format === "cards") return "benefits";
   if (s.format === "table") return "compare";
   if (s.format === "faq") return "faq";
-  if (s.format === "list") return s.items?.some(isCard) ? "include" : /industr/.test(h) ? "industries" : "hire";
+  if (s.format === "list") return s.items?.some(isCard) ? "include" : /industr/.test(h) ? "industries" : /regulation|standard|compliance|rules shape/.test(h) ? "standards" : "hire";
   if (/cost|price|pricing/.test(h)) return "pricing";
   return i === 0 ? "definition" : "text";
 }
@@ -251,7 +252,7 @@ export function SemanticSections({
                 </div>
               )}
 
-              {(kind === "hire" || kind === "industries") && (
+              {(kind === "hire" || kind === "industries" || kind === "standards") && (
                 <>
                   <Head s={s} kind={kind} center />
                   <ul className="semv__checks">

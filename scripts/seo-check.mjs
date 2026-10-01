@@ -77,7 +77,7 @@ for (const file of pages) {
   if (!/<img\b/.test(main)) noImage.push(route);
 
   // templated heading vectors: H2s with the page's own H1 words removed
-  const svcFile = route.startsWith("/services/") && path.join("content", route.replace(/\/$/, "") + ".json");
+  const svcFile = /^\/(services|industries)\//.test(route) && path.join("content", route.replace(/\/$/, "") + ".json");
   const svc = svcFile && fs.existsSync(svcFile) ? JSON.parse(fs.readFileSync(svcFile, "utf8")) : {};
   const h1Words = new Set(strip((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "") + " " + (svc.centralEntity ?? "") + " " + (svc.anchor ?? "")).toLowerCase().match(/[a-z0-9-]+/g) || []);
   for (const [, h] of main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)) {

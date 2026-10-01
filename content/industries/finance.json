@@ -17,7 +17,7 @@
     "Design for compliance-aware session handling and audit visibility",
     "Test account management and transaction flows with real users"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "anchor": "Finance UI UX design",
   "keywords": [
     "fintech UI UX design",
@@ -26,5 +26,237 @@
     "trading platform UX",
     "lending software UX",
     "financial dashboard design"
+  ],
+  "centralEntity": "Finance UI UX design",
+  "sourceContext": "US UI/UX design agency; this page sells UI UX design engagements to banks, lenders, payment companies and fintech product teams.",
+  "priceRange": "$25,000–$60,000",
+  "abstract": "Finance UI UX design plans the user experience (UX) and user interface (UI) of banking, lending, payments and investing software, from know your customer (KYC) identity checks to trading dashboards. Our finance design sprints take 4–8 weeks, cost $25,000–$60,000, and produce tested flows for onboarding, money movement and error prevention.",
+  "sections": [
+    {
+      "h2": "What is finance UI UX design?",
+      "format": "paragraph",
+      "answer": "<strong>Finance UI UX design is the research, interaction design and visual design of software that moves, lends, invests or reports money for consumers and businesses.</strong> The work centres on identity verification, transaction confirmation, fee disclosure and dashboards that show balances, positions and risk without ambiguity.",
+      "body": "<p>A misplaced decimal, an unclear pending state or a hidden fee becomes a support ticket, a chargeback or a regulatory complaint. Designers therefore specify every amount, date and status as content. Products that put balances, positions and cash flow on one screen follow our <a href=\"/services/dashboard-ux-design/\">dashboard UX design</a> method.</p>"
+    },
+    {
+      "h2": "Which banking, lending and trading products do we design?",
+      "format": "list",
+      "answer": "<strong>We design 6 types of finance products:</strong> digital banking apps, lending platforms, payments products, wealth and trading apps, trading journals and back-office tools.",
+      "items": [
+        {
+          "title": "Digital banking apps.",
+          "body": "Customers move money, freeze cards and dispute charges, for example a transfer screen that shows the arrival date before confirmation."
+        },
+        {
+          "title": "Lending platforms.",
+          "body": "Borrowers upload documents and track status while underwriters review files, for example a tracker that names each missing document."
+        },
+        {
+          "title": "Payments products.",
+          "body": "Merchants handle cards, Automated Clearing House (ACH) transfers and instant payments, for example a payout screen that separates pending, settled and failed transactions."
+        },
+        {
+          "title": "Wealth and trading apps.",
+          "body": "Investors place orders and monitor positions, for example an order ticket that previews total cost, fees and buying power before submission."
+        },
+        {
+          "title": "Trading journals.",
+          "body": "Active traders review past trades and patterns, for example the <a href=\"/case-studies/tradezella/\">TradeZella</a> journal, where we redesigned net daily profit and loss (P&L) and win-rate views across web and mobile."
+        },
+        {
+          "title": "Back-office tools.",
+          "body": "Fraud and compliance teams work queues of flagged items, for example a suspicious-activity screen with case history and escalation."
+        }
+      ]
+    },
+    {
+      "h2": "What UX challenges are specific to finance?",
+      "format": "cards",
+      "answer": "<strong>Finance UX faces 4 specific challenges:</strong> KYC friction, irreversible payments, fraud pressure on trust and data density for professional users.",
+      "items": [
+        {
+          "title": "KYC and anti-money laundering (AML) friction",
+          "body": "Customer identification rules require 4 data points before an account opens, so forms explain why each field is collected and offer retry paths for failed document scans."
+        },
+        {
+          "title": "Irreversible money movement",
+          "body": "Wires and instant payments are final once sent, so confirmation screens repeat payee, amount and account ending digits and flag first-time payees."
+        },
+        {
+          "title": "Trust under fraud pressure",
+          "body": "Scammers copy bank screens and call scripts, so designs use consistent verification language and warn before any transfer to a new payee."
+        },
+        {
+          "title": "Data-dense dashboards for professionals",
+          "body": "Traders and analysts compare many figures at once, so tables use tabular numerals, right-aligned decimals, fixed column order and a +/− sign next to every gain or loss colour."
+        }
+      ]
+    },
+    {
+      "h2": "How does our finance UI UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our finance design process takes 4–8 weeks (20–40 working days) and runs in 4 steps</strong>, with compliance reviewers involved from the first day.",
+      "items": [
+        {
+          "title": "Regulatory and risk scoping (2–4 days)",
+          "body": "We list required disclosures, KYC data points and the compliance sign-offs each flow needs."
+        },
+        {
+          "title": "Customer and operator research (5–8 days)",
+          "body": "Researchers interview customers and back-office staff, and review complaint logs and dispute reasons."
+        },
+        {
+          "title": "Flow and dashboard design (8–14 days)",
+          "body": "Designers build onboarding, transfer and dashboard flows with error, pending and declined states, plus disclosure placement."
+        },
+        {
+          "title": "Usability testing, compliance review and handover (5–14 days)",
+          "body": "5–8 users per segment test the prototype with realistic balances, legal reviewers mark up disclosure wording, and developers receive annotated Figma files."
+        }
+      ]
+    },
+    {
+      "h2": "Fintech UX vs standard app UX",
+      "format": "table",
+      "answer": "<strong>Finance UX designs for regulated money movement and measures error-free completion; general product UX designs for engagement and measures growth.</strong>",
+      "caption": "Comparison of finance UX and general product UX",
+      "columns": [
+        "Criterion",
+        "Finance UX",
+        "General product UX"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Customers, traders, underwriters and compliance officers",
+          "1–2 primary personas"
+        ],
+        [
+          "Constraints and regulation",
+          "KYC/AML rules, PCI DSS, Regulation E and SOC 2 buyer reviews",
+          "Privacy policy and app store rules"
+        ],
+        [
+          "Testing",
+          "Realistic balances, failed payments and fraud scenarios",
+          "Happy-path task tests and A/B tests"
+        ],
+        [
+          "Accessibility",
+          "Web Content Accessibility Guidelines (WCAG) 2.2 AA with screen reader support for statements and charts",
+          "WCAG 2.2 AA where contracts require it"
+        ],
+        [
+          "Success metrics",
+          "Onboarding completion, failed-transfer rate and dispute volume",
+          "Activation, conversion and retention"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        },
+        {
+          "anchor": "data visualization agency",
+          "to": "/services/data-visualization-agency/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does finance UI UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>A finance research and design sprint costs $25,000–$60,000 over 4–8 weeks.</strong> The price depends on 4 factors: the number of regulated flows, the number of customer segments, dashboard data density and the number of compliance review rounds.",
+      "body": "<p>A consumer budgeting app with KYC onboarding and 1 segment sits near $25,000. A lending platform with borrower, broker and underwriter views sits near $60,000. A banking product that needs a shared component library across web and mobile moves to $60,000–$180,000 over 8–16 weeks with our <a href=\"/services/design-system-services/\">design system services</a>.</p>"
+    },
+    {
+      "h2": "Which rules shape finance UX: KYC, PCI DSS and SOC 2?",
+      "format": "list",
+      "answer": "<strong>5 standards and regulations shape finance UX:</strong> PCI DSS, KYC/AML rules, Regulation E, SOC 2 and WCAG 2.2 with the ADA.",
+      "items": [
+        "Payment Card Industry Data Security Standard (PCI DSS) 4.0: card entry uses the processor's hosted fields, and screens display masked card numbers only.",
+        "Bank Secrecy Act Customer Identification Program rules: onboarding collects name, date of birth, address and ID number, with a manual-review path when automated checks fail.",
+        "Regulation E (Electronic Fund Transfer Act): transfer flows disclose fees and exchange rates, and dispute flows record the date the customer reported an error.",
+        "System and Organization Controls (SOC) 2: enterprise buyers check audit logs and role-based access, so admin screens expose activity history and permission changes.",
+        "WCAG 2.2 level AA and the Americans with Disabilities Act (ADA): statements, charts and one-time passcode fields work with screen readers and meet 4.5:1 contrast."
+      ]
+    },
+    {
+      "h2": "Finance UI UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover 5 questions banks and fintech teams ask before a design engagement.</strong>",
+      "faqs": [
+        {
+          "q": "Is your agency PCI DSS or SOC 2 certified?",
+          "a": "<p>No. A design agency stores no cardholder data. We design card entry, masking, audit logs and admin permissions that support the PCI DSS and SOC 2 controls your engineering and security teams own.</p>"
+        },
+        {
+          "q": "Do you design KYC onboarding for fintech apps?",
+          "a": "<p>Yes. KYC onboarding design covers field order, ID document capture, selfie liveness checks, retry paths and the manual-review state shown when automated identity verification fails.</p>"
+        },
+        {
+          "q": "Have you designed a trading product?",
+          "a": "<p>Yes. TradeZella, a trading journal and analytics platform, is a published case study covering net daily P&L, win-rate dashboards and trade journaling on web and mobile.</p>"
+        },
+        {
+          "q": "Does finance UX need compliance review before launch?",
+          "a": "<p>Yes. Disclosure wording, fee display and consent screens need legal or compliance sign-off, so review rounds sit inside the sprint and approved copy lands in the final screens.</p>"
+        },
+        {
+          "q": "How long does a finance design project take?",
+          "a": "<p>A finance research and design sprint takes 4–8 weeks, which equals 20–40 working days. A full banking or trading product with a design system takes 8–16 weeks.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "finance UI UX design",
+      "know your customer (KYC)",
+      "anti-money laundering (AML)",
+      "PCI DSS",
+      "SOC 2",
+      "Regulation E",
+      "Automated Clearing House (ACH)",
+      "WCAG 2.2",
+      "Americans with Disabilities Act (ADA)",
+      "TradeZella"
+    ],
+    "ngrams": [
+      "finance ui ux design",
+      "kyc onboarding",
+      "trading dashboards",
+      "money movement",
+      "error prevention",
+      "usability testing"
+    ],
+    "skipgrams": [
+      "banking … app",
+      "onboarding … KYC",
+      "transaction … confirmation",
+      "dashboard … trading"
+    ],
+    "nlpKeywords": [
+      "identity verification",
+      "fee disclosure",
+      "pending states",
+      "fraud warnings",
+      "compliance review",
+      "tabular numerals",
+      "dispute flows",
+      "data-dense dashboards"
+    ]
+  },
+  "mentions": [
+    "finance UI UX design",
+    "know your customer (KYC)",
+    "anti-money laundering (AML)",
+    "PCI DSS",
+    "SOC 2",
+    "Regulation E",
+    "Automated Clearing House (ACH)",
+    "WCAG 2.2",
+    "Americans with Disabilities Act (ADA)",
+    "TradeZella"
   ]
 }

@@ -17,7 +17,7 @@
     "Handle PHI visibility at the screen level, not just the backend",
     "Meet WCAG/AAA accessibility standards across every flow"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "anchor": "Healthcare UI UX design",
   "keywords": [
     "healthcare UI UX design",
@@ -26,5 +26,233 @@
     "patient app UX",
     "clinical software UX",
     "HIPAA-compliant UX design"
+  ],
+  "centralEntity": "Healthcare UI UX design",
+  "sourceContext": "US UI/UX design agency; this page sells UI UX design engagements to healthcare product teams building software for clinicians, patients and caregivers.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "Healthcare UI UX design plans the user experience (UX) and user interface (UI) of software used by clinicians, patients and caregivers, for example patient portals, telehealth apps and clinical tools that run beside an electronic health record (EHR). Our full healthcare engagements take 8–16 weeks, cost $60,000–$180,000, and include consent flows that support Health Insurance Portability and Accountability Act (HIPAA) requirements and Web Content Accessibility Guidelines (WCAG) 2.2 checks.",
+  "sections": [
+    {
+      "h2": "What is healthcare UI UX design?",
+      "format": "paragraph",
+      "answer": "<strong>Healthcare UI UX design is the research, interaction design and visual design of software that clinicians, patients and caregivers use to deliver or receive care.</strong> The work covers clinical workflows, protected health information (PHI) display, consent and access for patients with low vision or low digital literacy.",
+      "body": "<p>A nurse switches between Epic or Oracle Health and a third-party tool many times per shift, so every added click lengthens documentation time. Patient products face first-time users and shared family devices. Clinician field studies follow our <a href=\"/services/ux-research-services/\">UX research services</a> method.</p>"
+    },
+    {
+      "h2": "Which patient and clinician products do we design?",
+      "format": "list",
+      "answer": "<strong>We design 5 types of healthcare products:</strong> patient portals, telehealth apps, EHR-adjacent clinical tools, nursing apps and software as a medical device (SaMD).",
+      "items": [
+        {
+          "title": "Patient portals.",
+          "body": "Patients view results, message care teams and manage proxy access for family members, for example a results page that explains a lab value in plain language."
+        },
+        {
+          "title": "Telehealth apps.",
+          "body": "Video visits need device checks, waiting rooms and interpreter joins, for example a camera test that runs before the provider is paged."
+        },
+        {
+          "title": "EHR-adjacent clinical tools.",
+          "body": "SMART on FHIR apps launch inside Epic or Oracle Health with the patient already in context, for example a sepsis risk panel embedded in the chart sidebar."
+        },
+        {
+          "title": "Nursing and care-team apps.",
+          "body": "Handheld apps support medication administration, for example a barcode scan that confirms patient, drug, dose, route and time."
+        },
+        {
+          "title": "Software as a medical device.",
+          "body": "Apps that diagnose, treat or monitor a condition need a use-related risk analysis, for example an insulin dose calculator evaluated under International Electrotechnical Commission (IEC) 62366-1."
+        }
+      ]
+    },
+    {
+      "h2": "What UX challenges are specific to healthcare?",
+      "format": "cards",
+      "answer": "<strong>Healthcare UX faces 4 specific challenges:</strong> alert fatigue, PHI exposure, mixed digital literacy and incomplete interoperability data.",
+      "items": [
+        {
+          "title": "Alert fatigue in interrupted clinical work",
+          "body": "Clinicians learn to dismiss frequent low-value alerts, so alerts are tiered by severity and interruptive dialogs are reserved for drug–allergy and dose conflicts."
+        },
+        {
+          "title": "PHI exposure on shared screens",
+          "body": "Workstations on wheels sit in public corridors, so screens mask identifiers, lock after inactivity and show the minimum necessary data per role."
+        },
+        {
+          "title": "Mixed patient digital literacy",
+          "body": "Patient users include older adults, non-native English speakers and proxy caregivers, so flows use plain language at a 6th–8th grade reading level and a visible proxy switcher."
+        },
+        {
+          "title": "Incomplete HL7 FHIR data",
+          "body": "Health Level Seven (HL7) Fast Healthcare Interoperability Resources (FHIR) feeds arrive late, duplicated or partial, so designs show the source, timestamp and an explicit missing-value state."
+        }
+      ]
+    },
+    {
+      "h2": "How does our healthcare UI UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our healthcare design process takes 8–12 weeks (40–60 working days) and runs in 4 steps</strong>, from compliance scoping to handover.",
+      "items": [
+        {
+          "title": "Compliance and scope review (4–5 days)",
+          "body": "We map PHI touchpoints, roles and whether the product meets the U.S. Food and Drug Administration (FDA) definition of a medical device."
+        },
+        {
+          "title": "Clinician shadowing and patient interviews (8–12 days)",
+          "body": "Researchers shadow nurses and physicians and interview 8–12 patients and caregivers."
+        },
+        {
+          "title": "Workflow and interaction design (15–25 days)",
+          "body": "Designers map tasks against EHR workflows, then design role-based screens, alert tiers and consent flows."
+        },
+        {
+          "title": "Formative usability testing and accessibility review (13–18 days)",
+          "body": "Clinicians and patients complete critical tasks in a prototype, use errors are logged against the risk analysis, and screens are checked against WCAG 2.2 AA and Section 508."
+        }
+      ]
+    },
+    {
+      "h2": "Healthcare UX vs consumer app UX",
+      "format": "table",
+      "answer": "<strong>Healthcare UX serves several regulated user groups and measures safe task completion; general product UX serves 1–2 personas and measures growth.</strong>",
+      "caption": "Comparison of healthcare UX and general product UX",
+      "columns": [
+        "Criterion",
+        "Healthcare UX",
+        "General product UX"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Clinicians, patients, caregivers and administrative staff",
+          "1–2 primary personas"
+        ],
+        [
+          "Constraints and regulation",
+          "HIPAA, Section 508 and FDA human factors guidance",
+          "Privacy policy and app store rules"
+        ],
+        [
+          "Testing",
+          "Formative and summative tests on critical tasks",
+          "Task tests and A/B tests"
+        ],
+        [
+          "Accessibility",
+          "WCAG 2.2 AA baseline for low vision, tremor and cognitive impairment",
+          "WCAG 2.2 AA where contracts or law require it"
+        ],
+        [
+          "Success metrics",
+          "Task completion without use errors and documentation time",
+          "Activation, conversion and retention"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        },
+        {
+          "anchor": "mobile app UI UX design services",
+          "to": "/services/mobile-app-ui-ux-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does healthcare UI UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>A full healthcare product design with a design system costs $60,000–$180,000 over 8–16 weeks.</strong> The price depends on 4 factors: user roles, EHR integration depth, medical device status that triggers IEC 62366-1 documentation, and clinical site access for research.",
+      "body": "<p>A telehealth app with 2 roles and no device classification starts with a $25,000–$60,000 research and design sprint. A clinician platform with 4 roles, a SMART on FHIR launch inside Epic and summative usability testing sits near $180,000. Existing portals start with <a href=\"/services/ux-audit-services/\">UX audit services</a> at $5,000–$15,000.</p>"
+    },
+    {
+      "h2": "Which regulations shape healthcare UX: HIPAA, Section 508 and IEC 62366-1?",
+      "format": "list",
+      "answer": "<strong>5 standards and regulations shape healthcare UX:</strong> HIPAA, WCAG 2.2, Section 508, IEC 62366-1 and FDA human factors guidance.",
+      "items": [
+        "HIPAA Privacy and Security Rules: screens show the minimum necessary PHI per role, and notifications and lock screens hide names and diagnoses.",
+        "WCAG 2.2 level AA: body text meets 4.5:1 contrast, touch targets meet the 24×24 CSS pixel minimum, and sign-in avoids puzzles.",
+        "Section 508 of the Rehabilitation Act: products sold to federal agencies, for example the Department of Veterans Affairs, meet WCAG-based requirements and ship an Accessibility Conformance Report.",
+        "IEC 62366-1: medical device software records user groups, use scenarios and use-related risks in a usability engineering file.",
+        "FDA human factors guidance for medical devices: critical tasks are validated with representative users in a summative test before submission."
+      ]
+    },
+    {
+      "h2": "Healthcare UI UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover 5 questions healthcare product teams ask before a design engagement.</strong>",
+      "faqs": [
+        {
+          "q": "Is your agency HIPAA certified?",
+          "a": "<p>No. HIPAA defines no official certification for agencies or software. We design PHI masking, consent flows and session timeouts that support HIPAA requirements, using synthetic patient data in prototypes.</p>"
+        },
+        {
+          "q": "Do you design apps that run inside Epic or Oracle Health?",
+          "a": "<p>Yes. SMART on FHIR apps launch inside Epic and Oracle Health with patient and user context, and embedded views are designed for EHR layout limits, for example narrow sidebar widths.</p>"
+        },
+        {
+          "q": "Does a patient app need to meet WCAG accessibility rules?",
+          "a": "<p>Yes. The 2024 Department of Health and Human Services (HHS) Section 504 rule requires recipients of HHS funding to meet WCAG 2.1 AA for websites and mobile apps. We design to WCAG 2.2 AA, which includes every 2.1 criterion.</p>"
+        },
+        {
+          "q": "Can healthcare usability tests involve practising clinicians?",
+          "a": "<p>Yes. Sessions recruit practising nurses, physicians and front-desk staff around shift schedules, remotely or in a simulation lab, with 5–8 clinicians per role in each formative round.</p>"
+        },
+        {
+          "q": "How long does a healthcare design project take?",
+          "a": "<p>The core research, design and testing process takes 8–12 weeks, which equals 40–60 working days. A full engagement with a design system takes up to 16 weeks.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "healthcare UI UX design",
+      "electronic health record (EHR)",
+      "Epic",
+      "Oracle Health",
+      "HL7 FHIR",
+      "SMART on FHIR",
+      "HIPAA",
+      "Section 508",
+      "IEC 62366-1",
+      "WCAG 2.2"
+    ],
+    "ngrams": [
+      "healthcare ui ux design",
+      "patient portals",
+      "telehealth apps",
+      "clinical workflows",
+      "protected health information",
+      "usability testing"
+    ],
+    "skipgrams": [
+      "patient … portal",
+      "clinician … workflow",
+      "consent … HIPAA",
+      "usability … medical device"
+    ],
+    "nlpKeywords": [
+      "alert fatigue",
+      "PHI",
+      "consent flows",
+      "proxy access",
+      "use errors",
+      "critical tasks",
+      "caregivers",
+      "clinician shadowing"
+    ]
+  },
+  "mentions": [
+    "healthcare UI UX design",
+    "electronic health record (EHR)",
+    "Epic",
+    "Oracle Health",
+    "HL7 FHIR",
+    "SMART on FHIR",
+    "HIPAA",
+    "Section 508",
+    "IEC 62366-1",
+    "WCAG 2.2"
   ]
 }

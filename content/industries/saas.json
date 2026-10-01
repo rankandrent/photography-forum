@@ -17,7 +17,7 @@
     "Test feature adoption patterns with real users, not internal teams",
     "Design for the returning power user, not just the first-time visitor"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "anchor": "SaaS UI UX design",
   "keywords": [
     "SaaS UI UX design agency",
@@ -26,5 +26,241 @@
     "enterprise software UX",
     "admin panel design",
     "SaaS onboarding UX"
+  ],
+  "centralEntity": "SaaS UI UX design",
+  "sourceContext": "US UI/UX design agency; this industry page serves B2B and enterprise software companies that need admin, permission and data-heavy platform design.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "SaaS UI UX design shapes the user interface (UI) and user experience (UX) of business software sold as a service, from multi-tenant admin consoles to single sign-on (SSO) and data-heavy tables. Our software-as-a-service (SaaS) platform engagements run 8–16 weeks, cost $60,000–$180,000, and end with enterprise-ready workflows and a design system.",
+  "sections": [
+    {
+      "h2": "What is SaaS UI UX design?",
+      "format": "paragraph",
+      "answer": "<strong>SaaS UI UX design is the design of business software sold on subscription, covering the admin console, role-based access control, SSO and the data tables that customer teams use every day.</strong> The work serves 2 audiences at once: end users inside a customer account and the IT administrators who buy, configure and audit the product.",
+      "body": "<p>Every tenant holds its own users, roles, integrations and contract terms, so each screen separates account-level settings from personal settings. Lifecycle work on trials, activation and churn belongs to our <a href=\"/services/saas-ux-design/\">SaaS UX design</a> engagement; this page covers the platform layer that enterprise deals depend on.</p>"
+    },
+    {
+      "h2": "Which parts of a B2B SaaS platform do we design?",
+      "format": "list",
+      "answer": "<strong>We design 6 types of B2B SaaS products:</strong> multi-tenant admin consoles, role and permission managers, SSO and provisioning setup, data-heavy tables, integration settings and audit logs.",
+      "items": [
+        {
+          "title": "Multi-tenant admin consoles.",
+          "body": "Workspace owners manage users and licences per tenant, for example a seat-allocation screen."
+        },
+        {
+          "title": "Role and permission managers.",
+          "body": "Administrators define who reads, edits or approves each object, for example a permission matrix comparing 4 roles across 20 resources."
+        },
+        {
+          "title": "SSO and provisioning setup.",
+          "body": "IT teams connect an identity provider such as Okta or Microsoft Entra ID, for example a guided Security Assertion Markup Language (SAML) setup with a test-connection step."
+        },
+        {
+          "title": "Data-heavy tables and reporting.",
+          "body": "Analysts filter and export thousands of records, for example saved views and bulk actions in a 10,000-row table."
+        },
+        {
+          "title": "Integration and developer settings.",
+          "body": "Technical admins manage API keys and webhooks, for example a key-rotation flow showing the last-used date."
+        },
+        {
+          "title": "Audit logs and compliance centres.",
+          "body": "Security reviewers trace every change, for example an event log with actor, IP address and before-and-after values."
+        }
+      ]
+    },
+    {
+      "h2": "What UX challenges are specific to SaaS?",
+      "format": "cards",
+      "answer": "<strong>4 UX challenges are specific to SaaS:</strong> the split between buyer and user, permission complexity, tenant-specific configuration and data density on shared screens.",
+      "items": [
+        {
+          "title": "Buyer and user split",
+          "body": "The IT director who signs the contract never runs the daily workflow, so research covers administrators, end users and security reviewers separately."
+        },
+        {
+          "title": "Permission complexity",
+          "body": "Custom roles, field-level permissions and approval chains multiply the states each screen must show, for example a read-only version of an editable form."
+        },
+        {
+          "title": "Tenant-specific configuration",
+          "body": "Two customers on the same release see different menus and fields, so designers specify every screen with custom fields, hidden modules and white-labelled branding."
+        },
+        {
+          "title": "Data density on shared screens",
+          "body": "Power users want 50 columns and keyboard shortcuts while occasional users want 5 clear columns, so tables need saved views and density settings."
+        }
+      ]
+    },
+    {
+      "h2": "How does our SaaS UI UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our B2B platform design process takes 8–16 weeks (40–80 working days) and runs in 5 steps</strong>, from the role and tenant audit to the design system handover.",
+      "items": [
+        {
+          "title": "Role and tenant audit (5–10 days)",
+          "body": "We list every role, permission and tenant setting and interview administrators, end users and a customer security reviewer."
+        },
+        {
+          "title": "Permission and object modelling (5–10 days)",
+          "body": "Designers map which role sees, edits and approves each object in a permission matrix that product, engineering and sales sign off."
+        },
+        {
+          "title": "Admin and workflow design (15–30 days)",
+          "body": "Designers produce the admin console, SSO setup, tables and audit log in Figma, with empty, read-only, error and over-limit states."
+        },
+        {
+          "title": "Enterprise readiness review (5–10 days)",
+          "body": "5 administrators per round test the prototype, and a Web Content Accessibility Guidelines (WCAG) 2.2 AA check keeps the Accessibility Conformance Report (ACR) consistent with the interface."
+        },
+        {
+          "title": "Design system handover (10–20 days)",
+          "body": "Developers receive documented Figma components for tables, filters and permission editors."
+        }
+      ]
+    },
+    {
+      "h2": "Enterprise SaaS UX vs consumer app UX",
+      "format": "table",
+      "answer": "<strong>SaaS UX designs for many roles inside many customer accounts; general product UX designs for 1 user group completing its own tasks.</strong> Enterprise procurement and tenant settings add work a consumer product never needs.",
+      "caption": "Comparison of SaaS UX and general product UX",
+      "columns": [
+        "Criterion",
+        "SaaS UX",
+        "General product UX"
+      ],
+      "rows": [
+        [
+          "Users",
+          "Administrators, end users and security reviewers in every tenant",
+          "1 primary user group"
+        ],
+        [
+          "Constraints and regulation",
+          "System and Organization Controls 2 (SOC 2) controls, SSO and custom contract terms",
+          "App store and platform guidelines"
+        ],
+        [
+          "Testing",
+          "Tasks per role, run with real administrators and power users",
+          "Core tasks with 5 users per round"
+        ],
+        [
+          "Accessibility",
+          "WCAG 2.2 AA plus a Voluntary Product Accessibility Template (VPAT) for procurement",
+          "WCAG 2.2 AA"
+        ],
+        [
+          "Success metrics",
+          "Admin setup time, seat utilisation and security review pass rate",
+          "Task success rate and time on task"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "web app design services",
+          "to": "/services/web-app-design-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does SaaS UI UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Full SaaS platform design costs $60,000–$180,000 and takes 8–16 weeks, including a design system.</strong> The price depends on 4 factors: the number of roles, tenant configuration options, data-heavy tables and enterprise readiness features such as SSO.",
+      "body": "<p>An admin console redesign with 3 roles fits a $25,000–$60,000 sprint over 4–8 weeks. A full platform with 8 roles, custom fields, SSO and a component library for 3 product teams sits near $180,000.</p>"
+    },
+    {
+      "h2": "Which security and procurement standards shape SaaS UX?",
+      "format": "list",
+      "answer": "<strong>5 standards and regulations shape SaaS UX:</strong>",
+      "items": [
+        "SOC 2: auditors check access controls, so admin screens need access reviews, session timeouts and an exportable audit log.",
+        "SAML 2.0 and System for Cross-domain Identity Management (SCIM): SSO and automatic provisioning need setup screens and clear mapping errors.",
+        "WCAG 2.2 level AA: dense tables and modals need keyboard access, visible focus and 4.5:1 text contrast.",
+        "Section 508 and the VPAT: US federal buyers request an ACR, so every claim must match the shipped interface.",
+        "General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA): tenant admins need data export, user deletion and retention settings."
+      ]
+    },
+    {
+      "h2": "SaaS UI UX design FAQs",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions B2B software teams ask most about SaaS platform design.</strong>",
+      "faqs": [
+        {
+          "q": "Do you design admin consoles for multi-tenant SaaS?",
+          "a": "<p>Yes. Admin console design covers users, roles, licences, billing and audit logs per tenant, with separate screens for customer workspace owners and the vendor's support team.</p>"
+        },
+        {
+          "q": "Does SaaS platform design include SSO setup screens?",
+          "a": "<p>Yes. SSO setup design covers the identity provider choice, SAML 2.0 or OpenID Connect fields, a test-connection step and error messages that tell an IT administrator which attribute mapping failed.</p>"
+        },
+        {
+          "q": "What kind of document is a permission matrix?",
+          "a": "<p>A permission matrix is both. Designers draft roles, objects and actions, and engineering builds access rules from the same matrix, so interface and back end match.</p>"
+        },
+        {
+          "q": "Can enterprise data tables stay usable with 50 or more columns?",
+          "a": "<p>Yes. Saved views, column pinning and per-role column presets keep wide tables usable, if each user group gets its own default view instead of 1 shared layout.</p>"
+        },
+        {
+          "q": "How long does SaaS platform design take?",
+          "a": "<p>Full SaaS platform design takes 8–16 weeks, which equals 40–80 working days. A single admin console or permission redesign takes 4–8 weeks as a research and design sprint.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "SaaS",
+      "multi-tenant architecture",
+      "role-based access control",
+      "single sign-on",
+      "SAML 2.0",
+      "SCIM",
+      "Okta",
+      "Microsoft Entra ID",
+      "SOC 2",
+      "VPAT"
+    ],
+    "ngrams": [
+      "saas ui ux design",
+      "role-based access control",
+      "admin console",
+      "enterprise procurement",
+      "permission matrix",
+      "audit log"
+    ],
+    "skipgrams": [
+      "admin … tenant",
+      "permission … role",
+      "sso … setup",
+      "enterprise … tables"
+    ],
+    "nlpKeywords": [
+      "multi-tenant",
+      "identity provider",
+      "custom roles",
+      "data tables",
+      "enterprise readiness",
+      "security reviewers",
+      "seat utilisation",
+      "Accessibility Conformance Report"
+    ]
+  },
+  "mentions": [
+    "SaaS",
+    "multi-tenant architecture",
+    "role-based access control",
+    "single sign-on",
+    "SAML 2.0",
+    "SCIM",
+    "Okta",
+    "Microsoft Entra ID",
+    "SOC 2",
+    "VPAT"
   ]
 }
