@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ScrollRail } from "@/components/sections/ScrollRail";
+import { StepArt } from "@/components/sections/StepArt";
 import { UiMock } from "@/components/sections/UiMock";
 import { Html } from "@/components/ui/Html";
 import { ICONS, Icon } from "@/components/ui/Icon";
@@ -166,19 +168,23 @@ export function SemanticSections({
               {kind === "process" && (
                 <>
                   <Head s={s} kind={kind} center />
-                  <ol className="semv__steps">
+                  <ScrollRail id={`${id}-rail`} label={s.h2}>
                     {items.map((c, i) => {
                       const m = c.title.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+                      const name = m ? m[1] : c.title;
                       return (
-                        <li key={c.title} className="semv__step">
-                          <span className="semv__step-n" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
-                          <h3>{m ? m[1] : c.title}</h3>
-                          {m && <span className="semv__chip">{m[2]}</span>}
+                        <article key={c.title} className="semv__step" aria-label={`Step ${i + 1}: ${name}`}>
+                          <StepArt title={name} index={i} />
+                          <div className="semv__step-top">
+                            <span className="semv__step-n" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+                            {m && <span className="semv__chip">{m[2]}</span>}
+                          </div>
+                          <h3>{name}</h3>
                           {c.body && <Html as="p" html={c.body} />}
-                        </li>
+                        </article>
                       );
                     })}
-                  </ol>
+                  </ScrollRail>
                 </>
               )}
 
