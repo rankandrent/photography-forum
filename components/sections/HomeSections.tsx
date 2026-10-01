@@ -62,7 +62,8 @@ export function LeadMagnet() {
             </ul>
             <EmailCapture className="lm__form" source="lead-magnet: readiness checklist" cta="Download now" buttonClassName="btn btn--white" />
           </div>
-          <div className="lm__cover" aria-hidden="true">{d.cover}</div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="lm__cover lm__cover--img" src="/resources/ui-ux-design-readiness-checklist.webp" alt={d.cover} width={1000} height={1145} loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
