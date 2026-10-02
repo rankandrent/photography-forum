@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: add the supplied SERP-based content (hero, abstract, sections, faqs). The daily publisher sets draft:false once sections exist.",
   "draft": true,
   "order": 6,
   "title": "Phoenix",
@@ -7,15 +6,256 @@
   "state": "AZ",
   "keyword": "ux design agency phoenix",
   "anchor": "UX design agency Phoenix",
-  "metaTitle": "UX design agency Phoenix | Research-Led Product Design",
-  "metaDescription": "UX design agency Phoenix for product teams in Phoenix: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Phoenix | Operations & Enterprise UX",
+  "metaDescription": "UX design agency Phoenix teams hire for semiconductor, payments, healthcare and logistics software: research, UI design and usability testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency phoenix",
-    "h1": "UX design agency Phoenix for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Phoenix: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Phoenix operations teams can count on",
+    "sub": "Researchers and product designers for fab and factory tools, payments operations, health systems and logistics software across Phoenix, Tempe, Chandler and Scottsdale. Remote-first, with a shared workday on Arizona time."
   },
-  "summary": "Research-led UI UX design for product teams in Phoenix.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Research-led UX and UI design for Phoenix semiconductor, payments, healthcare and logistics software.",
+  "updated": "2026-10-02",
+  "abstract": "Headquartered in Reston, Virginia, our remote-first UX design agency works with Phoenix teams on Arizona's Mountain Standard Time, sharing 5–6 hours of the workday all year. We redesign the internal and customer-facing software behind fabs, payment operations, hospitals and distribution centers, and test it with the people who run it. Audits start at $5,000.",
+  "sections": [
+    {
+      "h2": "Phoenix runs on operations software. Who designs it?",
+      "format": "paragraph",
+      "answer": "<strong>Much of the software built or used in Phoenix is operational: tools for engineers on a fab floor, analysts clearing payment exceptions, schedulers at a hospital and supervisors at a distribution center.</strong> A UX design agency Phoenix teams hire must make those screens fast, legible and hard to misuse.",
+      "body": "<p>The metro has grown into a semiconductor manufacturing hub around north Phoenix and Chandler, hosts large back-office and servicing operations for banks and card networks, anchors major health systems and sits on a busy logistics corridor along Interstate 10. Internal tools in those settings are often decades old, built screen by screen as needs arose. We observe shift work, measure where time and errors pile up, and redesign workflows end to end. Our wider offer sits under <a href=\"/services/digital-product-design-services/\">digital product design services</a>.</p>"
+    },
+    {
+      "h2": "Phoenix UX services, deliverable by deliverable",
+      "format": "list",
+      "answer": "<strong>Phoenix projects produce 6 deliverables:</strong> workflow research, a usability audit, information architecture, operational UI, a design system and usability testing on real tasks.",
+      "items": [
+        {
+          "title": "Workflow research.",
+          "body": "Shadowing and interviews with 5–12 users per role, for example equipment engineers and shift leads using one manufacturing execution system."
+        },
+        {
+          "title": "Usability audit.",
+          "body": "A severity-ranked review against heuristics and WCAG 2.2, for example a dispute and chargeback queue used by payment analysts."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "Menus and record structures rebuilt from task data, for example patient scheduling across clinics and departments."
+        },
+        {
+          "title": "Operational UI.",
+          "body": "Figma screens for desktops, tablets and rugged handhelds, for example pick-and-pack screens in a warehouse."
+        },
+        {
+          "title": "Design system.",
+          "body": "Components for dense tables, alerts and status indicators, for example a shared kit for several internal tools."
+        },
+        {
+          "title": "Usability testing on real tasks.",
+          "body": "Timed sessions with 5 users per round, for example exception handling in a prototype before rollout to a shift."
+        }
+      ]
+    },
+    {
+      "h2": "From kickoff to rollout: the Phoenix process",
+      "format": "steps",
+      "answer": "<strong>Phoenix engagements generally take 4–8 weeks in 5 steps</strong>, with sessions booked inside the hours Arizona and Eastern Time share, which shift by an hour with daylight saving time because Arizona does not change its clocks.",
+      "items": [
+        {
+          "title": "Operational kickoff (1–2 days)",
+          "body": "We confirm the roles, the shifts, the metrics such as handle time or error rate, and the rollout plan."
+        },
+        {
+          "title": "Observation and audit (5–10 days)",
+          "body": "Remote shadowing, interviews and a heuristic audit, summarized as a ranked list of workflow problems."
+        },
+        {
+          "title": "Prioritization workshops (2–3 days)",
+          "body": "Operations, IT and product owners agree what to fix first; on-site sessions in the Phoenix area can be arranged when observation or rollout planning needs them."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Workflows, UI and a Figma prototype reviewed twice a week with frontline users."
+        },
+        {
+          "title": "Test and hand off (5–10 days)",
+          "body": "Task-based tests with 5 users per round, fixes, then specs and components for your developers or vendor."
+        }
+      ]
+    },
+    {
+      "h2": "Results Phoenix operations teams can expect",
+      "format": "cards",
+      "answer": "<strong>Phoenix operations teams can expect 4 results from redesigned tools:</strong> faster task completion, fewer costly errors, shorter training for new hires and a consistent pattern library for future screens.",
+      "items": [
+        {
+          "title": "Speeds up routine tasks",
+          "body": "Fewer clicks and better defaults cut handle time on the tasks people repeat hundreds of times a shift."
+        },
+        {
+          "title": "Prevents expensive mistakes",
+          "body": "Clear confirmations, validation and status indicators lower the chance of a wrong lot, payment or order."
+        },
+        {
+          "title": "Shortens onboarding",
+          "body": "Consistent layouts help new hires in high-turnover roles become productive sooner."
+        },
+        {
+          "title": "Builds a reusable library",
+          "body": "A documented component set lets IT build the next internal tool without starting from scratch."
+        }
+      ]
+    },
+    {
+      "h2": "Working with a remote agency vs a Phoenix-area design firm",
+      "format": "table",
+      "answer": "<strong>A remote-first agency gives Phoenix teams senior product research and design with 5–6 shared hours a day and fixed published prices.</strong> A Phoenix-area firm suits projects that need designers on the floor every week.",
+      "caption": "A remote-first UX agency compared with a Phoenix-area design firm",
+      "columns": [
+        "Aspect",
+        "Remote-first agency (us)",
+        "Phoenix-area design firm"
+      ],
+      "rows": [
+        [
+          "Shared hours",
+          "5–6 hours a day with Arizona time",
+          "Same time zone"
+        ],
+        [
+          "Field research",
+          "Remote shadowing, on site when needed",
+          "On site"
+        ],
+        [
+          "Focus",
+          "Product research, UX, UI and testing",
+          "Varies, often web and brand"
+        ],
+        [
+          "Start",
+          "1–2 weeks",
+          "Varies by firm"
+        ],
+        [
+          "Price shown on this site",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Quoted per project"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        },
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does UX design cost for a Phoenix company?",
+      "format": "paragraph",
+      "answer": "<strong>For a Phoenix company, UX design with us costs $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> The total depends on workflows in scope, devices, research depth and design system size.",
+      "body": "<p>Full product design with a design system costs $60,000–$180,000 over 8–16 weeks, and a retained design team costs $15,000–$40,000 a month. A UX design agency Phoenix leaders can hold to a number should put the scope in writing, so we follow every free consultation with a fixed-scope proposal. For data-heavy internal tools, see our <a href=\"/services/dashboard-ux-design/\">dashboard UX design</a> service.</p>"
+    },
+    {
+      "h2": "Phoenix industries we design software for",
+      "format": "list",
+      "answer": "<strong>Five Phoenix industries account for most of our work in Arizona:</strong>",
+      "items": [
+        "Semiconductors and advanced manufacturing, for example equipment monitoring, yield analysis and maintenance tools for fab and factory staff.",
+        "Payments and financial operations, for example servicing consoles, dispute queues and payroll back offices; our <a href=\"/case-studies/apex-hcm-payroll-ux/\">Apex HCM payroll</a> redesign is a comparable project (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Healthcare, for example scheduling, patient intake and clinician workflow tools for health systems (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Logistics and distribution, for example warehouse, yard and dispatch software; see our <a href=\"/case-studies/fortna-warehouse-ux/\">Fortna warehouse</a> case study (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",
+        "Startups, for example Tempe and Scottsdale founders building a first SaaS product (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency Phoenix FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions Phoenix teams usually ask us early on.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have an office in Phoenix?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia, with no Phoenix office. We share 5–6 hours a day with Arizona time, and on-site observation or workshops in the Phoenix area are available when a project needs them.</p>"
+        },
+        {
+          "q": "How do you handle Arizona's time zone?",
+          "a": "<p>Arizona stays on Mountain Standard Time all year, so it is 2 hours behind Eastern Time in winter and 3 hours behind in summer. We book recurring sessions in the window that stays shared in both seasons.</p>"
+        },
+        {
+          "q": "Can you redesign legacy internal tools without replacing the back end?",
+          "a": "<p>Yes. We design within the constraints of your existing systems, prioritize changes your developers or vendor can ship, and plan a phased rollout by team or shift.</p>"
+        },
+        {
+          "q": "How fast can a Phoenix engagement start?",
+          "a": "<p>Usually 1–2 weeks after the discovery call, once scope and proposal are signed.</p>"
+        },
+        {
+          "q": "What tools does a UX design agency Phoenix teams hire from you use?",
+          "a": "<p>Figma for design and prototypes, Maze and Lookback for testing, and Figma plus Storybook to document the design system.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency phoenix",
+    "ui ux design agency phoenix",
+    "phoenix ux design",
+    "ux design agency arizona",
+    "ux design agency scottsdale"
+  ],
+  "centralEntity": "UX design agency in Phoenix",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product and internal-tool design engagements to Phoenix-area semiconductor, payments, healthcare and logistics teams.",
+  "semantic": {
+    "entities": [
+      "Phoenix",
+      "Tempe",
+      "Chandler",
+      "Scottsdale",
+      "Arizona",
+      "Mountain Standard Time",
+      "semiconductors",
+      "payments operations",
+      "healthcare",
+      "logistics",
+      "Interstate 10",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency phoenix",
+      "phoenix ux design",
+      "internal tools",
+      "operations software",
+      "exception handling"
+    ],
+    "skipgrams": [
+      "agency … phoenix",
+      "design … arizona",
+      "ux … mountain standard time"
+    ],
+    "nlpKeywords": [
+      "workflow research",
+      "shadowing",
+      "handle time",
+      "legacy systems",
+      "design system",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Phoenix",
+    "Tempe",
+    "Chandler",
+    "Scottsdale",
+    "Arizona",
+    "Mountain Standard Time",
+    "semiconductors",
+    "healthcare",
+    "logistics",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 4,
   "title": "Boston",
@@ -7,15 +6,244 @@
   "state": "MA",
   "keyword": "ux design agency boston",
   "anchor": "UX design agency Boston",
-  "metaTitle": "UX design agency Boston | Research-Led Product Design",
-  "metaDescription": "UX design agency Boston for product teams in Boston: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Boston | Biotech, Health & Edtech UX",
+  "metaDescription": "UX design agency Boston life sciences, healthcare, edtech and robotics teams hire for research, UI design and usability testing on Eastern Time. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency boston",
-    "h1": "UX design agency Boston for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Boston: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Boston teams trust with expert-grade software",
+    "sub": "Researchers and product designers for lab platforms, clinical tools, learning products and robot interfaces in Boston, Cambridge and along Route 128. Same Eastern Time workday, evidence behind every design decision."
   },
-  "summary": "Research-led UI UX design for product teams in Boston.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Evidence-based UX and UI design for Boston life sciences, healthcare, edtech and robotics products.",
+  "updated": "2026-10-02",
+  "abstract": "We are a remote-first UX design agency Boston teams reach on the same Eastern Time workday, headquartered in Reston, Virginia. Our researchers sit with scientists, clinicians, students and operators, then redesign and validate the software they rely on. A focused audit costs $5,000–$15,000; a full research and design sprint costs $25,000–$60,000.",
+  "sections": [
+    {
+      "h2": "Designing for experts: the Boston product challenge",
+      "format": "paragraph",
+      "answer": "<strong>Boston software is often used by experts under pressure, such as a bench scientist logging an assay, a nurse checking a medication list or a technician supervising a robot fleet.</strong> A UX design agency Boston companies hire must learn the domain fast and test with those specialists, not with generic panels.",
+      "body": "<p>The region concentrates biotech and pharma around Kendall Square, teaching hospitals in the Longwood Medical Area, universities and learning companies, and robotics firms from the Seaport to the suburbs west of the city. Those users tolerate complexity but not ambiguity, and mistakes can cost a batch, a patient record or a class grade. Our process starts with observation and task analysis, so every screen we propose traces back to something a real user did or said. The full scope is listed under <a href=\"/services/digital-product-design-services/\">digital product design services</a>.</p>"
+    },
+    {
+      "h2": "What a Boston UX engagement includes",
+      "format": "list",
+      "answer": "<strong>Each Boston engagement includes 6 pieces of work:</strong> contextual research, an expert usability review, task-based information architecture, UI design, a documented design system and formative usability testing.",
+      "items": [
+        {
+          "title": "Contextual research.",
+          "body": "Observation and interviews with 5–12 specialists per role, for example lab managers and research associates sharing one LIMS."
+        },
+        {
+          "title": "Expert usability review.",
+          "body": "A heuristic and WCAG 2.2 assessment of critical tasks, for example order entry in a clinical decision support tool."
+        },
+        {
+          "title": "Task-based information architecture.",
+          "body": "Menus and data structures organized around real workflows, for example protocols, samples and results in an electronic lab notebook."
+        },
+        {
+          "title": "UI design.",
+          "body": "Precise Figma screens for desktop, tablet and touch panels, for example a robot status console on a warehouse floor."
+        },
+        {
+          "title": "Documented design system.",
+          "body": "Components with states, error messages and usage rules, for example one kit serving a learning platform and its teacher app."
+        },
+        {
+          "title": "Formative usability testing.",
+          "body": "Task-based sessions with 5 representative users per round, for example a dosing workflow tested before a summative study."
+        }
+      ]
+    },
+    {
+      "h2": "How a Boston project runs, week by week",
+      "format": "steps",
+      "answer": "<strong>A Boston project usually runs 4–8 weeks in 5 phases</strong>, with live sessions held during the shared Eastern Time workday.",
+      "items": [
+        {
+          "title": "Scoping call (1–2 days)",
+          "body": "We define users, critical tasks, the regulatory context and the decision the research has to support."
+        },
+        {
+          "title": "Field research and review (5–10 days)",
+          "body": "Remote observation, interviews and an expert review, documented with task flows and severity ratings."
+        },
+        {
+          "title": "Synthesis workshops (2–3 days)",
+          "body": "Product, science or clinical leads and engineers agree on priorities; in-person sessions in Boston or Cambridge can be arranged when needed."
+        },
+        {
+          "title": "Design iterations (10–20 days)",
+          "body": "Flows, UI and a Figma prototype, reviewed twice a week with subject-matter experts in the room."
+        },
+        {
+          "title": "Validate and document (5–10 days)",
+          "body": "Formative tests with 5 users per round, a findings log, and specs and components handed to engineering."
+        }
+      ]
+    },
+    {
+      "h2": "Which standards and regulations shape Boston UX work?",
+      "format": "list",
+      "answer": "<strong>Four sets of rules come up most often in Boston projects, and we design so your team can show how the interface supports them:</strong>",
+      "items": [
+        "FDA human factors guidance and IEC 62366-1 for medical device software, which expect documented use-related risk analysis and usability testing.",
+        "21 CFR Part 11 for electronic records and signatures in regulated lab and clinical systems, which affects audit trails, sign-off steps and error messages.",
+        "HIPAA for software that handles protected health information, which affects what patient data appears on screen and to whom.",
+        "WCAG 2.2 AA for learning products and patient portals, including the 2024 ADA Title II rule that points public institutions to WCAG 2.1 AA."
+      ]
+    },
+    {
+      "h2": "Remote agency on Eastern Time vs a Boston-area studio",
+      "format": "table",
+      "answer": "<strong>A remote-first agency on Eastern Time covers the same working day as a Boston studio and publishes its prices up front.</strong> A local studio fits teams that want designers in the lab or office every week.",
+      "caption": "A remote-first Eastern Time agency compared with a Boston-area design studio",
+      "columns": [
+        "Consideration",
+        "Remote-first agency (us)",
+        "Boston-area studio"
+      ],
+      "rows": [
+        [
+          "Time zone",
+          "Eastern Time, full-day overlap",
+          "Eastern Time"
+        ],
+        [
+          "Research with specialists",
+          "Remote observation, on site when needed",
+          "Often on site"
+        ],
+        [
+          "Seniority",
+          "Senior researchers and designers",
+          "Differs by studio"
+        ],
+        [
+          "Lead time",
+          "1–2 weeks",
+          "Differs by studio"
+        ],
+        [
+          "Prices",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Quoted per project"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        }
+      ]
+    },
+    {
+      "h2": "Boston UX design cost and budget ranges",
+      "format": "paragraph",
+      "answer": "<strong>Boston UX design budgets with us start at $5,000–$15,000 for a 2–3 week expert audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Cost rises with the number of user roles, the number of platforms, the depth of research and the size of the design system.",
+      "body": "<p>A complete product design with a design system costs $60,000–$180,000 over 8–16 weeks. Boston teams that need a standing design function retain one for $15,000–$40,000 per month. As a UX design agency Boston buyers can plan around, we scope every engagement in a free consultation and then send a fixed-price proposal. Our <a href=\"/services/ux-audit-services/\">UX audit services</a> page explains the shortest starting point.</p>"
+    },
+    {
+      "h2": "Boston industries we bring domain knowledge to",
+      "format": "list",
+      "answer": "<strong>Five Boston industries make up most of our work in the region:</strong>",
+      "items": [
+        "Biotech and life sciences, for example lab information systems, electronic lab notebooks and clinical trial platforms (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Healthcare and hospital systems, for example clinician dashboards, patient portals and care coordination tools (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Edtech, for example course platforms, assessment tools and teacher dashboards used on school devices.",
+        "Robotics and industrial automation, for example fleet monitoring, teleoperation and exception handling screens (<a href=\"/services/dashboard-ux-design/\">dashboard UX design</a>).",
+        "University spinouts and startups, for example founders turning research into a first product (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency Boston FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions Boston teams most often ask before they engage us.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have a Boston office?",
+          "a": "<p>No. Our UX design agency is remote-first and headquartered in Reston, Virginia. We work Eastern Time like Boston, and on-site research or workshops in the Boston area can be scheduled when a project needs them.</p>"
+        },
+        {
+          "q": "Can you support FDA human factors work?",
+          "a": "<p>Yes, at the design level. We run formative studies, document use-related findings and design mitigations. Your regulatory team or a human factors specialist remains responsible for the submission and the summative validation study.</p>"
+        },
+        {
+          "q": "How do you recruit scientists or clinicians for research?",
+          "a": "<p>We usually recruit through your customer base, supported by specialist recruiting panels, and run remote sessions that fit around lab and clinic schedules, typically 5–12 participants per role.</p>"
+        },
+        {
+          "q": "When can a Boston project begin?",
+          "a": "<p>Usually 1–2 weeks after the discovery call, once the scope is agreed and the proposal is signed.</p>"
+        },
+        {
+          "q": "What tools does a UX design agency Boston teams hire from you use?",
+          "a": "<p>Figma for design and prototyping, Maze and Lookback for testing, and Figma with Storybook for design system documentation.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency boston",
+    "ui ux design agency boston",
+    "boston ux design",
+    "ux design agency cambridge ma",
+    "healthcare ux design boston"
+  ],
+  "centralEntity": "UX design agency in Boston",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) on Eastern Time selling research-led product design engagements to Boston and Cambridge life sciences, healthcare, edtech and robotics teams.",
+  "semantic": {
+    "entities": [
+      "Boston",
+      "Cambridge",
+      "Kendall Square",
+      "Longwood Medical Area",
+      "Route 128",
+      "Eastern Time",
+      "biotech",
+      "U.S. Food and Drug Administration (FDA)",
+      "IEC 62366-1",
+      "21 CFR Part 11",
+      "HIPAA",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency boston",
+      "boston ux design",
+      "life sciences",
+      "human factors",
+      "formative usability testing"
+    ],
+    "skipgrams": [
+      "agency … boston",
+      "design … kendall square",
+      "ux … eastern time"
+    ],
+    "nlpKeywords": [
+      "contextual research",
+      "subject-matter experts",
+      "lab information systems",
+      "clinical tools",
+      "edtech",
+      "robotics",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Boston",
+    "Cambridge",
+    "Kendall Square",
+    "Eastern Time",
+    "biotech",
+    "healthcare",
+    "edtech",
+    "robotics",
+    "FDA",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

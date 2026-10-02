@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 3,
   "title": "Los Angeles",
@@ -7,15 +6,245 @@
   "state": "CA",
   "keyword": "ux design agency los angeles",
   "anchor": "UX design agency Los Angeles",
-  "metaTitle": "UX design agency Los Angeles | Research-Led Product Design",
-  "metaDescription": "UX design agency Los Angeles for product teams in Los Angeles: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Los Angeles | Streaming, DTC & Gaming UX",
+  "metaDescription": "UX design agency Los Angeles brands and studios use for streaming, e-commerce, gaming and aerospace software: research, UI design and testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency los angeles",
-    "h1": "UX design agency Los Angeles for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Los Angeles: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Los Angeles studios, brands and builders can lean on",
+    "sub": "Product researchers and designers for streaming apps, direct-to-consumer stores, game companions and aerospace tools across LA, Santa Monica, Burbank and Orange County. Remote-first, with mornings shared on Pacific Time."
   },
-  "summary": "Research-led UI UX design for product teams in Los Angeles.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Research-led UX and UI design for Los Angeles entertainment, e-commerce, gaming and aerospace products.",
+  "updated": "2026-10-02",
+  "abstract": "This remote-first UX design agency Los Angeles teams can hire is headquartered in Reston, Virginia, and keeps 5–6 hours of daily overlap with Pacific Time. We study how viewers, shoppers, players and engineers use a product, then redesign and test the screens that matter. Work starts with a $5,000–$15,000 audit.",
+  "sections": [
+    {
+      "h2": "How Los Angeles audiences raise the bar for product design",
+      "format": "paragraph",
+      "answer": "<strong>Los Angeles builds products for audiences used to polished entertainment: streaming viewers, fans of a brand, players and creators.</strong> Any UX design agency Los Angeles companies bring in has to match that visual standard while keeping checkout, sign-up and playback simple.",
+      "body": "<p>The region's software grows out of film and TV studios in Burbank and Hollywood, consumer brands selling direct online, game publishers along the coast and aerospace firms in the South Bay. Each group cares about something different: watch time, cart completion, player retention or error-free operation. We begin by watching real users, rank the friction we find by its business cost, and redesign the flows with the biggest payoff first. Our wider scope is described under <a href=\"/services/digital-product-design-services/\">digital product design services</a>.</p>"
+    },
+    {
+      "h2": "When should a Los Angeles team bring in a UX partner?",
+      "format": "list",
+      "answer": "<strong>LA teams usually call us at one of 5 moments:</strong>",
+      "items": [
+        "Before a launch tied to a premiere, drop or season, when the sign-up and paywall flows must work on day one.",
+        "When store conversion stalls even though ad spend and traffic keep rising.",
+        "When a game or fan app adds accounts, wallets or social features that confuse new users.",
+        "When an engineering tool built by engineers for engineers now has to serve operators and technicians.",
+        "When the in-house designer is booked on brand work and product flows have no owner."
+      ]
+    },
+    {
+      "h2": "What our Los Angeles UX engagements deliver",
+      "format": "list",
+      "answer": "<strong>A Los Angeles engagement delivers 6 outputs:</strong> audience research, a conversion and accessibility audit, navigation structure, UI across screen sizes, a design system and prototype tests.",
+      "items": [
+        {
+          "title": "Audience research.",
+          "body": "Sessions with 5–12 viewers, shoppers or players per segment, for example lapsed subscribers of a streaming service."
+        },
+        {
+          "title": "Conversion and accessibility audit.",
+          "body": "A review of key journeys against heuristics and WCAG 2.2, for example product detail pages and checkout on a DTC store."
+        },
+        {
+          "title": "Navigation structure.",
+          "body": "Catalog and menu structure tested with card sorts, for example browse rows and genres in a video library."
+        },
+        {
+          "title": "UI across screen sizes.",
+          "body": "Figma designs for phone, desktop and TV, for example a 10-foot interface navigated with a remote."
+        },
+        {
+          "title": "Design system.",
+          "body": "Tokens and components that carry brand styling, for example one library shared by several product lines or titles."
+        },
+        {
+          "title": "Prototype tests.",
+          "body": "Rounds of 5 participants on clickable flows, for example a launcher onboarding before a beta opens."
+        }
+      ]
+    },
+    {
+      "h2": "Our Los Angeles project timeline",
+      "format": "steps",
+      "answer": "<strong>A Los Angeles project typically takes 4–8 weeks across 5 phases</strong>, scheduled in the morning and early afternoon Pacific Time, when both teams are online.",
+      "items": [
+        {
+          "title": "Brief and success metric (1–2 days)",
+          "body": "We confirm the audience, the number that defines success, such as trial-to-paid rate, and the launch date."
+        },
+        {
+          "title": "Listening and audit (5–10 days)",
+          "body": "User sessions, analytics review and a heuristic audit, summarized in a findings readout with clips."
+        },
+        {
+          "title": "Concept workshops (2–3 days)",
+          "body": "Remote workshops with product, marketing, creative and engineering; on-site sessions in Los Angeles are possible for larger scopes."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Wireframes become branded UI and a Figma prototype, with two reviews each week."
+        },
+        {
+          "title": "Test, refine, hand off (5–10 days)",
+          "body": "Usability rounds with 5 users, fixes, and developer-ready specs and components."
+        }
+      ]
+    },
+    {
+      "h2": "Remote UX partner or an LA creative agency?",
+      "format": "table",
+      "answer": "<strong>LA has many creative and branding agencies; a remote-first product UX partner focuses on research, flows and testing at published prices.</strong> Pick a local creative shop when campaign visuals or video are the main need.",
+      "caption": "A remote-first product UX partner compared with a Los Angeles creative agency",
+      "columns": [
+        "Point",
+        "Remote-first UX partner (us)",
+        "Los Angeles creative agency"
+      ],
+      "rows": [
+        [
+          "Main focus",
+          "Product research, UX flows, UI and testing",
+          "Brand, campaigns and content, often with some UX"
+        ],
+        [
+          "Overlap",
+          "5–6 hours a day on Pacific Time",
+          "Same time zone"
+        ],
+        [
+          "Workshops",
+          "Remote, in person in Los Angeles for larger scopes",
+          "In person"
+        ],
+        [
+          "Start",
+          "1–2 weeks",
+          "Varies"
+        ],
+        [
+          "Pricing",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Often retainer-based"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How is a Los Angeles UX project priced?",
+      "format": "paragraph",
+      "answer": "<strong>Our Los Angeles UX pricing starts at $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week sprint of research, design and testing.</strong> Scope depends on the number of journeys, devices, research rounds and design system work.",
+      "body": "<p>Complete product design with a design system lands between $60,000 and $180,000 across 8–16 weeks, and a retained design team costs $15,000–$40,000 per month. A free consultation comes first, followed by a fixed-scope proposal, so the budget your finance team approves is the budget we work to. Online stores can also review our <a href=\"/services/ecommerce-ux-design-services/\">e-commerce UX design services</a>.</p>"
+    },
+    {
+      "h2": "Los Angeles industries that drive our work",
+      "format": "list",
+      "answer": "<strong>Five Los Angeles industries shape most of our projects here:</strong>",
+      "items": [
+        "Entertainment and streaming, for example subscription video apps, fan platforms and creator tools that need clear browse, search and paywall flows.",
+        "E-commerce and direct-to-consumer brands, for example beauty, apparel and wellness stores selling on Shopify and mobile (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
+        "Gaming, for example launchers, companion apps and in-game stores; see our <a href=\"/case-studies/nitro/\">Nitro League</a> racing game case study.",
+        "Aerospace and engineering, for example mission planning, test data and maintenance tools used by technical staff (<a href=\"/services/dashboard-ux-design/\">dashboard UX design</a>).",
+        "Startups around Silicon Beach, for example consumer apps preparing an MVP or a redesign after a raise (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency Los Angeles FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to 5 questions Los Angeles teams ask us first.</strong>",
+      "faqs": [
+        {
+          "q": "Are you a UX design agency located in Los Angeles?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia, with no Los Angeles office. We overlap 5–6 hours a day with Pacific Time, and on-site workshops in LA are available for larger engagements.</p>"
+        },
+        {
+          "q": "Do you design TV and connected-device interfaces?",
+          "a": "<p>Yes. We design 10-foot interfaces for smart TVs and streaming devices alongside phone and web, with focus states and remote-control navigation tested in prototypes.</p>"
+        },
+        {
+          "q": "Can you work alongside our brand or creative agency?",
+          "a": "<p>Yes. We take the brand guidelines your creative partner owns and turn them into product components, flows and states, so marketing and product stay consistent.</p>"
+        },
+        {
+          "q": "How quickly can a Los Angeles project start?",
+          "a": "<p>Typically 1–2 weeks after the discovery call and a signed proposal.</p>"
+        },
+        {
+          "q": "Which tools does a UX design agency Los Angeles teams hire from you use?",
+          "a": "<p>We design and prototype in Figma, run tests in Maze and Lookback, and document components in Figma and Storybook.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency los angeles",
+    "ux design agency la",
+    "ui ux design agency los angeles",
+    "los angeles ux design",
+    "streaming app ux design"
+  ],
+  "centralEntity": "UX design agency in Los Angeles",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Los Angeles entertainment, e-commerce, gaming and aerospace teams.",
+  "semantic": {
+    "entities": [
+      "Los Angeles",
+      "Santa Monica",
+      "Burbank",
+      "Silicon Beach",
+      "Pacific Time",
+      "streaming",
+      "direct-to-consumer (DTC)",
+      "gaming",
+      "aerospace",
+      "Shopify",
+      "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "Figma"
+    ],
+    "ngrams": [
+      "ux design agency los angeles",
+      "los angeles ux design",
+      "streaming apps",
+      "direct-to-consumer brands",
+      "10-foot interface"
+    ],
+    "skipgrams": [
+      "agency … los angeles",
+      "design … silicon beach",
+      "ux … pacific time"
+    ],
+    "nlpKeywords": [
+      "audience research",
+      "checkout conversion",
+      "paywall flows",
+      "companion apps",
+      "design system",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Los Angeles",
+    "Santa Monica",
+    "Burbank",
+    "Silicon Beach",
+    "Pacific Time",
+    "streaming",
+    "e-commerce",
+    "gaming",
+    "aerospace",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

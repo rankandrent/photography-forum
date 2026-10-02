@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 5,
   "title": "Seattle",
@@ -7,15 +6,256 @@
   "state": "WA",
   "keyword": "ux design agency seattle",
   "anchor": "UX design agency Seattle",
-  "metaTitle": "UX design agency Seattle | Research-Led Product Design",
-  "metaDescription": "UX design agency Seattle for product teams in Seattle: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Seattle | Cloud, SaaS & Marketplace UX",
+  "metaDescription": "UX design agency Seattle teams use for cloud consoles, enterprise SaaS, marketplaces and games: research, UI design and usability testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency seattle",
-    "h1": "UX design agency Seattle for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Seattle: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Seattle engineering-led teams can plug in fast",
+    "sub": "Senior UX researchers and designers for cloud consoles, enterprise SaaS, marketplaces and game platforms in Seattle, Bellevue, Redmond and the Puget Sound region. Remote-first, with 5–6 hours of Pacific Time overlap each day."
   },
-  "summary": "Research-led UI UX design for product teams in Seattle.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Research-led UX and UI design for Seattle cloud, SaaS, e-commerce and gaming products.",
+  "updated": "2026-10-02",
+  "abstract": "Our remote-first UX design agency, headquartered in Reston, Virginia, works with Seattle and Eastside product teams across 5–6 shared hours on Pacific Time. We research developers, admins, sellers and players, then redesign consoles, workflows and storefronts and test them before launch. Engagements begin with a $5,000–$15,000 UX audit.",
+  "sections": [
+    {
+      "h2": "Who in Seattle hires a UX design agency, and why",
+      "format": "paragraph",
+      "answer": "<strong>Seattle teams hire a UX design agency when engineering velocity outruns design: features ship weekly, but setup, permissions and billing screens grow harder to use.</strong> A UX design agency Seattle companies bring in adds research and design depth without slowing the release train.",
+      "body": "<p>The Puget Sound economy runs on cloud infrastructure, enterprise software, online retail, travel and real estate platforms, game studios on the Eastside and aerospace manufacturing north of the city. Many of those products are configured by technical admins and used daily by non-technical staff, so one interface must serve both. We study both groups, simplify the paths they share, and document patterns your engineers can reuse across services. See our <a href=\"/services/digital-product-design-services/\">digital product design services</a> for the full scope.</p>"
+    },
+    {
+      "h2": "What our Seattle UX design services cover",
+      "format": "list",
+      "answer": "<strong>Seattle engagements cover 6 areas of work:</strong> user and customer research, a usability and accessibility audit, information architecture, product UI, a scalable design system and usability testing.",
+      "items": [
+        {
+          "title": "User and customer research.",
+          "body": "Interviews with 5–12 users per persona, for example cloud administrators and the developers they provision access for."
+        },
+        {
+          "title": "Usability and accessibility audit.",
+          "body": "A scored review of top tasks against heuristics and WCAG 2.2, for example first-run setup in a data platform."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "Console navigation reorganized with card sorts and tree tests, for example dozens of services grouped by job to be done."
+        },
+        {
+          "title": "Product UI.",
+          "body": "Figma screens with empty, loading and error states, for example a seller dashboard showing inventory and fulfillment."
+        },
+        {
+          "title": "Scalable design system.",
+          "body": "Tokens and components mapped to your front-end code, for example a library used by many squads across one platform."
+        },
+        {
+          "title": "Usability testing.",
+          "body": "Rounds of 5 participants on prototypes or staging builds, for example a pricing calculator before a public launch."
+        }
+      ]
+    },
+    {
+      "h2": "How we run a Seattle engagement",
+      "format": "steps",
+      "answer": "<strong>A Seattle engagement takes 4–8 weeks in 5 steps</strong> and plugs into your existing sprint rituals, from planning to demo day.",
+      "items": [
+        {
+          "title": "Working-backwards brief (1–2 days)",
+          "body": "We write down the customer problem, the target metric and the release window before anyone opens Figma."
+        },
+        {
+          "title": "Research and audit (5–10 days)",
+          "body": "Interviews, telemetry review and a heuristic audit, shared as a short written narrative with evidence."
+        },
+        {
+          "title": "Alignment sessions (2–3 days)",
+          "body": "Remote workshops with product managers, engineering leads and support; on-site sessions in Seattle or Bellevue are available for larger engagements."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Flows, UI and a clickable prototype, reviewed twice weekly in your sprint cadence."
+        },
+        {
+          "title": "Test and integrate (5–10 days)",
+          "body": "Tests with 5 users per round, fixes, then specs, tokens and components ready for your repositories."
+        }
+      ]
+    },
+    {
+      "h2": "Benefits Seattle product teams see",
+      "format": "cards",
+      "answer": "<strong>Seattle product teams typically see 4 benefits:</strong> shorter time to first value, fewer support tickets, consistent patterns across services and design help that starts within weeks.",
+      "items": [
+        {
+          "title": "Shortens time to first value",
+          "body": "Simpler setup and onboarding help new accounts reach a working configuration on day one."
+        },
+        {
+          "title": "Reduces support load",
+          "body": "Clear permissions, errors and billing screens remove the confusion behind repeat tickets."
+        },
+        {
+          "title": "Keeps services consistent",
+          "body": "Shared components stop each team from inventing its own tables, filters and forms."
+        },
+        {
+          "title": "Starts without a hiring loop",
+          "body": "Senior designers begin in 1–2 weeks, which helps when competition for UX talent in Seattle stretches hiring timelines."
+        }
+      ]
+    },
+    {
+      "h2": "Agency sprint or a full-time Seattle hire?",
+      "format": "table",
+      "answer": "<strong>An agency sprint suits a defined problem with a deadline; a full-time Seattle hire suits steady design demand over years.</strong> Many teams use an agency first and hire once the design system and roadmap are clear.",
+      "caption": "A remote-first agency sprint compared with hiring a full-time designer in Seattle",
+      "columns": [
+        "Question",
+        "Agency sprint (us)",
+        "Full-time Seattle hire"
+      ],
+      "rows": [
+        [
+          "Time to start",
+          "1–2 weeks",
+          "Often several months including recruiting"
+        ],
+        [
+          "Skills",
+          "Research, UX, UI and testing in one team",
+          "One person's specialty"
+        ],
+        [
+          "Hours",
+          "5–6 hours of daily Pacific Time overlap",
+          "Full local workday"
+        ],
+        [
+          "Commitment",
+          "Fixed scope, 4–8 weeks",
+          "Ongoing salary and benefits"
+        ],
+        [
+          "Cost on this site",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Seattle market salary"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "What does Seattle UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>Seattle UX design with our team costs $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week sprint covering research, design and testing.</strong> Price follows 4 variables: flows, platforms, research depth and design system scope.",
+      "body": "<p>A full product design including a design system costs $60,000–$180,000 across 8–16 weeks, and an embedded team costs $15,000–$40,000 per month. Any UX design agency Seattle teams shortlist should quote a fixed scope; ours follows a free consultation. Subscription software teams can read how we handle onboarding, retention and admin UX on our <a href=\"/services/saas-ux-design/\">SaaS UX design</a> page.</p>"
+    },
+    {
+      "h2": "Seattle industries our designers know",
+      "format": "list",
+      "answer": "<strong>Five Seattle industries lead our work in the region:</strong>",
+      "items": [
+        "Cloud and enterprise SaaS, for example developer consoles, admin centers and analytics tools; our <a href=\"/case-studies/toolsgroup-supply-chain-ux/\">ToolsGroup</a> research shows how we approach enterprise software (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "E-commerce and marketplaces, for example seller portals, search and checkout for retail platforms (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
+        "Gaming, for example launchers, account systems and storefronts for studios in Bellevue and Redmond.",
+        "Aerospace and manufacturing, for example maintenance, inspection and supply tools used on the factory floor (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",
+        "Startups, for example founders spun out of large tech companies building a first B2B product (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency Seattle FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions Seattle teams ask before starting a project with us.</strong>",
+      "faqs": [
+        {
+          "q": "Is your team in Seattle?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia, without a Seattle office. We work 5–6 hours a day in overlap with Pacific Time, and on-site workshops in the Seattle area are available for larger engagements.</p>"
+        },
+        {
+          "q": "Can you design developer-facing products such as consoles and CLIs?",
+          "a": "<p>Yes. We research developers and administrators, design console flows and documentation entry points, and test with technical users recruited by role.</p>"
+        },
+        {
+          "q": "Do you work inside our design system and code repositories?",
+          "a": "<p>Yes. We extend your existing Figma libraries and tokens, follow your contribution rules, and hand over components your engineers can map to code.</p>"
+        },
+        {
+          "q": "How soon can a Seattle project start?",
+          "a": "<p>Usually 1–2 weeks after the discovery call and a signed proposal.</p>"
+        },
+        {
+          "q": "Which tools does a UX design agency Seattle teams hire from you use?",
+          "a": "<p>Figma for design and prototypes, Maze and Lookback for testing, and Figma plus Storybook for design system documentation.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency seattle",
+    "ui ux design agency seattle",
+    "seattle ux design",
+    "ux design agency bellevue",
+    "saas ux design seattle"
+  ],
+  "centralEntity": "UX design agency in Seattle",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Seattle and Eastside cloud, SaaS, e-commerce, gaming and aerospace teams.",
+  "semantic": {
+    "entities": [
+      "Seattle",
+      "Bellevue",
+      "Redmond",
+      "Puget Sound",
+      "Pacific Time",
+      "cloud computing",
+      "enterprise SaaS",
+      "marketplaces",
+      "gaming",
+      "aerospace",
+      "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "Figma"
+    ],
+    "ngrams": [
+      "ux design agency seattle",
+      "seattle ux design",
+      "cloud consoles",
+      "seller portals",
+      "time to first value"
+    ],
+    "skipgrams": [
+      "agency … seattle",
+      "design … puget sound",
+      "ux … pacific time"
+    ],
+    "nlpKeywords": [
+      "developer experience",
+      "admin console",
+      "onboarding",
+      "support tickets",
+      "design system",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Seattle",
+    "Bellevue",
+    "Redmond",
+    "Puget Sound",
+    "Pacific Time",
+    "cloud computing",
+    "enterprise SaaS",
+    "e-commerce",
+    "gaming",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }
