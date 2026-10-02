@@ -27,7 +27,7 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
   return (
     <header className={`hdr${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
       <div className="hdr__inner">
-        <Link href="/" className="hdr__logo" aria-label="UI UX design home" onClick={close}>
+        <Link href="/" className="hdr__logo" aria-label="UI UX Design Services home" onClick={close}>
           <Logo />
         </Link>
         <nav className="hdr__nav" aria-label="Main">

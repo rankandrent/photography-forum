@@ -15,7 +15,8 @@ export function Logo({ size = 32 }: { size?: number }) {
   return (
     <span className="logo">
       <LogoMark size={size} />
-      <span className="logo__word"><b>uiux</b> design</span>
+      <span className="logo__word" aria-hidden="true"><b>uiux</b> design</span>
+      <span className="visually-hidden">UI UX Design Services</span>
     </span>
   );
 }

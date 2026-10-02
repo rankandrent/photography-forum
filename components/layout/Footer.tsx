@@ -39,7 +39,7 @@ export function Footer() {
     <footer className="ftr">
       <div className="container ftr__top">
         <div className="ftr__brand">
-          <Link href="/" className="ftr__logo" aria-label="UI UX design home">
+          <Link href="/" className="ftr__logo" aria-label="UI UX Design Services home">
             <Logo size={36} />
           </Link>
           <p className="ftr__about">Research-led UI UX design for products that need to perform. Designing digital products since {SITE.founded}.</p>
