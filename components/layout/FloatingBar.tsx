@@ -14,20 +14,17 @@ export function FloatingBar() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    let formVisible = false;
-    let footerVisible = false;
-    const update = () => setShow(window.scrollY > window.innerHeight * 0.7 && !formVisible && !footerVisible);
+    // hide while any lead form (hero or final CTA) or the footer is on screen
+    const visible = new Set<Element>();
+    const update = () => setShow(window.scrollY > window.innerHeight * 0.7 && visible.size === 0);
     const io = new IntersectionObserver((entries) => {
       for (const e of entries) {
-        if (e.target.id === "cta-form") formVisible = e.isIntersecting;
-        else footerVisible = e.isIntersecting;
+        if (e.isIntersecting) visible.add(e.target);
+        else visible.delete(e.target);
       }
       update();
     });
-    const form = document.getElementById("cta-form");
-    const footer = document.querySelector("footer");
-    if (form) io.observe(form);
-    if (footer) io.observe(footer);
+    document.querySelectorAll("#cta-form, .lead-form, .lm__form, footer").forEach((el) => io.observe(el));
     update();
     window.addEventListener("scroll", update, { passive: true });
     return () => {

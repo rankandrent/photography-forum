@@ -1361,8 +1361,25 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
   .prose h3 { font-size: 20px; margin: 28px 0 10px; }
 
   /* forms */
-  .lead-form input, .lead-form select, .final__form input, .final__form select, .lm__form input { height: 46px; font-size: 15px; padding: 0 16px; }
-  .lead-form textarea, .final__form textarea { height: 96px; font-size: 15px; padding: 12px 16px; }
+  .lead-form { gap: 10px; }
+  .lead-form__row { gap: 10px; }
+  .lead-form input, .lead-form select, .final__form input, .final__form select, .lm__form input { height: 42px; font-size: 14px; padding: 0 14px; border-radius: 10px; }
+  .lead-form textarea, .final__form textarea { height: 84px; font-size: 14px; padding: 10px 14px; border-radius: 10px; }
+  .lead-form .btn { height: 44px; font-size: 14px; }
+  .lead-form__consent, .lead-form__legal { font-size: 12px; }
+  .hero__form { padding: 18px; border-radius: 16px; }
+
+  /* header */
+  .hdr__inner { padding: 0 16px; }
+  .hdr .logo { font-size: 18px; gap: 8px; }
+  .hdr .logo__mark { width: 28px; height: 28px; }
+  .hdr__menu-btn { width: 38px; height: 38px; }
+
+  /* floating bar */
+  .fbar { padding: 4px; gap: 4px; left: 10px; right: 10px; }
+  .fbar a { height: 40px; font-size: 13px; padding: 0 4px 0 14px; }
+  .fbar__secondary { padding: 0 10px !important; }
+  .fbar__arrow { width: 30px; height: 30px; }
 
   .hdr { padding: 12px 0; }
   .hero { padding: 120px 0 56px; }
