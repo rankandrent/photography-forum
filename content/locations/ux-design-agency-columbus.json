@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: add the supplied SERP-based content (hero, abstract, sections, faqs). The daily publisher sets draft:false once sections exist.",
   "draft": true,
   "order": 10,
   "title": "Columbus",
@@ -7,15 +6,258 @@
   "state": "OH",
   "keyword": "ux design agency columbus",
   "anchor": "UX design agency Columbus",
-  "metaTitle": "UX design agency Columbus | Research-Led Product Design",
-  "metaDescription": "UX design agency Columbus for product teams in Columbus: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Columbus | Insurance, Retail & Mobility UX",
+  "metaDescription": "UX design agency Columbus product teams can hire for insurance, retail, logistics and mobility software: research, UI design and testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency columbus",
-    "h1": "UX design agency Columbus for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Columbus: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Columbus insurers and retailers can hire remotely",
+    "sub": "Customer and employee UX for insurance carriers, retail and e-commerce brands, distribution operations and mobility startups in Columbus and Central Ohio. Research, interface design and usability testing on Eastern Time."
   },
-  "summary": "Research-led UI UX design for product teams in Columbus.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX research and design for Columbus insurance, retail, logistics and mobility teams.",
+  "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, sharing Columbus's Eastern Time working day. We help Central Ohio teams improve quoting and claims journeys, omnichannel shopping, warehouse tools and mobility apps through user research, UX and UI design, prototyping and testing. Audits start at $5,000; research and design sprints run 4–8 weeks.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "How does a UX design agency help Columbus companies?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency helps Columbus companies by redesigning the customer and employee journeys that drive revenue and cost, such as getting a quote, buying online, filing a claim or picking an order,</strong> and proving the improvements with usability tests before launch.",
+      "body": "<p>Columbus is a headquarters city. Insurers, national retail and apparel brands, banks and logistics operators run large digital estates from Central Ohio, and those estates often serve two audiences at once: customers on their phones and employees in call centers, stores and distribution centers. Improving one side without the other moves problems around instead of solving them. Our researchers study both audiences, and our designers build interfaces and design systems that hold the experience together. As a UX design agency Columbus teams can hire without a relocation or a long recruiting search, we work remotely on your clock and visit Columbus for workshops when a project warrants it. We have no local office, and we will not pretend otherwise.</p>"
+    },
+    {
+      "h2": "What Columbus teams get from a research-led redesign",
+      "format": "cards",
+      "answer": "<strong>Columbus teams get four outcomes from a research-led redesign:</strong> more completed quotes and orders, fewer calls to support, faster employee tasks and one design language across brands.",
+      "items": [
+        {
+          "title": "More completed quotes and orders",
+          "body": "Shorter forms, clearer pricing and better error messages help more shoppers and policy buyers finish what they started."
+        },
+        {
+          "title": "Fewer support calls",
+          "body": "Self-service flows for claims, returns and account changes that customers can finish alone reduce call-center volume."
+        },
+        {
+          "title": "Faster employee tools",
+          "body": "Store, warehouse and agent screens designed around real routines save time on every shift."
+        },
+        {
+          "title": "One design language",
+          "body": "A shared design system lets several brands or business lines ship consistent experiences from one component library."
+        }
+      ]
+    },
+    {
+      "h2": "Our Columbus UX services, deliverable by deliverable",
+      "format": "list",
+      "answer": "<strong>Our Columbus UX services cover six deliverables:</strong> journey research, a conversion and usability audit, journey maps, UI design, a multi-brand design system and usability testing.",
+      "items": [
+        {
+          "title": "Journey research.",
+          "body": "Interviews and diary studies with 5–12 people per segment, for example first-time renters buying a policy online."
+        },
+        {
+          "title": "Conversion and usability audit.",
+          "body": "A heuristic, analytics and WCAG 2.2 review of a key journey, for example product page to checkout."
+        },
+        {
+          "title": "Journey maps.",
+          "body": "End-to-end maps that connect the customer view with the employee view, for example a claim from first report to payout."
+        },
+        {
+          "title": "UI design.",
+          "body": "Figma screens for web, native apps and handheld scanners, designed to the brand and to the device."
+        },
+        {
+          "title": "Multi-brand design system.",
+          "body": "Themeable tokens and components so sister brands share one codebase without looking identical."
+        },
+        {
+          "title": "Usability testing.",
+          "body": "Remote and in-context testing with five participants per round, including store or warehouse staff where relevant."
+        }
+      ]
+    },
+    {
+      "h2": "How we run a project with a Columbus team",
+      "format": "steps",
+      "answer": "<strong>We run a Columbus project in five steps over 4–8 weeks,</strong> with weekly demos so marketing, operations and technology leaders see progress together.",
+      "items": [
+        {
+          "title": "Goal setting (1–2 days)",
+          "body": "We agree on the journey in scope, the business metric to move, the user segments and the people who approve decisions."
+        },
+        {
+          "title": "Discovery (5–10 days)",
+          "body": "We interview customers and employees, review analytics and call reasons, and audit the current experience."
+        },
+        {
+          "title": "Journey workshop (2–3 days)",
+          "body": "A cross-functional workshop, remote or on site in Columbus for larger engagements, agrees which pain points to solve first."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Designers create screens and an interactive prototype and review them with your team twice a week."
+        },
+        {
+          "title": "Test, refine and deliver (5–10 days)",
+          "body": "We test with users, refine the design and hand over specs and components that your developers or platform partner can build."
+        }
+      ]
+    },
+    {
+      "h2": "Which Columbus industries do we design for?",
+      "format": "list",
+      "answer": "<strong>Our UX design agency Columbus work spans five industries:</strong> insurance, retail and e-commerce, logistics and distribution, smart mobility and financial services.",
+      "items": [
+        "Insurance carriers and insurtech companies, including online quoting, agent portals, policy management and claims apps (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Retail, apparel and restaurant brands headquartered in Central Ohio, from product discovery and loyalty apps to checkout (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
+        "Logistics and distribution operations around the Rickenbacker inland port, including warehouse management, yard and fleet tools (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",
+        "Smart mobility and EV startups, a sector that grew after Columbus won the federal Smart City Challenge, building trip planning, charging and fleet apps.",
+        "Banks and credit unions with large Columbus operations that need digital account opening and servicing journeys."
+      ]
+    },
+    {
+      "h2": "Audit, sprint or embedded team: which fits a Columbus company?",
+      "format": "table",
+      "answer": "<strong>An audit fits a company that needs a diagnosis, a sprint fits one fixing a specific journey, and an embedded team fits one with an ongoing roadmap.</strong> Most Columbus companies start with an audit or a sprint.",
+      "caption": "Comparison of three engagement models for Columbus companies: UX audit, design sprint and embedded team",
+      "columns": [
+        "Model",
+        "UX audit",
+        "Research and design sprint",
+        "Embedded design team"
+      ],
+      "rows": [
+        [
+          "Length",
+          "2–3 weeks",
+          "4–8 weeks",
+          "Monthly, ongoing"
+        ],
+        [
+          "Output",
+          "Prioritised issue list and recommendations",
+          "Tested designs and a prototype for one journey",
+          "Continuous design inside your squads"
+        ],
+        [
+          "Price",
+          "$5,000–$15,000",
+          "$25,000–$60,000",
+          "$15,000–$40,000 per month"
+        ],
+        [
+          "Best for",
+          "Knowing where to invest",
+          "Fixing a quote, checkout or claims journey",
+          "Retail and insurance roadmaps with steady releases"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "e-commerce UX design services",
+          "to": "/services/ecommerce-ux-design-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "What does it cost to hire a UX design agency Columbus companies can rely on?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency Columbus engagement with us costs $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week sprint.</strong> Four factors set the price: the number of journeys, customer and employee segments, platforms and the size of the design system.",
+      "body": "<p>A full product design or replatforming effort with a multi-brand design system costs $60,000–$180,000 over 8–16 weeks. Embedded teams for continuous delivery cost $15,000–$40,000 per month. All proposals are fixed-scope. Retail and distribution teams can see related work in our <a href=\"/work/toolsgroup-supply-chain-ux/\">supply chain planning case study</a>, and warehouse teams in the <a href=\"/work/fortna-warehouse-ux/\">warehouse error-resolution case study</a>.</p>"
+    },
+    {
+      "h2": "UX design agency Columbus FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions Columbus teams usually ask before hiring a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Is your agency located in Columbus?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia. We work Eastern Time hours, the same as Columbus, and come on site for workshops when the engagement calls for it.</p>"
+        },
+        {
+          "q": "Can you design for both customers and employees?",
+          "a": "<p>Yes. Many projects cover both, for example a customer claims app and the adjuster screen behind it, so the two experiences match.</p>"
+        },
+        {
+          "q": "Do you work with our commerce or insurance platform?",
+          "a": "<p>Yes. We design within the constraints of your platform and its component model, and we work alongside your engineering team or implementation partner.</p>"
+        },
+        {
+          "q": "Can you test with store or warehouse staff?",
+          "a": "<p>Yes. We run short remote sessions or, for larger engagements, in-context observation at your sites, scheduled around shifts.</p>"
+        },
+        {
+          "q": "How quickly can we start?",
+          "a": "<p>Most Columbus projects begin 1–2 weeks after the proposal is signed.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency columbus",
+    "columbus ux design agency",
+    "ux design agency columbus ohio",
+    "ui ux design agency columbus",
+    "columbus ux design"
+  ],
+  "centralEntity": "UX design agency in Columbus",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) on Eastern Time selling research-led product design engagements to Columbus insurance, retail, logistics and mobility teams.",
+  "semantic": {
+    "entities": [
+      "Columbus",
+      "Ohio",
+      "Central Ohio",
+      "Eastern Time",
+      "Rickenbacker inland port",
+      "Smart City Challenge",
+      "insurance",
+      "retail",
+      "e-commerce",
+      "logistics",
+      "smart mobility",
+      "Figma",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency columbus",
+      "columbus ux design",
+      "ux design agency",
+      "central ohio",
+      "customer and employee journeys"
+    ],
+    "skipgrams": [
+      "agency … columbus",
+      "design … insurance quoting",
+      "ux … retail checkout"
+    ],
+    "nlpKeywords": [
+      "journey mapping",
+      "conversion audit",
+      "claims journey",
+      "multi-brand design system",
+      "employee tools",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Columbus",
+    "Ohio",
+    "Central Ohio",
+    "Eastern Time",
+    "Rickenbacker",
+    "Smart City Challenge",
+    "insurance",
+    "retail",
+    "logistics",
+    "smart mobility",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

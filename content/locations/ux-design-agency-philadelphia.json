@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: add the supplied SERP-based content (hero, abstract, sections, faqs). The daily publisher sets draft:false once sections exist.",
   "draft": true,
   "order": 9,
   "title": "Philadelphia",
@@ -7,15 +6,247 @@
   "state": "PA",
   "keyword": "ux design agency philadelphia",
   "anchor": "UX design agency Philadelphia",
-  "metaTitle": "UX design agency Philadelphia | Research-Led Product Design",
-  "metaDescription": "UX design agency Philadelphia for product teams in Philadelphia: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Philadelphia | Health, Pharma & EdTech UX",
+  "metaDescription": "UX design agency Philadelphia teams can work with on Eastern Time: research, UI design and testing for health systems, life sciences and universities.",
   "hero": {
     "eyebrow": "ux design agency philadelphia",
-    "h1": "UX design agency Philadelphia for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Philadelphia: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Philadelphia teams can work with on Eastern Time",
+    "sub": "User research, accessible interface design and usability testing for health systems, pharma and life-science companies, and universities in Philadelphia and the wider Delaware Valley. Same time zone, remote-first delivery."
   },
-  "summary": "Research-led UI UX design for product teams in Philadelphia.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Accessible, research-led UX design for Philadelphia healthcare, life-science and higher-education teams.",
+  "abstract": "Our UX design agency is remote-first and headquartered in Reston, Virginia, on the same Eastern Time clock as Philadelphia. We help Philadelphia teams in healthcare, pharma, life sciences and higher education research their users, redesign regulated or high-traffic flows, and test them before release. A UX audit starts at $5,000, and every meeting happens inside a shared working day.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What does a UX design agency do for Philadelphia organizations?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency helps Philadelphia organizations make high-stakes digital services, such as patient portals, clinical-trial apps and student systems, easy to complete for every user, including people with disabilities,</strong> through research, redesign and usability testing.",
+      "body": "<p>Philadelphia's economy leans on institutions: hospital networks, medical schools, pharmaceutical and cell-and-gene-therapy companies, and one of the densest concentrations of colleges on the East Coast. Their software serves patients, trial participants, students and staff who did not choose the tool and cannot easily avoid it. That raises the bar for clarity and accessibility. A UX design agency Philadelphia institutions bring in should understand review cycles, procurement and compliance as well as screens. We are a remote team rather than a local studio, working the same hours as your staff and joining you in Philadelphia for workshops when a project calls for it. See what product-wide engagements cover on our <a href=\"/services/digital-product-design-services/\">digital product design services</a> page.</p>"
+    },
+    {
+      "h2": "Philadelphia industries we design for",
+      "format": "list",
+      "answer": "<strong>As a UX design agency Philadelphia organizations can hire remotely, we concentrate on four industries:</strong> health systems, pharma and life sciences, higher education and the region's growing startup community.",
+      "items": [
+        "Health systems and health IT, including patient portals, scheduling, care navigation and clinician dashboards used across large academic medical centers (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Pharma, biotech and cell and gene therapy companies in University City, the Navy Yard and the suburban pharma corridor, which need trial-participant apps, lab tools and HCP portals.",
+        "Higher education, where admissions, financial aid, course registration and learning platforms must work for thousands of students on phones.",
+        "B2B SaaS and digital health startups that are preparing an MVP or a funding round (<a href=\"/industries/startups/\">Startups UI UX design</a>).",
+        "Enterprise software teams at media, telecom and financial firms headquartered in the region (<a href=\"/industries/saas/\">SaaS UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "Which standards and regulations shape Philadelphia UX projects?",
+      "format": "list",
+      "answer": "<strong>Four sets of rules shape most Philadelphia UX projects:</strong> accessibility standards, health privacy law, FDA electronic-records rules and university accessibility obligations.",
+      "items": [
+        "WCAG 2.2 AA, the accessibility benchmark we audit and design against for every public-facing flow.",
+        "HIPAA, which governs how we handle protected health information in research sessions and prototypes.",
+        "FDA 21 CFR Part 11, which affects audit trails, electronic signatures and data entry in clinical-trial and lab software.",
+        "ADA Title II and Section 504 obligations that require public and federally funded universities to keep web and app content accessible."
+      ]
+    },
+    {
+      "h2": "What's included in a Philadelphia UX design project?",
+      "format": "list",
+      "answer": "<strong>A Philadelphia UX design project includes six parts:</strong> stakeholder and user research, an accessibility-first audit, service mapping, interface design, a design system and usability testing.",
+      "items": [
+        {
+          "title": "Stakeholder and user research.",
+          "body": "Interviews with 5–12 people per group, for example patients, nurses and front-desk staff who all touch the same scheduling flow."
+        },
+        {
+          "title": "Accessibility-first audit.",
+          "body": "A WCAG 2.2 and heuristic review with screen reader and keyboard checks, ranked so the most serious barriers are fixed first."
+        },
+        {
+          "title": "Service mapping.",
+          "body": "A blueprint that connects screens to the offline steps around them, for example a referral that starts by phone and ends in a portal."
+        },
+        {
+          "title": "Interface design.",
+          "body": "Figma designs for web and mobile written in plain language, with forms, error states and consent screens covered in detail."
+        },
+        {
+          "title": "Design system.",
+          "body": "Accessible components and tokens that let several departments or brands publish consistent pages."
+        },
+        {
+          "title": "Usability testing.",
+          "body": "Moderated rounds with five participants each, including assistive-technology users where the audience requires it."
+        }
+      ]
+    },
+    {
+      "h2": "From first call to handoff: the Philadelphia project timeline",
+      "format": "steps",
+      "answer": "<strong>A Philadelphia project takes 4–8 weeks from first call to handoff and moves through five phases,</strong> with extra time built in when legal, privacy or IRB review is part of the research.",
+      "items": [
+        {
+          "title": "Intake call (1–2 days)",
+          "body": "We confirm goals, user groups, approvals needed and the decision-makers who must sign off on research and design."
+        },
+        {
+          "title": "Research and accessibility audit (5–10 days)",
+          "body": "We interview users, audit the current flows and summarise the barriers in a report your leadership can act on."
+        },
+        {
+          "title": "Co-design sessions (2–3 days)",
+          "body": "Remote sessions in your own time zone bring clinical, academic or compliance staff into the design; on-site sessions in Philadelphia are available for larger engagements."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Designers produce screens and a clickable prototype, with reviews twice a week and accessibility notes on every component."
+        },
+        {
+          "title": "Test and hand off (5–10 days)",
+          "body": "We test with real users, fix the findings and hand over specs, components and an accessibility checklist to your developers."
+        }
+      ]
+    },
+    {
+      "h2": "Shared-time-zone remote agency vs an on-site Philadelphia studio",
+      "format": "table",
+      "answer": "<strong>Because our team already works on Eastern Time, a remote engagement with us feels close to working with a Philadelphia studio, without the local overhead.</strong> An on-site studio is the better fit if you need designers in your building every week.",
+      "caption": "Comparison of a remote Eastern Time UX agency and an on-site Philadelphia design studio",
+      "columns": [
+        "Criterion",
+        "Remote agency on Eastern Time (us)",
+        "On-site Philadelphia studio"
+      ],
+      "rows": [
+        [
+          "Working hours",
+          "Same clock as Philadelphia",
+          "Same clock as Philadelphia"
+        ],
+        [
+          "In-person time",
+          "Workshops on site for larger engagements",
+          "Weekly or as agreed"
+        ],
+        [
+          "Accessibility and compliance",
+          "WCAG 2.2, HIPAA-aware research built into the process",
+          "Varies by studio"
+        ],
+        [
+          "Start date",
+          "1–2 weeks after approval",
+          "Varies by studio"
+        ],
+        [
+          "Pricing on this site",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Local studio rates"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        },
+        {
+          "anchor": "mobile app UI UX design services",
+          "to": "/services/mobile-app-ui-ux-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does a UX design agency Philadelphia project cost?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency Philadelphia project costs $5,000–$15,000 for a 2–3 week accessibility and UX audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Price depends on the number of user groups, the flows in scope, the platforms and any review steps such as IRB or privacy approval.",
+      "body": "<p>Full product design with an accessible design system costs $60,000–$180,000 and runs 8–16 weeks. For continuous support, an embedded team costs $15,000–$40,000 per month. Institutions with procurement rules receive a fixed-scope proposal that maps cleanly to a purchase order. If your product handles payroll, HR or other enterprise records, our <a href=\"/work/apex-hcm-payroll-ux/\">enterprise payroll case study</a> shows how we simplified a 200-screen system.</p>"
+    },
+    {
+      "h2": "UX design agency Philadelphia FAQs",
+      "format": "faq",
+      "answer": "<strong>Five common questions from Philadelphia teams evaluating a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have a Philadelphia office?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia. We share Philadelphia's Eastern Time working day and meet on site for workshops when a project needs it.</p>"
+        },
+        {
+          "q": "Can you run research with patients or students?",
+          "a": "<p>Yes. We recruit through your organization or a panel, follow your consent, privacy and IRB requirements, and keep sessions short and accessible.</p>"
+        },
+        {
+          "q": "Will the designs meet WCAG 2.2 AA?",
+          "a": "<p>We design and annotate to WCAG 2.2 AA and test with keyboard and screen reader users. Final conformance also depends on how the designs are built, so we support your developers through implementation.</p>"
+        },
+        {
+          "q": "Can you work within university or hospital procurement?",
+          "a": "<p>Yes. We provide fixed-scope proposals, statements of work and the documentation procurement teams typically request.</p>"
+        },
+        {
+          "q": "How soon can a Philadelphia project start?",
+          "a": "<p>Most projects start 1–2 weeks after the proposal is approved; projects that need IRB or legal review start research once those approvals are in place.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency philadelphia",
+    "philadelphia ux design agency",
+    "ui ux design agency philadelphia",
+    "philadelphia ux design",
+    "ux design firm philadelphia"
+  ],
+  "centralEntity": "UX design agency in Philadelphia",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) on Eastern Time selling research-led, accessibility-first product design engagements to Philadelphia healthcare, life-science and higher-education teams.",
+  "semantic": {
+    "entities": [
+      "Philadelphia",
+      "Pennsylvania",
+      "Delaware Valley",
+      "Eastern Time",
+      "University City",
+      "Navy Yard",
+      "health systems",
+      "pharma",
+      "cell and gene therapy",
+      "higher education",
+      "HIPAA",
+      "FDA 21 CFR Part 11",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency philadelphia",
+      "philadelphia ux design",
+      "ux design agency",
+      "patient portals",
+      "eastern time"
+    ],
+    "skipgrams": [
+      "agency … philadelphia",
+      "design … life sciences",
+      "ux … student portals"
+    ],
+    "nlpKeywords": [
+      "accessibility audit",
+      "service blueprint",
+      "patient portals",
+      "clinical-trial apps",
+      "design system",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Philadelphia",
+    "Pennsylvania",
+    "Delaware Valley",
+    "Eastern Time",
+    "University City",
+    "Navy Yard",
+    "healthcare",
+    "life sciences",
+    "higher education",
+    "HIPAA",
+    "FDA 21 CFR Part 11",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

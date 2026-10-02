@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: add the supplied SERP-based content (hero, abstract, sections, faqs). The daily publisher sets draft:false once sections exist.",
   "draft": true,
   "order": 8,
   "title": "St. Louis",
@@ -7,15 +6,253 @@
   "state": "MO",
   "keyword": "st. louis ux design agency",
   "anchor": "St. Louis UX design agency",
-  "metaTitle": "St. Louis UX design agency | Research-Led Product Design",
-  "metaDescription": "St. Louis UX design agency for product teams in St. Louis: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "St. Louis UX Design Agency | Agtech, Health & Fintech UX",
+  "metaDescription": "St. Louis UX design agency for agtech, bioscience, healthcare and financial services products: user research, UI design and usability testing.",
   "hero": {
     "eyebrow": "st. louis ux design agency",
-    "h1": "St. Louis UX design agency for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in St. Louis: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "A St. Louis UX design agency for science, health and finance software",
+    "sub": "UX research and interface design for agtech platforms, bioscience tools, patient-facing health apps and advisor software built in St. Louis and across Missouri. Remote-first, aligned to Central Time."
   },
-  "summary": "Research-led UI UX design for product teams in St. Louis.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX research and design for St. Louis agtech, bioscience, healthcare and financial services teams.",
+  "abstract": "Our remote-first UX design agency, headquartered in Reston, Virginia, helps product teams in St. Louis turn specialist software into tools people can use without training. We research users such as agronomists, lab scientists, clinicians and financial advisors, then design and test the interface. Audits start at $5,000, and our Eastern Time day overlaps all but one hour of the Central Time workday.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What can a St. Louis UX design agency fix in a specialist product?",
+      "format": "paragraph",
+      "answer": "<strong>A St. Louis UX design agency fixes the gap between what expert software can do and what its users actually manage to do with it,</strong> by observing those users, redesigning the confusing parts and proving the new version works in usability tests.",
+      "body": "<p>St. Louis builds a lot of software for experts: crop-modeling tools for agronomists, sample-tracking systems for research labs, scheduling and portal software for large hospital networks, and planning platforms for financial advisors. Engineers and scientists often design these screens themselves, so the logic is correct but the interface assumes the user already knows how the system thinks. Our researchers watch real users work, find where they hesitate or work around the tool, and redesign those moments. We are not a local studio and do not keep an office in Missouri; the team works remotely and comes to St. Louis for workshops when a project benefits from it. For product-wide work, see our <a href=\"/services/web-app-design-services/\">web app design services</a>.</p>"
+    },
+    {
+      "h2": "Which St. Louis industries need research-led UX the most?",
+      "format": "list",
+      "answer": "<strong>Four St. Louis industries generate most demand for research-led UX:</strong> agtech and plant science, bioscience, healthcare and financial services.",
+      "items": [
+        "Agtech and plant science, a cluster anchored by the region's plant-science research institutes and the 39 North innovation district, where field data, maps and seasonal decisions need clear visual hierarchy.",
+        "Bioscience and life-science startups in and around the Cortex Innovation Community, which need lab and data tools that researchers trust from the first session.",
+        "Healthcare systems and digital health, from patient portals to clinician scheduling, where accessibility and plain language decide whether patients finish a task (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Financial services, including wealth management, brokerage and banking platforms used by advisors and their clients (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Geospatial and data companies, a growing St. Louis specialty, whose map-heavy dashboards benefit from careful layering and filtering (<a href=\"/services/data-visualization-agency/\">data visualization agency</a>)."
+      ]
+    },
+    {
+      "h2": "Six deliverables in a St. Louis project",
+      "format": "list",
+      "answer": "<strong>A St. Louis project produces six deliverables:</strong> expert-user research, a usability audit, a task model, interface design, a reusable component kit and usability test reports.",
+      "items": [
+        {
+          "title": "Expert-user research.",
+          "body": "Interviews and observation with 5–12 specialists per role, for example agronomists comparing trial plots or advisors preparing a client review."
+        },
+        {
+          "title": "Usability audit.",
+          "body": "A heuristic and WCAG 2.2 review that ranks issues by severity, for example a patient intake form that stalls on insurance details."
+        },
+        {
+          "title": "Task model.",
+          "body": "A map of the jobs each role performs and the order they perform them in, used to restructure navigation and terminology."
+        },
+        {
+          "title": "Interface design.",
+          "body": "Figma screens for desktop, tablet and mobile, including the data tables, charts and map views specialist tools rely on."
+        },
+        {
+          "title": "Component kit.",
+          "body": "Tokens and documented components so internal developers can extend the product without drifting from the design."
+        },
+        {
+          "title": "Test reports.",
+          "body": "Findings from five-person test rounds, with clips and a fix list prioritised for the next release."
+        }
+      ]
+    },
+    {
+      "h2": "How a St. Louis engagement runs, week by week",
+      "format": "steps",
+      "answer": "<strong>A St. Louis engagement runs 4–8 weeks in five phases,</strong> each ending with a review so your team approves direction before the next phase starts.",
+      "items": [
+        {
+          "title": "Kickoff and goals (1–2 days)",
+          "body": "We confirm who the users are, which tasks matter and how success will be measured, for example fewer support calls per month."
+        },
+        {
+          "title": "Observation and audit (5–10 days)",
+          "body": "Researchers sit in on real sessions remotely and audit the product, then present findings in plain language."
+        },
+        {
+          "title": "Concept sessions (2–3 days)",
+          "body": "Remote working sessions on Central Time sketch options with your subject-matter experts; in-person sessions in St. Louis are arranged for larger scopes."
+        },
+        {
+          "title": "Detailed design (10–20 days)",
+          "body": "Designers turn the chosen concept into screens and a clickable prototype, reviewed twice a week."
+        },
+        {
+          "title": "Testing and handoff (5–10 days)",
+          "body": "We test with real users, revise, and deliver specs, components and a prioritised backlog to engineering."
+        }
+      ]
+    },
+    {
+      "h2": "When is it time for a St. Louis team to hire a UX agency?",
+      "format": "list",
+      "answer": "<strong>Five signals tell a St. Louis team it is time to hire a UX agency:</strong>",
+      "items": [
+        "New users need a training session or a manual before they can complete a basic task.",
+        "Support tickets and sales calls keep raising the same screens, but nobody owns fixing them.",
+        "A grant, funding round or customer pilot has a date, and the prototype is not ready to show.",
+        "Clinical, research or advisory users have built spreadsheets to work around the product.",
+        "Two or more products from mergers or past projects look and behave differently, and customers notice."
+      ]
+    },
+    {
+      "h2": "Freelancer, in-house designer or a St. Louis UX design agency?",
+      "format": "table",
+      "answer": "<strong>A freelancer suits a small, well-defined design task; an in-house designer suits continuous work; a St. Louis UX design agency engagement suits a research-heavy project that needs several skills at once.</strong>",
+      "caption": "Comparison of a freelancer, an in-house designer and a remote UX agency for St. Louis product teams",
+      "columns": [
+        "Factor",
+        "Freelancer",
+        "In-house designer",
+        "Remote UX agency (us)"
+      ],
+      "rows": [
+        [
+          "Research capacity",
+          "Usually limited",
+          "Varies by hire",
+          "Dedicated UX researchers"
+        ],
+        [
+          "Availability",
+          "Shared with other clients",
+          "Full time",
+          "Full time for the project"
+        ],
+        [
+          "Time zone",
+          "Varies",
+          "Local",
+          "Eastern Time, one hour ahead of St. Louis"
+        ],
+        [
+          "Cost model",
+          "Hourly",
+          "Salary and benefits",
+          "Fixed-scope proposal"
+        ],
+        [
+          "Continuity",
+          "Depends on the person",
+          "High",
+          "Documented handoff and design system"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        }
+      ]
+    },
+    {
+      "h2": "St. Louis UX design pricing",
+      "format": "paragraph",
+      "answer": "<strong>St. Louis UX design work is priced at $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> The four cost drivers are the number of user roles, the number of workflows, the platforms covered and how much testing the project needs.",
+      "body": "<p>A complete product design, including a design system, ranges from $60,000 to $180,000 over 8–16 weeks. Ongoing support with designers embedded in your sprints costs $15,000–$40,000 per month. Every proposal is fixed-scope, so research-funded teams and startups can plan around a single figure. For an example of complex, data-rich work, read our <a href=\"/work/toolsgroup-supply-chain-ux/\">supply chain planning case study</a>.</p>"
+    },
+    {
+      "h2": "St. Louis UX design agency FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to five questions St. Louis teams ask before starting a UX project with us.</strong>",
+      "faqs": [
+        {
+          "q": "Are you a local St. Louis UX design agency?",
+          "a": "<p>No. We are remote-first and headquartered in Reston, Virginia. We work on a schedule that overlaps the Central Time day and travel to St. Louis for workshops when the project needs it.</p>"
+        },
+        {
+          "q": "Can you design for scientists and clinicians without slowing them down?",
+          "a": "<p>Yes. We keep research sessions short, schedule them around lab and clinic hours, and validate terminology with subject-matter experts so the interface uses their language.</p>"
+        },
+        {
+          "q": "Do you handle healthcare privacy requirements in research?",
+          "a": "<p>Yes. We follow your HIPAA and data-handling policies, use de-identified or test data in prototypes, and record sessions only with consent.</p>"
+        },
+        {
+          "q": "Can you work with a grant-funded or early-stage budget?",
+          "a": "<p>Yes. A 2–3 week audit from $5,000 or a focused MVP sprint gives early-stage and research-funded teams a defined scope and a fixed price.</p>"
+        },
+        {
+          "q": "What do we receive at the end?",
+          "a": "<p>Figma files, a clickable prototype, test findings, annotated specs and a component library your developers can build from directly.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "st. louis ux design agency",
+    "ux design agency st. louis",
+    "st louis ux design",
+    "ui ux design agency st. louis",
+    "ux design firm st louis"
+  ],
+  "centralEntity": "UX design agency in St. Louis",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to St. Louis agtech, bioscience, healthcare and financial services teams.",
+  "semantic": {
+    "entities": [
+      "St. Louis",
+      "Missouri",
+      "Central Time",
+      "39 North",
+      "Cortex Innovation Community",
+      "agtech",
+      "bioscience",
+      "healthcare",
+      "wealth management",
+      "geospatial",
+      "Figma",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "st. louis ux design agency",
+      "st. louis ux design",
+      "ux design agency",
+      "specialist software",
+      "central time"
+    ],
+    "skipgrams": [
+      "st. louis … agency",
+      "design … agtech platforms",
+      "ux … patient portals"
+    ],
+    "nlpKeywords": [
+      "expert users",
+      "task model",
+      "usability audit",
+      "patient portals",
+      "advisor software",
+      "design system",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "St. Louis",
+    "Missouri",
+    "Central Time",
+    "39 North",
+    "Cortex Innovation Community",
+    "agtech",
+    "bioscience",
+    "healthcare",
+    "financial services",
+    "geospatial",
+    "HIPAA",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

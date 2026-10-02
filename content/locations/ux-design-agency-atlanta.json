@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 12,
   "title": "Atlanta",
@@ -7,15 +6,259 @@
   "state": "GA",
   "keyword": "ux design agency atlanta",
   "anchor": "UX design agency Atlanta",
-  "metaTitle": "UX design agency Atlanta | Research-Led Product Design",
-  "metaDescription": "UX design agency Atlanta for product teams in Atlanta: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Atlanta | Payments, Logistics & Health UX",
+  "metaDescription": "UX design agency Atlanta fintech, logistics, media and health IT teams can hire: user research, UI design, design systems and usability testing.",
   "hero": {
     "eyebrow": "ux design agency atlanta",
-    "h1": "UX design agency Atlanta for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Atlanta: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Atlanta payments, logistics and health IT teams can count on",
+    "sub": "Research-led product design for payments and fintech platforms, logistics software, media apps and healthcare IT in Atlanta and across Georgia. Remote-first and on Eastern Time, the same clock as your team."
   },
-  "summary": "Research-led UI UX design for product teams in Atlanta.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX design for Atlanta payments, logistics, media and healthcare IT products.",
+  "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, working the same Eastern Time hours as Atlanta. Atlanta teams bring us in to research and redesign merchant onboarding, payment dashboards, shipment tracking, streaming apps and clinical software, and to test the new designs with real users. A UX audit starts at $5,000; a full research and design sprint takes 4–8 weeks.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What problems does a UX design agency solve for Atlanta product teams?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency solves the usability problems that slow Atlanta products down, such as merchant sign-ups that stall, dispatch screens that hide exceptions or clinical tools that need training,</strong> by researching users, redesigning the weak points and testing the fixes.",
+      "body": "<p>Georgia's payments cluster, often called Transaction Alley, puts Atlanta at the center of how card transactions are processed, and many of the city's product teams build for merchants, issuers and the people who reconcile money at the end of the day. Alongside payments sit one of the busiest air and freight hubs in the country, major media and entertainment companies, and a large healthcare IT sector. These products carry real money, time-critical shipments or patient data, so mistakes are expensive. A UX design agency Atlanta teams hire should test with the people doing the work, not just review screens. We do exactly that, remotely and in your time zone, and we travel to Atlanta for workshops when that helps. We have no Atlanta office. Our full scope is on the <a href=\"/services/digital-product-design-services/\">digital product design services</a> page.</p>"
+    },
+    {
+      "h2": "Inside an Atlanta UX engagement: six deliverables",
+      "format": "list",
+      "answer": "<strong>An Atlanta UX engagement produces six deliverables:</strong> user and operator research, a risk-ranked audit, flow redesigns, production-ready UI, a design system and usability test results.",
+      "items": [
+        {
+          "title": "User and operator research.",
+          "body": "Interviews and observation with 5–12 people per role, for example small-business owners, ISO sales reps and support agents in one payments product."
+        },
+        {
+          "title": "Risk-ranked audit.",
+          "body": "A heuristic and WCAG 2.2 review that scores each issue by user impact and business risk, for example failed payouts or abandoned applications."
+        },
+        {
+          "title": "Flow redesigns.",
+          "body": "New versions of the journeys that matter, for example merchant onboarding with document upload and identity checks."
+        },
+        {
+          "title": "Production-ready UI.",
+          "body": "Figma designs for web, mobile and point-of-sale screens, with every state engineers need to build."
+        },
+        {
+          "title": "Design system.",
+          "body": "Tokens and components that keep white-label and partner-branded versions of a product consistent."
+        },
+        {
+          "title": "Usability test results.",
+          "body": "Findings from five-person rounds, with recorded clips and a prioritised fix list."
+        }
+      ]
+    },
+    {
+      "h2": "Atlanta industries our UX team knows well",
+      "format": "list",
+      "answer": "<strong>Five Atlanta industries make up most of the products our UX team designs for:</strong>",
+      "items": [
+        "Payments and fintech, including merchant acquiring, issuer processing, point-of-sale, payouts and embedded finance, designed with PCI DSS constraints in mind (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Logistics, freight and air cargo, where dispatchers, warehouse leads and drivers need exception-first dashboards and mobile tools (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",
+        "Media, streaming and entertainment, including content apps, ad platforms and production-management tools for the region's film and TV industry.",
+        "Healthcare IT, from patient engagement and revenue-cycle software to clinical dashboards and public-health data tools (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "B2B SaaS and university spinouts from the Midtown and Tech Square startup community (<a href=\"/industries/saas/\">SaaS UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "Our five-step working rhythm with Atlanta teams",
+      "format": "steps",
+      "answer": "<strong>Our working rhythm with Atlanta teams has five steps and lasts 4–8 weeks</strong> for a typical engagement, with a shared Eastern Time calendar for every review.",
+      "items": [
+        {
+          "title": "Scoping session (1–2 days)",
+          "body": "We define the product area, the users, the success metric, such as approval rate or on-time delivery, and any compliance limits."
+        },
+        {
+          "title": "Research and risk audit (5–10 days)",
+          "body": "We talk to users and operators, review analytics and support data, and audit the current experience."
+        },
+        {
+          "title": "Decision workshop (2–3 days)",
+          "body": "Product, risk, operations and engineering agree on the redesign plan, remotely or in person in Atlanta for larger scopes."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "Designers build the flows, UI and a prototype, with reviews twice a week in your working hours."
+        },
+        {
+          "title": "Validate and hand over (5–10 days)",
+          "body": "We test with users, refine the details and deliver specs, components and acceptance criteria to engineering."
+        }
+      ]
+    },
+    {
+      "h2": "What Atlanta companies gain from better UX",
+      "format": "cards",
+      "answer": "<strong>Atlanta companies gain four things from better UX:</strong> higher approval and completion rates, fewer operational errors, lower support cost and faster partner rollouts.",
+      "items": [
+        {
+          "title": "Higher approval and completion rates",
+          "body": "Clear onboarding and checkout flows help more merchants, customers and patients finish without dropping off."
+        },
+        {
+          "title": "Fewer operational errors",
+          "body": "Exception-first dashboards surface late shipments, failed payments and missing data before they escalate."
+        },
+        {
+          "title": "Lower support cost",
+          "body": "Self-explanatory screens and helpful error messages cut the tickets and calls that slow teams down."
+        },
+        {
+          "title": "Faster partner rollouts",
+          "body": "A themeable design system lets you launch white-label versions for banks, resellers or brands without redesigning each one."
+        }
+      ]
+    },
+    {
+      "h2": "Remote agency on Eastern Time, Atlanta studio or offshore vendor?",
+      "format": "table",
+      "answer": "<strong>A remote agency on Eastern Time combines same-day collaboration with senior research and design, a local Atlanta studio adds in-person presence, and an offshore vendor lowers cost but limits overlap.</strong> The right choice depends on how much research and real-time collaboration the project needs.",
+      "caption": "Comparison of a remote Eastern Time UX agency, a local Atlanta studio and an offshore design vendor",
+      "columns": [
+        "Criterion",
+        "Remote agency on Eastern Time (us)",
+        "Local Atlanta studio",
+        "Offshore design vendor"
+      ],
+      "rows": [
+        [
+          "Working hours",
+          "Same clock as Atlanta",
+          "Same clock as Atlanta",
+          "Limited overlap"
+        ],
+        [
+          "User research",
+          "Built into every engagement",
+          "Varies by studio",
+          "Often optional"
+        ],
+        [
+          "In-person sessions",
+          "For larger engagements",
+          "Available weekly",
+          "Rare"
+        ],
+        [
+          "Pricing",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Local studio rates",
+          "Lower hourly rates"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "web app design services",
+          "to": "/services/web-app-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "UX design agency Atlanta pricing",
+      "format": "paragraph",
+      "answer": "<strong>UX design agency Atlanta pricing on this site starts at $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Cost depends on the number of journeys, user roles and platforms, and on whether a white-label design system is part of the scope.",
+      "body": "<p>A full product design program with a design system costs $60,000–$180,000 over 8–16 weeks. Teams that want designers embedded in their sprints pay $15,000–$40,000 per month. Proposals are fixed-scope, so finance and procurement teams approve one number. Logistics teams can see a related project in our <a href=\"/work/fortna-warehouse-ux/\">warehouse error-resolution case study</a>, and finance teams in the <a href=\"/work/apex-hcm-payroll-ux/\">enterprise payroll case study</a>.</p>"
+    },
+    {
+      "h2": "UX design agency Atlanta FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to five questions Atlanta teams ask before choosing a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Are you an Atlanta-based agency?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia. We work Eastern Time hours like Atlanta and visit for workshops when a project needs in-person time.</p>"
+        },
+        {
+          "q": "Do you understand PCI DSS and payments compliance?",
+          "a": "<p>We design within your PCI DSS and card-network requirements, never handle real card data in research, and include your risk and compliance team in design reviews. Certification itself stays with your security program.</p>"
+        },
+        {
+          "q": "Can you design for drivers and warehouse staff on mobile devices?",
+          "a": "<p>Yes. We design for handhelds, tablets and phones used in the field, with large targets, offline states and glanceable status.</p>"
+        },
+        {
+          "q": "Do you work on white-label products?",
+          "a": "<p>Yes. We build themeable design systems so one product can be branded for many banks, resellers or partners.</p>"
+        },
+        {
+          "q": "How soon can an Atlanta project begin?",
+          "a": "<p>A UX design agency Atlanta project with us usually begins 1–2 weeks after the proposal is approved.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency atlanta",
+    "atlanta ux design agency",
+    "ui ux design agency atlanta",
+    "atlanta ux design",
+    "ux design firm atlanta"
+  ],
+  "centralEntity": "UX design agency in Atlanta",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) on Eastern Time selling research-led product design engagements to Atlanta payments, logistics, media and healthcare IT teams.",
+  "semantic": {
+    "entities": [
+      "Atlanta",
+      "Georgia",
+      "Transaction Alley",
+      "Eastern Time",
+      "Midtown",
+      "Tech Square",
+      "payments",
+      "fintech",
+      "logistics",
+      "media and entertainment",
+      "healthcare IT",
+      "PCI DSS",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency atlanta",
+      "atlanta ux design",
+      "ux design agency",
+      "transaction alley",
+      "merchant onboarding"
+    ],
+    "skipgrams": [
+      "agency … atlanta",
+      "design … payments platforms",
+      "ux … logistics dashboards"
+    ],
+    "nlpKeywords": [
+      "merchant onboarding",
+      "exception-first dashboards",
+      "white-label design system",
+      "risk-ranked audit",
+      "usability testing",
+      "healthcare IT",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Atlanta",
+    "Georgia",
+    "Transaction Alley",
+    "Eastern Time",
+    "Midtown",
+    "Tech Square",
+    "payments",
+    "logistics",
+    "media",
+    "healthcare IT",
+    "PCI DSS",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

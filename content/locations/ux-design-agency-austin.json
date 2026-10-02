@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 11,
   "title": "Austin",
@@ -7,15 +6,255 @@
   "state": "TX",
   "keyword": "ux design agency austin",
   "anchor": "UX design agency Austin",
-  "metaTitle": "UX design agency Austin | Research-Led Product Design",
-  "metaDescription": "UX design agency Austin for product teams in Austin: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Austin | SaaS, Startup & Hardware UX",
+  "metaDescription": "UX design agency Austin startups and SaaS teams can hire for MVPs, redesigns and design systems: user research, UI design and usability testing.",
   "hero": {
     "eyebrow": "ux design agency austin",
-    "h1": "UX design agency Austin for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Austin: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Austin startups and SaaS teams can move fast with",
+    "sub": "User research, product design and usability testing for B2B SaaS, consumer apps, semiconductor and hardware software, and venture-backed startups in Austin and Central Texas. Remote-first, with Central Time overlap."
   },
-  "summary": "Research-led UI UX design for product teams in Austin.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first product UX for Austin SaaS companies, consumer apps, hardware teams and startups.",
+  "abstract": "Our remote-first UX design agency, headquartered in Reston, Virginia, partners with Austin founders and product leaders who need to ship faster without guessing what users want. We cover discovery research, UX and UI design, design systems and usability testing for SaaS, consumer and hardware-adjacent software. An audit starts at $5,000, and our Eastern Time day overlaps most of the Austin workday.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What role does a UX design agency play for Austin companies?",
+      "format": "paragraph",
+      "answer": "<strong>For Austin companies, a UX design agency acts as a senior product design team on demand, turning research into tested designs fast enough to keep pace with a startup or SaaS release schedule.</strong> It fills the gap before, or alongside, a full in-house design team.",
+      "body": "<p>Austin's tech scene mixes venture-backed startups, fast-growing SaaS companies, large enterprise software campuses and a deep semiconductor and hardware base. The common thread is speed: founders want a testable MVP before a raise, SaaS teams want activation up before the next board meeting, and hardware companies want internal tools their engineers will actually adopt. A UX design agency Austin teams bring in needs to work in short cycles and show evidence, not just mockups. We run remote research, design in Figma and test every major decision with users. Our team is not based in Texas; we work remotely and fly in for kickoff or workshops when it is worth it. See our <a href=\"/services/ui-ux-design-services-for-startups/\">UI UX design services for startups</a> for early-stage scopes.</p>"
+    },
+    {
+      "h2": "What Austin product teams can hand off to us",
+      "format": "list",
+      "answer": "<strong>Austin product teams typically hand off six pieces of work:</strong> discovery research, product audits, MVP design, SaaS UI, design systems and rapid usability testing.",
+      "items": [
+        {
+          "title": "Discovery research.",
+          "body": "Problem interviews with 5–12 target users per segment to confirm the job your product solves before you build it."
+        },
+        {
+          "title": "Product audit.",
+          "body": "A review of activation, onboarding and core flows against heuristics, analytics and WCAG 2.2, ranked by impact."
+        },
+        {
+          "title": "MVP design.",
+          "body": "A focused first version, with the smallest set of screens that proves value to early customers and investors."
+        },
+        {
+          "title": "SaaS and app UI.",
+          "body": "High-fidelity Figma designs for web and mobile, including empty states, billing, permissions and settings."
+        },
+        {
+          "title": "Design system.",
+          "body": "Tokens and components that a small front-end team can adopt incrementally as the product grows."
+        },
+        {
+          "title": "Rapid usability testing.",
+          "body": "Unmoderated and moderated rounds with five users each, turned around in days so sprints are not blocked."
+        }
+      ]
+    },
+    {
+      "h2": "How does an Austin engagement move from idea to handoff?",
+      "format": "steps",
+      "answer": "<strong>An Austin engagement moves from idea to handoff in five steps across 4–8 weeks,</strong> sized to fit between funding milestones or quarterly release cycles.",
+      "items": [
+        {
+          "title": "Founder or product call (1–2 days)",
+          "body": "We clarify the riskiest assumption, the target users and the milestone the design must support, such as a demo day or launch."
+        },
+        {
+          "title": "Discovery sprint (5–10 days)",
+          "body": "Interviews, competitor teardown and an audit of any existing product, summarised as clear opportunities."
+        },
+        {
+          "title": "Concept workshop (2–3 days)",
+          "body": "Remote sessions on Central Time pick the strongest direction; we travel to Austin for in-person kickoffs on larger engagements."
+        },
+        {
+          "title": "Build the prototype (10–20 days)",
+          "body": "Designers produce flows, UI and an interactive prototype, with two reviews a week and async updates in your Slack."
+        },
+        {
+          "title": "Test and ship-ready handoff (5–10 days)",
+          "body": "We test with users, iterate and hand over components, specs and a backlog your engineers can pick up the next sprint."
+        }
+      ]
+    },
+    {
+      "h2": "Why Austin teams use an agency instead of waiting to hire",
+      "format": "cards",
+      "answer": "<strong>Austin teams use an agency for four reasons:</strong> faster time to a tested product, evidence for investors and buyers, senior skills without a senior salary, and a foundation the first in-house designer can build on.",
+      "items": [
+        {
+          "title": "Faster time to a tested product",
+          "body": "Research and design start in 1–2 weeks, instead of waiting for a recruiting process to finish in a competitive talent market."
+        },
+        {
+          "title": "Evidence for investors and buyers",
+          "body": "Interview insights and test results show that real users understand and want the product."
+        },
+        {
+          "title": "Senior skills, flexible cost",
+          "body": "Researchers, UX and UI designers cover the full range of work for the length of the project only."
+        },
+        {
+          "title": "A foundation for your first designer",
+          "body": "Documented flows and a design system give an incoming in-house designer something solid to own."
+        }
+      ]
+    },
+    {
+      "h2": "Austin industries we work with",
+      "format": "list",
+      "answer": "<strong>Our UX design agency Austin practice covers five industries and product types:</strong>",
+      "items": [
+        "B2B SaaS and enterprise software, from developer tools to revenue and HR platforms that need onboarding and admin UX (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Venture-backed startups from pre-seed to Series B, preparing an MVP, a pivot or a redesign before scaling (<a href=\"/industries/startups/\">Startups UI UX design</a>).",
+        "Semiconductor, hardware and advanced manufacturing companies whose engineers depend on test, yield and equipment dashboards (<a href=\"/services/dashboard-design-services/\">dashboard design services</a>).",
+        "Consumer apps in fitness, food, music and social categories that compete on onboarding and retention (<a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>).",
+        "Fintech and proptech companies building lending, payments and real-estate tools (<a href=\"/industries/finance/\">Finance UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "Fractional design team vs a founding designer in Austin",
+      "format": "table",
+      "answer": "<strong>A fractional design team covers research, UX and UI immediately for a fixed scope, while a founding designer is a long-term hire who grows with the company.</strong> Many Austin startups use the first to get to product-market fit and the second once the roadmap is stable.",
+      "caption": "Comparison of a fractional UX agency team and a founding designer hire for Austin startups",
+      "columns": [
+        "Factor",
+        "Fractional agency team (us)",
+        "Founding designer hire"
+      ],
+      "rows": [
+        [
+          "Time to first designs",
+          "2–3 weeks after kickoff",
+          "After recruiting and onboarding"
+        ],
+        [
+          "Skill coverage",
+          "Researcher, UX designer and UI designer",
+          "One generalist"
+        ],
+        [
+          "Cost structure",
+          "Fixed fee per sprint",
+          "Salary plus equity"
+        ],
+        [
+          "Time zone",
+          "Eastern Time base, one hour ahead of Austin",
+          "Local"
+        ],
+        [
+          "Long-term ownership",
+          "Handoff with documentation",
+          "Owns design permanently"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "SaaS UX design",
+          "to": "/services/saas-ux-design/"
+        },
+        {
+          "anchor": "interaction design agency",
+          "to": "/services/interaction-design-agency/"
+        }
+      ]
+    },
+    {
+      "h2": "How much does a UX design agency Austin startups hire usually cost?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency Austin startups hire usually costs $5,000–$15,000 for a 2–3 week product audit and $25,000–$60,000 for a 4–8 week MVP or redesign sprint.</strong> The four variables are flow count, platform count, research depth and whether a design system is included.",
+      "body": "<p>A complete product, from discovery to a full design system, costs $60,000–$180,000 across 8–16 weeks. Scale-ups that need continuous capacity embed designers for $15,000–$40,000 per month. Every quote is fixed-scope and tied to a milestone, which makes it easy to plan against runway. For an early-stage example, see our <a href=\"/work/nitro/\">Nitro racing game case study</a>; for a SaaS analytics product, see the <a href=\"/work/tradezella/\">trading journal case study</a>.</p>"
+    },
+    {
+      "h2": "UX design agency Austin FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions Austin founders and product leaders ask most before working with a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have a team in Austin?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia. Our Eastern Time schedule overlaps most of Austin's Central Time day, and we travel to Austin for kickoffs or workshops on larger projects.</p>"
+        },
+        {
+          "q": "Can you design an MVP before we have engineers?",
+          "a": "<p>Yes. We can design and test a clickable MVP prototype that you use for user validation and fundraising, then hand it to the engineers you hire.</p>"
+        },
+        {
+          "q": "Do you work with hardware and semiconductor teams?",
+          "a": "<p>Yes, on the software side: internal dashboards, equipment and test interfaces, configuration tools and customer portals. We do not design physical products.</p>"
+        },
+        {
+          "q": "How do you work with our existing designer?",
+          "a": "<p>We plug into their process, take on research or a specific product area, and share files and components in your Figma workspace.</p>"
+        },
+        {
+          "q": "How fast can an Austin project start?",
+          "a": "<p>Usually 1–2 weeks after the first call, as soon as the scope and proposal are approved.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency austin",
+    "austin ux design agency",
+    "ui ux design agency austin",
+    "austin ux design",
+    "ux design firm austin texas"
+  ],
+  "centralEntity": "UX design agency in Austin",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Austin SaaS companies, startups, consumer app teams and hardware companies.",
+  "semantic": {
+    "entities": [
+      "Austin",
+      "Texas",
+      "Central Texas",
+      "Central Time",
+      "B2B SaaS",
+      "startups",
+      "semiconductors",
+      "consumer apps",
+      "MVP",
+      "Figma",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency austin",
+      "austin ux design",
+      "ux design agency",
+      "austin startups",
+      "central time"
+    ],
+    "skipgrams": [
+      "agency … austin",
+      "design … saas onboarding",
+      "ux … mvp prototype"
+    ],
+    "nlpKeywords": [
+      "discovery research",
+      "mvp design",
+      "activation",
+      "fractional design team",
+      "design system",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Austin",
+    "Texas",
+    "Central Texas",
+    "Central Time",
+    "SaaS",
+    "startups",
+    "semiconductors",
+    "consumer apps",
+    "Figma",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 7,
   "title": "Chicago",
@@ -7,15 +6,256 @@
   "state": "IL",
   "keyword": "ux design agency chicago",
   "anchor": "UX design agency Chicago",
-  "metaTitle": "UX design agency Chicago | Research-Led Product Design",
-  "metaDescription": "UX design agency Chicago for product teams in Chicago: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Chicago | Fintech, Insurance & SaaS UX",
+  "metaDescription": "UX design agency Chicago teams hire for trading, insurance, logistics and B2B SaaS products: research, UI design and usability testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency chicago",
-    "h1": "UX design agency Chicago for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Chicago: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Chicago teams hire for data-heavy products",
+    "sub": "Research-led UX and UI design for trading platforms, insurance portals, freight software and B2B SaaS built in Chicago and across Illinois. Remote-first, on Central Time overlap, with senior designers from day one."
   },
-  "summary": "Research-led UI UX design for product teams in Chicago.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Research-led UX design for Chicago fintech, insurance, logistics and B2B SaaS teams.",
+  "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, working with Chicago product teams on user research, interface design, prototyping and usability testing. Chicago engagements focus on dense, data-heavy software: order entry, claims, dispatch and analytics. Projects start at $5,000 for a UX audit, and our Eastern Time base sits one hour ahead of Chicago, so almost the whole workday is shared.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "Why do Chicago product teams bring in an outside UX design agency?",
+      "format": "paragraph",
+      "answer": "<strong>Chicago product teams bring in a UX design agency when complex workflows, such as trade entry, claims handling or shipment tracking, cost users time and the in-house design bench is too thin to fix them quickly.</strong> An agency adds researchers and designers for a defined scope, then hands the work back to your team.",
+      "body": "<p>Much of the software built in Chicago is operational: traders watching prices tick, adjusters moving a claim through review, dispatchers rerouting loads around a rail delay. These users repeat the same tasks all day and notice every extra click. A UX design agency Chicago teams can lean on studies those routines first, then redesigns the screens around them. The full scope is on our <a href=\"/services/digital-product-design-services/\">digital product design services</a> page. We do not have a Chicago office, and we say so up front: the team works remotely and travels for workshops when a project needs a room.</p>"
+    },
+    {
+      "h2": "Which Chicago industries shape our UX work?",
+      "format": "list",
+      "answer": "<strong>Four Chicago industries account for most of the product types we design for:</strong> trading and fintech, insurance, logistics and freight, and B2B SaaS.",
+      "items": [
+        "Trading and fintech, from derivatives and options platforms to wealth and payments apps, where real-time data, risk warnings and order confirmation must be unambiguous (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Insurance carriers and insurtech, including agent portals, quote-and-bind flows, policy servicing and first-notice-of-loss forms that policyholders finish on a phone.",
+        "Logistics and freight technology, shaped by Chicago's role as the country's rail and trucking crossroads: load boards, visibility dashboards and yard tools (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",
+        "B2B SaaS companies around the Loop and Fulton Market that need onboarding, admin settings and reporting to scale with larger accounts (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Early-stage startups coming out of the city's incubators and accelerators that need a testable MVP before a seed or Series A raise (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "What a Chicago UX engagement delivers",
+      "format": "list",
+      "answer": "<strong>A typical Chicago UX engagement delivers six outputs:</strong> workflow research, an expert audit, an information architecture, high-fidelity UI, a component library and tested prototypes.",
+      "items": [
+        {
+          "title": "Workflow research.",
+          "body": "Shadowing and interviews with 5–12 people per role, for example underwriters and independent agents using the same quoting tool."
+        },
+        {
+          "title": "Expert UX audit.",
+          "body": "A heuristic and WCAG 2.2 review of the flows that matter most, for example an order ticket and its confirmation screen."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "Card sorting and tree testing to restructure navigation, for example a carrier portal that grew one menu item per release."
+        },
+        {
+          "title": "High-fidelity UI.",
+          "body": "Figma screens for desktop and mobile with dense tables, filters and alerts designed for scanning rather than reading."
+        },
+        {
+          "title": "Component library.",
+          "body": "Tokens, components and usage notes that let several squads ship screens that look and behave alike."
+        },
+        {
+          "title": "Tested prototypes.",
+          "body": "Clickable prototypes validated with five participants per round before engineering commits sprint capacity."
+        }
+      ]
+    },
+    {
+      "h2": "Our five-stage process for Chicago clients",
+      "format": "steps",
+      "answer": "<strong>Most Chicago projects run 4–8 weeks across five stages</strong>, starting with a scoping call and ending with a developer handoff your engineers can build from.",
+      "items": [
+        {
+          "title": "Scoping call (1–2 days)",
+          "body": "We map the users, the workflow under pressure and the metric you want to move, then confirm budget and dates in writing."
+        },
+        {
+          "title": "Field research (5–10 days)",
+          "body": "Researchers observe real sessions, for example a dispatcher's shift or a trader's market open, and review analytics and support tickets."
+        },
+        {
+          "title": "Alignment workshop (2–3 days)",
+          "body": "Product, engineering and compliance agree on priorities in remote sessions on Central Time; we travel to Chicago for in-person workshops when the scope justifies it."
+        },
+        {
+          "title": "Design sprints (10–20 days)",
+          "body": "Designers build flows, UI and a working prototype, with two review sessions a week so stakeholders steer early."
+        },
+        {
+          "title": "Validation and handoff (5–10 days)",
+          "body": "We run usability rounds, fix what fails, and deliver annotated specs and components to your developers."
+        }
+      ]
+    },
+    {
+      "h2": "Agency sprint or a full-time Chicago design hire?",
+      "format": "table",
+      "answer": "<strong>An agency sprint suits a defined problem with a deadline, while a full-time hire suits a permanent, ongoing design need.</strong> Many Chicago teams use a sprint first to prove the value of design, then hire.",
+      "caption": "Comparison of a UX agency sprint and a full-time in-house design hire for Chicago teams",
+      "columns": [
+        "Factor",
+        "Agency sprint (us)",
+        "Full-time in-house hire"
+      ],
+      "rows": [
+        [
+          "Time to start",
+          "1–2 weeks after sign-off",
+          "Several months of sourcing and interviews"
+        ],
+        [
+          "Skills covered",
+          "Research, UX, UI and testing in one team",
+          "Depends on the one person hired"
+        ],
+        [
+          "Time zone",
+          "Eastern Time base, one hour ahead of Chicago",
+          "Local"
+        ],
+        [
+          "Commitment",
+          "Fixed scope, fixed fee",
+          "Salary, benefits and management time"
+        ],
+        [
+          "Best for",
+          "A redesign, audit or new product with a launch date",
+          "Continuous design across many releases"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX consulting services",
+          "to": "/services/ux-consulting-services/"
+        },
+        {
+          "anchor": "dashboard UX design",
+          "to": "/services/dashboard-ux-design/"
+        }
+      ]
+    },
+    {
+      "h2": "What does a UX design agency Chicago engagement cost?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency Chicago engagement costs $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Scope drives the price: how many workflows, how many user roles, how much research and whether a component library is included.",
+      "body": "<p>End-to-end product design with a design system runs $60,000–$180,000 over 8–16 weeks. Teams that want a designer embedded in their squads month to month pay $15,000–$40,000 per month. Each proposal is fixed-scope, so the figure you approve is the figure you pay. If your product is a trading or analytics tool, see how we approached a similar problem in our <a href=\"/work/tradezella/\">trading journal case study</a>, and for warehouse and freight workflows, the <a href=\"/work/fortna-warehouse-ux/\">warehouse error-resolution case study</a>.</p>"
+    },
+    {
+      "h2": "What changes for users after a Chicago UX redesign",
+      "format": "cards",
+      "answer": "<strong>A research-led redesign changes four things for Chicago users and the teams behind them:</strong> fewer errors in high-stakes tasks, faster task completion, quicker onboarding and a consistent interface across products.",
+      "items": [
+        {
+          "title": "Fewer high-stakes errors",
+          "body": "Clear confirmations, sensible defaults and readable states reduce mistakes such as a wrong order size or a misfiled claim."
+        },
+        {
+          "title": "Faster repeat tasks",
+          "body": "Keyboard paths, saved views and tighter layouts cut the seconds that add up across a full trading day or dispatch shift."
+        },
+        {
+          "title": "Quicker onboarding",
+          "body": "New agents, brokers and admins reach competence sooner when navigation follows the way they already think about the work."
+        },
+        {
+          "title": "One consistent interface",
+          "body": "A shared design system keeps legacy modules and new features aligned."
+        }
+      ]
+    },
+    {
+      "h2": "UX design agency Chicago FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions Chicago teams raise most often before they sign with a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Is your team based in Chicago?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia. Our Eastern Time hours overlap almost entirely with Chicago's Central Time, and we travel for on-site workshops when a project calls for it.</p>"
+        },
+        {
+          "q": "Can you design for regulated trading and insurance products?",
+          "a": "<p>Yes. We design within your compliance requirements, involve your legal and risk reviewers in workshops, and document disclosures, warnings and audit-relevant states in the handoff.</p>"
+        },
+        {
+          "q": "How do you research users who are too busy for interviews?",
+          "a": "<p>We use short contextual observation, screen recordings with consent and unmoderated tests that fit around shifts, so traders, adjusters and dispatchers give 20–30 minutes instead of an hour.</p>"
+        },
+        {
+          "q": "When can a Chicago project begin?",
+          "a": "<p>A UX design agency Chicago teams sign with today can usually start 1–2 weeks after the scoping call, once the proposal is approved.</p>"
+        },
+        {
+          "q": "Do you work with our developers after handoff?",
+          "a": "<p>Yes. Designers stay available for implementation questions and design QA during the build, and documentation lives in Figma and Storybook.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency chicago",
+    "chicago ux design agency",
+    "ui ux design agency chicago",
+    "chicago ux design",
+    "ux design firm chicago"
+  ],
+  "centralEntity": "UX design agency in Chicago",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Chicago fintech, insurance, logistics and B2B SaaS teams.",
+  "semantic": {
+    "entities": [
+      "Chicago",
+      "Illinois",
+      "Central Time",
+      "the Loop",
+      "Fulton Market",
+      "trading platforms",
+      "insurance",
+      "freight logistics",
+      "B2B SaaS",
+      "Figma",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency chicago",
+      "chicago ux design",
+      "ux design agency",
+      "chicago product teams",
+      "central time"
+    ],
+    "skipgrams": [
+      "agency … chicago",
+      "design … trading platforms",
+      "ux … insurance portals"
+    ],
+    "nlpKeywords": [
+      "workflow research",
+      "order entry",
+      "claims",
+      "dispatch dashboards",
+      "design system",
+      "usability testing",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "Chicago",
+    "Illinois",
+    "Central Time",
+    "the Loop",
+    "Fulton Market",
+    "fintech",
+    "insurance",
+    "logistics",
+    "B2B SaaS",
+    "Figma",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }
