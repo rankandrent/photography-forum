@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 17,
   "title": "Houston",
@@ -7,15 +6,254 @@
   "state": "TX",
   "keyword": "ux design agency houston",
   "anchor": "UX design agency Houston",
-  "metaTitle": "UX design agency Houston | Research-Led Product Design",
-  "metaDescription": "UX design agency Houston for product teams in Houston: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Houston | Energy, Medical & Logistics UX",
+  "metaDescription": "UX design agency Houston energy, healthcare, space and logistics teams hire for field apps, clinical tools and dashboards: research to testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency houston",
-    "h1": "UX design agency Houston for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Houston: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Houston operators, clinicians and engineers can work with",
+    "sub": "Field apps for energy crews, clinical and research tools for the Texas Medical Center community, mission software for space programs and dashboards for port logistics. Remote-first research and design on Central Time."
   },
-  "summary": "Research-led UI UX design for product teams in Houston.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX research and design for Houston energy, healthcare, aerospace and logistics products used in the field, the clinic and the control room.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "Where does UX design fit in Houston's industrial economy?",
+      "format": "paragraph",
+      "answer": "<strong>In Houston, UX design matters most where software meets physical work: a technician on a wellsite, a nurse between patients, a flight controller watching telemetry or a dispatcher routing containers.</strong> Good design there reduces errors, delays and safety risk.",
+      "body": "<p>Much of the city's software is used under pressure, outdoors or alongside heavy equipment, and it is often built by engineering teams without a dedicated researcher. When you bring in a UX design agency, Houston users should be observed in their real context, not only interviewed over video. We are headquartered in Reston, Virginia, have no Houston office, and combine remote collaboration with on-site field research when a project needs it. Our <a href=\"/services/interaction-design-agency/\">interaction design agency</a> page explains how we handle complex states and alerts.</p>"
+    },
+    {
+      "h2": "Houston industries we work with",
+      "format": "list",
+      "answer": "<strong>Our UX design agency works with 5 industries that define the Houston region:</strong>",
+      "items": [
+        "Oil, gas and energy transition, for example inspection checklists, permit-to-work apps and production dashboards.",
+        "Healthcare and life sciences around the Texas Medical Center, for example patient portals, care-team tools and research data entry (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Space and aerospace, for example mission planning, telemetry and crew-procedure software near the Clear Lake area.",
+        "Port, logistics and petrochemical supply chains, for example yard, warehouse and shipment tracking tools (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",
+        "Industrial B2B software, for example asset management and maintenance platforms sold to plant operators."
+      ]
+    },
+    {
+      "h2": "What deliverables does a Houston project produce?",
+      "format": "list",
+      "answer": "<strong>A Houston project produces up to 6 deliverables</strong>, chosen according to who uses the product and where they use it.",
+      "items": [
+        {
+          "title": "Contextual inquiry report.",
+          "body": "Observations from control rooms, clinics or job sites, for example how a crew completes a safety checklist with gloves on."
+        },
+        {
+          "title": "Task and workflow maps.",
+          "body": "Step-by-step maps of complex procedures, showing handoffs between field staff, supervisors and back-office systems."
+        },
+        {
+          "title": "Rugged mobile UI.",
+          "body": "Tablet and phone screens with high contrast, large targets and offline sync for sites without coverage."
+        },
+        {
+          "title": "Operational dashboards.",
+          "body": "Real-time views that rank alarms and exceptions so operators see the critical issue first."
+        },
+        {
+          "title": "Accessible clinical screens.",
+          "body": "WCAG 2.2 compliant patient and staff interfaces that keep protected data out of view when it is not needed."
+        },
+        {
+          "title": "Validation sessions.",
+          "body": "Usability tests with 5 representative users per round, run remotely or on site depending on the task."
+        }
+      ]
+    },
+    {
+      "h2": "What changes when Houston teams improve their software UX?",
+      "format": "cards",
+      "answer": "<strong>Improved software UX changes 4 things for Houston operations:</strong> fewer data-entry errors, faster job completion, quicker training and better adoption of digital tools in the field.",
+      "items": [
+        {
+          "title": "Cuts data-entry errors",
+          "body": "Smart defaults, validation and clear units prevent the wrong reading from reaching an inspection or patient record."
+        },
+        {
+          "title": "Speeds up field jobs",
+          "body": "Shorter forms and offline drafts let crews finish work orders on site instead of re-entering them later."
+        },
+        {
+          "title": "Reduces training time",
+          "body": "Consistent patterns across tools mean new technicians and clinicians learn the system in days, not weeks."
+        },
+        {
+          "title": "Wins over skeptical users",
+          "body": "Tools designed with the people who use them replace paper and spreadsheets because they are genuinely easier."
+        }
+      ]
+    },
+    {
+      "h2": "How we take a Houston product from field visit to final specs",
+      "format": "steps",
+      "answer": "<strong>A typical UX design agency Houston engagement with us runs 4–8 weeks across 5 steps</strong>, beginning with time spent where the product is actually used.",
+      "items": [
+        {
+          "title": "Scoping call (1–2 days)",
+          "body": "We clarify the users, sites, safety or privacy rules and the operational metric the redesign should move."
+        },
+        {
+          "title": "Field and remote research (5–10 days)",
+          "body": "Researchers observe work on site or by video, interview users and audit the current tool against real tasks."
+        },
+        {
+          "title": "Workflow workshop (2–3 days)",
+          "body": "Engineers, operators and product owners agree on the future workflow, remotely or in person in Houston."
+        },
+        {
+          "title": "Design and prototype (10–20 days)",
+          "body": "We build tablet, mobile or desktop screens and a working Figma prototype, reviewed twice weekly."
+        },
+        {
+          "title": "Test on site and hand off (5–10 days)",
+          "body": "Users try the prototype in realistic conditions, we fix what fails, and engineers receive annotated specs."
+        }
+      ]
+    },
+    {
+      "h2": "Desk-only design vs field-tested UX",
+      "format": "table",
+      "answer": "<strong>Field-tested UX checks designs against glare, noise, gloves and patchy connectivity, while desk-only design assumes office conditions that Houston field users rarely have.</strong> The difference shows up as adoption after launch.",
+      "caption": "Field-tested UX compared with desk-only interface design",
+      "columns": [
+        "Aspect",
+        "Field-tested UX (our approach)",
+        "Desk-only design"
+      ],
+      "rows": [
+        [
+          "Research setting",
+          "Job sites, clinics and control rooms",
+          "Office interviews"
+        ],
+        [
+          "Connectivity",
+          "Offline mode and sync conflicts designed",
+          "Always-online assumption"
+        ],
+        [
+          "Readability",
+          "Sunlight and low-light contrast checked",
+          "Monitor-only review"
+        ],
+        [
+          "Input",
+          "Glove-friendly targets and scanning",
+          "Mouse and keyboard"
+        ],
+        [
+          "Collaboration",
+          "7–8 hours of daily overlap with Central Time",
+          "Varies"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "dashboard UX design",
+          "to": "/services/dashboard-ux-design/"
+        },
+        {
+          "anchor": "warehouse operations case study",
+          "to": "/case-studies/fortna-warehouse-ux/"
+        }
+      ]
+    },
+    {
+      "h2": "How much should a Houston company budget for UX design?",
+      "format": "paragraph",
+      "answer": "<strong>Houston companies should budget $5,000–$15,000 for a 2–3 week UX audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> On-site research visits, the number of user roles and the platforms involved are the main reasons budgets differ.",
+      "body": "<p>A complete product or platform redesign with a design system costs $60,000–$180,000 over 8–16 weeks. Operators that need continuous design support can embed a team for $15,000–$40,000 per month. Engaging a UX design agency, Houston firms receive a free consultation and a fixed-scope proposal, with any travel costs for field research listed separately. For browser-based operational tools, see our <a href=\"/services/web-app-design-services/\">web app design services</a>.</p>"
+    },
+    {
+      "h2": "UX design agency Houston FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to the 5 questions Houston engineering, operations and digital health leaders raise before engaging us.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have an office in Houston?",
+          "a": "<p>No. We are remote-first and headquartered in Reston, Virginia. We work on Central Time overlap and travel to Houston for field research and workshops when a project calls for it.</p>"
+        },
+        {
+          "q": "Can you design apps that work offline at remote sites?",
+          "a": "<p>Yes. We design offline drafts, sync status and conflict handling so crews can keep working without coverage and trust that their data uploaded later.</p>"
+        },
+        {
+          "q": "How do you handle patient data in healthcare projects?",
+          "a": "<p>We follow your HIPAA policies, use de-identified or synthetic data in designs and prototypes, and work inside the tools and environments your compliance team approves.</p>"
+        },
+        {
+          "q": "Can you follow site safety rules during field research?",
+          "a": "<p>Yes. A UX design agency Houston energy sites admit must follow their safety programs, so we complete required orientations, wear the specified PPE and observe only where your safety lead permits.</p>"
+        },
+        {
+          "q": "When can a Houston project start?",
+          "a": "<p>Remote work starts 1–2 weeks after the proposal is signed. Field visits are scheduled around site access and safety orientation.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency houston",
+    "ui ux design agency houston",
+    "houston ux design",
+    "energy software ux design",
+    "field app ux design"
+  ],
+  "centralEntity": "UX design agency in Houston",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Houston energy, healthcare, aerospace and logistics teams, with on-site field research when needed.",
+  "abstract": "Our remote-first UX design agency works with Houston energy, healthcare, space and logistics organizations on field research, UX and UI design, prototyping and usability testing for tools used on job sites, in clinics and in control rooms. Engagements start at $5,000 for a 2–3 week audit and run with 7–8 hours of daily Central Time overlap.",
+  "semantic": {
+    "entities": [
+      "Houston",
+      "Texas Medical Center",
+      "Clear Lake",
+      "Central Time",
+      "oil and gas",
+      "energy transition",
+      "aerospace",
+      "port logistics",
+      "HIPAA",
+      "Web Content Accessibility Guidelines (WCAG) 2.2"
+    ],
+    "ngrams": [
+      "ux design agency houston",
+      "field apps",
+      "texas medical center",
+      "control rooms",
+      "offline mode"
+    ],
+    "skipgrams": [
+      "agency … houston",
+      "design … field research",
+      "ux … energy"
+    ],
+    "nlpKeywords": [
+      "contextual inquiry",
+      "workflow maps",
+      "rugged mobile ui",
+      "operational dashboards",
+      "safety checklist",
+      "usability testing",
+      "design system"
+    ]
+  },
+  "mentions": [
+    "Houston",
+    "Texas Medical Center",
+    "Clear Lake",
+    "Central Time",
+    "oil and gas",
+    "aerospace",
+    "logistics",
+    "HIPAA",
+    "Figma",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

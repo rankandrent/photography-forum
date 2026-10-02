@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 13,
   "title": "Washington DC",
@@ -7,15 +6,242 @@
   "state": "DC",
   "keyword": "ux design agency washington dc",
   "anchor": "UX design agency Washington DC",
-  "metaTitle": "UX design agency Washington DC | Research-Led Product Design",
-  "metaDescription": "UX design agency Washington DC for product teams in Washington, D.C.: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Washington DC | Section 508-Ready UX",
+  "metaDescription": "UX design agency Washington DC teams use for civic tech, associations and govcon: research, accessible UI, USWDS-aligned design and testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency washington dc",
-    "h1": "UX design agency Washington DC for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Washington, D.C.: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency: Washington DC civic tech, associations and govcon",
+    "sub": "Headquartered in Reston, Virginia, a Silver Line ride from downtown. Senior researchers and designers build accessible, plain-language digital services for agencies, nonprofits and federal contractors across the DC metro."
   },
-  "summary": "Research-led UI UX design for product teams in Washington, D.C..",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Accessibility-first UX research and design for civic tech, associations and government contractors in the Washington DC metro.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What should a UX design agency in Washington DC deliver?",
+      "format": "paragraph",
+      "answer": "<strong>A UX design agency in Washington DC should deliver researched, tested and accessible digital services that the public, members or program staff can complete without calling a help desk.</strong> For federal work that also means designs that meet Section 508 on day one, not after a remediation project.",
+      "body": "<p>Products built around the capital serve citizens applying for benefits, members renewing dues and contracting officers reviewing deliverables. Each audience reads differently and tolerates little friction. When you shortlist a UX design agency, Washington DC proximity matters less than proven accessibility practice, yet you can have both: our team is based in Reston, in Northern Virginia, so in-person workshops in the District, Arlington or Tysons are a short trip, while day-to-day collaboration runs remotely on Eastern Time. Explore our <a href=\"/services/ux-research-services/\">UX research services</a> for how we plan studies with hard-to-reach users.</p>"
+    },
+    {
+      "h2": "Which federal accessibility and design standards shape DC projects?",
+      "format": "list",
+      "answer": "<strong>Four standards shape most federal and civic projects in the region:</strong> Section 508, the U.S. Web Design System, the Plain Writing Act and the security boundary of a FedRAMP-authorized cloud.",
+      "items": [
+        "Section 508 of the Rehabilitation Act, which adopts WCAG 2.0 Level AA; we design and annotate to WCAG 2.2 AA so screens clear the federal baseline with room to spare.",
+        "The U.S. Web Design System (USWDS), whose components and tokens we extend instead of reinventing, which also supports the consistency goals of the 21st Century IDEA Act.",
+        "The Plain Writing Act of 2010, which we honor with content testing, reading-level checks and form labels written for first-time applicants.",
+        "FedRAMP context: we do not hold an authorization ourselves, but we design within the constraints of your authorized environment, such as approved identity providers, session timeouts and data-handling rules."
+      ]
+    },
+    {
+      "h2": "What is included when our UX design agency, Washington DC teams ask?",
+      "format": "list",
+      "answer": "<strong>A typical DC engagement bundles 6 workstreams</strong>, each scoped to the program, the contract vehicle and the people who will actually use the service.",
+      "items": [
+        {
+          "title": "Stakeholder and user interviews.",
+          "body": "Sessions with applicants, caseworkers or association members, for example 8 grant applicants and 4 program officers."
+        },
+        {
+          "title": "Accessibility audit.",
+          "body": "Manual review with screen readers and keyboard-only navigation, mapped to Section 508 and WCAG 2.2 success criteria."
+        },
+        {
+          "title": "Service blueprint.",
+          "body": "A map of every touchpoint, including paper forms, call centers and back-office queues behind a single online application."
+        },
+        {
+          "title": "USWDS-aligned UI design.",
+          "body": "Figma screens built on USWDS tokens, extended where a program needs custom components such as eligibility checkers."
+        },
+        {
+          "title": "Content design.",
+          "body": "Plain-language headings, error messages and help text tested with readers who are new to the program."
+        },
+        {
+          "title": "Usability testing.",
+          "body": "Moderated rounds that include participants who use assistive technology, not just the default user group."
+        }
+      ]
+    },
+    {
+      "h2": "How do we run a civic or association project from kickoff to handoff?",
+      "format": "steps",
+      "answer": "<strong>A research and design engagement here usually spans 4–8 weeks</strong> and moves through 5 phases, with check-ins timed to your program reviews and any contracting milestones.",
+      "items": [
+        {
+          "title": "Kickoff and scope (1–2 days)",
+          "body": "We confirm the mission outcome, user groups, compliance requirements and approval chain, often in person near the Beltway."
+        },
+        {
+          "title": "Discovery research (5–10 days)",
+          "body": "Interviews, analytics review and an accessibility baseline reveal where applicants or members drop off today."
+        },
+        {
+          "title": "Co-design sessions (2–3 days)",
+          "body": "Program staff, policy owners and engineers sketch the future service together, on site in the DC area or remotely."
+        },
+        {
+          "title": "Prototype and content (10–20 days)",
+          "body": "Designers build a clickable Figma prototype with final plain-language copy, reviewed with your team twice a week."
+        },
+        {
+          "title": "Validate and transfer (5–10 days)",
+          "body": "Assistive-technology users test the prototype, fixes are made, and annotated specs move to your developers or prime contractor."
+        }
+      ]
+    },
+    {
+      "h2": "Reston-based partner vs a downtown DC firm",
+      "format": "table",
+      "answer": "<strong>Our Reston headquarters gives DC buyers the same time zone and easy in-person access as a downtown firm, with remote-first delivery that keeps senior rates lower.</strong> A downtown office mainly matters to teams that want designers on site every day.",
+      "caption": "How a Reston, VA based UX agency compares with a downtown Washington DC firm",
+      "columns": [
+        "Factor",
+        "Our team (Reston, VA)",
+        "Downtown DC firm"
+      ],
+      "rows": [
+        [
+          "Time zone",
+          "Eastern Time, full business-day overlap",
+          "Eastern Time"
+        ],
+        [
+          "In-person sessions",
+          "District, Arlington, Tysons and Maryland suburbs on request",
+          "On site"
+        ],
+        [
+          "Accessibility",
+          "WCAG 2.2 AA annotations on every screen",
+          "Varies by firm"
+        ],
+        [
+          "Start time",
+          "1–2 weeks after scope sign-off",
+          "Varies by firm"
+        ],
+        [
+          "Published pricing",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Often quoted per contract"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        },
+        {
+          "anchor": "design system services",
+          "to": "/services/design-system-services/"
+        }
+      ]
+    },
+    {
+      "h2": "What does UX work cost for a Washington DC organization?",
+      "format": "paragraph",
+      "answer": "<strong>Budget $5,000–$15,000 for a 2–3 week accessibility and UX audit, and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> The total moves with the number of user groups, the forms and integrations in scope, and how much content needs rewriting.",
+      "body": "<p>Multi-program portals with a USWDS-based design system typically run $60,000–$180,000 over 8–16 weeks. Associations and contractors that need continuous design support can embed a team for $15,000–$40,000 per month. Every quote from our UX design agency, Washington DC associations and contractors included, is fixed-scope, which suits budgets planned around grants, fiscal years or a subcontract ceiling. For portal and back-office work, see our <a href=\"/services/web-app-design-services/\">web app design services</a>.</p>"
+    },
+    {
+      "h2": "Who in the capital region do we design for?",
+      "format": "list",
+      "answer": "<strong>We focus on 5 kinds of organizations common across the DC metro and its industries:</strong>",
+      "items": [
+        "Civic tech and digital service teams modernizing benefit applications, permit systems and public dashboards.",
+        "Trade associations and professional societies, for example member portals, certification renewals and event registration.",
+        "Nonprofits and foundations improving donation flows, grant applications and volunteer sign-up.",
+        "Government contractors that need a design partner for proposal prototypes and delivery, often around complex <a href=\"/services/dashboard-ux-design/\">dashboard UX design</a>.",
+        "Health and policy organizations publishing research and tools for clinicians and the public (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency Washington DC FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to the 5 questions DC program leads, association directors and capture managers raise most often.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have an office inside the District?",
+          "a": "<p>No. We are headquartered in Reston, Virginia, and work remote-first. That still makes us a UX design agency Washington DC teams can meet face to face: workshops and research sessions in the District, Northern Virginia or Maryland are simple to schedule.</p>"
+        },
+        {
+          "q": "Can you work as a subcontractor on a federal program?",
+          "a": "<p>We can support a prime contractor on research and design tasks. Contract vehicles, clearances and set-aside status should be confirmed with us during scoping, since we do not assume them for every program.</p>"
+        },
+        {
+          "q": "Will your designs pass a Section 508 review?",
+          "a": "<p>Designs are built and annotated to WCAG 2.2 AA, which exceeds the WCAG 2.0 AA baseline in Section 508. Final conformance also depends on how the code is built, so we review the implemented build with your developers.</p>"
+        },
+        {
+          "q": "Do you use the U.S. Web Design System?",
+          "a": "<p>Yes, when the program calls for it. Our UX design agency extends USWDS components and tokens in Figma rather than replacing them, which keeps the service consistent with other federal sites.</p>"
+        },
+        {
+          "q": "How quickly can a DC engagement begin?",
+          "a": "<p>Work starts 1–2 weeks after the proposal is signed. Procurement steps on your side, such as a purchase order or a task order, can add time before that.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency washington dc",
+    "ux design agency dc",
+    "section 508 ux design",
+    "civic tech ux design agency",
+    "government ux design agency northern virginia"
+  ],
+  "centralEntity": "UX design agency in Washington DC",
+  "sourceContext": "Remote-first US UI UX agency headquartered in Reston, VA (DC metro) selling accessible, standards-aligned research and design engagements to civic tech, association and government contractor teams in the Washington DC region.",
+  "abstract": "Our UX design agency, Washington DC's close neighbor in Reston, Virginia, works with civic tech teams, associations, nonprofits and government contractors. We research, design and test accessible digital services aligned with Section 508, the U.S. Web Design System and plain-language rules, starting at $5,000 for a 2–3 week audit.",
+  "semantic": {
+    "entities": [
+      "Washington, D.C.",
+      "Reston, Virginia",
+      "Northern Virginia",
+      "Section 508",
+      "U.S. Web Design System (USWDS)",
+      "FedRAMP",
+      "Plain Writing Act of 2010",
+      "21st Century IDEA Act",
+      "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "Eastern Time"
+    ],
+    "ngrams": [
+      "ux design agency washington dc",
+      "section 508",
+      "civic tech",
+      "government contractors",
+      "plain language"
+    ],
+    "skipgrams": [
+      "agency … washington dc",
+      "design … section 508",
+      "ux … dc metro"
+    ],
+    "nlpKeywords": [
+      "accessibility audit",
+      "service blueprint",
+      "assistive technology",
+      "member portal",
+      "prime contractor",
+      "content design",
+      "usability testing"
+    ]
+  },
+  "mentions": [
+    "Washington, D.C.",
+    "Reston",
+    "Northern Virginia",
+    "Arlington",
+    "Section 508",
+    "USWDS",
+    "FedRAMP",
+    "Plain Writing Act",
+    "WCAG 2.2",
+    "Figma"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

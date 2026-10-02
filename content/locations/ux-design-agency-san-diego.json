@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 18,
   "title": "San Diego",
@@ -7,15 +6,217 @@
   "state": "CA",
   "keyword": "ux design agency san diego",
   "anchor": "UX design agency San Diego",
-  "metaTitle": "UX design agency San Diego | Research-Led Product Design",
-  "metaDescription": "UX design agency San Diego for product teams in San Diego: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency San Diego | Biotech, MedTech & Defense UX",
+  "metaDescription": "UX design agency San Diego biotech, medical device, defense and wireless teams hire for usability research, UI design and formative testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency san diego",
-    "h1": "UX design agency San Diego for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in San Diego: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency San Diego scientists and engineers can trust with complex software",
+    "sub": "Usability research and interface design for life sciences platforms, medical device software, defense systems and wireless products, from Torrey Pines and Sorrento Valley to Carlsbad. Remote-first, aligned to Pacific Time."
   },
-  "summary": "Research-led UI UX design for product teams in San Diego.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX research and interface design for San Diego biotech, medical device, defense and wireless teams.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What does UX design look like for San Diego's science and engineering companies?",
+      "format": "paragraph",
+      "answer": "<strong>For San Diego's science and engineering companies, UX design means making expert software, such as lab data platforms, device companion apps and mission systems, easier and safer to use without hiding the depth experts depend on.</strong> Regulated products also need design evidence.",
+      "body": "<p>The region's biotech clusters, medical device makers, defense contractors and wireless engineers often build interfaces that only specialists understand at first glance. Typical problems are crowded instrument screens, sample tracking that relies on memory and alerts nobody trusts. If you are comparing options for a UX design agency, San Diego teams should ask how the partner documents research for regulators and auditors. We are headquartered in Reston, Virginia, have no San Diego office and work remotely with 5–6 hours of daily overlap with Pacific Time.</p>"
+    },
+    {
+      "h2": "Which regulations and standards shape San Diego medical and lab software?",
+      "format": "list",
+      "answer": "<strong>Four standards come up in most San Diego life sciences and defense projects</strong>, and each one changes how research and design are documented.",
+      "items": [
+        "IEC 62366-1 and FDA human factors guidance, which expect usability engineering throughout development; we run formative studies and supply findings for your usability engineering file, while summative validation stays with your human factors team.",
+        "21 CFR Part 11 for electronic records and signatures, which affects audit trails, sign-off steps and how lab users confirm actions.",
+        "WCAG 2.2 Level AA, which we apply to patient-facing apps and web portals so they work with assistive technology.",
+        "Controlled and export-restricted information in defense programs, which stays inside your environment; we design with sanitized or synthetic data."
+      ]
+    },
+    {
+      "h2": "What do San Diego teams engage us to design?",
+      "format": "list",
+      "answer": "<strong>San Diego teams engage us for 6 kinds of work</strong>, from a single expert review to a full product redesign.",
+      "items": [
+        {
+          "title": "Lab workflow research.",
+          "body": "Observation and interviews with scientists and lab technicians, for example how samples move from bench to analysis."
+        },
+        {
+          "title": "Use-related risk input.",
+          "body": "Task analysis that highlights where a user error could matter, for example dose entry in a device companion app."
+        },
+        {
+          "title": "Scientific data visualization.",
+          "body": "Plots, plate maps and result tables that let researchers compare runs without exporting to a spreadsheet."
+        },
+        {
+          "title": "Device and companion app UI.",
+          "body": "Screens for connected devices and their iOS and Android apps, including pairing, calibration and error states."
+        },
+        {
+          "title": "Expert usability review.",
+          "body": "A structured audit of an existing tool against heuristics, WCAG 2.2 and your own risk register."
+        },
+        {
+          "title": "Formative usability studies.",
+          "body": "Iterative tests with 5–8 representative users per round, documented so findings feed your design history file."
+        }
+      ]
+    },
+    {
+      "h2": "Our 5-step approach for San Diego life sciences and engineering teams",
+      "format": "steps",
+      "answer": "<strong>Most San Diego projects take 4–8 weeks and follow 5 steps</strong>, with each step producing documentation your quality team can file.",
+      "items": [
+        {
+          "title": "Define intended use (1–2 days)",
+          "body": "We record the users, use environments, critical tasks and regulatory context with your product and quality leads."
+        },
+        {
+          "title": "Study current use (5–10 days)",
+          "body": "Researchers observe users and review the current interface, producing a task analysis and a list of use-related issues."
+        },
+        {
+          "title": "Concept review (2–3 days)",
+          "body": "Scientists, engineers and designers review alternative concepts together, remotely or on site in San Diego for larger programs."
+        },
+        {
+          "title": "Design and iterate (10–20 days)",
+          "body": "We design the interface and a Figma prototype, revising after each internal review held twice a week."
+        },
+        {
+          "title": "Formative test and transfer (5–10 days)",
+          "body": "Representative users test the prototype, results are documented, and specs and components go to engineering."
+        }
+      ]
+    },
+    {
+      "h2": "How San Diego products benefit from usability engineering",
+      "format": "cards",
+      "answer": "<strong>Usability engineering gives San Diego products 4 benefits:</strong> fewer use errors, smoother regulatory review, faster scientist workflows and more confident adoption by clinicians and operators.",
+      "items": [
+        {
+          "title": "Reduces use errors",
+          "body": "Clear confirmation steps, units and warnings make the risky actions in a device or lab tool harder to get wrong."
+        },
+        {
+          "title": "Supports regulatory submissions",
+          "body": "Documented formative studies give your human factors and regulatory teams evidence to build on."
+        },
+        {
+          "title": "Saves scientist time",
+          "body": "Streamlined data entry and analysis views free researchers from repetitive clicks and manual exports."
+        },
+        {
+          "title": "Builds operator confidence",
+          "body": "Interfaces that behave predictably are adopted faster by clinicians, sailors and field engineers alike."
+        }
+      ]
+    },
+    {
+      "h2": "What is the cost of hiring a UX design agency in San Diego?",
+      "format": "paragraph",
+      "answer": "<strong>Hiring our team costs $5,000–$15,000 for a 2–3 week expert usability review and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Documentation depth, the number of critical tasks, recruiting specialist participants and platform count drive the final figure.",
+      "body": "<p>A full platform or device software redesign with a design system costs $60,000–$180,000 over 8–16 weeks. An embedded team for ongoing releases costs $15,000–$40,000 per month. Working with a UX design agency, San Diego companies should expect a fixed-scope proposal, and ours follows a free consultation. Our <a href=\"/services/usability-testing-services/\">usability testing services</a> page details how studies are run.</p>"
+    },
+    {
+      "h2": "San Diego industries we serve",
+      "format": "list",
+      "answer": "<strong>Our UX design agency serves 5 San Diego industries:</strong>",
+      "items": [
+        "Biotech and life sciences, for example lab information systems, electronic lab notebooks and assay analysis tools (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Medical devices and digital health, for example companion apps, clinician dashboards and home-use device software.",
+        "Defense and government contractors, for example mission planning, maintenance and training interfaces.",
+        "Wireless, semiconductor and telecom, for example network management consoles and device setup apps (<a href=\"/services/ios-app-design-services/\">iOS app design services</a>).",
+        "B2B software serving these sectors, for example data platforms and analytics products (<a href=\"/services/data-visualization-agency/\">data visualization agency</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency San Diego FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to the 5 questions San Diego R&amp;D, quality and product leaders ask most before engaging a design partner.</strong>",
+      "faqs": [
+        {
+          "q": "Is your team located in San Diego?",
+          "a": "<p>No. We are remote-first and headquartered in Reston, Virginia. We collaborate on Pacific Time with 5–6 hours of daily overlap and can travel to San Diego for observation sessions and workshops on larger engagements.</p>"
+        },
+        {
+          "q": "Can you run summative validation for an FDA submission?",
+          "a": "<p>We focus on formative research and design. Summative validation is usually run by a dedicated human factors team or test lab; we can prepare the interface and documentation that feeds into it.</p>"
+        },
+        {
+          "q": "Do you design for scientists who use highly specialized software?",
+          "a": "<p>Yes. A UX design agency San Diego researchers work with has to learn their vocabulary, so we spend early sessions with your scientists and keep power-user shortcuts while simplifying routine steps.</p>"
+        },
+        {
+          "q": "Can you work on defense programs?",
+          "a": "<p>We can support unclassified work using sanitized data. Clearance, facility and controlled-information requirements must be confirmed during scoping, as we do not assume them.</p>"
+        },
+        {
+          "q": "How soon could work begin?",
+          "a": "<p>Most San Diego projects begin 1–2 weeks after the proposal is signed, starting with an intended-use workshop.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency san diego",
+    "ui ux design agency san diego",
+    "san diego ux design",
+    "medical device ux design agency",
+    "biotech ux design"
+  ],
+  "centralEntity": "UX design agency in San Diego",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led, documentation-ready product design engagements to San Diego biotech, medical device, defense and wireless teams.",
+  "abstract": "We are a remote-first UX design agency; San Diego biotech, medical device, defense and wireless companies work with us on usability research, UX and UI design, prototyping and formative testing that supports regulated development. Engagements start at $5,000 for a 2–3 week expert review and run with 5–6 hours of daily Pacific Time overlap.",
+  "semantic": {
+    "entities": [
+      "San Diego",
+      "Torrey Pines",
+      "Sorrento Valley",
+      "Carlsbad",
+      "Pacific Time",
+      "IEC 62366-1",
+      "U.S. Food and Drug Administration (FDA)",
+      "21 CFR Part 11",
+      "biotech",
+      "medical devices"
+    ],
+    "ngrams": [
+      "ux design agency san diego",
+      "usability engineering",
+      "formative studies",
+      "life sciences",
+      "medical device software"
+    ],
+    "skipgrams": [
+      "agency … san diego",
+      "design … medical devices",
+      "ux … biotech"
+    ],
+    "nlpKeywords": [
+      "lab workflow research",
+      "task analysis",
+      "use errors",
+      "design history file",
+      "companion app",
+      "scientific data visualization",
+      "human factors"
+    ]
+  },
+  "mentions": [
+    "San Diego",
+    "Torrey Pines",
+    "Sorrento Valley",
+    "Carlsbad",
+    "Pacific Time",
+    "IEC 62366-1",
+    "FDA",
+    "21 CFR Part 11",
+    "WCAG 2.2",
+    "Figma"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

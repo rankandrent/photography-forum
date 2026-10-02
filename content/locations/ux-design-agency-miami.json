@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 16,
   "title": "Miami",
@@ -7,15 +6,243 @@
   "state": "FL",
   "keyword": "ux design agency miami",
   "anchor": "UX design agency Miami",
-  "metaTitle": "UX design agency Miami | Research-Led Product Design",
-  "metaDescription": "UX design agency Miami for product teams in Miami: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Miami | Bilingual Fintech & Travel UX",
+  "metaDescription": "UX design agency Miami fintech, travel, hospitality and real estate teams hire for bilingual English–Spanish research, UI design and testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency miami",
-    "h1": "UX design agency Miami for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Miami: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Miami brands use to reach English and Spanish speakers",
+    "sub": "Research and product design for fintech and crypto platforms, travel and hospitality brands and real estate companies selling across South Florida, the US and Latin America. Remote-first, on Eastern Time."
   },
-  "summary": "Research-led UI UX design for product teams in Miami.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Bilingual-ready UX research and product design for Miami fintech, travel, hospitality and real estate teams serving US and Latin American markets.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What makes UX design for Miami products different?",
+      "format": "paragraph",
+      "answer": "<strong>UX design for Miami products usually has to work for two languages, several countries and a mix of local residents, tourists and international investors in the same release.</strong> That changes research recruiting, content design and how layouts handle text.",
+      "body": "<p>Many South Florida companies treat Latin America as a home market, so an app may need English and Spanish, multiple currencies and payment methods popular in Brazil, Mexico or Colombia. Selecting a UX design agency, Miami teams should check that bilingual content is designed in from the first wireframe, not translated after launch. Our team is headquartered in Reston, Virginia, has no Miami office and works remotely on the same Eastern Time clock. Trust cues differ too: some Latin American users expect WhatsApp support, local payment options and visible licensing details before they share personal data, so research tests those expectations directly. See our <a href=\"/services/ux-research-services/\">UX research services</a> for how we plan multi-market studies.</p>"
+    },
+    {
+      "h2": "Our Miami service menu",
+      "format": "list",
+      "answer": "<strong>Miami clients choose from 6 core services</strong>, combined into one project or booked separately to support an in-house design team.",
+      "items": [
+        {
+          "title": "Multi-market research.",
+          "body": "Interviews with users in the US and Latin America, for example remittance senders in Miami and recipients abroad."
+        },
+        {
+          "title": "Bilingual content design.",
+          "body": "English and Spanish microcopy written and tested together, so neither version reads like a translation."
+        },
+        {
+          "title": "Onboarding and KYC flows.",
+          "body": "Identity checks, wallet setup and funding steps designed to reduce abandonment without weakening compliance."
+        },
+        {
+          "title": "Booking and reservation UX.",
+          "body": "Search, availability and checkout for hotels, cruises and experiences, including add-ons and itinerary changes."
+        },
+        {
+          "title": "Responsive UI design.",
+          "body": "Mobile-first screens in Figma, for example a condo pre-construction showcase with floor plans and inquiry forms."
+        },
+        {
+          "title": "Usability testing.",
+          "body": "Remote sessions with English- and Spanish-speaking participants, 5 per language per round."
+        }
+      ]
+    },
+    {
+      "h2": "When should a Miami company bring in a UX partner?",
+      "format": "list",
+      "answer": "<strong>Companies usually call a UX design agency Miami teams can brief quickly at 5 moments:</strong>",
+      "items": [
+        "Before launching a Spanish or Portuguese version of a product that was designed in English only.",
+        "When a fintech or crypto app sees new users drop out during identity verification or the first deposit.",
+        "Ahead of peak travel season, when booking friction costs the most revenue.",
+        "When a real estate brand needs one site that serves local buyers and international investors.",
+        "After a funding round, when the product must grow faster than the design team can hire."
+      ]
+    },
+    {
+      "h2": "How does a Miami project move from brief to build?",
+      "format": "steps",
+      "answer": "<strong>A Miami research and design project runs 4–8 weeks in 5 phases</strong>, with research in both languages planned from the start.",
+      "items": [
+        {
+          "title": "Brief and markets (1–2 days)",
+          "body": "We confirm the goals, the target countries, the languages in scope and the regulatory requirements for each."
+        },
+        {
+          "title": "Research in two languages (5–10 days)",
+          "body": "Interviews and an audit run with English and Spanish speakers, and findings are compared side by side."
+        },
+        {
+          "title": "Direction workshop (2–3 days)",
+          "body": "Remote sessions settle the core flows and content rules; South Florida on-site sessions are possible for larger programs."
+        },
+        {
+          "title": "Bilingual design (10–20 days)",
+          "body": "Screens and a Figma prototype are built with both languages loaded, so layouts are checked against longer strings."
+        },
+        {
+          "title": "Test and release (5–10 days)",
+          "body": "Each language is tested with its own participants, fixes are applied, and specs and components go to engineering."
+        }
+      ]
+    },
+    {
+      "h2": "English-only design vs bilingual-ready UX",
+      "format": "table",
+      "answer": "<strong>Bilingual-ready UX plans language, layout and research for English and Spanish from day one, while English-only design adds Spanish later and often has to rework screens.</strong> For a Miami audience, planning early is usually cheaper.",
+      "caption": "Bilingual-ready UX compared with English-only design for Miami products",
+      "columns": [
+        "Design area",
+        "Bilingual-ready UX (our approach)",
+        "English-only design"
+      ],
+      "rows": [
+        [
+          "Copy",
+          "English and Spanish written and reviewed together",
+          "Spanish translated after launch"
+        ],
+        [
+          "Layouts",
+          "Buttons and labels sized for longer Spanish strings",
+          "Text overflow found late"
+        ],
+        [
+          "Formats",
+          "Currencies, dates and phone numbers per country",
+          "US formats only"
+        ],
+        [
+          "Research",
+          "Participants recruited in each language",
+          "English speakers only"
+        ],
+        [
+          "Language switch",
+          "Visible, remembered across sessions",
+          "Added later"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UI UX web design",
+          "to": "/services/ui-ux-web-design/"
+        },
+        {
+          "anchor": "mobile app UI UX design services",
+          "to": "/services/mobile-app-ui-ux-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "Miami UX design pricing and budgets",
+      "format": "paragraph",
+      "answer": "<strong>A 2–3 week UX audit costs $5,000–$15,000, and a 4–8 week research and design sprint costs $25,000–$60,000.</strong> Adding a second language raises the research and content effort, so it is scoped explicitly in every proposal.",
+      "body": "<p>A full product with a design system ranges from $60,000 to $180,000 over 8–16 weeks, and an embedded team costs $15,000–$40,000 per month. As a UX design agency, Miami founders and marketing leads get a free consultation and a fixed price before kickoff. For a sense of how we approach trading products, read the <a href=\"/case-studies/tradezella/\">TradeZella case study</a>.</p>"
+    },
+    {
+      "h2": "Which Miami industries do we support?",
+      "format": "list",
+      "answer": "<strong>Our UX design agency supports 5 industries that drive much of Miami's digital economy:</strong>",
+      "items": [
+        "Fintech, payments and remittances, for example cross-border transfers and business banking (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Crypto and web3, for example wallets, exchanges and play-to-earn products like the one in our <a href=\"/case-studies/nitro/\">Nitro case study</a>.",
+        "Travel, cruise and hospitality, for example booking engines, loyalty programs and guest apps.",
+        "Real estate and proptech, for example luxury listings, pre-construction sales and rental platforms.",
+        "Consumer and e-commerce brands selling to US and Latin American shoppers (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency Miami FAQs",
+      "format": "faq",
+      "answer": "<strong>Answers to the 5 questions South Florida product, marketing and founder teams ask us most.</strong>",
+      "faqs": [
+        {
+          "q": "Do you have a Miami office?",
+          "a": "<p>No. We are remote-first with headquarters in Reston, Virginia. Because Miami is also on Eastern Time, we share your full working day, and on-site sessions in South Florida can be arranged for larger engagements.</p>"
+        },
+        {
+          "q": "Can you design products in English and Spanish?",
+          "a": "<p>Yes. We design both languages together, test with native speakers of each and hand over a content file that your localization team can maintain. Portuguese and other languages can be scoped on request.</p>"
+        },
+        {
+          "q": "Do you work with crypto and fintech startups?",
+          "a": "<p>Yes. A UX design agency Miami fintech founders hire from us focuses on trust signals, onboarding and error recovery, while your legal team stays in charge of disclosures and licensing requirements.</p>"
+        },
+        {
+          "q": "Can you recruit research participants in Latin America?",
+          "a": "<p>Yes. We recruit through your customer base or international panels, screen by country and language, and run moderated sessions over video.</p>"
+        },
+        {
+          "q": "How quickly can we start?",
+          "a": "<p>Projects begin 1–2 weeks after the proposal is signed, starting with a brief that confirms markets and languages.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency miami",
+    "ui ux design agency miami",
+    "miami ux design",
+    "bilingual ux design agency",
+    "south florida ux design agency"
+  ],
+  "centralEntity": "UX design agency in Miami",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led, bilingual-ready product design engagements to Miami fintech, travel, hospitality and real estate teams serving US and Latin American markets.",
+  "abstract": "We work as a remote-first UX design agency; Miami fintech, crypto, travel, hospitality and real estate companies hire us for research, UX and UI design, prototyping and testing in English and Spanish. Work starts at $5,000 for a 2–3 week audit and runs on Eastern Time, the same clock as South Florida.",
+  "semantic": {
+    "entities": [
+      "Miami",
+      "South Florida",
+      "Latin America",
+      "Spanish",
+      "Eastern Time",
+      "fintech",
+      "crypto",
+      "travel and hospitality",
+      "real estate",
+      "Know Your Customer (KYC)"
+    ],
+    "ngrams": [
+      "ux design agency miami",
+      "bilingual ux",
+      "english and spanish",
+      "latin american markets",
+      "south florida"
+    ],
+    "skipgrams": [
+      "agency … miami",
+      "design … spanish",
+      "ux … latin america"
+    ],
+    "nlpKeywords": [
+      "bilingual content design",
+      "onboarding flows",
+      "booking engine",
+      "multi-market research",
+      "localization",
+      "usability testing",
+      "design system"
+    ]
+  },
+  "mentions": [
+    "Miami",
+    "South Florida",
+    "Latin America",
+    "Spanish",
+    "Eastern Time",
+    "fintech",
+    "crypto",
+    "cruise",
+    "real estate",
+    "Figma"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

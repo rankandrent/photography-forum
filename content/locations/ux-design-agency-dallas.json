@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 14,
   "title": "Dallas",
@@ -7,15 +6,260 @@
   "state": "TX",
   "keyword": "ux design agency dallas",
   "anchor": "UX design agency Dallas",
-  "metaTitle": "UX design agency Dallas | Research-Led Product Design",
-  "metaDescription": "UX design agency Dallas for product teams in Dallas: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Dallas | Fintech, Telecom & Retail UX",
+  "metaDescription": "UX design agency Dallas–Fort Worth teams hire for banking, telecom, retail and real estate products: research, UI design, prototypes, testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency dallas",
-    "h1": "UX design agency Dallas for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Dallas: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency Dallas enterprises and growth teams can scale with",
+    "sub": "Research-driven product design for financial services, telecom, retail and real estate companies across Dallas–Fort Worth, from Uptown to Plano, Irving and Frisco. Delivered remote-first on Central Time."
   },
-  "summary": "Research-led UI UX design for product teams in Dallas.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX research and product design for Dallas–Fort Worth financial services, telecom, retail and real estate teams.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "Why do Dallas–Fort Worth companies bring in an outside UX team?",
+      "format": "paragraph",
+      "answer": "<strong>DFW companies bring in an outside UX team when a high-stakes product, such as a banking portal, a carrier self-service app or a retail checkout, needs senior research and design faster than internal hiring allows.</strong> The outside team plugs into existing product and engineering squads.",
+      "body": "<p>The metroplex hosts corporate headquarters and large operations centers, so many digital products serve millions of customers and thousands of employees at once. Small usability problems turn into call-center volume. Picking a UX design agency, Dallas leaders usually want two things: evidence from real users and Figma files that engineering can ship without a rewrite. Our studio is headquartered in Reston, Virginia, and has no Dallas office; we work with Texas teams remotely, which keeps the work focused and the overhead low. Our <a href=\"/services/ux-consulting-services/\">UX consulting services</a> cover the strategy side.</p>"
+    },
+    {
+      "h2": "What does a Dallas engagement cover?",
+      "format": "list",
+      "answer": "<strong>Most Dallas engagements combine 6 pieces of work</strong>, sized to whether the product faces consumers, agents in a contact center or internal analysts.",
+      "items": [
+        {
+          "title": "Customer and employee research.",
+          "body": "Interviews with both sides of a service, for example retail banking customers and the branch staff who support them."
+        },
+        {
+          "title": "Journey and funnel analysis.",
+          "body": "Analytics and session data combined to locate the steps where wireless plan upgrades or loan applications stall."
+        },
+        {
+          "title": "Experience audit.",
+          "body": "A heuristic and WCAG 2.2 review of a live product, prioritized by business impact rather than by screen order."
+        },
+        {
+          "title": "Interface design.",
+          "body": "Responsive web and native app screens, for example a property search with map, filters and saved listings."
+        },
+        {
+          "title": "Component library.",
+          "body": "Tokens and documented components that let several brands or business units share one foundation."
+        },
+        {
+          "title": "Prototype validation.",
+          "body": "Remote sessions with 5 participants per round to confirm the redesign works before development begins."
+        }
+      ]
+    },
+    {
+      "h2": "Our 5-stage process for DFW product teams",
+      "format": "steps",
+      "answer": "<strong>A standard research and design project lasts 4–8 weeks</strong> and moves through 5 stages, with demos scheduled inside Central Time business hours.",
+      "items": [
+        {
+          "title": "Alignment call (1–2 days)",
+          "body": "Product owners, compliance and engineering agree on goals, success metrics and any brand or regulatory guardrails."
+        },
+        {
+          "title": "Evidence gathering (5–10 days)",
+          "body": "We interview customers, review analytics and audit the current experience, then present a ranked list of problems."
+        },
+        {
+          "title": "Concept sprint (2–3 days)",
+          "body": "Remote working sessions turn the top problems into flows; on-site sessions in Dallas can be added for larger programs."
+        },
+        {
+          "title": "Detailed design (10–20 days)",
+          "body": "Designers produce high-fidelity screens and an interactive prototype, with two reviews per week."
+        },
+        {
+          "title": "Validation and delivery (5–10 days)",
+          "body": "Users test the prototype, issues are resolved, and annotated specs and components go to your developers."
+        }
+      ]
+    },
+    {
+      "h2": "What results can Dallas teams expect from better UX?",
+      "format": "cards",
+      "answer": "<strong>Better UX gives Dallas product organizations 4 practical gains:</strong> fewer support contacts, higher digital adoption, faster delivery and a consistent multi-brand experience.",
+      "items": [
+        {
+          "title": "Lowers support contacts",
+          "body": "Clearer billing, account and order-status screens answer the questions customers would otherwise phone in."
+        },
+        {
+          "title": "Raises digital adoption",
+          "body": "Simplified enrollment and self-service flows move more customers from branch, store or agent channels to the app."
+        },
+        {
+          "title": "Speeds up delivery",
+          "body": "Validated designs and ready components shorten engineering cycles and reduce rework after launch."
+        },
+        {
+          "title": "Unifies brands and portfolios",
+          "body": "A shared design system keeps sub-brands, franchise sites and acquired products looking and behaving alike."
+        }
+      ]
+    },
+    {
+      "h2": "In-house hire, local studio or remote agency: what fits a Dallas team?",
+      "format": "table",
+      "answer": "<strong>A remote UX design agency suits Dallas teams that need senior capacity within weeks; an in-house hire suits permanent, long-term roadmaps.</strong> A local studio is the option when weekly on-site presence is essential.",
+      "caption": "In-house UX hire, local Dallas studio and remote-first agency compared",
+      "columns": [
+        "Consideration",
+        "Remote-first agency (us)",
+        "In-house hire",
+        "Local Dallas studio"
+      ],
+      "rows": [
+        [
+          "Time to start",
+          "1–2 weeks",
+          "Several months of recruiting",
+          "Varies by studio"
+        ],
+        [
+          "Time zone",
+          "Eastern-based, 7–8 hours of overlap with Central Time",
+          "Central Time",
+          "Central Time"
+        ],
+        [
+          "Skill range",
+          "Researchers, UX and UI designers together",
+          "One person's specialty",
+          "Varies by studio"
+        ],
+        [
+          "On-site work",
+          "Workshops in DFW for larger engagements",
+          "Daily",
+          "Weekly if needed"
+        ],
+        [
+          "Cost model",
+          "Fixed scope: $5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Salary and benefits",
+          "Local agency rates"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "usability testing services",
+          "to": "/services/usability-testing-services/"
+        },
+        {
+          "anchor": "dashboard design services",
+          "to": "/services/dashboard-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "How is a UX design agency Dallas project priced?",
+      "format": "paragraph",
+      "answer": "<strong>Pricing starts at $5,000–$15,000 for a 2–3 week experience audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Four variables set the final number: the flows in scope, the platforms, the research depth and whether a component library is included.",
+      "body": "<p>End-to-end product design with a full design system ranges from $60,000 to $180,000 over 8–16 weeks, a common scope when a bank, carrier or retailer replatforms. Teams that want a standing UX squad can embed one for $15,000–$40,000 per month. As a UX design agency, Dallas clients get a fixed-scope proposal after a free consultation, so procurement sees the full cost up front. For product UX in subscription software, see <a href=\"/services/saas-ux-design/\">SaaS UX design</a>.</p>"
+    },
+    {
+      "h2": "Dallas industries our designers know well",
+      "format": "list",
+      "answer": "<strong>Five sectors that anchor the Dallas economy make up most of the demand we see from the region:</strong>",
+      "items": [
+        "Banking, insurance and fintech, for example account opening, lending and wealth dashboards (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Telecom and wireless, for example plan comparison, device upgrades and self-service troubleshooting.",
+        "Retail and consumer brands headquartered in the metroplex, for example product discovery and checkout (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
+        "Commercial and residential real estate, for example listing search, tenant portals and portfolio analytics.",
+        "B2B software and HR technology, for example payroll and workforce tools like the work in our <a href=\"/case-studies/apex-hcm-payroll-ux/\">enterprise payroll case study</a>."
+      ]
+    },
+    {
+      "h2": "UX design agency Dallas FAQs",
+      "format": "faq",
+      "answer": "<strong>Short answers to the 5 questions Dallas–Fort Worth product and digital leaders ask before signing a design partner.</strong>",
+      "faqs": [
+        {
+          "q": "Is your team based in Dallas?",
+          "a": "<p>No. We are remote-first and headquartered in Reston, Virginia. We collaborate with DFW teams during Central Time hours and travel for on-site workshops when a larger engagement calls for it.</p>"
+        },
+        {
+          "q": "Can you work within a bank's compliance review?",
+          "a": "<p>Yes. We plan review checkpoints with your legal and compliance staff, keep disclosure and consent copy visible in every prototype, and document design decisions for audit trails.</p>"
+        },
+        {
+          "q": "Do you redesign large enterprise platforms?",
+          "a": "<p>Yes. Enterprise platforms with hundreds of screens are redesigned in phases, starting with the flows that carry the most volume or revenue, so teams see results before the full program ends.</p>"
+        },
+        {
+          "q": "How do you recruit Texas users for research?",
+          "a": "<p>We recruit through your customer lists or a research panel, screen for the right roles and regions, and run moderated sessions over video, typically 5–12 participants per user group.</p>"
+        },
+        {
+          "q": "What do we get at the end of a project?",
+          "a": "<p>A UX design agency Dallas teams hire from us hands over research findings, Figma files, an interactive prototype, annotated specs and reusable components ready for engineering.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency dallas",
+    "ux design agency dallas fort worth",
+    "ui ux design agency dallas",
+    "dallas ux design",
+    "dfw product design agency"
+  ],
+  "centralEntity": "UX design agency in Dallas",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Dallas–Fort Worth financial services, telecom, retail and real estate teams.",
+  "abstract": "We are a remote-first UX design agency; Dallas–Fort Worth companies in banking, telecom, retail and real estate work with us on user research, UX and UI design, prototyping and usability testing. Engagements start at $5,000 for a 2–3 week audit and run on Central Time with 7–8 hours of daily overlap.",
+  "semantic": {
+    "entities": [
+      "Dallas",
+      "Dallas–Fort Worth",
+      "Plano",
+      "Irving",
+      "Frisco",
+      "Central Time",
+      "financial services",
+      "telecom",
+      "retail",
+      "real estate"
+    ],
+    "ngrams": [
+      "ux design agency dallas",
+      "dallas fort worth",
+      "dfw product teams",
+      "self-service",
+      "component library"
+    ],
+    "skipgrams": [
+      "agency … dallas",
+      "design … fort worth",
+      "ux … dfw"
+    ],
+    "nlpKeywords": [
+      "customer research",
+      "experience audit",
+      "journey analysis",
+      "prototype validation",
+      "design system",
+      "contact center",
+      "enterprise platform"
+    ]
+  },
+  "mentions": [
+    "Dallas",
+    "Fort Worth",
+    "Plano",
+    "Irving",
+    "Frisco",
+    "Central Time",
+    "fintech",
+    "telecom",
+    "Figma",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000"
 }

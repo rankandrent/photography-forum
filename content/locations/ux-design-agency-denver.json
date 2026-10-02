@@ -1,5 +1,4 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
   "draft": true,
   "order": 15,
   "title": "Denver",
@@ -7,15 +6,254 @@
   "state": "CO",
   "keyword": "ux design agency denver",
   "anchor": "UX design agency Denver",
-  "metaTitle": "UX design agency Denver | Research-Led Product Design",
-  "metaDescription": "UX design agency Denver for product teams in Denver: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency Denver | SaaS, Aerospace & Outdoor UX",
+  "metaDescription": "UX design agency Denver and Front Range teams use for SaaS, aerospace, outdoor brands, health and energy: research, UI design and testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency denver",
-    "h1": "UX design agency Denver for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in Denver: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "A UX design agency Denver and Front Range product teams can rely on",
+    "sub": "User research, interface design and usability testing for SaaS companies, aerospace programs, outdoor and consumer brands, health organizations and energy operators from Denver to Boulder. Remote-first, aligned to Mountain Time."
   },
-  "summary": "Research-led UI UX design for product teams in Denver.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Remote-first UX research and interface design for Denver and Front Range SaaS, aerospace, outdoor, health and energy teams.",
+  "updated": "2026-10-02",
+  "sections": [
+    {
+      "h2": "What role does an outside UX partner play for Denver companies?",
+      "format": "paragraph",
+      "answer": "<strong>An outside UX partner gives Denver companies senior researchers and designers who find where users struggle, redesign those moments and prove the fix with testing, without adding permanent headcount.</strong> The partner works inside your existing sprint rhythm.",
+      "body": "<p>Colorado's economy mixes fast-growing software firms with engineering-heavy aerospace and energy organizations and well-known outdoor brands. Each needs a different kind of interface: a trial-to-paid funnel, a mission-planning console, a gear configurator, a utility field dashboard. When you engage a UX design agency, Denver location is less important than range, since one team may need to cover all of those patterns. We are headquartered in Reston, Virginia, keep no Colorado office and collaborate remotely with 6–7 hours of daily overlap with Mountain Time.</p>"
+    },
+    {
+      "h2": "Colorado industries we design for",
+      "format": "list",
+      "answer": "<strong>Five Colorado industries account for most of the product work we are asked about along the Front Range:</strong>",
+      "items": [
+        "SaaS and B2B software in Denver, Boulder and the Denver Tech Center, for example onboarding, billing and admin consoles (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Aerospace and space, for example operator consoles and telemetry views where dense data must stay readable under time pressure.",
+        "Outdoor and consumer brands, for example product finders, fit guides and direct-to-consumer checkout (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
+        "Health systems and digital health, for example patient scheduling and clinician tools (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Energy and utilities, including oil and gas and renewables, for example asset monitoring and field-crew apps (<a href=\"/services/data-visualization-agency/\">data visualization agency</a>)."
+      ]
+    },
+    {
+      "h2": "What can a Denver team hand off to us?",
+      "format": "list",
+      "answer": "<strong>Denver teams typically hand off 6 types of UX work</strong>, either as a full package or as individual pieces that fill a gap in an internal design team.",
+      "items": [
+        {
+          "title": "Discovery interviews.",
+          "body": "Conversations with 5–12 users per segment, for example trail runners shopping online and the retail staff who advise them."
+        },
+        {
+          "title": "Product analytics review.",
+          "body": "A look at funnels, cohorts and event data to show where a SaaS trial loses people before activation."
+        },
+        {
+          "title": "Navigation and taxonomy.",
+          "body": "Card sorts and tree tests that reorganize a large catalog or a crowded settings menu."
+        },
+        {
+          "title": "Data-dense UI.",
+          "body": "Charts, tables and alert states for engineering consoles where operators scan many values at once."
+        },
+        {
+          "title": "Mobile app design.",
+          "body": "iOS and Android flows that hold up outdoors, with large touch targets and offline states for weak signal."
+        },
+        {
+          "title": "Test rounds.",
+          "body": "Moderated remote sessions with 5 participants each, repeated until critical issues are gone."
+        }
+      ]
+    },
+    {
+      "h2": "Why Denver organizations invest in user experience",
+      "format": "cards",
+      "answer": "<strong>Denver organizations see 4 returns on UX investment:</strong> stronger trial conversion, fewer operator errors, better online sales and shorter onboarding for new staff.",
+      "items": [
+        {
+          "title": "Converts more trials",
+          "body": "Guided setup and clear pricing pages help SaaS prospects reach value before the trial window closes."
+        },
+        {
+          "title": "Prevents operator mistakes",
+          "body": "Distinct alert levels and confirmation steps reduce errors in consoles for aerospace and energy operations."
+        },
+        {
+          "title": "Lifts online sales",
+          "body": "Better product discovery and fit guidance help outdoor shoppers buy with confidence and return less."
+        },
+        {
+          "title": "Shortens staff onboarding",
+          "body": "Consistent internal tools mean new hires learn one pattern library instead of a dozen legacy screens."
+        }
+      ]
+    },
+    {
+      "h2": "What are the stages of a Denver UX engagement?",
+      "format": "steps",
+      "answer": "<strong>A Denver engagement normally takes 4–8 weeks from first call to developer handoff</strong> and unfolds in 5 stages, each closing with a short review on Mountain Time.",
+      "items": [
+        {
+          "title": "Framing call (1–2 days)",
+          "body": "We define the problem, the users, the metric that will show success and the constraints on scope and timing."
+        },
+        {
+          "title": "Learn from users (5–10 days)",
+          "body": "Interviews, analytics and an expert review are synthesized into a short list of opportunities ranked by impact."
+        },
+        {
+          "title": "Shape the solution (2–3 days)",
+          "body": "Workshops with product and engineering choose a direction; for larger programs we can meet on the Front Range."
+        },
+        {
+          "title": "Design in detail (10–20 days)",
+          "body": "We produce the user flows, polished screens and a Figma prototype, sharing progress twice a week."
+        },
+        {
+          "title": "Prove and ship (5–10 days)",
+          "body": "A final test round confirms the design, and specs, tokens and components move to your engineers."
+        }
+      ]
+    },
+    {
+      "h2": "Should a Denver company choose a remote or a Colorado-based design firm?",
+      "format": "table",
+      "answer": "<strong>A remote UX design agency gives Denver companies senior specialists across research and UI at a predictable, fixed price; a Colorado-based firm helps when in-person sessions are needed every week.</strong> Both can produce the same deliverables.",
+      "caption": "Remote-first UX agency compared with a Colorado-based design firm",
+      "columns": [
+        "Question",
+        "Remote-first agency (us)",
+        "Colorado-based firm"
+      ],
+      "rows": [
+        [
+          "Overlap with Mountain Time",
+          "6–7 hours each business day",
+          "Full day"
+        ],
+        [
+          "In-person sessions",
+          "Front Range workshops for larger engagements",
+          "Weekly if required"
+        ],
+        [
+          "Specialist mix",
+          "Research, UX, UI and design systems in one team",
+          "Varies by firm"
+        ],
+        [
+          "Kickoff",
+          "1–2 weeks after sign-off",
+          "Varies by firm"
+        ],
+        [
+          "Pricing",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Local market rates"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "mobile app UI UX design services",
+          "to": "/services/mobile-app-ui-ux-design-services/"
+        },
+        {
+          "anchor": "e-commerce UX design services",
+          "to": "/services/ecommerce-ux-design-services/"
+        }
+      ]
+    },
+    {
+      "h2": "What is the price of UX design for a Denver product?",
+      "format": "paragraph",
+      "answer": "<strong>A focused 2–3 week UX audit costs $5,000–$15,000, and a 4–8 week research and design sprint costs $25,000–$60,000.</strong> Scope drivers are the number of journeys, the platforms involved, how much research is needed and whether a design system is part of the work.",
+      "body": "<p>Complete product redesigns with a design system run $60,000–$180,000 across 8–16 weeks. If you need an ongoing team, an embedded squad costs $15,000–$40,000 per month. For a UX design agency, Denver startups and enterprises alike receive the same free consultation and a written fixed-scope proposal before any work begins. Our <a href=\"/case-studies/toolsgroup-supply-chain-ux/\">supply chain SaaS case study</a> shows what research uncovered for one B2B product.</p>"
+    },
+    {
+      "h2": "UX design agency Denver FAQs",
+      "format": "faq",
+      "answer": "<strong>Here are direct answers to the 5 questions Colorado founders and product leaders raise most often.</strong>",
+      "faqs": [
+        {
+          "q": "Are you located in Denver?",
+          "a": "<p>No. We are a remote-first UX design agency; Denver clients work with our Reston, Virginia headquarters team over video, and we travel to the Front Range for workshops on larger projects.</p>"
+        },
+        {
+          "q": "Can you design for users working outdoors or in the field?",
+          "a": "<p>Yes. We design for glare, gloves, cold and patchy connectivity with high-contrast UI, large touch targets and offline states, and we test in realistic conditions where possible.</p>"
+        },
+        {
+          "q": "Do you work with Boulder startups?",
+          "a": "<p>Yes. Early-stage teams in Boulder and Denver often start with a $25,000–$60,000 sprint to shape an MVP or fix onboarding before a funding round.</p>"
+        },
+        {
+          "q": "Can you handle technical aerospace or energy interfaces?",
+          "a": "<p>Yes. We work closely with your subject-matter experts, learn the domain vocabulary, and structure dense data so operators find the critical value first. Export-controlled or classified material must stay within your own environment.</p>"
+        },
+        {
+          "q": "How soon could a UX design agency Denver project start?",
+          "a": "<p>Most projects start 1–2 weeks after the proposal is signed, beginning with a framing call and a research plan.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency denver",
+    "ux design agency colorado",
+    "ui ux design agency denver",
+    "denver ux design",
+    "boulder ux design agency"
+  ],
+  "centralEntity": "UX design agency in Denver",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Denver and Front Range SaaS, aerospace, outdoor, health and energy teams.",
+  "abstract": "As a remote-first UX design agency, Denver and Boulder companies in SaaS, aerospace, outdoor retail, health and energy hire us for user research, UX and UI design, prototyping and usability testing. Projects begin at $5,000 for a 2–3 week audit and run with 6–7 hours of daily overlap with Mountain Time.",
+  "semantic": {
+    "entities": [
+      "Denver",
+      "Boulder",
+      "Front Range",
+      "Colorado",
+      "Denver Tech Center",
+      "Mountain Time",
+      "SaaS",
+      "aerospace",
+      "outdoor brands",
+      "energy and utilities"
+    ],
+    "ngrams": [
+      "ux design agency denver",
+      "front range",
+      "mountain time",
+      "outdoor brands",
+      "data-dense ui"
+    ],
+    "skipgrams": [
+      "agency … denver",
+      "design … front range",
+      "ux … colorado"
+    ],
+    "nlpKeywords": [
+      "discovery interviews",
+      "trial conversion",
+      "operator consoles",
+      "field apps",
+      "offline states",
+      "tree testing",
+      "design system"
+    ]
+  },
+  "mentions": [
+    "Denver",
+    "Boulder",
+    "Colorado",
+    "Front Range",
+    "Mountain Time",
+    "SaaS",
+    "aerospace",
+    "outdoor retail",
+    "Figma",
+    "usability testing"
+  ],
+  "priceRange": "$5,000–$60,000"
 }
