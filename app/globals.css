@@ -1281,3 +1281,99 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .ftr__mail:hover { color: #fff; border-color: var(--pink); }
 .phero__mail { color: #fff; border-bottom: 1px solid var(--pink); }
 .ftr__contact { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 4px; }
+
+/* ===== Phone scale: tighter type, spacing and cards (≤ 640px) ===== */
+@media (max-width: 640px) {
+  :root { --pad-m: 56px; --gut-m: 18px; }
+  body { font-size: 16px; line-height: 1.55; }
+  h1 { font-size: 34px; line-height: 1.1; }
+  h2 { font-size: 28px; line-height: 1.12; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 18px; }
+  .tk-eyebrow { font-size: 11px; }
+
+  .btn { height: 48px; padding: 0 22px; font-size: 15px; }
+
+  /* heroes */
+  .hero__headline, .hero--light .hero__split .hero__headline { font-size: 36px; line-height: 1.08; margin-bottom: 18px; }
+  .hero__subhead, .phero__sub { font-size: 16px; margin-bottom: 24px; }
+  .phero { padding: 112px 0 48px; }
+  .hero__form { padding: 22px; }
+  .hero__form-title { font-size: 20px; }
+  .hportrait__name { font-size: 20px; }
+
+  /* section heads */
+  .shead, .stats__head, .challenge__headline, .cat__headline, .process__headline, .benefits__headline,
+  .ind__headline, .partners__headline, .faq__headline, .cases__head, .res__head, .team2__head, .wrail__head { margin-bottom: 28px; }
+  .shead p, .cap__intro, .cmp__intro, .prc__intro, .team__intro, .ind__intro { font-size: 16px; margin-top: 12px; }
+  .semv h2, .svc-cat__left h2, .faq2 .faq__headline, .team2__headline, .ctaband__headline, .ctacard__title { font-size: 28px; }
+  .semv__answer, .sem__answer { font-size: 16px; }
+
+  /* stats */
+  .stats__value { font-size: 36px; }
+  .cstat__value { font-size: 48px; margin-bottom: 12px; }
+  .cstat__claim { font-size: 16px; margin-bottom: 14px; }
+  .challenge__grid { gap: 28px; }
+  .stats-row__value { font-size: 26px; }
+  .results__value { font-size: 34px; }
+
+  /* cards */
+  .cat-card, .prc-card, .case, .plist__item, .partner-card, .benefit, .diff-card { padding: 22px; gap: 12px; }
+  .cat-card__title, .case__result { font-size: 21px; }
+  .prc-card__title, .benefit__title { font-size: 19px; }
+  .prc-card__price { font-size: 26px; }
+  .cat__grid, .semv__grid { gap: 12px; }
+  .semv__card { padding: 20px; }
+  .semv__card h3 { font-size: 17px; }
+  .semv__price { padding: 24px; }
+  .semv__price-value { font-size: 32px; }
+  .semv__glance { margin-top: 28px; }
+  .semv__glance dd { font-size: 18px; }
+  .semv__split { gap: 28px; }
+  .semv__step h3 { font-size: 18px; }
+  .wcard { padding: 22px 20px; }
+  .wcard__title, .wcard--big .wcard__title { font-size: 19px; }
+  .wcard__quote p { font-size: 17px; }
+  .tcard__name { font-size: 18px; }
+  .loc-card__city { font-size: 21px; }
+
+  /* lists, faq, process */
+  .faq__question { padding: 18px 0; gap: 16px; font-size: 16px; }
+  .faq__toggle { width: 30px; height: 30px; }
+  .faq2 { gap: 24px; }
+  .process__step { padding: 20px 0; }
+  .process__step-title, .cap__title { font-size: 19px; }
+  .process__numeral { font-size: 64px; }
+  .svc-cat { padding: 48px 0; }
+  .svc-acc__item h3 { font-size: 17px; }
+
+  /* bands */
+  .clients { padding: 36px 0; }
+  .ctaband { padding: 48px 0; }
+  .ctawrap { padding: 32px 0; }
+  .ctacard { padding: 36px 22px; }
+  .ctacard__body { font-size: 16px; margin-bottom: 28px; }
+  .lm__inner, .final__inner, .ind__panel, .process__split { gap: 32px; }
+  .lm__bullets { gap: 12px; margin-bottom: 28px; }
+  .sem-abstract { padding: 24px 0; }
+  .prose { font-size: 16px; }
+  .prose h2 { font-size: 24px; margin: 36px 0 14px; }
+  .prose h3 { font-size: 20px; margin: 28px 0 10px; }
+
+  /* forms */
+  .lead-form input, .lead-form select, .final__form input, .final__form select, .lm__form input { height: 46px; font-size: 15px; padding: 0 16px; }
+  .lead-form textarea, .final__form textarea { height: 96px; font-size: 15px; padding: 12px 16px; }
+
+  .hdr { padding: 12px 0; }
+  .hero { padding: 120px 0 56px; }
+  .hero--light { padding: 112px 0 44px; }
+  .sem-abstract p { font-size: 16px; }
+  .cat-card__body { font-size: 15px; }
+  .cat-card__tags { padding-top: 10px; }
+  .cat-card__tag { font-size: 12px; padding: 5px 11px; }
+
+  /* footer */
+  .ftr { padding-top: 56px; }
+  .ftr__top { gap: 32px; }
+  .ftr__top + .ftr__mega { margin-top: 32px; }
+}
