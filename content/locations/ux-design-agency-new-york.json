@@ -1,21 +1,262 @@
 {
-  "_note": "DRAFT: replace hero/abstract/sections/faqs with the supplied SERP-based content, then set draft to false.",
-  "draft": true,
+  "draft": false,
   "order": 2,
   "title": "New York",
   "city": "New York City",
   "state": "NY",
   "keyword": "ux design agency new york",
   "anchor": "UX design agency New York",
-  "metaTitle": "UX design agency New York | Research-Led Product Design",
-  "metaDescription": "UX design agency New York for product teams in New York City: user research, UX and UI design, prototyping and usability testing. Book a free consultation.",
+  "metaTitle": "UX Design Agency New York | Fintech, Media & Health UX",
+  "metaDescription": "UX design agency New York teams hire for fintech, media, adtech and healthtech products: research, UX and UI design, prototypes and testing. From $5,000.",
   "hero": {
     "eyebrow": "ux design agency new york",
-    "h1": "UX design agency New York for products that need to perform",
-    "sub": "Senior UX researchers and designers working with product teams in New York City: research, UX and UI design, prototypes and usability testing in one engagement."
+    "h1": "UX design agency New York product teams can run on Eastern Time",
+    "sub": "Senior researchers and product designers for fintech, media, adtech and healthtech teams across Manhattan, Brooklyn and the tri-state area. Same time zone, one engagement from first interview to engineering handoff."
   },
-  "summary": "Research-led UI UX design for product teams in New York City.",
-  "updated": "2026-10-01",
-  "sections": [],
-  "faqs": []
+  "summary": "Research-led UX and UI design for New York fintech, media and healthtech teams, working on Eastern Time.",
+  "updated": "2026-10-02",
+  "abstract": "We are a remote-first UX design agency New York teams work with from our headquarters in Reston, Virginia, on the same Eastern Time clock as the city. New York teams bring us trading tools, publishing platforms, ad dashboards and patient apps; we research how people use them, redesign the flows and test them before release. Audits start at $5,000.",
+  "sections": [
+    {
+      "h2": "Why New York products need a different kind of UX work",
+      "format": "paragraph",
+      "answer": "<strong>New York software serves people who judge an interface in seconds: traders reading a blotter, editors racing a deadline, media buyers adjusting a campaign and patients booking a visit.</strong> A UX design agency New York teams hire has to design for that speed and for the compliance review that follows.",
+      "body": "<p>The city's product economy sits on top of Wall Street banks, insurers, publishers, ad networks and hospital systems. That mix produces dense, data-heavy interfaces with many user roles and legal sign-off on every release. Our researchers start with the people doing the work, map where they lose time, and turn those findings into flows and screens your engineers can ship. Because our headquarters in Reston runs on Eastern Time, stand-ups, reviews and research sessions fit inside your normal working day. Read more about our <a href=\"/services/digital-product-design-services/\">digital product design services</a>.</p>"
+    },
+    {
+      "h2": "Six deliverables New York teams get in an engagement",
+      "format": "list",
+      "answer": "<strong>A typical New York engagement produces 6 deliverables:</strong> stakeholder and user research, a heuristic and accessibility audit, a revised information architecture, high-fidelity UI, a component library and tested prototypes.",
+      "items": [
+        {
+          "title": "Stakeholder and user research.",
+          "body": "Interviews with 5–12 people per role, for example portfolio managers, operations analysts and compliance reviewers using one trading platform."
+        },
+        {
+          "title": "Heuristic and accessibility audit.",
+          "body": "A scored review of priority journeys against usability heuristics and WCAG 2.2 AA, for example a subscription paywall on a news site."
+        },
+        {
+          "title": "Information architecture.",
+          "body": "Navigation rebuilt with card sorts and tree tests, for example a content management system with hundreds of article templates."
+        },
+        {
+          "title": "High-fidelity UI.",
+          "body": "Responsive Figma screens for web and native apps, for example a campaign reporting view with real-time spend and pacing."
+        },
+        {
+          "title": "Component library.",
+          "body": "Tokens, components and usage notes, for example a shared kit for a bank's retail and wealth apps."
+        },
+        {
+          "title": "Tested prototypes.",
+          "body": "Clickable flows checked with 5 participants per round, for example a claims intake form before it goes to legal review."
+        }
+      ]
+    },
+    {
+      "h2": "Our five-stage process for New York engagements",
+      "format": "steps",
+      "answer": "<strong>Most New York projects run 4–8 weeks in 5 stages</strong>, and every review lands inside Eastern business hours, so nobody joins calls at 7 a.m. or 8 p.m.",
+      "items": [
+        {
+          "title": "Kickoff and goals (1–2 days)",
+          "body": "A 45-minute call sets the business metric, the user roles, the compliance constraints and the release date."
+        },
+        {
+          "title": "Research and audit (5–10 days)",
+          "body": "We interview users, review analytics and score the current product, then walk your team through the evidence."
+        },
+        {
+          "title": "Alignment workshops (2–3 days)",
+          "body": "Remote sessions bring product, engineering, risk and marketing to one set of priorities; in-person workshops in Manhattan can be arranged when the scope calls for it."
+        },
+        {
+          "title": "Design sprints (10–20 days)",
+          "body": "Flows, UI and a Figma prototype take shape with two scheduled reviews a week and async comments in between."
+        },
+        {
+          "title": "Validation and handoff (5–10 days)",
+          "body": "Prototype tests with 5 users per round, fixes, then annotated specs and components delivered to your developers."
+        }
+      ]
+    },
+    {
+      "h2": "What New York teams gain from outside UX capacity",
+      "format": "cards",
+      "answer": "<strong>Outside UX capacity helps New York teams in 4 ways:</strong> faster releases, fewer accessibility risks, clearer data screens and design time that does not wait on a hiring cycle.",
+      "items": [
+        {
+          "title": "Ships features sooner",
+          "body": "Validated prototypes cut the rework that usually surfaces in QA or legal review, so releases hold their dates."
+        },
+        {
+          "title": "Lowers accessibility exposure",
+          "body": "WCAG 2.2 checks during design matter in a state where website accessibility claims under the ADA are filed often."
+        },
+        {
+          "title": "Clarifies dense data",
+          "body": "Tables, charts and alerts are reorganized around the decisions users make, not around the database schema."
+        },
+        {
+          "title": "Adds senior designers without a long search",
+          "body": "Our designers join in 1–2 weeks, while a senior hire in the New York market can take months to close."
+        }
+      ]
+    },
+    {
+      "h2": "Eastern Time remote agency or a Manhattan studio?",
+      "format": "table",
+      "answer": "<strong>A remote-first agency on Eastern Time gives New York teams a full shared workday without Manhattan studio overhead.</strong> A studio around the corner still makes sense if you want designers sitting with your team several days a week.",
+      "caption": "How a remote-first Eastern Time agency compares with a Manhattan design studio",
+      "columns": [
+        "Factor",
+        "Remote-first agency (us)",
+        "Manhattan studio"
+      ],
+      "rows": [
+        [
+          "Time zone",
+          "Eastern Time, full working-day overlap",
+          "Eastern Time"
+        ],
+        [
+          "Workshops",
+          "Remote by default, in person in New York when needed",
+          "In person"
+        ],
+        [
+          "Who does the work",
+          "Senior researchers and designers",
+          "Depends on the studio"
+        ],
+        [
+          "Kickoff",
+          "1–2 weeks after signing",
+          "Depends on the studio"
+        ],
+        [
+          "Published pricing",
+          "$5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Usually quoted per project"
+        ]
+      ],
+      "links": [
+        {
+          "anchor": "UX research services",
+          "to": "/services/ux-research-services/"
+        },
+        {
+          "anchor": "UX audit services",
+          "to": "/services/ux-audit-services/"
+        }
+      ]
+    },
+    {
+      "h2": "What does New York UX design cost?",
+      "format": "paragraph",
+      "answer": "<strong>New York UX design with us costs $5,000–$15,000 for a 2–3 week audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Four things move the number: how many flows, how many platforms, how much research and whether a design system is in scope.",
+      "body": "<p>End-to-end product design that includes a design system runs $60,000–$180,000 over 8–16 weeks. Teams that want a standing design squad retain one for $15,000–$40,000 a month. As a UX design agency New York buyers can budget for, we send a fixed-scope proposal after a free consultation, before any work starts. Product companies selling subscriptions can see how we approach that lifecycle on our <a href=\"/services/saas-ux-design/\">SaaS UX design</a> page.</p>"
+    },
+    {
+      "h2": "New York industries we design for",
+      "format": "list",
+      "answer": "<strong>Five New York industries account for most of the product work we take on:</strong>",
+      "items": [
+        "Financial services and fintech, for example trading platforms, neobank apps and wealth dashboards; our <a href=\"/case-studies/tradezella/\">TradeZella</a> trading journal redesign shows the kind of data screens involved (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
+        "Media and publishing, for example newsroom tools, subscription paywalls and podcast or video players that must load fast on mobile.",
+        "Adtech and marketing technology, for example campaign builders and reporting suites sold as B2B software (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Healthtech, for example appointment booking, patient portals and care-team tools (<a href=\"/industries/healthcare/\">Healthcare UI UX design</a>).",
+        "Venture-backed startups, for example Flatiron and Brooklyn founders preparing a first release or a post-raise redesign (<a href=\"/industries/startups/\">Startups UI UX design</a>)."
+      ]
+    },
+    {
+      "h2": "UX design agency New York FAQs",
+      "format": "faq",
+      "answer": "<strong>Five questions New York teams usually raise before signing with a UX design agency.</strong>",
+      "faqs": [
+        {
+          "q": "Is your UX design agency based in New York?",
+          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia, without a New York office. We share Eastern Time with the city, so meetings run in your normal hours, and in-person workshops in New York can be arranged when needed.</p>"
+        },
+        {
+          "q": "Can you work within a bank's or insurer's compliance process?",
+          "a": "<p>Yes. We plan design reviews around your legal, risk and security checkpoints, work in your approved tools where required, and keep a record of design decisions for audit trails.</p>"
+        },
+        {
+          "q": "How soon can a New York engagement begin?",
+          "a": "<p>Usually 1–2 weeks after the discovery call, once the scope and proposal are signed.</p>"
+        },
+        {
+          "q": "Can you recruit research participants in New York?",
+          "a": "<p>Yes. We run moderated video interviews and unmoderated tests with participants recruited by role and location, typically 5–12 per user group within about a week.</p>"
+        },
+        {
+          "q": "What tools does a UX design agency New York teams hire from you work in?",
+          "a": "<p>Figma for design and prototypes, Maze and Lookback for testing, and Figma plus Storybook for design system documentation.</p>"
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "keywords": [
+    "ux design agency new york",
+    "ux design agency nyc",
+    "ui ux design agency new york",
+    "new york ux design",
+    "fintech ux design new york"
+  ],
+  "centralEntity": "UX design agency in New York",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) on Eastern Time selling research-led product design engagements to New York City fintech, media, adtech and healthtech teams.",
+  "semantic": {
+    "entities": [
+      "New York City",
+      "Manhattan",
+      "Brooklyn",
+      "Wall Street",
+      "Eastern Time",
+      "fintech",
+      "media and publishing",
+      "adtech",
+      "healthtech",
+      "Americans with Disabilities Act (ADA)",
+      "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "Figma"
+    ],
+    "ngrams": [
+      "ux design agency new york",
+      "new york ux design",
+      "eastern time",
+      "trading platforms",
+      "subscription paywalls"
+    ],
+    "skipgrams": [
+      "agency … new york",
+      "design … wall street",
+      "ux … eastern time"
+    ],
+    "nlpKeywords": [
+      "product teams",
+      "user research",
+      "accessibility audit",
+      "data-heavy interfaces",
+      "compliance review",
+      "design system",
+      "remote-first"
+    ]
+  },
+  "mentions": [
+    "New York City",
+    "Manhattan",
+    "Wall Street",
+    "Eastern Time",
+    "fintech",
+    "media and publishing",
+    "adtech",
+    "healthtech",
+    "Figma",
+    "WCAG 2.2"
+  ],
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-02"
 }
