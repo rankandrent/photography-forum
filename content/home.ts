@@ -9,7 +9,7 @@ import { yearsInBusiness } from "@/lib/site";
  */
 export const home = {
   meta: {
-    title: "UI UX Design Agency | Research-Led UI UX Design Services",
+    title: "UI UX Design Services | Research-Led UI UX Design Agency",
     description:
       "UI UX design services for growing businesses: user research, UX and UI design, prototyping, design systems, and usability testing tied to measurable outcomes.",
   },
