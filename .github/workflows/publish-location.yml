@@ -3,7 +3,11 @@ name: Publish next location page
 # One new city page per day. The push triggers the Cloudflare build/deploy.
 on:
   schedule:
+    # GitHub can delay or skip scheduled runs, so there are backup slots.
+    # The script publishes at most one page per day, so extra runs are no-ops.
     - cron: "7 14 * * *" # 14:07 UTC ≈ 9–10am US Eastern
+    - cron: "37 18 * * *"
+    - cron: "17 23 * * *"
   workflow_dispatch:
 
 permissions:
