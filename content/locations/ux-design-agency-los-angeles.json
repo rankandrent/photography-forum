@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 3,
   "title": "Los Angeles",
   "city": "Los Angeles",
@@ -14,7 +14,7 @@
     "sub": "Product researchers and designers for streaming apps, direct-to-consumer stores, game companions and aerospace tools across LA, Santa Monica, Burbank and Orange County. Remote-first, with mornings shared on Pacific Time."
   },
   "summary": "Research-led UX and UI design for Los Angeles entertainment, e-commerce, gaming and aerospace products.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "abstract": "This remote-first UX design agency Los Angeles teams can hire is headquartered in Reston, Virginia, and keeps 5–6 hours of daily overlap with Pacific Time. We study how viewers, shoppers, players and engineers use a product, then redesign and test the screens that matter. Work starts with a $5,000–$15,000 audit.",
   "sections": [
     {
@@ -246,5 +246,6 @@
     "aerospace",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-03"
 }
