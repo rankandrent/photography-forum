@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 4,
   "title": "Boston",
   "city": "Boston",
@@ -14,7 +14,7 @@
     "sub": "Researchers and product designers for lab platforms, clinical tools, learning products and robot interfaces in Boston, Cambridge and along Route 128. Same Eastern Time workday, evidence behind every design decision."
   },
   "summary": "Evidence-based UX and UI design for Boston life sciences, healthcare, edtech and robotics products.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-04",
   "abstract": "We are a remote-first UX design agency Boston teams reach on the same Eastern Time workday, headquartered in Reston, Virginia. Our researchers sit with scientists, clinicians, students and operators, then redesign and validate the software they rely on. A focused audit costs $5,000–$15,000; a full research and design sprint costs $25,000–$60,000.",
   "sections": [
     {
@@ -245,5 +245,6 @@
     "FDA",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-04"
 }
