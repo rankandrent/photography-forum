@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { useEffect, useState } from "react";
 import { routes } from "@/lib/site";
 
@@ -140,6 +141,7 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
         <Link href={routes.caseStudies} onClick={close}>Our work</Link>
         <Link href={routes.blog} onClick={close}>Insights</Link>
         <Link href={routes.contact} className="btn" onClick={close}>Schedule a call</Link>
+        <SocialLinks className="social hdr__social" />
       </nav>
     </header>
   );

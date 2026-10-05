@@ -4,6 +4,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
 import { pageLd, pageMetadata } from "@/lib/seo";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { SITE, addressLine, routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -26,6 +27,7 @@ export default function ContactPage() {
             <address className="phero__address">{addressLine}</address>
             <a href={`mailto:${SITE.email}`} className="phero__mail">{SITE.email}</a>
             <a href={`tel:${SITE.phone}`} className="phero__mail">{SITE.phoneDisplay}</a>
+            <SocialLinks className="social social--dark phero__social" />
           </>
         }
       />

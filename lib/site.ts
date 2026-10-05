@@ -17,7 +17,18 @@ export const SITE = {
   /** E.164 for links and schema; display form is formatted in the UI */
   phone: "+12029783410",
   phoneDisplay: "(202) 978-3410",
-  sameAs: [] as string[],
+  social: [
+    { name: "Behance", icon: "behance", url: "https://www.behance.net/uiuxdesignservices" },
+    { name: "Dribbble", icon: "dribbble", url: "https://dribbble.com/uiuxdesignservices_us" },
+    { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/uiuxdesignservices.us/" },
+    { name: "Facebook", icon: "facebook", url: "https://www.facebook.com/uiuxdesignservices.us/" },
+    { name: "X", icon: "x", url: "https://x.com/uiuxdesignus" },
+    { name: "Bluesky", icon: "bluesky", url: "https://bsky.app/profile/uiuxdesignservices.bsky.social" },
+    { name: "Linktree", icon: "linktree", url: "https://linktr.ee/uiuxdesignservices" },
+  ],
+  get sameAs(): string[] {
+    return this.social.map((s) => s.url);
+  },
   description:
     "UI UX design services for growing businesses. User research, UX design, UI design, prototyping, design systems, and usability testing that turn interfaces into measurable business outcomes.",
 };

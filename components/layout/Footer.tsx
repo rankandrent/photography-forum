@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { anchorOf, getIndustries, getLocations, servicesByCategory } from "@/lib/content";
 import { SITE, addressLine, cap, routes } from "@/lib/site";
 
@@ -48,13 +49,9 @@ export function Footer() {
             <a href={`mailto:${SITE.email}`} className="ftr__mail">{SITE.email}</a>
             <a href={`tel:${SITE.phone}`} className="ftr__mail">{SITE.phoneDisplay}</a>
           </p>
+          <SocialLinks className="social social--dark" />
           <Link href={routes.contact} className="ftr__cta">Book a free consultation <span aria-hidden="true">→</span></Link>
           <p className="ftr__copy">© {new Date().getFullYear()} {SITE.domain}. All rights reserved.</p>
-          {!!SITE.sameAs.length && (
-            <ul className="ftr__social">
-              {SITE.sameAs.map((u) => <li key={u}><a href={u} rel="noopener" target="_blank">{new URL(u).hostname.replace("www.", "")}</a></li>)}
-            </ul>
-          )}
         </div>
         <nav className="ftr__cols" aria-label="Footer">
           {cols.map((c) => (
