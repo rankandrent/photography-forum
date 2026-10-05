@@ -7,6 +7,9 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-05 (owner): Image/table duplication is a FAIL. For every image, read the 10 lines around it; if a table or list nearby carries the same items, FAIL it and name the image. I missed this in choose-ux-research-agency (4 images repeated their tables/lists) and the owner caught it after publishing.
+- 2026-10-05 (owner): FAIL a bold H2 answer longer than ~30 words (one sentence). Report the H2 and a shorter version.
+
 
 ## Lessons (learned from runs, QA, audits and results)
 

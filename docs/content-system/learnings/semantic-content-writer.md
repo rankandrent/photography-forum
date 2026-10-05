@@ -7,6 +7,9 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-05 (owner): Never place a `<!-- visual: … -->` marker next to a table or list that already shows the same content. In choose-ux-research-agency the scorecard, brief checklist, red-flag and proposal images all repeated the post's own tables/lists and had to be removed after publishing. Ask for a visual only when it shows something the text cannot: an overview flow of the whole process, a decision tree, relationships, a timeline, a before/after or a 2×2.
+- 2026-10-05 (owner): Keep the bold extractive answer under each H2 to one sentence of at most ~30 words. Long bold blocks hurt readability; put the detail in the normal paragraph that follows.
+
 
 ## Lessons (learned from runs, QA, audits and results)
 

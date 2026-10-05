@@ -10,7 +10,7 @@ post from going live. Read `docs/content-system/RULES.md` and your lessons in `d
 Check and record each item as PASS / FIX / FAIL in `content/briefs/<slug>.qa.md`:
 1. Intent & cannibalisation: matches the brief keyword's intent; no other page in `content/` targets it.
 2–3. Facts and honesty are checked by the parallel `fact-checker`; skip them here.
-4. Semantic SEO: bold answer under every H2, entities/n-grams from the brief covered, keyword density
+4. Semantic SEO: bold answer under every H2 (one sentence, ≤ ~30 words), entities/n-grams from the brief covered, keyword density
    1–2%, abbreviations expanded, boolean FAQs start Yes/No, banned phrases and hedges absent,
    title/metaTitle/description lengths.
 5. Internal links: 6–12, all targets exist, hub linked early, anchors varied.

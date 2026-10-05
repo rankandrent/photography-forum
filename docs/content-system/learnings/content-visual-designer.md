@@ -7,6 +7,8 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-05 (owner): Never draw a graphic of a table or list the post already contains; skip that marker and propose an overview/flow/timeline instead.
+
 
 ## Lessons (learned from runs, QA, audits and results)
 
