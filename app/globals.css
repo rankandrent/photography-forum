@@ -1660,3 +1660,17 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
   .post-article .ptable th, .post-article .ptable td { padding: 12px 14px; }
   .post-article figure { margin: 32px 0; }
 }
+
+/* ===== Blog layout v2: wider article, compact side CTA ===== */
+.pgrid3 { grid-template-columns: 200px minmax(0, 760px) 232px; gap: 40px; }
+.pgrid3 .post-article { max-width: 760px; }
+.prail__card { padding: 18px; gap: 10px; border-radius: 16px; }
+.prail__eyebrow { font-size: 10px; }
+.prail__title { font-size: 17px; line-height: 1.25; }
+.prail__body { font-size: 13px; line-height: 1.5; }
+.prail__card .btn { height: 40px; font-size: 13px; padding: 0 14px; }
+.prail__link { font-size: 13px; }
+.ptoc li a { font-size: 13.5px; }
+@media (max-width: 1280px) { .pgrid3 { grid-template-columns: 190px minmax(0, 1fr) 220px; gap: 32px; } }
+@media (max-width: 1200px) { .pgrid3 { grid-template-columns: 190px minmax(0, 1fr); } }
+@media (max-width: 900px) { .pgrid3 { grid-template-columns: minmax(0, 1fr); } }
