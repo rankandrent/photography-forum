@@ -57,7 +57,10 @@ export default async function ServicePage({ params }: Props) {
   const cases = caseStudiesForService(s.slug).slice(0, 3);
   const visualCase = caseStudiesForService(s.slug).find((c) => c.image);
   // silo: the hub lists the guides that support it first
-  const posts = [...postsForService(s.slug)].sort((a, b) => Number(b.services[0] === s.slug) - Number(a.services[0] === s.slug)).slice(0, 6);
+  const siloPosts = [...postsForService(s.slug)].sort((a, b) => Number(b.services[0] === s.slug) - Number(a.services[0] === s.slug));
+  const posts = siloPosts.slice(0, 6);
+  // pillar links down to every guide in its silo: the ones beyond the cards are listed as links
+  const morePosts = siloPosts.slice(6);
   const others = relatedServices(s);
   const h = s.headings ?? {};
   const b = { ...DEFAULT_BLOCKS, ...s.blocks };
@@ -120,7 +123,7 @@ export default async function ServicePage({ params }: Props) {
 
       <Faq heading={faqSection?.h2 ?? h.faqs ?? `${cap(anchorOf(s))} FAQs`} intro={faqSection?.answer} items={allFaqs} />
 
-      {b.posts && <Resources heading={h.posts ?? `${cap(anchorOf(s))} guides`} posts={posts} tone="light" />}
+      {b.posts && <Resources heading={h.posts ?? `${cap(anchorOf(s))} guides`} posts={posts} more={morePosts} tone="light" />}
 
       {b.related && (
         <ServiceGrid id="related-services" eyebrow={s.category} heading="Related UI UX design services" services={others} allHref={routes.services} />

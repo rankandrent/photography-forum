@@ -27,6 +27,9 @@ Reston, VA (founded 2017). Next.js static export; content lives in `content/`.
 - Links inside a post: UP to its hub (required, early and once more near the end), SIDEWAYS to posts
   in the same silo, DOWN to case studies that used that service. At most ONE link to a different
   service hub, and only when the post genuinely needs it. Never link to another silo's posts.
+- Structure: Homepage → silo pillar (money page = the service hub) → supporting posts. The homepage
+  and main nav link to every pillar; each pillar links down to ALL its posts (cards + list); each
+  post links up to its pillar and to the previous/next post in its silo chain (template).
 - The hub page lists its silo's guides automatically; the post page shows the hub breadcrumb,
   a mid-article service CTA and a "Part of our … guides" box (built into the template).
 - Every silo should grow toward full coverage of its hub's questions before broadening:

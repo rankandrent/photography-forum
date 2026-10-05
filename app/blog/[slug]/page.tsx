@@ -41,7 +41,12 @@ export default async function PostPage({ params }: Props) {
   // silo: the first service is the hub this post supports
   const hub = services[0];
   const hubName = hub ? cap(anchorOf(hub)) : undefined;
-  const siblings = hub ? postsForService(hub.slug).filter((x) => x.slug !== p.slug && x.services[0] === hub.slug).slice(0, 4) : [];
+  // silo chain: the hub's own posts oldest → newest, so each post links to the previous and next one
+  const chain = hub ? postsForService(hub.slug).filter((x) => x.services[0] === hub.slug).sort((a, b) => a.date.localeCompare(b.date)) : [];
+  const at = chain.findIndex((x) => x.slug === p.slug);
+  const prev = at > 0 ? chain[at - 1] : undefined;
+  const next = at >= 0 && at < chain.length - 1 ? chain[at + 1] : undefined;
+  const siblings = chain.filter((x) => x.slug !== p.slug && x !== prev && x !== next).slice(-4);
   const [first, rest] = splitAt3rdH2(p.html);
   const crumbs = hub
     ? [{ name: hubName!, path: routes.service(hub.slug) }, { name: p.title, path }]
@@ -79,6 +84,12 @@ export default async function PostPage({ params }: Props) {
           {hub && (
             <nav className="prose post-silo" aria-label={`More on ${hubName}`}>
               <p className="post-silo__title">Part of our <Link href={routes.service(hub.slug)}>{hubName}</Link> guides</p>
+              {(prev || next) && (
+                <div className="post-silo__nav">
+                  {prev && <Link href={routes.post(prev.slug)} rel="prev"><span>← Previous guide</span>{prev.title}</Link>}
+                  {next && <Link href={routes.post(next.slug)} rel="next"><span>Next guide →</span>{next.title}</Link>}
+                </div>
+              )}
               {!!siblings.length && (
                 <ul>
                   {siblings.map((x) => <li key={x.slug}><Link href={routes.post(x.slug)}>{x.title}</Link></li>)}

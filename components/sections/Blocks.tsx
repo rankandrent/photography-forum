@@ -277,7 +277,7 @@ export function Faq({
 }
 
 /* ---------- Blog / resources cards ---------- */
-export function Resources({ heading = "Latest insights on UI UX design", posts, tone = "warm" }: { heading?: string; posts: Post[]; tone?: "warm" | "light" }) {
+export function Resources({ heading = "Latest insights on UI UX design", posts, more = [], tone = "warm" }: { heading?: string; posts: Post[]; more?: Post[]; tone?: "warm" | "light" }) {
   if (!posts.length) return null;
   return (
     <section className={`section section--${tone}`} aria-labelledby="res-heading">
@@ -289,6 +289,11 @@ export function Resources({ heading = "Latest insights on UI UX design", posts, 
         <div className="res__grid">
           {posts.map((p) => <PostCard key={p.slug} p={p} />)}
         </div>
+        {!!more.length && (
+          <ul className="res__more">
+            {more.map((p) => <li key={p.slug}><Link href={routes.post(p.slug)}>{p.title}</Link></li>)}
+          </ul>
+        )}
       </div>
     </section>
   );
