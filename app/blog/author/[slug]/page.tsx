@@ -46,7 +46,7 @@ export default async function AuthorPage({ params }: Props) {
           "@type": "ProfilePage",
           url: absoluteUrl(path),
           mainEntity: a.person
-            ? { "@type": "Person", name: a.name, jobTitle: a.role, ...(a.photo && { image: absoluteUrl(a.photo) }), ...(a.linkedin && { sameAs: [a.linkedin] }), worksFor: { "@id": `${SITE.url}/#organization` } }
+            ? { "@type": "Person", name: a.name, jobTitle: a.role, ...(a.photo && { image: absoluteUrl(a.photo) }), ...(a.linkedin && { sameAs: [a.linkedin] }), ...(a.expertise.length && { knowsAbout: a.expertise }), worksFor: { "@id": `${SITE.url}/#organization` } }
             : { "@id": `${SITE.url}/#organization` },
         }}
       />

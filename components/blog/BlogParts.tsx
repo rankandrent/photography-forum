@@ -69,6 +69,7 @@ export function AuthorCard({ a, count, compact }: { a: Author; count?: number; c
         <p className="acard__name"><Link href={blogRoutes.author(a.slug)}>{a.name}</Link></p>
         <p className="acard__role">{a.role}</p>
         {!compact && <p className="acard__bio">{a.bio}</p>}
+        {!compact && !!a.expertise.length && <p className="acard__tags">{a.expertise.map((e) => <span key={e}>{e}</span>)}</p>}
         <p className="acard__links">
           {typeof count === "number" && <span>{count} {count === 1 ? "article" : "articles"}</span>}
           {a.linkedin && <a href={a.linkedin} target="_blank" rel="noopener">LinkedIn</a>}

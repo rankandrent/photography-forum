@@ -1,0 +1,40 @@
+{
+  "note": "Real author bios from each person's LinkedIn (paste their About/experience in 2-4 sentences). Empty fields fall back to the role line. expertise feeds the author page and Person schema (knowsAbout).",
+  "authors": {
+    "sahar-asif": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    },
+    "shahmir-farooq": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    },
+    "ahmad-ullah": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    },
+    "saliha-shahzad": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    },
+    "talha-saleem": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    },
+    "faizan-khan": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    },
+    "umar-sarwar": {
+      "bio": "",
+      "expertise": [],
+      "yearsExperience": null
+    }
+  }
+}
