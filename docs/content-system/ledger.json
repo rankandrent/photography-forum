@@ -1,6 +1,17 @@
 {
   "note": "Shared memory for the content agents: what was planned, shipped and audited. The orchestrator updates it on every run.",
-  "runs": [],
+  "runs": [
+    {
+      "date": "2026-10-05",
+      "goal": "1 post for ux-research-services (new silo: BOFU first)",
+      "jobs": [
+        {
+          "hub": "ux-research-services",
+          "funnel": "bofu"
+        }
+      ]
+    }
+  ],
   "posts": [],
   "audits": []
 }
