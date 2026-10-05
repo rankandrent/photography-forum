@@ -12,6 +12,21 @@
       ]
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "slug": "choose-ux-research-agency",
+      "hub": "ux-research-services",
+      "keyword": "how to choose a ux research agency",
+      "funnel": "bofu",
+      "author": "sahar-asif",
+      "date": "2026-10-05",
+      "words": 2378,
+      "images": 6,
+      "internalLinks": 8,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "notes": "Loop 1: 7 fact fixes + 5 QA text fixes + unreadable infographics. Loop 2: cover text cropped on phones; cover redrawn (verified by orchestrator)."
+    }
+  ],
   "audits": []
 }

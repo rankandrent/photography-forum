@@ -1,5 +1,63 @@
 {
   "note": "Structural fingerprint of every published post, so new posts never repeat the same pattern. The orchestrator appends one entry per shipped post.",
-  "fields": ["slug", "hub", "type", "funnel", "introStyle", "h2Frames", "sectionOrder", "visualTypes", "ctaAngle", "faqCount", "words", "tableCount", "listStyle"],
-  "posts": []
+  "fields": [
+    "slug",
+    "hub",
+    "type",
+    "funnel",
+    "introStyle",
+    "h2Frames",
+    "sectionOrder",
+    "visualTypes",
+    "ctaAngle",
+    "faqCount",
+    "words",
+    "tableCount",
+    "listStyle"
+  ],
+  "posts": [
+    {
+      "slug": "choose-ux-research-agency",
+      "hub": "ux-research-services",
+      "type": "Guide",
+      "funnel": "bofu",
+      "introStyle": "buyer scenario",
+      "h2Frames": [
+        "what/why",
+        "which criteria",
+        "how to check",
+        "questions to ask",
+        "red flags",
+        "compare proposals",
+        "contract terms",
+        "first 2 weeks",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "What decision should the research answer first?",
+        "How do you write a research brief agencies can quote?",
+        "Which 7 criteria separate a real research agency?",
+        "How do you test an agency's participant recruitment?",
+        "What should a sample research readout show you?",
+        "12 questions to ask on the pitch call",
+        "Red flags that mean you should walk away",
+        "How do you compare research proposals on price and scope?",
+        "Which contract terms protect your research data?",
+        "What should the first 2 weeks look like after signing?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "checklist",
+        "scorecard",
+        "red-flag map",
+        "proposal comparison",
+        "timeline"
+      ],
+      "ctaAngle": "send your research brief \u2192 free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2378,
+      "tableCount": 4,
+      "listStyle": "numbered steps + bullet criteria"
+    }
+  ]
 }

@@ -18,8 +18,8 @@ takeaways:
   - "Normalize proposals to user groups, participants, methods, recruitment difficulty and readout before comparing price."
   - "The contract should give you the recordings, transcripts and repository, with written deletion dates for participant data."
 image: /blog/choose-ux-research-agency/cover.svg
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 A product manager has a board meeting in six weeks, an onboarding redesign on the roadmap and three pitches from user experience (UX) research agencies that all promise "interviews, usability testing and actionable insights." The pitches read the same, so the cheapest one starts to look safe. This guide shows how to choose a UX research agency on evidence instead: a 1-page brief, a weighted scorecard, a recruitment test, 12 pitch-call questions and the contract terms that protect your data.
@@ -79,7 +79,7 @@ The weights are our suggestion; adjust them to your decision.
 
 **Method fit.** A vendor runs the methods you ordered; a UX research partner asks why you ordered them, and pushes back with a reason tied to your decision.
 
-**Domain experience.** Users of business-to-business (B2B) [software as a service (SaaS) products](/industries/saas/), clinicians and warehouse operators behave differently in sessions. Ask for a similar study, not a similar logo: for a trading platform, we would show our [TradeZella discovery and stakeholder interviews](/case-studies/tradezella/), not a list of fintech brands.
+**Domain experience.** Users of business-to-business (B2B) software as a service (SaaS) products, clinicians and warehouse operators behave differently in sessions, which is why [SaaS UI UX design](/industries/saas/) research starts with how admins and end users differ. Ask for a similar study, not a similar logo: for a trading platform, we would show our [TradeZella discovery and stakeholder interviews](/case-studies/tradezella/), not a list of fintech brands.
 
 ## How do you test an agency's participant recruitment?
 

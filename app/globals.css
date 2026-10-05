@@ -1596,9 +1596,6 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
   .phead__title { font-size: 30px; }
   .phead__desc { font-size: 16px; margin-bottom: 20px; }
   .pcover { aspect-ratio: 16 / 9; border-radius: 16px; }
-  /* real cover images keep their own ratio so their text is never cropped */
-  .pcover--img { aspect-ratio: auto; }
-  .pcover--img img { height: auto; }
   .pcover__label { left: 20px; bottom: 18px; }
   .pwrap { padding: 32px 0 48px; }
   .pgrid3 .prose { font-size: 16px; }

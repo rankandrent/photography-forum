@@ -1,32 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600" font-family="Manrope, system-ui, sans-serif">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0A0C"/><stop offset="1" stop-color="#4a0d22"/></linearGradient></defs>
 <rect width="1600" height="600" fill="url(#g)"/>
-<text x="100" y="150" font-size="20" font-weight="700" fill="#E2225F" letter-spacing="3">UX RESEARCH SERVICES GUIDE</text>
-<text x="100" y="260" font-size="84" font-weight="800" fill="#FFFFFF">How to choose a</text>
-<text x="100" y="360" font-size="84" font-weight="800" fill="#FFFFFF">UX research agency</text>
-<text x="100" y="430" font-size="32" font-weight="600" fill="#FFFFFF" fill-opacity="0.75">A buyer’s scorecard</text>
-<g opacity="0.9"><rect x="1170" y="110" width="290" height="380" rx="22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="1255" y="92" width="120" height="40" rx="12" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="1205" y="180" width="26" height="26" rx="6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1211 193 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="1250" y1="189" x2="1420" y2="189" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
-<line x1="1250" y1="201" x2="1360" y2="201" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4"/>
-<rect x="1205" y="238" width="26" height="26" rx="6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1211 251 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="1250" y1="247" x2="1380" y2="247" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
-<line x1="1250" y1="259" x2="1340" y2="259" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4"/>
-<rect x="1205" y="296" width="26" height="26" rx="6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1211 309 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="1250" y1="305" x2="1420" y2="305" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
-<line x1="1250" y1="317" x2="1320" y2="317" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4"/>
-<rect x="1205" y="354" width="26" height="26" rx="6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="1250" y1="363" x2="1380" y2="363" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
-<line x1="1250" y1="375" x2="1360" y2="375" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4"/>
-<rect x="1205" y="412" width="26" height="26" rx="6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="1250" y1="421" x2="1420" y2="421" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
-<line x1="1250" y1="433" x2="1340" y2="433" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4"/>
+<g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<circle cx="150" cy="300" r="70" stroke-opacity="0.35"/>
+<circle cx="150" cy="300" r="120" stroke-opacity="0.2"/>
+<circle cx="150" cy="300" r="170" stroke-opacity="0.1"/>
+<circle cx="150" cy="282" r="20" stroke-opacity="0.7"/>
+<path d="M118 334 q32 -34 64 0" stroke-opacity="0.7"/>
 </g>
-<circle cx="1440" cy="440" r="58" fill="#2e0b17" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><line x1="1481" y1="481" x2="1530" y2="530" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1408 440 q32 -28 64 0 q-32 28 -64 0 z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1440" cy="440" r="8" fill="#E2225F"/>
-<path d="M100 500 H900" stroke="#FFFFFF" stroke-opacity="0.25"/><circle cx="100" cy="500" r="4" fill="#E2225F"/><circle cx="500" cy="500" r="4" fill="#FFFFFF" fill-opacity="0.5"/><circle cx="900" cy="500" r="4" fill="#FFFFFF" fill-opacity="0.5"/>
+<circle cx="150" cy="180" r="6" fill="#E2225F"/>
+<circle cx="270" cy="300" r="5" fill="#FFFFFF" fill-opacity="0.5"/>
+<text x="300" y="112" font-size="36" font-weight="800" fill="#E2225F" letter-spacing="2">UX RESEARCH SERVICES GUIDE</text>
+<text x="300" y="226" font-size="80" font-weight="800" fill="#FFFFFF">How to choose</text>
+<text x="300" y="316" font-size="80" font-weight="800" fill="#FFFFFF">a UX research</text>
+<text x="300" y="406" font-size="80" font-weight="800" fill="#FFFFFF">agency</text>
+<text x="300" y="484" font-size="40" font-weight="700" fill="#FFFFFF" fill-opacity="0.8">A buyer’s scorecard</text>
+<path d="M300 528 H1000" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+<circle cx="300" cy="528" r="5" fill="#E2225F"/><circle cx="650" cy="528" r="5" fill="#FFFFFF" fill-opacity="0.5"/><circle cx="1000" cy="528" r="5" fill="#FFFFFF" fill-opacity="0.5"/>
+<g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+<rect x="1080" y="120" width="260" height="360" rx="22"/>
+<rect x="1150" y="102" width="120" height="40" rx="12"/>
+<rect x="1110" y="186" width="26" height="26" rx="6"/>
+<rect x="1110" y="250" width="26" height="26" rx="6"/>
+<rect x="1110" y="314" width="26" height="26" rx="6"/>
+<rect x="1110" y="378" width="26" height="26" rx="6"/>
+<path d="M1155 195 H1305 M1155 259 H1285 M1155 323 H1305 M1155 387 H1265" stroke-opacity="0.8"/>
+<path d="M1155 207 H1245 M1155 271 H1225 M1155 335 H1255 M1155 399 H1215" stroke-opacity="0.4"/>
+</g>
+<path d="M1116 199 l5 6 l10 -12 M1116 263 l5 6 l10 -12 M1116 327 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1360" cy="420" r="62" fill="#2e0b17" stroke="#FFFFFF" stroke-width="3"/>
+<path d="M1404 464 L1460 520" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+<path d="M1326 420 q34 -30 68 0 q-34 30 -68 0 z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1360" cy="420" r="9" fill="#E2225F"/>
+<g fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"><path d="M1440 80 h100 M1470 110 h70 M1500 140 h40"/></g>
 </svg>
