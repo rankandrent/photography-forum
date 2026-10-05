@@ -75,6 +75,29 @@ Reston, VA (founded 2017). Next.js static export; content lives in `content/`.
   QA and fact-check failures, audit findings and ranking/traffic results become lessons for the
   agent that owns them. Lessons are evidence-based rules, not opinions.
 
+## Internal links from authority we already have (Edward Sturm playbook, E1173)
+
+Google already tells us which of our pages it associates with a keyword. Concentrate that relevance
+on the one page that best satisfies the intent instead of starting from zero.
+
+1. Pick one target keyword and the target page that best satisfies its intent.
+2. Find the sources: Google `site:uiuxdesignservices.us "<keyword>"` (WebSearch) for what is indexed, and
+   `npm run build && npm run links:find -- "<target path>" "<keyword>" "<variant>"` for every built page
+   that mentions it but does not link yet (it prints the section #id and the sentence).
+3. On each genuinely relevant source, link the existing sentence (or add one natural sentence) to the
+   target. Skip weak matches where the words appear but the topic differs.
+4. Anchors: natural entity + attribute / use-case phrasing, varied across sources. Never only exact
+   match, never "click here", one link per target per source page.
+5. If the relevant text sits deep in a long target page, link to its section: `/services/x/#section-id`.
+6. Funnel discipline: link heavily from TOFU/MOFU informational posts; keep BOFU posts and conversion
+   paths (contact, pricing CTAs) lean so a ready buyer is not pulled away from the CTA.
+7. No page satisfies the intent? Answer who is searching / what they want / what they want to achieve,
+   then create the page: keyword in title, slug, H1 and first sentence, intent answered above the fold
+   — and immediately give it 2–3 links from already-indexed related pages (steps 2–4).
+8. Hub banking: pillar (service) pages may mention and link sub-topics before their posts exist, so the
+   hub collects relevance and the new post starts with a head start.
+9. Fewer, well-placed, clickable links beat many links. A link nobody would click is not worth adding.
+
 ## Competitor topics (out-do, never copy)
 
 - The researcher tracks competitor blogs that rank for our silos in `competitors.json` and their

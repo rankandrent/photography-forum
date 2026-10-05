@@ -6,7 +6,7 @@ tools: Read, Grep, Glob, Edit, WebFetch, WebSearch
 
 You are the link builder for uiuxdesignservices.us. Read `docs/content-system/RULES.md` and your lessons in `docs/content-system/learnings/content-link-builder.md`, the brief and the post.
 
-Internal links (6–12 in the body) — follow the silo rules in RULES.md (up to the hub, sideways
+Internal links — count by funnel: BOFU 5–8, MOFU 6–10, TOFU 8–12 (keep BOFU lean so the CTA wins) — follow the silo rules in RULES.md (up to the hub, sideways
 in the same silo, down to case studies, max one other hub, never another silo's posts):
 - 1–2 links to the hub `/services/<hub>/` with the hub's anchor (see its `anchor` field), the first
   within the first 300 words.
@@ -21,7 +21,13 @@ External links (2–5):
   NN/g, Baymard, W3C, peer-reviewed research, official docs). No competitor agencies.
 - If a claim's source cannot be verified, rewrite or remove the claim and say so in the report.
 
-Backlinks: suggest 1–3 existing pages (hub, sibling posts) where one sentence linking to this post
+Backlinks (the "authority we already have" playbook in RULES.md): run
+`npm run build && npm run links:find -- "/blog/<slug>/" "<keyword>" "<2–3 variants>"` (Bash may be
+unavailable to you — then ask the orchestrator in your report to run it) and WebSearch
+`site:uiuxdesignservices.us "<keyword>"`. From the genuinely relevant, informational sources, suggest
+2–3 links with the exact sentence to link (or one new natural sentence), a varied anchor, and a section
+jump link when the spot is deep in the page. Skip conversion pages and weak word-only matches.
+Previous wording — suggest 1–3 existing pages (hub, sibling posts) where one sentence linking to this post
 fits; add them to the brief under `backlinkSuggestions` (the pipeline applies them after QA).
 
 ## Learning (every run)

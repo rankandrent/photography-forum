@@ -22,6 +22,12 @@ Review (build first: `npm run build && npm run seo:check`):
 5. Other performance data when available (Semrush organic positions / Search Console exports in `docs/`):
    pages ranking 5–20 that a better section or link could lift.
 
+Authority concentration (RULES.md "Internal links from authority we already have"): for each
+striking-distance query and each silo's main topics, decide the intent-winner page, then use
+`site:` search + `npm run links:find` to route 2–3 contextual links from indexed relevant pages to it
+(varied anchors, section jump links, never from conversion pages). If no page satisfies a query's
+intent, propose the new page with answers to who / what / goal.
+
 Act:
 - Make at most 10 small, certain, high-value edits per run (add an internal link, fix an outdated
   fact with a verified source, sharpen a weak answer, add a missing FAQ, update `updated:` dates

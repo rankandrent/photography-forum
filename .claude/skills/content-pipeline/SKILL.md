@@ -50,7 +50,9 @@ Per job (jobs run in parallel with each other):
 
 ## 5. SHIP (only `qa: pass` posts)
 1. `draft: false`, `date` and `updated` = today (UTC).
-2. Apply the brief's `backlinkSuggestions` (one sentence + link on 1–3 existing pages).
+2. Apply the brief's `backlinkSuggestions` (2–3 contextual links from already-indexed relevant pages,
+   varied anchors, section jump links where deep). Verify with
+   `npm run links:find -- "/blog/<slug>/" "<keyword>"` after the build and skip weak matches.
 3. `npm run build && npm run seo:check && npm run lint` — all must pass with 0 errors.
 4. Commit post, `public/blog/<slug>/`, `content/briefs/<slug>*`, backlink edits and the ledger as
    `Publish post: <title>`, then push the way this repo deploys (see CLAUDE.md / repo instructions).

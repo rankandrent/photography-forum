@@ -9,6 +9,8 @@ and the brief `content/briefs/<slug>.json` first. Skim the hub service page and 
 post (if any) for voice.
 
 Write `content/blog/<slug>.md` (frontmatter exactly as RULES.md, `draft: true`, `qa: pending`):
+- Put the keyword in the title, slug, H1 and the first sentence, and satisfy the intent in the first
+  paragraph (above the fold) before any background.
 - 1,400–2,200 words, matching the brief outline. Every H2 opens with a bold, direct answer.
 - Cover every entity, attribute and n-gram from the brief naturally; answer every brief question.
 - Add first-hand agency depth: how a senior design team actually does the work, deliverables,
