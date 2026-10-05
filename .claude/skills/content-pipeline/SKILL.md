@@ -1,33 +1,53 @@
 ---
 name: content-pipeline
-description: Runs the full blog content team for one post — keyword research, semantic writing, infographic visuals, internal/external linking, QA gate, then publish. Use when asked to create, write or publish a blog post / new content for a service.
+description: Agentic content team. You are the orchestrator - turn a goal ("2 posts for UX research", "fill gaps in SaaS cluster") into shipped blog posts by coordinating research, build and review agents in parallel with a repair loop. Use when asked to create, write or publish blog posts / new content.
 ---
 
-# Content pipeline (one post per run)
+# Agentic content pipeline — you are the orchestrator
 
-Arguments: a service hub slug (`/content-pipeline ux-research-services`) or a topic. With no argument,
-pick the hub with the fewest published posts (count `services[0]` across `content/blog/*.md`).
+```
+goal ─▶ orchestrator (you) ─┬─ RESEARCH  keyword researcher × N posts (parallel)
+                            ├─ BUILD     writer ─▶ visual designer ∥ link builder (parallel)
+                            ├─ REVIEW    content-qa ∥ fact-checker (parallel)
+                            │            └─ FAIL → route fixes to the owning agent → review again (≤ 2 loops)
+                            └─ SHIP      publish, backlinks, build checks, deploy, ledger
+```
 
-Read `docs/content-system/RULES.md`. Then run these agents **in order**, each with the Agent tool,
-passing the slug and the files the previous step produced. Wait for each to finish and read its
-report before starting the next.
+Read `docs/content-system/RULES.md` and `docs/content-system/ledger.json` first.
 
-1. `seo-keyword-researcher` → `content/briefs/<slug>.json`. Stop and report if no keyword passes the
-   cannibalisation check.
-2. `semantic-content-writer` → `content/blog/<slug>.md` (draft).
-3. `content-visual-designer` → `public/blog/<slug>/*.svg` placed in the post.
-4. `content-link-builder` → internal + external links, backlink suggestions in the brief.
-5. `content-qa` → `content/briefs/<slug>.qa.md` and `qa: pass|fail`.
-   - On `fail`: send the FAIL list back to the agent that owns each problem (writer, designer or
-     link builder), then run QA again. At most 2 repair rounds; after that stop, leave the post as a
-     draft and report the remaining problems to the user.
+## 1. Plan the goal
+- Arguments: a goal in plain words, a hub slug, or nothing. With nothing, the goal is
+  "1 post for the hub with the fewest published posts" (count `services[0]` in `content/blog/*.md`).
+- Turn the goal into N post jobs (default 1, max 3 per run), each with a hub and an angle.
+  Two jobs never share a hub in the same run (prevents overlapping keywords).
+- Record the plan in the ledger under `runs` (date, goal, jobs).
 
-## Publish (only when `qa: pass`)
+## 2. RESEARCH — parallel
+Launch one `seo-keyword-researcher` per job in a single message (parallel Agent calls). Each writes
+`content/briefs/<slug>.json`. Then compare the briefs with each other: if two keywords overlap in
+intent, drop or re-brief one. Drop any job whose researcher found no safe keyword.
 
-1. In the post set `draft: false`, `date` and `updated` to today (UTC).
+## 3. BUILD — writer, then designer ∥ link builder
+Per job (jobs run in parallel with each other):
+1. `semantic-content-writer` → `content/blog/<slug>.md` (draft, with visual/link/source markers).
+2. In one message, launch `content-visual-designer` and `content-link-builder` in parallel.
+   The designer writes SVGs + `content/briefs/<slug>.visuals.json`; the link builder edits links.
+3. When both finish, swap every visual marker in the post for its markdown from `visuals.json`.
+
+## 4. REVIEW — parallel, with a repair loop
+1. In one message, launch `content-qa` and `fact-checker` for the post.
+2. Apply every exact FIX/replacement they list.
+3. If either says `VERDICT: FAIL`, route each problem to its owner — wording/structure → writer,
+   images → designer, links/sources → link builder, false claims → writer with the fact-checker's
+   replacement — then run both reviewers again. Max 2 loops; then leave the post as a draft with
+   `qa: fail` and report what is left.
+4. Both PASS → set `qa: pass` in the frontmatter.
+
+## 5. SHIP (only `qa: pass` posts)
+1. `draft: false`, `date` and `updated` = today (UTC).
 2. Apply the brief's `backlinkSuggestions` (one sentence + link on 1–3 existing pages).
-3. `npm run build && npm run seo:check && npm run lint` — all must pass (0 errors).
-4. Commit `content/blog/<slug>.md`, `public/blog/<slug>/`, `content/briefs/<slug>*` and the
-   backlink edits with message `Publish post: <title>`, then push the way this repo deploys
-   (see the repo instructions / CLAUDE.md for the deploy remote and branch).
-5. Report to the user: URL `/blog/<slug>/`, keyword, word count, images, links, QA summary.
+3. `npm run build && npm run seo:check && npm run lint` — all must pass with 0 errors.
+4. Commit post, `public/blog/<slug>/`, `content/briefs/<slug>*`, backlink edits and the ledger as
+   `Publish post: <title>`, then push the way this repo deploys (see CLAUDE.md / repo instructions).
+5. Update `ledger.json` → `posts[]`: slug, hub, keyword, date, words, images, links, qa loops.
+6. Report: shipped URLs, keywords, QA/fact verdicts, loops used, anything left as a draft.

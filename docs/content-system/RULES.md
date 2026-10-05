@@ -75,9 +75,11 @@ as `## FAQs` with `### Question?` + answer. Images use
 |---|---|
 | seo-keyword-researcher | `content/briefs/<slug>.json` |
 | semantic-content-writer | `content/blog/<slug>.md` (draft) |
-| content-visual-designer | `public/blog/<slug>/*.svg` + image tags in the post |
+| content-visual-designer | `public/blog/<slug>/*.svg` + `content/briefs/<slug>.visuals.json` |
 | content-link-builder | links inside the post + `related` notes in the brief |
-| content-qa | `content/briefs/<slug>.qa.md` report + `qa:` field |
+| content-qa | `content/briefs/<slug>.qa.md` report (SEO, links, images, build) |
+| fact-checker | `content/briefs/<slug>.facts.md` report (facts, sources, honesty) |
+| orchestrator (`/content-pipeline`) | applies fixes and visuals, sets `qa:`, publishes, updates `ledger.json` |
 | site-seo-auditor | `docs/content-system/audits/<date>.md` + small safe edits |
 
 ## Checks every change must pass

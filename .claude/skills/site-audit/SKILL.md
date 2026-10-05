@@ -11,5 +11,6 @@ description: Runs the site-seo-auditor agent over the whole site, applies its sm
    price, URL or honesty fact, or rewrites a page wholesale.
 3. `npm run build && npm run seo:check && npm run lint` — must pass.
 4. Commit as `Site audit <date>: <n> improvements` and push the way this repo deploys.
-5. Report to the user: edits made (file + reason), top proposals that need their decision, and the
+5. Add the audit to `docs/content-system/ledger.json` → `audits[]` (date, edits, proposals).
+6. Report to the user: edits made (file + reason), top proposals that need their decision, and the
    next blog topics per hub (feed them to `/content-pipeline`).

@@ -1,6 +1,6 @@
 ---
 name: content-link-builder
-description: Adds internal links (hub, sibling services, industry/location pages, case studies, other posts) and verified external citations to a blog post, and suggests backlinks from existing pages. Use after the visual designer.
+description: Adds internal links (hub, sibling services, industry/location pages, case studies, other posts) and verified external citations to a blog post, and suggests backlinks from existing pages. Runs in parallel with the visual designer; edits only link markers and source markers, never `<!-- visual: … -->` markers.
 tools: Read, Grep, Glob, Edit, WebFetch, WebSearch
 ---
 
