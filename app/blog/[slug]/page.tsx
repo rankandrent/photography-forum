@@ -6,7 +6,7 @@ import { WorkGrid } from "@/components/sections/WorkCards";
 import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
-import { anchorOf, getPost, getPosts, staticParams, getService, relatedCaseStudies, relatedPosts } from "@/lib/content";
+import { anchorOf, getPost, getPosts, staticParams, getService, postsForService, relatedCaseStudies, relatedPosts } from "@/lib/content";
 import { articleLd, pageMetadata } from "@/lib/seo";
 import { cap, routes } from "@/lib/site";
 
@@ -23,16 +23,46 @@ export async function generateMetadata({ params }: Props) {
 
 const fmt = (d: string) => new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 
+/** Splits the article after its 3rd H2 so the service CTA sits mid-article */
+function splitAt3rdH2(html: string): [string, string] {
+  let idx = -1;
+  for (let n = 0; n < 3; n++) {
+    idx = html.indexOf("<h2", idx + 1);
+    if (idx < 0) return [html, ""];
+  }
+  return [html.slice(0, idx), html.slice(idx)];
+}
+
 export default async function PostPage({ params }: Props) {
   const p = getPost((await params).slug);
   if (!p) notFound();
   const path = routes.post(p.slug);
   const services = p.services.map(getService).filter((x) => !!x);
+  // silo: the first service is the hub this post supports
+  const hub = services[0];
+  const hubName = hub ? cap(anchorOf(hub)) : undefined;
+  const siblings = hub ? postsForService(hub.slug).filter((x) => x.slug !== p.slug && x.services[0] === hub.slug).slice(0, 4) : [];
+  const [first, rest] = splitAt3rdH2(p.html);
+  const crumbs = hub
+    ? [{ name: hubName!, path: routes.service(hub.slug) }, { name: p.title, path }]
+    : [{ name: "Insights", path: routes.blog }, { name: p.title, path }];
+
+  const hubCta = hub && (
+    <aside className="post-cta" aria-label={`${hubName} consultation`}>
+      <p className="post-cta__eyebrow">{hubName}</p>
+      <p className="post-cta__title">Want senior designers to handle this for you?</p>
+      <p className="post-cta__body">{hub.summary}{hub.priceRange ? ` Typical investment: ${hub.priceRange}.` : ""}</p>
+      <div className="post-cta__actions">
+        <a href="#cta-form" className="btn">Get a free consultation</a>
+        <Link href={routes.service(hub.slug)} className="post-cta__link">See our {anchorOf(hub)} →</Link>
+      </div>
+    </aside>
+  );
 
   return (
     <>
       <PageHero
-        crumbs={[{ name: "Insights", path: routes.blog }, { name: p.title, path }]}
+        crumbs={crumbs}
         eyebrow={p.type}
         h1={p.title}
         sub={p.description}
@@ -40,22 +70,38 @@ export default async function PostPage({ params }: Props) {
       />
       <section className="section section--light">
         <div className="container">
-          <article className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
-          {!!services.length && (
-            <div className="prose" style={{ marginTop: 48 }}>
-              <p><strong>Related services:</strong></p>
-              <div className="chips">
-                {services.map((s) => <Link key={s.slug} href={routes.service(s.slug)} className="chip">{cap(anchorOf(s))}</Link>)}
-              </div>
-            </div>
+          <article className="prose">
+            <div dangerouslySetInnerHTML={{ __html: first }} />
+            {rest && hubCta}
+            {rest && <div dangerouslySetInnerHTML={{ __html: rest }} />}
+          </article>
+          {!rest && <div className="prose">{hubCta}</div>}
+          {hub && (
+            <nav className="prose post-silo" aria-label={`More on ${hubName}`}>
+              <p className="post-silo__title">Part of our <Link href={routes.service(hub.slug)}>{hubName}</Link> guides</p>
+              {!!siblings.length && (
+                <ul>
+                  {siblings.map((x) => <li key={x.slug}><Link href={routes.post(x.slug)}>{x.title}</Link></li>)}
+                </ul>
+              )}
+              {services.length > 1 && (
+                <div className="chips">
+                  {services.slice(1).map((x) => <Link key={x.slug} href={routes.service(x.slug)} className="chip">{cap(anchorOf(x))}</Link>)}
+                </div>
+              )}
+            </nav>
           )}
         </div>
       </section>
-      <CtaBand {...home.ctaBand} />
+      <CtaBand
+        heading={hub ? `Talk to a ${anchorOf(hub)} lead` : home.ctaBand.heading}
+        body={hub ? "Tell us about your product. A senior designer replies within one business day with next steps and a scoped estimate." : home.ctaBand.body}
+        cta="Book a free consultation"
+      />
       <Resources heading="Keep reading" posts={relatedPosts(p)} />
       <WorkGrid heading="Related case studies" items={relatedCaseStudies(p)} />
       <FinalCta testimonial={home.testimonial}>
-        <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}`} submitLabel="Submit" />
+        <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}${hub ? ` (hub: ${hub.slug})` : ""}`} submitLabel="Submit" />
       </FinalCta>
       <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, author: p.author, type: "BlogPosting", keywords: p.tags })} />
     </>

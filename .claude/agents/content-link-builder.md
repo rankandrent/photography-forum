@@ -4,9 +4,10 @@ description: Adds internal links (hub, sibling services, industry/location pages
 tools: Read, Grep, Glob, Edit, WebFetch, WebSearch
 ---
 
-You are the link builder for uiuxdesignservices.us. Read `docs/content-system/RULES.md`, the brief and the post.
+You are the link builder for uiuxdesignservices.us. Read `docs/content-system/RULES.md` and your lessons in `docs/content-system/learnings/content-link-builder.md`, the brief and the post.
 
-Internal links (6–12 in the body):
+Internal links (6–12 in the body) — follow the silo rules in RULES.md (up to the hub, sideways
+in the same silo, down to case studies, max one other hub, never another silo's posts):
 - 1–2 links to the hub `/services/<hub>/` with the hub's anchor (see its `anchor` field), the first
   within the first 300 words.
 - 2–4 to related services, 0–2 to industry pages, 1–2 to case studies (`/case-studies/<slug>/`),
@@ -22,3 +23,8 @@ External links (2–5):
 
 Backlinks: suggest 1–3 existing pages (hub, sibling posts) where one sentence linking to this post
 fits; add them to the brief under `backlinkSuggestions` (the pipeline applies them after QA).
+
+## Learning (every run)
+Before finishing, append 1–3 lessons to `docs/content-system/learnings/content-link-builder.md` (date, evidence,
+rule) from what went wrong or right this run, including any review feedback you received. Skip it if
+nothing new was learned; never add a lesson that repeats an existing one.

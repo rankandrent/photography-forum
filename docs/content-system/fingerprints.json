@@ -1,0 +1,5 @@
+{
+  "note": "Structural fingerprint of every published post, so new posts never repeat the same pattern. The orchestrator appends one entry per shipped post.",
+  "fields": ["slug", "hub", "type", "funnel", "introStyle", "h2Frames", "sectionOrder", "visualTypes", "ctaAngle", "faqCount", "words", "tableCount", "listStyle"],
+  "posts": []
+}

@@ -21,6 +21,40 @@ Reston, VA (founded 2017). Next.js static export; content lives in `content/`.
 - Before choosing a keyword, check cannibalisation against every existing title, H1,
   `keyword` and `metaTitle` in `content/` (services, industries, locations, blog).
 
+## Silo structure (every post must strengthen its service)
+
+- A silo = one service hub + its guides. `services[0]` of a post is its silo; a post lives in one silo.
+- Links inside a post: UP to its hub (required, early and once more near the end), SIDEWAYS to posts
+  in the same silo, DOWN to case studies that used that service. At most ONE link to a different
+  service hub, and only when the post genuinely needs it. Never link to another silo's posts.
+- The hub page lists its silo's guides automatically; the post page shows the hub breadcrumb,
+  a mid-article service CTA and a "Part of our … guides" box (built into the template).
+- Every silo should grow toward full coverage of its hub's questions before broadening:
+  cost, process, deliverables, how to choose a partner, in-house vs agency, tools/methods,
+  mistakes, checklists/templates, examples, industry-specific angles.
+
+## Lead focus (the goal of every post is a qualified lead)
+
+- Pick topics a buyer of the hub service searches (commercial-investigation and problem-aware
+  informational queries). Score each candidate's **service-support 1–5**; publish only 4–5.
+  Pure top-of-funnel trivia that never leads to hiring the service scores 1–2: skip it.
+- In the body, show where a senior agency team makes the difference (without sales fluff), and
+  end each major section where a reader would naturally want help. The template adds the CTAs;
+  the writer adds 1–2 natural, specific invitations (e.g. "we run this as a 2-week audit").
+- Offer a useful next step: checklist, template or estimate request that maps to the hub.
+
+## Variety and learning (no repeated patterns across the site)
+
+- Before writing, read `fingerprints.json`. A new post must differ from the last 5 posts of its silo
+  and the last 3 site-wide in at least 4 of: type, intro style, H2 frames, section order, visual types,
+  CTA angle, list/table style. Rotate intro styles (scenario, data point with source, myth, question,
+  definition, mini case), H2 frames (how/what/why/vs/checklist/mistakes/steps), and visual types.
+- Vary sentence rhythm, examples and vocabulary; never reuse a paragraph, intro or closing.
+- Owner rules at the top of each learnings file (added with `/train-agent`) take priority.
+- Every agent reads its `learnings/<agent>.md` before starting and appends lessons after finishing.
+  QA and fact-check failures, audit findings and ranking/traffic results become lessons for the
+  agent that owns them. Lessons are evidence-based rules, not opinions.
+
 ## Honesty (hard rules, any breach fails QA)
 
 - No invented statistics, clients, testimonials, awards, ratings, certifications, team
@@ -80,7 +114,8 @@ as `## FAQs` with `### Question?` + answer. Images use
 | content-qa | `content/briefs/<slug>.qa.md` report (SEO, links, images, build) |
 | fact-checker | `content/briefs/<slug>.facts.md` report (facts, sources, honesty) |
 | orchestrator (`/content-pipeline`) | applies fixes and visuals, sets `qa:`, publishes, updates `ledger.json` |
-| site-seo-auditor | `docs/content-system/audits/<date>.md` + small safe edits |
+| site-seo-auditor | `docs/content-system/audits/<date>.md` + small safe edits + learnings for all agents |
+| every agent | its own `docs/content-system/learnings/<agent>.md` |
 
 ## Checks every change must pass
 

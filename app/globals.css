@@ -1406,3 +1406,17 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
   .ftr__top { gap: 32px; }
   .ftr__top + .ftr__mega { margin-top: 32px; }
 }
+
+/* ===== Blog: service CTA and silo box ===== */
+.post-cta { margin: 40px 0; padding: 28px; border-radius: 20px; background: var(--black); color: #fff; }
+.post-cta p { margin: 0; }
+.post-cta__eyebrow { font-family: var(--font-m); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--pink-l); }
+.prose .post-cta__title { font-family: var(--font-d); font-size: 24px; font-weight: 800; line-height: 1.2; letter-spacing: -.02em; margin: 8px 0 10px; color: #fff; }
+.prose .post-cta__body { font-size: 16px; color: rgba(255,255,255,.75); }
+.post-cta__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 20px; }
+.prose .post-cta__link { color: #fff; font-weight: 600; font-size: 15px; text-decoration: none; border-bottom: 1px solid var(--pink); }
+.prose .post-cta .btn { color: #fff; text-decoration: none; }
+.post-silo { margin-top: 48px; padding: 24px 28px; border: 1px solid var(--border); border-radius: 20px; background: var(--surface-warm); }
+.prose .post-silo__title { font-weight: 700; margin: 0 0 12px; }
+.post-silo ul { margin: 0 0 12px; }
+@media (max-width: 640px) { .post-cta { padding: 22px; } .prose .post-cta__title { font-size: 20px; } .post-silo { padding: 20px; } }

@@ -193,6 +193,7 @@ export function relatedPosts(item: { slug: string; services: string[]; industrie
     .map((p) => ({
       p,
       score:
+        (p.services[0] && p.services[0] === item.services[0] ? 10 : 0) +
         p.services.filter((s) => item.services.includes(s)).length * 2 +
         p.industries.filter((i) => item.industries.includes(i)).length,
     }))

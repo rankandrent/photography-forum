@@ -13,13 +13,15 @@ goal ─▶ orchestrator (you) ─┬─ RESEARCH  keyword researcher × N posts
                             └─ SHIP      publish, backlinks, build checks, deploy, ledger
 ```
 
-Read `docs/content-system/RULES.md` and `docs/content-system/ledger.json` first.
+Read `docs/content-system/RULES.md`, `ledger.json` and `fingerprints.json` first. Every agent
+reads its own `learnings/<agent>.md`; remind each one in its prompt.
 
 ## 1. Plan the goal
 - Arguments: a goal in plain words, a hub slug, or nothing. With nothing, the goal is
   "1 post for the hub with the fewest published posts" (count `services[0]` in `content/blog/*.md`).
 - Turn the goal into N post jobs (default 1, max 3 per run), each with a hub and an angle.
-  Two jobs never share a hub in the same run (prevents overlapping keywords).
+  Two jobs never share a hub in the same run (prevents overlapping keywords). Prefer the silo with
+  the biggest coverage gap and the highest lead value.
 - Record the plan in the ledger under `runs` (date, goal, jobs).
 
 ## 2. RESEARCH — parallel
@@ -49,5 +51,7 @@ Per job (jobs run in parallel with each other):
 3. `npm run build && npm run seo:check && npm run lint` — all must pass with 0 errors.
 4. Commit post, `public/blog/<slug>/`, `content/briefs/<slug>*`, backlink edits and the ledger as
    `Publish post: <title>`, then push the way this repo deploys (see CLAUDE.md / repo instructions).
-5. Update `ledger.json` → `posts[]`: slug, hub, keyword, date, words, images, links, qa loops.
-6. Report: shipped URLs, keywords, QA/fact verdicts, loops used, anything left as a draft.
+5. Update `ledger.json` → `posts[]`: slug, hub, keyword, date, words, images, links, qa loops;
+   and append the post's fingerprint to `fingerprints.json` (fields listed there).
+6. If any review loop was needed, make sure the owning agents wrote their lessons.
+7. Report: shipped URLs, keywords, QA/fact verdicts, loops used, anything left as a draft.
