@@ -32,8 +32,8 @@ Write the decision as one sentence and attach the user groups and the deadline. 
 
 Then mark the research type it needs:
 
-- **Generative research** finds what to build, through user interviews and contextual inquiry.
-- **Evaluative research** checks whether a design works, through usability testing, tree tests and concept tests.
+- **Generative research** answers "what should we build?", so the agency needs field time for user interviews and contextual inquiry.
+- **Evaluative research** answers "does this design work?", so the agency needs a prototype to put in front of users through usability testing, tree tests or concept tests.
 
 Many decisions need both modes, generative first and evaluative second, which is how our [UX research services](/services/ux-research-services/) are structured.
 
@@ -54,7 +54,7 @@ Method-first briefs ("we need 20 interviews and a survey") produce proposals you
 
 Hiding the budget wastes a round of proposals: one agency scopes a two-week sprint, another a three-month program.
 
-A formal request for proposal (RFP) helps when procurement or public-sector rules require one. The GOV.UK user research team wrote in 2015 about [getting the best out of research agencies](https://userresearch.blog.gov.uk/2015/02/18/how-to-get-the-best-out-of-research-agencies/) on large survey projects; the post is old, but its premise holds: the agency runs the fieldwork, while the client still writes the brief, agrees the objectives and keeps stakeholders bought in. For most product teams, the brief plus a 45-minute call is enough.
+A formal request for proposal (RFP) helps when procurement or public-sector rules require one. The GOV.UK user research team wrote in 2015 about [getting the best out of research agencies](https://userresearch.blog.gov.uk/2015/02/18/how-to-get-the-best-out-of-research-agencies/) on large survey projects; the post is old, but its premise holds: the agency runs the fieldwork, while the client still writes the brief, agrees on the objectives and keeps stakeholders bought in. For most product teams, the brief plus a 45-minute call is enough.
 
 ## Which 7 criteria separate a real research agency?
 
@@ -75,9 +75,9 @@ The weights are our suggestion; adjust them to your decision.
 
 ![Printable scorecard table listing seven criteria with what to check and a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for Agency A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg "Weighted 7-criteria UX research agency scorecard")
 
-**Dedicated researchers.** Ask for the names and roles of the people who run sessions and synthesis. If the answer is "our design team," research is a phase, not a practice.
+**Dedicated researchers.** Ask for the names and roles of the people who run sessions and synthesis. If no one can name who moderates the sessions and who synthesizes them, research is a phase, not a practice.
 
-**Method fit.** A vendor runs the methods you ordered; a partner asks why you ordered them, and pushes back with a reason tied to your decision.
+**Method fit.** A vendor runs the methods you ordered; a UX research partner asks why you ordered them, and pushes back with a reason tied to your decision.
 
 **Domain experience.** Users of business-to-business (B2B) [software as a service (SaaS) products](/industries/saas/), clinicians and warehouse operators behave differently in sessions. Ask for a similar study, not a similar logo: for a trading platform, we would show our [TradeZella discovery and stakeholder interviews](/case-studies/tradezella/), not a list of fintech brands.
 
@@ -99,7 +99,7 @@ Fit and fraud checks to ask about:
 - **Live verification** at the start of each session: role, tools used, a recent task.
 - **Over-recruiting** by 1–2 participants per user group to absorb no-shows.
 
-On participant counts, our standard is 10–15 interviews per user group. For qualitative usability rounds, Nielsen Norman Group's guidance is that [testing with 5 users finds most usability problems](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), with 4–5 per group when user types differ sharply. If your decision is mostly evaluative, compare dedicated [usability testing services](/services/usability-testing-services/) too.
+On participant counts, our standard is 10–15 interviews per user group. For qualitative usability rounds, Nielsen Norman Group's guidance is that [testing with 5 users finds most usability problems](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), with 3–4 users per group when you test two distinct user groups and at least 3 per group for three or more. If your decision is mostly evaluative, compare dedicated [usability testing services](/services/usability-testing-services/) too.
 
 ## What should a sample research readout show you?
 
@@ -128,13 +128,13 @@ A finding that changes a roadmap looks like ToolsGroup's: 30+ stakeholder interv
 | **Recruitment:** Can I see a screener you wrote for a similar audience? | A redacted screener with disqualifying questions |
 | **Recruitment:** What happens when a participant no-shows or is a poor fit? | Over-recruiting, free replacement, a written policy |
 | **Synthesis:** How do you get from 12 transcripts to 5 findings? | Tagging, clustering, an evidence trail per finding |
-| **Synthesis:** How do you keep findings independent of the design work? | Evidence shown before solutions; a reviewer outside the design team |
+| **Synthesis:** How do you keep findings independent of the design work? | Evidence shown before solutions; a second reviewer checks each finding against the session clips |
 | **Delivery:** What does the readout look like, and who attends? | Ranked findings, clips, a live session with decision owners |
 | **Delivery:** What will I have at the end of week 2? | A signed research plan, a live screener, booked sessions |
 | **Data:** Who owns recordings, transcripts and the repository? | You do, within consent terms, written into the statement of work (SOW) |
 | **Data:** How do you store and delete participant PII? | Named storage, limited access, a deletion date |
 
-We answer these 12 on a first call, with the researcher who would run your study on the line.
+Ask us these 12 on a free consultation call, before you receive our fixed-scope proposal.
 
 ## Red flags that mean you should walk away
 
@@ -168,21 +168,21 @@ We answer these 12 on a first call, with the researcher who would run your study
 
 Fixed fee suits research with a signed research plan; time and materials suits open-ended discovery. Scope creep hides in extra rounds, re-recruiting, translation and extra readouts, so ask each agency what triggers a change order. A low proposal usually leaves out recruitment and incentives, synthesis days or a live readout.
 
-Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on the same units; the price drivers are broken down on [our UX research program and pricing page](/services/ux-research-services/).
+Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on four of these units (user groups, participants, methods and recruitment difficulty); the price drivers are broken down on [our UX research program and pricing page](/services/ux-research-services/).
 
 ## Which contract terms protect your research data?
 
 **The SOW should state who owns recordings and findings, how PII is stored and deleted, and how participant consent is collected.** Agree these before the first session.
 
 - **Ownership.** Recordings, transcripts, notes and the research repository transfer to you at handover, with the IP in the findings.
-- **Consent.** Written informed consent covers recording, viewers and retention. The [Insights Association Code of Standards](https://insightsassociation.org/About-Us/Code-of-Standards) sets consent, transparency and protection of personal data as baseline duties toward research participants.
-- **Health products.** When sessions on [healthcare products](/industries/healthcare/) can expose protected health information (PHI), for example a clinician sharing a screen with patient records, the agency signs a Health Insurance Portability and Accountability Act (HIPAA) business associate agreement (BAA). The [sample BAA provisions from the U.S. Department of Health and Human Services (HHS)](https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html) include returning or destroying PHI when the contract ends.
+- **Consent.** Written informed consent covers recording, viewers and retention. The [Insights Association Code of Standards](https://www.insightsassociation.org/About-Us/Code-of-Standards) sets consent, transparency and protection of personal data as baseline duties toward research participants.
+- **Health products.** When sessions on [healthcare products](/industries/healthcare/) can expose protected health information (PHI), for example a clinician sharing a screen with patient records, and your company is a HIPAA covered entity or business associate, the agency signs a Health Insurance Portability and Accountability Act (HIPAA) business associate agreement (BAA). The [sample BAA provisions from the U.S. Department of Health and Human Services (HHS)](https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html) include returning or destroying PHI when the contract ends.
 - **Retention.** A written deletion date for recordings and participant contact details.
 - **Confidentiality.** A non-disclosure agreement (NDA) for participants who see unreleased designs.
 
 ## What should the first 2 weeks look like after signing?
 
-**In the first 2 weeks a good UX research agency agrees the research questions, finalizes the screener, starts recruitment and books the first sessions.** No session on the calendar by the end of week two means the timeline is slipping.
+**In the first 2 weeks a good UX research agency agrees on the research questions, finalizes the screener, starts recruitment and books the first sessions.** No session on the calendar by the end of week two means the timeline is slipping.
 
 ![Ten-day timeline across week 1 and week 2 showing kickoff on days 1-2, research plan sign-off on days 2-4, screener live on days 4-5, first sessions booked on days 5-10 and observers invited](/blog/choose-ux-research-agency/first-two-weeks-timeline.svg "What the first 2 weeks after signing should look like")
 
@@ -194,7 +194,7 @@ Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on th
 
 How to hire a UX research agency well includes your side of the deal: prototype access, a customer list you have consent to contact, one decision owner at the readout, and sign-offs within a day or two. Our process follows the human-centered design framework of [ISO 9241-210](https://www.iso.org/standard/77520.html).
 
-[Send us your research brief](/contact/) and we return a scoped research plan with a fixed price, plus a 30-minute call with the lead researcher, so you can score us on the same rubric as every other agency.
+[Send us your research brief](/contact/) for a free consultation and a fixed-scope proposal, so you can score us on the same rubric as every other agency.
 
 ## FAQs
 
@@ -217,5 +217,3 @@ Whoever the SOW names. Insist that you own recordings, transcripts and the repos
 ### How fast can a UX research agency start fieldwork?
 
 Recruitment sets the start date: in our process, 3–6 days of recruitment follow 2–4 days of research framing, so first sessions land in week two. Hard-to-recruit groups take longer.
-
-A scorecard only works when every agency fills it in with real answers, ours included. Start with our UX research services and send the brief you wrote with this guide.
