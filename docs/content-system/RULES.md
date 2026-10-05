@@ -36,6 +36,14 @@ Reston, VA (founded 2017). Next.js static export; content lives in `content/`.
   cost, process, deliverables, how to choose a partner, in-house vs agency, tools/methods,
   mistakes, checklists/templates, examples, industry-specific angles.
 
+## Blog archive pages (built automatically)
+
+- `/blog/` listing, `/blog/category/` + `/blog/category/<group>/` (categories = service groups,
+  each listing its silos), `/blog/author/` + `/blog/author/<slug>/` (team profiles, ProfilePage schema).
+- Empty archives are noindex and left out of the sitemap until they have a post.
+- Pick the author whose role matches the topic (research → a UX lead, visual/UI → a UI designer,
+  product strategy → a product designer). Never invent an author.
+
 ## Funnel mix (TOFU / MOFU / BOFU)
 
 - Target per silo, set in `funnel.json`: 50% TOFU, 30% MOFU, 20% BOFU. The next post in a silo takes
@@ -108,7 +116,8 @@ metaTitle: "…"                # ≤ 60 chars, keyword first; never "UIUXDesign
 description: "…"              # 140–158 chars
 date: 2026-10-05              # set by the publisher on the publish day
 updated: 2026-10-05
-author: "Design Team"
+author: design-team           # team slug: sahar-asif, ahmad-ullah, talha-saleem, faizan-khan,
+                              # saliha-shahzad, shahmir-farooq, umar-sarwar, or design-team
 type: Guide                   # Guide | Article | Checklist | Comparison
 services: [ux-research-services]       # services[0] is the hub; slugs must exist
 industries: []                          # optional, slugs must exist

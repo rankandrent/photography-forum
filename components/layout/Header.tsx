@@ -122,7 +122,7 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
             </div>
           </div>}
           <Link href={routes.caseStudies}>Our work</Link>
-          <Link href={routes.blog}>Insights</Link>
+          <Link href={routes.blog}>Blog</Link>
           <Link href={routes.contact} className="btn hdr__cta">Schedule a call</Link>
         </nav>
         <button
@@ -162,7 +162,7 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
           <Link href={routes.locations} onClick={close} className="hdr__mall">All locations →</Link>
         </details>}
         <Link href={routes.caseStudies} onClick={close}>Our work</Link>
-        <Link href={routes.blog} onClick={close}>Insights</Link>
+        <Link href={routes.blog} onClick={close}>Blog</Link>
         <Link href={routes.contact} className="btn" onClick={close}>Schedule a call</Link>
         <SocialLinks className="social hdr__social" />
       </nav>

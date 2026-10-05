@@ -29,7 +29,7 @@ export function Footer() {
     {
       title: "Resources",
       links: [
-        { label: "Insights", href: routes.blog },
+        { label: "Blog", href: routes.blog },
         { label: "Case studies", href: routes.caseStudies },
         { label: "Privacy policy", href: "/privacy/" },
         { label: "Terms of service", href: "/terms/" },

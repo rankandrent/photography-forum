@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AuthorCard } from "@/components/blog/BlogParts";
 import { EmailCapture } from "@/components/forms/EmailCapture";
+import { authorOf, blogRoutes, categoryOf, postsByAuthor } from "@/lib/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { CtaBand, FinalCta, Resources } from "@/components/sections/Blocks";
 import { WorkGrid } from "@/components/sections/WorkCards";
@@ -49,9 +51,11 @@ export default async function PostPage({ params }: Props) {
   const next = at >= 0 && at < chain.length - 1 ? chain[at + 1] : undefined;
   const siblings = chain.filter((x) => x.slug !== p.slug && x !== prev && x !== next).slice(-4);
   const [first, rest] = splitAt3rdH2(p.html);
+  const author = authorOf(p);
+  const cat = categoryOf(p);
   const crumbs = hub
     ? [{ name: hubName!, path: routes.service(hub.slug) }, { name: p.title, path }]
-    : [{ name: "Insights", path: routes.blog }, { name: p.title, path }];
+    : [{ name: "Blog", path: routes.blog }, { name: p.title, path }];
 
   const cases = relatedCaseStudies(p);
   const hubCta = hub && (p.funnel === "tofu" ? (
@@ -79,7 +83,7 @@ export default async function PostPage({ params }: Props) {
         <a href="#cta-form" className="btn">Get a free consultation</a>
         {p.funnel === "mofu" && cases[0]
           ? <Link href={routes.caseStudy(cases[0].slug)} className="post-cta__link">Read the case study →</Link>
-          : <Link href={routes.service(hub.slug)} className="post-cta__link">See our {anchorOf(hub)} →</Link>}
+          : <Link href={routes.service(hub.slug)} className="post-cta__link">{cap(anchorOf(hub))} →</Link>}
       </div>
     </aside>
   ));
@@ -92,7 +96,7 @@ export default async function PostPage({ params }: Props) {
         eyebrow={p.type}
         h1={p.title}
         sub={p.description}
-        meta={<><span>{p.author}</span><span>{fmt(p.date)}</span></>}
+        meta={<><Link href={blogRoutes.author(author.slug)}>{author.name}</Link><span>{fmt(p.date)}</span>{cat && <Link href={blogRoutes.category(cat.slug)}>{cat.name}</Link>}</>}
       />
       <section className="section section--light">
         <div className="container">
@@ -102,6 +106,10 @@ export default async function PostPage({ params }: Props) {
             {rest && <div dangerouslySetInnerHTML={{ __html: rest }} />}
           </article>
           {!rest && <div className="prose">{hubCta}</div>}
+          <div className="prose post-author">
+            <p className="post-author__label">Written by</p>
+            <AuthorCard a={author} count={postsByAuthor(author.slug).length} />
+          </div>
           {hub && (
             <nav className="prose post-silo" aria-label={`More on ${hubName}`}>
               <p className="post-silo__title">Part of our <Link href={routes.service(hub.slug)}>{hubName}</Link> guides</p>
@@ -135,7 +143,7 @@ export default async function PostPage({ params }: Props) {
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}${hub ? ` (hub: ${hub.slug})` : ""}`} submitLabel="Submit" />
       </FinalCta>
-      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, author: p.author, type: "BlogPosting", keywords: p.tags })} />
+      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, author: author.name, authorUrl: blogRoutes.author(author.slug), authorIsPerson: author.person, type: "BlogPosting", keywords: p.tags })} />
     </>
   );
 }

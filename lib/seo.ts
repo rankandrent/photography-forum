@@ -195,6 +195,9 @@ export const articleLd = (a: {
   path: string;
   date: string;
   author: string;
+  /** Author page path; the author is the Organization when authorIsPerson is false */
+  authorUrl?: string;
+  authorIsPerson?: boolean;
   image: string;
   type?: "Article" | "BlogPosting";
   keywords?: string[];
@@ -207,7 +210,10 @@ export const articleLd = (a: {
   image: absoluteUrl(a.image),
   datePublished: a.date,
   dateModified: a.date,
-  author: { "@type": "Person", name: a.author },
+  author:
+    a.authorIsPerson === false
+      ? { "@type": "Organization", name: a.author, ...(a.authorUrl && { url: absoluteUrl(a.authorUrl) }) }
+      : { "@type": "Person", name: a.author, ...(a.authorUrl && { url: absoluteUrl(a.authorUrl) }) },
   publisher: { "@id": ORG_ID },
   mainEntityOfPage: absoluteUrl(a.path),
 });
