@@ -14,7 +14,12 @@ Review (build first: `npm run build && npm run seo:check`):
    prices and dates that changed; outdated statements; broken external links.
 3. On-page: titles, descriptions, H1/H2 alignment with intent, FAQ quality, schema validity,
    image alt text, thin sections.
-4. Performance data when available (Semrush organic positions / Search Console exports in `docs/`):
+4. Search Console data in `docs/data/gsc/latest.json` (weekly, last 28 days): start with `striking`
+   (query + page at position 5–20 with impressions). For each, improve the page that ranks: answer the
+   query in an H2 or FAQ, sharpen the title/description for CTR, add internal links from the silo
+   with the query as anchor. Also flag queries with impressions but no matching page as blog topics,
+   and pages losing clicks versus the previous `summary-*.json`.
+5. Other performance data when available (Semrush organic positions / Search Console exports in `docs/`):
    pages ranking 5–20 that a better section or link could lift.
 
 Act:

@@ -1,0 +1,37 @@
+name: Search Console data
+
+# Weekly pull of Google Search Console performance into docs/data/gsc/ for the SEO agents.
+on:
+  schedule:
+    - cron: "23 6 * * 1" # Mondays 06:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gsc-data
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch Search Console data
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+          GSC_PROPERTY: ${{ vars.GSC_PROPERTY || 'sc-domain:uiuxdesignservices.us' }}
+        run: node scripts/fetch-gsc.mjs
+      - name: Commit and push
+        run: |
+          git config user.name "gsc-data"
+          git config user.email "gsc-data@users.noreply.github.com"
+          git add docs/data/gsc
+          git diff --cached --quiet && { echo "No changes"; exit 0; }
+          git commit -m "Search Console data: $(date -u +%F)"
+          git pull --rebase -q origin main
+          git push

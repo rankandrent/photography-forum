@@ -10,6 +10,9 @@ Input: a service hub slug (e.g. `ux-research-services`), optionally a topic idea
 
 1. Read the hub `content/services/<hub>.json` (its keyword, entities, semantic fields) and list every
    existing keyword/title in `content/` (services, industries, locations, blog, briefs).
+1b. If `docs/data/gsc/latest.json` exists, read it first: queries the site already gets impressions
+   for (especially with no dedicated page, or ranking 8–30) are the best candidates — Google already
+   associates the site with them.
 2. Find candidate long-tail informational or commercial-investigation queries in the hub's cluster.
    Use Semrush (database "us") when available: volume, keyword difficulty, intent, SERP features.
    Fall back to WebSearch (People Also Ask, related searches) when Semrush fails.
