@@ -198,11 +198,18 @@ export type Post = {
   metaTitle?: string;
   description: string;
   date: string;
+  /** Last real content update, YYYY-MM-DD (defaults to date) */
+  updated: string;
   author: string;
   type: string;
   services: string[];
   industries: string[];
   tags: string[];
+  /** Optional cover image path; posts without one get a generated brand cover */
+  image?: string;
+  /** Optional 3–5 one-line key takeaways shown above the article */
+  takeaways: string[];
+  readMinutes: number;
   html: string;
 };
 

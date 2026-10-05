@@ -22,6 +22,9 @@ Write `content/blog/<slug>.md` (frontmatter exactly as RULES.md, `draft: true`, 
 - Set `funnel:` from the brief. Match depth and tone to it: TOFU teaches the problem, MOFU compares
   approaches and shows process, BOFU answers cost/selection/risk questions a buyer has.
 - Follow the brief's `leadAngle`: 1–2 natural, specific invitations to the hub service.
+- Fill `takeaways` (3–5 one-line facts a skimmer needs). Tables, numbered steps and blockquotes are
+  styled by the template; use them where they help. The template builds the table of contents from
+  your H2s, so keep H2s short (≤ 60 chars).
 - End with `## FAQs` (### questions) and a short closing paragraph that points to the hub service.
 
 Self-check before finishing: banned phrases, hedges, abbreviation expansion, boolean FAQs, no

@@ -124,6 +124,9 @@ industries: []                          # optional, slugs must exist
 tags: [ux research, user interviews]
 keyword: "how to run user interviews"
 funnel: tofu                  # tofu | mofu | bofu
+takeaways:                    # 3–5 one-line key takeaways (shown in a box above the article)
+  - "…"
+image: /blog/<slug>/cover.svg # optional cover (1600×600); without it a brand cover is generated
 draft: true                   # the pipeline flips this only after QA passes
 qa: pending                   # pending | pass | fail  (set by content-qa)
 ---

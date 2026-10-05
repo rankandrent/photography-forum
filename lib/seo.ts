@@ -194,6 +194,7 @@ export const articleLd = (a: {
   description: string;
   path: string;
   date: string;
+  modified?: string;
   author: string;
   /** Author page path; the author is the Organization when authorIsPerson is false */
   authorUrl?: string;
@@ -209,7 +210,7 @@ export const articleLd = (a: {
   description: a.description,
   image: absoluteUrl(a.image),
   datePublished: a.date,
-  dateModified: a.date,
+  dateModified: a.modified ?? a.date,
   author:
     a.authorIsPerson === false
       ? { "@type": "Organization", name: a.author, ...(a.authorUrl && { url: absoluteUrl(a.authorUrl) }) }

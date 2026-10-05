@@ -1507,3 +1507,104 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 }
 .acard__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px !important; }
 .acard__tags span { font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--surface); color: var(--text); }
+
+/* ===== Single blog post ===== */
+.readbar { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--pink); transform-origin: 0 50%; z-index: 1001; pointer-events: none; }
+.phead { padding: 132px 0 40px; background: linear-gradient(180deg, #FFF5F8 0%, var(--white) 100%); }
+.phead__inner { max-width: 960px; }
+.phead .crumbs { margin-bottom: 24px; }
+.phead__tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; font-family: var(--font-m); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-m); margin-bottom: 18px; }
+.phead__cat { color: #fff; background: var(--pink); padding: 5px 12px; border-radius: 999px; letter-spacing: .1em; }
+.phead__title { font-size: clamp(36px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -.03em; margin-bottom: 18px; }
+.phead__desc { font-size: 20px; line-height: 1.55; color: var(--text-m); max-width: 760px; margin-bottom: 28px; }
+.phead__by { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 16px; padding-top: 22px; border-top: 1px solid var(--border); }
+.phead__avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex: none; }
+.phead__avatar--logo { display: inline-flex; align-items: center; justify-content: center; background: var(--pink); color: #fff; font-family: var(--font-d); font-weight: 800; font-size: 20px; }
+.phead__author { display: block; font-weight: 700; color: var(--text); font-size: 16px; }
+.phead__author:hover { color: var(--pink); }
+.phead__role { display: block; font-size: 13px; color: var(--text-m); }
+.phead__dates { margin-left: auto; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14px; color: var(--text-m); }
+
+.pcover { border-radius: 24px; overflow: hidden; aspect-ratio: 21 / 8; background: var(--black); }
+.pcover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pcover__art { position: relative; width: 100%; height: 100%; background: radial-gradient(120% 140% at 0% 0%, #4a0d22 0%, #0a0a0c 55%); }
+.pcover__art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pcover__art path { fill: none; stroke: rgba(255,255,255,.22); stroke-width: 1.5; }
+.pcover__art circle, .pcover__art rect { fill: var(--pink); }
+.pcover__label { position: absolute; left: 40px; bottom: 32px; z-index: 1; font-family: var(--font-d); font-weight: 800; font-size: clamp(22px, 3vw, 40px); letter-spacing: -.02em; color: #fff; }
+
+.pwrap { padding: 56px 0 72px; }
+.pgrid3 { display: grid; grid-template-columns: 220px minmax(0, 720px) 280px; justify-content: space-between; gap: 48px; align-items: start; }
+.pgrid3 .prose { max-width: 720px; margin: 0; font-size: 18px; }
+.ptoc, .prail { position: sticky; top: 100px; }
+.ptoc__box summary { list-style: none; font-family: var(--font-m); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-m); margin-bottom: 12px; cursor: default; }
+.ptoc__box summary::-webkit-details-marker { display: none; }
+.ptoc ol { list-style: none; padding: 0; margin: 0; border-left: 1px solid var(--border); }
+.ptoc li a { display: block; padding: 7px 0 7px 14px; margin-left: -1px; border-left: 2px solid transparent; font-size: 14px; line-height: 1.4; color: var(--text-m); }
+.ptoc li a:hover { color: var(--text); }
+.ptoc li a.is-on { color: var(--pink); border-left-color: var(--pink); font-weight: 600; }
+.pshare { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+.pshare p { width: 100%; font-family: var(--font-m); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-m); margin: 0 0 4px; }
+.pshare__btn { height: 34px; padding: 0 14px; display: inline-flex; align-items: center; border: 1px solid var(--border); border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--text); background: var(--white); cursor: pointer; font-family: inherit; }
+.pshare__btn:hover { border-color: var(--pink); color: var(--pink); }
+.prail__card { padding: 24px; border-radius: 20px; background: var(--black); color: #fff; display: flex; flex-direction: column; gap: 12px; }
+.prail__card p { margin: 0; }
+.prail__eyebrow { font-family: var(--font-m); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--pink-l); }
+.prail__title { font-family: var(--font-d); font-weight: 800; font-size: 21px; line-height: 1.2; letter-spacing: -.02em; }
+.prail__body { font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.72); }
+.prail__card .btn { height: 46px; font-size: 14px; margin-top: 4px; }
+.prail__link { font-size: 14px; font-weight: 600; color: #fff; text-align: center; }
+.prail__link:hover { color: var(--pink-l); }
+
+.pbody--first > p:first-child { font-size: 20px; line-height: 1.6; color: var(--text); }
+.post-article h2 { font-size: 32px; line-height: 1.15; margin: 56px 0 18px; scroll-margin-top: 100px; }
+.post-article h3 { font-size: 22px; margin: 32px 0 10px; }
+.post-article strong { color: var(--text); }
+.post-article ul li::marker, .post-article ol li::marker { color: var(--pink); font-weight: 700; }
+.post-article blockquote { font-style: normal; background: var(--surface-warm); border-left: 3px solid var(--pink); border-radius: 0 14px 14px 0; padding: 18px 22px; color: var(--text); }
+.post-article code { font-family: var(--font-m); font-size: .88em; background: var(--surface); padding: 2px 6px; border-radius: 6px; }
+.ptable { overflow-x: auto; margin-bottom: 24px; border: 1px solid var(--border); border-radius: 14px; }
+.ptable table { margin: 0; min-width: 520px; }
+.ptable th { background: var(--surface-warm); font-weight: 700; font-size: 14px; }
+.ptable tr:last-child td { border-bottom: none; }
+.ptake { padding: 24px 26px; border-radius: 18px; background: #FFF5F8; border: 1px solid #FBD5E1; margin-bottom: 32px; }
+.prose .ptake__title { font-family: var(--font-d); font-weight: 800; font-size: 18px; margin: 0 0 10px; }
+.ptake ul { margin: 0; }
+.ptake li { font-size: 16px; }
+.pfaq { display: grid; gap: 10px; }
+.pfaq__item { border: 1px solid var(--border); border-radius: 14px; background: var(--white); }
+.pfaq__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; padding: 18px 20px; font-weight: 700; font-size: 17px; line-height: 1.4; }
+.pfaq__item summary::-webkit-details-marker { display: none; }
+.pfaq__item summary span { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--pink-s); color: var(--pink); display: inline-flex; align-items: center; justify-content: center; transition: transform .2s; }
+.pfaq__item[open] summary span { transform: rotate(45deg); }
+.pfaq__item > div { padding: 0 20px 6px; font-size: 16px; color: var(--text-m); }
+.ptags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 40px; }
+.ptags span { font-size: 13px; padding: 5px 12px; border-radius: 999px; background: var(--surface); color: var(--text-m); }
+
+@media (max-width: 1200px) { .pgrid3 { grid-template-columns: 200px minmax(0, 1fr); } .prail { display: none; } }
+@media (max-width: 900px) {
+  .pgrid3 { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .ptoc { position: static; }
+  .ptoc__box { border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
+  .ptoc__box summary { margin: 0; cursor: pointer; }
+  .ptoc__box[open] summary { margin-bottom: 10px; }
+  .pshare { margin-top: 16px; }
+  .phead__dates { margin-left: 0; width: 100%; }
+}
+@media (max-width: 640px) {
+  .phead { padding: 100px 0 28px; }
+  .phead__title { font-size: 30px; }
+  .phead__desc { font-size: 16px; margin-bottom: 20px; }
+  .pcover { aspect-ratio: 16 / 9; border-radius: 16px; }
+  .pcover__label { left: 20px; bottom: 18px; }
+  .pwrap { padding: 32px 0 48px; }
+  .pgrid3 .prose { font-size: 16px; }
+  .pbody--first > p:first-child { font-size: 17px; }
+  .post-article h2 { font-size: 24px; margin: 40px 0 14px; }
+  .post-article h3 { font-size: 19px; }
+  .ptake { padding: 18px; }
+  .pfaq__item summary { font-size: 15px; padding: 14px 16px; }
+}
+.phead .crumbs, .phead .crumbs a { color: var(--text-m); }
+.phead .crumbs a:hover { color: var(--pink); }
+.phead .crumbs [aria-current] { color: var(--text); }
