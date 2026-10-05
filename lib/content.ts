@@ -85,7 +85,7 @@ function load() {
     .sort(byDateDesc);
 
   const posts: Post[] = readMarkdown("blog")
-    .filter(({ data }) => !data.draft)
+    .filter(({ data }) => !data.draft || process.env.SHOW_DRAFTS === "1")
     .map(({ slug, data, html }) => ({
       slug,
       title: data.title,
