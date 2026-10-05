@@ -139,6 +139,7 @@ metaTitle: "…"                # ≤ 60 chars, keyword first; never "UIUXDesign
 description: "…"              # 140–158 chars
 date: 2026-10-05              # set by the publisher on the publish day
 updated: 2026-10-05
+contributors: [umar-sarwar]   # default; shown as "With Umar Sarwar" and as schema contributor
 author: design-team           # team slug: sahar-asif, ahmad-ullah, talha-saleem, faizan-khan,
                               # saliha-shahzad, shahmir-farooq, umar-sarwar, or design-team
 type: Guide                   # Guide | Article | Checklist | Comparison

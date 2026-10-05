@@ -9,7 +9,7 @@ import { CtaBand, FinalCta, Resources } from "@/components/sections/Blocks";
 import { WorkGrid } from "@/components/sections/WorkCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
-import { authorOf, blogRoutes, categoryOf, postsByAuthor, slugify } from "@/lib/blog";
+import { authorOf, blogRoutes, categoryOf, contributorsOf, postsByAuthor, slugify } from "@/lib/blog";
 import { anchorOf, getPost, getPosts, getService, postsForService, relatedCaseStudies, relatedPosts, staticParams } from "@/lib/content";
 import { articleLd, faqLd, pageMetadata } from "@/lib/seo";
 import { absoluteUrl, cap, routes } from "@/lib/site";
@@ -81,6 +81,7 @@ export default async function PostPage({ params }: Props) {
   const next = at >= 0 && at < chain.length - 1 ? chain[at + 1] : undefined;
   const siblings = chain.filter((x) => x.slug !== p.slug && x !== prev && x !== next).slice(-4);
   const author = authorOf(p);
+  const team = contributorsOf(p);
   const cat = categoryOf(p);
   const cases = relatedCaseStudies(p);
   const { html, toc, faqs } = prepare(p.html);
@@ -147,6 +148,18 @@ export default async function PostPage({ params }: Props) {
               <Link href={blogRoutes.author(author.slug)} className="phead__author">{author.name}</Link>
               <span className="phead__role">{author.role}</span>
             </div>
+            {team.map((c) => (
+              <div key={c.slug} className="phead__with">
+                {c.photo && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={c.photo} alt="" width={36} height={36} className="phead__avatar phead__avatar--sm" />
+                )}
+                <div>
+                  <span className="phead__role">With</span>
+                  <Link href={blogRoutes.author(c.slug)} className="phead__author">{c.name}</Link>
+                </div>
+              </div>
+            ))}
             <div className="phead__dates">
               <span>Published <time dateTime={p.date}>{fmt(p.date)}</time></span>
               {p.updated !== p.date && <span>Updated <time dateTime={p.updated}>{fmt(p.updated)}</time></span>}
@@ -206,6 +219,12 @@ export default async function PostPage({ params }: Props) {
             <div className="post-author">
               <p className="post-author__label">Written by</p>
               <AuthorCard a={author} count={postsByAuthor(author.slug).length} />
+              {!!team.length && (
+                <>
+                  <p className="post-author__label post-author__label--2">In collaboration with</p>
+                  {team.map((c) => <AuthorCard key={c.slug} a={c} compact />)}
+                </>
+              )}
             </div>
 
             {hub && (
@@ -249,7 +268,7 @@ export default async function PostPage({ params }: Props) {
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}${hub ? ` (hub: ${hub.slug})` : ""}`} submitLabel="Submit" />
       </FinalCta>
-      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, modified: p.updated, author: author.name, authorUrl: blogRoutes.author(author.slug), authorIsPerson: author.person, type: "BlogPosting", keywords: p.tags })} />
+      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, modified: p.updated, author: author.name, authorUrl: blogRoutes.author(author.slug), authorIsPerson: author.person, contributors: team.map((c) => ({ name: c.name, url: blogRoutes.author(c.slug) })), type: "BlogPosting", keywords: p.tags })} />
       {!!faqs.length && <JsonLd data={faqLd(faqs)} />}
     </>
   );

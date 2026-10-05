@@ -1608,3 +1608,11 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .phead .crumbs, .phead .crumbs a { color: var(--text-m); }
 .phead .crumbs a:hover { color: var(--pink); }
 .phead .crumbs [aria-current] { color: var(--text); }
+.phead__with { display: flex; align-items: center; gap: 10px; padding-left: 16px; border-left: 1px solid var(--border); }
+.phead__avatar--sm { width: 36px; height: 36px; }
+.phead__with .phead__role { font-size: 12px; }
+.phead__with .phead__author { font-size: 15px; }
+.prose .post-author__label--2 { margin-top: 20px; }
+.post-author .acard + .post-author__label { margin-top: 20px; }
+.author__none { color: var(--text-m); margin-top: 12px; }
+@media (max-width: 640px) { .phead__with { padding-left: 0; border-left: none; } }

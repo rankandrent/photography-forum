@@ -43,6 +43,12 @@ export const authors: Author[] = [
 export const authorOf = (p: Pick<Post, "author">) =>
   authors.find((a) => a.slug === p.author || a.name.toLowerCase() === p.author.toLowerCase()) ?? TEAM_BYLINE;
 export const getAuthor = (slug: string) => authors.find((a) => a.slug === slug);
+/** Collaborators of a post, minus its own author */
+export const contributorsOf = (p: Pick<Post, "author" | "contributors">) => {
+  const main = authorOf(p).slug;
+  return p.contributors.map(getAuthor).filter((a): a is Author => !!a && a.slug !== main);
+};
+export const postsContributedBy = (slug: string) => getPosts().filter((p) => contributorsOf(p).some((a) => a.slug === slug));
 export const postsByAuthor = (slug: string) => getPosts().filter((p) => authorOf(p).slug === slug);
 
 /* ---------- categories: the service groups; each holds the silos (services) inside it ---------- */

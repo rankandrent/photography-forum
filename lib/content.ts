@@ -94,6 +94,8 @@ function load() {
       date: toDate(data.date),
       updated: data.updated ? toDate(data.updated) : toDate(data.date),
       author: data.author ?? "Design Team",
+      // every post is co-produced with the SEO manager unless the frontmatter says otherwise
+      contributors: Array.isArray(data.contributors) ? data.contributors : ["umar-sarwar"],
       type: data.type ?? "Article",
       image: data.image,
       takeaways: data.takeaways ?? [],

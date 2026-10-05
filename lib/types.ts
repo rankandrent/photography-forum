@@ -201,6 +201,8 @@ export type Post = {
   /** Last real content update, YYYY-MM-DD (defaults to date) */
   updated: string;
   author: string;
+  /** Collaborator slugs shown next to the author (default: the SEO manager) */
+  contributors: string[];
   type: string;
   services: string[];
   industries: string[];
