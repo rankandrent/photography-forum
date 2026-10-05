@@ -34,7 +34,7 @@ Then mark the research type it needs:
 - **Generative research** finds what to build, through user interviews and contextual inquiry.
 - **Evaluative research** checks whether a design works, through usability testing, tree tests and concept tests.
 
-<!-- link: UX research services → /services/ux-research-services/ -->
+Many decisions need both modes, generative first and evaluative second, which is how our [UX research services](/services/ux-research-services/) are structured.
 
 Method-first briefs ("we need 20 interviews and a survey") produce proposals you cannot compare: every agency quotes the methods you named, and price becomes the only visible difference. When we scope engagements, the first call is usually spent turning a method list back into a decision.
 
@@ -53,7 +53,7 @@ Method-first briefs ("we need 20 interviews and a survey") produce proposals you
 
 Hiding the budget wastes a round of proposals: one agency scopes a two-week sprint, another a three-month program.
 
-A formal request for proposal (RFP) helps when procurement or public-sector rules require one. The GOV.UK user research team wrote about getting the best out of research agencies in 2015; the post is old, but its premise holds: the client's preparation shapes what the agency delivers. <!-- source: https://userresearch.blog.gov.uk/2015/02/18/how-to-get-the-best-out-of-research-agencies/ --> For most product teams, the brief plus a 45-minute call is enough.
+A formal request for proposal (RFP) helps when procurement or public-sector rules require one. The GOV.UK user research team wrote in 2015 about [getting the best out of research agencies](https://userresearch.blog.gov.uk/2015/02/18/how-to-get-the-best-out-of-research-agencies/) on large survey projects; the post is old, but its premise holds: the agency runs the fieldwork, while the client still writes the brief, agrees the objectives and keeps stakeholders bought in. For most product teams, the brief plus a 45-minute call is enough.
 
 ## Which 7 criteria separate a real research agency?
 
@@ -78,7 +78,7 @@ The weights are our suggestion; adjust them to your decision.
 
 **Method fit.** A vendor runs the methods you ordered; a partner asks why you ordered them, and pushes back with a reason tied to your decision.
 
-**Domain experience.** Business-to-business (B2B) software as a service (SaaS) users, clinicians and warehouse operators behave differently in sessions. Ask for a similar study, not a similar logo. <!-- link: TradeZella discovery and stakeholder interviews → /case-studies/tradezella/ -->
+**Domain experience.** Users of business-to-business (B2B) [software as a service (SaaS) products](/industries/saas/), clinicians and warehouse operators behave differently in sessions. Ask for a similar study, not a similar logo: for a trading platform, we would show our [TradeZella discovery and stakeholder interviews](/case-studies/tradezella/), not a list of fintech brands.
 
 ## How do you test an agency's participant recruitment?
 
@@ -98,7 +98,7 @@ Fit and fraud checks to ask about:
 - **Live verification** at the start of each session: role, tools used, a recent task.
 - **Over-recruiting** by 1–2 participants per user group to absorb no-shows.
 
-On participant counts, our standard is 10–15 interviews per user group. For qualitative usability rounds, 5 users per round finds most usability problems. <!-- source: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/ --> If your decision is mostly evaluative, compare dedicated usability testing providers too. <!-- link: usability testing services → /services/usability-testing-services/ -->
+On participant counts, our standard is 10–15 interviews per user group. For qualitative usability rounds, Nielsen Norman Group's guidance is that [testing with 5 users finds most usability problems](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), with 4–5 per group when user types differ sharply. If your decision is mostly evaluative, compare dedicated [usability testing services](/services/usability-testing-services/) too.
 
 ## What should a sample research readout show you?
 
@@ -112,7 +112,7 @@ No evidence behind it means opinion; no owner means it never ships.
 
 Then ask which deliverables outlive the project: a tagged research repository (for example in Dovetail), personas, journey maps and an opportunity map. The repository matters most, because your next study starts from it.
 
-A finding that changes a roadmap looks like ToolsGroup's: 30+ stakeholder interviews showed that 75% of sales losses traced to the user interface rather than to feature gaps, and that insight reframed the product strategy. <!-- link: 30+ stakeholder interviews that reframed a supply chain product → /case-studies/toolsgroup-supply-chain-ux/ -->
+A finding that changes a roadmap looks like ToolsGroup's: 30+ stakeholder interviews showed that 75% of sales losses traced to the user interface rather than to feature gaps, and that insight reframed the product strategy. Read how [30+ stakeholder interviews reframed a supply chain product](/case-studies/toolsgroup-supply-chain-ux/).
 
 ## 12 questions to ask on the pitch call
 
@@ -167,15 +167,15 @@ We answer these 12 on a first call, with the researcher who would run your study
 
 Fixed fee suits research with a signed research plan; time and materials suits open-ended discovery. Scope creep hides in extra rounds, re-recruiting, translation and extra readouts, so ask each agency what triggers a change order. A low proposal usually leaves out recruitment and incentives, synthesis days or a live readout.
 
-Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on the same units. <!-- link: our UX research programme and pricing → /services/ux-research-services/ -->
+Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on the same units; the price drivers are broken down on [our UX research program and pricing page](/services/ux-research-services/).
 
 ## Which contract terms protect your research data?
 
 **The SOW should state who owns recordings and findings, how PII is stored and deleted, and how participant consent is collected.** Agree these before the first session.
 
 - **Ownership.** Recordings, transcripts, notes and the research repository transfer to you at handover, with the IP in the findings.
-- **Consent.** Written informed consent covers recording, viewers and retention. The Insights Association Code of Standards sets consent, transparency and protection of personal data as baseline duties toward research participants. <!-- source: https://insightsassociation.org/About-Us/Code-of-Standards -->
-- **Health products.** When sessions can expose protected health information (PHI), for example a clinician sharing a screen with patient records, the agency signs a Health Insurance Portability and Accountability Act (HIPAA) business associate agreement (BAA). The sample BAA provisions from the U.S. Department of Health and Human Services (HHS) include returning or destroying PHI when the contract ends. <!-- source: https://www.hhs.gov/guidance/document/sample-business-associate-agreement-provisions -->
+- **Consent.** Written informed consent covers recording, viewers and retention. The [Insights Association Code of Standards](https://insightsassociation.org/About-Us/Code-of-Standards) sets consent, transparency and protection of personal data as baseline duties toward research participants.
+- **Health products.** When sessions on [healthcare products](/industries/healthcare/) can expose protected health information (PHI), for example a clinician sharing a screen with patient records, the agency signs a Health Insurance Portability and Accountability Act (HIPAA) business associate agreement (BAA). The [sample BAA provisions from the U.S. Department of Health and Human Services (HHS)](https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html) include returning or destroying PHI when the contract ends.
 - **Retention.** A written deletion date for recordings and participant contact details.
 - **Confidentiality.** A non-disclosure agreement (NDA) for participants who see unreleased designs.
 
@@ -191,9 +191,9 @@ Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on th
 4. **First sessions booked (days 5–10).** Over-recruited by 1–2 per group.
 5. **Observers invited.** Product, engineering and sales leads get session links.
 
-How to hire a UX research agency well includes your side of the deal: prototype access, a customer list you have consent to contact, one decision owner at the readout, and sign-offs within a day or two. Our process follows the human-centred design framework of ISO 9241-210. <!-- source: https://www.iso.org/standard/77520.html -->
+How to hire a UX research agency well includes your side of the deal: prototype access, a customer list you have consent to contact, one decision owner at the readout, and sign-offs within a day or two. Our process follows the human-centered design framework of [ISO 9241-210](https://www.iso.org/standard/77520.html).
 
-Send your 1-page brief and we return a scoped research plan with a fixed price, plus a 30-minute call with the lead researcher, so you can score us on the same rubric as every other agency. <!-- link: send us your research brief → /contact/ --> <!-- link: UX research services → /services/ux-research-services/ -->
+[Send us your research brief](/contact/) and we return a scoped research plan with a fixed price, plus a 30-minute call with the lead researcher, so you can score us on the same rubric as every other agency.
 
 ## FAQs
 
@@ -217,4 +217,4 @@ Whoever the SOW names. Insist that you own recordings, transcripts and the repos
 
 Recruitment sets the start date: in our process, 3–6 days of recruitment follow 2–4 days of research framing, so first sessions land in week two. Hard-to-recruit groups take longer.
 
-A scorecard only works when every agency fills it in with real answers, ours included. Start with our UX research services and send the brief you wrote with this guide. <!-- link: UX research services → /services/ux-research-services/ -->
+A scorecard only works when every agency fills it in with real answers, ours included. Start with our UX research services and send the brief you wrote with this guide.

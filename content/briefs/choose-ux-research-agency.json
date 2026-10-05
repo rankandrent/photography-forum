@@ -239,6 +239,42 @@
     { "type": "process diagram", "idea": "First 2 weeks after signing: kickoff, plan sign-off, screener live, sessions booked, observers invited." },
     { "type": "framework", "idea": "Red-flag map: 6 warning signs paired with the pitch-call question that exposes each." }
   ],
+  "backlinkSuggestions": [
+    {
+      "page": "content/services/ux-research-services.json",
+      "location": "sections[\"How much does UX research cost?\"].body, appended after the first paragraph",
+      "sentence": "<p>Comparing quotes from several providers? Our guide on <a href=\"/blog/choose-ux-research-agency/\">how to choose a UX research agency</a> shows how to normalize proposals on these same 4 factors before you compare price.</p>",
+      "anchor": "how to choose a UX research agency"
+    },
+    {
+      "page": "content/services/ux-research-services.json",
+      "location": "sections[\"When should a product team invest in UX research services?\"], as a body paragraph after the list",
+      "sentence": "<p>Once the need is clear, use our <a href=\"/blog/choose-ux-research-agency/\">UX research agency scorecard and pitch-call questions</a> to compare research partners on evidence.</p>",
+      "anchor": "UX research agency scorecard and pitch-call questions",
+      "note": "Use only one of the two hub suggestions so the hub links to this post once in body copy (the guides list already links it)."
+    }
+  ],
+  "related": {
+    "linksAdded": "2026-10-05 by content-link-builder",
+    "internal": [
+      "/services/ux-research-services/ (x2: early, pricing)",
+      "/services/usability-testing-services/ (single allowed cross-hub link, recruitment section)",
+      "/industries/saas/",
+      "/industries/healthcare/",
+      "/case-studies/tradezella/",
+      "/case-studies/toolsgroup-supply-chain-ux/",
+      "/contact/"
+    ],
+    "external": [
+      "https://userresearch.blog.gov.uk/2015/02/18/how-to-get-the-best-out-of-research-agencies/",
+      "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/",
+      "https://insightsassociation.org/About-Us/Code-of-Standards",
+      "https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html",
+      "https://www.iso.org/standard/77520.html"
+    ],
+    "verification": "WebFetch blocked by egress proxy for all 5 domains; each page confirmed via WebSearch result listing plus snippets supporting the claim. HHS URL swapped from /guidance/document/... (not returned by search) to the canonical /hipaa/for-professionals/... page returned by an hhs.gov-restricted search.",
+    "siblingPosts": "None: this is the first post in the ux-research-services silo."
+  },
   "leadAngle": "In the last two sections (comparing proposals, first 2 weeks) the reader has a brief and a scorecard and wants a proposal to score. Offer: send your 1-page brief and we return a scoped research plan with a fixed price within the $25,000-$60,000 programme range, plus a 30-minute call with the lead researcher.",
   "variety": {
     "type": "Guide",
