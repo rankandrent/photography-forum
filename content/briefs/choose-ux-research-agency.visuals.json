@@ -1,27 +1,16 @@
 [
   {
-    "marker": "<!-- visual: checklist — 1-page research brief template with 6 fields: decision, users, known evidence, constraints, timeline, budget band -->",
-    "markdown": "![Checklist sheet titled 1-page research brief with six numbered fields and tick boxes: decision, users, what you already know, constraints, timeline and budget band](/blog/choose-ux-research-agency/research-brief-checklist.svg \"The 6 fields of a 1-page research brief\")"
-  },
-  {
-    "marker": "<!-- visual: scorecard — weighted 7-criteria agency scorecard with 3 blank agency columns and a total row, printable -->",
-    "markdown": "![Printable scorecard listing seven criteria with a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for agencies A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg \"Weighted 7-criteria UX research agency scorecard\")"
-  },
-  {
-    "marker": "<!-- visual: framework — red-flag map pairing 6 warning signs with the pitch-call question that exposes each -->",
-    "markdown": "![Red-flag map stacking six agency warning signs, from agreeing to everything to selling deliverable counts, each card paired with the pitch-call question to ask that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg \"Six red flags and the question that exposes each\")"
-  },
-  {
-    "marker": "<!-- visual: comparison table graphic — two proposals normalised on user groups, participants, methods, recruitment difficulty and readout, labelled as a hypothetical example -->",
-    "markdown": "![Hypothetical side-by-side of two research proposals normalized on user groups, participants shown as dots (8 versus 24 interviews), methods, recruitment difficulty, readout and a blank quoted fee line](/blog/choose-ux-research-agency/proposal-normalization.svg \"Hypothetical example: two proposals on the same 5 units\")"
-  },
-  {
-    "marker": "<!-- visual: process diagram — first 2 weeks after signing: kickoff, plan sign-off, screener live, sessions booked, observers invited -->",
+    "marker": "<!-- visual: process diagram \u2014 first 2 weeks after signing: kickoff, plan sign-off, screener live, sessions booked, observers invited -->",
     "markdown": "![Ten-day timeline across week 1 and week 2 showing kickoff on days 1-2, research plan sign-off on days 2-4, screener live on days 4-5, first sessions booked on days 5-10 and observers invited](/blog/choose-ux-research-agency/first-two-weeks-timeline.svg \"What the first 2 weeks after signing should look like\")"
   },
   {
     "frontmatter": {
       "image": "/blog/choose-ux-research-agency/cover.svg"
     }
+  },
+  {
+    "marker": "(added by orchestrator after owner review)",
+    "markdown": "![Eight-step overview \u2026](/blog/choose-ux-research-agency/how-to-choose-overview.svg)",
+    "note": "Replaces 4 images that duplicated the post's own tables and lists."
   }
 ]

@@ -24,6 +24,8 @@ qa: pass
 
 A product manager has a board meeting in six weeks, an onboarding redesign on the roadmap and three pitches from user experience (UX) research agencies that all promise "interviews, usability testing and actionable insights." The pitches read the same, so the cheapest one starts to look safe. This guide shows how to choose a UX research agency on evidence instead: a 1-page brief, a weighted scorecard, a recruitment test, 12 pitch-call questions and the contract terms that protect your data.
 
+![Eight-step overview of choosing a UX research agency: name the decision, write a 1-page brief, score 3 agencies, test recruitment, run the pitch call, normalize proposals, lock the contract and start the first 2 weeks](/blog/choose-ux-research-agency/how-to-choose-overview.svg "The 8 steps in this guide")
+
 ## What decision should the research answer first?
 
 **Name the product decision before you contact any agency, because a UX research agency can only be judged against a decision, not against a list of methods.** Build, kill, redesign or enter a market: each needs different evidence, and a good research partner shapes the study around it.
@@ -42,8 +44,6 @@ Method-first briefs ("we need 20 interviews and a survey") produce proposals you
 ## How do you write a research brief agencies can quote?
 
 **A 1-page research brief with 6 fields gets you proposals that compare like for like:** the decision, the users, what you already know, constraints, timeline and a budget band.
-
-![Checklist sheet titled 1-page research brief with six numbered fields and tick boxes: decision, users, what you already know, constraints, timeline and budget band](/blog/choose-ux-research-agency/research-brief-checklist.svg "The 6 fields of a 1-page research brief")
 
 1. **Decision.** The one sentence from the previous section.
 2. **Users.** Each user group and whether you can reach it through your own customer list.
@@ -72,8 +72,6 @@ The weights are our suggestion; adjust them to your decision.
 | Data ethics | Consent, personally identifiable information (PII), retention, intellectual property (IP) | 10% | | | |
 | Domain experience | A similar study with similar users | 15% | | | |
 | **Weighted total** | | **100%** | | | |
-
-![Printable scorecard listing seven criteria with a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for agencies A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg "Weighted 7-criteria UX research agency scorecard")
 
 **Dedicated researchers.** Ask for the names and roles of the people who run sessions and synthesis. If no one can name who moderates the sessions and who synthesizes them, research is a phase, not a practice.
 
@@ -140,8 +138,6 @@ Ask us these 12 on a free consultation call, before you receive our fixed-scope 
 
 **Walk away when a UX research agency agrees to every method you list, cannot name its researchers, recruits vaguely or sells deliverable counts instead of answers.** Each of these UX research agency red flags has a question that exposes it.
 
-![Red-flag map stacking six agency warning signs, from agreeing to everything to selling deliverable counts, each card paired with the pitch-call question to ask that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg "Six red flags and the question that exposes each")
-
 1. **It agrees to everything.** Ask: "Which part of my brief would you change?"
 2. **No named researchers.** Ask: "Who moderates session one?"
 3. **Recommendations before research.** The pitch says what to redesign before any user has been interviewed. Ask: "What evidence would change your mind?"
@@ -152,8 +148,6 @@ Ask us these 12 on a free consultation call, before you receive our fixed-scope 
 ## How do you compare research proposals on price and scope?
 
 **Normalize every proposal to the same 5 units (user groups, participants, methods, recruitment difficulty and readout) before you compare price.** In a UX research proposal comparison, two quotes that look far apart often describe two different studies.
-
-![Hypothetical side-by-side of two research proposals normalized on user groups, participants shown as dots (8 versus 24 interviews), methods, recruitment difficulty, readout and a blank quoted fee line](/blog/choose-ux-research-agency/proposal-normalization.svg "Hypothetical example: two proposals on the same 5 units")
 
 *Hypothetical example for illustration, not market data:*
 

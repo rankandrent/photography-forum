@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1134" width="800" height="1134" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1134" rx="24" fill="#FBFAFB"/>
+<text x="48" y="74" font-size="40" font-weight="800" fill="#020101">Choosing a UX research agency</text>
+<text x="48" y="116" font-size="27" fill="#6B6B70">8 steps from decision to first sessions</text>
+<line x1="86" y1="226" x2="86" y2="272" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="190" r="34" fill="#E2225F" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="200" font-size="30" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<rect x="146" y="150" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="188" font-size="30" font-weight="700" fill="#020101">Name the decision</text>
+<text x="174" y="222" font-size="26" fill="#6B6B70">One sentence, user groups, deadline</text>
+<line x1="86" y1="344" x2="86" y2="390" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="308" r="34" fill="#fff" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="318" font-size="30" font-weight="800" fill="#E2225F" text-anchor="middle">2</text>
+<rect x="146" y="268" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="306" font-size="30" font-weight="700" fill="#020101">Write a 1-page brief</text>
+<text x="174" y="340" font-size="26" fill="#6B6B70">6 fields agencies can quote</text>
+<line x1="86" y1="462" x2="86" y2="508" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="426" r="34" fill="#fff" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="436" font-size="30" font-weight="800" fill="#E2225F" text-anchor="middle">3</text>
+<rect x="146" y="386" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="424" font-size="30" font-weight="700" fill="#020101">Score 3 agencies</text>
+<text x="174" y="458" font-size="26" fill="#6B6B70">7 weighted criteria</text>
+<line x1="86" y1="580" x2="86" y2="626" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="544" r="34" fill="#fff" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="554" font-size="30" font-weight="800" fill="#E2225F" text-anchor="middle">4</text>
+<rect x="146" y="504" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="542" font-size="30" font-weight="700" fill="#020101">Test recruitment</text>
+<text x="174" y="576" font-size="26" fill="#6B6B70">Screener, verification, no-shows</text>
+<line x1="86" y1="698" x2="86" y2="744" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="662" r="34" fill="#fff" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="672" font-size="30" font-weight="800" fill="#E2225F" text-anchor="middle">5</text>
+<rect x="146" y="622" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="660" font-size="30" font-weight="700" fill="#020101">Run the pitch call</text>
+<text x="174" y="694" font-size="26" fill="#6B6B70">12 questions, named researchers</text>
+<line x1="86" y1="816" x2="86" y2="862" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="780" r="34" fill="#fff" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="790" font-size="30" font-weight="800" fill="#E2225F" text-anchor="middle">6</text>
+<rect x="146" y="740" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="778" font-size="30" font-weight="700" fill="#020101">Normalize proposals</text>
+<text x="174" y="812" font-size="26" fill="#6B6B70">Same units before price</text>
+<line x1="86" y1="934" x2="86" y2="980" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="86" cy="898" r="34" fill="#fff" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="908" font-size="30" font-weight="800" fill="#E2225F" text-anchor="middle">7</text>
+<rect x="146" y="858" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="896" font-size="30" font-weight="700" fill="#020101">Lock the contract</text>
+<text x="174" y="930" font-size="26" fill="#6B6B70">Ownership, consent, retention</text>
+<circle cx="86" cy="1016" r="34" fill="#E2225F" stroke="#E2225F" stroke-width="3"/>
+<text x="86" y="1026" font-size="30" font-weight="800" fill="#fff" text-anchor="middle">8</text>
+<rect x="146" y="976" width="606" height="88" rx="18" fill="#fff" stroke="#E8E8EB"/>
+<text x="174" y="1014" font-size="30" font-weight="700" fill="#020101">Start the first 2 weeks</text>
+<text x="174" y="1048" font-size="26" fill="#6B6B70">Plan, screener, sessions booked</text>
+</svg>

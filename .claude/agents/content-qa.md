@@ -18,6 +18,7 @@ Check and record each item as PASS / FIX / FAIL in `content/briefs/<slug>.qa.md`
    spelled correctly, no third-party brand assets.
 7. Readability: no filler, paragraphs ≤ 4 sentences, scannable, US English, no repetition across posts
    (compare 5-gram overlap with existing posts and the hub page; must be < 12%).
+6b. Duplication: FAIL any image whose content repeats an adjacent table or list in the post.
 7a. Competitor originality: if the brief has `beats`, WebFetch that page and FAIL when 5-gram overlap
    with it is above 5%, or when its heading order or examples are mirrored. The post must clearly
    cover more (the brief's serpGaps) than the `beats` page.

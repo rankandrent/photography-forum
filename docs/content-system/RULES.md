@@ -159,6 +159,13 @@ Body: markdown. Start with a 2–3 sentence summary paragraph, then H2 sections,
 as `## FAQs` with `### Question?` + answer. Images use
 `![alt text](/blog/<slug>/<file>.svg "Caption")`.
 
+## Visuals must add, never repeat
+
+- An image may not restate a table or list in the same post. If the content is already a table or a
+  list, keep the HTML (it is indexable, accessible and responsive) and use no image for it.
+- Use visuals for what text cannot show well: an end-to-end process overview, a flow or decision tree,
+  relationships between parts, a timeline, a before/after, a 2×2 framework. 2–4 per post is enough.
+
 ## Files each agent writes
 
 | Agent | Writes |
