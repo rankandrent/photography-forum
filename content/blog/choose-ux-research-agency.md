@@ -17,6 +17,7 @@ takeaways:
   - "Ask for a sample screener and a redacted readout before you sign; both expose quality faster than a portfolio."
   - "Normalize proposals to user groups, participants, methods, recruitment difficulty and readout before comparing price."
   - "The contract should give you the recordings, transcripts and repository, with written deletion dates for participant data."
+image: /blog/choose-ux-research-agency/cover.svg
 draft: true
 qa: pending
 ---
@@ -42,7 +43,7 @@ Method-first briefs ("we need 20 interviews and a survey") produce proposals you
 
 **A 1-page research brief with 6 fields gets you proposals that compare like for like:** the decision, the users, what you already know, constraints, timeline and a budget band.
 
-<!-- visual: checklist — 1-page research brief template with 6 fields: decision, users, known evidence, constraints, timeline, budget band -->
+![Checklist sheet titled 1-page research brief with six numbered fields to fill in: decision, users, what you already know, constraints, timeline and budget band, each with a short prompt and blank lines](/blog/choose-ux-research-agency/research-brief-checklist.svg "The 6 fields of a 1-page research brief")
 
 1. **Decision.** The one sentence from the previous section.
 2. **Users.** Each user group and whether you can reach it through your own customer list.
@@ -72,7 +73,7 @@ The weights are our suggestion; adjust them to your decision.
 | Domain experience | A similar study with similar users | 15% | | | |
 | **Weighted total** | | **100%** | | | |
 
-<!-- visual: scorecard — weighted 7-criteria agency scorecard with 3 blank agency columns and a total row, printable -->
+![Printable scorecard table listing seven criteria with what to check and a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for Agency A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg "Weighted 7-criteria UX research agency scorecard")
 
 **Dedicated researchers.** Ask for the names and roles of the people who run sessions and synthesis. If the answer is "our design team," research is a phase, not a practice.
 
@@ -139,7 +140,7 @@ We answer these 12 on a first call, with the researcher who would run your study
 
 **Walk away when a UX research agency agrees to every method you list, cannot name its researchers, recruits vaguely or sells deliverable counts instead of answers.** Each of these UX research agency red flags has a question that exposes it.
 
-<!-- visual: framework — red-flag map pairing 6 warning signs with the pitch-call question that exposes each -->
+![Red-flag map pairing six agency warning signs, from agreeing to everything to selling deliverable counts, each linked by an arrow to the pitch-call question that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg "Six red flags and the question that exposes each")
 
 1. **It agrees to everything.** Ask: "Which part of my brief would you change?"
 2. **No named researchers.** Ask: "Who moderates session one?"
@@ -152,7 +153,7 @@ We answer these 12 on a first call, with the researcher who would run your study
 
 **Normalize every proposal to the same 5 units (user groups, participants, methods, recruitment difficulty and readout) before you compare price.** In a UX research proposal comparison, two quotes that look far apart often describe two different studies.
 
-<!-- visual: comparison table graphic — two proposals normalised on user groups, participants, methods, recruitment difficulty and readout, labelled as a hypothetical example -->
+![Hypothetical side-by-side of two research proposals normalized on user groups, participants shown as dots (8 versus 24 interviews), methods, recruitment difficulty, readout and a blank quoted fee line](/blog/choose-ux-research-agency/proposal-normalization.svg "Hypothetical example: two proposals on the same 5 units")
 
 *Hypothetical example for illustration, not market data:*
 
@@ -183,7 +184,7 @@ Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on th
 
 **In the first 2 weeks a good UX research agency agrees the research questions, finalizes the screener, starts recruitment and books the first sessions.** No session on the calendar by the end of week two means the timeline is slipping.
 
-<!-- visual: process diagram — first 2 weeks after signing: kickoff, plan sign-off, screener live, sessions booked, observers invited -->
+![Ten-day timeline across week 1 and week 2 showing kickoff on days 1-2, research plan sign-off on days 2-4, screener live on days 4-5, first sessions booked on days 5-10 and observers invited](/blog/choose-ux-research-agency/first-two-weeks-timeline.svg "What the first 2 weeks after signing should look like")
 
 1. **Kickoff (days 1–2).** Confirm the decision, research questions, user groups and decision owner.
 2. **Research plan sign-off (days 2–4).** Methods, participant criteria and the discussion guide outline.

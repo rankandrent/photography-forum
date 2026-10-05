@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="Manrope, system-ui, sans-serif">
+<rect width="1200" height="900" fill="#FBFAFB"/>
+<text x="60" y="72" font-size="36" font-weight="800" fill="#020101">Red-flag map</text>
+<text x="60" y="108" font-size="18" fill="#6B6B70">Each warning sign has a pitch-call question that exposes it.</text>
+<text x="60" y="166" font-size="15" font-weight="800" fill="#E2225F" letter-spacing="1.5">WARNING SIGN</text>
+<text x="640" y="166" font-size="15" font-weight="800" fill="#020101" letter-spacing="1.5">ASK ON THE PITCH CALL</text>
+<rect x="60.5" y="188.5" width="479" height="96" rx="18" fill="#FFE3EC" stroke="#E8E8EB"/>
+<path d="M88 260 V216 M88 218 h22 l-5 8 l5 8 h-22" fill="none" stroke="#E2225F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128" y="230" font-size="20" font-weight="800" fill="#020101">It agrees to everything.</text>
+<text x="128" y="258" font-size="15" fill="#6B6B70">Agrees to every method you list</text>
+<line x1="548" y1="236.0" x2="622" y2="236.0" stroke="#020101" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M614 230.0 l9 6 l-9 6" fill="none" stroke="#020101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="640.5" y="188.5" width="499" height="96" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M664 218 h30 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-18 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="none" stroke="#020101" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="679" y="240" font-size="16" font-weight="800" fill="#E2225F" text-anchor="middle">?</text>
+<text x="716" y="231" font-size="18" font-weight="700" fill="#020101">“Which part of my brief</text>
+<text x="716" y="257" font-size="18" font-weight="700" fill="#020101">would you change?”</text>
+<rect x="60.5" y="300.5" width="479" height="96" rx="18" fill="#FFE3EC" stroke="#E8E8EB"/>
+<path d="M88 372 V328 M88 330 h22 l-5 8 l5 8 h-22" fill="none" stroke="#E2225F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128" y="342" font-size="20" font-weight="800" fill="#020101">No named researchers.</text>
+<text x="128" y="370" font-size="15" fill="#6B6B70">Cannot name its researchers</text>
+<line x1="548" y1="348.0" x2="622" y2="348.0" stroke="#020101" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M614 342.0 l9 6 l-9 6" fill="none" stroke="#020101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="640.5" y="300.5" width="499" height="96" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M664 330 h30 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-18 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="none" stroke="#020101" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="679" y="352" font-size="16" font-weight="800" fill="#E2225F" text-anchor="middle">?</text>
+<text x="716" y="355" font-size="18" font-weight="700" fill="#020101">“Who moderates session one?”</text>
+<rect x="60.5" y="412.5" width="479" height="96" rx="18" fill="#FFE3EC" stroke="#E8E8EB"/>
+<path d="M88 484 V440 M88 442 h22 l-5 8 l5 8 h-22" fill="none" stroke="#E2225F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128" y="454" font-size="20" font-weight="800" fill="#020101">Recommendations before research.</text>
+<text x="128" y="482" font-size="15" fill="#6B6B70">Before any user has been interviewed</text>
+<line x1="548" y1="460.0" x2="622" y2="460.0" stroke="#020101" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M614 454.0 l9 6 l-9 6" fill="none" stroke="#020101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="640.5" y="412.5" width="499" height="96" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M664 442 h30 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-18 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="none" stroke="#020101" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="679" y="464" font-size="16" font-weight="800" fill="#E2225F" text-anchor="middle">?</text>
+<text x="716" y="455" font-size="18" font-weight="700" fill="#020101">“What evidence would</text>
+<text x="716" y="481" font-size="18" font-weight="700" fill="#020101">change your mind?”</text>
+<rect x="60.5" y="524.5" width="479" height="96" rx="18" fill="#FFE3EC" stroke="#E8E8EB"/>
+<path d="M88 596 V552 M88 554 h22 l-5 8 l5 8 h-22" fill="none" stroke="#E2225F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128" y="566" font-size="20" font-weight="800" fill="#020101">Research as a design phase.</text>
+<text x="128" y="594" font-size="15" fill="#6B6B70">No separate research plan</text>
+<line x1="548" y1="572.0" x2="622" y2="572.0" stroke="#020101" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M614 566.0 l9 6 l-9 6" fill="none" stroke="#020101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="640.5" y="524.5" width="499" height="96" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M664 554 h30 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-18 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="none" stroke="#020101" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="679" y="576" font-size="16" font-weight="800" fill="#E2225F" text-anchor="middle">?</text>
+<text x="716" y="567" font-size="18" font-weight="700" fill="#020101">“Can I buy the research</text>
+<text x="716" y="593" font-size="18" font-weight="700" fill="#020101">on its own?”</text>
+<rect x="60.5" y="636.5" width="479" height="96" rx="18" fill="#FFE3EC" stroke="#E8E8EB"/>
+<path d="M88 708 V664 M88 666 h22 l-5 8 l5 8 h-22" fill="none" stroke="#E2225F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128" y="678" font-size="20" font-weight="800" fill="#020101">Vague recruitment.</text>
+<text x="128" y="706" font-size="15" fill="#6B6B70">“We have a panel,” but no screener sample</text>
+<line x1="548" y1="684.0" x2="622" y2="684.0" stroke="#020101" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M614 678.0 l9 6 l-9 6" fill="none" stroke="#020101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="640.5" y="636.5" width="499" height="96" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M664 666 h30 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-18 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="none" stroke="#020101" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="679" y="688" font-size="16" font-weight="800" fill="#E2225F" text-anchor="middle">?</text>
+<text x="716" y="679" font-size="18" font-weight="700" fill="#020101">“Show me a screener and</text>
+<text x="716" y="705" font-size="18" font-weight="700" fill="#020101">your no-show policy.”</text>
+<rect x="60.5" y="748.5" width="479" height="96" rx="18" fill="#FFE3EC" stroke="#E8E8EB"/>
+<path d="M88 820 V776 M88 778 h22 l-5 8 l5 8 h-22" fill="none" stroke="#E2225F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128" y="790" font-size="20" font-weight="800" fill="#020101">Deliverable counts, not answers.</text>
+<text x="128" y="818" font-size="15" fill="#6B6B70">Unlinked to your decision</text>
+<line x1="548" y1="796.0" x2="622" y2="796.0" stroke="#020101" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M614 790.0 l9 6 l-9 6" fill="none" stroke="#020101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="640.5" y="748.5" width="499" height="96" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M664 778 h30 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-18 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="none" stroke="#020101" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="679" y="800" font-size="16" font-weight="800" fill="#E2225F" text-anchor="middle">?</text>
+<text x="716" y="791" font-size="18" font-weight="700" fill="#020101">“Which finding would make me</text>
+<text x="716" y="817" font-size="18" font-weight="700" fill="#020101">cancel this feature?”</text>
+<text x="60" y="878" font-size="16" fill="#6B6B70">Walk away when a UX research agency cannot name its researchers or recruits vaguely.</text>
+</svg>

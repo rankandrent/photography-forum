@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="Manrope, system-ui, sans-serif">
+<rect width="1200" height="900" fill="#FFFFFF"/>
+<text x="60" y="72" font-size="36" font-weight="800" fill="#020101">UX research agency scorecard</text>
+<text x="60" y="108" font-size="18" fill="#6B6B70">Score each agency from 1 to 5 on seven criteria and weight them by what your decision needs.</text>
+<rect x="60.5" y="140.5" width="1079" height="640" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M61 196 V160 a20 20 0 0 1 20 -20 H1119 a20 20 0 0 1 20 20 V196 Z" fill="#FFE3EC"/>
+<text x="90" y="175" font-size="16" font-weight="800" fill="#020101">Criterion and what to check</text>
+<text x="570" y="175" font-size="16" font-weight="800" fill="#020101" text-anchor="middle">Weight</text>
+<text x="700" y="175" font-size="16" font-weight="800" fill="#020101" text-anchor="middle">Agency A</text>
+<text x="860" y="175" font-size="16" font-weight="800" fill="#020101" text-anchor="middle">Agency B</text>
+<text x="1020" y="175" font-size="16" font-weight="800" fill="#020101" text-anchor="middle">Agency C</text>
+<text x="90" y="224" font-size="18" font-weight="700" fill="#020101">Dedicated researchers</text>
+<text x="90" y="246" font-size="14" fill="#6B6B70">Named people who moderate and synthesize</text>
+<text x="570" y="239" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">15%</text>
+<rect x="650" y="212" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="212" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="212" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="268" x2="1139" y2="268" stroke="#E8E8EB"/>
+<rect x="61" y="268" width="1078" height="72" fill="#FBFAFB"/>
+<text x="90" y="296" font-size="18" font-weight="700" fill="#020101">Method fit</text>
+<text x="90" y="318" font-size="14" fill="#6B6B70">Methods tied to your decision;</text>
+<text x="90" y="336" font-size="14" fill="#6B6B70">your list was challenged</text>
+<text x="570" y="311" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">20%</text>
+<rect x="650" y="284" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="284" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="284" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="340" x2="1139" y2="340" stroke="#E8E8EB"/>
+<text x="90" y="368" font-size="18" font-weight="700" fill="#020101">Recruitment ownership</text>
+<text x="90" y="390" font-size="14" fill="#6B6B70">Who screens, schedules, pays incentives</text>
+<text x="90" y="408" font-size="14" fill="#6B6B70">and replaces no-shows</text>
+<text x="570" y="383" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">15%</text>
+<rect x="650" y="356" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="356" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="356" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="412" x2="1139" y2="412" stroke="#E8E8EB"/>
+<rect x="61" y="412" width="1078" height="72" fill="#FBFAFB"/>
+<text x="90" y="440" font-size="18" font-weight="700" fill="#020101">Synthesis rigor</text>
+<text x="90" y="462" font-size="14" fill="#6B6B70">Traceability from quote to recommendation</text>
+<text x="570" y="455" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">15%</text>
+<rect x="650" y="428" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="428" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="428" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="484" x2="1139" y2="484" stroke="#E8E8EB"/>
+<text x="90" y="512" font-size="18" font-weight="700" fill="#020101">Readout quality</text>
+<text x="90" y="534" font-size="14" fill="#6B6B70">Findings ranked by impact; decision owners aligned</text>
+<text x="570" y="527" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">10%</text>
+<rect x="650" y="500" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="500" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="500" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="556" x2="1139" y2="556" stroke="#E8E8EB"/>
+<rect x="61" y="556" width="1078" height="72" fill="#FBFAFB"/>
+<text x="90" y="584" font-size="18" font-weight="700" fill="#020101">Data ethics</text>
+<text x="90" y="606" font-size="14" fill="#6B6B70">Consent, PII, retention, IP</text>
+<text x="570" y="599" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">10%</text>
+<rect x="650" y="572" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="572" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="572" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="628" x2="1139" y2="628" stroke="#E8E8EB"/>
+<text x="90" y="656" font-size="18" font-weight="700" fill="#020101">Domain experience</text>
+<text x="90" y="678" font-size="14" fill="#6B6B70">A similar study with similar users</text>
+<text x="570" y="671" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">15%</text>
+<rect x="650" y="644" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="810" y="644" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<rect x="970" y="644" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#D9D9DE" stroke-width="1.5"/>
+<line x1="61" y1="700" x2="1139" y2="700" stroke="#E8E8EB"/>
+<line x1="510" y1="140" x2="510" y2="780" stroke="#E8E8EB"/><line x1="620" y1="140" x2="620" y2="780" stroke="#E8E8EB"/>
+<path d="M61 700 H1139 V760 a20 20 0 0 1 -20 20 H81 a20 20 0 0 1 -20 -20 Z" fill="#FFE3EC"/>
+<text x="90" y="744" font-size="20" font-weight="800" fill="#020101">Weighted total</text>
+<text x="570" y="744" font-size="20" font-weight="800" fill="#E2225F" text-anchor="middle">100%</text>
+<rect x="645" y="718" width="110" height="40" rx="10" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<rect x="805" y="718" width="110" height="40" rx="10" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<rect x="965" y="718" width="110" height="40" rx="10" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<text x="60" y="826" font-size="16" fill="#6B6B70">The weights are our suggestion; adjust them to your decision.</text>
+<text x="60" y="856" font-size="16" fill="#6B6B70">Shortlist three: three proposals give you a real comparison on the scorecard.</text>
+</svg>
