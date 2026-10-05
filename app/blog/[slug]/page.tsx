@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { EmailCapture } from "@/components/forms/EmailCapture";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { CtaBand, FinalCta, Resources } from "@/components/sections/Blocks";
 import { WorkGrid } from "@/components/sections/WorkCards";
@@ -52,17 +53,37 @@ export default async function PostPage({ params }: Props) {
     ? [{ name: hubName!, path: routes.service(hub.slug) }, { name: p.title, path }]
     : [{ name: "Insights", path: routes.blog }, { name: p.title, path }];
 
-  const hubCta = hub && (
+  const cases = relatedCaseStudies(p);
+  const hubCta = hub && (p.funnel === "tofu" ? (
+    <aside className="post-cta" aria-label="Free checklist">
+      <p className="post-cta__eyebrow">Free resource</p>
+      <p className="post-cta__title">Get the UI/UX design readiness checklist</p>
+      <p className="post-cta__body">The questions our design leads ask before any {anchorOf(hub)} project. Our team emails it to you within one business day.</p>
+      <EmailCapture className="post-cta__form" source={`blog checklist: ${p.slug} (hub: ${hub.slug})`} cta="Send me the checklist" />
+    </aside>
+  ) : (
     <aside className="post-cta" aria-label={`${hubName} consultation`}>
       <p className="post-cta__eyebrow">{hubName}</p>
-      <p className="post-cta__title">Want senior designers to handle this for you?</p>
-      <p className="post-cta__body">{hub.summary}{hub.priceRange ? ` Typical investment: ${hub.priceRange}.` : ""}</p>
+      {p.funnel === "mofu" && cases[0] ? (
+        <>
+          <p className="post-cta__title">See how we did this for {cases[0].client}</p>
+          <p className="post-cta__body">{cases[0].result}. Want the same approach for your product?</p>
+        </>
+      ) : (
+        <>
+          <p className="post-cta__title">Want senior designers to handle this for you?</p>
+          <p className="post-cta__body">{hub.summary}{hub.priceRange ? ` Typical investment: ${hub.priceRange}.` : ""}</p>
+        </>
+      )}
       <div className="post-cta__actions">
         <a href="#cta-form" className="btn">Get a free consultation</a>
-        <Link href={routes.service(hub.slug)} className="post-cta__link">See our {anchorOf(hub)} →</Link>
+        {p.funnel === "mofu" && cases[0]
+          ? <Link href={routes.caseStudy(cases[0].slug)} className="post-cta__link">Read the case study →</Link>
+          : <Link href={routes.service(hub.slug)} className="post-cta__link">See our {anchorOf(hub)} →</Link>}
       </div>
     </aside>
-  );
+  ));
+
 
   return (
     <>
@@ -110,7 +131,7 @@ export default async function PostPage({ params }: Props) {
         cta="Book a free consultation"
       />
       <Resources heading="Keep reading" posts={relatedPosts(p)} />
-      <WorkGrid heading="Related case studies" items={relatedCaseStudies(p)} />
+      <WorkGrid heading="Related case studies" items={cases} />
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}${hub ? ` (hub: ${hub.slug})` : ""}`} submitLabel="Submit" />
       </FinalCta>

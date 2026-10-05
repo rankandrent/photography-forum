@@ -1430,3 +1430,7 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .res__more a { color: var(--text); border-bottom: 1px solid var(--border); }
 .res__more a:hover { color: var(--pink); border-color: var(--pink); }
 @media (max-width: 640px) { .post-silo__nav { grid-template-columns: 1fr; } .post-silo__nav a[rel="next"] { grid-column: auto; text-align: left; } .res__more { columns: 1; } }
+.post-cta__form { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.post-cta__form input { flex: 1 1 220px; height: 48px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); color: #fff; font: inherit; font-size: 15px; }
+.post-cta__form input::placeholder { color: rgba(255,255,255,.5); }
+.post-cta__form p { width: 100%; font-size: 14px; color: rgba(255,255,255,.8); }

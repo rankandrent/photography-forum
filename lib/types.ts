@@ -191,6 +191,8 @@ export type CaseStudy = {
 /** content/blog/<slug>.md front-matter + body */
 export type Post = {
   slug: string;
+  /** Funnel stage; picks the in-article CTA (tofu → checklist, mofu → case study, bofu → consultation) */
+  funnel: "tofu" | "mofu" | "bofu";
   title: string;
   /** Optional SEO title; defaults to the title */
   metaTitle?: string;

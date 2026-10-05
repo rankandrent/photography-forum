@@ -1,0 +1,41 @@
+{
+  "note": "Funnel mix for blog posts. The orchestrator and keyword researcher pick the stage that is furthest below target in each silo. Change the target here to shift the mix.",
+  "target": {
+    "tofu": 50,
+    "mofu": 30,
+    "bofu": 20
+  },
+  "minServiceSupport": {
+    "tofu": 3,
+    "mofu": 4,
+    "bofu": 5
+  },
+  "stages": {
+    "tofu": {
+      "reader": "Product/design people learning about a problem the hub service solves",
+      "examples": [
+        "what is a ux audit checklist",
+        "user interview questions for saas onboarding"
+      ],
+      "cta": "checklist / email capture (soft)"
+    },
+    "mofu": {
+      "reader": "Teams comparing approaches or planning the work",
+      "examples": [
+        "in-house ux team vs agency",
+        "ux research process for b2b saas"
+      ],
+      "cta": "case study + consultation"
+    },
+    "bofu": {
+      "reader": "Buyers ready to hire",
+      "examples": [
+        "ux research cost",
+        "how to choose a ux design agency",
+        "ux audit pricing"
+      ],
+      "cta": "free consultation + price range"
+    }
+  },
+  "firstPostsPerSilo": "Start a new silo with 1 BOFU and 1 MOFU post (fastest leads on a young site), then fill toward the target mix."
+}

@@ -19,6 +19,8 @@ Write `content/blog/<slug>.md` (frontmatter exactly as RULES.md, `draft: true`, 
 - Leave `<!-- link: anchor idea -->` markers where an internal link fits.
 - Follow the brief's `variety` (intro style, H2 frames, structure) exactly; read
   `docs/content-system/fingerprints.json` and do not reuse an intro, closing or section order.
+- Set `funnel:` from the brief. Match depth and tone to it: TOFU teaches the problem, MOFU compares
+  approaches and shows process, BOFU answers cost/selection/risk questions a buyer has.
 - Follow the brief's `leadAngle`: 1–2 natural, specific invitations to the hub service.
 - End with `## FAQs` (### questions) and a short closing paragraph that points to the hub service.
 

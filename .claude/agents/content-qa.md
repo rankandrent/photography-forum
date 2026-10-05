@@ -21,7 +21,8 @@ Check and record each item as PASS / FIX / FAIL in `content/briefs/<slug>.qa.md`
 7a. Competitor originality: if the brief has `beats`, WebFetch that page and FAIL when 5-gram overlap
    with it is above 5%, or when its heading order or examples are mirrored. The post must clearly
    cover more (the brief's serpGaps) than the `beats` page.
-7b. Silo & leads: services[0] is the right hub; silo link rules respected; service-support ≥ 4;
+7b. Silo & leads: services[0] is the right hub; silo link rules respected; `funnel` is set and the
+   keyword truly matches that stage; service-support meets the funnel.json minimum;
    the brief's leadAngle is delivered naturally (no hard sell).
 7c. Variety: compare with `docs/content-system/fingerprints.json` — FAIL if the post repeats a recent
    post's structure (RULES.md variety rule) or reuses intros/closings.

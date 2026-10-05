@@ -15,7 +15,9 @@ Input: a service hub slug (e.g. `ux-research-services`), optionally a topic idea
    Fall back to WebSearch (People Also Ask, related searches) when Semrush fails.
 3. Reject any candidate that overlaps an existing page's intent (cannibalisation) or needs the hub's
    head term. Prefer KD < 30, clear intent, and a SERP you can beat with first-hand agency depth.
-   Score service-support 1–5 (would this searcher plausibly hire the hub service?) and keep only 4–5.
+   Score service-support 1–5 (would this searcher plausibly hire the hub service?). Read
+   `docs/content-system/funnel.json`: count the silo's published posts per `funnel`, target the stage
+   furthest below its % target, and apply that stage's minimum service-support score.
    Prefer silo gaps (see RULES.md silo coverage list) over random topics.
 4. Study the top 5 ranking pages (WebFetch): headings, what they cover, what they miss.
 

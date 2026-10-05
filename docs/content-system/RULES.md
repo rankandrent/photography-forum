@@ -36,11 +36,20 @@ Reston, VA (founded 2017). Next.js static export; content lives in `content/`.
   cost, process, deliverables, how to choose a partner, in-house vs agency, tools/methods,
   mistakes, checklists/templates, examples, industry-specific angles.
 
+## Funnel mix (TOFU / MOFU / BOFU)
+
+- Target per silo, set in `funnel.json`: 50% TOFU, 30% MOFU, 20% BOFU. The next post in a silo takes
+  the stage that is furthest below target; a new silo starts with 1 BOFU + 1 MOFU post.
+- TOFU here is never generic trivia: it must be a problem the hub service solves (service-support ≥ 3)
+  and link up to the hub. MOFU needs service-support ≥ 4, BOFU 5.
+- Every post sets `funnel: tofu | mofu | bofu` in its frontmatter. The template picks the CTA:
+  TOFU → free checklist (email capture), MOFU → case study + consultation, BOFU → consultation + price.
+
 ## Lead focus (the goal of every post is a qualified lead)
 
 - Pick topics a buyer of the hub service searches (commercial-investigation and problem-aware
-  informational queries). Score each candidate's **service-support 1–5**; publish only 4–5.
-  Pure top-of-funnel trivia that never leads to hiring the service scores 1–2: skip it.
+  informational queries). Score each candidate's **service-support 1–5** and apply the funnel minimums in `funnel.json`.
+  Trivia that never leads to hiring the service scores 1–2: always skip it.
 - In the body, show where a senior agency team makes the difference (without sales fluff), and
   end each major section where a reader would naturally want help. The template adds the CTAs;
   the writer adds 1–2 natural, specific invitations (e.g. "we run this as a 2-week audit").
@@ -105,6 +114,7 @@ services: [ux-research-services]       # services[0] is the hub; slugs must exis
 industries: []                          # optional, slugs must exist
 tags: [ux research, user interviews]
 keyword: "how to run user interviews"
+funnel: tofu                  # tofu | mofu | bofu
 draft: true                   # the pipeline flips this only after QA passes
 qa: pending                   # pending | pass | fail  (set by content-qa)
 ---

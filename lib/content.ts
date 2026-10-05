@@ -94,6 +94,7 @@ function load() {
       date: toDate(data.date),
       author: data.author ?? "Design Team",
       type: data.type ?? "Article",
+      funnel: (["tofu", "mofu", "bofu"].includes(data.funnel) ? data.funnel : "mofu") as Post["funnel"],
       services: data.services ?? [],
       industries: data.industries ?? [],
       tags: data.tags ?? [],
