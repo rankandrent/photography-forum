@@ -1674,3 +1674,23 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 @media (max-width: 1280px) { .pgrid3 { grid-template-columns: 190px minmax(0, 1fr) 220px; gap: 32px; } }
 @media (max-width: 1200px) { .pgrid3 { grid-template-columns: 190px minmax(0, 1fr); } }
 @media (max-width: 900px) { .pgrid3 { grid-template-columns: minmax(0, 1fr); } }
+
+/* ===== Post: one "About the authors" box ===== */
+.pauthors { margin-top: 56px; padding: 24px 26px; border: 1px solid var(--border); border-radius: 20px; background: var(--white); }
+.post-article .pauthors__label { font-family: var(--font-m); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-m); margin: 0 0 16px; }
+.pauthors__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 24px; }
+.pauthors__person { display: flex; gap: 14px; align-items: center; }
+.pauthors__person + .pauthors__person { border-left: 1px solid var(--border); padding-left: 24px; }
+.pauthors__img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; }
+.pauthors__img--logo { display: inline-flex; align-items: center; justify-content: center; background: var(--pink); color: #fff; font-family: var(--font-d); font-weight: 800; font-size: 26px; }
+.pauthors__body { display: flex; flex-direction: column; gap: 2px; line-height: 1.35; }
+.pauthors__tag { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--pink); }
+.post-article a.pauthors__name { font-family: var(--font-d); font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
+.post-article a.pauthors__name:hover { color: var(--pink); }
+.pauthors__role { font-size: 14px; color: var(--text-m); }
+.post-article a.pauthors__in { font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); align-self: flex-start; margin-top: 4px; }
+.post-article .pauthors__bio { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; line-height: 1.6; color: var(--text-m); }
+@media (max-width: 640px) {
+  .pauthors { padding: 20px; }
+  .pauthors__person + .pauthors__person { border-left: none; padding-left: 0; padding-top: 16px; border-top: 1px solid var(--border); }
+}

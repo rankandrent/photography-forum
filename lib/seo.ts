@@ -199,7 +199,10 @@ export const articleLd = (a: {
   /** Author page path; the author is the Organization when authorIsPerson is false */
   authorUrl?: string;
   authorIsPerson?: boolean;
-  contributors?: { name: string; url: string }[];
+  authorJob?: string;
+  authorImage?: string;
+  authorSameAs?: string[];
+  contributors?: { name: string; url: string; jobTitle?: string; image?: string; sameAs?: string[] }[];
   image: string;
   type?: "Article" | "BlogPosting";
   keywords?: string[];
@@ -215,8 +218,26 @@ export const articleLd = (a: {
   author:
     a.authorIsPerson === false
       ? { "@type": "Organization", name: a.author, ...(a.authorUrl && { url: absoluteUrl(a.authorUrl) }) }
-      : { "@type": "Person", name: a.author, ...(a.authorUrl && { url: absoluteUrl(a.authorUrl) }) },
-  ...(a.contributors?.length && { contributor: a.contributors.map((c) => ({ "@type": "Person", name: c.name, url: absoluteUrl(c.url) })) }),
+      : {
+          "@type": "Person",
+          name: a.author,
+          ...(a.authorUrl && { url: absoluteUrl(a.authorUrl) }),
+          ...(a.authorJob && { jobTitle: a.authorJob }),
+          ...(a.authorImage && { image: absoluteUrl(a.authorImage) }),
+          ...(a.authorSameAs?.length && { sameAs: a.authorSameAs }),
+          worksFor: { "@id": ORG_ID },
+        },
+  ...(a.contributors?.length && {
+    contributor: a.contributors.map((c) => ({
+      "@type": "Person",
+      name: c.name,
+      url: absoluteUrl(c.url),
+      ...(c.jobTitle && { jobTitle: c.jobTitle }),
+      ...(c.image && { image: absoluteUrl(c.image) }),
+      ...(c.sameAs?.length && { sameAs: c.sameAs }),
+      worksFor: { "@id": ORG_ID },
+    })),
+  }),
   publisher: { "@id": ORG_ID },
   mainEntityOfPage: absoluteUrl(a.path),
 });

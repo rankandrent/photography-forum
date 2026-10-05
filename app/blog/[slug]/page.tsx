@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AuthorCard } from "@/components/blog/BlogParts";
 import { CopyLink, ReadingProgress, TocSpy } from "@/components/blog/PostClient";
 import { EmailCapture } from "@/components/forms/EmailCapture";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -9,7 +8,7 @@ import { CtaBand, FinalCta, Resources } from "@/components/sections/Blocks";
 import { WorkGrid } from "@/components/sections/WorkCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { formInterests, home } from "@/content/home";
-import { authorOf, blogRoutes, categoryOf, contributorsOf, postsByAuthor, slugify } from "@/lib/blog";
+import { authorOf, blogRoutes, categoryOf, contributorsOf, slugify } from "@/lib/blog";
 import { anchorOf, getPost, getPosts, getService, postsForService, relatedCaseStudies, relatedPosts, staticParams } from "@/lib/content";
 import { articleLd, faqLd, pageMetadata } from "@/lib/seo";
 import { absoluteUrl, cap, routes } from "@/lib/site";
@@ -216,16 +215,28 @@ export default async function PostPage({ params }: Props) {
 
             {!!p.tags.length && <p className="ptags">{p.tags.map((t) => <span key={t}>{t}</span>)}</p>}
 
-            <div className="post-author">
-              <p className="post-author__label">Written by</p>
-              <AuthorCard a={author} count={postsByAuthor(author.slug).length} />
-              {!!team.length && (
-                <>
-                  <p className="post-author__label post-author__label--2">In collaboration with</p>
-                  {team.map((c) => <AuthorCard key={c.slug} a={c} compact />)}
-                </>
-              )}
-            </div>
+            <section className="pauthors" aria-label="About the authors">
+              <p className="pauthors__label">About the authors</p>
+              <div className="pauthors__grid">
+                {[{ a: author, role: "Author" }, ...team.map((c) => ({ a: c, role: "Collaborator" }))].map(({ a, role }) => (
+                  <div key={a.slug} className="pauthors__person">
+                    {a.photo ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={a.photo} alt={`${a.name}, ${a.role}`} width={64} height={64} loading="lazy" className="pauthors__img" />
+                    ) : (
+                      <span className="pauthors__img pauthors__img--logo" aria-hidden="true">U</span>
+                    )}
+                    <div className="pauthors__body">
+                      <span className="pauthors__tag">{role}</span>
+                      <Link href={blogRoutes.author(a.slug)} className="pauthors__name">{a.name}</Link>
+                      <span className="pauthors__role">{a.role}</span>
+                      {a.linkedin && <a href={a.linkedin} target="_blank" rel="noopener" className="pauthors__in">LinkedIn</a>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {author.hasBio && <p className="pauthors__bio">{author.bio}</p>}
+            </section>
 
             {hub && (
               <nav className="post-silo" aria-label={`More on ${hubName}`}>
@@ -268,7 +279,7 @@ export default async function PostPage({ params }: Props) {
       <FinalCta testimonial={home.testimonial}>
         <LeadForm variant="full" interests={formInterests} source={`blog: ${p.slug}${hub ? ` (hub: ${hub.slug})` : ""}`} submitLabel="Submit" />
       </FinalCta>
-      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, modified: p.updated, author: author.name, authorUrl: blogRoutes.author(author.slug), authorIsPerson: author.person, contributors: team.map((c) => ({ name: c.name, url: blogRoutes.author(c.slug) })), type: "BlogPosting", keywords: p.tags })} />
+      <JsonLd data={articleLd({ image: `/og/blog/${p.slug}.png`, title: p.title, description: p.description, path, date: p.date, modified: p.updated, author: author.name, authorUrl: blogRoutes.author(author.slug), authorIsPerson: author.person, authorJob: author.person ? author.role : undefined, authorImage: author.photo, authorSameAs: author.linkedin ? [author.linkedin] : undefined, contributors: team.map((c) => ({ name: c.name, url: blogRoutes.author(c.slug), jobTitle: c.role, image: c.photo, sameAs: c.linkedin ? [c.linkedin] : undefined })), type: "BlogPosting", keywords: p.tags })} />
       {!!faqs.length && <JsonLd data={faqLd(faqs)} />}
     </>
   );
