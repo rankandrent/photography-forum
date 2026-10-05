@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { SocialLinks } from "@/components/ui/SocialLinks";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState, type MouseEvent } from "react";
 import { routes } from "@/lib/site";
 
 export type NavItem = { title: string; href: string; summary?: string };
@@ -12,6 +13,28 @@ export type NavGroup = { category: string; items: NavItem[] };
 export function Header({ serviceGroups, industries, locations }: { serviceGroups: NavGroup[]; industries: NavItem[]; locations: NavItem[] }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  // true right after a dropdown link is clicked: keeps the panels shut until the cursor leaves the nav
+  const [ddClosed, setDdClosed] = useState(false);
+  const pathname = usePathname();
+
+  // a new page drops focus from the clicked menu link (mobile links close the menu themselves)
+  useEffect(() => {
+    if (document.activeElement instanceof HTMLElement && document.activeElement.closest(".hdr")) document.activeElement.blur();
+  }, [pathname]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      setDdClosed(true);
+      if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const onPanelClick = (e: MouseEvent) => {
+    if ((e.target as HTMLElement).closest("a")) setDdClosed(true);
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -26,12 +49,12 @@ export function Header({ serviceGroups, industries, locations }: { serviceGroups
   const mainGroups = serviceGroups.filter((g) => g !== specialGroup);
 
   return (
-    <header className={`hdr${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
+    <header className={`hdr${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}${ddClosed ? " dd-closed" : ""}`}>
       <div className="hdr__inner">
         <Link href="/" className="hdr__logo" aria-label="UI UX Design Services home" onClick={close}>
           <Logo />
         </Link>
-        <nav className="hdr__nav" aria-label="Main">
+        <nav className="hdr__nav" aria-label="Main" onClick={onPanelClick} onMouseLeave={() => setDdClosed(false)}>
           <div className="hdr__dd hdr__dd--mega">
             <Link href={routes.services}>Services</Link>
             <div className="hdr__dd-panel mega">
