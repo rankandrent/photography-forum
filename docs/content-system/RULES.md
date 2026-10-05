@@ -58,6 +58,14 @@ Reston, VA (founded 2017). Next.js static export; content lives in `content/`.
   QA and fact-check failures, audit findings and ranking/traffic results become lessons for the
   agent that owns them. Lessons are evidence-based rules, not opinions.
 
+## Competitor topics (out-do, never copy)
+
+- The researcher tracks competitor blogs that rank for our silos in `competitors.json` and their
+  best-performing posts. We may write on the same topic when it serves a silo, but our post must be
+  original and clearly better: more complete, current, first-hand, with better visuals.
+- Never copy or paraphrase a competitor's text, outline order, examples, images or data. QA checks
+  overlap with the competitor page (`beats` in the brief) and fails anything above 5%.
+
 ## Honesty (hard rules, any breach fails QA)
 
 - No invented statistics, clients, testimonials, awards, ratings, certifications, team

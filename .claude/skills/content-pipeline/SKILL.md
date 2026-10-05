@@ -24,6 +24,9 @@ reads its own `learnings/<agent>.md`; remind each one in its prompt.
   the biggest coverage gap and the highest lead value.
 - Record the plan in the ledger under `runs` (date, goal, jobs).
 
+Goals can name competitor mode: "competitor topics for SaaS UX" → researchers run competitor-gap
+mode first and brief the strongest competitor topic for each silo.
+
 ## 2. RESEARCH — parallel
 Launch one `seo-keyword-researcher` per job in a single message (parallel Agent calls). Each writes
 `content/briefs/<slug>.json`. Then compare the briefs with each other: if two keywords overlap in

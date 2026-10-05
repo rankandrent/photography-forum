@@ -18,6 +18,25 @@ Input: a service hub slug (e.g. `ux-research-services`), optionally a topic idea
    Score service-support 1–5 (would this searcher plausibly hire the hub service?) and keep only 4–5.
    Prefer silo gaps (see RULES.md silo coverage list) over random topics.
 4. Study the top 5 ranking pages (WebFetch): headings, what they cover, what they miss.
+
+## Competitor-gap mode (run it in every research, and alone when asked "competitor topics")
+a. Find who ranks: for the hub's head keyword and 3–5 silo keywords, list the domains in Google's
+   top 10 (Semrush SERP / organic research, else WebSearch). Keep agencies and publishers that have a
+   blog; skip marketplaces, directories and Wikipedia. Save them in `docs/content-system/competitors.json`.
+b. Find their best posts: for each domain use Semrush organic research (top pages by traffic,
+   filtered to blog/insights/guides URLs) to get the posts that bring them the most organic traffic
+   and the keywords those posts rank for. Without Semrush, use `site:<domain> <topic>` searches and
+   pick posts that rank on page 1 for several silo queries.
+c. Map each strong post to our silo; drop topics with service-support < 4, topics we already cover,
+   and topics a pillar/location/industry page owns. Record them in `competitors.json → topPosts`
+   (domain, url, title, keywords, est. traffic, our silo, status: candidate | briefed | published).
+d. Pick the best candidate when it beats the other candidates on (traffic × service-support) and
+   write the brief to OUT-DO it: cover everything it covers that matters, add what it misses (SERP
+   gaps, first-hand agency process, a better visual, a template or checklist, current facts), and use
+   a different structure and angle. Note the competitor URL in the brief as `beats`.
+e. Originality is non-negotiable: never copy or paraphrase their text, headings order, examples,
+   images or data. We take the TOPIC and the user need, not the content. QA fails any post whose
+   5-gram overlap with the `beats` page is above 5%.
 5. Write `content/briefs/<slug>.json`:
    `{ slug, keyword, secondary[], intent, volume, kd, hub, services[], industries[],
      centralEntity, entities[], attributes[], ngrams[], questions[], serpGaps[],
