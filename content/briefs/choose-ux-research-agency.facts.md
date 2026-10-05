@@ -63,3 +63,41 @@
 6. L78 and the L131 table cell: remove wording that contradicts the site's designers-run-research positioning (rows 21, 22).
 
 VERDICT: FAIL
+
+---
+
+## Round 2 (re-check after repair round 1, 2026-10-05)
+
+Scope: the full post was re-read after the repair. The 7 fix items listed above were checked against the new text. Every rewritten sentence was checked for new claims. All `<text>` labels in the 6 SVGs were re-extracted. WebFetch is still blocked, so external sources were re-checked with WebSearch limited to the source's domain.
+
+### Fix items
+
+| Item | Rows | Post line now | Verdict | Evidence |
+|---|---|---|---|---|
+| 1. NN/g per-group counts | 3 | L102: "…with 3–4 users per group when you test two distinct user groups and at least 3 per group for three or more." | TRUE | Matches the NN/g article (nngroup.com/articles/why-you-only-need-to-test-with-5-users/): "3–4 users from each category if testing two groups… 3 users from each category if testing three or more groups (you always want at least 3 users…)". The words "at least" are supported by that parenthetical |
+| 2. Insights Association link host | 4a | L178: `https://www.insightsassociation.org/About-Us/Code-of-Standards` | TRUE | A WebSearch on insightsassociation.org returns this exact URL, titled "Code of Standards". Snippets: "Researchers must be transparent about the collection of personal data and only collect personal data with consent". The Code was last updated September 2025, so it is current |
+| 3. HIPAA BAA condition | 7 | L179: "…and your company is a HIPAA covered entity or business associate, the agency signs a … (BAA)." | TRUE | Consistent with the HHS business-associates guidance (hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/). The HHS sample-provisions link is unchanged and still supports "return or destroy PHI" |
+| 4. Price-driver units | 17 | L171: "…priced on four of these units (user groups, participants, methods and recruitment difficulty)…" | TRUE | `content/services/ux-research-services.json` L168: "The price depends on 4 factors: the number of user groups, the number of participants, the number of methods and the recruitment difficulty." L27 and L28 give the $25,000–$60,000 range and 4–8 weeks |
+| 5a. Pitch-call offer | 19 | L137: "Ask us these 12 on a free consultation call, before you receive our fixed-scope proposal." | TRUE | `content/pages/about.md` L29: "every project begins with a free consultation and a fixed-scope proposal" |
+| 5b. Closing CTA | 20 | L197: "[Send us your research brief](/contact/) for a free consultation and a fixed-scope proposal…" | TRUE | Same source as 5a. The post no longer mentions a "30-minute call" or a "lead researcher" (grep of the post) |
+| 6a. Dedicated-researchers rubric | 21 | L78: "If no one can name who moderates the sessions and who synthesizes them, research is a phase, not a practice." | TRUE | The sentence no longer conflicts with `home.ts` ("The designers who run your research…"). Scored against this rubric, our agency passes, because it can name its team |
+| 6b. Synthesis independence cell | 22 | L131: "Evidence shown before solutions; a second reviewer checks each finding against the session clips" | TRUE | The cell no longer requires a reviewer outside the design team. It is generic buyer guidance, not a company claim |
+
+### New or rewritten text scanned for new claims
+
+- L78 lead sentence "Ask for the names and roles of the people who run sessions and synthesis": buyer advice, no claim. TRUE.
+- L137 and L197: the only first-person offers left are the free consultation and the fixed-scope proposal, both on the site. TRUE.
+- L171: the figures are unchanged and sourced from the hub. TRUE.
+- L179: no new figures or laws; the HIPAA and HHS expansions are still correct. TRUE.
+- No new external links. The 5 external links (GOV.UK, NN/g, Insights Association `www.`, HHS sample BAA, ISO 77520) all match URLs returned by site-limited searches.
+- No new clients, testimonials, awards, certifications, team members or offices were introduced.
+
+### SVG labels (re-extracted)
+
+All `<text>` content in cover, research-brief-checklist, agency-scorecard, red-flag-map, proposal-normalization and first-two-weeks-timeline is the same as in round 1 and still matches the post: weights add to 100%; day ranges are 1–2, 2–4, 4–5 and 5–10; the proposal SVG is labelled "Hypothetical example for illustration, not market data" and has no fee figures. None of the SVGs mentions a 30-minute call, a lead researcher or a researcher-led first call. TRUE.
+
+### Outstanding replacements
+
+None.
+
+VERDICT: PASS
