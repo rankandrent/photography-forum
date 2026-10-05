@@ -170,3 +170,80 @@ Required fix (redesign the 5 inline SVGs, keeping the same content and files):
 - Item 6: all 5 inline infographics (`agency-scorecard.svg`, `first-two-weeks-timeline.svg`, `proposal-normalization.svg`, `red-flag-map.svg`, `research-brief-checklist.svg`). Text renders at 7–11px on desktop (628px column) and 4–6.5px on mobile (354px). The content-visual-designer must re-export them to the spec in section 6. QA then re-checks item 6 only.
 
 VERDICT: FAIL
+
+---
+
+## Round 2 (re-review after repair round 1)
+
+- Date: 2026-10-05
+- Scope: item 6 re-check of the redrawn SVGs inside the built page at 1440px and 390px; confirm F1–F5; quick full pass on what the text repair could have broken.
+- Method: `SHOW_DRAFTS=1 npm run build`, served `out/` locally, Playwright Chromium. Scrolled every image into view, measured rendered width against viewBox width, ran DOMParser and getBBox on every text node, and took element screenshots at both viewports.
+
+### F1–F5: all applied
+
+| Fix | Status | Evidence |
+|---|---|---|
+| F1 closing paragraph removed | Applied | The file ends at "…Hard-to-recruit groups take longer." (line 219). The built FAQPage `acceptedAnswer` for "How fast can a UX research agency start fieldwork?" now holds only the answer. |
+| F2 "agrees on the objectives" | Applied | line 57 |
+| F3 "agrees on the research questions" | Applied | line 185 |
+| F4 "a UX research partner asks why" | Applied | line 80 (n-gram "ux research partner" ×1) |
+| F5 generative/evaluative bullets rewritten | Applied | lines 35–36. Hub 5-gram overlap dropped from 0.34% to 0.08%. The only shared 5-grams left are "user interviews and contextual inquiry" and "research questions user groups and". |
+
+### Quick full pass after the text repair
+
+- Bold answers: all 10 question/entity H2s still open with a bold answer sentence.
+- FAQ schema: 5 questions, and each answer holds only its own text. The boolean FAQs still start with "No".
+- Internal links: 8 in the body (hub ×2, saas, tradezella, usability-testing-services, toolsgroup, healthcare, contact). All exist in `out/`. The hub is still linked in the first section.
+- Keyword: the central entity "UX research agency" appears 12 times (about 1.5% word share). The exact keyword is still in the title, metaTitle and intro. There are no hedges (might/may/could/perhaps: 0) and no banned phrases.
+- Changed CTA copy (lines 137 and 197, "free consultation" and "fixed-scope proposal") is soft and not a hard sell. Its factual basis belongs to the fact-checker.
+- Alt texts at lines 46, 76, 143, 156 and 187 were updated to describe the redrawn graphics, and they match what each image shows.
+
+### 6. Images (re-check)
+
+**Inline infographics: PASS.** All 5 are now 800px-wide viewBoxes, with 26px as the smallest text.
+
+| File | Rendered width (desktop / mobile) | Smallest text rendered (desktop / mobile) | parsererror | Text overflow |
+|---|---|---|---|---|
+| research-brief-checklist.svg | 628 / 354 | 20.4px / 11.5px | none | none |
+| agency-scorecard.svg | 628 / 354 | 20.4px / 11.5px | none | none |
+| red-flag-map.svg | 628 / 354 | 20.4px / 11.5px | none | none |
+| proposal-normalization.svg | 628 / 354 | 20.4px / 11.5px | none | none |
+| first-two-weeks-timeline.svg | 628 / 354 | 20.4px / 11.5px | none | none |
+
+- The only bounding-box overlaps are the two lines of the same wrapped title (descender boxes). Screenshots show no visual collision.
+- In-page screenshots at 390px show every label is readable. Spelling is correct and the figures match the post: weights 15/20/15/15/10/10/15 = 100%, 8 vs 24 interviews (12 per group), days 1–2/2–4/4–5/5–10. The step "Observers invited" has no invented duration, and the "Hypothetical example for illustration, not market data" label is kept.
+- No `<image>` elements, external references or third-party brand assets.
+
+**Cover: FAIL (content-visual-designer). The cover title is cropped on mobile.** The post template shows `cover.svg` in `.pcover` with `object-fit: cover`. The aspect ratio is `21 / 8` on desktop but `16 / 9` on mobile (`app/globals.css:1598`). The cover is 1600×600 (8:3), so on a 390px viewport the box is 354×199 and the visible window is only SVG x ≈ 267–1333. All cover text starts at x=100, so the hero reads "w to choose a / research agency" and "…H SERVICES GUIDE", with the start of every line cut off. The round-1 PASS for the cover was judged at desktop only, and that was my miss. At 1440px the crop is about 12px per side, which is fine. The kicker also renders at 4.4px on mobile (20px × 354/1600).
+
+Required fix (one of these):
+- (a) Designer: redraw `cover.svg` at 1600×600 with **all text inside the 16:9 safe area, x 300–1300** (and y 40–560). Make the kicker ≥ 30px and the subtitle ≥ 32px, so they are ≥ 10px at mobile scale (0.332). The title at 84px must fit within 1000 units, so wrap it to fit, for example "How to choose" / "a UX research" / "agency" at 76–84px. The clipboard illustration may sit at the right edge and be cropped on mobile. Before handing back, screenshot `.pcover` inside the built page at 390px and 1440px.
+- (b) Orchestrator, template-wide alternative: make the mobile `.pcover--img` keep the image's ratio (for example `.pcover--img { aspect-ratio: 8 / 3; }` in the mobile media query) so 1600×600 covers are not cropped. Even then the kicker stays below 10px on mobile, so (a) is still needed for the kicker size.
+
+### Build: PASS
+
+- `SHOW_DRAFTS=1 npm run build`: exit 0. 78 pages.
+- `npm run seo:check`: exit 0, "78 pages checked · 0 errors · 7 warnings". These are the same 7 warnings as in round 1, and none is about this post's metadata.
+- `npm run lint`: exit 0. Only non-error jsx-ast-utils notices.
+
+### Round 2 summary
+
+| # | Check | Result |
+|---|---|---|
+| 1 | Intent and cannibalisation | PASS (unchanged) |
+| 4 | Semantic SEO | PASS (F1, F4, F5 applied) |
+| 5 | Internal links | PASS |
+| 6 | Images | **FAIL** (inline infographics PASS; cover cropped on mobile) |
+| 7 | Readability | PASS (F2, F3 applied) |
+| 7a–7c | Originality, silo/leads, variety | PASS (unchanged) |
+| 8 | Build | PASS |
+
+### FIX list
+
+- None. The text is clean.
+
+### FAIL list
+
+- Item 6, `public/blog/choose-ux-research-agency/cover.svg`: at 390px the `.pcover` 16:9 `object-fit: cover` crop cuts the start of every text line ("w to choose a / research agency"), and the kicker renders at 4.4px. Redraw the cover with all text inside x 300–1300 and the kicker ≥ 30px, per option (a) above. Option (b) is the orchestrator's template alternative. QA then re-checks the cover only.
+
+VERDICT: FAIL
