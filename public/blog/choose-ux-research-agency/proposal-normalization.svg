@@ -1,72 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="Manrope, system-ui, sans-serif">
-<rect width="1200" height="900" fill="#FFFFFF"/>
-<text x="60" y="70" font-size="36" font-weight="800" fill="#020101">Normalize proposals before you compare price</text>
-<rect x="60" y="92" width="520" height="34" rx="17" fill="#FFE3EC"/>
-<text x="78" y="115" font-size="15" font-weight="700" fill="#E2225F">Hypothetical example for illustration, not market data</text>
-<rect x="320.5" y="160.5" width="399" height="700" rx="20" fill="#FBFAFB" stroke="#E8E8EB"/>
-<rect x="740.5" y="160.5" width="399" height="700" rx="20" fill="#FBFAFB" stroke="#E8E8EB"/>
-<text x="520" y="206" font-size="24" font-weight="800" fill="#020101" text-anchor="middle">Proposal A</text>
-<text x="940" y="206" font-size="24" font-weight="800" fill="#020101" text-anchor="middle">Proposal B</text>
-<line x1="60" y1="230" x2="1140" y2="230" stroke="#E8E8EB"/>
-<text x="60" y="286.0" font-size="18" font-weight="800" fill="#020101">User groups</text>
-<line x1="60" y1="330" x2="1140" y2="330" stroke="#E8E8EB"/>
-<text x="60" y="401.0" font-size="18" font-weight="800" fill="#020101">Participants</text>
-<line x1="60" y1="460" x2="1140" y2="460" stroke="#E8E8EB"/>
-<text x="60" y="511.0" font-size="18" font-weight="800" fill="#020101">Methods</text>
-<line x1="60" y1="550" x2="1140" y2="550" stroke="#E8E8EB"/>
-<text x="60" y="591.0" font-size="18" font-weight="800" fill="#020101">Recruitment</text><text x="60" y="615.0" font-size="18" font-weight="800" fill="#020101">difficulty</text>
-<line x1="60" y1="640" x2="1140" y2="640" stroke="#E8E8EB"/>
-<text x="60" y="711.0" font-size="18" font-weight="800" fill="#020101">Readout</text>
-<line x1="60" y1="770" x2="1140" y2="770" stroke="#E8E8EB"/>
-<text x="60" y="821.0" font-size="18" font-weight="800" fill="#020101">Quoted fee</text>
-<circle cx="380" cy="262" r="10" fill="none" stroke="#E2225F" stroke-width="2"/><path d="M362 296 a18 16 0 0 1 36 0" fill="none" stroke="#E2225F" stroke-width="2"/>
-<text x="420" y="290" font-size="22" font-weight="800" fill="#020101">1</text>
-<circle cx="800" cy="262" r="10" fill="none" stroke="#E2225F" stroke-width="2"/><path d="M782 296 a18 16 0 0 1 36 0" fill="none" stroke="#E2225F" stroke-width="2"/>
-<circle cx="850" cy="262" r="10" fill="none" stroke="#020101" stroke-width="2"/><path d="M832 296 a18 16 0 0 1 36 0" fill="none" stroke="#020101" stroke-width="2"/>
-<text x="890" y="290" font-size="22" font-weight="800" fill="#020101">2</text>
-<circle cx="352" cy="362" r="9" fill="#E2225F"/>
-<circle cx="378" cy="362" r="9" fill="#E2225F"/>
-<circle cx="404" cy="362" r="9" fill="#E2225F"/>
-<circle cx="430" cy="362" r="9" fill="#E2225F"/>
-<circle cx="456" cy="362" r="9" fill="#E2225F"/>
-<circle cx="482" cy="362" r="9" fill="#E2225F"/>
-<circle cx="508" cy="362" r="9" fill="#E2225F"/>
-<circle cx="534" cy="362" r="9" fill="#E2225F"/>
-<text x="343" y="436" font-size="16" fill="#020101">8 interviews</text>
-<circle cx="772" cy="362" r="9" fill="#E2225F"/>
-<circle cx="798" cy="362" r="9" fill="#E2225F"/>
-<circle cx="824" cy="362" r="9" fill="#E2225F"/>
-<circle cx="850" cy="362" r="9" fill="#E2225F"/>
-<circle cx="876" cy="362" r="9" fill="#E2225F"/>
-<circle cx="902" cy="362" r="9" fill="#E2225F"/>
-<circle cx="928" cy="362" r="9" fill="#E2225F"/>
-<circle cx="954" cy="362" r="9" fill="#E2225F"/>
-<circle cx="980" cy="362" r="9" fill="#E2225F"/>
-<circle cx="1006" cy="362" r="9" fill="#E2225F"/>
-<circle cx="1032" cy="362" r="9" fill="#E2225F"/>
-<circle cx="1058" cy="362" r="9" fill="#E2225F"/>
-<circle cx="772" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="798" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="824" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="850" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="876" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="902" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="928" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="954" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="980" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="1006" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="1032" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<circle cx="1058" cy="390" r="8" fill="none" stroke="#020101" stroke-width="2"/>
-<text x="763" y="436" font-size="16" fill="#020101">24 interviews (12 per group)</text>
-<rect x="343" y="487" width="150" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="359" y="511" font-size="15" fill="#020101">User interviews</text>
-<rect x="763" y="487" width="330" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="779" y="511" font-size="15" fill="#020101">User interviews and contextual inquiry</text>
-<rect x="343" y="577" width="200" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="359" y="601" font-size="15" fill="#020101">Panel, general profile</text>
-<rect x="763" y="577" width="270" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="779" y="601" font-size="15" fill="#020101">Specialist recruiter, clinicians</text>
-<rect x="343" y="685" width="180" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="359" y="709" font-size="15" fill="#020101">Slide deck by email</text>
-<rect x="763" y="665" width="130" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="779" y="689" font-size="15" fill="#020101">Live readout</text>
-<rect x="903" y="665" width="76" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="919" y="689" font-size="15" fill="#020101">Clips</text>
-<rect x="763" y="711" width="170" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/><text x="779" y="735" font-size="15" fill="#020101">Tagged repository</text>
-<text x="343" y="815" font-size="16" fill="#6B6B70">Write it in</text><line x1="343" y1="830" x2="683" y2="830" stroke="#E2225F" stroke-width="1.5" stroke-dasharray="6 6"/>
-<text x="763" y="815" font-size="16" fill="#6B6B70">Write it in</text><line x1="763" y1="830" x2="1103" y2="830" stroke="#E2225F" stroke-width="1.5" stroke-dasharray="6 6"/>
-<text x="60" y="888" font-size="16" fill="#6B6B70">Two quotes that look far apart often describe two different studies.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1568" width="800" height="1568" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1568" fill="#FBFAFB"/>
+<text x="48" y="78" font-size="38" font-weight="800" fill="#020101">Normalize proposals</text>
+<text x="48" y="124" font-size="38" font-weight="800" fill="#020101">before you compare price</text>
+<rect x="40" y="152" width="720" height="92" rx="16" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="400" y="190" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Hypothetical example for illustration,</text>
+<text x="400" y="226" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">not market data</text>
+<rect x="40.5" y="272.5" width="351" height="63" rx="16" fill="#FFE3EC" stroke="#FFE3EC"/>
+<rect x="408.5" y="272.5" width="351" height="63" rx="16" fill="#FFE3EC" stroke="#FFE3EC"/>
+<text x="216" y="315" font-size="30" font-weight="800" fill="#020101" text-anchor="middle">Proposal A</text>
+<text x="584" y="315" font-size="30" font-weight="800" fill="#020101" text-anchor="middle">Proposal B</text>
+<rect x="40.5" y="360.5" width="719" height="135" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="400" font-size="26" font-weight="800" fill="#6B6B70">User groups</text>
+<path d="M400 418 V480" stroke="#E8E8EB" stroke-width="2"/>
+<text x="64" y="472" font-size="56" font-weight="800" fill="#E2225F">1</text>
+<text x="424" y="472" font-size="56" font-weight="800" fill="#E2225F">2</text>
+<rect x="40.5" y="512.5" width="719" height="223" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="552" font-size="26" font-weight="800" fill="#6B6B70">Participants</text>
+<path d="M400 570 V720" stroke="#E8E8EB" stroke-width="2"/>
+<circle cx="76" cy="588" r="9" fill="#E2225F"/>
+<circle cx="102" cy="588" r="9" fill="#E2225F"/>
+<circle cx="128" cy="588" r="9" fill="#E2225F"/>
+<circle cx="154" cy="588" r="9" fill="#E2225F"/>
+<circle cx="180" cy="588" r="9" fill="#E2225F"/>
+<circle cx="206" cy="588" r="9" fill="#E2225F"/>
+<circle cx="232" cy="588" r="9" fill="#E2225F"/>
+<circle cx="258" cy="588" r="9" fill="#E2225F"/>
+<text x="64" y="668" font-size="26" font-weight="700" fill="#020101">8 interviews</text>
+<circle cx="436" cy="588" r="9" fill="#E2225F"/>
+<circle cx="462" cy="588" r="9" fill="#E2225F"/>
+<circle cx="488" cy="588" r="9" fill="#E2225F"/>
+<circle cx="514" cy="588" r="9" fill="#E2225F"/>
+<circle cx="540" cy="588" r="9" fill="#E2225F"/>
+<circle cx="566" cy="588" r="9" fill="#E2225F"/>
+<circle cx="592" cy="588" r="9" fill="#E2225F"/>
+<circle cx="618" cy="588" r="9" fill="#E2225F"/>
+<circle cx="644" cy="588" r="9" fill="#E2225F"/>
+<circle cx="670" cy="588" r="9" fill="#E2225F"/>
+<circle cx="696" cy="588" r="9" fill="#E2225F"/>
+<circle cx="722" cy="588" r="9" fill="#E2225F"/>
+<circle cx="436" cy="614" r="9" fill="#E2225F"/>
+<circle cx="462" cy="614" r="9" fill="#E2225F"/>
+<circle cx="488" cy="614" r="9" fill="#E2225F"/>
+<circle cx="514" cy="614" r="9" fill="#E2225F"/>
+<circle cx="540" cy="614" r="9" fill="#E2225F"/>
+<circle cx="566" cy="614" r="9" fill="#E2225F"/>
+<circle cx="592" cy="614" r="9" fill="#E2225F"/>
+<circle cx="618" cy="614" r="9" fill="#E2225F"/>
+<circle cx="644" cy="614" r="9" fill="#E2225F"/>
+<circle cx="670" cy="614" r="9" fill="#E2225F"/>
+<circle cx="696" cy="614" r="9" fill="#E2225F"/>
+<circle cx="722" cy="614" r="9" fill="#E2225F"/>
+<text x="424" y="668" font-size="26" font-weight="700" fill="#020101">24 interviews</text>
+<text x="424" y="708" font-size="26" font-weight="600" fill="#020101">(12 per group)</text>
+<rect x="40.5" y="752.5" width="719" height="159" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="792" font-size="26" font-weight="800" fill="#6B6B70">Methods</text>
+<path d="M400 810 V896" stroke="#E8E8EB" stroke-width="2"/>
+<text x="64" y="844" font-size="26" font-weight="700" fill="#020101">User interviews</text>
+<text x="424" y="844" font-size="26" font-weight="700" fill="#020101">User interviews and</text>
+<text x="424" y="884" font-size="26" font-weight="600" fill="#020101">contextual inquiry</text>
+<rect x="40.5" y="928.5" width="719" height="159" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="968" font-size="26" font-weight="800" fill="#6B6B70">Recruitment difficulty</text>
+<path d="M400 986 V1072" stroke="#E8E8EB" stroke-width="2"/>
+<text x="64" y="1020" font-size="26" font-weight="700" fill="#020101">Panel, general</text>
+<text x="64" y="1060" font-size="26" font-weight="600" fill="#020101">profile</text>
+<text x="424" y="1020" font-size="26" font-weight="700" fill="#020101">Specialist recruiter,</text>
+<text x="424" y="1060" font-size="26" font-weight="600" fill="#020101">clinicians</text>
+<rect x="40.5" y="1104.5" width="719" height="199" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="1144" font-size="26" font-weight="800" fill="#6B6B70">Readout</text>
+<path d="M400 1162 V1288" stroke="#E8E8EB" stroke-width="2"/>
+<text x="64" y="1196" font-size="26" font-weight="700" fill="#020101">Slide deck by email</text>
+<text x="424" y="1196" font-size="26" font-weight="700" fill="#020101">Live readout</text>
+<text x="424" y="1236" font-size="26" font-weight="600" fill="#020101">Clips</text>
+<text x="424" y="1276" font-size="26" font-weight="600" fill="#020101">Tagged repository</text>
+<rect x="40.5" y="1320.5" width="719" height="119" rx="18" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="1360" font-size="26" font-weight="800" fill="#6B6B70">Quoted fee</text>
+<path d="M400 1378 V1424" stroke="#E8E8EB" stroke-width="2"/>
+<text x="64" y="1412" font-size="26" font-weight="600" fill="#6B6B70" font-style="italic">Write it in</text>
+<path d="M224 1418 H364" stroke="#6B6B70" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="424" y="1412" font-size="26" font-weight="600" fill="#6B6B70" font-style="italic">Write it in</text>
+<path d="M584 1418 H724" stroke="#6B6B70" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="48" y="1496" font-size="26" font-weight="600" fill="#6B6B70">Two quotes that look far apart often</text>
+<text x="48" y="1532" font-size="26" font-weight="600" fill="#6B6B70">describe two different studies.</text>
 </svg>

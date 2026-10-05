@@ -1,15 +1,15 @@
 [
   {
     "marker": "<!-- visual: checklist — 1-page research brief template with 6 fields: decision, users, known evidence, constraints, timeline, budget band -->",
-    "markdown": "![Checklist sheet titled 1-page research brief with six numbered fields to fill in: decision, users, what you already know, constraints, timeline and budget band, each with a short prompt and blank lines](/blog/choose-ux-research-agency/research-brief-checklist.svg \"The 6 fields of a 1-page research brief\")"
+    "markdown": "![Checklist sheet titled 1-page research brief with six numbered fields and tick boxes: decision, users, what you already know, constraints, timeline and budget band](/blog/choose-ux-research-agency/research-brief-checklist.svg \"The 6 fields of a 1-page research brief\")"
   },
   {
     "marker": "<!-- visual: scorecard — weighted 7-criteria agency scorecard with 3 blank agency columns and a total row, printable -->",
-    "markdown": "![Printable scorecard table listing seven criteria with what to check and a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for Agency A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg \"Weighted 7-criteria UX research agency scorecard\")"
+    "markdown": "![Printable scorecard listing seven criteria with a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for agencies A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg \"Weighted 7-criteria UX research agency scorecard\")"
   },
   {
     "marker": "<!-- visual: framework — red-flag map pairing 6 warning signs with the pitch-call question that exposes each -->",
-    "markdown": "![Red-flag map pairing six agency warning signs, from agreeing to everything to selling deliverable counts, each linked by an arrow to the pitch-call question that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg \"Six red flags and the question that exposes each\")"
+    "markdown": "![Red-flag map stacking six agency warning signs, from agreeing to everything to selling deliverable counts, each card paired with the pitch-call question to ask that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg \"Six red flags and the question that exposes each\")"
   },
   {
     "marker": "<!-- visual: comparison table graphic — two proposals normalised on user groups, participants, methods, recruitment difficulty and readout, labelled as a hypothetical example -->",

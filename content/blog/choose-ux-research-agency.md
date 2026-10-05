@@ -43,7 +43,7 @@ Method-first briefs ("we need 20 interviews and a survey") produce proposals you
 
 **A 1-page research brief with 6 fields gets you proposals that compare like for like:** the decision, the users, what you already know, constraints, timeline and a budget band.
 
-![Checklist sheet titled 1-page research brief with six numbered fields to fill in: decision, users, what you already know, constraints, timeline and budget band, each with a short prompt and blank lines](/blog/choose-ux-research-agency/research-brief-checklist.svg "The 6 fields of a 1-page research brief")
+![Checklist sheet titled 1-page research brief with six numbered fields and tick boxes: decision, users, what you already know, constraints, timeline and budget band](/blog/choose-ux-research-agency/research-brief-checklist.svg "The 6 fields of a 1-page research brief")
 
 1. **Decision.** The one sentence from the previous section.
 2. **Users.** Each user group and whether you can reach it through your own customer list.
@@ -73,7 +73,7 @@ The weights are our suggestion; adjust them to your decision.
 | Domain experience | A similar study with similar users | 15% | | | |
 | **Weighted total** | | **100%** | | | |
 
-![Printable scorecard table listing seven criteria with what to check and a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for Agency A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg "Weighted 7-criteria UX research agency scorecard")
+![Printable scorecard listing seven criteria with a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for agencies A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg "Weighted 7-criteria UX research agency scorecard")
 
 **Dedicated researchers.** Ask for the names and roles of the people who run sessions and synthesis. If no one can name who moderates the sessions and who synthesizes them, research is a phase, not a practice.
 
@@ -140,7 +140,7 @@ Ask us these 12 on a free consultation call, before you receive our fixed-scope 
 
 **Walk away when a UX research agency agrees to every method you list, cannot name its researchers, recruits vaguely or sells deliverable counts instead of answers.** Each of these UX research agency red flags has a question that exposes it.
 
-![Red-flag map pairing six agency warning signs, from agreeing to everything to selling deliverable counts, each linked by an arrow to the pitch-call question that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg "Six red flags and the question that exposes each")
+![Red-flag map stacking six agency warning signs, from agreeing to everything to selling deliverable counts, each card paired with the pitch-call question to ask that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg "Six red flags and the question that exposes each")
 
 1. **It agrees to everything.** Ask: "Which part of my brief would you change?"
 2. **No named researchers.** Ask: "Who moderates session one?"

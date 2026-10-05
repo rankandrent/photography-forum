@@ -1,57 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="Manrope, system-ui, sans-serif">
-<rect width="1200" height="900" fill="#FBFAFB"/>
-<text x="80" y="78" font-size="36" font-weight="800" fill="#020101">1-page research brief</text>
-<text x="80" y="114" font-size="18" fill="#6B6B70">6 fields that get you proposals that compare like for like</text>
-<rect x="80.5" y="150.5" width="1039" height="670" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<line x1="600" y1="180" x2="600" y2="790" stroke="#E8E8EB"/>
-<line x1="110" y1="385" x2="1090" y2="385" stroke="#E8E8EB"/><line x1="110" y1="595" x2="1090" y2="595" stroke="#E8E8EB"/>
-<rect x="120" y="190" width="26" height="26" rx="6" fill="none" stroke="#E2225F" stroke-width="2"/>
-<path d="M126 203 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="164" y="211" font-size="15" font-weight="700" fill="#E2225F">01</text>
-<text x="194" y="212" font-size="22" font-weight="800" fill="#020101">Decision</text>
-<text x="164" y="248" font-size="16" fill="#6B6B70">One sentence with the user groups</text>
-<text x="164" y="272" font-size="16" fill="#6B6B70">and a deadline.</text>
-<line x1="164" y1="318" x2="560" y2="318" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="164" y1="348" x2="560" y2="348" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<rect x="630" y="190" width="26" height="26" rx="6" fill="none" stroke="#E2225F" stroke-width="2"/>
-<path d="M636 203 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="674" y="211" font-size="15" font-weight="700" fill="#E2225F">02</text>
-<text x="704" y="212" font-size="22" font-weight="800" fill="#020101">Users</text>
-<text x="674" y="248" font-size="16" fill="#6B6B70">Each user group and whether you can reach</text>
-<text x="674" y="272" font-size="16" fill="#6B6B70">it through your own customer list.</text>
-<line x1="674" y1="318" x2="1070" y2="318" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="674" y1="348" x2="1070" y2="348" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<rect x="120" y="400" width="26" height="26" rx="6" fill="none" stroke="#E2225F" stroke-width="2"/>
-<path d="M126 413 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="164" y="421" font-size="15" font-weight="700" fill="#E2225F">03</text>
-<text x="194" y="422" font-size="22" font-weight="800" fill="#020101">What you already know</text>
-<text x="164" y="458" font-size="16" fill="#6B6B70">Analytics, support tickets and past studies,</text>
-<text x="164" y="482" font-size="16" fill="#6B6B70">so the agency does not re-buy known answers.</text>
-<line x1="164" y1="528" x2="560" y2="528" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="164" y1="558" x2="560" y2="558" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<rect x="630" y="400" width="26" height="26" rx="6" fill="none" stroke="#E2225F" stroke-width="2"/>
-<path d="M636 413 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="674" y="421" font-size="15" font-weight="700" fill="#E2225F">04</text>
-<text x="704" y="422" font-size="22" font-weight="800" fill="#020101">Constraints</text>
-<text x="674" y="458" font-size="16" fill="#6B6B70">Regulated data, languages, devices and the</text>
-<text x="674" y="482" font-size="16" fill="#6B6B70">stakeholders who must observe.</text>
-<line x1="674" y1="528" x2="1070" y2="528" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="674" y1="558" x2="1070" y2="558" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<rect x="120" y="610" width="26" height="26" rx="6" fill="none" stroke="#E2225F" stroke-width="2"/>
-<path d="M126 623 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="164" y="631" font-size="15" font-weight="700" fill="#E2225F">05</text>
-<text x="194" y="632" font-size="22" font-weight="800" fill="#020101">Timeline</text>
-<text x="164" y="668" font-size="16" fill="#6B6B70">The date the decision gets made,</text>
-<text x="164" y="692" font-size="16" fill="#6B6B70">not the date you want a report.</text>
-<line x1="164" y1="738" x2="560" y2="738" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="164" y1="768" x2="560" y2="768" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<rect x="630" y="610" width="26" height="26" rx="6" fill="none" stroke="#E2225F" stroke-width="2"/>
-<path d="M636 623 l5 6 l10 -12" fill="none" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="674" y="631" font-size="15" font-weight="700" fill="#E2225F">06</text>
-<text x="704" y="632" font-size="22" font-weight="800" fill="#020101">Budget band</text>
-<text x="674" y="668" font-size="16" fill="#6B6B70">A range, even a wide one.</text>
-<line x1="674" y1="738" x2="1070" y2="738" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="674" y1="768" x2="1070" y2="768" stroke="#E8E8EB" stroke-width="1.5" stroke-dasharray="6 6"/>
-<rect x="80.5" y="840.5" width="1039" height="40" rx="20" fill="#FFE3EC"/>
-<text x="600" y="866" font-size="16" font-weight="600" fill="#020101" text-anchor="middle">For most product teams, the brief plus a 45-minute call is enough.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1050" width="800" height="1050" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1050" fill="#FBFAFB"/>
+<text x="48" y="82" font-size="42" font-weight="800" fill="#020101">1-page research brief</text>
+<text x="48" y="126" font-size="28" font-weight="600" fill="#6B6B70">6 fields to fill in</text>
+<rect x="40.5" y="160.5" width="719" height="759" rx="24" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M680 161 h56 a24 24 0 0 1 23 23 v56 Z" fill="#FFE3EC"/>
+<circle cx="104" cy="240" r="30" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="104" y="250" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">01</text>
+<text x="158" y="251" font-size="32" font-weight="800" fill="#020101">Decision</text>
+<path d="M158 284 H700" stroke="#E8E8EB" stroke-width="2" stroke-linecap="round"/>
+<rect x="676" y="220" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="104" cy="358" r="30" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="104" y="368" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">02</text>
+<text x="158" y="369" font-size="32" font-weight="800" fill="#020101">Users</text>
+<path d="M158 402 H700" stroke="#E8E8EB" stroke-width="2" stroke-linecap="round"/>
+<rect x="676" y="338" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="104" cy="476" r="30" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="104" y="486" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">03</text>
+<text x="158" y="487" font-size="32" font-weight="800" fill="#020101">What you already know</text>
+<path d="M158 520 H700" stroke="#E8E8EB" stroke-width="2" stroke-linecap="round"/>
+<rect x="676" y="456" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="104" cy="594" r="30" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="104" y="604" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">04</text>
+<text x="158" y="605" font-size="32" font-weight="800" fill="#020101">Constraints</text>
+<path d="M158 638 H700" stroke="#E8E8EB" stroke-width="2" stroke-linecap="round"/>
+<rect x="676" y="574" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="104" cy="712" r="30" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="104" y="722" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">05</text>
+<text x="158" y="723" font-size="32" font-weight="800" fill="#020101">Timeline</text>
+<path d="M158 756 H700" stroke="#E8E8EB" stroke-width="2" stroke-linecap="round"/>
+<rect x="676" y="692" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="104" cy="830" r="30" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="104" y="840" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">06</text>
+<text x="158" y="841" font-size="32" font-weight="800" fill="#020101">Budget band</text>
+<path d="M158 874 H700" stroke="#E8E8EB" stroke-width="2" stroke-linecap="round"/>
+<rect x="676" y="810" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<text x="48" y="974" font-size="26" font-weight="600" fill="#6B6B70">For most product teams, the brief plus</text>
+<text x="48" y="1010" font-size="26" font-weight="600" fill="#6B6B70">a 45-minute call is enough.</text>
 </svg>
