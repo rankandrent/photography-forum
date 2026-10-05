@@ -1,0 +1,261 @@
+{
+  "slug": "choose-ux-research-agency",
+  "keyword": "how to choose a ux research agency",
+  "secondary": [
+    "how to hire a ux research agency",
+    "questions to ask a ux research agency",
+    "ux research agency red flags",
+    "ux research vendor evaluation",
+    "ux research proposal comparison",
+    "ux research partner"
+  ],
+  "intent": "commercial investigation (buyer is shortlisting and evaluating UX research providers)",
+  "volume": null,
+  "kd": null,
+  "dataSource": "WebSearch SERP review (Semrush returned no_api_units on 2026-10-05; WebFetch of competitor pages blocked by egress proxy, page coverage inferred from search snippets). Volume and KD are unknown: do not quote them anywhere.",
+  "hub": "ux-research-services",
+  "services": ["ux-research-services"],
+  "industries": ["saas", "healthcare"],
+  "author": "sahar-asif",
+  "type": "Guide",
+  "funnel": "bofu",
+  "serviceSupport": 5,
+  "beats": "https://fuselabcreative.com/how-to-choose-a-ux-research-agency/",
+  "alsoOutranks": [
+    "https://ux4sight.com/blog/how-to-hire-a-ux-research-consultant-for-your-next-project",
+    "https://www.answerlab.com/insights/how-to-choose-a-ux-partner-not-just-a-vendor",
+    "https://www.925studios.co/blog/ux-agency-hiring-checklist-questions-2026"
+  ],
+  "centralEntity": "UX research agency",
+  "entities": [
+    "UX research agency",
+    "research brief",
+    "research plan",
+    "participant recruitment",
+    "screener survey",
+    "user interviews",
+    "contextual inquiry",
+    "usability testing",
+    "synthesis",
+    "research readout",
+    "research repository",
+    "Dovetail",
+    "statement of work (SOW)",
+    "request for proposal (RFP)",
+    "informed consent",
+    "personally identifiable information (PII)",
+    "HIPAA business associate agreement (BAA)",
+    "Insights Association Code of Standards",
+    "ISO 9241-210"
+  ],
+  "attributes": [
+    "dedicated researchers vs designers who also research",
+    "method fit to the decision",
+    "who owns recruitment, screening and incentives",
+    "B2B and hard-to-reach participant access (clinicians, operators, finance users)",
+    "synthesis rigor and traceability from quote to recommendation",
+    "readout format and stakeholder alignment",
+    "timeline to first session",
+    "price drivers: user groups, participants, methods, recruitment difficulty",
+    "data handling: recordings, PII, retention, IP ownership",
+    "domain experience in the buyer's industry"
+  ],
+  "ngrams": [
+    "ux research agency",
+    "choose a ux research agency",
+    "research brief",
+    "participant recruitment",
+    "screener",
+    "research plan",
+    "user interviews",
+    "research readout",
+    "sample deliverable",
+    "research partner",
+    "proposal",
+    "ux research services"
+  ],
+  "questions": [
+    "How do I choose a UX research agency?",
+    "What questions should I ask a UX research agency before hiring?",
+    "What are red flags when hiring a UX research firm?",
+    "Should my UX research agency also do the design?",
+    "How do I compare UX research proposals?",
+    "Who owns the recordings and data from a UX research study?",
+    "How many agencies should I shortlist?",
+    "Do I need an RFP for UX research?"
+  ],
+  "serpGaps": [
+    "No ranking page gives a weighted scorecard a buyer can actually fill in to compare 3 agencies side by side.",
+    "Ranking pages talk about 'process' in general; none show how to test recruitment quality (sample screener, no-show policy, fraud checks, who pays incentives).",
+    "Nobody explains how to normalise proposals so prices compare like for like (user groups x participants x methods x recruitment difficulty x readout).",
+    "Contract and data terms are missing: who owns recordings, PII retention, consent forms, HIPAA BAA for health products.",
+    "No page tells the buyer to request a redacted sample readout and what traceability (evidence to insight to recommendation) looks like.",
+    "Most ranking pages are written by design agencies about design agencies; research-specific criteria (dedicated researchers, synthesis method, repository handover) are thin.",
+    "No page describes what the first 2 weeks after signing should look like, so buyers cannot judge a slow start."
+  ],
+  "outline": [
+    {
+      "h2": "What decision should the UX research answer before you contact any agency?",
+      "answerHint": "Start from the product decision (build, kill, redesign, enter a market), not from a method list; an agency can only be judged against a clear decision.",
+      "points": [
+        "Scenario intro continues: a PM with a board deadline and three agency pitches that all list the same methods.",
+        "Write the decision as 1 sentence, plus the user groups and the deadline.",
+        "Generative vs evaluative: which one the decision needs (one line each, link up to the hub early with anchor 'UX research services').",
+        "Why method-first briefs produce proposals you cannot compare."
+      ]
+    },
+    {
+      "h2": "How do you write a research brief agencies can quote against?",
+      "answerHint": "A 1-page brief with 6 fields (decision, users, what you already know, constraints, timeline, budget band) gets comparable proposals.",
+      "points": [
+        "Downloadable 1-page brief template (visual: checklist graphic).",
+        "Share existing analytics, support tickets and past studies so the agency does not re-buy known answers.",
+        "State a budget band; explain why hiding it wastes a round of proposals.",
+        "When a formal request for proposal (RFP) helps (procurement, public sector) and when a brief plus a call is enough; cite the GOV.UK user research blog on working with agencies."
+      ]
+    },
+    {
+      "h2": "Which 7 criteria separate a research agency from a design shop that also does research?",
+      "answerHint": "Score each agency 1 to 5 on dedicated researchers, method fit, recruitment ownership, synthesis rigor, readout quality, data ethics and domain experience.",
+      "points": [
+        "Weighted scorecard table with suggested weights (visual: scorecard graphic, original design).",
+        "Dedicated researchers: ask for names and roles of who runs sessions.",
+        "Method fit: did they challenge your method list against your decision (partner vs vendor in our own words).",
+        "Domain experience: B2B SaaS and healthcare users behave differently; ask for a similar study, not a similar logo."
+      ]
+    },
+    {
+      "h2": "How do you test an agency's participant recruitment?",
+      "answerHint": "Ask for a sample screener, the recruitment channel, the no-show policy and who pays incentives; recruitment quality decides research quality.",
+      "points": [
+        "Panel vs your customer list vs specialist recruiter: trade-offs in 1 short table.",
+        "Hard-to-recruit groups (clinicians, warehouse operators, finance admins) and realistic lead times.",
+        "Fraud and fit checks: screener logic, live verification, over-recruiting by 1-2 per group.",
+        "Participant counts: 10-15 interviews per user group (our standard) and 5 users per qualitative usability round, citing Nielsen Norman Group."
+      ]
+    },
+    {
+      "h2": "What should a sample research readout show you?",
+      "answerHint": "A redacted readout should trace every recommendation back to observed evidence and rank findings by impact on the decision.",
+      "points": [
+        "Ask for a redacted readout, not a portfolio case study.",
+        "Traceability check: quote or clip -> insight -> recommendation -> owner.",
+        "Deliverables that outlive the project: tagged repository (for example in Dovetail), personas, journey maps, opportunity map.",
+        "DOWN link: toolsgroup-supply-chain-ux case study (30+ stakeholder interviews reframed product strategy) as an example of a finding that changed a roadmap. Use only facts from the case study file."
+      ]
+    },
+    {
+      "h2": "12 questions to ask on the pitch call (and what a strong answer sounds like)",
+      "answerHint": "Ask about the people, the method choice, recruitment, synthesis, readout and data handling; strong answers are specific to your product.",
+      "points": [
+        "Two-column list: question | what a strong answer includes (original wording, grouped by People, Method, Recruitment, Synthesis, Delivery, Data).",
+        "Example: 'Who will moderate the sessions, and can I meet them before we sign?'",
+        "Example: 'What would make you recommend fewer interviews than I asked for?'",
+        "Natural invitation: we answer these 12 on a first call."
+      ]
+    },
+    {
+      "h2": "Red flags that mean you should walk away",
+      "answerHint": "Walk away when an agency agrees to every method you list, cannot name its researchers, sells deliverable counts instead of answers, or has no consent and data plan.",
+      "points": [
+        "6 red flags, each with the question that exposes it.",
+        "Recommendations before any user has been interviewed.",
+        "Research presented only as a phase inside a design retainer with no separate plan.",
+        "Vague recruitment ('we have a panel') with no screener sample."
+      ]
+    },
+    {
+      "h2": "How do you compare two research proposals on price and scope?",
+      "answerHint": "Normalise every proposal to the same 5 units (user groups, participants, methods, recruitment difficulty, readout) before comparing price.",
+      "points": [
+        "Comparison table graphic: proposal A vs B normalised (hypothetical, clearly labelled as an example, no invented market data).",
+        "Fixed-fee vs time-and-materials for research; where scope creep hides (extra rounds, re-recruiting, translation).",
+        "Our own programme range: $25,000-$60,000 over 4-8 weeks (from the hub); link to the hub's pricing for the full price breakdown instead of repeating it. Do not turn this section into a cost guide.",
+        "What a cheap proposal usually leaves out (recruitment, synthesis days, readout)."
+      ]
+    },
+    {
+      "h2": "Which contract terms protect your research data and IP?",
+      "answerHint": "The statement of work (SOW) should state who owns recordings and findings, how personally identifiable information (PII) is stored and deleted, and how consent is collected.",
+      "points": [
+        "Ownership of raw recordings, transcripts and the repository at handover.",
+        "Consent forms and participant rights; cite the Insights Association Code of Standards.",
+        "Health products: a HIPAA business associate agreement (BAA) when sessions can expose protected health information; cite the HHS sample BAA provisions (they include return or destruction of PHI at contract end).",
+        "Retention and deletion dates, NDA for participants viewing unreleased designs."
+      ]
+    },
+    {
+      "h2": "What should the first 2 weeks look like after you sign?",
+      "answerHint": "In the first 2 weeks a good agency agrees research questions, finalises the screener, starts recruitment and books the first sessions.",
+      "points": [
+        "Process diagram: kickoff -> research plan sign-off -> screener live -> first sessions booked -> stakeholder observation invites.",
+        "What you owe the agency (access, customer list, a decision owner).",
+        "Lead moment: this is where the reader wants the service. Offer: send your 1-page brief and receive a scoped research plan and fixed price you can score with this guide.",
+        "Second UP link to the hub near the end; mention our process follows ISO 9241-210 human-centred design."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many UX research agencies should I shortlist?",
+      "hint": "3 is enough to compare; more than 5 slows the decision. Our recommendation, not a statistic."
+    },
+    {
+      "q": "Should the UX research agency also do the design?",
+      "hint": "Not required; the benefit is continuity of insight, the risk is research bent to justify design. Ask how findings are kept independent."
+    },
+    {
+      "q": "Do I need an RFP to hire a UX research agency?",
+      "hint": "No. A 1-page brief plus a call works for most teams; an RFP is needed when procurement rules require it."
+    },
+    {
+      "q": "Who owns the recordings from a UX research study?",
+      "hint": "Whoever the SOW says; insist the client owns recordings, transcripts and the repository, within participant consent terms."
+    },
+    {
+      "q": "How fast can a UX research agency start fieldwork?",
+      "hint": "Recruitment drives start time; our process puts recruitment at 3-6 days after framing (hub). Hard-to-recruit groups take longer."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/ux-research-services/", "anchor": "UX research services" },
+    { "href": "/services/ux-research-services/", "anchor": "our UX research programme and pricing" },
+    { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+    { "href": "/case-studies/toolsgroup-supply-chain-ux/", "anchor": "30+ stakeholder interviews that reframed a supply chain product" },
+    { "href": "/case-studies/tradezella/", "anchor": "TradeZella discovery and stakeholder interviews" },
+    { "href": "/contact/", "anchor": "send us your research brief" }
+  ],
+  "externalSources": [
+    { "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/", "why": "Source for 5 participants per qualitative usability round." },
+    { "url": "https://userresearch.blog.gov.uk/2015/02/18/how-to-get-the-best-out-of-research-agencies/", "why": "Government user research team's view on briefing and working with research agencies (use as a cited perspective; note it dates from 2015)." },
+    { "url": "https://insightsassociation.org/About-Us/Code-of-Standards", "why": "Consent, transparency and PII principles for research participants (Code updated September 2025)." },
+    { "url": "https://www.hhs.gov/guidance/document/sample-business-associate-agreement-provisions", "why": "HHS sample business associate agreement provisions (published 2013-01-25), incl. return or destruction of PHI at contract end; for health product research." },
+    { "url": "https://www.iso.org/standard/77520.html", "why": "ISO 9241-210:2019 human-centred design for interactive systems." }
+  ],
+  "visuals": [
+    { "type": "scorecard", "idea": "Weighted 7-criteria agency scorecard with 3 blank agency columns and a total row, printable." },
+    { "type": "checklist", "idea": "1-page research brief template: decision, users, known evidence, constraints, timeline, budget band." },
+    { "type": "comparison table graphic", "idea": "Two proposals normalised on user groups, participants, methods, recruitment difficulty and readout, labelled as a hypothetical example." },
+    { "type": "process diagram", "idea": "First 2 weeks after signing: kickoff, plan sign-off, screener live, sessions booked, observers invited." },
+    { "type": "framework", "idea": "Red-flag map: 6 warning signs paired with the pitch-call question that exposes each." }
+  ],
+  "leadAngle": "In the last two sections (comparing proposals, first 2 weeks) the reader has a brief and a scorecard and wants a proposal to score. Offer: send your 1-page brief and we return a scoped research plan with a fixed price within the $25,000-$60,000 programme range, plus a 30-minute call with the lead researcher.",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "scenario",
+    "h2Frames": ["what", "how", "checklist", "how", "what", "questions", "mistakes", "vs", "what", "steps"],
+    "sectionOrder": "decision -> brief -> criteria scorecard -> recruitment test -> sample deliverable -> pitch questions -> red flags -> proposal comparison -> contract terms -> first 2 weeks -> FAQs",
+    "visualTypes": ["scorecard", "checklist", "comparison table graphic", "process diagram", "framework"],
+    "ctaAngle": "send your brief, get a scoped plan and fixed price you can score with our rubric",
+    "listStyle": "two-column question/strong-answer list plus 1 weighted scorecard table and 1 normalisation table"
+  },
+  "notes": [
+    "Silo is new (0 posts, fingerprints.json empty); this is the silo's first BOFU post. Next post should be MOFU: 'ux research agency vs in-house researcher' (candidate in competitors.json).",
+    "Cannibalisation: the hub owns 'ux research services' and already answers 'How much does UX research cost?' with $25,000-$60,000. This post must not target cost; mention the range once and link up to the hub for pricing.",
+    "The hub also owns 'what UX research services include' and 'the UX research process'. Do not re-explain methods or the 5-step process; describe them only from the buyer's evaluation angle.",
+    "Originality: beats page is fuselabcreative.com (structure: definition-first, usability-testing centred). Do not open with a definition, do not centre on usability testing, and do not reuse any of its headings, examples or ordering. Same rule for AnswerLab's partner-vs-vendor framing: express the idea in our own words in one paragraph only.",
+    "Honesty: no market statistics without a named source. The '3x more likely' claim seen in SERP snippets is unsourced: do not use it. Use only case-study facts that exist in content/case-studies/*.md (TradeZella and ToolsGroup files have short bodies; quote only their stated figures).",
+    "Author sahar-asif (Senior Manager UX, key account manager): write from the side of someone who scopes research engagements with buyers.",
+    "One cross-hub link allowed: usability-testing-services, only inside the recruitment or participant-count section."
+  ]
+}

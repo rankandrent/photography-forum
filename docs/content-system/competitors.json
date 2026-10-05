@@ -1,6 +1,84 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": null,
-  "domains": [],
-  "topPosts": []
+  "updated": "2026-10-05",
+  "domains": [
+    { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "answerlab.com", "kind": "research agency insights", "silos": ["ux-research-services"], "seenFor": ["ux research rfp vendor evaluation", "how to choose a ux research partner"], "source": "WebSearch 2026-10-05" },
+    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "ux research services"], "source": "WebSearch 2026-10-05" },
+    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables"], "source": "WebSearch 2026-10-05" },
+    { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp"], "source": "WebSearch 2026-10-05" },
+    { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" }
+  ],
+  "topPosts": [
+    {
+      "domain": "fuselabcreative.com",
+      "url": "https://fuselabcreative.com/how-to-choose-a-ux-research-agency/",
+      "title": "How to choose a UX research agency",
+      "keywords": ["how to choose a ux research agency", "ux research agency", "how to hire a ux research agency", "ux research agency vs in-house"],
+      "estTraffic": null,
+      "silo": "ux-research-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/choose-ux-research-agency.json"
+    },
+    {
+      "domain": "ux4sight.com",
+      "url": "https://ux4sight.com/blog/how-to-hire-a-ux-research-consultant-for-your-next-project",
+      "title": "How to hire a UX research consultant for your next project",
+      "keywords": ["how to hire a ux research agency", "hire ux research consultant"],
+      "estTraffic": null,
+      "silo": "ux-research-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/choose-ux-research-agency.json"
+    },
+    {
+      "domain": "answerlab.com",
+      "url": "https://www.answerlab.com/insights/how-to-choose-a-ux-partner-not-just-a-vendor",
+      "title": "How to choose a UX partner, not just a vendor",
+      "keywords": ["ux research partner", "ux research vendor evaluation"],
+      "estTraffic": null,
+      "silo": "ux-research-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/choose-ux-research-agency.json"
+    },
+    {
+      "domain": "koji.so",
+      "url": "https://www.koji.so/docs/ux-research-agency-vs-in-house",
+      "title": "UX Research Agency vs In-House vs AI Platform: The 2026 Sourcing Decision",
+      "keywords": ["ux research agency vs in-house", "in-house ux researcher vs agency"],
+      "estTraffic": null,
+      "silo": "ux-research-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Next MOFU post for the silo. cleverx.com/blog/in-house-research-operations-vs-outsourcing-cost-comparison/ ranks for the same query."
+    },
+    {
+      "domain": "koji.so",
+      "url": "https://www.koji.so/docs/ux-research-deliverables",
+      "title": "UX Research Deliverables: The Complete Guide to Research Outputs That Drive Action",
+      "keywords": ["ux research deliverables", "user research deliverables"],
+      "estTraffic": null,
+      "silo": "ux-research-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Silo gap: deliverables/examples. Must be framed as examples and quality bar, not a repeat of the hub's 'what is included' list."
+    },
+    {
+      "domain": "gotomedia.com",
+      "url": "https://www.gotomedia.com/notes/5-tips-for-creating-a-ux-research-rfp",
+      "title": "5 Tips for Creating a UX Research RFP",
+      "keywords": ["ux research rfp", "ux research rfp template"],
+      "estTraffic": null,
+      "silo": "ux-research-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Partly absorbed by the choose-ux-research-agency brief (brief/RFP section). Only write separately as a downloadable RFP template if it does not cannibalise that post."
+    }
+  ]
 }
