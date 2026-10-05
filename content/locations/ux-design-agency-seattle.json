@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 5,
   "title": "Seattle",
   "city": "Seattle",
@@ -14,7 +14,7 @@
     "sub": "Senior UX researchers and designers for cloud consoles, enterprise SaaS, marketplaces and game platforms in Seattle, Bellevue, Redmond and the Puget Sound region. Remote-first, with 5–6 hours of Pacific Time overlap each day."
   },
   "summary": "Research-led UX and UI design for Seattle cloud, SaaS, e-commerce and gaming products.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-05",
   "abstract": "Our remote-first UX design agency, headquartered in Reston, Virginia, works with Seattle and Eastside product teams across 5–6 shared hours on Pacific Time. We research developers, admins, sellers and players, then redesign consoles, workflows and storefronts and test them before launch. Engagements begin with a $5,000–$15,000 UX audit.",
   "sections": [
     {
@@ -257,5 +257,6 @@
     "gaming",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-05"
 }
