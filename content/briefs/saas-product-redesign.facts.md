@@ -78,3 +78,45 @@ with
 "The free consultation ends with a fixed-scope proposal, and the discovery step of [our SaaS UX design sprint](/services/saas-ux-design/) sets the baseline and one target metric per lifecycle stage."
 
 VERDICT: FAIL
+
+## Round 2
+
+Re-checked 2026-10-06 against the repaired `content/blog/saas-product-redesign.md` (line numbers
+below refer to the current file) and the redrawn `scope-decision-tree.svg`. External sources were
+again checked with domain-limited WebSearch, because WebFetch is blocked.
+
+### Round-1 items
+
+| Fix | Round-2 status | Evidence |
+|---|---|---|
+| F1 decision tree + alt text (L66) | TRUE | The SVG now reads: "Which metric stalled?" → "Can users show the cause is UX?" (No → "Not a redesign: price, positioning or a missing integration") → Yes → "Is the cause confined to 1 journey?" (Yes → Flow fix) → No → "Can navigation, roles and components still hold the product?" (No → Platform rebuild; Yes → Lifecycle redesign). I walked every leaf. Each one matches the post's conditions: L43 ("users can show you why"), L58 (price, positioning, integration), L64 (one journey → flow fix; structure fails → platform rebuild). The first question wording differs from my F1 ("churn interviews"), but it matches the L43 answer and the "Evidence the cause is UX" column, so it is accurate. The alt text on L66 describes the SVG branch for branch. |
+| F2 (L78) | TRUE | Pasted word for word. about.md: "every project begins with a free consultation and a fixed-scope proposal". `saas-ux-design.json` L28/L70/L74: the engagement takes 4–8 weeks, and the "Discovery and metrics" step sets "1 target metric per lifecycle stage". The free and paid steps are now separate. |
+| F3 (L97) | TRUE | Now advice to the reader ("In week 1, gather…"), not a first-person process claim. |
+| F4 (rollout caption) | No longer applies | The rollout image and its caption were removed from the post. The orphan file `public/blog/saas-product-redesign/rollout-exposure-curve.svg` is still in the folder, but nothing references it. Claims 20–21 (L129, L133 "no new deploy") are unchanged and still TRUE. |
+| F5 (old L160, now L157) | WRONG (see R2-1) | The writer did not paste F5. They rewrote the sentence, and the rewrite adds a new claim. |
+
+### New or rewritten sentences
+
+| # | Claim (current line) | Verdict | Source / method |
+|---|---|---|---|
+| R2-1 | "A free consultation ends in a fixed price inside our published ranges, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) starts by recording your baseline." (L157) | WRONG | (a) "a fixed price inside our published ranges": about.md promises "a free consultation and a fixed-scope proposal", not a fixed price. No site page guarantees that the price falls inside the published ranges. `content/pages/terms.md` says the price ranges "are provided for general guidance. It is not an offer". `home.ts` L199 says "Full design and build engagements are scoped after discovery." (b) "starts by recording your baseline": the hub's discovery step (`saas-ux-design.json` L74) reviews funnels in Amplitude or Mixpanel, runs 5–8 JTBD interviews and sets 1 target metric per lifecycle stage. It does not say that discovery starts by recording a baseline. Replacement below. |
+| R2-2 | HEART "covers happiness, engagement, adoption, retention and task success" (L54) | TRUE | https://research.google.com/pubs/archive/36299.pdf (exact URL returned by a WebSearch limited to research.google.com: HEART = Happiness, Engagement, Adoption, Retention and Task success; Rodden, Hutchinson and Fu, CHI 2010). |
+| R2-3 | L78 rewrite | TRUE | See F2 above. "The three flows you suspect" is advice, not a site claim. |
+| R2-4 | L97 rewrite | TRUE | See F3 above. |
+| R2-5 | "We have designed 200+ products since 2017." (L157) | TRUE | Unchanged; `home.ts`, `lib/site.ts`. |
+
+Honesty check: no new clients, results, testimonials, awards, certifications, team members or
+offices were added. Non-factual note for the editor: L135 has no blank line before the
+"## Which redesign mistakes turn into churn?" heading (L136), so the heading may not render.
+
+### Fix (exact replacement)
+
+**R2-1 — L157, second sentence.** Replace
+"A free consultation ends in a fixed price inside our published ranges, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) starts by recording your baseline."
+with
+"A free consultation ends with a fixed-scope proposal, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) reviews your product funnels and sets one target metric per lifecycle stage."
+
+(Each part of this wording comes from about.md L29 and `saas-ux-design.json` L74 word for word. It
+leaves out "fixed price", "published ranges" and "baseline".)
+
+VERDICT: FAIL

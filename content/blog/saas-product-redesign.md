@@ -133,6 +133,7 @@ When power users are slower on day one while new users succeed, do not roll back
 When a rollback trigger fires, the flag returns to the previous step while the team fixes the flow, with no new deploy.
 
 Communicate alongside the ramp: admin email first, then an in-app notice, a changelog entry and help-center updates, each leading with the job the change makes easier. When someone switches back to the old UI, ask what made them switch.
+
 ## Which redesign mistakes turn into churn?
 
 **The churn-causing mistakes are redesigning for a rebrand, moving navigation and workflows together, skipping the baseline, killing the old UI on day one, renaming silently and stale help docs.**
@@ -154,7 +155,7 @@ Judge each metric against the thresholds you set before design. Between baseline
 
 Two of our case studies show what a redesigned path can move. Apex HCM's legacy payroll platform went from 200+ screens to 6 steps, and its VP Product reported: "The new flow cut onboarding time by more than half." TradeZella started with a cluttered interface, a steep learning curve and no onboarding guide; after the [TradeZella dashboard and user flows rebuild](/case-studies/tradezella/), user interaction rose 40%, retention 25% and new customers 30%.
 
-If you are sizing a SaaS product redesign now, [send us your funnel and we will scope the redesign](/contact/). A free consultation ends in a fixed price inside our published ranges, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) starts by recording your baseline. We have designed 200+ products since 2017.
+If you are sizing a SaaS product redesign now, [send us your funnel and we will scope the redesign](/contact/). A free consultation ends with a fixed-scope proposal, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) reviews your product funnels and sets one target metric per lifecycle stage. We have designed 200+ products since 2017.
 
 ## FAQs
 
