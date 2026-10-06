@@ -1738,8 +1738,8 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .post-article .ptags + .pauthors { margin-top: 32px; }
 
 .phead__avatar, .pauthors__img, .acard__img { box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--border); }
-.pauthors__img { width: 72px; height: 72px; }
+.pauthors__img { width: 60px; height: 60px; }
 @media (max-width: 640px) {
   .post-article .ptags { margin-top: 40px; gap: 8px; }
-  .pauthors__img { width: 60px; height: 60px; }
+  .pauthors__img { width: 52px; height: 52px; }
 }
