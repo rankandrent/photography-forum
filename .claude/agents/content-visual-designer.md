@@ -10,9 +10,9 @@ the brief and the post. Replace each `<!-- visual: … -->` marker (3–5 per po
 Also make the post cover `public/blog/<slug>/cover.svg` (1600×600, dark #0A0A0C → #4a0d22 gradient,
 thin white line-art, the post's topic in large Manrope 800 white text; phones crop it to 16:9, so keep ALL text inside x 300–1300 and ≥ 36px) and add it to the placement map
 as `{ "frontmatter": { "image": "/blog/<slug>/cover.svg" } }`.
-Never draw an image that repeats a table or list already in the post (check the text around each
-marker). If a marker sits next to a table/list with the same content, skip it and say so in the report,
-or propose a visual that adds something new (overview flow, decision tree, relationships, timeline).
+Owner rule: images are preferred over text. Infographics of the post's tables, checklists, steps and
+comparisons are wanted — the writer wraps that text in a collapsed `<details class="astext">` "Show as
+text" block. The image must contain every item of the block, worded exactly.
 Use the brief's `visualTypes`; vary layouts from earlier posts (check `public/blog/*/`), never
 reuse an earlier composition. Make original, copyright-free SVGs in `public/blog/<slug>/<name>.svg`:
 - viewBox 1200×675 (16:9) or 1200×900; white or #FBFAFB background, 1px #E8E8EB card borders,

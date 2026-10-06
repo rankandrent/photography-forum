@@ -10,7 +10,7 @@ services: [saas-ux-design]
 industries: [saas]
 tags: [saas product redesign, saas ux redesign, redesign rollout, change aversion]
 keyword: "saas product redesign"
-funnel: bofu
+funnel: mofu
 takeaways:
   - "Start a SaaS product redesign from the lifecycle metric that stalled, not from how dated the product looks."
   - "Pick the smallest scope that reaches that metric: flow fix, lifecycle redesign or platform rebuild."
@@ -51,7 +51,7 @@ Each stage has its own trigger and its own proof that the cause is UX:
 | Upgrade | Trial-to-paid conversion and plan upgrades stay flat | Accounts hit plan limits but never open the plan comparison |
 | Support load | Tickets about setup, navigation and "where is…" rise | Ticket tags and help-center search terms |
 
-Use the goals-signals-metrics process from the [Google HEART framework (Rodden, Hutchinson and Fu, 2010)](https://research.google.com/pubs/archive/36299.pdf) to pick one goal, one signal and one metric per stage. Ten metrics per stage hide the one that moved.
+Use the goals-signals-metrics process from the [Google HEART framework (Rodden, Hutchinson and Fu, 2010)](https://research.google.com/pubs/archive/36299.pdf), which covers happiness, engagement, adoption, retention and task success, to pick one goal, one signal and one metric per stage. Ten metrics per stage hide the one that moved.
 
 Sales often blames missing features when the interface is the cause. At ToolsGroup, 30+ stakeholder interviews traced [75% of sales losses to the UI, not to missing features](/case-studies/toolsgroup-supply-chain-ux/).
 
@@ -63,7 +63,7 @@ When churn interviews name price, positioning or a missing integration instead, 
 
 Scope a SaaS product redesign with your own data. If trial accounts stall during setup while every other stage holds, the cause sits in one journey: a flow fix on onboarding. If paying accounts also drift away after month 1, two stages leak: a lifecycle redesign. A platform rebuild earns its risk only when navigation, user roles and components can no longer hold the product, for example when every new feature needs a new menu.
 
-![Decision tree that starts at "Which metric stalled?": if the cause is confined to 1 journey, flow fix; if several lifecycle stages do not leak, the cause is price, positioning or a missing integration rather than a redesign; if they leak and navigation, roles and components can no longer hold the product, platform rebuild; otherwise lifecycle redesign](/blog/saas-product-redesign/scope-decision-tree.svg "Walk the scope decision with your own data")
+![Decision tree that starts at "Which metric stalled?": if users cannot show the cause is UX, it is price, positioning or a missing integration rather than a redesign; if the cause is confined to 1 journey, flow fix; if navigation, roles and components can no longer hold the product, platform rebuild; otherwise lifecycle redesign](/blog/saas-product-redesign/scope-decision-tree.svg "Walk the scope decision with your own data")
 
 The tiers differ most in who feels the change:
 
@@ -73,9 +73,9 @@ The tiers differ most in who feels the change:
 | Lifecycle redesign | Onboarding, core workflows, pricing page and cancellation flow | Trials, paying users and admins | 4–8 weeks |
 | Platform rebuild | Navigation, roles, the design system and core workflows | Every user and every admin | 8–16 weeks |
 
-On our pricing, an onboarding redesign for one user role sits near $25,000, a full lifecycle redesign near $60,000, and work that needs a component library moves to $60,000–$180,000. Every tier ends with a Web Content Accessibility Guidelines (WCAG) 2.2 level AA checklist for each screen.
+At our rates, an onboarding redesign for one user role sits near $25,000, a full lifecycle redesign near $60,000, and work that needs a component library moves to $60,000–$180,000. Every tier ends with a Web Content Accessibility Guidelines (WCAG) 2.2 level AA checklist for each screen.
 
-Keep a front-end rebuild a separate decision (see the FAQs). We run this scoping as the discovery step of a 4–8 week SaaS UX design sprint: bring your funnel export or the three flows you suspect to a free consultation, and leave with a scope tier and a fixed-scope proposal.
+Keep a front-end rebuild a separate decision (see the FAQs). Bring your funnel export or the three flows you suspect to a free consultation and leave with a fixed-scope proposal; the discovery step of our 4–8 week SaaS UX design engagement then sets one target metric per lifecycle stage.
 
 ## How do you set a baseline before anyone opens Figma?
 
@@ -94,7 +94,7 @@ Check instrumentation next, because a SaaS product redesign is judged by events 
 
 Then talk to customers. We run Jobs to be Done interviews with 5–8 customers to separate the job ("send the weekly pipeline report to my manager") from today's interface ("export, filter, paste into slides"). They show which screens users defend out of habit and which the job needs.
 
-In week 1 we ask for read access to Amplitude, Mixpanel or Pendo, a recent support ticket export, the raw churn-survey text and a list of top accounts by seat count, so the riskiest customers are known before a screen changes.
+In week 1, gather read access to Amplitude, Mixpanel or Pendo, a recent support ticket export, the raw churn-survey text and a list of top accounts by seat count, so the riskiest customers are known before a screen changes.
 
 ## Which users does a redesign put at risk?
 
@@ -114,7 +114,7 @@ Keep accounts inside their renewal window on the interface they know until the r
 
 When you redesign a SaaS product, existing power users tell you about speed and errors on familiar tasks, and new users tell you about learnability on the way to the first value moment. One mixed round averages away both answers.
 
-We test 5 participants per round with a Figma prototype in Maze. Nielsen Norman Group's guidance is that [5 users find most usability problems in a qualitative round](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), and that 3–4 per group suffice when a single study covers two distinct groups. Because the two groups get different tasks here, we run them as separate rounds.
+We test 5 participants per round with a Figma prototype in Maze. Per Nielsen Norman Group, [5 users find most usability problems in a qualitative round](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), and 3–4 per group suffice when a single study covers two distinct groups. Because the two groups get different tasks here, we run them as separate rounds.
 
 Score each round with the System Usability Scale (SUS), John Brooke's 10-item questionnaire, comparing old against new for existing users. A [mean SUS score of 68 is the widely used benchmark](https://mhealth.jmir.org/2022/8/e37290) for average usability, so read both scores against it.
 
@@ -133,9 +133,6 @@ When power users are slower on day one while new users succeed, do not roll back
 When a rollback trigger fires, the flag returns to the previous step while the team fixes the flow, with no new deploy.
 
 Communicate alongside the ramp: admin email first, then an in-app notice, a changelog entry and help-center updates, each leading with the job the change makes easier. When someone switches back to the old UI, ask what made them switch.
-
-![Step chart of the share of accounts on the new UI rising in gated steps through an example 10%, 25% and 50% ramp to 100%, with a gate at each rise, dashed rollback arrows dropping back one step, an old-UI toggle bar spanning beta to sunset, and a sunset marker where the old UI is removed](/blog/saas-product-redesign/rollout-exposure-curve.svg "Exposure over time, with a rollback loop at every gate")
-
 ## Which redesign mistakes turn into churn?
 
 **The churn-causing mistakes are redesigning for a rebrand, moving navigation and workflows together, skipping the baseline, killing the old UI on day one, renaming silently and stale help docs.**
@@ -157,7 +154,7 @@ Judge each metric against the thresholds you set before design. Between baseline
 
 Two of our case studies show what a redesigned path can move. Apex HCM's legacy payroll platform went from 200+ screens to 6 steps, and its VP Product reported: "The new flow cut onboarding time by more than half." TradeZella started with a cluttered interface, a steep learning curve and no onboarding guide; after the [TradeZella dashboard and user flows rebuild](/case-studies/tradezella/), user interaction rose 40%, retention 25% and new customers 30%.
 
-If you are sizing a SaaS product redesign now, [send us your funnel and we will scope the redesign](/contact/). The free consultation returns a scope tier, a baseline-and-rollout plan and a fixed-scope proposal, run as the discovery step of [our SaaS UX design sprint](/services/saas-ux-design/). We have designed 200+ products since 2017.
+If you are sizing a SaaS product redesign now, [send us your funnel and we will scope the redesign](/contact/). A free consultation ends in a fixed price inside our published ranges, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) starts by recording your baseline. We have designed 200+ products since 2017.
 
 ## FAQs
 

@@ -160,12 +160,24 @@ Body: markdown. Start with a 2–3 sentence summary paragraph, then H2 sections,
 as `## FAQs` with `### Question?` + answer. Images use
 `![alt text](/blog/<slug>/<file>.svg "Caption")`.
 
-## Visuals must add, never repeat
+## Visuals: image first, text behind "Show as text" (owner rule, 2026-10-06)
 
-- An image may not restate a table or list in the same post. If the content is already a table or a
-  list, keep the HTML (it is indexable, accessible and responsive) and use no image for it.
-- Use visuals for what text cannot show well: an end-to-end process overview, a flow or decision tree,
-  relationships between parts, a timeline, a before/after, a 2×2 framework. 2–4 per post is enough.
+- The owner prefers images over text in blog posts. When a table, checklist, list of steps, framework
+  or comparison would make a good infographic, SHOW THE IMAGE and put the same content right below it
+  inside a collapsed block, so readers see the image while Google and screen readers still get text:
+
+  ```
+  ![Descriptive alt text](/blog/<slug>/<name>.svg "Caption")
+
+  <details class="astext"><summary>Show as text</summary>
+
+  | the table / list / steps in markdown |
+
+  </details>
+  ```
+- Never show the same content twice in the open (an image AND a visible table/list of the same items).
+- Overview flows, decision trees, timelines, 2×2s and before/after maps are also welcome.
+- Aim for 4–6 inline visuals per post.
 
 ## Files each agent writes
 

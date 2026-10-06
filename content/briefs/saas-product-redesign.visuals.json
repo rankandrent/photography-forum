@@ -6,15 +6,11 @@
   },
   {
     "marker": "<!-- visual: decision tree. Start at \"Which metric stalled?\" → \"Is the cause confined to 1 journey?\" yes → flow fix; no → \"Do several lifecycle stages leak?\" yes → lifecycle redesign; → \"Can navigation, roles and components still hold the product?\" no → platform rebuild. Leaf nodes show tier names only, no durations or prices. -->",
-    "markdown": "![Decision tree that starts at \"Which metric stalled?\": if the cause is confined to 1 journey, flow fix; if several lifecycle stages do not leak, the cause is price, positioning or a missing integration rather than a redesign; if they leak and navigation, roles and components can no longer hold the product, platform rebuild; otherwise lifecycle redesign](/blog/saas-product-redesign/scope-decision-tree.svg \"Walk the scope decision with your own data\")"
+    "markdown": "![Decision tree that starts at \"Which metric stalled?\": if users cannot show the cause is UX, it is price, positioning or a missing integration rather than a redesign; if the cause is confined to 1 journey, flow fix; if navigation, roles and components can no longer hold the product, platform rebuild; otherwise lifecycle redesign](/blog/saas-product-redesign/scope-decision-tree.svg \"Walk the scope decision with your own data\")"
   },
   {
     "marker": "<!-- visual: 2x2 risk matrix. X-axis: how often a segment uses the changed flow; y-axis: how much the flow changes. Quadrants: protect (frequent + big change), test hardest, move fast, communicate only. Plot example segments as dots: power users and workspace admins in \"protect\", new trials in \"move fast\", occasional billing users in \"communicate only\". -->",
     "markdown": "![2x2 risk matrix with how often a segment uses the changed flow on the x-axis and how much the flow changes on the y-axis: power users and workspace admins sit in Protect, new trials in Move fast, occasional billing users in Communicate only, and weekly tasks with small changes in Test hardest](/blog/saas-product-redesign/redesign-risk-matrix.svg \"Where each user segment sits on redesign risk\")"
-  },
-  {
-    "marker": "<!-- visual: rollout exposure curve. Share of accounts on the new UI rising over time in uneven steps, with dashed rollback arrows dropping back one step from each gate and a marker where the old-UI toggle disappears. Shows the shape of exposure and the rollback loops, not the step list; step widths are illustrative, not durations. -->",
-    "markdown": "![Step chart of the share of accounts on the new UI rising in gated steps through an example 10%, 25% and 50% ramp to 100%, with a gate at each rise, dashed rollback arrows dropping back one step, an old-UI toggle bar spanning beta to sunset, and a sunset marker where the old UI is removed](/blog/saas-product-redesign/rollout-exposure-curve.svg \"Exposure over time, with a rollback loop at every gate\")"
   },
   {
     "marker": "<!-- visual: before/after flow map. A generic SaaS setup journey before (many screens, two dead ends, an exit to a support ticket) vs after (fewer steps to the first value moment). Labelled \"illustrative\"; no client data or numbers on the graphic. -->",

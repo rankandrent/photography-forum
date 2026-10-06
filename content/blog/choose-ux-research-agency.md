@@ -45,12 +45,18 @@ Method-first briefs ("we need 20 interviews and a survey") produce proposals you
 
 **A 1-page research brief with 6 fields gets you proposals that compare like for like:** the decision, the users, what you already know, constraints, timeline and a budget band.
 
+![Checklist sheet titled 1-page research brief with six numbered fields and tick boxes: decision, users, what you already know, constraints, timeline and budget band](/blog/choose-ux-research-agency/research-brief-checklist.svg "The 6 fields of a 1-page research brief")
+
+<details class="astext"><summary>Show as text</summary>
+
 1. **Decision.** The one sentence from the previous section.
 2. **Users.** Each user group and whether you can reach it through your own customer list.
 3. **What you already know.** Analytics, support tickets and past studies, so the agency does not re-buy known answers.
 4. **Constraints.** Regulated data, languages, devices and the stakeholders who must observe.
 5. **Timeline.** The date the decision gets made, not the date you want a report.
 6. **Budget band.** A range, even a wide one.
+
+</details>
 
 Hiding the budget wastes a round of proposals: one agency scopes a two-week sprint, another a three-month program.
 
@@ -62,6 +68,10 @@ A formal request for proposal (RFP) helps when procurement or public-sector rule
 
 The weights are our suggestion; adjust them to your decision.
 
+![Printable scorecard listing seven criteria with a weight for each (method fit 20%, readout quality and data ethics 10%, the rest 15%), blank score boxes for agencies A, B and C, and a weighted total row at 100%](/blog/choose-ux-research-agency/agency-scorecard.svg "Weighted 7-criteria UX research agency scorecard")
+
+<details class="astext"><summary>Show as text</summary>
+
 | Criterion | What to check | Weight | Agency A | Agency B | Agency C |
 |---|---|---|---|---|---|
 | Dedicated researchers | Named people who moderate and synthesize | 15% | | | |
@@ -72,6 +82,8 @@ The weights are our suggestion; adjust them to your decision.
 | Data ethics | Consent, personally identifiable information (PII), retention, intellectual property (IP) | 10% | | | |
 | Domain experience | A similar study with similar users | 15% | | | |
 | **Weighted total** | | **100%** | | | |
+
+</details>
 
 **Dedicated researchers.** Ask for the names and roles of the people who run sessions and synthesis. If no one can name who moderates the sessions and who synthesizes them, research is a phase, not a practice.
 
@@ -138,6 +150,10 @@ Ask us these 12 on a free consultation call, before you receive our fixed-scope 
 
 **Walk away when a UX research agency agrees to every method you list, cannot name its researchers, recruits vaguely or sells deliverable counts instead of answers.** Each of these UX research agency red flags has a question that exposes it.
 
+![Red-flag map stacking six agency warning signs, from agreeing to everything to selling deliverable counts, each card paired with the pitch-call question to ask that exposes it](/blog/choose-ux-research-agency/red-flag-map.svg "Six red flags and the question that exposes each")
+
+<details class="astext"><summary>Show as text</summary>
+
 1. **It agrees to everything.** Ask: "Which part of my brief would you change?"
 2. **No named researchers.** Ask: "Who moderates session one?"
 3. **Recommendations before research.** The pitch says what to redesign before any user has been interviewed. Ask: "What evidence would change your mind?"
@@ -145,11 +161,17 @@ Ask us these 12 on a free consultation call, before you receive our fixed-scope 
 5. **Vague recruitment.** "We have a panel," but no screener sample. Ask: "Show me a screener and your no-show policy."
 6. **Deliverable counts, not answers.** "Four personas and two journey maps," unlinked to your decision. Ask: "Which finding would make me cancel this feature?"
 
+</details>
+
 ## How do you compare research proposals on price and scope?
 
 **Normalize every proposal to the same 5 units (user groups, participants, methods, recruitment difficulty and readout) before you compare price.** In a UX research proposal comparison, two quotes that look far apart often describe two different studies.
 
 *Hypothetical example for illustration, not market data:*
+
+![Hypothetical side-by-side of two research proposals normalized on user groups, participants shown as dots (8 versus 24 interviews), methods, recruitment difficulty, readout and a blank quoted fee line](/blog/choose-ux-research-agency/proposal-normalization.svg "Hypothetical example: two proposals on the same 5 units")
+
+<details class="astext"><summary>Show as text</summary>
 
 | Unit | Proposal A | Proposal B |
 |---|---|---|
@@ -159,6 +181,8 @@ Ask us these 12 on a free consultation call, before you receive our fixed-scope 
 | Recruitment difficulty | Panel, general profile | Specialist recruiter, clinicians |
 | Readout | Slide deck by email | Live readout, clips, tagged repository |
 | Quoted fee | Write it in | Write it in |
+
+</details>
 
 Fixed fee suits research with a signed research plan; time and materials suits open-ended discovery. Scope creep hides in extra rounds, re-recruiting, translation and extra readouts, so ask each agency what triggers a change order. A low proposal usually leaves out recruitment and incentives, synthesis days or a live readout.
 
@@ -180,11 +204,15 @@ Our own UX research program runs 4–8 weeks and $25,000–$60,000, priced on fo
 
 ![Ten-day timeline across week 1 and week 2 showing kickoff on days 1-2, research plan sign-off on days 2-4, screener live on days 4-5, first sessions booked on days 5-10 and observers invited](/blog/choose-ux-research-agency/first-two-weeks-timeline.svg "What the first 2 weeks after signing should look like")
 
+<details class="astext"><summary>Show as text</summary>
+
 1. **Kickoff (days 1–2).** Confirm the decision, research questions, user groups and decision owner.
 2. **Research plan sign-off (days 2–4).** Methods, participant criteria and the discussion guide outline.
 3. **Screener live (days 4–5).** Recruitment starts through the agreed channel.
 4. **First sessions booked (days 5–10).** Over-recruited by 1–2 per group.
 5. **Observers invited.** Product, engineering and sales leads get session links.
+
+</details>
 
 How to hire a UX research agency well includes your side of the deal: prototype access, a customer list you have consent to contact, one decision owner at the readout, and sign-offs within a day or two. Our process follows the human-centered design framework of [ISO 9241-210](https://www.iso.org/standard/77520.html).
 

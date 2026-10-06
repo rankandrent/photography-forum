@@ -17,8 +17,9 @@ Write `content/blog/<slug>.md` (frontmatter exactly as RULES.md, `draft: true`, 
   timelines, mistakes to avoid. No invented numbers, clients or quotes.
 - Any statistic must come from `externalSources` or a source you verify; mark it with
   `<!-- source: URL -->` right after the sentence so the link builder can cite it.
-- Leave `<!-- visual: idea -->` markers where the brief's visuals belong — never next to a table or
-  list with the same content (a visual must add what text cannot show).
+- Leave `<!-- visual: idea -->` markers where the brief's visuals belong. When a visual shows a table,
+  checklist or step list, wrap that block right after it in `<details class="astext"><summary>Show as
+  text</summary>` … `</details>` (owner prefers images; text stays for SEO and accessibility).
 - Bold answer under each H2: one sentence, at most ~30 words.
 - Leave `<!-- link: anchor idea -->` markers where an internal link fits.
 - Follow the brief's `variety` (intro style, H2 frames, structure) exactly; read

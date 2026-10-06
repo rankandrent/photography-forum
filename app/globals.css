@@ -1709,3 +1709,13 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .ptile--big .ptile__img { grid-column: 1; grid-row: 1 / span 4; margin: 0; }
 .ptile--big > :not(.ptile__img) { grid-column: 2; }
 @media (max-width: 900px) { .ptile--big { display: flex; } .ptile--big .ptile__img { margin: -8px -8px 4px; } }
+
+/* ===== "Show as text": the text version of an infographic (owner prefers the image) ===== */
+.post-article details.astext { margin: -16px 0 32px; border: 1px solid var(--border); border-radius: 12px; background: var(--white); }
+.post-article details.astext > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 10px 14px; font-size: 14px; font-weight: 600; color: var(--text-m); }
+.post-article details.astext > summary::-webkit-details-marker { display: none; }
+.post-article details.astext > summary::before { content: "+"; display: inline-flex; width: 20px; height: 20px; align-items: center; justify-content: center; border-radius: 50%; background: var(--pink-s); color: var(--pink); font-size: 14px; }
+.post-article details.astext[open] > summary::before { content: "–"; }
+.post-article details.astext[open] > summary { border-bottom: 1px solid var(--border); }
+.post-article details.astext > :not(summary) { margin: 14px 16px; }
+.post-article details.astext .ptable { margin: 14px 16px; }

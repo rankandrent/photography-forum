@@ -50,9 +50,9 @@ e. Originality is non-negotiable: never copy or paraphrase their text, headings 
      variety: { type, introStyle, h2Frames[], visualTypes[], ctaAngle }, notes }`
    - `variety` must differ from `docs/content-system/fingerprints.json` as RULES.md requires.
    - `leadAngle`: the moment in the post where the reader wants the hub service, and the offer.
-   - 7–10 H2s, 4–6 FAQs, 2–4 visual ideas that show what text cannot (process overview, flow
-     or decision tree, timeline, framework); never a graphic of a table or checklist the post will
-     already contain.
+   - 7–10 H2s, 4–6 FAQs, 4–6 visual ideas (owner prefers images): infographics of the post's key
+     tables/checklists/steps (their text goes behind "Show as text"), plus overview flows, decision
+     trees, timelines or frameworks.
    - internalTargets must exist (verify the files).
 
 Report: chosen keyword, why it wins, data source used, rejected candidates and why.

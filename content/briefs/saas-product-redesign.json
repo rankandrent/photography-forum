@@ -15,12 +15,18 @@
   "kd": null,
   "dataSource": "WebSearch SERP review on 2026-10-06. Semrush returned no_api_units on the first call; WebFetch blocked by the egress proxy (eleken.co tested). Competitor coverage inferred from search snippets; no GSC export exists (docs/data/gsc/latest.json missing). Volume and KD are unknown: do not quote them anywhere.",
   "hub": "saas-ux-design",
-  "services": ["saas-ux-design"],
-  "industries": ["saas"],
+  "services": [
+    "saas-ux-design"
+  ],
+  "industries": [
+    "saas"
+  ],
   "author": "faizan-khan",
-  "contributors": ["umar-sarwar"],
+  "contributors": [
+    "umar-sarwar"
+  ],
   "type": "Guide",
-  "funnel": "bofu",
+  "funnel": "mofu",
   "serviceSupport": 5,
   "beats": "https://www.eleken.co/blog-posts/product-redesign",
   "alsoOutranks": [
@@ -222,38 +228,110 @@
     }
   ],
   "internalTargets": [
-    { "href": "/services/saas-ux-design/", "anchor": "SaaS UX design services" },
-    { "href": "/services/saas-ux-design/#how-much-does-saas-ux-design-cost", "anchor": "SaaS UX design pricing by scope" },
-    { "href": "/services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design", "anchor": "signs a SaaS team should invest in UX design" },
-    { "href": "/industries/saas/", "anchor": "admin and permission design for B2B SaaS" },
-    { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
-    { "href": "/case-studies/toolsgroup-supply-chain-ux/", "anchor": "sales losses traced to the UI, not missing features" },
-    { "href": "/case-studies/apex-hcm-payroll-ux/", "anchor": "enterprise payroll redesign from 200+ screens to 6 steps" },
-    { "href": "/case-studies/tradezella/", "anchor": "TradeZella dashboard and onboarding revamp" },
-    { "href": "/contact/", "anchor": "send us your funnel and we will scope the redesign" }
+    {
+      "href": "/services/saas-ux-design/",
+      "anchor": "SaaS UX design services"
+    },
+    {
+      "href": "/services/saas-ux-design/#how-much-does-saas-ux-design-cost",
+      "anchor": "SaaS UX design pricing by scope"
+    },
+    {
+      "href": "/services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design",
+      "anchor": "signs a SaaS team should invest in UX design"
+    },
+    {
+      "href": "/industries/saas/",
+      "anchor": "admin and permission design for B2B SaaS"
+    },
+    {
+      "href": "/services/usability-testing-services/",
+      "anchor": "usability testing services"
+    },
+    {
+      "href": "/case-studies/toolsgroup-supply-chain-ux/",
+      "anchor": "sales losses traced to the UI, not missing features"
+    },
+    {
+      "href": "/case-studies/apex-hcm-payroll-ux/",
+      "anchor": "enterprise payroll redesign from 200+ screens to 6 steps"
+    },
+    {
+      "href": "/case-studies/tradezella/",
+      "anchor": "TradeZella dashboard and onboarding revamp"
+    },
+    {
+      "href": "/contact/",
+      "anchor": "send us your funnel and we will scope the redesign"
+    }
   ],
   "externalSources": [
-    { "url": "https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766", "why": "Aaron Sedley (GV Library) on change aversion and how to manage it at launch; the primary source for the concept in product teams." },
-    { "url": "https://www.nngroup.com/videos/users-hate-change/", "why": "Nielsen Norman Group video on users' negative short-term reaction to interface changes." },
-    { "url": "https://research.google.com/pubs/archive/36299.pdf", "why": "Rodden, Hutchinson and Fu (CHI 2010), 'Measuring the User Experience on a Large Scale': the HEART framework and goals-signals-metrics process." },
-    { "url": "https://launchdarkly.com/blog/soft-launches-using-feature-flags/", "why": "Feature-flag soft launches: targeting segments for betas and incremental percentage rollouts." },
-    { "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/", "why": "Source for 5 participants per qualitative test round." },
-    { "url": "https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html", "why": "System Usability Scale description (Brooke, 1986). Fact-checker: confirm the page is still live (usability.gov was archived in 2025); if not, cite Brooke's original SUS paper or the NN/g SUS article instead." }
+    {
+      "url": "https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766",
+      "why": "Aaron Sedley (GV Library) on change aversion and how to manage it at launch; the primary source for the concept in product teams."
+    },
+    {
+      "url": "https://www.nngroup.com/videos/users-hate-change/",
+      "why": "Nielsen Norman Group video on users' negative short-term reaction to interface changes."
+    },
+    {
+      "url": "https://research.google.com/pubs/archive/36299.pdf",
+      "why": "Rodden, Hutchinson and Fu (CHI 2010), 'Measuring the User Experience on a Large Scale': the HEART framework and goals-signals-metrics process."
+    },
+    {
+      "url": "https://launchdarkly.com/blog/soft-launches-using-feature-flags/",
+      "why": "Feature-flag soft launches: targeting segments for betas and incremental percentage rollouts."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/",
+      "why": "Source for 5 participants per qualitative test round."
+    },
+    {
+      "url": "https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html",
+      "why": "System Usability Scale description (Brooke, 1986). Fact-checker: confirm the page is still live (usability.gov was archived in 2025); if not, cite Brooke's original SUS paper or the NN/g SUS article instead."
+    }
   ],
   "visuals": [
-    { "type": "decision tree", "idea": "Scope decision tree: start at 'Which metric stalled?' -> 'Is the cause confined to 1 journey?' -> flow fix; 'Do several lifecycle stages leak?' -> lifecycle redesign; 'Can navigation, roles and components still hold the product?' no -> platform rebuild. Leaf nodes show the tier name only (durations and prices stay in the HTML table)." },
-    { "type": "2x2 framework", "idea": "Redesign risk matrix: x-axis how often a segment uses the changed flow, y-axis how much the flow changes. Quadrants: protect (frequent + big change: power users, admins), test hardest, move fast, communicate only. Plot example segments as dots." },
-    { "type": "rollout ramp", "idea": "Stepped ramp from internal -> opt-in beta with old-UI toggle -> percentage rollout -> 100% -> old-UI sunset, with a gate icon between steps naming the metric that must hold, and a dashed rollback arrow from each gate. Step widths are illustrative, not durations." },
-    { "type": "before/after flow map", "idea": "Generic SaaS setup journey before (many screens, dead ends, a support-ticket exit) vs after (fewer steps to the first value moment). Labelled 'illustrative', no client data or numbers on the graphic." }
+    {
+      "type": "decision tree",
+      "idea": "Scope decision tree: start at 'Which metric stalled?' -> 'Is the cause confined to 1 journey?' -> flow fix; 'Do several lifecycle stages leak?' -> lifecycle redesign; 'Can navigation, roles and components still hold the product?' no -> platform rebuild. Leaf nodes show the tier name only (durations and prices stay in the HTML table)."
+    },
+    {
+      "type": "2x2 framework",
+      "idea": "Redesign risk matrix: x-axis how often a segment uses the changed flow, y-axis how much the flow changes. Quadrants: protect (frequent + big change: power users, admins), test hardest, move fast, communicate only. Plot example segments as dots."
+    },
+    {
+      "type": "rollout ramp",
+      "idea": "Stepped ramp from internal -> opt-in beta with old-UI toggle -> percentage rollout -> 100% -> old-UI sunset, with a gate icon between steps naming the metric that must hold, and a dashed rollback arrow from each gate. Step widths are illustrative, not durations."
+    },
+    {
+      "type": "before/after flow map",
+      "idea": "Generic SaaS setup journey before (many screens, dead ends, a support-ticket exit) vs after (fewer steps to the first value moment). Labelled 'illustrative', no client data or numbers on the graphic."
+    }
   ],
-  "leadAngle": "In the scope section and again in the 30-day measurement section the reader knows the redesign is real and is sizing the risk. Offer: send your funnel export or the 3 flows you suspect, and we return a scope tier (flow fix, lifecycle redesign or platform rebuild), a baseline-and-rollout plan and a fixed price inside the hub's ranges, as the discovery step of a 4-8 week SaaS UX design sprint, plus a 30-minute call with a senior product designer.",
+  "leadAngle": "In the scope section and again in the 30-day measurement section the reader knows the redesign is real and is sizing the risk. Offer: send your funnel export or the 3 flows you suspect, and we return a scope tier (flow fix, lifecycle redesign or platform rebuild), a baseline-and-fixed-scope proposal and a fixed price inside the hub's ranges, as the discovery step of a 4-8 week SaaS UX design sprint, plus a free consultation.",
   "variety": {
     "type": "Guide",
     "introStyle": "myth ('our product looks dated, so we need a redesign')",
-    "h2Frames": ["what/what-not", "which metrics", "vs (3-way scope)", "how (baseline)", "which (risk groups)", "how (two tests)", "steps (rollout)", "mistakes", "what to measure"],
+    "h2Frames": [
+      "what/what-not",
+      "which metrics",
+      "vs (3-way scope)",
+      "how (baseline)",
+      "which (risk groups)",
+      "how (two tests)",
+      "steps (rollout)",
+      "mistakes",
+      "what to measure"
+    ],
     "sectionOrder": "definition vs myth -> trigger metrics -> scope decision -> baseline -> at-risk users -> testing -> gated rollout -> mistakes -> 30-day measurement -> FAQs",
-    "visualTypes": ["decision tree", "2x2 framework", "rollout ramp", "before/after flow map"],
-    "ctaAngle": "send your funnel or 3 suspect flows -> scope tier + rollout plan + fixed price",
+    "visualTypes": [
+      "decision tree",
+      "2x2 framework",
+      "rollout ramp",
+      "before/after flow map"
+    ],
+    "ctaAngle": "send your funnel or 3 suspect flows -> scope tier + fixed-scope proposal + fixed price",
     "listStyle": "1 lifecycle-trigger table + 1 three-tier scope table, numbered gated rollout steps, bullet mistakes each paired with an alternative"
   },
   "notes": [
@@ -269,18 +347,55 @@
   "related": {
     "linkBuilderRun": "2026-10-06",
     "internalLinksPlaced": [
-      { "href": "/services/saas-ux-design/", "anchor": "SaaS UX design services", "where": "What is a SaaS product redesign (first ~200 words)" },
-      { "href": "/case-studies/toolsgroup-supply-chain-ux/", "anchor": "75% of sales losses to the UI, not to missing features", "where": "Which metrics tell you a SaaS redesign is due?" },
-      { "href": "/industries/saas/", "anchor": "admin and permission design for B2B SaaS", "where": "Which users does a redesign put at risk?" },
-      { "href": "/services/usability-testing-services/", "anchor": "usability testing services", "where": "How do you test with existing users and new trials? (the single cross-hub link)" },
-      { "href": "/case-studies/tradezella/", "anchor": "TradeZella dashboard and user flows rebuild", "where": "What should you measure in the first 30 days?" },
-      { "href": "/contact/", "anchor": "send us your funnel and we will scope the redesign", "where": "lead moment, end of 30-day section" },
-      { "href": "/services/saas-ux-design/", "anchor": "our SaaS UX design sprint", "where": "lead moment, second UP link near the end" }
+      {
+        "href": "/services/saas-ux-design/",
+        "anchor": "SaaS UX design services",
+        "where": "What is a SaaS product redesign (first ~200 words)"
+      },
+      {
+        "href": "/case-studies/toolsgroup-supply-chain-ux/",
+        "anchor": "75% of sales losses to the UI, not to missing features",
+        "where": "Which metrics tell you a SaaS redesign is due?"
+      },
+      {
+        "href": "/industries/saas/",
+        "anchor": "admin and permission design for B2B SaaS",
+        "where": "Which users does a redesign put at risk?"
+      },
+      {
+        "href": "/services/usability-testing-services/",
+        "anchor": "usability testing services",
+        "where": "How do you test with existing users and new trials? (the single cross-hub link)"
+      },
+      {
+        "href": "/case-studies/tradezella/",
+        "anchor": "TradeZella dashboard and user flows rebuild",
+        "where": "What should you measure in the first 30 days?"
+      },
+      {
+        "href": "/contact/",
+        "anchor": "send us your funnel and we will scope the redesign",
+        "where": "lead moment, end of 30-day section"
+      },
+      {
+        "href": "/services/saas-ux-design/",
+        "anchor": "our SaaS UX design sprint",
+        "where": "lead moment, second UP link near the end"
+      }
     ],
     "internalLinksDropped": [
-      { "href": "/services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design", "why": "3rd/4th hub link exceeds the 1-2 hub-link rule; sentence removed" },
-      { "href": "/services/saas-ux-design/#how-much-does-saas-ux-design-cost", "why": "hub-link cap; price figures kept as plain text" },
-      { "href": "/case-studies/apex-hcm-payroll-ux/", "why": "case-study cap is 1-2; Apex facts and quote stay as plain text (file is still a TODO stub)" }
+      {
+        "href": "/services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design",
+        "why": "3rd/4th hub link exceeds the 1-2 hub-link rule; sentence removed"
+      },
+      {
+        "href": "/services/saas-ux-design/#how-much-does-saas-ux-design-cost",
+        "why": "hub-link cap; price figures kept as plain text"
+      },
+      {
+        "href": "/case-studies/apex-hcm-payroll-ux/",
+        "why": "case-study cap is 1-2; Apex facts and quote stay as plain text (file is still a TODO stub)"
+      }
     ],
     "externalLinksPlaced": [
       "https://research.google.com/pubs/archive/36299.pdf",

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1426" width="800" height="1426" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1426" fill="#FBFAFB"/>
+<text x="48" y="80" font-size="42" font-weight="800" fill="#020101">Red-flag map</text>
+<text x="48" y="124" font-size="28" font-weight="600" fill="#6B6B70">Each warning sign and the question</text>
+<text x="48" y="160" font-size="28" font-weight="600" fill="#6B6B70">that exposes it</text>
+<rect x="40.5" y="196.5" width="719" height="187" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M76 266 V222" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/>
+<path d="M76 224 h28 l-7 10 l7 10 h-28 Z" fill="#E2225F"/>
+<text x="126" y="250" font-size="28" font-weight="800" fill="#020101">It agrees to everything.</text>
+<rect x="64" y="274" width="672" height="92" rx="14" fill="#FFE3EC"/>
+<text x="84" y="316" font-size="26" font-weight="800" fill="#E2225F">Ask:</text>
+<text x="160" y="316" font-size="26" font-weight="600" fill="#020101">“Which part of my brief</text>
+<text x="160" y="354" font-size="26" font-weight="600" fill="#020101">would you change?”</text>
+<rect x="40.5" y="404.5" width="719" height="149" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M76 474 V430" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/>
+<path d="M76 432 h28 l-7 10 l7 10 h-28 Z" fill="#E2225F"/>
+<text x="126" y="458" font-size="28" font-weight="800" fill="#020101">No named researchers.</text>
+<rect x="64" y="482" width="672" height="54" rx="14" fill="#FFE3EC"/>
+<text x="84" y="524" font-size="26" font-weight="800" fill="#E2225F">Ask:</text>
+<text x="160" y="524" font-size="26" font-weight="600" fill="#020101">“Who moderates session one?”</text>
+<rect x="40.5" y="574.5" width="719" height="187" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M76 644 V600" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/>
+<path d="M76 602 h28 l-7 10 l7 10 h-28 Z" fill="#E2225F"/>
+<text x="126" y="628" font-size="28" font-weight="800" fill="#020101">Recommendations before research.</text>
+<rect x="64" y="652" width="672" height="92" rx="14" fill="#FFE3EC"/>
+<text x="84" y="694" font-size="26" font-weight="800" fill="#E2225F">Ask:</text>
+<text x="160" y="694" font-size="26" font-weight="600" fill="#020101">“What evidence would</text>
+<text x="160" y="732" font-size="26" font-weight="600" fill="#020101">change your mind?”</text>
+<rect x="40.5" y="782.5" width="719" height="187" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M76 852 V808" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/>
+<path d="M76 810 h28 l-7 10 l7 10 h-28 Z" fill="#E2225F"/>
+<text x="126" y="836" font-size="28" font-weight="800" fill="#020101">Research as a design phase.</text>
+<rect x="64" y="860" width="672" height="92" rx="14" fill="#FFE3EC"/>
+<text x="84" y="902" font-size="26" font-weight="800" fill="#E2225F">Ask:</text>
+<text x="160" y="902" font-size="26" font-weight="600" fill="#020101">“Can I buy the research</text>
+<text x="160" y="940" font-size="26" font-weight="600" fill="#020101">on its own?”</text>
+<rect x="40.5" y="990.5" width="719" height="187" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M76 1060 V1016" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/>
+<path d="M76 1018 h28 l-7 10 l7 10 h-28 Z" fill="#E2225F"/>
+<text x="126" y="1044" font-size="28" font-weight="800" fill="#020101">Vague recruitment.</text>
+<rect x="64" y="1068" width="672" height="92" rx="14" fill="#FFE3EC"/>
+<text x="84" y="1110" font-size="26" font-weight="800" fill="#E2225F">Ask:</text>
+<text x="160" y="1110" font-size="26" font-weight="600" fill="#020101">“Show me a screener and</text>
+<text x="160" y="1148" font-size="26" font-weight="600" fill="#020101">your no-show policy.”</text>
+<rect x="40.5" y="1198.5" width="719" height="187" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M76 1268 V1224" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/>
+<path d="M76 1226 h28 l-7 10 l7 10 h-28 Z" fill="#E2225F"/>
+<text x="126" y="1252" font-size="28" font-weight="800" fill="#020101">Deliverable counts, not answers.</text>
+<rect x="64" y="1276" width="672" height="92" rx="14" fill="#FFE3EC"/>
+<text x="84" y="1318" font-size="26" font-weight="800" fill="#E2225F">Ask:</text>
+<text x="160" y="1318" font-size="26" font-weight="600" fill="#020101">“Which finding would make</text>
+<text x="160" y="1356" font-size="26" font-weight="600" fill="#020101">me cancel this feature?”</text>
+</svg>
