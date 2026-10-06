@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { PostThumb } from "@/components/blog/PostThumb";
 import { Html } from "@/components/ui/Html";
 import { cap, routes } from "@/lib/site";
 import type { Card, Faq as FaqItem, Post, Service, Stat } from "@/lib/types";
@@ -277,14 +278,14 @@ export function Faq({
 }
 
 /* ---------- Blog / resources cards ---------- */
-export function Resources({ heading = "Latest insights on UI UX design", posts, more = [], tone = "warm" }: { heading?: string; posts: Post[]; more?: Post[]; tone?: "warm" | "light" }) {
+export function Resources({ heading = "Latest from our blog", posts, more = [], tone = "warm" }: { heading?: string; posts: Post[]; more?: Post[]; tone?: "warm" | "light" }) {
   if (!posts.length) return null;
   return (
     <section className={`section section--${tone}`} aria-labelledby="res-heading">
       <div className="container">
         <div className="res__head">
           <h2 id="res-heading">{heading}</h2>
-          <Link href={routes.blog} className="btn--ghost">All insights</Link>
+          <Link href={routes.blog} className="btn--ghost">All blog posts</Link>
         </div>
         <div className="res__grid">
           {posts.map((p) => <PostCard key={p.slug} p={p} />)}
@@ -302,7 +303,7 @@ export function Resources({ heading = "Latest insights on UI UX design", posts, 
 export function PostCard({ p }: { p: Post }) {
   return (
     <Link href={routes.post(p.slug)} className="res-card">
-      <div className="res-card__thumb" aria-hidden="true" />
+      <PostThumb p={p} className="res-card__thumb" />
       <span className="res-card__type">{p.type}</span>
       <span className="res-card__title">{p.title}</span>
     </Link>

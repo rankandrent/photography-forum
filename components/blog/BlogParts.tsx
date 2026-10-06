@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PostThumb } from "@/components/blog/PostThumb";
 import { anchorOf, getPosts, getService } from "@/lib/content";
 import { authorOf, blogRoutes, categories, categoryOf, postsInCategory, type Author } from "@/lib/blog";
 import { cap, routes } from "@/lib/site";
@@ -28,6 +29,7 @@ export function PostTile({ p, big }: { p: Post; big?: boolean }) {
   const a = authorOf(p);
   return (
     <article className={`ptile${big ? " ptile--big" : ""}`}>
+      <Link href={routes.post(p.slug)} tabIndex={-1} aria-hidden="true" className="ptile__img"><PostThumb p={p} className="res-card__thumb" /></Link>
       <div className="ptile__meta">
         {cat && <Link href={blogRoutes.category(cat.slug)} className="ptile__cat">{cat.name}</Link>}
         <span>{p.type}</span>
