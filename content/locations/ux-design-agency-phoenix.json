@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 6,
   "title": "Phoenix",
   "city": "Phoenix",
@@ -14,7 +14,7 @@
     "sub": "Researchers and product designers for fab and factory tools, payments operations, health systems and logistics software across Phoenix, Tempe, Chandler and Scottsdale. Remote-first, with a shared workday on Arizona time."
   },
   "summary": "Research-led UX and UI design for Phoenix semiconductor, payments, healthcare and logistics software.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-06",
   "abstract": "Headquartered in Reston, Virginia, our remote-first UX design agency works with Phoenix teams on Arizona's Mountain Standard Time, sharing 5–6 hours of the workday all year. We redesign the internal and customer-facing software behind fabs, payment operations, hospitals and distribution centers, and test it with the people who run it. Audits start at $5,000.",
   "sections": [
     {
@@ -257,5 +257,6 @@
     "logistics",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-06"
 }
