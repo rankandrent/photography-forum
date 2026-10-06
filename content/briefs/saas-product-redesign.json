@@ -265,5 +265,62 @@
     "Case-study facts allowed (from content/case-studies/*.md only): ToolsGroup 75% of sales losses traced to UI, 30+ stakeholder interviews; Apex HCM 200+ screens to 6 steps, quote 'The new flow cut onboarding time by more than half.' (VP Product, Apex HCM); TradeZella +40% user interaction, +25% retention, +30% new customers, 4.7 Trustpilot rating, challenge 'no onboarding guide'. Apex HCM and ToolsGroup files are short: do not add detail beyond them.",
     "Author faizan-khan (Sr. Product Designer): write from the side of a designer who scopes and ships redesigns of live SaaS products. Do not invent personal anecdotes or bio facts (authors.json bio is empty).",
     "BOFU link discipline (RULES.md step 6): keep links lean; the 9 internalTargets are the maximum, place the /contact/ link at the lead moment only."
+  ],
+  "related": {
+    "linkBuilderRun": "2026-10-06",
+    "internalLinksPlaced": [
+      { "href": "/services/saas-ux-design/", "anchor": "SaaS UX design services", "where": "What is a SaaS product redesign (first ~200 words)" },
+      { "href": "/case-studies/toolsgroup-supply-chain-ux/", "anchor": "75% of sales losses to the UI, not to missing features", "where": "Which metrics tell you a SaaS redesign is due?" },
+      { "href": "/industries/saas/", "anchor": "admin and permission design for B2B SaaS", "where": "Which users does a redesign put at risk?" },
+      { "href": "/services/usability-testing-services/", "anchor": "usability testing services", "where": "How do you test with existing users and new trials? (the single cross-hub link)" },
+      { "href": "/case-studies/tradezella/", "anchor": "TradeZella dashboard and user flows rebuild", "where": "What should you measure in the first 30 days?" },
+      { "href": "/contact/", "anchor": "send us your funnel and we will scope the redesign", "where": "lead moment, end of 30-day section" },
+      { "href": "/services/saas-ux-design/", "anchor": "our SaaS UX design sprint", "where": "lead moment, second UP link near the end" }
+    ],
+    "internalLinksDropped": [
+      { "href": "/services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design", "why": "3rd/4th hub link exceeds the 1-2 hub-link rule; sentence removed" },
+      { "href": "/services/saas-ux-design/#how-much-does-saas-ux-design-cost", "why": "hub-link cap; price figures kept as plain text" },
+      { "href": "/case-studies/apex-hcm-payroll-ux/", "why": "case-study cap is 1-2; Apex facts and quote stay as plain text (file is still a TODO stub)" }
+    ],
+    "externalLinksPlaced": [
+      "https://research.google.com/pubs/archive/36299.pdf",
+      "https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766",
+      "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/",
+      "https://mhealth.jmir.org/2022/8/e37290",
+      "https://launchdarkly.com/blog/soft-launches-using-feature-flags/"
+    ],
+    "externalSourceChanges": [
+      "usability.gov SUS page could not be verified (fetch blocked, absent from domain-restricted search; usability.gov was archived in 2025). Replaced with the peer-reviewed JMIR mHealth and uHealth 2022 SUS benchmarking meta-analysis (Hyzy et al.), and the sentence now cites its benchmark mean of 68; '1986' dropped from the Brooke attribution.",
+      "NN/g 'Users hate change' video link and sentence removed to stay within 5 external links; the GV Library article is the primary source and now carries the definition plus Google's mitigation tactics (usability studies, dogfooding, partial launches) as shown in its search snippet."
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "source": "/services/saas-ux-design/",
+      "file": "content/services/saas-ux-design.json",
+      "section": "#saas-ux-design-faqs (FAQ 'Is SaaS UX design different from SaaS user interface design?')",
+      "existingSentence": "Our SaaS UX design engagements deliver both layers.",
+      "newSentence": "When a product only looks dated, our guide to <a href=\"/blog/saas-product-redesign/#what-is-a-saas-product-redesign-and-what-is-it-not\">telling a UI refresh from a SaaS product redesign</a> shows which layer to change first.",
+      "anchor": "telling a UI refresh from a SaaS product redesign",
+      "why": "Same distinction (visual layer vs flows) answered in depth in the post's first section; informational FAQ, not the price block, so the hub CTA stays clean."
+    },
+    {
+      "source": "/industries/saas/",
+      "file": "content/industries/saas.json",
+      "section": "SaaS UI UX design FAQs ('Can enterprise data tables stay usable with 50 or more columns?')",
+      "existingSentence": "Saved views, column pinning and per-role column presets keep wide tables usable, if each user group gets its own default view instead of 1 shared layout.",
+      "newSentence": "When those tables are redesigned, <a href=\"/blog/saas-product-redesign/#which-users-does-a-redesign-put-at-risk\">carrying admins' saved views through the migration</a> keeps whole accounts from churning.",
+      "anchor": "carrying admins' saved views through the migration",
+      "why": "The post's at-risk-users section covers exactly saved views, roles and admins during a redesign; deep in the post, so jump link."
+    },
+    {
+      "source": "/industries/saas/",
+      "file": "content/industries/saas.json",
+      "section": "SaaS UI UX design FAQs ('How long does SaaS platform design take?')",
+      "existingSentence": "A single admin console or permission redesign takes 4–8 weeks as a research and design sprint.",
+      "newSentence": "Releasing it to existing customers is a separate step: see <a href=\"/blog/saas-product-redesign/#how-do-you-roll-out-a-saas-redesign-without-a-churn-spike\">a gated rollout plan for a SaaS redesign</a>.",
+      "anchor": "a gated rollout plan for a SaaS redesign",
+      "why": "Optional alternative to the saved-views suggestion (use only one per source page). Timeline FAQ readers next ask how to ship the redesign."
+    }
   ]
 }

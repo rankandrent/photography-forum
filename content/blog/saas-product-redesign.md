@@ -35,7 +35,7 @@ A redesign can touch three layers:
 - **Flow and structure layer.** The onboarding flow, core workflows, navigation, settings and billing, where most activation and retention problems live.
 - **Platform layer.** Information architecture, roles and permissions, the component library and the front end.
 
-Every change in a SaaS redesign lands on people who already pay, mid-subscription. That is why rollout matters as much as the screens, and why our SaaS UX design services <!-- link: SaaS UX design services → /services/saas-ux-design/ --> start from a metric rather than a mood board.
+Every change in a SaaS redesign lands on people who already pay, mid-subscription. That is why rollout matters as much as the screens, and why our [SaaS UX design services](/services/saas-ux-design/) start from a metric rather than a mood board.
 
 ## Which metrics tell you a SaaS redesign is due?
 
@@ -50,11 +50,11 @@ Each stage has its own trigger and its own proof that the cause is UX:
 | Upgrade | Trial-to-paid conversion and plan upgrades stay flat | Accounts hit plan limits but never open the plan comparison |
 | Support load | Tickets about setup, navigation and "where is…" rise | Ticket tags and help-center search terms |
 
-Use the goals-signals-metrics process from the Google HEART framework (Rodden, Hutchinson and Fu, 2010) to pick one goal, one signal and one metric per stage. <!-- source: https://research.google.com/pubs/archive/36299.pdf --> Ten metrics per stage hide the one that moved.
+Use the goals-signals-metrics process from the [Google HEART framework (Rodden, Hutchinson and Fu, 2010)](https://research.google.com/pubs/archive/36299.pdf) to pick one goal, one signal and one metric per stage. Ten metrics per stage hide the one that moved.
 
-Sales often blames missing features when the interface is the cause. At ToolsGroup, 30+ stakeholder interviews traced 75% of sales losses to the UI, not to missing features. <!-- link: sales losses traced to the UI, not missing features → /case-studies/toolsgroup-supply-chain-ux/ -->
+Sales often blames missing features when the interface is the cause. At ToolsGroup, 30+ stakeholder interviews traced [75% of sales losses to the UI, not to missing features](/case-studies/toolsgroup-supply-chain-ux/).
 
-When churn interviews name price, positioning or a missing integration instead, a redesign will not move the number. Our hub lists the signs a SaaS team should invest in UX design. <!-- link: signs a SaaS team should invest in UX design → /services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design -->
+When churn interviews name price, positioning or a missing integration instead, a redesign will not move the number.
 
 ## Flow fix, lifecycle redesign or platform rebuild?
 
@@ -72,7 +72,7 @@ The tiers differ most in who feels the change:
 | Lifecycle redesign | Onboarding, core workflows, pricing page and cancellation flow | Trials, paying users and admins | 4–8 weeks |
 | Platform rebuild | Navigation, roles, the design system and core workflows | Every user and every admin | 8–16 weeks |
 
-On our pricing, an onboarding redesign for one user role sits near $25,000, a full lifecycle redesign near $60,000, and work that needs a component library moves to $60,000–$180,000; the hub breaks down SaaS UX design pricing by scope. <!-- link: SaaS UX design pricing by scope → /services/saas-ux-design/#how-much-does-saas-ux-design-cost --> Every tier ends with a Web Content Accessibility Guidelines (WCAG) 2.2 level AA checklist for each screen.
+On our pricing, an onboarding redesign for one user role sits near $25,000, a full lifecycle redesign near $60,000, and work that needs a component library moves to $60,000–$180,000. Every tier ends with a Web Content Accessibility Guidelines (WCAG) 2.2 level AA checklist for each screen.
 
 Keep a front-end rebuild a separate decision (see the FAQs). We run this scoping as the discovery step of a 4–8 week SaaS UX design sprint: bring your funnel export or the three flows you suspect to a free consultation, and leave with a scope tier and a fixed-scope proposal.
 
@@ -101,9 +101,9 @@ In week 1 we ask for read access to Amplitude, Mixpanel or Pendo, a recent suppo
 
 <!-- visual: 2x2 risk matrix. X-axis: how often a segment uses the changed flow; y-axis: how much the flow changes. Quadrants: protect (frequent + big change), test hardest, move fast, communicate only. Plot example segments as dots: power users and workspace admins in "protect", new trials in "move fast", occasional billing users in "communicate only". -->
 
-Expect change aversion on day one. Aaron Sedley's GV Library article describes users' negative reaction to a launch simply because it changed what they knew. <!-- source: https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766 --> Nielsen Norman Group covers the same short-term reaction in its "Users hate change" video. <!-- source: https://www.nngroup.com/videos/users-hate-change/ --> So day-1 complaints are not the signal. Watch whether task success and return usage recover over the following weeks: if they recover, it was aversion; if they stay below baseline, the design is worse.
+Expect change aversion on day one. Aaron Sedley's GV Library article defines [change aversion as a negative short-term reaction](https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766) to changes in a product, and Google limits it with usability studies, internal dogfooding and partial launches. So day-1 complaints are not the signal. Watch whether task success and return usage recover over the following weeks: if they recover, it was aversion; if they stay below baseline, the design is worse.
 
-Business-to-business (B2B) products add workspace admins, who set up roles, saved views, custom fields and integrations for everyone else. When migration drops a saved view, the admin absorbs the whole team's complaints, and churn risk multiplies per account. Carry those settings and keyboard shortcuts through migration, and brief admins before end users see anything. Our page on admin and permission design for B2B SaaS <!-- link: admin and permission design for B2B SaaS → /industries/saas/ --> goes deeper on roles.
+Business-to-business (B2B) products add workspace admins, who set up roles, saved views, custom fields and integrations for everyone else. When migration drops a saved view, the admin absorbs the whole team's complaints, and churn risk multiplies per account. Carry those settings and keyboard shortcuts through migration, and brief admins before end users see anything. Our page on [admin and permission design for B2B SaaS](/industries/saas/) goes deeper on roles.
 
 Keep accounts inside their renewal window on the interface they know until the renewal closes.
 
@@ -113,11 +113,11 @@ Keep accounts inside their renewal window on the interface they know until the r
 
 When you redesign a SaaS product, existing power users tell you about speed and errors on familiar tasks, and new users tell you about learnability on the way to the first value moment. One mixed round averages away both answers.
 
-We test 5 participants per round with a Figma prototype in Maze. Nielsen Norman Group's guidance is that 5 users find most usability problems in a qualitative round, and that 3–4 per group suffice when a single study covers two distinct groups. <!-- source: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/ --> Because the two groups get different tasks here, we run them as separate rounds.
+We test 5 participants per round with a Figma prototype in Maze. Nielsen Norman Group's guidance is that [5 users find most usability problems in a qualitative round](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), and that 3–4 per group suffice when a single study covers two distinct groups. Because the two groups get different tasks here, we run them as separate rounds.
 
-Score each round with the System Usability Scale (SUS), John Brooke's 10-item questionnaire from 1986, comparing old against new for existing users. <!-- source: https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html -->
+Score each round with the System Usability Scale (SUS), John Brooke's 10-item questionnaire, comparing old against new for existing users. A [mean SUS score of 68 is the widely used benchmark](https://mhealth.jmir.org/2022/8/e37290) for average usability, so read both scores against it.
 
-When power users are slower on day one while new users succeed, do not roll back. Plan a transition aid: a "what moved where" panel, the old keyboard shortcuts and an admin preview. For a larger test program, see our usability testing services. <!-- link: usability testing services → /services/usability-testing-services/ -->
+When power users are slower on day one while new users succeed, do not roll back. Plan a transition aid: a "what moved where" panel, the old keyboard shortcuts and an admin preview. For a larger test program, see our [usability testing services](/services/usability-testing-services/).
 
 ## How do you roll out a SaaS redesign without a churn spike?
 
@@ -125,7 +125,7 @@ When power users are slower on day one while new users succeed, do not roll back
 
 1. **Internal use.** Your team runs the new flows on real work. Gate: no blocking bugs; every event fires under its new name.
 2. **Opt-in beta with an old-UI toggle.** Invite accounts, admins first. Gate: completion rate and time on task match the baseline, and the switch-back rate stays under your threshold.
-3. **Percentage rollout behind a feature flag.** Feature flags release a change to a target segment and widen the audience step by step, as LaunchDarkly describes for soft launches. <!-- source: https://launchdarkly.com/blog/soft-launches-using-feature-flags/ --> An example ramp, not a norm: 10%, 25%, then 50% of accounts. Gate: new-trial activation rate and related tickets hold for a week per step.
+3. **Percentage rollout behind a feature flag.** Feature flags release a change to a target segment and widen the audience step by step, as LaunchDarkly describes for [soft launches with percentage rollouts](https://launchdarkly.com/blog/soft-launches-using-feature-flags/). An example ramp, not a norm: 10%, 25%, then 50% of accounts. Gate: new-trial activation rate and related tickets hold for a week per step.
 4. **100% with the toggle still available.** Gate: the switch-back rate falls week over week.
 5. **Old-UI sunset.** Remove the old UI on the date you published at step 2.
 
@@ -154,9 +154,9 @@ Communicate alongside the ramp: admin email first, then an in-app notice, a chan
 
 Judge each metric against the thresholds you set before design. Between baseline and target, iterate: fix the step where users stall and ship it behind the same flag. Past the rollback trigger, step the rollout back until the metric recovers.
 
-Two of our case studies show what a redesigned path can move. Apex HCM's legacy payroll platform went from 200+ screens to 6 steps, and its VP Product reported: "The new flow cut onboarding time by more than half." <!-- link: enterprise payroll redesign from 200+ screens to 6 steps → /case-studies/apex-hcm-payroll-ux/ --> TradeZella started with a cluttered interface, a steep learning curve and no onboarding guide; after the dashboard and user flows were rebuilt, user interaction rose 40%, retention 25% and new customers 30%. <!-- link: TradeZella dashboard and onboarding revamp → /case-studies/tradezella/ -->
+Two of our case studies show what a redesigned path can move. Apex HCM's legacy payroll platform went from 200+ screens to 6 steps, and its VP Product reported: "The new flow cut onboarding time by more than half." TradeZella started with a cluttered interface, a steep learning curve and no onboarding guide; after the [TradeZella dashboard and user flows rebuild](/case-studies/tradezella/), user interaction rose 40%, retention 25% and new customers 30%.
 
-If you are sizing a SaaS product redesign now, send us your funnel and we will scope the redesign. <!-- link: send us your funnel and we will scope the redesign → /contact/ --> The free consultation returns a scope tier, a baseline-and-rollout plan and a fixed-scope proposal, run as the discovery step of our SaaS UX design sprint. <!-- link: our SaaS UX design sprint → /services/saas-ux-design/ --> We have designed 200+ products since 2017.
+If you are sizing a SaaS product redesign now, [send us your funnel and we will scope the redesign](/contact/). The free consultation returns a scope tier, a baseline-and-rollout plan and a fixed-scope proposal, run as the discovery step of [our SaaS UX design sprint](/services/saas-ux-design/). We have designed 200+ products since 2017.
 
 ## FAQs
 
