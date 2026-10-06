@@ -1743,3 +1743,8 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
   .post-article .ptags { margin-top: 40px; gap: 8px; }
   .pauthors__img { width: 52px; height: 52px; }
 }
+
+/* ---------- post: 2 columns (TOC | article), no right rail (owner, 2026-10-06) ---------- */
+.pgrid3 { grid-template-columns: 220px minmax(0, 760px); justify-content: center; gap: 72px; }
+@media (max-width: 1100px) { .pgrid3 { grid-template-columns: 190px minmax(0, 1fr); gap: 40px; } }
+@media (max-width: 900px) { .pgrid3 { grid-template-columns: minmax(0, 1fr); gap: 24px; } }

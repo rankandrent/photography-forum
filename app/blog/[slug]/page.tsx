@@ -261,16 +261,6 @@ export default async function PostPage({ params }: Props) {
               </nav>
             )}
           </article>
-
-          <aside className="prail" aria-label="Talk to us">
-            <div className="prail__card">
-              <p className="prail__eyebrow">{hubName ?? "UI UX design"}</p>
-              <p className="prail__title">Planning this for your product?</p>
-              <p className="prail__body">A senior designer replies within one business day with next steps{hub?.priceRange ? ` and an estimate (typically ${hub.priceRange})` : ""}.</p>
-              <a href="#cta-form" className="btn">Get a free consultation</a>
-              {hub && <Link href={routes.service(hub.slug)} className="prail__link">{hubName} →</Link>}
-            </div>
-          </aside>
         </div>
       </section>
 
