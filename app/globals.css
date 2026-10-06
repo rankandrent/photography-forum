@@ -1719,3 +1719,27 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .post-article details.astext[open] > summary { border-bottom: 1px solid var(--border); }
 .post-article details.astext > :not(summary) { margin: 14px 16px; }
 .post-article details.astext .ptable { margin: 14px 16px; }
+
+/* ---------- post: FAQ accordion, topic tags, face avatars (design pass 2026-10-06) ---------- */
+.post-article .pfaq { gap: 12px; }
+.post-article .pfaq__item { transition: border-color .2s, box-shadow .2s; }
+.post-article .pfaq__item:hover { border-color: color-mix(in srgb, var(--pink) 35%, var(--border)); }
+.post-article .pfaq__item[open] { border-color: var(--pink); box-shadow: 0 8px 24px -16px color-mix(in srgb, var(--pink) 60%, transparent); }
+.post-article .pfaq__item summary { align-items: center; border-radius: 14px; outline: none; }
+.post-article .pfaq__item summary:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink) 30%, transparent); }
+.post-article .pfaq__item[open] summary { color: var(--pink); padding-bottom: 10px; }
+.post-article .pfaq__item[open] summary span { background: var(--pink); color: #fff; }
+.post-article .pfaq__item > div { padding: 0 20px 18px; }
+.post-article .pfaq__item > div p:last-child { margin-bottom: 0; }
+
+.post-article .ptags { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 56px 0 0; padding-top: 24px; border-top: 1px solid var(--border); }
+.post-article .ptags .ptags__label { background: none; padding: 0; border-radius: 0; font-family: var(--font-m); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-m); margin-right: 6px; }
+.post-article .ptags .ptags__tag { font-size: 13px; font-weight: 600; padding: 7px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--white); color: var(--text); }
+.post-article .ptags + .pauthors { margin-top: 32px; }
+
+.phead__avatar, .pauthors__img, .acard__img { box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--border); }
+.pauthors__img { width: 72px; height: 72px; }
+@media (max-width: 640px) {
+  .post-article .ptags { margin-top: 40px; gap: 8px; }
+  .pauthors__img { width: 60px; height: 60px; }
+}

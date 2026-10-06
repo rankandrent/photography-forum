@@ -6,7 +6,7 @@ import type { Post } from "@/lib/types";
 export const slugify = (s: string) => s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 /* ---------- authors: the real team (content/home.ts) plus the team byline ---------- */
-export type Author = { slug: string; name: string; role: string; photo?: string; linkedin?: string; bio: string; hasBio: boolean; expertise: string[]; person: boolean };
+export type Author = { slug: string; name: string; role: string; photo?: string; /** face-cropped 256px square for small round avatars (public/team/face/) */ avatar?: string; linkedin?: string; bio: string; hasBio: boolean; expertise: string[]; person: boolean };
 
 type Extra = { bio?: string; expertise?: string[]; yearsExperience?: number | null };
 const EXTRA = extra.authors as Record<string, Extra>;
@@ -30,6 +30,7 @@ export const authors: Author[] = [
       name: t.name,
       role: t.role,
       photo: t.photo,
+      avatar: t.photo?.replace("/team/", "/team/face/"),
       linkedin: t.linkedin,
       // real bio from content/authors.json when filled in, else a plain role line (never invented)
       bio: x.bio?.trim() || `${t.name} is ${/^[AEIOU]/i.test(t.role) ? "an" : "a"} ${t.role.split("|")[0].trim()} at UI UX Design Services.`,

@@ -61,9 +61,9 @@ export function EmptyBlog({ text = "The first guides are being written by our de
 export function AuthorCard({ a, count, compact }: { a: Author; count?: number; compact?: boolean }) {
   return (
     <div className={`acard${compact ? " acard--compact" : ""}`}>
-      {a.photo ? (
+      {a.avatar ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={a.photo} alt={`${a.name}, ${a.role}`} width={96} height={96} loading="lazy" className="acard__img" />
+        <img src={a.avatar} alt={`${a.name}, ${a.role}`} width={96} height={96} loading="lazy" className="acard__img" />
       ) : (
         <span className="acard__img acard__img--logo" aria-hidden="true">U</span>
       )}

@@ -48,7 +48,7 @@ function prepare(html: string) {
     const block = m[1];
     for (const q of block.matchAll(/<h3>([\s\S]*?)<\/h3>([\s\S]*?)(?=<h3>|$)/g)) faqs.push({ q: text(q[1]), a: q[2].trim() });
     if (faqs.length) {
-      const items = faqs.map((f) => `<details class="pfaq__item"><summary>${f.q}<span aria-hidden="true">+</span></summary><div>${f.a}</div></details>`).join("");
+      const items = faqs.map((f) => `<details class="pfaq__item" name="faq"><summary>${f.q}<span aria-hidden="true">+</span></summary><div>${f.a}</div></details>`).join("");
       out = out.replace(block, `<div class="pfaq">${items}</div>`);
     }
   }
@@ -137,9 +137,9 @@ export default async function PostPage({ params }: Props) {
           <h1 className="phead__title">{p.title}</h1>
           <p className="phead__desc">{p.description}</p>
           <div className="phead__by">
-            {author.photo ? (
+            {author.avatar ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={author.photo} alt="" width={48} height={48} className="phead__avatar" />
+              <img src={author.avatar} alt="" width={48} height={48} className="phead__avatar" />
             ) : (
               <span className="phead__avatar phead__avatar--logo" aria-hidden="true">U</span>
             )}
@@ -149,9 +149,9 @@ export default async function PostPage({ params }: Props) {
             </div>
             {team.map((c) => (
               <div key={c.slug} className="phead__with">
-                {c.photo && (
+                {c.avatar && (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={c.photo} alt="" width={36} height={36} className="phead__avatar phead__avatar--sm" />
+                  <img src={c.avatar} alt="" width={36} height={36} className="phead__avatar phead__avatar--sm" />
                 )}
                 <div>
                   <span className="phead__role">With</span>
@@ -213,16 +213,21 @@ export default async function PostPage({ params }: Props) {
             {rest && <div className="pbody" dangerouslySetInnerHTML={{ __html: rest }} />}
             {!rest && inlineCta}
 
-            {!!p.tags.length && <p className="ptags">{p.tags.map((t) => <span key={t}>{t}</span>)}</p>}
+            {!!p.tags.length && (
+              <div className="ptags">
+                <span className="ptags__label">Topics</span>
+                {p.tags.map((t) => <span key={t} className="ptags__tag">#{t}</span>)}
+              </div>
+            )}
 
             <section className="pauthors" aria-label="About the authors">
               <p className="pauthors__label">About the authors</p>
               <div className="pauthors__grid">
                 {[{ a: author, role: "Author" }, ...team.map((c) => ({ a: c, role: "Collaborator" }))].map(({ a, role }) => (
                   <div key={a.slug} className="pauthors__person">
-                    {a.photo ? (
+                    {a.avatar ? (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={a.photo} alt={`${a.name}, ${a.role}`} width={64} height={64} loading="lazy" className="pauthors__img" />
+                      <img src={a.avatar} alt={`${a.name}, ${a.role}`} width={64} height={64} loading="lazy" className="pauthors__img" />
                     ) : (
                       <span className="pauthors__img pauthors__img--logo" aria-hidden="true">U</span>
                     )}
