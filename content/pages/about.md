@@ -1,5 +1,6 @@
 ---
 title: "About us"
+metaTitle: "About Our UI UX Design Agency | Reston, VA, Since 2017"
 description: "UIUXDesignServices.us is a research-led UI UX design agency in Reston, Virginia, designing digital products for US teams since 2017. Meet the team."
 ---
 

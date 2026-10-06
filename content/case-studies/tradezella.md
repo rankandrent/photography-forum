@@ -1,7 +1,7 @@
 ---
 title: "TradeZella: a revamped trading journal that helps traders make data-driven decisions"
 metaTitle: "TradeZella Case Study: Trading Journal UX Revamp"
-description: "How we revamped TradeZella's trading journal across web and mobile. Clearer dashboards and journaling lifted user interaction by 40% and retention by 25%."
+description: "How we revamped TradeZella's trading journal for web and mobile. Clearer dashboards and journaling lifted user interaction by 40% and retention by 25%."
 client: TradeZella
 logo: TradeZella
 result: "40% more user interaction after a dashboard revamp"

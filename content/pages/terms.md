@@ -1,5 +1,6 @@
 ---
 title: "Terms of Service"
+metaTitle: "Terms of Service | Website Use, Content & Disclaimers"
 description: "The terms that apply when you use the uiuxdesignservices.us website, including content use, links, disclaimers and governing law."
 ---
 

@@ -1,17 +1,16 @@
 {
- "generated": "2026-10-06T11:32:08.623Z",
+ "generated": "2026-10-06T11:38:30.539Z",
  "pages": [
   {
    "type": "content",
    "route": "/about/",
    "keyword": null,
-   "score": 67,
+   "score": 73,
    "failed": [
-    "title-length: title 30–60 chars (is 8)",
     "content-depth: ≥ 600 words of content (has 384)",
     "internal-in: ≥ 3 pages link here (has 0)"
    ],
-   "title": "About us",
+   "title": "About Our UI UX Design Agency | Reston, VA, Since 2017",
    "h1": "About us",
    "words": 384
   },
@@ -27,47 +26,6 @@
    "title": "9 → 4 steps in error resolution workflow | Case Study",
    "h1": "9 → 4 steps in error resolution workflow",
    "words": 256
-  },
-  {
-   "type": "archive",
-   "route": "/privacy/",
-   "keyword": null,
-   "score": 82,
-   "failed": [
-    "title-length: title 30–60 chars (is 14)",
-    "internal-out: ≥ 5 internal links out (has 2)"
-   ],
-   "title": "Privacy Policy",
-   "h1": "Privacy Policy",
-   "words": 554
-  },
-  {
-   "type": "content",
-   "route": "/industries/finance/",
-   "keyword": "finance ui ux design",
-   "score": 83,
-   "failed": [
-    "title-keyword: title contains \"finance ui ux design\"",
-    "title-keyword-early: keyword starts in the first ~25 chars of the title",
-    "desc-keyword: meta description contains the keyword"
-   ],
-   "title": "Fintech UI UX Design Agency | Banking & Trading Apps",
-   "h1": "UI UX design services for finance",
-   "words": 1686
-  },
-  {
-   "type": "content",
-   "route": "/industries/startups/",
-   "keyword": "startups ui ux design",
-   "score": 83,
-   "failed": [
-    "title-keyword: title contains \"startups ui ux design\"",
-    "title-keyword-early: keyword starts in the first ~25 chars of the title",
-    "desc-keyword: meta description contains the keyword"
-   ],
-   "title": "Startup UI UX Design Agency | Product Design for Founders",
-   "h1": "UI UX design services for startups",
-   "words": 1842
   },
   {
    "type": "content",
@@ -95,75 +53,15 @@
   },
   {
    "type": "archive",
-   "route": "/blog/author/",
+   "route": "/privacy/",
    "keyword": null,
    "score": 91,
    "failed": [
-    "desc-length: meta description 120–158 chars (is 101)"
+    "internal-out: ≥ 5 internal links out (has 2)"
    ],
-   "title": "Blog Authors: Our UX and Product Designers",
-   "h1": "The designers behind our guides",
-   "words": 205
-  },
-  {
-   "type": "archive",
-   "route": "/case-studies/",
-   "keyword": null,
-   "score": 91,
-   "failed": [
-    "desc-length: meta description 120–158 chars (is 119)"
-   ],
-   "title": "UI UX Design Case Studies | Our Work & Results",
-   "h1": "Products we designed, and the results they drove",
-   "words": 354
-  },
-  {
-   "type": "archive",
-   "route": "/contact/",
-   "keyword": null,
-   "score": 91,
-   "failed": [
-    "desc-length: meta description 120–158 chars (is 100)"
-   ],
-   "title": "Contact Us | Free UI UX Design Consultation",
-   "h1": "Let's talk about your product",
-   "words": 514
-  },
-  {
-   "type": "archive",
-   "route": "/terms/",
-   "keyword": null,
-   "score": 91,
-   "failed": [
-    "title-length: title 30–60 chars (is 16)"
-   ],
-   "title": "Terms of Service",
-   "h1": "Terms of Service",
-   "words": 497
-  },
-  {
-   "type": "content",
-   "route": "/case-studies/tradezella/",
-   "keyword": null,
-   "score": 93,
-   "failed": [
-    "desc-length: meta description 120–158 chars (is 159)"
-   ],
-   "title": "TradeZella Case Study: Trading Journal UX Revamp",
-   "h1": "TradeZella: a revamped trading journal that helps traders make data-driven decisions",
-   "words": 711
-  },
-  {
-   "type": "blog",
-   "route": "/blog/choose-ux-research-agency/",
-   "keyword": "how to choose a ux research agency",
-   "score": 96,
-   "failed": [
-    "desc-keyword: meta description contains the keyword"
-   ],
-   "title": "How to Choose a UX Research Agency: Scorecard & Red Flags",
-   "h1": "How to choose a UX research agency: a buyer's scorecard",
-   "words": 3008
+   "title": "Privacy Policy | How We Handle Your Personal Data",
+   "h1": "Privacy Policy",
+   "words": 554
   },
   {
    "type": "content",
@@ -186,6 +84,16 @@
    "title": "Faizan Khan, Sr. Product Designer | Author",
    "h1": "Faizan Khan",
    "words": 70
+  },
+  {
+   "type": "archive",
+   "route": "/blog/author/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Blog Authors: Our UX and Product Designers",
+   "h1": "The designers behind our guides",
+   "words": 205
   },
   {
    "type": "archive",
@@ -238,6 +146,16 @@
    "words": 90
   },
   {
+   "type": "blog",
+   "route": "/blog/choose-ux-research-agency/",
+   "keyword": "how to choose a ux research agency",
+   "score": 100,
+   "failed": [],
+   "title": "How to Choose a UX Research Agency: Scorecard & Red Flags",
+   "h1": "How to choose a UX research agency: a buyer's scorecard",
+   "words": 3009
+  },
+  {
    "type": "archive",
    "route": "/blog/",
    "keyword": null,
@@ -256,6 +174,16 @@
    "title": "SaaS Product Redesign: Scope, Testing and Rollout Plan",
    "h1": "SaaS product redesign: scope, test and roll out without churn",
    "words": 2770
+  },
+  {
+   "type": "archive",
+   "route": "/case-studies/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Design Case Studies | Our Work & Results",
+   "h1": "Products we designed, and the results they drove",
+   "words": 354
   },
   {
    "type": "content",
@@ -279,6 +207,26 @@
   },
   {
    "type": "content",
+   "route": "/case-studies/tradezella/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "TradeZella Case Study: Trading Journal UX Revamp",
+   "h1": "TradeZella: a revamped trading journal that helps traders make data-driven decisions",
+   "words": 711
+  },
+  {
+   "type": "archive",
+   "route": "/contact/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Contact Us | Free UI UX Design Consultation",
+   "h1": "Let's talk about your product",
+   "words": 514
+  },
+  {
+   "type": "content",
    "route": "/",
    "keyword": "ui ux design services",
    "score": 100,
@@ -286,6 +234,16 @@
    "title": "UI UX Design Services | Research-Led UI UX Design Agency",
    "h1": "UI UX design services that turn interfaces into measurable outcomes",
    "words": 2864
+  },
+  {
+   "type": "content",
+   "route": "/industries/finance/",
+   "keyword": "finance ui ux design",
+   "score": 100,
+   "failed": [],
+   "title": "Finance UI UX Design Agency | Fintech, Banking & Trading",
+   "h1": "UI UX design services for finance",
+   "words": 1686
   },
   {
    "type": "content",
@@ -316,6 +274,16 @@
    "title": "SaaS UI UX Design Agency | B2B & Enterprise Products",
    "h1": "UI UX design services for SaaS",
    "words": 1869
+  },
+  {
+   "type": "content",
+   "route": "/industries/startups/",
+   "keyword": "startups ui ux design",
+   "score": 100,
+   "failed": [],
+   "title": "Startups UI UX Design Agency | Product Design for Founders",
+   "h1": "UI UX design services for startups",
+   "words": 1842
   },
   {
    "type": "content",
@@ -576,6 +544,16 @@
    "title": "Web App Design Services | UX & UI for Complex Web Apps",
    "h1": "Web app design services for complex products that stay simple",
    "words": 1612
+  },
+  {
+   "type": "archive",
+   "route": "/terms/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Terms of Service | Website Use, Content & Disclaimers",
+   "h1": "Terms of Service",
+   "words": 497
   }
  ]
 }

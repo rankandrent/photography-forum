@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+metaTitle: "Privacy Policy | How We Handle Your Personal Data"
 description: "How UIUXDesignServices.us collects, uses and protects the personal information you share through our website and contact forms."
 ---
 

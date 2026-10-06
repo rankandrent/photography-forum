@@ -9,7 +9,7 @@ import { SITE, addressLine, routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Contact Us | Free UI UX Design Consultation",
-  description: "Tell us about your product. A design lead reviews every request and replies within one business day.",
+  description: "Book a free UI UX design consultation. Tell us about your product; a design lead reviews every request and replies within one business day.",
   path: routes.contact,
   keywords: ["contact UI UX design agency", "free UI UX design consultation", "hire UX designers"],
 });

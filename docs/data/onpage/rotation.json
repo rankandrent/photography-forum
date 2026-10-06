@@ -1,0 +1,330 @@
+{
+ "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
+ "updated": "2026-10-06",
+ "pages": [
+  {
+   "route": "/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/faizan-khan/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/sahar-asif/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/umar-sarwar/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/industry-specific/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/research-and-strategy/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/nitro/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/parents-connect/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/contact/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/ecommerce/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 96
+  },
+  {
+   "route": "/industries/healthcare/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/saas/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/supply-chain/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-boston/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-los-angeles/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-new-york/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-phoenix/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-san-francisco/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-seattle/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/dashboard-design-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/dashboard-ux-design/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/data-visualization-agency/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/design-system-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/digital-product-design-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ecommerce-ux-design-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/interaction-design-agency/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ios-app-design-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/mobile-app-ui-ux-design-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/saas-ux-design/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ui-ux-design-services-for-startups/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ui-ux-web-design/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/usability-testing-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ux-audit-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ux-consulting-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/ux-research-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/services/web-app-design-services/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/terms/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/about/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 73
+  },
+  {
+   "route": "/blog/choose-ux-research-agency/",
+   "type": "blog",
+   "lastAudited": "2026-10-06",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/saas-product-redesign/",
+   "type": "blog",
+   "lastAudited": "2026-10-06",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/apex-hcm-payroll-ux/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 87
+  },
+  {
+   "route": "/case-studies/fortna-warehouse-ux/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 80
+  },
+  {
+   "route": "/case-studies/toolsgroup-supply-chain-ux/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 87
+  },
+  {
+   "route": "/case-studies/tradezella/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/finance/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/startups/",
+   "type": "content",
+   "lastAudited": "2026-10-06",
+   "lastScore": 100
+  },
+  {
+   "route": "/privacy/",
+   "type": "archive",
+   "lastAudited": "2026-10-06",
+   "lastScore": 91
+  }
+ ]
+}

@@ -6,7 +6,7 @@ import { getPosts } from "@/lib/content";
 import { collectionLd, pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/site";
 
-const description = "Meet the UX researchers, product designers and design leads who write the UI UX Design Services blog.";
+const description = "Meet the UX researchers, product designers and design leads who write our UI UX design blog, with their roles, LinkedIn profiles and the guides they wrote.";
 
 export const metadata = pageMetadata({ title: "Blog Authors: Our UX and Product Designers", description, path: blogRoutes.authors, noindex: getPosts().length === 0 });
 

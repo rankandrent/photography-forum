@@ -219,6 +219,8 @@ export type Post = {
 export type Page = {
   slug: string;
   title: string;
+  /** <title> tag when the H1 is too short for search (30–60 chars); falls back to title */
+  metaTitle?: string;
   description: string;
   noindex: boolean;
   html: string;

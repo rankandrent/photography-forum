@@ -111,6 +111,7 @@ function load() {
   const pages: Page[] = readMarkdown("pages").map(({ slug, data, html }) => ({
     slug,
     title: data.title,
+    metaTitle: data.metaTitle,
     description: data.description ?? "",
     noindex: Boolean(data.noindex),
     html,
