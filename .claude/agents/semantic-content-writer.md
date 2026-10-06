@@ -32,6 +32,10 @@ Write `content/blog/<slug>.md` (frontmatter exactly as RULES.md, `draft: true`, 
   your H2s, so keep H2s short (≤ 60 chars).
 - End with `## FAQs` (### questions) and a short closing paragraph that points to the hub service.
 
+On-page checklist (docs/content-system/ONPAGE-CHECKLIST.md): metaTitle 30–60 chars with the keyword
+near the start; title/H1 with the keyword; description 120–158 chars with the keyword, the benefit and
+a next step; keyword in the first 100 words; ≥ 3 H2s; ≥ 2 sources; alt text on every image.
+
 Completeness self-check: every H2/H3 has bold answer + detail + example; every brief point, question
 and entity covered with substance; no trailing or unfinished paragraph, no thin FAQ answer (≥ 2
 sentences), no section without a next step. In a repair round, work through QA's "Guidance for the

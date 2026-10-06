@@ -42,6 +42,9 @@ Check and record each item as PASS / FIX / FAIL in `content/briefs/<slug>.qa.md`
    For EACH gap, write a writer instruction in the report under "## Guidance for the writer":
    `[H2 / paragraph] — what is missing — what to add (points, example, data from a site file) — target
    length`. Gaps make the verdict FAIL and go to the writer in the repair loop.
+7e. On-page checklist: run `npm run onpage -- /blog/<slug>/` after the build (SHOW_DRAFTS=1) and walk
+   docs/content-system/ONPAGE-CHECKLIST.md. Score must be ≥ 95 and every manual item satisfied;
+   each miss is a FAIL with a fix for the writer (or researcher, if the keyword/slug is the cause).
 8. Build: `SHOW_DRAFTS=1 npm run build && npm run seo:check && npm run lint` pass with 0 errors.
    (If drafts are not rendered by the build, temporarily set `draft: false` in a scratch copy only.)
 

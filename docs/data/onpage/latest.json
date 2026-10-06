@@ -1,0 +1,581 @@
+{
+ "generated": "2026-10-06T11:32:08.623Z",
+ "pages": [
+  {
+   "type": "content",
+   "route": "/about/",
+   "keyword": null,
+   "score": 67,
+   "failed": [
+    "title-length: title 30–60 chars (is 8)",
+    "content-depth: ≥ 600 words of content (has 384)",
+    "internal-in: ≥ 3 pages link here (has 0)"
+   ],
+   "title": "About us",
+   "h1": "About us",
+   "words": 384
+  },
+  {
+   "type": "content",
+   "route": "/case-studies/fortna-warehouse-ux/",
+   "keyword": null,
+   "score": 80,
+   "failed": [
+    "h2-structure: ≥ 3 H2 sections (has 2)",
+    "content-depth: ≥ 600 words of content (has 256)"
+   ],
+   "title": "9 → 4 steps in error resolution workflow | Case Study",
+   "h1": "9 → 4 steps in error resolution workflow",
+   "words": 256
+  },
+  {
+   "type": "archive",
+   "route": "/privacy/",
+   "keyword": null,
+   "score": 82,
+   "failed": [
+    "title-length: title 30–60 chars (is 14)",
+    "internal-out: ≥ 5 internal links out (has 2)"
+   ],
+   "title": "Privacy Policy",
+   "h1": "Privacy Policy",
+   "words": 554
+  },
+  {
+   "type": "content",
+   "route": "/industries/finance/",
+   "keyword": "finance ui ux design",
+   "score": 83,
+   "failed": [
+    "title-keyword: title contains \"finance ui ux design\"",
+    "title-keyword-early: keyword starts in the first ~25 chars of the title",
+    "desc-keyword: meta description contains the keyword"
+   ],
+   "title": "Fintech UI UX Design Agency | Banking & Trading Apps",
+   "h1": "UI UX design services for finance",
+   "words": 1686
+  },
+  {
+   "type": "content",
+   "route": "/industries/startups/",
+   "keyword": "startups ui ux design",
+   "score": 83,
+   "failed": [
+    "title-keyword: title contains \"startups ui ux design\"",
+    "title-keyword-early: keyword starts in the first ~25 chars of the title",
+    "desc-keyword: meta description contains the keyword"
+   ],
+   "title": "Startup UI UX Design Agency | Product Design for Founders",
+   "h1": "UI UX design services for startups",
+   "words": 1842
+  },
+  {
+   "type": "content",
+   "route": "/case-studies/apex-hcm-payroll-ux/",
+   "keyword": null,
+   "score": 87,
+   "failed": [
+    "content-depth: ≥ 600 words of content (has 291)"
+   ],
+   "title": "200+ screens → 6 steps in enterprise payroll | Case Study",
+   "h1": "200+ screens → 6 steps in enterprise payroll",
+   "words": 291
+  },
+  {
+   "type": "content",
+   "route": "/case-studies/toolsgroup-supply-chain-ux/",
+   "keyword": null,
+   "score": 87,
+   "failed": [
+    "content-depth: ≥ 600 words of content (has 302)"
+   ],
+   "title": "75% of sales losses were UI-related, not feature gaps",
+   "h1": "75% of sales losses were UI-related, not feature gaps",
+   "words": 302
+  },
+  {
+   "type": "archive",
+   "route": "/blog/author/",
+   "keyword": null,
+   "score": 91,
+   "failed": [
+    "desc-length: meta description 120–158 chars (is 101)"
+   ],
+   "title": "Blog Authors: Our UX and Product Designers",
+   "h1": "The designers behind our guides",
+   "words": 205
+  },
+  {
+   "type": "archive",
+   "route": "/case-studies/",
+   "keyword": null,
+   "score": 91,
+   "failed": [
+    "desc-length: meta description 120–158 chars (is 119)"
+   ],
+   "title": "UI UX Design Case Studies | Our Work & Results",
+   "h1": "Products we designed, and the results they drove",
+   "words": 354
+  },
+  {
+   "type": "archive",
+   "route": "/contact/",
+   "keyword": null,
+   "score": 91,
+   "failed": [
+    "desc-length: meta description 120–158 chars (is 100)"
+   ],
+   "title": "Contact Us | Free UI UX Design Consultation",
+   "h1": "Let's talk about your product",
+   "words": 514
+  },
+  {
+   "type": "archive",
+   "route": "/terms/",
+   "keyword": null,
+   "score": 91,
+   "failed": [
+    "title-length: title 30–60 chars (is 16)"
+   ],
+   "title": "Terms of Service",
+   "h1": "Terms of Service",
+   "words": 497
+  },
+  {
+   "type": "content",
+   "route": "/case-studies/tradezella/",
+   "keyword": null,
+   "score": 93,
+   "failed": [
+    "desc-length: meta description 120–158 chars (is 159)"
+   ],
+   "title": "TradeZella Case Study: Trading Journal UX Revamp",
+   "h1": "TradeZella: a revamped trading journal that helps traders make data-driven decisions",
+   "words": 711
+  },
+  {
+   "type": "blog",
+   "route": "/blog/choose-ux-research-agency/",
+   "keyword": "how to choose a ux research agency",
+   "score": 96,
+   "failed": [
+    "desc-keyword: meta description contains the keyword"
+   ],
+   "title": "How to Choose a UX Research Agency: Scorecard & Red Flags",
+   "h1": "How to choose a UX research agency: a buyer's scorecard",
+   "words": 3008
+  },
+  {
+   "type": "content",
+   "route": "/industries/ecommerce/",
+   "keyword": "e-commerce ui ux design",
+   "score": 96,
+   "failed": [
+    "slug-keyword: URL slug carries the keyword"
+   ],
+   "title": "E-commerce UI UX Design Agency | Online Store Design",
+   "h1": "UI UX design services for e-commerce",
+   "words": 1811
+  },
+  {
+   "type": "archive",
+   "route": "/blog/author/faizan-khan/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Faizan Khan, Sr. Product Designer | Author",
+   "h1": "Faizan Khan",
+   "words": 70
+  },
+  {
+   "type": "archive",
+   "route": "/blog/author/sahar-asif/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Sahar Asif, Senior Manager UX | KAM | Author",
+   "h1": "Sahar Asif",
+   "words": 73
+  },
+  {
+   "type": "archive",
+   "route": "/blog/author/umar-sarwar/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Umar Sarwar, SEO Manager | Author",
+   "h1": "Umar Sarwar",
+   "words": 94
+  },
+  {
+   "type": "archive",
+   "route": "/blog/category/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Blog Categories: UI UX Design Topics",
+   "h1": "Browse UI UX design topics",
+   "words": 123
+  },
+  {
+   "type": "archive",
+   "route": "/blog/category/industry-specific/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Industry-specific Guides | UI UX Design Blog",
+   "h1": "Industry-specific guides",
+   "words": 88
+  },
+  {
+   "type": "archive",
+   "route": "/blog/category/research-and-strategy/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Research & strategy Guides | UI UX Design Blog",
+   "h1": "Research & strategy guides",
+   "words": 90
+  },
+  {
+   "type": "archive",
+   "route": "/blog/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Design Blog: Guides From Our Design Team",
+   "h1": "UI UX design guides from our team",
+   "words": 155
+  },
+  {
+   "type": "blog",
+   "route": "/blog/saas-product-redesign/",
+   "keyword": "saas product redesign",
+   "score": 100,
+   "failed": [],
+   "title": "SaaS Product Redesign: Scope, Testing and Rollout Plan",
+   "h1": "SaaS product redesign: scope, test and roll out without churn",
+   "words": 2770
+  },
+  {
+   "type": "content",
+   "route": "/case-studies/nitro/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Nitro League Case Study: P2E Game That Raised $5M",
+   "h1": "Nitro: a play-to-earn racing game that secured $5M in 3 months",
+   "words": 622
+  },
+  {
+   "type": "content",
+   "route": "/case-studies/parents-connect/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Parents Connect Case Study: Parenting Community Platform",
+   "h1": "Parents Connect: a social platform that builds a global parenting community",
+   "words": 697
+  },
+  {
+   "type": "content",
+   "route": "/",
+   "keyword": "ui ux design services",
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Design Services | Research-Led UI UX Design Agency",
+   "h1": "UI UX design services that turn interfaces into measurable outcomes",
+   "words": 2864
+  },
+  {
+   "type": "content",
+   "route": "/industries/healthcare/",
+   "keyword": "healthcare ui ux design",
+   "score": 100,
+   "failed": [],
+   "title": "Healthcare UI UX Design Agency | Patient & Clinician UX",
+   "h1": "UI UX design services for healthcare",
+   "words": 1832
+  },
+  {
+   "type": "archive",
+   "route": "/industries/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Design by Industry | Healthcare, Fintech & SaaS",
+   "h1": "UI UX design services for your industry",
+   "words": 277
+  },
+  {
+   "type": "content",
+   "route": "/industries/saas/",
+   "keyword": "saas ui ux design",
+   "score": 100,
+   "failed": [],
+   "title": "SaaS UI UX Design Agency | B2B & Enterprise Products",
+   "h1": "UI UX design services for SaaS",
+   "words": 1869
+  },
+  {
+   "type": "content",
+   "route": "/industries/supply-chain/",
+   "keyword": "supply chain ui ux design",
+   "score": 100,
+   "failed": [],
+   "title": "Supply Chain UI UX Design | Logistics & Warehouse UX",
+   "h1": "UI UX design services for supply chain",
+   "words": 1696
+  },
+  {
+   "type": "archive",
+   "route": "/location/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Locations | US Cities We Serve",
+   "h1": "UI UX design for product teams across the US",
+   "words": 226
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-boston/",
+   "keyword": "ux design agency boston",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Boston | Biotech, Health & Edtech UX",
+   "h1": "UX design agency Boston teams trust with expert-grade software",
+   "words": 1800
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-los-angeles/",
+   "keyword": "ux design agency los angeles",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Los Angeles | Streaming, DTC & Gaming UX",
+   "h1": "UX design agency Los Angeles studios, brands and builders can lean on",
+   "words": 1760
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-new-york/",
+   "keyword": "ux design agency new york",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency New York | Fintech, Media & Health UX",
+   "h1": "UX design agency New York product teams can run on Eastern Time",
+   "words": 1897
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-phoenix/",
+   "keyword": "ux design agency phoenix",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Phoenix | Operations & Enterprise UX",
+   "h1": "UX design agency Phoenix operations teams can count on",
+   "words": 1808
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-san-francisco/",
+   "keyword": "ux design agency san francisco",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency San Francisco | Research-Led UI UX",
+   "h1": "UX design agency for San Francisco product teams",
+   "words": 1802
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-seattle/",
+   "keyword": "ux design agency seattle",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Seattle | Cloud, SaaS & Marketplace UX",
+   "h1": "UX design agency Seattle engineering-led teams can plug in fast",
+   "words": 1754
+  },
+  {
+   "type": "content",
+   "route": "/services/dashboard-design-services/",
+   "keyword": "dashboard design services",
+   "score": 100,
+   "failed": [],
+   "title": "Dashboard Design Services | Analytics & Admin Dashboards",
+   "h1": "Dashboard design services for analytics, operations, and admin panels",
+   "words": 1469
+  },
+  {
+   "type": "content",
+   "route": "/services/dashboard-ux-design/",
+   "keyword": "dashboard ux design",
+   "score": 100,
+   "failed": [],
+   "title": "Dashboard UX Design Services | Role-Based KPI Dashboards",
+   "h1": "Dashboard UX design that turns dense data into clear decisions",
+   "words": 1591
+  },
+  {
+   "type": "content",
+   "route": "/services/data-visualization-agency/",
+   "keyword": "data visualization agency",
+   "score": 100,
+   "failed": [],
+   "title": "Data Visualization Agency | Charts & Interactive Reports",
+   "h1": "A data visualization agency that makes complex data clear",
+   "words": 1534
+  },
+  {
+   "type": "content",
+   "route": "/services/design-system-services/",
+   "keyword": "design system services",
+   "score": 100,
+   "failed": [],
+   "title": "Design System Services | Component Libraries & Tokens",
+   "h1": "Design system services that keep every product consistent",
+   "words": 1641
+  },
+  {
+   "type": "content",
+   "route": "/services/digital-product-design-services/",
+   "keyword": "digital product design services",
+   "score": 100,
+   "failed": [],
+   "title": "Digital Product Design Services | Strategy to Launch",
+   "h1": "Digital product design services from first idea to launch",
+   "words": 1625
+  },
+  {
+   "type": "content",
+   "route": "/services/ecommerce-ux-design-services/",
+   "keyword": "e-commerce ux design services",
+   "score": 100,
+   "failed": [],
+   "title": "E-commerce UX Design Services | Boost Checkout Conversion",
+   "h1": "E-commerce UX design services that turn browsers into buyers",
+   "words": 1647
+  },
+  {
+   "type": "archive",
+   "route": "/services/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Design Services | Research, UX, UI & Testing",
+   "h1": "Our design service catalog, grouped by what you need",
+   "words": 804
+  },
+  {
+   "type": "content",
+   "route": "/services/interaction-design-agency/",
+   "keyword": "interaction design agency",
+   "score": 100,
+   "failed": [],
+   "title": "Interaction Design Agency | Micro-Interactions & Motion",
+   "h1": "An interaction design agency for products that feel effortless",
+   "words": 1575
+  },
+  {
+   "type": "content",
+   "route": "/services/ios-app-design-services/",
+   "keyword": "ios app design services",
+   "score": 100,
+   "failed": [],
+   "title": "iOS App Design Services | iPhone & iPad UI UX Design",
+   "h1": "iOS app design services that feel native on iPhone and iPad",
+   "words": 1574
+  },
+  {
+   "type": "content",
+   "route": "/services/mobile-app-ui-ux-design-services/",
+   "keyword": "mobile app ui ux design services",
+   "score": 100,
+   "failed": [],
+   "title": "Mobile App UI UX Design Services | iOS & Android",
+   "h1": "Mobile app UI UX design services for apps people keep using",
+   "words": 1694
+  },
+  {
+   "type": "content",
+   "route": "/services/saas-ux-design/",
+   "keyword": "saas ux design",
+   "score": 100,
+   "failed": [],
+   "title": "SaaS UX Design Services | Onboarding, Retention & UI",
+   "h1": "SaaS UX design that shortens time-to-value and reduces churn",
+   "words": 1768
+  },
+  {
+   "type": "content",
+   "route": "/services/ui-ux-design-services-for-startups/",
+   "keyword": "ui ux design services for startups",
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Design Services for Startups | MVP to Scale",
+   "h1": "UI UX design services for startups that need to move fast",
+   "words": 1732
+  },
+  {
+   "type": "content",
+   "route": "/services/ui-ux-web-design/",
+   "keyword": "ui ux web design",
+   "score": 100,
+   "failed": [],
+   "title": "UI UX Web Design Services | Conversion-Focused Websites",
+   "h1": "UI UX web design that turns visitors into customers",
+   "words": 1680
+  },
+  {
+   "type": "content",
+   "route": "/services/usability-testing-services/",
+   "keyword": "usability testing services",
+   "score": 100,
+   "failed": [],
+   "title": "Usability Testing Services | Moderated & Remote Tests",
+   "h1": "Usability testing services that catch problems before production",
+   "words": 1629
+  },
+  {
+   "type": "content",
+   "route": "/services/ux-audit-services/",
+   "keyword": "ux audit services",
+   "score": 100,
+   "failed": [],
+   "title": "UX Audit Services | Heuristic Review & Fix Roadmap",
+   "h1": "UX audit services that pinpoint where users struggle and why",
+   "words": 1542
+  },
+  {
+   "type": "content",
+   "route": "/services/ux-consulting-services/",
+   "keyword": "ux consulting services",
+   "score": 100,
+   "failed": [],
+   "title": "UX Consulting Services | Senior UX Strategy & Roadmaps",
+   "h1": "UX consulting services that turn product guesswork into a clear plan",
+   "words": 1616
+  },
+  {
+   "type": "content",
+   "route": "/services/ux-research-services/",
+   "keyword": "ux research services",
+   "score": 100,
+   "failed": [],
+   "title": "UX Research Services | User Interviews & Journey Maps",
+   "h1": "UX research services that define what to build before you build it",
+   "words": 1682
+  },
+  {
+   "type": "content",
+   "route": "/services/web-app-design-services/",
+   "keyword": "web app design services",
+   "score": 100,
+   "failed": [],
+   "title": "Web App Design Services | UX & UI for Complex Web Apps",
+   "h1": "Web app design services for complex products that stay simple",
+   "words": 1612
+  }
+ ]
+}

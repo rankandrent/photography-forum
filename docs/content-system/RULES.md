@@ -115,6 +115,12 @@ on the one page that best satisfies the intent instead of starting from zero.
 - Facts about regulations, standards, tools and companies must be current and verifiable.
 - "200+ products designed" and "in business since 2017" are confirmed company facts.
 
+## On-page checklist (owner rule)
+
+Every page follows `docs/content-system/ONPAGE-CHECKLIST.md` (Semrush on-page SEO checklist adapted to
+this site). `npm run onpage` scores pages; blog posts publish only at ≥ 95. The `onpage-seo-auditor`
+runs daily and turns every gap into a lesson for the writer, QA or researcher.
+
 ## Completeness (owner rule)
 
 A post is published only when it is semantically complete: every heading fully answered (bold answer
@@ -197,6 +203,7 @@ as `## FAQs` with `### Question?` + answer. Images use
 | content-qa | `content/briefs/<slug>.qa.md` report (SEO, links, images, build) |
 | fact-checker | `content/briefs/<slug>.facts.md` report (facts, sources, honesty) |
 | orchestrator (`/content-pipeline`) | applies fixes and visuals, sets `qa:`, publishes, updates `ledger.json` |
+| onpage-seo-auditor | `docs/data/onpage/<date>.md` + safe on-page fixes + lessons for writer/QA/researcher |
 | site-seo-auditor | `docs/content-system/audits/<date>.md` + small safe edits + learnings for all agents |
 | every agent | its own `docs/content-system/learnings/<agent>.md` |
 

@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "seo:check": "node scripts/seo-check.mjs",
-    "links:find": "node scripts/link-opportunities.mjs"
+    "links:find": "node scripts/link-opportunities.mjs",
+    "onpage": "node scripts/onpage-audit.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
