@@ -1,17 +1,27 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "answerlab.com", "kind": "research agency insights", "silos": ["ux-research-services"], "seenFor": ["ux research rfp vendor evaluation", "how to choose a ux research partner"], "source": "WebSearch 2026-10-05" },
-    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study"], "source": "WebSearch 2026-10-05, 2026-10-06" },
     { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "ux research services"], "source": "WebSearch 2026-10-05" },
     { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency"], "source": "WebSearch 2026-10-05" },
-    { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency"], "source": "WebSearch 2026-10-05" },
+    { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp"], "source": "WebSearch 2026-10-05, 2026-10-06" },
     { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables"], "source": "WebSearch 2026-10-05" },
     { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp"], "source": "WebSearch 2026-10-05" },
-    { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" }
+    { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" },
+    { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer"], "source": "WebSearch 2026-10-06" },
+    { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope"], "source": "WebSearch 2026-10-06" },
+    { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup"], "source": "WebSearch 2026-10-06" },
+    { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
+    { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
+    { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "facelift vs full redesign saas"], "source": "WebSearch 2026-10-06" },
+    { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "product redesign examples"], "source": "WebSearch 2026-10-06" },
+    { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign"], "source": "WebSearch 2026-10-06" },
+    { "domain": "sda.company", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency"], "source": "WebSearch 2026-10-06" },
+    { "domain": "chameleon.io", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "reducing onboarding drop-off activation"], "source": "WebSearch 2026-10-06" }
   ],
   "topPosts": [
     {
@@ -79,6 +89,74 @@
       "serviceSupport": 5,
       "status": "candidate",
       "notes": "Partly absorbed by the choose-ux-research-agency brief (brief/RFP section). Only write separately as a downloadable RFP template if it does not cannibalise that post."
+    },
+    {
+      "domain": "eleken.co",
+      "url": "https://www.eleken.co/blog-posts/product-redesign",
+      "title": "The Complete Guide to Product Redesign",
+      "keywords": ["saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "product redesign"],
+      "estTraffic": null,
+      "silo": "saas-ux-design",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/saas-product-redesign.json",
+      "notes": "Seen on page 1 for 3 of the 4 redesign queries checked. Generic (not SaaS-specific). Eleken also ranks with /blog-posts/ux-redesign, /blog-posts/ui-redesign and /blog-posts/to-redesign-or-not-to-redesign-your-product."
+    },
+    {
+      "domain": "925studios.co",
+      "url": "https://www.925studios.co/blog/how-to-redesign-saas-without-losing-users",
+      "title": "How to Redesign Your SaaS Without Losing Existing Users",
+      "keywords": ["how to redesign a saas product without losing users", "saas redesign rollout"],
+      "estTraffic": null,
+      "silo": "saas-ux-design",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/saas-product-redesign.json",
+      "notes": "Snippets carry unsourced uplift claims (40% activation, support volume halved): listed as do-not-use in the brief."
+    },
+    {
+      "domain": "orbix.studio",
+      "url": "https://www.orbix.studio/blogs/saas-product-redesign",
+      "title": "SaaS product redesign",
+      "keywords": ["how to redesign a saas product without losing users", "saas product redesign"],
+      "estTraffic": null,
+      "silo": "saas-ux-design",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/saas-product-redesign.json"
+    },
+    {
+      "domain": "onething.design",
+      "url": "https://www.onething.design/post/when-to-redesign-saas-ux",
+      "title": "When to redesign SaaS UX",
+      "keywords": ["when to redesign saas ux", "signs saas needs redesign"],
+      "estTraffic": null,
+      "silo": "saas-ux-design",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "TOFU/MOFU candidate, but saas-product-redesign covers trigger metrics in one section, and the hub owns 'When should a SaaS company invest in SaaS UX design?'. Only write if reframed (e.g. a diagnostic for one lifecycle stage) to avoid cannibalising both. designli.co and parallelhq.com rank for the same query."
+    },
+    {
+      "domain": "925studios.co",
+      "url": "https://925studios.co/blog/saas-ux-audit-checklist-before-redesign-2026",
+      "title": "SaaS UX Audit Checklist: 30 Things to Check Before Redesign (2026)",
+      "keywords": ["saas ux audit checklist", "saas ux audit before redesign"],
+      "estTraffic": null,
+      "silo": "saas-ux-design",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Overlaps the ux-audit-services hub ('ux audit'). If written for this silo, frame it as a SaaS lifecycle-stage checklist (onboarding, upgrade, cancellation), TOFU, and link to the saas hub; check the ux-audit hub's H2s first."
+    },
+    {
+      "domain": "octet.design",
+      "url": "https://octet.design/journal/how-to-select-right-saas-ui-ux-design-agency",
+      "title": "How to Select the Right SaaS UI UX Design Agency for Your Product?",
+      "keywords": ["how to choose a saas ux design agency", "hire saas ux designer agency"],
+      "estTraffic": null,
+      "silo": "saas-ux-design",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Deferred: near-duplicate of the format just used for choose-ux-research-agency (variety) and close to the SaaS industry page keyword 'SaaS UI UX design agency'. onething.design, sda.company, orbix.studio and saasfactor.co rank for the same query. Revisit as a later BOFU only with a SaaS-specific angle (e.g. checking an agency's activation/retention evidence)."
     }
   ]
 }

@@ -1,0 +1,269 @@
+{
+  "slug": "saas-product-redesign",
+  "keyword": "saas product redesign",
+  "secondary": [
+    "how to redesign a saas product",
+    "saas redesign",
+    "saas ux redesign",
+    "redesign saas without losing users",
+    "ui refresh vs ux redesign",
+    "saas redesign rollout",
+    "saas redesign scope"
+  ],
+  "intent": "commercial investigation (a founder, PM or design lead has decided the product needs a redesign and is scoping the engagement and its risk before hiring)",
+  "volume": null,
+  "kd": null,
+  "dataSource": "WebSearch SERP review on 2026-10-06. Semrush returned no_api_units on the first call; WebFetch blocked by the egress proxy (eleken.co tested). Competitor coverage inferred from search snippets; no GSC export exists (docs/data/gsc/latest.json missing). Volume and KD are unknown: do not quote them anywhere.",
+  "hub": "saas-ux-design",
+  "services": ["saas-ux-design"],
+  "industries": ["saas"],
+  "author": "faizan-khan",
+  "contributors": ["umar-sarwar"],
+  "type": "Guide",
+  "funnel": "bofu",
+  "serviceSupport": 5,
+  "beats": "https://www.eleken.co/blog-posts/product-redesign",
+  "alsoOutranks": [
+    "https://www.925studios.co/blog/how-to-redesign-saas-without-losing-users",
+    "https://www.orbix.studio/blogs/saas-product-redesign",
+    "https://userguiding.com/blog/best-practices-saas-product-redesign",
+    "https://phenomenonstudio.com/article/facelifts-vs-full-redesigns-in-saas-how-teams-choose-wisely/",
+    "https://designli.co/blog/how-to-redesign-your-saas-product-for-better-user-retention"
+  ],
+  "centralEntity": "SaaS product redesign",
+  "entities": [
+    "SaaS product redesign",
+    "software as a service (SaaS)",
+    "activation rate",
+    "first value moment",
+    "time-to-value",
+    "retention rate",
+    "churn",
+    "trial-to-paid conversion",
+    "change aversion",
+    "power users",
+    "workspace admin",
+    "Google HEART framework",
+    "Jobs to be Done",
+    "Amplitude",
+    "Mixpanel",
+    "Pendo",
+    "Figma",
+    "Maze",
+    "System Usability Scale (SUS)",
+    "feature flags",
+    "percentage rollout",
+    "opt-in beta",
+    "design system",
+    "WCAG 2.2"
+  ],
+  "attributes": [
+    "scope tier: flow fix vs lifecycle redesign vs platform rebuild",
+    "trigger metric per lifecycle stage (activation, retention, upgrade, support load)",
+    "baseline captured before design starts",
+    "success and rollback thresholds agreed up front",
+    "user segments at risk: power users, admins who configured the workspace for others, new trials",
+    "test plan: existing users vs new trial users tested separately",
+    "rollout mechanism: internal, opt-in beta with old-UI toggle, percentage ramp, sunset date",
+    "communication plan: in-app notice, changelog, admin heads-up",
+    "post-launch measurement window (first 30 days)",
+    "timeline and price tier (from the hub only)"
+  ],
+  "ngrams": [
+    "saas product redesign",
+    "redesign a saas product",
+    "saas redesign",
+    "ui refresh",
+    "ux redesign",
+    "onboarding flow",
+    "core workflows",
+    "activation rate",
+    "churn spike",
+    "power users",
+    "old ui",
+    "feature flag",
+    "rollout",
+    "baseline metrics"
+  ],
+  "questions": [
+    "How do I know if my SaaS product needs a redesign or just a UI refresh?",
+    "How do you redesign a SaaS product without losing users?",
+    "How long does a SaaS product redesign take?",
+    "Should you let users switch back to the old UI?",
+    "Should we rebuild the front end and redesign at the same time?",
+    "Do we need a design system before a redesign?",
+    "How do you announce a SaaS redesign to existing customers?",
+    "What metrics prove a SaaS redesign worked?"
+  ],
+  "serpGaps": [
+    "No ranking page ties the redesign scope to a specific lifecycle metric: they list generic 'signs you need a redesign' (outdated look, complaints) instead of 'trial accounts stall before the first value moment -> flow fix on onboarding'.",
+    "Scope options (refresh / overhaul / rebuild) are described in prose but nobody gives a decision path a buyer can walk with their own data, or says what each tier means in weeks and budget.",
+    "B2B SaaS has a second at-risk group that generic guides ignore: workspace admins who configured roles, saved views and integrations for their whole team. A redesign that breaks their setup multiplies churn risk per account.",
+    "Pages say 'test on a small cohort' but do not separate testing with existing power users (change aversion, speed on familiar tasks) from new trial users (learnability). Those two tests answer different questions.",
+    "Nobody defines rollback thresholds before launch or shows a rollout ramp with gates (which metric must hold before the next step).",
+    "Change aversion is mentioned as a vibe; few cite the original Google/GV writing on it or explain how to tell temporary aversion from a worse design (track task success and return usage over weeks, not day-1 sentiment).",
+    "Generic product-redesign pages (eleken) are not SaaS-specific: no trial-to-paid, renewal timing, plan/billing screens or account-level settings.",
+    "Unsourced uplift numbers are common ('improve activation by 40%', '20-30% lift in activation within the first month'): our post wins on honesty by using only our case-study facts and named sources."
+  ],
+  "outline": [
+    {
+      "h2": "What is a SaaS product redesign, and what is it not?",
+      "answerHint": "A SaaS product redesign changes the flows, structure and screens that decide a subscription metric (activation, retention, upgrades); a new colour palette on the same flows is a UI refresh, not a redesign.",
+      "points": [
+        "Myth intro sets up this section: 'the product looks dated, so we need a redesign'. Counter it in 2-3 sentences: users churn because of flows, not fonts.",
+        "Define the 3 layers a redesign can touch: visual layer, flow/structure layer, platform/architecture layer.",
+        "Early UP link to the hub with anchor 'SaaS UX design' (or 'SaaS UX design services').",
+        "One sentence on why SaaS differs from a one-off app redesign: every change lands on paying users mid-subscription."
+      ]
+    },
+    {
+      "h2": "Which metrics tell you a SaaS redesign is due?",
+      "answerHint": "Redesign when a lifecycle metric stalls for reasons users can show you: trial accounts that never reach the first value moment, weekly active use that drops after month 1, flat upgrades, or support tickets about setup and navigation.",
+      "points": [
+        "Map each lifecycle stage to its trigger metric and the evidence that proves the cause is UX (funnel step in Amplitude/Mixpanel, session recordings, ticket tags, churn-survey reasons). Present as an HTML table, not an image.",
+        "Use the Google HEART framework (cite the 2010 CHI paper) to pick 1 goal-signal-metric per stage; do not re-explain HEART at length (the hub mentions it).",
+        "DOWN link: ToolsGroup case study (75% of sales losses traced to UI, not features; 30+ stakeholder interviews) as proof that the cause can be UX rather than missing features. Use only figures in the case-study file.",
+        "Counter-signal: when the metric drop is pricing, positioning or a missing integration, a redesign will not fix it."
+      ]
+    },
+    {
+      "h2": "Flow fix, lifecycle redesign or platform rebuild: which scope fits?",
+      "answerHint": "Pick the smallest scope that addresses the stalled metric: a flow fix for 1 broken journey, a lifecycle redesign when several stages leak, a platform rebuild only when navigation, roles and components cannot hold the product any more.",
+      "points": [
+        "Visual: decision tree (see visuals[0]). The prose walks one path; the image shows all branches.",
+        "Comparison table of the 3 tiers: what changes, who is affected, typical duration. Durations and prices come only from the hub: 4-8 weeks for onboarding/lifecycle work at $25,000-$60,000; 8-16 weeks and $60,000-$180,000 when a component library/design system is needed. Mention once, then link to the hub section /services/saas-ux-design/#how-much-does-saas-ux-design-cost. Do not turn this into a cost guide.",
+        "Note: a front-end rebuild and a redesign are separate decisions; coupling them doubles launch risk (expand in FAQ).",
+        "Natural invitation: 'we run the scoping as the discovery step of a 4-8 week sprint'."
+      ]
+    },
+    {
+      "h2": "How do you set a baseline before anyone opens Figma?",
+      "answerHint": "Record the current numbers for the 3-5 flows in scope, the success threshold and the rollback threshold, and interview 5-8 customers, before design starts; without a baseline nobody can prove the redesign worked.",
+      "points": [
+        "Baseline sheet fields: flow, current completion rate, time on task, related ticket volume, target, rollback trigger. Keep it a list in the post (no image).",
+        "Check that events are instrumented; a redesign that renames screens breaks old funnels, so map old event names to new ones before launch.",
+        "Jobs to be Done interviews with 5-8 customers (hub process) to separate the job from the current UI.",
+        "First-hand angle: what we ask for in week 1 (analytics read access, ticket export, churn-survey text, list of top accounts by seat count)."
+      ]
+    },
+    {
+      "h2": "Which users does a redesign put at risk?",
+      "answerHint": "Three groups carry the risk: power users whose muscle memory breaks, workspace admins who configured the product for their whole team, and accounts close to renewal.",
+      "points": [
+        "Visual: 2x2 framework (see visuals[1]) of usage frequency vs size of change, showing where to protect, where to test hardest, where to move fast.",
+        "Change aversion: cite Aaron Sedley's GV Library article and the NN/g 'Users hate change' video; explain that day-1 complaints are expected and the signal is whether task success and return usage recover over the following weeks.",
+        "B2B specifics: preserve saved views, keyboard shortcuts, custom fields and role settings through migration; give admins notice before end users. Link to /industries/saas/ for admin and permission design (industry page, not a different hub).",
+        "Renewal timing: avoid forcing the new UI on accounts in their renewal window."
+      ]
+    },
+    {
+      "h2": "How do you test a redesigned flow with existing users and new trials?",
+      "answerHint": "Run two tests: existing users complete their weekly tasks in old and new versions (speed and errors), and people new to the product attempt onboarding in the new version only (learnability).",
+      "points": [
+        "5 participants per round per group, prototype in Maze (hub process); cite NN/g 5-user article for the round size.",
+        "Score each round with the System Usability Scale (SUS); compare old vs new for existing users. Cite the usability.gov / Brooke SUS source.",
+        "What to do when power users are slower on day 1 but new users succeed: plan a transition aid, do not roll back the design.",
+        "Single allowed cross-hub link: /services/usability-testing-services/ with anchor 'usability testing services' in this section only."
+      ]
+    },
+    {
+      "h2": "How do you roll out a SaaS redesign without a churn spike?",
+      "answerHint": "Ship in gated steps: internal use, opt-in beta with a switch back to the old UI, a percentage rollout behind a feature flag, then a dated sunset of the old UI, moving to the next step only when baseline metrics hold.",
+      "points": [
+        "Numbered steps with a gate per step (which metric must hold, for how long).",
+        "Visual: rollout ramp with gates and rollback loops (see visuals[2]).",
+        "Feature-flag percentage rollouts: cite LaunchDarkly's soft-launch article. Do not invent percentages as industry norms; any ramp numbers are labelled as an example.",
+        "Communication: admin email first, in-app notice, changelog entry, help-centre updates; say why the change helps the user's job.",
+        "Old-UI toggle: offer it for a fixed window with a published sunset date; collect a reason when users switch back."
+      ]
+    },
+    {
+      "h2": "Which redesign mistakes turn into churn?",
+      "answerHint": "The costly mistakes are redesigning every screen at once, launching without a baseline, removing the old UI on day 1, breaking admin configurations, and shipping a new design system before the flows are fixed.",
+      "points": [
+        "5-6 mistakes, each with the cheaper alternative (bullet list, not a table, to vary list style).",
+        "Redesign driven by a rebrand or a new design system rather than a stalled metric.",
+        "Moving navigation and core workflows in the same release.",
+        "Silently renaming objects users search for.",
+        "Leaving help docs, screenshots and onboarding emails on the old UI."
+      ]
+    },
+    {
+      "h2": "What should you measure in the first 30 days after launch?",
+      "answerHint": "Compare the redesigned flows against the baseline every week for 30 days: completion rate, time on task, related ticket volume, switch-back rate to the old UI and, for onboarding, activation of new trial accounts.",
+      "points": [
+        "Visual: before/after flow map (see visuals[3]) showing a multi-screen path collapsed into fewer steps.",
+        "DOWN links: Apex HCM (200+ screens reduced to 6 steps in enterprise payroll; VP Product quote 'The new flow cut onboarding time by more than half.') and TradeZella (+40% user interaction, +25% retention, +30% new customers after a dashboard and onboarding revamp; the challenge list includes 'no onboarding guide'). Use only facts in the case-study files and attribute the quote.",
+        "When to iterate vs roll back, based on the thresholds set in the baseline section.",
+        "Lead moment (see leadAngle) and the second UP link to the hub near the end, anchor e.g. 'our SaaS UX design sprint' pointing to /services/saas-ux-design/."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does a SaaS product redesign take?",
+      "hint": "Flow or lifecycle redesign: 4-8 weeks (hub). With a design system: 8-16 weeks (hub). Rollout adds weeks on top; say so without inventing a number."
+    },
+    {
+      "q": "Should you let users switch back to the old UI?",
+      "hint": "Yes, for a fixed, announced window during the beta; the switch-back rate and reasons are a key signal. Remove it on the published sunset date."
+    },
+    {
+      "q": "Should you rebuild the front end and redesign at the same time?",
+      "hint": "No, in most cases: separate the decisions so bugs and design changes are not confused in metrics. Exception: when the old front end cannot render the new flows at all."
+    },
+    {
+      "q": "Do you need a design system before a SaaS redesign?",
+      "hint": "No. Fix the flows first; extract components from the redesigned screens. A design system becomes part of scope at platform-rebuild tier (hub: $60,000-$180,000, 8-16 weeks)."
+    },
+    {
+      "q": "How do you announce a SaaS redesign to customers?",
+      "hint": "Admins first, then in-app notice and changelog; lead with the job it makes easier, include what moved where and the old-UI sunset date."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/saas-ux-design/", "anchor": "SaaS UX design services" },
+    { "href": "/services/saas-ux-design/#how-much-does-saas-ux-design-cost", "anchor": "SaaS UX design pricing by scope" },
+    { "href": "/services/saas-ux-design/#when-should-a-saas-company-invest-in-saas-ux-design", "anchor": "signs a SaaS team should invest in UX design" },
+    { "href": "/industries/saas/", "anchor": "admin and permission design for B2B SaaS" },
+    { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+    { "href": "/case-studies/toolsgroup-supply-chain-ux/", "anchor": "sales losses traced to the UI, not missing features" },
+    { "href": "/case-studies/apex-hcm-payroll-ux/", "anchor": "enterprise payroll redesign from 200+ screens to 6 steps" },
+    { "href": "/case-studies/tradezella/", "anchor": "TradeZella dashboard and onboarding revamp" },
+    { "href": "/contact/", "anchor": "send us your funnel and we will scope the redesign" }
+  ],
+  "externalSources": [
+    { "url": "https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766", "why": "Aaron Sedley (GV Library) on change aversion and how to manage it at launch; the primary source for the concept in product teams." },
+    { "url": "https://www.nngroup.com/videos/users-hate-change/", "why": "Nielsen Norman Group video on users' negative short-term reaction to interface changes." },
+    { "url": "https://research.google.com/pubs/archive/36299.pdf", "why": "Rodden, Hutchinson and Fu (CHI 2010), 'Measuring the User Experience on a Large Scale': the HEART framework and goals-signals-metrics process." },
+    { "url": "https://launchdarkly.com/blog/soft-launches-using-feature-flags/", "why": "Feature-flag soft launches: targeting segments for betas and incremental percentage rollouts." },
+    { "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/", "why": "Source for 5 participants per qualitative test round." },
+    { "url": "https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html", "why": "System Usability Scale description (Brooke, 1986). Fact-checker: confirm the page is still live (usability.gov was archived in 2025); if not, cite Brooke's original SUS paper or the NN/g SUS article instead." }
+  ],
+  "visuals": [
+    { "type": "decision tree", "idea": "Scope decision tree: start at 'Which metric stalled?' -> 'Is the cause confined to 1 journey?' -> flow fix; 'Do several lifecycle stages leak?' -> lifecycle redesign; 'Can navigation, roles and components still hold the product?' no -> platform rebuild. Leaf nodes show the tier name only (durations and prices stay in the HTML table)." },
+    { "type": "2x2 framework", "idea": "Redesign risk matrix: x-axis how often a segment uses the changed flow, y-axis how much the flow changes. Quadrants: protect (frequent + big change: power users, admins), test hardest, move fast, communicate only. Plot example segments as dots." },
+    { "type": "rollout ramp", "idea": "Stepped ramp from internal -> opt-in beta with old-UI toggle -> percentage rollout -> 100% -> old-UI sunset, with a gate icon between steps naming the metric that must hold, and a dashed rollback arrow from each gate. Step widths are illustrative, not durations." },
+    { "type": "before/after flow map", "idea": "Generic SaaS setup journey before (many screens, dead ends, a support-ticket exit) vs after (fewer steps to the first value moment). Labelled 'illustrative', no client data or numbers on the graphic." }
+  ],
+  "leadAngle": "In the scope section and again in the 30-day measurement section the reader knows the redesign is real and is sizing the risk. Offer: send your funnel export or the 3 flows you suspect, and we return a scope tier (flow fix, lifecycle redesign or platform rebuild), a baseline-and-rollout plan and a fixed price inside the hub's ranges, as the discovery step of a 4-8 week SaaS UX design sprint, plus a 30-minute call with a senior product designer.",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "myth ('our product looks dated, so we need a redesign')",
+    "h2Frames": ["what/what-not", "which metrics", "vs (3-way scope)", "how (baseline)", "which (risk groups)", "how (two tests)", "steps (rollout)", "mistakes", "what to measure"],
+    "sectionOrder": "definition vs myth -> trigger metrics -> scope decision -> baseline -> at-risk users -> testing -> gated rollout -> mistakes -> 30-day measurement -> FAQs",
+    "visualTypes": ["decision tree", "2x2 framework", "rollout ramp", "before/after flow map"],
+    "ctaAngle": "send your funnel or 3 suspect flows -> scope tier + rollout plan + fixed price",
+    "listStyle": "1 lifecycle-trigger table + 1 three-tier scope table, numbered gated rollout steps, bullet mistakes each paired with an alternative"
+  },
+  "notes": [
+    "Silo is new (0 published posts, fingerprints.json has no saas-ux-design entry); this is the silo's first BOFU post. Next post should be MOFU (candidates in competitors.json: 'saas onboarding ux audit before redesign' style or 'when to redesign saas ux' signals post).",
+    "Variety vs the last site-wide post (choose-ux-research-agency: scenario intro, scorecard/checklist/red-flag/proposal/timeline visuals, 'send your brief' CTA, two-column question list): this brief differs in intro style (myth), H2 frames, section order, visual types (no scorecard/checklist/timeline), CTA angle and list style. Do not add a 'questions to ask an agency' or 'red flags' section.",
+    "Cannibalisation: the hub owns 'saas ux design', its cost ($25,000-$60,000), its 5-step process, deliverables and 'when to invest'. Do not re-explain the hub process or deliverables; mention price tiers once and link to #how-much-does-saas-ux-design-cost. The SaaS industry page owns 'SaaS UI UX design agency', 'B2B SaaS design', 'SaaS onboarding UX' and admin/permission design: do not target those, link to /industries/saas/ once. web-app-design-services has an FAQ 'Can you redesign an existing web app in phases?': do not use that question or the phrase 'web app redesign' as a heading.",
+    "Originality: beats page is eleken.co/blog-posts/product-redesign (generic, structured diagnose -> scope -> research plan -> prototype -> resistance -> launch -> iterate, with famous-brand examples). Do not follow that order, do not use famous-brand redesign examples (Instagram, Slack, etc.), do not reproduce its 'refresh/overhaul/rebuild' wording: our tiers are 'flow fix / lifecycle redesign / platform rebuild' tied to metrics. 925studios uses 'start from data, communicate early, test on a small cohort, give users a path': express our rollout through gates and thresholds, in our own words.",
+    "Honesty, do not use: '40% activation improvement' and 'cut support volume in half' (925studios), '20-30% lift in activation within the first month' (orbix), '300% activation' (redefineweb), 'B2B SaaS activation rates average 37.5%' and '80% of new users lost within three days' (unsourced in snippets), '30-50% activation lifts / 20-40% churn cut' (saasfactor). None has a primary source.",
+    "Case-study facts allowed (from content/case-studies/*.md only): ToolsGroup 75% of sales losses traced to UI, 30+ stakeholder interviews; Apex HCM 200+ screens to 6 steps, quote 'The new flow cut onboarding time by more than half.' (VP Product, Apex HCM); TradeZella +40% user interaction, +25% retention, +30% new customers, 4.7 Trustpilot rating, challenge 'no onboarding guide'. Apex HCM and ToolsGroup files are short: do not add detail beyond them.",
+    "Author faizan-khan (Sr. Product Designer): write from the side of a designer who scopes and ships redesigns of live SaaS products. Do not invent personal anecdotes or bio facts (authors.json bio is empty).",
+    "BOFU link discipline (RULES.md step 6): keep links lean; the 9 internalTargets are the maximum, place the /contact/ link at the lead moment only."
+  ]
+}
