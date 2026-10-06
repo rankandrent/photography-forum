@@ -17,6 +17,7 @@ takeaways:
   - "Record baseline numbers, a success target and a rollback trigger for every flow before design starts."
   - "Test existing power users and new trial users separately; they answer different questions."
   - "Roll out in gated steps behind a feature flag, with an old-UI toggle and a published sunset date."
+image: /blog/saas-product-redesign/cover.svg
 draft: true
 qa: pending
 ---
@@ -62,7 +63,7 @@ When churn interviews name price, positioning or a missing integration instead, 
 
 Scope a SaaS product redesign with your own data. If trial accounts stall during setup while every other stage holds, the cause sits in one journey: a flow fix on onboarding. If paying accounts also drift away after month 1, two stages leak: a lifecycle redesign. A platform rebuild earns its risk only when navigation, user roles and components can no longer hold the product, for example when every new feature needs a new menu.
 
-<!-- visual: decision tree. Start at "Which metric stalled?" → "Is the cause confined to 1 journey?" yes → flow fix; no → "Do several lifecycle stages leak?" yes → lifecycle redesign; → "Can navigation, roles and components still hold the product?" no → platform rebuild. Leaf nodes show tier names only, no durations or prices. -->
+![Decision tree that starts at "Which metric stalled?": if the cause is confined to 1 journey, flow fix; if several lifecycle stages do not leak, the cause is price, positioning or a missing integration rather than a redesign; if they leak and navigation, roles and components can no longer hold the product, platform rebuild; otherwise lifecycle redesign](/blog/saas-product-redesign/scope-decision-tree.svg "Walk the scope decision with your own data")
 
 The tiers differ most in who feels the change:
 
@@ -99,7 +100,7 @@ In week 1 we ask for read access to Amplitude, Mixpanel or Pendo, a recent suppo
 
 **Three groups carry the risk in a SaaS product redesign: power users whose muscle memory breaks, workspace admins who configured the product for a whole team, and accounts near renewal.**
 
-<!-- visual: 2x2 risk matrix. X-axis: how often a segment uses the changed flow; y-axis: how much the flow changes. Quadrants: protect (frequent + big change), test hardest, move fast, communicate only. Plot example segments as dots: power users and workspace admins in "protect", new trials in "move fast", occasional billing users in "communicate only". -->
+![2x2 risk matrix with how often a segment uses the changed flow on the x-axis and how much the flow changes on the y-axis: power users and workspace admins sit in Protect, new trials in Move fast, occasional billing users in Communicate only, and weekly tasks with small changes in Test hardest](/blog/saas-product-redesign/redesign-risk-matrix.svg "Where each user segment sits on redesign risk")
 
 Expect change aversion on day one. Aaron Sedley's GV Library article defines [change aversion as a negative short-term reaction](https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766) to changes in a product, and Google limits it with usability studies, internal dogfooding and partial launches. So day-1 complaints are not the signal. Watch whether task success and return usage recover over the following weeks: if they recover, it was aversion; if they stay below baseline, the design is worse.
 
@@ -133,7 +134,7 @@ When a rollback trigger fires, the flag returns to the previous step while the t
 
 Communicate alongside the ramp: admin email first, then an in-app notice, a changelog entry and help-center updates, each leading with the job the change makes easier. When someone switches back to the old UI, ask what made them switch.
 
-<!-- visual: rollout exposure curve. Share of accounts on the new UI rising over time in uneven steps, with dashed rollback arrows dropping back one step from each gate and a marker where the old-UI toggle disappears. Shows the shape of exposure and the rollback loops, not the step list; step widths are illustrative, not durations. -->
+![Step chart of the share of accounts on the new UI rising in gated steps through an example 10%, 25% and 50% ramp to 100%, with a gate at each rise, dashed rollback arrows dropping back one step, an old-UI toggle bar spanning beta to sunset, and a sunset marker where the old UI is removed](/blog/saas-product-redesign/rollout-exposure-curve.svg "Exposure over time, with a rollback loop at every gate")
 
 ## Which redesign mistakes turn into churn?
 
@@ -150,7 +151,7 @@ Communicate alongside the ramp: admin email first, then an in-app notice, a chan
 
 **Compare redesigned flows with the baseline every week for 30 days: completion rate, time on task, related tickets, switch-back rate and, for onboarding, new-trial activation rate.**
 
-<!-- visual: before/after flow map. A generic SaaS setup journey before (many screens, two dead ends, an exit to a support ticket) vs after (fewer steps to the first value moment). Labelled "illustrative"; no client data or numbers on the graphic. -->
+![Illustrative setup journey: before, a long path of screens from sign-up with two dead ends and an exit to a support ticket that never reaches first value; after, sign-up and two screens lead straight to the first value moment](/blog/saas-product-redesign/setup-flow-before-after.svg "Illustrative setup journey before and after a redesign")
 
 Judge each metric against the thresholds you set before design. Between baseline and target, iterate: fix the step where users stall and ship it behind the same flag. Past the rollback trigger, step the rollout back until the metric recovers.
 

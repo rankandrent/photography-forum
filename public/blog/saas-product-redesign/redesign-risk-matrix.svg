@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 970" width="800" height="970" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="970" rx="24" fill="#FBFAFB"/>
+<text x="48" y="76" font-size="40" font-weight="800" fill="#020101" text-anchor="start">Who carries the risk?</text>
+<text x="48" y="120" font-size="27" font-weight="400" fill="#6B6B70" text-anchor="start">Plot each segment before you ship</text>
+<rect x="126" y="176" width="308" height="308" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="1"/>
+<text x="150" y="228" font-size="32" font-weight="800" fill="#020101" text-anchor="start">Move fast</text>
+<rect x="446" y="176" width="308" height="308" rx="20" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="470" y="228" font-size="32" font-weight="800" fill="#E2225F" text-anchor="start">Protect</text>
+<rect x="126" y="496" width="308" height="308" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="1"/>
+<text x="150" y="548" font-size="32" font-weight="800" fill="#020101" text-anchor="start">Communicate</text>
+<text x="150" y="586" font-size="32" font-weight="800" fill="#020101" text-anchor="start">only</text>
+<rect x="446" y="496" width="308" height="308" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="1"/>
+<text x="470" y="548" font-size="32" font-weight="800" fill="#020101" text-anchor="start">Test hardest</text>
+<circle cx="480" cy="320" r="13" fill="#E2225F" stroke="#E2225F" stroke-width="3"/>
+<text x="506" y="329" font-size="26" font-weight="700" fill="#020101" text-anchor="start">Power users</text>
+<circle cx="480" cy="400" r="13" fill="#E2225F" stroke="#E2225F" stroke-width="3"/>
+<text x="506" y="409" font-size="26" font-weight="700" fill="#020101" text-anchor="start">Workspace</text>
+<text x="506" y="441" font-size="26" font-weight="700" fill="#020101" text-anchor="start">admins</text>
+<circle cx="160" cy="340" r="13" fill="#FFFFFF" stroke="#E2225F" stroke-width="3"/>
+<text x="186" y="349" font-size="26" font-weight="700" fill="#020101" text-anchor="start">New trials</text>
+<circle cx="160" cy="640" r="13" fill="#FFFFFF" stroke="#E2225F" stroke-width="3"/>
+<text x="186" y="649" font-size="26" font-weight="700" fill="#020101" text-anchor="start">Occasional</text>
+<text x="186" y="681" font-size="26" font-weight="700" fill="#020101" text-anchor="start">billing users</text>
+<text x="470" y="610" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">Weekly tasks:</text>
+<text x="470" y="643" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">speed and</text>
+<text x="470" y="676" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">errors</text>
+<line x1="120" y1="834" x2="760" y2="834" stroke="#020101" stroke-width="2"/>
+<path d="M748 826 L760 834 L748 842" fill="none" stroke="#020101" stroke-width="2"/>
+<line x1="96" y1="810" x2="96" y2="170" stroke="#020101" stroke-width="2"/>
+<path d="M88 182 L96 170 L104 182" fill="none" stroke="#020101" stroke-width="2"/>
+<text x="120" y="874" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">Rarely</text>
+<text x="760" y="874" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="end">Often</text>
+<text x="440" y="920" font-size="26" font-weight="700" fill="#020101" text-anchor="middle">How often a segment uses the flow</text>
+<text x="60" y="490" font-size="26" font-weight="700" fill="#020101" text-anchor="middle" transform="rotate(-90 60 490)">How much the flow changes</text>
+<text x="62" y="810" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start" transform="rotate(-90 62 810)">Small</text>
+<text x="62" y="170" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="end" transform="rotate(-90 62 170)">Big</text>
+</svg>

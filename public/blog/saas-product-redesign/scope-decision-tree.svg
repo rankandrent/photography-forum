@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1142" width="800" height="1142" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1142" rx="24" fill="#FBFAFB"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E2225F"/></marker><marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6B6B70"/></marker></defs>
+<text x="48" y="76" font-size="40" font-weight="800" fill="#020101" text-anchor="start">Which scope fits?</text>
+<text x="48" y="120" font-size="27" font-weight="400" fill="#6B6B70" text-anchor="start">Start from the metric that stalled</text>
+<rect x="48" y="160" width="412" height="76" rx="38" fill="#E2225F"/>
+<text x="254" y="208" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">Which metric stalled?</text>
+<line x1="254" y1="236" x2="254" y2="286" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="48" y="290" width="412" height="112" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="48" y="290" width="8" height="112" rx="4" fill="#E2225F"/>
+<text x="82" y="340" font-size="28" font-weight="700" fill="#020101" text-anchor="start">Is the cause confined</text>
+<text x="82" y="376" font-size="28" font-weight="700" fill="#020101" text-anchor="start">to 1 journey?</text>
+<line x1="460" y1="346.0" x2="536" y2="346.0" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<text x="500.0" y="334.0" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Yes</text>
+<rect x="540" y="306.0" width="232" height="80" rx="20" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="564" y="354.0" font-size="28" font-weight="800" fill="#020101" text-anchor="start">Flow fix</text>
+<line x1="254" y1="402" x2="254" y2="488" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<text x="270" y="456.0" font-size="26" font-weight="800" fill="#E2225F" text-anchor="start">No</text>
+<rect x="48" y="492" width="412" height="112" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="48" y="492" width="8" height="112" rx="4" fill="#E2225F"/>
+<text x="82" y="542" font-size="28" font-weight="700" fill="#020101" text-anchor="start">Do several lifecycle</text>
+<text x="82" y="578" font-size="28" font-weight="700" fill="#020101" text-anchor="start">stages leak?</text>
+<line x1="460" y1="548.0" x2="536" y2="548.0" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<text x="500.0" y="536.0" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">No</text>
+<rect x="540" y="446.0" width="232" height="204" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-dasharray="8 6"/>
+<text x="562" y="490.0" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">Not a redesign:</text>
+<text x="562" y="523.0" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">price,</text>
+<text x="562" y="556.0" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">positioning or</text>
+<text x="562" y="589.0" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">a missing</text>
+<text x="562" y="622.0" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">integration</text>
+<line x1="254" y1="604" x2="254" y2="730" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<text x="270" y="678.0" font-size="26" font-weight="800" fill="#E2225F" text-anchor="start">Yes</text>
+<rect x="48" y="734" width="412" height="148" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="48" y="734" width="8" height="148" rx="4" fill="#E2225F"/>
+<text x="82" y="784" font-size="28" font-weight="700" fill="#020101" text-anchor="start">Can navigation, roles</text>
+<text x="82" y="820" font-size="28" font-weight="700" fill="#020101" text-anchor="start">and components still</text>
+<text x="82" y="856" font-size="28" font-weight="700" fill="#020101" text-anchor="start">hold the product?</text>
+<line x1="460" y1="808.0" x2="536" y2="808.0" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<text x="500.0" y="796.0" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">No</text>
+<rect x="540" y="750.0" width="232" height="116" rx="20" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="564" y="798.0" font-size="28" font-weight="800" fill="#020101" text-anchor="start">Platform</text>
+<text x="564" y="832.0" font-size="28" font-weight="800" fill="#020101" text-anchor="start">rebuild</text>
+<line x1="254" y1="882" x2="254" y2="968" stroke="#E2225F" stroke-width="3" marker-end="url(#ah)"/>
+<text x="270" y="936.0" font-size="26" font-weight="800" fill="#E2225F" text-anchor="start">Yes</text>
+<rect x="48" y="972" width="412" height="80" rx="20" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="254" y="1022" font-size="28" font-weight="800" fill="#020101" text-anchor="middle">Lifecycle redesign</text>
+<text x="48" y="1102" font-size="26" font-weight="400" fill="#6B6B70" text-anchor="start">Durations and prices: see the table below</text>
+</svg>
