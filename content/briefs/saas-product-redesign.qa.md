@@ -112,3 +112,84 @@ Compared with fingerprints.json (choose-ux-research-agency, the only entry and t
 2. X2: `scope-decision-tree.svg` routes "multi-journey, single-stage" problems to "not a redesign" and claims prices are in the table. Redraw per section 6 and update the alt text.
 
 VERDICT: FAIL
+
+---
+
+# Round 2 (re-review after repair round 1)
+
+- Date: 2026-10-06
+- Reviewer: content-qa
+- Scope: QA F1–F5, X1 and X2 repairs, all images and the cover in the built page at 390px and 1440px, bold answers, FAQ schema, links, build.
+- Owner rule 2026-10-06 (`<details class="astext">`) applies to new posts. Per the orchestrator, this post is not failed for visible tables without images.
+
+## Summary
+
+| # | Check | Round 2 |
+|---|---|---|
+| 1 | Intent and cannibalisation | PASS (unchanged) |
+| 4 | Semantic SEO | PASS (F1, F2 applied) |
+| 5 | Internal links | PASS |
+| 6 | Images | PASS (X2 fixed); FIX R2-F2, R2-F3 housekeeping |
+| 6b | Duplication | PASS (X1 fixed: rollout image removed) |
+| 7 | Readability | PASS (F3, F4 applied); FIX R2-F1 formatting |
+| 7a | Competitor originality | PASS (unchanged) |
+| 7b | Silo and leads | PASS (F5 applied: `funnel: mofu` in post and brief) |
+| 7c | Variety | PASS |
+| 8 | Build | PASS |
+
+## Round 1 fixes
+
+- F1 applied (line 54): HEART expanded as "happiness, engagement, adoption, retention and task success".
+- F2 applied (line 76): "At our rates, an onboarding redesign…".
+- F3 applied in a different wording (line 157): "A free consultation ends in a fixed price inside our published ranges, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) starts by recording your baseline." The 5-grams shared with choose-ux-research-agency are now only a URL, the NN/g URL and "software as a service (SaaS)"; the CTA formula is gone. Accepted.
+- F4 applied (line 117): "Per Nielsen Norman Group, …".
+- F5 applied: `funnel: mofu` in the frontmatter (line 13) and the brief (`"funnel": "mofu"`).
+- X1 fixed: the rollout image is gone from the post and from `.visuals.json` (3 inline visuals remain, inside the 2–4 rule).
+
+## X2 decision tree: PASS
+
+I walked every root-to-leaf path in the built page and compared each one with the post:
+- Cause is not UX → "Not a redesign: price, positioning or a missing integration". This matches line 43 ("users can show you why") and line 58 (churn interviews name price, positioning or an integration). It is now the only route to that leaf.
+- UX, confined to 1 journey → Flow fix. Matches line 62 and line 64 (trials stall in setup, one journey).
+- UX, more than 1 journey, structure fails → Platform rebuild. Matches line 64 ("only when navigation, user roles and components can no longer hold the product").
+- UX, more than 1 journey, structure holds → Lifecycle redesign. Matches line 62 and line 64 (two stages leak).
+- The false footer pointer ("Durations and prices: see the table below") is gone, and the image has no table pointers. Its labels are questions and tier names. The table carries what changes, who feels it and duration, so nothing is duplicated.
+- The alt text on line 66 describes all four outcomes in the order the tree resolves them. Accurate.
+- Rendering: 712px wide at 1440 (×0.89, smallest text 26px → 23px) and 354px at 390 (×0.44 → 11.5px, the same scale accepted in round 1). Legible at both widths, with no spelling errors. Tightest fit: "Not a redesign:" ends at x 761 in a box that ends at 772. It is inside the box, but redraws should keep at least 16px right padding.
+
+## Images and cover in the built page: PASS
+
+I used Playwright and scrolled each image into view; all loaded (`complete`, `naturalWidth` > 0).
+- Cover: `.pcover` is 21/8 at 1440 (1224×466) and 16/9 at 390 (354×199), with `object-fit: cover`. At both widths the kicker, the 3-line title and the subtitle are fully visible. Only the side line-art is cropped on mobile. PASS.
+- `redesign-risk-matrix.svg` and `setup-flow-before-after.svg` are unchanged since round 1. Both are legible at 712px and 354px, and their alt text matches the drawings (after = sign-up + 2 screens + first value moment).
+- All images exist in `public/` and `out/`, with no external or brand assets.
+
+## Semantic SEO, schema, links: PASS
+
+- Bold answers under all 9 H2s are 26–30 words, one sentence each ("Which metrics…" and "Which users…" are exactly 30, accepted as in round 1).
+- Keyword: "saas product redesign" 8× + "saas redesign" 6× in 2,179 words (1.6% for the central entity).
+- Built FAQPage JSON-LD has 5 Q/A pairs. Each `acceptedAnswer.text` holds only its own answer. The boolean answers start Yes/No/No. One H1.
+- Internal links: 7 in body (hub ×2, at ~170 words and in the closing; ToolsGroup; `/industries/saas/`; usability testing; TradeZella; `/contact/`). All targets exist in `out/`, and anchors are varied.
+- 5-gram overlap: ≤ 0.92% against any single page (highest is the hub `saas-ux-design.json`, which shares the allowed price line and the HEART expansion). Well under 12%.
+
+## Build: PASS
+
+- `SHOW_DRAFTS=1 npm run build`: exit 0, `/blog/saas-product-redesign` prerendered.
+- `npm run seo:check`: 79 pages, 0 errors, 7 warnings. None come from this post apart from the site-level `/industries/saas/` anchor-variety note.
+- `npm run lint`: exit 0. Only the known jsx-ast-utils TSNonNullExpression notices.
+
+## FIX (non-blocking, orchestrator applies)
+
+- **R2-F1 (lines 135–136) missing blank line before an H2.** Removing the rollout image left `…ask what made them switch.` immediately followed by `## Which redesign mistakes turn into churn?`. It renders correctly as an H2, but a blank line is the house markdown style. Replace
+  `When someone switches back to the old UI, ask what made them switch.\n## Which redesign mistakes turn into churn?`
+  with
+  `When someone switches back to the old UI, ask what made them switch.\n\n## Which redesign mistakes turn into churn?`
+- **R2-F2 orphan image.** `public/blog/saas-product-redesign/rollout-exposure-curve.svg` is still on disk and is copied to `out/blog/saas-product-redesign/rollout-exposure-curve.svg`, so it ships publicly while no page uses it. Delete `public/blog/saas-product-redesign/rollout-exposure-curve.svg`.
+- **R2-F3 stale marker in `content/briefs/saas-product-redesign.visuals.json`.** The decision-tree `marker` still describes the old, wrong logic ("Do several lifecycle stages leak?"). Replace the marker value with:
+  `<!-- visual: decision tree. Start at "Which metric stalled?" → "Can users show the cause is UX?" no → "Not a redesign: price, positioning or a missing integration"; yes → "Is the cause confined to 1 journey?" yes → flow fix; no → "Can navigation, roles and components still hold the product?" no → platform rebuild; yes → lifecycle redesign. Leaf nodes show tier names only, no durations or prices. -->`
+
+## FAIL list
+
+None. X1 and X2 from round 1 are resolved.
+
+VERDICT: PASS

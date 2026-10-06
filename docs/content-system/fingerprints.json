@@ -58,6 +58,31 @@
       "words": 2378,
       "tableCount": 4,
       "listStyle": "numbered steps + bullet criteria"
+    },
+    {
+      "slug": "saas-product-redesign",
+      "hub": "saas-ux-design",
+      "type": "Guide",
+      "funnel": "mofu",
+      "introStyle": "myth",
+      "h2Frames": [
+        "what/what not",
+        "which metrics",
+        "which scope",
+        "who is at risk",
+        "how to test",
+        "how to roll out",
+        "mistakes",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "decision tree",
+        "2x2 risk matrix",
+        "before/after flow map"
+      ],
+      "ctaAngle": "send your funnel \u2192 free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2172
     }
   ]
 }

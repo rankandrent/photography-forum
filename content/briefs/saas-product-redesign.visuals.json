@@ -5,7 +5,7 @@
     }
   },
   {
-    "marker": "<!-- visual: decision tree. Start at \"Which metric stalled?\" → \"Is the cause confined to 1 journey?\" yes → flow fix; no → \"Do several lifecycle stages leak?\" yes → lifecycle redesign; → \"Can navigation, roles and components still hold the product?\" no → platform rebuild. Leaf nodes show tier names only, no durations or prices. -->",
+    "marker": "(swapped) decision tree: which metric stalled \u2192 can users show the cause is UX \u2192 confined to 1 journey \u2192 can navigation, roles and components still hold the product",
     "markdown": "![Decision tree that starts at \"Which metric stalled?\": if users cannot show the cause is UX, it is price, positioning or a missing integration rather than a redesign; if the cause is confined to 1 journey, flow fix; if navigation, roles and components can no longer hold the product, platform rebuild; otherwise lifecycle redesign](/blog/saas-product-redesign/scope-decision-tree.svg \"Walk the scope decision with your own data\")"
   },
   {

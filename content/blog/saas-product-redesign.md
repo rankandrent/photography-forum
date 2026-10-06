@@ -18,8 +18,8 @@ takeaways:
   - "Test existing power users and new trial users separately; they answer different questions."
   - "Roll out in gated steps behind a feature flag, with an old-UI toggle and a published sunset date."
 image: /blog/saas-product-redesign/cover.svg
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 The most expensive myth in software as a service (SaaS) is "our product looks dated, so we need a SaaS product redesign." Customers rarely cancel over fonts; they cancel when onboarding never reaches the first value moment or a weekly task takes too long. Scope the redesign around the subscription metric that stalled, record a baseline, protect power users and workspace admins, and release the new design behind gates you can roll back.
@@ -104,7 +104,7 @@ In week 1, gather read access to Amplitude, Mixpanel or Pendo, a recent support 
 
 Expect change aversion on day one. Aaron Sedley's GV Library article defines [change aversion as a negative short-term reaction](https://library.gv.com/change-aversion-why-users-hate-what-you-launched-and-what-to-do-about-it-2fb94ce65766) to changes in a product, and Google limits it with usability studies, internal dogfooding and partial launches. So day-1 complaints are not the signal. Watch whether task success and return usage recover over the following weeks: if they recover, it was aversion; if they stay below baseline, the design is worse.
 
-Business-to-business (B2B) products add workspace admins, who set up roles, saved views, custom fields and integrations for everyone else. When migration drops a saved view, the admin absorbs the whole team's complaints, and churn risk multiplies per account. Carry those settings and keyboard shortcuts through migration, and brief admins before end users see anything. Our page on [admin and permission design for B2B SaaS](/industries/saas/) goes deeper on roles.
+Business-to-business (B2B) products add workspace admins, who set up roles, saved views, custom fields and integrations for everyone else. When migration drops a saved view, the admin absorbs the whole team's complaints, and churn risk multiplies per account. Carry those settings and keyboard shortcuts through migration, and brief admins before end users see anything. Our page on admin and permission design in [SaaS UI UX design](/industries/saas/) goes deeper on roles.
 
 Keep accounts inside their renewal window on the interface they know until the renewal closes.
 

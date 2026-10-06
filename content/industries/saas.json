@@ -204,7 +204,7 @@
         },
         {
           "q": "Can enterprise data tables stay usable with 50 or more columns?",
-          "a": "<p>Yes. Saved views, column pinning and per-role column presets keep wide tables usable, if each user group gets its own default view instead of 1 shared layout.</p>"
+          "a": "<p>Yes. Saved views, column pinning and per-role column presets keep wide tables usable, if each user group gets its own default view instead of 1 shared layout. When those tables are redesigned, <a href=\"/blog/saas-product-redesign/#which-users-does-a-redesign-put-at-risk\">carrying admins' saved views through the migration</a> keeps whole accounts from churning.</p>"
         },
         {
           "q": "How long does SaaS platform design take?",

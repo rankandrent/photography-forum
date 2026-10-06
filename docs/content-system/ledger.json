@@ -10,6 +10,16 @@
           "funnel": "bofu"
         }
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "goal": "daily: 1 post for hub with fewest posts",
+      "jobs": [
+        {
+          "hub": "saas-ux-design",
+          "funnel": "mofu"
+        }
+      ]
     }
   ],
   "posts": [
@@ -26,6 +36,20 @@
       "externalLinks": 5,
       "qaLoops": 2,
       "notes": "Loop 1: 7 fact fixes + 5 QA text fixes + unreadable infographics. Loop 2: cover text cropped on phones; cover redrawn (verified by orchestrator)."
+    },
+    {
+      "slug": "saas-product-redesign",
+      "hub": "saas-ux-design",
+      "keyword": "saas product redesign",
+      "funnel": "mofu",
+      "author": "faizan-khan",
+      "date": "2026-10-06",
+      "words": 2172,
+      "images": 4,
+      "internalLinks": 7,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "notes": "Loop 1: 5 fact + 5 QA fixes, rollout image removed (repeated list), decision tree redrawn. Loop 2: CTA rewritten to site wording. Funnel changed bofu\u2192mofu by QA."
     }
   ],
   "audits": []
