@@ -32,6 +32,11 @@ Write `content/blog/<slug>.md` (frontmatter exactly as RULES.md, `draft: true`, 
   your H2s, so keep H2s short (≤ 60 chars).
 - End with `## FAQs` (### questions) and a short closing paragraph that points to the hub service.
 
+Completeness self-check: every H2/H3 has bold answer + detail + example; every brief point, question
+and entity covered with substance; no trailing or unfinished paragraph, no thin FAQ answer (≥ 2
+sentences), no section without a next step. In a repair round, work through QA's "Guidance for the
+writer" list item by item and report each as done.
+
 Self-check before finishing: banned phrases, hedges, abbreviation expansion, boolean FAQs, no
 "UIUXDesignServices.us" in the title. Report word count and keyword count.
 

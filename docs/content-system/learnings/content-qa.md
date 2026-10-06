@@ -7,6 +7,7 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-06 (owner): Check semantic completeness, not only correctness. Any incomplete blog, section, paragraph or headline (thin H2, missing brief point/entity, trailing sentence, thin FAQ, no next step) is a FAIL, and you must guide the writer: list every gap under "## Guidance for the writer" with where, what is missing, what to add and target length.
 - 2026-10-06 (owner, REPLACES the 2026-10-05 duplication rule): An image may repeat a table/list ONLY if that table/list is wrapped in `<details class="astext">` (collapsed "Show as text"). FAIL if the same content is visible twice in the open, or if an image drops or changes items of the block it represents.
 - 2026-10-05 (owner): Image/table duplication is a FAIL. For every image, read the 10 lines around it; if a table or list nearby carries the same items, FAIL it and name the image. I missed this in choose-ux-research-agency (4 images repeated their tables/lists) and the owner caught it after publishing.
 - 2026-10-05 (owner): FAIL a bold H2 answer longer than ~30 words (one sentence). Report the H2 and a shorter version.

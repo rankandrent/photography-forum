@@ -28,6 +28,20 @@ Check and record each item as PASS / FIX / FAIL in `content/briefs/<slug>.qa.md`
    the brief's leadAngle is delivered naturally (no hard sell).
 7c. Variety: compare with `docs/content-system/fingerprints.json` — FAIL if the post repeats a recent
    post's structure (RULES.md variety rule) or reuses intros/closings.
+7d. Semantic completeness (owner rule) — the post must be complete, not just correct:
+   - Every H2/H3 is fully answered: bold answer → supporting detail (how/why) → a concrete example,
+     number or step. No heading with only one thin paragraph, no heading without content.
+   - Every brief outline point, question, entity, attribute and n-gram is covered with substance
+     (a mention in passing does not count).
+   - No unfinished paragraph: no sentence that trails off, no "TODO/TBD/…", no list item without its
+     explanation, no table cell left vague, no FAQ answer under 2 sentences, no section that ends
+     without telling the reader what to do next.
+   - The intro promises only what the body delivers; every takeaway is backed by a section.
+   - Compare against the `beats` competitor and serpGaps: anything a searcher expects that is missing
+     is a gap.
+   For EACH gap, write a writer instruction in the report under "## Guidance for the writer":
+   `[H2 / paragraph] — what is missing — what to add (points, example, data from a site file) — target
+   length`. Gaps make the verdict FAIL and go to the writer in the repair loop.
 8. Build: `SHOW_DRAFTS=1 npm run build && npm run seo:check && npm run lint` pass with 0 errors.
    (If drafts are not rendered by the build, temporarily set `draft: false` in a scratch copy only.)
 

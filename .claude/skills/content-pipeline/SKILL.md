@@ -51,7 +51,7 @@ Per job (jobs run in parallel with each other):
 2. Apply every exact FIX/replacement they list.
 3. If either says `VERDICT: FAIL`, route each problem to its owner — wording/structure → writer,
    images → designer, links/sources → link builder, false claims → writer with the fact-checker's
-   replacement — then run both reviewers again. Max 2 loops; then leave the post as a draft with
+   replacement, and QA's "Guidance for the writer" (completeness gaps) → writer, item by item — then run both reviewers again. Max 2 loops; then leave the post as a draft with
    `qa: fail` and report what is left.
 4. Both PASS → set `qa: pass` in the frontmatter.
 

@@ -115,6 +115,13 @@ on the one page that best satisfies the intent instead of starting from zero.
 - Facts about regulations, standards, tools and companies must be current and verifiable.
 - "200+ products designed" and "in business since 2017" are confirmed company facts.
 
+## Completeness (owner rule)
+
+A post is published only when it is semantically complete: every heading fully answered (bold answer
+→ detail → example), every brief point, question and entity covered with substance, no unfinished
+paragraph or thin FAQ, every section ends with a next step. QA lists each gap as guidance for the
+writer and fails the post until the writer closes them.
+
 ## Writing (Koray semantic SEO)
 
 - Each H2 is a question or a clear entity statement; the first sentence under it answers it
