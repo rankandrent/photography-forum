@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1370" width="800" height="1370" font-family="Manrope, system-ui, sans-serif">
-<rect width="800" height="1370" fill="#FBFAFB"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1302" width="800" height="1302" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1302" fill="#FBFAFB"/>
 <rect x="56" y="52" width="704" height="1210" rx="24" fill="#E8E8EB"/>
 <rect x="40.5" y="40.5" width="719" height="1210" rx="24" fill="#FFFFFF" stroke="#E8E8EB"/>
 <path d="M40 64 a24 24 0 0 1 24 -24 H736 a24 24 0 0 1 24 24 V190 H40 Z" fill="#020101"/>
@@ -36,6 +36,4 @@
 <rect x="97" y="1106" width="606" height="102" rx="12" fill="#FBFAFB" stroke="#C9C9CF" stroke-width="2" stroke-dasharray="8 6"/>
 <text x="118" y="1146" font-size="26" font-weight="500" fill="#6B6B70" font-style="italic">the date the findings must inform,</text>
 <text x="118" y="1180" font-size="26" font-weight="500" fill="#6B6B70" font-style="italic">such as a redesign approval.</text>
-<text x="40" y="1300" font-size="26" font-weight="600" fill="#6B6B70">Without them, the cheaper quote is often</text>
-<text x="40" y="1336" font-size="26" font-weight="600" fill="#6B6B70">just a smaller audit.</text>
 </svg>

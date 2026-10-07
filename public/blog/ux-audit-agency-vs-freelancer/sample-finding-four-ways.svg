@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2280" width="800" height="2280" font-family="Manrope, system-ui, sans-serif">
-<rect width="800" height="2280" fill="#FBFAFB"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2290" width="800" height="2290" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="2290" fill="#FBFAFB"/>
 <rect x="40" y="36" width="344" height="46" rx="23" fill="#FFE3EC"/>
 <text x="212" y="68" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Illustrative example</text>
 <text x="40" y="130" font-size="40" font-weight="800" fill="#020101">One checkout issue,</text>
@@ -27,23 +27,30 @@
 <text x="162.0" y="777" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">evidence</text>
 <rect x="265" y="747" width="178" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
 <text x="354.0" y="777" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">location</text>
-<rect x="457" y="747" width="178" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="546.0" y="777" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">severity</text>
-<rect x="73" y="801" width="93" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="119.5" y="831" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">fix</text>
-<rect x="180" y="801" width="144" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="252.0" y="831" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">effort</text>
-<rect x="40.5" y="908.5" width="719" height="296" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="1"/>
+<rect x="457" y="747" width="195" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="554.5" y="777" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">heuristic</text>
+<rect x="73" y="801" width="178" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="162.0" y="831" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">severity</text>
+<rect x="265" y="801" width="93" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="311.5" y="831" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">fix</text>
+<rect x="372" y="801" width="144" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="444.0" y="831" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">effort</text>
+<rect x="40.5" y="908.5" width="719" height="350" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="1"/>
 <text x="72" y="960" font-size="30" font-weight="800" fill="#020101">In-house note</text>
 <text x="72" y="1004" font-size="26" font-weight="500" fill="#3A3A3F">“ZIP error hard to see on mobile, fix?”</text>
 <path d="M72 1054 H728" stroke="#E8E8EB" stroke-width="2"/>
 <text x="72" y="1100" font-size="26" font-weight="800" fill="#E2225F">Missing:</text>
-<rect x="73" y="1119" width="195" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="170.5" y="1149" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">heuristic</text>
-<rect x="282" y="1119" width="178" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="371.0" y="1149" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">severity</text>
-<rect x="474" y="1119" width="144" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="546.0" y="1149" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">effort</text>
+<rect x="73" y="1119" width="178" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="162.0" y="1149" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">evidence</text>
+<rect x="265" y="1119" width="195" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="362.5" y="1149" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">heuristic</text>
+<rect x="474" y="1119" width="178" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="563.0" y="1149" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">severity</text>
+<rect x="73" y="1173" width="93" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="119.5" y="1203" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">fix</text>
+<rect x="180" y="1173" width="144" height="42" rx="21" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="252.0" y="1203" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">effort</text>
+<g transform="translate(0 54)">
 <rect x="40.5" y="1226.5" width="719" height="404" rx="20" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="1"/>
 <text x="72" y="1278" font-size="30" font-weight="800" fill="#020101">Freelancer</text>
 <text x="72" y="1322" font-size="26" font-weight="500" fill="#3A3A3F">“Heuristic 9 (help users recognize,</text>
@@ -81,5 +88,5 @@
 <rect x="72" y="2140" width="330" height="46" rx="23" fill="#FFE3EC"/>
 <path d="M92 2163 l8 9 l15 -17" fill="none" stroke="#E2225F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="128" y="2172" font-size="26" font-weight="800" fill="#E2225F">Missing: nothing.</text>
-<text x="40" y="2250" font-size="26" font-weight="600" fill="#6B6B70">Not a client finding.</text>
+</g>
 </svg>

@@ -1,102 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 3096" width="800" height="3096" font-family="Manrope, system-ui, sans-serif">
-<rect width="800" height="3096" fill="#FBFAFB"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 3318" width="800" height="3318" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="3318" fill="#FBFAFB"/>
 <text x="40" y="72" font-size="42" font-weight="800" fill="#020101">Who audits your UX?</text>
 <text x="40" y="114" font-size="28" font-weight="600" fill="#6B6B70">4 providers compared on 7 rows</text>
 <rect x="40.5" y="150.5" width="719" height="220" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<rect x="64" y="172" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="202" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<rect x="64" y="172" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="202" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
 <text x="284" y="202" font-size="26" font-weight="700" fill="#020101">UX audit agency</text>
-<rect x="64" y="220" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="250" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<rect x="64" y="220" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="250" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
 <text x="284" y="250" font-size="26" font-weight="700" fill="#020101">Freelance UX auditor</text>
-<rect x="65" y="269" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="298" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<rect x="65" y="269" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="298" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
 <text x="284" y="298" font-size="26" font-weight="700" fill="#020101">In-house UX team</text>
-<rect x="65" y="317" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="346" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<rect x="65" y="317" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="346" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
 <text x="284" y="346" font-size="26" font-weight="700" fill="#020101">AI UX audit tool</text>
 <rect x="40.5" y="400.5" width="719" height="410" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
 <rect x="40" y="418" width="6" height="36" rx="3" fill="#E2225F"/>
 <text x="64" y="448" font-size="30" font-weight="800" fill="#020101">Independent evaluators</text>
-<rect x="64" y="474" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="504" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
-<text x="282" y="503" font-size="26" font-weight="500" fill="#020101">More than one, if they review</text>
-<text x="282" y="537" font-size="26" font-weight="500" fill="#020101">separately (ask)</text>
-<rect x="64" y="564" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="594" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<rect x="64" y="474" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="504" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<text x="282" y="503" font-size="26" font-weight="500" fill="#020101">Ask how many review, and</text>
+<text x="282" y="537" font-size="26" font-weight="500" fill="#020101">whether separately</text>
+<rect x="64" y="564" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="594" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
 <text x="282" y="593" font-size="26" font-weight="500" fill="#020101">One, unless a second reviewer</text>
 <text x="282" y="627" font-size="26" font-weight="500" fill="#020101">is added</text>
-<rect x="65" y="655" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="684" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<rect x="65" y="655" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="684" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
 <text x="282" y="683" font-size="26" font-weight="500" fill="#020101">Several, none independent of</text>
 <text x="282" y="717" font-size="26" font-weight="500" fill="#020101">the product</text>
-<rect x="65" y="745" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="774" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<rect x="65" y="745" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="774" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
 <text x="282" y="773" font-size="26" font-weight="500" fill="#020101">None; one model pass</text>
 <rect x="40.5" y="830.5" width="719" height="376" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
 <rect x="40" y="848" width="6" height="36" rx="3" fill="#E2225F"/>
 <text x="64" y="878" font-size="30" font-weight="800" fill="#020101">Coverage</text>
-<rect x="64" y="904" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="934" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<rect x="64" y="904" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="934" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
 <text x="282" y="933" font-size="26" font-weight="500" fill="#020101">Several platforms, roles and</text>
 <text x="282" y="967" font-size="26" font-weight="500" fill="#020101">flows</text>
-<rect x="64" y="994" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="1024" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<rect x="64" y="994" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="1024" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
 <text x="282" y="1023" font-size="26" font-weight="500" fill="#020101">A few flows on one platform</text>
-<rect x="65" y="1051" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="1080" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<rect x="65" y="1051" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="1080" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
 <text x="282" y="1079" font-size="26" font-weight="500" fill="#020101">Flows the team picks</text>
-<rect x="65" y="1107" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="1136" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<rect x="65" y="1107" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="1136" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
 <text x="282" y="1135" font-size="26" font-weight="500" fill="#020101">Pages or screenshots you feed</text>
 <text x="282" y="1169" font-size="26" font-weight="500" fill="#020101">it</text>
-<rect x="40.5" y="1226.5" width="719" height="342" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40.5" y="1226.5" width="719" height="410" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
 <rect x="40" y="1244" width="6" height="36" rx="3" fill="#E2225F"/>
 <text x="64" y="1274" font-size="30" font-weight="800" fill="#020101">Analytics and recordings</text>
-<rect x="64" y="1300" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="1330" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<rect x="64" y="1300" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="1330" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
 <text x="282" y="1329" font-size="26" font-weight="500" fill="#020101">Google Analytics 4 plus Hotjar</text>
 <text x="282" y="1363" font-size="26" font-weight="500" fill="#020101">or Microsoft Clarity</text>
-<rect x="64" y="1390" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="1420" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
-<text x="282" y="1419" font-size="26" font-weight="500" fill="#020101">Only if they ask</text>
-<rect x="65" y="1447" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="1476" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
-<text x="282" y="1475" font-size="26" font-weight="500" fill="#020101">Full access, read apart</text>
-<rect x="65" y="1503" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="1532" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
-<text x="282" y="1531" font-size="26" font-weight="500" fill="#020101">Only what you paste in</text>
-<rect x="40.5" y="1588.5" width="719" height="342" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<rect x="40" y="1606" width="6" height="36" rx="3" fill="#E2225F"/>
-<text x="64" y="1636" font-size="30" font-weight="800" fill="#020101">WCAG 2.2 AA depth</text>
-<rect x="64" y="1662" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="1692" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
-<text x="282" y="1691" font-size="26" font-weight="500" fill="#020101">Automated checks plus keyboard</text>
-<text x="282" y="1725" font-size="26" font-weight="500" fill="#020101">and screen-reader passes</text>
-<rect x="64" y="1752" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="1782" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
-<text x="282" y="1781" font-size="26" font-weight="500" fill="#020101">Varies; ask</text>
-<rect x="65" y="1809" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="1838" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
-<text x="282" y="1837" font-size="26" font-weight="500" fill="#020101">Depends on trained staff</text>
-<rect x="65" y="1865" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="1894" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
-<text x="282" y="1893" font-size="26" font-weight="500" fill="#020101">Automated rules only</text>
-<rect x="40.5" y="1950.5" width="719" height="342" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<rect x="40" y="1968" width="6" height="36" rx="3" fill="#E2225F"/>
-<text x="64" y="1998" font-size="30" font-weight="800" fill="#020101">Evidence per finding</text>
-<rect x="64" y="2024" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="2054" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
-<text x="282" y="2053" font-size="26" font-weight="500" fill="#020101">Screenshot, data, heuristic,</text>
-<text x="282" y="2087" font-size="26" font-weight="500" fill="#020101">severity rating</text>
-<rect x="64" y="2114" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="2144" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
-<text x="282" y="2143" font-size="26" font-weight="500" fill="#020101">Varies by template</text>
-<rect x="65" y="2171" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="2200" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
-<text x="282" y="2199" font-size="26" font-weight="500" fill="#020101">Often a one-line ticket</text>
-<rect x="65" y="2227" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="2256" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
-<text x="282" y="2255" font-size="26" font-weight="500" fill="#020101">Generic, unverified</text>
-<rect x="40.5" y="2312.5" width="719" height="376" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<rect x="40" y="2330" width="6" height="36" rx="3" fill="#E2225F"/>
-<text x="64" y="2360" font-size="30" font-weight="800" fill="#020101">Roadmap ownership</text>
-<rect x="64" y="2386" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="2416" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
-<text x="282" y="2415" font-size="26" font-weight="500" fill="#020101">A team stands behind the</text>
-<text x="282" y="2449" font-size="26" font-weight="500" fill="#020101">roadmap and handover</text>
-<rect x="64" y="2476" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="2506" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
-<text x="282" y="2505" font-size="26" font-weight="500" fill="#020101">One person</text>
-<rect x="65" y="2533" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="2562" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
-<text x="282" y="2561" font-size="26" font-weight="500" fill="#020101">Your team, competing with</text>
-<text x="282" y="2595" font-size="26" font-weight="500" fill="#020101">features</text>
-<rect x="65" y="2623" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="2652" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
-<text x="282" y="2651" font-size="26" font-weight="500" fill="#020101">Nobody</text>
-<rect x="40.5" y="2708.5" width="719" height="308" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<rect x="40" y="2726" width="6" height="36" rx="3" fill="#E2225F"/>
-<text x="64" y="2756" font-size="30" font-weight="800" fill="#020101">Lead time</text>
-<rect x="64" y="2782" width="196" height="42" rx="21" fill="#E2225F"/><text x="162.0" y="2812" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
-<text x="282" y="2811" font-size="26" font-weight="500" fill="#020101">Scheduled around a team</text>
-<rect x="64" y="2838" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162.0" y="2868" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
-<text x="282" y="2867" font-size="26" font-weight="500" fill="#020101">One person's calendar</text>
-<rect x="65" y="2895" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162.0" y="2924" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
-<text x="282" y="2923" font-size="26" font-weight="500" fill="#020101">When the roadmap frees time</text>
-<rect x="65" y="2951" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162.0" y="2980" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
-<text x="282" y="2979" font-size="26" font-weight="500" fill="#020101">Minutes</text>
-<text x="40" y="3066" font-size="26" font-weight="600" fill="#6B6B70">No prices: this compares audit providers only.</text>
+<rect x="64" y="1390" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="1420" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<text x="282" y="1419" font-size="26" font-weight="500" fill="#020101">Only if they request access;</text>
+<text x="282" y="1453" font-size="26" font-weight="500" fill="#020101">confirm it in the proposal</text>
+<rect x="65" y="1481" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="1510" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<text x="282" y="1509" font-size="26" font-weight="500" fill="#020101">Full access, rarely read</text>
+<text x="282" y="1543" font-size="26" font-weight="500" fill="#020101">alongside the review</text>
+<rect x="65" y="1571" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="1600" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<text x="282" y="1599" font-size="26" font-weight="500" fill="#020101">Only what you paste in</text>
+<rect x="40.5" y="1656.5" width="719" height="376" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="1674" width="6" height="36" rx="3" fill="#E2225F"/>
+<text x="64" y="1704" font-size="30" font-weight="800" fill="#020101">WCAG 2.2 AA depth</text>
+<rect x="64" y="1730" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="1760" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<text x="282" y="1759" font-size="26" font-weight="500" fill="#020101">WCAG 2.2 AA check of audited</text>
+<text x="282" y="1793" font-size="26" font-weight="500" fill="#020101">screens; ask how it is tested</text>
+<rect x="64" y="1820" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="1850" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<text x="282" y="1849" font-size="26" font-weight="500" fill="#020101">From automated tools alone to</text>
+<text x="282" y="1883" font-size="26" font-weight="500" fill="#020101">full manual passes; ask which</text>
+<rect x="65" y="1911" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="1940" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<text x="282" y="1939" font-size="26" font-weight="500" fill="#020101">Depends on trained staff</text>
+<rect x="65" y="1967" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="1996" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<text x="282" y="1995" font-size="26" font-weight="500" fill="#020101">Automated rules only</text>
+<rect x="40.5" y="2052.5" width="719" height="376" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="2070" width="6" height="36" rx="3" fill="#E2225F"/>
+<text x="64" y="2100" font-size="30" font-weight="800" fill="#020101">Evidence per finding</text>
+<rect x="64" y="2126" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="2156" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<text x="282" y="2155" font-size="26" font-weight="500" fill="#020101">Screenshot, data, heuristic,</text>
+<text x="282" y="2189" font-size="26" font-weight="500" fill="#020101">severity rating</text>
+<rect x="64" y="2216" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="2246" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<text x="282" y="2245" font-size="26" font-weight="500" fill="#020101">Depends on their template; ask</text>
+<text x="282" y="2279" font-size="26" font-weight="500" fill="#020101">for a redacted sample</text>
+<rect x="65" y="2307" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="2336" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<text x="282" y="2335" font-size="26" font-weight="500" fill="#020101">Often a one-line ticket</text>
+<rect x="65" y="2363" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="2392" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<text x="282" y="2391" font-size="26" font-weight="500" fill="#020101">Generic, unverified</text>
+<rect x="40.5" y="2448.5" width="719" height="376" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="2466" width="6" height="36" rx="3" fill="#E2225F"/>
+<text x="64" y="2496" font-size="30" font-weight="800" fill="#020101">Roadmap ownership</text>
+<rect x="64" y="2522" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="2552" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<text x="282" y="2551" font-size="26" font-weight="500" fill="#020101">A team stands behind the</text>
+<text x="282" y="2585" font-size="26" font-weight="500" fill="#020101">roadmap and handover</text>
+<rect x="64" y="2612" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="2642" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<text x="282" y="2641" font-size="26" font-weight="500" fill="#020101">One person</text>
+<rect x="65" y="2669" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="2698" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<text x="282" y="2697" font-size="26" font-weight="500" fill="#020101">Your team, competing with</text>
+<text x="282" y="2731" font-size="26" font-weight="500" fill="#020101">features</text>
+<rect x="65" y="2759" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="2788" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<text x="282" y="2787" font-size="26" font-weight="500" fill="#020101">Nobody</text>
+<rect x="40.5" y="2844.5" width="719" height="444" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="2862" width="6" height="36" rx="3" fill="#E2225F"/>
+<text x="64" y="2892" font-size="30" font-weight="800" fill="#020101">Lead time</text>
+<rect x="64" y="2918" width="196" height="42" rx="21" fill="#E2225F"/><text x="162" y="2948" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agency</text>
+<text x="282" y="2947" font-size="26" font-weight="500" fill="#020101">Team capacity sets the start;</text>
+<text x="282" y="2981" font-size="26" font-weight="500" fill="#020101">ours runs 2–3 weeks</text>
+<rect x="64" y="3008" width="196" height="42" rx="21" fill="#FFE3EC"/><text x="162" y="3038" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">Freelancer</text>
+<text x="282" y="3037" font-size="26" font-weight="500" fill="#020101">When one person is free; no</text>
+<text x="282" y="3071" font-size="26" font-weight="500" fill="#020101">cover if they are booked</text>
+<rect x="65" y="3099" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#020101" stroke-width="2"/><text x="162" y="3128" font-size="26" font-weight="800" fill="#020101" text-anchor="middle">In-house</text>
+<text x="282" y="3127" font-size="26" font-weight="500" fill="#020101">When sprint time frees up;</text>
+<text x="282" y="3161" font-size="26" font-weight="500" fill="#020101">often slips behind features</text>
+<rect x="65" y="3189" width="194" height="40" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/><text x="162" y="3218" font-size="26" font-weight="800" fill="#6B6B70" text-anchor="middle">AI tool</text>
+<text x="282" y="3217" font-size="26" font-weight="500" fill="#020101">Minutes, plus your time to</text>
+<text x="282" y="3251" font-size="26" font-weight="500" fill="#020101">verify each item</text>
 </svg>

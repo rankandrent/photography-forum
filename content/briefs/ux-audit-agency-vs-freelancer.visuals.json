@@ -5,12 +5,12 @@
     }
   },
   {
-    "marker": "<!-- visual: comparison matrix infographic, 4 columns (agency, freelancer, in-house team, AI tool) x 7 rows as in the table below; no prices. Alt: \"Comparison matrix of a UX audit agency, a freelance UX auditor, an in-house team and an AI tool across evaluators, coverage, data, accessibility, evidence, roadmap ownership and lead time\" -->",
+    "marker": "<!-- visual: comparison matrix infographic, 4 providers (agency, freelancer, in-house team, AI tool) x 7 rows, every cell copied from the table below; no prices, no footer. Alt: \"Comparison matrix of a UX audit agency, a freelance UX auditor, an in-house team and an AI tool across independent evaluators, coverage, analytics and recordings, WCAG 2.2 AA depth, evidence per finding, roadmap ownership and lead time\" -->",
     "markdown": "![Comparison matrix of a UX audit agency, a freelance UX auditor, an in-house team and an AI tool across independent evaluators, coverage, analytics and recordings, WCAG 2.2 AA depth, evidence per finding, roadmap ownership and lead time](/blog/ux-audit-agency-vs-freelancer/audit-provider-matrix.svg \"Four audit providers compared on seven rows\")"
   },
   {
-    "marker": "<!-- visual: coverage curve chart, share of usability problems found vs number of independent evaluators (1 = 20–50%, 3–5 = 74–87%, flattening after 5), source line \"Nielsen Norman Group\"; do not mark a reviewer count for our own audits. Alt: \"Curve showing one evaluator finds 20 to 50% of usability problems and 3 to 5 independent evaluators find 74 to 87%\" -->",
-    "markdown": "![Curve showing one evaluator finds 20 to 50% of usability problems and 3 to 5 independent evaluators find 74 to 87%](/blog/ux-audit-agency-vs-freelancer/evaluator-coverage-curve.svg \"Share of usability problems found by number of independent evaluators (Nielsen Norman Group)\")"
+    "marker": "<!-- visual: coverage curve chart, share of usability problems found vs number of evaluators (1 evaluator = 20–51%, 3–5 specialists = 74–87%, flattening after 5), source line \"Nielsen & Molich (1990); Nielsen (1992)\"; do not mark a reviewer count for our own audits. Alt: \"Curve showing single evaluators found 20 to 51% of usability problems and 3 to 5 usability specialists found 74 to 87% in Jakob Nielsen's studies\" -->",
+    "markdown": "![Curve showing single evaluators found 20 to 51% of usability problems and 3 to 5 usability specialists found 74 to 87% in Jakob Nielsen's studies](/blog/ux-audit-agency-vs-freelancer/evaluator-coverage-curve.svg \"Share of usability problems found by number of evaluators (Nielsen and Molich, 1990; Nielsen, 1992)\")"
   },
   {
     "marker": "<!-- visual: split card, \"What AI audit tools handle well\" vs \"What they miss\"; only numbers: Baymard 2023, 26% of issues in screenshots vs 14% on live pages. Alt: \"Split card comparing what AI UX audit tools handle well with what they miss, with Baymard's 26% screenshot and 14% live-page figures\" -->",

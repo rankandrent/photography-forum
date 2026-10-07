@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1710" width="800" height="1710" font-family="Manrope, system-ui, sans-serif">
-<rect width="800" height="1710" fill="#FBFAFB"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1606" width="800" height="1606" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1606" fill="#FBFAFB"/>
 <text x="40" y="72" font-size="38" font-weight="800" fill="#020101">Hybrid UX audit: who does what</text>
 <text x="40" y="114" font-size="28" font-weight="600" fill="#6B6B70">Each step hands a package to the next</text>
 <rect x="120.5" y="160.5" width="639" height="222" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
@@ -47,15 +47,11 @@
 <text x="150" y="1280" font-size="30" font-weight="800" fill="#020101">Usability test of the riskiest</text>
 <text x="150" y="1320" font-size="30" font-weight="800" fill="#020101">flow</text>
 <text x="150" y="1366" font-size="26" font-weight="500" fill="#020101"><tspan font-weight="800" fill="#6B6B70">Owner:</tspan> a research team or partner.</text>
-<path d="M70 1302 V1590" stroke="#E2225F" stroke-width="3" stroke-dasharray="7 6"/>
+<path d="M70 1302 V1504" stroke="#E2225F" stroke-width="3" stroke-dasharray="7 6"/>
 <rect x="150" y="1442" width="560" height="124" rx="16" fill="#FFE3EC"/>
 <path d="M110 1504.0 H150" stroke="#E2225F" stroke-width="3"/>
 <path d="M100 1494.0 l10 10 l-10 10" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="176" y="1480" font-size="26" font-weight="800" fill="#E2225F">Hands off:</text>
 <text x="176" y="1514" font-size="26" font-weight="700" fill="#020101">observed failures that confirm</text>
 <text x="176" y="1548" font-size="26" font-weight="700" fill="#020101">or reorder the roadmap.</text>
-<path d="M58 1580 l12 14 l12 -14" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="120" y="1600" font-size="26" font-weight="700" fill="#020101">Never hand AI output to the auditor</text>
-<text x="120" y="1636" font-size="26" font-weight="700" fill="#020101">as findings; hand it over as a list</text>
-<text x="120" y="1672" font-size="26" font-weight="700" fill="#020101">to verify.</text>
 </svg>
