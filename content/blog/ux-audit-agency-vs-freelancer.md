@@ -19,8 +19,8 @@ takeaways:
   - "Choose an agency when the audit spans several platforms or user roles, needs analytics plus a WCAG 2.2 AA check, or decides a redesign budget."
   - "Use AI tools as a pre-scan to verify, never as findings: Baymard's 2023 test put GPT-4 at 20% accuracy."
   - "Send six inputs (flows, platforms, roles, analytics access, accessibility target, deadline) to get comparable quotes."
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 Before you settle UX audit agency vs freelancer, weigh one number from user experience (UX) research: in [Baymard Institute's 2023 test of 12 webpages](https://baymard.com/blog/gpt-ux-audit), GPT-4 found only 14% of the usability issues that human experts found on the live pages. Provider type changes what an audit finds, not only what it costs. Hire a senior freelancer for one platform with 2–3 flows and an owner for the fixes; hire an agency when the audit spans several platforms or user roles, combines analytics with a Web Content Accessibility Guidelines (WCAG) 2.2 AA check, or will decide a redesign budget. Keep your own team for sweeps between releases, and treat artificial intelligence (AI) tools as a pre-scan.
@@ -53,7 +53,7 @@ This compares audit providers only, not design hires.
 
 **In Jakob Nielsen's heuristic evaluation studies, single evaluators found 20–51% of usability problems and 3–5 usability specialists found 74–87%, so a solo review misses issues by design.**
 
-In Jakob Nielsen's original heuristic evaluation studies, single evaluators found 20–51% of the usability problems (Nielsen and Molich, 1990), and aggregates of 3–5 usability specialists found 74–87% (Nielsen, 1992), which is why [Nielsen Norman Group recommends 3–5 evaluators who review independently](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/) before comparing notes. [Hertzum and Jacobsen](https://www.tandfonline.com/doi/abs/10.1207/S15327590IJHC1501_14) call this the evaluator effect: in the 11 studies they reviewed, the average agreement between any two evaluators who evaluated the same system with the same method ranged from 5% to 65%. A keyboard-first reviewer catches a focus trap in the date picker; a reviewer on a phone catches the Pay button hidden behind the keyboard.
+The single-evaluator range comes from Nielsen and Molich (1990) and the 3–5 specialist range from aggregated evaluations in Nielsen (1992), which is why [Nielsen Norman Group recommends 3–5 evaluators who review independently](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/) before comparing notes. [Hertzum and Jacobsen](https://www.tandfonline.com/doi/abs/10.1207/S15327590IJHC1501_14) call this the evaluator effect: in the 11 studies they reviewed, the average agreement between any two evaluators who evaluated the same system with the same method ranged from 5% to 65%. A keyboard-first reviewer catches a focus trap in the date picker; a reviewer on a phone catches the Pay button hidden behind the keyboard.
 
 ![Curve showing single evaluators found 20 to 51% of usability problems and 3 to 5 usability specialists found 74 to 87% in Jakob Nielsen's studies](/blog/ux-audit-agency-vs-freelancer/evaluator-coverage-curve.svg "Share of usability problems found by number of evaluators (Nielsen and Molich, 1990; Nielsen, 1992)")
 
@@ -131,8 +131,8 @@ Use AI as a pre-scan, alongside automated accessibility checkers such as axe Dev
 
 Each trigger maps to a capability one reviewer struggles to supply:
 
-- **[Business-to-business (B2B) software as a service (SaaS)](/industries/saas/) with admin and end-user roles.** Evaluators cover each role, then merge into one list.
-- **An [ecommerce store](/industries/ecommerce/) with app and web checkout.** iOS, Android and web conventions in one audit, so a fix to the web checkout does not break the app flow.
+- **Business-to-business (B2B) software as a service (SaaS) with admin and end-user roles.** Evaluators cover each role, then merge into one list, because [SaaS UI UX design](/industries/saas/) breaks when one role's flow is skipped.
+- **An ecommerce store with app and web checkout.** [E-commerce UI UX design](/industries/ecommerce/) spans iOS, Android and web conventions; one audit covers all three, so a fix to the web checkout does not break the app flow.
 - **A contract-driven accessibility deadline.** A WCAG 2.2 AA check of the audited screens inside the audit, not a second project.
 - **A redesign that needs approval.** Each finding carries the screenshot, data and heuristic a finance lead accepts.
 - **An inherited product.** A new product owner gets every key flow swept in weeks.

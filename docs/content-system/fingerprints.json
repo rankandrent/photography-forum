@@ -53,7 +53,7 @@
         "proposal comparison",
         "timeline"
       ],
-      "ctaAngle": "send your research brief \u2192 free consultation + fixed-scope proposal",
+      "ctaAngle": "send your research brief → free consultation + fixed-scope proposal",
       "faqCount": 5,
       "words": 2378,
       "tableCount": 4,
@@ -80,9 +80,53 @@
         "2x2 risk matrix",
         "before/after flow map"
       ],
-      "ctaAngle": "send your funnel \u2192 free consultation + fixed-scope proposal",
+      "ctaAngle": "send your funnel → free consultation + fixed-scope proposal",
       "faqCount": 5,
       "words": 2172
+    },
+    {
+      "slug": "ux-audit-agency-vs-freelancer",
+      "hub": "ux-audit-services",
+      "type": "Comparison",
+      "funnel": "bofu",
+      "introStyle": "data point with source",
+      "h2Frames": [
+        "vs",
+        "why",
+        "when (fit)",
+        "can (yes/no)",
+        "what catches/misses",
+        "when (agency)",
+        "how to judge",
+        "how to combine",
+        "what to send",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "UX audit agency vs freelancer: what actually changes?",
+        "Why do independent evaluators matter more than the logo?",
+        "When is a freelance UX auditor the right choice?",
+        "Can your in-house team audit its own product?",
+        "What can an AI UX audit tool catch and miss?",
+        "When does a UX audit need an agency team?",
+        "How do you judge audit quality before you pay?",
+        "How do you combine AI, your team and an expert audit?",
+        "What should you send before asking for a quote?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "comparison matrix",
+        "range-band chart",
+        "split card",
+        "one finding four ways",
+        "hybrid flow",
+        "scope sheet form"
+      ],
+      "ctaAngle": "send the same scope sheet to every provider → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 1874,
+      "tableCount": 1,
+      "listStyle": "reasoned bullets (situation + because) + numbered hybrid steps"
     }
   ]
 }

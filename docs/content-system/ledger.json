@@ -20,6 +20,16 @@
           "funnel": "mofu"
         }
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "goal": "daily: 1 post for hub with fewest posts (16 hubs tied at 0; ux-audit-services picked for lead value)",
+      "jobs": [
+        {
+          "hub": "ux-audit-services",
+          "funnel": "bofu"
+        }
+      ]
     }
   ],
   "posts": [
@@ -49,7 +59,21 @@
       "internalLinks": 7,
       "externalLinks": 5,
       "qaLoops": 2,
-      "notes": "Loop 1: 5 fact + 5 QA fixes, rollout image removed (repeated list), decision tree redrawn. Loop 2: CTA rewritten to site wording. Funnel changed bofu\u2192mofu by QA."
+      "notes": "Loop 1: 5 fact + 5 QA fixes, rollout image removed (repeated list), decision tree redrawn. Loop 2: CTA rewritten to site wording. Funnel changed bofu→mofu by QA."
+    },
+    {
+      "slug": "ux-audit-agency-vs-freelancer",
+      "hub": "ux-audit-services",
+      "keyword": "ux audit agency vs freelancer",
+      "funnel": "bofu",
+      "author": "ahmad-ullah",
+      "date": "2026-10-07",
+      "words": 1874,
+      "images": 7,
+      "internalLinks": 6,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "notes": "Loop 1: fact-check 13 fixes (Nielsen figures traced to 1990/1992 studies, Hertzum & Jacobsen average agreement, no designer count / no unconfirmed promises, accessibility claims cut to site wording); QA: completeness gaps G1–G6, matrix cells, link count, closing CTA. QA closing rejected by orchestrator (unconfirmed promise). Loop 2: both PASS + 1 QA nit. Also fixed /work/ → /case-studies/ links on 6 location pages. Open: hub says 2 designers per audit, home.ts says 1–2."
     }
   ],
   "audits": []

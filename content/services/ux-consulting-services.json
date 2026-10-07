@@ -113,7 +113,7 @@
     {
       "h2": "UX consulting vs UX audit",
       "format": "table",
-      "answer": "<strong>UX consulting sets strategy for the product, the team and the design process; a UX audit evaluates the product interface only.</strong> Companies start with UX consulting if no UX plan exists, and start with a UX audit if the interface problem is already known.",
+      "answer": "<strong>UX consulting sets strategy for the product, the team and the design process; a UX audit evaluates the product interface only.</strong> Companies start with UX consulting if no UX plan exists, and start with a UX audit if the interface problem is already known. If you go the audit route, our guide on <a href=\"/blog/ux-audit-agency-vs-freelancer/\">choosing between a UX audit agency, a freelancer or an AI tool</a> shows what each provider type finds.",
       "caption": "Comparison of UX consulting and a UX audit",
       "columns": [
         "Criterion",
