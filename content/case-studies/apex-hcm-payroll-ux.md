@@ -1,5 +1,6 @@
 ---
 title: "200+ screens → 6 steps in enterprise payroll"
+metaTitle: "Apex HCM Case Study: Enterprise Payroll UX Redesign"
 client: Apex HCM
 result: "200+ screens → 6 steps in enterprise payroll"
 description: "A legacy payroll platform redesigned for how real users actually process payroll, not how the original developers imagined they would."

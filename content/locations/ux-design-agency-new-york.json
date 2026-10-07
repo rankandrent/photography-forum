@@ -177,7 +177,7 @@
       "faqs": [
         {
           "q": "Is your UX design agency based in New York?",
-          "a": "<p>No. We are a remote-first UX design agency headquartered in Reston, Virginia, without a New York office. We share Eastern Time with the city, so meetings run in your normal hours, and in-person workshops in New York can be arranged when needed.</p>"
+          "a": "<p>No. We are a remote-first UX design agency <a href=\"/about/\">headquartered in Reston, Virginia</a>, without a New York office. We share Eastern Time with the city, so meetings run in your normal hours, and in-person workshops in New York can be arranged when needed.</p>"
         },
         {
           "q": "Can you work within a bank's or insurer's compliance process?",

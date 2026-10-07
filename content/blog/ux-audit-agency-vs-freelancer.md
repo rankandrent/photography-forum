@@ -23,7 +23,7 @@ draft: false
 qa: pass
 ---
 
-Before you settle UX audit agency vs freelancer, weigh one number from user experience (UX) research: in [Baymard Institute's 2023 test of 12 webpages](https://baymard.com/blog/gpt-ux-audit), GPT-4 found only 14% of the usability issues that human experts found on the live pages. Provider type changes what an audit finds, not only what it costs. Hire a senior freelancer for one platform with 2–3 flows and an owner for the fixes; hire an agency when the audit spans several platforms or user roles, combines analytics with a Web Content Accessibility Guidelines (WCAG) 2.2 AA check, or will decide a redesign budget. Keep your own team for sweeps between releases, and treat artificial intelligence (AI) tools as a pre-scan.
+Before you settle the UX audit agency vs freelancer question, weigh one number from user experience (UX) research: in [Baymard Institute's 2023 test of 12 webpages](https://baymard.com/blog/gpt-ux-audit), GPT-4 found only 14% of the usability issues that human experts found on the live pages. Provider type changes what an audit finds, not only what it costs. Hire a senior freelancer for one platform with 2–3 flows and an owner for the fixes; hire an agency when the audit spans several platforms or user roles, combines analytics with a Web Content Accessibility Guidelines (WCAG) 2.2 AA check, or will decide a redesign budget. Keep your own team for sweeps between releases, and treat artificial intelligence (AI) tools as a pre-scan.
 
 ## UX audit agency vs freelancer: what actually changes?
 
@@ -46,8 +46,6 @@ A freelance UX audit is one expert's judgment; an agency audit can merge several
 | Lead time | Team capacity sets the start; ours runs 2–3 weeks | When one person is free; no cover if they are booked | When sprint time frees up; often slips behind features | Minutes, plus your time to verify each item |
 
 </details>
-
-This compares audit providers only, not design hires.
 
 ## Why do independent evaluators matter more than the logo?
 

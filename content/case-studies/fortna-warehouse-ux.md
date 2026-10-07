@@ -1,5 +1,6 @@
 ---
 title: "9 → 4 steps in error resolution workflow"
+metaTitle: "Fortna Case Study: Warehouse Error Resolution UX"
 client: Fortna
 result: "9 → 4 steps in error resolution workflow"
 description: "Warehouse-optimized dark mode designed for operators working in low-light environments. 8 executive interviews shaped the real-time dashboard strategy."

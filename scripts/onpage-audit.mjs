@@ -21,8 +21,11 @@ for (const f of fs.readdirSync("content/blog").filter((x) => x.endsWith(".md") &
 const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
 const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&#x27;|&#39;|&rsquo;/g, "'").replace(/&[a-z#0-9]+;/g, " ").replace(/\s+/g, " ").trim();
 const words = (t) => (t.match(/[A-Za-z0-9][A-Za-z0-9'’-]*/g) || []).length;
+// hyphen/space variants count as the same word: "e-commerce" = "ecommerce" = "e commerce"
+const norm = (s = "") => lc(s).replace(/(?<=[a-z0-9])[-‐‑](?=[a-z0-9])/g, "");
+const compact = (s = "") => norm(s).replace(/[\s-]+/g, "");
 // keyword match that tolerates word order inside the title/H1 (all words present) and exact phrase
-const has = (text, kw) => { const t = lc(text); return t.includes(kw) || kw.split(" ").filter((w) => w.length > 2).every((w) => t.includes(w)); };
+const has = (text, kw) => { const t = norm(text), k = norm(kw), tc = compact(text); return t.includes(k) || tc.includes(compact(kw)) || k.split(" ").filter((w) => w.length > 2).every((w) => t.includes(w) || tc.includes(w)); };
 
 // inbound internal links per route
 const pages = walk(OUT).filter((f) => f.endsWith("index.html")).map((file) => ({ file, route: "/" + path.relative(OUT, path.dirname(file)).replace(/\\/g, "/") + (path.dirname(file) === OUT ? "" : "/"), html: fs.readFileSync(file, "utf8") })).filter((p) => !/<meta name="robots" content="noindex/.test(p.html));
@@ -55,11 +58,12 @@ for (const p of pages.filter((x) => !only || x.route === only)) {
   const add = (id, ok, msg, weight = 1) => checks.push({ id, ok, msg, weight });
   if (kw) {
     add("title-keyword", has(title, kw), `title contains "${kw}"`, 2);
-    add("title-keyword-early", lc(title).indexOf(kw.split(" ")[0]) > -1 && lc(title).indexOf(kw.split(" ")[0]) < 25, "keyword starts in the first ~25 chars of the title");
+    const kw0 = norm(kw).split(" ")[0], at = norm(title).indexOf(kw0);
+    add("title-keyword-early", at > -1 && at < 25, "keyword starts in the first ~25 chars of the title");
     add("h1-keyword", has(h1, kw), `H1 contains "${kw}"`, 2);
     add("desc-keyword", has(desc, kw), "meta description contains the keyword");
     add("first-100-words", has(first100, kw), "keyword appears near the top of the page (first ~100 words)");
-    if (p.route !== "/") add("slug-keyword", kw.split(" ").filter((w) => w.length > 3).some((w) => p.route.includes(w)), "URL slug carries the keyword");
+    if (p.route !== "/") add("slug-keyword", norm(kw).split(" ").filter((w) => w.length > 3).some((w) => compact(p.route).includes(w)), "URL slug carries the keyword");
   }
   add("title-length", title.length >= 30 && title.length <= 60, `title 30–60 chars (is ${title.length})`);
   add("desc-length", desc.length >= 120 && desc.length <= 158, `meta description 120–158 chars (is ${desc.length})`);
@@ -67,7 +71,7 @@ for (const p of pages.filter((x) => !only || x.route === only)) {
   if (isContent) add("h2-structure", h2s.length >= 3, `≥ 3 H2 sections (has ${h2s.length})`);
   add("slug-short", slugWords <= 6, `slug ≤ 6 words (has ${slugWords})`);
   if (isContent) add("content-depth", words(body) >= (isBlog ? 1200 : 600), `${isBlog ? "≥ 1,200" : "≥ 600"} words of content (has ${words(body)})`, 2);
-  add("internal-out", internalOut >= (isContent ? 5 : 3), `≥ 5 internal links out (has ${internalOut})`);
+  add("internal-out", internalOut >= (isContent ? 5 : 3), `≥ ${isContent ? 5 : 3} internal links out (has ${internalOut})`);
   add("internal-in", (inbound[p.route]?.size ?? 0) >= (p.route === "/" ? 0 : 3), `≥ 3 pages link here (has ${inbound[p.route]?.size ?? 0})`, 2);
   if (isBlog) add("external-sources", externalOut >= 2, `≥ 2 external sources (has ${externalOut})`);
   add("img-alt", imgs.every((i) => /\balt="[^"]+"/.test(i) || /aria-hidden|role="presentation"|alt=""/.test(i)), "every content image has alt text");

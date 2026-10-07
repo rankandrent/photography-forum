@@ -11,7 +11,7 @@ export const home = {
   meta: {
     title: "UI UX Design Services | Research-Led UI UX Design Agency",
     description:
-      "UI UX design services for growing businesses: user research, UX and UI design, prototyping, design systems, and usability testing tied to measurable outcomes.",
+      "UI UX design services tied to measurable outcomes: user research, UX and UI design, design systems and usability testing. Book a free consultation.",
   },
   hero: {
     eyebrow: "UI UX design services",

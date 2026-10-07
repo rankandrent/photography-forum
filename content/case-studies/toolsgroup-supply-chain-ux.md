@@ -1,5 +1,6 @@
 ---
 title: "75% of sales losses were UI-related, not feature gaps"
+metaTitle: "ToolsGroup Case Study: Supply Chain SaaS UX Research"
 client: ToolsGroup
 result: "75% of sales losses were UI-related, not feature gaps"
 description: "30+ stakeholder interviews revealed competitors were winning on user experience, not functionality. That insight reframed the entire product strategy."

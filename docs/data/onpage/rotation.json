@@ -1,21 +1,9 @@
 {
  "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "pages": [
   {
-   "route": "/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/author/",
+   "route": "/blog/author/ahmad-ullah/",
    "type": "archive",
    "lastAudited": null,
    "lastScore": 100
@@ -90,7 +78,7 @@
    "route": "/industries/ecommerce/",
    "type": "content",
    "lastAudited": null,
-   "lastScore": 96
+   "lastScore": 100
   },
   {
    "route": "/industries/healthcare/",
@@ -118,6 +106,12 @@
   },
   {
    "route": "/location/ux-design-agency-boston/",
+   "type": "content",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-chicago/",
    "type": "content",
    "lastAudited": null,
    "lastScore": 100
@@ -267,12 +261,6 @@
    "lastScore": 100
   },
   {
-   "route": "/about/",
-   "type": "content",
-   "lastAudited": "2026-10-06",
-   "lastScore": 73
-  },
-  {
    "route": "/blog/choose-ux-research-agency/",
    "type": "blog",
    "lastAudited": "2026-10-06",
@@ -283,24 +271,6 @@
    "type": "blog",
    "lastAudited": "2026-10-06",
    "lastScore": 100
-  },
-  {
-   "route": "/case-studies/apex-hcm-payroll-ux/",
-   "type": "content",
-   "lastAudited": "2026-10-06",
-   "lastScore": 87
-  },
-  {
-   "route": "/case-studies/fortna-warehouse-ux/",
-   "type": "content",
-   "lastAudited": "2026-10-06",
-   "lastScore": 80
-  },
-  {
-   "route": "/case-studies/toolsgroup-supply-chain-ux/",
-   "type": "content",
-   "lastAudited": "2026-10-06",
-   "lastScore": 87
   },
   {
    "route": "/case-studies/tradezella/",
@@ -321,9 +291,57 @@
    "lastScore": 100
   },
   {
+   "route": "/",
+   "type": "content",
+   "lastAudited": "2026-10-07",
+   "lastScore": 100
+  },
+  {
+   "route": "/about/",
+   "type": "content",
+   "lastAudited": "2026-10-07",
+   "lastScore": 73
+  },
+  {
+   "route": "/blog/",
+   "type": "archive",
+   "lastAudited": "2026-10-07",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/",
+   "type": "archive",
+   "lastAudited": "2026-10-07",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/ux-audit-agency-vs-freelancer/",
+   "type": "blog",
+   "lastAudited": "2026-10-07",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/apex-hcm-payroll-ux/",
+   "type": "content",
+   "lastAudited": "2026-10-07",
+   "lastScore": 87
+  },
+  {
+   "route": "/case-studies/fortna-warehouse-ux/",
+   "type": "content",
+   "lastAudited": "2026-10-07",
+   "lastScore": 80
+  },
+  {
+   "route": "/case-studies/toolsgroup-supply-chain-ux/",
+   "type": "content",
+   "lastAudited": "2026-10-07",
+   "lastScore": 87
+  },
+  {
    "route": "/privacy/",
    "type": "archive",
-   "lastAudited": "2026-10-06",
+   "lastAudited": "2026-10-07",
    "lastScore": 91
   }
  ]
