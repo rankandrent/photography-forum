@@ -245,6 +245,45 @@
     "ctaAngle": "honest routing: send your scope sheet, get a fixed audit price or a straight 'you do not need us' answer",
     "listStyle": "1 matrix table (behind the image), scenario bullet lines per option, 1 numbered hybrid sequence; no scorecard, no question/answer list, no red-flag list"
   },
+  "backlinkSuggestions": [
+    {
+      "source": "content/services/ux-audit-services.json",
+      "page": "/services/ux-audit-services/#how-much-does-a-ux-audit-cost",
+      "where": "sections['How much does a UX audit cost?'].body, append after the sentence ending '... or a design sprint.'",
+      "sentence": "Comparing this with a freelancer's or an AI tool's quote? Send each provider <a href=\"/blog/ux-audit-agency-vs-freelancer/#what-should-you-send-before-asking-for-a-quote\">the six scope inputs that make UX audit quotes comparable</a>.",
+      "anchor": "the six scope inputs that make UX audit quotes comparable",
+      "target": "/blog/ux-audit-agency-vs-freelancer/#what-should-you-send-before-asking-for-a-quote",
+      "priority": 1,
+      "why": "Pillar to its own post (silo-down link). The cost section is where buyers compare quotes; the post's last H2 answers exactly that. Only link to this post from the hub body (one per target per page)."
+    },
+    {
+      "source": "content/services/ux-consulting-services.json",
+      "page": "/services/ux-consulting-services/",
+      "where": "sections['UX consulting vs UX audit'].answer, append after '... start with a UX audit if the interface problem is already known.'",
+      "sentence": " If you go the audit route, our guide on <a href=\"/blog/ux-audit-agency-vs-freelancer/\">choosing between a UX audit agency, a freelancer or an AI tool</a> shows what each provider type finds.",
+      "anchor": "choosing between a UX audit agency, a freelancer or an AI tool",
+      "target": "/blog/ux-audit-agency-vs-freelancer/",
+      "priority": 2,
+      "why": "The reader at this point has just decided on an audit and the next question is who runs it. Cross-silo hub-to-post link: the silo rules only restrict links inside posts, but the orchestrator may skip this one to keep the consulting silo pure."
+    },
+    {
+      "source": "content/home.ts",
+      "page": "/#compare",
+      "where": "compare.intro (\"Three paths to hiring UI UX design services ...\")",
+      "sentence": "Choosing who runs a UX audit is a narrower call: see <a href=\"/blog/ux-audit-agency-vs-freelancer/\">how a UX audit freelancer, agency, in-house team and AI tool compare</a>.",
+      "anchor": "how a UX audit freelancer, agency, in-house team and AI tool compare",
+      "target": "/blog/ux-audit-agency-vs-freelancer/",
+      "priority": 3,
+      "why": "Most topically aligned page on the site (the general freelancer vs agency comparison). Conditional: components/sections/HomeSections.tsx renders compare.intro as plain text ({d.intro}), so this needs the intro rendered with the Html component first. Skip it if a template change is out of scope."
+    }
+  ],
+  "linkBuilderNotes": [
+    "2026-10-07: Internal links (BOFU, 5): hub early (anchor 'UX audit services'), hub #how-much-does-a-ux-audit-cost near the end, /services/usability-testing-services/ (the single other hub), /industries/saas/, /contact/. Dropped the hub markers for #how-does-the-ux-audit-process-work, #what-does-a-ux-audit-include and two extra plain-hub markers (hub cap 1–2, fragments count). The sentences that only carried those links were removed or shortened. No case study (none covers an audit), no sibling posts (silo is empty).",
+    "Source swap: the claim '3-5 evaluators' is now cited to https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/ (Nielsen's 'Theory Behind Heuristic Evaluations', search snippet: single evaluators 20-50%, 3-5 specialists 74-87%, 3-5 independent evaluations recommended), not the how-to page, which a search confirmed only for '3-5 people evaluating independently'. The sentence was rewritten to these figures.",
+    "Source swap: Hertzum and Jacobsen now cited to https://www.tandfonline.com/doi/abs/10.1207/S15327590IJHC1501_14 (IJHCI vol 15 no 1, 2003, the version a search returned), not doi.org/10.1207/S15327590IJHC1304_05 (2001, egress-blocked and absent from search results). Sentence now carries the verified 11 studies / 5-65% agreement figure.",
+    "FACT-CHECK FLAG: the takeaway, the bold answer under 'Why do independent evaluators matter more than the logo?', the FAQ and the coverage-curve visual marker say '1 evaluator about 35%, 3-5 about 75%'. Verified: 35% for single evaluators (nngroup.com/articles/technology-transfer-of-heuristic-evaluation/ snippet). Not verified: 'about 75%' for 3-5 evaluators; the nearest verified figure is 74-87% for 3-5 usability specialists. Suggest 'about three quarters or more' or '74-87%'. The link builder did not edit the takeaway, the bold answer or the visual marker.",
+    "WCAG 2.2 (w3.org/TR/WCAG22/) was not linked: the post has no source marker for it, and the external cap of 5 was already used."
+  ],
   "notes": [
     "New silo: 0 posts in ux-audit-services (fingerprints.json, ledger.json). This is the silo's first BOFU post; the next one is MOFU.",
     "Exact keyword: 'ux audit agency vs freelancer'. Put it in the title, H1, slug, first sentence and the description (the description opens with 'UX audit agency vs freelancer'). Suggested title (H1): 'UX Audit Agency vs Freelancer, AI Tool or In-House Team' (55 chars). Suggested metaTitle: 'UX Audit Agency vs Freelancer vs AI: Who to Hire' (48 chars).",

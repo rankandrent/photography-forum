@@ -13,7 +13,7 @@ tags: [ux audit, ux audit agency, freelance ux audit, ai ux audit, heuristic eva
 keyword: "ux audit agency vs freelancer"
 funnel: bofu
 takeaways:
-  - "Provider type changes what a UX audit finds: one evaluator finds about 35% of usability problems, 3–5 independent evaluators about 75%."
+  - "Provider type changes what a UX audit finds: one evaluator finds 20–50% of usability problems, 3–5 independent evaluators 74–87%."
   - "A senior freelancer fits one platform, 2–3 key flows and an in-house owner for the fixes."
   - "Choose an agency when the audit spans several platforms or user roles, needs analytics plus a WCAG 2.2 AA check, or decides a redesign budget."
   - "Use AI tools as a pre-scan to verify, never as findings: Baymard's 2023 test put GPT-4 at 20% accuracy."
@@ -22,13 +22,13 @@ draft: true
 qa: pending
 ---
 
-Before you settle UX audit agency vs freelancer, weigh one number from user experience (UX) research: in Baymard Institute's 2023 test of 12 webpages, GPT-4 found only 14% of the usability issues that human experts found on the live pages. <!-- source: https://baymard.com/blog/gpt-ux-audit --> Provider type changes what an audit finds, not only what it costs. Hire a senior freelancer for one platform with 2–3 flows and an owner for the fixes; hire an agency when the audit spans several platforms or user roles, combines analytics with a Web Content Accessibility Guidelines (WCAG) 2.2 AA check, or will decide a redesign budget. Keep your own team for sweeps between releases, and treat artificial intelligence (AI) tools as a pre-scan.
+Before you settle UX audit agency vs freelancer, weigh one number from user experience (UX) research: in [Baymard Institute's 2023 test of 12 webpages](https://baymard.com/blog/gpt-ux-audit), GPT-4 found only 14% of the usability issues that human experts found on the live pages. Provider type changes what an audit finds, not only what it costs. Hire a senior freelancer for one platform with 2–3 flows and an owner for the fixes; hire an agency when the audit spans several platforms or user roles, combines analytics with a Web Content Accessibility Guidelines (WCAG) 2.2 AA check, or will decide a redesign budget. Keep your own team for sweeps between releases, and treat artificial intelligence (AI) tools as a pre-scan.
 
 ## UX audit agency vs freelancer: what actually changes?
 
 **Four things change between an agency, a freelancer, your team and an AI tool: independent evaluators, coverage, data and accessibility depth, and who stands behind the fix roadmap.**
 
-A freelance UX audit is one expert's judgment; an agency audit can merge several. Your team knows the product best, which is its weakness, and an AI tool has no stake in the outcome. Our UX audit services <!-- link: /services/ux-audit-services/ | UX audit services --> sit in the agency column; this post says plainly where the other three are the better buy.
+A freelance UX audit is one expert's judgment; an agency audit can merge several. Your team knows the product best, which is its weakness, and an AI tool has no stake in the outcome. Our [UX audit services](/services/ux-audit-services/) sit in the agency column; this post says plainly where the other three are the better buy.
 
 <!-- visual: comparison matrix infographic, 4 columns (agency, freelancer, in-house team, AI tool) x 7 rows as in the table below; no prices. Alt: "Comparison matrix of a UX audit agency, a freelance UX auditor, an in-house team and an AI tool across evaluators, coverage, data, accessibility, evidence, roadmap ownership and lead time" -->
 
@@ -50,13 +50,13 @@ This compares audit providers only, not design hires. Read the evaluator row fir
 
 ## Why do independent evaluators matter more than the logo?
 
-**One evaluator finds about 35% of usability problems in a heuristic evaluation; 3–5 independent evaluators find about 75%, so a solo review misses issues by design.**
+**One evaluator finds 20–50% of usability problems in a heuristic evaluation; 3–5 independent evaluators find 74–87%, so a solo review misses issues by design.**
 
-Nielsen Norman Group's heuristic evaluation guidance recommends 3–5 evaluators who review alone before comparing notes. <!-- source: https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/ --> Hertzum and Jacobsen named the reason the evaluator effect: experts applying the same method to the same interface report noticeably different problems. <!-- source: https://doi.org/10.1207/S15327590IJHC1304_05 --> A keyboard-first reviewer catches a focus trap in the date picker; a reviewer on a phone catches the Pay button hidden behind the keyboard.
+In Jakob Nielsen's original heuristic evaluation studies, single evaluators caught 20–50% of the usability problems and 3–5 usability specialists caught 74–87%, which is why [Nielsen Norman Group recommends 3–5 evaluators who review independently](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/) before comparing notes. [Hertzum and Jacobsen](https://www.tandfonline.com/doi/abs/10.1207/S15327590IJHC1501_14) named the reason the evaluator effect: across the 11 studies they reviewed, any two evaluators applying the same method to the same interface agreed on only 5–65% of the problems. A keyboard-first reviewer catches a focus trap in the date picker; a reviewer on a phone catches the Pay button hidden behind the keyboard.
 
-<!-- visual: coverage curve chart, share of usability problems found vs number of independent evaluators (1 = about 35%, 3–5 = about 75%, flattening after 5), source line "Nielsen Norman Group"; do not mark a reviewer count for our own audits. Alt: "Curve showing one evaluator finds about 35% of usability problems and 3 to 5 independent evaluators find about 75%" -->
+<!-- visual: coverage curve chart, share of usability problems found vs number of independent evaluators (1 = 20–50%, 3–5 = 74–87%, flattening after 5), source line "Nielsen Norman Group"; do not mark a reviewer count for our own audits. Alt: "Curve showing one evaluator finds 20 to 50% of usability problems and 3 to 5 independent evaluators find 74 to 87%" -->
 
-In our audits, more than one evaluator reviews the product independently before anyone reads another's notes, as our UX audit process <!-- link: /services/ux-audit-services/#how-does-the-ux-audit-process-work | our UX audit process --> describes. Then we merge: duplicates collapse into one entry, a finding only one reviewer flagged gets a second look against the evidence, and severity is agreed together.
+In our audits, more than one evaluator reviews the product independently before anyone reads another's notes. Then we merge: duplicates collapse into one entry, a finding only one reviewer flagged gets a second look against the evidence, and severity is agreed together.
 
 Hiring a UX audit freelancer? Ask whether a second reviewer checks the findings, and who. A named second reviewer narrows the gap; a "no" means you buy one evaluator's share.
 
@@ -97,11 +97,11 @@ Internal audits stall when nobody gets sprint time, owners argue findings away, 
 
 **AI UX audit tools handle fast rule-based checks such as contrast and missing labels, and miss interaction, context and business priorities; Baymard measured GPT-4 at 20% accuracy.**
 
-In Baymard's 2023 test on 12 webpages, scored against its own UX benchmarkers, GPT-4 reached 20% accuracy with an 80% false-positive rate. Per page, it found 2.9 correct issues on average, missed 18.5 issues on the live page and made 1.3 suggestions likely to harm the experience. <!-- source: https://baymard.com/blog/gpt-ux-audit --> It found 26% of the issues visible in a screenshot but only 14% on the live page, because a screenshot cannot show error handling or what happens after a tap.
+In Baymard's 2023 test on 12 webpages, scored against its own UX benchmarkers, GPT-4 reached 20% accuracy with an 80% false-positive rate. Per page, it found 2.9 correct issues on average, missed 18.5 issues on the live page and made 1.3 suggestions likely to harm the experience. It found 26% of the issues visible in a screenshot but only 14% on the live page, because a screenshot cannot show error handling or what happens after a tap.
 
-That test measured GPT-4 in 2023, not today's models. Baymard's later article reports 50–75% accuracy for the public generative AI tools and prompts it tested, and 95% for UX-Ray, its own ecommerce tool, against human expert auditors. <!-- source: https://baymard.com/blog/ai-heuristic-evaluations --> That 95% is Baymard's own claim for its own product.
+That test measured GPT-4 in 2023, not today's models. [Baymard's later article on AI heuristic evaluations](https://baymard.com/blog/ai-heuristic-evaluations) reports 50–75% accuracy in public tests of generative AI tools and premade prompts, and 95% for UX-Ray, its own ecommerce tool, against human expert auditors. That 95% is Baymard's own claim for its own product.
 
-The buyer rule: ask any AI UX audit vendor for its published accuracy rate against human experts and how it was measured, the same demand Nielsen Norman Group's piece with Baymard's cofounders makes. <!-- source: https://www.nngroup.com/articles/baymard-ai-tool-accuracy/ -->
+The buyer rule: ask any AI UX audit vendor for its published accuracy rate against human experts and how it was measured, the same demand [Nielsen Norman Group's conversation with Baymard's cofounders](https://www.nngroup.com/articles/baymard-ai-tool-accuracy/) makes.
 
 <!-- visual: split card, "What AI audit tools handle well" vs "What they miss"; only numbers: Baymard 2023, 26% of issues in screenshots vs 14% on live pages. Alt: "Split card comparing what AI UX audit tools handle well with what they miss, with Baymard's 26% screenshot and 14% live-page figures" -->
 
@@ -130,13 +130,13 @@ Use AI as a pre-scan, with automated accessibility checkers that catch part of t
 
 Each trigger maps to a capability one reviewer struggles to supply:
 
-- **Business-to-business (B2B) software as a service (SaaS) with admin and end-user roles.** Evaluators cover each role, then merge one list.
+- **[Business-to-business (B2B) software as a service (SaaS)](/industries/saas/) with admin and end-user roles.** Evaluators cover each role, then merge one list.
 - **An ecommerce store with app and web checkout.** iOS, Android and web conventions in one audit.
 - **A contract-driven accessibility deadline.** Keyboard and screen-reader testing inside the audit, not a second project.
 - **A redesign that needs approval.** Each finding carries the screenshot, data and heuristic a finance lead accepts.
 - **An inherited product.** A new product owner gets every key flow swept in weeks.
 
-Outside these cases, an agency is not automatically better. The hub lists the 6 parts of our UX audit <!-- link: /services/ux-audit-services/#what-does-a-ux-audit-include | the 6 parts of our UX audit -->. If two or more lines above describe your product, that is the scope our audit is built for: 2–3 weeks, independent reviews by more than one evaluator, and a fix roadmap ranked by impact and effort.
+Outside these cases, an agency is not automatically better. If two or more lines above describe your product, that is the scope our audit is built for: 2–3 weeks, independent reviews by more than one evaluator, and a fix roadmap ranked by impact and effort.
 
 ## How do you judge audit quality before you pay?
 
@@ -155,7 +155,7 @@ Take one illustrative checkout issue, not a client finding: on mobile, an invali
 
 </details>
 
-The fourth version costs more because someone opened the analytics and agreed on severity; that turns a list into a schedulable roadmap. The hub shows what our UX audit report lists <!-- link: /services/ux-audit-services/ | what our UX audit report lists --> for every issue, so hold us to the same test. Ask every shortlisted provider for one redacted finding before you sign.
+The fourth version costs more because someone opened the analytics and agreed on severity; that turns a list into a schedulable roadmap. Hold us to the same test. Ask every shortlisted provider for one redacted finding before you sign.
 
 ## How do you combine AI, your team and an expert audit?
 
@@ -172,7 +172,7 @@ The fourth version costs more because someone opened the analytics and agreed on
 
 </details>
 
-You avoid paying twice because the auditor does not bill hours for contrast fixes you already shipped. Never hand AI output to the auditor as findings; hand it over as a list to verify, or it anchors the review. For step 4, our usability testing services <!-- link: /services/usability-testing-services/ | usability testing services --> run the sessions if you lack a research team.
+You avoid paying twice because the auditor does not bill hours for contrast fixes you already shipped. Never hand AI output to the auditor as findings; hand it over as a list to verify, or it anchors the review. For step 4, our [usability testing services](/services/usability-testing-services/) run the sessions if you lack a research team.
 
 ## What should you send before asking for a quote?
 
@@ -193,7 +193,7 @@ Without them, the cheaper quote is often just a smaller audit.
 
 </details>
 
-For reference, our audits run $5,000–$15,000 over 2–3 weeks; the hub explains the UX audit pricing and scope factors <!-- link: /services/ux-audit-services/#how-much-does-a-ux-audit-cost | UX audit pricing and scope factors --> that move a quote within that range. Send us your scope sheet <!-- link: /contact/ | send us your scope sheet -->: we talk it through with you at no charge and return a fixed-scope proposal. If a freelancer or internal sweep fits better, we will say so. Then weigh our UX audit services page <!-- link: /services/ux-audit-services/ | our UX audit services page --> against every other quote.
+For reference, our audits run $5,000–$15,000 over 2–3 weeks; the hub explains the [UX audit pricing and scope factors](/services/ux-audit-services/#how-much-does-a-ux-audit-cost) that move a quote within that range. [Send us your scope sheet](/contact/): we talk it through with you at no charge and return a fixed-scope proposal. If a freelancer or internal sweep fits better, we will say so. Then weigh our proposal against every other quote.
 
 ## FAQs
 
