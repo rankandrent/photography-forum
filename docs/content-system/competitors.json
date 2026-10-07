@@ -1,27 +1,35 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "answerlab.com", "kind": "research agency insights", "silos": ["ux-research-services"], "seenFor": ["ux research rfp vendor evaluation", "how to choose a ux research partner"], "source": "WebSearch 2026-10-05" },
-    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study"], "source": "WebSearch 2026-10-05, 2026-10-06" },
+    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study", "ux audit cost", "how to choose a ux audit company", "free ux audit vs paid ux audit"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
     { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "ux research services"], "source": "WebSearch 2026-10-05" },
-    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency"], "source": "WebSearch 2026-10-05" },
-    { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp"], "source": "WebSearch 2026-10-05, 2026-10-06" },
+    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-05, 2026-10-07" },
+    { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp", "ux audit freelancer vs agency", "ux audit cost"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
     { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables"], "source": "WebSearch 2026-10-05" },
     { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp"], "source": "WebSearch 2026-10-05" },
     { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" },
     { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer"], "source": "WebSearch 2026-10-06" },
     { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope"], "source": "WebSearch 2026-10-06" },
-    { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup"], "source": "WebSearch 2026-10-06" },
+    { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency"], "source": "WebSearch 2026-10-06, 2026-10-07" },
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
     { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "facelift vs full redesign saas"], "source": "WebSearch 2026-10-06" },
     { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "product redesign examples"], "source": "WebSearch 2026-10-06" },
     { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "sda.company", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency"], "source": "WebSearch 2026-10-06" },
-    { "domain": "chameleon.io", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "reducing onboarding drop-off activation"], "source": "WebSearch 2026-10-06" }
+    { "domain": "chameleon.io", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "reducing onboarding drop-off activation"], "source": "WebSearch 2026-10-06" },
+    { "domain": "blog.flowpoint.ai", "kind": "analytics tool blog", "silos": ["ux-audit-services"], "seenFor": ["who should do a ux audit", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
+    { "domain": "codewave.com", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit freelancer vs agency", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
+    { "domain": "designstudiouiux.com", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit tools"], "source": "WebSearch 2026-10-07" },
+    { "domain": "theskinsfactory.com", "kind": "agency Q&A blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ux audit proposal scope", "how to prepare for a ux audit"], "source": "WebSearch 2026-10-07" },
+    { "domain": "saashero.net", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit vs expert review"], "source": "WebSearch 2026-10-07" },
+    { "domain": "musemind.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
+    { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
+    { "domain": "baymard.com", "kind": "UX research institute (citable source, not a target)", "silos": ["ux-audit-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit"], "source": "WebSearch 2026-10-07" }
   ],
   "topPosts": [
     {
@@ -157,6 +165,51 @@
       "serviceSupport": 5,
       "status": "candidate",
       "notes": "Deferred: near-duplicate of the format just used for choose-ux-research-agency (variety) and close to the SaaS industry page keyword 'SaaS UI UX design agency'. onething.design, sda.company, orbix.studio and saasfactor.co rank for the same query. Revisit as a later BOFU only with a SaaS-specific angle (e.g. checking an agency's activation/retention evidence)."
+    },
+    {
+      "domain": "blog.flowpoint.ai",
+      "url": "https://blog.flowpoint.ai/post/v2/do-i-need-a-ux-agency-to-audit-my-website-this-is-what-you-should-consider/",
+      "title": "Do I Need a UX Agency to Audit My Website? This is What You Should Consider",
+      "keywords": ["ux audit agency vs freelancer", "who should do a ux audit", "ux audit agency vs freelancer vs ai tool"],
+      "estTraffic": null,
+      "silo": "ux-audit-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ux-audit-agency-vs-freelancer.json",
+      "notes": "Generic pros/cons of in-house vs agency; freelancer and AI as afterthoughts; no evaluator evidence. codewave.com/insights/?p=5049, 925studios.co/blog/ux-agency-vs-freelance-designer and orbix.studio/blogs/ux-audit-cost (provider-type section) rank for the same intent."
+    },
+    {
+      "domain": "orbix.studio",
+      "url": "https://orbix.studio/blogs/ux-audit-cost",
+      "title": "UX audit cost",
+      "keywords": ["ux audit cost", "ux audit pricing", "ux audit cost by provider type"],
+      "estTraffic": null,
+      "silo": "ux-audit-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Blocked for a standalone post: the hub owns 'How much does a UX audit cost?'. designstudiouiux.com, theskinsfactory.com and saashero.net (heuristic analysis costs B2B SaaS) also rank. Strengthen the hub's cost section instead (hub banking) or write only a narrow, non-overlapping angle later."
+    },
+    {
+      "domain": "baymard.com",
+      "url": "https://baymard.com/blog/gpt-ux-audit",
+      "title": "Testing ChatGPT-4 for UX audits",
+      "keywords": ["can chatgpt do a ux audit", "ai ux audit vs expert ux audit", "ai ux audit tool"],
+      "estTraffic": null,
+      "silo": "ux-audit-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Research institute, used as a cited source in ux-audit-agency-vs-freelancer. A later MOFU post 'ai ux audit tools vs expert audit' is possible but must not repeat the AI section of that post; tryzens.com and saashero.net also rank."
+    },
+    {
+      "domain": "eleken.co",
+      "url": "https://www.eleken.co/blog-posts/ux-audit-agency",
+      "title": "UX Audit Agency Guide: best providers, costs and how to choose",
+      "keywords": ["how to choose a ux audit company", "ux audit agency", "free ux audit vs paid ux audit"],
+      "estTraffic": null,
+      "silo": "ux-audit-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Deferred: 'how to choose a ux audit company' repeats the choose-ux-research-agency format; listicle SERP (musemind, lazarev, cieden). Partly absorbed by ux-audit-agency-vs-freelancer (quality test, quote inputs)."
     }
   ]
 }
