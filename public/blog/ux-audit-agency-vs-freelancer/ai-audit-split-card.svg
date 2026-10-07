@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1462" width="800" height="1462" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1462" fill="#FBFAFB"/>
+<text x="40" y="72" font-size="42" font-weight="800" fill="#020101">AI UX audit tools</text>
+<text x="40" y="114" font-size="28" font-weight="600" fill="#6B6B70">A pre-scan, not the findings</text>
+<rect x="40.5" y="150.5" width="719" height="390" rx="24" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="72" y="208" font-size="30" font-weight="800" fill="#020101">What AI audit tools handle well</text>
+<circle cx="92" cy="259" r="20" fill="#FFE3EC"/>
+<path d="M82 259 l7 8 l13 -15" fill="none" stroke="#E2225F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="134" y="268" font-size="28" font-weight="700" fill="#020101">Color contrast and text size</text>
+<circle cx="92" cy="327" r="20" fill="#FFE3EC"/>
+<path d="M82 327 l7 8 l13 -15" fill="none" stroke="#E2225F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="134" y="336" font-size="28" font-weight="700" fill="#020101">Missing form labels and alt</text>
+<text x="134" y="374" font-size="28" font-weight="700" fill="#020101">attributes</text>
+<circle cx="92" cy="433" r="20" fill="#FFE3EC"/>
+<path d="M82 433 l7 8 l13 -15" fill="none" stroke="#E2225F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="134" y="442" font-size="28" font-weight="700" fill="#020101">A fast first list of candidate</text>
+<text x="134" y="480" font-size="28" font-weight="700" fill="#020101">issues</text>
+<rect x="40.5" y="568.5" width="719" height="814" rx="24" fill="#020101"/>
+<text x="72" y="626" font-size="30" font-weight="800" fill="#FFFFFF">What they miss</text>
+<circle cx="92" cy="665" r="20" fill="none" stroke="#E2225F" stroke-width="3"/>
+<path d="M85 658 l14 14 M99 658 l-14 14" stroke="#E2225F" stroke-width="4" stroke-linecap="round"/>
+<text x="134" y="674" font-size="28" font-weight="800" fill="#FFFFFF">Interaction:</text>
+<text x="134" y="712" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">error states, focus order, what</text>
+<text x="134" y="746" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">happens after a tap</text>
+<circle cx="92" cy="797" r="20" fill="none" stroke="#E2225F" stroke-width="3"/>
+<path d="M85 790 l14 14 M99 790 l-14 14" stroke="#E2225F" stroke-width="4" stroke-linecap="round"/>
+<text x="134" y="806" font-size="28" font-weight="800" fill="#FFFFFF">Context:</text>
+<text x="134" y="844" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">who the user is and their task</text>
+<circle cx="92" cy="895" r="20" fill="none" stroke="#E2225F" stroke-width="3"/>
+<path d="M85 888 l14 14 M99 888 l-14 14" stroke="#E2225F" stroke-width="4" stroke-linecap="round"/>
+<text x="134" y="904" font-size="28" font-weight="800" fill="#FFFFFF">Business priority:</text>
+<text x="134" y="942" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">which issue costs revenue</text>
+<circle cx="92" cy="993" r="20" fill="none" stroke="#E2225F" stroke-width="3"/>
+<path d="M85 986 l14 14 M99 986 l-14 14" stroke="#E2225F" stroke-width="4" stroke-linecap="round"/>
+<text x="134" y="1002" font-size="28" font-weight="800" fill="#FFFFFF">Live behavior:</text>
+<text x="134" y="1040" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">GPT-4 found 26% of issues in</text>
+<text x="134" y="1074" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">screenshots, 14% on live pages</text>
+<text x="134" y="1108" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">(Baymard, 2023)</text>
+<text x="134" y="1202" font-size="26" font-weight="700" fill="#FFFFFF">Screenshots</text>
+<rect x="340" y="1172" width="360" height="40" rx="10" fill="#FFFFFF" fill-opacity="0.12"/>
+<rect x="340" y="1172" width="94" height="40" rx="10" fill="#E2225F"/>
+<text x="447.6" y="1202" font-size="26" font-weight="800" fill="#FFFFFF">26%</text>
+<text x="134" y="1272" font-size="26" font-weight="700" fill="#FFFFFF">Live pages</text>
+<rect x="340" y="1242" width="360" height="40" rx="10" fill="#FFFFFF" fill-opacity="0.12"/>
+<rect x="340" y="1242" width="50" height="40" rx="10" fill="#E2225F"/>
+<text x="404.4" y="1272" font-size="26" font-weight="800" fill="#FFFFFF">14%</text>
+<text x="134" y="1344" font-size="26" font-weight="500" fill="#FFFFFF" fill-opacity="0.7">Issues found vs human experts</text>
+<text x="40" y="1432" font-size="26" font-weight="600" fill="#6B6B70">Source: Baymard Institute, 2023 GPT-4 test</text>
+</svg>

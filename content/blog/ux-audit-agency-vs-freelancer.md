@@ -12,6 +12,7 @@ industries: [saas, ecommerce]
 tags: [ux audit, ux audit agency, freelance ux audit, ai ux audit, heuristic evaluation]
 keyword: "ux audit agency vs freelancer"
 funnel: bofu
+image: /blog/ux-audit-agency-vs-freelancer/cover.svg
 takeaways:
   - "Provider type changes what a UX audit finds: one evaluator finds 20–50% of usability problems, 3–5 independent evaluators 74–87%."
   - "A senior freelancer fits one platform, 2–3 key flows and an in-house owner for the fixes."
@@ -30,7 +31,7 @@ Before you settle UX audit agency vs freelancer, weigh one number from user expe
 
 A freelance UX audit is one expert's judgment; an agency audit can merge several. Your team knows the product best, which is its weakness, and an AI tool has no stake in the outcome. Our [UX audit services](/services/ux-audit-services/) sit in the agency column; this post says plainly where the other three are the better buy.
 
-<!-- visual: comparison matrix infographic, 4 columns (agency, freelancer, in-house team, AI tool) x 7 rows as in the table below; no prices. Alt: "Comparison matrix of a UX audit agency, a freelance UX auditor, an in-house team and an AI tool across evaluators, coverage, data, accessibility, evidence, roadmap ownership and lead time" -->
+![Comparison matrix of a UX audit agency, a freelance UX auditor, an in-house team and an AI tool across independent evaluators, coverage, analytics and recordings, WCAG 2.2 AA depth, evidence per finding, roadmap ownership and lead time](/blog/ux-audit-agency-vs-freelancer/audit-provider-matrix.svg "Four audit providers compared on seven rows")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -54,7 +55,7 @@ This compares audit providers only, not design hires. Read the evaluator row fir
 
 In Jakob Nielsen's original heuristic evaluation studies, single evaluators caught 20–50% of the usability problems and 3–5 usability specialists caught 74–87%, which is why [Nielsen Norman Group recommends 3–5 evaluators who review independently](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/) before comparing notes. [Hertzum and Jacobsen](https://www.tandfonline.com/doi/abs/10.1207/S15327590IJHC1501_14) named the reason the evaluator effect: across the 11 studies they reviewed, any two evaluators applying the same method to the same interface agreed on only 5–65% of the problems. A keyboard-first reviewer catches a focus trap in the date picker; a reviewer on a phone catches the Pay button hidden behind the keyboard.
 
-<!-- visual: coverage curve chart, share of usability problems found vs number of independent evaluators (1 = 20–50%, 3–5 = 74–87%, flattening after 5), source line "Nielsen Norman Group"; do not mark a reviewer count for our own audits. Alt: "Curve showing one evaluator finds 20 to 50% of usability problems and 3 to 5 independent evaluators find 74 to 87%" -->
+![Curve showing one evaluator finds 20 to 50% of usability problems and 3 to 5 independent evaluators find 74 to 87%](/blog/ux-audit-agency-vs-freelancer/evaluator-coverage-curve.svg "Share of usability problems found by number of independent evaluators (Nielsen Norman Group)")
 
 In our audits, more than one evaluator reviews the product independently before anyone reads another's notes. Then we merge: duplicates collapse into one entry, a finding only one reviewer flagged gets a second look against the evidence, and severity is agreed together.
 
@@ -103,7 +104,7 @@ That test measured GPT-4 in 2023, not today's models. [Baymard's later article o
 
 The buyer rule: ask any AI UX audit vendor for its published accuracy rate against human experts and how it was measured, the same demand [Nielsen Norman Group's conversation with Baymard's cofounders](https://www.nngroup.com/articles/baymard-ai-tool-accuracy/) makes.
 
-<!-- visual: split card, "What AI audit tools handle well" vs "What they miss"; only numbers: Baymard 2023, 26% of issues in screenshots vs 14% on live pages. Alt: "Split card comparing what AI UX audit tools handle well with what they miss, with Baymard's 26% screenshot and 14% live-page figures" -->
+![Split card comparing what AI UX audit tools handle well with what they miss, with Baymard's 26% screenshot and 14% live-page figures](/blog/ux-audit-agency-vs-freelancer/ai-audit-split-card.svg "What AI audit tools handle well and what they miss (Baymard, 2023)")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -144,7 +145,7 @@ Outside these cases, an agency is not automatically better. If two or more lines
 
 Take one illustrative checkout issue, not a client finding: on mobile, an invalid ZIP code error appears off-screen and the Pay button does nothing. Four provider types write it like this.
 
-<!-- visual: annotated sample finding (4-up), the same hypothetical ZIP-code error written by an AI tool, an in-house note, a freelancer and an agency report, each annotated with what is missing; label "Illustrative example". Alt: "Illustrative example of one checkout usability issue written four ways by an AI tool, an in-house team, a freelancer and an agency, annotated with missing evidence, severity and effort" -->
+![Illustrative example of one checkout usability issue written four ways by an AI tool, an in-house team, a freelancer and an agency, annotated with missing evidence, severity and effort](/blog/ux-audit-agency-vs-freelancer/sample-finding-four-ways.svg "Illustrative example: one ZIP-code error written four ways")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -161,7 +162,7 @@ The fourth version costs more because someone opened the analytics and agreed on
 
 **Run an AI pre-scan and an internal sweep first, fix the obvious items, then spend the paid audit on revenue or risk flows and test the riskiest with users.**
 
-<!-- visual: hybrid workflow flow, 4 steps left to right (AI pre-scan -> internal triage -> expert audit of top flows -> usability test of riskiest flow) with owner and hand-off under each. Alt: "Four-step hybrid UX audit flow from AI pre-scan and internal triage to an expert audit of top flows and a usability test of the riskiest flow, with owner and hand-off per step" -->
+![Four-step hybrid UX audit flow from AI pre-scan and internal triage to an expert audit of top flows and a usability test of the riskiest flow, with owner and hand-off per step](/blog/ux-audit-agency-vs-freelancer/hybrid-audit-flow.svg "Who owns each step of a hybrid UX audit and what it hands off")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -180,7 +181,7 @@ You avoid paying twice because the auditor does not bill hours for contrast fixe
 
 Without them, the cheaper quote is often just a smaller audit.
 
-<!-- visual: scope sheet, printable 1-page sheet with the 6 inputs below as fill-in rows, each with a one-line example. Alt: "One-page UX audit scope sheet with six inputs: flows, platforms, user roles, analytics access, accessibility target and decision deadline" -->
+![One-page UX audit scope sheet with six inputs: flows, platforms, user roles, analytics access, accessibility target and decision deadline](/blog/ux-audit-agency-vs-freelancer/audit-scope-sheet.svg "Fill in these six inputs before you ask for a quote")
 
 <details class="astext"><summary>Show as text</summary>
 

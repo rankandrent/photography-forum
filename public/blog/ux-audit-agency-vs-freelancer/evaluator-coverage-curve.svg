@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="900" fill="#FBFAFB"/>
+<text x="40" y="72" font-size="38" font-weight="800" fill="#020101">More evaluators find more</text>
+<text x="40" y="114" font-size="28" font-weight="600" fill="#6B6B70">Heuristic evaluation, independent reviews</text>
+<rect x="40.5" y="150.5" width="719" height="590" rx="24" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M150 226 V640 H730" fill="none" stroke="#020101" stroke-width="2"/>
+<path d="M150 562.0 H720" stroke="#E8E8EB" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="136" y="571.0" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="end">20%</text>
+<path d="M150 445.0 H720" stroke="#E8E8EB" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="136" y="454.0" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="end">50%</text>
+<path d="M150 351.4 H720" stroke="#E8E8EB" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="136" y="360.4" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="end">74%</text>
+<path d="M150 300.7 H720" stroke="#E8E8EB" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="136" y="309.7" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="end">87%</text>
+<path d="M150 250.0 H720" stroke="#E8E8EB" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="136" y="259.0" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="end">100%</text>
+<text x="136" y="649" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="end">0%</text>
+<text x="150.0" y="680" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="middle">1</text>
+<text x="276.6666666666667" y="680" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="middle">3</text>
+<text x="403.33333333333337" y="680" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="middle">5</text>
+<text x="720.0" y="680" font-size="26" font-weight="700" fill="#6B6B70" text-anchor="middle">10</text>
+<text x="435.0" y="718" font-size="26" font-weight="700" fill="#020101" text-anchor="middle">Independent evaluators</text>
+<path d="M150.0 445.0 L213.3 351.4 L276.7 316.3 L340.0 304.6 L403.3 300.7 L530.0 294.9 L720.0 292.9 L720.0 320.2 L530.0 324.1 L403.3 331.9 L340.0 339.7 L276.7 351.4 L213.3 437.2 L150.0 562.0 Z" fill="#FFE3EC" stroke="#E2225F" stroke-width="2" stroke-dasharray="6 6" stroke-linejoin="round"/>
+<rect x="141.0" y="445.0" width="18" height="117.0" rx="9" fill="#E2225F"/>
+<rect x="276.7" y="300.7" width="126.7" height="50.7" rx="8" fill="#E2225F"/>
+<rect x="180.0" y="471.0" width="232" height="84" rx="14" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="2"/>
+<text x="198.0" y="505.0" font-size="26" font-weight="800" fill="#020101">1 evaluator</text>
+<text x="198.0" y="539.0" font-size="26" font-weight="700" fill="#E2225F">20–50%</text>
+<rect x="433.3" y="401.4" width="250" height="84" rx="14" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="2"/>
+<path d="M393.3 351.4 L433.3 421.4" stroke="#E2225F" stroke-width="2"/>
+<text x="451.33333333333337" y="435.4" font-size="26" font-weight="800" fill="#020101">3–5 evaluators</text>
+<text x="451.33333333333337" y="469.4" font-size="26" font-weight="700" fill="#E2225F">74–87%</text>
+<text x="720.0" y="274.9" font-size="26" font-weight="600" fill="#6B6B70" text-anchor="end">flattens after 5</text>
+<text x="70" y="206" font-size="26" font-weight="700" fill="#020101">Usability problems found</text>
+<text x="40" y="790" font-size="26" font-weight="600" fill="#6B6B70">Source: Nielsen Norman Group</text>
+<text x="40" y="826" font-size="26" font-weight="600" fill="#6B6B70">(Nielsen's heuristic evaluation studies)</text>
+<text x="40" y="862" font-size="26" font-weight="500" fill="#6B6B70">Shading between the ranges is a sketch.</text>
+</svg>
