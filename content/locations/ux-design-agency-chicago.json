@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 7,
   "title": "Chicago",
   "city": "Chicago",
@@ -15,7 +15,7 @@
   },
   "summary": "Research-led UX design for Chicago fintech, insurance, logistics and B2B SaaS teams.",
   "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, working with Chicago product teams on user research, interface design, prototyping and usability testing. Chicago engagements focus on dense, data-heavy software: order entry, claims, dispatch and analytics. Projects start at $5,000 for a UX audit, and our Eastern Time base sits one hour ahead of Chicago, so almost the whole workday is shared.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "sections": [
     {
       "h2": "Why do Chicago product teams bring in an outside UX design agency?",
@@ -257,5 +257,6 @@
     "Figma",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-07"
 }
