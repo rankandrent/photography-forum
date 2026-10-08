@@ -220,7 +220,7 @@ Design system governance turns these numbers into decisions. Our engagement hand
 
 Our published [design system price range of $60,000–$180,000 over 8–16 weeks](/services/design-system-services/#how-much-does-a-design-system-cost) depends on scope, including platforms and the number of brands or themes. When the fixed-scope proposal arrives, put its price in the build row, re-run the three scenarios, and your design system ROI carries a real cost line instead of a placeholder.
 
-Your sprints, payroll and tickets fill most of the sheet, but the build fee is the one row your own data cannot fill. When you are ready for it, [bring your baseline sheet to us](/contact/): every project begins with a free consultation and a fixed-scope proposal.
+Your sprints, payroll and tickets fill most of the sheet, and vendor pricing pages fill the tooling line, but the agency fee in the build row has to come from a proposal. When you are ready for it, [bring your baseline sheet to us](/contact/): every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
