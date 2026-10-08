@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 8,
   "title": "St. Louis",
   "city": "St. Louis",
@@ -15,7 +15,7 @@
   },
   "summary": "Remote-first UX research and design for St. Louis agtech, bioscience, healthcare and financial services teams.",
   "abstract": "Our remote-first UX design agency, headquartered in Reston, Virginia, helps product teams in St. Louis turn specialist software into tools people can use without training. We research users such as agronomists, lab scientists, clinicians and financial advisors, then design and test the interface. Audits start at $5,000, and our Eastern Time day overlaps all but one hour of the Central Time workday.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-08",
   "sections": [
     {
       "h2": "What can a St. Louis UX design agency fix in a specialist product?",
@@ -254,5 +254,6 @@
     "HIPAA",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-08"
 }
