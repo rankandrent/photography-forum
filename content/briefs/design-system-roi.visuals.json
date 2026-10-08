@@ -1,0 +1,31 @@
+[
+  {
+    "frontmatter": {
+      "image": "/blog/design-system-roi/cover.svg"
+    }
+  },
+  {
+    "marker": "<!-- visual: formula anatomy diagram — gain (hours saved × loaded cost) over cost (build + upkeep + adoption support), with a 3–5 year horizon bracket underneath -->",
+    "markdown": "![Formula anatomy of design system ROI: hours saved times loaded hourly cost gives the gain, build plus upkeep plus adoption support gives the cost, measured over a 3 to 5 year horizon](/blog/design-system-roi/roi-formula-anatomy.svg \"The design system ROI formula, part by part\")"
+  },
+  {
+    "marker": "<!-- visual: baseline worksheet infographic — the 5 inputs as a fill-in sheet with units -->",
+    "markdown": "![Fill-in worksheet with the 5 design system ROI inputs: baseline UI hours, loaded hourly cost, share of time saved as low, expected and high, build cost and annual upkeep, each with its unit and source](/blog/design-system-roi/roi-input-worksheet.svg \"The 5 inputs of a design system ROI model\")"
+  },
+  {
+    "marker": "<!-- visual: break-even line chart — cumulative cost vs cumulative savings over 36 months, build dip in months 1–3, payback month marked for low/expected/high -->",
+    "markdown": "![Illustrative break-even chart for a 3-team product over 36 months, showing cumulative cost against cumulative savings, the dip during the 3-month build, and payback at month 16 in the high scenario and month 23 in the expected scenario, with the low scenario still below break-even](/blog/design-system-roi/break-even-chart.svg \"Illustrative model with invented inputs: cumulative cost vs savings\")"
+  },
+  {
+    "marker": "<!-- visual: stacked cost bar — total cost of ownership: build fee, internal pairing hours, migration, adoption support, tooling, upkeep; the 5 commonly missed layers highlighted -->",
+    "markdown": "![Stacked bar of design system total cost: build fee at the base, then internal pairing hours, migration, adoption support, tooling and upkeep, with the five commonly missed layers highlighted](/blog/design-system-roi/cost-stack.svg \"The full cost stack, not only the build fee\")"
+  },
+  {
+    "marker": "<!-- visual: decision tree — teams on the product? product being sunset? rebrand planned? engineer owner? -> UI kit + tokens / design system now / wait 2 quarters -->",
+    "markdown": "![Decision tree for design system ROI: number of teams on the product, whether the product is being sunset, whether a rebrand is planned and whether an engineer will own the coded library, leading to a UI kit plus tokens, a design system now, or waiting 2 quarters](/blog/design-system-roi/fit-decision-tree.svg \"UI kit, design system now, or wait\")"
+  },
+  {
+    "marker": "<!-- visual: one-page business case mock — document thumbnail with the 6 blocks and CFO/CTO/CPO headline tabs -->",
+    "markdown": "![One-page design system business case template with six blocks: problem in hours, the ask, payback range, risks, metrics to report and decision date, with headline tabs for the CFO, CTO and CPO](/blog/design-system-roi/business-case-one-pager.svg \"One-page business case template to copy\")"
+  }
+]

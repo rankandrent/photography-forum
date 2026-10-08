@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1326" width="800" height="1326" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1326" rx="24" fill="#FBFAFB"/>
+<text x="40" y="72" font-size="36" font-weight="800" fill="#020101">The 5 inputs, filled in by you</text>
+<g id="legend">
+<rect x="40" y="104" width="720" height="72" rx="36" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="72" y="150" font-size="26" font-weight="800" fill="#020101">Input</text>
+<rect x="170" y="120" width="91.12" height="42" rx="21" fill="#FFE3EC" stroke="#FFE3EC"/><text x="215.56" y="150" font-size="26" fill="#020101" text-anchor="middle">Unit</text>
+<text x="289.12" y="150" font-size="26" fill="#6B6B70">Where it comes from</text>
+</g>
+<g id="r1">
+<rect x="40" y="208" width="720" height="186" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="254" r="22" fill="#E2225F"/><text x="84" y="263" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="124" y="264" font-size="30" font-weight="800" fill="#020101">Baseline UI hours</text>
+<rect x="124" y="286" width="380.5" height="46" rx="23" fill="#FFE3EC" stroke="#FFE3EC"/><text x="314.25" y="318" font-size="26" fill="#020101" text-anchor="middle">Hours per sprint per team</text>
+<text x="124" y="372" font-size="26" fill="#6B6B70">2 sprints of time sampling</text>
+<rect x="600" y="232" width="136" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+</g>
+<g id="r2">
+<rect x="40" y="414" width="720" height="186" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="460" r="22" fill="#E2225F"/><text x="84" y="469" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="124" y="470" font-size="30" font-weight="800" fill="#020101">Loaded hourly cost</text>
+<rect x="124" y="492" width="173.8" height="46" rx="23" fill="#FFE3EC" stroke="#FFE3EC"/><text x="210.9" y="524" font-size="26" fill="#020101" text-anchor="middle">$ per hour</text>
+<text x="124" y="578" font-size="26" fill="#6B6B70">Payroll, or BLS median pay ÷ 0.70</text>
+<rect x="600" y="438" width="136" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+</g>
+<g id="r3">
+<rect x="40" y="620" width="720" height="220" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="666" r="22" fill="#E2225F"/><text x="84" y="675" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="124" y="676" font-size="30" font-weight="800" fill="#020101">Share of time saved</text>
+<rect x="124" y="698" width="352.94" height="46" rx="23" fill="#FFE3EC" stroke="#FFE3EC"/><text x="300.47" y="730" font-size="26" fill="#020101" text-anchor="middle">% low / expected / high</text>
+<text x="124" y="784" font-size="26" fill="#6B6B70">Your assumption, kept well under Sparkbox's</text>
+<text x="124" y="818" font-size="26" fill="#6B6B70">half-time result</text>
+<rect x="600" y="644" width="36" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+<rect x="650" y="644" width="36" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+<rect x="700" y="644" width="36" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+</g>
+<g id="r4">
+<rect x="40" y="860" width="720" height="220" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="906" r="22" fill="#E2225F"/><text x="84" y="915" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="124" y="916" font-size="30" font-weight="800" fill="#020101">Build cost</text>
+<rect x="124" y="938" width="49.78" height="46" rx="23" fill="#FFE3EC" stroke="#FFE3EC"/><text x="148.89" y="970" font-size="26" fill="#020101" text-anchor="middle">$</text>
+<text x="124" y="1024" font-size="26" fill="#6B6B70">Agency fee + internal pairing hours ×</text>
+<text x="124" y="1058" font-size="26" fill="#6B6B70">loaded cost</text>
+<rect x="600" y="884" width="136" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+</g>
+<g id="r5">
+<rect x="40" y="1100" width="720" height="186" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="1146" r="22" fill="#E2225F"/><text x="84" y="1155" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="124" y="1156" font-size="30" font-weight="800" fill="#020101">Annual upkeep</text>
+<rect x="124" y="1178" width="476.96000000000004" height="46" rx="23" fill="#FFE3EC" stroke="#FFE3EC"/><text x="362.48" y="1210" font-size="26" fill="#020101" text-anchor="middle">Owner hours per year + tooling $</text>
+<text x="124" y="1264" font-size="26" fill="#6B6B70">Named owners' time share + license quotes</text>
+<rect x="600" y="1124" width="136" height="44" rx="8" fill="#FFFFFF" stroke="#E2225F" stroke-dasharray="5 4"/>
+</g>
+</svg>

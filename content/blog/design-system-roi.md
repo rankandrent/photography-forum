@@ -12,6 +12,7 @@ industries: [saas]
 tags: [design system roi, design system business case, design system payback period, design system maintenance cost, design system adoption]
 keyword: "design system roi"
 funnel: bofu
+image: /blog/design-system-roi/cover.svg
 takeaways:
   - "Design system ROI is (gain − cost) ÷ cost, where gain is UI hours saved × loaded hourly cost and cost is build plus upkeep, over 3–5 years."
   - "Measure a baseline in 2–4 weeks before the build: time per screen, duplicate components from a UI inventory and UI bug tickets."
@@ -32,7 +33,6 @@ The arithmetic behind design system ROI is the standard one: ROI = (gain − cos
 
 For the horizon, Maximilian Speicher and Guido Baena Wehrmann's [ROI formula in Smashing Magazine](https://www.smashingmagazine.com/2022/09/formula-roi-design-system/) (2022) models a design system over 5 years, starting with a productivity dip while the team builds and reaching savings only after a break-even point. Use 5 years when the roadmap is stable and 3 years when a replatform or rebrand is likely sooner.
 
-<!-- visual: formula anatomy diagram — gain (hours saved × loaded cost) over cost (build + upkeep + adoption support), with a 3–5 year horizon bracket underneath -->
 ![Formula anatomy of design system ROI: hours saved times loaded hourly cost gives the gain, build plus upkeep plus adoption support gives the cost, measured over a 3 to 5 year horizon](/blog/design-system-roi/roi-formula-anatomy.svg "The design system ROI formula, part by part")
 
 <details class="astext"><summary>Show as text</summary>
@@ -62,7 +62,6 @@ Time saved moves design system ROI more than any other input, so give it a range
 
 Build cost is the agency fee plus your engineers' pairing hours on coded components; take the fee from our published design system price range and list internal hours on their own line. For design system maintenance cost, skip rule-of-thumb percentages: name the owners, estimate the share of their month, and add tooling licenses.
 
-<!-- visual: baseline worksheet infographic — the 5 inputs as a fill-in sheet with units -->
 ![Fill-in worksheet with the 5 design system ROI inputs: baseline UI hours, loaded hourly cost, share of time saved as low, expected and high, build cost and annual upkeep, each with its unit and source](/blog/design-system-roi/roi-input-worksheet.svg "The 5 inputs of a design system ROI model")
 
 <details class="astext"><summary>Show as text</summary>
@@ -97,7 +96,6 @@ The duplicate count is the UI inventory that opens a design system engagement wi
 
 Every input here is invented to show the mechanics; it is a model, not a client result. Picture a [software as a service (SaaS) product](/industries/saas/) built by 3 teams, with a 12-week build at $120,000, picked from inside the published range. Savings start at zero and reach the full rate by month 12, because adoption is gradual.
 
-<!-- visual: break-even line chart — cumulative cost vs cumulative savings over 36 months, build dip in months 1–3, payback month marked for low/expected/high -->
 ![Illustrative break-even chart for a 3-team product over 36 months, showing cumulative cost against cumulative savings, the dip during the 3-month build, and payback at month 16 in the high scenario and month 23 in the expected scenario, with the low scenario still below break-even](/blog/design-system-roi/break-even-chart.svg "Illustrative model with invented inputs: cumulative cost vs savings")
 
 <details class="astext"><summary>Show as text</summary>
@@ -133,7 +131,6 @@ Copy the assumptions into a spreadsheet, replace each row with your baseline, an
 
 Count only the build fee and payback looks months earlier than it is, a gap finance spots in the first review.
 
-<!-- visual: stacked cost bar — total cost of ownership: build fee, internal pairing hours, migration, adoption support, tooling, upkeep; the 5 commonly missed layers highlighted -->
 ![Stacked bar of design system total cost: build fee at the base, then internal pairing hours, migration, adoption support, tooling and upkeep, with the five commonly missed layers highlighted](/blog/design-system-roi/cost-stack.svg "The full cost stack, not only the build fee")
 
 <details class="astext"><summary>Show as text</summary>
@@ -162,7 +159,6 @@ Team count draws the line: a full design system fits when 2 or more teams build 
 - **A rebrand planned with no time to tokenize**, because components built on hard-coded values get rebuilt within months.
 - **No engineer willing to own the coded library**, because a Figma-only system saves design time but little build time, where most UI hours sit.
 
-<!-- visual: decision tree — teams on the product? product being sunset? rebrand planned? engineer owner? -> UI kit + tokens / design system now / wait 2 quarters -->
 ![Decision tree for design system ROI: number of teams on the product, whether the product is being sunset, whether a rebrand is planned and whether an engineer will own the coded library, leading to a UI kit plus tokens, a design system now, or waiting 2 quarters](/blog/design-system-roi/fit-decision-tree.svg "UI kit, design system now, or wait")
 
 <details class="astext"><summary>Show as text</summary>
@@ -184,7 +180,6 @@ A design system business case moves faster with one headline per approver. The C
 
 Put the low scenario first, because finance trusts the conservative number. Drop any headline multiple about the ROI of a design system that you cannot trace to a published method and sample size. Name 3 risks with a mitigation each: low adoption (targets per team), component scope creep (a fixed v1 list) and the owner leaving (two named owners).
 
-<!-- visual: one-page business case mock — document thumbnail with the 6 blocks and CFO/CTO/CPO headline tabs -->
 ![One-page design system business case template with six blocks: problem in hours, the ask, payback range, risks, metrics to report and decision date, with headline tabs for the CFO, CTO and CPO](/blog/design-system-roi/business-case-one-pager.svg "One-page business case template to copy")
 
 <details class="astext"><summary>Show as text</summary>

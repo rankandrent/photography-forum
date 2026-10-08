@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1220" width="800" height="1220" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1220" rx="24" fill="#FBFAFB"/>
+<path d="M70 112 V64 q0 -16 16 -16 h112 q16 0 16 16 V112 z" fill="#E2225F"/>
+<text x="142" y="94" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">CFO</text>
+<path d="M230 112 V64 q0 -16 16 -16 h112 q16 0 16 16 V112 z" fill="#FFE3EC"/>
+<text x="302" y="94" font-size="28" font-weight="800" fill="#020101" text-anchor="middle">CTO</text>
+<path d="M390 112 V64 q0 -16 16 -16 h112 q16 0 16 16 V112 z" fill="#FFE3EC"/>
+<text x="462" y="94" font-size="28" font-weight="800" fill="#020101" text-anchor="middle">CPO</text>
+<rect x="40" y="112" width="720" height="1068" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="112" width="720" height="10" rx="5" fill="#E2225F"/>
+<g id="b1">
+<rect x="70" y="120" width="660" height="182" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="112" cy="160" r="20" fill="#FFE3EC"/><text x="112" y="169" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">1</text>
+<text x="146" y="170" font-size="28" font-weight="800" fill="#020101">Problem in hours:</text>
+<text x="94" y="212" font-size="26" fill="#6B6B70">Our <tspan fill="#E2225F" font-weight="700">[N]</tspan> teams spend <tspan fill="#E2225F" font-weight="700">[X]</tspan> UI hours a month;</text>
+<text x="94" y="246" font-size="26" fill="#6B6B70"><tspan fill="#E2225F" font-weight="700">[Y]</tspan> duplicate components; <tspan fill="#E2225F" font-weight="700">[Z]</tspan> UI bug</text>
+<text x="94" y="280" font-size="26" fill="#6B6B70">tickets a quarter.</text>
+</g>
+<g id="b2">
+<rect x="70" y="316" width="660" height="148" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="112" cy="356" r="20" fill="#FFE3EC"/><text x="112" y="365" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">2</text>
+<text x="146" y="366" font-size="28" font-weight="800" fill="#020101">The ask:</text>
+<text x="94" y="408" font-size="26" fill="#6B6B70"><tspan fill="#E2225F" font-weight="700">[Build fee]</tspan> + <tspan fill="#E2225F" font-weight="700">[internal hours]</tspan> over</text>
+<text x="94" y="442" font-size="26" fill="#6B6B70"><tspan fill="#E2225F" font-weight="700">[weeks]</tspan>, then <tspan fill="#E2225F" font-weight="700">[upkeep]</tspan> a year.</text>
+</g>
+<g id="b3">
+<rect x="70" y="478" width="660" height="148" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="112" cy="518" r="20" fill="#FFE3EC"/><text x="112" y="527" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">3</text>
+<text x="146" y="528" font-size="28" font-weight="800" fill="#020101">Payback range:</text>
+<text x="94" y="570" font-size="26" fill="#6B6B70">Low: <tspan fill="#E2225F" font-weight="700">[month or none]</tspan>. Expected: <tspan fill="#E2225F" font-weight="700">[month]</tspan>.</text>
+<text x="94" y="604" font-size="26" fill="#6B6B70">High: <tspan fill="#E2225F" font-weight="700">[month]</tspan>.</text>
+</g>
+<g id="b4">
+<rect x="70" y="640" width="660" height="148" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="112" cy="680" r="20" fill="#FFE3EC"/><text x="112" y="689" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">4</text>
+<text x="146" y="690" font-size="28" font-weight="800" fill="#020101">Risks:</text>
+<text x="94" y="732" font-size="26" fill="#6B6B70">Low adoption, component scope creep, owner</text>
+<text x="94" y="766" font-size="26" fill="#6B6B70">leaving, with a mitigation for each.</text>
+</g>
+<g id="b5">
+<rect x="70" y="802" width="660" height="182" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="112" cy="842" r="20" fill="#FFE3EC"/><text x="112" y="851" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">5</text>
+<text x="146" y="852" font-size="28" font-weight="800" fill="#020101">Metrics we will report:</text>
+<text x="94" y="894" font-size="26" fill="#6B6B70">Adoption rate, component reuse rate, time</text>
+<text x="94" y="928" font-size="26" fill="#6B6B70">per new screen, UI bug count, every</text>
+<text x="94" y="962" font-size="26" fill="#6B6B70">quarter.</text>
+</g>
+<g id="b6">
+<rect x="70" y="998" width="660" height="148" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="112" cy="1038" r="20" fill="#FFE3EC"/><text x="112" y="1047" font-size="26" font-weight="800" fill="#E2225F" text-anchor="middle">6</text>
+<text x="146" y="1048" font-size="28" font-weight="800" fill="#020101">Decision date:</text>
+<text x="94" y="1090" font-size="26" fill="#6B6B70">Approve by <tspan fill="#E2225F" font-weight="700">[date]</tspan> to start the build in</text>
+<text x="94" y="1124" font-size="26" fill="#6B6B70"><tspan fill="#E2225F" font-weight="700">[quarter]</tspan>.</text>
+</g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1476" width="800" height="1476" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1476" rx="24" fill="#FBFAFB"/>
+<defs><marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E2225F"/></marker><marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6B6B70"/></marker></defs>
+<text x="40" y="72" font-size="34" font-weight="800" fill="#020101">UI kit, design system now, or wait</text>
+<g id="q1">
+<rect x="40" y="112" width="720" height="126" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="112" width="10" height="126" rx="5" fill="#E2225F"/>
+<circle cx="104" cy="175.0" r="26" fill="#020101"/><text x="104" y="185" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="150" y="164" font-size="28" font-weight="800" fill="#020101">2 or more teams on the same</text>
+<text x="150" y="202" font-size="28" font-weight="800" fill="#020101">product?</text>
+<path d="M205 238 V298" stroke="#6B6B70" stroke-width="3" marker-end="url(#am)"/>
+<text x="219" y="278" font-size="26" font-weight="800" fill="#6B6B70">No</text>
+<rect x="40" y="302" width="330" height="114" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-dasharray="8 6"/>
+<text x="64" y="346" font-size="26" font-weight="700" fill="#020101">UI kit + design</text>
+<text x="64" y="380" font-size="26" font-weight="700" fill="#020101">tokens</text>
+<path d="M595 238 V448" stroke="#E2225F" stroke-width="3" marker-end="url(#ap)"/>
+<text x="609" y="278" font-size="26" font-weight="800" fill="#E2225F">Yes</text>
+</g>
+<g id="q2">
+<rect x="40" y="452" width="720" height="126" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="452" width="10" height="126" rx="5" fill="#E2225F"/>
+<circle cx="104" cy="515.0" r="26" fill="#020101"/><text x="104" y="525" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="150" y="504" font-size="28" font-weight="800" fill="#020101">Product being sunset within your</text>
+<text x="150" y="542" font-size="28" font-weight="800" fill="#020101">horizon?</text>
+<path d="M595 578 V638" stroke="#6B6B70" stroke-width="3" marker-end="url(#am)"/>
+<text x="609" y="618" font-size="26" font-weight="800" fill="#6B6B70">Yes</text>
+<rect x="430" y="642" width="330" height="80" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-dasharray="8 6"/>
+<text x="454" y="686" font-size="26" font-weight="700" fill="#020101">no system</text>
+<path d="M205 578 V754" stroke="#E2225F" stroke-width="3" marker-end="url(#ap)"/>
+<text x="219" y="618" font-size="26" font-weight="800" fill="#E2225F">No</text>
+</g>
+<g id="q3">
+<rect x="40" y="758" width="720" height="126" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="758" width="10" height="126" rx="5" fill="#E2225F"/>
+<circle cx="104" cy="821.0" r="26" fill="#020101"/><text x="104" y="831" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="150" y="810" font-size="28" font-weight="800" fill="#020101">Rebrand planned with no time to</text>
+<text x="150" y="848" font-size="28" font-weight="800" fill="#020101">tokenize?</text>
+<path d="M205 884 V944" stroke="#6B6B70" stroke-width="3" marker-end="url(#am)"/>
+<text x="219" y="924" font-size="26" font-weight="800" fill="#6B6B70">Yes</text>
+<rect x="40" y="948" width="330" height="148" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-dasharray="8 6"/>
+<text x="64" y="992" font-size="26" font-weight="700" fill="#020101">wait 2 quarters</text>
+<text x="64" y="1026" font-size="26" font-weight="700" fill="#020101">and tokenize with</text>
+<text x="64" y="1060" font-size="26" font-weight="700" fill="#020101">the rebrand</text>
+<path d="M595 884 V1128" stroke="#E2225F" stroke-width="3" marker-end="url(#ap)"/>
+<text x="609" y="924" font-size="26" font-weight="800" fill="#E2225F">No</text>
+</g>
+<g id="q4">
+<rect x="40" y="1132" width="720" height="126" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="1132" width="10" height="126" rx="5" fill="#E2225F"/>
+<circle cx="104" cy="1195.0" r="26" fill="#020101"/><text x="104" y="1205" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="150" y="1184" font-size="28" font-weight="800" fill="#020101">An engineer will own the coded</text>
+<text x="150" y="1222" font-size="28" font-weight="800" fill="#020101">library?</text>
+<path d="M595 1258 V1318" stroke="#6B6B70" stroke-width="3" marker-end="url(#am)"/>
+<text x="609" y="1298" font-size="26" font-weight="800" fill="#6B6B70">No</text>
+<rect x="430" y="1322" width="330" height="114" rx="20" fill="#FFFFFF" stroke="#6B6B70" stroke-dasharray="8 6"/>
+<text x="454" y="1366" font-size="26" font-weight="700" fill="#020101">wait until</text>
+<text x="454" y="1400" font-size="26" font-weight="700" fill="#020101">someone can</text>
+<path d="M205 1258 V1318" stroke="#E2225F" stroke-width="3" marker-end="url(#ap)"/>
+<text x="219" y="1298" font-size="26" font-weight="800" fill="#E2225F">Yes</text>
+<rect x="40" y="1322" width="330" height="114" rx="20" fill="#E2225F" stroke="#E2225F"/>
+<text x="205" y="1390.0" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">design system now</text>
+</g>
+</svg>
