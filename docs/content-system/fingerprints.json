@@ -127,6 +127,50 @@
       "words": 1874,
       "tableCount": 1,
       "listStyle": "reasoned bullets (situation + because) + numbered hybrid steps"
+    },
+    {
+      "slug": "design-system-roi",
+      "hub": "design-system-services",
+      "type": "Guide",
+      "funnel": "bofu",
+      "introStyle": "question",
+      "h2Frames": [
+        "what",
+        "which inputs",
+        "how to measure",
+        "worked example",
+        "which costs missed",
+        "when never",
+        "how to build case",
+        "which metrics",
+        "what to bring",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "What does design system ROI actually measure?",
+        "Which 5 inputs does the calculation need?",
+        "How do you measure a baseline before the build?",
+        "Worked example: payback for a 3-team product",
+        "Which costs do most ROI models leave out?",
+        "When does a design system never pay back?",
+        "How do you turn the numbers into a one-page business case?",
+        "Which metrics prove the ROI after launch?",
+        "What should you bring to a design system scoping call?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "formula anatomy",
+        "input worksheet",
+        "break-even line chart + tables",
+        "cost stack",
+        "zigzag decision tree",
+        "one-page business case document"
+      ],
+      "ctaAngle": "bring your baseline sheet → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2179,
+      "tableCount": 4,
+      "listStyle": "worksheet tables + gated decision steps"
     }
   ]
 }

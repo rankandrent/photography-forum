@@ -30,6 +30,16 @@
           "funnel": "bofu"
         }
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "goal": "daily: 1 post for hub with fewest posts (14 hubs tied at 0; design-system-services picked for highest lead value)",
+      "jobs": [
+        {
+          "hub": "design-system-services",
+          "funnel": "bofu"
+        }
+      ]
     }
   ],
   "posts": [
@@ -74,6 +84,20 @@
       "externalLinks": 5,
       "qaLoops": 2,
       "notes": "Loop 1: fact-check 13 fixes (Nielsen figures traced to 1990/1992 studies, Hertzum & Jacobsen average agreement, no designer count / no unconfirmed promises, accessibility claims cut to site wording); QA: completeness gaps G1–G6, matrix cells, link count, closing CTA. QA closing rejected by orchestrator (unconfirmed promise). Loop 2: both PASS + 1 QA nit. Also fixed /work/ → /case-studies/ links on 6 location pages. Open: hub says 2 designers per audit, home.ts says 1–2."
+    },
+    {
+      "slug": "design-system-roi",
+      "hub": "design-system-services",
+      "keyword": "design system roi",
+      "funnel": "bofu",
+      "author": "talha-saleem",
+      "date": "2026-10-08",
+      "words": 2179,
+      "images": 7,
+      "internalLinks": 5,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "notes": "Loop 1: fact 9 fixes (BLS May 2025 update, $85 relabelled as assumption, \"the one\" study claim, Figma per-component detaches, Chromatic compares snapshots not Figma, service claims cut to site wording); QA completeness G1–G4 (governance, Storybook/Zeroheight, generic-claims, migration cost) + F1–F8. Loop 2: 1 fact fix (closing \"only row\" claim) + 1 QA nit. Backlinks from hub benefits card and SaaS industry cost section. Open: hub \"2+ teams\" vs startups page \"3+ squads\"."
     }
   ],
   "audits": []

@@ -19,8 +19,8 @@ takeaways:
   - "Model time saved as a low, expected and high range; Sparkbox's one test of IBM Carbon (8 developers, one form) is an upper bound, not a benchmark."
   - "Upkeep decides payback: in our illustrative 3-team model, the 10% scenario does not break even within 5 years."
   - "A full design system fits when 2 or more teams build on the same product; 1 product with 1–2 designers needs a UI kit and tokens first."
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 How do you prove design system ROI before anyone signs a $60,000 purchase order? Treat it as plain return on investment (ROI): count the user interface (UI) hours your teams spend today, price them at fully loaded labor cost, model a low, expected and high share of time saved, and subtract what the system costs to build and keep alive. The output is a payback month and a range that fits on one page for finance. Below is how to calculate design system ROI step by step, priced against the published fee for our [design system services](/services/design-system-services/), plus the cases where the honest answer is "not yet".
@@ -94,7 +94,7 @@ The duplicate count is the UI inventory that opens a design system engagement wi
 
 **In this illustrative model, a 3-team product pays back its $145,500 build plus upkeep in month 23 (expected) or month 16 (high), and not within 5 years (low).**
 
-Every input here is invented to show the mechanics; it is a model, not a client result. Picture a [software as a service (SaaS) product](/industries/saas/) built by 3 teams, with a 12-week build at $120,000, picked from inside the published range. Savings start at zero and reach the full rate by month 12, because adoption is gradual.
+Every input here is invented to show the mechanics; it is a model, not a client result. Picture a software as a service (SaaS) product built by 3 teams, the kind of setup our [SaaS UI UX design](/industries/saas/) page describes, with a 12-week build at $120,000, picked from inside the published range. Savings start at zero and reach the full rate by month 12, because adoption is gradual.
 
 ![Illustrative break-even chart for a 3-team product over 36 months, showing cumulative cost against cumulative savings, the dip during the 3-month build, and payback at month 16 in the high scenario and month 23 in the expected scenario, with the low scenario still below break-even](/blog/design-system-roi/break-even-chart.svg "Illustrative model with invented inputs: cumulative cost vs savings")
 
@@ -147,7 +147,7 @@ How to price each missed layer:
 - **Tooling.** Figma Organization or Enterprise seats for library analytics, Zeroheight, Chromatic; take current quotes from vendor pricing pages.
 - **Upkeep.** Name an in-house owner, or book an [embedded design team for upkeep](/services/ux-consulting-services/), which we price at $15,000–$40,000 per month.
 
-The worked example above folds adoption support into its 60 owner hours and has no migration row. Add 400 engineering hours of migration ($34,000) across months 4–9 and, in this illustrative sensitivity check, the expected case pays back in month 26 instead of 23.
+The worked example above folds adoption support into its 60 owner hours and has no migration row. Add 400 engineering hours of migration ($34,000) across months 4–9 and the same illustrative model's expected case pays back in month 26 instead of 23.
 
 Give each layer its own row in your ROI sheet so a reviewer can change one without rebuilding the rest.
 
