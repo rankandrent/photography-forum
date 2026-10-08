@@ -30,7 +30,7 @@ How do you prove design system ROI before anyone signs a $60,000 purchase order?
 
 The arithmetic behind design system ROI is the standard one: ROI = (gain − cost) ÷ cost × 100. Gain is hours saved on UI design, front-end build, UI quality assurance (QA) and rework, multiplied by loaded hourly cost. Cost is the build and maintenance cost plus adoption support.
 
-For the horizon, Maximilian Speicher and Guido Baena Wehrmann's [ROI formula in Smashing Magazine](https://www.smashingmagazine.com/2022/09/formula-roi-design-system/) (2022) models a design system over 5 years, with a ramp-up phase in which the team pays to build before savings arrive. <!-- source: https://www.smashingmagazine.com/2022/09/formula-roi-design-system/ --> Use 5 years when the roadmap is stable and 3 years when a replatform or rebrand is likely sooner.
+For the horizon, Maximilian Speicher and Guido Baena Wehrmann's [ROI formula in Smashing Magazine](https://www.smashingmagazine.com/2022/09/formula-roi-design-system/) (2022) models a design system over 5 years, starting with a productivity dip while the team builds and reaching savings only after a break-even point. Use 5 years when the roadmap is stable and 3 years when a replatform or rebrand is likely sooner.
 
 <!-- visual: formula anatomy diagram — gain (hours saved × loaded cost) over cost (build + upkeep + adoption support), with a 3–5 year horizon bracket underneath -->
 ![Formula anatomy of design system ROI: hours saved times loaded hourly cost gives the gain, build plus upkeep plus adoption support gives the cost, measured over a 3 to 5 year horizon](/blog/design-system-roi/roi-formula-anatomy.svg "The design system ROI formula, part by part")
@@ -56,11 +56,11 @@ Next, collect the five numbers the formula needs.
 
 **You need 5 inputs: baseline UI hours, loaded hourly cost, expected share of time saved, build cost and annual upkeep.**
 
-Loaded hourly cost is where most design system ROI models go soft, so anchor it to public data. The U.S. Bureau of Labor Statistics (BLS) lists May 2024 median pay of [$133,080 for software developers](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) <!-- source: https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm --> and [$98,090 for web and digital interface designers](https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm). <!-- source: https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm --> Its [Employer Costs for Employee Compensation release for June 2026](https://www.bls.gov/news.release/ecec.nr0.htm) puts wages and salaries at 70.0% of private-industry employer costs and benefits at 30.0%. <!-- source: https://www.bls.gov/news.release/ecec.nr0.htm --> Divide hourly pay (at 2,080 hours a year) by 0.70 for roughly $91 an hour per engineer and $67 per designer, or use your payroll figures.
+Loaded hourly cost is where most design system ROI models go soft, so anchor it to public data. The U.S. Bureau of Labor Statistics (BLS) lists [May 2025 median pay for computer occupations](https://www.bls.gov/ooh/computer-and-information-technology/) of $134,040 for software developers, quality assurance analysts and testers, and $99,520 for web developers and digital designers. Its [Employer Costs for Employee Compensation release for June 2026](https://www.bls.gov/news.release/ecec.nr0.htm) puts wages and salaries at 70.0% of private-industry employer costs and benefits at 30.0%. Divide hourly pay (at 2,080 hours a year) by 0.70 for roughly $92 an hour per engineer and $68 per designer, or use your payroll figures.
 
-Time saved moves design system ROI more than any other input, so give it a range. The one public timing test with a stated method comes from [Sparkbox](https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system): 8 of its developers built the same form page from scratch (median 4.2 hours) and with IBM's Carbon Design System (median 2 hours), learning time included. <!-- source: https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system --> It is a small sample on one form with a mature system, and everyone built from scratch first, so treat it as an upper bound for early months.
+Time saved moves design system ROI more than any other input, so give it a range. The one public timing test with a stated method comes from [Sparkbox](https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system): 8 of its developers built the same form page from scratch (median 4.2 hours) and with IBM's Carbon Design System (median 2 hours), learning time included. It is a small sample on one form with a mature system, and everyone built from scratch first, so treat it as an upper bound for early months.
 
-Build cost is the agency fee plus your engineers' pairing hours on coded components; take the fee from our [published design system price range](/services/design-system-services/#how-much-does-a-design-system-cost) and list internal hours on their own line. For design system maintenance cost, skip rule-of-thumb percentages: name the owners, estimate the share of their month, and add tooling licenses.
+Build cost is the agency fee plus your engineers' pairing hours on coded components; take the fee from our published design system price range and list internal hours on their own line. For design system maintenance cost, skip rule-of-thumb percentages: name the owners, estimate the share of their month, and add tooling licenses.
 
 <!-- visual: baseline worksheet infographic — the 5 inputs as a fill-in sheet with units -->
 ![Fill-in worksheet with the 5 design system ROI inputs: baseline UI hours, loaded hourly cost, share of time saved as low, expected and high, build cost and annual upkeep, each with its unit and source](/blog/design-system-roi/roi-input-worksheet.svg "The 5 inputs of a design system ROI model")
@@ -89,13 +89,13 @@ Each signal feeds your design system ROI model with a different number: hours, d
 2. **Duplicate count.** Screenshot every screen and group the parts by component: button styles, color values, spacing values. Eleven button variants where three would do is a number a chief financial officer (CFO) understands.
 3. **UI bug tickets.** Label last quarter's tickets in Jira or Linear as UI inconsistency or repeated fix, and count them per month.
 
-The duplicate count is the [UI inventory that opens a design system engagement](/services/design-system-services/#how-does-the-design-system-process-work) with us, so a team that buys the build gets its baseline as a by-product. For a design system ROI estimate before any purchase, run signals 1 and 3 yourself: they need a spreadsheet, not a consultant.
+The duplicate count is the UI inventory that opens a design system engagement with us, so a team that buys the build gets its baseline as a by-product. For a design system ROI estimate before any purchase, run signals 1 and 3 yourself: they need a spreadsheet, not a consultant.
 
 ## Worked example: payback for a 3-team product
 
 **In this illustrative model, a 3-team product pays back a mid-range design system in month 23 expected, month 16 high, and not within 5 years low.**
 
-Every input here is invented to show the mechanics; it is a model, not a client result. Picture a software as a service (SaaS) product built by 3 teams, with a 12-week build at $120,000, picked from inside the published range. Savings start at zero and reach the full rate by month 12, because adoption is gradual.
+Every input here is invented to show the mechanics; it is a model, not a client result. Picture a [software as a service (SaaS) product](/industries/saas/) built by 3 teams, with a 12-week build at $120,000, picked from inside the published range. Savings start at zero and reach the full rate by month 12, because adoption is gradual.
 
 <!-- visual: break-even line chart — cumulative cost vs cumulative savings over 36 months, build dip in months 1–3, payback month marked for low/expected/high -->
 ![Illustrative break-even chart for a 3-team product over 36 months, showing cumulative cost against cumulative savings, the dip during the 3-month build, and payback at month 16 in the high scenario and month 23 in the expected scenario, with the low scenario still below break-even](/blog/design-system-roi/break-even-chart.svg "Illustrative model with invented inputs: cumulative cost vs savings")
@@ -144,7 +144,7 @@ From the base up: build fee (usually counted), then five layers often missed: in
 
 How to price each missed layer:
 
-- **Build slowdown.** The Smashing Magazine model gives the first half of the ramp-up no savings, so count engineers' pairing hours as cost.
+- **Build slowdown.** The Smashing Magazine model starts with a productivity dip before break-even, so count engineers' pairing hours as cost.
 - **Migration.** On an existing product, the system replaces duplicate patterns screen by screen, without a full redesign; estimate engineering hours per screen.
 - **Adoption support.** Our process closes with 2 rollout workshops; budget office hours and contribution reviews for two more quarters.
 - **Tooling.** Figma Organization or Enterprise seats for library analytics, Zeroheight, Chromatic; take current quotes from vendor pricing pages.
@@ -156,7 +156,7 @@ Give each layer its own row in your design system ROI sheet so a reviewer can ch
 
 **A design system never pays back when 1 small team builds 1 stable product, because the upkeep outruns the hours saved.**
 
-Team count draws the line: a full design system fits when 2 or more teams build on the same product, and below that, [a UI kit instead of a full design system](/services/design-system-services/#design-system-vs-ui-kit), plus design tokens, covers the need. Three more cases push design system ROI below zero:
+Team count draws the line: a full design system fits when 2 or more teams build on the same product, and below that, a UI kit plus design tokens covers the need. Three more cases push design system ROI below zero:
 
 - **A product being sunset**, because savings stop before the build is recovered.
 - **A rebrand planned with no time to tokenize**, because components built on hard-coded values get rebuilt within months.
@@ -204,7 +204,7 @@ Paste the text version into your own document and fill the brackets from your mo
 
 **4 metrics prove design system ROI after launch: adoption rate, component reuse rate, time per new screen and UI bug count.**
 
-To measure design system adoption in design files, use [Figma library analytics](https://help.figma.com/hc/en-us/articles/360039238353), available on the Organization and Enterprise plans; it shows component inserts and detaches by team and keeps up to a year of data. <!-- source: https://help.figma.com/hc/en-us/articles/360039238353 --> A component teams keep detaching is a library bug, so fix the component.
+To measure design system adoption in design files, use [Figma library analytics](https://help.figma.com/hc/en-us/articles/360039238353-View-and-explore-library-analytics), available on the Organization and Enterprise plans; it shows how often teams across your organization insert and detach each library component, with up to a year of history. A component teams keep detaching is a library bug, so fix the component.
 
 | Metric | Instrument | When to check |
 |---|---|---|

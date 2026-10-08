@@ -233,10 +233,9 @@
   "externalSources": [
     { "url": "https://www.smashingmagazine.com/2022/09/formula-roi-design-system/", "why": "Peer-published ROI formula (Speicher and Baena Wehrmann): 5-year horizon, productivity dip then break-even. Cite the concept; do not copy constants, structure or the $646,000 example." },
     { "url": "https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system", "why": "Only primary, checkable time-saved test: 8 developers, 4.2 h from scratch vs 2 h median with IBM Carbon (about 47%). State the small sample." },
-    { "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm", "why": "Median pay input for engineers (use the exact figure and year shown)." },
-    { "url": "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm", "why": "Median pay input for web developers and digital designers." },
-    { "url": "https://www.bls.gov/news.release/ecec.toc.htm", "why": "Employer Costs for Employee Compensation: benefits share used to get from salary to loaded cost." },
-    { "url": "https://help.figma.com/hc/en-us/articles/360039238353", "why": "Figma library analytics (inserts/detaches) for post-launch adoption. Writer: confirm the URL resolves to the library analytics article and the plan tiers; replace with the correct help URL if not." }
+    { "url": "https://www.bls.gov/ooh/computer-and-information-technology/", "why": "Median pay inputs. LINK-BUILDER 2026-10-08: replaces the two OOH profile pages (software-developers.htm, web-developers.htm) to keep external links at 5. The overview table shows May 2025 medians: $134,040 software developers, QA analysts and testers; $99,520 web developers and digital designers. The writer's May 2024 figures ($133,080, $98,090) were stale; the pages now show May 2025 data." },
+    { "url": "https://www.bls.gov/news.release/ecec.nr0.htm", "why": "ECEC June 2026 (released 2026-09-09): private industry wages and salaries 70.0%, benefits 30.0%. LINK-BUILDER: summary page nr0 used instead of toc." },
+    { "url": "https://help.figma.com/hc/en-us/articles/360039238353-View-and-explore-library-analytics", "why": "Figma library analytics: Organization and Enterprise plans, inserts and detaches, up to one year of history. LINK-BUILDER: canonical slug URL. The snippet did not confirm a per-team breakdown, so the sentence was reworded to 'teams across your organization'." }
   ],
   "visuals": [
     { "type": "formula anatomy diagram", "idea": "The ROI equation broken into labelled parts: hours saved x loaded cost = gain; build + upkeep + adoption = cost; horizon bracket underneath. Text version behind 'Show as text'." },
@@ -266,5 +265,31 @@
     "Originality: figr, lollypop, appstudio and supernova all open with headline multiples and a benefits list. Our order is definition -> inputs -> baseline -> worked example -> missed costs -> negative case -> one-pager -> post-launch metrics -> scoping. Do not paraphrase their 'speed, cost, quality, brand' pillars or lollypop's 'velocity, quality, alignment' framing.",
     "Banned-word watch: the topic invites 'leverage' and 'seamless'; both are banned. Write 'use' and name the actual handoff.",
     "Hub banking suggestion for the orchestrator: add one sentence to the hub's benefits or cost section linking 'design system ROI' to /blog/design-system-roi/ after publish."
+  ],
+  "backlinkSuggestions": [
+    {
+      "source": "content/services/design-system-services.json",
+      "section": "#what-are-the-benefits-of-a-design-system (cards item 'Reduces design and development time', body field; renders HTML via SemanticSections c.body)",
+      "currentText": "Designers assemble screens from ready components and engineers reuse tested code, which reduces the time from design to release.",
+      "newText": "Designers assemble screens from ready components and engineers reuse tested code, which reduces the time from design to release. To put a dollar figure on those saved hours before you fund the build, run the payback model in our <a href=\"/blog/design-system-roi/\">design system ROI</a> guide.",
+      "anchor": "design system ROI",
+      "why": "Hub links down to its post on the benefit the post quantifies. Benefits card rather than the cost section, which already holds the UX consulting link and is the hub's conversion block."
+    },
+    {
+      "source": "content/industries/saas.json",
+      "section": "#how-much-does-saas-ui-ux-design-cost (body field; renders HTML)",
+      "currentText": "A full platform with 8 roles, custom fields, SSO and a component library for 3 product teams sits near $180,000.",
+      "newText": "A full platform with 8 roles, custom fields, SSO and a component library for 3 product teams sits near $180,000. Teams that need finance sign-off for the component library can <a href=\"/blog/design-system-roi/\">model when a shared component library pays back</a> before they request a quote.",
+      "anchor": "model when a shared component library pays back",
+      "why": "The post's worked example is a 3-team SaaS product. This is the exact scenario named in the sentence, and the post links back to /industries/saas/."
+    },
+    {
+      "source": "content/industries/startups.json",
+      "section": "FAQ 'Should a startup build a full design system before Series A?' (faq a field; renders HTML)",
+      "currentText": "No. Before Series A, starter tokens and core components cover the product; a full design system pays off at Series B, when 3 or more squads ship in parallel.",
+      "newText": "Link 'a full design system pays off' to /blog/design-system-roi/#when-does-a-design-system-never-pay-back",
+      "anchor": "a full design system pays off",
+      "why": "Conditional. Apply only after SITE-FACT CONFLICT 1 is resolved (startups page says 3+ squads at Series B; hub and post say 2+ teams). Linking now would send readers to a contradicting threshold."
+    }
   ]
 }
