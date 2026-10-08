@@ -46,7 +46,7 @@ For the horizon, Maximilian Speicher and Guido Baena Wehrmann's [ROI formula in 
 
 Report three effects next to the dollar figure, not inside it:
 
-- **Brand consistency**, because shared design tokens hold the same color and type values in every product.
+- **Brand consistency and cheaper rebrands**, because shared design tokens hold the same color and type values in every product, so a later rebrand changes the tokens instead of every screen.
 - **Accessibility risk avoided**, because a component that meets Web Content Accessibility Guidelines (WCAG) 2.2 contrast and focus rules fixes an issue once, not per screen.
 - **Onboarding speed**, because a new hire learns one component library instead of three teams' habits.
 
@@ -56,9 +56,9 @@ Next, collect the five numbers the formula needs.
 
 **You need 5 inputs: baseline UI hours, loaded hourly cost, expected share of time saved, build cost and annual upkeep.**
 
-Loaded hourly cost is where most design system ROI models go soft, so anchor it to public data. The U.S. Bureau of Labor Statistics (BLS) lists [May 2025 median pay for computer occupations](https://www.bls.gov/ooh/computer-and-information-technology/) of $134,040 for software developers, quality assurance analysts and testers, and $99,520 for web developers and digital designers. Its [Employer Costs for Employee Compensation release for June 2026](https://www.bls.gov/news.release/ecec.nr0.htm) puts wages and salaries at 70.0% of private-industry employer costs and benefits at 30.0%. Divide hourly pay (at 2,080 hours a year) by 0.70 for roughly $92 an hour per engineer and $68 per designer, or use your payroll figures.
+Loaded hourly cost is where most ROI models go soft, so anchor it to public data. The U.S. Bureau of Labor Statistics (BLS) lists [May 2025 median pay for computer occupations](https://www.bls.gov/ooh/computer-and-information-technology/) of $134,040 for software developers, quality assurance analysts and testers, and $99,520 for web developers and digital designers. Its [Employer Costs for Employee Compensation release for June 2026](https://www.bls.gov/news.release/ecec.nr0.htm) puts wages and salaries at 70.0% of private-industry employer costs and benefits at 30.0%. Divide hourly pay (at 2,080 hours a year) by 0.70 for roughly $92 an hour per engineer and $68 per designer, or use your payroll figures.
 
-Time saved moves design system ROI more than any other input, so give it a range. The one public timing test with a stated method comes from [Sparkbox](https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system): 8 of its developers built the same form page from scratch (median 4.2 hours) and with IBM's Carbon Design System (median 2 hours), learning time included. It is a small sample on one form with a mature system, and everyone built from scratch first, so treat it as an upper bound for early months.
+Time saved moves design system ROI more than any other input, so give it a range. One public timing test with a stated method comes from [Sparkbox](https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system): 8 of its developers built the same form page from scratch (median 4.2 hours) and with IBM's Carbon Design System (median 2 hours), learning time included. It is a small sample on one form with a mature system, and everyone built from scratch first, so treat it as an upper bound for early months.
 
 Build cost is the agency fee plus your engineers' pairing hours on coded components; take the fee from our published design system price range and list internal hours on their own line. For design system maintenance cost, skip rule-of-thumb percentages: name the owners, estimate the share of their month, and add tooling licenses.
 
@@ -82,17 +82,17 @@ The first input comes from your own sprints, so measure it next.
 
 **Measure a baseline in 2–4 weeks with 3 cheap signals: time per screen, duplicate components and UI bug tickets.**
 
-Each signal feeds your design system ROI model with a different number: hours, duplication and rework. Run them in parallel:
+Each signal feeds your model with a different number: hours, duplication and rework. Run them in parallel:
 
 1. **Time sampling.** Ask 3–5 designers and engineers to tag hours on new screens, UI fixes and rework for 2 sprints, logged during the sprint because remembered hours drift.
 2. **Duplicate count.** Screenshot every screen and group the parts by component: button styles, color values, spacing values. Eleven button variants where three would do is a number a chief financial officer (CFO) understands.
 3. **UI bug tickets.** Label last quarter's tickets in Jira or Linear as UI inconsistency or repeated fix, and count them per month.
 
-The duplicate count is the UI inventory that opens a design system engagement with us, so a team that buys the build gets its baseline as a by-product. For a design system ROI estimate before any purchase, run signals 1 and 3 yourself: they need a spreadsheet, not a consultant.
+The duplicate count is the UI inventory that opens a design system engagement with us, so a team that buys the build gets its duplicate count as a by-product. For a rough estimate before any purchase, run signals 1 and 3 yourself: they need a spreadsheet, not a consultant.
 
 ## Worked example: payback for a 3-team product
 
-**In this illustrative model, a 3-team product pays back a mid-range design system in month 23 expected, month 16 high, and not within 5 years low.**
+**In this illustrative model, a 3-team product pays back its $145,500 build plus upkeep in month 23 (expected) or month 16 (high), and not within 5 years (low).**
 
 Every input here is invented to show the mechanics; it is a model, not a client result. Picture a [software as a service (SaaS) product](/industries/saas/) built by 3 teams, with a 12-week build at $120,000, picked from inside the published range. Savings start at zero and reach the full rate by month 12, because adoption is gradual.
 
@@ -106,7 +106,7 @@ Every input here is invented to show the mechanics; it is a model, not a client 
 |---|---|
 | Teams | 3 product teams on one SaaS product |
 | Baseline UI hours | 1,000 hours a month across the 3 teams |
-| Loaded hourly cost | $85 blended (3 engineers to 1 designer, BLS medians ÷ 0.70) |
+| Loaded hourly cost | $85 blended, an assumption rounded down from the BLS-based blend of about $86 (3 engineers at $92 to 1 designer at $68) |
 | Build | $120,000 fee over 3 months + 300 internal pairing hours ($25,500) |
 | Upkeep | $6,000 a month from month 4: 60 owner hours ($5,100) + $900 tooling |
 | Savings ramp | 0% in months 1–3, rising evenly to the full rate by month 12 |
@@ -121,7 +121,7 @@ Every input here is invented to show the mechanics; it is a model, not a client 
 
 </details>
 
-The design system payback period is the number of months until cumulative savings cross cumulative cost, the break-even point on the chart. The low scenario shows that upkeep, not the build price, decides the case: at 10%, the system nets $2,500 a month once adopted and never recovers its $145,500 build inside 5 years. Halve the owner hours and the same scenario breaks even in month 39.
+The design system payback period is the number of months until cumulative savings cross cumulative cost, the break-even point on the chart. The low scenario shows that upkeep, not the build price, decides the case: at 10%, the system nets $2,500 a month once adopted and never recovers its $145,500 build inside 5 years. Halve the owner hours and the same scenario breaks even in month 39. Adoption speed is the other lever: as an illustrative sensitivity check, a ramp that reaches full rate in month 24 instead of month 12 moves expected payback from month 23 to month 32.
 
 Copy the assumptions into a spreadsheet, replace each row with your baseline, and keep all three scenarios.
 
@@ -145,13 +145,15 @@ How to price each missed layer:
 - **Migration.** On an existing product, the system replaces duplicate patterns screen by screen, without a full redesign; estimate engineering hours per screen.
 - **Adoption support.** Our process closes with 2 rollout workshops; budget office hours and contribution reviews for two more quarters.
 - **Tooling.** Figma Organization or Enterprise seats for library analytics, Zeroheight, Chromatic; take current quotes from vendor pricing pages.
-- **Upkeep.** Name an in-house owner, or book an [embedded design team for upkeep](/services/ux-consulting-services/), which our hub prices at $15,000–$40,000 per month.
+- **Upkeep.** Name an in-house owner, or book an [embedded design team for upkeep](/services/ux-consulting-services/), which we price at $15,000–$40,000 per month.
 
-Give each layer its own row in your design system ROI sheet so a reviewer can change one without rebuilding the rest.
+The worked example above folds adoption support into its 60 owner hours and has no migration row. Add 400 engineering hours of migration ($34,000) across months 4–9 and, in this illustrative sensitivity check, the expected case pays back in month 26 instead of 23.
+
+Give each layer its own row in your ROI sheet so a reviewer can change one without rebuilding the rest.
 
 ## When does a design system never pay back?
 
-**A design system never pays back when 1 small team builds 1 stable product, because the upkeep outruns the hours saved.**
+**A design system does not pay back when 1 small team builds 1 stable product and the upkeep outruns the hours saved.**
 
 Team count draws the line: a full design system fits when 2 or more teams build on the same product, and below that, a UI kit plus design tokens covers the need. Three more cases push design system ROI below zero:
 
@@ -170,7 +172,7 @@ Team count draws the line: a full design system fits when 2 or more teams build 
 
 </details>
 
-Run the model when 2 or more positive signals hold: several teams on one product, a second product or platform coming, one component in several versions, repeated accessibility fixes.
+Run the model when the tree ends at "design system now", and treat each extra signal as a reason to use the expected scenario rather than the low one: a second product or platform coming, one component in several versions, repeated accessibility fixes.
 
 ## How do you turn the numbers into a one-page business case?
 
@@ -178,7 +180,7 @@ Run the model when 2 or more positive signals hold: several teams on one product
 
 A design system business case moves faster with one headline per approver. The CFO wants the payback month and cash out by quarter; the chief technology officer (CTO) or vice president (VP) of engineering wants front-end hours and UI bug counts; the chief product officer (CPO) wants shipping speed and cross-product consistency.
 
-Put the low scenario first, because finance trusts the conservative number. Drop any headline multiple about the ROI of a design system that you cannot trace to a published method and sample size. Name 3 risks with a mitigation each: low adoption (targets per team), component scope creep (a fixed v1 list) and the owner leaving (two named owners).
+Put the low scenario first, because finance trusts the conservative number. Drop any headline figure of the "5–10x return" or "pays back in a few months" kind that arrives without a published method, sample size and team size, because finance will ask for all three. Name 3 risks with a mitigation each: low adoption (targets per team), component scope creep (a fixed v1 list) and the owner leaving (two named owners).
 
 ![One-page design system business case template with six blocks: problem in hours, the ask, payback range, risks, metrics to report and decision date, with headline tabs for the CFO, CTO and CPO](/blog/design-system-roi/business-case-one-pager.svg "One-page business case template to copy")
 
@@ -199,30 +201,32 @@ Paste the text version into your own document and fill the brackets from your mo
 
 **4 metrics prove design system ROI after launch: adoption rate, component reuse rate, time per new screen and UI bug count.**
 
-To measure design system adoption in design files, use [Figma library analytics](https://help.figma.com/hc/en-us/articles/360039238353-View-and-explore-library-analytics), available on the Organization and Enterprise plans; it shows how often teams across your organization insert and detach each library component, with up to a year of history. A component teams keep detaching is a library bug, so fix the component.
+To measure design system adoption in design files, use [Figma library analytics](https://help.figma.com/hc/en-us/articles/360039238353-View-and-explore-library-analytics), available on the Organization and Enterprise plans; it counts inserts per team and detaches per component, with up to a year of history.
 
 | Metric | Instrument | When to check |
 |---|---|---|
-| Adoption rate | Figma inserts and detaches per team | Monthly |
+| Adoption rate | Figma library analytics: inserts per team, detaches per component | Monthly |
 | Component reuse rate | Share of front-end screens importing library components; Storybook stories per component | Quarterly |
 | Time per new screen | Re-run the 2-sprint time sample | Months 3, 6 and 12 |
 | UI bug count | The same Jira or Linear label as the baseline | Quarterly |
 
-Chromatic visual tests catch coded components drifting from the Figma library. Report all four against the business case quarterly, as part of design system governance.
+Storybook is the catalogue of coded components, so the share of library components with a story is the coded-coverage figure to report. Zeroheight is the documentation site where teams look up usage rules. Chromatic visual tests compare each Storybook story with its last approved snapshot and flag any visual change for review.
+
+Design system governance turns these numbers into decisions. Our engagement hands over a governance model (who proposes, reviews and releases changes), 2 training workshops for product teams and version 1.0. From then on, the two named owners from your business case present the quarterly report, a monthly contribution review accepts or rejects new components, and a component with a high detach rate gets fixed or deprecated in the next release.
 
 ## What should you bring to a design system scoping call?
 
 **Bring 4 facts to a scoping call: products and platforms in scope, number of brands or themes, your front-end stack and your baseline hours.**
 
-These facts place a quote inside our [design system price range of $60,000–$180,000 over 8–16 weeks](/services/design-system-services/#how-much-does-a-design-system-cost). Swap that firm figure into the build row, re-run the three scenarios, and your design system ROI carries a real cost line instead of a placeholder.
+Our published [design system price range of $60,000–$180,000 over 8–16 weeks](/services/design-system-services/#how-much-does-a-design-system-cost) depends on scope, including platforms and the number of brands or themes. When the fixed-scope proposal arrives, put its price in the build row, re-run the three scenarios, and your design system ROI carries a real cost line instead of a placeholder.
 
-[Book a free consultation](/contact/) with your baseline sheet in hand and we scope the build against your own hours; every project begins with a free consultation and a fixed-scope proposal.
+Your sprints, payroll and tickets fill most of the sheet, but the build fee is the one row your own data cannot fill. When you are ready for it, [bring your baseline sheet to us](/contact/): every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
 ### Is a design system worth it for a small team?
 
-No, not for 1 product with 1–2 designers. Start with a UI kit and design tokens; a full design system fits when 2 or more teams build on the same product, because only then do savings outrun upkeep.
+No, not for 1 product with 1–2 designers. Start with a UI kit and design tokens; a full design system fits when 2 or more teams build on the same product.
 
 ### How long does a design system take to pay back?
 
