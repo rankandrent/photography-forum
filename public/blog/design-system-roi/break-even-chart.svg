@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2080" width="800" height="2080" font-family="Manrope, system-ui, sans-serif">
-<rect width="800" height="2080" rx="24" fill="#FBFAFB"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2112" width="800" height="2112" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="2112" rx="24" fill="#FBFAFB"/>
 <defs><marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E2225F"/></marker><marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6B6B70"/></marker></defs>
 <rect x="40" y="36" width="590.0" height="52" rx="26" fill="#E2225F" stroke="#E2225F"/><text x="62" y="71" font-size="26" font-weight="800" fill="#FFFFFF">Illustrative model, invented inputs</text>
 <text x="40" y="136" font-size="32" font-weight="800" fill="#020101">Cumulative cost vs cumulative savings</text>
@@ -85,27 +85,28 @@
 <text x="56" y="1468" font-size="26" fill="#020101">1,000 hours a month across the 3 teams</text>
 </g>
 <g id="a3">
-<rect x="40" y="1498" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="1498" width="720" height="160" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
 <text x="56" y="1540" font-size="26" font-weight="800" fill="#E2225F">Loaded hourly cost</text>
-<text x="56" y="1574" font-size="26" fill="#020101">$85 blended (3 engineers to 1 designer, BLS</text>
-<text x="56" y="1606" font-size="26" fill="#020101">medians ÷ 0.70)</text>
+<text x="56" y="1574" font-size="26" fill="#020101">$85 blended, an assumption rounded down from the</text>
+<text x="56" y="1606" font-size="26" fill="#020101">BLS-based blend of about $86 (3 engineers at $92</text>
+<text x="56" y="1638" font-size="26" fill="#020101">to 1 designer at $68)</text>
 </g>
 <g id="a4">
-<rect x="40" y="1636" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<text x="56" y="1678" font-size="26" font-weight="800" fill="#E2225F">Build</text>
-<text x="56" y="1712" font-size="26" fill="#020101">$120,000 fee over 3 months + 300 internal pairing</text>
-<text x="56" y="1744" font-size="26" fill="#020101">hours ($25,500)</text>
+<rect x="40" y="1668" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="56" y="1710" font-size="26" font-weight="800" fill="#E2225F">Build</text>
+<text x="56" y="1744" font-size="26" fill="#020101">$120,000 fee over 3 months + 300 internal pairing</text>
+<text x="56" y="1776" font-size="26" fill="#020101">hours ($25,500)</text>
 </g>
 <g id="a5">
-<rect x="40" y="1774" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<text x="56" y="1816" font-size="26" font-weight="800" fill="#E2225F">Upkeep</text>
-<text x="56" y="1850" font-size="26" fill="#020101">$6,000 a month from month 4: 60 owner hours</text>
-<text x="56" y="1882" font-size="26" fill="#020101">($5,100) + $900 tooling</text>
+<rect x="40" y="1806" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="56" y="1848" font-size="26" font-weight="800" fill="#E2225F">Upkeep</text>
+<text x="56" y="1882" font-size="26" fill="#020101">$6,000 a month from month 4: 60 owner hours</text>
+<text x="56" y="1914" font-size="26" fill="#020101">($5,100) + $900 tooling</text>
 </g>
 <g id="a6">
-<rect x="40" y="1912" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
-<text x="56" y="1954" font-size="26" font-weight="800" fill="#E2225F">Savings ramp</text>
-<text x="56" y="1988" font-size="26" fill="#020101">0% in months 1–3, rising evenly to the full rate</text>
-<text x="56" y="2020" font-size="26" fill="#020101">by month 12</text>
+<rect x="40" y="1944" width="720" height="128" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="56" y="1986" font-size="26" font-weight="800" fill="#E2225F">Savings ramp</text>
+<text x="56" y="2020" font-size="26" fill="#020101">0% in months 1–3, rising evenly to the full rate</text>
+<text x="56" y="2052" font-size="26" fill="#020101">by month 12</text>
 </g>
 </svg>
