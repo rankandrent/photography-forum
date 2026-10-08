@@ -1,7 +1,7 @@
 ---
 title: "Design System ROI: Build the Business Case Your CFO Will Sign"
 metaTitle: "Design System ROI: Calculate Payback Before You Fund It"
-description: "Design system ROI, calculated step by step: baseline hours, build and upkeep cost, payback month and a one-page business case your CFO can approve."
+description: "Design system ROI, step by step: baseline hours, build and upkeep cost, payback month and a one-page CFO business case. Then request a fixed-scope proposal."
 date: 2026-10-08
 updated: 2026-10-08
 contributors: [umar-sarwar]
@@ -23,7 +23,7 @@ draft: false
 qa: pass
 ---
 
-How do you prove design system ROI before anyone signs a $60,000 purchase order? Treat it as plain return on investment (ROI): count the user interface (UI) hours your teams spend today, price them at fully loaded labor cost, model a low, expected and high share of time saved, and subtract what the system costs to build and keep alive. The output is a payback month and a range that fits on one page for finance. Below is how to calculate design system ROI step by step, priced against the published fee for our [design system services](/services/design-system-services/), plus the cases where the honest answer is "not yet".
+How do you prove design system ROI before anyone signs a $60,000 purchase order? Treat it as plain return on investment (ROI): count the user interface (UI) hours your teams spend today, price them at fully loaded labor cost, model a low, expected and high share of time saved, and subtract what the system costs to build and keep alive. The output is a payback month and a range that fits on one page for finance. Below is a step-by-step way to calculate design system ROI, with the build priced against the published fee for our [design system services](/services/design-system-services/), plus the cases where the honest answer is "not yet".
 
 ## What does design system ROI actually measure?
 
@@ -199,7 +199,7 @@ Paste the text version into your own document and fill the brackets from your mo
 
 ## Which metrics prove the ROI after launch?
 
-**4 metrics prove design system ROI after launch: adoption rate, component reuse rate, time per new screen and UI bug count.**
+**Four metrics prove design system ROI after launch: adoption rate, component reuse rate, time per new screen and UI bug count.**
 
 To measure design system adoption in design files, use [Figma library analytics](https://help.figma.com/hc/en-us/articles/360039238353-View-and-explore-library-analytics), available on the Organization and Enterprise plans; it counts inserts per team and detaches per component, with up to a year of history.
 

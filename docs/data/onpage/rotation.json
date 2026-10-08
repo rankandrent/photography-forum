@@ -1,21 +1,9 @@
 {
  "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "pages": [
   {
-   "route": "/blog/author/ahmad-ullah/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/author/faizan-khan/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/author/sahar-asif/",
+   "route": "/blog/author/talha-saleem/",
    "type": "archive",
    "lastAudited": null,
    "lastScore": 100
@@ -34,6 +22,12 @@
   },
   {
    "route": "/blog/category/industry-specific/",
+   "type": "archive",
+   "lastAudited": null,
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/product-design/",
    "type": "archive",
    "lastAudited": null,
    "lastScore": 100
@@ -297,12 +291,6 @@
    "lastScore": 100
   },
   {
-   "route": "/about/",
-   "type": "content",
-   "lastAudited": "2026-10-07",
-   "lastScore": 73
-  },
-  {
    "route": "/blog/",
    "type": "archive",
    "lastAudited": "2026-10-07",
@@ -321,27 +309,63 @@
    "lastScore": 100
   },
   {
+   "route": "/about/",
+   "type": "content",
+   "lastAudited": "2026-10-08",
+   "lastScore": 87
+  },
+  {
+   "route": "/blog/author/ahmad-ullah/",
+   "type": "archive",
+   "lastAudited": "2026-10-08",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/faizan-khan/",
+   "type": "archive",
+   "lastAudited": "2026-10-08",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/sahar-asif/",
+   "type": "archive",
+   "lastAudited": "2026-10-08",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/design-system-roi/",
+   "type": "blog",
+   "lastAudited": "2026-10-08",
+   "lastScore": 100
+  },
+  {
    "route": "/case-studies/apex-hcm-payroll-ux/",
    "type": "content",
-   "lastAudited": "2026-10-07",
+   "lastAudited": "2026-10-08",
    "lastScore": 87
   },
   {
    "route": "/case-studies/fortna-warehouse-ux/",
    "type": "content",
-   "lastAudited": "2026-10-07",
+   "lastAudited": "2026-10-08",
    "lastScore": 80
   },
   {
    "route": "/case-studies/toolsgroup-supply-chain-ux/",
    "type": "content",
-   "lastAudited": "2026-10-07",
+   "lastAudited": "2026-10-08",
    "lastScore": 87
+  },
+  {
+   "route": "/location/st-louis-ux-design-agency/",
+   "type": "content",
+   "lastAudited": "2026-10-08",
+   "lastScore": 100
   },
   {
    "route": "/privacy/",
    "type": "archive",
-   "lastAudited": "2026-10-07",
+   "lastAudited": "2026-10-08",
    "lastScore": 91
   }
  ]

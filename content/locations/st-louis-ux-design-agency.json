@@ -172,7 +172,7 @@
       "faqs": [
         {
           "q": "Are you a local St. Louis UX design agency?",
-          "a": "<p>No. We are remote-first and headquartered in Reston, Virginia. We work on a schedule that overlaps the Central Time day and travel to St. Louis for workshops when the project needs it.</p>"
+          "a": "<p>No. We are <a href=\"/about/\">remote-first and headquartered in Reston, Virginia</a>. We work on a schedule that overlaps the Central Time day and travel to St. Louis for workshops when the project needs it.</p>"
         },
         {
           "q": "Can you design for scientists and clinicians without slowing them down?",

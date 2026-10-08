@@ -167,7 +167,7 @@ export function Team() {
           {d.items.map((t) => (
             <article key={t.name} className="tcard">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={t.photo} alt={`${t.name}${t.role ? `, ${t.role.toLowerCase()}` : ""}`} width={900} height={900} loading="lazy" decoding="async" />
+              <img src={t.photo} alt={`${t.name}${t.role ? `, ${t.role}` : ""}`} width={900} height={900} loading="lazy" decoding="async" />
               <div className="tcard__info">
                 <div>
                   <h3 className="tcard__name">{t.name}</h3>

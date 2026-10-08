@@ -57,7 +57,7 @@ export default function HomePage() {
             </div>
             <aside className="hportrait" aria-label={`Talk to ${home.hero.contact.name}`}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={home.hero.contact.photo} alt={`${home.hero.contact.name}, ${home.hero.contact.role.toLowerCase()}`} width={400} height={400} loading="eager" fetchPriority="high" decoding="async" />
+              <img src={home.hero.contact.photo} alt={`${home.hero.contact.name}, ${home.hero.contact.role}`} width={400} height={400} loading="eager" fetchPriority="high" decoding="async" />
               <span className="hportrait__badge"><span className="hportrait__dot" aria-hidden="true" />Available for a call</span>
               <div className="hportrait__info">
                 <p className="hportrait__name">{home.hero.contact.name}</p>

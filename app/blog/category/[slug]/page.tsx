@@ -19,7 +19,7 @@ const describe = (name: string, services: string[]) =>
 export async function generateMetadata({ params }: Props) {
   const c = getCategory((await params).slug);
   if (!c) return {};
-  return pageMetadata({ title: `${c.name} Guides | UI UX Design Blog`, description: describe(c.name, c.services).slice(0, 158), path: blogRoutes.category(c.slug), noindex: postsInCategory(c.slug).length === 0 });
+  return pageMetadata({ title: `${c.name} guides | UI UX Design Blog`, description: describe(c.name, c.services).slice(0, 158), path: blogRoutes.category(c.slug), noindex: postsInCategory(c.slug).length === 0 });
 }
 
 export default async function CategoryPage({ params }: Props) {
