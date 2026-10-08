@@ -1,25 +1,25 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "answerlab.com", "kind": "research agency insights", "silos": ["ux-research-services"], "seenFor": ["ux research rfp vendor evaluation", "how to choose a ux research partner"], "source": "WebSearch 2026-10-05" },
     { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study", "ux audit cost", "how to choose a ux audit company", "free ux audit vs paid ux audit"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
     { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "ux research services"], "source": "WebSearch 2026-10-05" },
-    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-05, 2026-10-07" },
+    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services", "design-system-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool", "design system agency"], "source": "WebSearch 2026-10-05, 2026-10-07, 2026-10-08" },
     { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp", "ux audit freelancer vs agency", "ux audit cost"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
     { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables"], "source": "WebSearch 2026-10-05" },
     { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp"], "source": "WebSearch 2026-10-05" },
     { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" },
     { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer"], "source": "WebSearch 2026-10-06" },
-    { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope"], "source": "WebSearch 2026-10-06" },
+    { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope", "design system audit", "what is a design system audit"], "source": "WebSearch 2026-10-06, 2026-10-08" },
     { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency"], "source": "WebSearch 2026-10-06, 2026-10-07" },
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
     { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "facelift vs full redesign saas"], "source": "WebSearch 2026-10-06" },
     { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "product redesign examples"], "source": "WebSearch 2026-10-06" },
-    { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign"], "source": "WebSearch 2026-10-06" },
+    { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign", "is a design system worth the investment"], "source": "WebSearch 2026-10-06, 2026-10-08" },
     { "domain": "sda.company", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency"], "source": "WebSearch 2026-10-06" },
     { "domain": "chameleon.io", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "reducing onboarding drop-off activation"], "source": "WebSearch 2026-10-06" },
     { "domain": "blog.flowpoint.ai", "kind": "analytics tool blog", "silos": ["ux-audit-services"], "seenFor": ["who should do a ux audit", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
@@ -28,8 +28,20 @@
     { "domain": "theskinsfactory.com", "kind": "agency Q&A blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ux audit proposal scope", "how to prepare for a ux audit"], "source": "WebSearch 2026-10-07" },
     { "domain": "saashero.net", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit vs expert review"], "source": "WebSearch 2026-10-07" },
     { "domain": "musemind.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
-    { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
-    { "domain": "baymard.com", "kind": "UX research institute (citable source, not a target)", "silos": ["ux-audit-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit"], "source": "WebSearch 2026-10-07" }
+    { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services", "design-system-services"], "seenFor": ["how to choose a ux audit company", "design system audit", "hire design system consultant"], "source": "WebSearch 2026-10-07, 2026-10-08" },
+    { "domain": "baymard.com", "kind": "UX research institute (citable source, not a target)", "silos": ["ux-audit-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit"], "source": "WebSearch 2026-10-07" },
+    { "domain": "figr.design", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
+    { "domain": "lollypop.design", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
+    { "domain": "appstudio.ca", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "cost to maintain a design system", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
+    { "domain": "supernova.io", "kind": "design system tool blog", "silos": ["design-system-services"], "seenFor": ["design system business case", "cost to maintain a design system", "design system roi business case"], "source": "WebSearch 2026-10-08" },
+    { "domain": "uxpin.com", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["how to calculate design system roi"], "source": "WebSearch 2026-10-08" },
+    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit", "roi of a design system"], "source": "WebSearch 2026-10-08" },
+    { "domain": "awesomic.com", "kind": "design subscription blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
+    { "domain": "ramotion.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
+    { "domain": "designsystemscollective.com", "kind": "publisher (Medium publication)", "silos": ["design-system-services"], "seenFor": ["design system build vs adopt", "design system roi formula"], "source": "WebSearch 2026-10-08" },
+    { "domain": "smashingmagazine.com", "kind": "publisher (citable source, not a target)", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
+    { "domain": "zeroheight.com", "kind": "design system tool (ROI calculator page)", "silos": ["design-system-services"], "seenFor": ["design system roi calculator"], "source": "WebSearch 2026-10-08" },
+    { "domain": "knapsack.cloud", "kind": "design system tool (ROI calculator page)", "silos": ["design-system-services"], "seenFor": ["design system roi calculator", "design system business case"], "source": "WebSearch 2026-10-08" }
   ],
   "topPosts": [
     {
@@ -210,6 +222,75 @@
       "serviceSupport": 5,
       "status": "candidate",
       "notes": "Deferred: 'how to choose a ux audit company' repeats the choose-ux-research-agency format; listicle SERP (musemind, lazarev, cieden). Partly absorbed by ux-audit-agency-vs-freelancer (quality test, quote inputs)."
+    },
+    {
+      "domain": "figr.design",
+      "url": "https://figr.design/blog/design-system-roi",
+      "title": "Design system ROI",
+      "keywords": ["design system roi", "how to calculate design system roi", "design system roi business case", "is a design system worth the investment"],
+      "estTraffic": null,
+      "silo": "design-system-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/design-system-roi.json",
+      "notes": "Seen on page 1 for 4 of the 5 ROI queries checked. Speed/cost/quality/brand pillars plus secondhand Smashing and Sparkbox figures; no real build price, no baseline method, no negative case. Do not reuse its pillar framing."
+    },
+    {
+      "domain": "lollypop.design",
+      "url": "https://lollypop.design/blog/2025/december/design-system-roi-business-impact/",
+      "title": "Design system ROI: business impact",
+      "keywords": ["design system roi", "design system roi business case"],
+      "estTraffic": null,
+      "silo": "design-system-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/design-system-roi.json",
+      "notes": "Velocity/quality/alignment framing and an unquantified '6 weeks to 1 week' anecdote (do-not-use)."
+    },
+    {
+      "domain": "supernova.io",
+      "url": "https://supernova.io/blog/how-to-build-a-business-case-for-your-design-system",
+      "title": "How to Build a Business Case for Your Design System",
+      "keywords": ["design system business case", "cost to maintain a design system"],
+      "estTraffic": null,
+      "silo": "design-system-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/design-system-roi.json",
+      "notes": "Tool vendor: 5-year custom vs Supernova cost comparison ($650,000 vs $97,600) is self-serving (do-not-use). uxdesign.cc 'design system business case' guide and knapsack webinar rank for the same query."
+    },
+    {
+      "domain": "netguru.com",
+      "url": "https://www.netguru.com/blog/design-system-audit",
+      "title": "How to Run a Design System Audit: A Step-by-Step Guide for UX Teams",
+      "keywords": ["design system audit", "how to run a design system audit"],
+      "estTraffic": null,
+      "silo": "design-system-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "MOFU candidate (SERP = how-to guides: awesomic, ramotion, onething, figma.com/solutions, lazarev, okoone). Must not repeat the hub's UI inventory step or the ux-audit-services hub ('design system audit vs UX audit' is a natural H2, check that hub first). The site sells no standalone design system audit: frame as a DIY health check that leads into the engagement."
+    },
+    {
+      "domain": "designsystemscollective.com",
+      "url": "https://www.designsystemscollective.com/design-systems-demystified-should-you-build-adopt-or-transform-6afa97e69ff5",
+      "title": "Design Systems Demystified: Should You Build, Adopt, or Transform?",
+      "keywords": ["build vs buy design system", "custom design system vs material ui", "adopt open source design system"],
+      "estTraffic": null,
+      "silo": "design-system-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "MOFU candidate: adopt (Material, Carbon, Fluent) vs theme on top vs custom. SERP = Medium/dev.to practitioner posts, weak. Comparison format, so schedule it away from other 'vs' posts."
+    },
+    {
+      "domain": "thinkcompany.com",
+      "url": "https://www.thinkcompany.com/blog/agency-vs-in-house-design-team/",
+      "title": "Agency vs in-house design team",
+      "keywords": ["outsource design system", "design system agency vs in-house"],
+      "estTraffic": null,
+      "silo": "design-system-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Deferred for variety (ux-audit-agency-vs-freelancer was a vs post on 2026-10-07). No design-system-specific page ranks (idealogic, codal, superside are generic), so a later BOFU on 'outsource design system build, keep governance in-house' has an open SERP. Must not repeat the home.ts freelancer/in-house/agency table."
     }
   ]
 }
