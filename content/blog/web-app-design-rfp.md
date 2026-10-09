@@ -41,7 +41,7 @@ Teams that build a new product from zero compare scope with [digital product des
 
 The order runs from who uses the product and what they do to the evidence and files you expect back. The same nine sections work for a user experience (UX) design RFP or any RFP for UI UX design services.
 
-![Numbered vertical blueprint of the 9 web app design RFP sections, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg "The 9 RFP sections and why each one changes the price")
+![Two-column grid of the 9 numbered web app design RFP sections, 1 to 5 on the left and 6 to 9 on the right, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg "The 9 RFP sections and why each one changes the price")
 
 <details class="astext"><summary>Show as text</summary>
 

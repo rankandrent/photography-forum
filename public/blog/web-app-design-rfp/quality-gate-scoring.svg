@@ -2,7 +2,7 @@
 <rect width="800" height="1000" rx="24" fill="#FBFAFB"/>
 <text x="40" y="76" font-size="36" font-weight="800" fill="#020101">Score quality before opening price</text>
 <rect x="40" y="98" width="720" height="44" rx="22" fill="#FFE3EC"/>
-<text x="400" y="129" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Suggested example weights, not a standard:</text>
+<text x="400" y="129" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Suggested example weights, not a standard</text>
 <g class="card"><rect x="160" y="176" width="600" height="342" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
 <text x="176" y="234" font-size="30" font-weight="800" fill="#020101">Quality (100 points):</text>
 <rect x="176" y="262" width="22" height="22" rx="6" fill="#E2225F"/>

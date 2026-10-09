@@ -5,8 +5,8 @@
     }
   },
   {
-    "marker": "<!-- visual: section map blueprint — the 9 RFP sections as a numbered vertical blueprint, each with a one-line \"why the agency needs it to price\"; label the sample lines as an invented B2B customer portal -->",
-    "markdown": "![Numbered vertical blueprint of the 9 web app design RFP sections, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg \"The 9 RFP sections and why each one changes the price\")"
+    "marker": "<!-- visual: section map blueprint — the 9 RFP sections as a numbered two-column grid, each with a one-line \"why the agency needs it to price\"; label the sample lines as an invented B2B customer portal -->",
+    "markdown": "![Two-column grid of the 9 numbered web app design RFP sections, 1 to 5 on the left and 6 to 9 on the right, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg \"The 9 RFP sections and why each one changes the price\")"
   },
   {
     "marker": "<!-- visual: role x workflow matrix — invented customer-portal grid, 4 roles x 9 workflows, cells marked view/edit/approve/none, right-hand column tagging in scope / out of scope / later phase, totals row \"9 workflows listed (7 in scope), 4 roles\"; label \"Example, invented inputs\" -->",
