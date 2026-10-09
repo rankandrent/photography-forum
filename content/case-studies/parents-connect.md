@@ -1,5 +1,5 @@
 ---
-title: "Parents Connect: a social platform that builds a global parenting community"
+title: "Parents Connect: social platform design that builds a strong parenting community"
 metaTitle: "Parents Connect Case Study: Parenting Community Platform"
 description: "How we designed Parents Connect, a social platform for parents worldwide with forums, expert content and chat that lifted forum participation by 45%."
 client: Parents Connect
