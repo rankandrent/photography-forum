@@ -1,5 +1,7 @@
 export const SITE = {
   name: "UIUXDesignServices.us",
+  /** Brand name Google should show as the site name and in titles (owner, 2026-10-09) */
+  brand: "UI UX Design Services",
   domain: "uiuxdesignservices.us",
   /** Year the company started */
   founded: 2017,

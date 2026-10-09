@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: SITE.name,
+    name: SITE.brand,
     short_name: "UIUXDesign",
     start_url: "/",
     display: "browser",

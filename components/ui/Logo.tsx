@@ -1,4 +1,6 @@
-/** Brand mark (a "U" drawn as a pen-tool path with anchor points) plus the "uiux design" wordmark. */
+/** Brand mark (a "U" drawn as a pen-tool path with anchor points) plus the wordmark.
+ * The wordmark is an image (vector paths, no text) so search engines read the brand as
+ * "UI UX Design Services" (its alt) instead of the stylised "uiux design" letters. */
 export function LogoMark({ size = 32 }: { size?: number }) {
   return (
     <svg className="logo__mark" width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" focusable="false">
@@ -11,12 +13,12 @@ export function LogoMark({ size = 32 }: { size?: number }) {
   );
 }
 
-export function Logo({ size = 32 }: { size?: number }) {
+export function Logo({ size = 32, tone = "dark" }: { size?: number; tone?: "dark" | "light" }) {
   return (
     <span className="logo">
       <LogoMark size={size} />
-      <span className="logo__word" aria-hidden="true"><b>uiux</b> design</span>
-      <span className="visually-hidden">UI UX Design Services</span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="logo__img" src={`/brand/logo/wordmark-${tone}.svg`} alt="UI UX Design Services" width={516} height={114} />
     </span>
   );
 }

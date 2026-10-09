@@ -41,7 +41,7 @@ export function Footer() {
       <div className="container ftr__top">
         <div className="ftr__brand">
           <Link href="/" className="ftr__logo" aria-label="UI UX Design Services home">
-            <Logo size={36} />
+            <Logo size={36} tone="light" />
           </Link>
           <p className="ftr__about">Research-led UI UX design for products that need to perform. Designing digital products since {SITE.founded}.</p>
           <address className="ftr__address">{addressLine}</address>
@@ -65,15 +65,8 @@ export function Footer() {
         </nav>
       </div>
       <div className="ftr__mega" aria-hidden="true">
-        <svg viewBox="0 0 1000 170" preserveAspectRatio="xMidYMax meet">
-          <defs>
-            <linearGradient id="ftr-mega-g" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stopColor="#fff" stopOpacity="0.11" />
-              <stop offset="1" stopColor="#fff" stopOpacity="0.015" />
-            </linearGradient>
-          </defs>
-          <text x="500" y="160" textAnchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs" fill="url(#ftr-mega-g)">uiux design</text>
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/logo/footer-mega.svg" alt="" width={1000} height={170} loading="lazy" />
       </div>
     </footer>
   );

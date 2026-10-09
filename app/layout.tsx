@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: "UI UX Design Services", template: "%s" },
   description: SITE.description,
-  applicationName: SITE.name,
+  applicationName: SITE.brand,
   formatDetection: { telephone: false },
 };
 
