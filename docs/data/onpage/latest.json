@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T05:32:12.900Z",
+ "generated": "2026-10-09T05:35:46.697Z",
  "pages": [
   {
    "type": "content",
@@ -44,11 +44,11 @@
    "keyword": null,
    "score": 87,
    "failed": [
-    "content-depth: ≥ 600 words of content (has 314)"
+    "content-depth: ≥ 600 words of content (has 313)"
    ],
    "title": "ToolsGroup Case Study: Supply Chain SaaS UX Research",
    "h1": "75% of sales losses were UI-related, not feature gaps",
-   "words": 314
+   "words": 313
   },
   {
    "type": "archive",
@@ -100,7 +100,7 @@
    "failed": [],
    "title": "Sahar Asif, Senior Manager UX | KAM | Author",
    "h1": "Sahar Asif",
-   "words": 73
+   "words": 94
   },
   {
    "type": "archive",
@@ -120,7 +120,7 @@
    "failed": [],
    "title": "Umar Sarwar, SEO Manager | Author",
    "h1": "Umar Sarwar",
-   "words": 137
+   "words": 158
   },
   {
    "type": "archive",
@@ -141,6 +141,16 @@
    "title": "Industry-specific guides | UI UX Design Blog",
    "h1": "Industry-specific guides",
    "words": 88
+  },
+  {
+   "type": "archive",
+   "route": "/blog/category/platforms/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Platforms guides | UI UX Design Blog",
+   "h1": "Platforms guides",
+   "words": 92
   },
   {
    "type": "archive",
@@ -170,7 +180,7 @@
    "failed": [],
    "title": "How to Choose a UX Research Agency: Scorecard & Red Flags",
    "h1": "How to choose a UX research agency: a buyer's scorecard",
-   "words": 2999
+   "words": 3000
   },
   {
    "type": "blog",
@@ -190,7 +200,7 @@
    "failed": [],
    "title": "UI UX Design Blog: Guides From Our Design Team",
    "h1": "UI UX design guides from our team",
-   "words": 213
+   "words": 232
   },
   {
    "type": "blog",
@@ -200,7 +210,7 @@
    "failed": [],
    "title": "SaaS Product Redesign: Scope, Testing and Rollout Plan",
    "h1": "SaaS product redesign: scope, test and roll out without churn",
-   "words": 2760
+   "words": 2758
   },
   {
    "type": "blog",
@@ -211,6 +221,16 @@
    "title": "UX Audit Agency vs Freelancer vs AI: Who to Hire",
    "h1": "UX Audit Agency vs Freelancer, AI Tool or In-House Team",
    "words": 3110
+  },
+  {
+   "type": "blog",
+   "route": "/blog/web-app-design-rfp/",
+   "keyword": "web app design rfp",
+   "score": 100,
+   "failed": [],
+   "title": "Web App Design RFP: Template, Scope Inventory and Scoring",
+   "h1": "Web App Design RFP Template: 9 Sections Agencies Can Price",
+   "words": 3209
   },
   {
    "type": "archive",
@@ -250,7 +270,7 @@
    "failed": [],
    "title": "TradeZella Case Study: Trading Journal UX Revamp",
    "h1": "TradeZella: a revamped trading journal that helps traders make data-driven decisions",
-   "words": 723
+   "words": 722
   },
   {
    "type": "archive",
@@ -320,7 +340,7 @@
    "failed": [],
    "title": "SaaS UI UX Design Agency | B2B & Enterprise Products",
    "h1": "UI UX design services for SaaS",
-   "words": 1904
+   "words": 1927
   },
   {
    "type": "content",
@@ -350,7 +370,7 @@
    "failed": [],
    "title": "UX Design Agency Locations | US Cities We Serve",
    "h1": "UI UX design for product teams across the US",
-   "words": 240
+   "words": 246
   },
   {
    "type": "content",
@@ -360,7 +380,7 @@
    "failed": [],
    "title": "St. Louis UX Design Agency | Agtech, Health & Fintech UX",
    "h1": "A St. Louis UX design agency for science, health and finance software",
-   "words": 1883
+   "words": 1887
   },
   {
    "type": "content",
@@ -370,7 +390,7 @@
    "failed": [],
    "title": "UX Design Agency Boston | Biotech, Health & Edtech UX",
    "h1": "UX design agency Boston teams trust with expert-grade software",
-   "words": 1809
+   "words": 1813
   },
   {
    "type": "content",
@@ -380,7 +400,7 @@
    "failed": [],
    "title": "UX Design Agency Chicago | Fintech, Insurance & SaaS UX",
    "h1": "UX design agency Chicago teams hire for data-heavy products",
-   "words": 1928
+   "words": 1932
   },
   {
    "type": "content",
@@ -390,7 +410,7 @@
    "failed": [],
    "title": "UX Design Agency Los Angeles | Streaming, DTC & Gaming UX",
    "h1": "UX design agency Los Angeles studios, brands and builders can lean on",
-   "words": 1769
+   "words": 1773
   },
   {
    "type": "content",
@@ -400,7 +420,17 @@
    "failed": [],
    "title": "UX Design Agency New York | Fintech, Media & Health UX",
    "h1": "UX design agency New York product teams can run on Eastern Time",
-   "words": 1906
+   "words": 1910
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-philadelphia/",
+   "keyword": "ux design agency philadelphia",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Philadelphia | Health, Pharma & EdTech UX",
+   "h1": "UX design agency Philadelphia teams can work with on Eastern Time",
+   "words": 1897
   },
   {
    "type": "content",
@@ -410,7 +440,7 @@
    "failed": [],
    "title": "UX Design Agency Phoenix | Operations & Enterprise UX",
    "h1": "UX design agency Phoenix operations teams can count on",
-   "words": 1817
+   "words": 1821
   },
   {
    "type": "content",
@@ -420,7 +450,7 @@
    "failed": [],
    "title": "UX Design Agency San Francisco | Research-Led UI UX",
    "h1": "UX design agency for San Francisco product teams",
-   "words": 1811
+   "words": 1815
   },
   {
    "type": "content",
@@ -430,7 +460,7 @@
    "failed": [],
    "title": "UX Design Agency Seattle | Cloud, SaaS & Marketplace UX",
    "h1": "UX design agency Seattle engineering-led teams can plug in fast",
-   "words": 1763
+   "words": 1767
   },
   {
    "type": "content",
@@ -610,7 +640,7 @@
    "failed": [],
    "title": "Web App Design Services | UX & UI for Complex Web Apps",
    "h1": "Web app design services for complex products that stay simple",
-   "words": 1612
+   "words": 1658
   },
   {
    "type": "archive",

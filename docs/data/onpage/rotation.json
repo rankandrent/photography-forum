@@ -1,25 +1,7 @@
 {
  "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "pages": [
-  {
-   "route": "/blog/author/talha-saleem/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/author/umar-sarwar/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/category/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
   {
    "route": "/blog/category/industry-specific/",
    "type": "archive",
@@ -255,18 +237,6 @@
    "lastScore": 100
   },
   {
-   "route": "/blog/choose-ux-research-agency/",
-   "type": "blog",
-   "lastAudited": "2026-10-06",
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/saas-product-redesign/",
-   "type": "blog",
-   "lastAudited": "2026-10-06",
-   "lastScore": 100
-  },
-  {
    "route": "/case-studies/tradezella/",
    "type": "content",
    "lastAudited": "2026-10-06",
@@ -309,12 +279,6 @@
    "lastScore": 100
   },
   {
-   "route": "/about/",
-   "type": "content",
-   "lastAudited": "2026-10-08",
-   "lastScore": 87
-  },
-  {
    "route": "/blog/author/ahmad-ullah/",
    "type": "archive",
    "lastAudited": "2026-10-08",
@@ -339,33 +303,87 @@
    "lastScore": 100
   },
   {
+   "route": "/about/",
+   "type": "content",
+   "lastAudited": "2026-10-09",
+   "lastScore": 87
+  },
+  {
+   "route": "/blog/author/talha-saleem/",
+   "type": "archive",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/author/umar-sarwar/",
+   "type": "archive",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/",
+   "type": "archive",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/platforms/",
+   "type": "archive",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/choose-ux-research-agency/",
+   "type": "blog",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/saas-product-redesign/",
+   "type": "blog",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/web-app-design-rfp/",
+   "type": "blog",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
    "route": "/case-studies/apex-hcm-payroll-ux/",
    "type": "content",
-   "lastAudited": "2026-10-08",
+   "lastAudited": "2026-10-09",
    "lastScore": 87
   },
   {
    "route": "/case-studies/fortna-warehouse-ux/",
    "type": "content",
-   "lastAudited": "2026-10-08",
+   "lastAudited": "2026-10-09",
    "lastScore": 80
   },
   {
    "route": "/case-studies/toolsgroup-supply-chain-ux/",
    "type": "content",
-   "lastAudited": "2026-10-08",
+   "lastAudited": "2026-10-09",
    "lastScore": 87
   },
   {
    "route": "/location/st-louis-ux-design-agency/",
    "type": "content",
-   "lastAudited": "2026-10-08",
+   "lastAudited": "2026-10-09",
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-philadelphia/",
+   "type": "content",
+   "lastAudited": "2026-10-09",
    "lastScore": 100
   },
   {
    "route": "/privacy/",
    "type": "archive",
-   "lastAudited": "2026-10-08",
+   "lastAudited": "2026-10-09",
    "lastScore": 91
   }
  ]

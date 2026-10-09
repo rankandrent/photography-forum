@@ -27,7 +27,7 @@ A web app design RFP is the request for proposal (RFP) you send design agencies 
 
 ## When do you need a web app design RFP?
 
-**You need a formal RFP when procurement rules, a public-sector buyer or three or more bidding agencies demand written proposals you can compare line by line.**
+**You need a formal RFP when procurement rules or a public-sector buyer require written proposals, or when three or more bidding agencies must be compared line by line.**
 
 Below that bar, a short brief and a few calls decide faster. Formal requests come from procurement departments, regulated buyers and teams replacing a portal or internal tool.
 

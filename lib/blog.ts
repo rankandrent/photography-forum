@@ -21,6 +21,13 @@ const TEAM_BYLINE: Author = {
   person: false,
 };
 
+/** "a" or "an" by sound: acronyms read letter by letter ("an SEO Manager", "a UI/UX Designer"), words by vowel */
+const indefinite = (phrase: string) => {
+  const w = phrase.trim().split(/[\s/]/)[0];
+  if (/^[A-Z]{2,}$/.test(w)) return /^[AEFHILMNORSX]/.test(w) ? "an" : "a";
+  return /^[aeiou]/i.test(w) ? "an" : "a";
+};
+
 export const authors: Author[] = [
   ...home.team.items.map((t) => {
     const slug = slugify(t.name);
@@ -33,7 +40,7 @@ export const authors: Author[] = [
       avatar: t.photo?.replace("/team/", "/team/face/"),
       linkedin: t.linkedin,
       // real bio from content/authors.json when filled in, else a plain role line (never invented)
-      bio: x.bio?.trim() || `${t.name} is ${/^[AEIOU]/i.test(t.role) ? "an" : "a"} ${t.role.split("|")[0].trim()} at UI UX Design Services.`,
+      bio: x.bio?.trim() || `${t.name} is ${indefinite(t.role)} ${t.role.split("|")[0].trim()} at UI UX Design Services.`,
       hasBio: !!x.bio?.trim(),
       expertise: x.expertise ?? [],
       person: true,

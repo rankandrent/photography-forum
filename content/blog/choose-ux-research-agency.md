@@ -1,7 +1,7 @@
 ---
 title: "How to choose a UX research agency: a buyer's scorecard"
 metaTitle: "How to Choose a UX Research Agency: Scorecard & Red Flags"
-description: "How to choose a UX research agency: a 1-page brief, a 7-criteria scorecard, 12 pitch-call questions, recruitment tests and contract terms for your data."
+description: "How to choose a UX research agency: a 1-page brief, a 7-criteria scorecard, 12 pitch-call questions, recruitment tests and data terms. Send us your brief."
 date: 2026-10-05
 updated: 2026-10-05
 author: sahar-asif
