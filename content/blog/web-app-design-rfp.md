@@ -93,7 +93,7 @@ Totals: nine workflows listed, seven in scope, four roles.
 
 Name each workflow as a user goal with a verb. "Orders page" hides how many steps live behind it, so bidders guess differently; "Approve an order over the account's spending limit" says who acts and which permission applies.
 
-Drafts often stall here, because no single team holds the full workflow list. If yours does, bring the half-filled grid to a first call with us, and list any workflow nobody can confirm as an open question for bidders in the question-and-answer (Q&A) window.
+Drafts often stall here, because no single team holds the full workflow list. If your draft stalls, bring the half-filled grid to a first call with us, and list any workflow nobody can confirm as an open question for bidders in the question-and-answer (Q&A) window.
 
 ## Which screen states and data belong in scope?
 
