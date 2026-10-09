@@ -1,0 +1,283 @@
+{
+  "slug": "web-app-design-rfp",
+  "keyword": "web app design rfp",
+  "keywordCarrier": {
+    "exactString": "web app design RFP",
+    "title": "Web App Design RFP Template: 9 Sections Agencies Can Price",
+    "metaTitle": "Web App Design RFP: Template, Scope Inventory and Scoring",
+    "description": "Web app design RFP template: 9 sections, a workflow and role inventory, sample data rules and scoring weights. Then request a fixed-scope proposal.",
+    "descriptionNote": "147 characters by manual count (verify with the on-page script). Keyword first, then what the reader gets, then the BOFU next step. No apostrophes. Use it as written.",
+    "introFirstSentence": "A web app design RFP is the request for proposal you send design agencies when the workflows, user roles and screens of a logged-in application need designing, and its scope section decides whether the quotes that come back can be compared at all.",
+    "pattern": "Use the phrase as a noun with an article or possessive: 'a web app design RFP', 'your web app design RFP', 'the scope section of a web app design RFP'. Never as a bare tag ('Web app design RFP is key'). Expand once on first use: 'request for proposal (RFP)'. The intro uses the definition sentence above as sentence 1. Density by word share: 4-word keyword, expected 1,900-2,300 words, so max uses = 0.02 x 2,100 / 4 = about 10. Target 6-10 exact uses (1.1-1.9%), counting the title-case form. Spread them: intro, 2-3 H2 bodies, 1 H2 heading at most, 1 FAQ, the closing section. Variants that do NOT count toward density and are free to use: 'web app RFP', 'design RFP', 'request for proposal'."
+  },
+  "secondary": [
+    "web app design rfp template",
+    "how to write a web app rfp",
+    "ux design rfp",
+    "rfp for ui ux design services",
+    "web application design scope of work",
+    "design agency rfp evaluation criteria",
+    "questions to ask in a design rfp"
+  ],
+  "intent": "commercial investigation / transactional prep: a product manager, founder or IT/procurement lead has budget for an outside team to design a logged-in web application (portal, admin console, internal tool, SaaS app) and must send a request for proposal to 3-5 agencies. They want a template that produces comparable quotes. The reader is choosing a vendor this month.",
+  "volume": null,
+  "kd": null,
+  "dataSource": "WebSearch SERP review on 2026-10-09 (14 queries). Semrush keyword_research returned no_api_units on the first call (not retried). WebFetch failed with DNS errors (ENOTFOUND) for simpalm.com and wapiti.digital, so competitor coverage comes from search snippets. docs/data/gsc/latest.json does not exist. Volume and KD are unknown: do not quote any volume, KD or traffic figure anywhere.",
+  "hub": "web-app-design-services",
+  "services": ["web-app-design-services"],
+  "industries": ["saas"],
+  "author": "sahar-asif",
+  "authorWhy": "Senior Manager UX | KAM (key account manager, content/home.ts team list). Receiving RFPs and scoping proposals from them is the KAM's job, so this is the closest role match on the team. She last wrote on 2026-10-05, 4 posts ago, so the rotation is respected. saliha-shahzad (UI/UX Designer) and shahmir-farooq (Sr. Communication Designer) were considered; neither role matches procurement/scoping, so per RULES.md (author role must match topic) they are better kept for a UI-pattern or visual post in this silo (e.g. data table design for web apps). Fallback if the orchestrator wants a new author: ahmad-ullah (Principal UX Designer) for the research/testing and acceptance sections, but he wrote on 2026-10-07.",
+  "type": "Checklist",
+  "funnel": "bofu",
+  "funnelWhy": "Vendor-procurement query: an RFP is sent only when budget exists and agencies are about to be invited, which is funnel.json's BOFU reader ('buyers ready to hire'). Page 1 is procurement material, not problem education: RFP templates and how-to-write guides published by vendors for their own buyers (simpalm.com web app RFP + downloadable template, wapiti.digital web design RFP template and evaluation checklist, sixfeetup.com web portal RFP, chopdawg app RFP, process.st and blennd RFP toolkits, emulent and vitaldesign RFP guides) plus RFP-scoring pages (rfp360, kolonell scoring grid). This is the same vendor-selection intent as funnel.json's BOFU example 'how to choose a ux design agency'. It is not the how-to-do-the-work SERP that lesson 2026-10-06 calls MOFU. RISK: the pages are formatted as guides, so a QA reviewer applying that lesson literally could call it MOFU. Keep it BOFU by (1) pricing logic tied to the hub's 4 price drivers (deep link), (2) budget band and evaluation sections, (3) ending on 'send us the RFP' with the BOFU CTA. MOFU fallback for this silo: 'legacy web app redesign' (all how-to SERP, see notes).",
+  "serviceSupport": 5,
+  "serviceSupportWhy": "The only reason to write a web app design RFP is to hire an outside team for exactly what the hub sells (workflow research, IA, wireframes, prototype, web app UI kit, handoff). The RFP's scope inventory counts the same units the hub prices on (workflows, user roles, test rounds, component library size), so a reader who finishes the template already has a hub-ready scope.",
+  "beats": "https://www.simpalm.com/blog/how-to-write-a-web-app-rfp",
+  "alsoOutranks": [
+    "https://wapiti.digital/web-design-rfp-template-questions-scope-and-evaluation-checklist/",
+    "https://sixfeetup.com/blog/how-to-write-an-rfp-for-your-web-portal-project",
+    "https://www.chopdawg.com/how-to-write-an-app-development-rfp-that-actually-gets-better-proposals/",
+    "https://emulent.com/resources/how-to-write-a-website-design-rfp/",
+    "https://vitaldesign.com/how-to-write-a-website-design-request-for-proposal"
+  ],
+  "centralEntity": "web app design RFP",
+  "entities": [
+    "request for proposal (RFP)",
+    "web application",
+    "user roles and permissions",
+    "workflow (task) inventory",
+    "information architecture (IA)",
+    "screen states (empty, loading, error, permission-denied)",
+    "data tables, filters and bulk actions",
+    "sample data",
+    "usability testing",
+    "System Usability Scale (SUS)",
+    "Web Content Accessibility Guidelines (WCAG) 2.2 level AA",
+    "Section 508 / Revised 508 Standards",
+    "Figma",
+    "Storybook",
+    "design handoff",
+    "statement of work (SOW)",
+    "spec work (AIGA)",
+    "weighted evaluation criteria",
+    "18F De-risking Guide",
+    "fixed-scope proposal"
+  ],
+  "attributes": [
+    "number of workflows in scope (and explicitly out of scope)",
+    "number of user roles and their permission differences",
+    "screen states per workflow",
+    "data volume per table (typical and worst case)",
+    "user access for research (users per role, who recruits)",
+    "number of usability test rounds",
+    "accessibility level and standard version",
+    "supported breakpoints and devices",
+    "handoff format and acceptance criteria",
+    "budget band and decision date",
+    "evaluation criteria and weights",
+    "proposal format, page limit and Q&A window"
+  ],
+  "ngrams": [
+    "web app design rfp",
+    "request for proposal",
+    "user roles",
+    "workflow inventory",
+    "out of scope",
+    "sample data",
+    "usability test rounds",
+    "acceptance criteria",
+    "design handoff",
+    "evaluation criteria",
+    "budget band",
+    "fixed-scope proposal"
+  ],
+  "questions": [
+    "What should a web app design RFP include?",
+    "How do you write an RFP for UI UX design services?",
+    "How do you describe user roles and workflows in an RFP?",
+    "Should you share your budget in a design RFP?",
+    "How many agencies should receive an RFP?",
+    "Is it fair to ask for free mockups in an RFP?",
+    "How long should a design RFP be?",
+    "How do you score design agency proposals?",
+    "Can one RFP cover web app design and development?"
+  ],
+  "serpGaps": [
+    "Every ranking RFP guide is written for a marketing website (page count, CMS, SEO, hosting, content migration: wapiti, emulent, vitaldesign) or for app DEVELOPMENT (features, tech stack, maintenance: simpalm, chopdawg, technource). None scopes DESIGN work for a logged-in app. Our backbone is the role x workflow inventory and the screen-state list, which is what a design agency actually prices.",
+    "No page explains how design agencies turn an RFP into a price. We map each RFP field to the hub's 4 price drivers (workflows, user roles, test rounds, component library size) and link the hub cost section, so the reader sees why vague scope produces 3x-apart quotes without us inventing a statistic.",
+    "Nobody tells the buyer to attach sample data or state data volume. Tables that look fine with 5 rows break with 5,000 (seen only as a passing vendor remark in a snippet; we turn it into an RFP field with typical/worst-case counts).",
+    "Research access is missing everywhere. A design RFP must say whether the agency can talk to real users per role and who recruits them; the hub process interviews 5-8 users per role and tests 5 users per round, so access decides timeline.",
+    "Accessibility appears as one line ('consider accessibility'). We give copyable acceptance wording: WCAG 2.2 AA for commercial apps; for federal buyers, the Revised 508 Standards (which incorporate WCAG 2.0 AA by reference) via the section508.gov contract language template.",
+    "Handoff is never defined, so 'deliverables' means different things in each proposal. We give a handoff acceptance checklist that matches the hub's handoff package (annotated Figma, breakpoints, component specs mapped to Storybook).",
+    "No page says what to leave out. We cover spec work (cite AIGA's position), prescribing screens instead of outcomes, and 100-page requirement lists (cite 18F's outcome-first, short-solicitation advice)."
+  ],
+  "outline": [
+    {
+      "h2": "What is a web app design RFP, and when do you need one?",
+      "answerHint": "**You need a formal RFP when procurement rules, a public-sector buyer or 3 or more bidding agencies demand comparable written proposals; otherwise a short brief and calls work.** The definition already sits in the intro sentence, so this section answers 'when'.",
+      "points": [
+        "Who sends one: product teams replacing a portal or internal tool, IT departments, public-sector and regulated buyers.",
+        "Design RFP vs development RFP: the design RFP prices research, IA, prototypes, UI kit and handoff; the build is a separate line (see FAQ). Do not claim the agency builds or does not build software (site-fact conflict 1 in notes).",
+        "UP link early (first 150 words of the body): 'web app design services' -> /services/web-app-design-services/.",
+        "If no product or workflows exist yet, point to the hub's own wording: teams building from zero compare scope with digital product design (the ONE allowed cross-hub link, optional)."
+      ]
+    },
+    {
+      "h2": "Which 9 sections does a web app design RFP need?",
+      "answerHint": "**A web app design RFP needs 9 sections: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, and proposal format with evaluation.**",
+      "points": [
+        "Section-map visual (image) with the 9 sections; the text version goes behind 'Show as text' as a 3-column table: section | what to write | example line for a B2B customer portal (illustrative).",
+        "One sentence per section on WHY the agency needs it to price, not a generic description.",
+        "State the recommended length as our recommendation (main document roughly 6-10 pages plus attachments), and cite the 18F state field guide's point that a custom-software RFP can stay under 20 pages. Do not present the 6-10 figure as a statistic."
+      ]
+    },
+    {
+      "h2": "How do you list user roles and workflows so agencies can price them?",
+      "answerHint": "**List every user role and every workflow in one grid, mark which workflows each role performs, and label each workflow in scope, out of scope or later phase.** The two counts drive most of the price.",
+      "points": [
+        "Illustrative grid (invented, labelled as an example): customer portal with 4 roles (account admin, buyer, approver, support agent) x 9 workflows (invite users, place order, approve order, track shipment, raise ticket, etc.).",
+        "Mark permission differences per cell (view / edit / approve / none), because permission states multiply screens.",
+        "Price link: the hub prices web app design on workflows, user roles, test rounds and component library size. Deep link /services/web-app-design-services/#how-much-does-web-app-design-cost with anchor like 'how workflows and roles move the price'; do NOT restate the $ examples or the 4 factors as a list.",
+        "Name workflows as user goals with a verb ('approve a purchase order'), not as page names ('Orders page'). Contrast one bad line and one good line.",
+        "Natural invitation: 'Counting workflows is where most drafts stall; bring the grid half-filled to a free consultation and we will finish the count with you.' (free consultation is a confirmed offer; do not promise a turnaround time)."
+      ]
+    },
+    {
+      "h2": "Which screen states and data details belong in the scope?",
+      "answerHint": "**Scope the states, not only the screens: empty, loading, error, no permission, partial data and full data for every table and form in scope.** Attach anonymised sample data with typical and worst-case row counts.",
+      "points": [
+        "One-table-six-states visual: the same orders table shown populated, empty (first use), loading, error, no permission and 5,000 rows with filters applied.",
+        "Data volume fields: rows per table (typical / worst case), longest realistic values (company names, IDs), number of columns users need.",
+        "Bulk actions, saved filters and keyboard use, if power users depend on them (hub UI kit lists data tables, filters, bulk actions, empty states and permission states: link the hub 'what does web app design include' section once: /services/web-app-design-services/#what-does-web-app-design-include).",
+        "Anonymise: never attach production customer data; describe how sample data was masked."
+      ]
+    },
+    {
+      "h2": "What research access should the RFP promise the agency?",
+      "answerHint": "**Promise named access: how many users per role the agency can interview, who recruits them, and how many usability test rounds you will fund.** Missing access is the most common cause of a slipped timeline.",
+      "points": [
+        "Use hub numbers as the reference process: interviews with 5-8 users per role, prototype tests with 5 users per round, SUS score per round. Link the hub process section /services/web-app-design-services/#how-does-the-web-app-design-process-work (anchor e.g. 'a typical 6-step web app design process').",
+        "Who recruits (you, the agency, a panel), incentives, NDAs, and whether internal users can be interviewed during work hours.",
+        "Existing evidence to attach: analytics, support ticket themes, previous research, current screenshots.",
+        "Tools: describe outcomes (tree test of the navigation, clickable prototype test), do not mandate a vendor's tool unless your security team requires it.",
+        "Avoid presenting the '5 users' figure as a universal rule; it is our per-round practice."
+      ]
+    },
+    {
+      "h2": "How do you write accessibility and handoff acceptance criteria?",
+      "answerHint": "**Write them as pass/fail lines: the standard and level (for example WCAG 2.2 level AA), the breakpoints, and the exact handoff files you will accept.**",
+      "points": [
+        "Accessibility: commercial buyers name WCAG 2.2 AA (link W3C). Federal buyers: the section508.gov contract language template requires conformance with the Revised 508 Standards, which incorporate WCAG 2.0 A and AA by reference; many agencies state a later WCAG version. Writer: verify the exact template wording on section508.gov before quoting.",
+        "Hub fact usable: an accessibility clause in a procurement contract is one of the hub's 'when to hire' triggers (WCAG 2.2 AA). Link not needed again if the hub is already linked 3 times.",
+        "Handoff acceptance checklist (image + 'Show as text'): annotated Figma files, responsive breakpoints listed (hub uses 1280/1440/1920 px), component specs mapped to your Storybook, all states from the previous section designed, accessibility annotations (focus order, labels), a developer review of first builds.",
+        "Say who owns the files and when IP transfers (point the reader to their own counsel; no legal advice)."
+      ]
+    },
+    {
+      "h2": "What should a web app design RFP leave out?",
+      "answerHint": "**Leave out free design samples, finished screen designs you want copied, and long feature specifications; ask for outcomes, evidence and process instead.**",
+      "points": [
+        "Spec work: cite AIGA's position that speculative work leaves out research, alternatives and testing, so it shows you the least useful version of an agency. Ask for relevant case studies and a walkthrough of one decision instead.",
+        "Prescribed solutions ('add a dashboard with 12 charts'): state the problem and the metric.",
+        "Exhaustive requirement lists: cite 18F's De-risking Guide advice to focus on outcomes and user stories rather than hundreds of pages of system requirements.",
+        "Before/after rewrite visual: 5 weak RFP lines rewritten into priceable lines.",
+        "Do not ask for a fixed price on an unknown scope; ask for a fixed price on the inventory plus a rate for change requests."
+      ]
+    },
+    {
+      "h2": "How should you state the budget band, timeline and evaluation weights?",
+      "answerHint": "**Give a budget band, a decision date and the evaluation criteria with their weights in the RFP itself, so agencies scope to your number and you score every proposal the same way.**",
+      "points": [
+        "Budget band: link the hub cost section a second time only if it is the natural anchor; otherwise say 'our published web app design range' and link once. Hub figures: $60,000-$180,000, 8-16 weeks. Do not state team size (conflict 3).",
+        "Timeline: proposal deadline, Q&A window, interviews, decision, project start. Keep the process short; invite 3-5 agencies (recommendation, not a statistic).",
+        "Evaluation: publish criteria and weights before proposals arrive; suggested design-specific criteria: understanding of your workflows, research and testing plan, relevant case evidence, team and seniority, price. Recommend a quality floor (score proposals on quality first, open price for those that pass) as our advice. Do not cite rfp360's 'typical weight' percentages or kolonell's grid (vendor sources).",
+        "Scoring-gate visual: quality gate first, then weighted price comparison.",
+        "18F reference: score strengths, weaknesses and risks, then invite the top-rated firms to a verbal interview. Keep the wording in our own sentences."
+      ]
+    },
+    {
+      "h2": "What happens after you send the RFP?",
+      "answerHint": "**After you send it, run a fixed sequence: answer questions in writing to all bidders, shortlist on the published criteria, interview 2-3 teams, then agree the scope inventory in the contract.**",
+      "points": [
+        "Process timeline visual (horizontal, 5 milestones). Durations as ranges you choose, not industry facts.",
+        "Share every Q&A answer with all bidders so proposals stay comparable.",
+        "Interview: ask each team to walk through one workflow from your inventory and how they would test it (no spec work).",
+        "Contract: attach the final inventory as the scope so change requests are measurable.",
+        "DOWN link: show what a scoped web app engagement produced. Apex HCM: legacy payroll platform, '200+ screens -> 6 steps' (/case-studies/apex-hcm-payroll-ux/). Optional second: TradeZella dashboard revamp, 40% more user interaction (/case-studies/tradezella/). Quote only the result lines in the case-study frontmatter, word for word.",
+        "Lead angle and closing (second UP link near the end): 'Add us to your bidder list: send the finished RFP and we will reply with a free consultation and a fixed-scope proposal priced against your inventory.' Keep this section lean (BOFU: no extra outbound links)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can one RFP cover web app design and development?",
+      "a": "Yes. Ask for separate price lines and timelines for design and for build, so you can compare design-only agencies with full-service firms on the same scope. Do not state whether our agency builds software (see notes, conflict 1)."
+    },
+    {
+      "q": "How long should a web app design RFP be?",
+      "a": "Short enough to read in one sitting: our recommendation is a 6-10 page main document plus the inventory grid and sample data as attachments. Cite the 18F state field guide's under-20-pages point for custom software."
+    },
+    {
+      "q": "Is it fair to ask agencies for free mockups in an RFP?",
+      "a": "No. Free mockups are spec work, made without research or testing (AIGA). Ask for case studies and a walkthrough of how the team would approach one of your workflows."
+    },
+    {
+      "q": "Should you share your budget in a web app design RFP?",
+      "a": "Yes. A budget band lets agencies scope to your number; without it, proposals range so widely that you cannot compare them. Link or mention the published range once if not already done in the section."
+    },
+    {
+      "q": "How many agencies should receive the RFP?",
+      "a": "3-5 agencies is enough for a real comparison without overloading your evaluators (our recommendation, not a statistic)."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/web-app-design-services/", "anchor": "web app design services", "where": "first 150 words of the body (UP link, required)" },
+    { "href": "/services/web-app-design-services/#how-much-does-web-app-design-cost", "anchor": "how workflows and roles move the price", "where": "role x workflow section (and the budget band section only if not linked yet)" },
+    { "href": "/services/web-app-design-services/#what-does-web-app-design-include", "anchor": "the components a web app UI kit covers", "where": "screen states section" },
+    { "href": "/services/web-app-design-services/#how-does-the-web-app-design-process-work", "anchor": "a typical 6-step web app design process", "where": "research access section" },
+    { "href": "/case-studies/apex-hcm-payroll-ux/", "anchor": "Apex HCM payroll redesign", "where": "after-you-send section (DOWN link)" },
+    { "href": "/case-studies/tradezella/", "anchor": "TradeZella dashboard revamp", "where": "after-you-send section (optional second DOWN link)" },
+    { "href": "/services/digital-product-design-services/", "anchor": "digital product design", "where": "first section, only for teams starting from zero; the ONE allowed cross-hub link, optional" },
+    { "href": "/contact/", "anchor": "send us your RFP", "where": "role x workflow invitation and closing section only" }
+  ],
+  "externalSources": [
+    { "url": "https://www.w3.org/TR/WCAG22/", "why": "Primary source for the accessibility acceptance line (WCAG 2.2 level AA)." },
+    { "url": "https://www.section508.gov/", "why": "Federal buyers: Revised 508 Standards and the official ICT accessibility contract language template (seen at assets.section508.gov/assets/files/ART%20Contract%20Language%20Template.pdf). Writer or link-builder: link the template page on section508.gov if it resolves, else the home page; verify the exact wording before quoting." },
+    { "url": "https://www.aiga.org/resources/aiga-position-on-spec-work", "why": "Professional body position on spec work: speculative work skips research, alternatives and testing. Supports 'do not ask for free mockups'." },
+    { "url": "https://guides.18f.gov/assets/derisking-government-tech/dist/18f-derisking-guide.pdf", "why": "18F De-risking Government Technology guide (Sept 2024): outcome-first solicitations, user stories instead of exhaustive requirements, evaluating strengths/weaknesses/risks and verbal interviews. 18F was GSA's digital services team (shut down in 2025); describe it in the past tense and check that the PDF still resolves. State field guide alternative: https://derisking-guide.18f.gov/state-field-guide/questions-to-ask/ (under-20-pages RFP point)." }
+  ],
+  "visuals": [
+    { "type": "section map (numbered blueprint)", "idea": "The 9 RFP sections as a numbered vertical blueprint, each with a one-line 'why the agency needs it to price'. 3-column table (section | what to write | example line) behind 'Show as text'." },
+    { "type": "role x workflow matrix", "idea": "Illustrative customer-portal grid: 4 roles x 9 workflows, cells marked view/edit/approve/none, right-hand column tagging each workflow in scope / out / later, with totals that feed price ('9 workflows, 4 roles'). Label 'Example, invented inputs'. Same grid as a markdown table behind 'Show as text'." },
+    { "type": "one component, six states strip", "idea": "The same orders table drawn 6 times: populated, empty first use, loading, error, no permission, 5,000 rows filtered. Caption: scope states, not screens. List of states with what to specify behind 'Show as text'." },
+    { "type": "acceptance checklist card", "idea": "Pass/fail checklist for accessibility (standard + level) and handoff (Figma annotations, breakpoints, Storybook mapping, all states, focus order, developer review). Checklist behind 'Show as text'." },
+    { "type": "before/after rewrite card", "idea": "5 weak RFP lines on the left (e.g. 'Modern, intuitive dashboard', 'Send 3 concept mockups') rewritten into priceable lines on the right. Two-column table behind 'Show as text'." },
+    { "type": "quality gate + scoring funnel", "idea": "Proposals pass a quality gate (workflow understanding, research plan, evidence, team) before price is compared, with the published weights shown as a bar. Criteria and weights behind 'Show as text'. Weights are a suggested example, labelled as such." }
+  ],
+  "leadAngle": "Two moments. (1) The role x workflow section: the reader realises that counting workflows and permission differences is the hard part and that the count decides the price; invitation: bring the half-filled grid to a free consultation. (2) The closing section: the RFP is ready and they need bidders; offer: add us to the bidder list, send the RFP, get a free consultation and a fixed-scope proposal priced against the same inventory and the published $60,000-$180,000 range (via hub link). Do not promise response times, free audits or free mockups.",
+  "variety": {
+    "type": "Checklist (fill-in RFP template). The last 4 posts were Guide, Guide, Comparison, Guide.",
+    "introStyle": "definition (not used by any published post; the last 4 used buyer scenario, myth, data point with source, question)",
+    "h2Frames": ["what + when (definition, trigger)", "which sections (template map)", "how to list (inventory)", "which states (scope detail)", "what access (commitments)", "how to write criteria (acceptance)", "what to leave out", "how to state budget and weights", "what happens after (sequence)"],
+    "sectionOrder": "template map -> scope inventory -> states/data -> research access -> acceptance -> exclusions -> budget/weights -> post-send sequence. No 'vs' H2, no cost-model or ROI section, no red-flags or pitch-question list (those were used by choose-ux-research-agency).",
+    "visualTypes": ["section map blueprint", "role x workflow matrix", "one component six states strip", "acceptance checklist card", "before/after rewrite card", "quality gate + scoring funnel"],
+    "ctaAngle": "add us to your bidder list: send the finished RFP -> free consultation + fixed-scope proposal priced against your own inventory",
+    "listStyle": "fill-in fields (field -> what to write -> example line) + pass/fail acceptance lines + before/after rewrites",
+    "notes": "Differs from each of the last 3 site-wide posts (ux-audit-agency-vs-freelancer, design-system-roi, saas-product-redesign) on type, intro style, H2 frames, section order, visual types and list style (6 of 7). The CTA still ends in 'free consultation + fixed-scope proposal' (site standard), but the angle (join the bidder list, priced on the reader's own inventory) is new. The 'checklist' visual type appeared in choose-ux-research-agency (post 1, outside the last 3); here it is an acceptance checklist, not a selection checklist."
+  },
+  "notes": [
+    "CANNIBALISATION CHECK: no title, H1, keyword, metaTitle, anchor, H2 or FAQ in content/ (services, industries, locations, blog, briefs, home.ts) targets 'RFP', 'request for proposal' or 'scope of work' for web apps. The hub owns cost (price, 4 factors, examples), deliverables, process, benefits, 'web app design vs UI UX web design', 'when to hire' and FAQs on tables/permissions, responsive layouts, phased redesign and duration: link those, do not restate them. dashboard-design-services, dashboard-ux-design, saas-ux-design, digital-product-design-services and ui-ux-web-design have no RFP/procurement content. The industries/saas.json anchor 'SaaS UI UX design' and keywords ('admin panel design', 'SaaS onboarding UX') are untouched.",
+    "SIBLING-SILO OVERLAP: content/blog/choose-ux-research-agency.md (ux-research-services silo) has a '1-page research brief' section (6 fields), a weighted 7-criteria scorecard, 12 pitch-call questions, red flags and the FAQ 'Do I need an RFP to hire a UX research agency?' (answer: No, a brief plus a call works for most teams). Different query and silo, so no cannibalisation, but: do not reuse its 6-field brief, scorecard, question list or red-flag framing; do not link to it (other silo); keep our first section consistent with its FAQ (a formal RFP is for procurement rules / public sector / several bidders).",
+    "SITE-FACT CONFLICT 1 (flag for orchestrator): content/home.ts FAQ 'Do you only create design or do development too?' says 'We deliver design and development' and links to /services/web-app-design-services/, while the web app hub's process ends at design handoff plus a review of first builds, and digital-product-design-services FAQ says designers do not write code and 'the client's engineers write the code'. The post must not claim either way; the design-and-build FAQ answers only from the buyer's side (ask for separate price lines).",
+    "SITE-FACT CONFLICT 2: digital-product-design-services.json table 'Digital product design vs web app design' says web app design starts from an 'Existing web application' and 'redesigns or extends' it, while the web app hub's 'When should a software company hire web app design services?' lists 'A new web application is planned'. The post follows the hub's own cost-section wording: teams that build a new product from zero compare scope with digital product design.",
+    "SITE-FACT CONFLICT 3 (minor): content/home.ts labels $60,000-$180,000 / 8-16 weeks as 'Full design & design system' with '3-6 designers'; the web app hub sells $60,000-$180,000 / 8-16 weeks as web app design ending in a web app UI kit, not a design system, and states no team size. The post cites only the hub figures via the hub link and states no team size.",
+    "DOWN links: content/case-studies/apex-hcm-payroll-ux.md and tradezella.md both list web-app-design-services. Apex is a stub (TODO body): quote only the frontmatter result '200+ screens -> 6 steps' and, if needed, the quote 'The new flow cut onboarding time by more than half.' (VP Product, Apex HCM). TradeZella: '40% more user interaction' (frontmatter result). No other client results. The role x workflow grid and every example line are illustrative with invented inputs; label them.",
+    "DO NOT USE (unsourced or vendor-only claims seen in SERP snippets): '13 percent of large government technology projects succeed' (secondhand in 18F, Standish-type figure; skip); rfp360 'typical weight' ranges (25-40% technical, 20-30% cost, etc.); kolonell scoring grid (35/25/15/25) and its EUR redesign prices (2,500-6,000 audit, 12,000-30,000 redesign); Ramotion '$20,000 starting'; Dribbble studio prices and 'Clutch top 5' claims; mindsea '$50,000 to $1 million'; leanlabs website redesign ranges; Simpalm's claim that an RFP 'lowers costs'.",
+    "ORIGINALITY: simpalm's template order is organization -> project -> audience -> scope -> timeline -> budget -> proposal timeline -> proposal format -> evaluation; wapiti's is summary -> goals -> audience -> scope -> technical -> content/SEO/accessibility -> timeline/budget -> support -> evaluation. Our 9 sections are deliberately built around design pricing units (roles, workflows, states, research access, acceptance) and must not mirror either order or wording. QA checks 5-gram overlap with the beats page (max 5%).",
+    "BANNED-WORD WATCH: procurement topics invite 'leverage', 'seamless', 'In today's', 'It is important to note'; all banned. Boolean H2/FAQ answers start with Yes/No.",
+    "18F STATUS: GSA eliminated 18F in March 2025; refer to it as 'GSA's former 18F team' and use past tense. Fact-checker: confirm the guide URL still resolves.",
+    "NEXT IN THIS SILO (MOFU, second post of the new silo): 'legacy web app redesign' / 'redesign legacy web app without disrupting users'. The SERP is all how-to (netguru rebuild-legacy-web-apps, thinkcompany redesign-enterprise-app-without-disrupting-users, theskinsfactory legacy software Q&A, eleken legacy-app-uiux-design-services). It must not repeat saas-product-redesign's rollout/migration sections or the hub FAQ 'Can you redesign an existing web app in phases?'. Angle: muscle memory, UI layer over unchanged back end, run/build teams. DOWN link: Apex HCM.",
+    "HUB BANKING (orchestrator, after publish): add one sentence to the hub's cost section body or the 'When should a software company hire...' list linking 'web app design RFP' -> /blog/web-app-design-rfp/ (for example: 'Sending a request for proposal? Use our web app design RFP template so every agency prices the same workflows and roles.')."
+  ]
+}

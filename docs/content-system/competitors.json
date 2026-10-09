@@ -1,12 +1,12 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "answerlab.com", "kind": "research agency insights", "silos": ["ux-research-services"], "seenFor": ["ux research rfp vendor evaluation", "how to choose a ux research partner"], "source": "WebSearch 2026-10-05" },
-    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study", "ux audit cost", "how to choose a ux audit company", "free ux audit vs paid ux audit"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
-    { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "ux research services"], "source": "WebSearch 2026-10-05" },
+    { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services", "web-app-design-services"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study", "ux audit cost", "how to choose a ux audit company", "free ux audit vs paid ux audit", "legacy app ui ux redesign services", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-09" },
+    { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services", "web-app-design-services"], "seenFor": ["ux research agency", "ux research services", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-05, 2026-10-09" },
     { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services", "design-system-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool", "design system agency"], "source": "WebSearch 2026-10-05, 2026-10-07, 2026-10-08" },
     { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp", "ux audit freelancer vs agency", "ux audit cost"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
     { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables"], "source": "WebSearch 2026-10-05" },
@@ -18,14 +18,14 @@
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
     { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "facelift vs full redesign saas"], "source": "WebSearch 2026-10-06" },
-    { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "product redesign examples"], "source": "WebSearch 2026-10-06" },
+    { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design", "web-app-design-services"], "seenFor": ["saas product redesign", "product redesign examples", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-06, 2026-10-09" },
     { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign", "is a design system worth the investment"], "source": "WebSearch 2026-10-06, 2026-10-08" },
     { "domain": "sda.company", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency"], "source": "WebSearch 2026-10-06" },
     { "domain": "chameleon.io", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "reducing onboarding drop-off activation"], "source": "WebSearch 2026-10-06" },
     { "domain": "blog.flowpoint.ai", "kind": "analytics tool blog", "silos": ["ux-audit-services"], "seenFor": ["who should do a ux audit", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
     { "domain": "codewave.com", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit freelancer vs agency", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
     { "domain": "designstudiouiux.com", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit tools"], "source": "WebSearch 2026-10-07" },
-    { "domain": "theskinsfactory.com", "kind": "agency Q&A blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ux audit proposal scope", "how to prepare for a ux audit"], "source": "WebSearch 2026-10-07" },
+    { "domain": "theskinsfactory.com", "kind": "agency Q&A blog", "silos": ["ux-audit-services", "web-app-design-services"], "seenFor": ["ux audit cost", "ux audit proposal scope", "how to prepare for a ux audit", "legacy enterprise software ux redesign", "modernize legacy software without disrupting users"], "source": "WebSearch 2026-10-07, 2026-10-09" },
     { "domain": "saashero.net", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit vs expert review"], "source": "WebSearch 2026-10-07" },
     { "domain": "musemind.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
     { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services", "design-system-services"], "seenFor": ["how to choose a ux audit company", "design system audit", "hire design system consultant"], "source": "WebSearch 2026-10-07, 2026-10-08" },
@@ -35,13 +35,22 @@
     { "domain": "appstudio.ca", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "cost to maintain a design system", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "supernova.io", "kind": "design system tool blog", "silos": ["design-system-services"], "seenFor": ["design system business case", "cost to maintain a design system", "design system roi business case"], "source": "WebSearch 2026-10-08" },
     { "domain": "uxpin.com", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["how to calculate design system roi"], "source": "WebSearch 2026-10-08" },
-    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit", "roi of a design system"], "source": "WebSearch 2026-10-08" },
+    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-08, 2026-10-09" },
     { "domain": "awesomic.com", "kind": "design subscription blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
     { "domain": "ramotion.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
     { "domain": "designsystemscollective.com", "kind": "publisher (Medium publication)", "silos": ["design-system-services"], "seenFor": ["design system build vs adopt", "design system roi formula"], "source": "WebSearch 2026-10-08" },
     { "domain": "smashingmagazine.com", "kind": "publisher (citable source, not a target)", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "zeroheight.com", "kind": "design system tool (ROI calculator page)", "silos": ["design-system-services"], "seenFor": ["design system roi calculator"], "source": "WebSearch 2026-10-08" },
-    { "domain": "knapsack.cloud", "kind": "design system tool (ROI calculator page)", "silos": ["design-system-services"], "seenFor": ["design system roi calculator", "design system business case"], "source": "WebSearch 2026-10-08" }
+    { "domain": "knapsack.cloud", "kind": "design system tool (ROI calculator page)", "silos": ["design-system-services"], "seenFor": ["design system roi calculator", "design system business case"], "source": "WebSearch 2026-10-08" },
+    { "domain": "simpalm.com", "kind": "app development agency blog", "silos": ["web-app-design-services"], "seenFor": ["how to write a web app rfp", "web app rfp template", "web application design rfp scope user roles", "how to write a website design rfp"], "source": "WebSearch 2026-10-09" },
+    { "domain": "wapiti.digital", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web design rfp template questions", "web app design rfp questions to ask design agency", "web application rfp scope"], "source": "WebSearch 2026-10-09" },
+    { "domain": "sixfeetup.com", "kind": "development agency blog", "silos": ["web-app-design-services"], "seenFor": ["how to write an rfp for a web portal project", "how to write a web app rfp"], "source": "WebSearch 2026-10-09" },
+    { "domain": "chopdawg.com", "kind": "app development agency blog", "silos": ["web-app-design-services"], "seenFor": ["how to write an app development rfp", "how to write a web app rfp"], "source": "WebSearch 2026-10-09" },
+    { "domain": "wethos.co", "kind": "freelance platform blog", "silos": ["web-app-design-services"], "seenFor": ["web application scope of work", "web app design statement of work template"], "source": "WebSearch 2026-10-09" },
+    { "domain": "thinkcompany.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services"], "seenFor": ["design system agency vs in-house", "how to redesign an enterprise application without disrupting users", "lessons from modernizing legacy applications"], "source": "WebSearch 2026-10-08, 2026-10-09" },
+    { "domain": "wearearch.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app design agency", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-09" },
+    { "domain": "parallelhq.com", "kind": "agency blog (listicle)", "silos": ["web-app-design-services", "saas-ux-design"], "seenFor": ["web app design agency", "web app design services top 10"], "source": "WebSearch 2026-10-09" },
+    { "domain": "kolonell.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app redesign cost", "legacy app ui ux redesign cost", "design agency rfp scoring"], "source": "WebSearch 2026-10-09" }
   ],
   "topPosts": [
     {
@@ -108,7 +117,7 @@
       "silo": "ux-research-services",
       "serviceSupport": 5,
       "status": "candidate",
-      "notes": "Partly absorbed by the choose-ux-research-agency brief (brief/RFP section). Only write separately as a downloadable RFP template if it does not cannibalise that post."
+      "notes": "Partly absorbed by the choose-ux-research-agency brief (brief/RFP section). Only write separately as a downloadable RFP template if it does not cannibalise that post. 2026-10-09: web-app-design-rfp now uses the RFP-template format for the web app silo, so schedule any research RFP post well apart from it and give it a different structure."
     },
     {
       "domain": "eleken.co",
@@ -291,6 +300,63 @@
       "serviceSupport": 5,
       "status": "candidate",
       "notes": "Deferred for variety (ux-audit-agency-vs-freelancer was a vs post on 2026-10-07). No design-system-specific page ranks (idealogic, codal, superside are generic), so a later BOFU on 'outsource design system build, keep governance in-house' has an open SERP. Must not repeat the home.ts freelancer/in-house/agency table."
+    },
+    {
+      "domain": "simpalm.com",
+      "url": "https://www.simpalm.com/blog/how-to-write-a-web-app-rfp",
+      "title": "How to write a web app RFP",
+      "keywords": ["how to write a web app rfp", "web app rfp template", "web app design rfp"],
+      "estTraffic": null,
+      "silo": "web-app-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/web-app-design-rfp.json",
+      "notes": "Development-focused: organization, project, audience, scope, timeline, budget, proposal timeline, proposal format, evaluation; downloadable template at /resources/web-app-rfp-template. No design scope (roles x workflows, screen states, research access, accessibility or handoff acceptance). Its 'RFP lowers costs' claim is do-not-use."
+    },
+    {
+      "domain": "wapiti.digital",
+      "url": "https://wapiti.digital/web-design-rfp-template-questions-scope-and-evaluation-checklist/",
+      "title": "Web design RFP template: questions, scope and evaluation checklist",
+      "keywords": ["web design rfp template", "web design rfp questions", "rfp evaluation checklist"],
+      "estTraffic": null,
+      "silo": "web-app-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/web-app-design-rfp.json",
+      "notes": "Marketing-website RFP (SEO, content, hosting). Seen for 3 of the RFP queries checked. emulent.com, vitaldesign.com, process.st, blennd.com toolkit and sixfeetup.com (web portal RFP) rank alongside it."
+    },
+    {
+      "domain": "eleken.co",
+      "url": "https://www.eleken.co/blog-posts/legacy-app-uiux-design-services",
+      "title": "Legacy app UI/UX design services",
+      "keywords": ["legacy app ui ux redesign services", "redesign legacy web app without disrupting users"],
+      "estTraffic": null,
+      "silo": "web-app-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Next MOFU for the web app silo ('legacy web app redesign'). SERP is how-to: netguru.com/blog/how-to-rebuild-legacy-web-apps, thinkcompany.com/blog/how-to-redesign-an-enterprise-application-without-disrupting-your-users, theskinsfactory.com legacy software Q&A and blog. Must not repeat saas-product-redesign rollout sections or the hub FAQ on phased redesign. DOWN link: Apex HCM legacy payroll case study."
+    },
+    {
+      "domain": "wearearch.com",
+      "url": "https://wearearch.com/blog/web-app-design-agency",
+      "title": "Web app design agency",
+      "keywords": ["web app design agency", "enterprise web app design agency how to choose"],
+      "estTraffic": null,
+      "silo": "web-app-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Deferred: 'web app design agency' is the hub head term in agency form, and 'how to choose' repeats the choose-ux-research-agency format. parallelhq.com top-10 listicle and aufaitux rank for the same intent. Partly absorbed by web-app-design-rfp (evaluation section)."
+    },
+    {
+      "domain": "kolonell.com",
+      "url": "https://kolonell.com/en/blog/web-app-ui-redesign-ux-cost-2026",
+      "title": "Web app UI redesign UX cost 2026",
+      "keywords": ["web app redesign cost", "legacy app ui ux redesign cost"],
+      "estTraffic": null,
+      "silo": "web-app-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Blocked: the hub owns 'How much does web app design cost?'. EUR price ranges are vendor-only (do-not-use). mindsea.com app-redesign-cost and yummygum.com web platform redesign also rank."
     }
   ]
 }
