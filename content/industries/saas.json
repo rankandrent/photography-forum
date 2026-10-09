@@ -171,7 +171,7 @@
       "h2": "How much does SaaS UI UX design cost?",
       "format": "paragraph",
       "answer": "<strong>Full SaaS platform design costs $60,000–$180,000 and takes 8–16 weeks, including a design system.</strong> The price depends on 4 factors: the number of roles, tenant configuration options, data-heavy tables and enterprise readiness features such as SSO.",
-      "body": "<p>An admin console redesign with 3 roles fits a $25,000–$60,000 sprint over 4–8 weeks. A full platform with 8 roles, custom fields, SSO and a component library for 3 product teams sits near $180,000. Teams that need finance sign-off for the component library can <a href=\"/blog/design-system-roi/\">model when a shared component library pays back</a> before they request a quote.</p>"
+      "body": "<p>An admin console redesign with 3 roles fits a $25,000–$60,000 sprint over 4–8 weeks. A full platform with 8 roles, custom fields, SSO and a component library for 3 product teams sits near $180,000. Teams that need finance sign-off for the component library can <a href=\"/blog/design-system-roi/\">model when a shared component library pays back</a> before they request a quote. SaaS teams that must collect competing bids can <a href=\"/blog/web-app-design-rfp/\">scope roles, workflows and screen states in a design RFP</a> so the quotes are comparable.</p>"
     },
     {
       "h2": "Which security and procurement standards shape SaaS UX?",

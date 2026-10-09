@@ -40,6 +40,16 @@
           "funnel": "bofu"
         }
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "goal": "daily: 1 post for hub with fewest posts (13 hubs tied at 0; web-app-design-services picked for lead value)",
+      "jobs": [
+        {
+          "hub": "web-app-design-services",
+          "funnel": "bofu"
+        }
+      ]
     }
   ],
   "posts": [
@@ -98,6 +108,20 @@
       "externalLinks": 5,
       "qaLoops": 2,
       "notes": "Loop 1: fact 9 fixes (BLS May 2025 update, $85 relabelled as assumption, \"the one\" study claim, Figma per-component detaches, Chromatic compares snapshots not Figma, service claims cut to site wording); QA completeness G1–G4 (governance, Storybook/Zeroheight, generic-claims, migration cost) + F1–F8. Loop 2: 1 fact fix (closing \"only row\" claim) + 1 QA nit. Backlinks from hub benefits card and SaaS industry cost section. Open: hub \"2+ teams\" vs startups page \"3+ squads\"."
+    },
+    {
+      "slug": "web-app-design-rfp",
+      "hub": "web-app-design-services",
+      "keyword": "web app design rfp",
+      "funnel": "bofu",
+      "author": "sahar-asif",
+      "date": "2026-10-09",
+      "words": 1957,
+      "images": 7,
+      "internalLinks": 5,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "notes": "Loop 1: fact 8 fixes (unsourced \"how agencies price\" claims tied to hub, 18F against point scoring caveat, UI kit vs benefits, 4 price factors, promise removed); QA 9 fixes + G1 handoff prose + G2 proposal format; section map redrawn 2732→1597px; timeline image dropped for a visible list (6 images max). Loop 2: 1 fact fix (\"If yours does\" ambiguity) + 1 QA nit. Backlinks from hub cost section and SaaS industry cost section. Open: home.ts \"design and development\" vs hub scope ending at handoff."
     }
   ],
   "audits": []

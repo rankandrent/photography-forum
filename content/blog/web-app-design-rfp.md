@@ -19,8 +19,8 @@ takeaways:
   - "Promise research access in writing: users per role, who recruits them and how many usability test rounds you fund."
   - "Write accessibility and handoff as pass/fail acceptance lines that name the standard, the breakpoints and the exact files you accept."
   - "Publish a budget band and weighted evaluation criteria, and ask for case studies instead of free mockups."
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 A web app design RFP is the request for proposal (RFP) you send design agencies when the workflows, user roles and screens of a logged-in application need designing, and its scope section decides whether the quotes that come back can be compared at all. Below is a fill-in template of nine sections built around the units a design agency prices: the same workflows, roles and test rounds that help set the fee for our [web app design services](/services/web-app-design-services/). Each section gives the field, what to write and a sample line.
@@ -39,7 +39,7 @@ Teams that build a new product from zero compare scope with [digital product des
 
 **The RFP needs nine sections: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, and proposal format and evaluation.**
 
-The order runs from who uses the product and what they do to the evidence and files you expect back. The same nine sections work for a user experience (UX) design RFP or any RFP for UI UX design services.
+After context and goals, the order runs from who uses the product and what they do to the evidence and files you expect back. The same nine sections work for a user experience (UX) design RFP or any RFP for UI UX design services.
 
 ![Two-column grid of the 9 numbered web app design RFP sections, 1 to 5 on the left and 6 to 9 on the right, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg "The 9 RFP sections and why each one changes the price")
 

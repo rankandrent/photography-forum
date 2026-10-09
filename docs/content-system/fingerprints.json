@@ -171,6 +171,50 @@
       "words": 2179,
       "tableCount": 4,
       "listStyle": "worksheet tables + gated decision steps"
+    },
+    {
+      "slug": "web-app-design-rfp",
+      "hub": "web-app-design-services",
+      "type": "Checklist",
+      "funnel": "bofu",
+      "introStyle": "definition",
+      "h2Frames": [
+        "when",
+        "which sections",
+        "how to list",
+        "which in scope",
+        "what access",
+        "how to write criteria",
+        "what to leave out",
+        "how to state budget/weights",
+        "what happens after",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "When do you need a web app design RFP?",
+        "Which 9 sections does the RFP need?",
+        "How do you list user roles and workflows?",
+        "Which screen states and data belong in scope?",
+        "What research access should you promise?",
+        "How do you write acceptance criteria?",
+        "What should the RFP leave out?",
+        "How do you state budget, timeline and weights?",
+        "What happens after you send the RFP?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "two-column section map",
+        "role x workflow grid",
+        "one component six states",
+        "pass/fail acceptance card",
+        "weak-to-priceable rewrites",
+        "quality gate + scoring funnel"
+      ],
+      "ctaAngle": "send us your RFP → free consultation + fixed-scope proposal, compare with published range",
+      "faqCount": 5,
+      "words": 1957,
+      "tableCount": 3,
+      "listStyle": "fill-in template tables + pass/fail lines + numbered timeline"
     }
   ]
 }

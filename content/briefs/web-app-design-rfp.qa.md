@@ -1,108 +1,77 @@
-# QA report: web-app-design-rfp (2026-10-09, review loop 1)
+# QA report: web-app-design-rfp (2026-10-09, review loop 2, final)
 
-Reviewer: content-qa. Files: content/blog/web-app-design-rfp.md, content/briefs/web-app-design-rfp.json, public/blog/web-app-design-rfp/*.svg.
-Build: `SHOW_DRAFTS=1 npm run build` from a clean tree (HEAD fff7337, `git status` clean before and after).
+Reviewer: content-qa. I diffed the post against the loop-1 commit fff7337 (repairs e0895c5 and ca5d91e). The tree was clean (`git status` showed nothing uncommitted under public/blog/web-app-design-rfp/ or content/briefs/).
+Build: `SHOW_DRAFTS=1 npm run build` at HEAD ca5d91e.
+
+## Loop-1 items
+
+| Item | Status | Evidence |
+|---|---|---|
+| F1 bold answer fragment | Fixed | L40, 29 words, one sentence, names "The RFP". |
+| F2 vague subject | Fixed | L42 "The same nine sections work for a user experience (UX) design RFP…". |
+| F3 "in this order, starting with" | Fixed | L64 now points to the grid "behind sections 3 and 4". |
+| F4 "never sees" | Fixed | L70 "a read-only state that the buyer's edit screen does not cover". |
+| F5 WCAG first open use | Fixed | L144 expanded. |
+| F6 misplaced modifier | Fixed | L169. |
+| F7 Q&A first open use | Fixed (moved) | The first open use is now L96 "question-and-answer (Q&A) window" (fact F4 moved it earlier); L193/L215 are bare, which is correct. |
+| F8 garden path | Fixed | L221 "…should test method…". |
+| F9 closing | Fixed (adapted) | L225 keeps About's standalone sentence once; it adds no "we will…" promise. Reads cleanly. |
+| F10 scoring pill colon | Fixed | The SVG text reads "Suggested example weights, not a standard". |
+| F11 section map height | Fixed | 800×1597 two-column. Renders 760×1517 at 1440 (was 2,595) and 354×707 at 390. |
+| G1 handoff prose | Fixed | L159, about 68 words, 4 sentences. It explains the breakpoints (1280/1440/1920 px plus phone layouts, matching hub L63/L202 "for example 3 breakpoints"), Storybook mapping and the developer review, each with its reason. The collapsed list is not repeated line by line. |
+| G2 section 9 format | Fixed | L193: page limit (twelve pages), order of the evaluation criteria, written Q&A to all bidders, and the reason (score like with like, no private answers). |
 
 ## Checklist
 
 | # | Item | Result | Evidence |
 |---|---|---|---|
-| 1 | Intent & cannibalisation | PASS | Commercial-investigation / vendor procurement intent, matches the template + scoring body. `rg -i "rfp\|request for proposal" content/` (excluding briefs) finds only this post and choose-ux-research-agency's FAQ "Do I need an RFP to hire a UX research agency?" (different silo and query, and its "No, unless procurement rules" answer is consistent with this post's L30). No hub/industry/location page targets the keyword. |
+| 1 | Intent & cannibalisation | PASS | Unchanged since loop 1. No other page in content/ targets the keyword. |
 | 2–3 | Facts / honesty | skipped | fact-checker. |
-| 4 | Semantic SEO | FIX | metaTitle 57 chars, title 58, description 147 on the built HTML (no entities). The description ends on a next step: "Then request a fixed-scope proposal." (matches the BOFU CTA). Density: 7 exact uses, 1.15% of 2,445 words (1.52% of the 1,837 open words); in range. Every bold answer is one sentence of 21–29 words, except L40, which is a fragment (F1). Boolean FAQs open with Yes / No / Yes. No banned phrases or hedges. No digit-first sentence (`grep -nE '^(\*\*)?[0-9]+ '` returns nothing). Abbreviations: WCAG and Q&A are expanded only inside collapsed `<details>`, and their first open-text use is unexpanded (F5, F7). Keyword sentences quoted and tested below. |
-| 5 | Internal links | PASS (orchestrator exception) | There are 5 contextual links: hub (intro, L26), digital-product-design (the one cross-hub link, L36), TradeZella (L223), /contact/ (L225) and the hub cost deep link (L225). All targets build, and `#how-much-does-web-app-design-cost` exists on the hub. Anchors vary. The hub is linked early and again near the end. That is below the 6–12 rule. I accept it as the orchestrator directed: Apex HCM is a TODO stub, the only same-silo post (fintech-ux-design) is a draft stub, and BOFU posts stay lean per RULES. No genuinely relevant non-hub target exists. |
-| 6 | Images | FIX (non-blocking) | All 7 SVGs exist in public/ and out/, are 4–12 KB, have no `<image>` or external href, and no third-party brand assets. Alt text is descriptive. Screenshots inside the built page: desktop renders at 760/800 = 0.95 (26px text shows at about 24.7px), mobile at 354/800 = 0.4425 (about 11.5px), and both are legible in the 390 screenshots. Cover: 21:8 at 1440, 16:9 `object-fit: cover` at 390, and the title is fully visible (no crop). Spelling is clean. Section map height: 2,595px at 1440 (2.9 viewports) and 1,209px at 390. It is acceptable for loop 1, because it is legible, complete and the only home of the 9-section template, but it is the tallest image on the site. F11 (designer) asks for a 2-column redraw. quality-gate-scoring.svg pill reads "Suggested example weights, not a standard:" with a trailing colon (F10). |
-| 6b | Duplication | PASS | All 6 `<details class="astext">` blocks are collapsed (`open=false` at both widths). Labels were checked one by one: section map 9/9 rows × 4 fields, grid 9 rows × 5 cells + totals, six states 6/6, acceptance 6/6, rewrites 5/5, scoring 3 stages and weights. Nothing dropped or changed. The timeline (L215–219) is a visible list with no image, as intended. |
-| 7 | Readability | FIX | US spelling. No paragraph over 4 sentences. 5-gram overlap: highest blog 0.62% (design-system-roi), hub 1.07% (shared phrases are hub facts: "5–8 users per role", "1280, 1440 and 1920 px", "teams that build a new product from zero"). All far below 12%. Grammar and logic defects: F2, F3, F4, F6, F8, F9. |
-| 7a | Competitor originality | PASS (numeric overlap not computable) | simpalm.com is blocked twice (WebFetch ENOTFOUND, curl proxy 403 connect_rejected), so I used search snippets. Simpalm order: organization → project → audience → scope → timeline → budget → proposal timeline → proposal format → evaluation. Ours: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, proposal format and evaluation. Four sections are design-specific and absent from simpalm, the tail order is generic to any RFP, and there are no shared examples. All 7 serpGaps are covered (gap 6, handoff, mostly in image or collapsed text, see G1). |
-| 7b | Silo & leads | PASS | services[0] = web-app-design-services (correct hub). One cross-hub link, no other-silo posts. funnel bofu is confirmed: the SERP in the brief is vendor RFP templates and procurement scoring pages (simpalm, wapiti, sixfeetup, chopdawg, rfp360), the same vendor-selection intent as funnel.json's BOFU example "how to choose a ux design agency". The reader has budget and is inviting bidders this month. serviceSupport is 5 (≥5). Lead angle: mid-post invitation L96 (half-filled grid on a first call) and closing L225 (bidder list), with no hard sell. Note: the "← Previous guide" link to /blog/fintech-ux-design/ (a draft stub in the same silo) appears only because of SHOW_DRAFTS. Confirm it is absent in the production build. |
-| 7c | Variety | PASS | Type Checklist (last 4: Guide, Guide, Comparison, Guide), intro style definition (unused so far), new visual types (section map, role × workflow matrix, six-state strip, acceptance card, rewrite card, scoring gate) and a new CTA angle (bidder list). This differs on more than 4 axes from the last 5 posts. The intro and closing are not reused. |
-| 7d | Completeness | FAIL | 2 gaps (G1, G2), see the guidance below. |
-| 7e | On-page | PASS | `npm run onpage -- /blog/web-app-design-rfp/` gives score 100 with `failed: []`. Manual items: real author (Sahar Asif) and contributor (Umar Sarwar) with LinkedIn, a case-study proof link, 5 verified-looking external sources (fact-checker owns verification), updated date set, a ≤30-word bold answer per H2 (after F1), images < 150 KB. FAQPage `acceptedAnswer.text` holds only the answer text for all 5 questions (checked in out/). |
-| 8 | Build | PASS | `SHOW_DRAFTS=1 npm run build` exit 0. `npm run seo:check`: 82 pages, 0 errors, 6 warnings, all on other pages (draft stubs ai-ux-design, fintech-ux-design, generative-ai-ux and the design-team author page). `npm run lint`: 0 errors (only the known jsx-ast-utils TSNonNullExpression notice). |
+| 4 | Semantic SEO | PASS | Built HTML: title 57 ("Web App Design RFP: Template, Scope Inventory and Scoring"), H1 58, description 147, which ends on the next step "Then request a fixed-scope proposal." The exact keyword appears 8 times: 1.24% of 2,589 body words, 1.63% of 1,958 open words. Every bold answer is one sentence of ≤ 29 words. `grep -nE '^(\*\*)?[0-9]+ '` finds nothing. Abbreviations checked on the text with `<details>` stripped: RFP, IA, UI, UX, WCAG, W3C, Q&A, SUS, NDAs, GSA and SOW are each expanded at first open use. B2B appears only in alt text and in the image, where it is expanded. Boolean FAQs open Yes / No / Yes. No banned phrases or hedges. |
+| 5 | Internal links | PASS (orchestrator exception, as in loop 1) | 5 contextual links, all targets build, hub linked in the first paragraph. |
+| 6 | Images | PASS | All 7 SVGs exist in public/ and out/, and `ls out/blog/web-app-design-rfp/` matches the post's 7 images. No brand assets, alt text is descriptive, and the section-map alt describes the new 2-column layout. Rendered in the built page with fixed/sticky elements hidden by `visibility` (see the lesson): the inline images are 760px at 1440 (scale 0.95, so 26px text renders at about 24.7px) and 354px at 390 (about 11.5px, legible in the screenshots, the same level as loop 1). The cover is 1224×466 at 1440 and 354×199 at 390 with `object-fit: cover`, and the title is fully visible. Spelling is clean. |
+| 6b | Duplication | PASS | All 6 `details.astext` blocks are closed at 1440 and 390. Section map SVG text vs. table: 9/9 rows × 4 fields word for word, plus a legend card. The scoring SVG matches its 3 list items. The other images are unchanged since loop 1. |
+| 7 | Readability | PASS (1 small FIX) | US English. Every paragraph is ≤ 4 sentences. 5-gram overlap: hub 1.18%, highest blog 0.54% (design-system-roi), both < 12%. The new text adds no padding: G1 + G2 + the 18F caveat come to about 145 words, all required, so I accept the 2,589-word body. One small logic imprecision: F12. |
+| 7a | Competitor originality | PASS | Unchanged since loop 1 (simpalm blocked, structure compared from snippets, all serpGaps covered; the handoff gap is now in open text through G1). |
+| 7b | Silo & leads | PASS | services[0] web-app-design-services, BOFU, serviceSupport 5. Lead angle is soft: L96 first call, L225 bidder list. |
+| 7c | Variety | PASS | Unchanged since loop 1. |
+| 7d | Completeness | PASS | G1 and G2 are delivered with substance. Every H2 has a bold answer, a reason and a concrete example or number. The research H2 now ends on its action list, and the scoring H2 ends on the weights image. Both sections still tell the reader what to do ("Write these lines…", "Publish… score quality before opening price"). Each takeaway is backed by a section. No trailing sentences, and every FAQ answer is ≥ 2 sentences. |
+| 7e | On-page | PASS | `npm run onpage -- /blog/web-app-design-rfp/` gives score 100 with `failed: []`. The FAQPage JSON-LD holds 5 answers, each containing only its answer text. Images < 150 KB (max 12 KB). |
+| 8 | Build | PASS | `SHOW_DRAFTS=1 npm run build` exit 0. `npm run seo:check`: 82 pages, 0 errors, 6 warnings, all on other pages (draft stubs and the design-team author page). `npm run lint` exit 0 (only the known jsx-ast-utils notice). |
 
-## Keyword sentences (quoted, swap test "this document")
+## Keyword sentences (swap test "this document")
 
-- Title: "Web App Design RFP Template: 9 Sections Agencies Can Price". PASS.
-- metaTitle: "Web App Design RFP: Template, Scope Inventory and Scoring". PASS.
-- Description: "Web app design RFP template: 9 sections, a workflow and role inventory, sample data rules and scoring weights. Then request a fixed-scope proposal." PASS. The next-step clause is "Then request a fixed-scope proposal."
-- First sentence L26: "A web app design RFP is the request for proposal (RFP) you send design agencies when … and its scope section decides whether the quotes that come back can be compared at all." PASS. Grammatical. "its" could in theory attach to "application", but no reader will read it that way.
-- L64: "Fill the web app design RFP template in this order, starting with the grid in the next section." FAIL (logic). "In this order" means section 1 (context) first, but "starting with the grid" points to sections 3–4. See F3.
+- Title, metaTitle, description: unchanged since loop 1. PASS.
+- L26 first sentence: unchanged. PASS.
+- L64: "Fill the web app design RFP template in this order; the next section shows how to build the role and workflow grid behind sections 3 and 4." PASS.
 - L191: "A web app design RFP that states its band lets each bidder say early whether your scope fits it." PASS.
-- L225: "Your web app design RFP now describes the work in units any bidder can price, ours included: a grid, a state list and acceptance lines." PASS. The sentence after it is a non sequitur (F9).
-- Secondary n-gram sentences: L42 "The frame works as a user experience (UX) design RFP…" FAIL (vague subject, stuffed, F2). L221 "questions to ask in a design RFP interview test method" FAIL (garden path, the reader parses "interview test method" as one noun, F8).
+- L225: "Your web app design RFP now describes the work in units any bidder can price, ours included: a grid, a state list and acceptance lines." PASS. The next two sentences read cleanly, and no participle dangles.
+- L42 secondary n-grams: "The same nine sections work for a user experience (UX) design RFP or any RFP for UI UX design services." PASS.
+- L221: "the questions to ask in a design RFP interview should test method" PASS.
 
-## FIX list (exact replacements for the orchestrator)
+## FIX list (exact replacements for the orchestrator, non-blocking)
 
-F1 (L40, bold answer is a fragment and does not name the entity)
-- old: `**Nine sections: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, and proposal format with evaluation.**`
-- new: `**The RFP needs nine sections: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, and proposal format and evaluation.**` (29 words)
+F12 (L42, the order starts with context and goals, not with "who uses the product")
+- old: `The order runs from who uses the product and what they do to the evidence and files you expect back.`
+- new: `After context and goals, the order runs from who uses the product and what they do to the evidence and files you expect back.`
 
-F2 (L42)
-- old: `The frame works as a user experience (UX) design RFP or as an RFP for UI UX design services.`
-- new: `The same nine sections work for a user experience (UX) design RFP or any RFP for UI UX design services.`
-
-F3 (L64)
-- old: `Fill the web app design RFP template in this order, starting with the grid in the next section.`
-- new: `Fill the web app design RFP template in this order; the next section shows how to build the role and workflow grid behind sections 3 and 4.`
-
-F4 (L70, "never" fails against the post's own grid: a buyer also sees orders read-only once submitted)
-- old: `needs a read-only state the buyer never sees.`
-- new: `needs a read-only state that the buyer's edit screen does not cover.`
-
-F5 (L146, first open-text use of WCAG)
-- old: `For a commercial web app, name WCAG 2.2 level AA, the current`
-- new: `For a commercial web app, name Web Content Accessibility Guidelines (WCAG) 2.2 level AA, the current`
-
-F6 (L169, misplaced modifier: "Instead of long requirement lists, the … team recommended")
-- old: `Instead of long requirement lists, the General Services Administration's (GSA) former 18F team recommended [a statement of objectives for performance-based services](https://guides.18f.gov/derisking-government-tech/buying-development-services/) when buying custom software.`
-- new: `For custom software, the General Services Administration's (GSA) former 18F team recommended [a statement of objectives for performance-based services](https://guides.18f.gov/derisking-government-tech/buying-development-services/) instead of long requirement lists.`
-
-F7 (L193, first open-text use of Q&A)
-- old: `List the dates in one line: proposal deadline, Q&A window, interviews,`
-- new: `List the dates in one line: proposal deadline, question-and-answer (Q&A) window, interviews,`
-
-F8 (L221, garden-path sentence)
-- old: `The interview replaces spec work: questions to ask in a design RFP interview test method ("how would you test the approval flow?"), not finished screens.`
-- new: `The interview replaces spec work: the questions to ask in a design RFP interview should test method ("how would you test the approval flow?"), not finished screens.`
-
-F9 (L225, "Since every project begins with…" does not cause "takes one email"; non sequitur)
-- old: `Since every project begins with a free consultation and a fixed-scope proposal, adding us to the bidder list takes one email: [send us your RFP](/contact/), then compare our number with [the published web app design price range](/services/web-app-design-services/#how-much-does-web-app-design-cost).`
-- new: `Adding us to the bidder list takes one email: [send us your RFP](/contact/), and we will answer with a free consultation and a fixed-scope proposal priced against your inventory. Compare that number with [the published web app design price range](/services/web-app-design-services/#how-much-does-web-app-design-cost).`
-  (Keeps "free consultation" once in this section, per the orchestrator's once-only clause rule.)
-
-F10 (designer, quality-gate-scoring.svg): the subtitle pill text `Suggested example weights, not a standard:` should become `Suggested example weights, not a standard` (drop the trailing colon; it was copied from the details lead-in that introduces a list).
-
-F11 (designer, recommended, non-blocking for this loop): redraw rfp-section-map.svg as a 2-column card grid (5 + 4 cards) with a target viewBox height of ≤ 1,600 so the page image is under about 1,500px at 1440. Keep the 26px minimum text and every field word for word.
+F13 (optional, L70 repeats takeaway 1 almost word for word, and L191 lists the same four factors a third time)
+- old: `Both totals feed the quote: workflows and user roles are two of the four factors our web app design price depends on.`
+- new: `Both totals feed the quote, because every workflow needs its own wireframes and every role its own views.`
+  (This uses only post content: L54 "Each role adds views" and L55 "Sets wireframe and prototype effort". If the fact-checker objects, keep the current wording.)
 
 ## Guidance for the writer
 
-G1. [H2 "How do you write acceptance criteria?" / new paragraph after the `</details>` at L159, before "Ask your own counsel…"]
-Missing: the handoff half of the section has no open prose. Storybook has 0 mentions outside the image and collapsed text, the breakpoints and devices attribute is covered only by "the breakpoints" in the bold answer, and the developer review has no explanation. The serpGap "handoff is never defined" is delivered only by the image.
-Add: 3–4 sentences that explain why each handoff line belongs in the RFP, with one concrete example:
-(a) Name the breakpoints (for example 1280, 1440 and 1920 px, the three our web app design handoff uses, plus phone layouts for the tasks users finish on a phone) so every bidder prices the same number of layouts.
-(b) Mapping component specs to your Storybook stories by name lets engineers reuse coded components instead of rebuilding them from screenshots.
-(c) A scheduled developer review of the first builds is where drift between design and code gets caught. Make it an accepted deliverable, not a favor.
-Source for the numbers: content/services/web-app-design-services.json ("Design handoff package" item and the FAQ "3 desktop breakpoints"). Target 60–90 words. Do not repeat the checklist line by line. Explain the why.
-
-G2. [H2 "How do you state budget, timeline and weights?" / paragraph L193, or a new 2-sentence paragraph before the scoring image]
-Missing: the brief attribute "proposal format, page limit and Q&A window" and RFP section 9 have no open-text substance. The page limit appears only as "check the page limit and format" in the timeline list and as "twelve pages maximum" inside the collapsed table.
-Add: 2 sentences on how to write section 9, for example: set a page limit (for example twelve pages), require proposals to follow the order of your evaluation criteria so each score maps to one part, and state that questions arrive in writing during the Q&A window and answers go to every bidder. Say why: a fixed format lets evaluators score like with like.
-Target 35–50 words. Keep it out of the FAQs.
-
-Not counted as gaps:
-- The brief's 18F under-20-pages citation was not verifiable (writer learnings, 2026-10-09), so the FAQ correctly gives 6–10 pages as our recommendation only.
-- The Apex HCM down link was dropped as a stub, per the orchestrator.
+None. There are no completeness gaps in this loop.
 
 ## Notes for the orchestrator
 
-- After publishing, confirm that the production build (without SHOW_DRAFTS) does not render the "← Previous guide" link to the fintech-ux-design draft stub.
-- The brief's backlinkSuggestions (hub cost section, saas.json) are still pending after publishing.
-- Servers: I started python http.server PID 2204 on port 8765, stopped it, and confirmed with `ps`. No other servers were running.
+- Production build: the SHOW_DRAFTS build still renders "← Previous guide" to the /blog/fintech-ux-design/ draft stub. Confirm it is absent in the build without SHOW_DRAFTS before publishing.
+- backlinkSuggestions (hub cost section, saas.json) are still pending after publishing.
+- Servers: no servers were running before I started. I started python http.server PID 3780 on port 8766, stopped it with `kill 3780`, and `ps` confirmed it was gone.
 
 ## FAIL list
 
-- 7d Completeness: G1 (handoff acceptance has no open prose, Storybook and breakpoints only in image or collapsed text), G2 (proposal format, page limit and Q&A window attribute thin).
-- 4/7 language: F1–F9 must be applied (F3, F4, F6, F8, F9 are logic or grammar defects in visible text).
+- None. F12 is a one-line logic polish and F13 is optional; neither blocks publishing.
 
-VERDICT: FAIL
+VERDICT: PASS
