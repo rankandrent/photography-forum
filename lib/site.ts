@@ -2,6 +2,8 @@ export const SITE = {
   name: "UIUXDesignServices.us",
   /** Brand name Google should show as the site name and in titles (owner, 2026-10-09) */
   brand: "UI UX Design Services",
+  /** Microsoft Clarity project ID (heatmaps and session recordings) */
+  clarityId: "yv4egi1bre",
   domain: "uiuxdesignservices.us",
   /** Year the company started */
   founded: 2017,

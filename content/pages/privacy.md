@@ -37,7 +37,7 @@ We share personal information only with service providers that help us run our b
 
 ## Cookies
 
-The Site does not use advertising cookies. If we add analytics or similar tools in the future, we will update this policy and, where required, ask for your consent.
+The Site does not use advertising cookies. We use Microsoft Clarity to understand how visitors use the Site. Clarity sets first-party and third-party cookies and records how pages are used (for example clicks, scrolling and mouse movement) to produce heatmaps and session replays; text you type into form fields is masked. Microsoft processes this data under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). You can block these cookies in your browser settings.
 
 ## Data retention
 

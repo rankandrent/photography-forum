@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Manrope } from "next/font/google";
 import { FloatingBar } from "@/components/layout/FloatingBar";
+import Script from "next/script";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/ui/JsonLd";
@@ -38,6 +39,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <FloatingBar />
         <JsonLd data={organizationLd()} />
+        {/* Microsoft Clarity (heatmaps + session recordings), project yv4egi1bre */}
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${SITE.clarityId}");`}
+        </Script>
       </body>
     </html>
   );
