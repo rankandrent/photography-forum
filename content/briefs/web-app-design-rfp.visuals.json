@@ -1,0 +1,31 @@
+[
+  {
+    "frontmatter": {
+      "image": "/blog/web-app-design-rfp/cover.svg"
+    }
+  },
+  {
+    "marker": "<!-- visual: section map blueprint — the 9 RFP sections as a numbered vertical blueprint, each with a one-line \"why the agency needs it to price\"; label the sample lines as an invented B2B customer portal -->",
+    "markdown": "![Numbered vertical blueprint of the 9 web app design RFP sections, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg \"The 9 RFP sections and why each one changes the price\")"
+  },
+  {
+    "marker": "<!-- visual: role x workflow matrix — invented customer-portal grid, 4 roles x 9 workflows, cells marked view/edit/approve/none, right-hand column tagging in scope / out of scope / later phase, totals row \"9 workflows listed (7 in scope), 4 roles\"; label \"Example, invented inputs\" -->",
+    "markdown": "![Illustrative role by workflow grid for an invented B2B customer portal: 9 workflows against 4 roles (account admin, buyer, approver, support agent) marked edit, view, approve or none, each tagged in scope, later phase or out of scope, totalling nine workflows, seven in scope, four roles](/blog/web-app-design-rfp/role-workflow-grid.svg \"Example, invented inputs: a role × workflow grid\")"
+  },
+  {
+    "marker": "<!-- visual: one component, six states strip — the same orders table drawn six times: populated, empty on first use, loading, error, no permission, 5,000 rows with filters applied; caption \"Scope states, not screens\" -->",
+    "markdown": "![The same orders table sketched as a wireframe in six states, populated, empty on first use, loading, error, no permission and worst-case data, each with what the RFP should specify](/blog/web-app-design-rfp/orders-table-six-states.svg \"Scope states, not screens\")"
+  },
+  {
+    "marker": "<!-- visual: acceptance checklist card — pass/fail lines for accessibility (standard + level, focus order, labels) and handoff (annotated Figma, breakpoints, Storybook mapping, all states, developer review) -->",
+    "markdown": "![Checklist card of six pass lines: one accessibility line for WCAG 2.2 level AA with focus order and label annotations, and five handoff lines for annotated Figma files, named breakpoints, every screen state, Storybook mapping and a scheduled developer review](/blog/web-app-design-rfp/acceptance-pass-fail.svg \"Pass/fail acceptance lines for accessibility and handoff\")"
+  },
+  {
+    "marker": "<!-- visual: before/after rewrite card — 5 weak RFP lines on the left rewritten into priceable lines on the right -->",
+    "markdown": "![Five weak RFP lines, such as a modern, intuitive dashboard and send three concept mockups, each with an arrow to the priceable line that replaces it](/blog/web-app-design-rfp/weak-to-priceable-lines.svg \"Weak RFP lines rewritten into lines agencies can price\")"
+  },
+  {
+    "marker": "<!-- visual: quality gate + scoring funnel — proposals pass a quality gate (workflow understanding, research and test plan, case evidence, team) before price is compared; weights shown as a bar; label \"Suggested example weights\" -->",
+    "markdown": "![Three-stage scoring funnel with suggested example weights: quality out of 100 points split into workflow understanding 30, research and test plan 25, case evidence 25 and team seniority and continuity 20, a gate at 70 points, then a final score of quality 70% and price 30%](/blog/web-app-design-rfp/quality-gate-scoring.svg \"Suggested example weights: score quality before price\")"
+  }
+]

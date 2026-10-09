@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1156" width="800" height="1156" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1156" rx="24" fill="#FFFFFF"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">Pass/fail acceptance lines</text>
+<rect x="40" y="106" width="720" height="1010" rx="24" fill="#FFE3EC"/>
+<rect x="330" y="92" width="140" height="32" rx="10" fill="#E2225F"/>
+<text x="76" y="176" font-size="26" font-weight="800" fill="#E2225F" letter-spacing="2">ACCESSIBILITY</text>
+<g class="card"><rect x="64" y="198" width="672" height="144" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="84" y="220" width="30" height="30" rx="8" fill="#E2225F"/><path d="M91 235 l6 6 l11 -12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="244" font-size="26" fill="#020101"><tspan font-weight="800" fill="#E2225F">Pass:</tspan> every in-scope screen meets WCAG</text>
+<text x="132" y="278" font-size="26" fill="#020101">2.2 level AA (or your named standard),</text>
+<text x="132" y="312" font-size="26" fill="#020101">with focus order and label annotations.</text>
+</g>
+<text x="76" y="396" font-size="26" font-weight="800" fill="#E2225F" letter-spacing="2">HANDOFF</text>
+<g class="card"><rect x="64" y="418" width="672" height="110" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="84" y="440" width="30" height="30" rx="8" fill="#E2225F"/><path d="M91 455 l6 6 l11 -12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="464" font-size="26" fill="#020101"><tspan font-weight="800" fill="#E2225F">Pass:</tspan> annotated Figma files cover every</text>
+<text x="132" y="498" font-size="26" fill="#020101">in-scope workflow.</text>
+</g>
+<g class="card"><rect x="64" y="542" width="672" height="178" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="84" y="564" width="30" height="30" rx="8" fill="#E2225F"/><path d="M91 579 l6 6 l11 -12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="588" font-size="26" fill="#020101"><tspan font-weight="800" fill="#E2225F">Pass:</tspan> layouts exist at named</text>
+<text x="132" y="622" font-size="26" fill="#020101">breakpoints, for example 1280, 1440 and</text>
+<text x="132" y="656" font-size="26" fill="#020101">1920 px, plus phone layouts for mobile</text>
+<text x="132" y="690" font-size="26" fill="#020101">tasks.</text>
+</g>
+<g class="card"><rect x="64" y="734" width="672" height="110" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="84" y="756" width="30" height="30" rx="8" fill="#E2225F"/><path d="M91 771 l6 6 l11 -12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="780" font-size="26" fill="#020101"><tspan font-weight="800" fill="#E2225F">Pass:</tspan> every state from the screen-state</text>
+<text x="132" y="814" font-size="26" fill="#020101">list is designed.</text>
+</g>
+<g class="card"><rect x="64" y="858" width="672" height="110" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="84" y="880" width="30" height="30" rx="8" fill="#E2225F"/><path d="M91 895 l6 6 l11 -12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="904" font-size="26" fill="#020101"><tspan font-weight="800" fill="#E2225F">Pass:</tspan> component specs map to your</text>
+<text x="132" y="938" font-size="26" fill="#020101">Storybook stories by name.</text>
+</g>
+<g class="card"><rect x="64" y="982" width="672" height="110" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="84" y="1004" width="30" height="30" rx="8" fill="#E2225F"/><path d="M91 1019 l6 6 l11 -12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="1028" font-size="26" fill="#020101"><tspan font-weight="800" fill="#E2225F">Pass:</tspan> a developer review of the first</text>
+<text x="132" y="1062" font-size="26" fill="#020101">builds is scheduled.</text>
+</g>
+</svg>

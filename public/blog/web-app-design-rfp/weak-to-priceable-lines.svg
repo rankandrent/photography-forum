@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1592" width="800" height="1592" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1592" rx="24" fill="#FFFFFF"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">From weak line to priceable line</text>
+<g class="card"><rect x="40" y="106" width="720" height="72" rx="36" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="142" r="16" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2"/><path d="M78 136 l12 12 M90 136 l-12 12" stroke="#6B6B70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="112" y="151" font-size="26" font-weight="700" fill="#6B6B70">Weak line</text>
+<circle cx="420" cy="142" r="16" fill="#E2225F"/><path d="M412 142 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="448" y="151" font-size="26" font-weight="800" fill="#E2225F">Priceable line</text>
+</g>
+<g class="card"><rect x="40" y="204" width="720" height="76" rx="18" fill="#FBFAFB" stroke="#E8E8EB"/>
+<circle cx="80" cy="242.0" r="16" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2"/><path d="M74 236.0 l12 12 M86 236.0 l-12 12" stroke="#6B6B70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="116" y="256" font-size="26" fill="#6B6B70" font-style="italic">&quot;A modern, intuitive dashboard.&quot;</text>
+</g>
+<path d="M80 284 V310" stroke="#E2225F" stroke-width="3"/><path d="M70 302 L80 314 L90 302" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="card"><rect x="40" y="318" width="720" height="110" rx="18" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="80" cy="373.0" r="16" fill="#E2225F"/><path d="M72 373.0 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="370" font-size="26" font-weight="700" fill="#020101">&quot;Approvers see orders waiting for</text>
+<text x="116" y="404" font-size="26" font-weight="700" fill="#020101">them on sign-in; we test task time.&quot;</text>
+</g>
+<g class="card"><rect x="40" y="468" width="720" height="76" rx="18" fill="#FBFAFB" stroke="#E8E8EB"/>
+<circle cx="80" cy="506.0" r="16" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2"/><path d="M74 500.0 l12 12 M86 500.0 l-12 12" stroke="#6B6B70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="116" y="520" font-size="26" fill="#6B6B70" font-style="italic">&quot;Send three concept mockups.&quot;</text>
+</g>
+<path d="M80 548 V574" stroke="#E2225F" stroke-width="3"/><path d="M70 566 L80 578 L90 566" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="card"><rect x="40" y="582" width="720" height="110" rx="18" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="80" cy="637.0" r="16" fill="#E2225F"/><path d="M72 637.0 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="634" font-size="26" font-weight="700" fill="#020101">&quot;Walk us through a project where</text>
+<text x="116" y="668" font-size="26" font-weight="700" fill="#020101">testing changed a design decision.&quot;</text>
+</g>
+<g class="card"><rect x="40" y="732" width="720" height="76" rx="18" fill="#FBFAFB" stroke="#E8E8EB"/>
+<circle cx="80" cy="770.0" r="16" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2"/><path d="M74 764.0 l12 12 M86 764.0 l-12 12" stroke="#6B6B70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="116" y="784" font-size="26" fill="#6B6B70" font-style="italic">&quot;Design all screens of the portal.&quot;</text>
+</g>
+<path d="M80 812 V838" stroke="#E2225F" stroke-width="3"/><path d="M70 830 L80 842 L90 830" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="card"><rect x="40" y="846" width="720" height="144" rx="18" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="80" cy="918.0" r="16" fill="#E2225F"/><path d="M72 918.0 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="898" font-size="26" font-weight="700" fill="#020101">&quot;Design the seven in-scope workflows</text>
+<text x="116" y="932" font-size="26" font-weight="700" fill="#020101">in the attached grid, for four</text>
+<text x="116" y="966" font-size="26" font-weight="700" fill="#020101">roles.&quot;</text>
+</g>
+<g class="card"><rect x="40" y="1030" width="720" height="76" rx="18" fill="#FBFAFB" stroke="#E8E8EB"/>
+<circle cx="80" cy="1068.0" r="16" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2"/><path d="M74 1062.0 l12 12 M86 1062.0 l-12 12" stroke="#6B6B70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="116" y="1082" font-size="26" fill="#6B6B70" font-style="italic">&quot;Must be accessible.&quot;</text>
+</g>
+<path d="M80 1110 V1136" stroke="#E2225F" stroke-width="3"/><path d="M70 1128 L80 1140 L90 1128" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="card"><rect x="40" y="1144" width="720" height="110" rx="18" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="80" cy="1199.0" r="16" fill="#E2225F"/><path d="M72 1199.0 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="1196" font-size="26" font-weight="700" fill="#020101">&quot;Every in-scope screen meets WCAG</text>
+<text x="116" y="1230" font-size="26" font-weight="700" fill="#020101">2.2 level AA.&quot;</text>
+</g>
+<g class="card"><rect x="40" y="1294" width="720" height="76" rx="18" fill="#FBFAFB" stroke="#E8E8EB"/>
+<circle cx="80" cy="1332.0" r="16" fill="#FFFFFF" stroke="#6B6B70" stroke-width="2"/><path d="M74 1326.0 l12 12 M86 1326.0 l-12 12" stroke="#6B6B70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="116" y="1346" font-size="26" fill="#6B6B70" font-style="italic">&quot;Fixed price for the whole project.&quot;</text>
+</g>
+<path d="M80 1374 V1400" stroke="#E2225F" stroke-width="3"/><path d="M70 1392 L80 1404 L90 1392" fill="none" stroke="#E2225F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="card"><rect x="40" y="1408" width="720" height="144" rx="18" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<circle cx="80" cy="1480.0" r="16" fill="#E2225F"/><path d="M72 1480.0 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="1460" font-size="26" font-weight="700" fill="#020101">&quot;Fixed price for the attached</text>
+<text x="116" y="1494" font-size="26" font-weight="700" fill="#020101">inventory, plus a day rate for</text>
+<text x="116" y="1528" font-size="26" font-weight="700" fill="#020101">changes.&quot;</text>
+</g>
+</svg>

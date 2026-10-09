@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1450" width="800" height="1450" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1450" rx="24" fill="#FBFAFB"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">Scope states, not just screens</text>
+<text x="40" y="114" font-size="26" fill="#6B6B70">One orders table, drawn in all six states</text>
+<g class="card"><rect x="40" y="144" width="720" height="196" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="60" y="164.0" width="232" height="156" rx="12" fill="#FFFFFF" stroke="#020101" stroke-width="2"/>
+<path d="M60 194.0 H292" stroke="#020101" stroke-width="2"/>
+<circle cx="76" cy="179.0" r="5" fill="#E2225F"/>
+<rect x="90" y="175.0" width="70" height="8" rx="4" fill="#C9C9CE"/>
+<rect x="76" y="208.0" width="50" height="8" rx="4" fill="#020101"/><rect x="140" y="208.0" width="70" height="8" rx="4" fill="#020101"/><rect x="224" y="208.0" width="50" height="8" rx="4" fill="#020101"/>
+<path d="M72 228.0 H280" stroke="#E8E8EB"/>
+<rect x="76" y="236.0" width="50" height="8" rx="4" fill="#C9C9CE"/><rect x="140" y="236.0" width="70" height="8" rx="4" fill="#C9C9CE"/><rect x="224" y="236.0" width="40" height="8" rx="4" fill="#C9C9CE"/>
+<path d="M72 250.0 H280" stroke="#E8E8EB"/>
+<rect x="76" y="258.0" width="50" height="8" rx="4" fill="#C9C9CE"/><rect x="140" y="258.0" width="70" height="8" rx="4" fill="#C9C9CE"/><rect x="224" y="258.0" width="40" height="8" rx="4" fill="#C9C9CE"/>
+<path d="M72 272.0 H280" stroke="#E8E8EB"/>
+<rect x="76" y="280.0" width="50" height="8" rx="4" fill="#C9C9CE"/><rect x="140" y="280.0" width="70" height="8" rx="4" fill="#C9C9CE"/><rect x="224" y="280.0" width="40" height="8" rx="4" fill="#C9C9CE"/>
+<path d="M72 294.0 H280" stroke="#E8E8EB"/>
+<rect x="76" y="302.0" width="50" height="8" rx="4" fill="#C9C9CE"/><rect x="140" y="302.0" width="70" height="8" rx="4" fill="#C9C9CE"/><rect x="224" y="302.0" width="40" height="8" rx="4" fill="#C9C9CE"/>
+<text x="316" y="208" font-size="28" font-weight="800" fill="#020101">Populated:</text>
+<text x="316" y="250" font-size="26" fill="#6B6B70">typical row count and the</text>
+<text x="316" y="284" font-size="26" fill="#6B6B70">columns users scan first.</text>
+</g>
+<g class="card"><rect x="40" y="358" width="720" height="196" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="60" y="378.0" width="232" height="156" rx="12" fill="#FFFFFF" stroke="#020101" stroke-width="2"/>
+<path d="M60 408.0 H292" stroke="#020101" stroke-width="2"/>
+<circle cx="76" cy="393.0" r="5" fill="#E2225F"/>
+<rect x="90" y="389.0" width="70" height="8" rx="4" fill="#C9C9CE"/>
+<rect x="142.0" y="424.0" width="68" height="48" rx="8" fill="none" stroke="#6B6B70" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M176.0 436.0 V460.0 M164.0 448.0 H188.0" stroke="#6B6B70" stroke-width="2"/>
+<rect x="126.0" y="486.0" width="100" height="30" rx="15" fill="#E2225F"/>
+<text x="316" y="422" font-size="28" font-weight="800" fill="#020101">Empty on first use:</text>
+<text x="316" y="464" font-size="26" fill="#6B6B70">what a new account sees and</text>
+<text x="316" y="498" font-size="26" fill="#6B6B70">the action that fills it.</text>
+</g>
+<g class="card"><rect x="40" y="572" width="720" height="196" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="60" y="592.0" width="232" height="156" rx="12" fill="#FFFFFF" stroke="#020101" stroke-width="2"/>
+<path d="M60 622.0 H292" stroke="#020101" stroke-width="2"/>
+<circle cx="76" cy="607.0" r="5" fill="#E2225F"/>
+<rect x="90" y="603.0" width="70" height="8" rx="4" fill="#C9C9CE"/>
+<rect x="76" y="638.0" width="54" height="12" rx="4" fill="#EDEDF0"/><rect x="144" y="638.0" width="74" height="12" rx="4" fill="#EDEDF0"/>
+<rect x="76" y="664.0" width="54" height="12" rx="4" fill="#EDEDF0"/><rect x="144" y="664.0" width="74" height="12" rx="4" fill="#EDEDF0"/>
+<rect x="76" y="690.0" width="54" height="12" rx="4" fill="#EDEDF0"/><rect x="144" y="690.0" width="74" height="12" rx="4" fill="#EDEDF0"/>
+<rect x="76" y="716.0" width="54" height="12" rx="4" fill="#EDEDF0"/><rect x="144" y="716.0" width="74" height="12" rx="4" fill="#EDEDF0"/>
+<circle cx="252" cy="687.0" r="18" fill="none" stroke="#E8E8EB" stroke-width="5"/>
+<path d="M252 669.0 A18 18 0 0 1 270 687.0" fill="none" stroke="#E2225F" stroke-width="5" stroke-linecap="round"/>
+<text x="316" y="636" font-size="28" font-weight="800" fill="#020101">Loading:</text>
+<text x="316" y="678" font-size="26" fill="#6B6B70">paged or all at once, and how</text>
+<text x="316" y="712" font-size="26" fill="#6B6B70">long a slow load takes.</text>
+</g>
+<g class="card"><rect x="40" y="786" width="720" height="196" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="60" y="806.0" width="232" height="156" rx="12" fill="#FFFFFF" stroke="#020101" stroke-width="2"/>
+<path d="M60 836.0 H292" stroke="#020101" stroke-width="2"/>
+<circle cx="76" cy="821.0" r="5" fill="#E2225F"/>
+<rect x="90" y="817.0" width="70" height="8" rx="4" fill="#C9C9CE"/>
+<path d="M176.0 850.0 L206.0 902.0 H146.0 Z" fill="none" stroke="#E2225F" stroke-width="3" stroke-linejoin="round"/>
+<path d="M176.0 868.0 V886.0" stroke="#E2225F" stroke-width="3" stroke-linecap="round"/><circle cx="176.0" cy="894.0" r="2.5" fill="#E2225F"/>
+<rect x="130.0" y="914.0" width="92" height="30" rx="15" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/>
+<path d="M164.0 929.0 a10 10 0 1 0 4 -8" fill="none" stroke="#E2225F" stroke-width="2"/>
+<text x="316" y="850" font-size="28" font-weight="800" fill="#020101">Error:</text>
+<text x="316" y="892" font-size="26" fill="#6B6B70">which failures users meet and</text>
+<text x="316" y="926" font-size="26" fill="#6B6B70">what they can retry.</text>
+</g>
+<g class="card"><rect x="40" y="1000" width="720" height="196" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="60" y="1020.0" width="232" height="156" rx="12" fill="#FFFFFF" stroke="#020101" stroke-width="2"/>
+<path d="M60 1050.0 H292" stroke="#020101" stroke-width="2"/>
+<circle cx="76" cy="1035.0" r="5" fill="#E2225F"/>
+<rect x="90" y="1031.0" width="70" height="8" rx="4" fill="#C9C9CE"/>
+<rect x="150.0" y="1096.0" width="52" height="44" rx="8" fill="none" stroke="#020101" stroke-width="3"/>
+<path d="M161.0 1096.0 V1084.0 a15 15 0 0 1 30 0 V1096.0" fill="none" stroke="#020101" stroke-width="3"/>
+<circle cx="176.0" cy="1116.0" r="4" fill="#E2225F"/>
+<rect x="76" y="1152.0" width="200" height="8" rx="4" fill="#EDEDF0"/>
+<text x="316" y="1064" font-size="28" font-weight="800" fill="#020101">No permission:</text>
+<text x="316" y="1106" font-size="26" fill="#6B6B70">what a role without access</text>
+<text x="316" y="1140" font-size="26" fill="#6B6B70">sees instead.</text>
+</g>
+<g class="card"><rect x="40" y="1214" width="720" height="196" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="60" y="1234.0" width="232" height="156" rx="12" fill="#FFFFFF" stroke="#020101" stroke-width="2"/>
+<path d="M60 1264.0 H292" stroke="#020101" stroke-width="2"/>
+<circle cx="76" cy="1249.0" r="5" fill="#E2225F"/>
+<rect x="90" y="1245.0" width="70" height="8" rx="4" fill="#C9C9CE"/>
+<rect x="74" y="1272.0" width="54" height="18" rx="9" fill="#FFE3EC" stroke="#E2225F"/>
+<rect x="136" y="1272.0" width="62" height="18" rx="9" fill="#FFE3EC" stroke="#E2225F"/>
+<rect x="206" y="1272.0" width="46" height="18" rx="9" fill="#FFE3EC" stroke="#E2225F"/>
+<path d="M72 1300.0 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1309.5 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1319.0 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1328.5 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1338.0 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1347.5 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1357.0 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1366.5 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 1376.0 H268" stroke="#C9C9CE" stroke-width="5" stroke-linecap="round"/>
+<rect x="278" y="1296.0" width="6" height="84" rx="3" fill="#E8E8EB"/><rect x="278" y="1296.0" width="6" height="14" rx="3" fill="#E2225F"/>
+<text x="316" y="1278" font-size="28" font-weight="800" fill="#E2225F">Worst-case data:</text>
+<text x="316" y="1320" font-size="26" fill="#6B6B70">maximum rows with filters</text>
+<text x="316" y="1354" font-size="26" fill="#6B6B70">applied.</text>
+</g>
+</svg>

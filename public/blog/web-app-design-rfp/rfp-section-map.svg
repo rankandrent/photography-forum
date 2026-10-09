@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2732" width="800" height="2732" font-family="Manrope, system-ui, sans-serif">
+<defs><pattern id="bp" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#F1EEF0" stroke-width="1"/></pattern></defs><rect width="800" height="2732" rx="24" fill="#FBFAFB"/><rect width="800" height="2732" rx="24" fill="url(#bp)"/>
+<path d="M60 416 V2692" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 8"/>
+<circle cx="60" cy="474" r="24" fill="#E2225F"/><text x="60" y="483" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<path d="M84 474 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="732" r="24" fill="#E2225F"/><text x="60" y="741" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<path d="M84 732 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="956" r="24" fill="#E2225F"/><text x="60" y="965" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<path d="M84 956 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="1214" r="24" fill="#E2225F"/><text x="60" y="1223" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<path d="M84 1214 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="1438" r="24" fill="#E2225F"/><text x="60" y="1447" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+<path d="M84 1438 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="1696" r="24" fill="#E2225F"/><text x="60" y="1705" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+<path d="M84 1696 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="1954" r="24" fill="#E2225F"/><text x="60" y="1963" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">7</text>
+<path d="M84 1954 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="2246" r="24" fill="#E2225F"/><text x="60" y="2255" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">8</text>
+<path d="M84 2246 H100" stroke="#E2225F" stroke-width="3"/>
+<circle cx="60" cy="2504" r="24" fill="#E2225F"/><text x="60" y="2513" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">9</text>
+<path d="M84 2504 H100" stroke="#E2225F" stroke-width="3"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">9 sections agencies can price</text>
+<rect x="40" y="98" width="372.8" height="44" rx="22" fill="#FFE3EC"/>
+<text x="226.4" y="129" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Illustrative example</text>
+<text x="40" y="180" font-size="26" fill="#6B6B70">Sample lines describe a made-up</text>
+<text x="40" y="218" font-size="26" fill="#6B6B70">business-to-business (B2B) customer portal.</text>
+<g class="card"><rect x="40" y="246" width="720" height="150" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="64" y="268" width="6" height="30" rx="3" fill="#020101"/><text x="84" y="292" font-size="26" fill="#020101">What to write</text>
+<rect x="64" y="308" width="6" height="30" rx="3" fill="#E2225F"/><text x="84" y="332" font-size="26" font-weight="700" fill="#E2225F">Why it changes the price</text>
+<rect x="64" y="348" width="6" height="30" rx="3" fill="#6B6B70"/><text x="84" y="372" font-size="26" fill="#6B6B70" font-style="italic">Sample line</text>
+</g>
+<g class="card"><rect x="100" y="424" width="660" height="238" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="478" font-size="30" font-weight="800" fill="#020101">Context</text>
+<text x="124" y="518" font-size="26" fill="#020101">Product, current state, why now</text>
+<rect x="124" y="536" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="562" font-size="26" font-weight="700" fill="#E2225F">Sets how much discovery is needed</text>
+<text x="124" y="606" font-size="26" fill="#6B6B70" font-style="italic">&quot;Our 2019 distributor portal cannot</text>
+<text x="124" y="640" font-size="26" fill="#6B6B70" font-style="italic">handle approval rules.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="682" width="660" height="204" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="736" font-size="30" font-weight="800" fill="#020101">Goals</text>
+<text x="124" y="776" font-size="26" fill="#020101">Outcomes, one metric each</text>
+<rect x="124" y="794" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="820" font-size="26" font-weight="700" fill="#E2225F">Decides what gets tested</text>
+<text x="124" y="864" font-size="26" fill="#6B6B70" font-style="italic">&quot;Cut time to approve an order.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="906" width="660" height="238" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="960" font-size="30" font-weight="800" fill="#020101">Users and roles</text>
+<text x="124" y="1000" font-size="26" fill="#020101">Every role and its permissions</text>
+<rect x="124" y="1018" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="1044" font-size="26" font-weight="700" fill="#E2225F">Each role adds views</text>
+<text x="124" y="1088" font-size="26" fill="#6B6B70" font-style="italic">&quot;Account admin, buyer, approver, support</text>
+<text x="124" y="1122" font-size="26" fill="#6B6B70" font-style="italic">agent.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="1164" width="660" height="204" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="1218" font-size="30" font-weight="800" fill="#020101">Workflow inventory</text>
+<text x="124" y="1258" font-size="26" fill="#020101">Every workflow, tagged in, out or later</text>
+<rect x="124" y="1276" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="1302" font-size="26" font-weight="700" fill="#E2225F">Sets wireframe and prototype effort</text>
+<text x="124" y="1346" font-size="26" fill="#6B6B70" font-style="italic">&quot;Nine workflows, seven in scope.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="1388" width="660" height="238" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="1442" font-size="30" font-weight="800" fill="#020101">Screen states and data</text>
+<text x="124" y="1482" font-size="26" fill="#020101">States, row counts, sample file</text>
+<rect x="124" y="1500" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="1526" font-size="26" font-weight="700" fill="#E2225F">States multiply screens</text>
+<text x="124" y="1570" font-size="26" fill="#6B6B70" font-style="italic">&quot;Orders: 40 rows typical, 5,000 worst</text>
+<text x="124" y="1604" font-size="26" fill="#6B6B70" font-style="italic">case.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="1646" width="660" height="238" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="1700" font-size="30" font-weight="800" fill="#020101">Research access</text>
+<text x="124" y="1740" font-size="26" fill="#020101">Users per role, recruiter, test rounds</text>
+<rect x="124" y="1758" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="1784" font-size="26" font-weight="700" fill="#E2225F">Sets the research timeline</text>
+<text x="124" y="1828" font-size="26" fill="#6B6B70" font-style="italic">&quot;We recruit six users per role; two test</text>
+<text x="124" y="1862" font-size="26" fill="#6B6B70" font-style="italic">rounds.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="1904" width="660" height="272" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="1958" font-size="30" font-weight="800" fill="#020101">Requirements and handoff</text>
+<text x="124" y="1998" font-size="26" fill="#020101">Accessibility standard, breakpoints,</text>
+<text x="124" y="2032" font-size="26" fill="#020101">files</text>
+<rect x="124" y="2050" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="2076" font-size="26" font-weight="700" fill="#E2225F">Defines &quot;done&quot;</text>
+<text x="124" y="2120" font-size="26" fill="#6B6B70" font-style="italic">&quot;Web Content Accessibility Guidelines</text>
+<text x="124" y="2154" font-size="26" fill="#6B6B70" font-style="italic">(WCAG) 2.2 level AA.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="2196" width="660" height="238" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="2250" font-size="30" font-weight="800" fill="#020101">Budget and timeline</text>
+<text x="124" y="2290" font-size="26" fill="#020101">Budget band, decision and start dates</text>
+<rect x="124" y="2308" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="2334" font-size="26" font-weight="700" fill="#E2225F">Agencies scope to your number</text>
+<text x="124" y="2378" font-size="26" fill="#6B6B70" font-style="italic">&quot;Band of $90,000–$130,000; decision by</text>
+<text x="124" y="2412" font-size="26" fill="#6B6B70" font-style="italic">January 15.&quot;</text>
+</g>
+<g class="card"><rect x="100" y="2454" width="660" height="238" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="124" y="2508" font-size="30" font-weight="800" fill="#020101">Proposal format and evaluation</text>
+<text x="124" y="2548" font-size="26" fill="#020101">Page limit, question-and-answer (Q&amp;A)</text>
+<text x="124" y="2582" font-size="26" fill="#020101">window, weights</text>
+<rect x="124" y="2600" width="6" height="26" rx="3" fill="#E2225F"/>
+<text x="144" y="2626" font-size="26" font-weight="700" fill="#E2225F">Bidders write to your scoring sheet</text>
+<text x="124" y="2670" font-size="26" fill="#6B6B70" font-style="italic">&quot;Proposals: twelve pages maximum.&quot;</text>
+</g>
+</svg>

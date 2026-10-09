@@ -12,6 +12,7 @@ industries: [saas]
 tags: [web app design rfp, web app design rfp template, ux design rfp, design agency rfp evaluation criteria, web application design scope of work]
 keyword: "web app design rfp"
 funnel: bofu
+image: /blog/web-app-design-rfp/cover.svg
 takeaways:
   - "Build the scope around a role × workflow grid, because workflow and role counts are what design agencies price first."
   - "Scope screen states, not only screens: populated, empty, loading, error, no-permission and worst-case data for every table in scope."
@@ -40,7 +41,7 @@ If the product does not exist yet, follow our scoping advice: teams that build a
 
 The order mirrors how an agency builds a quote: who uses the product, what they do, then the evidence and files you expect back. The frame works as a user experience (UX) design RFP or as an RFP for UI UX design services.
 
-<!-- visual: section map blueprint — the 9 RFP sections as a numbered vertical blueprint, each with a one-line "why the agency needs it to price"; label the sample lines as an invented B2B customer portal -->
+![Numbered vertical blueprint of the 9 web app design RFP sections, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg "The 9 RFP sections and why each one changes the price")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -68,7 +69,7 @@ Keep the main document short and move the bulky material into attachments (the F
 
 Agencies count both totals first, because workflows and user roles are two of the units a web app design price is built on. Permissions matter as much, because an approver who can see an order but not edit it needs a read-only state the buyer never sees.
 
-<!-- visual: role x workflow matrix — invented customer-portal grid, 4 roles x 9 workflows, cells marked view/edit/approve/none, right-hand column tagging in scope / out of scope / later phase, totals row "9 workflows listed (7 in scope), 4 roles"; label "Example, invented inputs" -->
+![Illustrative role by workflow grid for an invented B2B customer portal: 9 workflows against 4 roles (account admin, buyer, approver, support agent) marked edit, view, approve or none, each tagged in scope, later phase or out of scope, totalling nine workflows, seven in scope, four roles](/blog/web-app-design-rfp/role-workflow-grid.svg "Example, invented inputs: a role × workflow grid")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -100,7 +101,7 @@ Counting workflows is where drafts tend to stall, because no single team holds t
 
 A data table that looks tidy with a dozen rows can break at several thousand, when columns truncate and bulk actions need confirmation. Listing states per component makes every agency price the same design, not the happy path alone.
 
-<!-- visual: one component, six states strip — the same orders table drawn six times: populated, empty on first use, loading, error, no permission, 5,000 rows with filters applied; caption "Scope states, not screens" -->
+![The same orders table sketched as a wireframe in six states, populated, empty on first use, loading, error, no permission and worst-case data, each with what the RFP should specify](/blog/web-app-design-rfp/orders-table-six-states.svg "Scope states, not screens")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -144,7 +145,7 @@ With access written down, define what the agency hands back.
 
 For a commercial web app, name WCAG 2.2 level AA, the current [World Wide Web Consortium (W3C) Recommendation](https://www.w3.org/TR/WCAG22/). Federal buyers can start from the contract language on section508.gov, which ties deliverables to the Revised 508 Standards; those [incorporate WCAG 2.0 Level A and AA by reference](https://www.section508.gov/develop/applicability-conformance/). If you target WCAG 2.2 as well, name both versions in one line.
 
-<!-- visual: acceptance checklist card — pass/fail lines for accessibility (standard + level, focus order, labels) and handoff (annotated Figma, breakpoints, Storybook mapping, all states, developer review) -->
+![Checklist card of six pass lines: one accessibility line for WCAG 2.2 level AA with focus order and label annotations, and five handoff lines for annotated Figma files, named breakpoints, every screen state, Storybook mapping and a scheduled developer review](/blog/web-app-design-rfp/acceptance-pass-fail.svg "Pass/fail acceptance lines for accessibility and handoff")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -167,7 +168,7 @@ AIGA, the professional association for design, [holds that spec work](https://ww
 
 Prescribed solutions such as "add a dashboard with 12 charts" fix the answer before anyone studies the workflow, so state the problem and the metric. Instead of long requirement lists, the General Services Administration's (GSA) former 18F team recommended [a statement of objectives for performance-based services](https://guides.18f.gov/derisking-government-tech/buying-development-services/) when buying custom software. Federal rules [define performance-based acquisition](https://www.acquisition.gov/far/2.101) as one structured around the results to be achieved rather than the manner in which the work is performed.
 
-<!-- visual: before/after rewrite card — 5 weak RFP lines on the left rewritten into priceable lines on the right -->
+![Five weak RFP lines, such as a modern, intuitive dashboard and send three concept mockups, each with an arrow to the priceable line that replaces it](/blog/web-app-design-rfp/weak-to-priceable-lines.svg "Weak RFP lines rewritten into lines agencies can price")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -191,7 +192,7 @@ Without a band, one agency quotes two test rounds and another a single pass. For
 
 List the dates in one line: proposal deadline, Q&A window, interviews, decision and project start. Publish the design agency RFP evaluation criteria and weights before proposals arrive, and score quality before opening price. GSA's former 18F team advised reviewing each proposal's strengths, weaknesses and risks, then inviting the highest-rated firms to a verbal interview.
 
-<!-- visual: quality gate + scoring funnel — proposals pass a quality gate (workflow understanding, research and test plan, case evidence, team) before price is compared; weights shown as a bar; label "Suggested example weights" -->
+![Three-stage scoring funnel with suggested example weights: quality out of 100 points split into workflow understanding 30, research and test plan 25, case evidence 25 and team seniority and continuity 20, a gate at 70 points, then a final score of quality 70% and price 30%](/blog/web-app-design-rfp/quality-gate-scoring.svg "Suggested example weights: score quality before price")
 
 <details class="astext"><summary>Show as text</summary>
 
