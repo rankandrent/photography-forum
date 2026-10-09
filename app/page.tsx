@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Benefits, Clients, CtaBand, Faq, FinalCta, Resources, ServiceGrid } from "@/components/sections/Blocks";
@@ -28,12 +30,22 @@ export const metadata = pageMetadata({
   keywords: ["UI UX design services", "UI UX design agency", "UX design services", "UI design services", "user research", "product design agency"],
 });
 
+/** Industry tab artwork: public/images/industries/<slug>.webp (optional per industry) */
+const INDUSTRY_IMG = (slug: string) => `/images/industries/${slug}.webp`;
+
 export default function HomePage() {
   const services = getServices();
   const industries = getIndustries()
     .filter((i) => i.intro && i.bullets?.length)
     .slice(0, 6)
-    .map((i) => ({ slug: i.slug, title: i.title, intro: i.intro!, bullets: i.bullets!, href: routes.industry(i.slug) }));
+    .map((i) => ({
+      slug: i.slug,
+      title: i.title,
+      intro: i.intro!,
+      bullets: i.bullets!,
+      href: routes.industry(i.slug),
+      image: existsSync(join(process.cwd(), "public", INDUSTRY_IMG(i.slug))) ? INDUSTRY_IMG(i.slug) : undefined,
+    }));
   const all = getCaseStudies();
   const cases = [...all.filter((c) => c.featured), ...all.filter((c) => !c.featured)].slice(0, 8);
   const posts = getPosts().slice(0, 3);

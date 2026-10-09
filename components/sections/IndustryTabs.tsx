@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { lower } from "@/lib/site";
 
-export type IndustryTab = { slug: string; title: string; intro: string; bullets: string[]; href: string };
+export type IndustryTab = { slug: string; title: string; intro: string; bullets: string[]; href: string; image?: string };
 
 export function IndustryTabs({ heading, items }: { heading: string; items: IndustryTab[] }) {
   const [active, setActive] = useState(0);
@@ -45,7 +45,14 @@ export function IndustryTabs({ heading, items }: { heading: string; items: Indus
               </ul>
               <Link href={it.href} className="btn btn--dark-outline">Explore {lower(it.title)} design</Link>
             </div>
-            <div className="ind__image" aria-hidden="true">[ {lower(it.title)} design ]</div>
+            {it.image ? (
+              <div className="ind__image ind__image--photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={it.image} alt={`${it.title} UI UX design example: app and dashboard screens`} width={1200} height={900} loading="lazy" decoding="async" />
+              </div>
+            ) : (
+              <div className="ind__image" aria-hidden="true">[ {lower(it.title)} design ]</div>
+            )}
           </div>
         ))}
       </div>
