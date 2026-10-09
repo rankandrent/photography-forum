@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 9,
   "title": "Philadelphia",
   "city": "Philadelphia",
@@ -15,7 +15,7 @@
   },
   "summary": "Accessible, research-led UX design for Philadelphia healthcare, life-science and higher-education teams.",
   "abstract": "Our UX design agency is remote-first and headquartered in Reston, Virginia, on the same Eastern Time clock as Philadelphia. We help Philadelphia teams in healthcare, pharma, life sciences and higher education research their users, redesign regulated or high-traffic flows, and test them before release. A UX audit starts at $5,000, and every meeting happens inside a shared working day.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-09",
   "sections": [
     {
       "h2": "What does a UX design agency do for Philadelphia organizations?",
@@ -248,5 +248,6 @@
     "FDA 21 CFR Part 11",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-09"
 }
