@@ -111,6 +111,7 @@ on the one page that best satisfies the intent instead of starting from zero.
 - No invented statistics, clients, testimonials, awards, ratings, certifications, team
   members or case-study results. Numbers need a named, real, linkable source.
 - Real clients and results only from `content/case-studies/*.md`.
+- Owner, 2026-10-09: the Apex HCM, Fortna and ToolsGroup case studies were not real and were removed (301 → /case-studies/). Never mention, quote or link those clients, their figures or the old ToolsGroup testimonial again.
 - Never claim a local office, local team or local clients for any city.
 - Facts about regulations, standards, tools and companies must be current and verifiable.
 - "200+ products designed" and "in business since 2017" are confirmed company facts.

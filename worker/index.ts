@@ -145,9 +145,20 @@ async function handleLead(request: Request, env: Env) {
   return json(502, { ok: false, error: "Email could not be sent", detail: String((reason as Error)?.message ?? reason).slice(0, 300) });
 }
 
+/** Removed pages → permanent redirect. Keep in sync with assets.run_worker_first in wrangler.jsonc. */
+const GONE_CASE_STUDIES = ["apex-hcm-payroll-ux", "fortna-warehouse-ux", "toolsgroup-supply-chain-ux"];
+const REDIRECTS: Record<string, string> = Object.fromEntries(
+  GONE_CASE_STUDIES.flatMap((slug) => [
+    [`/case-studies/${slug}`, "/case-studies/"],
+    [`/case-studies/${slug}/`, "/case-studies/"],
+  ]),
+);
+
 const worker = {
   async fetch(request: Request, env: Env) {
     const url = new URL(request.url);
+    const to = REDIRECTS[url.pathname];
+    if (to) return Response.redirect(new URL(to, url.origin).toString(), 301);
     if (url.pathname === "/api/lead" || url.pathname === "/api/lead/") return handleLead(request, env);
     return env.ASSETS.fetch(request);
   },

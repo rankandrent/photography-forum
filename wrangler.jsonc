@@ -15,7 +15,7 @@
   "assets": {
     "directory": "./out",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*"],
+    "run_worker_first": ["/api/*", "/case-studies/apex-hcm-payroll-ux*", "/case-studies/fortna-warehouse-ux*", "/case-studies/toolsgroup-supply-chain-ux*"],
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   },

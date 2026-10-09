@@ -123,8 +123,6 @@ No evidence behind it means opinion; no owner means it never ships.
 
 Then ask which deliverables outlive the project: a tagged research repository (for example in Dovetail), personas, journey maps and an opportunity map. The repository matters most, because your next study starts from it.
 
-A finding that changes a roadmap looks like ToolsGroup's: 30+ stakeholder interviews showed that 75% of sales losses traced to the user interface rather than to feature gaps, and that insight reframed the product strategy. Read how [30+ stakeholder interviews reframed a supply chain product](/case-studies/toolsgroup-supply-chain-ux/).
-
 ## 12 questions to ask on the pitch call
 
 **The questions to ask a UX research agency cover people, method, recruitment, synthesis, delivery and data; a strong answer is specific to your product, your users and your decision.**

@@ -156,10 +156,6 @@
         {
           "anchor": "dashboard UX design",
           "to": "/services/dashboard-ux-design/"
-        },
-        {
-          "anchor": "warehouse operations case study",
-          "to": "/case-studies/fortna-warehouse-ux/"
         }
       ]
     },

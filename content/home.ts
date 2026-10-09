@@ -252,10 +252,8 @@ export const home = {
     { score: "4.9 / 5", label: "on Clutch", stars: true, href: "https://clutch.co/" },
     { score: "Top B2B", label: "GoodFirms Verified", stars: false, href: "https://www.goodfirms.co/" },
   ],
-  testimonial: {
-    quote: "The designers who did our research were the same ones who stayed through engineering and launch. That is the only reason the design survived contact with development.",
-    cite: "Director of Product, ToolsGroup",
-  },
+  // Only real, attributable client quotes go here (owner, 2026-10-09: the ToolsGroup quote was not real).
+  testimonial: undefined as { quote: string; cite: string } | undefined,
   faqs: [
     { q: "What are UI UX design services?", a: 'UI UX design services cover user research, UX design, UI design, prototyping, usability testing, and design system creation. UI design shapes what users see and touch. UX design determines how they move through the product. Both are delivered together as one engagement. See our <a href="#services">service categories</a> for the full list.' },
     { q: "How much does a UI UX design project cost?", a: 'Project cost depends on scope and depth. A UX audit runs $5,000–$15,000 over 2–3 weeks. A research and UX design sprint runs $25,000–$60,000 over 4–8 weeks. Full design and design system engagements run $60,000–$180,000. Embedded design teams run $15,000–$40,000 per month. See our <a href="#pricing">pricing section</a> for full ranges.' },

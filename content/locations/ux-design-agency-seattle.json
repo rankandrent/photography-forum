@@ -163,7 +163,7 @@
       "format": "list",
       "answer": "<strong>Five Seattle industries lead our work in the region:</strong>",
       "items": [
-        "Cloud and enterprise SaaS, for example developer consoles, admin centers and analytics tools; our <a href=\"/case-studies/toolsgroup-supply-chain-ux/\">ToolsGroup</a> research shows how we approach enterprise software (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
+        "Cloud and enterprise SaaS, for example developer consoles, admin centers and analytics tools (<a href=\"/industries/saas/\">SaaS UI UX design</a>).",
         "E-commerce and marketplaces, for example seller portals, search and checkout for retail platforms (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
         "Gaming, for example launchers, account systems and storefronts for studios in Bellevue and Redmond.",
         "Aerospace and manufacturing, for example maintenance, inspection and supply tools used on the factory floor (<a href=\"/industries/supply-chain/\">Supply chain UI UX design</a>).",

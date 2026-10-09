@@ -53,9 +53,7 @@ Each stage has its own trigger and its own proof that the cause is UX:
 
 Use the goals-signals-metrics process from the [Google HEART framework (Rodden, Hutchinson and Fu, 2010)](https://research.google.com/pubs/archive/36299.pdf), which covers happiness, engagement, adoption, retention and task success, to pick one goal, one signal and one metric per stage. Ten metrics per stage hide the one that moved.
 
-Sales often blames missing features when the interface is the cause. At ToolsGroup, 30+ stakeholder interviews traced [75% of sales losses to the UI, not to missing features](/case-studies/toolsgroup-supply-chain-ux/).
-
-When churn interviews name price, positioning or a missing integration instead, a redesign will not move the number.
+When churn interviews name price, positioning or a missing integration rather than the interface, a redesign will not move the number.
 
 ## Flow fix, lifecycle redesign or platform rebuild?
 
@@ -153,7 +151,7 @@ Communicate alongside the ramp: admin email first, then an in-app notice, a chan
 
 Judge each metric against the thresholds you set before design. Between baseline and target, iterate: fix the step where users stall and ship it behind the same flag. Past the rollback trigger, step the rollout back until the metric recovers.
 
-Two of our case studies show what a redesigned path can move. Apex HCM's legacy payroll platform went from 200+ screens to 6 steps, and its VP Product reported: "The new flow cut onboarding time by more than half." TradeZella started with a cluttered interface, a steep learning curve and no onboarding guide; after the [TradeZella dashboard and user flows rebuild](/case-studies/tradezella/), user interaction rose 40%, retention 25% and new customers 30%.
+Our TradeZella case study shows what a redesigned path can move. TradeZella started with a cluttered interface, a steep learning curve and no onboarding guide; after the [TradeZella dashboard and user flows rebuild](/case-studies/tradezella/), user interaction rose 40%, retention 25% and new customers 30%.
 
 If you are sizing a SaaS product redesign now, [send us your funnel and we will scope the redesign](/contact/). A free consultation ends with a fixed-scope proposal, and discovery in [our SaaS UX design sprint](/services/saas-ux-design/) reviews your product funnels and sets one target metric per lifecycle stage. We have designed [200+ products since 2017](/about/).
 
