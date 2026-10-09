@@ -22,7 +22,7 @@ draft: true
 qa: pending
 ---
 
-A web app design RFP is the request for proposal (RFP) you send design agencies when the workflows, user roles and screens of a logged-in application need designing, and its scope section decides whether the quotes that come back can be compared at all. Below is a fill-in template of nine sections built around the units a design agency prices: the same workflows, roles and test rounds that help set the fee for our web app design services <!-- link: /services/web-app-design-services/ -->. Each section gives the field, what to write and a sample line.
+A web app design RFP is the request for proposal (RFP) you send design agencies when the workflows, user roles and screens of a logged-in application need designing, and its scope section decides whether the quotes that come back can be compared at all. Below is a fill-in template of nine sections built around the units a design agency prices: the same workflows, roles and test rounds that help set the fee for our [web app design services](/services/web-app-design-services/). Each section gives the field, what to write and a sample line.
 
 ## When do you need a web app design RFP?
 
@@ -32,7 +32,7 @@ Below that bar, a short brief and a few calls decide faster. Formal requests com
 
 They are buying the design layer of a web application: workflow research, information architecture (IA), wireframes, a clickable prototype, a user interface (UI) kit and a design handoff package. Code and hosting belong to a development RFP; if one document covers both, see the FAQs.
 
-If the product does not exist yet, follow our scoping advice: teams that build a new product from zero compare scope with digital product design <!-- link: /services/digital-product-design-services/ -->. Everyone else can start with the section map below.
+If the product does not exist yet, follow our scoping advice: teams that build a new product from zero compare scope with [digital product design](/services/digital-product-design-services/). Everyone else can start with the section map below.
 
 ## Which 9 sections does the RFP need?
 
@@ -66,7 +66,7 @@ Keep the main document short and move the bulky material into attachments (the F
 
 **Put every user role and workflow in one grid, mark each role's permission per workflow, and tag each workflow in scope, out of scope or later phase.**
 
-Agencies count both totals first; our service page shows how workflows and roles move the price <!-- link: /services/web-app-design-services/#how-much-does-web-app-design-cost -->. Permissions matter as much, because an approver who can see an order but not edit it needs a read-only state the buyer never sees.
+Agencies count both totals first, because workflows and user roles are two of the units a web app design price is built on. Permissions matter as much, because an approver who can see an order but not edit it needs a read-only state the buyer never sees.
 
 <!-- visual: role x workflow matrix — invented customer-portal grid, 4 roles x 9 workflows, cells marked view/edit/approve/none, right-hand column tagging in scope / out of scope / later phase, totals row "9 workflows listed (7 in scope), 4 roles"; label "Example, invented inputs" -->
 
@@ -118,7 +118,7 @@ Add data volume fields for each table in scope:
 - **Rows per table, typical and worst case,** so pagination or summaries are designed for the real load.
 - **Longest realistic values,** such as company names and order IDs, so column widths survive real content.
 - **Columns users sort or filter,** so the design does not hide fields people use daily.
-- **Bulk actions, saved filters and keyboard use,** because these are among the components a web app UI kit covers <!-- link: /services/web-app-design-services/#what-does-web-app-design-include --> and each adds design time.
+- **Bulk actions, saved filters and keyboard use,** because these are among the components a web app UI kit covers and each adds design time.
 
 Attach sample data, never production records: mask names, emails and account IDs, keep realistic lengths, and state in one line how you masked the file.
 
@@ -126,7 +126,7 @@ Attach sample data, never production records: mask names, emails and account IDs
 
 **Promise named access: how many users per role the agency can interview, who recruits them, and how many usability test rounds you will fund.**
 
-Missing access delays the whole plan, because interviews and tests cannot start until participants are booked. For sizing, our typical 6-step web app design process <!-- link: /services/web-app-design-services/#how-does-the-web-app-design-process-work --> interviews 5–8 users per role and tests the prototype with 5 users per round, scored with the System Usability Scale (SUS). That is our practice, not a universal rule.
+Missing access delays the whole plan, because interviews and tests cannot start until participants are booked. For sizing, our typical 6-step web app design process interviews 5–8 users per role and tests the prototype with 5 users per round, scored with the System Usability Scale (SUS). That is our practice, not a universal rule.
 
 Write these lines into the research access section:
 
@@ -142,7 +142,7 @@ With access written down, define what the agency hands back.
 
 **Write them as pass/fail lines that name the accessibility standard and level, the breakpoints, and the exact handoff files you will accept.**
 
-For a commercial web app, name WCAG 2.2 level AA, the current World Wide Web Consortium (W3C) Recommendation. <!-- source: https://www.w3.org/TR/WCAG22/ --> Federal buyers can start from the contract language on section508.gov, which ties deliverables to the Revised 508 Standards; those incorporate WCAG 2.0 Level A and AA by reference. <!-- source: https://www.section508.gov/develop/applicability-conformance/ --> If you target WCAG 2.2 as well, name both versions in one line.
+For a commercial web app, name WCAG 2.2 level AA, the current [World Wide Web Consortium (W3C) Recommendation](https://www.w3.org/TR/WCAG22/). Federal buyers can start from the contract language on section508.gov, which ties deliverables to the Revised 508 Standards; those [incorporate WCAG 2.0 Level A and AA by reference](https://www.section508.gov/develop/applicability-conformance/). If you target WCAG 2.2 as well, name both versions in one line.
 
 <!-- visual: acceptance checklist card — pass/fail lines for accessibility (standard + level, focus order, labels) and handoff (annotated Figma, breakpoints, Storybook mapping, all states, developer review) -->
 
@@ -163,9 +163,9 @@ Ask your own counsel for one line on who owns the Figma files and when rights tr
 
 **Leave out requests for free design samples, finished screens you want copied and long feature specifications; ask for outcomes, evidence and process instead.**
 
-AIGA, the professional association for design, holds that spec work "precludes the most important element of most design projects—the research, thoughtful consideration of alternatives, and development and testing of prototype designs." <!-- source: https://www.aiga.org/resources/aiga-position-on-spec-work --> A mockup made without them shows the least useful version of an agency, so ask for two relevant case studies instead.
+AIGA, the professional association for design, [holds that spec work](https://www.aiga.org/resources/aiga-position-on-spec-work) "precludes the most important element of most design projects—the research, thoughtful consideration of alternatives, and development and testing of prototype designs." A mockup made without them shows the least useful version of an agency, so ask for two relevant case studies instead.
 
-Prescribed solutions such as "add a dashboard with 12 charts" fix the answer before anyone studies the workflow, so state the problem and the metric. Instead of long requirement lists, the General Services Administration's (GSA) former 18F team recommended performance-based services contracts for custom software in its 2024 De-risking Guide. <!-- source: https://guides.18f.gov/assets/derisking-government-tech/dist/18f-derisking-guide.pdf --> That contract type is built around measurable outcomes rather than the manner in which the work is done. <!-- source: https://www.acquisition.gov/far/37.101 -->
+Prescribed solutions such as "add a dashboard with 12 charts" fix the answer before anyone studies the workflow, so state the problem and the metric. Instead of long requirement lists, the General Services Administration's (GSA) former 18F team recommended [a statement of objectives for performance-based services](https://guides.18f.gov/derisking-government-tech/buying-development-services/) when buying custom software. Federal rules [define performance-based acquisition](https://www.acquisition.gov/far/2.101) as one structured around the results to be achieved rather than the manner in which the work is performed.
 
 <!-- visual: before/after rewrite card — 5 weak RFP lines on the left rewritten into priceable lines on the right -->
 
@@ -189,7 +189,7 @@ Watch the last row: a fixed price on an unknown scope gets padded for risk, whil
 
 Without a band, one agency quotes two test rounds and another a single pass. For calibration, our published web app design range is $60,000–$180,000 over 8–16 weeks, driven by the same counts your inventory holds. A web app design RFP that states its band lets each bidder say early whether your scope fits it.
 
-List the dates in one line: proposal deadline, Q&A window, interviews, decision and project start. Publish the design agency RFP evaluation criteria and weights before proposals arrive, and score quality before opening price. GSA's former 18F team advised reviewing each proposal's strengths, weaknesses and risks, then inviting the highest-rated firms to a verbal interview. <!-- source: https://fedscoop.com/18f-de-risking-agile-it/ -->
+List the dates in one line: proposal deadline, Q&A window, interviews, decision and project start. Publish the design agency RFP evaluation criteria and weights before proposals arrive, and score quality before opening price. GSA's former 18F team advised reviewing each proposal's strengths, weaknesses and risks, then inviting the highest-rated firms to a verbal interview.
 
 <!-- visual: quality gate + scoring funnel — proposals pass a quality gate (workflow understanding, research and test plan, case evidence, team) before price is compared; weights shown as a bar; label "Suggested example weights" -->
 
@@ -219,9 +219,9 @@ A fixed sequence keeps proposals comparable; set the placeholder durations below
 
 The interview replaces spec work: questions to ask in a design RFP interview test method ("how would you test the approval flow?"), not finished screens. Attaching the inventory turns the web application design scope of work into a list you can measure change requests against.
 
-To see what a scoped web app engagement produces, read the Apex HCM payroll redesign <!-- link: /case-studies/apex-hcm-payroll-ux/ --> ("200+ screens → 6 steps in enterprise payroll") and the TradeZella dashboard revamp <!-- link: /case-studies/tradezella/ --> ("40% more user interaction after a dashboard revamp").
+For a sense of the design work behind a scope like this, our [TradeZella dashboard revamp](/case-studies/tradezella/) covered discovery, stakeholder interviews and web and mobile app design for a trading journal, with "40% more user interaction after a dashboard revamp".
 
-Your web app design RFP now describes the work in units any bidder can price, ours included: a grid, a state list and acceptance lines. Since every project begins with a free consultation and a fixed-scope proposal, adding us to the bidder list takes one email: send us your RFP <!-- link: /contact/ -->, then compare our number with the range on our web app design services <!-- link: /services/web-app-design-services/ --> page.
+Your web app design RFP now describes the work in units any bidder can price, ours included: a grid, a state list and acceptance lines. Since every project begins with a free consultation and a fixed-scope proposal, adding us to the bidder list takes one email: [send us your RFP](/contact/), then compare our number with [the published web app design price range](/services/web-app-design-services/#how-much-does-web-app-design-cost).
 
 ## FAQs
 

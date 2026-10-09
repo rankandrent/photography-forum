@@ -279,5 +279,34 @@
     "18F STATUS: GSA eliminated 18F in March 2025; refer to it as 'GSA's former 18F team' and use past tense. Fact-checker: confirm the guide URL still resolves.",
     "NEXT IN THIS SILO (MOFU, second post of the new silo): 'legacy web app redesign' / 'redesign legacy web app without disrupting users'. The SERP is all how-to (netguru rebuild-legacy-web-apps, thinkcompany redesign-enterprise-app-without-disrupting-users, theskinsfactory legacy software Q&A, eleken legacy-app-uiux-design-services). It must not repeat saas-product-redesign's rollout/migration sections or the hub FAQ 'Can you redesign an existing web app in phases?'. Angle: muscle memory, UI layer over unchanged back end, run/build teams. DOWN link: Apex HCM.",
     "HUB BANKING (orchestrator, after publish): add one sentence to the hub's cost section body or the 'When should a software company hire...' list linking 'web app design RFP' -> /blog/web-app-design-rfp/ (for example: 'Sending a request for proposal? Use our web app design RFP template so every agency prices the same workflows and roles.')."
-  ]
+  ],
+  "backlinkSuggestions": [
+    {
+      "source": "content/services/web-app-design-services.json",
+      "section": "#how-much-does-web-app-design-cost (sections[] h2 'How much does web app design cost?', field `body`, renders HTML)",
+      "action": "append one sentence to the end of the existing <p> (before </p>)",
+      "sentence": "Sending a request for proposal to several agencies? A <a href=\"/blog/web-app-design-rfp/\">web app design RFP built on a role and workflow inventory</a> makes every bidder price the same scope.",
+      "anchor": "web app design RFP built on a role and workflow inventory",
+      "target": "/blog/web-app-design-rfp/",
+      "why": "Hub to silo post (down link). The cost body already explains that workflows and roles set the price; the post turns those counts into an RFP. This also covers the HUB BANKING note, so apply it once."
+    },
+    {
+      "source": "content/industries/saas.json",
+      "section": "#how-much-does-saas-ui-ux-design-cost (field `body`, renders HTML; it already links /blog/design-system-roi/ the same way)",
+      "action": "append one sentence after the existing design-system-roi sentence, inside the <p>",
+      "sentence": "SaaS teams that must collect competing bids can <a href=\"/blog/web-app-design-rfp/\">scope roles, workflows and screen states in a design RFP</a> so the quotes are comparable.",
+      "anchor": "scope roles, workflows and screen states in a design RFP",
+      "target": "/blog/web-app-design-rfp/",
+      "why": "Industry page (not a silo post), same buyer (full SaaS platform design, 8 roles, $60,000-$180,000), and the post's frontmatter lists industries: [saas]. Precedent: this same body already links a blog post."
+    }
+  ],
+  "linkBuilderNotes": {
+    "date": "2026-10-09",
+    "internal": "5 body links (BOFU 5-8): hub early (intro, anchor 'web app design services'), digital-product-design-services (the one cross-hub link), TradeZella case study, /contact/, hub #how-much-does-web-app-design-cost at the end. The hub fragments #what-does-web-app-design-include, #how-does-the-web-app-design-process-work and the mid-post #cost marker were removed to keep the hub cap at 2. Apex HCM was dropped because the case study is still a TODO stub. Its quote matched the frontmatter, so restore it in the 'What happens after' section once the case study is written.",
+    "externalSwaps": [
+      "18F PDF (guides.18f.gov/assets/.../18f-derisking-guide.pdf) did not come back in any search -> cited https://guides.18f.gov/derisking-government-tech/buying-development-services/ (search snippet: Agile Contract Format = statement of objectives for performance-based services + T&M + QASP). The '2024' date was removed because it could not be verified.",
+      "FAR 37.101 -> FAR 2.101: the performance-based acquisition definition ('structured around the results to be achieved as opposed to the manner by which the work is to be performed') lives in 2.101. The 37.101 page only defines hourly rate terms. The sentence was rewritten to match the definition and no longer says 'measurable outcomes'.",
+      "FedScoop removed (cap of 5 external links, secondary source). The strengths/weaknesses/verbal-interview sentence stays as plain text. It is supported by 18F's own 'How to evaluate bids and proposals' page (guides.18f.gov/derisking-government-tech/resources/evaluate-bids/), which was not linked so the post keeps one link per 18F source."
+    ]
+  }
 }
