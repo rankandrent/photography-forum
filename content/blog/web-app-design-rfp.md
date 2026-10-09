@@ -14,7 +14,7 @@ keyword: "web app design rfp"
 funnel: bofu
 image: /blog/web-app-design-rfp/cover.svg
 takeaways:
-  - "Build the scope around a role × workflow grid, because workflow and role counts are what design agencies price first."
+  - "Build the scope around a role × workflow grid, because workflows and user roles are two of the four factors our web app design price depends on."
   - "Scope screen states, not only screens: populated, empty, loading, error, no-permission and worst-case data for every table in scope."
   - "Promise research access in writing: users per role, who recruits them and how many usability test rounds you fund."
   - "Write accessibility and handoff as pass/fail acceptance lines that name the standard, the breakpoints and the exact files you accept."
@@ -29,17 +29,17 @@ A web app design RFP is the request for proposal (RFP) you send design agencies 
 
 **You need a formal RFP when procurement rules, a public-sector buyer or three or more bidding agencies demand written proposals you can compare line by line.**
 
-Below that bar, a short brief and a few calls decide faster. Formal requests come from teams replacing a customer portal or internal tool, procurement departments and regulated buyers.
+Below that bar, a short brief and a few calls decide faster. Formal requests come from procurement departments, regulated buyers and teams replacing a portal or internal tool.
 
 They are buying the design layer of a web application: workflow research, information architecture (IA), wireframes, a clickable prototype, a user interface (UI) kit and a design handoff package. Code and hosting belong to a development RFP; if one document covers both, see the FAQs.
 
-If the product does not exist yet, follow our scoping advice: teams that build a new product from zero compare scope with [digital product design](/services/digital-product-design-services/). Everyone else can start with the section map below.
+Teams that build a new product from zero compare scope with [digital product design](/services/digital-product-design-services/); everyone else can start with the section map below.
 
 ## Which 9 sections does the RFP need?
 
-**Nine sections: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, and proposal format with evaluation.**
+**The RFP needs nine sections: context, goals, users and roles, workflow inventory, screen states and data, research access, requirements and handoff, budget and timeline, and proposal format and evaluation.**
 
-The order mirrors how an agency builds a quote: who uses the product, what they do, then the evidence and files you expect back. The frame works as a user experience (UX) design RFP or as an RFP for UI UX design services.
+The order runs from who uses the product and what they do to the evidence and files you expect back. The same nine sections work for a user experience (UX) design RFP or any RFP for UI UX design services.
 
 ![Numbered vertical blueprint of the 9 web app design RFP sections, from context to proposal format and evaluation, each card showing what to write, why it changes the price and a sample line for an invented B2B customer portal](/blog/web-app-design-rfp/rfp-section-map.svg "The 9 RFP sections and why each one changes the price")
 
@@ -61,13 +61,13 @@ Sample lines describe a made-up business-to-business (B2B) customer portal.
 
 </details>
 
-Keep the main document short and move the bulky material into attachments (the FAQs give our length guideline). Fill the web app design RFP template in this order, starting with the grid in the next section.
+Keep the main document short and move the bulky material into attachments (the FAQs give our length guideline). Fill the web app design RFP template in this order; the next section shows how to build the role and workflow grid behind sections 3 and 4.
 
 ## How do you list user roles and workflows?
 
 **Put every user role and workflow in one grid, mark each role's permission per workflow, and tag each workflow in scope, out of scope or later phase.**
 
-Agencies count both totals first, because workflows and user roles are two of the units a web app design price is built on. Permissions matter as much, because an approver who can see an order but not edit it needs a read-only state the buyer never sees.
+Both totals feed the quote: workflows and user roles are two of the four factors our web app design price depends on. Permissions matter as much, because an approver who can see an order but not edit it needs a read-only state that the buyer's edit screen does not cover.
 
 ![Illustrative role by workflow grid for an invented B2B customer portal: 9 workflows against 4 roles (account admin, buyer, approver, support agent) marked edit, view, approve or none, each tagged in scope, later phase or out of scope, totalling nine workflows, seven in scope, four roles](/blog/web-app-design-rfp/role-workflow-grid.svg "Example, invented inputs: a role × workflow grid")
 
@@ -93,13 +93,13 @@ Totals: nine workflows listed, seven in scope, four roles.
 
 Name each workflow as a user goal with a verb. "Orders page" hides how many steps live behind it, so bidders guess differently; "Approve an order over the account's spending limit" says who acts and which permission applies.
 
-Counting workflows is where drafts tend to stall, because no single team holds the full list. If yours stalls, bring the half-filled grid to a first call with us and we will finish the count together.
+Drafts often stall here, because no single team holds the full workflow list. If yours does, bring the half-filled grid to a first call with us, and list any workflow nobody can confirm as an open question for bidders in the question-and-answer (Q&A) window.
 
 ## Which screen states and data belong in scope?
 
 **Scope states, not just screens: populated, empty, loading, error, no-permission and worst-case data for every table and form in scope.**
 
-A data table that looks tidy with a dozen rows can break at several thousand, when columns truncate and bulk actions need confirmation. Listing states per component makes every agency price the same design, not the happy path alone.
+A data table that looks tidy with a dozen rows can break at several thousand, when columns truncate and bulk actions need confirmation. Listing states per component lets every agency price the same design, not the happy path alone.
 
 ![The same orders table sketched as a wireframe in six states, populated, empty on first use, loading, error, no permission and worst-case data, each with what the RFP should specify](/blog/web-app-design-rfp/orders-table-six-states.svg "Scope states, not screens")
 
@@ -119,7 +119,7 @@ Add data volume fields for each table in scope:
 - **Rows per table, typical and worst case,** so pagination or summaries are designed for the real load.
 - **Longest realistic values,** such as company names and order IDs, so column widths survive real content.
 - **Columns users sort or filter,** so the design does not hide fields people use daily.
-- **Bulk actions, saved filters and keyboard use,** because these are among the components a web app UI kit covers and each adds design time.
+- **Bulk actions, saved filters and keyboard use,** because filters and bulk actions are components of a web app UI kit, and each of the three adds design time.
 
 Attach sample data, never production records: mask names, emails and account IDs, keep realistic lengths, and state in one line how you masked the file.
 
@@ -137,13 +137,11 @@ Write these lines into the research access section:
 - **Evidence to attach:** analytics, support ticket themes, past research and screenshots, so discovery starts from what you know.
 - **Methods, not vendors:** ask for a tree test of the navigation and a prototype test; name a tool only when security requires it.
 
-With access written down, define what the agency hands back.
-
 ## How do you write acceptance criteria?
 
 **Write them as pass/fail lines that name the accessibility standard and level, the breakpoints, and the exact handoff files you will accept.**
 
-For a commercial web app, name WCAG 2.2 level AA, the current [World Wide Web Consortium (W3C) Recommendation](https://www.w3.org/TR/WCAG22/). Federal buyers can start from the contract language on section508.gov, which ties deliverables to the Revised 508 Standards; those [incorporate WCAG 2.0 Level A and AA by reference](https://www.section508.gov/develop/applicability-conformance/). If you target WCAG 2.2 as well, name both versions in one line.
+For a commercial web app, name Web Content Accessibility Guidelines (WCAG) 2.2 level AA, the current [World Wide Web Consortium (W3C) Recommendation](https://www.w3.org/TR/WCAG22/). Federal buyers can start from the contract language on section508.gov, which ties deliverables to the Revised 508 Standards; those [incorporate WCAG 2.0 Level A and AA by reference](https://www.section508.gov/develop/applicability-conformance/). If you target WCAG 2.2 as well, name both versions in one line.
 
 ![Checklist card of six pass lines: one accessibility line for WCAG 2.2 level AA with focus order and label annotations, and five handoff lines for annotated Figma files, named breakpoints, every screen state, Storybook mapping and a scheduled developer review](/blog/web-app-design-rfp/acceptance-pass-fail.svg "Pass/fail acceptance lines for accessibility and handoff")
 
@@ -158,7 +156,9 @@ For a commercial web app, name WCAG 2.2 level AA, the current [World Wide Web Co
 
 </details>
 
-Ask your own counsel for one line on who owns the Figma files and when rights transfer. Then cut what the RFP does not need.
+Each handoff line removes a guess. Our design handoff uses three desktop breakpoints, for example 1280, 1440 and 1920 px, plus mobile layouts for tasks users complete on a phone; naming your own widths lets every bidder price the same layouts. Mapping specs to Storybook stories by name lets engineers match designs to components already in code. Make the developer review of first builds an accepted deliverable, because that review catches gaps between design and code.
+
+Ask your own counsel for one line on who owns the Figma files and when rights transfer.
 
 ## What should the RFP leave out?
 
@@ -166,7 +166,7 @@ Ask your own counsel for one line on who owns the Figma files and when rights tr
 
 AIGA, the professional association for design, [holds that spec work](https://www.aiga.org/resources/aiga-position-on-spec-work) "precludes the most important element of most design projects—the research, thoughtful consideration of alternatives, and development and testing of prototype designs." A mockup made without them shows the least useful version of an agency, so ask for two relevant case studies instead.
 
-Prescribed solutions such as "add a dashboard with 12 charts" fix the answer before anyone studies the workflow, so state the problem and the metric. Instead of long requirement lists, the General Services Administration's (GSA) former 18F team recommended [a statement of objectives for performance-based services](https://guides.18f.gov/derisking-government-tech/buying-development-services/) when buying custom software. Federal rules [define performance-based acquisition](https://www.acquisition.gov/far/2.101) as one structured around the results to be achieved rather than the manner in which the work is performed.
+Prescribed solutions such as "add a dashboard with 12 charts" fix the answer before anyone studies the workflow, so state the problem and the metric. For custom software, the General Services Administration's (GSA) former 18F team recommended [a statement of objectives for performance-based services](https://guides.18f.gov/derisking-government-tech/buying-development-services/) instead of long requirement lists. Federal rules [define performance-based acquisition](https://www.acquisition.gov/far/2.101) as one structured around the results to be achieved rather than the manner in which the work is performed.
 
 ![Five weak RFP lines, such as a modern, intuitive dashboard and send three concept mockups, each with an arrow to the priceable line that replaces it](/blog/web-app-design-rfp/weak-to-priceable-lines.svg "Weak RFP lines rewritten into lines agencies can price")
 
@@ -182,15 +182,17 @@ Prescribed solutions such as "add a dashboard with 12 charts" fix the answer bef
 
 </details>
 
-Watch the last row: a fixed price on an unknown scope gets padded for risk, while one on a written inventory stays comparable. Check your draft against these rewrites before adding commercial terms.
+Watch the last row: a fixed price on an unknown scope gets padded for risk, while one on a written inventory stays comparable. Check your draft against these rewrites.
 
 ## How do you state budget, timeline and weights?
 
 **Include a budget band, a decision date and weighted evaluation criteria in the RFP itself, so agencies scope to your number and every proposal is scored the same way.**
 
-Without a band, one agency quotes two test rounds and another a single pass. For calibration, our published web app design range is $60,000–$180,000 over 8–16 weeks, driven by the same counts your inventory holds. A web app design RFP that states its band lets each bidder say early whether your scope fits it.
+Without a band, one agency quotes two test rounds and another a single pass. For calibration, our published web app design range is $60,000–$180,000 over 8–16 weeks, and the price depends on the number of workflows, user roles and test rounds and the size of the component library. A web app design RFP that states its band lets each bidder say early whether your scope fits it.
 
-List the dates in one line: proposal deadline, Q&A window, interviews, decision and project start. Publish the design agency RFP evaluation criteria and weights before proposals arrive, and score quality before opening price. GSA's former 18F team advised reviewing each proposal's strengths, weaknesses and risks, then inviting the highest-rated firms to a verbal interview.
+List the dates in one line: proposal deadline, Q&A window, interviews, decision and project start. Section 9 sets the proposal format: a page limit (for example twelve pages) and sections in the order of your evaluation criteria, so evaluators score like with like. State that questions come in writing during the Q&A window, so no bidder gets a private answer.
+
+Publish the design agency RFP evaluation criteria and weights before proposals arrive, and score quality before opening price. GSA's former 18F team advised reviewing each proposal's strengths, weaknesses and risks, then inviting the most highly rated firms to a verbal interview. The same team advised against scoring proposals with a point system, so treat the weights below as our suggestion, not 18F's method.
 
 ![Three-stage scoring funnel with suggested example weights: quality out of 100 points split into workflow understanding 30, research and test plan 25, case evidence 25 and team seniority and continuity 20, a gate at 70 points, then a final score of quality 70% and price 30%](/blog/web-app-design-rfp/quality-gate-scoring.svg "Suggested example weights: score quality before price")
 
@@ -204,8 +206,6 @@ Suggested example weights, not a standard:
 
 </details>
 
-Write the weights into section 9, then plan the weeks after release.
-
 ## What happens after you send the RFP?
 
 **Answer questions in writing to every bidder, shortlist on the published criteria, interview two or three teams, then attach the agreed inventory to the contract.**
@@ -218,11 +218,11 @@ A fixed sequence keeps proposals comparable; set the placeholder durations below
 4. **Interviews (about 1 week):** each team walks through one workflow and how they would test it.
 5. **Contract:** attach the final inventory as the scope in the statement of work (SOW).
 
-The interview replaces spec work: questions to ask in a design RFP interview test method ("how would you test the approval flow?"), not finished screens. Attaching the inventory turns the web application design scope of work into a list you can measure change requests against.
+The interview replaces spec work: the questions to ask in a design RFP interview should test method ("how would you test the approval flow?"), not finished screens. Attaching the inventory turns the web application design scope of work into a list you can measure change requests against.
 
-For a sense of the design work behind a scope like this, our [TradeZella dashboard revamp](/case-studies/tradezella/) covered discovery, stakeholder interviews and web and mobile app design for a trading journal, with "40% more user interaction after a dashboard revamp".
+For the design work behind a scope like this, our [TradeZella dashboard revamp](/case-studies/tradezella/) covered discovery, stakeholder interviews and web and mobile app design for a trading journal, with "40% more user interaction after a dashboard revamp".
 
-Your web app design RFP now describes the work in units any bidder can price, ours included: a grid, a state list and acceptance lines. Since every project begins with a free consultation and a fixed-scope proposal, adding us to the bidder list takes one email: [send us your RFP](/contact/), then compare our number with [the published web app design price range](/services/web-app-design-services/#how-much-does-web-app-design-cost).
+Your web app design RFP now describes the work in units any bidder can price, ours included: a grid, a state list and acceptance lines. Adding us to the bidder list takes one email: [send us your RFP](/contact/). Every project begins with a free consultation and a fixed-scope proposal, and you can set ours beside the other bids and [the published web app design price range](/services/web-app-design-services/#how-much-does-web-app-design-cost).
 
 ## FAQs
 
@@ -244,4 +244,4 @@ Yes. A band, for example $90,000–$130,000, lets agencies scope to your number 
 
 ### How many agencies should receive the RFP?
 
-Three to five is our recommendation. That gives a real comparison of price and approach while your evaluators can still read every proposal with care.
+Three to five is our recommendation. That allows a real comparison of price and approach while evaluators can still read every proposal with care.
