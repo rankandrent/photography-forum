@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600" font-family="Manrope, system-ui, sans-serif">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0A0C"/><stop offset="1" stop-color="#4a0d22"/></linearGradient></defs>
+<rect width="1600" height="600" fill="url(#g)"/>
+<g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<path d="M76 150 H200 Q216 150 216 166 V226 Q216 242 200 242 H110 L84 266 V242 H76 Q60 242 60 226 V166 Q60 150 76 150 Z" stroke-opacity="0.75"/>
+<path d="M88 182 H186 M88 210 H156" stroke-opacity="0.45"/>
+<path d="M110 300 H226 Q240 300 240 314 V364 Q240 378 226 378 H206 V400 L182 378 H110 Q96 378 96 364 V314 Q96 300 110 300 Z" stroke-opacity="0.45"/>
+<path d="M122 330 H212 M122 352 H180" stroke-opacity="0.3"/>
+<circle cx="118" cy="466" r="38" stroke-opacity="0.85"/><path d="M146 494 L184 532" stroke-opacity="0.85" stroke-width="4"/>
+</g>
+<g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<path d="M1360 300 L1415 200 L1470 300 L1415 400 Z" stroke-opacity="0.85"/>
+<path d="M1470 300 L1525 200 L1580 300 L1525 400 Z" stroke-opacity="0.4" stroke-dasharray="8 7"/>
+<path d="M1380 300 H1450 M1395 272 L1435 272 M1395 328 L1435 328" stroke-opacity="0.35"/>
+</g>
+<circle cx="1470" cy="300" r="9" fill="#E2225F"/>
+<text x="300" y="112" font-size="36" font-weight="800" fill="#E2225F" letter-spacing="2">DIGITAL PRODUCT DESIGN GUIDE</text>
+<text x="300" y="226" font-size="88" font-weight="800" fill="#FFFFFF">Is a discovery</text>
+<text x="300" y="326" font-size="88" font-weight="800" fill="#FFFFFF">phase worth it?</text>
+<text x="304" y="420" font-size="42" font-weight="700" fill="#FFFFFF" fill-opacity="0.85">Score the 6-question skip test</text>
+<text x="304" y="486" font-size="40" font-weight="700" fill="#E2225F">Full, light or skip</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1412" width="800" height="1412" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1412" rx="24" fill="#FBFAFB"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">Four discovery outputs</text>
+<g id="legend">
+<rect x="40" y="108" width="34" height="34" rx="8" fill="#FFE3EC"/><path d="M50 119 H64 M50 125 H64 M50 131 H59" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round"/>
+<text x="88" y="135" font-size="26" font-weight="700" fill="#6B6B70">What it holds</text>
+<circle cx="57" cy="173" r="17" fill="#E2225F"/><path d="M49 173 H64 M58 167 L64 173 L58 179" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="88" y="183" font-size="26" font-weight="700" fill="#6B6B70">What the designer does with it on day 1</text>
+</g>
+<rect x="52" y="238" width="720" height="224" rx="20" fill="#FFE3EC"/>
+<g class="card" id="out1"><rect x="40" y="226" width="720" height="224" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="276" font-size="26" font-weight="800" fill="#E2225F">Output 1</text>
+<text x="64" y="314" font-size="30" font-weight="800" fill="#020101">Product brief (one page)</text>
+<rect x="64" y="344" width="30" height="30" rx="7" fill="#FFE3EC"/><path d="M72 353 H86 M72 359 H86 M72 365 H81" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round"/>
+<text x="112" y="363" font-size="26" fill="#6B6B70">Target users, Jobs to be Done, scope</text>
+<circle cx="79" cy="409" r="15" fill="#E2225F"/><path d="M72 409 H86 M81 404 L86 409 L81 414" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112" y="413" font-size="26" fill="#020101">Picks the users and job every screen serves</text>
+</g>
+<rect x="52" y="496" width="720" height="292" rx="20" fill="#FFE3EC"/>
+<g class="card" id="out2"><rect x="40" y="484" width="720" height="292" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="534" font-size="26" font-weight="800" fill="#E2225F">Output 2</text>
+<text x="64" y="572" font-size="30" font-weight="800" fill="#020101">Research report</text>
+<rect x="64" y="602" width="30" height="30" rx="7" fill="#FFE3EC"/><path d="M72 611 H86 M72 617 H86 M72 623 H81" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round"/>
+<text x="112" y="621" font-size="26" fill="#6B6B70">5–8 interviews per user group: unmet needs,</text>
+<text x="112" y="655" font-size="26" fill="#6B6B70">workarounds, switching triggers</text>
+<circle cx="79" cy="701" r="15" fill="#E2225F"/><path d="M72 701 H86 M81 696 L86 701 L81 706" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112" y="705" font-size="26" fill="#020101">Turns workarounds into steps the product must</text>
+<text x="112" y="739" font-size="26" fill="#020101">beat</text>
+</g>
+<rect x="52" y="822" width="720" height="224" rx="20" fill="#FFE3EC"/>
+<g class="card" id="out3"><rect x="40" y="810" width="720" height="224" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="860" font-size="26" font-weight="800" fill="#E2225F">Output 3</text>
+<text x="64" y="898" font-size="30" font-weight="800" fill="#020101">Sitemap and user flows</text>
+<rect x="64" y="928" width="30" height="30" rx="7" fill="#FFE3EC"/><path d="M72 937 H86 M72 943 H86 M72 949 H81" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round"/>
+<text x="112" y="947" font-size="26" fill="#6B6B70">Every screen and core task</text>
+<circle cx="79" cy="993" r="15" fill="#E2225F"/><path d="M72 993 H86 M81 988 L86 993 L81 998" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112" y="997" font-size="26" fill="#020101">Builds the clickable prototype in Figma</text>
+</g>
+<rect x="52" y="1080" width="720" height="292" rx="20" fill="#FFE3EC"/>
+<g class="card" id="out4"><rect x="40" y="1068" width="720" height="292" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="1118" font-size="26" font-weight="800" fill="#E2225F">Output 4</text>
+<text x="64" y="1156" font-size="30" font-weight="800" fill="#020101">Success metrics</text>
+<rect x="64" y="1186" width="30" height="30" rx="7" fill="#FFE3EC"/><path d="M72 1195 H86 M72 1201 H86 M72 1207 H81" stroke="#E2225F" stroke-width="2.5" stroke-linecap="round"/>
+<text x="112" y="1205" font-size="26" fill="#6B6B70">Targets such as weekly active users and task</text>
+<text x="112" y="1239" font-size="26" fill="#6B6B70">completion time</text>
+<circle cx="79" cy="1285" r="15" fill="#E2225F"/><path d="M72 1285 H86 M81 1280 L86 1285 L81 1290" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112" y="1289" font-size="26" fill="#020101">Writes prototype test tasks against those</text>
+<text x="112" y="1323" font-size="26" fill="#020101">targets</text>
+</g>
+</svg>

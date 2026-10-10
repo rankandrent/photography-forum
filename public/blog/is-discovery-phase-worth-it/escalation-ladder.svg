@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 996" width="800" height="996" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="996" rx="24" fill="#FBFAFB"/>
+<text x="40" y="73" font-size="36" font-weight="800" fill="#020101">Where a wrong assumption</text>
+<text x="40" y="117" font-size="36" font-weight="800" fill="#020101">surfaces</text>
+<path d="M57 180 V152 M47 162 L57 152 L67 162" stroke="#E2225F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="84" y="176" font-size="26" font-weight="700" fill="#6B6B70">From cheapest to most expensive</text>
+<path d="M64 198 V970 M124 198 V970" stroke="#020101" stroke-width="4" stroke-linecap="round"/>
+<path d="M64 296 H124" stroke="#020101" stroke-width="4" stroke-linecap="round"/>
+<path d="M124 296 H160" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 5"/>
+<g class="card" id="step4"><rect x="160" y="212" width="600" height="168" rx="20" fill="#FFE3EC" stroke="#E2225F"/>
+<circle cx="206" cy="254" r="20" fill="#E2225F"/>
+<text x="206" y="263" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="240" y="265" font-size="30" font-weight="800" fill="#020101">After launch</text>
+<text x="186" y="309" font-size="26" fill="#020101">users meet the problem and leave; the</text>
+<text x="186" y="343" font-size="26" fill="#020101">fix costs sprints plus lost users.</text>
+</g>
+<path d="M64 488 H124" stroke="#020101" stroke-width="4" stroke-linecap="round"/>
+<path d="M124 488 H160" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 5"/>
+<g class="card" id="step3"><rect x="160" y="404" width="600" height="168" rx="20" fill="#FFEAF1" stroke="#E8E8EB"/>
+<circle cx="206" cy="446" r="20" fill="#E2225F"/>
+<text x="206" y="455" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="240" y="457" font-size="30" font-weight="800" fill="#020101">Build sprint</text>
+<text x="186" y="501" font-size="26" fill="#020101">code exists around the wrong flow;</text>
+<text x="186" y="535" font-size="26" fill="#020101">development sprints go to rework.</text>
+</g>
+<path d="M64 680 H124" stroke="#020101" stroke-width="4" stroke-linecap="round"/>
+<path d="M124 680 H160" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 5"/>
+<g class="card" id="step2"><rect x="160" y="596" width="600" height="168" rx="20" fill="#FFF5F8" stroke="#E8E8EB"/>
+<circle cx="206" cy="638" r="20" fill="#E2225F"/>
+<text x="206" y="647" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="240" y="649" font-size="30" font-weight="800" fill="#020101">Prototype test</text>
+<text x="186" y="693" font-size="26" fill="#020101">users stall on a task; designers spend</text>
+<text x="186" y="727" font-size="26" fill="#020101">hours reworking the flow.</text>
+</g>
+<path d="M64 872 H124" stroke="#020101" stroke-width="4" stroke-linecap="round"/>
+<path d="M124 872 H160" stroke="#E2225F" stroke-width="3" stroke-dasharray="6 5"/>
+<g class="card" id="step1"><rect x="160" y="788" width="600" height="168" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="206" cy="830" r="20" fill="#E2225F"/>
+<text x="206" y="839" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="240" y="841" font-size="30" font-weight="800" fill="#020101">Interview</text>
+<text x="186" y="885" font-size="26" fill="#020101">the assumption fails in conversation;</text>
+<text x="186" y="919" font-size="26" fill="#020101">you rewrite a line of the product brief.</text>
+</g>
+</svg>

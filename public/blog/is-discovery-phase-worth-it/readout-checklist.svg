@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 952" width="800" height="952" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="952" rx="24" fill="#FBFAFB"/>
+<g class="card" id="doc"><path d="M40 30 H700 L760 90 V892 Q760 912 740 912 H60 Q40 912 40 892 Z" fill="#FFFFFF" stroke="#E8E8EB" stroke-width="2"/><rect x="40" y="30" width="720" height="882" fill="none"/><path d="M700 30 V78 Q700 90 712 90 H760" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="84" y="100" font-size="32" font-weight="800" fill="#020101">A good discovery readout</text>
+<text x="84" y="140" font-size="32" font-weight="800" fill="#020101">contains</text>
+<g class="card" id="g-decision"><rect x="72" y="176" width="656" height="118" rx="16" fill="#FFE3EC" stroke="#E2225F"/>
+<text x="96" y="218" font-size="26" font-weight="800" fill="#E2225F">Decision</text>
+<rect x="96" y="241" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 255 L108 261 L118 249" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="259" font-size="26" fill="#020101">An explicit build, change or stop decision</text>
+</g>
+<g class="card" id="g-evidence"><rect x="72" y="312" width="656" height="308" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="96" y="354" font-size="26" font-weight="800" fill="#E2225F">Evidence</text>
+<rect x="96" y="377" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 391 L108 397 L118 385" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="395" font-size="26" fill="#020101">Named target user groups</text>
+<rect x="96" y="429" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 443 L108 449 L118 437" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="447" font-size="26" fill="#020101">The interview count per group</text>
+<rect x="96" y="481" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 495 L108 501 L118 489" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="499" font-size="26" fill="#020101">Top findings, each with a user quote</text>
+<rect x="96" y="533" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 547 L108 553 L118 541" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="551" font-size="26" fill="#020101">The assumption ledger, with evidence</text>
+<text x="140" y="585" font-size="26" fill="#020101">status per row</text>
+</g>
+<g class="card" id="g-designready"><rect x="72" y="638" width="656" height="222" rx="16" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="96" y="680" font-size="26" font-weight="800" fill="#E2225F">Design-ready outputs</text>
+<rect x="96" y="703" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 717 L108 723 L118 711" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="721" font-size="26" fill="#020101">Success metrics with baselines or targets</text>
+<rect x="96" y="755" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 769 L108 775 L118 763" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="773" font-size="26" fill="#020101">A sitemap and the core user flows</text>
+<rect x="96" y="807" width="28" height="28" rx="7" fill="#E2225F"/><path d="M102 821 L108 827 L118 815" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="825" font-size="26" fill="#020101">Open questions for the prototype round</text>
+</g>
+</g>
+</svg>

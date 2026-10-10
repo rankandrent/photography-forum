@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1378" width="800" height="1378" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1378" rx="24" fill="#FBFAFB"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">The six-question skip test</text>
+<text x="40" y="128" font-size="28" font-weight="800" fill="#6B6B70">Count your yes answers</text>
+<g class="card"><rect x="512" y="98" width="248" height="46" rx="23" fill="#FFE3EC"/><text x="636" y="130" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Rule of thumb</text></g>
+<g class="card" id="qs"><rect x="40" y="160" width="700" height="708" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<circle cx="84" cy="237" r="22" fill="#E2225F"/>
+<text x="84" y="246" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="124" y="207" font-size="26" fill="#020101">Have you interviewed at least 5</text>
+<text x="124" y="241" font-size="26" fill="#020101">target users about this problem in</text>
+<text x="124" y="275" font-size="26" fill="#020101">the last 12 months?</text>
+<g class="card"><rect x="626" y="214" width="96" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/><text x="674" y="246" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Yes</text></g>
+<path d="M64 306 H716" stroke="#E8E8EB" stroke-width="2"/>
+<circle cx="84" cy="358" r="22" fill="#E2225F"/>
+<text x="84" y="367" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="124" y="345" font-size="26" fill="#020101">Can you name the one job users hire</text>
+<text x="124" y="379" font-size="26" fill="#020101">the product for?</text>
+<g class="card"><rect x="626" y="335" width="96" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/><text x="674" y="367" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Yes</text></g>
+<path d="M64 410 H716" stroke="#E8E8EB" stroke-width="2"/>
+<circle cx="84" cy="462" r="22" fill="#E2225F"/>
+<text x="84" y="471" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="124" y="449" font-size="26" fill="#020101">Do you know what users rely on</text>
+<text x="124" y="483" font-size="26" fill="#020101">today and why they would switch?</text>
+<g class="card"><rect x="626" y="439" width="96" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/><text x="674" y="471" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Yes</text></g>
+<path d="M64 514 H716" stroke="#E8E8EB" stroke-width="2"/>
+<circle cx="84" cy="583" r="22" fill="#E2225F"/>
+<text x="84" y="592" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="124" y="553" font-size="26" fill="#020101">Is there a paying customer, a signed</text>
+<text x="124" y="587" font-size="26" fill="#020101">pilot or a waitlist for this exact</text>
+<text x="124" y="621" font-size="26" fill="#020101">product?</text>
+<g class="card"><rect x="626" y="560" width="96" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/><text x="674" y="592" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Yes</text></g>
+<path d="M64 652 H716" stroke="#E8E8EB" stroke-width="2"/>
+<circle cx="84" cy="704" r="22" fill="#E2225F"/>
+<text x="84" y="713" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="124" y="691" font-size="26" fill="#020101">Have the founders agreed on the</text>
+<text x="124" y="725" font-size="26" fill="#020101">success metrics?</text>
+<g class="card"><rect x="626" y="681" width="96" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/><text x="674" y="713" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Yes</text></g>
+<path d="M64 756 H716" stroke="#E8E8EB" stroke-width="2"/>
+<circle cx="84" cy="808" r="22" fill="#E2225F"/>
+<text x="84" y="817" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="124" y="795" font-size="26" fill="#020101">Does a regulation, contract or</text>
+<text x="124" y="829" font-size="26" fill="#020101">platform rule fix the scope?</text>
+<g class="card"><rect x="626" y="785" width="96" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2"/><text x="674" y="817" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Yes</text></g>
+</g>
+<path d="M768 237 V958" stroke="#E2225F" stroke-width="3" fill="none"/>
+<path d="M722 237 H768" stroke="#E2225F" stroke-width="3"/><circle cx="768" cy="237" r="5" fill="#E2225F"/>
+<path d="M722 358 H768" stroke="#E2225F" stroke-width="3"/><circle cx="768" cy="358" r="5" fill="#E2225F"/>
+<path d="M722 462 H768" stroke="#E2225F" stroke-width="3"/><circle cx="768" cy="462" r="5" fill="#E2225F"/>
+<path d="M722 583 H768" stroke="#E2225F" stroke-width="3"/><circle cx="768" cy="583" r="5" fill="#E2225F"/>
+<path d="M722 704 H768" stroke="#E2225F" stroke-width="3"/><circle cx="768" cy="704" r="5" fill="#E2225F"/>
+<path d="M722 808 H768" stroke="#E2225F" stroke-width="3"/><circle cx="768" cy="808" r="5" fill="#E2225F"/>
+<g class="card" id="gauge"><rect x="40" y="908" width="700" height="100" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<text x="64" y="968" font-size="28" font-weight="800" fill="#020101">Score</text>
+<rect x="184" y="930" width="76" height="56" rx="10" fill="#E2225F"/>
+<text x="222" y="968" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">0</text>
+<rect x="262" y="930" width="76" height="56" rx="10" fill="#E2225F"/>
+<text x="300" y="968" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="340" y="930" width="76" height="56" rx="10" fill="#E2225F"/>
+<text x="378" y="968" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="418" y="930" width="76" height="56" rx="10" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="456" y="968" font-size="28" font-weight="800" fill="#E2225F" text-anchor="middle">3</text>
+<rect x="496" y="930" width="76" height="56" rx="10" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/>
+<text x="534" y="968" font-size="28" font-weight="800" fill="#E2225F" text-anchor="middle">4</text>
+<rect x="574" y="930" width="76" height="56" rx="10" fill="#020101"/>
+<text x="612" y="968" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+<rect x="652" y="930" width="76" height="56" rx="10" fill="#020101"/>
+<text x="690" y="968" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+</g>
+<path d="M768 958 H748" stroke="#E2225F" stroke-width="3"/><path d="M752 950 L742 958 L752 966" fill="none" stroke="#E2225F" stroke-width="3"/>
+<path d="M300 986 L151 1052" stroke="#E2225F" stroke-width="3" fill="none"/>
+<g class="card" id="exit1"><rect x="40" y="1052" width="222" height="286" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="40" y="1052" width="222" height="10" rx="5" fill="#E2225F"/>
+<text x="60" y="1114" font-size="44" font-weight="800" fill="#E2225F">0–2</text>
+<text x="60" y="1153" font-size="26" fill="#020101">means full</text>
+<text x="60" y="1187" font-size="26" fill="#020101">discovery</text>
+</g>
+<path d="M495 986 L390 1052" stroke="#E2225F" stroke-width="3" fill="none"/>
+<g class="card" id="exit2"><rect x="279" y="1052" width="222" height="286" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="279" y="1052" width="222" height="10" rx="5" fill="#E2225F"/>
+<text x="299" y="1114" font-size="44" font-weight="800" fill="#E2225F">3–4</text>
+<text x="299" y="1153" font-size="26" fill="#020101">a light</text>
+<text x="299" y="1187" font-size="26" fill="#020101">version</text>
+<text x="299" y="1231" font-size="26" font-weight="700" fill="#E2225F">5-day</text>
+<text x="299" y="1265" font-size="26" font-weight="700" fill="#E2225F">design</text>
+<text x="299" y="1299" font-size="26" font-weight="700" fill="#E2225F">sprint</text>
+</g>
+<path d="M651 986 L629 1052" stroke="#020101" stroke-width="3" fill="none"/>
+<g class="card" id="exit3"><rect x="518" y="1052" width="222" height="286" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<rect x="518" y="1052" width="222" height="10" rx="5" fill="#020101"/>
+<text x="538" y="1114" font-size="44" font-weight="800" fill="#020101">5–6</text>
+<text x="538" y="1153" font-size="26" fill="#020101">skip</text>
+<text x="538" y="1187" font-size="26" fill="#020101">discovery</text>
+<text x="538" y="1221" font-size="26" fill="#020101">and start</text>
+<text x="538" y="1255" font-size="26" fill="#020101">design</text>
+</g>
+</svg>

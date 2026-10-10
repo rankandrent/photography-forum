@@ -12,6 +12,7 @@ industries: []
 tags: [discovery phase, product discovery, is discovery phase worth it, discovery phase deliverables, discovery phase before app development]
 keyword: "is a discovery phase worth it"
 funnel: bofu
+image: /blog/is-discovery-phase-worth-it/cover.svg
 takeaways:
   - "A discovery phase earns its cost when a core assumption about users, their job, payment or usability still has no evidence."
   - "Score six yes/no questions: two or fewer yes answers means full discovery, three or four a light sprint, five or six go straight to design."
@@ -42,7 +43,7 @@ The GOV.UK Service Manual tells teams to [reframe any predefined solution as a p
 
 Each is something a designer opens on the first day of prototyping; an output nobody opens was not worth the time.
 
-<!-- visual: output stack. Four stacked cards from top to bottom: product brief, research report, sitemap and user flows, success metrics. Each card shows what it holds and "what the designer does with it on day 1". -->
+![Four stacked cards for the discovery outputs: product brief (one page), research report, sitemap and user flows, and success metrics, each showing what it holds and what the designer does with it on day 1](/blog/is-discovery-phase-worth-it/output-stack.svg "Four discovery outputs and how design uses them on day 1")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -65,7 +66,7 @@ Many lists of discovery phase deliverables online come from software development
 
 Write them into an assumption ledger before kickoff, so interviews chase evidence instead of opinions. The illustrative rows below describe a made-up clinic scheduling app.
 
-<!-- visual: assumption ledger. Table infographic labelled "Illustrative example": assumption | risk type | method | evidence that counts | status, four rows for an invented clinic scheduling app, all marked untested. -->
+![Illustrative assumption ledger for a made-up clinic scheduling app: four assumptions, each with its risk type (value, usability or viability), test method, the evidence that counts and an untested status](/blog/is-discovery-phase-worth-it/assumption-ledger.svg "Illustrative example: an assumption ledger for a made-up clinic scheduling app")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -86,7 +87,7 @@ Rank each row by how bad it would be if wrong and how little evidence you hold, 
 
 Can you skip product discovery? The test answers from evidence you hold, not from deadline pressure, and its cut-offs are our rule of thumb from running engagements, not research data.
 
-<!-- visual: scored decision flow. Six yes/no questions feed a score counter with three exits: 0–2 full discovery, 3–4 light version (5-day design sprint), 5–6 skip to design. -->
+![The six yes/no skip-test questions feed a 0 to 6 score bar with three exits: 0–2 means full discovery, 3–4 a light version as a 5-day design sprint, 5–6 skip discovery and start design](/blog/is-discovery-phase-worth-it/skip-test-flow.svg "The six-question skip test and its three outcomes")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -115,7 +116,7 @@ Your score is your own answer to "is a discovery phase worth it?" If you scored 
 
 Our service page puts the mechanism in plain terms: usability issues found in a clickable prototype cost hours to fix, while the same issues found after launch cost development sprints. A discovery phase before app development moves that moment to the cheapest rung, the interview.
 
-<!-- visual: escalation ladder. Four rungs, bottom to top: interview, prototype test, build sprint, after launch. Qualitative cost labels only (a line in the brief, design hours, development sprints, sprints plus lost users); no numbers or multipliers. -->
+![Ladder of where a wrong assumption surfaces, from cheapest at the bottom to most expensive at the top: interview, prototype test, build sprint and after launch, with what each costs to fix](/blog/is-discovery-phase-worth-it/escalation-ladder.svg "Where a wrong assumption surfaces, from cheapest to most expensive")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -137,8 +138,6 @@ Vendor pages often put a percentage on the overspend from skipping discovery; no
 **In all three idea-to-product projects, early research settled who the product serves and how its core logic works, and the design was built on that.**
 
 Each case study reports results from the whole project, not from discovery alone.
-
-<!-- visual: three-case strip. One row per project (Nitro League, Vocable, Digno) showing where research sat in the sequence: research step, then what design built on it, then validation or launch. Exact case-study facts only, no logos. -->
 
 **Nitro League.** Unknown: how one product would serve three audiences while investors doubted whether crypto products were authentic. Settled: product discovery and stakeholder interviews produced the user flows and a detailed whitepaper. Built: branding workshops, the 3D garage and the website followed, and professional gamers validated the result.
 
@@ -162,7 +161,7 @@ Discovery sits at the start of the engagement because evidence gets lost at hand
 
 Workshop notes with no users in them are not discovery. Maria Rosala, Director of Research at Nielsen Norman Group (NN/g), surveyed UX practitioners and found that many discoveries [run short, lack user research and leave out the right people](https://www.nngroup.com/articles/discoveries-in-industry-revealed/). Check any readout against the card below before you sign off on it.
 
-<!-- visual: readout checklist card. Eight check lines for a discovery readout, grouped as decision, evidence and design-ready outputs. Do not repeat the warning signs in the prose below. -->
+![Discovery readout checklist with eight checked lines grouped into decision, evidence and design-ready outputs](/blog/is-discovery-phase-worth-it/readout-checklist.svg "What a good discovery readout contains")
 
 <details class="astext"><summary>Show as text</summary>
 

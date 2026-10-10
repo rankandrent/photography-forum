@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1564" width="800" height="1564" font-family="Manrope, system-ui, sans-serif">
+<rect width="800" height="1564" rx="24" fill="#FBFAFB"/>
+<text x="40" y="76" font-size="36" font-weight="800" fill="#020101">Assumption ledger</text>
+<g class="card"><rect x="40" y="100" width="333" height="46" rx="23" fill="#E2225F"/><text x="206" y="132" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">Illustrative example</text></g>
+<text x="40" y="186" font-size="26" font-weight="700" fill="#6B6B70">A made-up clinic scheduling app</text>
+<g class="card" id="row1"><rect x="40" y="216" width="720" height="322" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M50 234 V520" stroke="#E2225F" stroke-width="6" stroke-linecap="round"/>
+<text x="72" y="268" font-size="26" fill="#6B6B70">Risk type</text>
+<g class="card"><rect x="204" y="236" width="123" height="46" rx="23" fill="#E2225F"/><text x="266" y="268" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">Value</text></g>
+<text x="550" y="268" font-size="26" fill="#6B6B70" text-anchor="end">Status</text>
+<g class="card"><rect x="562" y="236" width="174" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="7 5"/><text x="649" y="268" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Untested</text></g>
+<text x="72" y="316" font-size="28" font-weight="800" fill="#020101">Clinic managers will switch from</text>
+<text x="72" y="352" font-size="28" font-weight="800" fill="#020101">spreadsheets</text>
+<path d="M72 374 H736" stroke="#E8E8EB" stroke-width="2"/>
+<path d="M394 386 V518" stroke="#E8E8EB" stroke-width="2"/>
+<text x="72" y="408" font-size="26" font-weight="700" fill="#E2225F">Method</text>
+<text x="412" y="408" font-size="26" font-weight="700" fill="#E2225F">Evidence that counts</text>
+<text x="72" y="437" font-size="26" fill="#020101">Jobs to be Done</text>
+<text x="72" y="471" font-size="26" fill="#020101">interviews</text>
+<text x="412" y="437" font-size="26" fill="#020101">Most describe a recent</text>
+<text x="412" y="471" font-size="26" fill="#020101">scheduling failure and</text>
+<text x="412" y="505" font-size="26" fill="#020101">its workaround</text>
+</g>
+<g class="card" id="row2"><rect x="40" y="556" width="720" height="322" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M50 574 V860" stroke="#020101" stroke-width="6" stroke-linecap="round"/>
+<text x="72" y="608" font-size="26" fill="#6B6B70">Risk type</text>
+<g class="card"><rect x="204" y="576" width="169" height="46" rx="23" fill="#020101"/><text x="288" y="608" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">Usability</text></g>
+<text x="550" y="608" font-size="26" fill="#6B6B70" text-anchor="end">Status</text>
+<g class="card"><rect x="562" y="576" width="174" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="7 5"/><text x="649" y="608" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Untested</text></g>
+<text x="72" y="656" font-size="28" font-weight="800" fill="#020101">Front-desk staff can rebook a patient</text>
+<text x="72" y="692" font-size="28" font-weight="800" fill="#020101">unaided</text>
+<path d="M72 714 H736" stroke="#E8E8EB" stroke-width="2"/>
+<path d="M394 726 V858" stroke="#E8E8EB" stroke-width="2"/>
+<text x="72" y="748" font-size="26" font-weight="700" fill="#E2225F">Method</text>
+<text x="412" y="748" font-size="26" font-weight="700" fill="#E2225F">Evidence that counts</text>
+<text x="72" y="777" font-size="26" fill="#020101">Prototype task test</text>
+<text x="412" y="777" font-size="26" fill="#020101">Staff finish the</text>
+<text x="412" y="811" font-size="26" fill="#020101">rebooking task without</text>
+<text x="412" y="845" font-size="26" fill="#020101">help</text>
+</g>
+<g class="card" id="row3"><rect x="40" y="896" width="720" height="288" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M50 914 V1166" stroke="#E2225F" stroke-width="6" stroke-linecap="round"/>
+<text x="72" y="948" font-size="26" fill="#6B6B70">Risk type</text>
+<g class="card"><rect x="204" y="916" width="161" height="46" rx="23" fill="#FFE3EC" stroke="#E2225F" stroke-width="2"/><text x="284" y="948" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Viability</text></g>
+<text x="550" y="948" font-size="26" fill="#6B6B70" text-anchor="end">Status</text>
+<g class="card"><rect x="562" y="916" width="174" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="7 5"/><text x="649" y="948" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Untested</text></g>
+<text x="72" y="996" font-size="28" font-weight="800" fill="#020101">Clinics will pay a monthly fee per</text>
+<text x="72" y="1032" font-size="28" font-weight="800" fill="#020101">location</text>
+<path d="M72 1054 H736" stroke="#E8E8EB" stroke-width="2"/>
+<path d="M394 1066 V1164" stroke="#E8E8EB" stroke-width="2"/>
+<text x="72" y="1088" font-size="26" font-weight="700" fill="#E2225F">Method</text>
+<text x="412" y="1088" font-size="26" font-weight="700" fill="#E2225F">Evidence that counts</text>
+<text x="72" y="1117" font-size="26" fill="#020101">Pricing questions,</text>
+<text x="72" y="1151" font-size="26" fill="#020101">competitor review</text>
+<text x="412" y="1117" font-size="26" fill="#020101">A named budget owner</text>
+<text x="412" y="1151" font-size="26" fill="#020101">and current tool spend</text>
+</g>
+<g class="card" id="row4"><rect x="40" y="1202" width="720" height="322" rx="20" fill="#FFFFFF" stroke="#E8E8EB"/>
+<path d="M50 1220 V1506" stroke="#E2225F" stroke-width="6" stroke-linecap="round"/>
+<text x="72" y="1254" font-size="26" fill="#6B6B70">Risk type</text>
+<g class="card"><rect x="204" y="1222" width="123" height="46" rx="23" fill="#E2225F"/><text x="266" y="1254" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">Value</text></g>
+<text x="550" y="1254" font-size="26" fill="#6B6B70" text-anchor="end">Status</text>
+<g class="card"><rect x="562" y="1222" width="174" height="46" rx="23" fill="#FFFFFF" stroke="#E2225F" stroke-width="2" stroke-dasharray="7 5"/><text x="649" y="1254" font-size="26" font-weight="700" fill="#E2225F" text-anchor="middle">Untested</text></g>
+<text x="72" y="1302" font-size="28" font-weight="800" fill="#020101">Patients will book from a text-message</text>
+<text x="72" y="1338" font-size="28" font-weight="800" fill="#020101">link</text>
+<path d="M72 1360 H736" stroke="#E8E8EB" stroke-width="2"/>
+<path d="M394 1372 V1504" stroke="#E8E8EB" stroke-width="2"/>
+<text x="72" y="1394" font-size="26" font-weight="700" fill="#E2225F">Method</text>
+<text x="412" y="1394" font-size="26" font-weight="700" fill="#E2225F">Evidence that counts</text>
+<text x="72" y="1423" font-size="26" fill="#020101">Stakeholder interviews,</text>
+<text x="72" y="1457" font-size="26" fill="#020101">then a prototype test</text>
+<text x="412" y="1423" font-size="26" fill="#020101">Front desks report</text>
+<text x="412" y="1457" font-size="26" fill="#020101">patients asking to book</text>
+<text x="412" y="1491" font-size="26" fill="#020101">by text</text>
+</g>
+</svg>
