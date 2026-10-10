@@ -274,5 +274,56 @@
     "Boolean H2 and FAQ answers start with Yes or No (RULES.md).",
     "Originality: lowcode.agency (beats) is a mobile-dev vendor post built around unsourced percentages. Do not mirror its sections or order (what discovery is -> why worth it -> costs -> what's included). Our structure leads with the decision, then outputs, assumptions, skip test, cases, readout and scoping. Keep 5-gram overlap under 5%.",
     "No sideways links: the silo has no other posts yet. This is post 1 of the digital-product-design-services silo; next per funnel.json is MOFU."
+  ],
+  "related": {
+    "linkBuilderRun": "2026-10-10",
+    "internalLinks": [
+      "/case-studies/nitro/ (intro)",
+      "/services/digital-product-design-services/ (intro, UP link 1, hub anchor)",
+      "/services/ui-ux-design-services-for-startups/ (skip-test H2, the one cross-hub link)",
+      "/case-studies/vocable/ (case H2)",
+      "/case-studies/digno/ (case H2)",
+      "/services/digital-product-design-services/#how-much-does-digital-product-design-cost (last H2, UP link 2)",
+      "/contact/ (closing CTA)",
+      "/about/ (closing)"
+    ],
+    "droppedMarkers": [
+      "/services/digital-product-design-services/#how-does-the-digital-product-design-process-work (hub cap: hub + fragments <= 2; sentence rewritten so it no longer points at the hub page)",
+      "closing /services/digital-product-design-services/ (the #cost fragment in the same H2 is the end-of-post UP link)",
+      "second GOV.UK source marker in 'What does skipping discovery cost you later?' (one link per source; sentence kept as plain text)"
+    ],
+    "externalSources": [
+      { "url": "https://www.svpg.com/four-big-risks/", "verified": "WebFetch ENOTFOUND; svpg.com-restricted search returned this URL with the four risk definitions as written in the post. Marker had svpg.com without www; the canonical www URL is cited." },
+      { "url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works", "verified": "WebFetch ENOTFOUND; gov.uk-restricted search returned the page with 'You should not start building your service in discovery', 'reframe any pre-defined solution as a problem to be solved' and 'whether you want to move forward to the alpha phase'. The writer's 'understand the problem before committing to build' was not in the snippet, so the linked sentence now uses the page's own wording. Typical 4-8 weeks is on the page but not used." },
+      { "url": "https://www.nngroup.com/articles/discoveries-in-industry-revealed/", "verified": "SWAP from /videos/real-ux-discoveries/ (allowed by the brief). nngroup.com-restricted search: the survey article says many discoveries 'are on the short side, lack user research and don't involve the right people', which backs the readout warning ('no users = not discovery') more directly than the video's 'many teams are not doing true discovery'. Fact-checker: confirm Maria Rosala is the article's author (search summary attributes it to her; the video is certainly hers)." }
+    ],
+    "notUsed": [
+      "cbinsights.com (optional, the post makes no CB Insights claim)",
+      "nngroup.com/videos/discovery-mapping-methods/ (optional, the post does not discuss mapping methods)"
+    ],
+    "linksFind": "Bash unavailable to the link builder. Orchestrator: run `npm run build && npm run links:find -- \"/blog/is-discovery-phase-worth-it/\" \"discovery phase\" \"product discovery\" \"discovery step\"`. Manual grep of content/ found only the sources below in this silo; e-commerce/location 'product discovery' hits are the shopping sense and are skipped. saas-product-redesign line 76 ('the discovery step of our 4-8 week SaaS UX design engagement') is a saas-ux-design silo post, so it must not link here.",
+    "siteSearch": "WebSearch site:uiuxdesignservices.us \"discovery phase\" returned no pages from the domain (nothing indexed for the term yet)."
+  },
+  "backlinkSuggestions": [
+    {
+      "source": "content/services/digital-product-design-services.json",
+      "page": "/services/digital-product-design-services/#digital-product-design-faqs",
+      "where": "sections['Digital product design FAQs'].faqs['Can digital product design start from a rough idea?'].a, append inside the existing <p> after '... with target users and success metrics.' (FAQ answers render HTML; the field already holds <p>)",
+      "sentence": "Already hold recent user evidence? Run <a href=\"/blog/is-discovery-phase-worth-it/#when-can-you-skip-a-discovery-phase\">our six-question test for skipping discovery</a> before you scope the engagement.",
+      "anchor": "our six-question test for skipping discovery",
+      "target": "/blog/is-discovery-phase-worth-it/#when-can-you-skip-a-discovery-phase",
+      "priority": 1,
+      "why": "Hub links down to its first silo post on the exact question a rough-idea founder asks next; the template's guide cards already list the post, so this contextual link adds anchor relevance."
+    },
+    {
+      "source": "content/case-studies/nitro.md",
+      "page": "/case-studies/nitro/",
+      "where": "## The solution, first sentence: 'We started with product discovery and stakeholder interviews.'",
+      "sentence": "We started with [product discovery](/blog/is-discovery-phase-worth-it/) and stakeholder interviews.",
+      "anchor": "product discovery",
+      "target": "/blog/is-discovery-phase-worth-it/",
+      "priority": 2,
+      "why": "The post opens with this exact case; the Nitro case study lists digital-product-design-services among its services, so the link stays in the silo. Case-study markdown renders links."
+    }
   ]
 }

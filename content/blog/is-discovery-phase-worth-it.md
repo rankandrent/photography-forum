@@ -22,9 +22,9 @@ draft: true
 qa: pending
 ---
 
-Nitro League came to us with one racing game for gamers, non-fungible token (NFT) collectors and investors, the kind of product that makes a founder ask: is a discovery phase worth it before anyone designs a screen? We started with product discovery and stakeholder interviews, before any branding work. The Nitro League case study <!-- link: /case-studies/nitro/ --> reports $5M in funding secured within 3 months, an outcome of the whole project rather than of discovery alone.
+Nitro League came to us with one racing game for gamers, non-fungible token (NFT) collectors and investors, the kind of product that makes a founder ask: is a discovery phase worth it before anyone designs a screen? We started with product discovery and stakeholder interviews, before any branding work. The [Nitro League case study](/case-studies/nitro/) reports $5M in funding secured within 3 months, an outcome of the whole project rather than of discovery alone.
 
-For most new products the answer is yes: discovery buys evidence on the assumptions that would sink the product while changing course still costs a document instead of code. It is not always worth it, and the six-question skip test below tells you when to go straight to design. In our digital product design services <!-- link: /services/digital-product-design-services/ -->, discovery and user research are the first two steps, so this post stays on the buy-or-skip decision.
+For most new products the answer is yes: discovery buys evidence on the assumptions that would sink the product while changing course still costs a document instead of code. It is not always worth it, and the six-question skip test below tells you when to go straight to design. In our [digital product design services](/services/digital-product-design-services/), discovery and user research are the first two steps, so this post stays on the buy-or-skip decision.
 
 ## Is a discovery phase worth it for a new product?
 
@@ -32,9 +32,9 @@ For most new products the answer is yes: discovery buys evidence on the assumpti
 
 No, when the product repeats one you already sell and the proof sits in your research files. Here, a discovery phase means design-led product discovery: product strategy and user research before anyone designs screens. In Double Diamond terms it is the first diamond: explore the problem widely, then narrow it to one worth solving.
 
-"Worth it" is easiest to judge as risk bought down. Marty Cagan of the Silicon Valley Product Group (SVPG) names four big risks: value (will customers buy or use it), usability (can users figure it out), feasibility (can engineers build it) and business viability (does it work for the business). <!-- source: https://svpg.com/four-big-risks/ --> Design-led discovery tests value, usability and viability with evidence; feasibility is an engineering call, so whoever will build the product joins in.
+"Worth it" is easiest to judge as risk bought down. Marty Cagan of the Silicon Valley Product Group (SVPG) names [four big risks](https://www.svpg.com/four-big-risks/): value (will customers buy or use it), usability (can users figure it out), feasibility (can engineers build it) and business viability (does it work for the business). Design-led discovery tests value, usability and viability with evidence; feasibility is an engineering call, so whoever will build the product joins in.
 
-The GOV.UK Service Manual tells teams to understand the problem before committing to build, and not to start building during discovery. <!-- source: https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works --> It is a public-sector standard, not startup data, but the logic transfers. Score your own evidence with the skip test below before you decide.
+The GOV.UK Service Manual tells teams to [reframe any predefined solution as a problem to be solved and not to start building the service during discovery](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works). It is a public-sector standard, not startup data, but the logic transfers. Score your own evidence with the skip test below before you decide.
 
 ## What does a discovery phase hand to your designers?
 
@@ -103,7 +103,7 @@ Score: 0–2 means full discovery, 3–4 a light version, 5–6 skip discovery a
 
 </details>
 
-The light version is a 5-day design sprint for startups <!-- link: /services/ui-ux-design-services-for-startups/ -->, which tests one value proposition before you commit to the full design. The discovery phase vs MVP choice is a false one: a minimum viable product (MVP) tests the product in the market, and discovery decides what that MVP has to prove.
+The light version is [a 5-day design sprint for startups](/services/ui-ux-design-services-for-startups/), which aligns founders on 1 target user and 1 core problem before you commit to the full design. The discovery phase vs MVP choice is a false one: a minimum viable product (MVP) tests the product in the market, and discovery decides what that MVP has to prove.
 
 It is safe to skip discovery when you rebuild a product whose users you already study, make an internal tool for one known user group, or work to a scope a regulation sets. There, a full discovery phase repeats what you know and returns little.
 
@@ -128,7 +128,7 @@ From cheapest to most expensive:
 
 </details>
 
-Discovery can end in "stop", and that is a good result. The GOV.UK Service Manual treats what a team learns in discovery as the basis for deciding whether to move on to the next phase at all. <!-- source: https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works --> A product with no code is the cheapest to cancel. Short of stopping, you change direction: a different first user group, a narrower job or a pricing model the interviews support.
+Discovery can end in "stop", and that is a good result. The GOV.UK Service Manual treats what a team learns in discovery as the basis for deciding whether to move on to the next phase at all. A product with no code is the cheapest to cancel. Short of stopping, you change direction: a different first user group, a narrower job or a pricing model the interviews support.
 
 Vendor pages often put a percentage on the overspend from skipping discovery; none we found shows its method, so we leave those numbers out.
 
@@ -142,16 +142,15 @@ Each case study reports results from the whole project, not from discovery alone
 
 **Nitro League.** Unknown: how one product would serve three audiences while investors doubted whether crypto products were authentic. Settled: product discovery and stakeholder interviews produced the user flows and a detailed whitepaper. Built: branding workshops, the 3D garage and the website followed, and professional gamers validated the result.
 
-**Vocable.** Unknown: where content marketers lose their time. Settled: we mapped the full creator journey and designed each screen around a problem heard in stakeholder interviews: planning, drafting, optimizing and publishing. Built: one editor across several artificial intelligence (AI) models, plus templates and a research tool. The case study on how Vocable went from idea to MVP <!-- link: /case-studies/vocable/ --> reports a 35% increase in overall workflow efficiency and a 20% improvement in content quality and consistency.
+**Vocable.** Unknown: where content marketers lose their time. Settled: we mapped the full creator journey and designed each screen around a problem heard in stakeholder interviews: planning, drafting, optimizing and publishing. Built: one editor across several artificial intelligence (AI) models, plus templates and a research tool. The case study on [how Vocable went from idea to MVP](/case-studies/vocable/) reports a 35% increase in overall workflow efficiency and a 20% improvement in content quality and consistency.
 
-**Digno.** Unknown: how a performance score should be calculated so managers and employees both understand it. Settled: we gathered requirements from different stakeholders and users to define the calculation, and studied competitors that had tried to solve similar problems. Built: that research shaped five core experiences of the Digno scoring platform <!-- link: /case-studies/digno/ -->, whose case study reports a 5x increase in overall revenue.
+**Digno.** Unknown: how a performance score should be calculated so managers and employees both understand it. Settled: we gathered requirements from different stakeholders and users to define the calculation, and studied competitors that had tried to solve similar problems. Built: that research shaped five core experiences of [the Digno scoring platform](/case-studies/digno/), whose case study reports a 5x increase in overall revenue.
 
 ## How long does discovery take inside an engagement?
 
 **In our engagement, discovery and product strategy take 5–10 days and user research takes 5–15 days, the first two of five steps.**
 
-The full engagement runs 8–16 weeks (40–80 working days), and the steps of our product design process <!-- link: /services/digital-product-design-services/#how-does-the-digital-product-design-process-work --> sit on the hub with their durations.
-
+The full engagement runs 8–16 weeks (40–80 working days), and discovery and research open it before information architecture, prototype validation and UI design.
 
 Discovery days go to stakeholder workshops, Jobs to be Done mapping and HEART success metrics; research days go to interviews with 5–8 users per user group. Information architecture and flows come next, and the prototype round builds on both.
 
@@ -161,7 +160,7 @@ Discovery sits at the start of the engagement because evidence gets lost at hand
 
 **A good readout states a decision to build, change or stop, shows the evidence behind it, and hands over outputs a designer can start from.**
 
-Workshop notes with no users in them are not discovery. Maria Rosala, Director of Research at Nielsen Norman Group (NN/g), warns that many teams are not doing true discovery. <!-- source: https://www.nngroup.com/videos/real-ux-discoveries/ --> Check any readout against the card below before you sign off on it.
+Workshop notes with no users in them are not discovery. Maria Rosala, Director of Research at Nielsen Norman Group (NN/g), surveyed UX practitioners and found that many discoveries [run short, lack user research and leave out the right people](https://www.nngroup.com/articles/discoveries-in-industry-revealed/). Check any readout against the card below before you sign off on it.
 
 <!-- visual: readout checklist card. Eight check lines for a discovery readout, grouped as decision, evidence and design-ready outputs. Do not repeat the warning signs in the prose below. -->
 
@@ -186,9 +185,9 @@ Treat four things as warning signs: no user interviews, only stakeholder opinion
 
 **Bring your skip-test score, your riskiest three assumptions and your number of user groups; together they show how much discovery and research the engagement needs.**
 
-Add your platforms, how you will reach users and your launch date. User groups weigh most on research, because each group gets its own 5–8 interviews. Price follows four factors (platforms, user groups, core user flows and validation rounds), and the published range sits under what digital product design costs <!-- link: /services/digital-product-design-services/#how-much-does-digital-product-design-cost -->.
+Add your platforms, how you will reach users and your launch date. User groups weigh most on research, because each group gets its own 5–8 interviews. Price follows four factors (platforms, user groups, core user flows and validation rounds), and the published range sits under [what digital product design costs](/services/digital-product-design-services/#how-much-does-digital-product-design-cost).
 
-So, is a discovery phase worth it for your product? Your ledger answers better than any vendor percentage: every row still marked untested is a risk you would carry into code. When the list is ready, send us your three riskiest assumptions <!-- link: /contact/ --> with your skip-test score. Every project begins with a free consultation and a fixed-scope proposal. Our team, with 200+ products since 2017 <!-- link: /about/ --> behind it, runs discovery as the first step of every digital product design services <!-- link: /services/digital-product-design-services/ --> engagement.
+So, is a discovery phase worth it for your product? Your ledger answers better than any vendor percentage: every row still marked untested is a risk you would carry into code. When the list is ready, [send us your three riskiest assumptions](/contact/) with your skip-test score. Every project begins with a free consultation and a fixed-scope proposal. Our team, with [200+ products since 2017](/about/) behind it, runs discovery as the first step of every digital product design engagement.
 
 ## FAQs
 
