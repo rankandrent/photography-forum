@@ -50,6 +50,16 @@
           "funnel": "bofu"
         }
       ]
+    },
+    {
+      "date": "2026-10-10",
+      "goal": "daily: 1 post for hub with fewest posts (12 hubs tied at 0; digital-product-design-services picked for lead value)",
+      "jobs": [
+        {
+          "hub": "digital-product-design-services",
+          "funnel": "bofu"
+        }
+      ]
     }
   ],
   "posts": [
@@ -122,6 +132,20 @@
       "externalLinks": 5,
       "qaLoops": 2,
       "notes": "Loop 1: fact 8 fixes (unsourced \"how agencies price\" claims tied to hub, 18F against point scoring caveat, UI kit vs benefits, 4 price factors, promise removed); QA 9 fixes + G1 handoff prose + G2 proposal format; section map redrawn 2732→1597px; timeline image dropped for a visible list (6 images max). Loop 2: 1 fact fix (\"If yours does\" ambiguity) + 1 QA nit. Backlinks from hub cost section and SaaS industry cost section. Open: home.ts \"design and development\" vs hub scope ending at handoff."
+    },
+    {
+      "slug": "is-discovery-phase-worth-it",
+      "hub": "digital-product-design-services",
+      "keyword": "is a discovery phase worth it",
+      "funnel": "bofu",
+      "author": "faizan-khan",
+      "date": "2026-10-10",
+      "words": 2182,
+      "images": 6,
+      "internalLinks": 8,
+      "externalLinks": 3,
+      "qaLoops": 2,
+      "notes": "First post citing the new real case studies (Nitro, Vocable, Digno). Loop 1: fact 4 fixes (case-study overreach, sprint wording vs startups page, user-group weighting); QA 9 fixes + 3 completeness gaps (next steps, JTBD in open text, cost position from hub facts). Timeline + case-strip images dropped (6 cap / duplicate of open text). Loop 2: 2 fact fixes (no unstated scoping promise; discovery is part of every engagement) + 2 QA nits. Backlinks: hub FAQ + Nitro case study. Open: home.ts \"scoped after discovery\" + \"design and development\" vs hub."
     }
   ],
   "audits": []

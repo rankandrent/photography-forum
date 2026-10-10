@@ -1,7 +1,6 @@
-# QA report: is-discovery-phase-worth-it (2026-10-10, review loop 1)
+# QA report: is-discovery-phase-worth-it (2026-10-10, review loop 2, final)
 
-Post: `content/blog/is-discovery-phase-worth-it.md` (commit 87f3542, working tree clean).
-Brief: `content/briefs/is-discovery-phase-worth-it.json`. Visuals: `public/blog/is-discovery-phase-worth-it/` (cover + 5 inline, all committed, `git status` clean).
+Post: `content/blog/is-discovery-phase-worth-it.md` at 24fe18b ("repair loop 1"), diffed against the loop-1 review commit 87f3542. The working tree is clean, and `git status -- public/blog/is-discovery-phase-worth-it/ content/briefs/` shows no uncommitted assets. The SVGs are unchanged since loop 1.
 Items 2–3 (facts, honesty) belong to the parallel fact-checker and are not covered here.
 
 ## Results
@@ -9,173 +8,105 @@ Items 2–3 (facts, honesty) belong to the parallel fact-checker and are not cov
 | # | Check | Result |
 |---|---|---|
 | 1 | Intent & cannibalisation | PASS |
-| 4 | Semantic SEO | FIX (6 items) |
+| 4 | Semantic SEO | FIX (1 item: F1 bold answer at 38 words) |
 | 5 | Internal links | PASS |
 | 6 | Images | PASS |
-| 6b | Duplication | PASS |
-| 7 | Readability | FIX (1 item) |
-| 7a | Competitor originality | PASS (overlap could not be computed) |
-| 7b | Silo, funnel & leads | PASS (with 1 FIX) |
+| 6b | Duplication / image first | PASS |
+| 7 | Readability | FIX (1 small item) |
+| 7a | Competitor originality | PASS (unchanged from loop 1; numeric overlap could not be computed) |
+| 7b | Silo, funnel & leads | PASS |
 | 7c | Variety | PASS |
-| 7d | Semantic completeness | FAIL (5 gaps, see writer guidance) |
+| 7d | Semantic completeness | PASS |
 | 7e | On-page checklist | PASS (score 100) |
 | 8 | Build / seo:check / lint | PASS |
 
+## Loop-1 items: all landed
+- FIX 4.1–4.6 and 7.2–7.3 are applied word for word (diff 87f3542..24fe18b).
+- 7.1 (the closing) was adapted by the orchestrator. It is now 2 paragraphs of 2 and 3 sentences. The always/every clash with the skip test is gone: the team "scopes that proposal from the inputs above, whether your score points to full discovery, a light sprint or design right away". This matches the 0–2 / 3–4 / 5–6 exits.
+- Guidance gaps 1–5 are all filled. Next steps were added at L138, L152 and L164. Jobs to be Done now has substance in open text (L59, with the clinic example labelled made-up). The cost position comes from hub facts only (L195: first steps of an 8–16 week engagement, published $60,000–$180,000 for the whole engagement, #cost link). The post does not say or imply that discovery is sold on its own.
+
 ### 1. Intent & cannibalisation: PASS
-- Keyword "is a discovery phase worth it" is a buy-or-skip question. The post answers it in the intro and the first H2 and stays on the decision. It does not drift into a how-to guide.
-- Grep of `content/` for "discovery phase" and "product discovery": the only hits are the hub's Double Diamond line, Nitro's case study, and e-commerce/location pages that use "product discovery" in the shopping sense. No `keyword`, title, H1 or metaTitle targets this query. The draft stub `generative-ai-ux` in the same silo covers a different topic.
+Unchanged from loop 1. No other page in `content/` targets the query.
 
 ### 4. Semantic SEO: FIX
-- Title (H1) 62 chars, metaTitle 48 (built `<title>` 48, keyword first), description 153 on built HTML (no entities). One H1.
-- Keyword sentences quoted and checked with the "this choice" swap test:
-  - L26 "…the kind of product that makes a founder ask: is a discovery phase worth it before anyone designs a screen?" PASS
-  - H2 "Is a discovery phase worth it for a new product?" PASS
-  - L111 "Your score is your own answer to "is a discovery phase worth it?"" PASS
-  - L189 "So, is a discovery phase worth it for your product?" PASS
-  - Description: "Is a discovery phase worth it? Yes for most new products." PASS
-- Keyword stacking (keyword + noun): none. "The discovery phase vs MVP choice" is normal English, but it fails the abbreviation rule (FIX 4.3).
-- Density: 4 exact uses. That is 0.93% of the full body (2,579 words including collapsed text) and 1.13% of the open text (2,120 words). This is inside the brief's 4–6 target. Accepted, and no more uses should be added: the two closing uses already sit close together.
-- Digit-first sentences: `grep -nE '^(\*\*)?[0-9]+ '` finds none in the body.
-- Banned phrases and hedges (might/may/could/perhaps): none.
-- Boolean FAQs start with Yes/No: PASS for all three. Body defect at L88: see FIX 4.5.
-- Bold answers: one sentence each, all ≤ 31 words. The skip-test bold is 31 words, which is accepted as about 30.
-- Shared-verb lists, each pair quoted:
-  - H2 1: "assumption about your users / the job they need done / whether they will pay / whether they can use the product … lacks evidence". PASS
-  - H2 2: "hands design a product brief / a research report / a sitemap with user flows / agreed success metrics". PASS
-  - H2 8: "states a decision / shows the evidence / hands over outputs". PASS
-  - H2 9: "Bring your score / your riskiest three assumptions / your number of user groups". PASS
-  - L181: "warning signs: no user interviews / only stakeholder opinions / no stated decision / outputs that restate". PASS
-  - Description: "Use our 6-question skip test, see what it hands to design" fails. "It" points back to the skip test, and the test hands nothing to design (FIX 4.1).
+- Built `<title>` is 48 chars, H1 62. The description is 157 chars on the built HTML (no entities) and ends on the BOFU next step "then request a fixed-scope proposal". The "it" antecedent is fixed ("see what discovery hands design").
+- Keyword sentences (swap test with "this choice"):
+  - L26 "…makes a founder ask: is a discovery phase worth it before anyone designs a screen?" PASS
+  - H2 L30: PASS
+  - L113: PASS
+  - L197 "So, is a discovery phase worth it for your product?" PASS
+  - Description: PASS
+  - No participle dangles after a comma in any of them.
+- Exact keyword: 4 uses in open text (2,408 words), the same number in the full body. Phrase share is about 1.0%. Stacking grep (keyword + project/engagement/team/cost/pricing): none. Digit-first grep: none. Hedges and banned words: none.
+- Acronym first use in open text (`<details>` stripped):
+  - NFT L26, SVPG L36, HEART and SUS L61, MVP L109 (expanded in the same sentence, before "discovery phase vs MVP"), UI L158, AI L148, NN/g and UX L170: all expanded at first use. The UX in the L109 link URL is not text.
+  - "FAQ" at L164 is left as a universal term.
+- Boolean FAQs and the L90 body question start with Yes/No: PASS.
+- Shared-verb pairs in the new F1 bold answer: "gave Nitro League its user flows" (L146), "gave Vocable the problems each screen was designed around" (L148), "gave Digno its score calculation" (L150). All true and grammatical.
+- Bold answers (words): 27, 24, 26, 31, 27, **38**, 22, 25, 25.
 
-**FIX 4.1 (description, frontmatter L4).** "it" has the wrong antecedent. Replace:
-`description: "Is a discovery phase worth it? Yes for most new products. Use our 6-question skip test, see what it hands to design, then request a fixed-scope proposal."`
+**FIX 4.7 (H2 "What did discovery settle…", bold answer L142, 38 words).** It can be shortened without changing a fact. Drop the trailing clause ", and the design was built on that". It is a second "and" clause after a list that already ends in "and Digno…". "Came before the screens" plus each case's "Built:" line already carries the point. Every fact-checker phrase is kept verbatim. Replace:
+`**In all three idea-to-product projects, early research came before the screens: it gave Nitro League its user flows, Vocable the problems each screen was designed around, and Digno its score calculation, and the design was built on that.**`
 with
-`description: "Is a discovery phase worth it? Yes for most new products. Use our 6-question skip test, see what discovery hands design, then request a fixed-scope proposal."`
-(157 chars. It still ends on the BOFU next step "request a fixed-scope proposal".)
-
-**FIX 4.2 (H2 3 bold answer, L65).** The participle "sorted" dangles after "if they proved wrong". Replace:
-`**Test the assumptions that would change the product if they proved wrong, sorted into value, usability and viability, each with a method and an evidence bar.**`
-with
-`**Test first the assumptions that would change the product if wrong, and sort each into value, usability or viability with a method and an evidence bar.**`
-
-**FIX 4.3 (MVP used before it is expanded, L107).** Replace:
-`The discovery phase vs MVP choice is a false one: a minimum viable product (MVP) tests the product in the market, and discovery decides what that MVP has to prove.`
-with
-`A minimum viable product (MVP) tests the product in the market, and discovery decides what that MVP has to prove, so discovery phase vs MVP is a false choice.`
-
-**FIX 4.4 (UI and UX never expanded in open text).**
-- L152: replace `prototype validation and UI design.` with `prototype validation and user interface (UI) design.`
-- L162: replace `surveyed UX practitioners` with `surveyed user experience (UX) practitioners`
-
-**FIX 4.5 (L88, boolean question left unanswered).** Replace:
-`Can you skip product discovery? The test answers from evidence you hold, not from deadline pressure, and its cut-offs are our rule of thumb from running engagements, not research data.`
-with
-`Can you skip product discovery? Yes, if the test says so: it scores the evidence you already hold, not deadline pressure, and its cut-offs are our rule of thumb from running engagements, not research data.`
-
-**FIX 4.6 (L59: dangling "scored"; Figma only appears in collapsed text).** Figma, a brief entity, shows up only inside `<details>`. Replace:
-`In our process, researchers synthesize the user interviews in Dovetail, and the flows feed a clickable prototype that a later step tests with 5 users per round in Maze, scored with the System Usability Scale (SUS).`
-with
-`In our process, researchers synthesize the user interviews in Dovetail, and the flows feed a clickable prototype in Figma that a later step tests with 5 users per round in Maze; each round ends with a System Usability Scale (SUS) score.`
-(The last clause is the hub's own wording, from the "Prototype and validation" step.)
+`**In all three idea-to-product projects, early research came before the screens: it gave Nitro League its user flows, Vocable the problems each screen was designed around and Digno its score calculation.**`
+(31 words, one sentence. It no longer repeats the next line "Each case study reports results from the whole project".)
 
 ### 5. Internal links: PASS
-- 8 contextual links: Nitro (intro), hub (intro, UP early), startups hub (the only cross-hub link), Vocable, Digno, hub #cost (UP near the end), /contact/, /about/. Every target exists in `out/`. The `#how-much-does-digital-product-design-cost` id exists on the hub. Anchors are all different.
-- The 3 case-study DOWN links are accepted as the orchestrator asked. Each one is the source of a quoted figure, and all 3 list `digital-product-design-services` in `services`.
-- 2 external sources (SVPG, NN/g article) plus GOV.UK.
+- 8 contextual links: Nitro, hub (intro), startups, Vocable, Digno, hub #cost, /contact/, /about/. Every target is in `out/`, and the `#how-much-does-digital-product-design-cost` id exists. Anchors are varied.
+- "free consultation" appears exactly once, in about.md's standalone sentence.
 
 ### 6. Images: PASS
-- Cover + 5 inline SVGs, 3.6–8.7 KB each. No `<image>` embeds, no logos or third-party brand assets. Every image has descriptive alt text.
-- Rendered in the built page (python http.server, PID 1652, stopped and confirmed gone with `ps`). `article.prose` measures 760px at 1440 and 354px at 390. Smallest SVG text is 26px in an 800 viewBox, so it renders at 24.7px at 1440 and 11.5px at 390. Spelling checked label by label: no errors.
-- Cover at 390: the `.pcover` box is 16:9. The SVG keeps the title, subtitle and "Full, light or skip" fully visible, with no crop of the text.
-- At 1440 a thin pink line shows across the top of some element screenshots. It is the header's reading-progress element; the native SVG render (`skip-test-flow.svg`) has no such line. This is not a defect.
-- Skip-test flow: every path checked. Scores 0–2, 3–4 and 5–6 lead to full discovery, the light sprint and skip, matching the bold answer, L111 and takeaway 2.
+- Cover + 5 inline SVGs, byte-identical to loop 1 (same sizes, no commit touched `public/`). Every one exists in `out/` with descriptive alt text (109–204 chars).
+- The loop-1 rendered-legibility and spelling results still hold (smallest text 24.7px at 1440 and 11.5px at 390 in a 354px column, as in loop 1). No server was needed this loop. `ps` shows no serve, http.server or next processes left over.
 
-### 6b. Duplication: PASS
-Every image's table or list sits in a collapsed `<details class="astext">` block. Labels were ticked off one by one:
-- Output stack: 4/4 rows.
-- Ledger: 4/4 rows, all 5 columns.
-- Skip test: 6 questions + 3 outcomes.
-- Ladder: 4/4 rungs.
-- Readout: 8/8 lines. The image groups them under Decision/Evidence/Outputs, and no item is dropped.
-No open paragraph repeats an image's items.
+### 6b. Duplication / image first: PASS
+- 5 images, each followed directly by its `<details class="astext">` block. None of the details blocks changed in the repair.
+- The new open paragraphs do not repeat image items:
+  - L59 (Jobs to be Done) adds a definition and an example beyond the output-stack row "Picks the users and job every screen serves".
+  - L138 refers to the ladder's rungs without listing them.
 
-### 7. Readability: FIX
-- 5-gram overlap with existing posts is 0–0.51% per post. With the hub it is 0.98%, with the startups page 0.31%, and 1.93% against all of them combined (limit 12%).
-- US English throughout.
-- **FIX 7.1 (closing paragraph, L189, 5 sentences, over the 4-sentence limit).** This also fixes a logic clash: "runs discovery as the first step of every … engagement" contradicts the skip test's "5–6: skip discovery and start design". Replace the whole paragraph:
-`So, is a discovery phase worth it for your product? Your ledger answers better than any vendor percentage: every row still marked untested is a risk you would carry into code. When the list is ready, [send us your three riskiest assumptions](/contact/) with your skip-test score. Every project begins with a free consultation and a fixed-scope proposal. Our team, with [200+ products since 2017](/about/) behind it, runs discovery as the first step of every digital product design engagement.`
-with two paragraphs:
-`So, is a discovery phase worth it for your product? Your ledger answers better than any vendor percentage: every row still marked untested is a risk you would carry into code.`
-(blank line)
-`When the list is ready, [send us your three riskiest assumptions](/contact/) with your skip-test score, and you leave the free consultation with a fixed-scope proposal. Our team, with [200+ products since 2017](/about/) behind it, sizes the discovery and research steps of each engagement to the evidence you already hold.`
-- **FIX 7.2 (FAQ "Who from our team…", L207).** The first sentence has no verb and nests commas. Replace:
-`The founder or product owner who makes the build, change or stop decision, one or two people who talk to customers every week, such as sales or support, and an engineer for feasibility questions.`
+### 7. Readability: FIX (1 small item)
+- 5-gram overlap: at most 0.36% against any single post, 0.51% against all posts combined, 1.06% against the hub (`content/services/digital-product-design-services.json`) and 0.03% against startups. The limit is 12%.
+- Every paragraph has 4 or fewer sentences. US English.
+
+**FIX 7.4 (FAQ "Is a design sprint the same as a discovery phase?", L205).** "quickly" appears twice in one 3-sentence answer. Replace:
+`A sprint fits when one bet needs testing quickly; a full discovery phase fits when several user groups, jobs or success metrics are still open.`
 with
-`Three roles need a seat: the founder or product owner who makes the build, change or stop decision; one or two people who talk to customers every week, such as sales or support; and an engineer for feasibility questions.`
-- **FIX 7.3 (intro, L28).** "so this post stays on…" does not follow from the clause before it. Replace:
-`In our [digital product design services](/services/digital-product-design-services/), discovery and user research are the first two steps, so this post stays on the buy-or-skip decision.`
-with
-`In our [digital product design services](/services/digital-product-design-services/), discovery and user research are the first two steps; this post covers only whether to buy or skip them.`
+`A sprint fits when one bet needs testing; a full discovery phase fits when several user groups, jobs or success metrics are still open.`
 
-### 7a. Competitor originality: PASS (numeric overlap not computable)
-WebFetch of `lowcode.agency/blog/is-mobile-app-discovery-phase-worth-it` failed with ENOTFOUND. From the WebSearch snippet, the competitor answers "yes", relies on unsourced "30–50% more" and "5–15% of budget" figures, and follows the order "what it is → why worth it → costs → what's included". The post uses none of those figures (L134 says why), and its order is different: decision → outputs → assumptions → skip test → cost of skipping → cases → duration → readout → scoping. The 5-gram percentage could not be measured.
-serpGaps:
-- Design-led outputs: covered.
-- Scored skip test: covered.
-- Checkable sources instead of vendor percentages: covered.
-- "Stop" as a good outcome: covered.
-- Readout checklist: covered.
-- First-hand cases: covered.
-- Published prices: missing (see Guidance gap 4).
+### 7a. Competitor originality: PASS
+Unchanged from loop 1, and the repairs added no competitor-style figures. Every serpGap is now covered, including published prices (L195).
 
 ### 7b. Silo, funnel & leads: PASS
-- `services[0]` is `digital-product-design-services`, the right hub (discovery and research are hub steps 1–2).
-- Hub linked early and near the end. One cross-hub link. No links to other silos' posts.
-- Funnel BOFU confirmed. The brief's SERP evidence for the exact query is vendor pages selling discovery and arguing its cost (lowcode.agency, acquaintsoft, dogtownmedia, strv, detroitlabs, elinext). The explainer SERP belongs to the "product discovery phase" variant, not the target. This is the silo's first post, and funnel.json says to start with 1 BOFU. Service-support 5 meets the BOFU minimum of 5.
-- leadAngle delivered without a hard sell: the skip-test moment (L111) and the readout moment (L181).
-- Draft-only "← Previous guide" points to the stub `generative-ai-ux` (draft). This is an orchestrator check on the production build, not a post defect.
+- `services[0]` is the hub. funnel is BOFU. Service-support is 5.
+- leadAngle is delivered at L113 and L189, and the close is a soft ask.
+- Production build (no SHOW_DRAFTS): exit 0. `grep -rl 'href="/blog/generative-ai-ux'` over `out/**/*.html` finds 0 files. The draft post itself is not built: `out/blog/is-discovery-phase-worth-it/` holds only the 6 public SVGs, with no index.html and no sitemap entry. seo:check on the production build gives 73 pages, 0 errors, 0 warnings.
 
 ### 7c. Variety: PASS
-- Type Article and a mini-case intro are both unused in fingerprints.json.
-- The H2 frames and visual types do not repeat the last 5 posts.
-- CTA angle (assumptions + score) is new.
-- Note: "What does a good discovery readout contain?" + "ask for a sample readout" is close to choose-ux-research-agency's "What should a sample research readout show you?". That post is in another silo and is not among the last 3 site-wide, so this is accepted.
-- The closing is not reused. "Every project begins with a free consultation and a fixed-scope proposal" is a formula used on location pages, and FIX 7.1 removes it.
+- The closing lead-in (ledger rows) and the CTA anchor ("send us your three riskiest assumptions") are new.
+- "Every project begins with a free consultation and a fixed-scope proposal." is now in the closings of 4 consecutive posts. It is kept as the orchestrator-sanctioned about.md offer sentence (semantic-content-writer lesson 2026-10-09), used once. Note for the owner: if this sentence should count as a reused closing under RULES L72, the fix belongs at site level, not in this post.
 
-### 7d. Semantic completeness: FAIL
-See "Guidance for the writer". Gaps:
-1. Three H2s end with no next step.
-2. Jobs to be Done is mentioned only in passing in the open text.
-3. The cost-position attribute is missing.
-4. serpGap "published prices" is not used.
-Takeaways are all backed by sections. The intro promises only the skip test and the decision, and both are delivered. Every FAQ answer has 2+ sentences. No TODOs and no sentences that trail off.
+### 7d. Semantic completeness: PASS
+- Every H2 has a bold answer, then how/why, then a concrete example, number or step.
+- Every H2 now ends on a reader action or decision.
+- All brief entities, attributes, questions and n-grams are covered with substance in open text. Figma and Jobs to be Done now appear outside `<details>` too.
+- FAQ answers have 2 or 3 sentences each. No trailing or unfinished sentences. The intro promises (the skip test and the buy-or-skip decision) are delivered, and each takeaway is backed by a section.
 
 ### 7e. On-page checklist: PASS
-`npm run onpage -- /blog/is-discovery-phase-worth-it/` gave score 100, `failed: []`, 2,976 words.
-Manual items:
-- E-E-A-T: Faizan Khan (Sr. Product Designer) with Umar Sarwar, both with LinkedIn; case-study proof; updated date. PASS.
-- Snippet answers: PASS after FIX 4.2.
-- External sources ≥ 2: PASS.
-- Image weight under 150 KB: PASS.
-- Schema: BlogPosting, BreadcrumbList, FAQPage, Person. Each FAQPage `acceptedAnswer.text` was printed from `out/` and holds only its own answer. PASS.
+`npm run onpage -- /blog/is-discovery-phase-worth-it/` (SHOW_DRAFTS build): score 100, `failed: []`, 3,212 words.
+- FAQPage `acceptedAnswer.text` was printed from `out/`: each of the 5 answers holds only its own text, and the closing paragraph is not leaked.
+- Schema: BreadcrumbList, BlogPosting, FAQPage, Person.
 
 ### 8. Build: PASS
 - `SHOW_DRAFTS=1 npm run build`: exit 0.
-- `npm run seo:check`: 0 errors, 6 warnings, all on other pages (pre-existing stubs and the author archive).
-- `npm run lint`: exit 0 (jsx-ast-utils notices only).
+- `npm run seo:check`: 0 errors, 6 warnings, all on pre-existing draft stubs and the author archive.
+- `npm run lint`: exit 0.
+- Production `npm run build`: exit 0. seo:check: 0 errors, 0 warnings. Note: `out/` now holds the production build.
 
 ## Guidance for the writer
-
-1. **[H2 "What does skipping discovery cost you later?" / last paragraph]** The section ends on vendor percentages and gives no next step. After L134, add 1 paragraph of 2 sentences, about 45 words: tell the reader to take the top three rows of their ledger and name the rung where each would first surface without discovery; any row that would first show up in a build sprint or after launch is the case for paying for discovery now. Suggested text: "Take the top three rows of your ledger and ask on which rung each would surface without discovery. Any row that would first show up in a build sprint or after launch is your case for paying for discovery now."
-2. **[H2 "What did discovery settle for Nitro, Vocable and Digno?" / end]** The section ends on Digno's revenue figure and gives no next step. Add 1 sentence, about 30 words, that links the cases to the reader's own situation. Suggested text: "If your product is where these three started, with no users and no screens yet, score the skip test above and take the result into the scoping step below." Add no new case facts.
-3. **[H2 "How long does discovery take inside an engagement?" / end]** The section ends on the clinic-manager example and gives no next step. Add 1–2 sentences, about 35 words, telling the reader to count the 10–25 working days before any screen design when they set a launch date, and to book the people from the FAQ "Who from our team needs to join a discovery phase?" into week one. Use only the hub figures (5–10 + 5–15 days).
-4. **[H2 "How do you scope discovery into a proposal?" / paragraph 2]** The brief attribute "cost position (inside the $60,000–$180,000 engagement; no standalone price published)" and serpGap 3 ("reason from … published prices") are missing. A BOFU reader asking "worth it" never learns what discovery costs. Add 1 sentence, about 35 words, before the price-factors sentence. Suggested text: "Discovery has no separate price on our site: its 10–25 working days sit inside the published $60,000–$180,000 engagement, which runs 8–16 weeks." Keep the #cost link. Do not state or imply that discovery can be bought on its own (brief SITE-FACT GAP 4).
-5. **[H2 "What does a discovery phase hand to your designers?" / after the output-stack details block]** Jobs to be Done appears in the open text only as "Jobs to be Done mapping" (L154); its other mentions are inside collapsed tables. Add 2 sentences, about 45 words, saying what the Jobs to be Done line in the product brief holds and how the designer uses it. Suggested text: "The Jobs to be Done line names the progress a user hires the product to make, in the user's own words, for example a clinic manager who needs tomorrow's cancelled slots refilled. Designers cut any screen that does not serve that job." Label the clinic as the made-up example used in the ledger.
-
-Apply FIX 4.1–4.6 and 7.1–7.3 as written. Then rerun the onpage score (target ≥ 95) and keep the open-text exact keyword count at 4. None of the suggested texts adds another exact use.
+No completeness gaps remain. Apply FIX 4.7 and FIX 7.4 exactly as written. Neither changes the keyword count, the acronyms or any fact.
 
 ## FAIL list
-- 7d: gaps 1–5 above (3 sections without a next step, Jobs to be Done thin, cost position / published-price serpGap missing).
-- FIX items that must land before PASS: 4.1 description antecedent, 4.2 dangling "sorted", 4.3 MVP expansion order, 4.4 UI/UX expansion, 4.5 unanswered boolean, 4.6 dangling "scored" + Figma, 7.1 5-sentence closing + skip/always contradiction, 7.2 verbless FAQ sentence, 7.3 intro non sequitur.
+None. 2 FIX lines for the orchestrator: 4.7 (bold answer L142) and 7.4 (FAQ L205).
 
-VERDICT: FAIL
+VERDICT: PASS

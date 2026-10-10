@@ -19,8 +19,8 @@ takeaways:
   - "Good discovery hands design a one-page product brief, a research report, a sitemap with user flows and agreed success metrics."
   - "Stopping after discovery is a valid result: the cheapest product to cancel is one that has no code yet."
   - "In our engagement, discovery and user research are the first two of five steps, run by the designers who later design the screens."
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 Nitro League came to us with one racing game for gamers, non-fungible token (NFT) collectors and investors, the kind of product that makes a founder ask: is a discovery phase worth it before anyone designs a screen? We started with product discovery and stakeholder interviews, before any branding work. The [Nitro League case study](/case-studies/nitro/) reports $5M in funding secured within 3 months, an outcome of the whole project rather than of discovery alone.
@@ -139,7 +139,7 @@ Take the top three rows of your ledger and ask on which rung each would surface 
 
 ## What did discovery settle for Nitro, Vocable and Digno?
 
-**In all three idea-to-product projects, early research came before the screens: it gave Nitro League its user flows, Vocable the problems each screen was designed around, and Digno its score calculation, and the design was built on that.**
+**In all three idea-to-product projects, early research came before the screens: it gave Nitro League its user flows, Vocable the problems each screen was designed around and Digno its score calculation.**
 
 Each case study reports results from the whole project, not from discovery alone.
 
@@ -202,7 +202,7 @@ When the list is ready, [send us your three riskiest assumptions](/contact/) wit
 
 ### Is a design sprint the same as a discovery phase?
 
-No. A design sprint picks one direction and tests it quickly, while a discovery phase first sets the target users, their jobs and the success metrics across the product. A sprint fits when one bet needs testing quickly; a full discovery phase fits when several user groups, jobs or success metrics are still open.
+No. A design sprint picks one direction and tests it quickly, while a discovery phase first sets the target users, their jobs and the success metrics across the product. A sprint fits when one bet needs testing; a full discovery phase fits when several user groups, jobs or success metrics are still open.
 
 ### Can you skip discovery if you already have a prototype?
 

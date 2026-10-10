@@ -215,6 +215,49 @@
       "words": 1957,
       "tableCount": 3,
       "listStyle": "fill-in template tables + pass/fail lines + numbered timeline"
+    },
+    {
+      "slug": "is-discovery-phase-worth-it",
+      "hub": "digital-product-design-services",
+      "type": "Article",
+      "funnel": "bofu",
+      "introStyle": "mini case (Nitro League)",
+      "h2Frames": [
+        "is (yes/no)",
+        "what hands",
+        "which first",
+        "when skip",
+        "what cost",
+        "what did cases settle",
+        "how long",
+        "what good contains",
+        "how to scope",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "Is a discovery phase worth it for a new product?",
+        "What does a discovery phase hand to your designers?",
+        "Which assumptions should discovery test first?",
+        "When can you skip a discovery phase?",
+        "What does skipping discovery cost you later?",
+        "What did discovery settle for Nitro, Vocable and Digno?",
+        "How long does discovery take inside an engagement?",
+        "What does a good discovery readout contain?",
+        "How do you scope discovery into a proposal?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "output stack",
+        "assumption ledger",
+        "scored skip-test flow",
+        "escalation ladder",
+        "readout checklist card"
+      ],
+      "ctaAngle": "send your three riskiest assumptions → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2182,
+      "tableCount": 2,
+      "listStyle": "scored yes/no test + ledger table + rung ladder"
     }
   ]
 }

@@ -69,7 +69,7 @@ The website explains the game, the roadmap, the whitepaper and the tokenomics, a
 
 ## The solution
 
-We started with product discovery and stakeholder interviews. From these we mapped the user flows and wrote a detailed whitepaper. Branding workshops set a bold visual identity. CG artists visualised the gameplay, and design thinking shaped the garage and the website. Professional gamers validated the result.
+We started with [product discovery](/blog/is-discovery-phase-worth-it/) and stakeholder interviews. From these we mapped the user flows and wrote a detailed whitepaper. Branding workshops set a bold visual identity. CG artists visualised the gameplay, and design thinking shaped the garage and the website. Professional gamers validated the result.
 
 ![Nitro League NFT character artwork: a character holding a glowing energy orb](/work/nitro/nft-character.webp "NFT character art")
 
