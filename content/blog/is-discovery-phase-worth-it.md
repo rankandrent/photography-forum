@@ -25,7 +25,7 @@ qa: pending
 
 Nitro League came to us with one racing game for gamers, non-fungible token (NFT) collectors and investors, the kind of product that makes a founder ask: is a discovery phase worth it before anyone designs a screen? We started with product discovery and stakeholder interviews, before any branding work. The [Nitro League case study](/case-studies/nitro/) reports $5M in funding secured within 3 months, an outcome of the whole project rather than of discovery alone.
 
-For most new products the answer is yes: discovery buys evidence on the assumptions that would sink the product while changing course still costs a document instead of code. It is not always worth it, and the six-question skip test below tells you when to go straight to design. In our [digital product design services](/services/digital-product-design-services/), discovery and user research are the first two steps; this post covers only whether to buy or skip them.
+For most new products the answer is yes: discovery buys evidence on the assumptions that would sink the product while changing course still costs a document instead of code. It is not always worth it, and the six-question skip test below tells you when to go straight to design. In our [digital product design services](/services/digital-product-design-services/), discovery and user research are the first two of five steps in every engagement; this post helps you judge whether your product needs a discovery phase before design starts.
 
 ## Is a discovery phase worth it for a new product?
 
@@ -196,7 +196,7 @@ Add your platforms, how you will reach users and your launch date. Each user gro
 
 So, is a discovery phase worth it for your product? Your ledger answers better than any vendor percentage: every row still marked untested is a risk you would carry into code.
 
-When the list is ready, [send us your three riskiest assumptions](/contact/) with your skip-test score. Every project begins with a free consultation and a fixed-scope proposal. Our team, with [200+ products since 2017](/about/) behind it, scopes that proposal from the inputs above, whether your score points to full discovery, a light sprint or design right away.
+When the list is ready, [send us your three riskiest assumptions](/contact/) with your skip-test score. Every project begins with a free consultation and a fixed-scope proposal. Our team has designed [200+ products since 2017](/about/).
 
 ## FAQs
 
