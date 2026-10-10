@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 10,
   "title": "Columbus",
   "city": "Columbus",
@@ -15,7 +15,7 @@
   },
   "summary": "Remote-first UX research and design for Columbus insurance, retail, logistics and mobility teams.",
   "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, sharing Columbus's Eastern Time working day. We help Central Ohio teams improve quoting and claims journeys, omnichannel shopping, warehouse tools and mobility apps through user research, UX and UI design, prototyping and testing. Audits start at $5,000; research and design sprints run 4–8 weeks.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-10",
   "sections": [
     {
       "h2": "How does a UX design agency help Columbus companies?",
@@ -259,5 +259,6 @@
     "smart mobility",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-10"
 }
