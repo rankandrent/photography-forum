@@ -11,7 +11,7 @@ import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "UI UX Design Case Studies | Our Work & Results",
-  description: "UI UX design case studies with the research, design decisions and measurable outcomes behind products we designed for SaaS, fintech and logistics teams.",
+  description: "UI UX design case studies with the research, design decisions and measurable outcomes behind products we designed for SaaS, fintech, wellness and gaming.",
   path: routes.caseStudies,
   keywords: ["UI UX design case studies", "UX case studies", "product design portfolio", "UX design results"],
 });

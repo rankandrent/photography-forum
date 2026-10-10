@@ -7,6 +7,7 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-10 (escalated by onpage-seo-auditor, repeat gap, not an owner rule; owner may edit): every keyword the brief hands over that is not a plain noun phrase needs a carrier pattern. That covers the primary keyword, every `secondary` and `ngrams` entry that holds "vs", and reversed-order city keywords. Evidence: 10-07 primary "ux audit agency vs freelancer" (no carrier), 10-09/10-10 city keywords stacked on Philadelphia, Chicago and Columbus, and 10-10 secondary "discovery phase vs mvp". The last had no carrier, so the post shipped "so discovery phase vs MVP is a false choice". `keywordCarrier.inBody` covered only the primary. Rule: add `keywordCarrier.secondary` with one sentence pattern per such entry, or drop the entry. Good: `"discovery phase vs mvp": "framing it as discovery phase vs MVP sets up a false choice"`. Bad: listing "discovery phase vs mvp" in `secondary` with no pattern.
 
 ## Lessons (learned from runs, QA, audits and results)
 

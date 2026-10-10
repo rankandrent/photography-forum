@@ -1,39 +1,9 @@
 {
  "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "pages": [
   {
-   "route": "/blog/category/industry-specific/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/category/product-design/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/category/research-and-strategy/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/case-studies/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
    "route": "/case-studies/nitro/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/case-studies/parents-connect/",
    "type": "content",
    "lastAudited": null,
    "lastScore": 100
@@ -82,12 +52,6 @@
   },
   {
    "route": "/location/ux-design-agency-boston/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/location/ux-design-agency-chicago/",
    "type": "content",
    "lastAudited": null,
    "lastScore": 100
@@ -255,12 +219,6 @@
    "lastScore": 100
   },
   {
-   "route": "/",
-   "type": "content",
-   "lastAudited": "2026-10-07",
-   "lastScore": 100
-  },
-  {
    "route": "/blog/",
    "type": "archive",
    "lastAudited": "2026-10-07",
@@ -301,12 +259,6 @@
    "type": "blog",
    "lastAudited": "2026-10-08",
    "lastScore": 100
-  },
-  {
-   "route": "/about/",
-   "type": "content",
-   "lastAudited": "2026-10-09",
-   "lastScore": 87
   },
   {
    "route": "/blog/author/talha-saleem/",
@@ -351,24 +303,6 @@
    "lastScore": 100
   },
   {
-   "route": "/case-studies/apex-hcm-payroll-ux/",
-   "type": "content",
-   "lastAudited": "2026-10-09",
-   "lastScore": 87
-  },
-  {
-   "route": "/case-studies/fortna-warehouse-ux/",
-   "type": "content",
-   "lastAudited": "2026-10-09",
-   "lastScore": 80
-  },
-  {
-   "route": "/case-studies/toolsgroup-supply-chain-ux/",
-   "type": "content",
-   "lastAudited": "2026-10-09",
-   "lastScore": 87
-  },
-  {
    "route": "/location/st-louis-ux-design-agency/",
    "type": "content",
    "lastAudited": "2026-10-09",
@@ -381,9 +315,99 @@
    "lastScore": 100
   },
   {
+   "route": "/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/about/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 87
+  },
+  {
+   "route": "/blog/category/industry-specific/",
+   "type": "archive",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/product-design/",
+   "type": "archive",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/category/research-and-strategy/",
+   "type": "archive",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/is-discovery-phase-worth-it/",
+   "type": "blog",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/",
+   "type": "archive",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/anyday-app/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/digno/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/elia-wellness/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/mass-media-co/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/parents-connect/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/vocable/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-chicago/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-columbus/",
+   "type": "content",
+   "lastAudited": "2026-10-10",
+   "lastScore": 100
+  },
+  {
    "route": "/privacy/",
    "type": "archive",
-   "lastAudited": "2026-10-09",
+   "lastAudited": "2026-10-10",
    "lastScore": 91
   }
  ]

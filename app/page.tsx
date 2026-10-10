@@ -32,6 +32,15 @@ export const metadata = pageMetadata({
 
 /** Industry tab artwork: public/images/industries/<slug>.webp (optional per industry) */
 const INDUSTRY_IMG = (slug: string) => `/images/industries/${slug}.webp`;
+/** Alt text per artwork: describe what the image actually shows (update when an image changes) */
+const INDUSTRY_IMG_ALT: Record<string, string> = {
+  healthcare: "Healthcare app UI example: three mobile screens for logging blood sugar, a daily health overview and a weekly glucose report",
+  ecommerce: "E-commerce app UI example: three mobile shopping screens with a welcome screen, a home feed with categories and a product details page",
+  finance: "Finance UI example: a banking dashboard with available balance, payment cards, quick transfer, transactions and weekly statistics",
+  saas: "SaaS dashboard UI example on a laptop: a pharmacy inventory app with stock value, low-stock alerts, a category chart and a medicine table",
+  "supply-chain": "Supply chain dashboard UI example: order metrics, a shipment tracker map, warehouse inventory and delivery performance",
+  startups: "Startup website UI example: a venture studio landing page with a hero section, team section and partner network",
+};
 
 export default function HomePage() {
   const services = getServices();
@@ -45,6 +54,7 @@ export default function HomePage() {
       bullets: i.bullets!,
       href: routes.industry(i.slug),
       image: existsSync(join(process.cwd(), "public", INDUSTRY_IMG(i.slug))) ? INDUSTRY_IMG(i.slug) : undefined,
+      imageAlt: INDUSTRY_IMG_ALT[i.slug],
     }));
   const all = getCaseStudies();
   const cases = [...all.filter((c) => c.featured), ...all.filter((c) => !c.featured)].slice(0, 8);
