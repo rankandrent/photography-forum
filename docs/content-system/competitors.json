@@ -1,6 +1,6 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
@@ -17,7 +17,7 @@
     { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency"], "source": "WebSearch 2026-10-06, 2026-10-07" },
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
-    { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "facelift vs full redesign saas"], "source": "WebSearch 2026-10-06" },
+    { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design", "digital-product-design-services"], "seenFor": ["saas product redesign", "facelift vs full redesign saas", "product discovery phase cost", "how much does product design cost"], "source": "WebSearch 2026-10-06, 2026-10-10" },
     { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design", "web-app-design-services"], "seenFor": ["saas product redesign", "product redesign examples", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-06, 2026-10-09" },
     { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign", "is a design system worth the investment"], "source": "WebSearch 2026-10-06, 2026-10-08" },
     { "domain": "sda.company", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency"], "source": "WebSearch 2026-10-06" },
@@ -28,15 +28,15 @@
     { "domain": "theskinsfactory.com", "kind": "agency Q&A blog", "silos": ["ux-audit-services", "web-app-design-services"], "seenFor": ["ux audit cost", "ux audit proposal scope", "how to prepare for a ux audit", "legacy enterprise software ux redesign", "modernize legacy software without disrupting users"], "source": "WebSearch 2026-10-07, 2026-10-09" },
     { "domain": "saashero.net", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit vs expert review"], "source": "WebSearch 2026-10-07" },
     { "domain": "musemind.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
-    { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services", "design-system-services"], "seenFor": ["how to choose a ux audit company", "design system audit", "hire design system consultant"], "source": "WebSearch 2026-10-07, 2026-10-08" },
+    { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services", "design-system-services", "digital-product-design-services"], "seenFor": ["how to choose a ux audit company", "design system audit", "hire design system consultant", "how to hire a product design agency"], "source": "WebSearch 2026-10-07, 2026-10-08, 2026-10-10" },
     { "domain": "baymard.com", "kind": "UX research institute (citable source, not a target)", "silos": ["ux-audit-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit"], "source": "WebSearch 2026-10-07" },
     { "domain": "figr.design", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "lollypop.design", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "appstudio.ca", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "cost to maintain a design system", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "supernova.io", "kind": "design system tool blog", "silos": ["design-system-services"], "seenFor": ["design system business case", "cost to maintain a design system", "design system roi business case"], "source": "WebSearch 2026-10-08" },
     { "domain": "uxpin.com", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["how to calculate design system roi"], "source": "WebSearch 2026-10-08" },
-    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-08, 2026-10-09" },
-    { "domain": "awesomic.com", "kind": "design subscription blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
+    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services", "digital-product-design-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users", "product discovery services"], "source": "WebSearch 2026-10-08, 2026-10-09, 2026-10-10" },
+    { "domain": "awesomic.com", "kind": "design subscription blog", "silos": ["design-system-services", "digital-product-design-services"], "seenFor": ["design system audit", "hiring a product design agency"], "source": "WebSearch 2026-10-08, 2026-10-10" },
     { "domain": "ramotion.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
     { "domain": "designsystemscollective.com", "kind": "publisher (Medium publication)", "silos": ["design-system-services"], "seenFor": ["design system build vs adopt", "design system roi formula"], "source": "WebSearch 2026-10-08" },
     { "domain": "smashingmagazine.com", "kind": "publisher (citable source, not a target)", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
@@ -49,8 +49,16 @@
     { "domain": "wethos.co", "kind": "freelance platform blog", "silos": ["web-app-design-services"], "seenFor": ["web application scope of work", "web app design statement of work template"], "source": "WebSearch 2026-10-09" },
     { "domain": "thinkcompany.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services"], "seenFor": ["design system agency vs in-house", "how to redesign an enterprise application without disrupting users", "lessons from modernizing legacy applications"], "source": "WebSearch 2026-10-08, 2026-10-09" },
     { "domain": "wearearch.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app design agency", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-09" },
-    { "domain": "parallelhq.com", "kind": "agency blog (listicle)", "silos": ["web-app-design-services", "saas-ux-design"], "seenFor": ["web app design agency", "web app design services top 10"], "source": "WebSearch 2026-10-09" },
-    { "domain": "kolonell.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app redesign cost", "legacy app ui ux redesign cost", "design agency rfp scoring"], "source": "WebSearch 2026-10-09" }
+    { "domain": "parallelhq.com", "kind": "agency blog (listicle)", "silos": ["web-app-design-services", "saas-ux-design", "digital-product-design-services"], "seenFor": ["web app design agency", "web app design services top 10", "product design pricing benchmarks", "fixed price vs time and materials product design agency"], "source": "WebSearch 2026-10-09, 2026-10-10" },
+    { "domain": "kolonell.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app redesign cost", "legacy app ui ux redesign cost", "design agency rfp scoring"], "source": "WebSearch 2026-10-09" },
+    { "domain": "lowcode.agency", "kind": "app development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["is a discovery phase worth it", "is mobile app discovery phase worth it", "mobile app discovery phase"], "source": "WebSearch 2026-10-10 (WebFetch DNS-blocked)" },
+    { "domain": "acquaintsoft.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["software discovery phase cost why skipping fails", "is a discovery phase worth it"], "source": "WebSearch 2026-10-10 (WebFetch DNS-blocked)" },
+    { "domain": "upsilonit.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["discovery phase vs mvp", "ux discovery deliverables", "discovery phase worth the cost"], "source": "WebSearch 2026-10-10" },
+    { "domain": "dogtownmedia.com", "kind": "app development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["is a discovery phase worth it", "importance of discovery phase app project"], "source": "WebSearch 2026-10-10" },
+    { "domain": "collectiveidea.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["is a discovery phase worth it"], "source": "WebSearch 2026-10-10" },
+    { "domain": "smartdev.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["product discovery phase deliverables", "product discovery phase before design and development"], "source": "WebSearch 2026-10-10" },
+    { "domain": "blog.logrocket.com", "kind": "product management publisher (tool blog)", "silos": ["digital-product-design-services"], "seenFor": ["is a product discovery phase worth it", "can you skip product discovery"], "source": "WebSearch 2026-10-10" },
+    { "domain": "dribbble.com", "kind": "design marketplace content hub (skip as a target)", "silos": ["digital-product-design-services"], "seenFor": ["how to hire a product design agency"], "source": "WebSearch 2026-10-10" }
   ],
   "topPosts": [
     {
@@ -334,7 +342,7 @@
       "silo": "web-app-design-services",
       "serviceSupport": 5,
       "status": "candidate",
-      "notes": "Next MOFU for the web app silo ('legacy web app redesign'). SERP is how-to: netguru.com/blog/how-to-rebuild-legacy-web-apps, thinkcompany.com/blog/how-to-redesign-an-enterprise-application-without-disrupting-your-users, theskinsfactory.com legacy software Q&A and blog. Must not repeat saas-product-redesign rollout sections or the hub FAQ on phased redesign. DOWN link: Apex HCM legacy payroll case study."
+      "notes": "Next MOFU for the web app silo ('legacy web app redesign'). SERP is how-to: netguru.com/blog/how-to-rebuild-legacy-web-apps, thinkcompany.com/blog/how-to-redesign-an-enterprise-application-without-disrupting-your-users, theskinsfactory.com legacy software Q&A and blog. Must not repeat saas-product-redesign rollout sections or the hub FAQ on phased redesign. 2026-10-10: the DOWN link noted earlier pointed to a case study the owner removed on 2026-10-09 (RULES.md honesty list); use only a real revamp case study from content/case-studies/ (e.g. TradeZella or Mass Media Co.) after checking its scope."
     },
     {
       "domain": "wearearch.com",
@@ -357,6 +365,75 @@
       "serviceSupport": 5,
       "status": "candidate",
       "notes": "Blocked: the hub owns 'How much does web app design cost?'. EUR price ranges are vendor-only (do-not-use). mindsea.com app-redesign-cost and yummygum.com web platform redesign also rank."
+    },
+    {
+      "domain": "lowcode.agency",
+      "url": "https://www.lowcode.agency/blog/is-mobile-app-discovery-phase-worth-it",
+      "title": "Is a mobile app discovery phase worth it?",
+      "keywords": ["is a discovery phase worth it", "is mobile app discovery phase worth it", "discovery phase cost"],
+      "estTraffic": null,
+      "silo": "digital-product-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/is-discovery-phase-worth-it.json",
+      "notes": "beats target. Development-vendor post built on unsourced percentages (30-50% more spend when skipped, 5-15% of budget, 3x failure rate): all do-not-use. No design-led outputs, no skip test, no case evidence. dogtownmedia, collectiveidea, strv, detroitlabs and elinext rank for the same query."
+    },
+    {
+      "domain": "acquaintsoft.com",
+      "url": "https://acquaintsoft.com/blog/software-discovery-phase-cost-why-skipping-fails",
+      "title": "Software discovery phase cost: why skipping fails",
+      "keywords": ["software discovery phase cost", "is a discovery phase worth it", "why skipping discovery fails"],
+      "estTraffic": null,
+      "silo": "digital-product-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/is-discovery-phase-worth-it.json",
+      "notes": "Self-reported '40-60% more on development' and '20-35% shorter timelines' from 1,300+ projects: do-not-use. Dev-centric."
+    },
+    {
+      "domain": "blog.logrocket.com",
+      "url": "https://blog.logrocket.com/product-management/skipping-product-discovery-go-ahead-ship/",
+      "title": "Skipping product discovery? Go ahead and ship",
+      "keywords": ["is a product discovery phase worth it", "can you skip product discovery"],
+      "estTraffic": null,
+      "silo": "digital-product-design-services",
+      "serviceSupport": 3,
+      "status": "briefed",
+      "brief": "content/briefs/is-discovery-phase-worth-it.json",
+      "notes": "PM publisher, not an agency. The only page arguing for skipping; it still recommends discovery for brand-new products. Our skip test answers its angle with scored criteria."
+    },
+    {
+      "domain": "upsilonit.com",
+      "url": "https://www.upsilonit.com/blog/discovery-phase-vs-mvp-development",
+      "title": "Discovery Phase vs MVP: When to Use Each Approach in Product Development",
+      "keywords": ["discovery phase vs mvp", "discovery phase or mvp"],
+      "estTraffic": null,
+      "silo": "digital-product-design-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Possible MOFU, but MVP design is owned by ui-ux-design-services-for-startups and industries/startups.json, and that hub already has a 'vs digital product design' table. Only write it as a decision post that links to both hubs, after is-discovery-phase-worth-it ships and without repeating its skip test. altamira.ai and eliftech.com also rank. Its '$6,000-$15,000 discovery' and '30-50% re-scoping' figures are do-not-use."
+    },
+    {
+      "domain": "perfectiongeeks.com",
+      "url": "https://www.perfectiongeeks.com/pricing/product-discovery-cost",
+      "title": "Transparent Product Discovery Pricing",
+      "keywords": ["product discovery phase cost", "product discovery cost"],
+      "estTraffic": null,
+      "silo": "digital-product-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Blocked: the site publishes no standalone discovery price, so a cost post would need invented numbers. Reopen only if the owner confirms a discovery-only offer and price (then add it to the hub first). phenomenonstudio.com, netguru.com/services/product-discovery-services and fasterthanlight.me also rank (service pages)."
+    },
+    {
+      "domain": "lazarev.agency",
+      "url": "https://www.lazarev.agency/articles/hiring-a-design-agency",
+      "title": "Hiring a design agency like a pro: a simple guide for founders and product leaders",
+      "keywords": ["how to hire a product design agency", "digital product design agency"],
+      "estTraffic": null,
+      "silo": "digital-product-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Deferred: repeats the choose-ux-research-agency format, and the hub FAQ already answers agency vs freelancer. dribbble content-hub, awesomic.com and andabove.com ('10 questions to ask before hiring a digital product agency') rank. Revisit later with an idea-to-product-specific angle."
     }
   ]
 }

@@ -1,0 +1,278 @@
+{
+  "slug": "is-discovery-phase-worth-it",
+  "keyword": "is a discovery phase worth it",
+  "secondary": [
+    "is discovery phase worth it",
+    "product discovery phase",
+    "can you skip product discovery",
+    "discovery phase before app development",
+    "discovery phase deliverables",
+    "discovery phase vs mvp"
+  ],
+  "intent": "Commercial investigation. A founder or product leader with a new product idea has been offered a paid discovery phase (or an engagement that starts with one) and wants to know if it earns its cost or if they can go straight to design and build.",
+  "volume": null,
+  "kd": null,
+  "dataSource": "Semrush returned no_api_units on the first call (2026-10-10). WebFetch failed with DNS errors (ENOTFOUND) for lowcode.agency, acquaintsoft.com and blog.logrocket.com, so competitor coverage comes from WebSearch snippets. No GSC file (docs/data/gsc/latest.json does not exist). Volume and KD are unknown and are not estimated.",
+  "funnel": "bofu",
+  "funnelWhy": "The exact query 'is a discovery phase worth it' / 'is discovery phase worth it' returns vendor pages that sell discovery and argue its cost (lowcode.agency 'is mobile app discovery phase worth it' with a % of budget section, acquaintsoft 'software discovery phase cost: why skipping fails', dogtownmedia, collectiveidea, strv, detroitlabs, elinext). The searcher is deciding whether to pay for the first phase of an engagement, which is a buyer decision. MOFU risk: the 'product discovery phase' variant returns explainers (dzone, sigma.software, amplitude, productschool, logrocket). So the post must stay on the buy/skip decision and the engagement, never drift into a how-to-run-discovery guide.",
+  "serviceSupport": 5,
+  "serviceSupportWhy": "Discovery and product strategy plus user research are steps 1-2 of the hub's 8-16 week engagement, and the hub FAQ says digital product design 'starts from a problem statement'. A reader deciding whether to pay for discovery on a new product is buying the hub service.",
+  "hub": "digital-product-design-services",
+  "services": ["digital-product-design-services"],
+  "industries": [],
+  "author": "faizan-khan",
+  "authorWhy": "Faizan Khan is Sr. Product Designer (content/home.ts team list). RULES.md sends product strategy topics to a product designer, and discovery is product strategy work. He last wrote saas-product-redesign on 2026-10-06, 4 posts ago, so rotation is fine. Rejected: saliha-shahzad (UI/UX Designer), better suited to a UI/visual post such as a later TOFU on prototype fidelity. Rejected: shahmir-farooq (Sr. Communication Designer), better suited to a brand or investor-demo post such as Nitro-style pitch visuals. Rejected: sahar-asif (KAM), who wrote yesterday's procurement post.",
+  "contributors": ["umar-sarwar"],
+  "type": "Article",
+  "centralEntity": "discovery phase (design-led product discovery for a new digital product)",
+  "entities": [
+    "discovery phase",
+    "product discovery",
+    "digital product design",
+    "Double Diamond",
+    "Jobs to be Done",
+    "Google HEART framework",
+    "stakeholder interviews",
+    "minimum viable product (MVP)",
+    "clickable prototype",
+    "Figma",
+    "Maze",
+    "System Usability Scale (SUS)",
+    "GOV.UK Service Manual",
+    "Nielsen Norman Group",
+    "four big product risks (value, usability, feasibility, business viability)"
+  ],
+  "attributes": [
+    "duration (hub: discovery and product strategy 5-10 working days, user research 5-15 working days)",
+    "outputs (1-page product brief, Jobs to be Done, success metrics, research report, sitemap and user flows)",
+    "participants (founders, stakeholders, 5-8 users per user group)",
+    "decision at the end (build, change, stop)",
+    "risk reduced (value, usability, viability, feasibility)",
+    "cost position (inside the $60,000-$180,000 engagement; no standalone price published)"
+  ],
+  "ngrams": [
+    "is a discovery phase worth it",
+    "discovery phase",
+    "product discovery",
+    "skip discovery",
+    "riskiest assumptions",
+    "product brief",
+    "success metrics",
+    "user interviews",
+    "clickable prototype",
+    "digital product design"
+  ],
+  "questions": [
+    "Is a discovery phase worth it for a new product?",
+    "What do you get at the end of a discovery phase?",
+    "When can you skip product discovery?",
+    "What happens if you skip discovery and go straight to design or development?",
+    "How long does a discovery phase take?",
+    "Is a design sprint the same as a discovery phase?",
+    "What if discovery says the product should not be built?"
+  ],
+  "serpGaps": [
+    "Every ranking page is written for software development (tech stack, architecture, estimates). None covers design-led discovery, where the output is evidence the design team uses: a product brief, Jobs to be Done, success metrics and user flows ready for a clickable prototype.",
+    "No page gives a usable skip test. Pages either say 'always do discovery' (vendors) or list skip cases in prose (logrocket, dualboot FAQ). A scored yes/no test with three outcomes (skip, light, full) is missing.",
+    "The 'worth it' argument rests on unsourced vendor percentages (30-50% more spend, 40-60% overspend, 20-35% shorter timelines, '3x failure rate'). No page reasons from checkable sources or published prices.",
+    "No page names 'stop' as a good outcome. The GOV.UK Service Manual treats ending after discovery as a valid result; the vendors never say so.",
+    "No page shows what a discovery readout should contain or how a buyer judges one, so buyers cannot tell real discovery from workshops with no users (NN/g's point that many discoveries lack user research).",
+    "No page shows first-hand cases with what discovery actually settled (we have Nitro, Vocable and Digno)."
+  ],
+  "keywordCarrier": {
+    "titleH1": "Is a Discovery Phase Worth It Before You Design a New Product? (62 chars)",
+    "metaTitle": "Is a Discovery Phase Worth It for a New Product? (48 chars, keyword first)",
+    "intro": "Mini-case opening that holds the exact question in sentence 1. Pattern: 'Nitro League came to us with a racing game meant for three audiences at once, and the first decision was the one you face now: is a discovery phase worth it before anyone designs a screen?' Sentence 2-3: what discovery settled (stakeholder interviews -> user flows -> whitepaper) from content/case-studies/nitro.md, then the 1-line answer: Yes for most new products, with 6 questions that say when to skip.",
+    "description": "Is a discovery phase worth it? Yes for most new products. Use our 6-question skip test, see what it hands to design, then request a fixed-scope proposal. (153 chars, no apostrophe, ends on the BOFU next step. Use as written.)",
+    "inBody": "The keyword is a full question, so use it as a question: in the intro, as the first H2, and once in the closing section. Elsewhere write 'a discovery phase', 'product discovery' or 'skipping discovery'. Never bolt it onto a noun ('is a discovery phase worth it decision').",
+    "density": "QA measures uses x 6 words / body words. For a 2,000-2,200 word body, max 2% = about 6-7 exact uses. Target 4-6 exact uses. 'discovery phase' as a 2-word phrase can appear more often, naturally."
+  },
+  "outline": [
+    {
+      "h2": "Is a discovery phase worth it for a new product?",
+      "answerHint": "Start with 'Yes.' Yes for a new product when at least one core assumption (who the user is, what job they hire it for, whether they will pay, whether they can use it) has no evidence yet; no when the product repeats a proven one and the evidence already exists. Then the definition in one line: design-led discovery is the first 2 steps of a digital product design engagement, before anyone designs screens.",
+      "points": [
+        "Define the discovery phase in this post's sense: discovery and product strategy plus user research, steps 1-2 of the hub process. Link UP to the hub early: [digital product design services](/services/digital-product-design-services/).",
+        "Frame 'worth it' as risk bought down: value, usability, business viability and feasibility (the four big risks, cite SVPG). Discovery buys down the first three with evidence; feasibility input comes from your engineers.",
+        "GOV.UK Service Manual: discovery is about understanding the problem before committing to build, and the team does not build during it. Cite it as the public-sector standard, not as startup data.",
+        "Close the section with the reader's next step: the 6-question test below."
+      ]
+    },
+    {
+      "h2": "What does a discovery phase hand to your design team?",
+      "answerHint": "Bold answer: 4 outputs the design work starts from, a 1-page product brief, a research report, a sitemap with user flows and a set of success metrics. Each is something a designer uses on day 1 of the prototype.",
+      "points": [
+        "Product brief: target users, Jobs to be Done, success metrics (hub example: weekly active users, task completion time), set with the Google HEART framework.",
+        "Research report: 5-8 interviews per user group, findings such as unmet needs, current workarounds and switching triggers (hub wording). Synthesized in Dovetail per the hub.",
+        "Sitemap and user flows for every core task: the input to the clickable prototype that step 4 tests with 5 users per round in Maze.",
+        "Contrast with what development-agency discovery hands over (tech stack, estimates). Keep it neutral and do not claim what the agency does or does not build (see notes).",
+        "Visual: output stack infographic, text behind 'Show as text'."
+      ]
+    },
+    {
+      "h2": "Which assumptions should discovery test before design starts?",
+      "answerHint": "Bold answer: the ones that would change the product if wrong, sorted into value, usability and viability, each with the method that tests it and the evidence that counts.",
+      "points": [
+        "Assumption ledger: assumption -> risk type -> method (stakeholder interviews, Jobs to be Done interviews, competitor review, prototype test) -> evidence bar (what counts as confirmed).",
+        "Worked rows from a hypothetical product, labelled illustrative (e.g. 'clinic managers will switch from spreadsheets'). Do not use client names here.",
+        "Rank by 'how bad if wrong' x 'how little evidence' and test the top 3 first. Tell the reader to list their riskiest 3 now, because the closing CTA asks for them.",
+        "Visual: assumption ledger table as an infographic (text behind 'Show as text')."
+      ]
+    },
+    {
+      "h2": "When can you skip a discovery phase?",
+      "answerHint": "Bold answer: when you can answer yes to most of 6 questions about evidence you already hold. 0-2 yes means run full discovery, 3-4 means a light version, 5-6 means skip it and start design.",
+      "points": [
+        "The 6 questions (yes/no): 1) Have you interviewed at least 5 target users about this problem in the last 12 months? 2) Can you name the one job users hire the product for? 3) Do you know what users use today and why they would switch? 4) Is there a paying customer, signed pilot or waitlist for this exact product? 5) Are the success metrics set and agreed by the founders? 6) Is the scope fixed by something outside your control (regulation, a contract, a platform rule)?",
+        "State that the thresholds are our rule of thumb from running engagements, not research data.",
+        "Light version for 3-4 yes: a 5-day design sprint that tests 1 value proposition. This is the ONE cross-hub link: [UI UX design services for startups](/services/ui-ux-design-services-for-startups/). Do not restate that page's price or deliverables.",
+        "Honest skip cases: a rebuild of a product whose users you already study, an internal tool with 1 known user group, a scope set by regulation. Say plainly that discovery is then a cost with little return.",
+        "Visual: skip-test decision flow (6 questions -> 3 outcomes)."
+      ]
+    },
+    {
+      "h2": "What does skipping discovery cost you later?",
+      "answerHint": "Bold answer: the same wrong assumption gets found later and costs more each time, first in a prototype test (design hours), then in build (development sprints), then after launch (users who leave). Reason from the hub's rework logic, not vendor percentages.",
+      "points": [
+        "Ladder: where a wrong assumption surfaces: interview -> prototype test -> build sprint -> after launch. Hub benefit card wording: issues found in a clickable prototype cost hours to fix, after launch they cost development sprints.",
+        "GOV.UK: discovery can end in a decision not to move on to the next phase. Present 'stop' as a cheap, good outcome: the cheapest product to cancel is the one with no code.",
+        "Optional, only if the fact-checker can confirm the current figure on cbinsights.com: CB Insights' post-mortem analysis lists 'no market need' among the top reasons startups fail. Use the figure from the CB Insights page itself, with its year, or leave it out (secondary sources disagree: 42% in the 2014 version, 35% in a later update).",
+        "Do NOT use vendor percentages (see notes).",
+        "Visual: 'where a wrong assumption surfaces' ladder, qualitative (no invented cost multipliers)."
+      ]
+    },
+    {
+      "h2": "What did discovery settle for Nitro League, Vocable and Digno?",
+      "answerHint": "Bold answer: in all three idea-to-product projects, discovery fixed who the product serves and how its core logic works before visual design started. One short paragraph per case, facts only from the case-study files, each with a DOWN link.",
+      "points": [
+        "Nitro League (/case-studies/nitro/): one product for gamers, NFT collectors and investors; started with product discovery and stakeholder interviews; from these the team mapped the user flows and wrote a detailed whitepaper; branding workshops followed; professional gamers validated the result. Reported result: secured $5M in funding within 3 months. Do not attribute the funding to discovery alone.",
+        "Vocable (/case-studies/vocable/): scope included stakeholder interviews and an MVP launch strategy; the team mapped the full creator journey and designed each screen around a problem heard in stakeholder interviews (planning, drafting, optimizing, publishing). Reported results: 35% increase in overall workflow efficiency, 20% improvement in content quality and consistency.",
+        "Digno (/case-studies/digno/): the team gathered requirements from different stakeholders and users to define how the score is calculated, and studied competitors that had tried to solve similar problems; that research shaped 5 core experiences. Quote at most one result exactly as written ('5x increase in overall revenue'), labelled as the case study's reported result.",
+        "Write each as 'what was unknown -> what discovery settled -> what design built on it'. Exact numbers and wording only, no added details, no client quotes beyond the files.",
+        "Visual: three-case strip (unknown -> settled -> built)."
+      ]
+    },
+    {
+      "h2": "How long does discovery take inside a full product design engagement?",
+      "answerHint": "Bold answer: 10-25 working days in our engagement: discovery and product strategy (5-10 days) plus user research (5-15 days), inside the 8-16 week (40-80 working day) digital product design process.",
+      "points": [
+        "Deep link the hub process instead of restating all 5 steps: [our 5-step product design process](/services/digital-product-design-services/#how-does-the-digital-product-design-process-work).",
+        "What happens in those days: stakeholder workshops, Jobs to be Done mapping, HEART metrics, interviews with 5-8 users per user group. Then IA and flows (5-10 days) and the prototype round build on the output.",
+        "Explain why discovery is built into the engagement rather than sold as a gate: the people who ran the interviews design the screens. Stay within hub wording.",
+        "Visual: timeline bar of the 8-16 week engagement with the discovery steps highlighted."
+      ]
+    },
+    {
+      "h2": "What does a good discovery readout contain?",
+      "answerHint": "Bold answer: a decision (build, change or stop), the evidence behind it, and outputs a designer can start from. A readout of workshop notes with no users in it is not discovery.",
+      "points": [
+        "Checklist: named target user groups; interview count per group; top findings with quotes; assumption ledger with evidence status; success metrics with baselines or targets; sitemap and core flows; the explicit build/change/stop decision; open questions for the prototype round.",
+        "Warning signs: no user interviews (NN/g's 'Are You Doing Real Discoveries?' notes many discoveries lack user research), only stakeholder opinions, no decision, outputs that restate the founder's brief.",
+        "Tell the reader to ask any agency for a sample readout before signing.",
+        "Visual: readout checklist card (text behind 'Show as text')."
+      ]
+    },
+    {
+      "h2": "How do you scope discovery into a fixed-price proposal?",
+      "answerHint": "Bold answer: bring your skip-test score, your riskiest 3 assumptions and the number of user groups; those set how many discovery and research days the engagement needs, and the price follows the hub's 4 price factors.",
+      "points": [
+        "Lead angle section. Inputs: skip-test score, top 3 assumptions, user groups and access to users, platforms, launch date.",
+        "Price: do not restate the range in full detail; link [what digital product design costs](/services/digital-product-design-services/#how-much-does-digital-product-design-cost) and name the 4 factors from the hub (platforms, user groups, core user flows, validation rounds).",
+        "Invitation (natural, specific): send the 3 assumptions to a free consultation, leave with a fixed-scope proposal. Link /contact/. Mention 200+ products since 2017 with a link to /about/.",
+        "Use the exact keyword once more here (closing use). Link UP to the hub a second time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a design sprint the same as a discovery phase?",
+      "hint": "No. A 5-day design sprint tests 1 direction with 5 users; a discovery phase sets the target users, jobs and success metrics across the product before the design direction is chosen. Do not add a second link to the startups hub here."
+    },
+    {
+      "q": "Can you skip discovery if you already have a prototype?",
+      "hint": "Yes, only if the prototype has been tested with target users and the findings are recent; an untested prototype is an assumption with screens. Point back to the skip test."
+    },
+    {
+      "q": "What happens if discovery shows the product should not be built?",
+      "hint": "You stop or change direction before any code exists, which is the cheapest moment to do it. GOV.UK treats ending after discovery as a valid outcome."
+    },
+    {
+      "q": "Who from our team needs to join a discovery phase?",
+      "hint": "The founder or product owner who makes the decision, 1-2 stakeholders who know customers (sales, support), and an engineer for feasibility questions. Do not invent hour commitments. The startups industry page states 2-4 founder hours per week for startup engagements; do not reuse that figure for this hub."
+    },
+    {
+      "q": "Does discovery still matter for an AI product?",
+      "hint": "Yes. The model choice is a feasibility question, while whether users trust and act on the output is a value and usability question discovery tests. Vocable's interviews shaped every screen of an AI content product (exact wording from the case study only)."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/digital-product-design-services/", "anchor": "digital product design services", "where": "intro or H2 1 (UP link) and again in the last H2" },
+    { "href": "/services/digital-product-design-services/#how-does-the-digital-product-design-process-work", "anchor": "our 5-step product design process", "where": "H2 'How long does discovery take…'" },
+    { "href": "/services/digital-product-design-services/#how-much-does-digital-product-design-cost", "anchor": "what digital product design costs", "where": "last H2 (price input, do not restate)" },
+    { "href": "/case-studies/nitro/", "anchor": "Nitro League case study", "where": "intro or the mini-case H2" },
+    { "href": "/case-studies/vocable/", "anchor": "how Vocable went from idea to MVP", "where": "mini-case H2" },
+    { "href": "/case-studies/digno/", "anchor": "the Digno scoring platform", "where": "mini-case H2" },
+    { "href": "/services/ui-ux-design-services-for-startups/", "anchor": "a 5-day design sprint for startups", "where": "skip-test H2 (the only cross-hub link)" },
+    { "href": "/contact/", "anchor": "send us your riskiest 3 assumptions", "where": "last H2" },
+    { "href": "/about/", "anchor": "200+ products since 2017", "where": "last H2" }
+  ],
+  "externalSources": [
+    { "url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works", "why": "Public standard: discovery means understanding the problem before committing to build, the team does not build during discovery, and the findings decide whether to move on. Supports 'stop is a valid outcome'. Do not quote a week count unless the fact-checker confirms it on the live page." },
+    { "url": "https://www.nngroup.com/videos/real-ux-discoveries/", "why": "NN/g (Maria Rosala): many teams are not doing true discovery; supports the readout warning signs. The fact-checker may swap in NN/g's discovery article if its URL is confirmed." },
+    { "url": "https://www.svpg.com/four-big-risks/", "why": "Marty Cagan's four big risks (value, usability, feasibility, business viability) frame what discovery buys down. Fact-checker: confirm the URL is live." },
+    { "url": "https://www.cbinsights.com/research/startup-failure-reasons-top/", "why": "OPTIONAL. Only if the fact-checker confirms the current 'no market need' figure and year on this page. Otherwise drop it." },
+    { "url": "https://www.nngroup.com/videos/discovery-mapping-methods/", "why": "Optional: ecosystem, experience and process maps as discovery tools, if the writer mentions mapping in the readout section." }
+  ],
+  "visuals": [
+    { "type": "output stack", "idea": "Four stacked cards: product brief -> research report -> sitemap and user flows -> success metrics, each with 'what the designer does with it on day 1'. Text version behind 'Show as text'." },
+    { "type": "assumption ledger", "idea": "Table infographic: assumption | risk type (value/usability/viability) | method | evidence that counts | status. 4-5 illustrative rows, labelled illustrative. Text version behind 'Show as text'." },
+    { "type": "decision flow", "idea": "Skip test: 6 yes/no questions feeding a score, with 3 exits: 0-2 full discovery, 3-4 light (5-day sprint), 5-6 skip to design. Text version behind 'Show as text'." },
+    { "type": "escalation ladder", "idea": "Where a wrong assumption surfaces: interview -> prototype test -> build sprint -> after launch. Qualitative cost labels from hub wording (design hours vs development sprints), with no invented numbers or multipliers." },
+    { "type": "three-case strip", "idea": "Nitro League, Vocable, Digno: unknown -> what discovery settled -> what design built on it. Exact case-study facts only. No client logos unless the files provide them." },
+    { "type": "engagement timeline", "idea": "8-16 week bar of the 5 hub steps with discovery and research (5-10 + 5-15 days) highlighted, and a build/change/stop decision diamond at the end of research." }
+  ],
+  "leadAngle": "The moment: the skip test. A reader who scores 0-4 has just learned they are about to design on assumptions. Offer: send your riskiest 3 assumptions and the skip-test score to a free consultation, and get a fixed-scope proposal for a digital product design engagement where discovery is built in (price via the hub cost section). Secondary moment: the readout checklist, where a reader who already paid for a weak discovery sees what is missing.",
+  "variety": {
+    "type": "Article",
+    "introStyle": "mini case (Nitro League, from content/case-studies/nitro.md)",
+    "h2Frames": [
+      "is (yes/no)",
+      "what it hands over",
+      "which assumptions",
+      "when to skip (scored test)",
+      "what skipping costs",
+      "case studies",
+      "how long (in engagement)",
+      "what a good readout contains",
+      "how to scope",
+      "FAQs"
+    ],
+    "visualTypes": [
+      "output stack",
+      "assumption ledger",
+      "scored decision flow",
+      "escalation ladder",
+      "three-case strip",
+      "engagement timeline"
+    ],
+    "ctaAngle": "send your riskiest 3 assumptions + skip-test score -> free consultation + fixed-scope proposal",
+    "listStyle": "yes/no scored questions + ledger table + three-part case rows",
+    "diffCheck": "Differs from the last 5 posts (all silos, site-wide) on type (Article is unused; last 5 = Guide, Guide, Comparison, Guide, Checklist), intro (mini case is unused; used = buyer scenario, myth, data point, question, definition), H2 frames (no 'which criteria', 'red flags', 'what to bring/send' or RFP frames; the closing frame is 'how to scope', not 'what to bring'), visual types (none repeat), CTA angle (assumptions, not brief/funnel/scope sheet/baseline/RFP) and list style."
+  },
+  "beats": "https://www.lowcode.agency/blog/is-mobile-app-discovery-phase-worth-it",
+  "notes": [
+    "CANNIBALISATION CHECK (all content/: services, industries, locations, blog, briefs, home.ts): no page uses 'discovery phase' or 'product discovery' as a keyword, title or H2. e-commerce pages use 'product discovery' in the shopping sense (finding products in a store); this post always says 'discovery phase' or 'product discovery for a new product' so the two meanings never mix. MVP design is owned by ui-ux-design-services-for-startups ('MVP design', 'mvp design' ngram) and industries/startups.json (keywords incl. 'MVP design', 'startup product design'). Do not target MVP or startup terms, and do not write a 'discovery vs MVP' H2.",
+    "Hub-owned answers to link, not restate: cost (H2 'How much does digital product design cost?'), process and durations, 'What does digital product design include?' (6 deliverables), FAQ 'Can digital product design start from a rough idea?'. This post takes only the discovery slice and the buy/skip decision.",
+    "web-app-design-services owns 'web app design rfp' and existing-app redesign; saas-ux-design owns 'saas product redesign'; design-system-services owns design system cost/ROI. None of them is touched.",
+    "SITE-FACT CONFLICT 1 (price includes a design system?): the hub says $60,000-$180,000 with a 'starter component library' at the top end and a full component library with governance as an add-on (design-system-services). content/home.ts Engagement 03 'Full design & design system' ($60,000-$180,000, 3-6 designers) says 'End-to-end design with a reusable design system', and the ui-ux-design-services-for-startups comparison table says digital product design includes 'Every product flow and a full design system' and a 'Generative and evaluative research programme'. Writer: follow the hub wording, say nothing about a design system being included, and do not quote designer counts.",
+    "SITE-FACT CONFLICT 2 (discovery duration): the hub says discovery and product strategy 5-10 days + user research 5-15 days (10-25 working days). content/home.ts process step 'Discovery and research' says '1-4 weeks'. Writer: use the hub figures only.",
+    "SITE-FACT CONFLICT 3 (does the agency build?): home.ts FAQ 'Do you only create design or do development too?' says 'We deliver design and development'. The hub FAQ says digital product designers do not write code and the client's engineers do. Still open from web-app-design-rfp. Writer: stay silent on who builds; say 'your engineers' only where the hub does.",
+    "SITE-FACT GAP 4: the site publishes no standalone discovery price and does not say whether discovery is sold on its own. home.ts pricing intro says 'Full design and build engagements are scoped after discovery', which hints at a separate step but gives no price. Writer: never state a discovery-only price or that discovery can be bought on its own. Orchestrator: confirm with the owner; if a standalone discovery offer exists, the hub should state it (hub banking) before this post adds it.",
+    "DO NOT USE (unsourced vendor claims seen in SERP snippets): 'teams that skip discovery spend 30-50% more' (lowcode.agency, upsilonit); 'discovery is 5-15% of total budget' (lowcode.agency); 'skipping fails at 3x the rate' (lowcode.agency); '40-60% more on development' and '20-35% shorter timelines' (acquaintsoft, self-reported from 1,300+ projects); 'skipping costs 6 months and 66% of your budget' (easy.bi); NN/g '75% lower failure risk / 59% higher success' (unverified, attributed by an agency blog); '100x cost of late fixes' (netguru, unsourced); vendor discovery price tiers ($4k-$10k, $6k-$15k, $10k-$100k+). Also avoid the Standish Group '31% of projects on time' figure unless the fact-checker finds a primary source.",
+    "CASE STUDIES (exact wording only): Nitro League, Vocable and Digno are idea-to-product projects with discovery-type work in their files. Elia Wellness (idea to product, 40% growth in user registrations) has no discovery detail in its file, so mention it only as another idea-to-product project if needed, with no claims about its discovery. Parents Connect and TradeZella list 'discovery' but are product revamps, so keep them out of a new-product post. Never imply discovery alone caused a reported result; write 'the case study reports'. Banned client names from RULES.md (Apex HCM, Fortna, ToolsGroup) must not appear.",
+    "Case-study files contain banned words ('seamless'). Do not copy their phrasing.",
+    "Boolean H2 and FAQ answers start with Yes or No (RULES.md).",
+    "Originality: lowcode.agency (beats) is a mobile-dev vendor post built around unsourced percentages. Do not mirror its sections or order (what discovery is -> why worth it -> costs -> what's included). Our structure leads with the decision, then outputs, assumptions, skip test, cases, readout and scoping. Keep 5-gram overlap under 5%.",
+    "No sideways links: the silo has no other posts yet. This is post 1 of the digital-product-design-services silo; next per funnel.json is MOFU."
+  ]
+}
