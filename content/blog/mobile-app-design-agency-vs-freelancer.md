@@ -12,6 +12,7 @@ industries: [startups]
 tags: [mobile app design, freelance mobile app designer, design agency, ios and android, user testing, developer handoff]
 keyword: "mobile app design agency vs freelancer"
 funnel: bofu
+image: /blog/mobile-app-design-agency-vs-freelancer/cover.svg
 takeaways:
   - "Screen quality rarely separates the two options; platform coverage, test rounds and test-build review do."
   - "A freelancer fits a one-platform app with few flows, or a team whose product manager runs user testing."
@@ -40,7 +41,7 @@ For how we run user interface (UI) and user experience (UX) work on iOS and Andr
 
 A deliverable can exist without the skill behind it, so the map tracks who tends to cover each skill rather than which files arrive.
 
-<!-- visual: skill-coverage map. Six rows (research, user flows, interface design, test moderation, iOS + Android pattern fluency, handoff and build review) by two columns (typical solo freelancer, typical agency team), shaded strong / partial / often missing. Caption: "A pattern to check, not a rule." Alt: "Skill-coverage map comparing a typical solo freelancer and a typical agency team across six mobile app design skills" -->
+![Skill-coverage map comparing a typical solo freelancer and a typical agency team across six mobile app design skills (research, user flows, interface design, test moderation, iOS + Android fluency, handoff and build review), each rated strong, partial or often missing with a short note](/blog/mobile-app-design-agency-vs-freelancer/skill-coverage-map.svg "A pattern to check, not a rule")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -65,7 +66,7 @@ The risk is drawing iOS first and stretching the screens onto Android. [Google's
 
 Touch targets differ as well. Apple's [design guidance asks for controls of at least 44×44 points (pt)](https://developer.apple.com/design/tips/) so a finger can tap them accurately, and [Android's accessibility guidance on touch target size](https://support.google.com/accessibility/android/answer/7101858) asks for at least 48×48 density-independent pixels (dp). Date pickers differ too.
 
-<!-- visual: platform pair card. Five wireframe pairs, iOS left and Android right: tab bar / navigation bar, back button / system back, iOS date wheel / Material date picker, action sheet / bottom sheet, 44×44 pt / 48×48 dp touch target. Alt: "Five iOS and Android component pairs a designer draws differently on each platform" -->
+![Five iOS and Android component pairs drawn as wireframes: tab bar vs navigation bar, back button in the top bar vs system back plus an up arrow, wheel vs Material date picker, action sheet vs bottom sheet, and a 44×44 pt vs 48×48 dp touch target](/blog/mobile-app-design-agency-vs-freelancer/platform-pairs.svg "Five components a designer draws differently on iOS and Android")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -112,7 +113,7 @@ Many freelance contracts end at file delivery. Write build review into the contr
 
 Our published timeline adds up five phases: discovery 3–5 days, flows and wireframes 5–10, prototype and testing 5–10, visual UI 5–10 and handoff 2–5. A team holds those lengths because several designers work in parallel inside each phase: Android variants alongside iOS, recruiting during wireframes. A solo designer works in sequence, so the illustrative top track adds a recruiting wait and an Android pass, with no length given because it varies by person.
 
-<!-- visual: twin timeline (before/after). One illustrative 6-flow iOS and Android app. Top track, labelled "Illustrative, varies by person": one freelancer, five phases in a row plus two blocks without a set length (recruiting wait before testing, Android pass after iOS UI). Bottom track: agency team, the five hub phases (discovery 3–5 days, flows and wireframes 5–10, prototype and testing 5–10, visual UI 5–10, handoff 2–5) inside 4–8 weeks, with recruiting and Android work inside the phases. No freelancer duration printed. Alt: "Twin timeline of one illustrative iOS and Android app: a freelancer's phases in sequence with extra recruiting and Android blocks, and a team's five phases within 4–8 weeks" -->
+![Illustrative twin timeline for one iOS and Android app: a solo freelancer's seven steps in sequence, including an added recruiting wait and Android pass with no length given, beside an agency team's five phases within 4–8 weeks with 3–5, 5–10, 5–10, 5–10 and 2–5 days](/blog/mobile-app-design-agency-vs-freelancer/twin-timeline.svg "Illustrative example: the same scope as one designer's sequence and a team's phases")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -129,7 +130,7 @@ Continuity matters too: when a solo designer gets sick or signs a bigger client,
 
 An installed app shows whether the design survived development. Before you hire a mobile app designer, freelancer or agency, run these checks.
 
-<!-- visual: phone-in-hand checklist card. Eight checks around a hand holding a phone: touch targets, back navigation, larger text setting, dark mode, empty state, error state, onboarding length, case-study scope and results. Alt: "Phone-in-hand checklist card with eight checks for testing a designer's shipped mobile app" -->
+![A hand holding a phone with eight numbered hotspots, next to eight checks for a designer's shipped app: touch targets, back navigation, larger text setting, dark mode, empty state, error state, onboarding length and case study](/blog/mobile-app-design-agency-vs-freelancer/phone-checklist.svg "Eight checks to run on a designer's shipped app")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -152,7 +153,7 @@ Hold every case study, ours included, to scope plus results. The [TradeZella web
 
 **Hire a freelancer for a one-platform app with no flows to test, or when your PM runs testing and build review; otherwise, or with a fixed launch date, hire an agency.**
 
-<!-- visual: decision tree. Four yes/no questions leading to freelancer / freelancer + your PM / agency. Q1 launch date other teams depend on? Q2 iOS and Android at launch? Q3 flows tested with users before code? Q4 someone in-house recruits, moderates and reviews test builds? Alt: "Decision tree with four questions routing a mobile app project to a freelancer, a freelancer plus your product manager, or an agency" -->
+![Decision tree with four yes/no questions about the launch date, iOS and Android at launch, user testing before code and in-house testing and build review, routing to a freelancer, a freelancer plus your PM, or an agency](/blog/mobile-app-design-agency-vs-freelancer/decision-tree.svg "Four questions that route your app to a freelancer or an agency")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -183,7 +184,7 @@ Stage changes the answer: a freelancer for the demo, an agency once the app head
 
 An hourly quote, through Upwork or direct, moves with every revision round; a fixed-scope proposal names its lines up front.
 
-<!-- visual: line-item quote comparison card. Seven lines (platforms, user flows, test rounds and recruiting, UI kit, app store assets, file ownership, test-build review), each with checkboxes for "freelancer quote", "agency quote" and "your extra cost". No prices. Alt: "Line-item card for comparing a freelancer's quote with an agency's across seven mobile app design lines" -->
+![Quote comparison card with seven lines (platforms, user flows, test rounds and recruiting, UI kit, app store assets, file ownership, test-build review), each with what to check, the cost if it is missing and empty boxes for the freelancer quote, agency quote and your extra cost](/blog/mobile-app-design-agency-vs-freelancer/quote-line-items.svg "Seven lines to compare a freelancer's quote with an agency's")
 
 <details class="astext"><summary>Show as text</summary>
 
