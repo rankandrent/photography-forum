@@ -245,6 +245,49 @@
     { "url": "https://developer.apple.com/testflight/", "why": "Apple TestFlight: beta test builds on iOS, where the design is reviewed before release." },
     { "url": "https://support.google.com/googleplay/android-developer/answer/9845334", "why": "Google Play Console internal/closed testing tracks (fact-checker: confirm URL and track names)." }
   ],
+  "related": {
+    "date": "2026-10-11",
+    "internalLinks": [
+      { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services", "where": "intro section, about word 200" },
+      { "href": "/services/ios-app-design-services/", "anchor": "iOS app design services", "where": "Can one freelance designer cover both iOS and Android? (single cross-hub link)" },
+      { "href": "/case-studies/tradezella/", "anchor": "TradeZella web and mobile revamp", "where": "portfolio section; +40% interaction / +25% retention match frontmatter" },
+      { "href": "/case-studies/anyday-app/", "anchor": "Anyday mobile wallet case study", "where": "portfolio section; +40% employee satisfaction from immediate access to wages matches frontmatter" },
+      { "href": "/services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost", "anchor": "what drives mobile app design pricing", "where": "quote-comparison section (closing UP link, price sentence)" },
+      { "href": "/contact/", "anchor": "Send us that quote or your flow list", "where": "closing CTA" }
+    ],
+    "droppedInternalMarkers": [
+      "/services/mobile-app-ui-ux-design-services/#what-does-mobile-app-ui-ux-design-include (hub cap 2; sentence rewritten so it no longer points to the hub)",
+      "/services/mobile-app-ui-ux-design-services/#how-does-the-mobile-app-ui-ux-design-process-work (hub cap 2; the 'hub FAQ' pointer sentence rewritten to state the React Native/Flutter answer in hub wording)",
+      "/services/mobile-app-ui-ux-design-services/ closing duplicate (one link per target; the #cost fragment is the closing UP link)"
+    ],
+    "externalSources": [
+      { "url": "https://developer.android.com/design/ui/mobile/guides/foundations/translate-designs", "status": "fetched; tab bar -> navigation bar, action/activity sheets -> bottom sheets, up arrow vs system back that can take the user out of the app all confirmed" },
+      { "url": "https://developer.apple.com/design/tips/", "status": "SWAP from /design/human-interface-guidelines/buttons. The Buttons page fetched empty and its 44x44 pt sentence only appeared quoted in an Apple Developer Forums thread. The UI Design Dos and Don'ts page fetched and says 'Create controls that measure at least 44 points x 44 points so they can be accurately tapped with a finger.' Sentence reworded to 'controls of at least 44x44 pt so a finger can tap them accurately'." },
+      { "url": "https://support.google.com/accessibility/android/answer/7101858", "status": "fetch ENOTFOUND; domain-restricted search returned 'Touch target size - Android Accessibility Help' with 'at least 48dp' / 48x48dp" },
+      { "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/", "status": "fetch ENOTFOUND; domain-restricted search confirmed Jakob Nielsen, March 18, 2000, and 'testing no more than 5 users and running as many small tests as you can afford' (post paraphrase matches)" },
+      { "url": "https://support.google.com/googleplay/android-developer/answer/9845334", "status": "fetch ENOTFOUND; search returned 'Set up an open, closed, or internal test - Play Console Help' (track names confirmed)" }
+    ],
+    "droppedExternalSources": [
+      "https://developer.apple.com/testflight/ (verified, 'Beta testing made simple with TestFlight', but dropped to stay within the 5-source cap; 'TestFlight, Apple's beta testing service' stays as plain text)"
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "source": "content/services/mobile-app-ui-ux-design-services.json",
+      "field": "sections['How much does mobile app UI UX design cost?'].body (renders HTML)",
+      "action": "append one sentence at the end of the existing <p>",
+      "sentence": "Holding a freelancer's quote against this range? <a href=\"/blog/mobile-app-design-agency-vs-freelancer/#how-do-you-compare-a-freelancer-s-quote-with-an-agency-s\">Line up a freelancer's quote and an agency's on the same lines</a> before you compare totals.",
+      "why": "Pricing readers are the ones holding competing quotes; the post's section id comes from slugify() in app/blog/[slug]/page.tsx. One link to this post on the hub (the silo card list already links it without the section jump)."
+    },
+    {
+      "source": "content/home.ts",
+      "field": "faqs[6] 'What should I look for when choosing a UI UX design service?' (.a renders HTML via Blocks.tsx Faq; index 6, so it does not appear on /contact/, which shows faqs.slice(0, 6))",
+      "action": "append one sentence after the #compare link",
+      "sentence": "For an iOS and Android app, <a href=\"/blog/mobile-app-design-agency-vs-freelancer/\">choosing between a mobile app designer and an agency</a> also turns on who runs user tests and reviews the first test builds.",
+      "why": "Homepage authority on a provider-choice answer; optional, because the answer is generic and the homepage FAQ feeds FAQPage schema (keep it to one sentence)."
+    }
+  ],
+  "backlinkNotes": "site:uiuxdesignservices.us searches (exact keyword and 'mobile app design freelancer') returned no pages from the site. npm run links:find could not run because Bash is unavailable to the link builder; the orchestrator should run: npm run build && npm run links:find -- \"/blog/mobile-app-design-agency-vs-freelancer/\" \"mobile app design agency vs freelancer\" \"freelance mobile app designer\" \"hire a mobile app designer\" \"freelancer or an agency\". Case-study bodies (anyday-app, parents-connect, tradezella, elia-wellness) have no sentence about choosing a provider; Elia's 'large touch targets' is a tablet questionnaire, a word-only match, so it was skipped. The iOS hub and digital-product-design-services FAQ were skipped as other silos.",
   "visuals": [
     { "type": "skill-coverage map", "idea": "6 skills (research, UX flows, UI, prototype testing, iOS + Android pattern fluency, handoff and build review) x 2 columns (typical solo freelancer, agency team), shaded strong / partial / often missing, captioned 'a pattern to check, not a rule'. Text behind 'Show as text'." },
     { "type": "platform pair card", "idea": "5 iOS vs Android component pairs (tab bar vs navigation bar, back button vs system back, iOS date wheel vs Material date picker, action sheet vs bottom sheet, 44x44 pt vs 48x48 dp touch target), drawn as simple wireframe pairs. Text behind 'Show as text'." },

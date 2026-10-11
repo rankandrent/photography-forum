@@ -32,13 +32,13 @@ Price against quality hides those three variables. A freelancer who designs only
 
 Take an illustrative booking app for fitness studios. On iOS only, with a brand kit and a product manager (PM) who runs hallway tests, it fits one designer. On both stores, with a new onboarding flow tied to a marketing date, it outgrows one person.
 
-For how we run user interface (UI) and user experience (UX) work on iOS and Android, see our mobile app UI UX design services <!-- link: /services/mobile-app-ui-ux-design-services/ | mobile app UI UX design services -->. Write down your three answers before reading on: platforms at launch, test rounds, and who will look at the first build.
+For how we run user interface (UI) and user experience (UX) work on iOS and Android, see our [mobile app UI UX design services](/services/mobile-app-ui-ux-design-services/). Write down your three answers before reading on: platforms at launch, test rounds, and who will look at the first build.
 
 ## What work sits inside a mobile app design project?
 
 **A mobile app design project needs six skills (research, user flows, interface design, test moderation, two-platform fluency and handoff), and a solo freelancer is usually strong in two or three.**
 
-A deliverable can exist without the skill behind it. The hub lists the six deliverables of a mobile app design engagement <!-- link: /services/mobile-app-ui-ux-design-services/#what-does-mobile-app-ui-ux-design-include | the six deliverables of a mobile app design engagement -->; the map shows who tends to cover the skills.
+A deliverable can exist without the skill behind it, so the map tracks who tends to cover each skill rather than which files arrive.
 
 <!-- visual: skill-coverage map. Six rows (research, user flows, interface design, test moderation, iOS + Android pattern fluency, handoff and build review) by two columns (typical solo freelancer, typical agency team), shaded strong / partial / often missing. Caption: "A pattern to check, not a rule." Alt: "Skill-coverage map comparing a typical solo freelancer and a typical agency team across six mobile app design skills" -->
 
@@ -61,9 +61,9 @@ Treat it as a pattern, not a verdict: some freelancers are excellent researchers
 
 **Yes, when they have shipped apps on both platforms and design each one to its own guidelines: Apple's Human Interface Guidelines (HIG) on iOS and Material Design 3 on Android.**
 
-The risk is drawing iOS first and stretching the screens onto Android. Google's official guide to translating iOS designs treats the Android version as planned work: the iOS tab bar becomes a navigation bar, and action sheets become bottom sheets. <!-- source: https://developer.android.com/design/ui/mobile/guides/foundations/translate-designs --> It also separates the in-app up arrow from the system back gesture, which can leave the app.
+The risk is drawing iOS first and stretching the screens onto Android. [Google's official guide to translating iOS designs](https://developer.android.com/design/ui/mobile/guides/foundations/translate-designs) treats the Android version as planned work: the iOS tab bar becomes a navigation bar, and action sheets become bottom sheets. It also separates the in-app up arrow from the system back gesture, which can leave the app.
 
-Touch targets differ as well. Apple sets a button hit region of at least 44×44 points (pt), <!-- source: https://developer.apple.com/design/human-interface-guidelines/buttons --> and Android's accessibility guidance asks for at least 48×48 density-independent pixels (dp). <!-- source: https://support.google.com/accessibility/android/answer/7101858 --> Date pickers differ too.
+Touch targets differ as well. Apple's [design guidance asks for controls of at least 44×44 points (pt)](https://developer.apple.com/design/tips/) so a finger can tap them accurately, and [Android's accessibility guidance on touch target size](https://support.google.com/accessibility/android/answer/7101858) asks for at least 48×48 density-independent pixels (dp). Date pickers differ too.
 
 <!-- visual: platform pair card. Five wireframe pairs, iOS left and Android right: tab bar / navigation bar, back button / system back, iOS date wheel / Material date picker, action sheet / bottom sheet, 44×44 pt / 48×48 dp touch target. Alt: "Five iOS and Android component pairs a designer draws differently on each platform" -->
 
@@ -79,13 +79,13 @@ Touch targets differ as well. Apple sets a button hit region of at least 44×44 
 
 </details>
 
-If your app ships to the App Store only, our iOS app design services <!-- link: /services/ios-app-design-services/ | iOS app design services --> cover that case. For two platforms, ask a freelancer for the Android version of one iOS project in their portfolio: fluent designers show different navigation, stretchers show the same screens.
+If your app ships to the App Store only, our [iOS app design services](/services/ios-app-design-services/) cover that case. For two platforms, ask a freelancer for the Android version of one iOS project in their portfolio: fluent designers show different navigation, stretchers show the same screens.
 
 ## Who runs user testing when a freelancer designs your app?
 
 **Usually you do: many freelance quotes cover design hours, while recruiting participants, moderating sessions and writing up findings fall to you unless the quote names them.**
 
-Usability testing on a clickable prototype is the cheapest way to find a broken flow. In our engagements, the app prototype is tested with 5 users per round, in Maze or in moderated sessions, before developer handoff. Rounds of that size follow Jakob Nielsen's 2000 article, which argues for testing with no more than five users and running as many small tests as you can afford. <!-- source: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/ -->
+Usability testing on a clickable prototype is the cheapest way to find a broken flow. In our engagements, the app prototype is tested with 5 users per round, in Maze or in moderated sessions, before developer handoff. Rounds of that size follow [Jakob Nielsen's 2000 article on testing with five users](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), which argues for testing with no more than five users and running as many small tests as you can afford.
 
 Ask any provider four questions:
 
@@ -100,9 +100,9 @@ If the first two answers are "you", budget your own hours now or choose a provid
 
 **Handoff is where the two models differ most, because the design has to reach developers as buildable specs and someone has to check the first test builds against it.**
 
-Developers build in Swift, Kotlin, React Native or Flutter from specs that must state spacing, states and platform variants. The first builds then arrive through TestFlight, Apple's beta testing service, <!-- source: https://developer.apple.com/testflight/ --> and Google Play Console's internal, closed or open testing tracks. <!-- source: https://support.google.com/googleplay/android-developer/answer/9845334 --> Build review catches what files cannot: a touch target shrunk to the drawn icon, an iOS action sheet on Android, an empty state nobody coded.
+Developers build in Swift, Kotlin, React Native or Flutter from specs that must state spacing, states and platform variants. The first builds then arrive through TestFlight, Apple's beta testing service, and [Google Play Console's internal, closed or open testing tracks](https://support.google.com/googleplay/android-developer/answer/9845334). Build review catches what files cannot: a touch target shrunk to the drawn icon, an iOS action sheet on Android, an empty state nobody coded.
 
-In our 5-step process through test-build review <!-- link: /services/mobile-app-ui-ux-design-services/#how-does-the-mobile-app-ui-ux-design-process-work | our 5-step process through test-build review -->, the last step hands over Figma files, specs and assets, then reviews the first TestFlight and Google Play Console builds. The hub's frequently asked questions explain why one design serves a React Native or Flutter app.
+In our five-step process, the last step hands over Figma files, specs and assets, then reviews the first TestFlight and Google Play Console builds. One design serves a React Native or Flutter app too, with small platform variants such as date pickers and back navigation.
 
 Many freelance contracts end at file delivery. Write build review into the contract (how many builds, response time, who fixes gaps), and require the Figma files and UI kit, organized by platform, to live in your own workspace.
 
@@ -146,7 +146,7 @@ An installed app shows whether the design survived development. Before you hire 
 
 The first three checks matter most because screenshots hide platform fluency; concept shots that never shipped prove little.
 
-Hold every case study, ours included, to scope plus results. The TradeZella web and mobile revamp <!-- link: /case-studies/tradezella/ | TradeZella web and mobile revamp --> names web and mobile app design in scope; after the revamp, TradeZella reported a 40% increase in user interaction and a 25% boost in user retention. The Anyday mobile wallet case study <!-- link: /case-studies/anyday-app/ | Anyday mobile wallet case study --> reports a 40% increase in employee satisfaction from immediate access to wages. Neither result belongs to design alone. Install the apps before the first call, so the call is about what you found.
+Hold every case study, ours included, to scope plus results. The [TradeZella web and mobile revamp](/case-studies/tradezella/) names web and mobile app design in scope; after the revamp, TradeZella reported a 40% increase in user interaction and a 25% boost in user retention. The [Anyday mobile wallet case study](/case-studies/anyday-app/) reports a 40% increase in employee satisfaction from immediate access to wages. Neither result belongs to design alone. Install the apps before the first call, so the call is about what you found.
 
 ## When should you hire a freelancer, and when an agency?
 
@@ -199,9 +199,9 @@ An hourly quote, through Upwork or direct, moves with every revision round; a fi
 
 </details>
 
-Add your estimates for the empty lines to the freelancer total, then compare. If your team can cover one or two empty lines, the freelancer quote holds up; with four, you are comparing different projects. Our mobile engagements run $25,000–$60,000 over 4–8 weeks, and the hub shows what drives mobile app design pricing <!-- link: /services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost | what drives mobile app design pricing -->.
+Add your estimates for the empty lines to the freelancer total, then compare. If your team can cover one or two empty lines, the freelancer quote holds up; with four, you are comparing different projects. Our mobile engagements run $25,000–$60,000 over 4–8 weeks, and the hub shows [what drives mobile app design pricing](/services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost).
 
-Weighing a mobile app design agency vs freelancer usually ends with a quote that has blank lines, and a blank line is unfinished scope, not a flaw. Send us that quote or your flow list <!-- link: /contact/ | send us that quote or your flow list --> and judge our proposal against it line by line. Every project begins with a free consultation and a fixed-scope proposal; the full scope of our mobile app UI UX design work <!-- link: /services/mobile-app-ui-ux-design-services/ | mobile app UI UX design work --> sits on the hub.
+Weighing a mobile app design agency vs freelancer usually ends with a quote that has blank lines, and a blank line is unfinished scope, not a flaw. [Send us that quote or your flow list](/contact/) and judge our proposal against it line by line. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
