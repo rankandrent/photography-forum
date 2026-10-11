@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 11,
   "title": "Austin",
   "city": "Austin",
@@ -15,7 +15,7 @@
   },
   "summary": "Remote-first product UX for Austin SaaS companies, consumer apps, hardware teams and startups.",
   "abstract": "Our remote-first UX design agency, headquartered in Reston, Virginia, partners with Austin founders and product leaders who need to ship faster without guessing what users want. We cover discovery research, UX and UI design, design systems and usability testing for SaaS, consumer and hardware-adjacent software. An audit starts at $5,000, and our Eastern Time day overlaps most of the Austin workday.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-11",
   "sections": [
     {
       "h2": "What role does a UX design agency play for Austin companies?",
@@ -256,5 +256,6 @@
     "Figma",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-11"
 }
