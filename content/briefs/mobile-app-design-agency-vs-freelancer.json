@@ -1,0 +1,282 @@
+{
+  "slug": "mobile-app-design-agency-vs-freelancer",
+  "keyword": "mobile app design agency vs freelancer",
+  "keywordCarrier": {
+    "exactString": "mobile app design agency vs freelancer",
+    "title": "Mobile App Design Agency vs Freelancer: Who Fits Your App?",
+    "metaTitle": "Mobile App Design Agency vs Freelancer: How to Decide",
+    "description": "Mobile app design agency vs freelancer: compare who covers iOS and Android, user testing and developer handoff. Then request a fixed-scope proposal.",
+    "descriptionNote": "148 chars. Use as written: keyword first, then what the reader gets, then the BOFU next step. No pronouns to resolve.",
+    "inBody": "Carrier for the intro's first sentence: 'The mobile app design agency vs freelancer decision is usually framed as price against quality, and that framing is wrong.' Other carriers: 'the mobile app design agency vs freelancer question', 'weighing a mobile app design agency vs freelancer'. Never stack the string in front of another noun ('a mobile app design agency vs freelancer project') and never use it as a bare subject ('mobile app design agency vs freelancer is…').",
+    "secondary": {
+      "should i hire a freelancer or an agency to design my app": "Use as a question in the H2 or FAQ, no carrier needed.",
+      "freelance mobile app designer": "Plain noun phrase: 'a freelance mobile app designer can own both platforms when…'.",
+      "hire a mobile app designer": "Plain verb phrase: 'before you hire a mobile app designer, install three of their shipped apps'."
+    },
+    "density": "Word share target 1-2%. The keyword has 6 words, so at about 2,100 body words the maximum is 0.02 x 2,100 / 6 = 7 uses. Aim for 4-6 exact uses (title, H1, first sentence, one H2, one mid-body sentence, closing section) and use the secondary phrases elsewhere."
+  },
+  "secondary": [
+    "should i hire a freelancer or an agency to design my app",
+    "freelance mobile app designer",
+    "hire a mobile app designer"
+  ],
+  "intent": "commercial investigation (a founder or product manager has decided to get a mobile app designed for iOS and Android and is choosing the provider type: a freelance designer or a design agency)",
+  "volume": null,
+  "kd": null,
+  "dataSource": "WebSearch SERP review on 2026-10-11. Semrush returned no_api_units on the first call (no volume, KD or traffic data). WebFetch returned DNS errors (ENOTFOUND) for codewave.com, lowcode.agency and figma.com, so competitor coverage is inferred from search snippets. Volume and KD are unknown: do not quote them anywhere.",
+  "hub": "mobile-app-ui-ux-design-services",
+  "services": ["mobile-app-ui-ux-design-services"],
+  "industries": ["startups"],
+  "author": "saliha-shahzad",
+  "authorWhy": "Saliha Shahzad (UI/UX Designer, content/home.ts) has not written yet, and the post turns on hands-on mobile UI work: HIG vs Material 3 component pairs, touch targets, Figma handoff and reviewing test builds. Rejected: shahmir-farooq (Sr. Communication Designer) has not written either, but his role fits a brand or app store asset topic better, so keep him for that. sahar-asif and faizan-khan have each written 2 posts. Contributor: umar-sarwar (default).",
+  "type": "Comparison",
+  "funnel": "bofu",
+  "funnelWhy": "New silo (0 posts in fingerprints.json and ledger.json), so the first post is BOFU. The SERP supports it: page 1 for 'hire mobile app designer agency vs freelancer', 'freelance app designer vs design agency which is better for startup app' and 'mobile app design agency vs freelancer vs in-house designer' is provider-comparison pages (codewave, lowcode.agency, dribbble content hub, buildfire, propelrr, weareaffective, figma resource library on design cost by provider), with marketplaces (Upwork, Fiverr, Toptal) on the 'hire mobile app ui ux designer' variant. None of the results are how-to guides. Risk: most ranking pages compare development vendors rather than design vendors. That is the gap we fill, and it does not make the query MOFU.",
+  "serviceSupport": 5,
+  "beats": "https://codewave.com/insights/freelancers-vs-design-agencies-mobile-app-design/",
+  "alsoOutranks": [
+    "https://www.lowcode.agency/blog/agency-vs-freelancer-vs-inhouse-mobile-app",
+    "https://content-hub.dribbble.com/tips/app-development-company-vs-freelancer-vs-in-house-team/",
+    "https://www.figma.com/resource-library/ui-ux-design-cost/",
+    "https://weareaffective.com/learning-centre/should-i-hire-a-freelancer-to-build-my-mobile-app",
+    "https://propelrr.com/blog/freelance-mobile-app-developer-vs-agency"
+  ],
+  "centralEntity": "mobile app design provider (design agency vs freelance designer) for an iOS and Android app",
+  "entities": [
+    "mobile app UI UX design",
+    "freelance mobile app designer",
+    "design agency",
+    "Apple Human Interface Guidelines",
+    "Material Design 3",
+    "iOS",
+    "Android",
+    "Figma",
+    "Maze",
+    "usability testing",
+    "TestFlight",
+    "Google Play Console",
+    "React Native",
+    "Flutter",
+    "Swift",
+    "Kotlin",
+    "App Store",
+    "Google Play",
+    "WCAG 2.2",
+    "Upwork"
+  ],
+  "attributes": [
+    "platforms in scope (iOS, Android or both)",
+    "number of user flows",
+    "number of user test rounds and who recruits participants",
+    "skills covered: research, UX flows, UI, prototyping, testing, handoff",
+    "platform pattern fluency (tab bar vs navigation bar, back navigation, date pickers, touch targets 44x44 pt vs 48x48 dp)",
+    "parallel vs serial work (calendar time)",
+    "availability after handoff (test build review, fixes)",
+    "single point of accountability",
+    "continuity when a person is sick or leaves",
+    "UI kit ownership and Figma file structure",
+    "quote basis (fixed scope vs hourly) and what each line includes",
+    "shipped, installable apps in the portfolio"
+  ],
+  "ngrams": [
+    "freelance mobile app designer",
+    "mobile app design",
+    "design agency",
+    "ios and android",
+    "material design 3",
+    "human interface guidelines",
+    "user testing",
+    "developer handoff",
+    "test build",
+    "ui kit",
+    "fixed-scope proposal",
+    "mobile app ui ux design services"
+  ],
+  "questions": [
+    "Should I hire a freelancer or an agency to design my app?",
+    "Can one freelance designer design for both iOS and Android?",
+    "Who runs user testing when a freelancer designs the app?",
+    "What happens after the designer hands off the Figma files?",
+    "How long does a freelancer take compared with an agency for the same app?",
+    "How do I check a mobile designer's portfolio before hiring?",
+    "How do I compare a freelancer's hourly quote with an agency's fixed price?",
+    "Can I start with a freelancer and move to an agency later?"
+  ],
+  "serpGaps": [
+    "Nearly every ranking page compares app DEVELOPMENT vendors (lowcode.agency, dribbble content hub, buildfire, propelrr, weareaffective). Codewave's page is the only design-specific one, it is dated February 2024, and its snippets stay generic (cost, flexibility, marketplaces). No page breaks a mobile app design project into the skills it needs and shows which of them one person usually covers.",
+    "No page addresses the two-platform problem: designing to Apple HIG and Material Design 3 at once (touch targets 44x44 pt vs 48x48 dp, tab bar vs navigation bar, back navigation). This is the clearest mobile-specific reason the choice changes, and Google publishes an official iOS-to-Android translation guide to cite.",
+    "No page says who recruits and runs user tests in each model, though testing a prototype before code is the main way mobile design lowers rework.",
+    "No page covers life after handoff: reviewing the first TestFlight and Google Play Console test builds against the design, and whether a freelancer is still available then.",
+    "The pages compare hourly rates, but no page compares calendar time (one person working in sequence vs a team working in parallel) for the same scope.",
+    "Portfolio advice is spread over separate dev-agency pages (lowcode.agency portfolio checklist, dribbble, phenomenonstudio FAQ). No comparison post gives a hands-on 'install their apps on your phone' test that works for freelancers and agencies alike.",
+    "Agency pages argue only for agencies. No page routes the reader honestly (when a freelancer is the better buy) and then shows how to make quotes comparable line by line."
+  ],
+  "outline": [
+    {
+      "h2": "Is a freelancer or an agency better for mobile app design?",
+      "answerHint": "Neither by default. The answer depends on three things: how many platforms the app ships on, how many rounds of user testing it needs, and who will review the build after handoff. Price against quality is the wrong axis.",
+      "points": [
+        "Intro (contrarian take, see variety): the usual framing is price against quality. A strong freelancer often designs screens as good as an agency's, so the real difference is in the work around the screens. Then say what this post covers.",
+        "Answer the H2 in one bold sentence (a direct answer, without a Yes/No opener, because this is a 'which' question).",
+        "Link UP to the hub early with the anchor 'mobile app UI UX design services'.",
+        "Scope sentence: this post compares design providers for an iOS and Android app. Generic freelancer vs in-house vs agency hiring is covered on the homepage comparison, so do not rebuild that table here."
+      ]
+    },
+    {
+      "h2": "What work sits inside a mobile app design project?",
+      "answerHint": "Six kinds of work: research, user flows, interface design, a tested prototype, a UI kit for both platforms and developer handoff. A solo freelancer is usually strong in two or three of them.",
+      "points": [
+        "Do NOT re-list the hub's 6 deliverables with their descriptions. Frame the section by SKILL (researcher, interaction/UX designer, UI designer, test moderator, platform specialist, handoff/spec owner) and deep-link to the hub section #what-does-mobile-app-ui-ux-design-include for the deliverables.",
+        "Visual: a skill-coverage map. Rows are the 6 skills, and the columns are 'typical solo freelancer' and 'agency team'. Shade strong / partial / usually missing, and label it 'pattern, not a rule'. Its text goes behind 'Show as text'.",
+        "Honest note: some freelancers are excellent researchers, so the reader should ask which of the six a candidate covers instead of assuming."
+      ]
+    },
+    {
+      "h2": "Can one freelance designer cover both iOS and Android?",
+      "answerHint": "Yes, if they have shipped apps on both platforms and design each one to its own guidelines: Apple HIG on iOS and Material Design 3 on Android. Many freelancers design iOS first and stretch the same screens onto Android.",
+      "points": [
+        "Boolean H2, so the answer starts with 'Yes'.",
+        "Concrete differences, citing the guidelines: minimum touch target 44x44 pt (Apple HIG) vs 48x48 dp (Material Design 3), tab bar vs navigation bar, system back navigation on Android, date pickers. These match the hub's UI kit and FAQ wording.",
+        "Cite Google's official guide to translating iOS designs to Android (developer.android.com). Do not copy its 10 steps; use it as the source for the point that the translation is planned work, not a reskin.",
+        "Test for the buyer: ask a freelancer for the Android version of one iOS project in their portfolio.",
+        "Visual: a platform pair card with 5 component pairs (iOS on the left, Android on the right) and the touch-target sizes. Its text goes behind 'Show as text'.",
+        "If the reader ships to the App Store only, link once to iOS app design services (the single allowed cross-hub link)."
+      ]
+    },
+    {
+      "h2": "Who runs user testing when a freelancer designs your app?",
+      "answerHint": "Usually you do. Most freelance quotes cover the design hours, while recruiting participants, moderating sessions and writing up findings fall to the client unless the quote names them.",
+      "points": [
+        "Our way (hub wording): a clickable app prototype is tested with 5 users per round, in Maze or in moderated sessions, before developer handoff. Cite Nielsen Norman Group's 'test with 5 users' article as the reason for rounds of 5.",
+        "Questions to put to either provider: who recruits, who moderates, how many rounds, and what the output is (findings plus the changed screens).",
+        "Keep it to a short paragraph and 4 bullet questions. No table here."
+      ]
+    },
+    {
+      "h2": "What happens at developer handoff and the first test build?",
+      "answerHint": "Handoff is where the two models differ most. The design has to reach developers as specs they can build in Swift, Kotlin, React Native or Flutter, and someone has to check the first TestFlight and Google Play Console test builds against it.",
+      "points": [
+        "Our step 5 (hub): Figma files, specs and assets go to the developers, and we review the first TestFlight and Google Play Console test builds. Deep-link to the hub section #how-does-the-mobile-app-ui-ux-design-process-work.",
+        "Freelancer risk: the contract often ends at file delivery, and the person has moved to the next client by the time the build arrives. Ask for build review in writing.",
+        "One design for React Native or Flutter: link to the hub FAQ instead of re-answering it.",
+        "Stay silent on whether the agency also writes the code (see notes: conflict)."
+      ]
+    },
+    {
+      "h2": "Same app, two plans: how do the timelines compare?",
+      "answerHint": "On the same scope, a solo freelancer works in sequence while a team runs research, UI and testing side by side, so the calendar time differs even when the hours are similar.",
+      "points": [
+        "Visual (before/after style): twin timeline for an ILLUSTRATIVE 6-flow iOS and Android app. Top track: one freelancer, with phases in a row. Bottom track: an agency team, with phases overlapping over 4-8 weeks (hub timeline: discovery 3-5 days, flows and wireframes 5-10, prototype and testing 5-10, visual UI 5-10, handoff 2-5). Label the freelancer track 'illustrative, varies by person'. Its text goes behind 'Show as text'.",
+        "Do not invent a freelancer duration as a fact. Present it as the sum of the same phase lengths with no overlap, and say so.",
+        "Mention continuity: a solo designer's illness or a new client pauses the whole timeline."
+      ]
+    },
+    {
+      "h2": "How do you test a designer's mobile portfolio on your own phone?",
+      "answerHint": "Install 2-3 of their shipped apps from the App Store and Google Play and spend 20 minutes on them. Check the touch targets, back navigation, larger text settings and the empty and error states, then read one case study for its scope and results.",
+      "points": [
+        "Visual: a 'phone in hand' checklist card with 8 checks. Its text goes behind 'Show as text'.",
+        "Case-study bar: a useful case study states the scope, platforms, problem and measured results. Show this with OUR real case studies and their exact numbers only (see notes), e.g. TradeZella: web and mobile app design in scope, user interaction +40%, user retention +25%. Anyday App: mobile wallet revamp, employee satisfaction +40%, 14 hours saved per week. Use these as DOWN links (max 2 in the body).",
+        "Do not attribute the case-study results to design alone; write 'after the revamp' and keep each client's own wording.",
+        "Dribbble-only shots without shipped apps are a weak signal for both freelancers and agencies. Say this without naming the platform negatively."
+      ]
+    },
+    {
+      "h2": "When should you hire a freelancer, and when an agency?",
+      "answerHint": "Hire a freelancer for a single-platform app with a few flows, a fixed visual brief and a product manager who can run testing. Hire an agency when the app ships on iOS and Android, needs tested flows before code, or has a launch date the whole team depends on.",
+      "points": [
+        "Visual: a decision tree with 4 questions (platforms? tested before code? someone in-house runs testing and handoff? hard launch date?) leading to 'freelancer', 'freelancer + your PM' or 'agency'. Its text goes behind 'Show as text'.",
+        "Give 3 honest freelancer situations (e.g. a UI refresh of an existing app with a working design system, a single-flow feature, a clickable investor demo) and 3 agency situations. Each line names the situation and the reason, and no line is a straw man.",
+        "Stage note: freelancer for a demo now, agency once the app ships on both stores. Avoid copying the generic 'MVP favours freelancers' line from lowcode.agency.",
+        "Lead moment 1: the reader recognises a two-platform, tested-before-code case. Writer adds one specific invitation in site wording, e.g. 'we run this as a 4-8 week engagement that ends with a review of your first test builds'."
+      ]
+    },
+    {
+      "h2": "How do you compare a freelancer's quote with an agency's?",
+      "answerHint": "Put both quotes on the same lines: platforms, flows, test rounds, UI kit, app store assets and post-handoff build review. Price the lines the freelancer leaves out (recruiting, moderation, Android variants) before you compare totals.",
+      "points": [
+        "Visual: a line-item comparison card with 7 lines, where each line marks 'in quote / not in quote / your cost'. No market prices. Its text goes behind 'Show as text'.",
+        "State our range once: $25,000-$60,000 for 4-8 weeks, driven by flows, platforms, test rounds and UI kit size. Deep-link to the hub #how-much-does-mobile-app-ui-ux-design-cost and do not restate the MVP/full examples from the hub.",
+        "Hourly vs fixed: an hourly quote moves with revisions, while a fixed-scope proposal names its lines. Do not quote any freelancer hourly rate unless the fact-checker verifies a named source (see notes).",
+        "Lead moment 2 (main offer, see leadAngle). Second UP link to the hub near the end. Close with the next step to /contact/."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a freelancer cheaper than an agency for mobile app design?",
+      "hint": "Usually per hour, not always per project. Explain the hidden lines (recruiting and moderating tests, Android variants, build review) and point to the quote-comparison section. Give no market rates."
+    },
+    {
+      "q": "Can I start with a freelancer and switch to an agency later?",
+      "hint": "Yes. Ask the freelancer for organised Figma files and a component library you own, so the next team inherits them. A mobile app redesign starts with a review of the current app (hub FAQ wording)."
+    },
+    {
+      "q": "Do I need an in-house designer instead?",
+      "hint": "Only when design work never stops. For a first app project, an outside team or freelancer is faster to start. Keep it to 2-3 sentences and do not rebuild the homepage comparison table."
+    },
+    {
+      "q": "Should the same designer do the iOS and the Android version?",
+      "hint": "Yes, when they design each platform to its own guidelines from one shared user flow map (hub wording). Otherwise the Android app ends up as a stretched copy of the iOS app."
+    },
+    {
+      "q": "What should a mobile app design contract include?",
+      "hint": "Platforms, flows, test rounds, deliverables (Figma files, UI kit, app store assets), ownership of files, and build review after handoff. Give no legal advice."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services" },
+    { "href": "/services/mobile-app-ui-ux-design-services/#what-does-mobile-app-ui-ux-design-include", "anchor": "the six deliverables of a mobile app design engagement" },
+    { "href": "/services/mobile-app-ui-ux-design-services/#how-does-the-mobile-app-ui-ux-design-process-work", "anchor": "our 5-step process through test-build review" },
+    { "href": "/services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost", "anchor": "what drives mobile app design pricing" },
+    { "href": "/services/ios-app-design-services/", "anchor": "iOS app design services" },
+    { "href": "/case-studies/tradezella/", "anchor": "TradeZella web and mobile revamp" },
+    { "href": "/case-studies/anyday-app/", "anchor": "Anyday mobile wallet case study" },
+    { "href": "/case-studies/parents-connect/", "anchor": "Parents Connect case study" },
+    { "href": "/case-studies/elia-wellness/", "anchor": "Elia Wellness case study" },
+    { "href": "/contact/", "anchor": "request a fixed-scope proposal" }
+  ],
+  "internalTargetsNote": "All files verified: content/services/mobile-app-ui-ux-design-services.json, content/services/ios-app-design-services.json, content/case-studies/{tradezella,anyday-app,parents-connect,elia-wellness}.md, app/contact/page.tsx. Section ids come from sectionId() in components/sections/SemanticSections.tsx. BOFU: keep the links lean (about 5-6 in the body). Use the hub 2x (early plus one deep link), at most 2 case studies and 1 cross-hub link (iOS), then contact. Parents Connect and Elia are spares in case the writer needs another example.",
+  "externalSources": [
+    { "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility", "why": "Apple HIG: minimum 44x44 pt hit target for iOS controls (fact-checker: confirm which HIG page carries the figure)." },
+    { "url": "https://m3.material.io/foundations/designing/structure", "why": "Material Design 3: 48x48 dp minimum touch target (fact-checker: confirm the page; the accessibility basics page is the alternative)." },
+    { "url": "https://developer.android.com/design/ui/mobile/guides/foundations/translate-designs", "why": "Google's official guide to translating an iOS design to Android. Source for the point that an Android version is planned translation work. Cite it and do not copy its steps." },
+    { "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/", "why": "Nielsen Norman Group: the reasoning behind test rounds of 5 users (2000 article; date it)." },
+    { "url": "https://developer.apple.com/testflight/", "why": "Apple TestFlight: beta test builds on iOS, where the design is reviewed before release." },
+    { "url": "https://support.google.com/googleplay/android-developer/answer/9845334", "why": "Google Play Console internal/closed testing tracks (fact-checker: confirm URL and track names)." }
+  ],
+  "visuals": [
+    { "type": "skill-coverage map", "idea": "6 skills (research, UX flows, UI, prototype testing, iOS + Android pattern fluency, handoff and build review) x 2 columns (typical solo freelancer, agency team), shaded strong / partial / often missing, captioned 'a pattern to check, not a rule'. Text behind 'Show as text'." },
+    { "type": "platform pair card", "idea": "5 iOS vs Android component pairs (tab bar vs navigation bar, back button vs system back, iOS date wheel vs Material date picker, action sheet vs bottom sheet, 44x44 pt vs 48x48 dp touch target), drawn as simple wireframe pairs. Text behind 'Show as text'." },
+    { "type": "twin timeline (before/after)", "idea": "One illustrative 6-flow iOS and Android app. Top track: one freelancer with phases in sequence. Bottom track: an agency team with overlapping phases inside 4-8 weeks, using the hub phase lengths. The freelancer track is labelled 'illustrative'." },
+    { "type": "phone-in-hand checklist card", "idea": "8 checks for testing a designer's shipped app in 20 minutes: touch targets, back navigation, larger text setting, dark mode, empty state, error state, onboarding length, case-study scope + results. Text behind 'Show as text'." },
+    { "type": "decision tree", "idea": "4 yes/no questions leading to freelancer / freelancer + your PM / agency. Text behind 'Show as text'." },
+    { "type": "line-item quote comparison card", "idea": "7 quote lines (platforms, flows, test rounds + recruiting, UI kit, app store assets, file ownership, test-build review), each with checkboxes for 'freelancer quote', 'agency quote' and 'your extra cost'. No prices. Text behind 'Show as text'." }
+  ],
+  "leadAngle": "Two moments. (1) In 'When should you hire a freelancer, and when an agency?', a reader whose app ships on iOS and Android, needs testing before code or has a fixed launch date recognises the agency branch of the decision tree. (2) In the quote-comparison section, the reader has a freelancer quote with empty lines in hand. Offer: send the freelancer's quote or your flow list and get a fixed-scope proposal within the published $25,000-$60,000 range for a 4-8 week iOS and Android engagement that includes user testing and a review of the first TestFlight and Google Play test builds. If a freelancer fits better, we say so.",
+  "variety": {
+    "type": "Comparison",
+    "introStyle": "contrarian take ('price vs quality is the wrong axis; the screens are rarely where it goes wrong')",
+    "h2Frames": ["which (direct answer)", "what work", "can (yes/no)", "who runs", "what happens", "same app, two plans", "how to test", "when (routing)", "how to compare", "FAQs"],
+    "sectionOrder": "direct answer -> skill map -> two-platform test -> testing ownership -> handoff and test builds -> twin timeline -> phone portfolio test -> routing decision tree -> line-item quote comparison -> FAQs",
+    "visualTypes": ["skill-coverage map", "platform pair card", "twin timeline (before/after)", "phone-in-hand checklist card", "decision tree", "line-item quote comparison card"],
+    "ctaAngle": "send the freelancer quote you already have -> we fill its empty lines in a fixed-scope proposal (or tell you the freelancer fits)",
+    "listStyle": "short question bullets per provider, scenario lines (situation + reason) for routing, 1 line-item card; no pros/cons columns, no scorecard, no ledger, no numbered RFP sections",
+    "differsFrom": "Last 3 site-wide (design-system-roi Guide/question, web-app-design-rfp Checklist/definition, is-discovery-phase-worth-it Article/mini case): differs on type, intro, H2 frames, section order, visuals, CTA angle and list style (7 of 7). The nearest structural relative is ux-audit-agency-vs-freelancer (4 posts back, Comparison). This post shares only the type with it: no data-point intro, no 4-column provider matrix, no hybrid flow, no scope sheet, no 'same finding four ways'. Silo has no posts yet."
+  },
+  "notes": [
+    "New silo: 0 posts in mobile-app-ui-ux-design-services (fingerprints.json, ledger.json). This is the silo's first BOFU post; the next one is MOFU (candidate parked in competitors.json: 'design android version of ios app').",
+    "Exact keyword: 'mobile app design agency vs freelancer'. Put it in the title, H1, slug, the first sentence (carrier above) and the description (prescribed above). Every keyword with 'vs' has a carrier in keywordCarrier. No secondary or ngram entry contains 'vs'.",
+    "Cannibalisation (hub content/services/mobile-app-ui-ux-design-services.json, anchor 'mobile app UI UX design services'): the hub owns what it is, the 6 deliverables, the 5-step process, benefits, 'vs iOS app design', cost ($25,000-$60,000, 4 price factors, MVP vs full examples), when to hire, and FAQs on both platforms, one design for React Native/Flutter, prototype testing, redesigning an existing app and duration. Do not answer any of these; deep-link instead. Keywords rejected for this reason: 'mobile app design cost', 'mobile app redesign cost', 'mobile app design process', 'how long does app design take', 'mobile app design deliverables'.",
+    "iOS overlap: ios-app-design-services owns iPhone/iPad/Apple Watch, HIG review, SwiftUI specs, Dynamic Type and VoiceOver. Keep the post cross-platform. In the portfolio test, write 'larger text setting' instead of 'Dynamic Type' and do not target any iPhone-only query. Link the iOS hub once for App-Store-only readers.",
+    "Other overlaps to avoid: content/home.ts owns the generic 'Freelancer, in-house hire, or design agency' table (rows: time to first design, fails when, etc.); digital-product-design-services.json FAQ 'What is the difference between a product design agency and a freelancer?'; st-louis-ux-design-agency.json H2 'Freelancer, in-house designer or a St. Louis UX design agency?'; ux-audit-agency-vs-freelancer (audit providers). Keep every section mobile-specific (two platforms, test builds, app stores) and never generalise into design hiring.",
+    "ui-ux-design-services-for-startups and industries/startups.json own MVP design and 'Does a pre-seed startup need a UI designer?'. Mention an investor demo or MVP only as one routing line. Do not link the startups hub (the one cross-hub link goes to iOS).",
+    "CONFLICT for the orchestrator (open since 10-09): the content/home.ts FAQ says 'We deliver design and development', but this hub's process ends at developer handoff plus test-build review. The writer must stay silent on whether we write the app code and describe only design through test-build review.",
+    "CONFLICT / unconfirmed fact: the home.ts pricing card for the $25,000-$60,000, 4-8 week 'Research & UX design sprint' says '2-4 designers'. The mobile hub has the same price and timeline but gives no team size. Do not state a designer count for the mobile engagement unless the orchestrator confirms it. Write 'a team' or 'several designers working in parallel'.",
+    "Real case studies (exact wording and numbers only). TradeZella: scope 'product revamp, discovery, stakeholder interviews, UI/UX design, and web and mobile app design'; results user interaction +40%, user retention +25%, new customers +30%, Trustpilot 4.7; the challenge listed 'An inconsistent experience across devices' and 'No onboarding guide'. Anyday App (XTM Inc.): scope 'product revamp, strategy, web app, mobile app and website'; results employee satisfaction +40%, $51,000 average savings per year per location, 14 hours saved per week, business clients +20%. Parents Connect: forum participation +45%, average time on platform +10%; mobile screens are map, article and chat. Elia Wellness: registrations +40%; the case study says the tablet questionnaire uses 'large touch targets and simple rating scales' (good example for the touch-target point). Never attribute a result to the design alone, and never present the Anyday quote (Crystal Yeoman of Boston Pizza, an Anyday customer) as a testimonial about our agency. Avoid the Elia quote: it thanks the team for 'building' the platform, which feeds the design/development conflict above.",
+    "Owner rule: never mention Apex HCM, Fortna or ToolsGroup.",
+    "Honesty, do not use: competitor and vendor rates or totals ('$50,000-$200,000 agency app', '$100-$250/hr agency vs $40-$150 freelancer' from lowcode.agency; Figma's '$20-40/hr freelancer, $25-49/hr agency, $95,000 in-house'; secondtalent '$52-$127/hr'; '£15,000-30,000 vs £25,000-50,000'; Bunny Studio 'only 4% pass'; Vintti 'save up to 60%'; '30-50% of original development cost' redesign claim). Use only our own $25,000-$60,000 range and figures sourced to Apple, Google or Nielsen Norman Group. If the writer wants a freelancer pay figure, it must come from a named public source (e.g. the US BLS Occupational Outlook for web developers and digital designers) and pass the fact-check. Otherwise leave it out.",
+    "Originality: the beats page (codewave, Feb 2024) runs definition -> freelancer section (skills, Upwork/Freelancer/Fiverr) -> agency section -> pros/cons -> verdict. Do not use that order, a per-option pros/cons layout or the marketplace list. Our structure follows the work itself (skills -> platforms -> testing -> handoff -> calendar -> portfolio test -> routing -> quote lines). Do not reuse the dribbble or lowcode.agency stage framing ('MVPs favor agencies or freelancers, mature products favor in-house') or their comparison tables. QA checks 5-gram overlap with the beats page (max 5%).",
+    "Fair tone is the lead angle: recommend a freelancer where one fits, and keep the agency case to concrete capabilities (two platforms, test rounds, build review) without fluff."
+  ]
+}

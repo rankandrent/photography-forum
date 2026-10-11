@@ -1,6 +1,6 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
@@ -17,13 +17,13 @@
     { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency"], "source": "WebSearch 2026-10-06, 2026-10-07" },
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
-    { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design", "digital-product-design-services"], "seenFor": ["saas product redesign", "facelift vs full redesign saas", "product discovery phase cost", "how much does product design cost"], "source": "WebSearch 2026-10-06, 2026-10-10" },
+    { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design", "digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["saas product redesign", "facelift vs full redesign saas", "product discovery phase cost", "how much does product design cost", "how to evaluate a mobile app design agency portfolio"], "source": "WebSearch 2026-10-06, 2026-10-10, 2026-10-11" },
     { "domain": "devsquad.com", "kind": "agency blog", "silos": ["saas-ux-design", "web-app-design-services"], "seenFor": ["saas product redesign", "product redesign examples", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-06, 2026-10-09" },
     { "domain": "saasfactor.co", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to hire a ux design agency for saas", "when saas needs a ux redesign", "saas onboarding redesign", "is a design system worth the investment"], "source": "WebSearch 2026-10-06, 2026-10-08" },
     { "domain": "sda.company", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency"], "source": "WebSearch 2026-10-06" },
     { "domain": "chameleon.io", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["how to redesign a saas product without losing users", "reducing onboarding drop-off activation"], "source": "WebSearch 2026-10-06" },
     { "domain": "blog.flowpoint.ai", "kind": "analytics tool blog", "silos": ["ux-audit-services"], "seenFor": ["who should do a ux audit", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
-    { "domain": "codewave.com", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit freelancer vs agency", "ux audit agency vs freelancer vs ai tool"], "source": "WebSearch 2026-10-07" },
+    { "domain": "codewave.com", "kind": "agency blog", "silos": ["ux-audit-services", "mobile-app-ui-ux-design-services"], "seenFor": ["ux audit freelancer vs agency", "ux audit agency vs freelancer vs ai tool", "hire mobile app designer agency vs freelancer", "freelance app designer vs design agency which is better for startup app"], "source": "WebSearch 2026-10-07, 2026-10-11 (WebFetch DNS-blocked)" },
     { "domain": "designstudiouiux.com", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit tools"], "source": "WebSearch 2026-10-07" },
     { "domain": "theskinsfactory.com", "kind": "agency Q&A blog", "silos": ["ux-audit-services", "web-app-design-services"], "seenFor": ["ux audit cost", "ux audit proposal scope", "how to prepare for a ux audit", "legacy enterprise software ux redesign", "modernize legacy software without disrupting users"], "source": "WebSearch 2026-10-07, 2026-10-09" },
     { "domain": "saashero.net", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit vs expert review"], "source": "WebSearch 2026-10-07" },
@@ -45,20 +45,29 @@
     { "domain": "simpalm.com", "kind": "app development agency blog", "silos": ["web-app-design-services"], "seenFor": ["how to write a web app rfp", "web app rfp template", "web application design rfp scope user roles", "how to write a website design rfp"], "source": "WebSearch 2026-10-09" },
     { "domain": "wapiti.digital", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web design rfp template questions", "web app design rfp questions to ask design agency", "web application rfp scope"], "source": "WebSearch 2026-10-09" },
     { "domain": "sixfeetup.com", "kind": "development agency blog", "silos": ["web-app-design-services"], "seenFor": ["how to write an rfp for a web portal project", "how to write a web app rfp"], "source": "WebSearch 2026-10-09" },
-    { "domain": "chopdawg.com", "kind": "app development agency blog", "silos": ["web-app-design-services"], "seenFor": ["how to write an app development rfp", "how to write a web app rfp"], "source": "WebSearch 2026-10-09" },
+    { "domain": "chopdawg.com", "kind": "app development agency blog", "silos": ["web-app-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["how to write an app development rfp", "how to write a web app rfp", "freelance mobile app designer cost vs agency"], "source": "WebSearch 2026-10-09, 2026-10-11" },
     { "domain": "wethos.co", "kind": "freelance platform blog", "silos": ["web-app-design-services"], "seenFor": ["web application scope of work", "web app design statement of work template"], "source": "WebSearch 2026-10-09" },
     { "domain": "thinkcompany.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services"], "seenFor": ["design system agency vs in-house", "how to redesign an enterprise application without disrupting users", "lessons from modernizing legacy applications"], "source": "WebSearch 2026-10-08, 2026-10-09" },
     { "domain": "wearearch.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app design agency", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-09" },
     { "domain": "parallelhq.com", "kind": "agency blog (listicle)", "silos": ["web-app-design-services", "saas-ux-design", "digital-product-design-services"], "seenFor": ["web app design agency", "web app design services top 10", "product design pricing benchmarks", "fixed price vs time and materials product design agency"], "source": "WebSearch 2026-10-09, 2026-10-10" },
     { "domain": "kolonell.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app redesign cost", "legacy app ui ux redesign cost", "design agency rfp scoring"], "source": "WebSearch 2026-10-09" },
-    { "domain": "lowcode.agency", "kind": "app development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["is a discovery phase worth it", "is mobile app discovery phase worth it", "mobile app discovery phase"], "source": "WebSearch 2026-10-10 (WebFetch DNS-blocked)" },
+    { "domain": "lowcode.agency", "kind": "app development agency blog", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["is a discovery phase worth it", "is mobile app discovery phase worth it", "mobile app discovery phase", "mobile app design agency vs freelancer vs in-house designer", "mobile app agency portfolio checklist what to look for", "how to evaluate a mobile app design agency portfolio"], "source": "WebSearch 2026-10-10, 2026-10-11 (WebFetch DNS-blocked)" },
     { "domain": "acquaintsoft.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["software discovery phase cost why skipping fails", "is a discovery phase worth it"], "source": "WebSearch 2026-10-10 (WebFetch DNS-blocked)" },
     { "domain": "upsilonit.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["discovery phase vs mvp", "ux discovery deliverables", "discovery phase worth the cost"], "source": "WebSearch 2026-10-10" },
     { "domain": "dogtownmedia.com", "kind": "app development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["is a discovery phase worth it", "importance of discovery phase app project"], "source": "WebSearch 2026-10-10" },
     { "domain": "collectiveidea.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["is a discovery phase worth it"], "source": "WebSearch 2026-10-10" },
     { "domain": "smartdev.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["product discovery phase deliverables", "product discovery phase before design and development"], "source": "WebSearch 2026-10-10" },
     { "domain": "blog.logrocket.com", "kind": "product management publisher (tool blog)", "silos": ["digital-product-design-services"], "seenFor": ["is a product discovery phase worth it", "can you skip product discovery"], "source": "WebSearch 2026-10-10" },
-    { "domain": "dribbble.com", "kind": "design marketplace content hub (skip as a target)", "silos": ["digital-product-design-services"], "seenFor": ["how to hire a product design agency"], "source": "WebSearch 2026-10-10" }
+    { "domain": "dribbble.com", "kind": "design marketplace content hub (skip as a target)", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["how to hire a product design agency", "mobile app design agency vs freelancer vs in-house designer", "mobile app agency portfolio checklist what to look for"], "source": "WebSearch 2026-10-10, 2026-10-11" },
+    { "domain": "weareaffective.com", "kind": "app development agency learning centre", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["mobile app design agency vs freelancer vs in-house designer", "freelance mobile app designer cost vs agency"], "source": "WebSearch 2026-10-11" },
+    { "domain": "propelrr.com", "kind": "digital agency blog", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["hire mobile app designer agency vs freelancer", "freelance app designer vs design agency which is better for startup app"], "source": "WebSearch 2026-10-11" },
+    { "domain": "buildfire.com", "kind": "app builder blog", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["hire mobile app designer agency vs freelancer"], "source": "WebSearch 2026-10-11" },
+    { "domain": "figma.com", "kind": "design tool resource library (rates are do-not-use)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["mobile app design agency vs freelancer vs in-house designer", "ui ux design cost freelancer agency in-house"], "source": "WebSearch 2026-10-11 (WebFetch DNS-blocked)" },
+    { "domain": "mindsea.com", "kind": "app agency blog", "silos": ["mobile-app-ui-ux-design-services", "web-app-design-services"], "seenFor": ["mobile app redesign cost", "questions to ask a mobile app design agency before hiring"], "source": "WebSearch 2026-10-09, 2026-10-11" },
+    { "domain": "cleveroad.com", "kind": "development agency blog", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["mobile app redesign cost", "how much does it cost to design an app"], "source": "WebSearch 2026-10-11" },
+    { "domain": "perfectiongeeks.com", "kind": "development agency blog", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["product discovery phase cost", "mobile app redesign cost", "cost of app redesign vs rebuild", "questions to ask a mobile app development company"], "source": "WebSearch 2026-10-10, 2026-10-11" },
+    { "domain": "uxdesign.cc", "kind": "publisher (Medium publication)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["ios vs android design", "adapt ios app design to android"], "source": "WebSearch 2026-10-11" },
+    { "domain": "developer.android.com", "kind": "official Google documentation (citable source, not a target)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["adapt ios app design to android material design 3"], "source": "WebSearch 2026-10-11" }
   ],
   "topPosts": [
     {
@@ -307,7 +316,7 @@
       "silo": "design-system-services",
       "serviceSupport": 5,
       "status": "candidate",
-      "notes": "Deferred for variety (ux-audit-agency-vs-freelancer was a vs post on 2026-10-07). No design-system-specific page ranks (idealogic, codal, superside are generic), so a later BOFU on 'outsource design system build, keep governance in-house' has an open SERP. Must not repeat the home.ts freelancer/in-house/agency table."
+      "notes": "Deferred for variety (ux-audit-agency-vs-freelancer was a vs post on 2026-10-07, and mobile-app-design-agency-vs-freelancer was briefed on 2026-10-11). No design-system-specific page ranks (idealogic, codal, superside are generic), so a later BOFU on 'outsource design system build, keep governance in-house' has an open SERP. Must not repeat the home.ts freelancer/in-house/agency table."
     },
     {
       "domain": "simpalm.com",
@@ -434,6 +443,63 @@
       "serviceSupport": 5,
       "status": "candidate",
       "notes": "Deferred: repeats the choose-ux-research-agency format, and the hub FAQ already answers agency vs freelancer. dribbble content-hub, awesomic.com and andabove.com ('10 questions to ask before hiring a digital product agency') rank. Revisit later with an idea-to-product-specific angle."
+    },
+    {
+      "domain": "codewave.com",
+      "url": "https://codewave.com/insights/freelancers-vs-design-agencies-mobile-app-design/",
+      "title": "Freelancers vs Design Agencies for Mobile App Design – Which is Better?",
+      "keywords": ["mobile app design agency vs freelancer", "hire mobile app designer agency vs freelancer", "freelance app designer vs design agency"],
+      "estTraffic": null,
+      "silo": "mobile-app-ui-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/mobile-app-design-agency-vs-freelancer.json",
+      "notes": "beats target. The only design-specific page on these SERPs (dated Feb 2024). Snippets show definition -> freelancer (UI/UX/graphic/prototyping; Upwork, Freelancer, Fiverr) -> agency -> verdict. Generic: nothing on iOS + Android guidelines, test rounds, test-build review or calendar time."
+    },
+    {
+      "domain": "lowcode.agency",
+      "url": "https://www.lowcode.agency/blog/agency-vs-freelancer-vs-inhouse-mobile-app",
+      "title": "Agency vs freelancer vs in-house for a mobile app",
+      "keywords": ["mobile app design agency vs freelancer vs in-house designer", "agency vs freelancer mobile app"],
+      "estTraffic": null,
+      "silo": "mobile-app-ui-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/mobile-app-design-agency-vs-freelancer.json",
+      "notes": "Development-focused. Its '$50,000-$200,000 agency app' and '$100-$250/hr vs $40-$150/hr' figures are vendor estimates (do-not-use), and its 'MVPs favor agencies or freelancers, mature products in-house' stage framing is not to be reused. dribbble content-hub, figma.com/resource-library/ui-ux-design-cost and weareaffective.com rank for the same query."
+    },
+    {
+      "domain": "lowcode.agency",
+      "url": "https://www.lowcode.agency/blog/mobile-app-agency-portfolio-checklist",
+      "title": "Mobile app agency portfolio checklist",
+      "keywords": ["mobile app agency portfolio checklist", "how to evaluate a mobile app design agency portfolio"],
+      "estTraffic": null,
+      "silo": "mobile-app-ui-ux-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Partly absorbed by mobile-app-design-agency-vs-freelancer (the 'test a portfolio on your own phone' section). The SERP is dev-agency pages (dribbble content hub, ninetwothree, phenomenonstudio FAQ, perfectiongeeks). A standalone post would need a clearly different angle (e.g. reading app design case studies), not a second portfolio checklist."
+    },
+    {
+      "domain": "mindsea.com",
+      "url": "https://mindsea.com/app-redesign-cost/",
+      "title": "App redesign cost",
+      "keywords": ["mobile app redesign cost", "app redesign cost"],
+      "estTraffic": null,
+      "silo": "mobile-app-ui-ux-design-services",
+      "serviceSupport": 5,
+      "status": "candidate",
+      "notes": "Blocked: the hub owns 'How much does mobile app UI UX design cost?' and publishes no redesign-specific price. perfectiongeeks.com (redesign vs rebuild cost) and cleveroad.com (cost to design a mobile app) also rank; all their ranges and the '30-50% of original development cost' claim are do-not-use. Strengthen the hub cost section with a redesign sentence (hub banking) instead."
+    },
+    {
+      "domain": "uxdesign.cc",
+      "url": "https://uxdesign.cc/ios-vs-android-design-630340a73ee6",
+      "title": "iOS vs Android design",
+      "keywords": ["adapt ios app design to android", "design android version of ios app", "ios vs android design"],
+      "estTraffic": null,
+      "silo": "mobile-app-ui-ux-design-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Next MOFU for the mobile silo: 'design an Android version of an iOS app' (hub 'when to hire' item 5). SERP is how-to (developer.android.com 'translate designs' 10 steps, m2.material.io blog, vp0.com, dev.to). Keep it cross-platform; iOS-only angles belong to ios-app-design-services. Do not repeat the platform pair card from mobile-app-design-agency-vs-freelancer; go deeper (navigation model, system back, typography scale, Material You color) and cite Google's guide without copying its steps."
     }
   ]
 }
