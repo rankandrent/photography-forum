@@ -258,6 +258,50 @@
       "words": 2182,
       "tableCount": 2,
       "listStyle": "scored yes/no test + ledger table + rung ladder"
+    },
+    {
+      "slug": "mobile-app-design-agency-vs-freelancer",
+      "hub": "mobile-app-ui-ux-design-services",
+      "type": "Comparison",
+      "funnel": "bofu",
+      "introStyle": "contrarian take",
+      "h2Frames": [
+        "is (better)",
+        "what sits inside",
+        "can (yes/no)",
+        "who runs",
+        "what happens at",
+        "same app two plans",
+        "how to test on phone",
+        "when X when Y",
+        "how to compare quotes",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "Is a freelancer or an agency better for mobile app design?",
+        "What work sits inside a mobile app design project?",
+        "Can one freelance designer cover both iOS and Android?",
+        "Who runs user testing when a freelancer designs your app?",
+        "What happens at developer handoff and the first test build?",
+        "Same app, two plans: how do the timelines compare?",
+        "How do you test a mobile portfolio on your own phone?",
+        "When should you hire a freelancer, and when an agency?",
+        "How do you compare a freelancer's quote with an agency's?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "skill coverage map",
+        "iOS/Android wireframe pairs",
+        "twin timeline",
+        "phone checklist",
+        "decision tree",
+        "quote line-item sheet"
+      ],
+      "ctaAngle": "send us that quote or your flow list → free consultation + fixed-scope proposal",
+      "faqCount": 6,
+      "words": 1984,
+      "tableCount": 3,
+      "listStyle": "decision tree routing + quote line items + phone checks"
     }
   ]
 }

@@ -19,8 +19,8 @@ takeaways:
   - "An Android version is planned translation work: a navigation bar for the tab bar, bottom sheets for action sheets, 48×48 density-independent pixel (dp) touch targets."
   - "Get it in writing who recruits test participants and who reviews the first TestFlight and Google Play Console builds."
   - "Line up both quotes on the same seven lines and price the empty ones before you compare totals."
-draft: true
-qa: pending
+draft: false
+qa: pass
 ---
 
 The mobile app design agency vs freelancer decision is usually framed as price against quality, and that framing is wrong: a strong freelance mobile app designer often draws screens as good as any agency's, and projects go wrong in the work around the screens. If a launch date other teams depend on cannot slip, pick an agency. Otherwise, choose a freelancer for a one-platform app whose flows need no user testing before code. For two platforms or flows that need testing, a freelancer works when someone on your team can recruit testers, moderate sessions and review builds; when nobody can, pick an agency.
@@ -153,7 +153,7 @@ Install the apps before the first call, so the call is about what you found.
 
 ## When should you hire a freelancer, and when an agency?
 
-**Hire a freelancer for a one-platform app with no flows to test, or when your PM runs testing and build review; otherwise, or with a fixed launch date, hire an agency.**
+**If your launch date can slip, hire a freelancer for a one-platform app with no flows to test, or when your PM runs testing and build review; otherwise, hire an agency.**
 
 ![Decision tree with four yes/no questions about the launch date, iOS and Android at launch, user testing before code and in-house testing and build review, routing to a freelancer, a freelancer plus your PM, or an agency](/blog/mobile-app-design-agency-vs-freelancer/decision-tree.svg "Four questions that route your app to a freelancer or an agency")
 
@@ -166,7 +166,7 @@ Install the apps before the first call, so the call is about what you found.
 
 </details>
 
-Freelancer situations:
+Freelancer situations (one platform with no flow to test, or a PM who reviews the builds):
 
 - **A UI refresh with a working design system,** because the patterns exist and no new flow needs testing.
 - **One new flow, such as a referral screen,** because one person can design it inside your UI kit.
@@ -184,7 +184,7 @@ If the tree settles the mobile app design agency vs freelancer question in favor
 
 **Put both quotes on the same seven lines and price whatever the freelancer leaves out, such as recruiting, moderation and Android variants, before you compare totals.**
 
-An hourly quote moves with every revision round, so convert it first: ask for estimated hours per quote line and a cap on revision rounds, multiply by the freelancer's own rate, and set that capped total beside the fixed-scope proposal. On Upwork, ask which contract the quote assumes: hourly contracts bill logged hours weekly, up to any weekly limit you set, while fixed-price contracts pay by milestones you fund before work starts. <!-- source: https://support.upwork.com/hc/en-us/articles/211063418-How-hourly-and-fixed-price-contracts-are-different-on-Upwork -->
+An hourly quote moves with every revision round, so convert it first: ask for estimated hours per quote line and a cap on revision rounds, multiply by the freelancer's own rate, and set that capped total beside the fixed-scope proposal. On Upwork, ask which contract the quote assumes: [hourly contracts bill logged hours weekly](https://support.upwork.com/hc/en-us/articles/211063418-How-hourly-and-fixed-price-contracts-are-different-on-Upwork), up to any weekly limit you set, while fixed-price contracts pay by milestones you fund before work starts.
 
 ![Quote comparison card with seven lines (platforms, user flows, test rounds and recruiting, UI kit, app store assets, file ownership, test-build review), each with what to check, the cost if it is missing and empty boxes for the freelancer quote, agency quote and your extra cost](/blog/mobile-app-design-agency-vs-freelancer/quote-line-items.svg "Seven lines to compare a freelancer's quote with an agency's")
 
@@ -202,7 +202,7 @@ An hourly quote moves with every revision round, so convert it first: ask for es
 
 </details>
 
-If your team can cover one or two empty lines, the freelancer quote holds up; with four, the lower total covers less of the app. Set both totals against our published $25,000–$60,000 range for 4–8 weeks; flows, platforms, test rounds and UI kit size are [what drives mobile app design pricing](/services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost) inside it.
+If your team can cover one or two empty lines, the freelancer quote holds up; with four, add your extra cost for each empty line to its total before you compare. Our proposals land between $25,000 and $60,000 for 4–8 weeks, and your count of flows, platforms, test rounds and UI kit components is [what drives mobile app design pricing](/services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost) toward one end or the other.
 
 Weighing a mobile app design agency vs freelancer usually ends with a quote that has blank lines, and a blank line is unfinished scope, not a flaw. [Send us that quote or your flow list](/contact/) and judge our proposal against it line by line. Every project begins with a free consultation and a fixed-scope proposal.
 
