@@ -1,25 +1,7 @@
 {
  "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "pages": [
-  {
-   "route": "/case-studies/nitro/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/contact/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/industries/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
   {
    "route": "/industries/ecommerce/",
    "type": "content",
@@ -136,12 +118,6 @@
   },
   {
    "route": "/services/ios-app-design-services/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/services/mobile-app-ui-ux-design-services/",
    "type": "content",
    "lastAudited": null,
    "lastScore": 100
@@ -315,18 +291,6 @@
    "lastScore": 100
   },
   {
-   "route": "/",
-   "type": "content",
-   "lastAudited": "2026-10-10",
-   "lastScore": 100
-  },
-  {
-   "route": "/about/",
-   "type": "content",
-   "lastAudited": "2026-10-10",
-   "lastScore": 87
-  },
-  {
    "route": "/blog/category/industry-specific/",
    "type": "archive",
    "lastAudited": "2026-10-10",
@@ -341,12 +305,6 @@
   {
    "route": "/blog/category/research-and-strategy/",
    "type": "archive",
-   "lastAudited": "2026-10-10",
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/is-discovery-phase-worth-it/",
-   "type": "blog",
    "lastAudited": "2026-10-10",
    "lastScore": 100
   },
@@ -405,10 +363,70 @@
    "lastScore": 100
   },
   {
+   "route": "/",
+   "type": "content",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/about/",
+   "type": "content",
+   "lastAudited": "2026-10-11",
+   "lastScore": 87
+  },
+  {
+   "route": "/blog/author/saliha-shahzad/",
+   "type": "archive",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/is-discovery-phase-worth-it/",
+   "type": "blog",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/mobile-app-design-agency-vs-freelancer/",
+   "type": "blog",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/case-studies/nitro/",
+   "type": "content",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/contact/",
+   "type": "archive",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/industries/",
+   "type": "archive",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-austin/",
+   "type": "content",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
+  },
+  {
    "route": "/privacy/",
    "type": "archive",
-   "lastAudited": "2026-10-10",
+   "lastAudited": "2026-10-11",
    "lastScore": 91
+  },
+  {
+   "route": "/services/mobile-app-ui-ux-design-services/",
+   "type": "content",
+   "lastAudited": "2026-10-11",
+   "lastScore": 100
   }
  ]
 }

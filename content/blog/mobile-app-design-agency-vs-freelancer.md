@@ -204,7 +204,7 @@ An hourly quote moves with every revision round, so convert it first: ask for es
 
 If your team can cover one or two empty lines, the freelancer quote holds up; with four, add your extra cost for each empty line to its total before you compare. Our proposals land between $25,000 and $60,000 for 4–8 weeks, and your count of flows, platforms, test rounds and UI kit components is [what drives mobile app design pricing](/services/mobile-app-ui-ux-design-services/#how-much-does-mobile-app-ui-ux-design-cost) toward one end or the other.
 
-Weighing a mobile app design agency vs freelancer usually ends with a quote that has blank lines, and a blank line is unfinished scope, not a flaw. [Send us that quote or your flow list](/contact/) and judge our proposal against it line by line. Every project begins with a free consultation and a fixed-scope proposal.
+Weighing a mobile app design agency against a freelancer usually ends with a quote that has blank lines, and a blank line is unfinished scope, not a flaw. [Send us that quote or your flow list](/contact/) and judge our proposal against it line by line. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 

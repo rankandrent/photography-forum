@@ -10,7 +10,7 @@ import { routes } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "UI UX Design by Industry | Healthcare, Fintech & SaaS",
-  description: "UI UX design by industry: healthcare, fintech, SaaS, e-commerce, supply chain and startup products, backed by real case studies and measurable results.",
+  description: "UI UX design by industry: healthcare, fintech, SaaS, e-commerce, supply chain and startups, designed for each field and its users. Book a free consultation.",
   path: routes.industries,
   keywords: ["UI UX design by industry", "healthcare UI UX design", "fintech UI UX design", "SaaS UI UX design", "e-commerce UI UX design", "supply chain UI UX design"],
 });
