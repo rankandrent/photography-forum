@@ -39,7 +39,7 @@ For how we run user interface (UI) and user experience (UX) work on iOS and Andr
 
 **A mobile app design project needs six skills (research, user flows, interface design, test moderation, two-platform fluency and handoff), and few solo freelancers are equally strong in all six.**
 
-Take the illustrative fitness app again: with no one moderating tests, users meet the new onboarding flow only in the first TestFlight beta build, after developers have coded it, so every fix becomes a code change. With partial Android fluency, the Android screens become a second purchase, which is line 1 of the quote comparison below.
+Take the illustrative fitness app again: with no user tests before code, the first people to try the new onboarding flow are testers of the first TestFlight and Google Play Console builds, after developers have coded it, so every fix becomes a code change. With partial Android fluency, the Android screens become a second purchase, which is line 1 of the quote comparison below.
 
 ![Skill-coverage map comparing a typical solo freelancer and a typical agency team across six mobile app design skills (research, user flows, interface design, test moderation, iOS + Android fluency, handoff and build review), each rated strong, partial or often missing with a short note](/blog/mobile-app-design-agency-vs-freelancer/skill-coverage-map.svg "A pattern to check, not a rule")
 
@@ -184,7 +184,7 @@ If the tree settles the mobile app design agency vs freelancer question in favor
 
 **Put both quotes on the same seven lines and price whatever the freelancer leaves out, such as recruiting, moderation and Android variants, before you compare totals.**
 
-An hourly quote moves with every revision round, so convert it first: ask for estimated hours per quote line and a cap on revision rounds, multiply by the freelancer's own rate, and set that capped total beside the rounds the fixed-scope proposal includes. On Upwork, ask which contract the quote assumes: hourly contracts bill logged hours weekly, up to any weekly limit you set, while fixed-price contracts pay by milestones you fund before work starts. <!-- source: https://support.upwork.com/hc/en-us/articles/211063418-How-hourly-and-fixed-price-contracts-are-different-on-Upwork -->
+An hourly quote moves with every revision round, so convert it first: ask for estimated hours per quote line and a cap on revision rounds, multiply by the freelancer's own rate, and set that capped total beside the fixed-scope proposal. On Upwork, ask which contract the quote assumes: hourly contracts bill logged hours weekly, up to any weekly limit you set, while fixed-price contracts pay by milestones you fund before work starts. <!-- source: https://support.upwork.com/hc/en-us/articles/211063418-How-hourly-and-fixed-price-contracts-are-different-on-Upwork -->
 
 ![Quote comparison card with seven lines (platforms, user flows, test rounds and recruiting, UI kit, app store assets, file ownership, test-build review), each with what to check, the cost if it is missing and empty boxes for the freelancer quote, agency quote and your extra cost](/blog/mobile-app-design-agency-vs-freelancer/quote-line-items.svg "Seven lines to compare a freelancer's quote with an agency's")
 
