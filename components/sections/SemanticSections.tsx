@@ -29,7 +29,7 @@ export function Abstract({ text }: { text?: string }) {
   );
 }
 
-type Visual = { src: string; alt: string } | null | undefined;
+type Visual = { src: string; alt: string; caption?: string } | null | undefined;
 type Kind = "definition" | "include" | "process" | "benefits" | "compare" | "pricing" | "hire" | "industries" | "standards" | "faq" | "text";
 
 const EYEBROW: Record<Kind, string> = {
@@ -71,10 +71,10 @@ function Head({ s, kind, center }: { s: Section; kind: Kind; center?: boolean })
 function More({ html }: { html?: string }) {
   if (!html) return null;
   return (
-    <details className="semv__more">
-      <summary>Read more</summary>
+    // always visible: the detail text is main content, so it must not sit behind a click
+    <div className="semv__more">
       <Html className="semv__more-body" html={html} />
-    </details>
+    </div>
   );
 }
 
@@ -126,14 +126,20 @@ export function SemanticSections({
                       <Head s={s} kind={kind} />
                       <More html={s.body} />
                     </div>
-                    <div className="semv__visual">
-                      {s.image ?? visual ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={(s.image ?? visual)!.src} alt={(s.image ?? visual)!.alt} loading="lazy" />
-                      ) : (
+                    {s.image ?? visual ? (
+                      // image + caption as one figure block, so the picture sits next to the words that explain it
+                      <figure className="semv__figure">
+                        <div className="semv__visual">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={(s.image ?? visual)!.src} alt={(s.image ?? visual)!.alt} loading="lazy" />
+                        </div>
+                        {(s.image ?? visual)!.caption && <figcaption className="semv__caption">{(s.image ?? visual)!.caption}</figcaption>}
+                      </figure>
+                    ) : (
+                      <div className="semv__visual">
                         <UiMock category={category} label={label} />
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                   {(timeline || price || include) && (
                     <dl className="semv__glance">

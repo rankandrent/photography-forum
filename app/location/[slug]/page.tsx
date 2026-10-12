@@ -45,6 +45,7 @@ export default async function LocationPage({ params }: Props) {
     ? {
         src: visualSrc,
         alt: `UX design for ${l.city} product teams: ${l.visual.scenes.map((s) => s.label.toLowerCase()).join(", ")}, tested with real users`,
+        caption: `UX design for ${l.city} teams: ${l.visual.scenes.map((s) => s.label.toLowerCase()).join(", ")}`,
       }
     : undefined;
   const faqs = [...(faqSection?.faqs ?? []), ...(l.faqs ?? [])];

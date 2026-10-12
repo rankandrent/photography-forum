@@ -32,3 +32,6 @@ Score: `docs/data/onpage/latest.json` (0–100 per page). Pages under 90 are fix
 - [ ] Primary keyword in meta title, meta description, first meta keyword, og:title and og:description
 - [ ] Central entity salience ≥ 75: keyword in H1, first 60 words, ≥ 40% of H2s, and the most-mentioned entity
 - [ ] ≥ 80% of related entities and ≥ 70% of attributes covered in visible text, each with a fact or explanation
+- [ ] No main content behind a click (only FAQs and navigation collapse)
+- [ ] Every explanatory image is a figure with a caption, placed right after the text it explains
+- [ ] Every H2 is followed by its text answer; every table follows a sentence that introduces it

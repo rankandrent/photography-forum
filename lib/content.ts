@@ -22,9 +22,16 @@ function readJson<T>(dir: string): T[] {
   }));
 }
 
-/** Turn a paragraph holding a single titled image into <figure> + <figcaption>, and lazy-load images */
+/**
+ * Turn a paragraph holding a single titled image into <figure> + <figcaption>, lazy-load images,
+ * and render each "Show as text" block as an always-visible text panel under its image: content that
+ * matters must be visible on the page (layout-aware ranking weighs what is shown, owner rule 2026-10-12).
+ */
 function figures(html: string) {
   return html
+    .replace(/<details class="astext">\s*<summary>[\s\S]*?<\/summary>([\s\S]*?)<\/details>/g, (_, body: string) =>
+      `<div class="astext" role="group" aria-label="Text version of the image above">${body}</div>`,
+    )
     .replace(/<p>(<img [^>]*?title="([^"]*)"[^>]*>)<\/p>/g, (_, img: string, cap: string) =>
       `<figure>${img.replace(/ title="[^"]*"/, "")}<figcaption>${cap}</figcaption></figure>`,
     )

@@ -180,11 +180,11 @@ Body: markdown. Start with a 2–3 sentence summary paragraph, then H2 sections,
 as `## FAQs` with `### Question?` + answer. Images use
 `![alt text](/blog/<slug>/<file>.svg "Caption")`.
 
-## Visuals: image first, text behind "Show as text" (owner rule, 2026-10-06)
+## Visuals: image first, text version always visible (owner rule 2026-10-06, updated 2026-10-12)
 
 - The owner prefers images over text in blog posts. When a table, checklist, list of steps, framework
   or comparison would make a good infographic, SHOW THE IMAGE and put the same content right below it
-  inside a collapsed block, so readers see the image while Google and screen readers still get text:
+  in an `astext` block. Keep writing it as before:
 
   ```
   ![Descriptive alt text](/blog/<slug>/<name>.svg "Caption")
@@ -195,9 +195,30 @@ as `## FAQs` with `### Question?` + answer. Images use
 
   </details>
   ```
-- Never show the same content twice in the open (an image AND a visible table/list of the same items).
+- Since 2026-10-12 the site renders every `astext` block as an **always-visible** compact text panel
+  under the image (lib/content.ts), never collapsed. Reason (owner, "no risk"): Google's layout-aware
+  document model (patent US12393768B2) reads pages as visible blocks with position, size and type, and
+  checks whether an image matches the text next to it. Content behind a click has no visible block.
+- Do not repeat the same items a third time in the open prose: image + its text panel is the one place.
+  Every key fact still needs one sentence in the open prose (the bold answer or the section text).
 - Overview flows, decision trees, timelines, 2×2s and before/after maps are also welcome.
 - Aim for 4–6 inline visuals per post.
+
+## Layout-aware pages (owner rule, 2026-10-12, Google patent US12393768B2)
+
+Google can split a page into blocks by HTML tag, note each block's position, type (header, paragraph,
+list, table, image, caption) and text style (size, bold), and judge order and image–text fit. So:
+
+1. **Nothing important behind a click.** Only FAQs and navigation may collapse. Section detail text,
+   image text versions and definitions are always visible (`no-hidden-content`).
+2. **Right block types:** headings are `h2`/`h3`, steps are `ol`, items are `ul`, comparisons and costs
+   are tables, every explanatory image is a `figure` with a `figcaption` (`figure-caption`).
+3. **Order:** each H2 is followed by its direct answer in text, never by an image (`h2-then-text`).
+   Definition and answer first, details next, FAQ last.
+4. **Image–text fit:** an image sits directly after the paragraph it explains, and its caption names
+   the same thing as its alt text and file name. Use unique, topic-specific images, never stock.
+5. **Tables are introduced:** one sentence before every table says what it compares (`table-intro`).
+6. **Bold is a signal:** bold only the direct answer and true key terms, not decoration.
 
 ## Files each agent writes
 

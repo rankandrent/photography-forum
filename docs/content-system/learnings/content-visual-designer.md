@@ -9,7 +9,7 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
 - 2026-10-06 (owner, REPLACES the 2026-10-05 rule): Owner prefers IMAGES over text. Draw infographics of tables, checklists, steps and comparisons the post contains; the writer hides the text version behind "Show as text". The image must carry every item of that block, exactly worded.
 - 2026-10-05 (owner): Never draw a graphic of a table or list the post already contains; skip that marker and propose an overview/flow/timeline instead.
-
+- 2026-10-12 (owner, layout-aware pages): every image must fit the paragraph right above it (Google checks image–text matching). Give each image one clear subject and use that subject in the alt text, the caption and the file name. The text version under the image is now always visible, so keep it short and identical to the image.
 
 ## Lessons (learned from runs, QA, audits and results)
 

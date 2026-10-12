@@ -117,6 +117,23 @@ for (const p of pages.filter((x) => !only || x.route === only)) {
   add("schema", ld.length > 0, `structured data present (${[...new Set(ld)].join(", ") || "none"})`);
   if (isBlog) add("schema-article", ld.includes("BlogPosting"), "BlogPosting schema");
   if (isBlog || /^\/(services|industries|location)\/[^/]+\/$/.test(p.route)) add("faq", ld.includes("FAQPage") || /faq/i.test(h2s.join(" ")), "FAQ section / FAQPage schema");
+  // layout-aware document understanding (Google patent US12393768B2): visible blocks, clear block types,
+  // images next to the text they explain, tables introduced by text, nothing important behind a click
+  if (isContent) {
+    // explanatory images only (in-article visuals, case-study screens, location illustrations);
+    // covers, logos, team photos and card thumbnails are not explanatory blocks
+    const figs = [...main.matchAll(/<img\b[^>]*>/g)].filter((m) => /src="\/(blog\/[^"]+\/(?!cover)|work\/[^"]+\/(?!cover)|locations\/)/.test(m[0]) && !/<a\b(?:(?!<\/a>)[\s\S])*$/.test(main.slice(Math.max(0, m.index - 600), m.index)));
+    const bare = figs.filter((m) => { const before = main.slice(Math.max(0, m.index - 400), m.index), after = main.slice(m.index, m.index + 600); return !(/<figure[^>]*>(?:(?!<\/figure>)[\s\S])*$/.test(before) && /<figcaption/.test(after)); });
+    add("figure-caption", bare.length === 0, `every content image sits in <figure> with a <figcaption> (${bare.length} without)`);
+    const tables = [...main.matchAll(/<table\b/g)].filter((m) => !/class="astext"(?:(?!<\/div>)[\s\S])*$/.test(main.slice(Math.max(0, m.index - 300), m.index)));
+    const lone = tables.filter((m) => !/<\/(p|h2|h3|figure)>$/.test(main.slice(Math.max(0, m.index - 400), m.index).replace(/<\/?div\b[^>]*>|\s+/g, "")));
+    add("table-intro", lone.length === 0, `every table follows a paragraph or heading that introduces it (${lone.length} without)`);
+    const h2Next = [...main.matchAll(/<\/h2>\s*(?:<\/div>\s*)?<([a-z0-9]+)/g)].map((m) => m[1]);
+    const badH2 = h2Next.filter((t) => ["img", "figure", "picture", "svg", "video"].includes(t)).length;
+    add("h2-then-text", badH2 === 0, `every H2 is followed by text, not an image (${badH2} not)`);
+    const hidden = [...main.matchAll(/<details\b([^>]*)>/g)].filter((m) => !/faq|ptoc|hdr__|cap__item|svc-acc/.test(m[1])).length;
+    add("no-hidden-content", hidden === 0, `no main content behind a click: only FAQs and navigation may collapse (${hidden} collapsed blocks)`, 2);
+  }
   add("canonical", /<link rel="canonical"/.test(h), "canonical tag");
   add("og-image", /property="og:image"/.test(h), "Open Graph image");
   const total = checks.reduce((s, c) => s + c.weight, 0), got = checks.filter((c) => c.ok).reduce((s, c) => s + c.weight, 0);
