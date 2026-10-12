@@ -163,7 +163,7 @@ The cost per usability test round is the number to compare: two quotes for "5 us
 <details class="astext"><summary>Show as text</summary>
 
 1. **Recruit:** covered by a typical per-participant price.
-2. **Sessions:** partly covered — incentive and recruiting only; moderation is your own time.
+2. **Sessions:** partly covered (the participant's incentive, not the moderator's hours).
 3. **Analysis:** not covered (clips, notes, severity ratings).
 4. **Design fixes:** not covered (changes to the design file).
 5. **Retest:** not covered (a second round with new participants).
