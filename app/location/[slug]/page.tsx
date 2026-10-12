@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { CtaBand, Faq, FinalCta, LinkChips, ServiceGrid } from "@/components/sections/Blocks";
@@ -37,6 +39,13 @@ export default async function LocationPage({ params }: Props) {
   const services = getServices().slice(0, 6);
   const faqSection = l.sections?.find((x) => x.format === "faq");
   const bodySections = l.sections?.filter((x) => x !== faqSection);
+  const visualSrc = `/locations/${l.slug}.svg`;
+  const visual = l.visual?.scenes.length && existsSync(join(process.cwd(), "public", visualSrc))
+    ? {
+        src: visualSrc,
+        alt: `UX design for ${l.city} product teams: ${l.visual.scenes.map((s) => s.label.toLowerCase()).join(", ")}, tested with real users`,
+      }
+    : undefined;
   const faqs = [...(faqSection?.faqs ?? []), ...(l.faqs ?? [])];
   // same-city pages first (e.g. the 3 New York pages), then one page per other city
   const others = getLocations().filter((x) => x.slug !== l.slug);
@@ -62,7 +71,7 @@ export default async function LocationPage({ params }: Props) {
 
       <Abstract text={l.abstract} />
 
-      {!!bodySections?.length && <SemanticSections sections={bodySections} price={l.priceRange} label={`${cap(anchorOf(l))} illustration`} />}
+      {!!bodySections?.length && <SemanticSections sections={bodySections} price={l.priceRange} visual={visual} label={`${cap(anchorOf(l))} illustration`} />}
 
       <ServiceGrid
         id="location-services"

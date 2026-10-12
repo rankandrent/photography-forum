@@ -243,5 +243,22 @@
     "WCAG 2.2",
     "Figma"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "visual": {
+    "landmark": "dome",
+    "scenes": [
+      {
+        "icon": "doc",
+        "label": "Benefit applications"
+      },
+      {
+        "icon": "users",
+        "label": "Member renewals"
+      },
+      {
+        "icon": "access",
+        "label": "Section 508"
+      }
+    ]
+  }
 }

@@ -247,5 +247,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-03"
+  "published": "2026-10-03",
+  "visual": {
+    "landmark": "palms",
+    "scenes": [
+      {
+        "icon": "play",
+        "label": "Streaming"
+      },
+      {
+        "icon": "cart",
+        "label": "Online brand stores"
+      },
+      {
+        "icon": "game",
+        "label": "Games"
+      }
+    ]
+  }
 }

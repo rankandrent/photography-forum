@@ -258,5 +258,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-05"
+  "published": "2026-10-05",
+  "visual": {
+    "landmark": "needle",
+    "scenes": [
+      {
+        "icon": "cloud",
+        "label": "Cloud admin consoles"
+      },
+      {
+        "icon": "lock",
+        "label": "Permissions"
+      },
+      {
+        "icon": "card",
+        "label": "Billing screens"
+      }
+    ]
+  }
 }

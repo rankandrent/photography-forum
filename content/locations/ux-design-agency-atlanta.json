@@ -261,5 +261,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-12"
+  "published": "2026-10-12",
+  "visual": {
+    "landmark": "towers",
+    "scenes": [
+      {
+        "icon": "card",
+        "label": "Merchant sign-ups"
+      },
+      {
+        "icon": "truck",
+        "label": "Dispatch exceptions"
+      },
+      {
+        "icon": "cross",
+        "label": "Clinical tools"
+      }
+    ]
+  }
 }

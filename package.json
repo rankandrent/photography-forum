@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/robots-headers.mjs",
+    "build": "node scripts/location-visuals.mjs && next build && node scripts/robots-headers.mjs",
     "start": "npx serve out",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",

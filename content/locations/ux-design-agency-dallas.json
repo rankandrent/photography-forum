@@ -261,5 +261,22 @@
     "Figma",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "visual": {
+    "landmark": "ball",
+    "scenes": [
+      {
+        "icon": "bank",
+        "label": "Banking portals"
+      },
+      {
+        "icon": "phone",
+        "label": "Carrier self-service"
+      },
+      {
+        "icon": "cart",
+        "label": "Retail checkout"
+      }
+    ]
+  }
 }

@@ -260,5 +260,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-10"
+  "published": "2026-10-10",
+  "visual": {
+    "landmark": "towers",
+    "scenes": [
+      {
+        "icon": "doc",
+        "label": "Getting a quote"
+      },
+      {
+        "icon": "cart",
+        "label": "Buying online"
+      },
+      {
+        "icon": "box",
+        "label": "Picking an order"
+      }
+    ]
+  }
 }

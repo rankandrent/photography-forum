@@ -255,5 +255,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-08"
+  "published": "2026-10-08",
+  "visual": {
+    "landmark": "arch",
+    "scenes": [
+      {
+        "icon": "leaf",
+        "label": "Agronomy tools"
+      },
+      {
+        "icon": "flask",
+        "label": "Lab sample tracking"
+      },
+      {
+        "icon": "cross",
+        "label": "Hospital portals"
+      }
+    ]
+  }
 }

@@ -249,5 +249,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-09"
+  "published": "2026-10-09",
+  "visual": {
+    "landmark": "bell",
+    "scenes": [
+      {
+        "icon": "cross",
+        "label": "Patient portals"
+      },
+      {
+        "icon": "flask",
+        "label": "Clinical-trial apps"
+      },
+      {
+        "icon": "access",
+        "label": "Accessible services"
+      }
+    ]
+  }
 }

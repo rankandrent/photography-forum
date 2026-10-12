@@ -258,5 +258,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-06"
+  "published": "2026-10-06",
+  "visual": {
+    "landmark": "cactus",
+    "scenes": [
+      {
+        "icon": "chip",
+        "label": "Fab-floor tools"
+      },
+      {
+        "icon": "card",
+        "label": "Payment exceptions"
+      },
+      {
+        "icon": "box",
+        "label": "Distribution centers"
+      }
+    ]
+  }
 }

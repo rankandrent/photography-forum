@@ -257,5 +257,22 @@
     "WCAG 2.2"
   ],
   "priceRange": "$5,000–$60,000",
-  "published": "2026-10-11"
+  "published": "2026-10-11",
+  "visual": {
+    "landmark": "capitol",
+    "scenes": [
+      {
+        "icon": "rocket",
+        "label": "Startup MVPs"
+      },
+      {
+        "icon": "chart",
+        "label": "SaaS activation"
+      },
+      {
+        "icon": "chip",
+        "label": "Engineering tools"
+      }
+    ]
+  }
 }

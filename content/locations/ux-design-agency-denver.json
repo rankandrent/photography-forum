@@ -255,5 +255,22 @@
     "Figma",
     "usability testing"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "visual": {
+    "landmark": "mountains",
+    "scenes": [
+      {
+        "icon": "chart",
+        "label": "Trial-to-paid funnels"
+      },
+      {
+        "icon": "rocket",
+        "label": "Mission planning"
+      },
+      {
+        "icon": "bolt",
+        "label": "Utility field data"
+      }
+    ]
+  }
 }

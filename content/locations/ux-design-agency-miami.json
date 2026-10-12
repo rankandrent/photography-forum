@@ -244,5 +244,22 @@
     "real estate",
     "Figma"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "visual": {
+    "landmark": "palms",
+    "scenes": [
+      {
+        "icon": "globe",
+        "label": "English and Spanish"
+      },
+      {
+        "icon": "card",
+        "label": "Local payment methods"
+      },
+      {
+        "icon": "users",
+        "label": "Residents and visitors"
+      }
+    ]
+  }
 }

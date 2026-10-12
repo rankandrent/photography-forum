@@ -126,5 +126,14 @@
       "q": "Question?",
       "a": "<p>Answer.</p>"
     }
-  ]
+  ],
+  "visual": {
+    "landmark": "towers | arch | bridge | needle | spire | stepped | capitol | dome | palms | cactus | mountains | bell | ball",
+    "scenes": [
+      {
+        "icon": "see scripts/location-visuals.mjs ICONS",
+        "label": "Short scene from the definition answer (max 22 chars)"
+      }
+    ]
+  }
 }

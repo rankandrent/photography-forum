@@ -131,6 +131,8 @@ export type Location = Brief & {
   faqs?: Faq[];
   /** Draft pages render but are noindex and stay out of the sitemap */
   draft?: boolean;
+  /** Definition-section illustration, built by scripts/location-visuals.mjs */
+  visual?: { landmark?: string; scenes: { icon: string; label: string }[] };
 };
 
 export type Industry = Brief & {
