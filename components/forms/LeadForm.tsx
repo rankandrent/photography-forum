@@ -31,8 +31,7 @@ export function LeadForm({
     e.preventDefault();
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
-    if (data.company_website) return; // honeypot
-    delete data.company_website;
+    // Spam trap: never drop silently (browser autofill can fill hidden fields); the Worker flags it instead
 
     if (!ENDPOINT) {
       setStatus({ kind: "err", msg: "Form endpoint is not configured yet (NEXT_PUBLIC_FORM_ENDPOINT)." });
@@ -63,9 +62,10 @@ export function LeadForm({
     // action/method let the form post even if JavaScript fails to load; the Worker then redirects to /thank-you/
     <form className="lead-form" onSubmit={onSubmit} action={ENDPOINT} method="post" noValidate={false}>
       <input type="hidden" name="source" value={source} />
-      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px" }}>
+      {/* spam trap: display:none so browser autofill never fills it; bots that fill every field do */}
+      <div aria-hidden="true" style={{ display: "none" }}>
         <label htmlFor={f("hp")}>Leave this empty</label>
-        <input id={f("hp")} name="company_website" tabIndex={-1} autoComplete="off" />
+        <input id={f("hp")} name="hp_check" tabIndex={-1} autoComplete="off" />
       </div>
 
       {variant === "full" ? (

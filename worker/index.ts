@@ -142,7 +142,8 @@ async function handleLead(request: Request, env: Env) {
 }
 
 async function sendLead(body: Record<string, unknown>, env: Env) {
-  if (clean(body.company_website)) return json(200, { ok: true }); // honeypot
+  // spam trap filled: still deliver (a real person's autofill can fill it) but flag the subject
+  const suspect = Boolean(clean(body.hp_check) || clean(body.company_website));
 
   const lead: Record<string, string> = {};
   for (const [k] of FIELDS) lead[k] = clean(body[k]);
@@ -151,6 +152,7 @@ async function sendLead(body: Record<string, unknown>, env: Env) {
   if (!isEmail(lead.email)) return json(422, { ok: false, error: "A valid email is required" });
   if (!env.LEADS) return json(503, { ok: false, error: "Email is not configured" });
 
+  if (suspect) lead.source = `${lead.source || "website"} (spam trap filled, check before replying)`;
   const results = await Promise.allSettled(LEAD_RECIPIENTS.map((to) => env.LEADS!.send(new EmailMessage(FROM, to, mime(to, lead)))));
   const sent = results.filter((r) => r.status === "fulfilled").length;
   results.forEach((r, i) => r.status === "rejected" && console.error(`lead email to ${LEAD_RECIPIENTS[i]} failed:`, r.reason));
