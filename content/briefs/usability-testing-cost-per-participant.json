@@ -1,0 +1,272 @@
+{
+  "slug": "usability-testing-cost-per-participant",
+  "keyword": "usability testing cost per participant",
+  "keywordCarrier": {
+    "exactString": "usability testing cost per participant",
+    "title": "Usability Testing Cost per Participant: The Full Bill, Line by Line",
+    "titleNote": "67 chars, keyword first.",
+    "metaTitle": "Usability Testing Cost per Participant: What You Pay",
+    "metaTitleNote": "52 chars, keyword first.",
+    "description": "Usability testing cost per participant, itemized: incentive, recruiting fee, no-show buffer, moderation and analysis. Then request a fixed-scope proposal.",
+    "descriptionNote": "154 chars. Use as written: keyword first, then what the reader gets, then the BOFU next step. No pronouns, no apostrophes.",
+    "inBody": "The keyword is a plain noun phrase, so it can be the subject of a sentence. Intro first sentence pattern: 'Usability testing cost per participant is rarely the number on a panel's price page: the incentive is one line on a five-line bill.' Other carriers, each read aloud: 'the real usability testing cost per participant includes the people who never show up'; 'once you know your usability testing cost per participant, multiply it by a round, not by a study'. Never stack the string in front of another noun ('a usability testing cost per participant figure/quote/estimate') and never write it as a bare label ('Usability testing cost per participant: $X').",
+    "secondary": {
+      "usability test participant incentive": "Plain noun phrase. Example: 'A usability test participant incentive for a 60-minute moderated session with consumers usually sits in the range User Interviews reports.'",
+      "usability testing recruitment cost": "Plain noun phrase. Example: 'Usability testing recruitment cost depends on who you need: a general consumer from a panel or a practising nurse who can only talk between shifts.'",
+      "cost per usability test round": "Plain noun phrase. Example: 'The cost per usability test round is the number to compare between quotes, because a round includes the fixes and the retest.'",
+      "no-show rate": "Plain noun phrase. Example: 'A 10–20% no-show rate means you book more sessions than you need.'"
+    },
+    "density": "Word-share target 1–2%. The keyword has 5 words, so at about 2,100 body words the maximum is 0.02 x 2,100 / 5 = 8 uses. Aim for 5–7 exact uses (title, H1, first sentence, one H2, one mid-body sentence, closing section) and use the secondary phrases elsewhere."
+  },
+  "secondary": [
+    "usability test participant incentive",
+    "usability testing recruitment cost",
+    "cost per usability test round",
+    "no-show rate"
+  ],
+  "intent": "commercial investigation (a product manager, founder or design lead is budgeting a usability test, and has a panel price, a recruiter quote or an agency proposal in hand. They want to know what one participant really costs and which quote is cheaper per round.)",
+  "volume": null,
+  "kd": null,
+  "dataSource": "WebSearch SERP review on 2026-10-12. Semrush returned no_api_units on the first call, so there is no volume, KD or traffic data. WebFetch returned DNS errors (ENOTFOUND) for measuringu.com, cleverx.com and nngroup.com, so competitor coverage comes from search snippets. No docs/data/gsc/latest.json exists. Volume and KD are unknown: do not quote them anywhere.",
+  "hub": "usability-testing-services",
+  "services": ["usability-testing-services"],
+  "industries": [],
+  "author": "ahmad-ullah",
+  "authorWhy": "Ahmad Ullah (Principal UX Designer, content/home.ts) fits a post about where researcher hours go in each session and what each round must include. He last wrote 5 posts ago (ux-audit-agency-vs-freelancer, 2026-10-07). Rejected: shahmir-farooq (Sr. Communication Designer) has not written yet, but a research-cost post does not suit his role. Keep him for a visual-communication topic, such as how a usability test report presents findings, which is the planned MOFU candidate below. sahar-asif (Senior Manager UX | KAM) suits pricing too, but she has written 2 of 7 posts, both procurement-style (choose-ux-research-agency, web-app-design-rfp). Contributor: umar-sarwar (default).",
+  "type": "Guide",
+  "funnel": "bofu",
+  "funnelWhy": "New silo: 0 posts in usability-testing-services (fingerprints.json, ledger.json), so the first post is BOFU (service-support 5). The SERP is cost-dominated, which means BOFU under the rule set on 2026-10-06. Page 1 for 'usability testing cost per participant' and 'how much does a usability test cost': measuringu.com/usability-cost, two cleverx.com cost guides (user research cost 2026, B2B usability testing cost), the nngroup.com recruiting-cost article and uxtweak (participants), plus Upwork gig pages. Variants such as 'usability testing participant incentive' return incentive pricing guides (greatquestion, userinterviews, dscout, GitLab handbook). Risk: some searchers are in-house researchers planning a DIY test. The lead angle answers them: after the full per-participant bill, the post shows that a per-head price leaves out the fixes and the retest that the engagement includes. Rejected wording: 'how many rounds of usability testing' (SERP = 'how many users' pages; it would become the 5-users post the orchestrator ruled out).",
+  "serviceSupport": 5,
+  "beats": "https://cleverx.com/blog/b2b-usability-testing-cost",
+  "alsoOutranks": [
+    "https://measuringu.com/usability-cost/",
+    "https://cleverx.com/guides/user-research-cost-in-2026-pricing-by-method-approach-and-industry",
+    "https://www.nngroup.com/articles/recruiting-test-participants-for-usability-studies/",
+    "https://greatquestion.co/blog/customer-research-incentives-guide"
+  ],
+  "centralEntity": "usability testing cost per participant (the fully loaded cost of one completed usability test session)",
+  "entities": [
+    "usability testing",
+    "participant incentive",
+    "participant recruitment",
+    "screener",
+    "no-show",
+    "over-recruiting",
+    "moderated usability testing",
+    "unmoderated usability testing",
+    "research panel",
+    "recruiting agency",
+    "Nielsen Norman Group",
+    "MeasuringU",
+    "User Interviews",
+    "Maze",
+    "Lookback",
+    "UserTesting",
+    "Figma prototype",
+    "System Usability Scale (SUS)",
+    "severity rating",
+    "usability test report"
+  ],
+  "attributes": [
+    "audience type (general consumer, specific consumer, older adults, B2B professional, clinician)",
+    "session length (15–20 min unmoderated vs 45–60 min moderated)",
+    "incentive per session",
+    "recruiting fee per participant (panel, recruiting agency, own customer list)",
+    "staff hours to recruit in-house",
+    "no-show rate and over-recruit buffer",
+    "moderator hours per session (setup, session, debrief)",
+    "analysis hours per session (notes, clips, severity rating)",
+    "tool licence share",
+    "participants per round and rounds per engagement",
+    "lead time to recruit"
+  ],
+  "ngrams": [
+    "cost per participant",
+    "participant incentive",
+    "recruiting fee",
+    "no-show rate",
+    "moderated session",
+    "unmoderated study",
+    "per round",
+    "test round",
+    "design fixes",
+    "usability testing services"
+  ],
+  "questions": [
+    "How much does one usability test participant cost?",
+    "How much should I pay usability test participants?",
+    "How much does it cost to recruit participants for a usability study?",
+    "What happens to the incentive when a participant does not show up?",
+    "Is unmoderated testing cheaper per participant?",
+    "Does testing with clinicians or older adults cost more?",
+    "Can I recruit my own customers to save money?",
+    "Why do two usability testing quotes differ so much for the same number of users?"
+  ],
+  "serpGaps": [
+    "Every ranking page answers 'per participant' with either an incentive or a recruiting fee. None of them adds up the full bill for ONE completed session: incentive + recruiting fee + no-show buffer + moderator hours + analysis hours + tool share.",
+    "No page turns no-shows into money. MeasuringU states a typical 10–20% no-show rate for moderated studies, but no ranking page shows how over-recruiting raises the cost of every participant who does show up.",
+    "The cost pages talk about studies or projects. No page uses the round as the unit (recruit, test, fix, retest), and the round is how our hub sells and prices the work (2–3 rounds, fixes between rounds).",
+    "CleverX's cost post covers B2B only and is written from the point of view of a research-platform vendor. MeasuringU's covers platform licences and recruiting, with no audience ladder. No page covers hard-to-recruit audiences that are not B2B, such as older adults (NN/g has a separate guide for them) or clinicians who are only free around shifts.",
+    "No page explains why two quotes for '5 users' differ: one is a panel price for unmoderated clips, the other is a moderated round with analysis, a report and design fixes. Readers compare per-head prices that describe different work.",
+    "No first-hand agency view of where researcher hours go per session. The hub states 45–60 minute think-aloud sessions, video clips and severity ratings 1–4, and those show what sits behind each head."
+  ],
+  "outline": [
+    {
+      "h2": "What does one usability test participant actually cost?",
+      "answerHint": "One completed moderated session costs the incentive plus the recruiting fee, a share of the no-shows you over-booked, the moderator's hours and the analysis hours. The price on a panel's page usually covers only the first one or two lines.",
+      "points": [
+        "Intro (itemized receipt, see variety): open with a printed receipt for ONE completed 60-minute moderated session with a general consumer. Each line shows a sourced range or 'your rate x hours', never one invented total. Then 2 sentences on what the post covers. The keyword goes in the first sentence (carrier above).",
+        "Link UP to the hub early with the anchor 'usability testing services'.",
+        "Bold answer, then name the five lines: incentive, recruiting, no-show buffer, researcher time (moderation + analysis), tools. Each later section expands one line, so this section stays short.",
+        "Visual 1: the itemized receipt (see visuals). Its text goes behind 'Show as text'.",
+        "Scope sentence: the post covers formative, task-based usability testing in the US. Summative validation for regulated medical devices (FDA human factors) has its own sample-size rules and is out of scope (see notes)."
+      ]
+    },
+    {
+      "h2": "How much should you pay usability test participants?",
+      "answerHint": "Pay by audience and session length. User Interviews reports that most moderated consumer sessions pay $60–$100 per hour. Shorter unmoderated tasks pay less, and professionals and specialists pay more.",
+      "points": [
+        "Cite User Interviews' incentive guide for the consumer figures (fact-checker: confirm the $60–$100/hour range, the 25% at $100/hour and the 7% below $40/hour on userinterviews.com itself; drop any figure that is not on their page).",
+        "Use the GitLab handbook as a public, non-vendor example of incentives scaled to length (fact-checker: confirm the current tiers).",
+        "Explain why under-paying costs more: no-shows rise and the screener draws professional testers. Use no unsourced number for this point.",
+        "Visual 2: an incentive heat table (rows = audience type, columns = 15–20 min unmoderated / 60 min moderated). Cells hold ONLY sourced ranges, and cells without a source say 'quote from recruiter'. Its text goes behind 'Show as text'.",
+        "One optional sentence on US tax reporting, and only if the fact-checker confirms it against the IRS Form 1099-MISC instructions (see notes). No tax advice."
+      ]
+    },
+    {
+      "h2": "What does recruiting add to each participant?",
+      "answerHint": "Recruiting adds a per-head fee or staff hours. Panels cost the least for general consumers. Recruiting agencies charge more for professionals. Recruiting your own customers costs staff time instead of a fee.",
+      "points": [
+        "Three channels, each with a sourced figure: online panels (MeasuringU: about $7–$10 per participant for a general consumer profile, $40–$100 for specialised profiles); recruiting agencies (NN/g survey: average fee $107 per participant, about $84 for consumers vs $161 for high-end professionals; fact-checker: confirm and DATE the survey, because it may be about 20 years old, and write 'in NN/g's survey' with the year); in-house recruiting (NN/g: about 1.15 staff hours per participant recruited).",
+        "Screener: who writes it and what it filters. The hub step is 'Participant recruitment (5–8 days)' for 5–8 participants per user group. Use that lead time; do not use the 3–6 days from the UX research silo (see notes).",
+        "Visual 3: a recruitment difficulty ladder with 5 steps (general consumer -> specific consumer segment -> older adults or low-tech users -> B2B professional -> clinician or regulated user). For each step show the channel, what makes it harder and the cost direction (up arrows, no invented numbers). Its text goes behind 'Show as text'.",
+        "Older adults: cite NN/g's guidance on usability testing with older adults (screen on tech experience and devices owned, build trust, allow more time). Optional: the 2021 JMIR mHealth study, where a remote test had to supply devices or connectivity to some older participants. That is a real hidden cost line.",
+        "Clinicians: use the healthcare industry page's FAQ wording ('around shift schedules', '5–8 clinicians per role in each formative round'). Do not link that page (it belongs to another silo)."
+      ]
+    },
+    {
+      "h2": "Why do no-shows raise the cost of every participant who shows up?",
+      "answerHint": "Because you pay to recruit, and often to schedule and hold, people who never join. MeasuringU puts typical no-show rates for moderated studies at 10–20%, so you book extra sessions, and the cost per completed session rises.",
+      "points": [
+        "Show the arithmetic as a formula with labelled illustrative inputs: cost per completed session = (recruited heads x recruiting fee + incentives paid + moderator hours held) / completed sessions. Label it 'illustrative'. Do not present a dollar result as market data.",
+        "Over-recruit 1–2 per user group. This matches the site's existing wording in choose-ux-research-agency; reuse the idea, not the sentence.",
+        "Policy decisions to write down before recruiting: is a late cancellation paid, who replaces a no-show, and are floaters (stand-by participants) paid to wait.",
+        "Visual 4: a no-show dot grid. 7 booked dots, 1 hollow (no-show), 6 filled (completed), and the cost of the hollow dot spread across the 6 filled ones as a thin extra band. Its text goes behind 'Show as text'."
+      ]
+    },
+    {
+      "h2": "How many researcher hours sit behind each session?",
+      "answerHint": "More than the session length. A 45–60 minute moderated session also needs setup, a debrief, notes, clip editing and severity rating. Unmoderated studies save the moderator's hour but add review time for every recording.",
+      "points": [
+        "First-hand process (hub wording): 45–60 minute think-aloud sessions over Lookback or Zoom; every finding gets a video clip, a severity rating from 1 to 4 and a recommended design fix; SUS and SEQ per participant. Do not state an hours-per-session figure as our fact unless the orchestrator confirms one (see notes). Describe the tasks, and let the reader put in their own hours and rate.",
+        "Moderated and unmoderated as a COST UNIT only, in 3–4 sentences: unmoderated (Maze or UserTesting, 20–50 participants per hub) is cheaper per head, but it needs more heads, more filtering of low-effort recordings and has no follow-up questions. Link to the hub FAQ for the method difference instead of explaining it again. Do NOT write a moderated vs unmoderated comparison table.",
+        "Visual 5: an hours-behind-the-hour donut for one moderated session, with the segments setup, session, debrief, notes and clips, severity and fix proposal. Show segments only, without minutes, unless the orchestrator confirms our timings. Its text goes behind 'Show as text'.",
+        "Ends where a reader thinks 'we do not have these hours'. That is the first lead moment (see leadAngle)."
+      ]
+    },
+    {
+      "h2": "Why is cost per participant the wrong unit for comparing quotes?",
+      "answerHint": "Because a per-head price says nothing about what happens after the sessions. Compare quotes per round: recruit, test, analyse, fix the design and retest. Two '5-user' quotes can describe a set of unmoderated clips or a full round with fixes.",
+      "points": [
+        "Round anatomy from the hub process: test planning -> recruitment -> round 1 sessions -> analysis and design fixes -> round 2 with new participants against the round 1 task success rate -> report. Deep-link to the hub process section and do not re-list its day counts.",
+        "Visual 6: a round anatomy strip with 5 blocks. It shades the blocks a typical per-participant price covers (recruit, sessions) and leaves the rest open (analysis, design fixes, retest). Its text goes behind 'Show as text'.",
+        "Give 4 questions for normalising any quote: participants per round and per user group; moderated or unmoderated; who analyses and writes the report (clips, severity); and are design fixes and a retest included.",
+        "Do not build a 5-users argument. One sentence with a link to the hub FAQ ('How many users are needed for usability testing?') covers participant counts."
+      ]
+    },
+    {
+      "h2": "What does a round cost when you run it yourselves?",
+      "answerHint": "Add up the five lines for every completed session in the round, add the over-recruit buffer and the tool cost, then add the hours your designers spend fixing what the round found.",
+      "points": [
+        "A fill-in table in open text (no image), with columns line | how to price it | your number. Rows: incentive x sessions, recruiting fee x recruited heads, no-show buffer, moderator hours x your loaded rate, analysis hours x rate, tool licence share, design-fix hours. There must be no pre-filled dollar totals.",
+        "This must not look like the design-system-roi input worksheet: no formula anatomy, no break-even, no payback. It is a one-round bill.",
+        "Close the section with the second lead moment: the bill now has a fix line and a retest line that a panel price never showed."
+      ]
+    },
+    {
+      "h2": "What is included in our usability testing price?",
+      "answerHint": "Our usability testing engagement costs $25,000–$60,000 over 4–8 weeks and runs 2–3 rounds with design fixes between rounds. The price moves with rounds, participants per round, platforms and recruitment difficulty.",
+      "points": [
+        "State the range once and deep-link to the hub cost section. Do not restate the hub's near-$25,000 and near-$60,000 example engagements.",
+        "List what sits inside in hub wording: test plan, participant recruitment (screened to match real user groups), moderated sessions, unmoderated studies, SUS and SEQ scoring, a report where every finding has a clip, a severity rating and a fix, and design fixes in Figma between rounds. Do NOT say incentives are included or passed through until the orchestrator confirms (see notes CONFLICT).",
+        "DOWN link: TradeZella. Use only its exact sentence that the visuals 'were tested with traders before launch'. Traders are a specialist audience. Do not attribute TradeZella's results (+40% user interaction, +25% retention, +30% new customers) to testing.",
+        "Main lead moment and offer (see leadAngle). Second UP link to the hub. Close with the next step to /contact/."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What happens to the incentive when a participant does not show up?",
+      "hint": "It depends on the policy you set before recruiting. Decide what a no-show, a late cancellation and a stand-by participant receive, and put it in the screener and consent text. Present this as a decision to make, not an industry norm (no source states one)."
+    },
+    {
+      "q": "Is unmoderated testing cheaper per participant?",
+      "hint": "Yes per head, because there is no moderator hour and the sessions are shorter. A study needs more participants (20–50 in our Maze studies per the hub) and review time for every recording. Link to the hub FAQ for the method difference."
+    },
+    {
+      "q": "Does testing with older adults or clinicians cost more?",
+      "hint": "Yes. Recruiting takes longer, and sessions may run longer or need device support for older adults (NN/g, JMIR). Clinicians are only free around shifts (healthcare page wording). Give no invented premium."
+    },
+    {
+      "q": "Can we recruit our own customers to cut the cost?",
+      "hint": "Yes. It removes the recruiting fee but costs staff hours (NN/g: about 1.15 hours per participant) and can bias the sample toward loyal users. You still pay an incentive or offer a credit."
+    },
+    {
+      "q": "How many participants should we budget for per round?",
+      "hint": "Our rounds use 5–8 participants per user group (hub). Budget each user group separately and add 1–2 over-recruits. Keep it to 2 sentences and link to the hub FAQ. No Nielsen curve and no 85% claim."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+    { "href": "/services/usability-testing-services/#how-much-does-usability-testing-cost", "anchor": "what moves the price of a usability testing engagement" },
+    { "href": "/services/usability-testing-services/#how-does-the-usability-testing-process-work", "anchor": "our round-by-round testing process" },
+    { "href": "/services/usability-testing-services/#usability-testing-faqs", "anchor": "how many users each round needs" },
+    { "href": "/case-studies/tradezella/", "anchor": "TradeZella dashboards tested with traders" },
+    { "href": "/contact/", "anchor": "send us your audience and number of rounds" }
+  ],
+  "internalTargetsNote": "All files verified: content/services/usability-testing-services.json, content/case-studies/tradezella.md, app/contact/page.tsx. Section ids come from sectionId() in components/sections/SemanticSections.tsx (lowercase h2, non-alphanumerics to '-'): 'How much does usability testing cost?' -> how-much-does-usability-testing-cost; 'How does the usability testing process work?' -> how-does-the-usability-testing-process-work; 'Usability testing FAQs' -> usability-testing-faqs. The silo has no sibling posts yet. BOFU: keep links lean (about 5–6 in the body) and use the hub at most 2–3 times (early, process or FAQ, cost near the end). No cross-hub link is needed. If the writer wants one, the only fit is /services/ux-research-services/ for teams that need discovery before testing (the hub's own wording), and it should be left out unless it is clearly needed. Do not link the healthcare industry page or another silo's posts.",
+  "externalSources": [
+    { "url": "https://measuringu.com/usability-cost/", "why": "Jeff Sauro (MeasuringU): panel cost per participant ($7–$10 general consumer, $40–$100 specialised) and the cost drivers. Fact-checker: confirm the figures and the article date. Our post must not reuse its structure (it ranks for the target query)." },
+    { "url": "https://www.nngroup.com/articles/recruiting-test-participants-for-usability-studies/", "why": "NN/g recruiting survey: average agency fee per participant ($107; $84 consumers vs $161 professionals) and 1.15 staff hours per in-house recruit. Fact-checker: confirm the figures and the survey year, and date them in the text." },
+    { "url": "https://www.userinterviews.com/blog/the-ultimate-guide-to-user-research-incentives", "why": "User Interviews: consumer moderated incentives, most at $60–$100/hour. Fact-checker: confirm on their own page; drop any professional figure that only appears on greatquestion.co." },
+    { "url": "https://handbook.gitlab.com/handbook/product/ux/ux-research-coordination/participation-gratuities/", "why": "A public, non-vendor incentive policy scaled by session length (GitLab). Fact-checker: confirm the current tiers." },
+    { "url": "https://measuringu.com/?p=440", "why": "MeasuringU, '8 Ways to Minimize No Shows in UX Research': typical no-show rate of 10–20% for moderated studies. Fact-checker: this is the URL the search returned. Resolve it to the canonical slug before publishing, and confirm the figure." },
+    { "url": "https://www.nngroup.com/articles/usability-testing-older-adults/", "why": "NN/g guidance for testing with older adults (screener on tech experience and devices, trust, time). Supports the recruitment ladder. Optional extra: https://mhealth.jmir.org/2021/3/e26702/ (remote testing with older adults where devices had to be supplied)." }
+  ],
+  "visuals": [
+    { "type": "itemized receipt", "idea": "A paper-receipt graphic for ONE completed 60-minute moderated session with a general consumer. Lines: incentive (sourced range), recruiting fee (sourced range by channel), no-show share (formula), moderator hours (your rate x hours), analysis hours (your rate x hours), tool share. The total line reads 'your total' and is blank. The cover can reuse this motif. Text behind 'Show as text'." },
+    { "type": "incentive heat table", "idea": "Rows: general consumer, specific consumer, older adults, B2B professional, clinician. Columns: 15–20 min unmoderated, 60 min moderated. Shading runs from light to dark by cost direction. Cells hold only sourced ranges; the rest say 'quote from recruiter'. Text behind 'Show as text'." },
+    { "type": "recruitment difficulty ladder", "idea": "5 rising steps from general consumer to clinician or regulated user. Each step has a channel icon (panel, recruiter, own list, professional network), 'what makes it hard' and an up-arrow for cost and lead time. No invented numbers; the hub's 5–8 days are the baseline step. Text behind 'Show as text'." },
+    { "type": "no-show dot grid", "idea": "7 booked dots, 1 hollow (no-show) and 6 filled. A thin band shows the hollow dot's cost spread over the 6 completed sessions, with the formula underneath. Labelled 'illustrative'. Text behind 'Show as text'." },
+    { "type": "hours-behind-the-hour donut", "idea": "One moderated session as a donut: setup, session, debrief, notes and clips, severity and fix proposal. Segments are unlabelled for minutes unless the orchestrator confirms timings. Text behind 'Show as text'." },
+    { "type": "round anatomy strip", "idea": "5 blocks left to right: recruit -> sessions -> analysis -> design fixes -> retest. Shading marks the blocks a per-participant price usually covers, and the open outline marks what it leaves out. Text behind 'Show as text'." }
+  ],
+  "leadAngle": "Three moments. (1) After 'How many researcher hours sit behind each session?', a reader without a researcher sees the moderation and analysis hours they would have to find. (2) At the end of the DIY round table, the bill has a design-fix line and a retest line that a panel price never showed. (3) Main offer in 'What is included in our usability testing price?': send your audience, user groups and how many rounds you need, and get a fixed-scope proposal within the published $25,000–$60,000 range for a 4–8 week engagement of 2–3 rounds, with recruitment, moderated and unmoderated sessions, SUS/SEQ scoring, a report with clips and severity ratings, and design fixes between rounds. The writer adds one specific invitation in site wording, e.g. 'tell us who your users are and we will price the recruiting before anything else'. Do not promise incentives are included (open conflict).",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "itemized receipt (opens on a one-participant bill, line by line). This style is not among the last 7 fingerprints: buyer scenario, myth, data point, question, definition, mini case, contrarian take.",
+    "h2Frames": ["what does one cost", "how much to pay", "what recruiting adds", "why (no-shows)", "how many hours behind", "why wrong unit", "what a round costs yourselves", "what is included", "FAQs"],
+    "sectionOrder": "one-participant receipt -> incentives -> recruiting channels and audience ladder -> no-show maths -> researcher hours -> per-head vs per-round -> DIY round table -> our price and inclusions -> FAQs",
+    "visualTypes": ["itemized receipt", "incentive heat table", "recruitment difficulty ladder", "no-show dot grid", "hours-behind-the-hour donut", "round anatomy strip"],
+    "ctaAngle": "send your audience and how many rounds you need -> recruiting priced first in a fixed-scope proposal",
+    "listStyle": "receipt lines + sourced range cells + 4 quote-normalising questions + one fill-in bill table; no scorecard, no decision tree, no provider matrix, no RFP sections, no skip test",
+    "differsFrom": "Last 3 site-wide: web-app-design-rfp (Checklist/definition), is-discovery-phase-worth-it (Article/mini case), mobile-app-design-agency-vs-freelancer (Comparison/contrarian take). This post differs on type, intro, H2 frames, section order, visuals, CTA angle and list style (7 of 7). The silo has no posts. The nearest structural relative is design-system-roi (cost-family Guide, 4 posts back). Do NOT reuse from it: the 'question' intro, formula anatomy, the input worksheet, the break-even chart, the payback worked example, the cost stack or the one-page business case. The DIY table here is a one-round bill without payback logic. It is also not an agency-vs-X, how-to-choose or RFP/template post, as the orchestrator required."
+  },
+  "notes": [
+    "New silo: 0 posts in usability-testing-services. This is the silo's first BOFU post. The next post should be MOFU: 'usability test report' (what a usability test report should contain, with an example). Its SERP is how-to and template pages (cleverx, hotjar, livesession, clickup, DHS), and it suits shahmir-farooq. It must not repeat the ux-audit hub FAQ 'What is in a UX audit report?'. Parked in competitors.json.",
+    "Exact keyword: 'usability testing cost per participant'. Put it in the title, H1, slug, first sentence (carrier above) and the description (prescribed above, 154 chars). No keyword or secondary contains 'vs'.",
+    "Cannibalisation (hub content/services/usability-testing-services.json, anchor 'usability testing services'): the hub owns what usability testing is, the 6 inclusions, the 6-step process, benefits, 'vs A/B testing', the total cost ($25,000–$60,000, 4 price factors and the near-$25k/near-$60k examples), when to test, and FAQs on how many users, moderated vs unmoderated, prototypes, A/B and duration. Do not re-answer any of these; deep-link instead. Rejected for overlap: 'usability testing cost', 'how much does usability testing cost', 'cost of a usability test' (the hub's cost H2 owns these, so do not use them as secondary keywords or as an H2), 'moderated vs unmoderated usability testing' (hub FAQ), 'how many users for usability testing' (hub FAQ plus the orchestrator's 5-users ban).",
+    "Sibling overlap: the ux-research-services hub owns 'UX research cost' and 'How many participants does UX research need?'. ux-audit-services owns 'UX audit vs usability testing'. choose-ux-research-agency already covers recruitment channels in a table (panel / specialist recruiter) and over-recruiting by 1–2. Reword those ideas and keep this post's channels tied to cost per head. ux-audit-agency-vs-freelancer and choose-ux-research-agency cite Nielsen's 5-user finding, so do not cite it again here; use the hub FAQ link.",
+    "CONFLICT for the orchestrator (new, needs an owner answer): the hub lists 'participant recruitment' as a deliverable but does not say whether participant incentives are inside the $25,000–$60,000 price or passed through at cost. The writer must not say either until this is confirmed. Write 'recruitment is part of every engagement' and leave incentives unstated.",
+    "CONFLICT (lead time): the usability hub gives 'Participant recruitment (5–8 days)', while choose-ux-research-agency and the UX research hub say 'our standard 3–6 days of recruitment'. Follow the usability hub (5–8 days) in this post.",
+    "CONFLICT (participants per round): the usability hub says 5–8 participants per round, while most sibling hubs say '5 users per round' and the healthcare page says '5–8 clinicians per role'. Follow the usability hub (5–8 per user group).",
+    "CONFLICT / unconfirmed (team size and hours): home.ts gives the $25,000–$60,000 'Research & UX design sprint' '2–4 designers'. The usability hub gives no team size and no hours per session. Do not state a designer count or a fixed number of researcher hours per session as our fact. Describe the tasks and let the reader put in their own hours.",
+    "HONESTY (do not use): content/home.ts line about 'a telehealth platform serving elderly patients, we tested on tablet at the bedside' names no client and has no case study in content/case-studies/. Do not repeat it or use it as proof for the older-adults point. The orchestrator may want to review that home.ts line.",
+    "Case studies: TradeZella is the only case study with testing in its body ('The visuals follow industry best practices for financial dashboards and were tested with traders before launch'). Quote that exact sentence only. Do not attribute its +40% user interaction / +25% retention / +30% new customers to testing. Elia Wellness (adults 50+) has NO testing detail; its body describes design for older adults ('large touch targets and simple rating scales' on the tablet questionnaire). Cite it, if at all, only as design work for that audience, never as a usability test we ran, and do not use its quote (it thanks the team for 'building' the platform, which feeds the open home.ts design-and-development conflict). Owner rule: never mention Apex HCM, Fortna or ToolsGroup.",
+    "Regulated scope: the healthcare industry page prices 'summative usability testing' inside a ~$180,000 full product, and summative FDA human factors validation expects at least 15 participants per distinct user group. This post is about formative rounds; mention summative validation only as out of scope, in one sentence, and do not promise IEC 62366 or FDA validation work.",
+    "Optional tax sentence: from tax year 2026 the Form 1099-MISC reporting threshold rose from $600 to $2,000 (One Big Beautiful Bill Act; indexed from 2027). Use it only if the fact-checker confirms it against the IRS Instructions for Forms 1099-MISC and 1099-NEC, and only as 'check with your finance team', never as advice on how participant payments are classified.",
+    "Honesty, do not use (vendor or unverifiable figures seen on the SERP): every CleverX figure (B2B fees $100–$400, incentives $75–$600, study totals $5,000–$9,600, agency $8,000–$25,000, moderators $150–$400/hour, 'teams underestimate by 40–100%', '$750–$1,350 fully loaded'); greatquestion.co professional ranges ($100–$200/hour) unless User Interviews' own page shows them; innerview.co calculator ranges; dscout '$150–$600 clinical'; Koji's '11% no-show attributed to NN/g' (unverified); the '20–40% cheaper unmoderated' line attributed to NN/g by a vendor; Upwork '$30–$100' gigs (QA testing, not usability); the Taylor & Francis '$1,000–$1,500 per participant' and the Nielsen 1993 '$3,000 + $1,000 per user' (dated). Use only figures traced to MeasuringU, NN/g, User Interviews or GitLab, plus our hub.",
+    "Originality: the beats page (cleverx.com/blog/b2b-usability-testing-cost) is a B2B-only, vendor-voiced breakdown: recruitment fees by seniority -> incentives by seniority -> researcher time -> study totals by method -> in-house vs agency. Do not use that order, its seniority tiers, its method-by-method study totals or an in-house vs agency section. Our structure follows one participant's bill and then the round. MeasuringU's page leads with platform licences, so do not open with platforms. QA checks 5-gram overlap with the beats page (max 5%).",
+    "Variety: orchestrator constraints met. This is not an agency-vs-X, how-to-choose or RFP/template post, and it does not argue the 5-users rule."
+  ]
+}

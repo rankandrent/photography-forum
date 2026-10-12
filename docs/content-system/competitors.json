@@ -1,6 +1,6 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
@@ -9,8 +9,8 @@
     { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services", "web-app-design-services"], "seenFor": ["ux research agency", "ux research services", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-05, 2026-10-09" },
     { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services", "design-system-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool", "design system agency"], "source": "WebSearch 2026-10-05, 2026-10-07, 2026-10-08" },
     { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp", "ux audit freelancer vs agency", "ux audit cost"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
-    { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables"], "source": "WebSearch 2026-10-05" },
-    { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp"], "source": "WebSearch 2026-10-05" },
+    { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services", "usability-testing-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables", "how many users usability testing", "research incentive strategies"], "source": "WebSearch 2026-10-05, 2026-10-12" },
+    { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services", "usability-testing-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp", "usability testing cost per participant", "b2b usability testing cost", "usability testing report template", "usability testing for healthcare apps"], "source": "WebSearch 2026-10-05, 2026-10-12 (WebFetch DNS-blocked)" },
     { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" },
     { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer"], "source": "WebSearch 2026-10-06" },
     { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope", "design system audit", "what is a design system audit"], "source": "WebSearch 2026-10-06, 2026-10-08" },
@@ -31,11 +31,11 @@
     { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services", "design-system-services", "digital-product-design-services"], "seenFor": ["how to choose a ux audit company", "design system audit", "hire design system consultant", "how to hire a product design agency"], "source": "WebSearch 2026-10-07, 2026-10-08, 2026-10-10" },
     { "domain": "baymard.com", "kind": "UX research institute (citable source, not a target)", "silos": ["ux-audit-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit"], "source": "WebSearch 2026-10-07" },
     { "domain": "figr.design", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
-    { "domain": "lollypop.design", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
+    { "domain": "lollypop.design", "kind": "agency blog", "silos": ["design-system-services", "usability-testing-services"], "seenFor": ["design system roi", "design system roi business case", "is a design system worth the investment", "moderated vs unmoderated usability testing cost"], "source": "WebSearch 2026-10-08, 2026-10-12" },
     { "domain": "appstudio.ca", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "cost to maintain a design system", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "supernova.io", "kind": "design system tool blog", "silos": ["design-system-services"], "seenFor": ["design system business case", "cost to maintain a design system", "design system roi business case"], "source": "WebSearch 2026-10-08" },
     { "domain": "uxpin.com", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["how to calculate design system roi"], "source": "WebSearch 2026-10-08" },
-    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services", "digital-product-design-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users", "product discovery services"], "source": "WebSearch 2026-10-08, 2026-10-09, 2026-10-10" },
+    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services", "digital-product-design-services", "usability-testing-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users", "product discovery services", "is one round of usability testing enough"], "source": "WebSearch 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-12" },
     { "domain": "awesomic.com", "kind": "design subscription blog", "silos": ["design-system-services", "digital-product-design-services"], "seenFor": ["design system audit", "hiring a product design agency"], "source": "WebSearch 2026-10-08, 2026-10-10" },
     { "domain": "ramotion.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
     { "domain": "designsystemscollective.com", "kind": "publisher (Medium publication)", "silos": ["design-system-services"], "seenFor": ["design system build vs adopt", "design system roi formula"], "source": "WebSearch 2026-10-08" },
@@ -65,9 +65,20 @@
     { "domain": "figma.com", "kind": "design tool resource library (rates are do-not-use)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["mobile app design agency vs freelancer vs in-house designer", "ui ux design cost freelancer agency in-house"], "source": "WebSearch 2026-10-11 (WebFetch DNS-blocked)" },
     { "domain": "mindsea.com", "kind": "app agency blog", "silos": ["mobile-app-ui-ux-design-services", "web-app-design-services"], "seenFor": ["mobile app redesign cost", "questions to ask a mobile app design agency before hiring"], "source": "WebSearch 2026-10-09, 2026-10-11" },
     { "domain": "cleveroad.com", "kind": "development agency blog", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["mobile app redesign cost", "how much does it cost to design an app"], "source": "WebSearch 2026-10-11" },
-    { "domain": "perfectiongeeks.com", "kind": "development agency blog", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["product discovery phase cost", "mobile app redesign cost", "cost of app redesign vs rebuild", "questions to ask a mobile app development company"], "source": "WebSearch 2026-10-10, 2026-10-11" },
-    { "domain": "uxdesign.cc", "kind": "publisher (Medium publication)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["ios vs android design", "adapt ios app design to android"], "source": "WebSearch 2026-10-11" },
-    { "domain": "developer.android.com", "kind": "official Google documentation (citable source, not a target)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["adapt ios app design to android material design 3"], "source": "WebSearch 2026-10-11" }
+    { "domain": "perfectiongeeks.com", "kind": "development agency blog", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services", "usability-testing-services"], "seenFor": ["product discovery phase cost", "mobile app redesign cost", "cost of app redesign vs rebuild", "questions to ask a mobile app development company", "usability testing services"], "source": "WebSearch 2026-10-10, 2026-10-11, 2026-10-12" },
+    { "domain": "uxdesign.cc", "kind": "publisher (Medium publication)", "silos": ["mobile-app-ui-ux-design-services", "usability-testing-services"], "seenFor": ["ios vs android design", "adapt ios app design to android", "how many rounds of usability testing"], "source": "WebSearch 2026-10-11, 2026-10-12" },
+    { "domain": "developer.android.com", "kind": "official Google documentation (citable source, not a target)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["adapt ios app design to android material design 3"], "source": "WebSearch 2026-10-11" },
+    { "domain": "measuringu.com", "kind": "UX research consultancy blog (Jeff Sauro; also a citable source)", "silos": ["usability-testing-services"], "seenFor": ["usability testing cost per participant", "how much does a usability test cost", "no-show rate ux research"], "source": "WebSearch 2026-10-12 (WebFetch DNS-blocked)" },
+    { "domain": "nngroup.com", "kind": "UX research institute (citable source, not a target)", "silos": ["usability-testing-services"], "seenFor": ["usability testing cost per participant", "recruiting test participants cost", "usability testing with older adults", "how many rounds of usability testing"], "source": "WebSearch 2026-10-12 (WebFetch DNS-blocked)" },
+    { "domain": "userinterviews.com", "kind": "research recruiting platform blog (citable for incentive data)", "silos": ["usability-testing-services"], "seenFor": ["usability testing participant incentive", "research incentives report"], "source": "WebSearch 2026-10-12" },
+    { "domain": "greatquestion.co", "kind": "research platform blog", "silos": ["usability-testing-services"], "seenFor": ["usability testing participant incentive", "research incentives what to pay participants"], "source": "WebSearch 2026-10-12" },
+    { "domain": "uxtweak.com", "kind": "research tool blog", "silos": ["usability-testing-services"], "seenFor": ["usability testing cost per participant", "how many participants usability study"], "source": "WebSearch 2026-10-12" },
+    { "domain": "hotjar.com", "kind": "analytics tool guide", "silos": ["usability-testing-services"], "seenFor": ["usability test report", "usability testing methods"], "source": "WebSearch 2026-10-12" },
+    { "domain": "livesession.io", "kind": "analytics tool guide", "silos": ["usability-testing-services"], "seenFor": ["usability test report what should it include"], "source": "WebSearch 2026-10-12" },
+    { "domain": "clickup.com", "kind": "productivity tool blog", "silos": ["usability-testing-services"], "seenFor": ["how to write a usability testing report"], "source": "WebSearch 2026-10-12" },
+    { "domain": "matellio.com", "kind": "development agency blog", "silos": ["usability-testing-services"], "seenFor": ["usability testing services"], "source": "WebSearch 2026-10-12 (head term SERP is otherwise vendor service pages: redberries, yellowslice, think360studio, venturedive, kualitatem, openxcell)" },
+    { "domain": "uxreactor.com", "kind": "UX agency blog", "silos": ["usability-testing-services"], "seenFor": ["how many rounds of usability testing before launch"], "source": "WebSearch 2026-10-12" },
+    { "domain": "pixelmatters.com", "kind": "agency blog", "silos": ["usability-testing-services"], "seenFor": ["how many rounds of usability testing before launch", "impact of usability testing on digital products"], "source": "WebSearch 2026-10-12" }
   ],
   "topPosts": [
     {
@@ -500,6 +511,63 @@
       "serviceSupport": 4,
       "status": "candidate",
       "notes": "Next MOFU for the mobile silo: 'design an Android version of an iOS app' (hub 'when to hire' item 5). SERP is how-to (developer.android.com 'translate designs' 10 steps, m2.material.io blog, vp0.com, dev.to). Keep it cross-platform; iOS-only angles belong to ios-app-design-services. Do not repeat the platform pair card from mobile-app-design-agency-vs-freelancer; go deeper (navigation model, system back, typography scale, Material You color) and cite Google's guide without copying its steps."
+    },
+    {
+      "domain": "cleverx.com",
+      "url": "https://cleverx.com/blog/b2b-usability-testing-cost",
+      "title": "B2B usability testing cost",
+      "keywords": ["usability testing cost per participant", "b2b usability testing cost", "usability testing recruitment cost", "moderated vs unmoderated usability testing cost"],
+      "estTraffic": null,
+      "silo": "usability-testing-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/usability-testing-cost-per-participant.json",
+      "notes": "beats target. B2B-only and vendor-voiced (research platform): recruitment fees and incentives by seniority -> researcher time -> study totals by method -> in-house vs agency. No no-show maths, no round as the unit, no non-B2B hard-to-recruit audiences. All its figures are do-not-use (inconsistent across CleverX pages). cleverx.com/guides/user-research-cost-in-2026-pricing-by-method-approach-and-industry ranks too."
+    },
+    {
+      "domain": "measuringu.com",
+      "url": "https://measuringu.com/usability-cost/",
+      "title": "How Much Does a Usability Test Cost?",
+      "keywords": ["usability testing cost per participant", "how much does a usability test cost", "usability test cost"],
+      "estTraffic": null,
+      "silo": "usability-testing-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/usability-testing-cost-per-participant.json",
+      "notes": "#1 for both cost queries checked. Leads with platform licences ($1,000 study to $100K+ licence), then recruiting/honorariums (panel $7-$10 general, $40-$100 specialised; $12K-$15K for 20 qualified moderated participants) and professional services. Citable for the panel figures; do not mirror its platform-first structure. 'How much does a usability test cost' itself stays with the hub cost H2."
+    },
+    {
+      "domain": "cleverx.com",
+      "url": "https://cleverx.com/blog/usability-testing-report-template/",
+      "title": "Usability testing report template: structure and examples",
+      "keywords": ["usability test report", "usability testing report template", "what should a usability test report include"],
+      "estTraffic": null,
+      "silo": "usability-testing-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Next MOFU for the usability silo. SERP is how-to/template pages: livesession.io usability-reporting, clickup.com how-to-write, hotjar.com/usability-testing/report, dhs.gov CX lesson, gur.ucsc.edu. Hub lists the report as one deliverable (clip + severity 1-4 + fix per finding), so build around what a decision-maker reads first and how severity drives the fix backlog. Must not repeat the ux-audit hub FAQ 'What is in a UX audit report?' or the cost post. Suits shahmir-farooq (communication design)."
+    },
+    {
+      "domain": "nngroup.com",
+      "url": "https://www.nngroup.com/articles/usability-testing-older-adults/",
+      "title": "Usability testing with older adults",
+      "keywords": ["usability testing with older adults", "user testing older adults"],
+      "estTraffic": null,
+      "silo": "usability-testing-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Research institute (citable source; the SERP is otherwise academic: PMC homebound review, Maynooth 21 guidelines, JMIR). Possible MOFU or TOFU 'testing with older adults' post later. Proof gap: Elia Wellness (adults 50+) has no testing detail in its case study, and home.ts's unnamed 'telehealth ... elderly patients' line has no case study, so do not claim we tested with older adults until the owner supplies a real example."
+    },
+    {
+      "domain": "uxreactor.com",
+      "url": "https://uxreactor.com/ever-lost-sleep-over-a-new-product-launch-three-rounds-of-usability-testing-can-mitigate-risk-for-you/",
+      "title": "Ever lost sleep over a new product launch? Three rounds of usability testing can mitigate risk for you",
+      "keywords": ["how many rounds of usability testing before launch", "rounds of usability testing"],
+      "estTraffic": null,
+      "silo": "usability-testing-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Deferred: Google mixes 'how many rounds' with 'how many users' (userbrain, trymata, koji, uxtweak pages), so a post here would turn into the 5-users post the orchestrator ruled out, and the hub FAQ owns user counts. pixelmatters.com and netguru.com/blog/usability-testing-guide also rank. Revisit only as a launch-plan angle (which build gets which round) that never argues the participant count."
     }
   ]
 }
