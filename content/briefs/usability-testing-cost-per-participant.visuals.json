@@ -1,0 +1,31 @@
+[
+  {
+    "frontmatter": {
+      "image": "/blog/usability-testing-cost-per-participant/cover.svg"
+    }
+  },
+  {
+    "marker": "<!-- visual: itemized receipt — a paper receipt for ONE completed 60-minute moderated session with a general consumer; lines for incentive, recruiting fee, no-show share, moderator time, analysis time and tool share, each with its sourced range or \"your rate × hours\"; the total line reads \"your total\" and stays blank -->",
+    "markdown": "![Itemized receipt for one completed 60-minute moderated session with a general consumer: incentive ($60–$100 per hour, User Interviews), recruiting fee (panel $7–$10 per MeasuringU, NN/g agency average $107, or staff hours), no-show share (MeasuringU plans around 10%), moderator time, analysis time and tool share priced as your rate × hours, and a blank your-total line](/blog/usability-testing-cost-per-participant/itemized-receipt.svg \"One completed session, line by line\")"
+  },
+  {
+    "marker": "<!-- visual: incentive heat table — rows general consumer, specific consumer segment, older adults, B2B professional, clinician, plus a GitLab reference row; columns \"short unmoderated test\" and \"60-minute moderated session\"; shading from light to dark by cost direction; only sourced figures, every other cell reads \"quote from recruiter\" -->",
+    "markdown": "![Heat table of participant incentives for five audiences, general consumer to clinician, across short unmoderated tests and 60-minute moderated sessions; shading darkens as cost rises, only the general consumer moderated cell carries a figure ($60–$100 per hour, User Interviews), the rest read quote from recruiter, plus a GitLab reference row at $20, $40 and $120](/blog/usability-testing-cost-per-participant/incentive-heat-table.svg \"Incentive by audience and session length\")"
+  },
+  {
+    "marker": "<!-- visual: recruitment difficulty ladder — five rising steps from general consumer to clinician or regulated user; each step shows a channel icon (panel, recruiter, own list, professional network), what makes it hard, and up arrows for cost and lead time; no invented numbers; the 5–8 day recruitment step is the baseline -->",
+    "markdown": "![Five-step recruitment difficulty ladder from general consumer (online research panel, the 5–8 day baseline) through specific consumer segment, older adults or low-tech users and B2B professional to clinician or regulated user (specialist recruiter), each step showing its channel, its hard part and rising cost and lead time arrows](/blog/usability-testing-cost-per-participant/recruitment-ladder.svg \"Recruitment gets harder, slower and costlier up the ladder\")"
+  },
+  {
+    "marker": "<!-- visual: no-show dot grid — illustrative; 7 booked dots, 1 hollow (no-show) and 6 filled (completed); a thin band spreads the hollow dot's recruiting fee and held hour across the 6 completed sessions; labelled \"illustrative\"; do not repeat the formula, which sits in the text above -->",
+    "markdown": "![Illustrative dot grid: 7 booked participants, 1 no-show drawn as a hollow dot and 6 completed; the empty slot's recruiting fee and held moderator hour fan out as a thin extra band on top of each of the 6 completed sessions](/blog/usability-testing-cost-per-participant/no-show-dot-grid.svg \"Illustrative: how one no-show spreads across completed sessions\")"
+  },
+  {
+    "marker": "<!-- visual: hours-behind-the-hour donut — one moderated session as a donut with segments setup, session, debrief, notes and clips, severity and fix proposal; segments only, no minutes printed -->",
+    "markdown": "![Donut of one moderated session split into five segments, not to scale: setup, the 45–60 minute think-aloud session, debrief, notes and clips, and severity and fix proposal, each explained in a card below](/blog/usability-testing-cost-per-participant/session-hours-donut.svg \"The researcher hours around one moderated session\")"
+  },
+  {
+    "marker": "<!-- visual: round anatomy strip — five blocks left to right: recruit → sessions → analysis → design fixes → retest; the blocks a typical per-participant price covers (recruit, sessions) are shaded, the rest (analysis, design fixes, retest) are open outlines -->",
+    "markdown": "![Five-block strip of one test round: recruit and sessions shaded as covered by a typical per-participant price; analysis, design fixes and retest drawn as open dashed outlines marked not covered](/blog/usability-testing-cost-per-participant/round-anatomy-strip.svg \"What a per-participant price covers in one round\")"
+  }
+]

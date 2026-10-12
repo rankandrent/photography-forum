@@ -20,6 +20,7 @@ takeaways:
   - "Compare quotes per round, not per head: a round includes analysis, design fixes and a retest that a per-head price leaves out."
 draft: true
 qa: pending
+image: /blog/usability-testing-cost-per-participant/cover.svg
 ---
 
 Usability testing cost per participant is rarely the number on a panel's price page: the incentive is one line on a five-line bill. Picture the receipt for one completed 60-minute moderated session with a general consumer. The panel prints one or two of its lines, while the moderator's hours, the analysis and the empty slot a no-show leaves behind stay off it. This guide prices each line from named sources, then moves the unit from one head to one test round, which is how our [usability testing services](/services/usability-testing-services/) are scoped.
@@ -30,7 +31,7 @@ Usability testing cost per participant is rarely the number on a panel's price p
 
 A panel or recruiter quote prices the first two lines at most. Moderation, analysis and tooling arrive as hours on your own calendar, so they slip out of budgets; the receipt below prints researcher time as two lines, moderation and analysis.
 
-<!-- visual: itemized receipt — a paper receipt for ONE completed 60-minute moderated session with a general consumer; lines for incentive, recruiting fee, no-show share, moderator time, analysis time and tool share, each with its sourced range or "your rate × hours"; the total line reads "your total" and stays blank -->
+![Itemized receipt for one completed 60-minute moderated session with a general consumer: incentive ($60–$100 per hour, User Interviews), recruiting fee (panel $7–$10 per MeasuringU, NN/g agency average $107, or staff hours), no-show share (MeasuringU plans around 10%), moderator time, analysis time and tool share priced as your rate × hours, and a blank your-total line](/blog/usability-testing-cost-per-participant/itemized-receipt.svg "One completed session, line by line")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -58,7 +59,7 @@ A usability test participant incentive for a short unmoderated task is smaller. 
 
 Underpaying rarely saves money: in User Interviews' study data, higher incentives slightly reduced no-show rates, as the no-show section below shows.
 
-<!-- visual: incentive heat table — rows general consumer, specific consumer segment, older adults, B2B professional, clinician, plus a GitLab reference row; columns "short unmoderated test" and "60-minute moderated session"; shading from light to dark by cost direction; only sourced figures, every other cell reads "quote from recruiter" -->
+![Heat table of participant incentives for five audiences, general consumer to clinician, across short unmoderated tests and 60-minute moderated sessions; shading darkens as cost rises, only the general consumer moderated cell carries a figure ($60–$100 per hour, User Interviews), the rest read quote from recruiter, plus a GitLab reference row at $20, $40 and $120](/blog/usability-testing-cost-per-participant/incentive-heat-table.svg "Incentive by audience and session length")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -87,7 +88,7 @@ Usability testing recruitment cost depends on the channel:
 
 Every channel needs a screener: the short questionnaire that filters applicants on behavior, devices and role. In our engagements, participant recruitment is a 5–8 day step before the first round of sessions.
 
-<!-- visual: recruitment difficulty ladder — five rising steps from general consumer to clinician or regulated user; each step shows a channel icon (panel, recruiter, own list, professional network), what makes it hard, and up arrows for cost and lead time; no invented numbers; the 5–8 day recruitment step is the baseline -->
+![Five-step recruitment difficulty ladder from general consumer (online research panel, the 5–8 day baseline) through specific consumer segment, older adults or low-tech users and B2B professional to clinician or regulated user (specialist recruiter), each step showing its channel, its hard part and rising cost and lead time arrows](/blog/usability-testing-cost-per-participant/recruitment-ladder.svg "Recruitment gets harder, slower and costlier up the ladder")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -115,7 +116,7 @@ So the real usability testing cost per participant includes the people who never
 
 Over-recruiting is the fix: book one or two floaters per user group, so a missed slot does not cost you a session, and settle what each one is paid (see the FAQs).
 
-<!-- visual: no-show dot grid — illustrative; 7 booked dots, 1 hollow (no-show) and 6 filled (completed); a thin band spreads the hollow dot's recruiting fee and held hour across the 6 completed sessions; labelled "illustrative"; do not repeat the formula, which sits in the text above -->
+![Illustrative dot grid: 7 booked participants, 1 no-show drawn as a hollow dot and 6 completed; the empty slot's recruiting fee and held moderator hour fan out as a thin extra band on top of each of the 6 completed sessions](/blog/usability-testing-cost-per-participant/no-show-dot-grid.svg "Illustrative: how one no-show spreads across completed sessions")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -131,7 +132,7 @@ Ask your recruiter for its no-show rate, size the booked heads from it, and ask 
 
 In our moderated usability testing, a researcher runs 45–60 minute think-aloud sessions over Lookback or Zoom, for example on a clickable Figma prototype, and every participant answers the System Usability Scale (SUS) and the Single Ease Question (SEQ). In the usability test report, every finding gets a video clip, a severity rating and a recommended design fix. Put your own hours against each segment below, then multiply by your loaded rate.
 
-<!-- visual: hours-behind-the-hour donut — one moderated session as a donut with segments setup, session, debrief, notes and clips, severity and fix proposal; segments only, no minutes printed -->
+![Donut of one moderated session split into five segments, not to scale: setup, the 45–60 minute think-aloud session, debrief, notes and clips, and severity and fix proposal, each explained in a card below](/blog/usability-testing-cost-per-participant/session-hours-donut.svg "The researcher hours around one moderated session")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -153,7 +154,7 @@ If nobody on your side can give a round these hours, that is the part of the bil
 
 The cost per usability test round is the number to compare: two quotes for "5 users" can describe a set of unmoderated clips or a moderated round with analysis and design fixes. Once you know your usability testing cost per participant, multiply it by a round, not by a study; in our process, round 2 uses new participants and measures the fixed design against the round 1 task success rate.
 
-<!-- visual: round anatomy strip — five blocks left to right: recruit → sessions → analysis → design fixes → retest; the blocks a typical per-participant price covers (recruit, sessions) are shaded, the rest (analysis, design fixes, retest) are open outlines -->
+![Five-block strip of one test round: recruit and sessions shaded as covered by a typical per-participant price; analysis, design fixes and retest drawn as open dashed outlines marked not covered](/blog/usability-testing-cost-per-participant/round-anatomy-strip.svg "What a per-participant price covers in one round")
 
 <details class="astext"><summary>Show as text</summary>
 
