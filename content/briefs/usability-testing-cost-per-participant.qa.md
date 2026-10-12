@@ -201,3 +201,48 @@ Gaps G1 and G2 are below. The logic defects F4–F8 also count here.
 5. Completeness gaps G1 (tool share) and G2 (B2B in open text).
 
 VERDICT: FAIL
+
+---
+
+# QA report: round 2 (final loop, 2026-10-12)
+
+Post checked at fd31613 plus one QA text fix (below). The SVGs were committed in 2349027. Following the orchestrator's instruction, the fact-checker's wording for F3 (L60) and F11 (L227, "published in January 2003") is accepted.
+
+| # | Check | Result |
+|---|---|---|
+| 1 | Intent and cannibalisation | PASS |
+| 4 | Semantic SEO | PASS: keyword 6× in 2,157 open words = 1.39%; bold answers 8/8 ≤ 28 words; no hedges, banned phrases, "Licence" or TODO; UX expanded (F10) |
+| 5 | Internal links | PASS (5; the design-system-roi BOFU exception was confirmed by the orchestrator: new silo, hub cap 2) |
+| 6 | Images | PASS: the strip and receipt were re-rendered (sharp, 96 dpi) with no overlaps; "License" is fixed in the receipt row 6 SVG |
+| 6b | Duplication | PASS: strip and receipt SVG text match their `<details>` blocks word for word; the strip's bold answer no longer lists the five blocks (F4) |
+| 7 | Readability and overlap | PASS: 5-gram overlap with the usability hub is 1.8% (the verbatim deliverables sentence is fact-checker-mandated), max 0.5% against other posts |
+| 7a | Competitor originality | PASS (unchanged from round 1) |
+| 7b | Silo and leads | PASS |
+| 7c | Variety | PASS (F12 applied) |
+| 7d | Semantic completeness | PASS: G1 tool share is in L151 and G2 B2B is in L105, each with substance and a next step |
+| 7e | On-page | PASS: score 100, failed [] |
+| 8 | Build / seo:check / lint | PASS: build exit 0, seo:check 0 errors (6 pre-existing warnings on other pages), lint exit 0 |
+
+## Fix verification
+- F1: applied. F2: applied. F3: fact-checker wording kept, accepted.
+- F4: applied. F5: applied (L166, alt and SVG half-shade with the "Partly covered" legend). F6: applied (takeaway 5, L186).
+- F7: applied. F8: applied (L190 and L193; the floater fee now sits only in the Recruiting and No-show buffer rows).
+- F9: applied (L45, L195 and the SVG). F10: applied. F11: applied (fact-checker date wording). F12: applied.
+- G1: applied (L151). G2: applied (L105, with B2B expanded in open text).
+
+## QA text fix applied directly (last loop, no figures or sources changed)
+- L151 old: `Price each one as your plan × share: the cost of the seats…`
+- L151 new: `Price each one as a share of its plan: the cost of the seats…`
+- Reason: "plan × share" read as a formula that contradicted the division that follows it.
+
+## Length
+The open body (prose, lists, tables and FAQs, without collapsed blocks or alt text) is about 2,160 words by my count. The ~2,560 figure includes the `<details>` text. Each remaining near-repeat has a job:
+- L149 vs FAQ 2 (unmoderated): the FAQ is the schema answer.
+- L32 vs the receipt: the receipt is the summary.
+
+Trimming either would weaken a section or a FAQ, so I accept the length and made no trim.
+
+## Note for the orchestrator
+Commit the L151 edit together with the qa: field.
+
+VERDICT: PASS

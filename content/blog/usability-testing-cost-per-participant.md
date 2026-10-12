@@ -148,7 +148,7 @@ In our moderated usability testing, a researcher runs 45–60 minute think-aloud
 
 Unmoderated usability testing removes the moderator's hour, not the analysis: each unmoderated study in Maze or UserTesting needs more participants, every recording still needs watching, and nobody can ask a follow-up question when someone stalls.
 
-Tools add the last cost line: a video tool such as Lookback or Zoom for moderated sessions, Maze or UserTesting for unmoderated studies, and Figma for the prototype. Price each one as your plan × share: the cost of the seats the round uses for the plan period, divided by the sessions you run in that period. A team that runs one round a year carries the whole annual license on that round. Add the per-session share to line 6 of the receipt.
+Tools add the last cost line: a video tool such as Lookback or Zoom for moderated sessions, Maze or UserTesting for unmoderated studies, and Figma for the prototype. Price each one as a share of its plan: the cost of the seats the round uses for the plan period, divided by the sessions you run in that period. A team that runs one round a year carries the whole annual license on that round. Add the per-session share to line 6 of the receipt.
 
 If nobody on your side can give a round these researcher hours, that is the part of the bill our usability testing engagement takes off your calendar.
 
