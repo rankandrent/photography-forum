@@ -219,6 +219,10 @@ list, table, image, caption) and text style (size, bold), and judge order and im
    the same thing as its alt text and file name. Use unique, topic-specific images, never stock.
 5. **Tables are introduced:** one sentence before every table says what it compares (`table-intro`).
 6. **Bold is a signal:** bold only the direct answer and true key terms, not decoration.
+7. **Short, dense section text (owner, 2026-10-12):** on service, industry and location pages the detail
+   text under each answer is 50–70 words (90 at most, `section-body-short`). Keep the named entities and
+   attributes (places, industries, standards, user roles, tools) and the honesty lines (no local office);
+   cut restatements of the answer, generic praise and repeated keyword phrases.
 
 ## Files each agent writes
 

@@ -1,35 +1,11 @@
 {
- "generated": "2026-10-12T06:37:36.159Z",
+ "generated": "2026-10-12T06:59:39.572Z",
  "pages": [
-  {
-   "type": "content",
-   "route": "/about/",
-   "keyword": null,
-   "score": 90,
-   "failed": [
-    "content-depth: ≥ 600 words of content (has 384)"
-   ],
-   "title": "About Our UI UX Design Agency | Reston, VA, Since 2017",
-   "h1": "About us",
-   "words": 384
-  },
-  {
-   "type": "archive",
-   "route": "/privacy/",
-   "keyword": null,
-   "score": 91,
-   "failed": [
-    "internal-out: ≥ 3 internal links out (has 2)"
-   ],
-   "title": "Privacy Policy | How We Handle Your Personal Data",
-   "h1": "Privacy Policy",
-   "words": 594
-  },
   {
    "type": "blog",
    "route": "/blog/web-app-design-rfp/",
    "keyword": "web app design rfp",
-   "score": 92,
+   "score": 93,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)",
     "entity-coverage: ≥ 80% of related entities in the text (14/20; missing: user roles and permissions, workflow (task) inventory, data tables, filters and bulk actions, usability testing, Section 508 / Revised 508 Standards)"
@@ -55,7 +31,7 @@
    "type": "blog",
    "route": "/blog/choose-ux-research-agency/",
    "keyword": "how to choose a ux research agency",
-   "score": 97,
+   "score": 98,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)"
    ],
@@ -67,7 +43,7 @@
    "type": "blog",
    "route": "/blog/design-system-roi/",
    "keyword": "design system roi",
-   "score": 97,
+   "score": 98,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)"
    ],
@@ -79,7 +55,7 @@
    "type": "blog",
    "route": "/blog/mobile-app-design-agency-vs-freelancer/",
    "keyword": "mobile app design agency vs freelancer",
-   "score": 97,
+   "score": 98,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)"
    ],
@@ -91,7 +67,7 @@
    "type": "blog",
    "route": "/blog/saas-product-redesign/",
    "keyword": "saas product redesign",
-   "score": 97,
+   "score": 98,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)"
    ],
@@ -103,7 +79,7 @@
    "type": "blog",
    "route": "/blog/usability-testing-cost-per-participant/",
    "keyword": "usability testing cost per participant",
-   "score": 97,
+   "score": 98,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)"
    ],
@@ -115,13 +91,23 @@
    "type": "blog",
    "route": "/blog/ux-audit-agency-vs-freelancer/",
    "keyword": "ux audit agency vs freelancer",
-   "score": 97,
+   "score": 98,
    "failed": [
     "keyword-volume: keyword has search volume (brief: null)"
    ],
    "title": "UX Audit Agency vs Freelancer vs AI: Who to Hire",
    "h1": "UX Audit Agency vs Freelancer, AI Tool or In-House Team",
    "words": 3042
+  },
+  {
+   "type": "content",
+   "route": "/about/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "About Our UI UX Design Agency | Reston, VA, Since 2017",
+   "h1": "About us",
+   "words": 614
   },
   {
    "type": "archive",
@@ -451,7 +437,7 @@
    "failed": [],
    "title": "St. Louis UX Design Agency | Agtech, Health & Fintech UX",
    "h1": "A St. Louis UX design agency for science, health and finance software",
-   "words": 1843
+   "words": 1797
   },
   {
    "type": "content",
@@ -461,7 +447,7 @@
    "failed": [],
    "title": "UX Design Agency Atlanta | Payments, Logistics & Health UX",
    "h1": "UX design agency Atlanta payments, logistics and health IT teams can count on",
-   "words": 1811
+   "words": 1745
   },
   {
    "type": "content",
@@ -471,7 +457,7 @@
    "failed": [],
    "title": "UX Design Agency Austin | SaaS, Startup & Hardware UX",
    "h1": "UX design agency Austin startups and SaaS teams can move fast with",
-   "words": 1862
+   "words": 1816
   },
   {
    "type": "content",
@@ -481,7 +467,7 @@
    "failed": [],
    "title": "UX Design Agency Boston | Biotech, Health & Edtech UX",
    "h1": "UX design agency Boston teams trust with expert-grade software",
-   "words": 1774
+   "words": 1748
   },
   {
    "type": "content",
@@ -491,7 +477,7 @@
    "failed": [],
    "title": "UX Design Agency Chicago | Fintech, Insurance & SaaS UX",
    "h1": "UX design agency Chicago teams hire for data-heavy products",
-   "words": 1887
+   "words": 1854
   },
   {
    "type": "content",
@@ -501,7 +487,7 @@
    "failed": [],
    "title": "UX Design Agency Columbus | Insurance, Retail & Mobility UX",
    "h1": "UX design agency Columbus insurers and retailers can hire remotely",
-   "words": 1788
+   "words": 1734
   },
   {
    "type": "content",
@@ -511,7 +497,7 @@
    "failed": [],
    "title": "UX Design Agency Los Angeles | Streaming, DTC & Gaming UX",
    "h1": "UX design agency Los Angeles studios, brands and builders can lean on",
-   "words": 1733
+   "words": 1712
   },
   {
    "type": "content",
@@ -521,7 +507,7 @@
    "failed": [],
    "title": "UX Design Agency New York | Fintech, Media & Health UX",
    "h1": "UX design agency New York product teams can run on Eastern Time",
-   "words": 1871
+   "words": 1848
   },
   {
    "type": "content",
@@ -531,7 +517,7 @@
    "failed": [],
    "title": "UX Design Agency Philadelphia | Health, Pharma & EdTech UX",
    "h1": "UX design agency Philadelphia teams can work with on Eastern Time",
-   "words": 1843
+   "words": 1793
   },
   {
    "type": "content",
@@ -541,7 +527,7 @@
    "failed": [],
    "title": "UX Design Agency Phoenix | Operations & Enterprise UX",
    "h1": "UX design agency Phoenix operations teams can count on",
-   "words": 1767
+   "words": 1743
   },
   {
    "type": "content",
@@ -562,6 +548,16 @@
    "title": "UX Design Agency Seattle | Cloud, SaaS & Marketplace UX",
    "h1": "UX design agency Seattle engineering-led teams can plug in fast",
    "words": 1719
+  },
+  {
+   "type": "archive",
+   "route": "/privacy/",
+   "keyword": null,
+   "score": 100,
+   "failed": [],
+   "title": "Privacy Policy | How We Handle Your Personal Data",
+   "h1": "Privacy Policy",
+   "words": 618
   },
   {
    "type": "content",

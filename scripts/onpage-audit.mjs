@@ -132,6 +132,8 @@ for (const p of pages.filter((x) => !only || x.route === only)) {
     const badH2 = h2Next.filter((t) => ["img", "figure", "picture", "svg", "video"].includes(t)).length;
     add("h2-then-text", badH2 === 0, `every H2 is followed by text, not an image (${badH2} not)`);
     const hidden = [...main.matchAll(/<details\b([^>]*)>/g)].filter((m) => !/faq|ptoc|hdr__|cap__item|svc-acc/.test(m[1])).length;
+    const longBodies = [...main.matchAll(/class="semv__more-body"[^>]*>([\s\S]*?)<\/div>/g)].filter((m) => words(strip(m[1])) > 90).length;
+    add("section-body-short", longBodies === 0, `section detail text ≤ 90 words, entity-dense, no filler (${longBodies} longer)`);
     add("no-hidden-content", hidden === 0, `no main content behind a click: only FAQs and navigation may collapse (${hidden} collapsed blocks)`, 2);
   }
   add("canonical", /<link rel="canonical"/.test(h), "canonical tag");
