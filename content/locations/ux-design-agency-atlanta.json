@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 12,
   "title": "Atlanta",
   "city": "Atlanta",
@@ -15,7 +15,7 @@
   },
   "summary": "Remote-first UX design for Atlanta payments, logistics, media and healthcare IT products.",
   "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, working the same Eastern Time hours as Atlanta. Atlanta teams bring us in to research and redesign merchant onboarding, payment dashboards, shipment tracking, streaming apps and clinical software, and to test the new designs with real users. A UX audit starts at $5,000; a full research and design sprint takes 4–8 weeks.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-12",
   "sections": [
     {
       "h2": "What problems does a UX design agency solve for Atlanta product teams?",
@@ -260,5 +260,6 @@
     "PCI DSS",
     "WCAG 2.2"
   ],
-  "priceRange": "$5,000–$60,000"
+  "priceRange": "$5,000–$60,000",
+  "published": "2026-10-12"
 }
