@@ -6,7 +6,7 @@ description: "How UIUXDesignServices.us collects, uses and protects the personal
 
 *Last updated: October 1, 2026*
 
-This Privacy Policy explains how UIUXDesignServices.us ("we", "us", "our") collects, uses and protects personal information when you visit uiuxdesignservices.us (the "Site") or contact us through it.
+This Privacy Policy explains how UIUXDesignServices.us ("we", "us", "our") collects, uses and protects personal information when you visit uiuxdesignservices.us (the "Site") or contact us through it. The rules for using the Site itself are in our [terms of service](/terms/), and you can read who we are on our [about page](/about/).
 
 ## Information we collect
 

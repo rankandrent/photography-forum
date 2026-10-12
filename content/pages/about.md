@@ -29,9 +29,34 @@ See every engagement on our [UI UX design services](/services/) page.
 - **Built to ship.** Developers receive annotated Figma files, components and specs they can build directly.
 - **Transparent pricing.** Engagements start at $5,000 for a UX audit, and every project begins with a free consultation and a fixed-scope proposal.
 
+## Our process
+
+Every engagement follows the same five steps, so you always know what comes next:
+
+1. **Discovery and research:** we interview users, observe real workflows and analyze competitors before any design decision.
+2. **UX design and prototyping:** information architecture, wireframes and interactive prototypes, tested with real users.
+3. **UI design and design system:** screen design, motion and a reusable component library, so new features ship consistently.
+4. **Usability testing and validation:** real users and real tasks, before development and again before launch.
+5. **Design implementation support:** we stay alongside your engineers through the build, so nothing is lost in translation.
+
 ## Our work
 
-Recent projects include [Parents Connect](/case-studies/parents-connect/), a social platform for a global parenting community; [TradeZella](/case-studies/tradezella/), a trading journal and analytics platform; and [Nitro League](/case-studies/nitro/), a play-to-earn racing game. Browse all [case studies](/case-studies/).
+Recent projects include [Parents Connect](/case-studies/parents-connect/), a social platform for a global parenting community; [TradeZella](/case-studies/tradezella/), a trading journal and analytics platform; and [Nitro League](/case-studies/nitro/), a play-to-earn racing game.
+
+Our case studies report the results each client measured after launch:
+
+| Project | What we designed | Reported result |
+|---|---|---|
+| [Elia Wellness](/case-studies/elia-wellness/) | A wellness learning platform for adults 50+ | 40% growth in user registrations |
+| [Anyday App](/case-studies/anyday-app/) | A fintech wallet for same-day wage payouts | 14 hours saved per week with automated payouts |
+| [Vocable](/case-studies/vocable/) | An AI content marketing SaaS, from idea to MVP | 35% increase in workflow efficiency |
+| [Mass Media Co.](/case-studies/mass-media-co/) | One B2B platform for marketing data and campaigns | 30% increase in order processing efficiency |
+
+Browse all [case studies](/case-studies/).
+
+## Tools we work with
+
+We design in **Figma**, where component libraries, prototypes and developer handoff live in one file. We run quick prototype tests with real users in **Maze**, study behavior after launch with **Hotjar** session recordings and heatmaps, and document design systems in **Storybook**, so designers and engineers work from the same components.
 
 ## Industries we design for
 
