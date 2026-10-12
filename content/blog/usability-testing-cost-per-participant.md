@@ -108,7 +108,7 @@ Place each user group on the ladder before you request quotes, and ask every rec
 
 ## Why do no-shows raise the cost of each session?
 
-**Because you pay to recruit people who never join and to hold their slots, and those costs spread across the sessions that do happen.**
+**No-shows raise the cost of each session because you pay to recruit people who never join and to hold their slots, and those costs spread across the completed sessions.**
 
 [MeasuringU's analysis of no-show rates](https://measuringu.com/typical-no-show-rate-for-moderated-studies/) blends User Interviews data from about 14,000 studies (9% no-show) with its own operations data (5%) into an average of about 8%, below the 10–20% it suggested in 2018. The same data shows higher incentives slightly reduce no-shows, and MeasuringU's over-recruiting advice treats no-shows as only one of the ways a booked session is lost.
 
@@ -154,7 +154,7 @@ If nobody on your side can give a round these researcher hours, that is the part
 
 ## Why is cost per participant the wrong unit for quotes?
 
-**Because a per-head price stops at the participant: it leaves out the moderator's hours and the work that turns findings into a better design, so compare quotes per round.**
+**Cost per participant is the wrong unit because it leaves out the moderator's hours and the work that turns findings into a better design, so compare quotes per round.**
 
 The cost per usability test round is the number to compare: two quotes for "5 users" can describe a set of unmoderated clips or a moderated round with analysis and design fixes. Once you know your usability testing cost per participant, multiply it by the participants in one round rather than by a whole study; in our process, round 2 uses new participants and measures the fixed design against the round 1 task success rate.
 
