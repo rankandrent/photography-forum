@@ -161,7 +161,7 @@ async function sendLead(body: Record<string, unknown>, env: Env) {
   return json(502, { ok: false, error: "Email could not be sent", detail: String((reason as Error)?.message ?? reason).slice(0, 300) });
 }
 
-/** Removed pages → permanent redirect. Keep in sync with assets.run_worker_first in wrangler.jsonc. */
+/** Removed pages → permanent redirect. */
 const GONE_CASE_STUDIES = ["apex-hcm-payroll-ux", "fortna-warehouse-ux", "toolsgroup-supply-chain-ux"];
 const REDIRECTS: Record<string, string> = Object.fromEntries(
   GONE_CASE_STUDIES.flatMap((slug) => [
@@ -173,6 +173,10 @@ const REDIRECTS: Record<string, string> = Object.fromEntries(
 const worker = {
   async fetch(request: Request, env: Env) {
     const url = new URL(request.url);
+    // one canonical origin: http:// and www. → https://uiuxdesignservices.us (path and query kept)
+    if (url.hostname === `www.${SITE}` || (url.hostname === SITE && url.protocol === "http:")) {
+      return Response.redirect(`https://${SITE}${url.pathname}${url.search}`, 301);
+    }
     const to = REDIRECTS[url.pathname];
     if (to) return Response.redirect(new URL(to, url.origin).toString(), 301);
     if (url.pathname === "/api/lead" || url.pathname === "/api/lead/") return handleLead(request, env);
