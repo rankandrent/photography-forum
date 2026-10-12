@@ -60,7 +60,9 @@ export function LeadForm({
   const f = (name: string) => `${id}-${name}`;
 
   return (
-    <form className="lead-form" onSubmit={onSubmit} noValidate={false}>
+    // action/method let the form post even if JavaScript fails to load; the Worker then redirects to /thank-you/
+    <form className="lead-form" onSubmit={onSubmit} action={ENDPOINT} method="post" noValidate={false}>
+      <input type="hidden" name="source" value={source} />
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px" }}>
         <label htmlFor={f("hp")}>Leave this empty</label>
         <input id={f("hp")} name="company_website" tabIndex={-1} autoComplete="off" />

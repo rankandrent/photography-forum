@@ -122,12 +122,26 @@ async function handleLead(request: Request, env: Env) {
   const origin = request.headers.get("origin") ?? "";
   if (origin && !/uiuxdesignservices\.us$|\.workers\.dev$|localhost(:\d+)?$/.test(new URL(origin).host)) return json(403, { ok: false });
 
+  // JSON from the JavaScript form, or a plain form post when the page's JavaScript did not load
+  const isFormPost = /application\/x-www-form-urlencoded|multipart\/form-data/.test(request.headers.get("content-type") ?? "");
   let body: Record<string, unknown>;
   try {
-    body = await request.json();
+    body = isFormPost ? Object.fromEntries((await request.formData()).entries()) : await request.json();
   } catch {
-    return json(400, { ok: false, error: "Invalid JSON" });
+    return json(400, { ok: false, error: "Invalid request body" });
   }
+  if (isFormPost && !body.page) body.page = request.headers.get("referer") ?? "";
+  const res = await sendLead(body, env);
+  if (!isFormPost) return res;
+  if (res.ok) return Response.redirect(new URL("/thank-you/", request.url).toString(), 303);
+  const err = (await res.json().catch(() => ({}))) as { error?: string };
+  return new Response(
+    `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex"><title>Message not sent</title><body style="font-family:system-ui,sans-serif;max-width:560px;margin:80px auto;padding:0 16px;line-height:1.6"><h1>Your message was not sent</h1><p>${esc(err.error ?? "Something went wrong")}. Please go back and try again, or email <a href="mailto:hello@${SITE}">hello@${SITE}</a>.</p><p><a href="javascript:history.back()">Go back</a></p>`,
+    { status: res.status, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } },
+  );
+}
+
+async function sendLead(body: Record<string, unknown>, env: Env) {
   if (clean(body.company_website)) return json(200, { ok: true }); // honeypot
 
   const lead: Record<string, string> = {};
