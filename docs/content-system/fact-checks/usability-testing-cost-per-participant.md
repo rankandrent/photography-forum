@@ -59,3 +59,30 @@ the files.
 Received draft: FAIL (4 WRONG, 2 OUTDATED, 4 UNVERIFIABLE, fixed in place). Every claim in the files as they now stand is TRUE.
 
 VERDICT: PASS
+
+---
+
+# Round 2 (final, 2026-10-12)
+
+Scope: only new or changed claims, plus a quick honesty re-scan. WebFetch is still unavailable, so verification used WebSearch (lessons 18 and 37).
+**Fixes NOT applied in place.** This session has no in-place edit tool, only whole-file Write, and QA is editing the post in parallel. A whole-file write could overwrite QA's edits, so the exact replacements are listed below for the orchestrator or QA to paste.
+
+## Claims
+
+| # | Claim (as received) | Verdict | Source | Exact replacement |
+|---|---|---|---|---|
+| R2-1 | G1 tools paragraph (line 151): Lookback or Zoom for moderated, Maze or UserTesting for unmoderated, Figma for the prototype; "price each one as your plan × share"; one round a year carries the whole annual license; no prices | TRUE | Hub `usability-testing-services.json` lines 51, 55, 202 (Lookback or Zoom, Maze or UserTesting, "clickable Figma prototype"). The method is the reader's own arithmetic and agrees with receipt row 6 (per session) and worksheet row "Tools" (per round). | none |
+| R2-2 | G2 (line 105): "For panel pricing, the nearest published reference is MeasuringU's $40–$100 for specialized profiles such as financial advisors, so ask for a quote against that tier." | WRONG (superlative, lesson 31; also drops the "older article" date caveat, lesson 25) | Figures TRUE (https://measuringu.com/usability-cost/). Counterexamples to "the nearest": a Great Question help page lists Respondent's B2B moderated rate per participant (https://greatquestion.co/support/studies/external-participant-recruitment), and published User Interviews pricing adds a B2B targeting fee per session. | "For panel pricing, one published reference is the older MeasuringU article's $40–$100 for specialized profiles such as financial advisors, so ask each recruiter for a current quote at your profile." |
+| R2-3 | F3 (line 60): "in User Interviews' study data, higher incentives slightly reduced no-show rates, as the no-show section below shows" | TRUE | UI guide (no-show 10% at $60, 8% at $80, 6% at $100). MeasuringU no-show article: "analysis of no-show rates based on data from over 14,000 studies revealed higher incentives help to slightly reduce no-show rates" (found via the measuringu.com/tag/muiq/feed/ copy of https://measuringu.com/typical-no-show-rate-for-moderated-studies/). That is the User Interviews 14k-study set, so "The same data shows…" on line 113 is TRUE too. | none |
+| R2-4 | F11 (line 87): "1.15 staff hours per participant recruited, on average, in the same NN/g survey"; FAQ (line 227): "respondents to NN/g's survey, published in January 2003, spent an average of 1.15 staff hours per participant recruited" | TRUE | https://www.nngroup.com/articles/recruiting-test-participants-for-usability-studies/ ("Companies that did their own recruiting reported spending an average of 1.15 hours of staff time for each participant recruited"; it is the same survey as the $107 figure, in an article dated January 2003) | none |
+| R2-5 | Round strip: braces "Round 1" (blocks 1–4) and "Round 2" (block 5, Retest) | TRUE | Matches hub process step 5 and the post (round 2 retests with new participants; design fixes happen between rounds). Brace geometry: Round 1 runs from x 44 to 628 (blocks 1–4) and Round 2 from x 648 to 756 (block 5). | none |
+| R2-6 | Round strip block 2 "Sessions: partly covered (the participant's incentive, not the moderator's hours)" in the SVG card, the text list (line 166) and the alt ("half-shaded because the price covers the participant but not the moderator") | WRONG (contradicts the post) | Line 85 tells readers to "Ask whether that price includes the incentive", and NN/g's $107 is a recruiting fee only. No source says a typical per-participant price includes the incentive. The strip states as fact what the post treats as unknown. | SVG card (2 lines, 26 px, fit x 124–740): line 1 "At most partly (the incentive, if included;", line 2 "never the moderator's hours)." Text list line 166: "2. **Sessions:** partly covered at most (the incentive, if the price includes it; never the moderator's hours)." Alt: replace "sessions half-shaded because the price covers the participant but not the moderator" with "sessions half-shaded because the price may cover the participant's incentive but never the moderator". The "Partly covered" legend stays. |
+
+## Honesty re-scan
+
+- Every "we / our / us" sentence (lines 26, 89, 135, 153, 159, 201–209, 219, 225–231) traces to the hub, about.md or tradezella.md. The new line 153 ("the part of the bill our usability testing engagement takes off your calendar") is supported by the hub deliverables: a researcher runs the moderated sessions, and the report includes the clips and severity ratings.
+- No new headcount, client, result, testimonial, award, office or incentive pass-through claim.
+
+Round 2: 2 WRONG (R2-2, R2-6). Both need only the text swaps above and no new sources. Once both are pasted word for word, every claim is TRUE.
+
+VERDICT: FAIL

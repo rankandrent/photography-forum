@@ -18,8 +18,8 @@ takeaways:
   - "Published recruiting figures are dated: about $7–$10 per general consumer on a panel (an older MeasuringU article) and a $107 agency average (NN/g, 2003), so get current quotes; your own list costs staff hours."
   - "MeasuringU's newer data puts the average no-show rate for moderated studies at about 8%, so book floaters and spread their cost across completed sessions."
   - "Compare quotes per round, not per head, and check each quote for the analysis, design fixes and retest round that a per-head price leaves out."
-draft: true
-qa: pending
+draft: false
+qa: pass
 image: /blog/usability-testing-cost-per-participant/cover.svg
 ---
 
@@ -102,7 +102,7 @@ Every channel needs a screener: the short questionnaire that filters applicants 
 
 NN/g's guidance on usability testing with older adults recommends a screener that asks about technology experience and the devices people own, and stresses building trust in the session. When the team behind a 2021 study in JMIR mHealth and uHealth ("Going Remote") moved such testing to remote sessions, it mailed care packages to participants, and some needed a smartphone or home internet supplied: cost lines no panel quote shows.
 
-Business-to-business (B2B) professionals are screened on role, company size and the tools they use at work, and their calendars are full, so offer shorter or after-hours slots. For panel pricing, the nearest published reference is MeasuringU's $40–$100 for specialized profiles such as financial advisors, so ask for a quote against that tier. Clinicians are recruited around shift schedules, which spreads sessions across more calendar days.
+Business-to-business (B2B) professionals are screened on role, company size and the tools they use at work, and their calendars are full, so offer shorter or after-hours slots. For panel pricing, one published reference is the older MeasuringU article's $40–$100 for specialized profiles such as financial advisors, so ask each recruiter for a current quote at your profile. Clinicians are recruited around shift schedules, which spreads sessions across more calendar days.
 
 Place each user group on the ladder before you request quotes, and ask every recruiter for the lead time at that step.
 
@@ -158,12 +158,12 @@ If nobody on your side can give a round these researcher hours, that is the part
 
 The cost per usability test round is the number to compare: two quotes for "5 users" can describe a set of unmoderated clips or a moderated round with analysis and design fixes. Once you know your usability testing cost per participant, multiply it by the participants in one round rather than by a whole study; in our process, round 2 uses new participants and measures the fixed design against the round 1 task success rate.
 
-![Five-block strip of one round and its retest: recruit shaded as covered by a typical per-participant price, sessions half-shaded because the price covers the participant but not the moderator, analysis, design fixes and retest drawn as open dashed outlines marked not covered](/blog/usability-testing-cost-per-participant/round-anatomy-strip.svg "What a per-participant price covers in one round and its retest")
+![Five-block strip of one round and its retest: recruit shaded as covered by a typical per-participant price, sessions half-shaded because the price may cover the participant's incentive but never the moderator, analysis, design fixes and retest drawn as open dashed outlines marked not covered](/blog/usability-testing-cost-per-participant/round-anatomy-strip.svg "What a per-participant price covers in one round and its retest")
 
 <details class="astext"><summary>Show as text</summary>
 
 1. **Recruit:** covered by a typical per-participant price.
-2. **Sessions:** partly covered (the participant's incentive, not the moderator's hours).
+2. **Sessions:** partly covered at most (the incentive, if included; never the moderator's hours).
 3. **Analysis:** not covered (clips, notes, severity ratings).
 4. **Design fixes:** not covered (changes to the design file).
 5. **Retest:** not covered (a second round with new participants).

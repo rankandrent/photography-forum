@@ -170,6 +170,20 @@
       "externalLinks": 6,
       "qaLoops": 2,
       "notes": "Loop 1: fact 13 fixes (team-size \"several designers\", routing summaries vs decision tree, iOS date picker default since iOS 14, Android back scope, unsourced absolutes) + QA 17 fixes (variety vs ux-audit post, duplicates of images in open text, acronyms) + G1/G2. Loop 2: 2 fact fixes (testing logic, revision-rounds claim) + 4 QA nits (bold answer launch-date order, Upwork link visible, closing reframed). Backlink from mobile hub cost section. Open: home.ts 2–4 designers + design-and-development vs hub."
+    },
+    {
+      "slug": "usability-testing-cost-per-participant",
+      "hub": "usability-testing-services",
+      "keyword": "usability testing cost per participant",
+      "funnel": "bofu",
+      "author": "ahmad-ullah",
+      "date": "2026-10-12",
+      "words": 2143,
+      "images": 6,
+      "internalLinks": 5,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "notes": "First usability-testing silo post. Writer had no WebFetch (DNS); all sources verified via site-limited search. Loop 1: fact 10 fixes (hub moderated-only example, per-user-group wording, ladder 'baseline' implied longer lead time, TradeZella not a usability case, MeasuringU older/no 10% planning figure, NN/g Jan 2003 not 2002, GitLab URL, heat-table rankings removed) + QA F1–F12, G1 tool-share, G2 B2B. Loop 2: QA pass (1 nit); fact 2 fixes (B2B 'nearest reference' → older MeasuringU + current quote; round strip Sessions 'partly covered at most, incentive if included'). Internal links 5 (new silo exception). Backlink from hub cost section. Open: hub says 5–8 per round vs per user group; unmoderated in every round vs $25k moderated-only example."
     }
   ],
   "audits": []

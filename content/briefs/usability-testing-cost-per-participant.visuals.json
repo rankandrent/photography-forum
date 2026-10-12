@@ -26,6 +26,6 @@
   },
   {
     "marker": "<!-- visual: round anatomy strip — five blocks left to right: recruit → sessions → analysis → design fixes → retest; the blocks a typical per-participant price covers (recruit, sessions) are shaded, the rest (analysis, design fixes, retest) are open outlines -->",
-    "markdown": "![Five-block strip of one round and its retest: recruit shaded as covered by a typical per-participant price, sessions half-shaded because the price covers the participant but not the moderator, analysis, design fixes and retest drawn as open dashed outlines marked not covered](/blog/usability-testing-cost-per-participant/round-anatomy-strip.svg \"What a per-participant price covers in a round and its retest\")"
+    "markdown": "![Five-block strip of one round and its retest: recruit shaded as covered by a typical per-participant price, sessions half-shaded because the price may cover the participant's incentive but never the moderator, analysis, design fixes and retest drawn as open dashed outlines marked not covered](/blog/usability-testing-cost-per-participant/round-anatomy-strip.svg \"What a per-participant price covers in a round and its retest\")"
   }
 ]

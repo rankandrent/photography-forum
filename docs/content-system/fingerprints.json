@@ -13,7 +13,49 @@
     "faqCount",
     "words",
     "tableCount",
-    "listStyle"
+    "listStyle",
+    {
+      "slug": "usability-testing-cost-per-participant",
+      "hub": "usability-testing-services",
+      "type": "Guide",
+      "funnel": "bofu",
+      "introStyle": "itemized receipt",
+      "h2Frames": [
+        "what is the full X",
+        "how much should you pay",
+        "what does X add",
+        "why does X raise",
+        "how many hours sit behind",
+        "why is X the wrong unit",
+        "what does a round cost DIY",
+        "what is included in our price",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "What is the full usability testing cost per participant?",
+        "How much should you pay usability test participants?",
+        "What does recruiting add to each participant?",
+        "Why do no-shows raise the cost of each session?",
+        "How many researcher hours sit behind each session?",
+        "Why is cost per participant the wrong unit for quotes?",
+        "What does a round cost when you run it yourselves?",
+        "What is included in our usability testing price?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "itemized receipt",
+        "incentive heat table",
+        "recruitment difficulty ladder",
+        "no-show dot grid (illustrative)",
+        "session hours donut",
+        "round anatomy strip"
+      ],
+      "ctaAngle": "send your audience and number of rounds → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2143,
+      "tableCount": 1,
+      "listStyle": "fill-in bill table + quote questions list"
+    }
   ],
   "posts": [
     {
