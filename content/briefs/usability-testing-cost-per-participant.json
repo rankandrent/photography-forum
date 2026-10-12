@@ -268,5 +268,57 @@
     "Honesty, do not use (vendor or unverifiable figures seen on the SERP): every CleverX figure (B2B fees $100–$400, incentives $75–$600, study totals $5,000–$9,600, agency $8,000–$25,000, moderators $150–$400/hour, 'teams underestimate by 40–100%', '$750–$1,350 fully loaded'); greatquestion.co professional ranges ($100–$200/hour) unless User Interviews' own page shows them; innerview.co calculator ranges; dscout '$150–$600 clinical'; Koji's '11% no-show attributed to NN/g' (unverified); the '20–40% cheaper unmoderated' line attributed to NN/g by a vendor; Upwork '$30–$100' gigs (QA testing, not usability); the Taylor & Francis '$1,000–$1,500 per participant' and the Nielsen 1993 '$3,000 + $1,000 per user' (dated). Use only figures traced to MeasuringU, NN/g, User Interviews or GitLab, plus our hub.",
     "Originality: the beats page (cleverx.com/blog/b2b-usability-testing-cost) is a B2B-only, vendor-voiced breakdown: recruitment fees by seniority -> incentives by seniority -> researcher time -> study totals by method -> in-house vs agency. Do not use that order, its seniority tiers, its method-by-method study totals or an in-house vs agency section. Our structure follows one participant's bill and then the round. MeasuringU's page leads with platform licences, so do not open with platforms. QA checks 5-gram overlap with the beats page (max 5%).",
     "Variety: orchestrator constraints met. This is not an agency-vs-X, how-to-choose or RFP/template post, and it does not argue the 5-users rule."
+  ],
+  "related": {
+    "linkBuilderRun": "2026-10-12",
+    "internalLinks": [
+      { "href": "/services/usability-testing-services/", "anchor": "usability testing services", "where": "intro, first paragraph (within 300 words)" },
+      { "href": "/services/usability-testing-services/#how-much-does-usability-testing-cost", "anchor": "what moves the price of a usability testing engagement", "where": "What is included in our usability testing price?" },
+      { "href": "/case-studies/tradezella/", "anchor": "TradeZella trading dashboard redesign", "where": "What is included in our usability testing price? (exact case-study sentence quoted)" },
+      { "href": "/contact/", "anchor": "Send us your audience and number of rounds", "where": "closing CTA sentence" },
+      { "href": "/services/ux-research-services/", "anchor": "discovery-focused UX research", "where": "FAQ: How many participants should we budget for per round? (the one cross-hub link; hub's own 'discovery before testing' wording)" }
+    ],
+    "droppedInternalMarkers": [
+      "/services/usability-testing-services/#how-does-the-usability-testing-process-work (hub cap 2; sentence kept as plain text)",
+      "/services/usability-testing-services/#usability-testing-faqs (hub cap 2; sentence rewritten to carry the ux-research link instead)"
+    ],
+    "externalSources": [
+      { "url": "https://www.userinterviews.com/blog/the-ultimate-guide-to-user-research-incentives", "status": "verified by domain-restricted search (WebFetch ENOTFOUND): about three in four completed moderated consumer sessions at $60–$100/hour; $100 most common at 25%; US and Canada only" },
+      { "url": "https://handbook.gitlab.com/handbook/product/ux/ux-research-coordination/participation-gratuities/", "status": "SWAPPED from the writer's /research-operations/participation-gratuities/ path, which no search returned. Verified: unmoderated $20 up to 10 min, $40 for 25–30 min; interviews $120 for 60 min" },
+      { "url": "https://measuringu.com/usability-cost/", "status": "verified: panels $7–$10 general consumer, $40–$100 specialized (financial advisors). Article is several years old" },
+      { "url": "https://www.nngroup.com/articles/recruiting-test-participants-for-usability-studies/", "status": "verified: $107 average agency fee (survey data collected in 2002), 1.15 staff hours per in-house recruit" },
+      { "url": "https://measuringu.com/typical-no-show-rate-for-moderated-studies/", "status": "verified: User Interviews 14k studies 9%, MeasuringU ops 5%, ~8% average, 10% conservative planning figure, older 10–20% guidance; higher incentives slightly reduce no-shows" }
+    ],
+    "removedExternalLinks": [
+      "https://www.nngroup.com/videos/usability-testing-typical-users/ ($171 per user): removed to stay within the 5-link cap; it duplicated the $107 agency-fee point. Sentence deleted.",
+      "https://measuringu.com/how-much-should-you-over-recruit/: the search confirmed the URL but not the claim's specific list (planned cancellations, disqualified participants, technical failures). Sentence rewritten to the snippet ('no-shows are only one way a booked session is lost'), and the link removed for the cap.",
+      "https://www.nngroup.com/articles/usability-testing-older-adults/: verified (screener on age, tech experience and devices owned; trust). Kept as a named plain-text citation because of the cap.",
+      "https://mhealth.jmir.org/2021/3/e26702/: verified (Hill et al. 2021, 'Going Remote': care packages; some participants needed a smartphone or home internet supplied). Kept as a named plain-text citation because of the cap."
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/usability-testing-services.json",
+      "field": "sections[h2='How much does usability testing cost?'].body",
+      "sentence": "An engagement of 3 rounds on web and mobile, with 8 participants per round, unmoderated Maze studies and hard-to-recruit participants, for example physicians, sits near $60,000.",
+      "change": "Link the existing words 'hard-to-recruit participants' to /blog/usability-testing-cost-per-participant/#what-does-recruiting-add-to-each-participant",
+      "anchor": "hard-to-recruit participants",
+      "why": "Same silo, UP-to-DOWN link. The hub's 'recruitment difficulty' price factor is exactly what that section itemizes. Body renders HTML (SemanticSections <More>/<Html>)."
+    },
+    {
+      "file": "content/services/usability-testing-services.json",
+      "field": "sections[h2='Usability testing FAQs'].faqs[q='How many users are needed for usability testing?'].a",
+      "sentence": "NEW sentence appended inside the <p>: 'Each of those users adds an incentive, a recruiting fee and researcher hours, which our breakdown of <a href=\"/blog/usability-testing-cost-per-participant/\">what one usability test participant really costs</a> prices line by line.'",
+      "anchor": "what one usability test participant really costs",
+      "why": "Alternative to suggestion 1. Use only ONE of 1 or 2 (one link per target per source page). FAQ answers render HTML and feed FAQPage schema, so keep it to one sentence."
+    },
+    {
+      "file": "content/services/ux-research-services.json",
+      "field": "sections[h2='How much does UX research cost?'].body",
+      "sentence": "A programme with 3 user groups, 20 user interviews, on-site contextual inquiry and hard-to-recruit participants, for example hospital clinicians, sits near $60,000.",
+      "change": "Optional. Link 'hard-to-recruit participants, for example hospital clinicians' to /blog/usability-testing-cost-per-participant/#what-does-recruiting-add-to-each-participant",
+      "anchor": "hard-to-recruit participants, for example hospital clinicians",
+      "why": "Allowed source (hub, not another silo's post) and the topic match is real (recruiting cost by audience, clinicians on the ladder). Lower priority: it sends equity out of the UX research silo, and the paragraph already links a blog post."
+    }
   ]
 }

@@ -22,7 +22,7 @@ draft: true
 qa: pending
 ---
 
-Usability testing cost per participant is rarely the number on a panel's price page: the incentive is one line on a five-line bill. Picture the receipt for one completed 60-minute moderated session with a general consumer. The panel prints one or two of its lines, while the moderator's hours, the analysis and the empty slot a no-show leaves behind stay off it. This guide prices each line from named sources, then moves the unit from one head to one test round, which is how our usability testing services <!-- link: usability testing services → /services/usability-testing-services/ --> are scoped.
+Usability testing cost per participant is rarely the number on a panel's price page: the incentive is one line on a five-line bill. Picture the receipt for one completed 60-minute moderated session with a general consumer. The panel prints one or two of its lines, while the moderator's hours, the analysis and the empty slot a no-show leaves behind stay off it. This guide prices each line from named sources, then moves the unit from one head to one test round, which is how our [usability testing services](/services/usability-testing-services/) are scoped.
 
 ## What is the full usability testing cost per participant?
 
@@ -54,9 +54,9 @@ The receipt covers formative, task-based usability testing in the US. Summative 
 
 [User Interviews' guide to research incentives](https://www.userinterviews.com/blog/the-ultimate-guide-to-user-research-incentives) reports that about three in four completed moderated consumer sessions on its platform, all in the US and Canada, paid $60–$100 per hour, and $100 was the most common rate, at 25% of sessions.
 
-A usability test participant incentive for a short unmoderated task is smaller. [GitLab's published research incentive policy](https://handbook.gitlab.com/handbook/product/ux/research-operations/participation-gratuities/) pays its own participants $20 for an unmoderated test of up to 10 minutes and $40 for 25–30 minutes, against $120 for a 60-minute interview.
+A usability test participant incentive for a short unmoderated task is smaller. [GitLab's published research incentive policy](https://handbook.gitlab.com/handbook/product/ux/ux-research-coordination/participation-gratuities/) pays its own participants $20 for an unmoderated test of up to 10 minutes and $40 for 25–30 minutes, against $120 for a 60-minute interview.
 
-Underpaying rarely saves money: User Interviews found that $100 per hour ranked highest on fill rate and no-show measures.
+Underpaying rarely saves money: in User Interviews' study data, higher incentives slightly reduced no-show rates, as the no-show section below shows.
 
 <!-- visual: incentive heat table — rows general consumer, specific consumer segment, older adults, B2B professional, clinician, plus a GitLab reference row; columns "short unmoderated test" and "60-minute moderated session"; shading from light to dark by cost direction; only sourced figures, every other cell reads "quote from recruiter" -->
 
@@ -82,10 +82,10 @@ Set the incentive per user group before you write the screener, because the amou
 Usability testing recruitment cost depends on the channel:
 
 - **Research panel.** [MeasuringU's breakdown of usability test costs](https://measuringu.com/usability-cost/) lists panels from about $7–$10 per participant for a general consumer profile and $40–$100 for specialized profiles such as financial advisors. Ask whether that price includes the incentive, so you do not budget it twice.
-- **Recruiting agency.** [Nielsen Norman Group (NN/g)'s article on recruiting test participants](https://www.nngroup.com/articles/recruiting-test-participants-for-usability-studies/) reported an average agency recruiting fee of $107 per participant in its survey, and a [later NN/g video](https://www.nngroup.com/videos/usability-testing-typical-users/) puts the average per-user cost at $171, varying with location and profession. Ask whether the fee is per recruited head or per completed session, because no-shows change the answer.
+- **Recruiting agency.** [Nielsen Norman Group (NN/g)'s article on recruiting test participants](https://www.nngroup.com/articles/recruiting-test-participants-for-usability-studies/) reported an average agency recruiting fee of $107 per participant in its original survey, run in 2002, so treat it as a floor and get current quotes. Ask whether the fee is per recruited head or per completed session, because no-shows change the answer.
 - **Your own customer list.** There is no fee, but your staff spend hours finding, screening and scheduling people; the FAQs give NN/g's figure.
 
-Every channel needs a screener: the short questionnaire that filters applicants on behavior, devices and role. In our engagements, participant recruitment is a 5–8 day step of the round-by-round testing process <!-- link: our round-by-round testing process → /services/usability-testing-services/#how-does-the-usability-testing-process-work -->.
+Every channel needs a screener: the short questionnaire that filters applicants on behavior, devices and role. In our engagements, participant recruitment is a 5–8 day step before the first round of sessions.
 
 <!-- visual: recruitment difficulty ladder — five rising steps from general consumer to clinician or regulated user; each step shows a channel icon (panel, recruiter, own list, professional network), what makes it hard, and up arrows for cost and lead time; no invented numbers; the 5–8 day recruitment step is the baseline -->
 
@@ -99,7 +99,7 @@ Every channel needs a screener: the short questionnaire that filters applicants 
 
 </details>
 
-[NN/g's guidance on usability testing with older adults](https://www.nngroup.com/articles/usability-testing-older-adults/) stresses trust-building and notes this group can have less experience with technology, so ask in the screener which devices people own and use. When a [2021 study in JMIR mHealth and uHealth](https://mhealth.jmir.org/2021/3/e26702/) moved such testing to remote sessions, the team mailed care packages to participants, a cost line no panel quote shows. Clinicians are recruited around shift schedules, which spreads sessions across more calendar days.
+NN/g's guidance on usability testing with older adults recommends a screener that asks about technology experience and the devices people own, and stresses building trust in the session. When the team behind a 2021 study in JMIR mHealth and uHealth ("Going Remote") moved such testing to remote sessions, it mailed care packages to participants, and some needed a smartphone or home internet supplied: cost lines no panel quote shows. Clinicians are recruited around shift schedules, which spreads sessions across more calendar days.
 
 Place each user group on the ladder before you request quotes, and ask every recruiter for the lead time at that step.
 
@@ -107,7 +107,7 @@ Place each user group on the ladder before you request quotes, and ask every rec
 
 **Because you pay to recruit people who never join and to hold their slots, and those costs spread across the sessions that do happen.**
 
-[MeasuringU's analysis of no-show rates](https://measuringu.com/typical-no-show-rate-for-moderated-studies/) blends User Interviews data from about 14,000 studies (9% no-show) with its own operations data (5%) into an average of about 8%, and treats 10% as a conservative planning figure in place of its older 10–20% guidance. Its [over-recruiting guidance](https://measuringu.com/how-much-should-you-over-recruit/) adds planned cancellations, disqualified participants and technical failures to the sessions you lose.
+[MeasuringU's analysis of no-show rates](https://measuringu.com/typical-no-show-rate-for-moderated-studies/) blends User Interviews data from about 14,000 studies (9% no-show) with its own operations data (5%) into an average of about 8%, and treats 10% as a conservative planning figure in place of its older 10–20% guidance. The same data shows higher incentives slightly reduce no-shows, and MeasuringU's over-recruiting advice treats no-shows as only one of the ways a booked session is lost.
 
 So the real usability testing cost per participant includes the people who never show up:
 
@@ -197,11 +197,11 @@ The last two rows are the ones a per-head panel price leaves out, and they decid
 
 **Our usability testing engagement costs $25,000–$60,000 over 4–8 weeks and runs 2–3 rounds with design fixes between them.**
 
-Four factors set where a proposal lands in that range; see what moves the price of a usability testing engagement <!-- link: what moves the price of a usability testing engagement → /services/usability-testing-services/#how-much-does-usability-testing-cost --> for all four. Recruitment is part of every engagement, alongside a test plan, moderated sessions and unmoderated studies, SUS and SEQ scoring, a report with a clip, severity rating and fix for every finding, and design fixes in Figma between rounds.
+Four factors set where a proposal lands in that range; see [what moves the price of a usability testing engagement](/services/usability-testing-services/#how-much-does-usability-testing-cost) for all four. Recruitment is part of every engagement, alongside a test plan, moderated sessions and unmoderated studies, SUS and SEQ scoring, a report with a clip, severity rating and fix for every finding, and design fixes in Figma between rounds.
 
-Specialist audiences are part of that work: the visuals for the TradeZella dashboards tested with traders <!-- link: TradeZella dashboards tested with traders → /case-studies/tradezella/ --> "follow industry best practices for financial dashboards and were tested with traders before launch," in the case study's words.
+Specialist audiences are part of that work: in the [TradeZella trading dashboard redesign](/case-studies/tradezella/), the visuals "follow industry best practices for financial dashboards and were tested with traders before launch," in the case study's words.
 
-Your usability testing cost per participant is where the bill starts; the round is the whole of it. Send us your audience and number of rounds <!-- link: send us your audience and number of rounds → /contact/ --> with each user group placed on the ladder above, since recruitment difficulty is one of the four price factors. Every project begins with a free consultation and a fixed-scope proposal.
+Your usability testing cost per participant is where the bill starts; the round is the whole of it. [Send us your audience and number of rounds](/contact/) with each user group placed on the ladder above, since recruitment difficulty is one of the four price factors. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
@@ -223,4 +223,4 @@ Yes, and it removes the recruiting fee, but the cost moves into staff time: NN/g
 
 ### How many participants should we budget for per round?
 
-Our rounds use 5–8 participants per user group, so a product with two distinct groups budgets each group separately and adds one or two floaters per group. The hub covers how many users each round needs <!-- link: how many users each round needs → /services/usability-testing-services/#usability-testing-faqs --> for qualitative and quantitative tests.
+Our rounds use 5–8 participants per user group, so a product with two distinct groups budgets each group separately and adds one or two floaters per group. If you cannot yet name your user groups, a round of [discovery-focused UX research](/services/ux-research-services/) defines them before the first test is booked.
