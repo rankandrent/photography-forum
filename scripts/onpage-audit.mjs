@@ -18,6 +18,18 @@ for (const f of fs.readdirSync("content/industries").filter((x) => x.endsWith(".
 for (const f of fs.readdirSync("content/locations").filter((x) => x.endsWith(".json") && !x.startsWith("_"))) { const d = read(`content/locations/${f}`); KW[`/location/${f.slice(0, -5)}/`] = lc(d.keyword ?? d.anchor); }
 for (const f of fs.readdirSync("content/blog").filter((x) => x.endsWith(".md") && !x.startsWith("_"))) { const d = matter(fs.readFileSync(`content/blog/${f}`, "utf8")).data; if (d.keyword) KW[`/blog/${f.slice(0, -3)}/`] = lc(d.keyword); }
 
+// entities, attributes and keyword volume per route (blog: content brief; others: page "semantic" block)
+const ENT = {}, ATTR = {}, VOL = {};
+const semEnt = (d) => d.semantic?.entities ?? d.mentions ?? [];
+for (const dir of ["services", "industries", "locations"]) for (const f of fs.readdirSync(`content/${dir}`).filter((x) => x.endsWith(".json") && !x.startsWith("_"))) ENT[`/${dir === "locations" ? "location" : dir}/${f.slice(0, -5)}/`] = semEnt(read(`content/${dir}/${f}`));
+for (const f of fs.readdirSync("content/briefs").filter((x) => /^[^.]+\.json$/.test(x))) {
+  const b = read(`content/briefs/${f}`), r = `/blog/${b.slug ?? f.slice(0, -5)}/`;
+  ENT[r] = b.entities ?? []; ATTR[r] = b.attributes ?? []; VOL[r] = b.volume;
+}
+// an entity counts as covered when its name, or the short form in its brackets, appears in the text
+const entityForms = (e) => { const m = e.match(/^(.*?)\s*\(([^)]+)\)\s*$/); return (m ? [m[1], m[2]] : [e]).map((x) => norm(x)).filter((x) => x.length > 1); };
+const countIn = (text, form) => text.split(form).length - 1;
+
 const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
 const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&#x27;|&#39;|&rsquo;/g, "'").replace(/&[a-z#0-9]+;/g, " ").replace(/\s+/g, " ").trim();
 const words = (t) => (t.match(/[A-Za-z0-9][A-Za-z0-9'’-]*/g) || []).length;
@@ -63,6 +75,32 @@ for (const p of pages.filter((x) => !only || x.route === only)) {
     add("h1-keyword", has(h1, kw), `H1 contains "${kw}"`, 2);
     add("desc-keyword", has(desc, kw), "meta description contains the keyword");
     add("first-100-words", has(first100, kw), "keyword appears near the top of the page (first ~100 words)");
+    // primary keyword in every meta surface: title, description, meta keywords (first), Open Graph
+    const ogTitle = h.match(/<meta property="og:title" content="([^"]*)"/)?.[1]?.replace(/&amp;/g, "&") ?? "";
+    const ogDesc = h.match(/<meta property="og:description" content="([^"]*)"/)?.[1]?.replace(/&amp;/g, "&") ?? "";
+    const metaKw = (h.match(/<meta name="keywords" content="([^"]*)"/)?.[1] ?? "").replace(/&amp;/g, "&").split(",")[0] ?? "";
+    add("meta-keywords-keyword", norm(metaKw) === norm(kw), `meta keywords start with "${kw}" (first is "${metaKw}")`);
+    add("og-keyword", has(ogTitle, kw) && has(ogDesc, kw), "og:title and og:description contain the keyword");
+    if (isBlog && VOL[p.route] !== undefined) add("keyword-volume", Number(VOL[p.route]) > 0, `keyword has search volume (brief: ${VOL[p.route]})`);
+    // entity salience (proxy for Google NLP salience): the keyword's entity leads the page, and related entities/attributes are covered
+    const ents = ENT[p.route] ?? [];
+    if (isContent && ents.length) {
+      const text = norm(body), lead = norm(body.slice(body.indexOf(h1) + h1.length).split(" ").slice(0, 60).join(" "));
+      const covered = ents.filter((e) => entityForms(e).some((f) => text.includes(f)));
+      const kwCount = countIn(text, norm(kw));
+      // rivals: related entities that are not part of the keyword itself (e.g. the city on a location page)
+      const kwWords = new Set(norm(kw).split(" "));
+      const rivals = ents.filter((e) => !entityForms(e).some((f) => f.split(" ").every((w) => kwWords.has(w)))).map((e) => Math.max(...entityForms(e).map((f) => countIn(text, f))));
+      const h2Share = h2s.length ? h2s.filter((x) => has(x, kw) || norm(kw).split(" ").filter((w) => w.length > 3).some((w) => norm(x).includes(w))).length / h2s.length : 0;
+      const salience = Math.round(25 * +has(h1, kw) + 25 * +has(lead, kw) + 25 * Math.min(1, h2Share / 0.4) + 25 * +(kwCount >= Math.max(0, ...rivals) * 0.5));
+      add("entity-coverage", covered.length / ents.length >= 0.8, `≥ 80% of related entities in the text (${covered.length}/${ents.length}${covered.length < ents.length ? "; missing: " + ents.filter((e) => !covered.includes(e)).slice(0, 5).join(", ") : ""})`, 2);
+      add("entity-salience", salience >= 75, `central entity salience ≥ 75 (is ${salience}: H1 ${+has(h1, kw)}, lead ${+has(lead, kw)}, H2 share ${Math.round(h2Share * 100)}%, keyword ${kwCount}× vs top related entity ${Math.max(0, ...rivals)}×)`, 2);
+      const attrs = ATTR[p.route] ?? [];
+      if (attrs.length) {
+        const hitA = attrs.filter((a) => { const ws = norm(a.split("(")[0]).split(" ").filter((w) => w.length > 3); return ws.filter((w) => text.includes(w.replace(/s$/, ""))).length >= Math.ceil(ws.length * 0.6); });
+        add("attribute-coverage", hitA.length / attrs.length >= 0.7, `≥ 70% of brief attributes covered (${hitA.length}/${attrs.length})`);
+      }
+    }
     if (p.route !== "/") add("slug-keyword", norm(kw).split(" ").filter((w) => w.length > 3).some((w) => compact(p.route).includes(w)), "URL slug carries the keyword");
   }
   add("title-length", title.length >= 30 && title.length <= 60, `title 30–60 chars (is ${title.length})`);

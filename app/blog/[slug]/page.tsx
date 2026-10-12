@@ -22,7 +22,7 @@ export const generateStaticParams = () => staticParams("slug", getPosts().map((p
 export async function generateMetadata({ params }: Props) {
   const p = getPost((await params).slug);
   if (!p) return {};
-  return pageMetadata({ title: p.metaTitle ?? p.title, description: p.description, path: routes.post(p.slug), type: "article", image: `/og/blog/${p.slug}.png`, published: p.date, modified: p.updated, keywords: p.tags });
+  return pageMetadata({ title: p.metaTitle ?? p.title, description: p.description, path: routes.post(p.slug), type: "article", image: `/og/blog/${p.slug}.png`, published: p.date, modified: p.updated, keyword: p.keyword, keywords: p.tags });
 }
 
 const fmt = (d: string) => new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });

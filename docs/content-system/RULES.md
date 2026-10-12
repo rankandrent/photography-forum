@@ -116,6 +116,12 @@ on the one page that best satisfies the intent instead of starting from zero.
 - Facts about regulations, standards, tools and companies must be current and verifiable.
 - "200+ products designed" and "in business since 2017" are confirmed company facts.
 
+## Keywords, meta and entities (owner rule, 2026-10-12, applies to every new page: blog, location, industry, service)
+
+1. **Search volume first.** A page's primary keyword must have verified search volume above 0 (Semrush keyword overview, US database). The brief records `volume`, `kd` and `dataSource` with the date. Never estimate volume. If Semrush has no API units, Google Search Console impressions for the exact query are accepted as evidence (record the figure and date range). If neither source gives a number, do not start writing: the orchestrator stops the run and reports "no volume data" to the owner.
+2. **Primary keyword in every meta surface:** the meta title, the meta description, the first meta keyword, og:title and og:description (OG copies title and description, so a title and description that carry the keyword are enough). Also the H1 and the first 60 words. The on-page script checks all of these (`meta-keywords-keyword`, `og-keyword`, `title-keyword`, `desc-keyword`).
+3. **Valuable content with high entity salience.** The page's central entity (the primary keyword) leads the page: it is in the H1, in the first 60 words, and in at least 40% of the H2s, and it is mentioned more often than any single related entity. Related entities and attributes come from the brief (`entities`, `attributes`) or the page's `semantic.entities`: at least 80% of the entities and 70% of the attributes appear in the visible text, each used with a real fact or explanation, never as a list of names. The on-page script scores this (`entity-coverage`, `entity-salience` ≥ 75, `attribute-coverage`); a page below that fails QA.
+
 ## On-page checklist (owner rule)
 
 Every page follows `docs/content-system/ONPAGE-CHECKLIST.md` (Semrush on-page SEO checklist adapted to

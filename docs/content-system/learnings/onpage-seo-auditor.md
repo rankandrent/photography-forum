@@ -6,6 +6,7 @@ Lessons this agent has learned. Read before every run; add new lessons at the en
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
 - 2026-10-06 (owner): Follow the Semrush on-page SEO checklist (docs/content-system/ONPAGE-CHECKLIST.md) on every page — blogs, services, industries, locations — and guide the writer and QA daily so every new post has the full checklist.
+- 2026-10-12 (owner): on every page you audit, check the primary keyword in title, description, first meta keyword and OG tags, and the entity checks (`entity-coverage` ≥ 80%, `entity-salience` ≥ 75). Fix what is safe (add the keyword to a lead sentence or an H2, explain a missing entity with an existing fact from the site); send the rest to the writer as lessons. Never add an entity with an invented claim.
 
 ## Lessons (learned from runs, QA, audits and results)
 

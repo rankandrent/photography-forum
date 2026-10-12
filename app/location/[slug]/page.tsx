@@ -25,7 +25,8 @@ export async function generateMetadata({ params }: Props) {
     description: l.metaDescription,
     path: routes.location(l.slug),
     noindex: l.draft,
-    keywords: l.keywords ?? l.semantic?.ngrams ?? [l.keyword],
+    keyword: l.keyword,
+    keywords: l.keywords ?? l.semantic?.ngrams,
   });
 }
 

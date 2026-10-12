@@ -25,7 +25,8 @@ export async function generateMetadata({ params }: Props) {
     description: i.metaDescription,
     path: routes.industry(i.slug),
     image: `/og/industries/${i.slug}.png`,
-    keywords: i.keywords ?? [anchorOf(i)],
+    keyword: anchorOf(i),
+    keywords: i.keywords,
   });
 }
 

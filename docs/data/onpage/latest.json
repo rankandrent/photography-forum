@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T05:34:27.629Z",
+ "generated": "2026-10-12T06:03:04.574Z",
  "pages": [
   {
    "type": "content",
@@ -14,6 +14,19 @@
    "words": 384
   },
   {
+   "type": "blog",
+   "route": "/blog/web-app-design-rfp/",
+   "keyword": "web app design rfp",
+   "score": 91,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)",
+    "entity-coverage: ≥ 80% of related entities in the text (14/20; missing: user roles and permissions, workflow (task) inventory, data tables, filters and bulk actions, usability testing, Section 508 / Revised 508 Standards)"
+   ],
+   "title": "Web App Design RFP: Template, Scope Inventory and Scoring",
+   "h1": "Web App Design RFP Template: 9 Sections Agencies Can Price",
+   "words": 3153
+  },
+  {
    "type": "archive",
    "route": "/privacy/",
    "keyword": null,
@@ -24,6 +37,127 @@
    "title": "Privacy Policy | How We Handle Your Personal Data",
    "h1": "Privacy Policy",
    "words": 594
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-san-francisco/",
+   "keyword": "ux design agency san francisco",
+   "score": 93,
+   "failed": [
+    "entity-salience: central entity salience ≥ 75 (is 50: H1 1, lead 0, H2 share 85%, keyword 3× vs top related entity 9×)"
+   ],
+   "title": "UX Design Agency San Francisco | Research-Led UI UX",
+   "h1": "UX design agency for San Francisco product teams",
+   "words": 1776
+  },
+  {
+   "type": "content",
+   "route": "/services/ios-app-design-services/",
+   "keyword": "ios app design services",
+   "score": 93,
+   "failed": [
+    "entity-salience: central entity salience ≥ 75 (is 50: H1 1, lead 0, H2 share 92%, keyword 8× vs top related entity 17×)"
+   ],
+   "title": "iOS App Design Services | iPhone & iPad UI UX Design",
+   "h1": "iOS app design services that feel native on iPhone and iPad",
+   "words": 1543
+  },
+  {
+   "type": "content",
+   "route": "/services/ui-ux-design-services-for-startups/",
+   "keyword": "ui ux design services for startups",
+   "score": 93,
+   "failed": [
+    "entity-salience: central entity salience ≥ 75 (is 50: H1 1, lead 0, H2 share 92%, keyword 8× vs top related entity 27×)"
+   ],
+   "title": "UI UX Design Services for Startups | MVP to Scale",
+   "h1": "UI UX design services for startups that need to move fast",
+   "words": 1701
+  },
+  {
+   "type": "blog",
+   "route": "/blog/is-discovery-phase-worth-it/",
+   "keyword": "is a discovery phase worth it",
+   "score": 94,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)",
+    "attribute-coverage: ≥ 70% of brief attributes covered (2/6)"
+   ],
+   "title": "Is a Discovery Phase Worth It for a New Product?",
+   "h1": "Is a Discovery Phase Worth It Before You Design a New Product?",
+   "words": 3164
+  },
+  {
+   "type": "blog",
+   "route": "/blog/choose-ux-research-agency/",
+   "keyword": "how to choose a ux research agency",
+   "score": 97,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)"
+   ],
+   "title": "How to Choose a UX Research Agency: Scorecard & Red Flags",
+   "h1": "How to choose a UX research agency: a buyer's scorecard",
+   "words": 2908
+  },
+  {
+   "type": "blog",
+   "route": "/blog/design-system-roi/",
+   "keyword": "design system roi",
+   "score": 97,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)"
+   ],
+   "title": "Design System ROI: Calculate Payback Before You Fund It",
+   "h1": "Design System ROI: Build the Business Case Your CFO Will Sign",
+   "words": 3237
+  },
+  {
+   "type": "blog",
+   "route": "/blog/mobile-app-design-agency-vs-freelancer/",
+   "keyword": "mobile app design agency vs freelancer",
+   "score": 97,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)"
+   ],
+   "title": "Mobile App Design Agency vs Freelancer: How to Decide",
+   "h1": "Mobile App Design Agency vs Freelancer: Who Fits Your App?",
+   "words": 3084
+  },
+  {
+   "type": "blog",
+   "route": "/blog/saas-product-redesign/",
+   "keyword": "saas product redesign",
+   "score": 97,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)"
+   ],
+   "title": "SaaS Product Redesign: Scope, Testing and Rollout Plan",
+   "h1": "SaaS product redesign: scope, test and roll out without churn",
+   "words": 2649
+  },
+  {
+   "type": "blog",
+   "route": "/blog/usability-testing-cost-per-participant/",
+   "keyword": "usability testing cost per participant",
+   "score": 97,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)"
+   ],
+   "title": "Usability Testing Cost per Participant: What You Pay",
+   "h1": "Usability Testing Cost per Participant: The Full Bill, Line by Line",
+   "words": 3072
+  },
+  {
+   "type": "blog",
+   "route": "/blog/ux-audit-agency-vs-freelancer/",
+   "keyword": "ux audit agency vs freelancer",
+   "score": 97,
+   "failed": [
+    "keyword-volume: keyword has search volume (brief: null)"
+   ],
+   "title": "UX Audit Agency vs Freelancer vs AI: Who to Hire",
+   "h1": "UX Audit Agency vs Freelancer, AI Tool or In-House Team",
+   "words": 3057
   },
   {
    "type": "archive",
@@ -146,26 +280,6 @@
    "words": 143
   },
   {
-   "type": "blog",
-   "route": "/blog/choose-ux-research-agency/",
-   "keyword": "how to choose a ux research agency",
-   "score": 100,
-   "failed": [],
-   "title": "How to Choose a UX Research Agency: Scorecard & Red Flags",
-   "h1": "How to choose a UX research agency: a buyer's scorecard",
-   "words": 2908
-  },
-  {
-   "type": "blog",
-   "route": "/blog/design-system-roi/",
-   "keyword": "design system roi",
-   "score": 100,
-   "failed": [],
-   "title": "Design System ROI: Calculate Payback Before You Fund It",
-   "h1": "Design System ROI: Build the Business Case Your CFO Will Sign",
-   "words": 3237
-  },
-  {
    "type": "archive",
    "route": "/blog/",
    "keyword": null,
@@ -174,66 +288,6 @@
    "title": "UI UX Design Blog: Guides From Our Design Team",
    "h1": "UI UX design guides from our team",
    "words": 305
-  },
-  {
-   "type": "blog",
-   "route": "/blog/is-discovery-phase-worth-it/",
-   "keyword": "is a discovery phase worth it",
-   "score": 100,
-   "failed": [],
-   "title": "Is a Discovery Phase Worth It for a New Product?",
-   "h1": "Is a Discovery Phase Worth It Before You Design a New Product?",
-   "words": 3164
-  },
-  {
-   "type": "blog",
-   "route": "/blog/mobile-app-design-agency-vs-freelancer/",
-   "keyword": "mobile app design agency vs freelancer",
-   "score": 100,
-   "failed": [],
-   "title": "Mobile App Design Agency vs Freelancer: How to Decide",
-   "h1": "Mobile App Design Agency vs Freelancer: Who Fits Your App?",
-   "words": 3084
-  },
-  {
-   "type": "blog",
-   "route": "/blog/saas-product-redesign/",
-   "keyword": "saas product redesign",
-   "score": 100,
-   "failed": [],
-   "title": "SaaS Product Redesign: Scope, Testing and Rollout Plan",
-   "h1": "SaaS product redesign: scope, test and roll out without churn",
-   "words": 2649
-  },
-  {
-   "type": "blog",
-   "route": "/blog/usability-testing-cost-per-participant/",
-   "keyword": "usability testing cost per participant",
-   "score": 100,
-   "failed": [],
-   "title": "Usability Testing Cost per Participant: What You Pay",
-   "h1": "Usability Testing Cost per Participant: The Full Bill, Line by Line",
-   "words": 3072
-  },
-  {
-   "type": "blog",
-   "route": "/blog/ux-audit-agency-vs-freelancer/",
-   "keyword": "ux audit agency vs freelancer",
-   "score": 100,
-   "failed": [],
-   "title": "UX Audit Agency vs Freelancer vs AI: Who to Hire",
-   "h1": "UX Audit Agency vs Freelancer, AI Tool or In-House Team",
-   "words": 3057
-  },
-  {
-   "type": "blog",
-   "route": "/blog/web-app-design-rfp/",
-   "keyword": "web app design rfp",
-   "score": 100,
-   "failed": [],
-   "title": "Web App Design RFP: Template, Scope Inventory and Scoring",
-   "h1": "Web App Design RFP Template: 9 Sections Agencies Can Price",
-   "words": 3153
   },
   {
    "type": "content",
@@ -527,16 +581,6 @@
   },
   {
    "type": "content",
-   "route": "/location/ux-design-agency-san-francisco/",
-   "keyword": "ux design agency san francisco",
-   "score": 100,
-   "failed": [],
-   "title": "UX Design Agency San Francisco | Research-Led UI UX",
-   "h1": "UX design agency for San Francisco product teams",
-   "words": 1776
-  },
-  {
-   "type": "content",
    "route": "/location/ux-design-agency-seattle/",
    "keyword": "ux design agency seattle",
    "score": 100,
@@ -627,16 +671,6 @@
   },
   {
    "type": "content",
-   "route": "/services/ios-app-design-services/",
-   "keyword": "ios app design services",
-   "score": 100,
-   "failed": [],
-   "title": "iOS App Design Services | iPhone & iPad UI UX Design",
-   "h1": "iOS app design services that feel native on iPhone and iPad",
-   "words": 1543
-  },
-  {
-   "type": "content",
    "route": "/services/mobile-app-ui-ux-design-services/",
    "keyword": "mobile app ui ux design services",
    "score": 100,
@@ -654,16 +688,6 @@
    "title": "SaaS UX Design Services | Onboarding, Retention & UI",
    "h1": "SaaS UX design that shortens time-to-value and reduces churn",
    "words": 1715
-  },
-  {
-   "type": "content",
-   "route": "/services/ui-ux-design-services-for-startups/",
-   "keyword": "ui ux design services for startups",
-   "score": 100,
-   "failed": [],
-   "title": "UI UX Design Services for Startups | MVP to Scale",
-   "h1": "UI UX design services for startups that need to move fast",
-   "words": 1701
   },
   {
    "type": "content",

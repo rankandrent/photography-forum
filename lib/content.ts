@@ -99,6 +99,7 @@ function load() {
       type: data.type ?? "Article",
       image: data.image,
       takeaways: data.takeaways ?? [],
+      keyword: data.keyword,
       readMinutes: Math.max(1, Math.round(html.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length / 230)),
       funnel: (["tofu", "mofu", "bofu"].includes(data.funnel) ? data.funnel : "mofu") as Post["funnel"],
       services: data.services ?? [],

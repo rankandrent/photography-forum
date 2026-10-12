@@ -10,6 +10,7 @@ export function pageMetadata({
   noindex,
   type = "website",
   image = "/og/home.png",
+  keyword,
   keywords,
   published,
   modified,
@@ -21,17 +22,20 @@ export function pageMetadata({
   type?: "website" | "article";
   /** Path of the share image, e.g. /og/services/ux-design.png */
   image?: string;
-  /** Focus keyword first, then close variants (meta keywords) */
+  /** Primary keyword; always first in meta keywords */
+  keyword?: string;
+  /** Close variants and related terms (meta keywords) */
   keywords?: string[];
   /** Article dates, YYYY-MM-DD */
   published?: string;
   modified?: string;
 }): Metadata {
   const url = absoluteUrl(path);
+  const kws = [...new Set([keyword, ...(keywords ?? [])].map((k) => k?.trim()).filter((k): k is string => !!k))];
   return {
     title: { absolute: title },
     description,
-    ...(keywords?.length && { keywords: [...new Set(keywords.map((k) => k.trim()).filter(Boolean))] }),
+    ...(kws.length && { keywords: kws }),
     alternates: { canonical: url },
     openGraph: {
       title,

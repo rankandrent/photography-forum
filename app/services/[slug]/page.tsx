@@ -44,7 +44,8 @@ export async function generateMetadata({ params }: Props) {
     description: s.metaDescription,
     path: routes.service(s.slug),
     image: `/og/services/${s.slug}.png`,
-    keywords: s.keywords ?? s.semantic?.ngrams ?? [anchorOf(s), ...(s.tags ?? [])],
+    keyword: anchorOf(s),
+    keywords: s.keywords ?? s.semantic?.ngrams ?? s.tags,
   });
 }
 

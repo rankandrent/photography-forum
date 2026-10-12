@@ -209,6 +209,8 @@ export type Post = {
   services: string[];
   industries: string[];
   tags: string[];
+  /** Primary keyword: meta title, description, meta keywords and OG tags */
+  keyword?: string;
   /** Optional cover image path; posts without one get a generated brand cover */
   image?: string;
   /** Optional 3–5 one-line key takeaways shown above the article */
