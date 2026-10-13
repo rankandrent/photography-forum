@@ -22,7 +22,6 @@ export const home = {
       name: "Sahar Asif",
       role: "Senior Manager UX",
       photo: "/team/sahar-asif-lg.webp",
-      note: "Replies within 1 business day",
       cta: "Book a call with Sahar",
     },
     stats: [

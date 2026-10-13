@@ -83,7 +83,7 @@ export default function HomePage() {
               <span className="hportrait__badge"><span className="hportrait__dot" aria-hidden="true" />Available for a call</span>
               <div className="hportrait__info">
                 <p className="hportrait__name">{home.hero.contact.name}</p>
-                <p className="hportrait__role">{home.hero.contact.role} · {home.hero.contact.note}</p>
+                <p className="hportrait__role">{home.hero.contact.role}</p>
                 <a href="#cta-form" className="btn hportrait__btn">{home.hero.contact.cta}</a>
               </div>
             </aside>
