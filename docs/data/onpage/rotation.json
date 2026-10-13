@@ -1,25 +1,7 @@
 {
  "note": "On-page review rotation for onpage-seo-auditor. Each daily run reviews 3 pages with the oldest lastAudited (null first, then oldest date; ties by route), plus new blog posts and the 5 lowest scorers. Update lastAudited and lastScore for every page reviewed; add new routes from docs/data/onpage/latest.json with lastAudited null.",
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "pages": [
-  {
-   "route": "/industries/supply-chain/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/location/",
-   "type": "archive",
-   "lastAudited": null,
-   "lastScore": 100
-  },
-  {
-   "route": "/location/ux-design-agency-boston/",
-   "type": "content",
-   "lastAudited": null,
-   "lastScore": 100
-  },
   {
    "route": "/location/ux-design-agency-los-angeles/",
    "type": "content",
@@ -192,7 +174,7 @@
    "route": "/blog/ux-audit-agency-vs-freelancer/",
    "type": "blog",
    "lastAudited": "2026-10-07",
-   "lastScore": 100
+   "lastScore": 98
   },
   {
    "route": "/blog/author/ahmad-ullah/",
@@ -209,12 +191,6 @@
   {
    "route": "/blog/author/sahar-asif/",
    "type": "archive",
-   "lastAudited": "2026-10-08",
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/design-system-roi/",
-   "type": "blog",
    "lastAudited": "2026-10-08",
    "lastScore": 100
   },
@@ -243,22 +219,10 @@
    "lastScore": 100
   },
   {
-   "route": "/blog/choose-ux-research-agency/",
-   "type": "blog",
-   "lastAudited": "2026-10-09",
-   "lastScore": 100
-  },
-  {
    "route": "/blog/saas-product-redesign/",
    "type": "blog",
    "lastAudited": "2026-10-09",
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/web-app-design-rfp/",
-   "type": "blog",
-   "lastAudited": "2026-10-09",
-   "lastScore": 100
+   "lastScore": 98
   },
   {
    "route": "/location/st-louis-ux-design-agency/",
@@ -357,18 +321,6 @@
    "lastScore": 100
   },
   {
-   "route": "/blog/is-discovery-phase-worth-it/",
-   "type": "blog",
-   "lastAudited": "2026-10-11",
-   "lastScore": 100
-  },
-  {
-   "route": "/blog/mobile-app-design-agency-vs-freelancer/",
-   "type": "blog",
-   "lastAudited": "2026-10-11",
-   "lastScore": 100
-  },
-  {
    "route": "/case-studies/nitro/",
    "type": "content",
    "lastAudited": "2026-10-11",
@@ -402,13 +354,13 @@
    "route": "/about/",
    "type": "content",
    "lastAudited": "2026-10-12",
-   "lastScore": 87
+   "lastScore": 100
   },
   {
    "route": "/blog/usability-testing-cost-per-participant/",
    "type": "blog",
    "lastAudited": "2026-10-12",
-   "lastScore": 100
+   "lastScore": 98
   },
   {
    "route": "/industries/ecommerce/",
@@ -438,7 +390,55 @@
    "route": "/privacy/",
    "type": "archive",
    "lastAudited": "2026-10-12",
-   "lastScore": 91
+   "lastScore": 100
+  },
+  {
+   "route": "/blog/choose-ux-research-agency/",
+   "type": "blog",
+   "lastAudited": "2026-10-13",
+   "lastScore": 98
+  },
+  {
+   "route": "/blog/design-system-roi/",
+   "type": "blog",
+   "lastAudited": "2026-10-13",
+   "lastScore": 98
+  },
+  {
+   "route": "/blog/is-discovery-phase-worth-it/",
+   "type": "blog",
+   "lastAudited": "2026-10-13",
+   "lastScore": 95
+  },
+  {
+   "route": "/blog/mobile-app-design-agency-vs-freelancer/",
+   "type": "blog",
+   "lastAudited": "2026-10-13",
+   "lastScore": 98
+  },
+  {
+   "route": "/blog/web-app-design-rfp/",
+   "type": "blog",
+   "lastAudited": "2026-10-13",
+   "lastScore": 93
+  },
+  {
+   "route": "/industries/supply-chain/",
+   "type": "content",
+   "lastAudited": "2026-10-13",
+   "lastScore": 100
+  },
+  {
+   "route": "/location/",
+   "type": "archive",
+   "lastAudited": "2026-10-13",
+   "lastScore": 100
+  },
+  {
+   "route": "/location/ux-design-agency-boston/",
+   "type": "content",
+   "lastAudited": "2026-10-13",
+   "lastScore": 100
   }
  ]
 }
