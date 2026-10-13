@@ -12,7 +12,7 @@ import { EmailMessage } from "cloudflare:email";
 type SendEmail = { send(message: EmailMessage): Promise<void> };
 type Env = { ASSETS: { fetch(request: Request): Promise<Response> }; LEADS?: SendEmail };
 
-export const LEAD_RECIPIENTS = ["umar.sarwar@corp.tkxel.com", "rizwan.siddiqui@tkxel.com"];
+export const LEAD_RECIPIENTS = ["umar.sarwar@corp.tkxel.com"];
 const FROM = "leads@uiuxdesignservices.us";
 const SITE = "uiuxdesignservices.us";
 

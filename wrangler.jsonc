@@ -25,7 +25,7 @@
   "send_email": [
     {
       "name": "LEADS",
-      "allowed_destination_addresses": ["umar.sarwar@corp.tkxel.com", "rizwan.siddiqui@tkxel.com"]
+      "allowed_destination_addresses": ["umar.sarwar@corp.tkxel.com"]
     }
   ]
 }
