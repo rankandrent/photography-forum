@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 13,
   "title": "Washington DC",
   "city": "Washington, D.C.",
@@ -14,7 +14,7 @@
     "sub": "Headquartered in Reston, Virginia, a Silver Line ride from downtown. Senior researchers and designers build accessible, plain-language digital services for agencies, nonprofits and federal contractors across the DC metro."
   },
   "summary": "Accessibility-first UX research and design for civic tech, associations and government contractors in the Washington DC metro.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-13",
   "sections": [
     {
       "h2": "What should a UX design agency in Washington DC deliver?",
@@ -260,5 +260,6 @@
         "label": "Section 508"
       }
     ]
-  }
+  },
+  "published": "2026-10-13"
 }
