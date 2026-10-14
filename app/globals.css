@@ -1653,8 +1653,10 @@ main > .section:nth-of-type(23)::after { -webkit-mask-image: var(--art7a); mask-
 .post-article figure { margin: 40px 0; }
 /* infographics are drawn 800px wide with large type for phones; on wider screens show them at reading
    size so their text matches the body copy instead of shouting over it */
-.post-article figure:has(> img[src$=".svg"]) { max-width: 540px; margin-left: auto; margin-right: auto; }
-.post-article figure:has(> img[src$=".svg"]) + .astext { max-width: 540px; margin-left: auto; margin-right: auto; }
+.post-article figure:not(.fig-wide):has(> img[src$=".svg"]) { max-width: 540px; margin-left: auto; margin-right: auto; }
+.post-article figure:not(.fig-wide):has(> img[src$=".svg"]) + .astext { max-width: 540px; margin-left: auto; margin-right: auto; }
+/* landscape infographics (1200 wide, short) use the full article width: less height, larger text */
+.post-article figure.fig-wide img { width: 100%; height: auto; }
 .post-article figcaption { margin-top: 12px; font-size: 14px; }
 .post-article .ptable { margin: 8px 0 32px; }
 .post-article .ptable table { font-size: 15.5px; line-height: 1.5; }

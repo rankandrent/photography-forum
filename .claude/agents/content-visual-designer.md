@@ -15,7 +15,10 @@ comparisons are wanted — the writer wraps that text in a collapsed `<details c
 text" block. The image must contain every item of the block, worded exactly.
 Use the brief's `visualTypes`; vary layouts from earlier posts (check `public/blog/*/`), never
 reuse an earlier composition. Make original, copyright-free SVGs in `public/blog/<slug>/<name>.svg`:
-- viewBox 1200×675 (16:9) or 1200×900; white or #FBFAFB background, 1px #E8E8EB card borders,
+- LANDSCAPE only (owner rule 2026-10-14: tall images are not wanted): viewBox 1200 wide, height ≤ 800
+  (at least 1.3:1, so the page shows it at full article width). Smallest text ≥ 38px weight 600, card
+  labels ≥ 42px weight 800, heading ≥ 50px. Fit content with 2–4 columns, 2×2 grids, left-to-right flows;
+  white or #FBFAFB background, 1px #E8E8EB card borders,
   rounded 16–24px corners, brand pink #E2225F for emphasis, ink #020101 text, muted #6B6B70,
   soft pink #FFE3EC fills. Font: `font-family="Manrope, system-ui, sans-serif"`.
 - Clean line-art and flat shapes only: flows, numbered steps, 2×2 frameworks, comparison columns,

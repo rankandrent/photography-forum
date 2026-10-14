@@ -203,6 +203,9 @@ as `## FAQs` with `### Question?` + answer. Images use
   Every key fact still needs one sentence in the open prose (the bold answer or the section text).
 - Overview flows, decision trees, timelines, 2×2s and before/after maps are also welcome.
 - Aim for 4–6 inline visuals per post.
+- Landscape only (owner rule 2026-10-14, "images ki height bohat zyada"): viewBox 1200 wide, height
+  ≤ 800, smallest text ≥ 38px. Such images get the full article width (`figure.fig-wide`); taller ones
+  are squeezed to 540px.
 
 ## Layout-aware pages (owner rule, 2026-10-12, Google patent US12393768B2)
 

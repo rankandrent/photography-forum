@@ -22,6 +22,15 @@ function readJson<T>(dir: string): T[] {
   }));
 }
 
+/** A landscape infographic (viewBox at least 1.3× wider than tall) gets the full article width. */
+function isWideSvg(img: string) {
+  const src = img.match(/ src="(\/[^"]+\.svg)"/)?.[1];
+  const file = src && path.join(process.cwd(), "public", src);
+  if (!file || !fs.existsSync(file)) return false;
+  const vb = fs.readFileSync(file, "utf8").slice(0, 600).match(/viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"/);
+  return !!vb && +vb[1] >= 1.3 * +vb[2];
+}
+
 /**
  * Turn a paragraph holding a single titled image into <figure> + <figcaption>, lazy-load images,
  * and render each "Show as text" block as an always-visible text panel under its image: content that
@@ -33,7 +42,7 @@ function figures(html: string) {
       `<div class="astext" role="group" aria-label="Text version of the image above">${body}</div>`,
     )
     .replace(/<p>(<img [^>]*?title="([^"]*)"[^>]*>)<\/p>/g, (_, img: string, cap: string) =>
-      `<figure>${img.replace(/ title="[^"]*"/, "")}<figcaption>${cap}</figcaption></figure>`,
+      `<figure${isWideSvg(img) ? ' class="fig-wide"' : ""}>${img.replace(/ title="[^"]*"/, "")}<figcaption>${cap}</figcaption></figure>`,
     )
     .replace(/<img (?![^>]*loading=)/g, '<img loading="lazy" ');
 }
