@@ -116,7 +116,7 @@
     {
       "h2": "E-commerce UX design vs UX audit",
       "format": "table",
-      "answer": "<strong>E-commerce UX design redesigns and tests the purchase funnel in 4–8 weeks; a UX audit reviews the existing store and delivers a fix roadmap in 2–3 weeks.</strong> Stores without funnel evidence start with the UX audit, then redesign the weakest templates.",
+      "answer": "<strong>E-commerce UX design redesigns and tests the purchase funnel in 4–8 weeks; a UX audit reviews the existing store and delivers a fix roadmap in 2–3 weeks.</strong> Stores without funnel evidence <a href=\"/blog/ecommerce-ux-audit/\">start with the UX audit</a>, then redesign the weakest templates.",
       "caption": "Comparison of e-commerce UX design and a UX audit",
       "columns": [
         "Criterion",

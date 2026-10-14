@@ -184,6 +184,23 @@
       "externalLinks": 5,
       "qaLoops": 2,
       "notes": "First usability-testing silo post. Writer had no WebFetch (DNS); all sources verified via site-limited search. Loop 1: fact 10 fixes (hub moderated-only example, per-user-group wording, ladder 'baseline' implied longer lead time, TradeZella not a usability case, MeasuringU older/no 10% planning figure, NN/g Jan 2003 not 2002, GitLab URL, heat-table rankings removed) + QA F1–F12, G1 tool-share, G2 B2B. Loop 2: QA pass (1 nit); fact 2 fixes (B2B 'nearest reference' → older MeasuringU + current quote; round strip Sessions 'partly covered at most, incentive if included'). Internal links 5 (new silo exception). Backlink from hub cost section. Open: hub says 5–8 per round vs per user group; unmoderated in every round vs $25k moderated-only example."
+    },
+    {
+      "slug": "ecommerce-ux-audit",
+      "hub": "ecommerce-ux-design-services",
+      "keyword": "ecommerce ux audit",
+      "funnel": "bofu",
+      "author": "talha-saleem",
+      "date": "2026-10-14",
+      "words": 2200,
+      "images": 6,
+      "internalLinks": 5,
+      "externalLinks": 5,
+      "qaLoops": 2,
+      "volume": 200,
+      "kd": 0,
+      "dataSource": "Ahrefs API v3, US, 2026-10-14",
+      "notes": "First post with verified Ahrefs volume (200/mo, KD 0, TP 900). First post in the e-commerce silo. Loop 1: fact 6 fixes (Baymard 'browsers included' unsupported; reasons ranking 'then' wrong; GA4 duplicate-event logic reversed; 3 unsupported scope claims) + QA F1–F14, G1 order confirmation, G2 sort order + review count, G3 next step, D1 catalog, D2 checkbox spacing. Loop 2: QA pass (1 next-step fix); fact 4 sentence fixes (kick-off claim narrowed to hub step, WISMO cause softened, sort-order logic, redesign link text). Backlinks: e-commerce hub audit-vs-design answer + UX audit hub definition. Open: BOFU CTA box prints $25k–$60k on an audit post; home.ts '1–2 designers' vs hubs; industry page ADA sentence."
     }
   ],
   "audits": []

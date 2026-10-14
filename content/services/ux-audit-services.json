@@ -31,7 +31,7 @@
       "h2": "What is a UX audit?",
       "format": "paragraph",
       "answer": "<strong>A UX audit is an expert evaluation of a website or app that finds usability issues, explains their cause and ranks each fix by impact and effort.</strong> Senior designers run the review against usability heuristics, WCAG 2.2 accessibility criteria and product analytics.",
-      "body": "<p>A UX audit differs from <a href=\"/services/usability-testing-services/\">usability testing services</a> in one way: designers evaluate the product, not recruited users. The audit therefore finishes in 2–3 weeks and covers every key user flow, while a usability test covers 3–5 tasks in depth. A website UX audit and an app UX audit follow the same method; only the platform guidelines change.</p>"
+      "body": "<p>A UX audit differs from <a href=\"/services/usability-testing-services/\">usability testing services</a> in one way: designers evaluate the product, not recruited users. The audit therefore finishes in 2–3 weeks and covers every key user flow, while a usability test covers 3–5 tasks in depth. A website UX audit and an app UX audit follow the same method; only the platform guidelines change. For online stores, our <a href=\"/blog/ecommerce-ux-audit/\">e-commerce UX audit checklist</a> shows the store-specific checks, from site search to guest checkout.</p>"
     },
     {
       "h2": "What does a UX audit include?",

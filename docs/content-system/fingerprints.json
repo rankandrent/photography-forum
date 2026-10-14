@@ -55,6 +55,38 @@
       "words": 2143,
       "tableCount": 1,
       "listStyle": "fill-in bill table + quote questions list"
+    },
+    {
+      "slug": "ecommerce-ux-audit",
+      "hub": "ecommerce-ux-design-services",
+      "type": "Checklist",
+      "funnel": "bofu",
+      "introStyle": "60-second phone test",
+      "sectionOrder": [
+        "What does an e-commerce UX audit add to a general audit?",
+        "Which store data should you pull before the audit starts?",
+        "How does the audit test site search and navigation?",
+        "Which listing and product page checks find the leaks?",
+        "Which 12 checkout checks belong in an e-commerce UX audit?",
+        "How does an e-commerce UX audit cover mobile, speed and WCAG 2.2?",
+        "How do you score and rank e-commerce UX audit findings?",
+        "What does a self-audit of your own store miss?",
+        "What should you send to get an e-commerce UX audit quote?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "store funnel audit map",
+        "pre-audit data pull 2x2 tiles",
+        "search query test sheet",
+        "checkout pass/fail card",
+        "WCAG checkout criteria",
+        "priority 2x2 (illustrative)"
+      ],
+      "ctaAngle": "send store URL, platform and funnel data → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2200,
+      "tableCount": 1,
+      "listStyle": "grouped checklists + test sheet"
     }
   ],
   "posts": [

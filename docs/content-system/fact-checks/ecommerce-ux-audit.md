@@ -80,3 +80,51 @@ The SVGs need no changes: none of F1–F6 touches text that appears in an image 
 - On the industry page, "US courts apply the ADA to online stores" (L183) is broader than the ada.gov wording the post uses. The post does not repeat it. Flag it for the site auditor.
 
 VERDICT: FAIL
+
+---
+
+# Round 2 (final, 2026-10-14)
+
+Scope: check that F1–F6 were applied, and check the new or changed claims G1, G2, the merged F3 sentence and the F8 price sentence. Then a quick honesty re-scan. The post was not edited (role rule). Line numbers refer to the current post.
+
+## Round-1 fixes
+
+| Fix | Line now | Status |
+|---|---|---|
+| F1 | L34 | Applied verbatim. TRUE |
+| F2 | L123 | Applied verbatim. TRUE |
+| F3 | L73 | add_to_cart example applied, but merged into a new "we" sentence. See R3 |
+| F4 | L228, L257 | Applied verbatim. TRUE |
+| F5 | L229 | Applied verbatim. TRUE |
+| F6 | L230 | Applied verbatim. TRUE |
+
+## New or changed claims
+
+| # | Claim (line) | Verdict | Source / evidence |
+|---|---|---|---|
+| R1 | The confirmation page repeats the delivery date and items, and offers the account from check 4 with a password field only (L157) | TRUE | https://baymard.com/blog/order-confirmation-page: confirmation pages should "always clearly show an order summary, expected arrival date". Account creation there can be "just a single password field" when the email is the username. Check 4 (L137) says "account offered after the order", which matches. "Order number" is not in that article. It is standard receipt content and is not attributed to Baymard, so it is acceptable |
+| R2 | "Support tickets tagged 'where is my order' flag a confirmation page that falls short." (L157) | UNVERIFIABLE (overclaims cause) | No source ties these tickets to the confirmation page alone. They also come from shipping-status and tracking emails after the order. The map row (L47) only says "Support tickets" is the data for this step, so a hedged version is enough. See G1 |
+| R3 | "On our audits, we ask for analytics access at kick-off and check the e-commerce tags in the first 1–2 days" (L73) | UNVERIFIABLE (our process) | ux-audit hub step 1, "Kick-off and goals (1–2 days)", says only "…and receive analytics access". Checking tags appears in no hub step. Step 2's "analytics review" (5–7 days) is not a tag check either. The hub FAQ says analytics access is optional ("A UX audit works without analytics"). The sentence borrows the kick-off duration for a task the site never lists. See F3b |
+| R4 | Sort order "defaults to an order shoppers choose, such as best-selling or price, and survives filtering" (L106) | WRONG (logic) / partly TRUE | A default order is set by the store, so shoppers cannot have chosen it. Baymard does support the parts: https://baymard.com/blog/essential-sort-types lists Price, User rating, Best-selling and Newest as essential sort types, and https://baymard.com/guidelines/493-persisting-filtering-and-sorting-settings names "filtering and sorting choices … unintentionally reset" as the issue. See G2 |
+| R5 | Rating and review count near the price; reviews filter by the size or fit they mention (L114) | TRUE (advice) | https://baymard.com/research-articles/apparel-provide-aggregate-fit-subscore-in-reviews: fit info in reviews should be aggregated, and 33% of sites do not. The placement next to the price is editorial advice, is not attributed to a source and is consistent with hub L50 ("reviews … reorganised") |
+| R6 | "Our audit price is $5,000–$15,000 for an audit duration of 2–3 weeks, as published in the hub's [comparison of an audit with a full e-commerce redesign]…" (L235) | TRUE (figures) / WRONG (label) | Hub vs table L143–150 gives 2–3 weeks and $5,000–$15,000. The anchor exists. The hub table compares the audit with "E-commerce UX design", and its $25,000 end is "a Shopify product detail page and cart redesign" (hub L168), not a full redesign. Calling it "full" also contradicts the next sentence ("That redesign of the weakest templates"). See F8 |
+| R7 | "That redesign of the weakest templates runs $25,000–$60,000 over 4–8 weeks." (L235) | TRUE | Hub L119: "then redesign the weakest templates"; vs table "$25,000–$60,000", "4–8 weeks" |
+| R8 | Honesty re-scan | TRUE | grep for client, award, certif, testimonial, office, case stud, results and years: only the FTC rule name and "office Wi-Fi" match. The "we" sentences are R3 and L191 (C24, hub). No new offers. The CTA (L237) is unchanged from C28/C29 |
+
+## Round-2 fixes (exact replacements)
+
+**F3b (L73, R3).** Replace "On our audits, we ask for analytics access at kick-off and check the e-commerce tags in the first 1–2 days, before trusting any drop-off number: an add_to_cart event that never fires from a quick-add button makes a healthy step look broken." with:
+> On our audits, analytics access comes in at kick-off, the first 1–2 days. Before trusting any drop-off number, check that the e-commerce tags fire: an add_to_cart event that never fires from a quick-add button makes a healthy step look broken.
+
+**G1 (L157, R2).** Replace "Support tickets tagged "where is my order" flag a confirmation page that falls short." with:
+> Support tickets tagged "where is my order" can point to a confirmation page or order email that leaves out the delivery date.
+
+**G2 (L106, R4).** Bullet becomes:
+> - **Sort order** offers the sorts shoppers use, such as best-selling and price, and stays applied after filtering, so results do not reshuffle.
+
+**F8 (L235, R6).** Replace the two sentences with:
+> Our audit price is $5,000–$15,000 for an audit duration of 2–3 weeks, as published in the hub's [comparison of a UX audit with e-commerce UX design](/services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit). Redesigning the weakest templates afterwards is an e-commerce UX design engagement of $25,000–$60,000 over 4–8 weeks.
+
+None of these touches SVG or text-panel content. The map row "Order confirmation | Order summary | Support tickets" still holds after G1.
+
+VERDICT: FAIL (4 sentence-level replacements above; all else TRUE)
