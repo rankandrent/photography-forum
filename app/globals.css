@@ -922,7 +922,14 @@ html, body { overflow-x: clip; }
 .htrust__rating { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 15px; color: rgba(255,255,255,0.75); }
 .htrust__rating strong { color: #fff; }
 .htrust__stars { color: #FFB800; letter-spacing: 2px; font-size: 16px; }
-.htrust__logos { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.htrust__logos { display: grid; gap: 14px; min-width: 0; }
+.htrust__marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.htrust__track { display: flex; width: max-content; animation: htrust-scroll 28s linear infinite; }
+.htrust__marquee:hover .htrust__track { animation-play-state: paused; }
+.htrust__set { display: flex; align-items: center; gap: 48px; padding: 0 24px; margin: 0; list-style: none; }
+.htrust__set li { display: flex; align-items: center; flex: none; }
+@keyframes htrust-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .htrust__track { animation: none; } .htrust__set[aria-hidden] { display: none; } .htrust__set { flex-wrap: wrap; } }
 .htrust__label { font-family: var(--font-m); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); width: 100%; }
 .htrust__logos img { height: 22px; width: auto; max-width: 110px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.7; }
 .htrust__checks { list-style: none; padding: 0; margin: 0; display: flex; gap: 10px 22px; flex-wrap: wrap; font-size: 14px; color: rgba(255,255,255,0.75); }
@@ -930,7 +937,7 @@ html, body { overflow-x: clip; }
 .htrust__checks li::before { content: ''; width: 16px; height: 16px; border-radius: 50%; flex: none; background: var(--pink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.2 2.2 4.8-4.8' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat; }
 .phero--split .phero__sub { margin-bottom: 28px; }
 .ind-work .stats-row { margin: 0 0 40px; }
-@media (max-width: 900px) { .htrust__logos { gap: 20px; } .htrust__logos img { height: 18px; } }
+@media (max-width: 900px) { .htrust__set { gap: 32px; padding: 0 16px; } .htrust__logos img { height: 18px; } }
 
 /* ---------- Section rhythm ----------
    Light top-level blocks alternate white / tint automatically, whatever tone a

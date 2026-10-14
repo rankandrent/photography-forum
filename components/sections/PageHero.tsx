@@ -14,16 +14,27 @@ export function HeroTrust() {
       <div className="htrust__rating">
         <span><strong>200+</strong> products designed · in business since {SITE.founded}</span>
       </div>
-      <div className="htrust__logos" aria-label="Clients">
+      <div className="htrust__logos">
         <span className="htrust__label">Trusted by teams at</span>
-        {logos.map((l) =>
-          l.logo ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={l.name} src={l.logo} alt={l.name} loading="eager" />
-          ) : (
-            <span key={l.name}>{l.name}</span>
-          ),
-        )}
+        {/* logos scroll right to left in a loop; the second copy only fills the gap and is hidden from screen readers */}
+        <div className="htrust__marquee">
+          <div className="htrust__track">
+            {[0, 1].map((copy) => (
+              <ul key={copy} className="htrust__set" aria-label={copy ? undefined : "Clients"} aria-hidden={copy ? true : undefined}>
+                {logos.map((l) => (
+                  <li key={l.name}>
+                    {l.logo ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={l.logo} alt={copy ? "" : l.name} loading="eager" />
+                    ) : (
+                      <span>{l.name}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        </div>
       </div>
       <ul className="htrust__checks">
         <li>Senior designers only</li>
