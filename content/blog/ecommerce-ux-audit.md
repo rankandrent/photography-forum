@@ -154,7 +154,7 @@ Baymard's US survey of abandonment reasons sets aside the 42% who were only brow
 
 Check 5 is a count: the same Baymard page puts the average US checkout at 14.88 form fields by default, against 7–8 in an ideal flow. Mark each check on a phone first, where mobile checkout typing hurts most. A checkout UX audit alone misses everyone who never reaches the cart, so the checklist covers search, listing and product pages as well.
 
-The order confirmation page closes the checklist: it repeats the order number, delivery date and items, and offers the account from check 4 with a password field only. Support tickets tagged "where is my order" flag a confirmation page that falls short.
+The order confirmation page closes the checklist: it repeats the order number, delivery date and items, and offers the account from check 4 with a password field only. Support tickets tagged "where is my order" flag a confirmation page that falls short, so pull their count from your help desk before the audit.
 
 ## How does an e-commerce UX audit cover mobile, speed and WCAG 2.2?
 

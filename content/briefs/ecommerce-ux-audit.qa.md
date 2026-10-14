@@ -116,3 +116,57 @@
 L34 "Most come from Baymard Institute research" (the share of store rules) and "browsers included". L73 "first 1–2 days". L121 and L153 Baymard figures. L187 "two senior UX designers" (hub wording, the brief's conflict note). L233 "45-minute UX audit session" (home.ts L93 wording matches, and it is not called free).
 
 VERDICT: FAIL
+
+---
+
+# QA report: ecommerce-ux-audit (round 2, final loop)
+
+- Date: 2026-10-14 · Reviewer: content-qa · Post at 1734dc5 plus one QA text fix (below). The tree was clean before the fix, and `public/blog/ecommerce-ux-audit/` has no uncommitted assets.
+- Gates after the QA fix: `SHOW_DRAFTS=1 npm run build` exit 0 · `npm run seo:check` 0 errors, 6 warnings (the same draft stubs and author page as round 1, not this post) · `npm run lint` exit 0 · `npm run onpage -- /blog/ecommerce-ux-audit/` **score 100, failed: []**, 3,319 words · `<!--` in source: 0.
+
+## Round-1 items
+
+| Item | Status | Evidence |
+|---|---|---|
+| F1 | Done | L52, word for word |
+| F2 | Done | The data-pull image and its panel now sit right after L58, and the GA4 paragraph follows them |
+| F3 | Done (FC version accepted) | L73 uses the fact-checker's example ("an add_to_cart event that never fires from a quick-add button"), keeps the QA sentence shape and ends on a reader action. This also closes G3 |
+| F4 | Done | L121, with brackets |
+| F5 | Done | L155 |
+| F6 | Done | L159 H2 "mobile, speed and WCAG 2.2" |
+| F7 | Done | L220 |
+| F8 | Done | L235; keyword count is now 15 in 3,043 body words (1.49%, panels included) |
+| F9 | Done | L237; the shape differs from the last 4 BOFU CTAs (checked side by side) |
+| F10 | Done | L239; the closing shape is new against the last 4 BOFU posts |
+| F11 | Done | "catalogue": 0 in the post and 0 in all SVGs |
+| F12 | Done | Takeaway 5 |
+| F13 | Done | FAQ 2 |
+| F14 | Done | FAQ 5 |
+| G1 | Done | L157 adds a 2-sentence order confirmation paragraph (number, delivery date, items, account from check 4, "where is my order" tickets). It is a paragraph, **not a 13th check**: the card SVG and panel still hold exactly 12 checks |
+| G2 | Done | PLP "Sort order" bullet L106, PDP "rating and review count" bullet L114, both in the "**Item** does X, so/because Y" shape. The FTC sentence is unchanged |
+| G3 | Done | Via F3 (L73 ends "note the step with the steepest drop") |
+| D1 | Done | The search sheet reads "The same results as the catalog term" |
+| D2 | Done | Numbers are right-aligned at x=222 (`text-anchor="end"`); the checkbox ends at x=170 and item text starts at x=238, so "10"–"12" keep a gap of about 20px and line up with 1–9 |
+| FC F1, F2, F4, F5, F6 | Done | L34, L123, L228/L257, L229, L230 match the fact-check text |
+
+## Images vs panels (6b)
+
+I extracted every `<text>` node from all 7 SVGs and compared each to its `astext` panel: funnel map (7 rows), data pull (4), search sheet (5), checkout card (**12 checks in 4 groups, matching panel items 1–12 word for word**), WCAG table (5), priority 2x2 (4 quadrants), cover. There are no differences, nothing is dropped and nothing is visible twice.
+
+## Repair-text read (lessons 2026-10-07, 10-08, 10-12)
+
+I read every added sentence as a claim in its own right. G1 "offers the account from check 4 with a password field only" matches check 4. G2 "survives filtering" and "fit comments answer the question behind 'wrong size' returns" agree with the data-pull panel item 3. F5 "covers search, listing and product pages as well" no longer conflicts with L58. No new every/only/never claims. Bold answers are still one sentence of 22–28 words.
+
+## QA fix applied (final loop, text only, no figures or sources)
+
+- **Q1 · L157 (owner rule: the checkout section ended without a reader next step, because the G1 paragraph became its last paragraph)**
+  - old: `Support tickets tagged "where is my order" flag a confirmation page that falls short.`
+  - new: `Support tickets tagged "where is my order" flag a confirmation page that falls short, so pull their count from your help desk before the audit.`
+  - Rebuilt and all gates rerun (see above). The line is in `out/blog/ecommerce-ux-audit/index.html`.
+
+## Still open (not blocking, carried from round 1)
+
+- O1: the BOFU CTA box prints the $25,000–$60,000 hub price on an audit post (owner decision).
+- O2/O3: apply the 2 hub backlinks and run the production-state checks in the publish commit.
+
+VERDICT: PASS
