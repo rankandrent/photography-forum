@@ -1,0 +1,31 @@
+[
+  {
+    "frontmatter": {
+      "image": "/blog/ecommerce-ux-audit/cover.svg"
+    }
+  },
+  {
+    "marker": "<!-- visual: store funnel audit map. 6 steps left to right (search and navigation, product listing page, product detail page, cart, checkout, order confirmation), each with its checks and flagging data; mobile and accessibility as two bands under all steps. Alt: \"E-commerce UX audit map of six store steps with checks and data sources, plus mobile and accessibility bands\". Caption: \"E-commerce UX audit map: six store steps and the data that flags each\" -->",
+    "markdown": "![E-commerce UX audit map of six store steps, from search and navigation to order confirmation, each with its audit checks and the data that flags it, plus an every-step band for the mobile pass and WCAG 2.2 check](/blog/ecommerce-ux-audit/store-funnel-audit-map.svg \"E-commerce UX audit map: six store steps and the data that flags each\")"
+  },
+  {
+    "marker": "<!-- visual: pre-audit data pull card. 4 rows (data set / where to get it / what it tells the audit): GA4 funnel exploration by device; site search log; return reasons and support tickets; Core Web Vitals field data. Alt: \"Pre-audit data pull card with four store data sets for an e-commerce UX audit\". Caption: \"Pre-audit data pull: four store data sets\" -->",
+    "markdown": "![Pre-audit data pull card with four store data sets for an e-commerce UX audit: GA4 funnel exploration by device, site search log, return reasons and support tickets, and Core Web Vitals field data](/blog/ecommerce-ux-audit/pre-audit-data-pull.svg \"Pre-audit data pull: four store data sets\")"
+  },
+  {
+    "marker": "<!-- visual: search query test sheet. 5 rows (misspelling, synonym, product attribute, SKU or model number, non-product query) with the made-up apparel examples below, the pass condition and empty pass/fail boxes. Alt: \"Site search test sheet with five query types, example apparel queries and the pass condition for each\". Caption: \"Site search test sheet: five query types per store\" -->",
+    "markdown": "![Site search test sheet with five query types, an example apparel query in a search field, the pass condition for each and an empty pass/fail box](/blog/ecommerce-ux-audit/search-query-test-sheet.svg \"Site search test sheet: five query types per store\")"
+  },
+  {
+    "marker": "<!-- visual: checkout pass/fail card. Exactly the 12 checks below, grouped under cost, account, form and trust, each with an empty pass/fail box. Alt: \"Checkout pass/fail card with 12 cart and checkout checks grouped by cost, account, form and trust\". Caption: \"Checkout UX audit card: 12 pass/fail checks\" -->",
+    "markdown": "![Checkout pass/fail card with 12 cart and checkout checks grouped by cost, account, form and trust, each with an empty tick box](/blog/ecommerce-ux-audit/checkout-pass-fail-card.svg \"Checkout UX audit card: 12 pass/fail checks\")"
+  },
+  {
+    "marker": "<!-- visual: WCAG 2.2 checkout criteria table. 5 rows (3.3.7 Redundant Entry, 3.3.8 Accessible Authentication (Minimum), 2.4.11 Focus Not Obscured (Minimum), 2.5.8 Target Size (Minimum), 1.4.3 Contrast (Minimum)); columns level / where it bites / how to test. Alt: \"WCAG 2.2 checkout criteria table with level, where each criterion bites in an online store and how to test it\". Caption: \"WCAG 2.2 criteria that hit store checkouts\" -->",
+    "markdown": "![WCAG 2.2 checkout criteria table with five criteria, their level A or AA, where each bites in an online store and how to test it](/blog/ecommerce-ux-audit/wcag-checkout-criteria.svg \"WCAG 2.2 criteria that hit store checkouts\")"
+  },
+  {
+    "marker": "<!-- visual: priority 2x2. Axes: impact (severity × share of affected sessions) vs effort (development days). Quadrants: fix this sprint, plan the project, batch with the next release, park. 4–6 illustrative dots, including the shipping-cost surprise and the gift-wrap bug; labelled illustrative. Alt: \"Illustrative priority 2x2 of e-commerce UX audit findings by impact and effort\". Caption: \"Illustrative priority 2x2: impact against effort\" -->",
+    "markdown": "![Illustrative priority 2x2 of e-commerce UX audit findings by impact and effort, with the shipping-cost surprise in fix this sprint and the gift-wrap bug in batch with the next release](/blog/ecommerce-ux-audit/priority-2x2.svg \"Illustrative priority 2x2: impact against effort\")"
+  }
+]

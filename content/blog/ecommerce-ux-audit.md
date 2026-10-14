@@ -20,6 +20,7 @@ takeaways:
   - "On this site, an audit takes 2–3 weeks and costs $5,000–$15,000, the range published on the e-commerce hub."
 draft: true
 qa: pending
+image: /blog/ecommerce-ux-audit/cover.svg
 ---
 
 An e-commerce UX audit (a user experience audit of an online store) starts with a test you can run on your own phone in 60 seconds. On mobile data, search for a product with one letter wrong, add a product with sizes or colors to the cart, and reach the payment step as a guest. Each stall points to an area below, because a full audit scores every step from the search box to the order confirmation and ranks each issue by severity, reach and effort.
@@ -32,7 +33,7 @@ This e-commerce UX audit checklist covers the data to pull, the checks for each 
 
 The method is a heuristic evaluation against Jakob Nielsen's 10 usability heuristics, published by the Nielsen Norman Group, plus store rules those heuristics never name, such as showing the total cost before payment. Most come from Baymard Institute research, whose [cart abandonment page](https://baymard.com/lists/cart-abandonment-rate) puts the average documented rate at 70.22% across 50 studies, browsers included; the audit hunts for the share the store causes. The map shows each step and its data.
 
-<!-- visual: store funnel audit map. 6 steps left to right (search and navigation, product listing page, product detail page, cart, checkout, order confirmation), each with its checks and flagging data; mobile and accessibility as two bands under all steps. Alt: "E-commerce UX audit map of six store steps with checks and data sources, plus mobile and accessibility bands". Caption: "E-commerce UX audit map: six store steps and the data that flags each" -->
+![E-commerce UX audit map of six store steps, from search and navigation to order confirmation, each with its audit checks and the data that flags it, plus an every-step band for the mobile pass and WCAG 2.2 check](/blog/ecommerce-ux-audit/store-funnel-audit-map.svg "E-commerce UX audit map: six store steps and the data that flags each")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -58,7 +59,7 @@ These numbers set the audit scope: audit first the template with the steepest fu
 
 In GA4, build the funnel exploration from the recommended e-commerce events: view_item_list, view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info and purchase. Make it an open funnel, which Google's Analytics Help page on funnel exploration defines as one users can enter at any step, so shoppers who return straight to checkout count. Then break it down by device category.
 
-<!-- visual: pre-audit data pull card. 4 rows (data set / where to get it / what it tells the audit): GA4 funnel exploration by device; site search log; return reasons and support tickets; Core Web Vitals field data. Alt: "Pre-audit data pull card with four store data sets for an e-commerce UX audit". Caption: "Pre-audit data pull: four store data sets" -->
+![Pre-audit data pull card with four store data sets for an e-commerce UX audit: GA4 funnel exploration by device, site search log, return reasons and support tickets, and Core Web Vitals field data](/blog/ecommerce-ux-audit/pre-audit-data-pull.svg "Pre-audit data pull: four store data sets")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -77,7 +78,7 @@ Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to
 
 Start from the zero-result queries in the search log, because they show shoppers' words the catalogue misses. The sheet uses made-up apparel queries; swap in your own.
 
-<!-- visual: search query test sheet. 5 rows (misspelling, synonym, product attribute, SKU or model number, non-product query) with the made-up apparel examples below, the pass condition and empty pass/fail boxes. Alt: "Site search test sheet with five query types, example apparel queries and the pass condition for each". Caption: "Site search test sheet: five query types per store" -->
+![Site search test sheet with five query types, an example apparel query in a search field, the pass condition for each and an empty pass/fail box](/blog/ecommerce-ux-audit/search-query-test-sheet.svg "Site search test sheet: five query types per store")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -119,7 +120,7 @@ The Federal Trade Commission (FTC) Rule on the Use of Consumer Reviews and Testi
 
 Baymard's US survey of abandonment reasons sets aside the 42% who were only browsing. Among the rest, extra costs such as shipping, tax and fees led at 40%, then distrust with card details at 19%, a required account at 18% and a long or complicated checkout at 17%. Each group in the card answers one of those reasons.
 
-<!-- visual: checkout pass/fail card. Exactly the 12 checks below, grouped under cost, account, form and trust, each with an empty pass/fail box. Alt: "Checkout pass/fail card with 12 cart and checkout checks grouped by cost, account, form and trust". Caption: "Checkout UX audit card: 12 pass/fail checks" -->
+![Checkout pass/fail card with 12 cart and checkout checks grouped by cost, account, form and trust, each with an empty tick box](/blog/ecommerce-ux-audit/checkout-pass-fail-card.svg "Checkout UX audit card: 12 pass/fail checks")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -161,7 +162,7 @@ Start from the device split: when the mobile conversion rate trails desktop, the
 
 WCAG 2.2 level AA is the conformance level the audit uses. Of the [criteria new in WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/), Redundant Entry fails a billing form that asks again for the shipping address, and Accessible Authentication (Minimum) fails a login that depends on memorizing or retyping a code. The table maps five criteria to a store.
 
-<!-- visual: WCAG 2.2 checkout criteria table. 5 rows (3.3.7 Redundant Entry, 3.3.8 Accessible Authentication (Minimum), 2.4.11 Focus Not Obscured (Minimum), 2.5.8 Target Size (Minimum), 1.4.3 Contrast (Minimum)); columns level / where it bites / how to test. Alt: "WCAG 2.2 checkout criteria table with level, where each criterion bites in an online store and how to test it". Caption: "WCAG 2.2 criteria that hit store checkouts" -->
+![WCAG 2.2 checkout criteria table with five criteria, their level A or AA, where each bites in an online store and how to test it](/blog/ecommerce-ux-audit/wcag-checkout-criteria.svg "WCAG 2.2 criteria that hit store checkouts")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -187,7 +188,7 @@ Each issue gets a screenshot, a severity rating, a recommended fix and an effort
 
 Illustrative, with invented inputs: a severity 3 shipping-cost surprise on a cart page reached by 12% of sessions scores 3 × 12 = 36, or 18 at 2 development days. A severity 4 gift-wrap bug met in 0.5% of sessions scores 4 × 0.5 = 2, or 2 at 1 day, so it waits. The 2×2 below turns scores into actions.
 
-<!-- visual: priority 2x2. Axes: impact (severity × share of affected sessions) vs effort (development days). Quadrants: fix this sprint, plan the project, batch with the next release, park. 4–6 illustrative dots, including the shipping-cost surprise and the gift-wrap bug; labelled illustrative. Alt: "Illustrative priority 2x2 of e-commerce UX audit findings by impact and effort". Caption: "Illustrative priority 2x2: impact against effort" -->
+![Illustrative priority 2x2 of e-commerce UX audit findings by impact and effort, with the shipping-cost surprise in fix this sprint and the gift-wrap bug in batch with the next release](/blog/ecommerce-ux-audit/priority-2x2.svg "Illustrative priority 2x2: impact against effort")
 
 <details class="astext"><summary>Show as text</summary>
 
