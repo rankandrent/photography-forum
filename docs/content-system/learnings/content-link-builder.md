@@ -7,6 +7,7 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-14 (owner, concept bindings): on new pages, link up to the brief's `bindings.parent` (hub service), across to sibling pages under the same parent, and down to any `children` that already have their own page. The anchor is the target page's concept or its synonym. Never link two pages with an anchor that names a different concept than the target page's central entity.
 
 ## Lessons (learned from runs, QA, audits and results)
 

@@ -7,6 +7,7 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Owner rules (highest priority — written by the site owner, never removed by agents)
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
+- 2026-10-14 (owner, one intent = one answer site-wide): for every new page, compare each price, timeline, team size and deliverable count with the hub service page and the pages that answer the same question (`siteFacts` in the brief, then grep content/). A number that differs from the hub page is a FAIL unless a primary source shows the hub is wrong; then report the hub conflict to the owner and do not publish a third version.
 
 ## Lessons (learned from runs, QA, audits and results)
 

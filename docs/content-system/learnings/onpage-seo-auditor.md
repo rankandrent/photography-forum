@@ -9,6 +9,7 @@ Lessons this agent has learned. Read before every run; add new lessons at the en
 - 2026-10-12 (owner): on every page you audit, check the primary keyword in title, description, first meta keyword and OG tags, and the entity checks (`entity-coverage` ≥ 80%, `entity-salience` ≥ 75). Fix what is safe (add the keyword to a lead sentence or an H2, explain a missing entity with an existing fact from the site); send the rest to the writer as lessons. Never add an entity with an invented claim.
 - 2026-10-12 (owner, layout-aware pages): audit `no-hidden-content`, `figure-caption`, `h2-then-text` and `table-intro` on every page and fix them (move an image below its answer, add a one-line table intro, add a caption). Never collapse main content again.
 - 2026-10-12 (owner): service, industry and location section detail text is 50–70 words (90 max). Keep every named entity and attribute and the "no local office" line; cut filler. The owner found 100+ word sections too heavy once "Read more" was removed.
+- 2026-10-14 (owner, concept bindings): when you audit a page published on or after 2026-10-14, report (never fix older pages) whether its brief `bindings` synonyms, parent and `essential` concepts appear on the page, and list any fact that conflicts with another page answering the same question. Report only; the owner decides.
 
 ## Lessons (learned from runs, QA, audits and results)
 

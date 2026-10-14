@@ -122,6 +122,37 @@ on the one page that best satisfies the intent instead of starting from zero.
 2. **Primary keyword in every meta surface:** the meta title, the meta description, the first meta keyword, og:title and og:description (OG copies title and description, so a title and description that carry the keyword are enough). Also the H1 and the first 60 words. The on-page script checks all of these (`meta-keywords-keyword`, `og-keyword`, `title-keyword`, `desc-keyword`).
 3. **Valuable content with high entity salience.** The page's central entity (the primary keyword) leads the page: it is in the H1, in the first 60 words, and in at least 40% of the H2s, and it is mentioned more often than any single related entity. Related entities and attributes come from the brief (`entities`, `attributes`) or the page's `semantic.entities`: at least 80% of the entities and 70% of the attributes appear in the visible text, each used with a real fact or explanation, never as a list of names. The on-page script scores this (`entity-coverage`, `entity-salience` ≥ 75, `attribute-coverage`); a page below that fails QA.
 
+## Concept bindings (owner rule, 2026-10-14, patent US8126832B2; applies to every NEW blog post, industry page and location page; existing pages are not edited for it)
+
+Search systems reduce words to concepts (root forms, synonyms, composite concepts) and match a
+query to the answer whose most important ("essential") concepts it contains. Build every new page so
+its concepts are explicit:
+
+1. **Binding table in the brief.** For the central entity, list `bindings`: `synonyms` (2–4),
+   `plural`/variants, `parent` (1–2, the broader concept, usually the hub service), `children`
+   (3–6 sub-types or parts), `related` (3–6 co-occurring concepts). Every entry is a literal phrase the
+   page will print. The page uses each synonym at least once, names the parent in the intro or the
+   definition section, and gives each child its own H3, list item or table row.
+2. **Composite concepts stay whole.** Multi-word terms of art ("e-commerce UX audit", "Core Web
+   Vitals", "design system") always appear as the full phrase, never split or reordered, and are
+   defined in one sentence the first time they appear.
+3. **Essential concepts first.** The brief marks 2–3 `essential` concepts (central entity + the
+   page's key attribute + the qualifier, e.g. city or industry). The first sentence under every H2
+   names the central entity (or its synonym) plus at least one other essential concept.
+4. **Disambiguate.** For each ambiguous word on the page ("audit", "design", "research", "testing",
+   "conversion", a city that shares its name), the same sentence carries a context word that fixes
+   the meaning (usability, checkout, users, interface, the state name).
+5. **One intent, one answer, site-wide.** The brief lists 3–5 `queryVariants` (ways people ask the
+   main question). The FAQ and H2s cover them, and all share ONE answer. Facts (prices, timelines,
+   team size, deliverables) must match what the hub service page and the existing pages already say.
+   If they conflict, follow the hub page and report the conflict; never publish a third version.
+6. **Links follow the bindings.** Link up to the parent (hub service), across to siblings (same
+   parent), and down to children that have their own page. The anchor is the linked page's concept
+   or its synonym, never "click here".
+7. **Suitability check (QA).** QA fails the page when: a synonym, the parent or an essential concept
+   is missing; an H2's first sentence lacks the central entity/synonym + one essential concept; a
+   composite concept is split; or a fact contradicts the hub page.
+
 ## On-page checklist (owner rule)
 
 Every page follows `docs/content-system/ONPAGE-CHECKLIST.md` (Semrush on-page SEO checklist adapted to
