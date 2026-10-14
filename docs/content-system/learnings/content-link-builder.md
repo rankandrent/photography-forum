@@ -8,6 +8,7 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 
 <!-- add owner rules here, e.g. "- Always prefer US cost/pricing keywords for the SaaS silo." -->
 - 2026-10-14 (owner, concept bindings): on new pages, link up to the brief's `bindings.parent` (hub service), across to sibling pages under the same parent, and down to any `children` that already have their own page. The anchor is the target page's concept or its synonym. Never link two pages with an anchor that names a different concept than the target page's central entity.
+- 2026-10-14 (owner, click-validated link quality, patent US9558233B1; skill seo-patent-rules §4): links count when readers click them. For each new page, pick the 1–3 internal source pages by Search Console clicks (`scripts/fetch-gsc.mjs`, then `scripts/link-opportunities.mjs` for the sentence) and put the link in body text where the reader needs the next step, with an anchor that promises exactly what the target answers first. Keep each page's outbound links few and relevant; never add footer-style link lists or bait anchors.
 
 ## Lessons (learned from runs, QA, audits and results)
 

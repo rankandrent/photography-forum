@@ -1,6 +1,6 @@
 ---
 name: seo-patent-rules
-description: Owner's SEO content rules distilled from search patents (US8126832B2 concept bindings, US12393768B2 layout-aware pages, US6285999 PageRank links). Apply to EVERY new web page, blog post, landing, service, industry or location page in ANY project - keyword research, briefs, writing, internal links, QA and on-page audits. Use whenever creating, briefing, writing, reviewing or auditing website content for search.
+description: Owner's SEO content rules distilled from search patents (US8126832B2 concept bindings, US12393768B2 layout-aware pages, US6285999 PageRank links, US9558233B1 click-validated link quality). Apply to EVERY new web page, blog post, landing, service, industry or location page in ANY project - keyword research, briefs, writing, internal links, QA and on-page audits. Use whenever creating, briefing, writing, reviewing or auditing website content for search.
 ---
 
 # SEO patent rules (owner rules, all projects)
@@ -67,6 +67,25 @@ A page's importance flows from the pages that link to it, split across each page
 3. Keep links purposeful: a few relevant contextual links beat long link lists; don't dilute strong
    pages with unrelated links.
 4. External citations only to primary, trustworthy sources that back a stated fact.
+
+## 4. Click-validated link quality (US9558233B1, Google, "Determining a quality measure for a resource")
+A link counts by whether people actually click it (and stay: long clicks), not just because it exists.
+A linking page whose outbound links get few clicks is "unqualified" and its links are subtracted from
+the count; anchor text inherits the source's quality. Rank is borrowed from pages that link to you.
+1. **Links people will click.** Put internal links inside the body text, near the top-to-middle, in
+   the sentence where the reader needs the next step, with an anchor that says what they will get.
+   Footer/sidebar link lists and "related links" dumps add little.
+2. **Borrow from pages with real clicks.** For a new page, choose the internal source pages by Search
+   Console clicks/impressions (the pages Google already sends visitors to) and add the link there.
+3. **Be a good source.** Each page links out to a few highly relevant pages, not long lists, so its
+   links keep a high click rate.
+4. **Earn the long click.** The linked page answers the promise of the anchor in its first lines
+   (answer first, no bait anchors), so visitors stay instead of bouncing back.
+5. **Backlinks:** only from topical pages whose readers would click through. No paid/spam guest posts,
+   link farms or exact-match money anchors (e.g. "payday loan" style); in finance, health and legal
+   topics be extra strict.
+6. **Linkable assets** (calculators, checklists, templates, original data) earn clicked links; propose
+   them to the owner, never fake data.
 
 ## How to apply in a project
 - If the project has its own content rules or agents (e.g. `docs/content-system/RULES.md`,
