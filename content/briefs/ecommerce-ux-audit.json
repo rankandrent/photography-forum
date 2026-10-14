@@ -325,5 +325,34 @@
       "priority": "skip",
       "why": "That sentence already carries the hub link; a second link in it would be clutter. Revisit after the MOFU accessibility post exists, which fits the industry page's WCAG item better."
     }
-  ]
+  ],
+  "related": {
+    "by": "content-link-builder, 2026-10-14",
+    "internalLinks": [
+      { "href": "/services/ecommerce-ux-design-services/", "anchor": "e-commerce UX design services", "bucket": "hub (UP, early, within first 300 words)" },
+      { "href": "/services/ux-audit-services/#what-does-a-ux-audit-include", "anchor": "what a UX audit includes on any product", "bucket": "the one other hub" },
+      { "href": "/industries/ecommerce/#which-payment-accessibility-and-review-rules-shape-e-commerce-ux", "anchor": "payment, accessibility and review rules for online stores", "bucket": "industry (frontmatter)" },
+      { "href": "/services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit", "anchor": "comparison of an audit with a full e-commerce redesign", "bucket": "hub (UP, closing, price fragment)" },
+      { "href": "/contact/", "anchor": "send us your store URL and platform", "bucket": "contact / CTA" }
+    ],
+    "removedInternalLinks": [
+      { "href": "/services/ecommerce-ux-design-services/#when-should-an-online-store-hire-e-commerce-ux-design-services", "why": "Third hub link (cap 2). Sentence rewritten to 'when a store shows signs it needs more than an audit' so it no longer points at an unclickable hub section." }
+    ],
+    "internalCountNote": "5 body links = BOFU minimum. The orchestrator exception (design-system-roi, usability-testing-cost-per-participant) applies: new silo with no sibling posts, no case study covering e-commerce (grep of content/case-studies for e-commerce/shopify/checkout/online store: no match), hub cap 2, one cross-hub link, frontmatter industry already linked. ux-audit-agency-vs-freelancer is services[0] = ux-audit-services (another silo) and must not be linked. The 6th link will be the first sibling post in this silo (planned MOFU, e.g. e-commerce accessibility UX).",
+    "externalSources": [
+      { "url": "https://baymard.com/lists/cart-abandonment-rate", "verified": "WebFetch 2026-10-14: 70.22% over 50 studies; US reasons 42% browsing, 40% extra costs, 19% card trust, 18% account, 17% long checkout; 14.88 form fields (23.48 elements) vs ideal 7-8 fields; updated September 22, 2025." },
+      { "url": "https://web.dev/articles/vitals", "verified": "WebFetch: LCP within 2.5 s, INP 200 ms or less, CLS 0.1 or less, 75th percentile of page loads." },
+      { "url": "https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/", "verified": "WebFetch: 3.3.7 A, 3.3.8 AA (remember/transcribe; password managers and copy-paste), 2.4.11 AA, 2.5.8 AA at 24 by 24 CSS pixels." },
+      { "url": "https://www.ada.gov/resources/web-guidance/", "verified": "WebFetch: Title III covers businesses open to the public; 'The Department of Justice does not have a regulation setting out detailed standards.' Page dated March 18, 2022." },
+      { "url": "https://shopify.dev/docs/apps/build/checkout/technologies", "verified": "WebFetch: checkout UI extensions = Shopify Plus; Thank you and Order status extensions on all plans except Shopify Starter." }
+    ],
+    "removedExternalLinks": [
+      { "url": "https://www.nngroup.com/articles/ten-usability-heuristics/", "verified": "WebFetch OK", "why": "Cap 5. Qualitative, kept as a named plain-text citation (Nielsen Norman Group)." },
+      { "url": "https://support.google.com/analytics/answer/9327974", "verified": "WebFetch OK: 'In an open funnel, users can enter the funnel in any step'; device category breakdown supported.", "why": "Cap 5. Kept as a named plain-text citation (Google's Analytics Help page on funnel exploration)." },
+      { "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32019L0882", "verified": "WebFetch returned an empty page; an eur-lex.europa.eu-restricted search returned this exact URL with e-commerce services in scope and application from 28 June 2025.", "why": "Cap 5. The directive number is a precise plain-text citation." },
+      { "url": "https://clarity.microsoft.com/", "verified": "WebFetch: 'Free forever ... No limits on traffic.' Rage/dead click filters confirmed in learn.microsoft.com/en-us/clarity/filters/clarity-filters (search snippet).", "why": "Not linked (cap 5). 'Microsoft Clarity, which is free' stays as verified plain text; the sentence was softened to 'filter recordings to the worst step and watch for rage clicks, dead clicks and stalled form fields' because no tool has a 'stalled form field' filter." },
+      { "url": "https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials", "verified": "WebFetch: bans fake reviews; review suppression via threats/intimidation and misrepresenting that displayed reviews are all or most of those submitted.", "why": "Not linked (cap 5; the sentence already carries the industry-page deep link). Sentence now names the rule: 'Rule on the Use of Consumer Reviews and Testimonials (16 CFR Part 465)'." }
+    ],
+    "backlinks": "site:uiuxdesignservices.us returned nothing indexed (2026-10-14). npm run links:find not run (no Bash): orchestrator to run `npm run build && npm run links:find -- \"/blog/ecommerce-ux-audit/\" \"e-commerce UX audit\" \"ecommerce ux audit\" \"store audit\" \"checkout UX audit\"`. Grep found no 'audit' mention on content/industries/ecommerce.json, so only the two required hub suggestions apply."
+  }
 }

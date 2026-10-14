@@ -30,7 +30,7 @@ This e-commerce UX audit checklist covers the data to pull, the checks for each 
 
 **An e-commerce UX audit adds store-specific rules, following a shopper from site search to guest checkout and checking each step against e-commerce usability research.**
 
-The method is a heuristic evaluation against [Jakob Nielsen's 10 usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/), plus store rules those heuristics never name, such as showing the total cost before payment. Most come from Baymard Institute research, whose [cart abandonment page](https://baymard.com/lists/cart-abandonment-rate) puts the average documented rate at 70.22% across 50 studies, browsers included; the audit hunts for the share the store causes. The map shows each step and its data.
+The method is a heuristic evaluation against Jakob Nielsen's 10 usability heuristics, published by the Nielsen Norman Group, plus store rules those heuristics never name, such as showing the total cost before payment. Most come from Baymard Institute research, whose [cart abandonment page](https://baymard.com/lists/cart-abandonment-rate) puts the average documented rate at 70.22% across 50 studies, browsers included; the audit hunts for the share the store causes. The map shows each step and its data.
 
 <!-- visual: store funnel audit map. 6 steps left to right (search and navigation, product listing page, product detail page, cart, checkout, order confirmation), each with its checks and flagging data; mobile and accessibility as two bands under all steps. Alt: "E-commerce UX audit map of six store steps with checks and data sources, plus mobile and accessibility bands". Caption: "E-commerce UX audit map: six store steps and the data that flags each" -->
 
@@ -56,7 +56,7 @@ The general method sits in [what a UX audit includes on any product](/services/u
 
 These numbers set the audit scope: audit first the template with the steepest funnel drop-off on mobile, then the checkout, which every buyer passes.
 
-In GA4, build the funnel exploration from the recommended e-commerce events: view_item_list, view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info and purchase. Make it an open funnel, which [Google's funnel exploration guide](https://support.google.com/analytics/answer/9327974) defines as one users can enter at any step, so shoppers who return straight to checkout count. Then break it down by device category.
+In GA4, build the funnel exploration from the recommended e-commerce events: view_item_list, view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info and purchase. Make it an open funnel, which Google's Analytics Help page on funnel exploration defines as one users can enter at any step, so shoppers who return straight to checkout count. Then break it down by device category.
 
 <!-- visual: pre-audit data pull card. 4 rows (data set / where to get it / what it tells the audit): GA4 funnel exploration by device; site search log; return reasons and support tickets; Core Web Vitals field data. Alt: "Pre-audit data pull card with four store data sets for an e-commerce UX audit". Caption: "Pre-audit data pull: four store data sets" -->
 
@@ -69,7 +69,7 @@ In GA4, build the funnel exploration from the recommended e-commerce events: vie
 
 </details>
 
-Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to the worst step for rage clicks, dead clicks and stalled form fields. On our audits, analytics access arrives at kick-off, in the first 1–2 days and well before scoring, which leaves time to confirm the tags: a purchase event that fires twice on reload makes a healthy step look broken.
+Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to the worst step and watch for rage clicks, dead clicks and stalled form fields. On our audits, analytics access arrives at kick-off, in the first 1–2 days and well before scoring, which leaves time to confirm the tags: a purchase event that fires twice on reload makes a healthy step look broken.
 
 ## How does the audit test site search and navigation?
 
@@ -111,7 +111,7 @@ A product page UX audit reads the product detail page (PDP) next to your return 
 - **The size guide and return policy** sit one tap away, because they answer the questions behind your return tags.
 - **Images** zoom to fabric and labels, because the photo stands in for handling the product.
 
-The Federal Trade Commission (FTC) rule on consumer reviews bans fake reviews and review suppression, one of the [payment, accessibility and review rules for online stores](/industries/ecommerce/#which-payment-accessibility-and-review-rules-shape-e-commerce-ux). Start both lists with your three best-sellers.
+The Federal Trade Commission (FTC) Rule on the Use of Consumer Reviews and Testimonials (16 CFR Part 465) bans fake reviews and review suppression, one of the [payment, accessibility and review rules for online stores](/industries/ecommerce/#which-payment-accessibility-and-review-rules-shape-e-commerce-ux). Start both lists with your three best-sellers.
 
 ## Which 12 checkout checks belong in an e-commerce UX audit?
 
@@ -175,7 +175,7 @@ WCAG 2.2 level AA is the conformance level the audit uses. Of the [criteria new 
 
 </details>
 
-For the Americans with Disabilities Act (ADA), the Department of Justice says ADA Title III covers what businesses open to the public offer online, but it has [no regulation setting detailed web standards](https://www.ada.gov/resources/web-guidance/), so WCAG 2.2 AA is the working benchmark. The European Accessibility Act has applied to e-commerce services for European Union (EU) consumers since 28 June 2025 under [Directive (EU) 2019/882](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32019L0882).
+For the Americans with Disabilities Act (ADA), the Department of Justice says ADA Title III covers what businesses open to the public offer online, but it has [no regulation setting detailed web standards](https://www.ada.gov/resources/web-guidance/), so WCAG 2.2 AA is the working benchmark. The European Accessibility Act has applied to e-commerce services for European Union (EU) consumers since 28 June 2025 under Directive (EU) 2019/882.
 
 The audit checks templates, not every page, and fixes go into templates, never an overlay widget; a full-site accessibility audit is quoted separately. Tab through your checkout with a keyboard before the audit starts.
 
@@ -212,7 +212,7 @@ Each "fix this sprint" item becomes an A/B testing hypothesis. That ranked fix r
 - **Catalogue vocabulary:** staff search with product names and SKUs, so synonyms and misspellings never fail for them.
 - **No shared scale:** two colleagues rate one issue 2 and 4, and the louder voice wins.
 
-Independent evaluators close those gaps, because they bring neither your vocabulary nor your habits. Bring them in when findings will decide a redesign budget, or when the hub's [signs a store needs more than an audit](/services/ecommerce-ux-design-services/#when-should-an-online-store-hire-e-commerce-ux-design-services) appear, such as cart abandonment rising while traffic and prices hold. Without funnel evidence, audit first, then redesign only the weakest templates.
+Independent evaluators close those gaps, because they bring neither your vocabulary nor your habits. Bring them in when findings will decide a redesign budget, or when a store shows signs it needs more than an audit, such as cart abandonment rising while traffic and prices hold. Without funnel evidence, audit first, then redesign only the weakest templates.
 
 ## What should you send to get an e-commerce UX audit quote?
 
