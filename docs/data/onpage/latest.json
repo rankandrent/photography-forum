@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T04:54:59.261Z",
+ "generated": "2026-10-14T05:36:52.372Z",
  "pages": [
   {
    "type": "blog",
@@ -167,7 +167,7 @@
    "failed": [],
    "title": "Talha Saleem, Senior UI/UX Designer | Author",
    "h1": "Talha Saleem",
-   "words": 75
+   "words": 96
   },
   {
    "type": "archive",
@@ -177,7 +177,7 @@
    "failed": [],
    "title": "Umar Sarwar, SEO Manager | Author",
    "h1": "Umar Sarwar",
-   "words": 227
+   "words": 248
   },
   {
    "type": "archive",
@@ -197,7 +197,7 @@
    "failed": [],
    "title": "Industry-specific guides | UI UX Design Blog",
    "h1": "Industry-specific guides",
-   "words": 88
+   "words": 115
   },
   {
    "type": "archive",
@@ -230,6 +230,16 @@
    "words": 143
   },
   {
+   "type": "blog",
+   "route": "/blog/ecommerce-ux-audit/",
+   "keyword": "ecommerce ux audit",
+   "score": 100,
+   "failed": [],
+   "title": "E-commerce UX Audit: Checklist and Severity Scoring",
+   "h1": "E-commerce UX Audit Checklist: What to Check, Score and Fix",
+   "words": 3343
+  },
+  {
    "type": "archive",
    "route": "/blog/",
    "keyword": null,
@@ -237,7 +247,7 @@
    "failed": [],
    "title": "UI UX Design Blog: Guides From Our Design Team",
    "h1": "UI UX design guides from our team",
-   "words": 305
+   "words": 333
   },
   {
    "type": "content",
@@ -347,7 +357,7 @@
    "failed": [],
    "title": "UI UX Design Services | Research-Led UI UX Design Agency",
    "h1": "UI UX design services that turn interfaces into measurable outcomes",
-   "words": 2834
+   "words": 2827
   },
   {
    "type": "content",
@@ -357,7 +367,7 @@
    "failed": [],
    "title": "E-commerce UI UX Design Agency | Online Store Design",
    "h1": "UI UX design services for e-commerce",
-   "words": 1785
+   "words": 1796
   },
   {
    "type": "content",
@@ -427,7 +437,7 @@
    "failed": [],
    "title": "UX Design Agency Locations | US Cities We Serve",
    "h1": "UI UX design for product teams across the US",
-   "words": 233
+   "words": 241
   },
   {
    "type": "content",
@@ -437,7 +447,7 @@
    "failed": [],
    "title": "St. Louis UX Design Agency | Agtech, Health & Fintech UX",
    "h1": "A St. Louis UX design agency for science, health and finance software",
-   "words": 1797
+   "words": 1802
   },
   {
    "type": "content",
@@ -447,7 +457,7 @@
    "failed": [],
    "title": "UX Design Agency Atlanta | Payments, Logistics & Health UX",
    "h1": "UX design agency Atlanta payments, logistics and health IT teams can count on",
-   "words": 1745
+   "words": 1750
   },
   {
    "type": "content",
@@ -457,7 +467,7 @@
    "failed": [],
    "title": "UX Design Agency Austin | SaaS, Startup & Hardware UX",
    "h1": "UX design agency Austin startups and SaaS teams can move fast with",
-   "words": 1816
+   "words": 1821
   },
   {
    "type": "content",
@@ -467,7 +477,7 @@
    "failed": [],
    "title": "UX Design Agency Boston | Biotech, Health & Edtech UX",
    "h1": "UX design agency Boston teams trust with expert-grade software",
-   "words": 1744
+   "words": 1749
   },
   {
    "type": "content",
@@ -477,7 +487,7 @@
    "failed": [],
    "title": "UX Design Agency Chicago | Fintech, Insurance & SaaS UX",
    "h1": "UX design agency Chicago teams hire for data-heavy products",
-   "words": 1854
+   "words": 1859
   },
   {
    "type": "content",
@@ -487,7 +497,7 @@
    "failed": [],
    "title": "UX Design Agency Columbus | Insurance, Retail & Mobility UX",
    "h1": "UX design agency Columbus insurers and retailers can hire remotely",
-   "words": 1734
+   "words": 1739
   },
   {
    "type": "content",
@@ -497,7 +507,7 @@
    "failed": [],
    "title": "UX Design Agency Los Angeles | Streaming, DTC & Gaming UX",
    "h1": "UX design agency Los Angeles studios, brands and builders can lean on",
-   "words": 1712
+   "words": 1717
   },
   {
    "type": "content",
@@ -507,7 +517,7 @@
    "failed": [],
    "title": "UX Design Agency New York | Fintech, Media & Health UX",
    "h1": "UX design agency New York product teams can run on Eastern Time",
-   "words": 1848
+   "words": 1853
   },
   {
    "type": "content",
@@ -517,7 +527,7 @@
    "failed": [],
    "title": "UX Design Agency Philadelphia | Health, Pharma & EdTech UX",
    "h1": "UX design agency Philadelphia teams can work with on Eastern Time",
-   "words": 1793
+   "words": 1798
   },
   {
    "type": "content",
@@ -527,7 +537,7 @@
    "failed": [],
    "title": "UX Design Agency Phoenix | Operations & Enterprise UX",
    "h1": "UX design agency Phoenix operations teams can count on",
-   "words": 1740
+   "words": 1745
   },
   {
    "type": "content",
@@ -537,7 +547,7 @@
    "failed": [],
    "title": "UX Design Agency San Francisco | Research-Led UI UX",
    "h1": "UX design agency for San Francisco product teams",
-   "words": 1789
+   "words": 1794
   },
   {
    "type": "content",
@@ -547,7 +557,17 @@
    "failed": [],
    "title": "UX Design Agency Seattle | Cloud, SaaS & Marketplace UX",
    "h1": "UX design agency Seattle engineering-led teams can plug in fast",
-   "words": 1718
+   "words": 1723
+  },
+  {
+   "type": "content",
+   "route": "/location/ux-design-agency-washington-dc/",
+   "keyword": "ux design agency washington dc",
+   "score": 100,
+   "failed": [],
+   "title": "UX Design Agency Washington DC | Section 508-Ready UX",
+   "h1": "UX design agency: Washington DC civic tech, associations and govcon",
+   "words": 1856
   },
   {
    "type": "archive",
@@ -617,7 +637,7 @@
    "failed": [],
    "title": "E-commerce UX Design Services | Boost Checkout Conversion",
    "h1": "E-commerce UX design services that turn browsers into buyers",
-   "words": 1612
+   "words": 1631
   },
   {
    "type": "archive",
@@ -707,7 +727,7 @@
    "failed": [],
    "title": "UX Audit Services | Heuristic Review & Fix Roadmap",
    "h1": "UX audit services that pinpoint where users struggle and why",
-   "words": 1548
+   "words": 1566
   },
   {
    "type": "content",
