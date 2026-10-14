@@ -17,7 +17,7 @@ takeaways:
   - "Pull four data sets first: a Google Analytics 4 (GA4) funnel exploration split by device, the site search log, return and ticket reasons, and Core Web Vitals field data."
   - "Rank each finding by its severity rating (1 to 4) times the share of affected sessions, divided by the effort estimate in development days."
   - "Check every audited template against Web Content Accessibility Guidelines (WCAG) 2.2 level AA, including Redundant Entry for billing addresses and Target Size for swatches."
-  - "On this site, an audit takes 2–3 weeks and costs $5,000–$15,000, the range published on the e-commerce hub."
+  - "Our store audit takes 2–3 weeks and costs $5,000–$15,000, the range published on our e-commerce UX design page."
 draft: true
 qa: pending
 image: /blog/ecommerce-ux-audit/cover.svg
@@ -57,8 +57,6 @@ The audit method itself, from heuristics to session recordings, is laid out in [
 
 These numbers set the audit scope: audit first the template with the steepest funnel drop-off on mobile, then the checkout, which every buyer passes.
 
-In GA4, build the funnel exploration from the recommended e-commerce events: view_item_list, view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info and purchase. Make it an open funnel, which Google's Analytics Help page on funnel exploration defines as one users can enter at any step, so shoppers who return straight to checkout count. Then break it down by device category.
-
 ![Pre-audit data pull card with four store data sets for an e-commerce UX audit: GA4 funnel exploration by device, site search log, return reasons and support tickets, and Core Web Vitals field data](/blog/ecommerce-ux-audit/pre-audit-data-pull.svg "Pre-audit data pull: four store data sets")
 
 <details class="astext"><summary>Show as text</summary>
@@ -70,13 +68,15 @@ In GA4, build the funnel exploration from the recommended e-commerce events: vie
 
 </details>
 
-Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to the worst step and watch for rage clicks, dead clicks and stalled form fields. On our audits, analytics access arrives at kick-off, in the first 1–2 days and well before scoring, which leaves time to confirm the tags: an add_to_cart event that never fires from a quick-add button makes a healthy step look broken.
+In GA4, build the funnel exploration from the recommended e-commerce events: view_item_list, view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info and purchase. Make it an open funnel, which Google's Analytics Help page on funnel exploration defines as one users can enter at any step, so shoppers who return straight to checkout count. Then break it down by device category.
+
+Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to the worst step and watch for rage clicks, dead clicks and stalled form fields. On our audits, we ask for analytics access at kick-off and check the e-commerce tags in the first 1–2 days, before trusting any drop-off number: an add_to_cart event that never fires from a quick-add button makes a healthy step look broken. Before kick-off, open your own funnel exploration on mobile and note the step with the steepest drop.
 
 ## How does the audit test site search and navigation?
 
 **The audit runs the same five query types on every store, and each one passes only when the first results, or a helpful zero-result page, answer it.**
 
-Start from the zero-result queries in the search log, because they show shoppers' words the catalogue misses. The sheet uses made-up apparel queries; swap in your own.
+Start from the zero-result queries in the search log, because they show shoppers' words the catalog misses. The sheet uses made-up apparel queries; swap in your own.
 
 ![Site search test sheet with five query types, an example apparel query in a search field, the pass condition for each and an empty pass/fail box](/blog/ecommerce-ux-audit/search-query-test-sheet.svg "Site search test sheet: five query types per store")
 
@@ -85,7 +85,7 @@ Start from the zero-result queries in the search log, because they show shoppers
 | Query type | Example | Passes when |
 |---|---|---|
 | Misspelling | sneekers | Sneakers appear, or a "did you mean" link |
-| Synonym | trainers | The same results as the catalogue term |
+| Synonym | trainers | The same results as the catalog term |
 | Product attribute | waterproof jacket | Only waterproof jackets, filters still usable |
 | Stock keeping unit (SKU) or model number | AB-1042 | The exact product comes first |
 | Non-product question | returns | The returns policy, not an empty grid |
@@ -103,6 +103,7 @@ On the product listing page (PLP):
 - **Filters** match the attributes each category is bought on, such as size, color and price, because generic filters hide the one that matters.
 - **Applied filters** stay visible and removable one by one, so undoing one does not reset the rest.
 - **Product cards** show price, rating and swatches, so shoppers compare without opening each product.
+- **Sort order** defaults to an order shoppers choose, such as best-selling or price, and survives filtering, so results do not reshuffle.
 - **The back button** keeps the scroll position, so shoppers do not restart a long list.
 
 A product page UX audit reads the product detail page (PDP) next to your return reasons, since a sizing question left open can come back as a "wrong size" return:
@@ -110,13 +111,14 @@ A product page UX audit reads the product detail page (PDP) next to your return 
 - **The variant selector** marks out-of-stock sizes and flags a missing size, so add to cart never fails silently.
 - **Delivery cost and date** sit next to the add-to-cart button, so cost is settled before the cart.
 - **The size guide and return policy** sit one tap away, because they answer the questions behind your return tags.
+- **The rating and review count** sit near the price, and reviews filter by the size or fit they mention, because fit comments answer the question behind "wrong size" returns.
 - **Images** zoom to fabric and labels, because the photo stands in for handling the product.
 
 The Federal Trade Commission (FTC) Rule on the Use of Consumer Reviews and Testimonials (16 CFR Part 465) bans fake reviews and review suppression, one of the [payment, accessibility and review rules for online stores](/industries/ecommerce/#which-payment-accessibility-and-review-rules-shape-e-commerce-ux). Start both lists with your three best-sellers.
 
 ## Which 12 checkout checks belong in an e-commerce UX audit?
 
-**The 12 checks fall into four groups, cost, account, form and trust, and the first asks whether shoppers see the total cost before the payment step.**
+**The 12 checks fall into four groups (cost, account, form and trust), and the first asks whether shoppers see the total cost before the payment step.**
 
 Baymard's US survey of abandonment reasons sets aside the 42% who were only browsing. Among the rest, extra costs such as shipping, tax and fees led at 40%; distrust with card details reached 19%, a required account 18% and a long or complicated checkout 17%. Each group in the card answers one of those reasons.
 
@@ -150,9 +152,11 @@ Baymard's US survey of abandonment reasons sets aside the 42% who were only brow
 
 </details>
 
-Check 5 is a count: the same Baymard page puts the average US checkout at 14.88 form fields by default, against 7–8 in an ideal flow. Mark each check on a phone first, where mobile checkout typing hurts most. A checkout UX audit alone misses everyone who never reaches the cart, so these checks come fifth, not first.
+Check 5 is a count: the same Baymard page puts the average US checkout at 14.88 form fields by default, against 7–8 in an ideal flow. Mark each check on a phone first, where mobile checkout typing hurts most. A checkout UX audit alone misses everyone who never reaches the cart, so the checklist covers search, listing and product pages as well.
 
-## How does an e-commerce UX audit cover mobile and WCAG 2.2?
+The order confirmation page closes the checklist: it repeats the order number, delivery date and items, and offers the account from check 4 with a password field only. Support tickets tagged "where is my order" flag a confirmation page that falls short.
+
+## How does an e-commerce UX audit cover mobile, speed and WCAG 2.2?
 
 **Mobile gets its own pass with its own GA4 numbers, speed is judged on Core Web Vitals field data, and every audited template is checked against WCAG 2.2 level AA.**
 
@@ -205,15 +209,15 @@ Each "fix this sprint" item becomes an A/B testing hypothesis. That ranked fix r
 
 ## What does a self-audit of your own store miss?
 
-**You can run this checklist yourselves, but a self-audit misses what your team stopped noticing: menu names, saved addresses, fast connections and catalogue search terms.**
+**You can run this checklist yourselves, but a self-audit misses what your team stopped noticing: menu names, saved addresses, fast connections and catalog search terms.**
 
 - **Category names:** staff know where everything lives, so "Essentials" reads as clear to them and vague to shoppers.
 - **Logged-in sessions:** saved addresses and cards hide the guest checkout path and its errors.
 - **Fast devices:** a laptop on office Wi-Fi hides the INP and LCP delays of a mid-range phone on mobile data.
-- **Catalogue vocabulary:** staff search with product names and SKUs, so synonyms and misspellings never fail for them.
+- **Catalog vocabulary:** staff search with product names and SKUs, so synonyms and misspellings never fail for them.
 - **No shared scale:** two colleagues rate one issue 2 and 4, and the louder voice wins.
 
-Independent evaluators close those gaps, because they bring neither your vocabulary nor your habits. Bring them in when findings will decide a redesign budget, or when a store shows signs it needs more than an audit, such as cart abandonment rising while traffic and prices hold. Without funnel evidence, audit first, then redesign only the weakest templates.
+Independent evaluators close those gaps, because they bring neither your vocabulary nor your habits. Bring them in when findings will decide a redesign budget, or when cart abandonment rises while traffic and prices hold. Without funnel evidence, audit first, then redesign only the weakest templates.
 
 ## What should you send to get an e-commerce UX audit quote?
 
@@ -228,11 +232,11 @@ These six inputs set the audit scope:
 - **Top 50 search queries and the zero-result list**, so the search test uses your shoppers' words.
 - **Any accessibility deadline**, such as EU sales under the European Accessibility Act, because it sets the depth of the WCAG check.
 
-Our e-commerce UX audit has an audit price of $5,000–$15,000 and an audit duration of 2–3 weeks, per the hub's [comparison of an audit with a full e-commerce redesign](/services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit). That redesign of the weakest templates runs $25,000–$60,000 over 4–8 weeks.
+Our audit price is $5,000–$15,000 for an audit duration of 2–3 weeks, as published in the hub's [comparison of an audit with a full e-commerce redesign](/services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit). That redesign of the weakest templates runs $25,000–$60,000 over 4–8 weeks.
 
-Every project begins with a free consultation and a fixed-scope proposal. For a smaller first look, a 45-minute UX audit session reviews your store and identifies the top three friction points. Either way, [send us your store URL and platform](/contact/) with your funnel exploration, so the scope starts from your own drop-off numbers.
+Every project begins with a free consultation and a fixed-scope proposal. For a smaller first look, a 45-minute UX audit session reviews your store and identifies the top three friction points. Either way, the scope starts from your own drop-off numbers: [send us your store URL and platform](/contact/) and attach the funnel exploration.
 
-Your 60-second phone test finds the stalls; the checklist ranks them, and our e-commerce UX design work starts with the templates that score worst.
+After the first sprint of fixes, repeat the 60-second phone test on mobile data. Any stall it still finds goes to the top of the next audit scope.
 
 ## FAQs
 
@@ -242,7 +246,7 @@ Tie it to events, not a calendar. Run one before a replatforming project, after 
 
 ### Does an e-commerce UX audit include accessibility?
 
-Yes. Each audited template is checked against WCAG 2.2 level AA, including the checkout criteria above. A full-site accessibility audit of every page is quoted separately.
+Yes. Each audited template is checked against WCAG 2.2 level AA, including Redundant Entry for billing addresses and Focus Not Obscured for sticky bars and chat widgets. A full-site accessibility audit of every page is quoted separately.
 
 ### Is an e-commerce UX audit the same as a CRO audit?
 
@@ -254,4 +258,4 @@ Yes, within your plan's limits. [Shopify's developer documentation](https://shop
 
 ### Should you audit the old store before replatforming?
 
-Yes. An audit before the move lists the issues to fix in the new templates, so they are not rebuilt on the new platform. The hub names a move from a custom store to Shopify as a trigger for outside design help.
+Yes. An audit before the move lists the issues to fix in the new templates, so they are not rebuilt on the new platform. Our e-commerce UX design page lists a move from a custom store to Shopify as one trigger for outside design help.
