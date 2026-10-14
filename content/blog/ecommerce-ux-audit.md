@@ -49,7 +49,7 @@ The method is a heuristic evaluation against Jakob Nielsen's 10 usability heuris
 
 </details>
 
-The general method sits in [what a UX audit includes on any product](/services/ux-audit-services/#what-does-a-ux-audit-include); read your worst step's section first.
+The audit method itself, from heuristics to session recordings, is laid out in [what a UX audit includes on any product](/services/ux-audit-services/#what-does-a-ux-audit-include); this post adds the store layer on top.
 
 ## Which store data should you pull before the audit starts?
 
@@ -223,7 +223,7 @@ These six inputs set the audit scope:
 
 - **Store platform** (Shopify, BigCommerce, Adobe Commerce or custom), because on a Shopify UX audit a recommended fix can then name the theme section, app or checkout setting it touches.
 - **Templates in scope** (home, listing, product, cart, checkout, account), so the audit reviews templates, not every page.
-- **Devices, markets and languages**, because each adds a pass.
+- **Devices, markets and languages**, so the scope names which versions of the store get reviewed.
 - **GA4 access or a funnel export**, so reach is scored from week one.
 - **Top 50 search queries and the zero-result list**, so the search test uses your shoppers' words.
 - **Any accessibility deadline**, such as EU sales under the European Accessibility Act, because it sets the depth of the WCAG check.
