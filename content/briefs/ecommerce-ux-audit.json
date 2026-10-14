@@ -1,0 +1,329 @@
+{
+  "slug": "ecommerce-ux-audit",
+  "keyword": "ecommerce ux audit",
+  "keywordCarrier": {
+    "exactString": "ecommerce ux audit",
+    "spellingNote": "Print it as 'e-commerce UX audit' (site style, as on the hub). scripts/onpage-audit.mjs norm() removes hyphens inside words, so 'e-commerce UX audit' matches the keyword 'ecommerce ux audit' in the title, H1, description, OG and meta keywords. Frontmatter `keyword` stays exactly 'ecommerce ux audit'. Do not mix spellings in the visible text: always 'e-commerce'.",
+    "title": "E-commerce UX Audit Checklist: What to Check, Score and Fix",
+    "titleNote": "58 chars, keyword first (title-keyword-early). This is also the H1.",
+    "metaTitle": "E-commerce UX Audit: Checklist and Severity Scoring",
+    "metaTitleNote": "50 chars, keyword first. Do not put 'cost' or 'price' in the title: 'ux audit cost' belongs to the ux-audit-services hub, and the e-commerce hub owns the e-commerce price.",
+    "description": "E-commerce UX audit checklist from search to checkout: what to check, how to score each issue and what to send us. Then request a fixed-scope proposal.",
+    "descriptionNote": "152 chars. Use as written: keyword first, then what the reader gets, then the BOFU next step. Pronoun check: 'each issue' and 'us' (the agency) are unambiguous. No apostrophes.",
+    "inBody": "Plain noun phrase, so it can be a sentence subject or object. Intro first sentence pattern (60-second phone test intro): 'An e-commerce UX audit starts with a test you can run on your own phone in 60 seconds.' Other carriers, each read aloud: 'a full e-commerce UX audit scores every step from the search box to the order confirmation'; 'the e-commerce UX audit ranks each finding by severity, reach and effort'; 'before you commission an e-commerce UX audit, pull four data sets'. Do not stack the string in front of a second noun more than twice in the post ('e-commerce UX audit checklist' is allowed because it is a secondary keyword; avoid 'e-commerce UX audit report/quote/findings/process' stacks, and never write 'UX audit report', which is the ux-audit hub's ngram and FAQ).",
+    "secondary": {
+      "ecommerce ux audit checklist": "Plain noun phrase, printed 'e-commerce UX audit checklist'. Example: 'The e-commerce UX audit checklist below groups 12 cart and checkout checks you can mark pass or fail.'",
+      "checkout ux audit": "Plain noun phrase. Example: 'A checkout UX audit on its own misses the shoppers who never reach the cart.'",
+      "product page ux audit": "Plain noun phrase. Example: 'A product page UX audit starts with the variant selector, because that is where most add-to-cart errors begin.' (Do not invent the 'most' claim: rewrite as 'where add-to-cart errors often begin' only if the writer explains why.)",
+      "shopify ux audit": "Plain noun phrase. Example: 'On a Shopify UX audit, each finding names the theme section or app that has to change.'"
+    },
+    "density": "Word-share target 1–2%. The keyword has 3 words, so at about 2,200 body words the maximum is 0.02 x 2,200 / 3 = about 14 uses. Aim for 10–13 exact uses (H1, first sentence, 4–5 H2s, body, closing). Salience check (onpage-audit.mjs): the keyword count must be at least half of the most-mentioned related entity. Keep 'product detail page' + 'PDP', 'guest checkout' and 'WCAG 2.2' each under about 18 mentions."
+  },
+  "secondary": [
+    "ecommerce ux audit checklist",
+    "checkout ux audit",
+    "product page ux audit",
+    "shopify ux audit"
+  ],
+  "secondaryNote": "Secondary phrases come from the SERP (convertcart 'ecommerce ux audit checklist', smartbugmedia 'shopify ux audit checklist', swankyagency 'shopify ux audit') and have no verified volume of their own. Use them as supporting phrases only; none of them is a target keyword. None contains 'vs'.",
+  "intent": "commercial investigation + informational (Ahrefs: informational + commercial). The searcher runs or manages an online store (e-commerce manager, head of digital, DTC founder, product manager on a retail team) and wants to know what an e-commerce UX audit covers, whether to run it themselves, and what a good audit hands over before paying for one.",
+  "volume": 200,
+  "kd": 0,
+  "trafficPotential": 900,
+  "parentTopic": "ux audit",
+  "dataSource": "Ahrefs API v3 keywords-explorer, US, 2026-10-14 (fetched by the orchestrator; this agent has no Bash). ecommerce ux audit: volume 200, KD 0, traffic potential 900, parent topic 'ux audit', intents informational + commercial. Related (same source): ecommerce ux best practices 450 / KD 12; ecommerce ux 400 / KD 1; ecommerce accessibility ux 900 / KD 2; ecommerce search ux 200 / KD 4; ecommerce ux design services 200 / KD 1; ecommerce ux agency 200 / KD 2. Semrush returned no_api_units on the first call (2026-10-14). SERP study: WebSearch + WebFetch on 2026-10-14 (baymard.com, shopify.com, ecomm.design, designmonks.co and convertcart.com fetched in full). No docs/data/gsc/latest.json exists.",
+  "hub": "ecommerce-ux-design-services",
+  "services": ["ecommerce-ux-design-services"],
+  "industries": ["ecommerce"],
+  "author": "talha-saleem",
+  "authorWhy": "Talha Saleem (Senior UI/UX Designer, content/home.ts) fits a hands-on checklist of interface checks per store template (filters, variant selectors, forms, target sizes). He last wrote design-system-roi, 5 posts ago. Rejected: ahmad-ullah (Principal UX Designer) suits audits best, but he wrote the last post (usability-testing-cost-per-participant) and ux-audit-agency-vs-freelancer, and a third audit-adjacent post from him would narrow the author spread. saliha-shahzad wrote 2 posts ago (mobile). sahar-asif has written 2 procurement-style posts; keep her for a later e-commerce agency/RFP angle. shahmir-farooq (Sr. Communication Designer) has not written yet; keep him for the usability test report MOFU post. Contributor: umar-sarwar (default).",
+  "type": "Checklist",
+  "funnel": "bofu",
+  "funnelWhy": "New silo: 0 posts in ecommerce-ux-design-services, so per funnel.json the silo starts with 1 BOFU + 1 MOFU. This is the BOFU one (service-support 5: a store owner reading what an expert audit checks is one step from commissioning it). Ahrefs labels the query informational + commercial. SERP risk (rule of 2026-10-06, the dominant page type sets the funnel): page 1 for 'ecommerce ux audit' is mostly how-to/checklist guides, but nearly all are written by audit sellers that end on an offer: baymard.com/learn/ecommerce-ux-audit ('No time to run your own audit?' -> Baymard audit service), convertcart.com checklist (free store audit), designmonks.co (consultation), plus service pages from irishtitan.com and inchoo.net. Commercial variants flip fully to vendors: 'ecommerce ux audit services cost' -> wearetenet.com service page, Baymard expert-audit product pages, orbix ux-audit-cost; 'shopify ux audit' -> swankyagency, netalico product, contra and fiverr gigs. Mitigation: the post answers the how-to intent completely (the checklist), but the last three sections are buyer-side (self-audit blind spots, scoring, what to send for a quote, published price via deep link). If QA judges the finished post a planning guide, relabel it MOFU and make the next silo post the BOFU one. Practical reason to stay BOFU: the MOFU template CTA is 'case study + consultation', and the site has no e-commerce case study (grep of content/case-studies/ for e-commerce, shop, retail, checkout, cart: no match).",
+  "serviceSupport": 5,
+  "beats": "https://www.shopify.com/blog/ecommerce-ux-audit",
+  "alsoOutranks": [
+    "https://www.designmonks.co/blog/ecommerce-ux-audit",
+    "https://ecomm.design/ecommerce-ux-audit/",
+    "https://www.convertcart.com/blog/ecommerce-ux-audit-checklist",
+    "https://baymard.com/learn/ecommerce-ux-audit"
+  ],
+  "beatsWhy": "Shopify's post ranks in positions 2–5 with several locale copies, is dated 25 January 2024, has no statistics, no severity scheme, no store-specific checks beyond a short product-page tip, and generic benefits H3s. Baymard (#1) is the authority page: cite its public data, never copy its six-area structure or its Interruption/Disruptive/Harmful and Essential/Impactful/Detail labels.",
+  "centralEntity": "e-commerce UX audit (an expert review of an online store's shopping journey, from site search to order confirmation, that ranks each usability issue by severity, reach and effort)",
+  "entities": [
+    "Baymard Institute",
+    "heuristic evaluation",
+    "product listing page (PLP)",
+    "product detail page (PDP)",
+    "guest checkout",
+    "cart abandonment",
+    "site search",
+    "zero-result queries",
+    "autocomplete",
+    "Google Analytics 4 (GA4)",
+    "funnel exploration",
+    "Hotjar",
+    "Microsoft Clarity",
+    "Core Web Vitals",
+    "Interaction to Next Paint (INP)",
+    "PageSpeed Insights",
+    "WCAG 2.2",
+    "Redundant Entry",
+    "Accessible Authentication",
+    "ADA Title III",
+    "European Accessibility Act",
+    "severity rating",
+    "Shopify",
+    "A/B testing"
+  ],
+  "entitiesNote": "24 entries, each printed exactly as written (one name per entry; short form in brackets only at the end). Checked by reading each as a phrase the post will literally contain. At least 20 must appear with a real fact or explanation. 'checkout', 'cart' and 'conversion rate' are left out on purpose: they would appear so often that they would outrank the keyword in the salience check.",
+  "attributes": [
+    "audit scope (templates, devices and funnel steps in scope)",
+    "funnel drop-off (GA4 funnel exploration split by device)",
+    "severity rating (1 to 4, as on the UX audit hub)",
+    "affected sessions (share of sessions that reach the page with the issue)",
+    "effort estimate (design and development days per fix)",
+    "audit duration (2–3 weeks)",
+    "audit price ($5,000–$15,000, published on the e-commerce hub table)",
+    "independent evaluators (2 senior UX designers)",
+    "device split (mobile vs desktop conversion rate)",
+    "conformance level (WCAG 2.2 level AA)",
+    "Core Web Vitals thresholds (LCP 2.5 s, INP 200 ms, CLS 0.1 at the 75th percentile)",
+    "store platform (Shopify, BigCommerce, Adobe Commerce or custom)"
+  ],
+  "attributesNote": "12 entries. The on-page script reads only the words before '(' and needs 60% of the words longer than 3 letters in the text, so the writer must use these label nouns: 'audit scope', 'funnel drop-off', 'severity rating', 'affected sessions', 'effort estimate', 'audit duration', 'audit price', 'independent evaluators', 'device split', 'conformance level', 'Core Web Vitals thresholds', 'store platform'.",
+  "ngrams": [
+    "e-commerce ux audit",
+    "ux audit checklist",
+    "checkout ux audit",
+    "product page",
+    "cart abandonment",
+    "guest checkout",
+    "site search",
+    "severity rating",
+    "fix roadmap",
+    "mobile checkout",
+    "e-commerce ux design services"
+  ],
+  "questions": [
+    "What does an e-commerce UX audit include?",
+    "How do you do a UX audit of an online store?",
+    "What should an e-commerce UX audit checklist cover?",
+    "Which pages should a store audit first?",
+    "How do you prioritize UX issues found on an e-commerce site?",
+    "Can you run an e-commerce UX audit yourself?",
+    "How long does an e-commerce UX audit take and what does it cost?",
+    "Does a UX audit cover accessibility and page speed?",
+    "Is an e-commerce UX audit the same as a CRO audit?",
+    "How often should an online store run a UX audit?"
+  ],
+  "serpGaps": [
+    "Accessibility at checkout: Baymard's guide has no accessibility area, Design Monks has none, Shopify names it only as a category, and Convertcart lists WCAG 2.2 without naming criteria. No page maps the WCAG 2.2 criteria that hit stores hardest: 3.3.7 Redundant Entry (shipping address re-typed as billing address), 3.3.8 Accessible Authentication (Minimum) (login and one-time codes at checkout), 2.4.11 Focus Not Obscured (Minimum) (sticky headers, cookie banners and chat widgets covering focused fields) and 2.5.8 Target Size (Minimum) (24 x 24 CSS px swatches and quantity steppers). None mentions the European Accessibility Act, which applies to e-commerce services sold to EU consumers from 28 June 2025.",
+    "Site search tested with query types: every page says 'make search visible'. None gives a repeatable test sheet (misspelling, synonym, product attribute, SKU or model number, non-product query such as 'returns') or tells the auditor to pull zero-result queries from the site search log first.",
+    "Performance with numbers: only Design Monks mentions Core Web Vitals, without thresholds. No page gives the 'good' thresholds (LCP 2.5 s, INP 200 ms, CLS 0.1 at the 75th percentile, web.dev) or ties INP to store interactions (filter taps, variant swatches, add to cart).",
+    "Pre-audit data: Baymard sets up the evaluation environment but not analytics. No page lists the store data to pull before the review: GA4 funnel exploration split by device (open funnel, so returning shoppers who start at checkout count), site search log, return reasons, support ticket tags, Core Web Vitals field data.",
+    "Scoring: Shopify, ecomm.design, Design Monks and Convertcart have no severity scheme. Baymard's is proprietary. No page ties reach to the share of sessions that reach the page (from GA4) or adds an effort estimate in development days.",
+    "Who runs it: no page explains what a team auditing its own store misses (knowing where everything is, testing on office Wi-Fi and a desktop, logged-in sessions with saved addresses). ecomm.design's only price is an unsourced FAQ range.",
+    "Platform: no ranking page maps findings to platform constraints (Shopify theme sections, apps and checkout limits, or a custom store) so the fix list is buildable.",
+    "Freshness: Shopify's ranking post is dated January 2024 and cites no data. Baymard's public figures (70.22% average cart abandonment across 50 studies; checkout abandonment reasons) are citable and current (updated 22 September 2025)."
+  ],
+  "outline": [
+    {
+      "h2": "What does an e-commerce UX audit check that a general UX audit skips?",
+      "answerHint": "An e-commerce UX audit follows a shopper's path through the store, from site search and category filters to the product detail page, cart and guest checkout, and scores each step against e-commerce usability research. A general UX audit scores flows against Nielsen's 10 heuristics without store-specific rules such as total cost before payment.",
+      "points": [
+        "Intro (60-second phone test, see variety). Before the first H2: ask the reader to do three things on their own store, on their phone, on mobile data: search for a product with one letter wrong, add a product with a size or colour to the cart, and reach the payment step as a guest. Each failure points to one audit area covered below. The keyword goes in the first sentence (carrier above). Then 2 sentences on what the post gives: a checklist by funnel step, a scoring method and what to send for a quote.",
+        "Link UP to the hub early with the anchor 'e-commerce UX design services' (within the first 300 words).",
+        "Bold answer, then 3–4 sentences: heuristic evaluation is the method; store rules come from Baymard Institute research (cite its public cart abandonment page: 70.22% average across 50 studies, fact-checker to confirm). Do not describe Baymard's paid guideline database or copy its audit areas.",
+        "Visual 1: store funnel audit map (see visuals). The text version sits under it.",
+        "One sentence that the general UX audit method (heuristics, analytics, session recordings, accessibility check) is described on the UX audit hub; this is the ONE cross-hub link in the post: /services/ux-audit-services/#what-does-a-ux-audit-include."
+      ]
+    },
+    {
+      "h2": "Which store data should you pull before the audit starts?",
+      "answerHint": "Pull four data sets before anyone opens the store: a GA4 funnel exploration split by device, the site search log with zero-result queries, return and support-ticket reasons, and Core Web Vitals field data from PageSpeed Insights. They show where the audit should look first.",
+      "points": [
+        "Numbered steps (ol). GA4: build a funnel exploration (view_item_list -> view_item -> add_to_cart -> begin_checkout -> add_shipping_info -> add_payment_info -> purchase, the GA4 recommended e-commerce events), make it open so shoppers who start at checkout in a later session count, and break it down by device category. Cite the GA4 Help Center article. Fact-checker: confirm the event names against Google's recommended events list.",
+        "Session recordings and heatmaps: Hotjar or Microsoft Clarity, filtered to sessions that dropped at the worst step (rage clicks, dead clicks, form field hesitation). The hub uses Hotjar; Microsoft Clarity is a free alternative.",
+        "Site search log: the top queries and the zero-result queries (from the platform's search report or the search vendor).",
+        "Return reasons and support tickets: 'wrong size' and 'not as pictured' point at the product detail page, not the warehouse.",
+        "Visual 2: pre-audit data pull card (see visuals).",
+        "Lead moment 1: stores often discover here that their funnel events are missing or duplicated. One natural sentence: we check the tracking in the first days of the audit before trusting any drop-off number. No invented share of stores."
+      ]
+    },
+    {
+      "h2": "How does the audit test site search and navigation?",
+      "answerHint": "The audit runs the same five query types on every store: a misspelling, a synonym, a product attribute, a SKU or model number and a non-product question such as 'returns'. Each one passes only if the first results or a helpful zero-result page answer it.",
+      "points": [
+        "Visual 3: search query test sheet (see visuals). Then the checks in open text: autocomplete with product suggestions, typo tolerance, synonyms, zero-result queries that offer categories or popular products, search results that keep the filters.",
+        "Navigation checks: category labels in shopper language, a parent category that is clickable, breadcrumbs on PLP and PDP, the search field visible on mobile without opening the menu.",
+        "Keep it to the audit view. Site search design (ranking rules, merchandising) belongs to the e-commerce industry page; do not repeat its FAQ 'Does commerce design work include site search?'. No link needed here (link budget).",
+        "Cite Baymard's public figure only if the fact-checker confirms the page: '78% of shoppers use search often or every time' is in Baymard's audit guide but drawn from a premium dataset; prefer to leave it out unless a public Baymard page states it."
+      ]
+    },
+    {
+      "h2": "Which product listing and product page checks find the biggest leaks?",
+      "answerHint": "On the product listing page (PLP), check filters against the attributes shoppers compare and the product card content. On the product detail page (PDP), check the variant selector, the total delivered price and date, the size guide and the returns line next to the add-to-cart button.",
+      "points": [
+        "Two short lists (ul), one for the PLP (filters per category, applied filters visible and removable, sort order, product cards with price, rating and variant swatches, load more vs pagination keeps the scroll position) and one for the PDP (images at the zoom shoppers need, variant selector that shows out-of-stock sizes, error message if no size is chosen, delivery date and shipping cost near add to cart, size guide, return policy, review display).",
+        "Reviews: the FTC Rule on the Use of Consumer Reviews and Testimonials (16 CFR Part 465) bans fake and suppressed reviews. One sentence and a deep link to the industry page section on payment, accessibility and review rules; do not restate the rule list.",
+        "Example in hub wording: a delivery date next to the add-to-cart button. Tie return reasons (from the data pull) to the PDP checks.",
+        "This section has no image (variety and image budget): the two lists are the content."
+      ]
+    },
+    {
+      "h2": "What are the 12 cart and checkout checks in an e-commerce UX audit?",
+      "answerHint": "The 12 checks cover cost, account, form and trust: total cost shown before the payment step, guest checkout, address autocomplete, shipping address reused as billing address, inline error messages, an order summary at every step and the payment methods shoppers expect.",
+      "points": [
+        "Visual 4: checkout pass/fail card with exactly 12 checks. List them once in the text version under the image. Suggested 12: (1) shipping cost and taxes visible before checkout, (2) cart editable without leaving (quantity, remove, variant), (3) guest checkout as the default, account offered after the order, (4) number of form fields counted per step, (5) address autocomplete, (6) billing address defaults to the shipping address, (7) correct mobile keyboards (numeric for card and phone), (8) inline errors that say how to fix the field, (9) entered data kept after an error, (10) order summary visible at every step, (11) payment methods shown before the payment step (cards plus wallets the audience uses), (12) promo code field that does not pull shoppers out to search for codes.",
+        "Data: Baymard's US survey of checkout abandonment reasons (extra costs too high 40%, site wanted me to create an account 18%, too long or complicated checkout 17%, did not trust the site with card details 19%). Fact-checker: confirm each figure and the year on baymard.com/lists/cart-abandonment-rate (page updated 22 September 2025). Do not cite home.ts's '$260B' figure here.",
+        "Payment page scripts: PCI DSS v4.0 requirement 6.4.3 is already on the industry page; link there in the PDP section instead and do not explain PCI here (see notes).",
+        "Explain why this is not the whole audit: a checkout UX audit alone misses shoppers who leave at search or the PDP (secondary keyword carrier)."
+      ]
+    },
+    {
+      "h2": "How does an e-commerce UX audit cover mobile, speed and accessibility?",
+      "answerHint": "Mobile gets its own pass with its own GA4 numbers, speed is judged by Core Web Vitals field data (good: LCP 2.5 s or less, INP 200 ms or less, CLS 0.1 or less at the 75th percentile), and every audited template is checked against WCAG 2.2 level AA.",
+      "points": [
+        "Mobile: device split from GA4 (mobile vs desktop conversion rate), thumb reach for add to cart, sticky add-to-cart bar not covering content, mobile keyboard types. Hub 'when to hire' item: mobile conversion below desktop.",
+        "Speed: cite web.dev for the thresholds and the 75th percentile. Tie INP to store interactions: tapping a filter, a colour swatch or add to cart. Use PageSpeed Insights field data (Chrome UX Report), not a single lab run.",
+        "Accessibility: Visual 5, WCAG 2.2 checkout criteria table (see visuals): 3.3.7 Redundant Entry (A), 3.3.8 Accessible Authentication (Minimum) (AA), 2.4.11 Focus Not Obscured (Minimum) (AA), 2.5.8 Target Size (Minimum) (AA, 24 x 24 CSS px), plus 1.4.3 contrast 4.5:1 for body text (hub wording). Fact-checker: confirm numbers and levels on w3.org/WAI/standards-guidelines/wcag/new-in-22/.",
+        "Legal context in 2 sentences, no legal advice: many US website accessibility lawsuits are brought under ADA Title III, and there is no DOJ technical standard for private business websites, so WCAG 2.2 AA is the working benchmark (fact-checker: confirm wording; the industry page's 'US courts apply the ADA to online stores' is broader than the case law, do not repeat it). The European Accessibility Act applies to e-commerce services offered to EU consumers from 28 June 2025.",
+        "Say that the audit checks templates, not every page; a full-site accessibility audit is quoted separately (ux-audit hub FAQ wording). No overlay widgets (industry page wording)."
+      ]
+    },
+    {
+      "h2": "How do you score and rank e-commerce UX audit findings?",
+      "answerHint": "Give each finding a severity rating from 1 to 4, multiply by the share of sessions that reach that page, and divide by the effort estimate in development days. Fixes with high severity, high reach and low effort go first.",
+      "points": [
+        "First-hand method in site wording: every issue gets a screenshot, a severity rating from 1 to 4, a recommended fix and an effort estimate (ux-audit hub). Reach comes from the GA4 funnel exploration (affected sessions). Two senior designers score independently and then merge (ux-audit hub process); follow the hub's '2 designers', not home.ts's '1–2 designers' (see notes).",
+        "Visual 6: priority 2x2 (impact = severity x reach vs effort). Quadrant names must be our own: 'fix this sprint', 'plan the project', 'batch with the next release', 'park'. Do not use Baymard's labels.",
+        "One worked example labelled illustrative, using invented inputs that are clearly hypothetical: e.g. a severity 3 shipping-cost surprise on the cart page that every buyer sees vs a severity 4 bug in a rarely used gift-wrap option. No dollar uplift, no conversion-lift percentage.",
+        "Turn the top of the list into A/B testing hypotheses: the hub's 'A/B testing backlog' benefit; do not re-explain CRO vs UX design (hub FAQ).",
+        "Lead moment 2: a ranked list with effort in days is the deliverable stores pay for."
+      ]
+    },
+    {
+      "h2": "What does a self-audit of your own store miss?",
+      "answerHint": "A self-audit misses what your team no longer notices: you know where every menu item is, you test logged in with saved addresses, on office Wi-Fi and a desktop screen. Run the checklist yourselves first, then bring in independent evaluators when the findings will decide a redesign budget.",
+      "points": [
+        "Short reasoned bullets (blind spot + why): familiarity with category names; logged-in sessions that skip guest checkout; fast devices and networks that hide INP and LCP problems; internal search terms that match the catalogue; no severity calibration across reviewers.",
+        "When an expert audit pays: use the hub 'when should an online store hire' triggers (cart abandonment rises at steady traffic and prices, mobile conversion below desktop, replatforming project starts, sizing questions and returns rise) and deep-link that hub section instead of listing all five.",
+        "Do NOT rebuild the provider matrix from ux-audit-agency-vs-freelancer (freelancer vs agency vs AI tool vs in-house). No AI-tool section. Do not link that post (another silo).",
+        "If audit then redesign: the hub vs table says stores without funnel evidence start with the UX audit, then redesign the weakest templates. One sentence, deep link to /services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit."
+      ]
+    },
+    {
+      "h2": "What should you send to get an e-commerce UX audit quote?",
+      "answerHint": "Send the store URL and platform, the templates and devices in scope, GA4 read access or a funnel export, your top site search queries and any accessibility deadline. With those, an audit can be scoped at a fixed price.",
+      "points": [
+        "Short ul of 6 scope inputs, store-specific: store platform (Shopify, BigCommerce, Adobe Commerce, custom), templates in scope (home, PLP, PDP, cart, checkout, account), devices, markets and languages, GA4 view access, top 50 search queries plus zero-result list, accessibility deadline (EAA, contract). Do not reuse the 'six scope inputs' list or 'scope sheet' visual from ux-audit-agency-vs-freelancer: different items, plain list, no form graphic.",
+        "Price: one sentence with the published figures from the hub comparison table: a UX audit runs $5,000–$15,000 over 2–3 weeks; a full e-commerce UX design engagement that redesigns and tests the funnel templates runs $25,000–$60,000 over 4–8 weeks. Deep link to /services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit. Do not restate the hub's near-$25,000 / near-$60,000 example projects.",
+        "Main lead moment and offer (see leadAngle). Second UP link to the hub. Close with the next step to /contact/."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How often should an online store run a UX audit?",
+      "hint": "Tie it to events, not a calendar: before a replatforming project, after a theme or checkout change, when the funnel exploration shows a new drop at one step, and before the peak season build freeze. No invented 'every 6 months' rule (SERP pages state it without a source)."
+    },
+    {
+      "q": "Does an e-commerce UX audit include accessibility?",
+      "hint": "Yes. Each audited template is checked against WCAG 2.2 level AA; a full-site accessibility audit is quoted separately (ux-audit hub FAQ wording). 2 sentences."
+    },
+    {
+      "q": "Is an e-commerce UX audit the same as a CRO audit?",
+      "hint": "No. The UX audit finds and ranks usability issues with evidence; conversion rate optimization (CRO) tests single changes with A/B testing. The audit's ranked list feeds the A/B test backlog. Do not copy the hub FAQ sentence on 'e-commerce UX design vs CRO'."
+    },
+    {
+      "q": "Can a Shopify UX audit recommend changes to the checkout?",
+      "hint": "Yes, within the platform's limits. Fact-checker must confirm current Shopify checkout customisation (Checkout Extensibility / checkout UI extensions; checkout.liquid deprecated for Plus stores). Each finding should say whether it is a theme change, an app change or a checkout setting. Keep it to 2–3 sentences; no promise about what Shopify allows beyond the confirmed facts."
+    },
+    {
+      "q": "Should you audit the old store before replatforming?",
+      "hint": "Yes. An audit before the move lists the issues to fix in the new templates instead of copying them across. The hub names a replatforming project, e.g. a custom store moving to Shopify, as a trigger. 2 sentences."
+    }
+  ],
+  "internalTargets": [
+    { "href": "/services/ecommerce-ux-design-services/", "anchor": "e-commerce UX design services" },
+    { "href": "/services/ecommerce-ux-design-services/#e-commerce-ux-design-vs-ux-audit", "anchor": "how an audit compares with a full e-commerce redesign" },
+    { "href": "/services/ecommerce-ux-design-services/#when-should-an-online-store-hire-e-commerce-ux-design-services", "anchor": "signs a store needs more than an audit" },
+    { "href": "/services/ux-audit-services/#what-does-a-ux-audit-include", "anchor": "what a UX audit includes on any product" },
+    { "href": "/industries/ecommerce/#which-payment-accessibility-and-review-rules-shape-e-commerce-ux", "anchor": "payment, accessibility and review rules for online stores" },
+    { "href": "/contact/", "anchor": "send us your store URL and platform" }
+  ],
+  "internalTargetsNote": "All files verified: content/services/ecommerce-ux-design-services.json, content/services/ux-audit-services.json, content/industries/ecommerce.json, app/contact/page.tsx, app/services/[slug]/page.tsx, app/industries/[slug]/page.tsx. Section ids from sectionId() in components/sections/SemanticSections.tsx (lowercase h2, non-alphanumerics to '-'; no section has an explicit id): 'E-commerce UX design vs UX audit' -> e-commerce-ux-design-vs-ux-audit; 'When should an online store hire e-commerce UX design services?' -> when-should-an-online-store-hire-e-commerce-ux-design-services; 'What does a UX audit include?' -> what-does-a-ux-audit-include; 'Which payment, accessibility and review rules shape e-commerce UX?' -> which-payment-accessibility-and-review-rules-shape-e-commerce-ux. The silo has no sibling posts and no e-commerce case study, so there is no SIDEWAYS or DOWN link. BOFU: keep links lean (6 in the body). The ux-audit-services link is the post's ONE cross-hub link. Do not link ux-audit-agency-vs-freelancer or any other silo's post.",
+  "externalSources": [
+    { "url": "https://baymard.com/lists/cart-abandonment-rate", "why": "Baymard Institute: 70.22% average documented cart abandonment rate (50 studies) and the US checkout abandonment reasons (extra costs 40%, account creation 18%, long/complicated checkout 17%, card trust 19%). Page updated 22 September 2025. Fact-checker: confirm each figure on the live page." },
+    { "url": "https://web.dev/articles/vitals", "why": "Google web.dev: Core Web Vitals 'good' thresholds (LCP <= 2.5 s, INP <= 200 ms, CLS <= 0.1) measured at the 75th percentile, mobile and desktop separately." },
+    { "url": "https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/", "why": "W3C: the WCAG 2.2 criteria used in the checkout table (3.3.7 Redundant Entry A, 3.3.8 Accessible Authentication (Minimum) AA, 2.4.11 Focus Not Obscured (Minimum) AA, 2.5.8 Target Size (Minimum) AA). Fact-checker: confirm levels and the 24 x 24 CSS px figure." },
+    { "url": "https://support.google.com/analytics/answer/9327974", "why": "GA4 Help Center, Funnel exploration: open vs closed funnels and breakdowns by device, used in the pre-audit data steps." },
+    { "url": "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/union-equality-strategy-rights-persons-disabilities-2021-2030/european-accessibility-act_en", "why": "European Commission: European Accessibility Act scope (e-commerce services) and the 28 June 2025 application date. Fact-checker: confirm the URL resolves; if not, use the EUR-Lex text of Directive (EU) 2019/882." },
+    { "url": "https://www.nngroup.com/articles/ten-usability-heuristics/", "why": "Nielsen Norman Group: Jakob Nielsen's 10 usability heuristics, the base of the heuristic evaluation. One mention only." }
+  ],
+  "visuals": [
+    { "type": "store funnel audit map", "idea": "Horizontal flow of 6 store steps: search and navigation -> product listing page -> product detail page -> cart -> checkout -> order confirmation. Under each step: what the audit checks (2–3 words each) and the data source that flags it (GA4 step, search log, return reasons, Core Web Vitals). Mobile and accessibility run as two bands under all steps. Text version under the image." },
+    { "type": "pre-audit data pull card", "idea": "A 4-row card: data set | where to get it | what it tells the audit. Rows: GA4 funnel exploration by device; site search log + zero-result queries; return reasons + support tickets; Core Web Vitals field data (PageSpeed Insights). Text version under the image." },
+    { "type": "search query test sheet", "idea": "A test sheet with 5 rows (misspelling, synonym, attribute, SKU or model number, non-product query) and columns: example query for a generic apparel store (made-up examples, e.g. 'sneekers', 'trainers', 'waterproof jacket', a model number, 'returns'), what a pass looks like, pass/fail tick boxes left empty. Text version under the image." },
+    { "type": "checkout pass/fail card", "idea": "Exactly the 12 cart and checkout checks from the outline, grouped by cost, account, form and trust, each with an empty pass/fail box. Text version under the image (the one place the 12 items are listed)." },
+    { "type": "WCAG 2.2 checkout criteria table", "idea": "5 rows: 3.3.7 Redundant Entry, 3.3.8 Accessible Authentication (Minimum), 2.4.11 Focus Not Obscured (Minimum), 2.5.8 Target Size (Minimum), 1.4.3 Contrast (Minimum). Columns: level | where it bites in a store (billing address, login code, sticky bar or chat widget, swatches and steppers, price and button text) | how to test (keyboard tab-through, 24 px overlay, contrast checker). Text version under the image." },
+    { "type": "priority 2x2", "idea": "Axes: impact (severity 1–4 x share of affected sessions) vs effort (development days). Quadrants with our own labels: fix this sprint, plan the project, batch with the next release, park. 4–6 illustrative findings plotted as dots, captioned 'illustrative'. Text version under the image." }
+  ],
+  "leadAngle": "Three moments. (1) End of the data-pull section: many stores find their GA4 e-commerce events missing or duplicated; we check tracking in the first days of the audit before trusting any drop-off number. (2) End of the scoring section: a ranked list with severity, reach and effort in development days is what an expert audit hands over, and what a team scoring its own store struggles to calibrate. (3) Main offer in 'What should you send to get an e-commerce UX audit quote?': send the store URL, platform, templates and devices in scope, GA4 access and the top search queries, and get a fixed-scope e-commerce UX audit proposal within the published $5,000–$15,000 range for 2–3 weeks (link the hub comparison table), with the option to continue into the 4–8 week e-commerce UX design engagement for the weakest templates. A first step the site already offers (home.ts ctaBand): a 45-minute UX audit session in which we review the product and identify the top three friction points; do not call it free (home.ts does not). The writer adds one specific invitation, e.g. 'send us your funnel exploration and we will tell you which step to audit first'.",
+  "variety": {
+    "type": "Checklist",
+    "introStyle": "60-second phone test (the reader runs three tasks on their own store before reading: a misspelled search, a variant add-to-cart and a guest checkout to the payment step). Not among the last 8 fingerprints: buyer scenario, myth, data point with source, question, definition, mini case, contrarian take, itemized receipt.",
+    "h2Frames": ["what does X check that Y skips", "which data to pull", "how does the audit test", "which checks find leaks", "what are the 12 checks", "how does X cover", "how do you score and rank", "what does a self-audit miss", "what to send for a quote", "FAQs"],
+    "sectionOrder": "phone-test intro -> definition and store funnel map -> pre-audit data steps -> search and navigation test sheet -> PLP and PDP lists -> 12-check checkout card -> mobile, speed and WCAG 2.2 -> scoring 2x2 -> self-audit blind spots -> what to send + price link -> FAQs",
+    "visualTypes": ["store funnel audit map", "pre-audit data pull card", "search query test sheet", "checkout pass/fail card", "WCAG 2.2 checkout criteria table", "priority 2x2"],
+    "ctaAngle": "send your store URL, platform and GA4 funnel -> fixed-scope e-commerce UX audit proposal within the published audit range, with the 45-minute audit session as the first step",
+    "listStyle": "pass/fail checks grouped by funnel step + numbered data-pull steps + query test sheet + one 2x2; no scorecard, no provider matrix, no RFP sections, no receipt, no decision tree",
+    "differsFrom": "Last 3 site-wide: usability-testing-cost-per-participant (Guide / itemized receipt), mobile-app-design-agency-vs-freelancer (Comparison / contrarian take), is-discovery-phase-worth-it (Article / mini case). This post differs on type, intro, H2 frames, section order, visuals, CTA angle and list style (7 of 7). The silo has no posts. Nearest structural relatives: (a) web-app-design-rfp, the last Checklist (4 posts back): do NOT reuse its definition intro, section map, pass/fail acceptance card or scoring funnel; our pass/fail card checks a live store, not acceptance criteria. (b) ux-audit-agency-vs-freelancer (same topic family, ux-audit silo): do NOT reuse its data-point intro, provider comparison matrix, 'one finding four ways', hybrid flow, 'What can an AI UX audit tool catch and miss?' frame, the 'six scope inputs' list or the scope sheet form. Our self-audit section is store-specific blind spots, and the quote inputs are a plain store-specific list."
+  },
+  "notes": [
+    "New silo: 0 posts in ecommerce-ux-design-services. This is the first BOFU post. Next post should be MOFU. Candidates with verified Ahrefs volume (2026-10-14): 'ecommerce accessibility ux' (900 / KD 2) is the strongest, but this post uses WCAG 2.2 at checkout as one section, so the next post must go deeper (accessible product media, filters, forms, EAA vs ADA) without repeating the criteria table here; 'ecommerce search ux' (200 / KD 4) overlaps the industry page's site search section and this post's query test sheet, so frame it as a design guide, not a test. 'ecommerce ux best practices' (450 / KD 12) is TOFU. 'ecommerce ux agency' (200 / KD 2) and 'ecommerce ux design services' (200 / KD 1) are the hub's head term: never target them in a post.",
+    "Exact keyword: 'ecommerce ux audit' (frontmatter keyword), printed as 'e-commerce UX audit'. Title, H1, slug, first sentence, description (prescribed, 152 chars), first meta keyword. No keyword or secondary contains 'vs'.",
+    "Cannibalisation, e-commerce hub (content/services/ecommerce-ux-design-services.json, anchor 'e-commerce UX design services', metaTitle 'E-commerce UX Design Services | Boost Checkout Conversion'): it owns what e-commerce UX design is, the 6 deliverables, the 5-step process, benefits, the 'E-commerce UX design vs UX audit' table (audit $5,000–$15,000 / 2–3 weeks vs design $25,000–$60,000 / 4–8 weeks), the design cost H2, the 5 'when to hire' triggers and FAQs (checkout UX, Shopify, CRO, Baymard guidelines, duration). Deep-link the vs table and the triggers; do not rebuild either. Do not use 'e-commerce UX design cost' or 'checkout UX' as a target or H2.",
+    "Cannibalisation, UX audit hub (content/services/ux-audit-services.json, anchor 'UX audit services'): it owns 'What is a UX audit?', deliverables (heuristic evaluation, analytics, session recordings, accessibility check, UX audit report, fix roadmap), the 4-step process, 'UX audit vs usability testing', 'How much does a UX audit cost?' and FAQs (small website, accessibility, analytics access, report contents, duration). This post never defines a generic UX audit or prices it on its own terms: it uses the method as given and links once to #what-does-a-ux-audit-include. Avoid the phrases 'UX audit cost', 'UX audit report' and 'UX audit checklist' as headings (the hub's ngrams). Ahrefs parent topic is 'ux audit', so Google may fold this query into the hub's topic; the store-specific checklist is what keeps the post distinct.",
+    "Cannibalisation, e-commerce industry page (content/industries/ecommerce.json, anchor 'E-commerce UI UX design', metaTitle 'E-commerce UI UX Design Agency | Online Store Design', keywords[]: e-commerce UI UX design agency, e-commerce UX design, online store design, checkout UX, product page design, marketplace UX): it owns site search design, merchandising, loyalty, omnichannel, seller dashboards, B2B portals, the regulation list (PCI DSS v4.0 6.4.3, WCAG 2.2 AA, ADA Title III, CCPA/GDPR consent, FTC review rule) and the 'e-commerce UX vs content website UX' table. Link its rules section once; do not repeat the PCI, CCPA/GDPR or FTC explanations. Do not use 'product page design' or 'checkout UX' as headings.",
+    "Blog grep (content/blog, briefs): no post targets e-commerce, audit-of-a-store or Shopify. ux-audit-agency-vs-freelancer (ux-audit silo) is the only audit post; see variety.differsFrom for what not to reuse.",
+    "CONFLICT for the orchestrator (template CTA): the BOFU in-article CTA (app/blog/[slug]/page.tsx) prints the hub's priceRange 'Typical investment: $25,000–$60,000', but this reader is buying a $5,000–$15,000 audit. The writer states the audit range in the body with the hub-table link and presents $25,000–$60,000 as the redesign that follows. Owner/orchestrator may want an audit price line in the e-commerce hub summary, or accept the mismatch.",
+    "CONFLICT (team size, known): home.ts says the UX audit uses '1-2 designers'; the ux-audit hub and the e-commerce hub table say 2 senior UX designers. Follow the hubs ('2 senior UX designers') and do not state a designer count anywhere else.",
+    "CONFLICT (legal wording): the industry page says 'US courts apply the ADA to online stores'. Courts are split on websites without a physical location, and DOJ has no technical rule for private business websites (its 2024 web rule covers state and local governments under Title II). Use the narrower wording in the outline and flag the industry page sentence for the fact-checker/site auditor.",
+    "PCI DSS nuance: the industry page says requirement 6.4.3 applies to payment pages. The PCI SSC changed SAQ A eligibility in early 2025 (merchants fully outsourcing payment pages confirm their site is not susceptible to script attacks instead of meeting 6.4.3/11.6.1 directly). Do not explain PCI in this post at all; only link the industry section.",
+    "Case studies: grep of content/case-studies/ for e-commerce, shop, retail, checkout and cart returned no match (only Mass Media Co.'s 'omnichannel' marketing platform, which is not a store). No DOWN link and no client results. Every worked example is labelled illustrative with invented inputs. Do not imply audit work for any logo in home.ts (7-Eleven, Groupon and others have no case study). Owner rule: never mention Apex HCM, Fortna or ToolsGroup.",
+    "Honesty, do not use (vendor or unsourced figures seen on the SERP): Convertcart '98% leave without buying', '1.65 billion mobile shoppers', '10–24 products per page', its Fastenere/PeachSkin case figures and '2–3x more buyers'; ecomm.design 'cart abandonment over 70%' (unsourced form; use Baymard's own page instead), 'mobile >60% of US online sales', '1 in 4 Americans', '3 second' drop-off, '10%–50% lift', '$500–$5,000+' audit prices and '1–2 / 3–4 weeks'; Design Monks 'every 6–12 months'; Irish Titan 'nearly 70%' attributed to Baymard (use the primary source); wearetenet '$1,500–$7,000+'; Baymard audit service prices ($7,000 product list audit) and its paid-dataset figures (78% search usage, 61% quantity updates) unless a public Baymard page states them; the '$900' and '$250–$1,800' gig prices. Our only prices are the hub's.",
+    "Originality: beats page is shopify.com/blog/ecommerce-ux-audit (what is -> 7 benefits -> 5 how-to steps -> 6 tips -> FAQ). Do not use a benefits section, its 5 steps (goals, gather data, evaluate, document, present) as H2s, its tips list or its FAQs ('how often', 'limitations', 'what should be included') in the same wording. Baymard (#1): do not copy its six areas as H2s, its scoping/framework/environment sub-structure, its severity, frequency and importance labels or its ROI section. Convertcart: no 10-stage checklist structure, no symptom-cause table. QA checks 5-gram overlap with the beats page (max 5%).",
+    "Shopify checkout facts change often (checkout.liquid deprecation, Checkout Extensibility, one-page checkout). The writer states no Shopify checkout capability that the fact-checker has not confirmed on shopify.dev or help.shopify.com as of the publish date."
+  ],
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/ecommerce-ux-design-services.json",
+      "field": "sections[h2='E-commerce UX design vs UX audit'].answer",
+      "sentence": "Stores without funnel evidence start with the UX audit, then redesign the weakest templates.",
+      "change": "Link the words 'start with the UX audit' to /blog/ecommerce-ux-audit/ (the answer field renders HTML).",
+      "anchor": "start with the UX audit",
+      "priority": "required",
+      "why": "Pillar -> post link in the same silo (the hub must link down to its posts), on the exact sentence that sends store owners to an audit. Hub banking for the new post."
+    },
+    {
+      "file": "content/services/ux-audit-services.json",
+      "field": "sections[h2='What is a UX audit?'].body",
+      "sentence": "A website UX audit and an app UX audit follow the same method; only the platform guidelines change.",
+      "change": "Append one sentence inside the <p>: 'For online stores, our <a href=\"/blog/ecommerce-ux-audit/\">e-commerce UX audit checklist</a> shows the store-specific checks, from site search to guest checkout.'",
+      "anchor": "e-commerce UX audit checklist",
+      "priority": "required",
+      "why": "Ahrefs gives 'ux audit' as the parent topic, and this hub is the page Google associates with it. The hub already lists 'ecommerce' in relatedIndustries, so the topic match is real. It is a hub linking to a post, not a post linking across silos."
+    },
+    {
+      "file": "content/industries/ecommerce.json",
+      "field": "sections[h2='What is e-commerce UI UX design?'].body",
+      "sentence": "Conversion work on product listing pages, product detail pages and checkout belongs to our e-commerce UX design services; this page covers the wider commerce operation around that funnel.",
+      "change": "none",
+      "anchor": "",
+      "priority": "skip",
+      "why": "That sentence already carries the hub link; a second link in it would be clutter. Revisit after the MOFU accessibility post exists, which fits the industry page's WCAG item better."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
@@ -14,7 +14,7 @@
     { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" },
     { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer"], "source": "WebSearch 2026-10-06" },
     { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope", "design system audit", "what is a design system audit"], "source": "WebSearch 2026-10-06, 2026-10-08" },
-    { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency"], "source": "WebSearch 2026-10-06, 2026-10-07" },
+    { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services", "ecommerce-ux-design-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency", "ecommerce ux audit services cost"], "source": "WebSearch 2026-10-06, 2026-10-07, 2026-10-14" },
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
     { "domain": "designli.co", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "when to redesign saas ux", "redesign saas for retention"], "source": "WebSearch 2026-10-06" },
     { "domain": "phenomenonstudio.com", "kind": "agency blog", "silos": ["saas-ux-design", "digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["saas product redesign", "facelift vs full redesign saas", "product discovery phase cost", "how much does product design cost", "how to evaluate a mobile app design agency portfolio"], "source": "WebSearch 2026-10-06, 2026-10-10, 2026-10-11" },
@@ -29,7 +29,7 @@
     { "domain": "saashero.net", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "ai ux audit vs expert review"], "source": "WebSearch 2026-10-07" },
     { "domain": "musemind.agency", "kind": "agency blog", "silos": ["ux-audit-services"], "seenFor": ["ux audit cost", "how to choose a ux audit company"], "source": "WebSearch 2026-10-07" },
     { "domain": "lazarev.agency", "kind": "agency blog", "silos": ["ux-audit-services", "design-system-services", "digital-product-design-services"], "seenFor": ["how to choose a ux audit company", "design system audit", "hire design system consultant", "how to hire a product design agency"], "source": "WebSearch 2026-10-07, 2026-10-08, 2026-10-10" },
-    { "domain": "baymard.com", "kind": "UX research institute (citable source, not a target)", "silos": ["ux-audit-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit"], "source": "WebSearch 2026-10-07" },
+    { "domain": "baymard.com", "kind": "UX research institute that also sells audits (citable source, not a target)", "silos": ["ux-audit-services", "ecommerce-ux-design-services"], "seenFor": ["ai ux audit vs expert ux audit", "can chatgpt do a ux audit", "ecommerce ux audit (#1, baymard.com/learn/ecommerce-ux-audit)", "ecommerce ux audit checklist", "ecommerce ux audit services cost (expert-audit product pages)"], "source": "WebSearch 2026-10-07, 2026-10-14 (WebFetch OK)" },
     { "domain": "figr.design", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "how to calculate design system roi", "design system roi business case", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "lollypop.design", "kind": "agency blog", "silos": ["design-system-services", "usability-testing-services"], "seenFor": ["design system roi", "design system roi business case", "is a design system worth the investment", "moderated vs unmoderated usability testing cost"], "source": "WebSearch 2026-10-08, 2026-10-12" },
     { "domain": "appstudio.ca", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "cost to maintain a design system", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
@@ -78,7 +78,17 @@
     { "domain": "clickup.com", "kind": "productivity tool blog", "silos": ["usability-testing-services"], "seenFor": ["how to write a usability testing report"], "source": "WebSearch 2026-10-12" },
     { "domain": "matellio.com", "kind": "development agency blog", "silos": ["usability-testing-services"], "seenFor": ["usability testing services"], "source": "WebSearch 2026-10-12 (head term SERP is otherwise vendor service pages: redberries, yellowslice, think360studio, venturedive, kualitatem, openxcell)" },
     { "domain": "uxreactor.com", "kind": "UX agency blog", "silos": ["usability-testing-services"], "seenFor": ["how many rounds of usability testing before launch"], "source": "WebSearch 2026-10-12" },
-    { "domain": "pixelmatters.com", "kind": "agency blog", "silos": ["usability-testing-services"], "seenFor": ["how many rounds of usability testing before launch", "impact of usability testing on digital products"], "source": "WebSearch 2026-10-12" }
+    { "domain": "pixelmatters.com", "kind": "agency blog", "silos": ["usability-testing-services"], "seenFor": ["how many rounds of usability testing before launch", "impact of usability testing on digital products"], "source": "WebSearch 2026-10-12" },
+    { "domain": "shopify.com", "kind": "e-commerce platform blog (publisher)", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit (positions 2–5 with several locale copies)", "shopify ux audit"], "source": "WebSearch + WebFetch 2026-10-14" },
+    { "domain": "ecomm.design", "kind": "e-commerce design publisher/blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit"], "source": "WebSearch + WebFetch 2026-10-14" },
+    { "domain": "designmonks.co", "kind": "agency blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit", "ecommerce ux audit checklist"], "source": "WebSearch + WebFetch 2026-10-14" },
+    { "domain": "convertcart.com", "kind": "CRO agency blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit checklist"], "source": "WebSearch + WebFetch 2026-10-14" },
+    { "domain": "irishtitan.com", "kind": "e-commerce agency service page", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit"], "source": "WebSearch 2026-10-14" },
+    { "domain": "inchoo.net", "kind": "e-commerce agency (Adobe Commerce) blog/service", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit"], "source": "WebSearch 2026-10-14" },
+    { "domain": "wearetenet.com", "kind": "agency service page (skip as a blog target)", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit services cost", "ecommerce ux audit services agency"], "source": "WebSearch 2026-10-14" },
+    { "domain": "swankyagency.com", "kind": "Shopify agency service page", "silos": ["ecommerce-ux-design-services"], "seenFor": ["shopify ux audit"], "source": "WebSearch 2026-10-14" },
+    { "domain": "smartbugmedia.com", "kind": "agency blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["shopify ux audit checklist", "ecommerce ux audit checklist"], "source": "WebSearch 2026-10-14" },
+    { "domain": "constructor.com", "kind": "site search vendor blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce site search audit", "audit your search and product discovery experience"], "source": "WebSearch 2026-10-14" }
   ],
   "topPosts": [
     {
@@ -202,7 +212,7 @@
       "silo": "saas-ux-design",
       "serviceSupport": 4,
       "status": "candidate",
-      "notes": "Overlaps the ux-audit-services hub ('ux audit'). If written for this silo, frame it as a SaaS lifecycle-stage checklist (onboarding, upgrade, cancellation), TOFU, and link to the saas hub; check the ux-audit hub's H2s first."
+      "notes": "Overlaps the ux-audit-services hub ('ux audit'). If written for this silo, frame it as a SaaS lifecycle-stage checklist (onboarding, upgrade, cancellation), TOFU, and link to the saas hub; check the ux-audit hub's H2s first. 2026-10-14: ecommerce-ux-audit (e-commerce silo) now uses the per-funnel-step audit checklist format, so a SaaS audit checklist must use a different structure (lifecycle stages, not a pass/fail card)."
     },
     {
       "domain": "octet.design",
@@ -568,6 +578,77 @@
       "serviceSupport": 4,
       "status": "candidate",
       "notes": "Deferred: Google mixes 'how many rounds' with 'how many users' (userbrain, trymata, koji, uxtweak pages), so a post here would turn into the 5-users post the orchestrator ruled out, and the hub FAQ owns user counts. pixelmatters.com and netguru.com/blog/usability-testing-guide also rank. Revisit only as a launch-plan angle (which build gets which round) that never argues the participant count."
+    },
+    {
+      "domain": "shopify.com",
+      "url": "https://www.shopify.com/blog/ecommerce-ux-audit",
+      "title": "Ecommerce UX Audit: Make Your Website User-Friendly",
+      "keywords": ["ecommerce ux audit", "shopify ux audit"],
+      "estTraffic": null,
+      "silo": "ecommerce-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ecommerce-ux-audit.json",
+      "notes": "beats target. Positions 2–5 with locale copies (/ng/, .com.ph). Shopify Staff, 25 January 2024, 7 min. Structure: what is -> 7 benefits -> 5 how-to steps -> 6 tips -> FAQ (how often, limitations, what to include). No statistics, no severity scheme, no store-specific checklist, no WCAG criteria, no search tests."
+    },
+    {
+      "domain": "baymard.com",
+      "url": "https://baymard.com/learn/ecommerce-ux-audit",
+      "title": "Ecommerce UX Audit: How to Find What's Hurting Your Conversion",
+      "keywords": ["ecommerce ux audit", "ecommerce ux audit checklist"],
+      "estTraffic": null,
+      "silo": "ecommerce-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ecommerce-ux-audit.json",
+      "notes": "#1 (Carl MacDonald, 10 July 2026). Six areas (home/nav, discovery, PDP, cart, checkout, mobile) + severity/frequency/importance + ROI, ending on Baymard's paid audit. No accessibility, performance, analytics setup or cost. Citable source, never a structural model: do not copy its six-area H2s or its rating labels. Its 78%/61%/18% figures come from premium datasets; cite only figures on public Baymard pages."
+    },
+    {
+      "domain": "designmonks.co",
+      "url": "https://www.designmonks.co/blog/ecommerce-ux-audit",
+      "title": "eCommerce UX Audit (Complete How-to Guide + Checklist)",
+      "keywords": ["ecommerce ux audit", "ecommerce ux audit checklist"],
+      "estTraffic": null,
+      "silo": "ecommerce-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ecommerce-ux-audit.json",
+      "notes": "Agency blog, updated 6 August 2026. 10-step audit (home -> nav -> PLP -> PDP -> cart -> checkout -> mobile -> performance -> analytics -> CRO). No data, no severity, no accessibility, no cost. Its '$799 consultation' and 'every 6–12 months' are do-not-use."
+    },
+    {
+      "domain": "ecomm.design",
+      "url": "https://ecomm.design/ecommerce-ux-audit/",
+      "title": "How to Run an Ecommerce UX Audit and Make Your Website User-Friendly",
+      "keywords": ["ecommerce ux audit"],
+      "estTraffic": null,
+      "silo": "ecommerce-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ecommerce-ux-audit.json",
+      "notes": "Bogdan Rancea, 15 December 2025. Page-by-page sections + accessibility basics + tools + FAQ. Most figures unsourced (cart abandonment >70%, mobile >60%, 3 s, 10–50% lift, $500–$5,000+ audit price): all do-not-use."
+    },
+    {
+      "domain": "convertcart.com",
+      "url": "https://www.convertcart.com/blog/ecommerce-ux-audit-checklist",
+      "title": "eCommerce UX Audit Checklist: 120+ Checks We Use to Audit Online Stores",
+      "keywords": ["ecommerce ux audit checklist", "ecommerce ux audit"],
+      "estTraffic": null,
+      "silo": "ecommerce-ux-design-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ecommerce-ux-audit.json",
+      "notes": "CRO agency, 18 November 2025. 10 stage checklists + symptom/cause table + own case studies; strongest on breadth (includes post-purchase and WCAG 2.2 mention). Unsourced '98% leave', '1.65 billion mobile shoppers' and vendor case uplifts are do-not-use. Do not copy its 10-stage structure or symptom table."
+    },
+    {
+      "domain": "constructor.com",
+      "url": "https://constructor.com/blog/audit-your-search-and-product-discovery-experience",
+      "title": "Audit your search and product discovery experience",
+      "keywords": ["ecommerce site search audit", "ecommerce search ux"],
+      "estTraffic": null,
+      "silo": "ecommerce-ux-design-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Search vendor blog plus a self-guided PDF. Possible MOFU 'ecommerce search ux' (Ahrefs 200 / KD 4, 2026-10-14), but the e-commerce industry page owns site search design (FAQ 'Does commerce design work include site search?') and ecommerce-ux-audit has a search query test sheet. Only write as a design guide for results, filters and zero-result pages that links to the hub, without repeating the test sheet. shopify.com/blog/no-results-found, searchspring, opensourceconnections and experro also rank."
     }
   ]
 }
