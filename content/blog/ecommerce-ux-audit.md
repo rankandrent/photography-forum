@@ -31,7 +31,7 @@ This e-commerce UX audit checklist covers the data to pull, the checks for each 
 
 **An e-commerce UX audit adds store-specific rules, following a shopper from site search to guest checkout and checking each step against e-commerce usability research.**
 
-The method is a heuristic evaluation against Jakob Nielsen's 10 usability heuristics, published by the Nielsen Norman Group, plus store rules those heuristics never name, such as showing the total cost before payment. Most come from Baymard Institute research, whose [cart abandonment page](https://baymard.com/lists/cart-abandonment-rate) puts the average documented rate at 70.22% across 50 studies, browsers included; the audit hunts for the share the store causes. The map shows each step and its data.
+The method is a heuristic evaluation against Jakob Nielsen's 10 usability heuristics, published by the Nielsen Norman Group, plus store rules those heuristics never name, such as showing the total cost before payment. Most come from Baymard Institute research, whose [cart abandonment page](https://baymard.com/lists/cart-abandonment-rate) puts the average documented rate at 70.22% across 50 studies and notes that a large portion of abandonment comes from how people browse; the audit hunts for the share the store causes. The map shows each step and its data.
 
 ![E-commerce UX audit map of six store steps, from search and navigation to order confirmation, each with its audit checks and the data that flags it, plus an every-step band for the mobile pass and WCAG 2.2 check](/blog/ecommerce-ux-audit/store-funnel-audit-map.svg "E-commerce UX audit map: six store steps and the data that flags each")
 
@@ -70,7 +70,7 @@ In GA4, build the funnel exploration from the recommended e-commerce events: vie
 
 </details>
 
-Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to the worst step and watch for rage clicks, dead clicks and stalled form fields. On our audits, analytics access arrives at kick-off, in the first 1–2 days and well before scoring, which leaves time to confirm the tags: a purchase event that fires twice on reload makes a healthy step look broken.
+Hotjar or Microsoft Clarity, which is free, then shows why: filter recordings to the worst step and watch for rage clicks, dead clicks and stalled form fields. On our audits, analytics access arrives at kick-off, in the first 1–2 days and well before scoring, which leaves time to confirm the tags: an add_to_cart event that never fires from a quick-add button makes a healthy step look broken.
 
 ## How does the audit test site search and navigation?
 
@@ -118,7 +118,7 @@ The Federal Trade Commission (FTC) Rule on the Use of Consumer Reviews and Testi
 
 **The 12 checks fall into four groups, cost, account, form and trust, and the first asks whether shoppers see the total cost before the payment step.**
 
-Baymard's US survey of abandonment reasons sets aside the 42% who were only browsing. Among the rest, extra costs such as shipping, tax and fees led at 40%, then distrust with card details at 19%, a required account at 18% and a long or complicated checkout at 17%. Each group in the card answers one of those reasons.
+Baymard's US survey of abandonment reasons sets aside the 42% who were only browsing. Among the rest, extra costs such as shipping, tax and fees led at 40%; distrust with card details reached 19%, a required account 18% and a long or complicated checkout 17%. Each group in the card answers one of those reasons.
 
 ![Checkout pass/fail card with 12 cart and checkout checks grouped by cost, account, form and trust, each with an empty tick box](/blog/ecommerce-ux-audit/checkout-pass-fail-card.svg "Checkout UX audit card: 12 pass/fail checks")
 
@@ -221,8 +221,8 @@ Independent evaluators close those gaps, because they bring neither your vocabul
 
 These six inputs set the audit scope:
 
-- **Store platform** (Shopify, BigCommerce, Adobe Commerce or custom), because on a Shopify UX audit each finding names the theme section, app or checkout setting to change.
-- **Templates in scope** (home, listing, product, cart, checkout, account), so the quote counts templates, not pages.
+- **Store platform** (Shopify, BigCommerce, Adobe Commerce or custom), because on a Shopify UX audit a recommended fix can then name the theme section, app or checkout setting it touches.
+- **Templates in scope** (home, listing, product, cart, checkout, account), so the audit reviews templates, not every page.
 - **Devices, markets and languages**, because each adds a pass.
 - **GA4 access or a funnel export**, so reach is scored from week one.
 - **Top 50 search queries and the zero-result list**, so the search test uses your shoppers' words.
@@ -250,7 +250,7 @@ No. The UX audit finds and ranks usability issues with evidence, while conversio
 
 ### Can a Shopify UX audit recommend changes to the checkout?
 
-Yes, within your plan's limits. [Shopify's developer documentation](https://shopify.dev/docs/apps/build/checkout/technologies) lists checkout UI extensions as a Shopify Plus feature, while Thank you and Order status extensions run on all plans except Shopify Starter. Each finding names a theme change, an app change or a checkout setting.
+Yes, within your plan's limits. [Shopify's developer documentation](https://shopify.dev/docs/apps/build/checkout/technologies) lists checkout UI extensions as a Shopify Plus feature, while Thank you and Order status extensions run on all plans except Shopify Starter. Where a fix touches the platform, the finding can name the theme change, app change or checkout setting it needs.
 
 ### Should you audit the old store before replatforming?
 
