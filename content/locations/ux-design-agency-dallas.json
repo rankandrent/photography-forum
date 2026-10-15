@@ -20,7 +20,7 @@
       "h2": "Why do DFW teams hire outside UX/UI design services?",
       "format": "paragraph",
       "answer": "<strong>Dallas–Fort Worth teams hire outside UX/UI design services when a banking portal, carrier self-service app or retail checkout needs senior user research and interface design faster than hiring allows.</strong> The outside team plugs into existing product, compliance and engineering squads.",
-      "body": "<p>Our Dallas UX/UI design services come from a remote-first team headquartered in Reston, Virginia, with no Dallas office and no local team. We are a UX design agency within the wider field of <a href=\"/\">UI UX design services</a>, designing digital products since 2017. Teams in Uptown Dallas and in Plano, Irving and Frisco, Texas, can work with us over video on Central Time hours. For advisory work, see our <a href=\"/services/ux-consulting-services/\">UX consulting services</a>.</p>"
+      "body": "<p>Our Dallas UX/UI design services come from a remote-first team headquartered in Reston, Virginia, with no Dallas office or local team. We are a UX design agency within the wider field of <a href=\"/\">UI UX design services</a>, designing digital products since 2017. Teams in Uptown Dallas, Plano, Irving and Frisco, Texas, work with us over video on Central Time hours. For advisory work, see our <a href=\"/services/ux-consulting-services/\">UX consulting services</a>.</p>"
     },
     {
       "h2": "What do our Dallas UX/UI design services cover?",
@@ -141,7 +141,7 @@
         ],
         [
           "Cost model",
-          "Fixed scope: $5,000–$15,000 audit, $25,000–$60,000 sprint",
+          "Fixed scope: $5,000–$15,000 UX audit, $25,000–$60,000 design sprint",
           "Salary and benefits",
           "Local agency rates"
         ]
@@ -160,7 +160,7 @@
     {
       "h2": "How are Dallas UX/UI design services priced?",
       "format": "paragraph",
-      "answer": "<strong>Dallas UX/UI design services from our remote-first team start at $5,000–$15,000 for a 2–3 week experience audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Four variables set the final number: the flows in scope, the platforms, the research depth and whether a component library is included.",
+      "answer": "<strong>Dallas UX/UI design services from our remote-first team start at $5,000–$15,000 for a 2–3 week experience audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Four variables set the final number: the flows in scope, the platforms, the depth of user research and whether a component library is included.",
       "body": "<p>Full design and design system work runs $60,000–$180,000 over 8–16 weeks, the scope that fits a banking, carrier or retail replatform. An embedded design team, a standing UX squad, costs $15,000–$40,000 per month. Every project begins with a free consultation and a fixed-scope proposal, so procurement sees one number before signing. Compare <a href=\"/services/ux-audit-services/\">UX audit services</a>, <a href=\"/services/design-system-services/\">design system services</a> and <a href=\"/services/saas-ux-design/\">SaaS UX design</a>.</p>"
     },
     {
@@ -172,13 +172,13 @@
         "Telecom and wireless, for example plan comparison, device upgrades and self-service troubleshooting that keeps calls out of the contact center.",
         "Retail and consumer brands, for example product discovery and checkout (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
         "Commercial and residential real estate software, for example listing search, tenant portals and portfolio analytics, where we design the digital interface, not the buildings.",
-        "B2B software and HR technology, for example payroll and workforce dashboards."
+        "Business-to-business (B2B) software and human resources (HR) technology, for example payroll and workforce dashboards."
       ]
     },
     {
       "h2": "Questions about Dallas UX/UI design services",
       "format": "faq",
-      "answer": "<strong>Short answers to the six questions Dallas–Fort Worth product leaders ask before hiring a remote-first UX/UI design company.</strong>",
+      "answer": "<strong>These six answers cover what Dallas–Fort Worth product leaders often ask before hiring a remote-first UX/UI design company.</strong>",
       "faqs": [
         {
           "q": "Is your team based in Dallas?",
