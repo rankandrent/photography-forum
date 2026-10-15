@@ -1,0 +1,185 @@
+{
+  "slug": "ux-design-agency-dallas",
+  "pageType": "location",
+  "target": "content/locations/ux-design-agency-dallas.json",
+  "keyword": "dallas ux/ui design services",
+  "volume": 40,
+  "kd": null,
+  "kdNote": "KD not returned by the orchestrator's Ahrefs pull (n/a). Not estimated.",
+  "dataSource": "Ahrefs API v3 keywords-explorer, US, 2026-10-15",
+  "keywordWhy": "The draft keyword 'ux design agency dallas' has volume 0 (no data), so the owner rule bars it. 'dallas ux/ui design services' (40/mo) ties for the highest volume and is the only 40/mo term with service-buyer intent; 'top dallas ux design companies' (40/mo) is a list/comparison query we cannot answer with a ranking without inventing one, so it is a secondary. Slug stays as is.",
+  "rejectedKeywords": [
+    { "keyword": "ux design agency dallas", "why": "volume 0 (no data), owner rule" },
+    { "keyword": "ui/ux design agency dallas / ui ux design agency in dallas / dallas tx ux design agency", "why": "volume 0" },
+    { "keyword": "top dallas ux design companies", "why": "40/mo but list intent; we cannot publish a ranking or call ourselves 'top'. Kept as a secondary for the comparison table only." },
+    { "keyword": "dallas ux design bootcamps / ux design jobs dallas / ux design classes dallas", "why": "off-intent (learners and job seekers, not buyers). Do not target or mention." }
+  ],
+  "secondary": [
+    "Dallas UX design companies",
+    "UI UX design services company in Dallas",
+    "UX/UI design in Dallas",
+    "UX design services in Dallas",
+    "UI UX design services in Dallas"
+  ],
+  "secondaryNotes": "'top dallas ux design companies' (40/mo) is used only as a buyer-side phrase, e.g. 'When you shortlist top Dallas UX design companies, compare time to start, research depth and cost model.' Never claim we are a top company or rank anyone.",
+  "keywordCarrier": {
+    "spellingNote": "scripts/onpage-audit.mjs has() requires every keyword word longer than 2 letters, so the token 'ux/ui' must print literally. Always write 'UX/UI' with a slash in keyword uses; 'UI/UX', 'UI UX' or 'UX UI' do NOT count.",
+    "inBody": [
+      "Dallas UX/UI design services from a remote-first team",
+      "our Dallas UX/UI design services cover research, interface design and testing",
+      "Dallas UX/UI design services are priced as fixed-scope engagements"
+    ],
+    "avoid": "Never stack another noun after the keyword ('Dallas UX/UI design services project/pricing/FAQs'). For compounds use 'a Dallas UX/UI project' or 'Dallas–Fort Worth engagement'. The FAQ H2 can read 'Questions about Dallas UX/UI design services'.",
+    "density": "Location page body is about 1,000–1,100 words: use the exact keyword 5–6 times (≤ 2% word share for a 4-word phrase). kwCount must be at least half of the top rival entity, so keep 'Dallas–Fort Worth', 'Central Time' and 'telecom' at 10 uses or fewer each ('Dallas' alone is not a rival: its words sit inside the keyword).",
+    "h2Salience": "At least 40% of H2s must contain the keyword or a keyword word longer than 3 letters ('dallas', 'ux/ui', 'design', 'services'). The draft's H2s already pass on 'Dallas'/'design'; the pricing H2 must be rewritten (see conflicts)."
+  },
+  "centralEntity": "Dallas UX/UI design services",
+  "entities": [
+    "Dallas",
+    "Dallas–Fort Worth (DFW)",
+    "Texas",
+    "Uptown",
+    "Plano",
+    "Irving",
+    "Frisco",
+    "Central Time",
+    "Reston, Virginia",
+    "financial services",
+    "telecom",
+    "retail",
+    "real estate",
+    "contact center",
+    "self-service",
+    "experience audit",
+    "user research",
+    "interactive prototype",
+    "usability testing",
+    "component library",
+    "design system",
+    "Figma",
+    "WCAG 2.2",
+    "compliance review"
+  ],
+  "attributes": [
+    "audit price ($5,000–$15,000 over 2–3 weeks)",
+    "sprint price ($25,000–$60,000 over 4–8 weeks)",
+    "full design and design system ($60,000–$180,000 over 8–16 weeks)",
+    "UX squad ($15,000–$40,000 per month, embedded)",
+    "team size (2–4 designers on a research and design sprint)",
+    "time to start (1–2 weeks after proposal approval)",
+    "time zone (Eastern-based team, 7–8 hours of overlap with Central Time)",
+    "participants per round (5–8 per user group)",
+    "fixed-scope proposal (after a free consultation)",
+    "on-site workshops (in DFW for larger engagements)"
+  ],
+  "bindings": {
+    "synonyms": [
+      "UI UX design services",
+      "UX design agency",
+      "UX/UI design company",
+      "product design services"
+    ],
+    "plural": [
+      "Dallas UX design companies",
+      "UX/UI design services"
+    ],
+    "parent": [
+      "UI UX design services"
+    ],
+    "children": [
+      "experience audit",
+      "user research",
+      "interface design",
+      "component library",
+      "prototype validation",
+      "usability testing"
+    ],
+    "related": [
+      "Dallas–Fort Worth",
+      "Central Time",
+      "fixed-scope proposal",
+      "Figma",
+      "WCAG 2.2",
+      "contact center"
+    ],
+    "linkPlan": {
+      "up": { "href": "/", "anchor": "UI UX design services" },
+      "across": [
+        { "href": "/services/ux-consulting-services/", "anchor": "UX consulting services" },
+        { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+        { "href": "/services/dashboard-design-services/", "anchor": "dashboard design services" },
+        { "href": "/services/saas-ux-design/", "anchor": "SaaS UX design" },
+        { "href": "/services/ux-audit-services/", "anchor": "UX audit services" },
+        { "href": "/services/design-system-services/", "anchor": "design system services" }
+      ],
+      "industries": [
+        { "href": "/industries/finance/", "anchor": "Finance UI UX design" },
+        { "href": "/industries/ecommerce/", "anchor": "E-commerce UI UX design" }
+      ],
+      "note": "All targets verified to exist in content/services, content/industries and content/home.ts (/)."
+    }
+  },
+  "essential": [
+    "Dallas UX/UI design services",
+    "remote-first",
+    "Dallas–Fort Worth"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'Dallas UX/UI design services' or a synonym, plus 'remote-first' or 'Dallas–Fort Worth'. 'remote-first' also carries the honesty line (no Dallas office).",
+  "queryVariants": [
+    "dallas ux/ui design services",
+    "ux design services in dallas",
+    "ui ux design services company in dallas",
+    "ux/ui design dallas",
+    "top dallas ux design companies"
+  ],
+  "queryVariantsAnswer": "One answer for all: a remote-first UX/UI team (HQ Reston, Virginia, no Dallas office) that runs research, interface design and usability testing for DFW teams on Central Time hours, priced as fixed-scope engagements from $5,000. The 'top companies' variant is answered by the in-house / local studio / remote agency comparison table, not by a ranking.",
+  "ambiguous": [
+    { "word": "Dallas", "context": "Texas or Dallas–Fort Worth (there are towns named Dallas in Georgia and Oregon, and a TV series)" },
+    { "word": "Irving", "context": "Irving, Texas (also a personal name)" },
+    { "word": "Plano", "context": "Plano, Texas (Spanish/Portuguese for 'plan' or 'flat')" },
+    { "word": "Frisco", "context": "Frisco, Texas (also slang for San Francisco)" },
+    { "word": "Uptown", "context": "Uptown Dallas" },
+    { "word": "audit", "context": "experience audit or usability, never financial audit (banking section is near)" },
+    { "word": "design", "context": "interface or UX/UI (not interior or architectural design, real estate section is near)" },
+    { "word": "research", "context": "user research with customers or employees" },
+    { "word": "testing", "context": "usability testing with participants" }
+  ],
+  "siteFacts": {
+    "company": [
+      "Remote-first, headquartered in Reston, Virginia; no Dallas office, no local team, no Dallas clients may be claimed (RULES.md honesty).",
+      "200+ products designed (home.ts, confirmed fact).",
+      "Designing digital products since 2017 (home.ts, confirmed fact)."
+    ],
+    "engagements_homeTs": [
+      "UX audit: $5,000–$15,000, 2–3 weeks, 1–2 designers",
+      "Research & UX design sprint: $25,000–$60,000, 4–8 weeks, 2–4 designers",
+      "Full design & design system: $60,000–$180,000, 8–16 weeks, 3–6 designers",
+      "Embedded design team: $15,000–$40,000/mo, ongoing, 2–5 designers"
+    ],
+    "timeToFirstDesign": "1–2 weeks for us; in-house designer 6–10 weeks (hiring + ramp) (home.ts compare table).",
+    "usabilityRounds": "5–8 participants per round / per user group (usability-testing-services.json); Nielsen Norman Group guidance of 5 users per qualitative round is cited there.",
+    "priceRangeField": "$5,000–$60,000 (draft and all published location pages; keep).",
+    "houseLocationPattern": "Atlanta page: same price lines, 5-step process lasting 4–8 weeks, start 1–2 weeks after proposal approval, 5–12 people per role for interviews, 'no <City> office' line in body and first FAQ.",
+    "conflicts": [
+      "KEYWORD: draft keyword/anchor/eyebrow/H1/metaTitle/metaDescription/keywords[0]/ngrams and the H2s 'How is a UX design agency Dallas project priced?' and 'UX design agency Dallas FAQs' plus the last FAQ answer all use the 0-volume keyword. The stacked H2 'UX design agency Dallas project' and 'A UX design agency Dallas teams hire from us' also break the reversed-keyword carrier rule. Replace with the new keyword or a carrier pattern; set keywords[0] = 'dallas ux/ui design services' and drop 'ui ux design agency dallas' (0 volume).",
+      "META: draft metaDescription does not end 'Book a free consultation.' and does not hold the new keyword. Use metaPlan.",
+      "PARTICIPANTS: draft 'Prototype validation' says 5 participants per round and the recruiting FAQ says 5–12 participants per user group; usability-testing-services.json says 5–8 per round and per user group. Follow the hub: 5–8 per round for usability testing. 5–12 is acceptable only if the FAQ is reworded to interviews per role (matches Atlanta).",
+      "IN-HOUSE TIME TO START: draft table says 'Several months of recruiting'; home.ts says '6–10 weeks (hiring + ramp)'. Follow home.ts.",
+      "TEAM SIZE: draft states none. If added, use home.ts '2–4 designers' for the sprint only. Do not state an audit team size (home.ts '1–2 designers' vs ux-audit hub '2 designers', known open conflict).",
+      "OVERLAP: '7–8 hours of overlap with Central Time' has no hub source; it is arithmetic (ET is 1 hour ahead of CT) and also printed in the draft abstract. Keep it consistent in table and abstract; do not change to another figure."
+    ]
+  },
+  "metaPlan": {
+    "metaTitle": "Dallas UX/UI Design Services | Banking, Telecom & Retail",
+    "metaTitleLength": 56,
+    "metaDescription": "Dallas UX/UI design services for banking, telecom, retail and real estate teams: research, UI design and testing from $5,000. Book a free consultation.",
+    "metaDescriptionLength": 151,
+    "h1": "Dallas UX/UI design services for banking, telecom and retail product teams",
+    "eyebrow": "dallas ux/ui design services",
+    "heroSubCarrier": "Hero sub must hold the keyword within the first 60 words after the H1, e.g. 'Dallas UX/UI design services from a remote-first team in Reston, Virginia: research, interface design and usability testing for Dallas–Fort Worth banks, carriers, retailers and real estate firms, on Central Time hours.'",
+    "keywordsField": ["dallas ux/ui design services", "dallas ux design companies", "ui ux design services company in dallas", "ux/ui design dallas", "ux design services in dallas"]
+  },
+  "layoutNotes": "Keep the draft's block types (paragraph, list, steps, cards, table with intro sentence, FAQ last). Section body text 50–70 words (90 max). Pricing stays a paragraph or table with the four home.ts lines. No new claims about Dallas clients, offices or local stats.",
+  "funnel": "BOFU",
+  "notes": "Brief written for an existing draft due to publish 2026-10-15; the draft itself was not edited. Do not mention bootcamps, classes or jobs (off-intent volume terms)."
+}
