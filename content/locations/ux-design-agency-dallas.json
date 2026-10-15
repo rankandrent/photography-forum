@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 14,
   "title": "Dallas",
   "city": "Dallas",
@@ -33,7 +33,7 @@
         },
         {
           "title": "Experience audit.",
-          "body": "A heuristic usability review plus a Web Content Accessibility Guidelines (WCAG) check at WCAG 2.2, with analytics showing where plan upgrades or loan applications stall, ranked by business impact."
+          "body": "A heuristic usability review plus a Web Content Accessibility Guidelines (WCAG) 2.2 level AA check, with analytics showing where plan upgrades or loan applications stall, ranked by impact and effort."
         },
         {
           "title": "Interface design.",
@@ -123,13 +123,13 @@
         ],
         [
           "Time zone",
-          "Eastern-based team, 7–8 hours of overlap with Central Time",
+          "Eastern Time schedule from Reston HQ, 7–8 hours of overlap with Central Time",
           "Central Time",
           "Central Time"
         ],
         [
           "Team size and skills",
-          "2–4 designers on a sprint: researchers, UX and UI designers together",
+          "2–4 designers on a sprint; the designers who run your research stay through design and testing",
           "One person's specialty",
           "Set by studio size; ask who runs the user research"
         ],
@@ -160,7 +160,7 @@
     {
       "h2": "How are Dallas UX/UI design services priced?",
       "format": "paragraph",
-      "answer": "<strong>Dallas UX/UI design services from our remote-first team start at $5,000–$15,000 for a 2–3 week experience audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Four variables set the final number: the flows in scope, the platforms, the depth of user research and whether a component library is included.",
+      "answer": "<strong>Dallas UX/UI design services from our remote-first team start at $5,000–$15,000 for a 2–3 week experience audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> The final number depends on the flows in scope, the platforms, the depth of user research and whether a component library is included.",
       "body": "<p>Full design and design system work runs $60,000–$180,000 over 8–16 weeks, the scope that fits a banking, carrier or retail replatform. An embedded design team, a standing UX squad, costs $15,000–$40,000 per month. Every project begins with a free consultation and a fixed-scope proposal, so procurement sees one number before signing. Compare <a href=\"/services/ux-audit-services/\">UX audit services</a>, <a href=\"/services/design-system-services/\">design system services</a> and <a href=\"/services/saas-ux-design/\">SaaS UX design</a>.</p>"
     },
     {
@@ -172,7 +172,7 @@
         "Telecom and wireless, for example plan comparison, device upgrades and self-service troubleshooting that keeps calls out of the contact center.",
         "Retail and consumer brands, for example product discovery and checkout (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>).",
         "Commercial and residential real estate software, for example listing search, tenant portals and portfolio analytics, where we design the digital interface, not the buildings.",
-        "Business-to-business (B2B) software and human resources (HR) technology, for example payroll and workforce dashboards."
+        "Business-to-business (B2B) software and IT services, for example workforce and reporting dashboards."
       ]
     },
     {
@@ -202,7 +202,7 @@
         },
         {
           "q": "How soon can a Dallas UX/UI project start?",
-          "a": "<p>A Dallas UX/UI project with us starts 1–2 weeks after proposal approval. At the end you receive research findings, Figma files, an interactive prototype, annotated specs and reusable components ready for engineering.</p>"
+          "a": "<p>A Dallas UX/UI project with us starts 1–2 weeks after proposal approval. A research and design sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components for your engineers; a UX audit ends with a prioritized fix roadmap.</p>"
         }
       ]
     }
@@ -217,7 +217,7 @@
   ],
   "centralEntity": "Dallas UX/UI design services",
   "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Dallas–Fort Worth financial services, telecom, retail and real estate teams.",
-  "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, with no Dallas office. Dallas–Fort Worth companies in financial services, telecom, retail and real estate can hire us for user research, interface design, prototyping and usability testing. Engagements start at $5,000 for a 2–3 week experience audit, and our Eastern-based team keeps 7–8 hours of daily overlap with Central Time.",
+  "abstract": "We are a remote-first UX design agency headquartered in Reston, Virginia, with no Dallas office. Dallas–Fort Worth companies in financial services, telecom, retail and real estate can hire us for user research, interface design, prototyping and usability testing. Engagements start at $5,000 for a 2–3 week experience audit, and we work an Eastern Time schedule from Reston with 7–8 hours of daily overlap with Central Time.",
   "semantic": {
     "entities": [
       "Dallas",
@@ -300,5 +300,6 @@
         "label": "Retail checkout"
       }
     ]
-  }
+  },
+  "published": "2026-10-15"
 }
