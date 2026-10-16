@@ -15,7 +15,7 @@
     "Plan first-time user experiences that teach controls inside gameplay",
     "Show loot box odds and battle pass value clearly in the in-game store",
     "Playtest clickable Figma prototypes with 5 players per round",
-    "Hand Figma specs and sliced UI assets to Unity engine or Unreal Engine developers"
+    "Hand annotated Figma files and component specs to Unity engine or Unreal Engine developers"
   ],
   "updated": "2026-10-16",
   "anchor": "game UI/UX design services",
@@ -41,7 +41,7 @@
       "h2": "What are game UI/UX design services?",
       "format": "paragraph",
       "answer": "<strong>Game UI/UX design services plan how players move through a video game (UX) and design the screens they see and touch (UI), from the HUD to the game website.</strong>",
-      "body": "<p>Game interface design is part of our <a href=\"/services/digital-product-design-services/\">digital product design services</a> and draws on the senior team behind our <a href=\"/\">UI UX design services</a>. As a game UI design agency we deliver Figma screens, specs and sliced UI assets; the game studio's Unity engine or Unreal Engine developers build them. The Nitro League garage screen shows that output on mobile.</p>",
+      "body": "<p>Game interface design is part of our <a href=\"/services/digital-product-design-services/\">digital product design services</a> and draws on the senior team behind our <a href=\"/\">UI UX design services</a>. As a game UI design agency we deliver annotated Figma screens and component specs; the game studio's Unity engine or Unreal Engine developers build them. The Nitro League garage screen shows that output on mobile.</p>",
       "image": {
         "src": "/work/nitro/mobile-garage-ui.webp",
         "alt": "Nitro League mobile garage screen showing the Sigma car, top-speed stats and the cars collection",
@@ -111,7 +111,7 @@
     {
       "h2": "How does our game UI/UX design process work?",
       "format": "steps",
-      "answer": "<strong>Our game UI/UX design services take a game studio from discovery to engine-ready handoff in 8–16 weeks (40–80 working days) and 5 steps,</strong> with the first designs in 1–2 weeks.",
+      "answer": "<strong>Our game UI/UX design services take a game studio from discovery to engine-ready handoff in 8–16 weeks (40–80 working days) and 5 steps.</strong>",
       "items": [
         {
           "title": "Discovery and product strategy (5–10 days)",
@@ -119,7 +119,7 @@
         },
         {
           "title": "User research (5–15 days)",
-          "body": "Designers interview target players and review competitor games to find where onboarding, menus and purchases lose them."
+          "body": "Researchers interview 5–8 target players per player group to find where onboarding, menus and purchases lose them."
         },
         {
           "title": "Information architecture and flows (5–10 days)",
@@ -127,11 +127,11 @@
         },
         {
           "title": "Prototype and validation (10–20 days)",
-          "body": "Five players per round playtest a clickable Figma prototype, the way our <a href=\"/services/usability-testing-services/\">usability testing services</a> run sessions, so friction surfaces before engine work starts."
+          "body": "Five players per round complete tasks in a clickable Figma prototype, the same prototype playtests our <a href=\"/services/usability-testing-services/\">usability testing services</a> run, so friction surfaces before engine work starts."
         },
         {
           "title": "UI design and handoff (15–25 days)",
-          "body": "Designers finish the HUD and every screen state, then hand Figma specs and sliced UI assets to the Unity engine or Unreal Engine team, with Web Content Accessibility Guidelines (WCAG) 2.2 level AA on web surfaces."
+          "body": "Designers finish the HUD and every screen state, then hand annotated Figma files, design tokens and component specs to the Unity engine or Unreal Engine team, with Web Content Accessibility Guidelines (WCAG) 2.2 level AA on web surfaces."
         }
       ]
     },
@@ -158,7 +158,7 @@
         ],
         [
           "Outputs",
-          "Flows, clickable prototypes, UI screens, specs and sliced UI assets in Figma",
+          "Flows, clickable prototypes, UI screens and annotated specs in Figma",
           "3D models, textures, animation and visual effects"
         ],
         [
@@ -173,7 +173,7 @@
         ],
         [
           "Who does it",
-          "Our senior design team, including art direction for UI and brand, as on Nitro League",
+          "Our senior design team, including art direction, as on Nitro League",
           "Your art team or an art studio; we do not sell large-scale asset production"
         ]
       ]
@@ -181,19 +181,19 @@
     {
       "h2": "How much do game UI/UX design services cost?",
       "format": "paragraph",
-      "answer": "<strong>Game UI/UX design services cost a game studio $60,000–$180,000 over 8–16 weeks for a full product, or $25,000–$60,000 over 4–8 weeks for a UI sprint on 1–2 surfaces.</strong>",
-      "body": "<p>A full engagement uses 3–6 designers and covers game UI, website and game marketplace; a sprint uses 2–4. Price follows the number of screens and states, target platforms (iOS, Android and web), playtest rounds and website scope. A live game with weak in-game store or FTUE conversion starts with an audit of the live game: $5,000–$15,000 over 2–3 weeks via our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
+      "answer": "<strong>Game UI/UX design services cost a game studio $60,000–$180,000 over 8–16 weeks for a full product, or $25,000–$60,000 over 4–8 weeks for a UI sprint.</strong>",
+      "body": "<p>A full engagement uses 3–6 designers and covers game UI, website and game marketplace; a sprint uses 2–4. Price follows the number of target platforms (iOS, Android and web), player groups, core flows such as the FTUE and the in-game store, and playtest rounds. A live game with weak in-game store or FTUE conversion starts with an audit: $5,000–$15,000 over 2–3 weeks via our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
     },
     {
       "h2": "Which platform and accessibility standards shape game UI?",
       "format": "list",
-      "answer": "<strong>Five platform and accessibility standards shape game UI design services for mobile and web games, and each one changes what players see on screen:</strong>",
+      "answer": "<strong>Six platform and accessibility standards shape game UI design services for mobile and web games, and each one changes what players see on screen:</strong>",
       "items": [
         "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-games\">Apple Human Interface Guidelines</a>: the designing-for-games and game controls pages cover touch controls and game controller support, so on-screen controls are planned per device.",
         "<a href=\"https://developer.apple.com/app-store/review/guidelines/\">App Store Review Guidelines</a> 3.1.1: apps offering a loot box or other randomized virtual items for purchase must disclose the odds of receiving each type of item before purchase, so the in-game store shows odds on the offer screen.",
         "<a href=\"https://support.google.com/googleplay/android-developer/answer/9858738\">Google Play</a> payments policy: games that sell randomized virtual items must clearly disclose the odds of receiving them in advance of purchase.",
         "<a href=\"https://learn.microsoft.com/en-us/gaming/accessibility/guidelines\">Xbox Accessibility Guidelines</a> and the <a href=\"https://gameaccessibilityguidelines.com/\">Game Accessibility Guidelines</a>: both cover subtitles and control remapping, so settings menus offer readable subtitles and remappable controls.",
-        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: the game website and NFT marketplace need keyboard access, visible focus and 4.5:1 text contrast."
+        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: the game website and NFT marketplace need keyboard access, visible focus and 4.5:1 contrast for normal-size text."
       ]
     },
     {
@@ -203,15 +203,15 @@
       "faqs": [
         {
           "q": "Do you build the game UI in Unity or Unreal Engine?",
-          "a": "<p>No. Our designers deliver Figma screens, specs and sliced UI assets, and the game studio's Unity engine or Unreal Engine developers build them. The specs list every screen state, so developers do not have to guess how a locked or reward screen looks.</p>"
+          "a": "<p>No. Our designers deliver annotated Figma screens, design tokens and component specs, and the game studio's Unity engine or Unreal Engine developers build them. The specs list every screen state, so developers do not have to guess how a locked or reward screen looks.</p>"
         },
         {
           "q": "Can you redesign the UI of a game that is already live?",
-          "a": "<p>Yes. Start with an audit of the live game, $5,000–$15,000 over 2–3 weeks, that reviews the in-game store, FTUE and menu flows against player reviews and analytics. Its prioritized findings then scope a UI sprint.</p>"
+          "a": "<p>Yes. Start with an audit of the live game, $5,000–$15,000 over 2–3 weeks, that reviews the in-game store, FTUE and menu flows against usability heuristics and analytics. Its prioritized fix roadmap then scopes a UI sprint.</p>"
         },
         {
           "q": "Is game UI design outsourcing possible for only the HUD and menus?",
-          "a": "<p>Yes. A UI sprint of $25,000–$60,000 over 4–8 weeks covers 1–2 surfaces, for example the HUD and menus, and ends with a playtested prototype. Game UX design outsourcing works the same way: research, flows and playtests come to us while the game studio keeps engine implementation in-house.</p>"
+          "a": "<p>Yes. A UI sprint of $25,000–$60,000 over 4–8 weeks can cover only the HUD and menus, and ends with a prototype playtested with players. Game UX design outsourcing works the same way: research, flows and playtests come to us while the game studio keeps engine implementation in-house.</p>"
         },
         {
           "q": "Do you design mobile game UI for iOS and Android?",
@@ -219,7 +219,7 @@
         },
         {
           "q": "Have you designed a web3 or play-to-earn game?",
-          "a": "<p>Yes. Nitro League is a play-to-earn racing game with an NFT marketplace, a 3D garage, and tokenomics and IDO (initial decentralized exchange offering) launch screens; its platform also includes a metaverse where users buy and sell properties, production factories and garages. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>, or see <a href=\"/industries/startups/\">startups UI UX design</a> for pre-launch teams.</p>"
+          "a": "<p>Yes. For Nitro League, a play-to-earn racing game, we designed the 2D racing game, a 3D garage, the website that leads into the NFT marketplace, and tokenomics and IDO (initial decentralized exchange offering) launch screens. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>, or see <a href=\"/industries/startups/\">startups UI UX design</a> for pre-launch teams.</p>"
         }
       ]
     }
@@ -237,7 +237,6 @@
       "3D garage",
       "tokenomics",
       "whitepaper",
-      "metaverse",
       "Unity engine",
       "Unreal Engine",
       "Figma",
@@ -255,7 +254,7 @@
       "in-game store",
       "first-time user experience",
       "loot box odds",
-      "sliced ui assets"
+      "component specs"
     ],
     "skipgrams": [
       "hud … readable",
@@ -286,7 +285,6 @@
     "3D garage",
     "tokenomics",
     "whitepaper",
-    "metaverse",
     "Unity engine",
     "Unreal Engine",
     "Figma",

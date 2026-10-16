@@ -29,7 +29,7 @@ The platform brings several experiences together:
 - a 3D garage where the community collaborates
 - a metaverse where users buy and sell properties, production factories and garages
 
-**Scope of work:** idea to product, conceptualisation, art direction, sketching and modeling, MVP launch plan, game and website design, and post-launch enhancements.
+**Scope of work:** idea to product, conceptualisation, art direction, sketching and modeling, MVP launch plan, game and website design, and post-launch enhancements. This work now anchors our [game UI/UX design services](/industries/gaming/).
 
 ![Nitro League brand identity: logo, N monogram, arcade and racing-gear visuals](/work/nitro/brand-identity.webp "Brand identity built in the branding workshops")
 
