@@ -1,0 +1,309 @@
+{
+  "title": "Gaming",
+  "order": 7,
+  "metaTitle": "Game UI/UX Design Services | HUD, Menus & In-Game Stores",
+  "metaDescription": "Game UI/UX design services for mobile and web3 games: HUD, menus, onboarding, in-game stores and NFT marketplaces, playtested. Book a free consultation.",
+  "hero": {
+    "eyebrow": "Game UI/UX design",
+    "h1": "Game UI/UX design services for heads-up displays, menus and in-game stores",
+    "sub": "Our game UI/UX design services plan and design the screens players touch: the heads-up display (HUD), menus, onboarding, inventory, in-game store and the game website. One senior team takes a game studio from concept to playtested, engine-ready Figma designs."
+  },
+  "summary": "UI and UX design for game studios: HUD, menus, onboarding, in-game stores and game websites, playtested with players.",
+  "intro": "Game studios bring us the screens players touch every session: the HUD, menus, onboarding and the in-game store, playtested before engine work starts.",
+  "bullets": [
+    "Design heads-up displays that stay readable at speed",
+    "Plan first-time user experiences that teach controls inside gameplay",
+    "Show loot box odds and battle pass value clearly in the in-game store",
+    "Playtest clickable Figma prototypes with 5 players per round",
+    "Hand Figma specs and sliced UI assets to Unity engine or Unreal Engine developers"
+  ],
+  "updated": "2026-10-16",
+  "anchor": "game UI/UX design services",
+  "keywords": [
+    "game UI/UX design company",
+    "game UI design agency",
+    "video game UI design services",
+    "game UI design outsourcing",
+    "mobile game UI design",
+    "mobile game UX design",
+    "UI UX design for games"
+  ],
+  "centralEntity": "game UI/UX design services",
+  "sourceContext": "US UI/UX design agency; this industry page serves game studios building mobile, web and web3 games that need the UI and UX layer designed and playtested, while their own engine developers implement it.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "Game UI/UX design services shape the user interface (UI) and user experience (UX) of a video game, from the HUD to the in-game store and the game website. They are part of our digital product design services. A full game engagement runs 8–16 weeks, costs $60,000–$180,000, and ends with playtested Figma designs the studio's engine team implements.",
+  "stats": [
+    { "value": "$5M", "label": "funding Nitro League secured within 3 months" },
+    { "value": "200+", "label": "products designed since 2017" }
+  ],
+  "sections": [
+    {
+      "h2": "What are game UI/UX design services?",
+      "format": "paragraph",
+      "answer": "<strong>Game UI/UX design services plan how players move through a video game (UX) and design the screens they see and touch (UI), from the HUD to the game website.</strong>",
+      "body": "<p>Game interface design is part of our <a href=\"/services/digital-product-design-services/\">digital product design services</a> and draws on the senior team behind our <a href=\"/\">UI UX design services</a>. As a game UI design agency we deliver Figma screens, specs and sliced UI assets; the game studio's Unity engine or Unreal Engine developers build them. The Nitro League garage screen shows that output on mobile.</p>",
+      "image": {
+        "src": "/work/nitro/mobile-garage-ui.webp",
+        "alt": "Nitro League mobile garage screen showing the Sigma car, top-speed stats and the cars collection",
+        "caption": "Garage and cars collection UI, Nitro League"
+      }
+    },
+    {
+      "h2": "Which game screens do our game UI/UX design services cover?",
+      "format": "list",
+      "answer": "<strong>Our game interface design covers 6 parts of a video game that players touch, each drawn in every screen state: default, loading, error, empty, locked and reward.</strong>",
+      "items": [
+        {
+          "title": "Heads-up display (HUD).",
+          "body": "Health, speed, map and timers stay readable at a glance during motion. Video game UI design services for the HUD add motion and feedback, the core of our <a href=\"/services/interaction-design-agency/\">interaction design agency</a> work."
+        },
+        {
+          "title": "Menus and settings.",
+          "body": "Main menu, pause, controls remapping, audio and subtitle settings, so players find the options they expect without digging through nested menus."
+        },
+        {
+          "title": "First-time user experience (FTUE).",
+          "body": "The first session, from launch to the first win, teaches controls inside gameplay instead of a wall of tutorial text."
+        },
+        {
+          "title": "Inventory and garage screens.",
+          "body": "Players compare, upgrade and equip items, as in the 3D garage we designed, where Nitro players inspect, upgrade and show off their race cars."
+        },
+        {
+          "title": "In-game store.",
+          "body": "Currencies, bundles and the battle pass get clear prices, and every loot box shows its odds before purchase, as Apple and Google Play require."
+        },
+        {
+          "title": "Game website and marketplace.",
+          "body": "Roadmap and whitepaper pages explain non-fungible tokens (NFTs) and lead players and investors into the NFT marketplace, built on our <a href=\"/services/ui-ux-web-design/\">UI UX web design</a> practice."
+        }
+      ]
+    },
+    {
+      "h2": "What makes UX design for games different from app UX?",
+      "format": "cards",
+      "answer": "<strong>UI UX design for games keeps the intended challenge fun for players and removes friction everywhere else, so they struggle with the game, not the interface.</strong>",
+      "items": [
+        {
+          "title": "Intended challenge vs interface friction",
+          "body": "A hard race is the game working; a hidden settings menu is a defect. Playtesting separates the two by watching where players fail and asking why."
+        },
+        {
+          "title": "Readability in motion",
+          "body": "HUD text and icons need contrast and size that hold at speed, so players read health or position at a glance without looking away from the action."
+        },
+        {
+          "title": "Input variety",
+          "body": "Mobile game UI design sizes touch targets for thumbs: 44×44 pt on iOS and 48×48 dp on Android, as in our <a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>. Mobile game UX design keeps key actions in thumb reach and plans controller support."
+        },
+        {
+          "title": "Trust in the game economy",
+          "body": "Prices, currencies and play-to-earn (P2E) rewards must be clear enough for players and investors to believe. Nitro came to us when investors doubted crypto products, so the racing experience had to earn trust."
+        }
+      ]
+    },
+    {
+      "h2": "What did game UI/UX design deliver for Nitro League?",
+      "format": "paragraph",
+      "answer": "<strong>Our video game UX design shaped the racing game, 3D garage and NFT marketplace website for Nitro League players, and the project secured $5M in funding within 3 months.</strong>",
+      "body": "<p>Nitro League is a decentralized play-to-earn racing game built on upgradeable NFTs and the Nitro token, for gamers, NFT collectors and investors. Its scope: \"idea to product, conceptualisation, art direction, sketching and modeling, MVP launch plan, game and website design, and post-launch enhancements.\" Discovery and stakeholder interviews led to user flows and a whitepaper; professional gamers validated the result. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>.</p>"
+    },
+    {
+      "h2": "How does our game UI/UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our game UI/UX design process takes a game studio from discovery to engine-ready handoff in 8–16 weeks (40–80 working days) and 5 steps,</strong> with the first designs in 1–2 weeks.",
+      "items": [
+        {
+          "title": "Discovery and product strategy (5–10 days)",
+          "body": "Stakeholder interviews set the core loop, target audiences and success metrics. Our guide shows <a href=\"/blog/is-discovery-phase-worth-it/\">what a discovery phase settles before screens</a>."
+        },
+        {
+          "title": "User research (5–15 days)",
+          "body": "Designers interview target players and review competitor games to find where onboarding, menus and purchases lose them."
+        },
+        {
+          "title": "Information architecture and flows (5–10 days)",
+          "body": "The team maps the menus, the FTUE flow and the purchase flow before any screen is drawn."
+        },
+        {
+          "title": "Prototype and validation (10–20 days)",
+          "body": "Five players per round playtest a clickable Figma prototype, the way our <a href=\"/services/usability-testing-services/\">usability testing services</a> run sessions, so friction surfaces before engine work starts."
+        },
+        {
+          "title": "UI design and handoff (15–25 days)",
+          "body": "Designers finish the HUD and every screen state, then hand Figma specs and sliced UI assets to the Unity engine or Unreal Engine team, with Web Content Accessibility Guidelines (WCAG) 2.2 level AA on web surfaces."
+        }
+      ]
+    },
+    {
+      "h2": "Game UI/UX design vs game art production",
+      "format": "table",
+      "answer": "<strong>Game UI/UX design decides what players need on each screen and in what order; game art production makes the characters, environments and effects.</strong> Hiring a game UI/UX design company instead of a pure art studio fits when players struggle with flows, not visuals. The table compares both disciplines.",
+      "caption": "Comparison of game UI/UX design and game art production",
+      "columns": [
+        "Criterion",
+        "Game UI/UX design",
+        "Game art production"
+      ],
+      "rows": [
+        [
+          "Main question",
+          "What do players need on each screen, and in what order?",
+          "What do the characters, environments and effects look like?"
+        ],
+        [
+          "Inputs",
+          "Player research, stakeholder interviews and user flows",
+          "Concept briefs, style guides and visual references"
+        ],
+        [
+          "Outputs",
+          "Flows, clickable prototypes, UI screens, specs and sliced UI assets in Figma",
+          "3D models, textures, animation and visual effects"
+        ],
+        [
+          "Validation",
+          "Playtests with 5 players per round on a prototype",
+          "Art reviews against the style guide"
+        ],
+        [
+          "When to hire",
+          "Players get lost in menus, quit during the FTUE or skip the in-game store",
+          "The game needs more characters, environments or effects"
+        ],
+        [
+          "Who does it",
+          "Our senior design team, including art direction for UI and brand, as on Nitro League",
+          "Your art team or an art studio; we do not sell large-scale asset production"
+        ]
+      ]
+    },
+    {
+      "h2": "How much do game UI/UX design services cost?",
+      "format": "paragraph",
+      "answer": "<strong>Game UI/UX design services cost a game studio $60,000–$180,000 over 8–16 weeks for a full product, or $25,000–$60,000 over 4–8 weeks for a UI sprint on 1–2 surfaces.</strong>",
+      "body": "<p>A full engagement uses 3–6 designers and covers game UI, website and game marketplace; a sprint uses 2–4. Price follows the number of screens and states, target platforms (iOS, Android and web), playtest rounds and website scope. A live game with weak in-game store or FTUE conversion starts with an audit of the live game: $5,000–$15,000 over 2–3 weeks via our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
+    },
+    {
+      "h2": "Which platform and accessibility standards shape game UI?",
+      "format": "list",
+      "answer": "<strong>Five platform and accessibility standards shape game UI design services for mobile and web games, and each one changes what players see on screen:</strong>",
+      "items": [
+        "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-games\">Apple Human Interface Guidelines</a>: the designing-for-games and game controls pages cover touch controls and game controller support, so on-screen controls are planned per device.",
+        "<a href=\"https://developer.apple.com/app-store/review/guidelines/\">App Store Review Guidelines</a> 3.1.1: apps offering a loot box or other randomized virtual items for purchase must disclose the odds of receiving each type of item before purchase, so the in-game store shows odds on the offer screen.",
+        "<a href=\"https://support.google.com/googleplay/android-developer/answer/9858738\">Google Play</a> payments policy: games that sell randomized virtual items must clearly disclose the odds of receiving them in advance of purchase.",
+        "<a href=\"https://learn.microsoft.com/en-us/gaming/accessibility/guidelines\">Xbox Accessibility Guidelines</a> and the <a href=\"https://gameaccessibilityguidelines.com/\">Game Accessibility Guidelines</a>: both cover subtitles and control remapping, so settings menus offer readable subtitles and remappable controls.",
+        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: the game website and NFT marketplace need keyboard access, visible focus and 4.5:1 text contrast."
+      ]
+    },
+    {
+      "h2": "FAQs about game UI/UX design services",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions a game studio asks most before buying game UI/UX services.</strong>",
+      "faqs": [
+        {
+          "q": "Do you build the game UI in Unity or Unreal Engine?",
+          "a": "<p>No. Our designers deliver Figma screens, specs and sliced UI assets, and the game studio's Unity engine or Unreal Engine developers build them. The specs list every screen state, so developers do not have to guess how a locked or reward screen looks.</p>"
+        },
+        {
+          "q": "Can you redesign the UI of a game that is already live?",
+          "a": "<p>Yes. Start with an audit of the live game, $5,000–$15,000 over 2–3 weeks, that reviews the in-game store, FTUE and menu flows against player reviews and analytics. Its prioritized findings then scope a UI sprint.</p>"
+        },
+        {
+          "q": "Is game UI design outsourcing possible for only the HUD and menus?",
+          "a": "<p>Yes. A UI sprint of $25,000–$60,000 over 4–8 weeks covers 1–2 surfaces, for example the HUD and menus, and ends with a playtested prototype. Game UX design outsourcing works the same way: research, flows and playtests come to us while the game studio keeps engine implementation in-house.</p>"
+        },
+        {
+          "q": "Do you design mobile game UI for iOS and Android?",
+          "a": "<p>Yes. Mobile game UI design follows the Apple Human Interface Guidelines and Google Play policies, with touch targets of 44×44 pt on iOS and 48×48 dp on Android. The game website around the app follows WCAG 2.2 level AA.</p>"
+        },
+        {
+          "q": "Have you designed a web3 or play-to-earn game?",
+          "a": "<p>Yes. Nitro League is a play-to-earn racing game with an NFT marketplace, a 3D garage, and tokenomics and IDO (initial decentralized exchange offering) launch screens; its platform also includes a metaverse where users buy and sell properties, production factories and garages. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>, or see <a href=\"/industries/startups/\">Startups UI UX design</a> for pre-launch teams.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "Nitro League",
+      "play-to-earn (P2E)",
+      "NFT marketplace",
+      "heads-up display (HUD)",
+      "first-time user experience (FTUE)",
+      "in-game store",
+      "battle pass",
+      "loot box",
+      "3D garage",
+      "tokenomics",
+      "whitepaper",
+      "metaverse",
+      "Unity engine",
+      "Unreal Engine",
+      "Figma",
+      "playtesting",
+      "Apple Human Interface Guidelines",
+      "App Store Review Guidelines",
+      "Google Play",
+      "Xbox Accessibility Guidelines",
+      "Game Accessibility Guidelines",
+      "Web Content Accessibility Guidelines (WCAG)"
+    ],
+    "ngrams": [
+      "game ui/ux design services",
+      "heads-up display",
+      "in-game store",
+      "first-time user experience",
+      "loot box odds",
+      "sliced ui assets"
+    ],
+    "skipgrams": [
+      "hud … readable",
+      "loot box … odds",
+      "playtest … players",
+      "figma … engine"
+    ],
+    "nlpKeywords": [
+      "game studio",
+      "screen states",
+      "touch targets",
+      "controls remapping",
+      "subtitle settings",
+      "game economy",
+      "engine handoff",
+      "battle pass"
+    ]
+  },
+  "mentions": [
+    "Nitro League",
+    "play-to-earn (P2E)",
+    "NFT marketplace",
+    "heads-up display (HUD)",
+    "first-time user experience (FTUE)",
+    "in-game store",
+    "battle pass",
+    "loot box",
+    "3D garage",
+    "tokenomics",
+    "whitepaper",
+    "metaverse",
+    "Unity engine",
+    "Unreal Engine",
+    "Figma",
+    "playtesting",
+    "Apple Human Interface Guidelines",
+    "App Store Review Guidelines",
+    "Google Play",
+    "Xbox Accessibility Guidelines",
+    "Game Accessibility Guidelines",
+    "Web Content Accessibility Guidelines (WCAG)"
+  ],
+  "relatedServices": [
+    "digital-product-design-services",
+    "mobile-app-ui-ux-design-services",
+    "ui-ux-web-design",
+    "interaction-design-agency",
+    "usability-testing-services",
+    "ui-ux-design-services-for-startups"
+  ]
+}
