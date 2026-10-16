@@ -71,7 +71,7 @@
         },
         {
           "title": "In-game store.",
-          "body": "Currencies, bundles and the battle pass get clear prices, and every loot box shows its odds before purchase, as Apple and Google Play require."
+          "body": "Currencies, bundles and the battle pass get clear prices, and loot box odds appear before purchase, as Apple and Google Play require."
         },
         {
           "title": "Game website and marketplace.",
@@ -106,12 +106,12 @@
       "h2": "What did game UI/UX design deliver for Nitro League?",
       "format": "paragraph",
       "answer": "<strong>Our video game UX design shaped the racing game, 3D garage and NFT marketplace website for Nitro League players, and the project secured $5M in funding within 3 months.</strong>",
-      "body": "<p>Nitro League is a decentralized play-to-earn racing game built on upgradeable NFTs and the Nitro token, for gamers, NFT collectors and investors. Its scope: \"idea to product, conceptualisation, art direction, sketching and modeling, MVP launch plan, game and website design, and post-launch enhancements.\" Discovery and stakeholder interviews led to user flows and a whitepaper; professional gamers validated the result. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>.</p>"
+      "body": "<p>Nitro League is a decentralized play-to-earn racing game built on upgradeable NFTs and the Nitro token, for gamers, NFT collectors and investors. Its scope: \"idea to product, conceptualisation, art direction, sketching and modeling, MVP [minimum viable product] launch plan, game and website design, and post-launch enhancements.\" Discovery and stakeholder interviews led to user flows and a whitepaper; professional gamers validated the result. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>.</p>"
     },
     {
       "h2": "How does our game UI/UX design process work?",
       "format": "steps",
-      "answer": "<strong>Our game UI/UX design process takes a game studio from discovery to engine-ready handoff in 8–16 weeks (40–80 working days) and 5 steps,</strong> with the first designs in 1–2 weeks.",
+      "answer": "<strong>Our game UI/UX design services take a game studio from discovery to engine-ready handoff in 8–16 weeks (40–80 working days) and 5 steps,</strong> with the first designs in 1–2 weeks.",
       "items": [
         {
           "title": "Discovery and product strategy (5–10 days)",
@@ -138,7 +138,7 @@
     {
       "h2": "Game UI/UX design vs game art production",
       "format": "table",
-      "answer": "<strong>Game UI/UX design decides what players need on each screen and in what order; game art production makes the characters, environments and effects.</strong> Hiring a game UI/UX design company instead of a pure art studio fits when players struggle with flows, not visuals. The table compares both disciplines.",
+      "answer": "<strong>Game UI/UX design services decide what players need on each screen and in what order; game art production makes the characters, environments and effects.</strong> Hiring a game UI/UX design company instead of a pure art studio fits when players struggle with flows, not visuals. The table compares both disciplines.",
       "caption": "Comparison of game UI/UX design and game art production",
       "columns": [
         "Criterion",
@@ -219,7 +219,7 @@
         },
         {
           "q": "Have you designed a web3 or play-to-earn game?",
-          "a": "<p>Yes. Nitro League is a play-to-earn racing game with an NFT marketplace, a 3D garage, and tokenomics and IDO (initial decentralized exchange offering) launch screens; its platform also includes a metaverse where users buy and sell properties, production factories and garages. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>, or see <a href=\"/industries/startups/\">Startups UI UX design</a> for pre-launch teams.</p>"
+          "a": "<p>Yes. Nitro League is a play-to-earn racing game with an NFT marketplace, a 3D garage, and tokenomics and IDO (initial decentralized exchange offering) launch screens; its platform also includes a metaverse where users buy and sell properties, production factories and garages. Read the <a href=\"/case-studies/nitro/\">Nitro League case study</a>, or see <a href=\"/industries/startups/\">startups UI UX design</a> for pre-launch teams.</p>"
         }
       ]
     }
