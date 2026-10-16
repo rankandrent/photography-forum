@@ -6,7 +6,7 @@ client: Nitro League
 logo: Nitro
 result: "Play-to-earn racing game that secured $5M in 3 months"
 services: [digital-product-design-services, ui-ux-web-design, ui-ux-design-services-for-startups]
-industries: []
+industries: [gaming]
 tags: [Web3 gaming, NFT marketplace, Play-to-earn]
 results:
   - { value: "$5M", label: "funding secured" }

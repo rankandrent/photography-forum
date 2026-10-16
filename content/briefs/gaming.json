@@ -1,0 +1,367 @@
+{
+  "slug": "gaming",
+  "pageType": "industry",
+  "target": "content/industries/gaming.json",
+  "route": "/industries/gaming/",
+  "templateFrom": "content/industries/_template.json, filled in the house pattern of content/industries/saas.json (anchor, keywords, centralEntity, sourceContext, priceRange, abstract, sections[], semantic{entities, ngrams, skipgrams, nlpKeywords}, mentions, relatedServices, stats)",
+  "keyword": "game ui/ux design services",
+  "volume": 150,
+  "kd": null,
+  "kdNote": "The orchestrator's Ahrefs pull did not give KD for this exact term. Not estimated. Related terms in the same pull: game ux design KD 6, video game ux design KD 7, mobile game ui design KD 0, mobile game ux design KD 0, ui ux game design KD 30, gaming ui ux design KD 52.",
+  "dataSource": "Ahrefs API v3 keywords-explorer, US, 2026-10-16",
+  "keywordWhy": "Commercial service intent, 150/mo, matches the site's '<entity> services' hub pattern, and covers the same intent as 'game ui/ux services' (150) and 'game ui ux design services' (100), which the on-page script treats as the same words. 'game ui/ux design company' (200) has a higher volume but reads badly in an H1 and a definition. It is used as a secondary ('a game UI/UX design company'). 'game ui design' (350, KD 0) is design-inspiration intent (galleries, tutorials), so it was rejected as the primary. Page 1 for the primary (WebSearch, 2026-10-16) is all vendor service pages: games.cubix.co, pixune.com, pinglestudio.com, innovecsgames.com, zatun.com and ilogos.biz. That confirms commercial intent.",
+  "rejectedKeywords": [
+    { "keyword": "game ui design", "why": "350/mo, but the intent is informational and design inspiration. A service page would not satisfy it. Use the phrase only inside 'game UI design services' and 'game UI design agency'." },
+    { "keyword": "game ui/ux design company", "why": "200/mo. Higher volume, but as an H1 or definition the phrase is awkward. It is a secondary with a carrier." },
+    { "keyword": "gaming ui ux design", "why": "40/mo, KD 52. Low volume, hardest term in the set." },
+    { "keyword": "ui ux game design", "why": "80/mo, KD 30. The intent mixes in game design (mechanics), which we do not sell." }
+  ],
+  "secondary": [
+    "game UI/UX design company",
+    "game UI design agency",
+    "video game UI design services",
+    "game UI design services",
+    "game UI design outsourcing",
+    "game UX design outsourcing",
+    "mobile game UI design",
+    "mobile game UX design",
+    "UI UX design for games",
+    "video game UX design"
+  ],
+  "keywordCarrier": {
+    "spellingNote": "anchor (lower-cased by scripts/onpage-audit.mjs) = 'game UI/UX design services'. has() needs every keyword word longer than 2 letters, and norm() keeps the slash, so the token must print literally as 'UI/UX' (slash, no spaces). 'UI UX', 'UX/UI' and 'UI / UX' do NOT count for the title, H1, description, lead or keyword count. kwCount counts the exact phrase 'game ui/ux design services'. Plural 'games UI/UX…' does not count.",
+    "anchorField": "\"anchor\": \"game UI/UX design services\" (pageMetadata puts anchorOf(i) first in meta keywords, so meta-keywords-keyword passes automatically). Do not add the anchor again as keywords[0]. keywords[] starts with the first secondary.",
+    "inBody": [
+      "Our game UI/UX design services plan and design the screens players touch…",
+      "game UI/UX design services cover the HUD, menus, onboarding, store and the game website",
+      "game UI/UX design services run as a 4–8 week sprint or an 8–16 week full engagement"
+    ],
+    "secondaryCarriers": {
+      "game UI/UX design company": "hiring a game UI/UX design company instead of a pure art studio",
+      "game UI design outsourcing": "game UI design outsourcing works best when the studio keeps engine implementation in-house",
+      "game UX design outsourcing": "game UX design outsourcing covers research, flows and playtests, not level design",
+      "video game UI design services": "video game UI design services for the HUD and menus",
+      "mobile game UI design": "mobile game UI design sizes touch targets for thumbs during play"
+    },
+    "avoid": "Do not stack a noun after the keyword ('game UI/UX design services project/cost/team'). For compounds, write 'a game UI/UX engagement' or 'a game UI sprint'. Cost H2: 'How much do game UI/UX design services cost?' (the keyword ends before 'cost', which is grammatical).",
+    "density": "Industry page visible body is about 1,300–1,600 words incl. template blocks. Use the exact keyword 7–9 times: hero sub, abstract, about 4 H2s, cost answer and 1–2 FAQs. kwCount must be at least half of the top rival entity, so keep 'Nitro League', 'heads-up display (HUD)' (both forms count: 'HUD' too), 'NFT marketplace' and 'in-game store' at 10 uses or fewer each. 'game' and 'design' alone are not rivals (their words sit inside the keyword).",
+    "h2Salience": "At least 40% of rendered H2s must carry the keyword or a keyword word. The template adds 'Gaming UI UX case studies', 'UI UX design services for gaming' and the FAQ H2. Note that 'gaming' does NOT contain 'game', so those pass only on 'design'. Put the full keyword in at least 4 section H2s (see outline)."
+  },
+  "centralEntity": "game UI/UX design services",
+  "entities": [
+    "Nitro League",
+    "play-to-earn (P2E)",
+    "NFT marketplace",
+    "heads-up display (HUD)",
+    "first-time user experience (FTUE)",
+    "in-game store",
+    "battle pass",
+    "loot box",
+    "3D garage",
+    "tokenomics",
+    "whitepaper",
+    "metaverse",
+    "Unity engine",
+    "Unreal Engine",
+    "Figma",
+    "playtesting",
+    "Apple Human Interface Guidelines",
+    "App Store Review Guidelines",
+    "Google Play",
+    "Xbox Accessibility Guidelines",
+    "Game Accessibility Guidelines",
+    "Web Content Accessibility Guidelines (WCAG)"
+  ],
+  "entityNotes": "Literal forms. 'Unity engine' (not bare 'Unity'): countIn() is a substring count and 'community' contains 'unity', so a bare 'Unity' entity would be inflated by every 'community' and become a false rival. Write 'Unity engine' every time, and use 'community' at most twice. 'loot box' also matches 'loot boxes'. 'playtesting' must print in that form at least once ('playtest' alone does not match). Keep generic high-frequency nouns ('players', 'gamers', 'game') out of entities.",
+  "attributes": [
+    "full game design engagement ($60,000–$180,000 over 8–16 weeks, 3–6 designers)",
+    "UI sprint ($25,000–$60,000 over 4–8 weeks, 2–4 designers)",
+    "audit of a live game ($5,000–$15,000 over 2–3 weeks)",
+    "time to first design (1–2 weeks)",
+    "target platforms (iOS, Android and web)",
+    "engine handoff (Figma specs and sliced UI assets for the studio's Unity engine or Unreal Engine developers)",
+    "playtest rounds (5 players per round on a clickable prototype)",
+    "screen states (default, loading, error, empty, locked and reward)",
+    "accessibility level (WCAG 2.2 AA on web surfaces; Xbox and Game Accessibility Guidelines inside the game)",
+    "monetization disclosure (loot box odds shown before purchase)",
+    "audiences served (players, collectors and investors)"
+  ],
+  "bindings": {
+    "synonyms": [
+      "game UI design services",
+      "video game UX design",
+      "UI UX design for games",
+      "game interface design"
+    ],
+    "plural": [
+      "game UI/UX design company",
+      "game UI/UX services",
+      "mobile game UI design",
+      "mobile game UX design"
+    ],
+    "parent": [
+      "digital product design services",
+      "UI UX design services"
+    ],
+    "children": [
+      "heads-up display (HUD)",
+      "menus and settings",
+      "first-time user experience (FTUE)",
+      "inventory and garage screens",
+      "in-game store",
+      "game website and marketplace"
+    ],
+    "related": [
+      "playtesting",
+      "game economy",
+      "Unity engine",
+      "Unreal Engine",
+      "Figma",
+      "Game Accessibility Guidelines"
+    ],
+    "usage": "Use each synonym at least once. Name the parent 'digital product design services' in the abstract or the definition section, linked. Give each child its own list item in the 'Which game screens…' section."
+  },
+  "essential": [
+    "game UI/UX design services",
+    "players",
+    "game studio"
+  ],
+  "essentialNote": "The first sentence under every H2 (the bold answer) names 'game UI/UX design services' or a synonym, plus 'players' or 'game studio'.",
+  "queryVariants": [
+    "game ui/ux design services",
+    "game ui design agency",
+    "game ui design outsourcing",
+    "video game ui design services",
+    "mobile game ux design"
+  ],
+  "queryVariantsAnswer": "One answer for all: a senior product design team (since 2017, 200+ products) designs the UI and UX layer of a game. That covers the HUD, menus, FTUE, inventory, in-game store, website and marketplace. The work is research, flows, Figma screens, a clickable prototype and playtest rounds. The studio's engine team implements it. It is priced as a $25,000–$60,000 UI sprint (4–8 weeks) or a $60,000–$180,000 full engagement (8–16 weeks), with a $5,000–$15,000 audit for a live game. Gaming proof: Nitro League only.",
+  "ambiguous": [
+    { "word": "game", "context": "video game, players or game studio (not 'game plan' or game theory)" },
+    { "word": "token", "context": "'Nitro token' or crypto token vs 'design tokens' in the handoff. Never use the bare word 'token'." },
+    { "word": "store", "context": "'in-game store' vs 'App Store' vs 'Google Play'. Never use the bare word 'store'." },
+    { "word": "play", "context": "'Google Play' (the store) vs 'gameplay' or 'play-to-earn'" },
+    { "word": "HUD", "context": "'heads-up display (HUD)' at first use (HUD is also the US Department of Housing and Urban Development)" },
+    { "word": "console", "context": "'game console' (the saas page uses 'admin console'). Avoid the word unless it says 'game console'." },
+    { "word": "level", "context": "'WCAG 2.2 level AA' vs a game level. Say which." },
+    { "word": "economy", "context": "'game economy' or 'in-game economy'" },
+    { "word": "marketplace", "context": "'NFT marketplace' or 'game marketplace'" },
+    { "word": "garage", "context": "'3D garage' inside Nitro League (a game space, not a building)" },
+    { "word": "testing", "context": "'playtesting' or 'prototype playtests with players' (not game QA or bug testing)" }
+  ],
+  "siteFacts": {
+    "company": [
+      "Remote-first US UI/UX agency, HQ Reston, VA, in business since 2017, 200+ products designed (RULES.md confirmed facts).",
+      "Time to first design: 1–2 weeks (home.ts compare table)."
+    ],
+    "engagements_homeTs": [
+      "UX audit: $5,000–$15,000, 2–3 weeks, 1–2 designers",
+      "Research & UX design sprint: $25,000–$60,000, 4–8 weeks, 2–4 designers",
+      "Full design & design system: $60,000–$180,000, 8–16 weeks, 3–6 designers",
+      "Embedded design team: $15,000–$40,000/mo, ongoing, 2–5 designers"
+    ],
+    "parentHub": "digital-product-design-services.json: $60,000–$180,000, 8–16 weeks (40–80 working days), 5 steps: Discovery and product strategy (5–10 days), User research (5–15 days), Information architecture and flows (5–10 days), Prototype and validation (10–20 days, 5 users per round on Maze, SUS score), UI design and handoff (15–25 days, WCAG 2.2 AA). 6 deliverables: product strategy, user research report, IA, clickable prototype, UI design, developer handoff package. FAQ: 'Do digital product designers write code? No.'",
+    "mobileHub": "mobile-app-ui-ux-design-services.json: $25,000–$60,000, 4–8 weeks, 5 users per round, touch targets 44×44 pt (iOS) and 48×48 dp (Android), Apple HIG and Material Design 3, handoff to Swift, Kotlin, React Native or Flutter.",
+    "priceRangeField": "$60,000–$180,000 (same as saas.json; the full engagement). The body states the $25,000–$60,000 sprint and the $5,000–$15,000 audit once each, with the home.ts wording.",
+    "processRule": "The page's process step durations must match the parent hub's 5 steps (above), with game examples. Do not invent a different day split.",
+    "conflicts": [
+      "BUILD vs DESIGN: home.ts FAQ 'We deliver design and development' vs digital-product-design-services FAQ 'Do digital product designers write code? No.' (known open conflict). For this page, follow the hub and the orchestrator: deliverables are Figma screens, specs and sliced UI assets, and the studio's Unity engine or Unreal Engine developers implement them. Never claim engine programming, a build or porting.",
+      "AUDIT TEAM SIZE: home.ts says '1–2 designers' and ux-audit-services says 2 designers review independently. Do not state an audit team size.",
+      "CASE-STUDY RAIL (honesty, template): app/industries/[slug]/page.tsx shows caseStudiesForIndustry('gaming'). Nitro's frontmatter has 'industries: []', so the rail falls back to ALL featured case studies (Parents Connect, TradeZella…) under the H2 'Gaming UI UX case studies'. That implies non-game clients are gaming work and fails honesty. Orchestrator action (outside this brief's write scope): set 'industries: [gaming]' in content/case-studies/nitro.md before or with publishing, so the rail shows Nitro only.",
+      "SEATTLE/LA COPY: ux-design-agency-seattle.json lists 'Gaming, for example launchers, account systems and storefronts for studios in Bellevue and Redmond', and LA lists 'launchers, companion apps and in-game stores'. Those are capability examples, not clients. This page must not echo them as past work ('we designed launchers for studios'). Name only Nitro as gaming work.",
+      "OG IMAGE: pageMetadata uses /og/industries/gaming.png, and public/og/industries/ has no files in the repo (probably generated at build). Check that the build makes it."
+    ]
+  },
+  "proof": {
+    "caseStudy": "/case-studies/nitro/ (content/case-studies/nitro.md). The ONLY gaming proof. No other gaming client may be claimed or implied.",
+    "supports": [
+      "Nitro League is a decentralised play-to-earn (P2E) racing game powered by upgradeable NFTs and the Nitro token, built for 3 audiences: gamers, NFT collectors and investors.",
+      "Scope (quote exactly): idea to product, conceptualisation, art direction, sketching and modeling, MVP launch plan, game and website design, and post-launch enhancements.",
+      "Experiences designed: a 2D simulation game (core racing loop), an immersive 3D garage where players inspect, upgrade and show off cars and the community gathers, a lineup of race-ready cars designed to read as collectibles, a marketing website (game, roadmap, whitepaper, tokenomics) that leads players and investors into the NFT marketplace, and a garage and cars collection UI shown on a mobile screen.",
+      "Method: product discovery and stakeholder interviews, then user flows and a detailed whitepaper, then branding workshops for the visual identity. CG artists visualised the gameplay, design thinking shaped the garage and the website, and professional gamers validated the result.",
+      "Tokenomics and IDO launch screens were designed (image caption 'Tokenomics and IDO launch design').",
+      "Result (quote exactly): secured $5M in funding within 3 months. Also: strategic NFT sales spread awareness, and the upgradeable NFTs came with 3D and AR/VR visuals."
+    ],
+    "doesNotSupport": [
+      "Engine work (Unity, Unreal or any code), game programming, porting, multiplayer or netcode.",
+      "Art production at scale (full asset pipelines, animation, VFX, character rigs). The case says 'art direction' and 'sketching and modeling' only. Repeat those words, never expand them.",
+      "Console or PC titles, console certification (TRC/XR/Lotcheck), platform submission, game QA or bug testing, live-ops management.",
+      "Designing the token economics or setting the allocation numbers. Say we designed the tokenomics and IDO launch screens. Do not reprint the allocation table as our design decision.",
+      "Building AR/VR experiences (the result line says the NFTs 'came with 3D and AR/VR visuals'; do not say we built AR/VR).",
+      "Attributing the $5M to design alone. Write it as the project's reported result.",
+      "Any count of games shipped, game studio clients, player numbers, retention or DAU uplifts, or awards for gaming."
+    ],
+    "otherCaseStudies": "Parents Connect (/case-studies/parents-connect/) designed community patterns (forums, follow, real-time chat, reactions, events calendar; +45% forum participation). Use it at most once, as 'outside games, the same community patterns…', never called a game or gaming client. Optional. Skip it if the section runs over 70 words. No other case study is relevant.",
+    "quotes": "Nitro has no client quote. Do not create a testimonial."
+  },
+  "metaPlan": {
+    "title": "Gaming",
+    "order": 7,
+    "anchor": "game UI/UX design services",
+    "metaTitle": "Game UI/UX Design Services | HUD, Menus & In-Game Stores",
+    "metaTitleLength": 56,
+    "metaDescription": "Game UI/UX design services for mobile and web3 games: HUD, menus, onboarding, in-game stores and NFT marketplaces, playtested. Book a free consultation.",
+    "metaDescriptionLength": 152,
+    "h1": "Game UI/UX design services for HUDs, menus, stores and game websites",
+    "eyebrow": "Game UI/UX design",
+    "heroSub": "Our game UI/UX design services plan and design the screens players touch: the heads-up display (HUD), menus, onboarding, inventory, in-game store and the game website. One senior team takes a game studio from concept to playtested, engine-ready Figma designs.",
+    "heroSubNote": "The lead check reads the first 60 words after the H1, so the hero sub must contain the exact keyword in its first sentence (as above).",
+    "summary": "UI and UX design for game studios: HUD, menus, onboarding, stores and game websites, tested with players.",
+    "keywordsField": ["game UI/UX design company", "game UI design agency", "video game UI design services", "game UI design outsourcing", "mobile game UI design", "mobile game UX design", "UI UX design for games"],
+    "relatedServices": ["digital-product-design-services", "mobile-app-ui-ux-design-services", "ui-ux-web-design", "interaction-design-agency", "usability-testing-services", "ui-ux-design-services-for-startups"],
+    "stats": [
+      { "value": "$5M", "label": "funding Nitro League secured within 3 months" },
+      { "value": "200+", "label": "products designed since 2017" }
+    ],
+    "abstract": "Pattern: 'Game UI/UX design services shape the user interface (UI) and user experience (UX) of a video game, from the heads-up display (HUD) to the in-game store and the game website. They are part of our digital product design services. A full game engagement runs 8–16 weeks, costs $60,000–$180,000, and ends with playtested Figma designs the studio's engine team implements.' Link 'digital product design services' to /services/digital-product-design-services/."
+  },
+  "outline": [
+    {
+      "h2": "What are game UI/UX design services?",
+      "format": "paragraph",
+      "answerHint": "Bold definition: game UI/UX design services plan how players move through a game (UX) and design what they see and touch (UI): HUD, menus, onboarding, store, website. Body: UI vs UX for games, synonym 'game interface design', parent link, and that the studio's Unity engine or Unreal Engine developers implement the designs (we deliver Figma specs).",
+      "points": ["definition with UI and UX expanded", "synonyms: game UI design services, game interface design", "parent: digital product design services (link)", "engine handoff, no code claim"]
+    },
+    {
+      "h2": "Which game screens do our game UI/UX design services cover?",
+      "format": "list",
+      "answerHint": "Bold: 6 parts of a game. One item per child with a concrete example.",
+      "points": [
+        "Heads-up display (HUD): health, speed, map, timers readable at a glance during motion",
+        "Menus and settings: main menu, pause, controls remapping, audio and subtitle settings",
+        "First-time user experience (FTUE): the first session, from launch to the first win, teaching controls in play",
+        "Inventory and garage screens: compare, upgrade and equip items (Nitro's 3D garage and cars collection)",
+        "In-game store: currencies, bundles, battle pass, loot box odds shown before purchase",
+        "Game website and marketplace: roadmap, whitepaper, NFT marketplace (Nitro)"
+      ]
+    },
+    {
+      "h2": "What makes UX design for games different from app UX?",
+      "format": "cards",
+      "answerHint": "Bold: UI UX design for games makes the challenge fun and removes friction everywhere else, so players struggle with the game, not the interface. 4 cards.",
+      "points": [
+        "Intended challenge vs interface friction",
+        "Readability in motion: HUD contrast and size during play",
+        "Input variety: touch, controller and keyboard (mobile game UI design sizes thumb zones; the Apple Human Interface Guidelines cover game controls)",
+        "Trust in the game economy: prices, currencies and P2E rewards that players and investors believe (Nitro's investor-trust challenge)"
+      ]
+    },
+    {
+      "h2": "What did game UI/UX design deliver for Nitro League?",
+      "format": "paragraph",
+      "answerHint": "Bold: for Nitro League, a play-to-earn (P2E) racing game, our game UI/UX design work covered the game, a 3D garage and the website with its NFT marketplace, and the project secured $5M in funding within 3 months. Body: 3 audiences, scope line verbatim, discovery to flows to whitepaper to branding, professional gamers validated. Link /case-studies/nitro/. Only facts from proof.supports.",
+      "points": ["3 audiences", "scope verbatim", "method chain", "result framed as project result"]
+    },
+    {
+      "h2": "How does our game UI/UX design process work?",
+      "format": "steps",
+      "answerHint": "Bold: game UI/UX design services take 8–16 weeks (40–80 working days) in 5 steps, from discovery to engine-ready handoff. Use the parent hub's 5 step names and day ranges, with game examples.",
+      "points": [
+        "Discovery and product strategy (5–10 days): stakeholder interviews, core loop, audiences, success metrics",
+        "User research (5–15 days): interviews with target players, review of competitor games",
+        "Information architecture and flows (5–10 days): menu map, FTUE flow, store flow",
+        "Prototype and validation (10–20 days): clickable Figma prototype, playtesting with 5 players per round",
+        "UI design and handoff (15–25 days): HUD and screen states, sliced UI assets and specs for the Unity engine or Unreal Engine team, WCAG 2.2 AA on web surfaces"
+      ]
+    },
+    {
+      "h2": "Game UI/UX design vs game art production",
+      "format": "table",
+      "answerHint": "Intro sentence before the table. Bold: game UI/UX design decides what players need on each screen and in what order; game art production makes the characters, environments and effects. Columns: Criterion | Game UI/UX design | Game art production. Rows: main question, inputs (player research, flows), outputs (flows, prototypes, UI screens, specs vs models, textures, animation), testing (playtests on a prototype vs art reviews), when to hire. Compare disciplines, not named vendors. Honest line: we do art direction for the UI and brand (Nitro) and do not sell large-scale asset production.",
+      "points": ["discipline comparison, no competitor names", "sets scope honesty", "carrier for 'game UI design outsourcing'"]
+    },
+    {
+      "h2": "How much do game UI/UX design services cost?",
+      "format": "paragraph",
+      "answerHint": "Bold: game UI/UX design services cost $60,000–$180,000 over 8–16 weeks for a full game product (game UI, website, marketplace), and $25,000–$60,000 over 4–8 weeks for a UI sprint on 1–2 surfaces. Body: price drivers (number of screens and states, platforms, playtest rounds, website/marketplace in scope) plus the audit of a live game at $5,000–$15,000 over 2–3 weeks. Team sizes only from home.ts (2–4 sprint, 3–6 full).",
+      "points": ["home.ts lines only", "no per-screen price", "link /services/ux-audit-services/ for the live-game audit"]
+    },
+    {
+      "h2": "Which platform and accessibility guidelines shape game UI?",
+      "format": "list",
+      "answerHint": "Bold: 5 guidelines shape game UI/UX design services for mobile and web games. Each item is one fact + its effect on screens. Writer must cite the primary URL from externalSources and quote nothing that fact-check cannot match.",
+      "points": [
+        "Apple Human Interface Guidelines (designing for games, game controls): touch controls, controller support, safe areas",
+        "App Store Review Guidelines 3.1.1: loot box odds disclosed before purchase",
+        "Google Play payments policy: randomized items show odds before purchase",
+        "Xbox Accessibility Guidelines and Game Accessibility Guidelines: subtitles, remapping, colour-blind options",
+        "Web Content Accessibility Guidelines (WCAG) 2.2 AA: the game website and marketplace"
+      ]
+    },
+    {
+      "h2": "Game UI/UX design services FAQs",
+      "format": "faq",
+      "answerHint": "Bold: these answers cover the 5 questions game studios ask most about game UI/UX design services.",
+      "points": ["see faqs[]"]
+    }
+  ],
+  "faqs": [
+    { "q": "Do you build the game UI in Unity or Unreal Engine?", "a": "No. Game UI/UX design services deliver Figma screens, specifications and sliced UI assets, and the studio's Unity engine or Unreal Engine developers build them. (Matches the hub's 'designers do not write code'.)" },
+    { "q": "Can you redesign the UI of a game that is already live?", "a": "Yes. Start with an audit of the live game ($5,000–$15,000, 2–3 weeks): store, FTUE and menu flows reviewed against player reviews and analytics, then a UI sprint." },
+    { "q": "Is game UI design outsourcing possible for only the HUD and menus?", "a": "Yes. A UI sprint ($25,000–$60,000, 4–8 weeks) covers 1–2 surfaces, for example the HUD and menus, with a playtested prototype." },
+    { "q": "Do you design mobile game UI for iOS and Android?", "a": "Yes. Mobile game UI design follows the Apple Human Interface Guidelines and Google Play policies, with touch targets of 44×44 pt on iOS and 48×48 dp on Android (mobile hub figures)." },
+    { "q": "Have you designed a web3 or play-to-earn game?", "a": "Yes. Nitro League, a play-to-earn racing game with an NFT marketplace and a 3D garage; link /case-studies/nitro/. One project. Do not pluralise." }
+  ],
+  "linkPlan": {
+    "up": [
+      { "href": "/services/digital-product-design-services/", "anchor": "digital product design services", "where": "abstract or definition section" },
+      { "href": "/", "anchor": "UI UX design services", "where": "optional, once, in the definition body" }
+    ],
+    "acrossServices": [
+      { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services", "where": "challenges card on input or the mobile FAQ" },
+      { "href": "/services/ui-ux-web-design/", "anchor": "UI UX web design", "where": "game website and marketplace item" },
+      { "href": "/services/interaction-design-agency/", "anchor": "interaction design agency", "where": "HUD or menus item (motion and feedback)" },
+      { "href": "/services/usability-testing-services/", "anchor": "usability testing services", "where": "process step 4 (playtesting)" },
+      { "href": "/services/ux-audit-services/", "anchor": "UX audit services", "where": "cost section, live-game audit" }
+    ],
+    "siblings": [
+      { "href": "/industries/startups/", "anchor": "Startups UI UX design", "where": "cost or Nitro section (Nitro is in the startups hub scope)" }
+    ],
+    "down": [
+      { "href": "/case-studies/nitro/", "anchor": "Nitro League case study", "where": "Nitro section and the web3 FAQ" },
+      { "href": "/blog/is-discovery-phase-worth-it/", "anchor": "what a discovery phase settles before screens", "where": "process step 1 (that post uses Nitro as its mini case)" }
+    ],
+    "childrenWithPages": "None of the children (HUD, menus, FTUE, inventory, in-game store, marketplace) has its own page yet. Do not link them.",
+    "inboundForOrchestrator": [
+      { "source": "content/case-studies/nitro.md", "change": "set frontmatter 'industries: [gaming]' (required, honesty: filters the case-study rail) and link one sentence in the Overview to /industries/gaming/ with the anchor 'game UI/UX design services'", "priority": "required" },
+      { "source": "content/locations/ux-design-agency-los-angeles.json (gaming bullet, line ~157)", "change": "link 'Gaming' to /industries/gaming/ with the anchor 'game UI/UX design'", "priority": "required", "why": "already a gaming bullet next to the Nitro link; real topic match" },
+      { "source": "content/locations/ux-design-agency-seattle.json (gaming bullet, line ~168)", "change": "link 'Gaming' to /industries/gaming/ with the anchor 'UI UX design for games'", "priority": "required" },
+      { "source": "content/locations/ux-design-agency-miami.json (crypto and web3 bullet, line ~155)", "change": "skip", "priority": "skip", "why": "the bullet is about crypto wallets and exchanges; one link (Nitro) is enough there" }
+    ],
+    "verified": "All hrefs checked against content/services/*.json, content/industries/startups.json, content/case-studies/nitro.md, content/blog/is-discovery-phase-worth-it.md and app/case-studies/[slug] (route /case-studies/<slug>/)."
+  },
+  "externalSources": [
+    { "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games", "why": "Apple HIG games section (fact-check the exact page title before quoting)" },
+    { "url": "https://developer.apple.com/design/human-interface-guidelines/game-controls", "why": "touch and controller guidance" },
+    { "url": "https://developer.apple.com/app-store/review/guidelines/", "why": "guideline 3.1.1 loot box odds disclosure. Verify current wording." },
+    { "url": "https://support.google.com/googleplay/android-developer/answer/9858738", "why": "Google Play payments policy, randomized virtual items odds. Verify current wording and URL." },
+    { "url": "https://learn.microsoft.com/en-us/gaming/accessibility/guidelines", "why": "Xbox Accessibility Guidelines (no version number unless fact-checked)" },
+    { "url": "https://gameaccessibilityguidelines.com/", "why": "Game Accessibility Guidelines" },
+    { "url": "https://www.w3.org/TR/WCAG22/", "why": "WCAG 2.2 AA for the website and marketplace" }
+  ],
+  "serpGaps": [
+    "Page 1 (cubix, pixune, pingle, innovecs, zatun, ilogos) is art and dev studios. None publishes a price, timeline or team size. We publish ranges.",
+    "None separates UI/UX design from art production and engine work, which is our honest scope line and the table.",
+    "None covers store monetization disclosure rules (loot box odds) or names game accessibility guidelines as design inputs.",
+    "None shows web3 or P2E specifics (investor trust, marketplace, tokenomics screens). Nitro covers that first-hand.",
+    "Competitor claims like '70+ games' (pingle): do not imitate, and do not invent a games count."
+  ],
+  "visuals": [
+    { "type": "hero illustration", "idea": "Game screen map: HUD, menus, FTUE, inventory/garage, in-game store, website and marketplace as connected tiles. Generic shapes, no fake game art." },
+    { "type": "process timeline", "idea": "5 hub steps with game examples and day ranges (8–16 weeks)." },
+    { "type": "comparison graphic", "idea": "Game UI/UX design vs game art production: what each produces." },
+    { "type": "case images", "idea": "Reuse only the existing /work/nitro/*.webp images (mobile-garage-ui, marketing-website, 3d-garage) with their existing captions. No new Nitro mock-ups." }
+  ],
+  "layoutNotes": "Section detail text 50–70 words (90 max). Bold only the direct answer. Every table gets an intro sentence. FAQ last. No collapsed content except the FAQ.",
+  "funnel": "bofu",
+  "serviceSupport": 5,
+  "leadAngle": "The cost section and the 'audit of a live game' FAQ: a studio with a live game and weak store or FTUE conversion wants the $5,000–$15,000 audit; a pre-launch studio wants the UI sprint. The template's lead form and CTA band carry the offer.",
+  "competitorsSeen": [
+    { "domain": "games.cubix.co", "url": "https://games.cubix.co/game-ui-ux-design/" },
+    { "domain": "pixune.com", "url": "https://pixune.com/game-ui-ux-services/" },
+    { "domain": "pinglestudio.com", "url": "https://pinglestudio.com/service/game-ui-ux-design-services" },
+    { "domain": "innovecsgames.com", "url": "https://www.innovecsgames.com/?p=25332" },
+    { "domain": "zatun.com", "url": "https://zatun.com/game-ui-ux-design/" },
+    { "domain": "ilogos.biz", "url": "https://ilogos.biz/ui-ux/" }
+  ],
+  "notes": "Industry page, not a blog post: the variety/fingerprints rules do not apply. Pages were not fetched (WebSearch snippets only); never copy their wording. Do not use competitor numbers ('70+ games'). Every regulation or guideline claim goes to the fact-checker. The 'Gaming' title makes template H2s read 'UI UX design services for gaming' and 'Gaming UI UX case studies'; leave them. competitors.json and learnings were not edited (orchestrator said: no other files)."
+}
