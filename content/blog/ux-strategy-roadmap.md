@@ -25,13 +25,13 @@ image: /blog/ux-strategy-roadmap/cover.svg
 
 In user experience (UX) planning, a UX strategy roadmap fails the moment one of its rows reads like this: "Next quarter: redesign the settings page." Nobody can say who struggles or what proves success. Rewritten as a theme, the same row reads: "Workspace admins cannot invite their team without a support ticket; support tags show it weekly; success is invites finished alone; owner: the design lead."
 
-Leadership funds the second row because it names a user, a problem, evidence, a metric and an owner. Below: the evidence to collect, scoring with RICE (reach, impact, confidence and effort), metrics from the Google HEART framework (happiness, engagement, adoption, retention and task success), horizons, reviews and a one-page example.
+Leadership funds the second row because it names a user, a problem, evidence, a metric and an owner. To build a roadmap of such rows, collect the evidence, score each theme with RICE (reach, impact, confidence and effort), pick a metric from the Google HEART framework (happiness, engagement, adoption, retention and task success), place it on a horizon and review the whole plan quarterly; a one-page example follows.
 
-## What is a UX strategy roadmap, and how does it differ?
+## What is a UX strategy roadmap, and how does it differ from a product roadmap?
 
 **A UX strategy roadmap is a plan that turns a UX strategy into prioritized themes: user problems, each with evidence, a score, a metric, an owner and a horizon.**
 
-Teams still asking "what is UX strategy?" can start with one sentence: the user outcome the business will fund this year. The UX strategy document is the half page that holds it: goal, primary users, the core user problem and success metrics. That prioritized roadmap is the main output of our [UX consulting services](/services/ux-consulting-services/).
+Teams still asking "what is UX strategy?" can start with one sentence: the user outcome the business will fund this year. The UX strategy document is the half page that holds it: goal, primary users, the core user problem and success metrics. The prioritized roadmap is the main output of our [UX consulting services](/services/ux-consulting-services/).
 
 Nielsen Norman Group's Sarah Gibbons describes a [user experience roadmap as a living, strategic plan](https://www.nngroup.com/articles/ux-roadmaps/) that aligns a UX team on upcoming work and the problems to solve, built on user-focused themes rather than features.
 
@@ -57,7 +57,7 @@ If your plan reads like the product roadmap column, rebuild it with the next two
 
 **A UX strategy roadmap needs five inputs before the product team writes a single theme: stakeholder interviews, analytics funnels, past research, support feedback and a UX maturity score.**
 
-First fix the roadmap scope: the products, teams and time span the plan covers. Stakeholder interviews come next, at an interview count of 6–10 leads across product, engineering, sales and support. In Google Analytics 4 (GA4), a [funnel exploration shows where users drop out between steps](https://support.google.com/analytics/answer/9327974) and sets the activation rate baseline. The ledger tags each input with an evidence level (research, analytics or opinion), which later becomes the confidence score in RICE.
+First fix the roadmap scope: the products, teams and time span the plan covers. Stakeholder interviews come next; we set the interview count at 6–10 leads across product, engineering, sales and support. In Google Analytics 4 (GA4), a [funnel exploration shows where users drop out between steps](https://support.google.com/analytics/answer/9327974) and sets the activation rate baseline. The ledger tags each input with an evidence level (research, analytics or opinion), which later becomes the confidence score in RICE.
 
 
 ![Evidence ledger card with five roadmap inputs, what each tells the roadmap and its evidence level tag](/blog/ux-strategy-roadmap/evidence-ledger.svg "Evidence ledger: five inputs and their evidence level")
@@ -238,7 +238,7 @@ Six mistakes undo a UX design roadmap:
 
 Outside help earns its fee when leaders disagree on priorities, nobody has time to collect evidence or the backlog has no shared scoring method. Our engagement delivers the interviews, the RICE and HEART work and the roadmap workshop at an engagement price of $5,000–$15,000 and an engagement duration of 2–3 weeks; our breakdown of [what a UX strategy engagement costs](/services/ux-consulting-services/#how-much-does-ux-consulting-cost) shows the four factors that move the price. Ongoing advisory adds weekly sessions and quarterly roadmap reviews, and interface design work is quoted separately.
 
-A feature list is a fine place to begin, not a reason to wait. Every project begins with a free consultation and a fixed-scope proposal, so [send us your current roadmap or backlog](/contact/) as it stands; rows that still read like "redesign the settings page" are where the rewrite starts.
+Before you book anything, run the intro's test on your own plan: count the rows that name a user, a problem, evidence, a metric and an owner. Every project begins with a free consultation and a fixed-scope proposal, so [send us your current roadmap or backlog](/contact/) with that count; in the consultation we point out which rows are still features and what evidence is missing.
 
 ## FAQs
 
