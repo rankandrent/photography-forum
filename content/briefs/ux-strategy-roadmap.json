@@ -1,0 +1,348 @@
+{
+  "slug": "ux-strategy-roadmap",
+  "keyword": "ux strategy roadmap",
+  "keywordCarrier": {
+    "exactString": "ux strategy roadmap",
+    "spellingNote": "Print it as 'UX strategy roadmap' (plain noun phrase, no hyphen, no slash). Frontmatter `keyword` stays exactly 'ux strategy roadmap'. First meta keyword: 'ux strategy roadmap'. Do not write 'UX-strategy roadmap' or 'UX strategy road map'.",
+    "title": "UX Strategy Roadmap: How to Build One Leadership Will Fund",
+    "titleNote": "58 chars, keyword first. This is the H1.",
+    "metaTitle": "UX Strategy Roadmap: How to Build, Score and Review It",
+    "metaTitleNote": "54 chars, keyword first. Never put 'UX consulting', 'consultant', 'cost' or 'services' in the title: the hub owns 'UX consulting services' and 'How much does UX consulting cost?'.",
+    "description": "UX strategy roadmap guide: turn research into RICE-scored themes, HEART metrics and now-next-later horizons. See an example, then book a consultation.",
+    "descriptionNote": "150 chars (counted by hand: 27 + 39 + 43 + 41). Use as written: keyword first, then what the reader gets, then the MOFU next step (consultation). Pronoun check: no pronouns. No apostrophes. 'See an example' points at the worked one-page example H2 in the post.",
+    "inBody": "Plain noun phrase, works as subject or object. Intro first sentence pattern (before/after row intro, see variety): 'A UX strategy roadmap fails the moment one of its rows reads like this: \"Q2: redesign the settings page.\"' Other carriers, each read aloud: 'a UX strategy roadmap ranks problems, not screens'; 'the UX strategy roadmap gives each theme an owner, a RICE score and one success metric'; 'review the UX strategy roadmap every quarter'; 'the themes on a UX strategy roadmap'. Stack rule: do not put the string in front of a second noun ('UX strategy roadmap template/workshop/review/themes/example') more than twice in the body. 'UX strategy roadmap example' is allowed once, in H2 8, because it carries the secondary 'ux strategy example'. Checked against the outline: H2 8 is the only stacked H2; H2 4 uses 'the themes on a UX strategy roadmap' (no stack).",
+    "secondary": {
+      "ux roadmap": "Plain noun phrase, used as the main synonym. Example: 'A UX roadmap without a strategy statement above it turns into a feature list.' NEEDS VOLUME: not in the orchestrator's Ahrefs pull; supporting phrase only.",
+      "ux strategy example": "Plain noun phrase. Carrier: 'The one-page plan below is a UX strategy example built for an illustrative B2B SaaS onboarding problem.' (Ahrefs 100 / KD 7.)",
+      "ux strategy document": "Plain noun phrase. Carrier: 'The UX strategy document is the half page above the roadmap: goal, users, problem and the metrics that define success.' (Ahrefs 100 / KD 10.)",
+      "what is ux strategy": "Question form, used once in the definition section as a sub-answer only, never as an H2 (it is a future TOFU target, see notes). Carrier: 'If you are still asking what is UX strategy, start with one sentence: the user outcome the business will fund this year.' Rewrite as 'what UX strategy is' if the question form reads badly; the exact form is not required. (Ahrefs 200 / KD 5.)"
+    },
+    "density": "Word-share target 1–2%. The keyword has 3 words, so at about 2,100 body words the maximum is 0.02 x 2,100 / 3 = 14 uses. Aim for 10–13 exact uses (H1, first sentence, 5 H2s, body, closing). H2 salience: 5 of the 10 H2s (incl. FAQs) carry the exact keyword (H2 1, 2, 4, 8, 9) = 50%, above the 40% rule; keep them. Salience (scripts/onpage-audit.mjs): the keyword count must be at least half of the most-mentioned brief entity. 'UX strategy' and 'UX roadmap' are NOT rivals (all their words sit inside the keyword; rivals filter). The rivals to watch are 'RICE prioritization', 'Google HEART framework', 'stakeholder interviews', 'activation rate' and 'product roadmap': keep each under about 20 literal mentions (writers tend to repeat 'product roadmap' in the comparison section and 'activation rate' in the example)."
+  },
+  "secondary": [
+    "ux roadmap",
+    "ux strategy example",
+    "ux strategy document",
+    "what is ux strategy"
+  ],
+  "secondaryNote": "None contains 'vs'. 'ux strategy workshop' (Ahrefs 70 / KD 0) was tested and NOT added: its SERP is paid training events (jaimelevy.com workshops, technikum-wien academy, uie.com playbook), a different intent. The post calls the meeting a 'roadmap workshop' (hub wording) instead.",
+  "intent": "Informational / planning (MOFU). The searcher is a head of product, design lead or founder who has been asked for a UX roadmap (or has a feature list called one) and wants to know what a UX strategy roadmap contains, how to prioritize it and how to get leadership to back it. Commercial pull: the hub sells exactly this deliverable in 2–3 weeks.",
+  "volume": 150,
+  "kd": 2,
+  "dataSource": "Ahrefs API v3, US, 2026-10-17 (matching-terms pulled by the orchestrator; this agent has no Ahrefs access). ux strategy roadmap: volume 150, KD 2. Related (same source): ux strategy 800/0; ux design strategy 700/0; what is ux strategy 200/5; ux strategy definition 150/0; why ux design strategy is important 150/3; ux strategy example 100/7; ux strategy document 100/10; ux strategy workshop 70/0; ux strategy consulting 150/0; ux strategy agency 150/0; ux strategy services 100/0. 'ux roadmap' NEEDS VOLUME (not in the pull). Semrush returned no_api_units on the first call (2026-10-17). SERP study: WebSearch + WebFetch 2026-10-17 (procreator.design, nngroup.com, maze.co and entropik.io fetched in full; bentley.edu returned 403). No docs/data/gsc/latest.json exists.",
+  "hub": "ux-consulting-services",
+  "services": ["ux-consulting-services"],
+  "industries": [],
+  "author": "sahar-asif",
+  "authorWhy": "Sahar Asif (Senior Manager UX | KAM, content/home.ts) owns client-facing planning with leadership, which is what a UX strategy roadmap is. She last wrote web-app-design-rfp, 6 posts ago. Rejected: faizan-khan (Sr. Product Designer) fits product strategy too, but he wrote is-discovery-phase-worth-it and a second strategy-adjacent post from him narrows the spread; keep him for the future TOFU 'what is ux strategy'. ahmad-ullah (Principal UX Designer) wrote 2 of the last 4 audit/testing posts. talha-saleem wrote the last post. shahmir-farooq has still not written; keep him for the usability test report MOFU. Contributor: umar-sarwar (default).",
+  "type": "Guide",
+  "funnel": "mofu",
+  "funnelWhy": "New silo: 0 published posts in ux-consulting-services, so funnel.json says the silo starts with 1 BOFU + 1 MOFU (either order). This is the MOFU one. SERP rule (2026-10-06): page 1 for 'ux strategy roadmap' is how-to and definition pages (nngroup.com/articles/ux-roadmaps, maze.co, entropik.io, procreator.design agency guide, a Medium case study) plus one university UX-center service page (bentley.edu), so the stage is MOFU ('planning the work'), not BOFU. Service-support 5: a reader building this roadmap is the exact buyer of the hub's 2–3 week engagement whose main output is a 'prioritized UX strategy roadmap'. MOFU CTA (case study + consultation) has a real case: Mass Media Co. ran a discovery workshop with stakeholders and users that covered product definition and strategy (content/case-studies/mass-media-co.md). Why not BOFU first: every commercial term in the pull is the hub's head term in another form ('ux strategy consulting', 'ux strategy agency', 'ux strategy services', 'ux consulting firms/company', 'top ux strategy agency' = listicles and service pages), and the hub owns cost, process, deliverables, 'vs UX audit' and 'when to hire'. A BOFU post for this silo needs a non-head angle (see notes).",
+  "serviceSupport": 5,
+  "beats": "https://procreator.design/blog/build-ux-roadmap-for-saas-product/",
+  "alsoOutranks": [
+    "https://maze.co/collections/ux-management/roadmap/",
+    "https://www.entropik.io/blog/ux-road-map",
+    "https://www.nngroup.com/articles/ux-roadmaps/"
+  ],
+  "beatsWhy": "ProCreator (agency blog, Sandesh Subedi, 21 November 2025) is the only agency post on page 1. It names Value vs Effort and MoSCoW without a scoring scale, lists metrics without a framework, has no evidence step, no maturity view, no workshop and no owner/decision rights, and its uplift figures are unsourced. Maze (April 2024) and Entropik have no data, no scoring and no example with numbers; Entropik contradicts itself on review cadence. NN/g (Sarah Gibbons, July 2020) is the authority on structure: cite it, never copy its components list, its 'now/next/future' column wording or its 6-step roadmapping process as our H2 order.",
+  "centralEntity": "UX strategy roadmap (a time-bound plan that turns a UX strategy into prioritized themes, each with the user problem, the evidence behind it, a RICE score, one success metric, an owner and a time horizon)",
+  "bindings": {
+    "synonyms": ["UX roadmap", "user experience roadmap", "UX design roadmap"],
+    "plural": ["UX strategy roadmaps", "UX roadmaps"],
+    "parent": ["UX strategy", "UX consulting services"],
+    "children": ["roadmap themes", "RICE score", "success metric", "time horizons", "theme owner", "review cadence"],
+    "related": ["product roadmap", "fix roadmap", "product backlog", "UX maturity", "stakeholder interviews", "Google HEART framework"],
+    "bindingNote": "Each synonym is printed at least once ('user experience roadmap' fits the definition sentence that expands UX). The parent 'UX strategy' is named in the intro and the definition; 'UX consulting services' is the UP link anchor. Each child gets its own H2, H3 or table row: roadmap themes (H2 3), RICE score (H2 4), success metric (H2 5), time horizons (H2 6), theme owner (H2 7), review cadence (H2 9). Each related concept appears with a fact: product roadmap, fix roadmap and product backlog in the H2 1 comparison table; UX maturity and stakeholder interviews in H2 2; Google HEART framework in H2 5."
+  },
+  "essential": ["UX strategy roadmap", "prioritized themes", "product team"],
+  "essentialNote": "The first sentence under every H2 names 'UX strategy roadmap' (or a synonym) plus 'prioritized themes' or 'product team'. The bold answers in the outline already follow this.",
+  "queryVariants": [
+    "what is a ux strategy roadmap",
+    "how to create a ux roadmap",
+    "what should a ux roadmap include",
+    "how to prioritize a ux roadmap",
+    "ux strategy roadmap example"
+  ],
+  "queryVariantsNote": "One answer site-wide: a UX strategy roadmap = strategy statement on top, then themes scored with RICE, one HEART-based metric per theme, an owner and a now/next/later horizon, agreed in a 2-hour roadmap workshop and reviewed quarterly. This matches the hub (RICE, HEART, 2-hour workshop, quarterly roadmap reviews). H2 1, 4, 8 and the FAQs answer the five variants.",
+  "ambiguous": [
+    { "word": "strategy", "context": "user experience / UX (never business strategy alone): 'UX strategy', 'user experience strategy'" },
+    { "word": "roadmap", "context": "themes, user problems (to separate it from a feature-and-date product roadmap): 'the themes on a UX strategy roadmap'" },
+    { "word": "impact", "context": "RICE score / per user (the RICE input, not business impact in general)" },
+    { "word": "reach", "context": "users per quarter (the RICE input, not marketing reach)" },
+    { "word": "confidence", "context": "evidence level (research, analytics or opinion)" },
+    { "word": "workshop", "context": "roadmap workshop with stakeholders (not a paid UX strategy training workshop)" },
+    { "word": "maturity", "context": "UX maturity, Nielsen Norman Group model" }
+  ],
+  "siteFacts": {
+    "source": "content/services/ux-consulting-services.json (hub) unless stated",
+    "engagement": "UX consulting engagement: 2–3 weeks (10–15 working days), $5,000–$15,000.",
+    "steps": "4 steps: stakeholder interviews (2–3 days, 6–10 leads), product and process review (4–6 days), maturity scoring and strategy (2–4 days; RICE scores and HEART metrics), roadmap workshop (2 days; the roadmap is presented in a 2-hour workshop where owners and dates are agreed).",
+    "deliverables": "6 deliverables: stakeholder interviews, UX maturity assessment, product and analytics review, UX metrics framework (Google HEART), prioritized UX strategy roadmap (RICE, quarter-by-quarter plan), team coaching (4–6 sessions).",
+    "maturity": "Nielsen Norman Group 6-stage UX maturity model; quarterly roadmap reviews develop UX maturity one stage at a time.",
+    "ongoing": "Ongoing advisory: 'as an embedded design team at $15,000–$40,000 per month, with weekly advisory sessions and quarterly roadmap reviews' (hub FAQ wording).",
+    "designWork": "UX consulting does not include interface design work; that is quoted as a design sprint or a full design engagement (hub FAQ).",
+    "priceDrivers": "Number of products, stakeholder interviews, teams coached and the need for ongoing advisory. Example points: 1 product, 6 interviews near $5,000; 3 products, 10 interviews, 2 coached teams near $15,000. Do not restate the examples; deep-link the cost section.",
+    "conflicts": [
+      "home.ts pricing lists 'Embedded design team $15,000–$40,000/mo, Ongoing · 2–5 designers… shipping features every sprint', while the hub sells ongoing UX consulting as that embedded team with 'weekly advisory sessions and quarterly roadmap reviews' and says UX consulting does not include design work. Follow the hub wording; do not state a designer count or say the advisory team ships features.",
+      "home.ts pricing has no 'UX consulting' engagement card; the hub price $5,000–$15,000 equals the UX audit card. State only the hub figure, with the deep link."
+    ]
+  },
+  "entities": [
+    "UX strategy",
+    "product roadmap",
+    "fix roadmap",
+    "product backlog",
+    "stakeholder interviews",
+    "Google Analytics 4 (GA4)",
+    "UX maturity",
+    "Nielsen Norman Group",
+    "Jobs to be Done",
+    "RICE prioritization",
+    "Intercom",
+    "Google HEART framework",
+    "Goals-Signals-Metrics",
+    "activation rate",
+    "task success",
+    "time horizons",
+    "roadmap workshop",
+    "roadmap owner",
+    "confidence score",
+    "objectives and key results (OKRs)",
+    "usability testing",
+    "design debt",
+    "FigJam"
+  ],
+  "entitiesNote": "23 entries, one name each, short form only at the end in brackets. Read aloud as phrases the post will literally print. At least 19 must appear with a real fact or explanation. 'UX strategy' is in the list for coverage but is not a salience rival (its words sit inside the keyword).",
+  "attributes": [
+    "roadmap horizon (now, next or later, in quarters)",
+    "RICE score (reach x impact x confidence / effort)",
+    "theme owner (one named person per theme)",
+    "success metric (one HEART metric per theme)",
+    "evidence level (research, analytics or opinion)",
+    "effort estimate (person-weeks of design and engineering)",
+    "review cadence (monthly check, quarterly review)",
+    "roadmap scope (products, teams and time span covered)",
+    "engagement duration (2–3 weeks, 10–15 working days)",
+    "engagement price ($5,000–$15,000, published on the hub)",
+    "interview count (6–10 stakeholder interviews)"
+  ],
+  "attributesNote": "11 entries. The on-page script reads only the words before '(' and needs 60% of those longer than 3 letters in the text, so the writer must use these label nouns literally: 'roadmap horizon', 'RICE score', 'theme owner', 'success metric', 'evidence level', 'effort estimate', 'review cadence', 'roadmap scope', 'engagement duration', 'engagement price', 'interview count'.",
+  "ngrams": [
+    "ux strategy roadmap",
+    "ux roadmap",
+    "ux strategy",
+    "roadmap themes",
+    "rice score",
+    "success metric",
+    "now next later",
+    "roadmap workshop",
+    "quarterly review",
+    "user problem",
+    "ux consulting services"
+  ],
+  "questions": [
+    "What is a UX strategy roadmap?",
+    "How is a UX roadmap different from a product roadmap?",
+    "What should a UX roadmap include?",
+    "How do you prioritize items on a UX roadmap?",
+    "How do you measure whether a UX roadmap theme worked?",
+    "Who should own the UX roadmap?",
+    "How long does it take to build a UX strategy roadmap?",
+    "How often should you update a UX roadmap?",
+    "What does a UX strategy roadmap example look like?",
+    "What is the difference between a UX strategy document and a UX roadmap?"
+  ],
+  "serpGaps": [
+    "Scoring with numbers: ProCreator names Value vs Effort and MoSCoW without a scale; Maze and Entropik say 'prioritize by impact' with no method; NN/g's components article mentions confidence estimates only. No page shows a worked RICE table for UX themes, or ties the confidence input to the evidence level (usability test or analytics = high, stakeholder opinion = low).",
+    "Metrics framework: pages say 'add KPIs'. None maps each theme to one Google HEART category through Goals-Signals-Metrics (Rodden, Hutchinson and Fu, 2010) with a baseline and target.",
+    "Evidence before themes: no page lists what to collect before the first sticky note (6–10 stakeholder interviews, GA4 funnels, past research, support tags, a UX maturity score), so their roadmaps start from opinions.",
+    "Feature-to-problem rewrite: NN/g says 'themes, not features' but no page shows a before/after rewrite of real roadmap rows.",
+    "Ownership and decision rights: ProCreator and Maze never say who owns the roadmap, who can move a theme, or what a roadmap workshop decides. Our hub's 2-hour roadmap workshop (owners and dates agreed) is first-hand.",
+    "Horizon placement rules: pages give 0–3 / 3–6 / 6+ months but not how to decide where a theme goes (evidence + capacity + dependency).",
+    "Maturity: no ranking page links the roadmap to the Nielsen Norman Group UX maturity stage, e.g. an early-stage company needs research themes before redesign themes.",
+    "Timing and effort: only Entropik states a duration ('less than a day', unsourced). Our hub states the real engagement: 2–3 weeks, 10–15 working days.",
+    "Freshness and honesty: ProCreator's '6 in 10 SaaS businesses fail' and uplift targets are unsourced; Maze and Entropik cite no data."
+  ],
+  "outline": [
+    {
+      "h2": "What is a UX strategy roadmap, and how is it different from a product roadmap?",
+      "answerHint": "A UX strategy roadmap is a time-bound plan that turns a UX strategy into prioritized themes, each a user problem with evidence, a RICE score, one success metric, an owner and a horizon. A product roadmap lists features and release dates; a UX strategy roadmap lists the user problems the product team will solve and how it will know they are solved.",
+      "points": [
+        "Intro before this H2 (before/after row intro, see variety): open with one bad roadmap row ('Q2: redesign the settings page') and, two sentences later, the same row rewritten as a theme (user, problem, evidence, metric, owner). Keyword in the first sentence (carrier above). Then 2 sentences on what the post gives: the inputs, the scoring, the metrics, a one-page example and the review rhythm.",
+        "UP link to the hub within the first 300 words: anchor 'UX consulting services' (e.g. 'the prioritized roadmap is the main output of our UX consulting services').",
+        "Name the parent: a UX strategy roadmap sits under a UX strategy (the goal, users and success measures); expand 'user experience (UX)' and use 'user experience roadmap' once here.",
+        "Answer 'what is UX strategy' in one or two sentences as the layer above the roadmap (secondary carrier), and define the UX strategy document as the half page that holds it. Do not build a definition section on UX strategy itself (future TOFU post).",
+        "Table, introduced by one sentence: UX strategy roadmap vs product roadmap vs fix roadmap vs product backlog. Columns: what each row is, time span, who owns it, what it is measured by. The fix roadmap row: a UX audit hands over a prioritized fix roadmap of interface issues (the one cross-hub link: /services/ux-audit-services/ with anchor 'fix roadmap from a UX audit'). Visual 1 is this table (see visuals); text version under it. Cite NN/g's definition (Sarah Gibbons, 2020) in our own words."
+      ]
+    },
+    {
+      "h2": "What evidence does a UX strategy roadmap need before anyone draws it?",
+      "answerHint": "A UX strategy roadmap needs five inputs before the product team writes a single theme: 6–10 stakeholder interviews, GA4 funnel data, past research and usability testing findings, support and sales feedback, and a UX maturity score. Without them, the prioritized themes are opinions.",
+      "points": [
+        "Numbered list (ol) of the 5 inputs, each with what it tells the roadmap. Stakeholder interviews: 6–10 leads from product, engineering, sales and support (hub figure). GA4: funnel step drop-offs and the activation rate baseline. Research: past interviews and usability testing clips. Support tags and sales loss reasons. UX maturity: score the company on the Nielsen Norman Group 6-stage model (Absent, Limited, Emergent, Structured, Integrated, User-driven; fact-checker to confirm stage names on nngroup.com).",
+        "Evidence level attribute: tag every input research, analytics or opinion; this tag later becomes the confidence score in RICE.",
+        "Maturity point (SERP gap): a company at an early stage gets research and process themes before redesign themes.",
+        "Visual 2: evidence ledger card (see visuals).",
+        "Lead moment 1: interviewing 6–10 leaders who disagree is where an outside facilitator earns its fee; one natural sentence ('we run these interviews in the first 2–3 days of an engagement'), no invented claims."
+      ]
+    },
+    {
+      "h2": "How do you turn user problems into roadmap themes?",
+      "answerHint": "Group the evidence into 5–8 themes, each written as a user problem with a beneficiary and a need, never as a feature. 'Admins cannot invite a team without support' is a theme; 'redesign settings' is not.",
+      "points": [
+        "First sentence must name 'UX roadmap' or 'UX strategy roadmap' + 'prioritized themes' (essential concepts).",
+        "Jobs to be Done phrasing for the problem statement (one line: 'When…, I want to…, so I can…'), with one example. Hub entity; explain it in one sentence.",
+        "Visual 3: feature-to-theme rewrite (before/after, 4 rows). Rows are our own illustrative examples (settings, onboarding, reporting export, mobile parity); text version under the image.",
+        "Design debt can be a theme only when tied to a user problem (e.g. inconsistent tables slow task success); one sentence.",
+        "Keep themes to a number leadership can hold: 5–8 is our working rule (label as our practice, not a statistic)."
+      ]
+    },
+    {
+      "h2": "How do you score the themes on a UX strategy roadmap with RICE?",
+      "answerHint": "Score each of the prioritized themes with RICE: reach (users affected per quarter) x impact (0.25 to 3) x confidence (50%, 80% or 100%, set by the evidence level) / effort (person-weeks). The highest RICE score goes first unless a dependency blocks it.",
+      "points": [
+        "Cite Intercom's RICE article (Sean McBride) for the formula and scales: impact 3 massive, 2 high, 1 medium, 0.5 low, 0.25 minimal; confidence 100% high, 80% medium, 50% low; effort in person-months in the original. We use person-weeks for UX themes: say so as our adaptation. Fact-checker: confirm the scales on the live Intercom page.",
+        "Tie confidence to the evidence level from H2 2: usability testing or analytics = 100%, mixed = 80%, stakeholder opinion only = 50%. This is the post's first-hand rule; label it as our practice.",
+        "Visual 4: RICE scoring card with 5 illustrative themes (invented inputs, captioned 'illustrative'); the text version holds the table. Show one theme where high confidence beats a bigger but unproven idea.",
+        "One sentence on alternatives: MoSCoW and value vs effort are faster but give no shared number; do not build a comparison section of methods (NN/g has a 5-methods article; do not mirror it).",
+        "Lead moment 2: a scored list with effort agreed by engineering is the step most in-house roadmaps skip; the hub's 'maturity scoring and strategy' step does this in 2–4 days (deep link to /services/ux-consulting-services/#how-does-the-ux-consulting-process-work)."
+      ]
+    },
+    {
+      "h2": "Which success metric proves each theme worked?",
+      "answerHint": "Give each theme on the UX roadmap one success metric from the Google HEART framework, chosen through Goals-Signals-Metrics: happiness, engagement, adoption, retention or task success. The product team writes the baseline from GA4 and a target before work starts.",
+      "points": [
+        "First sentence must carry 'UX strategy roadmap' or 'UX roadmap' + 'prioritized themes' or 'product team'.",
+        "Cite Rodden, Hutchinson and Fu (Google, CHI 2010) for HEART and Goals-Signals-Metrics. Explain each of the 5 categories in one clause with a UX theme example (task success: share of admins who finish an invite without help).",
+        "Visual 5: HEART goals-signals-metrics grid for 3 illustrative themes (see visuals).",
+        "Link the roadmap metric to company objectives and key results (OKRs) in one or two sentences: the theme metric is the key result a product team reports.",
+        "Activation rate as the example metric for an onboarding theme (hub benefit wording: 'the share of new users who reach the first key action'). No uplift figure."
+      ]
+    },
+    {
+      "h2": "How do you place themes on now, next and later horizons?",
+      "answerHint": "A UX roadmap puts a theme in 'now' only when it has high confidence, a named owner and product team capacity this quarter; 'next' holds prioritized themes waiting on capacity or a dependency; 'later' holds low-confidence themes whose first task is research.",
+      "points": [
+        "Three rules as a ul (one per horizon), with the roadmap horizon attribute in quarters. Credit NN/g for the now/next/future idea in one clause; our wording is now, next and later.",
+        "Key move: a low-confidence theme does not wait idle; its 'next' item is a usability testing round or interview study that raises confidence.",
+        "No image here (image budget; the one-page example in H2 8 shows the horizons).",
+        "Dates: use quarters, not days, beyond 'now' (time horizons entity)."
+      ]
+    },
+    {
+      "h2": "Who owns the roadmap, and what does the roadmap workshop decide?",
+      "answerHint": "One roadmap owner (usually the head of product or design) keeps the UX strategy roadmap, and each of the prioritized themes has one named theme owner. The roadmap workshop, about 2 hours with leadership and the product team, agrees owners, horizons and the metric for each theme.",
+      "points": [
+        "Decision rights as a short ul: who can add a theme, who can move a theme between horizons, who can kill one (our practice; label it).",
+        "Workshop agenda as an ol in 4–5 blocks (evidence recap, scores, objections, owners and dates, next review date). Hub fact: the roadmap is presented in a 2-hour workshop where owners and dates are agreed. Tools: a FigJam board (or a slide), one sentence, no tool comparison.",
+        "DOWN link to the Mass Media Co. case study: 'we ran a discovery workshop with MMC stakeholders and users… covered product definition, strategy, information architecture and user flows'. Use only that sentence's facts. Do not attribute the 30% order processing efficiency to the workshop or to a roadmap; Mass Media Co. was a product revamp, not a UX consulting engagement (its services list does not include ux-consulting-services).",
+        "Disambiguate 'workshop' as a roadmap workshop with stakeholders, not a UX strategy training course."
+      ]
+    },
+    {
+      "h2": "UX strategy roadmap example: one page for a B2B SaaS onboarding problem",
+      "answerHint": "This UX strategy roadmap example fits on one page: a three-line strategy statement on top, then five prioritized themes across now, next and later, each with its RICE score, HEART metric and owner. The company and numbers are illustrative.",
+      "points": [
+        "Label the whole example illustrative (invented company, invented numbers). Reuse the 5 themes from the RICE card so the numbers match across visuals.",
+        "Top block = the UX strategy document (secondary carrier): goal, primary users, the user problem the year is about, success measures.",
+        "Visual 6: one-page roadmap board (see visuals). The text version under it is the full example in table form (theme | horizon | RICE score | metric and target | owner).",
+        "Point out 2 things the reader can copy: research themes sit in 'next' to raise confidence, and every 'now' theme has a baseline.",
+        "This is the only 'UX strategy roadmap + noun' stack counted in the H2s."
+      ]
+    },
+    {
+      "h2": "How often should you review the UX strategy roadmap, and when should you get help?",
+      "answerHint": "Review the UX strategy roadmap with the product team every quarter and check progress monthly: update scores with new evidence, move themes between horizons and retire themes whose metric hit target. Bring in outside help when leaders disagree on the prioritized themes or no one has time to collect the evidence.",
+      "points": [
+        "Review cadence attribute: a monthly 30-minute check (status, blocked themes) and a quarterly review (re-score, re-horizon, maturity check). Hub fact: quarterly roadmap reviews develop UX maturity one stage at a time. The 30-minute length is our practice; label it.",
+        "Mistakes as reasoned bullets (mistake + why): features instead of problems; no baseline; every theme 'now'; scores set by the loudest stakeholder; no owner; roadmap never revisited. Keep to 5–6 bullets.",
+        "When to get help: link the hub section 'When should a leadership team hire UX consulting services?' (/services/ux-consulting-services/#when-should-a-leadership-team-hire-ux-consulting-services) instead of listing its 5 situations.",
+        "Main lead moment and offer (see leadAngle). Second UP link with the price: engagement price and engagement duration stated once, in hub wording, with the deep link /services/ux-consulting-services/#how-much-does-ux-consulting-cost. Close with /contact/ ('send us your current roadmap or backlog')."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "What should a UX roadmap include?", "hint": "Short list in one answer: strategy statement, themes as user problems, evidence level, RICE score, one success metric with baseline and target, theme owner, roadmap horizon and the next review date. Same answer as H2 1 and H2 8 (one intent, one answer)." },
+    { "q": "Who should create the UX roadmap?", "hint": "The head of product or design owns it; designers, product managers, engineering and research contribute evidence and effort estimates; leadership agrees it in the roadmap workshop. 2–3 sentences." },
+    { "q": "How long does it take to build a UX strategy roadmap?", "hint": "Hub fact: our engagement takes 2–3 weeks (10–15 working days) from the first stakeholder interview to the roadmap workshop. Do not repeat Entropik's 'less than a day'. One sentence that a team with evidence already gathered can draft one faster; no invented number." },
+    { "q": "Is a UX roadmap the same as a UX research roadmap?", "hint": "No. A UX research roadmap plans studies only; a UX strategy roadmap holds research themes and design themes, and research items exist to raise confidence in a theme. 2 sentences. Do not link the research hub here (the one cross-hub link goes to the audit hub)." },
+    { "q": "Can a UX strategy roadmap work with OKRs?", "hint": "Yes. Each theme's success metric becomes a key result under a company objective; the roadmap shows which themes serve which objective. 2 sentences." }
+  ],
+  "internalTargets": [
+    { "href": "/services/ux-consulting-services/", "anchor": "UX consulting services" },
+    { "href": "/services/ux-consulting-services/#how-does-the-ux-consulting-process-work", "anchor": "how our 2–3 week UX consulting process scores and plans the work" },
+    { "href": "/services/ux-consulting-services/#how-much-does-ux-consulting-cost", "anchor": "what a UX strategy engagement costs" },
+    { "href": "/services/ux-consulting-services/#when-should-a-leadership-team-hire-ux-consulting-services", "anchor": "situations where a leadership team brings in UX consulting" },
+    { "href": "/services/ux-audit-services/", "anchor": "fix roadmap from a UX audit" },
+    { "href": "/case-studies/mass-media-co/", "anchor": "Mass Media Co. discovery workshop" },
+    { "href": "/contact/", "anchor": "send us your current roadmap or backlog" }
+  ],
+  "internalTargetsNote": "All verified: content/services/ux-consulting-services.json, content/services/ux-audit-services.json, content/case-studies/mass-media-co.md (route app/case-studies/[slug]/page.tsx), app/contact/page.tsx. Section ids from sectionId() in components/sections/SemanticSections.tsx (no explicit ids on these sections): 'How does the UX consulting process work?' -> how-does-the-ux-consulting-process-work; 'How much does UX consulting cost?' -> how-much-does-ux-consulting-cost; 'When should a leadership team hire UX consulting services?' -> when-should-a-leadership-team-hire-ux-consulting-services. If the link-builder caps hub links at 2 in the body, keep the root (early) and the cost section (close), and drop the process and 'when to hire' deep links. The ux-audit-services link is the post's ONE cross-hub link. No sibling posts in this silo yet. Do not link ux-audit-agency-vs-freelancer, ecommerce-ux-audit or any other silo's post. MOFU: 6–7 body links.",
+  "externalSources": [
+    { "url": "https://www.nngroup.com/articles/ux-roadmaps/", "why": "Nielsen Norman Group (Sarah Gibbons, 5 July 2020): definition of a UX roadmap as a strategic, living artifact; organised by scope, time and theme; now/next/future horizons. WebFetch OK 2026-10-17. Paraphrase in our own words; do not copy its components list." },
+    { "url": "https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/", "why": "Intercom (Sean McBride): RICE formula and scales (impact 3/2/1/0.5/0.25; confidence 100/80/50%). Fact-checker: confirm URL and scales on the live page (not fetched by this agent)." },
+    { "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/", "why": "Rodden, Hutchinson and Fu, CHI 2010: the HEART categories and the Goals-Signals-Metrics process. Fact-checker: confirm the URL resolves (search snippets confirmed authors, year and the 5 categories)." },
+    { "url": "https://www.nngroup.com/articles/ux-maturity-model/", "why": "Nielsen Norman Group 6-stage UX maturity model (Absent, Limited, Emergent, Structured, Integrated, User-driven; factors strategy, culture, process, outcomes). Fact-checker: confirm the URL; search returned nngroup stage pages and videos with these names." },
+    { "url": "https://support.google.com/analytics/answer/9327974", "why": "GA4 funnel exploration, for the baseline step (verified in the ecommerce-ux-audit run, 2026-10-14). Plain-text citation is fine if the external cap of 5 is reached." }
+  ],
+  "visuals": [
+    { "type": "four-roadmap comparison table", "idea": "Landscape 1200 x max 800, text 38px or larger. 4 columns (UX strategy roadmap, product roadmap, fix roadmap, product backlog) x 4 rows (what a row is, time span, owner, measured by). Highlight the UX strategy roadmap column. Text version under the image." },
+    { "type": "evidence ledger card", "idea": "5 rows (stakeholder interviews, GA4 funnels, past research and usability testing, support and sales feedback, UX maturity score) with columns: what it tells the roadmap | evidence level tag (research / analytics / opinion). Text version under the image." },
+    { "type": "feature-to-theme rewrite (before/after)", "idea": "4 illustrative rows: left 'feature row' in grey (e.g. 'Redesign settings', 'New onboarding', 'Export button', 'Mobile parity'), right 'theme' (user + problem + evidence). Arrow between columns. Text version under the image." },
+    { "type": "RICE scoring card (illustrative)", "idea": "5 themes x columns reach | impact | confidence | effort (person-weeks) | RICE score, sorted by score; confidence cells coloured by evidence level. Caption says illustrative. Text version = the same table." },
+    { "type": "HEART goals-signals-metrics grid", "idea": "3 illustrative themes x columns HEART category | goal | signal | metric | baseline -> target. Text version under the image." },
+    { "type": "one-page roadmap board", "idea": "Strategy statement band on top (goal, users, problem, success measures), then three swimlanes now / next / later with the 5 theme cards from the RICE card (score, metric, owner as a role, no real names). Landscape. Caption says illustrative. Text version = the example table." }
+  ],
+  "leadAngle": "Three moments. (1) End of the evidence section: 6–10 leaders who disagree are hard to interview from inside; we run these interviews in the first 2–3 days of an engagement (hub step). (2) End of the RICE section: a scored list with engineering-agreed effort is what in-house roadmaps usually skip; our maturity scoring and strategy step does it in 2–4 days (deep link to the process). (3) Main offer in the review section: send us your current roadmap or backlog, and in a free consultation we point out which rows are features rather than problems and what evidence is missing; the full engagement delivers the prioritized UX strategy roadmap, HEART metrics and the 2-hour roadmap workshop in 2–3 weeks for $5,000–$15,000 (hub cost section link), with quarterly roadmap reviews as ongoing advisory if wanted. MOFU template CTA = case study + consultation: Mass Media Co. is the case to feature. Do not promise a written review of their roadmap before the call (not a published offer).",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "before/after roadmap row (one feature-style row, then the same row rewritten as a scored theme). Last 9 intros used: buyer scenario, myth, data point with source, question, definition, mini case, contrarian take, itemized receipt, 60-second phone test. Not a repeat.",
+    "h2Frames": ["what is X and how is it different", "what evidence before", "how to turn into", "how to score with", "which metric proves", "how to place on horizons", "who owns and what decides", "example: one page", "how often to review + when to get help", "FAQs"],
+    "sectionOrder": "row-rewrite intro -> definition + four-roadmap table -> evidence ledger -> problem-to-theme rewrite -> RICE scoring -> HEART metrics -> horizon rules -> ownership + workshop agenda (Mass Media Co.) -> one-page example -> review cadence, mistakes, help + price link -> FAQs",
+    "visualTypes": ["four-roadmap comparison table", "evidence ledger card", "feature-to-theme rewrite", "RICE scoring card", "HEART goals-signals-metrics grid", "one-page roadmap board"],
+    "ctaAngle": "send us your current roadmap or backlog -> free consultation on which rows are features, not problems; Mass Media Co. workshop as the case study",
+    "listStyle": "numbered evidence inputs + scored table + horizon rules + workshop agenda ol + mistake bullets (mistake + why)",
+    "differsFrom": "Last 3 site-wide: ecommerce-ux-audit (Checklist / 60-second phone test), usability-testing-cost-per-participant (Guide / itemized receipt), mobile-app-design-agency-vs-freelancer (Comparison / contrarian take). Differs on intro, H2 frames, section order, visuals, CTA angle and list style (6 of 7; type Guide matches the post 2 back). Silo has no posts. Nearest structural relatives: (a) design-system-roi (formula + worked example + business case): do NOT reuse its formula-anatomy visual, input worksheet, break-even chart or 'one-page business case' wording; our one-pager is a roadmap board, not a business case. (b) ecommerce-ux-audit (severity x reach / effort priority 2x2): do NOT use a 2x2 or its quadrant labels; RICE is a ranked table. (c) web-app-design-rfp ('weak-to-priceable rewrites' visual): our before/after is roadmap rows; keep the visual style different (two columns with an arrow, not strike-through edits)."
+  },
+  "notes": [
+    "Exact keyword 'ux strategy roadmap' in title/H1, slug, first sentence, description (prescribed, 150 chars), first meta keyword. No keyword or secondary contains 'vs'. H2 1 says 'different from a product roadmap' as a question, with no 'vs' string.",
+    "Cannibalisation, hub (content/services/ux-consulting-services.json, anchor 'UX consulting services', metaTitle 'UX Consulting Services | Senior UX Strategy & Roadmaps'): it owns what UX consulting is, the 6 deliverables, the 4-step process, benefits, 'UX consulting vs UX audit', cost, 'when to hire' and FAQs (what a UX consultant does, ongoing, design work, duration). Its metaTitle says 'Roadmaps' and its ngrams include 'ux strategy roadmap', but the hub is a service page and the query SERP is how-to (NN/g, Maze, Entropik, ProCreator), so the post serves the informational intent the hub cannot. Mitigation: the post never defines UX consulting, never prices it on its own terms (deep link), never uses 'UX consultant' or 'UX consulting' in an H2, and links up twice. Hub banking: see backlinkSuggestions #1.",
+    "Other pages: grep of content/ for 'ux strategy', 'ux roadmap', 'strategy roadmap' found the term only on the hub and in passing links on 2 location pages, about.md, home.ts, the design-system and ux-research hubs. 'fix roadmap' belongs to the ux-audit hub (metaTitle 'Heuristic Review & Fix Roadmap'): use it only in the comparison row with the cross-hub link, never as a heading. No blog post or brief targets strategy or roadmaps.",
+    "Future silo posts (all with Ahrefs volume, 2026-10-17): TOFU 'ux strategy' (800/0) + 'ux design strategy' (700/0) + 'what is ux strategy' (200/5) + 'ux strategy definition' (150/0) + 'why ux design strategy is important' (150/3) as ONE definition post; its SERP is definitions (careerfoundry, uxdesigninstitute, uxcel, trymata, coursera, oreilly). This brief answers 'what is UX strategy' in only 1–2 sentences so that post stays open. BOFU still open: the commercial terms in the pull ('ux strategy consulting/agency/services', 'ux consulting firms/company', 'top ux strategy agency') are the hub head term or listicles; the next BOFU should test a non-head buyer angle (e.g. 'ux consultant vs agency' or 'ux consultant hourly rate'), both NEED VOLUME. Do not give the next post a RICE or HEART section (owned here).",
+    "Case studies: grep of content/case-studies for strategy/roadmap/stakeholder/workshop: Mass Media Co. ('discovery workshop with MMC stakeholders and users… product definition, strategy, information architecture and user flows') is the only workshop description; TradeZella ('discovery sessions with the stakeholders to understand their long-term vision') is the only other. Neither lists ux-consulting-services in its services, so present them as examples of stakeholder workshops in a product revamp, never as UX consulting engagements, and do not attribute their results (MMC +30% order processing efficiency; any TradeZella figure) to a roadmap or workshop.",
+    "Honesty, do not use: ProCreator's 'nearly 6 in 10 SaaS businesses fail to reach profitability' (secondhand via Userpilot), its 25%/30%/20%/15% metric targets and 'companies that iterate often see higher engagement'; Entropik's 'less than a day' and 'more than a month' durations; the home.ts telehealth '130+ facilities' frontstage/backstage anecdote (no case study). Every worked example uses invented inputs and says 'illustrative'. No uplift percentage for any theme.",
+    "Originality: beats page procreator.design (what is -> 6 steps: vision, journey, themes, prioritize, develop, iterate -> UX vs product roadmap -> when (5 stages) -> FAQ: how to create, tools, how often). Do not use its 6-step H2/H3 order, its 'when should you build' lifecycle list, its quarterly Q1–Q4 table layout, its 0–3/3–6/6+ month phases or its 3 FAQs in the same wording. Maze/Entropik: no 'product / field / specialty roadmap' types section, no 'tips for presenting' section. NN/g: cite, never mirror its components list or its 6 roadmapping steps (goals, inputs, themes, prioritize, visualize, revisit). Our order is evidence -> rewrite -> RICE -> HEART -> horizons -> ownership -> example -> cadence. QA checks 5-gram overlap with the beats page (max 5%).",
+    "CONFLICTS for the orchestrator: (1) home.ts embedded team '2–5 designers… shipping features every sprint' vs hub 'ongoing UX consulting as an embedded design team… weekly advisory sessions and quarterly roadmap reviews' + 'UX consulting does not include design work' (follow the hub, no designer count). (2) home.ts pricing shows no UX consulting card (hub $5,000–$15,000 = same as the UX audit card). (3) docs/content-system/fingerprints.json: the entries for usability-testing-cost-per-participant and ecommerce-ux-audit were appended inside the 'fields' array instead of 'posts'; the orchestrator should move them and append this post to 'posts'.",
+    "Template CTA check (lesson 2026-10-14): MOFU CTA is case study + consultation; the hub priceRange '$5,000–$15,000' matches this post's offer, so there is no price conflict if the template prints it."
+  ],
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/ux-consulting-services.json",
+      "field": "sections[h2='What is UX consulting?'].body",
+      "sentence": "A UX strategy consultant therefore delivers a roadmap for people and process as well as for screens.",
+      "change": "Link the words 'a roadmap for people and process' to /blog/ux-strategy-roadmap/ (body is HTML inside <p>).",
+      "anchor": "a roadmap for people and process",
+      "priority": "required",
+      "why": "Pillar -> post link in the same silo on the exact sentence that introduces the roadmap; hub banking for the new post."
+    },
+    {
+      "file": "content/services/ux-consulting-services.json",
+      "field": "sections[h2='What do UX consulting services include?'].items[title='Prioritized UX strategy roadmap.'].body",
+      "sentence": "Initiatives are ranked with RICE prioritization (reach, impact, confidence and effort), for example a quarter-by-quarter plan of research and design work.",
+      "change": "none",
+      "anchor": "",
+      "priority": "skip",
+      "why": "Alternative to #1 on the same page (one link per target per source page)."
+    },
+    {
+      "file": "content/services/ux-audit-services.json",
+      "field": "sections[h2='What does a UX audit include?'].items[title='Prioritized fix roadmap.']",
+      "sentence": "",
+      "change": "none",
+      "anchor": "",
+      "priority": "skip",
+      "why": "Weak topic match: an audit buyer wants the fix roadmap, not a strategy roadmap; a link here would pull audit leads away from the audit CTA (RULES.md 'links people will click')."
+    }
+  ]
+}

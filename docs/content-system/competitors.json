@@ -1,18 +1,18 @@
 {
   "note": "Competitor domains whose blogs rank for our silos. The keyword researcher refreshes this list (SERP + Semrush) and records which of their posts perform best, so we write a better, original post on the same topic. Never copy text, structure or images.",
-  "updated": "2026-10-14",
+  "updated": "2026-10-17",
   "domains": [
     { "domain": "fuselabcreative.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research agency", "how to choose a ux research agency", "how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "ux4sight.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["how to hire a ux research agency"], "source": "WebSearch 2026-10-05" },
     { "domain": "answerlab.com", "kind": "research agency insights", "silos": ["ux-research-services"], "seenFor": ["ux research rfp vendor evaluation", "how to choose a ux research partner"], "source": "WebSearch 2026-10-05" },
     { "domain": "eleken.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services", "web-app-design-services"], "seenFor": ["ux research agency", "saas product redesign", "how to redesign a saas product without losing users", "ui refresh vs ux overhaul vs rebuild", "saas user onboarding case study", "ux audit cost", "how to choose a ux audit company", "free ux audit vs paid ux audit", "legacy app ui ux redesign services", "redesign legacy web app without disrupting users"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-09" },
     { "domain": "aufaitux.com", "kind": "agency blog", "silos": ["ux-research-services", "web-app-design-services"], "seenFor": ["ux research agency", "ux research services", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-05, 2026-10-09" },
-    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services", "design-system-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool", "design system agency"], "source": "WebSearch 2026-10-05, 2026-10-07, 2026-10-08" },
+    { "domain": "procreator.design", "kind": "agency blog", "silos": ["ux-research-services", "ux-audit-services", "design-system-services", "ux-consulting-services"], "seenFor": ["ux research agency", "ux audit agency vs freelancer vs ai tool", "design system agency", "ux strategy roadmap (build-ux-roadmap-for-saas-product)"], "source": "WebSearch 2026-10-05, 2026-10-07, 2026-10-08, 2026-10-17 (WebFetch OK)" },
     { "domain": "925studios.co", "kind": "agency blog", "silos": ["ux-research-services", "saas-ux-design", "ux-audit-services"], "seenFor": ["how to hire a ux research agency", "questions to ask a ux research agency", "how to redesign a saas product without losing users", "why saas redesigns fail", "saas ux audit checklist before redesign", "how to hire a design agency for saas mvp", "ux audit freelancer vs agency", "ux audit cost"], "source": "WebSearch 2026-10-05, 2026-10-06, 2026-10-07" },
     { "domain": "koji.so", "kind": "research platform docs/blog", "silos": ["ux-research-services", "usability-testing-services"], "seenFor": ["ux research agency vs in-house", "ux research process", "ux research deliverables", "how many users usability testing", "research incentive strategies"], "source": "WebSearch 2026-10-05, 2026-10-12" },
     { "domain": "cleverx.com", "kind": "research platform blog", "silos": ["ux-research-services", "usability-testing-services"], "seenFor": ["ux research cost", "ux research agency vs in-house", "ux research rfp", "usability testing cost per participant", "b2b usability testing cost", "usability testing report template", "usability testing for healthcare apps"], "source": "WebSearch 2026-10-05, 2026-10-12 (WebFetch DNS-blocked)" },
     { "domain": "gotomedia.com", "kind": "agency blog", "silos": ["ux-research-services"], "seenFor": ["ux research rfp"], "source": "WebSearch 2026-10-05" },
-    { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer"], "source": "WebSearch 2026-10-06" },
+    { "domain": "octet.design", "kind": "agency blog", "silos": ["saas-ux-design", "ux-consulting-services"], "seenFor": ["how to choose a saas ux design agency", "saas ux design agency", "hire saas ux designer", "ux consulting services (service page /service/ux-strategy/)"], "source": "WebSearch 2026-10-06, 2026-10-17" },
     { "domain": "onething.design", "kind": "agency blog", "silos": ["saas-ux-design", "design-system-services"], "seenFor": ["how to choose a saas ux design agency", "when to redesign saas ux", "saas redesign scope", "design system audit", "what is a design system audit"], "source": "WebSearch 2026-10-06, 2026-10-08" },
     { "domain": "orbix.studio", "kind": "agency blog", "silos": ["saas-ux-design", "ux-audit-services", "ecommerce-ux-design-services"], "seenFor": ["how to redesign a saas product without losing users", "saas product redesign", "how to choose ui ux agency saas startup", "ux audit cost", "ux audit freelancer vs agency", "ecommerce ux audit services cost"], "source": "WebSearch 2026-10-06, 2026-10-07, 2026-10-14" },
     { "domain": "userguiding.com", "kind": "onboarding tool blog", "silos": ["saas-ux-design"], "seenFor": ["saas product redesign", "best practices saas product redesign"], "source": "WebSearch 2026-10-06" },
@@ -34,8 +34,8 @@
     { "domain": "lollypop.design", "kind": "agency blog", "silos": ["design-system-services", "usability-testing-services"], "seenFor": ["design system roi", "design system roi business case", "is a design system worth the investment", "moderated vs unmoderated usability testing cost"], "source": "WebSearch 2026-10-08, 2026-10-12" },
     { "domain": "appstudio.ca", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system roi", "cost to maintain a design system", "is a design system worth the investment"], "source": "WebSearch 2026-10-08" },
     { "domain": "supernova.io", "kind": "design system tool blog", "silos": ["design-system-services"], "seenFor": ["design system business case", "cost to maintain a design system", "design system roi business case"], "source": "WebSearch 2026-10-08" },
-    { "domain": "uxpin.com", "kind": "design tool blog", "silos": ["design-system-services"], "seenFor": ["how to calculate design system roi"], "source": "WebSearch 2026-10-08" },
-    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services", "digital-product-design-services", "usability-testing-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users", "product discovery services", "is one round of usability testing enough"], "source": "WebSearch 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-12" },
+    { "domain": "uxpin.com", "kind": "design tool blog", "silos": ["design-system-services", "ux-consulting-services"], "seenFor": ["how to calculate design system roi", "ux strategy document example (1-page UX strategy, Robert Hoekman)"], "source": "WebSearch 2026-10-08, 2026-10-17" },
+    { "domain": "netguru.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services", "digital-product-design-services", "usability-testing-services", "ux-consulting-services"], "seenFor": ["design system audit", "roi of a design system", "how to rebuild legacy web apps", "redesign legacy web app without disrupting users", "product discovery services", "is one round of usability testing enough", "ux consulting services (service page)"], "source": "WebSearch 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-12, 2026-10-17" },
     { "domain": "awesomic.com", "kind": "design subscription blog", "silos": ["design-system-services", "digital-product-design-services"], "seenFor": ["design system audit", "hiring a product design agency"], "source": "WebSearch 2026-10-08, 2026-10-10" },
     { "domain": "ramotion.com", "kind": "agency blog", "silos": ["design-system-services"], "seenFor": ["design system audit"], "source": "WebSearch 2026-10-08" },
     { "domain": "designsystemscollective.com", "kind": "publisher (Medium publication)", "silos": ["design-system-services"], "seenFor": ["design system build vs adopt", "design system roi formula"], "source": "WebSearch 2026-10-08" },
@@ -49,7 +49,7 @@
     { "domain": "wethos.co", "kind": "freelance platform blog", "silos": ["web-app-design-services"], "seenFor": ["web application scope of work", "web app design statement of work template"], "source": "WebSearch 2026-10-09" },
     { "domain": "thinkcompany.com", "kind": "agency blog", "silos": ["design-system-services", "web-app-design-services"], "seenFor": ["design system agency vs in-house", "how to redesign an enterprise application without disrupting users", "lessons from modernizing legacy applications"], "source": "WebSearch 2026-10-08, 2026-10-09" },
     { "domain": "wearearch.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app design agency", "enterprise web app design agency how to choose"], "source": "WebSearch 2026-10-09" },
-    { "domain": "parallelhq.com", "kind": "agency blog (listicle)", "silos": ["web-app-design-services", "saas-ux-design", "digital-product-design-services"], "seenFor": ["web app design agency", "web app design services top 10", "product design pricing benchmarks", "fixed price vs time and materials product design agency"], "source": "WebSearch 2026-10-09, 2026-10-10" },
+    { "domain": "parallelhq.com", "kind": "agency blog (listicle)", "silos": ["web-app-design-services", "saas-ux-design", "digital-product-design-services", "ux-consulting-services"], "seenFor": ["web app design agency", "web app design services top 10", "product design pricing benchmarks", "fixed price vs time and materials product design agency", "ux consulting services (blog listicle, 19 August 2025)"], "source": "WebSearch 2026-10-09, 2026-10-10, 2026-10-17" },
     { "domain": "kolonell.com", "kind": "agency blog", "silos": ["web-app-design-services"], "seenFor": ["web app redesign cost", "legacy app ui ux redesign cost", "design agency rfp scoring"], "source": "WebSearch 2026-10-09" },
     { "domain": "lowcode.agency", "kind": "app development agency blog", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services"], "seenFor": ["is a discovery phase worth it", "is mobile app discovery phase worth it", "mobile app discovery phase", "mobile app design agency vs freelancer vs in-house designer", "mobile app agency portfolio checklist what to look for", "how to evaluate a mobile app design agency portfolio"], "source": "WebSearch 2026-10-10, 2026-10-11 (WebFetch DNS-blocked)" },
     { "domain": "acquaintsoft.com", "kind": "development agency blog", "silos": ["digital-product-design-services"], "seenFor": ["software discovery phase cost why skipping fails", "is a discovery phase worth it"], "source": "WebSearch 2026-10-10 (WebFetch DNS-blocked)" },
@@ -66,10 +66,10 @@
     { "domain": "mindsea.com", "kind": "app agency blog", "silos": ["mobile-app-ui-ux-design-services", "web-app-design-services"], "seenFor": ["mobile app redesign cost", "questions to ask a mobile app design agency before hiring"], "source": "WebSearch 2026-10-09, 2026-10-11" },
     { "domain": "cleveroad.com", "kind": "development agency blog", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["mobile app redesign cost", "how much does it cost to design an app"], "source": "WebSearch 2026-10-11" },
     { "domain": "perfectiongeeks.com", "kind": "development agency blog", "silos": ["digital-product-design-services", "mobile-app-ui-ux-design-services", "usability-testing-services"], "seenFor": ["product discovery phase cost", "mobile app redesign cost", "cost of app redesign vs rebuild", "questions to ask a mobile app development company", "usability testing services"], "source": "WebSearch 2026-10-10, 2026-10-11, 2026-10-12" },
-    { "domain": "uxdesign.cc", "kind": "publisher (Medium publication)", "silos": ["mobile-app-ui-ux-design-services", "usability-testing-services"], "seenFor": ["ios vs android design", "adapt ios app design to android", "how many rounds of usability testing"], "source": "WebSearch 2026-10-11, 2026-10-12" },
+    { "domain": "uxdesign.cc", "kind": "publisher (Medium publication)", "silos": ["mobile-app-ui-ux-design-services", "usability-testing-services", "ux-consulting-services"], "seenFor": ["ios vs android design", "adapt ios app design to android", "how many rounds of usability testing", "what is ux strategy"], "source": "WebSearch 2026-10-11, 2026-10-12, 2026-10-17" },
     { "domain": "developer.android.com", "kind": "official Google documentation (citable source, not a target)", "silos": ["mobile-app-ui-ux-design-services"], "seenFor": ["adapt ios app design to android material design 3"], "source": "WebSearch 2026-10-11" },
     { "domain": "measuringu.com", "kind": "UX research consultancy blog (Jeff Sauro; also a citable source)", "silos": ["usability-testing-services"], "seenFor": ["usability testing cost per participant", "how much does a usability test cost", "no-show rate ux research"], "source": "WebSearch 2026-10-12 (WebFetch DNS-blocked)" },
-    { "domain": "nngroup.com", "kind": "UX research institute (citable source, not a target)", "silos": ["usability-testing-services"], "seenFor": ["usability testing cost per participant", "recruiting test participants cost", "usability testing with older adults", "how many rounds of usability testing"], "source": "WebSearch 2026-10-12 (WebFetch DNS-blocked)" },
+    { "domain": "nngroup.com", "kind": "UX research institute (citable source, not a target)", "silos": ["usability-testing-services", "ux-consulting-services"], "seenFor": ["usability testing cost per participant", "recruiting test participants cost", "usability testing with older adults", "how many rounds of usability testing", "ux strategy roadmap (articles/ux-roadmaps)", "ux strategy workshop agenda (articles/ux-workshop-agendas)"], "source": "WebSearch 2026-10-12, 2026-10-17 (WebFetch OK 2026-10-17)" },
     { "domain": "userinterviews.com", "kind": "research recruiting platform blog (citable for incentive data)", "silos": ["usability-testing-services"], "seenFor": ["usability testing participant incentive", "research incentives report"], "source": "WebSearch 2026-10-12" },
     { "domain": "greatquestion.co", "kind": "research platform blog", "silos": ["usability-testing-services"], "seenFor": ["usability testing participant incentive", "research incentives what to pay participants"], "source": "WebSearch 2026-10-12" },
     { "domain": "uxtweak.com", "kind": "research tool blog", "silos": ["usability-testing-services"], "seenFor": ["usability testing cost per participant", "how many participants usability study"], "source": "WebSearch 2026-10-12" },
@@ -88,8 +88,23 @@
     { "domain": "wearetenet.com", "kind": "agency service page (skip as a blog target)", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce ux audit services cost", "ecommerce ux audit services agency"], "source": "WebSearch 2026-10-14" },
     { "domain": "swankyagency.com", "kind": "Shopify agency service page", "silos": ["ecommerce-ux-design-services"], "seenFor": ["shopify ux audit"], "source": "WebSearch 2026-10-14" },
     { "domain": "smartbugmedia.com", "kind": "agency blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["shopify ux audit checklist", "ecommerce ux audit checklist"], "source": "WebSearch 2026-10-14" },
-    { "domain": "constructor.com", "kind": "site search vendor blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce site search audit", "audit your search and product discovery experience"], "source": "WebSearch 2026-10-14" }
+    { "domain": "constructor.com", "kind": "site search vendor blog", "silos": ["ecommerce-ux-design-services"], "seenFor": ["ecommerce site search audit", "audit your search and product discovery experience"], "source": "WebSearch 2026-10-14" },
+    { "domain": "maze.co", "kind": "research tool blog/collections", "silos": ["ux-consulting-services"], "seenFor": ["ux strategy roadmap (collections/ux-management/roadmap, collections/ux-ui-design/ux-roadmap)"], "source": "WebSearch + WebFetch 2026-10-17" },
+    { "domain": "entropik.io", "kind": "research tool blog (Decode)", "silos": ["ux-consulting-services"], "seenFor": ["ux strategy roadmap (blog/ux-road-map)"], "source": "WebSearch + WebFetch 2026-10-17" },
+    { "domain": "bentley.edu", "kind": "university UX center service page (skip as a blog target)", "silos": ["ux-consulting-services"], "seenFor": ["ux strategy roadmap (centers/user-experience-center/ux-strategy-roadmaps)"], "source": "WebSearch 2026-10-17 (WebFetch 403)" },
+    { "domain": "careerfoundry.com", "kind": "education publisher blog", "silos": ["ux-consulting-services"], "seenFor": ["what is ux strategy"], "source": "WebSearch 2026-10-17" },
+    { "domain": "uxdesigninstitute.com", "kind": "education publisher blog", "silos": ["ux-consulting-services"], "seenFor": ["what is ux strategy", "ux strategy document example"], "source": "WebSearch 2026-10-17" },
+    { "domain": "trymata.com", "kind": "research tool blog", "silos": ["ux-consulting-services"], "seenFor": ["what is ux strategy"], "source": "WebSearch 2026-10-17" },
+    { "domain": "jaimelevy.com", "kind": "UX strategy author/training (skip as a target: training events)", "silos": ["ux-consulting-services"], "seenFor": ["ux strategy workshop agenda"], "source": "WebSearch 2026-10-17" }
   ],
+  "headTermSerps": {
+    "ux-consulting-services": {
+      "keyword": "ux consulting services",
+      "checked": "WebSearch 2026-10-17",
+      "domains": ["bsscommerce.com (service blog page)", "passionates.com (2 service pages)", "capicua.com (service page)", "netguru.com (service page)", "parallelhq.com (blog listicle)", "octet.design (service page /service/ux-strategy/)", "userlytics.com (service page)", "cdt.ca.gov (state government service page)"],
+      "note": "Service pages and one listicle; no how-to guides. The hub competes here; blog posts must stay on informational long-tails."
+    }
+  },
   "topPosts": [
     {
       "domain": "fuselabcreative.com",
@@ -649,6 +664,76 @@
       "serviceSupport": 4,
       "status": "candidate",
       "notes": "Search vendor blog plus a self-guided PDF. Possible MOFU 'ecommerce search ux' (Ahrefs 200 / KD 4, 2026-10-14), but the e-commerce industry page owns site search design (FAQ 'Does commerce design work include site search?') and ecommerce-ux-audit has a search query test sheet. Only write as a design guide for results, filters and zero-result pages that links to the hub, without repeating the test sheet. shopify.com/blog/no-results-found, searchspring, opensourceconnections and experro also rank."
+    },
+    {
+      "domain": "procreator.design",
+      "url": "https://procreator.design/blog/build-ux-roadmap-for-saas-product/",
+      "title": "How to build a UX Roadmap for Your SaaS Product",
+      "keywords": ["ux strategy roadmap", "ux roadmap", "how to create a ux roadmap"],
+      "estTraffic": null,
+      "silo": "ux-consulting-services",
+      "serviceSupport": 5,
+      "status": "briefed",
+      "brief": "content/briefs/ux-strategy-roadmap.json",
+      "notes": "beats target. Sandesh Subedi, 21 November 2025. Structure: what is -> 6 steps (vision, journey, themes, prioritize, develop, iterate) -> UX vs product roadmap -> when (5 lifecycle stages) -> FAQ (how to create, tools, how often). Names Value vs Effort and MoSCoW without a scale; no metrics framework, maturity, workshop or decision rights. '6 in 10 SaaS businesses fail' (via Userpilot) and its uplift targets are do-not-use."
+    },
+    {
+      "domain": "nngroup.com",
+      "url": "https://www.nngroup.com/articles/ux-roadmaps/",
+      "title": "UX Roadmaps: Definition and Components",
+      "keywords": ["ux strategy roadmap", "ux roadmap", "what is a ux roadmap"],
+      "estTraffic": null,
+      "silo": "ux-consulting-services",
+      "serviceSupport": 4,
+      "status": "briefed",
+      "brief": "content/briefs/ux-strategy-roadmap.json",
+      "notes": "Authority source (Sarah Gibbons, 5 July 2020). Cite for the definition; never mirror its components list or NN/g's 6 roadmapping steps (nngroup.com/articles/roadmapping-steps)."
+    },
+    {
+      "domain": "maze.co",
+      "url": "https://maze.co/collections/ux-management/roadmap/",
+      "title": "How to create an effective UX roadmap that aligns stakeholders",
+      "keywords": ["ux strategy roadmap", "ux roadmap", "ux roadmap examples"],
+      "estTraffic": null,
+      "silo": "ux-consulting-services",
+      "serviceSupport": 4,
+      "status": "briefed",
+      "brief": "content/briefs/ux-strategy-roadmap.json",
+      "notes": "Giada Gastaldello, 16 April 2024. Components (vision, themes, timeline, markers) -> product/field/specialty types -> 3 examples -> presenting tips -> FAQ. No data, no scoring, no template. Do not reuse its 3-types section."
+    },
+    {
+      "domain": "entropik.io",
+      "url": "https://www.entropik.io/blog/ux-road-map",
+      "title": "How To Create An Effective UX Road Map",
+      "keywords": ["ux strategy roadmap", "ux road map"],
+      "estTraffic": null,
+      "silo": "ux-consulting-services",
+      "serviceSupport": 4,
+      "status": "briefed",
+      "brief": "content/briefs/ux-strategy-roadmap.json",
+      "notes": "Mirrors Maze's components/types structure; contradictory review cadence (fortnightly / quarterly / annually); unsourced 'less than a day' duration (do-not-use)."
+    },
+    {
+      "domain": "uxdesigninstitute.com",
+      "url": "https://www.uxdesigninstitute.com/blog/what-is-a-ux-strategy/",
+      "title": "What is a UX strategy? (And how to define yours in 5 steps)",
+      "keywords": ["what is ux strategy", "ux strategy", "ux strategy example", "what is a ux strategy"],
+      "estTraffic": null,
+      "silo": "ux-consulting-services",
+      "serviceSupport": 3,
+      "status": "candidate",
+      "notes": "Next TOFU for the silo: 'ux strategy' (Ahrefs 800/0) + 'ux design strategy' (700/0) + 'what is ux strategy' (200/5) + 'ux strategy definition' (150/0) + 'why ux design strategy is important' (150/3), one definition post. URL inferred from the ?p=7371 search result; confirm before citing. careerfoundry.com, uxcel.com, trymata.com, coursera.org, oreilly.com and uxdesign.cc rank for the same query. Must not repeat the RICE/HEART/roadmap sections of ux-strategy-roadmap; link to it as the sibling."
+    },
+    {
+      "domain": "uxpin.com",
+      "url": "https://www.uxpin.com/studio/blog/guide-your-design-with-a-1-page-ux-strategy",
+      "title": "Guide Your Design With a 1-Page UX Strategy",
+      "keywords": ["ux strategy document", "ux strategy document example"],
+      "estTraffic": null,
+      "silo": "ux-consulting-services",
+      "serviceSupport": 4,
+      "status": "candidate",
+      "notes": "Robert Hoekman's 1-page strategy doc. 'ux strategy document' (Ahrefs 100/10) is used only as a secondary in ux-strategy-roadmap (one paragraph); a standalone template post would overlap it, so fold it into the future TOFU 'ux strategy' post instead."
     }
   ]
 }
