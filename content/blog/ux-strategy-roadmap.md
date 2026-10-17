@@ -30,11 +30,11 @@ Leadership funds the second row because it names a user, a problem, evidence, a 
 
 **A UX strategy roadmap is a plan that turns a UX strategy into prioritized themes: user problems, each with evidence, a score, a metric, an owner and a horizon.**
 
-Teams still asking "what is UX strategy?" can start with one sentence: the user outcome the business will fund this year. The UX strategy document is the half page that holds it: goal, primary users, the core user problem and success metrics. That prioritized roadmap is the main output of our UX consulting services <!-- link: /services/ux-consulting-services/ | UX consulting services -->.
+Teams still asking "what is UX strategy?" can start with one sentence: the user outcome the business will fund this year. The UX strategy document is the half page that holds it: goal, primary users, the core user problem and success metrics. That prioritized roadmap is the main output of our [UX consulting services](/services/ux-consulting-services/).
 
-Nielsen Norman Group's Sarah Gibbons describes a user experience roadmap as a living plan that aligns a UX team on upcoming work and the problems to solve, built on user-focused themes rather than features. <!-- source: https://www.nngroup.com/articles/ux-roadmaps/ -->
+Nielsen Norman Group's Sarah Gibbons describes a [user experience roadmap as a living, strategic plan](https://www.nngroup.com/articles/ux-roadmaps/) that aligns a UX team on upcoming work and the problems to solve, built on user-focused themes rather than features.
 
-A product roadmap lists features and release dates; a UX roadmap lists the user problems the product team will solve and how it will know. A fix roadmap from a UX audit <!-- link: /services/ux-audit-services/ | fix roadmap from a UX audit --> ranks interface issues, and a product backlog orders the tasks engineering pulls into each sprint. The table compares the four plans by row, time span, owner and measure.
+A product roadmap lists features and release dates; a UX roadmap lists the user problems the product team will solve and how it will know. A [fix roadmap from a UX audit](/services/ux-audit-services/) ranks interface issues, and a product backlog orders the tasks engineering pulls into each sprint. The table compares the four plans by row, time span, owner and measure.
 
 <!-- visual: four-roadmap comparison table — landscape 1200 x max 800, text 38px or larger; 4 columns x 4 rows exactly as the text version below; highlight the first plan's column -->
 
@@ -57,7 +57,7 @@ If your plan reads like the product roadmap column, rebuild it with the next two
 
 **A UX strategy roadmap needs five inputs before the product team writes a single theme: stakeholder interviews, analytics funnels, past research, support feedback and a UX maturity score.**
 
-First fix the roadmap scope: the products, teams and time span the plan covers. Stakeholder interviews come next, at an interview count of 6–10 leads across product, engineering, sales and support. In Google Analytics 4 (GA4), a funnel exploration shows where users drop between steps and sets the activation rate baseline. <!-- source: https://support.google.com/analytics/answer/9327974 --> The ledger tags each input with an evidence level (research, analytics or opinion), which later becomes the confidence score in RICE.
+First fix the roadmap scope: the products, teams and time span the plan covers. Stakeholder interviews come next, at an interview count of 6–10 leads across product, engineering, sales and support. In Google Analytics 4 (GA4), a [funnel exploration shows where users drop out between steps](https://support.google.com/analytics/answer/9327974) and sets the activation rate baseline. The ledger tags each input with an evidence level (research, analytics or opinion), which later becomes the confidence score in RICE.
 
 <!-- visual: evidence ledger card — 5 numbered rows, each with what it tells the roadmap and an evidence level tag (research / analytics / opinion), exactly as the text version below -->
 
@@ -73,9 +73,9 @@ First fix the roadmap scope: the products, teams and time span the plan covers. 
 
 </details>
 
-UX maturity measures how deeply a company builds user-centered work into its strategy, culture, process and outcomes. The Nielsen Norman Group model has six stages: Absent, Limited, Emergent, Structured, Integrated and User-driven. <!-- source: https://www.nngroup.com/articles/ux-maturity-model/ --> A company at Limited or Emergent needs research and process themes before redesign themes, because it lacks the evidence to score them.
+UX maturity measures a company's desire and ability to deliver user-centered design, judged on its strategy, culture, process and outcomes. The [Nielsen Norman Group UX maturity model](https://www.nngroup.com/articles/ux-maturity-model/) has six stages: Absent, Limited, Emergent, Structured, Integrated and User-driven. A company at Limited or Emergent needs research and process themes before redesign themes, because it lacks the evidence to score them.
 
-Leaders who disagree are hard to interview from inside, since every interviewer is also a stakeholder; on our engagements, these interviews run in the first 2–3 days. List the inputs you already hold and mark the missing ones.
+Leaders who disagree are hard to interview from inside, since every interviewer is also a stakeholder; on our engagements, these interviews run in the first 2–3 days. In the [TradeZella trading journal revamp](/case-studies/tradezella/), discovery sessions with the stakeholders mapped their long-term vision before we rebuilt any user flow. List the inputs you already hold and mark the missing ones.
 
 ## How do you turn user problems into roadmap themes?
 
@@ -106,7 +106,7 @@ Design debt, the inconsistent patterns that pile up when features outpace shared
 
 **Score each of the prioritized themes on a UX roadmap with RICE: reach times impact times confidence, divided by effort, with confidence set by the evidence level.**
 
-RICE prioritization comes from Intercom, where Sean McBride defined reach as people affected per period, impact per user on a scale from 3 (massive) to 0.25 (minimal), and confidence as 100%, 80% or 50%. <!-- source: https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/ --> He set the effort estimate in person-months; for UX themes we count reach as users per quarter and effort in person-weeks of design and engineering.
+RICE prioritization comes from Intercom, where [Sean McBride defined the RICE scoring scales](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/): reach as people affected per period, impact per user from 3 (massive) to 0.25 (minimal), and confidence as 100%, 80% or 50%. He set the effort estimate in person-months; for UX themes we count reach as users per quarter and effort in person-weeks of design and engineering.
 
 We tie confidence to the evidence ledger: usability testing or analytics earns 100%, mixed evidence such as a few support mentions with no test earns 80%, and stakeholder opinion alone earns 50%. That mapping is our practice, not Intercom's. The highest RICE score goes first unless a dependency blocks it, as the card shows for the five example themes.
 
@@ -130,13 +130,13 @@ Illustrative, invented inputs:
 
 Mobile approval has the largest reach times impact on the card, yet at 50% confidence and 10 person-weeks it ranks last. A must-have sort or a value-versus-effort grid is faster, but neither gives the product team one shared number.
 
-Effort agreed by engineering is what in-house roadmaps usually skip. Our maturity scoring and strategy step turns findings into RICE-scored initiatives in 2–4 days, as set out in how our 2–3 week UX consulting process scores and plans the work <!-- link: /services/ux-consulting-services/#how-does-the-ux-consulting-process-work | how our 2–3 week UX consulting process scores and plans the work -->. Score your top five themes with engineering in the room.
+Effort agreed by engineering is what in-house roadmaps usually skip. Our maturity scoring and strategy step turns findings into RICE-scored initiatives in 2–4 days. Score your top five themes with engineering in the room.
 
 ## Which success metric proves each theme worked?
 
 **Each of the prioritized themes on a UX roadmap gets one success metric from the Google HEART framework, with a baseline and target set before work starts.**
 
-The Google HEART framework comes from a 2010 Google paper by Kerry Rodden, Hilary Hutchinson and Xin Fu that names five categories of user-centered metrics. <!-- source: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/ --> Happiness is attitude, such as a survey score. Engagement is depth of use, such as invoices sent per week. Adoption is new users of a product or feature, such as activation rate, the share of new users who reach the first key action. Retention is who comes back, and task success is completion, such as admins finishing an invite without help.
+The Google HEART framework comes from a [2010 CHI paper by Google's Kerry Rodden, Hilary Hutchinson and Xin Fu](https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/) that names five categories of user-centered metrics. Happiness is attitude, such as a survey score. Engagement is depth of use, such as invoices sent per week. Adoption is new users of a product or feature, such as activation rate, the share of new users who reach the first key action. Retention is who comes back, and task success is completion, such as admins finishing an invite without help.
 
 The paper's Goals-Signals-Metrics process picks the number: state the theme's goal, name the user action that signals it, then track that signal in GA4 or a survey. The grid applies it to three example themes.
 
@@ -162,7 +162,7 @@ Each theme metric then becomes a key result the product team reports under its o
 
 **A UX roadmap puts a theme in now only with high confidence, a named owner and product team capacity this quarter; next waits on capacity, later on research.**
 
-Nielsen Norman Group splits roadmap time into now, next and future; we call the last column later and set each roadmap horizon in quarters. <!-- source: https://www.nngroup.com/articles/ux-roadmaps/ --> Three rules place themes on a now, next, later board:
+Nielsen Norman Group splits roadmap time into now, next and future; we call the last column later and set each roadmap horizon in quarters. Three rules place themes on a now, next, later board:
 
 - **Now (this quarter):** 100% confidence from evidence, a theme owner, a baseline and effort that fits capacity, because a theme missing one of them stalls mid-quarter.
 - **Next (the following quarter):** scored themes waiting on capacity or a dependency, plus research tasks that lift a low score, so the queue is ready.
@@ -188,7 +188,7 @@ The roadmap workshop is a working session with stakeholders, not a UX strategy t
 4. Owners and horizons: one theme owner and a now, next or later slot per theme.
 5. The next review date, set before anyone leaves.
 
-In the Mass Media Co. discovery workshop <!-- link: /case-studies/mass-media-co/ | Mass Media Co. discovery workshop -->, we brought the client's stakeholders and users together to align the product revamp strategy with the business goals, covering product definition, information architecture and user flows. That was a product revamp, not a roadmap engagement, but the order carries over: goals first, screens later. Send the scored table a day ahead so objections arrive with evidence.
+In the [Mass Media Co. discovery workshop](/case-studies/mass-media-co/), we brought the client's stakeholders and users together to align the product revamp strategy with the business goals, covering product definition, information architecture and user flows. That was a product revamp, not a roadmap engagement, but the order carries over: goals first, screens later. Send the scored table a day ahead so objections arrive with evidence.
 
 ## UX strategy roadmap example: one page, five themes
 
@@ -241,9 +241,9 @@ Six mistakes undo a UX design roadmap:
 - **No theme owner**, so the metric belongs to no one.
 - **A roadmap never revisited**, because scores go stale as new evidence arrives.
 
-Outside help earns its fee when leaders disagree on priorities, nobody has time to collect evidence or the backlog has no shared scoring method; the hub lists the situations where a leadership team brings in UX consulting <!-- link: /services/ux-consulting-services/#when-should-a-leadership-team-hire-ux-consulting-services | situations where a leadership team brings in UX consulting -->. Our engagement delivers the interviews, the RICE and HEART work and the roadmap workshop at an engagement price of $5,000–$15,000 and an engagement duration of 2–3 weeks; see what a UX strategy engagement costs <!-- link: /services/ux-consulting-services/#how-much-does-ux-consulting-cost | what a UX strategy engagement costs -->. Ongoing advisory adds weekly sessions and quarterly roadmap reviews, and interface design work is quoted separately.
+Outside help earns its fee when leaders disagree on priorities, nobody has time to collect evidence or the backlog has no shared scoring method. Our engagement delivers the interviews, the RICE and HEART work and the roadmap workshop at an engagement price of $5,000–$15,000 and an engagement duration of 2–3 weeks; our breakdown of [what a UX strategy engagement costs](/services/ux-consulting-services/#how-much-does-ux-consulting-cost) shows the four factors that move the price. Ongoing advisory adds weekly sessions and quarterly roadmap reviews, and interface design work is quoted separately.
 
-A feature list is a fine place to begin, not a reason to wait. Every project begins with a free consultation and a fixed-scope proposal, so send us your current roadmap or backlog <!-- link: /contact/ | send us your current roadmap or backlog --> as it stands; rows that still read like "redesign the settings page" are where the rewrite starts.
+A feature list is a fine place to begin, not a reason to wait. Every project begins with a free consultation and a fixed-scope proposal, so [send us your current roadmap or backlog](/contact/) as it stands; rows that still read like "redesign the settings page" are where the rewrite starts.
 
 ## FAQs
 
