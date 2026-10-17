@@ -18,8 +18,8 @@ takeaways:
   - "Score each theme by reach, impact, confidence and effort (RICE), and set confidence by the evidence level: tested or measured 100%, mixed 80%, opinion only 50%."
   - "Give every theme one success metric with a baseline and target, one theme owner and a now, next or later horizon."
   - "Agree on owners in a 2-hour roadmap workshop, check progress monthly and re-score at a quarterly review."
-draft: true
-qa: pending
+draft: false
+qa: pass
 image: /blog/ux-strategy-roadmap/cover.svg
 ---
 
@@ -74,7 +74,7 @@ First fix the roadmap scope: the products, teams and time span the plan covers. 
 
 UX maturity measures a company's desire and ability to deliver user-centered design, judged on its strategy, culture, process and outcomes. The [Nielsen Norman Group UX maturity model](https://www.nngroup.com/articles/ux-maturity-model/) has six stages: Absent, Limited, Emergent, Structured, Integrated and User-driven. A company at Limited or Emergent needs research and process themes before redesign themes, because it lacks the evidence to score them.
 
-Leaders who disagree are hard to interview from inside, since every interviewer is also a stakeholder; on our engagements, these interviews run in the first 2–3 days. In the [TradeZella trading journal revamp](/case-studies/tradezella/), discovery sessions with the stakeholders mapped their long-term vision before we rebuilt any user flow. List the inputs you already hold and mark the missing ones.
+Leaders who disagree are hard to interview from inside, since every interviewer is also a stakeholder; on our engagements, these interviews run in the first 2–3 days. In the [TradeZella trading journal revamp](/case-studies/tradezella/), we ran discovery sessions with the stakeholders to understand their long-term vision, then rebuilt the user flows. List the inputs you already hold and mark the missing ones.
 
 ## How do you turn user problems into roadmap themes?
 
@@ -133,9 +133,11 @@ Effort agreed by engineering is what in-house roadmaps usually skip. Our maturit
 
 **Each of the prioritized themes on a UX roadmap gets one success metric from the Google HEART framework, with a baseline and target set before work starts.**
 
-The Google HEART framework comes from a [2010 CHI paper by Google's Kerry Rodden, Hilary Hutchinson and Xin Fu](https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/) that names five categories of user-centered metrics. Happiness is attitude, such as a survey score. Engagement is depth of use, such as invoices sent per week. Adoption is new users of a product or feature, such as activation rate, the share of new users who reach the first key action. Retention is who comes back, and task success is completion, such as admins finishing an invite without help.
+The Google HEART framework comes from a [2010 paper by Google's Kerry Rodden, Hilary Hutchinson and Xin Fu](https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/), presented at the Conference on Human Factors in Computing Systems (CHI); it names five categories of user-centered metrics. Happiness is attitude, such as a survey score.
 
-The paper's Goals-Signals-Metrics process picks the number: state the theme's goal, name the user action that signals it, then track that signal in GA4 or a survey. The grid applies it to three example themes.
+Engagement is how often, how intensely or how deeply people use the product, such as invoices sent per user per week. Adoption is new users of a product or feature, such as activation rate, the share of new users who reach the first key action. Retention is who comes back, and task success covers efficiency, effectiveness and errors, such as the share of admins finishing an invite without help.
+
+The paper's Goals-Signals-Metrics process picks the number: state the theme's goal, name the user behavior or attitude that would show success, then turn that signal into a metric you track in GA4 or a survey. The grid applies it to three example themes.
 
 
 ![Illustrative HEART goals-signals-metrics grid for three UX roadmap themes with category, goal, signal and baseline to target](/blog/ux-strategy-roadmap/heart-metrics-grid.svg "Illustrative HEART goals-signals-metrics grid for three themes")
@@ -211,7 +213,7 @@ Illustrative:
 | First invoice | Now | 400 | Activation rate 38% → 50% | Product manager |
 | Export reports | Next | 300 | Survey 3.1 → 4.0 | Reporting lead |
 | Find past invoices | Next | 160 | Time to find: baseline due | Design lead |
-| Mobile approval test | Next | Research task | Confidence 50% → 80% | Research lead |
+| Mobile approval test | Next | Research task | Confidence 50% → 100% | Research lead |
 | Mobile approval | Later | 150 | Set after research | Product manager |
 
 </details>
@@ -225,7 +227,7 @@ Copy two habits. The mobile research task sits in next, so a 50% theme earns its
 The review cadence has two parts:
 
 - **Monthly check:** 30 minutes (our practice) on the themes in now and anything blocked, so problems surface before the quarter ends.
-- **Quarterly review:** re-score themes with new evidence, move them between horizons, retire themes that hit target and re-check the UX maturity stage. On our engagements, quarterly roadmap reviews move UX maturity up one stage at a time.
+- **Quarterly review:** re-score themes with new evidence, move them between horizons, retire themes that hit target and re-check the UX maturity stage. In ongoing advisory, quarterly roadmap reviews develop a company's UX maturity one stage at a time on the Nielsen Norman Group model.
 
 Six mistakes undo a UX design roadmap:
 

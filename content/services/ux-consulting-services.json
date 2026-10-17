@@ -31,7 +31,7 @@
       "h2": "What is UX consulting?",
       "format": "paragraph",
       "answer": "<strong>UX consulting is a senior advisory service that assesses how a company designs products, identifies the highest-impact UX problems and sets a prioritized plan to fix the problems.</strong> UX consultants review the product, the analytics and the design process, then score UX maturity against the Nielsen Norman Group 6-stage UX maturity model.",
-      "body": "<p>UX consulting differs from <a href=\"/services/ux-audit-services/\">UX audit services</a> in scope: a UX audit evaluates the product interface, while UX consulting evaluates the product, the team and the process that produce the interface. A UX strategy consultant therefore delivers a roadmap for people and process as well as for screens.</p>"
+      "body": "<p>UX consulting differs from <a href=\"/services/ux-audit-services/\">UX audit services</a> in scope: a UX audit evaluates the product interface, while UX consulting evaluates the product, the team and the process that produce the interface. A UX strategy consultant therefore delivers <a href=\"/blog/ux-strategy-roadmap/\">a roadmap for people and process</a> as well as for screens.</p>"
     },
     {
       "h2": "What do UX consulting services include?",

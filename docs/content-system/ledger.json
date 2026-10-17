@@ -70,6 +70,16 @@
           "funnel": "bofu"
         }
       ]
+    },
+    {
+      "date": "2026-10-17",
+      "goal": "1 post for the hub with the fewest published posts (daily rotation BLOG day)",
+      "jobs": [
+        {
+          "hub": "ux-consulting-services",
+          "slug": "ux-strategy-roadmap"
+        }
+      ]
     }
   ],
   "posts": [
@@ -201,6 +211,23 @@
       "kd": 0,
       "dataSource": "Ahrefs API v3, US, 2026-10-14",
       "notes": "First post with verified Ahrefs volume (200/mo, KD 0, TP 900). First post in the e-commerce silo. Loop 1: fact 6 fixes (Baymard 'browsers included' unsupported; reasons ranking 'then' wrong; GA4 duplicate-event logic reversed; 3 unsupported scope claims) + QA F1–F14, G1 order confirmation, G2 sort order + review count, G3 next step, D1 catalog, D2 checkbox spacing. Loop 2: QA pass (1 next-step fix); fact 4 sentence fixes (kick-off claim narrowed to hub step, WISMO cause softened, sort-order logic, redesign link text). Backlinks: e-commerce hub audit-vs-design answer + UX audit hub definition. Open: BOFU CTA box prints $25k–$60k on an audit post; home.ts '1–2 designers' vs hubs; industry page ADA sentence."
+    },
+    {
+      "slug": "ux-strategy-roadmap",
+      "hub": "ux-consulting-services",
+      "keyword": "ux strategy roadmap",
+      "funnel": "mofu",
+      "author": "sahar-asif",
+      "date": "2026-10-17",
+      "words": 2477,
+      "images": 6,
+      "internalLinks": 12,
+      "externalLinks": 5,
+      "qaLoops": 1,
+      "volume": 150,
+      "kd": 2,
+      "dataSource": "Ahrefs API v3, US, 2026-10-17",
+      "notes": "First post in the UX consulting silo (MOFU). Concept bindings + landscape visuals (6, all fig-wide). QA PASS (5 wording edits, H1 HEART paragraph split + CHI expanded). Fact-check loop 1: F1 HEART category wording, F2 GSM steps, F3 quarterly reviews scoped to ongoing advisory, F4 TradeZella wording verbatim, F5 board confidence 50%→100%; evidence-ledger Analytics pill recolored. Backlink: ux-consulting hub definition. Fingerprints: moved 2 misplaced entries from fields to posts."
     }
   ],
   "audits": []

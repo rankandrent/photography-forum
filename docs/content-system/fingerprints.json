@@ -13,81 +13,7 @@
     "faqCount",
     "words",
     "tableCount",
-    "listStyle",
-    {
-      "slug": "usability-testing-cost-per-participant",
-      "hub": "usability-testing-services",
-      "type": "Guide",
-      "funnel": "bofu",
-      "introStyle": "itemized receipt",
-      "h2Frames": [
-        "what is the full X",
-        "how much should you pay",
-        "what does X add",
-        "why does X raise",
-        "how many hours sit behind",
-        "why is X the wrong unit",
-        "what does a round cost DIY",
-        "what is included in our price",
-        "FAQs"
-      ],
-      "sectionOrder": [
-        "What is the full usability testing cost per participant?",
-        "How much should you pay usability test participants?",
-        "What does recruiting add to each participant?",
-        "Why do no-shows raise the cost of each session?",
-        "How many researcher hours sit behind each session?",
-        "Why is cost per participant the wrong unit for quotes?",
-        "What does a round cost when you run it yourselves?",
-        "What is included in our usability testing price?",
-        "FAQs"
-      ],
-      "visualTypes": [
-        "itemized receipt",
-        "incentive heat table",
-        "recruitment difficulty ladder",
-        "no-show dot grid (illustrative)",
-        "session hours donut",
-        "round anatomy strip"
-      ],
-      "ctaAngle": "send your audience and number of rounds → free consultation + fixed-scope proposal",
-      "faqCount": 5,
-      "words": 2143,
-      "tableCount": 1,
-      "listStyle": "fill-in bill table + quote questions list"
-    },
-    {
-      "slug": "ecommerce-ux-audit",
-      "hub": "ecommerce-ux-design-services",
-      "type": "Checklist",
-      "funnel": "bofu",
-      "introStyle": "60-second phone test",
-      "sectionOrder": [
-        "What does an e-commerce UX audit add to a general audit?",
-        "Which store data should you pull before the audit starts?",
-        "How does the audit test site search and navigation?",
-        "Which listing and product page checks find the leaks?",
-        "Which 12 checkout checks belong in an e-commerce UX audit?",
-        "How does an e-commerce UX audit cover mobile, speed and WCAG 2.2?",
-        "How do you score and rank e-commerce UX audit findings?",
-        "What does a self-audit of your own store miss?",
-        "What should you send to get an e-commerce UX audit quote?",
-        "FAQs"
-      ],
-      "visualTypes": [
-        "store funnel audit map",
-        "pre-audit data pull 2x2 tiles",
-        "search query test sheet",
-        "checkout pass/fail card",
-        "WCAG checkout criteria",
-        "priority 2x2 (illustrative)"
-      ],
-      "ctaAngle": "send store URL, platform and funnel data → free consultation + fixed-scope proposal",
-      "faqCount": 5,
-      "words": 2200,
-      "tableCount": 1,
-      "listStyle": "grouped checklists + test sheet"
-    }
+    "listStyle"
   ],
   "posts": [
     {
@@ -376,6 +302,124 @@
       "words": 1984,
       "tableCount": 3,
       "listStyle": "decision tree routing + quote line items + phone checks"
+    },
+    {
+      "slug": "usability-testing-cost-per-participant",
+      "hub": "usability-testing-services",
+      "type": "Guide",
+      "funnel": "bofu",
+      "introStyle": "itemized receipt",
+      "h2Frames": [
+        "what is the full X",
+        "how much should you pay",
+        "what does X add",
+        "why does X raise",
+        "how many hours sit behind",
+        "why is X the wrong unit",
+        "what does a round cost DIY",
+        "what is included in our price",
+        "FAQs"
+      ],
+      "sectionOrder": [
+        "What is the full usability testing cost per participant?",
+        "How much should you pay usability test participants?",
+        "What does recruiting add to each participant?",
+        "Why do no-shows raise the cost of each session?",
+        "How many researcher hours sit behind each session?",
+        "Why is cost per participant the wrong unit for quotes?",
+        "What does a round cost when you run it yourselves?",
+        "What is included in our usability testing price?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "itemized receipt",
+        "incentive heat table",
+        "recruitment difficulty ladder",
+        "no-show dot grid (illustrative)",
+        "session hours donut",
+        "round anatomy strip"
+      ],
+      "ctaAngle": "send your audience and number of rounds → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2143,
+      "tableCount": 1,
+      "listStyle": "fill-in bill table + quote questions list"
+    },
+    {
+      "slug": "ecommerce-ux-audit",
+      "hub": "ecommerce-ux-design-services",
+      "type": "Checklist",
+      "funnel": "bofu",
+      "introStyle": "60-second phone test",
+      "sectionOrder": [
+        "What does an e-commerce UX audit add to a general audit?",
+        "Which store data should you pull before the audit starts?",
+        "How does the audit test site search and navigation?",
+        "Which listing and product page checks find the leaks?",
+        "Which 12 checkout checks belong in an e-commerce UX audit?",
+        "How does an e-commerce UX audit cover mobile, speed and WCAG 2.2?",
+        "How do you score and rank e-commerce UX audit findings?",
+        "What does a self-audit of your own store miss?",
+        "What should you send to get an e-commerce UX audit quote?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "store funnel audit map",
+        "pre-audit data pull 2x2 tiles",
+        "search query test sheet",
+        "checkout pass/fail card",
+        "WCAG checkout criteria",
+        "priority 2x2 (illustrative)"
+      ],
+      "ctaAngle": "send store URL, platform and funnel data → free consultation + fixed-scope proposal",
+      "faqCount": 5,
+      "words": 2200,
+      "tableCount": 1,
+      "listStyle": "grouped checklists + test sheet"
+    },
+    {
+      "slug": "ux-strategy-roadmap",
+      "hub": "ux-consulting-services",
+      "type": "Guide",
+      "funnel": "mofu",
+      "introStyle": "before/after roadmap row",
+      "h2Frames": [
+        "what is a ux strategy roadmap, and how does it differ from a product roadmap?",
+        "what evidence does a ux strategy roadmap need first?",
+        "how do you turn user problems into roadmap themes?",
+        "how do you score a ux strategy roadmap with rice?",
+        "which success metric proves each theme worked?",
+        "how do you place themes on now, next and later horizons?",
+        "who owns the roadmap, and what does the workshop decide?",
+        "ux strategy roadmap example: one page, five themes",
+        "when do you review a ux strategy roadmap or get help?",
+        "faqs"
+      ],
+      "sectionOrder": [
+        "What is a UX strategy roadmap, and how does it differ from a product roadmap?",
+        "What evidence does a UX strategy roadmap need first?",
+        "How do you turn user problems into roadmap themes?",
+        "How do you score a UX strategy roadmap with RICE?",
+        "Which success metric proves each theme worked?",
+        "How do you place themes on now, next and later horizons?",
+        "Who owns the roadmap, and what does the workshop decide?",
+        "UX strategy roadmap example: one page, five themes",
+        "When do you review a UX strategy roadmap or get help?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "comparison columns",
+        "evidence ledger",
+        "before/after rewrite",
+        "RICE formula card",
+        "HEART metrics grid",
+        "now/next/later board"
+      ],
+      "ctaAngle": "send your roadmap; hub summary + price",
+      "faqCount": 5,
+      "words": 2477,
+      "tableCount": 5,
+      "listStyle": "bullets + tables"
     }
   ]
 }
