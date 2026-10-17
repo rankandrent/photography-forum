@@ -20,6 +20,7 @@ takeaways:
   - "Agree on owners in a 2-hour roadmap workshop, check progress monthly and re-score at a quarterly review."
 draft: true
 qa: pending
+image: /blog/ux-strategy-roadmap/cover.svg
 ---
 
 In user experience (UX) planning, a UX strategy roadmap fails the moment one of its rows reads like this: "Next quarter: redesign the settings page." Nobody can say who struggles or what proves success. Rewritten as a theme, the same row reads: "Workspace admins cannot invite their team without a support ticket; support tags show it weekly; success is invites finished alone; owner: the design lead."
@@ -36,7 +37,6 @@ Nielsen Norman Group's Sarah Gibbons describes a [user experience roadmap as a l
 
 A product roadmap lists features and release dates; a UX roadmap lists the user problems the product team will solve and how it will know. A [fix roadmap from a UX audit](/services/ux-audit-services/) ranks interface issues, and a product backlog orders the tasks engineering pulls into each sprint. The table compares the four plans by row, time span, owner and measure.
 
-<!-- visual: four-roadmap comparison table — landscape 1200 x max 800, text 38px or larger; 4 columns x 4 rows exactly as the text version below; highlight the first plan's column -->
 
 ![Comparison table of four plans, a UX strategy roadmap, a product roadmap, a fix roadmap and a product backlog, by row, time span, owner and measure](/blog/ux-strategy-roadmap/four-roadmaps-compared.svg "Four roadmaps compared: row, time span, owner and measure")
 
@@ -59,7 +59,6 @@ If your plan reads like the product roadmap column, rebuild it with the next two
 
 First fix the roadmap scope: the products, teams and time span the plan covers. Stakeholder interviews come next, at an interview count of 6–10 leads across product, engineering, sales and support. In Google Analytics 4 (GA4), a [funnel exploration shows where users drop out between steps](https://support.google.com/analytics/answer/9327974) and sets the activation rate baseline. The ledger tags each input with an evidence level (research, analytics or opinion), which later becomes the confidence score in RICE.
 
-<!-- visual: evidence ledger card — 5 numbered rows, each with what it tells the roadmap and an evidence level tag (research / analytics / opinion), exactly as the text version below -->
 
 ![Evidence ledger card with five roadmap inputs, what each tells the roadmap and its evidence level tag](/blog/ux-strategy-roadmap/evidence-ledger.svg "Evidence ledger: five inputs and their evidence level")
 
@@ -85,7 +84,6 @@ Sort the evidence by person and struggle, not by screen; clusters that recur acr
 
 Our running example is an invented business-to-business (B2B) software as a service (SaaS) invoicing product. The rewrite turns four of its feature rows into themes, each with its evidence.
 
-<!-- visual: feature-to-theme rewrite (before/after) — two columns with an arrow between them, left feature rows in grey, right themes; no strike-through edits; 4 rows exactly as the text version below -->
 
 ![Before and after rewrite of four feature rows into user-problem themes with their evidence, for an illustrative invoicing product](/blog/ux-strategy-roadmap/feature-to-theme-rewrite.svg "Feature-to-theme rewrite: four roadmap rows, before and after")
 
@@ -110,7 +108,6 @@ RICE prioritization comes from Intercom, where [Sean McBride defined the RICE sc
 
 We tie confidence to the evidence ledger: usability testing or analytics earns 100%, mixed evidence such as a few support mentions with no test earns 80%, and stakeholder opinion alone earns 50%. That mapping is our practice, not Intercom's. The highest RICE score goes first unless a dependency blocks it, as the card shows for the five example themes.
 
-<!-- visual: RICE scoring card (illustrative) — 5 themes sorted by score, columns as the text version below; color confidence cells by evidence level; caption says illustrative -->
 
 ![Illustrative RICE scoring card for five UX roadmap themes with reach, impact, confidence, effort in person-weeks and RICE score](/blog/ux-strategy-roadmap/rice-scoring-card.svg "Illustrative RICE scoring card: five themes ranked by score")
 
@@ -140,7 +137,6 @@ The Google HEART framework comes from a [2010 CHI paper by Google's Kerry Rodden
 
 The paper's Goals-Signals-Metrics process picks the number: state the theme's goal, name the user action that signals it, then track that signal in GA4 or a survey. The grid applies it to three example themes.
 
-<!-- visual: HEART goals-signals-metrics grid — 3 illustrative themes x columns exactly as the text version below; caption says illustrative -->
 
 ![Illustrative HEART goals-signals-metrics grid for three UX roadmap themes with category, goal, signal and baseline to target](/blog/ux-strategy-roadmap/heart-metrics-grid.svg "Illustrative HEART goals-signals-metrics grid for three themes")
 
@@ -202,7 +198,6 @@ The one-page plan below is a UX strategy example built for the invented B2B SaaS
 
 The product team has 10 person-weeks this quarter, enough for the invite (4) and first-invoice (6) themes, so export waits despite its 100% confidence. The board shows each theme's horizon, score, metric and owner.
 
-<!-- visual: one-page roadmap board — strategy statement band on top (goal, users and problem, success measures as in the blockquote above), then three swimlanes now / next / later with the theme cards from the text version below; owners as roles; caption says illustrative -->
 
 ![Illustrative one-page UX roadmap board with a strategy band and five themes plus a research task across now, next and later swimlanes](/blog/ux-strategy-roadmap/one-page-roadmap-board.svg "Illustrative one-page roadmap board: strategy band and now, next, later lanes")
 

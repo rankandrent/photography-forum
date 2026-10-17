@@ -1,0 +1,31 @@
+[
+  {
+    "marker": "<!-- visual: four-roadmap comparison table — landscape 1200 x max 800, text 38px or larger; 4 columns x 4 rows exactly as the text version below; highlight the first plan's column -->",
+    "markdown": "![Comparison table of four plans, a UX strategy roadmap, a product roadmap, a fix roadmap and a product backlog, by row, time span, owner and measure](/blog/ux-strategy-roadmap/four-roadmaps-compared.svg \"Four roadmaps compared: row, time span, owner and measure\")"
+  },
+  {
+    "marker": "<!-- visual: evidence ledger card — 5 numbered rows, each with what it tells the roadmap and an evidence level tag (research / analytics / opinion), exactly as the text version below -->",
+    "markdown": "![Evidence ledger card with five roadmap inputs, what each tells the roadmap and its evidence level tag](/blog/ux-strategy-roadmap/evidence-ledger.svg \"Evidence ledger: five inputs and their evidence level\")"
+  },
+  {
+    "marker": "<!-- visual: feature-to-theme rewrite (before/after) — two columns with an arrow between them, left feature rows in grey, right themes; no strike-through edits; 4 rows exactly as the text version below -->",
+    "markdown": "![Before and after rewrite of four feature rows into user-problem themes with their evidence, for an illustrative invoicing product](/blog/ux-strategy-roadmap/feature-to-theme-rewrite.svg \"Feature-to-theme rewrite: four roadmap rows, before and after\")"
+  },
+  {
+    "marker": "<!-- visual: RICE scoring card (illustrative) — 5 themes sorted by score, columns as the text version below; color confidence cells by evidence level; caption says illustrative -->",
+    "markdown": "![Illustrative RICE scoring card for five UX roadmap themes with reach, impact, confidence, effort in person-weeks and RICE score](/blog/ux-strategy-roadmap/rice-scoring-card.svg \"Illustrative RICE scoring card: five themes ranked by score\")"
+  },
+  {
+    "marker": "<!-- visual: HEART goals-signals-metrics grid — 3 illustrative themes x columns exactly as the text version below; caption says illustrative -->",
+    "markdown": "![Illustrative HEART goals-signals-metrics grid for three UX roadmap themes with category, goal, signal and baseline to target](/blog/ux-strategy-roadmap/heart-metrics-grid.svg \"Illustrative HEART goals-signals-metrics grid for three themes\")"
+  },
+  {
+    "marker": "<!-- visual: one-page roadmap board — strategy statement band on top (goal, users and problem, success measures as in the blockquote above), then three swimlanes now / next / later with the theme cards from the text version below; owners as roles; caption says illustrative -->",
+    "markdown": "![Illustrative one-page UX roadmap board with a strategy band and five themes plus a research task across now, next and later swimlanes](/blog/ux-strategy-roadmap/one-page-roadmap-board.svg \"Illustrative one-page roadmap board: strategy band and now, next, later lanes\")"
+  },
+  {
+    "frontmatter": {
+      "image": "/blog/ux-strategy-roadmap/cover.svg"
+    }
+  }
+]
