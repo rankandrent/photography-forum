@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 15,
   "title": "Denver",
   "city": "Denver",
@@ -61,7 +61,7 @@
         },
         {
           "title": "Usability testing.",
-          "body": "Moderated remote sessions with 5–8 participants per round for each user group, repeated until critical issues are gone."
+          "body": "Moderated remote sessions with 5–8 participants per round for each user group, with design fixes between rounds."
         }
       ]
     },
@@ -111,7 +111,7 @@
         },
         {
           "title": "Prove and ship (5–10 days)",
-          "body": "A final usability testing round with real users confirms the design, and annotated specs, tokens and components move to your engineers."
+          "body": "A final usability testing round with real users confirms the design, and annotated specs and components move to your engineers."
         }
       ]
     },
@@ -180,7 +180,7 @@
         },
         {
           "q": "Do UX/UI services in Denver need a local office?",
-          "a": "<p>No. A Denver UX agency does not need a local office when it shares your working hours. As a remote-first UX agency Denver teams can book within their own working day, we work an Eastern Time schedule from Reston, Virginia, with 6–7 hours of daily overlap with Mountain Time. The UX design Denver teams buy from us is research-led: user research, interface design and usability testing, priced as fixed-scope engagements from $5,000.</p>"
+          "a": "<p>No. A Denver UX agency does not need a local office when it shares your working hours. As a remote-first UX agency Denver teams can book within their own working day, we work an Eastern Time schedule from Reston, Virginia, with 6–7 hours of daily overlap with Mountain Time. The UX design Denver teams can buy from us is research-led: user research, interface design and usability testing, priced as fixed-scope engagements from $5,000.</p>"
         },
         {
           "q": "Can you design for users working outdoors or in the field?",
@@ -196,7 +196,7 @@
         },
         {
           "q": "How soon can a Denver UX project start?",
-          "a": "<p>A Denver UX project with us starts 1–2 weeks after proposal approval, beginning with a framing call and a user research plan. A sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components; a UX audit ends with a prioritized fix roadmap.</p>"
+          "a": "<p>A Denver UX project with us starts 1–2 weeks after proposal approval, beginning with a kick-off call on the users, flows and success metrics in scope. A sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components; a UX audit ends with a prioritized fix roadmap.</p>"
         }
       ]
     }
@@ -296,5 +296,6 @@
         "label": "Utility field data"
       }
     ]
-  }
+  },
+  "published": "2026-10-18"
 }
