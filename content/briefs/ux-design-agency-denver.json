@@ -1,0 +1,215 @@
+{
+  "slug": "ux-design-agency-denver",
+  "pageType": "location",
+  "target": "content/locations/ux-design-agency-denver.json",
+  "keyword": "ux agency denver",
+  "volume": 80,
+  "kd": null,
+  "kdNote": "KD for 'ux agency denver' not returned by the orchestrator's Ahrefs pull (n/a). Not estimated.",
+  "dataSource": "Ahrefs API v3 keywords-explorer, US, 2026-10-18",
+  "keywordWhy": "The draft keyword 'ux design agency denver' was not returned (no data), so the owner rule bars it. 'ux agency denver' (80/mo) ties for the highest volume and is the plainest service-buyer phrasing. 'ux design denver' (also 80/mo, KD 0) has a mixed SERP (agency pages plus Noble Desktop classes, Built In salary and Hired jobs, WebSearch 2026-10-18), so it is a secondary only. Slug stays 'ux-design-agency-denver'.",
+  "rejectedKeywords": [
+    { "keyword": "ux design agency denver", "why": "no data in Ahrefs (not returned), owner rule: cannot be primary" },
+    { "keyword": "ux design denver", "why": "80/mo, KD 0, but page 1 mixes agencies with classes, salary and job pages (WebSearch 2026-10-18). Kept as a secondary in agency context only." },
+    { "keyword": "ux website design denver", "why": "50/mo, but page 1 is web design/build agencies and web-design roundups (sitewired, geeksforgrowth, lazarev, stormbrain): website-build intent. Not used." },
+    { "keyword": "top denver ux design companies", "why": "70/mo list intent; we cannot rank anyone or call ourselves 'top'. Buyer-side phrase in the comparison table answer only." },
+    { "keyword": "ux design agency colorado / ui ux design agency denver / boulder ux design agency", "why": "no volume data in the pull; remove from keywords[]" },
+    { "keyword": "denver ux bootcamps / classes / jobs / salary", "why": "off-intent (learners and job seekers). Do not target or mention." }
+  ],
+  "secondary": [
+    "Denver UX agency",
+    "UX design Denver",
+    "Denver UI/UX design services",
+    "UX/UI services in Denver",
+    "UX agencies in Denver",
+    "top Denver UX design companies"
+  ],
+  "secondaryNote": "Checked by WebSearch 2026-10-18: 'denver ui/ux design services' returns agency pages and agency lists (buyer intent, keep). 'ux design denver' is mixed; use it only inside an agency sentence, e.g. 'the UX design Denver teams buy from us is research-led'. 'top Denver UX design companies' only as the buyer's phrase: 'When you shortlist top Denver UX design companies, compare time to start, team size, research depth and cost model.' Never claim a rank. Write 'UI/UX' and 'UX/UI' with the slash in those two secondaries.",
+  "keywordCarrier": {
+    "spellingNote": "In scripts/onpage-audit.mjs, has() (title, H1, description, lead) passes when 'agency' and 'denver' both appear ('ux' has 2 letters and is skipped), but kwCount (salience) counts only the literal phrase 'ux agency denver' in that word order with nothing between. So print 'UX agency Denver' literally. 'UX design agency Denver', 'Denver UX agency' and 'UX agency in Denver' do NOT count toward kwCount.",
+    "inBody": [
+      "a remote-first UX agency Denver teams can reach on Mountain Time hours",
+      "the UX agency Denver and Boulder product teams can hire without a local office",
+      "working with a UX agency Denver companies do not have to staff in-house"
+    ],
+    "avoid": "Never stack a noun after the keyword ('UX agency Denver project/pricing/FAQs/engagement'). For compounds use 'a Denver UX project' or 'a Front Range engagement'. FAQ H2: 'Questions Denver teams ask a UX agency'.",
+    "density": "Body about 1,000–1,100 words: use the literal 'UX agency Denver' 5–7 times (max = 0.02 × 1,050 ÷ 3 = 7). kwCount must be at least half the top rival entity, so keep 'Front Range', 'Mountain Time', 'Colorado', 'Boulder', 'SaaS' and 'aerospace' at 10 uses or fewer each (12 is the hard ceiling at 6 keyword uses). 'Denver' alone is not a rival (its words sit inside the keyword).",
+    "h2Salience": "At least 40% of H2s must contain 'agency' or 'denver'. The draft's H2s pass on 'Denver'; keep it in at least 4 of 8 after the FAQ H2 is renamed."
+  },
+  "centralEntity": "UX agency Denver",
+  "entities": [
+    "Denver",
+    "Colorado",
+    "Boulder",
+    "Front Range",
+    "Denver Tech Center",
+    "Mountain Time",
+    "Reston, Virginia",
+    "SaaS",
+    "aerospace",
+    "outdoor brands",
+    "health systems",
+    "energy and utilities",
+    "operator consoles",
+    "trial conversion",
+    "user research",
+    "card sort",
+    "tree test",
+    "usability testing",
+    "interactive prototype",
+    "offline states",
+    "UX audit",
+    "design system",
+    "Figma",
+    "WCAG 2.2",
+    "fixed-scope proposal"
+  ],
+  "entitiesNote": "23 of 25 already print in the draft. Missing: 'interactive prototype' (the draft says 'Figma prototype') and 'WCAG 2.2'. Add each with a real fact (see siteFacts.audit). Copy this list to semantic.entities.",
+  "attributes": [
+    "audit price ($5,000–$15,000 over 2–3 weeks)",
+    "sprint price ($25,000–$60,000 over 4–8 weeks)",
+    "full design and design system ($60,000–$180,000 over 8–16 weeks)",
+    "embedded design team ($15,000–$40,000 per month)",
+    "team size (2–4 designers on a sprint)",
+    "time to start (1–2 weeks after proposal approval)",
+    "time zone (Eastern Time schedule from Reston HQ, 6–7 hours of overlap with Mountain Time)",
+    "participants per round (5–8 per user group)",
+    "fixed-scope proposal (after a free consultation)",
+    "on-site workshops (on the Front Range for larger engagements)",
+    "offline states (for field and outdoor use)"
+  ],
+  "bindings": {
+    "synonyms": [
+      "UX design agency",
+      "Denver UX agency",
+      "UI UX design services",
+      "UX/UI design company"
+    ],
+    "plural": [
+      "UX agencies in Denver",
+      "top Denver UX design companies"
+    ],
+    "parent": [
+      "UI UX design services"
+    ],
+    "children": [
+      "user research",
+      "UX audit",
+      "interface design",
+      "data-dense UI",
+      "mobile app design",
+      "usability testing"
+    ],
+    "related": [
+      "Front Range",
+      "Mountain Time",
+      "fixed-scope proposal",
+      "Figma",
+      "WCAG 2.2",
+      "operator consoles"
+    ],
+    "linkPlan": {
+      "up": { "href": "/", "anchor": "UI UX design services" },
+      "across": [
+        { "href": "/services/ux-research-services/", "anchor": "UX research services" },
+        { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+        { "href": "/services/ux-audit-services/", "anchor": "UX audit services" },
+        { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services" },
+        { "href": "/services/ecommerce-ux-design-services/", "anchor": "e-commerce UX design services" },
+        { "href": "/services/data-visualization-agency/", "anchor": "data visualization agency" }
+      ],
+      "industries": [
+        { "href": "/industries/saas/", "anchor": "SaaS UI UX design" },
+        { "href": "/industries/ecommerce/", "anchor": "E-commerce UI UX design" },
+        { "href": "/industries/healthcare/", "anchor": "Healthcare UI UX design" }
+      ],
+      "note": "All targets verified to exist (content/services/*.json, content/industries/*.json, home = content/home.ts). The draft has no link to '/' with the parent anchor: add one in the first section body (Dallas pattern: 'We are a UX design agency within the wider field of UI UX design services')."
+    }
+  },
+  "essential": [
+    "UX agency Denver",
+    "remote-first",
+    "Front Range"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'UX agency Denver' or a synonym, plus 'remote-first' or 'Front Range'. 'remote-first' also carries the honesty line (no Colorado office).",
+  "queryVariants": [
+    "ux agency denver",
+    "denver ux agency",
+    "ux design denver",
+    "denver ui/ux design services",
+    "top denver ux design companies"
+  ],
+  "queryVariantsAnswer": "One answer for all: a remote-first UX agency (HQ Reston, Virginia, no Colorado office) that runs user research, interface design and usability testing for Denver and Front Range teams on an Eastern Time schedule with 6–7 hours of Mountain Time overlap, priced as fixed-scope engagements from $5,000. The 'top companies' variant is answered by the remote vs Colorado-based firm comparison table, not by a ranking.",
+  "ambiguous": [
+    { "word": "Denver", "context": "Denver, Colorado (also towns in Pennsylvania, North Carolina and Iowa, and a personal name)" },
+    { "word": "Boulder", "context": "Boulder, Colorado (also a rock)" },
+    { "word": "Aurora", "context": "Aurora, Colorado, if used (also Aurora, Illinois, and the northern lights)" },
+    { "word": "Front Range", "context": "Colorado's Front Range, Denver to Boulder (also the mountain range itself)" },
+    { "word": "Mountain Time", "context": "the Mountain Time zone, working hours (not mountains)" },
+    { "word": "Denver Tech Center", "context": "south Denver metro business district (Greenwood Village and Centennial), not a tech support center" },
+    { "word": "outdoor", "context": "outdoor and consumer gear brands (not outdoor advertising)" },
+    { "word": "field", "context": "field crews and field use (not a form field)" },
+    { "word": "console", "context": "operator or mission console software (not a game console)" },
+    { "word": "audit", "context": "UX audit or usability (never an energy or financial audit; the energy item is near)" },
+    { "word": "design", "context": "interface or UX (not gear or hardware design; outdoor brands are near)" },
+    { "word": "research", "context": "user research with customers or operators" },
+    { "word": "testing", "context": "usability testing with participants" }
+  ],
+  "siteFacts": {
+    "company": [
+      "Remote-first, headquartered in Reston, Virginia; no Denver or Colorado office, no local team, no Colorado clients may be claimed or implied (RULES.md honesty).",
+      "200+ products designed (home.ts, confirmed fact).",
+      "Designing digital products since 2017 (home.ts, confirmed fact)."
+    ],
+    "engagements_homeTs": [
+      "UX audit: $5,000–$15,000, 2–3 weeks (do not state an audit team size: home.ts '1–2 designers' vs ux-audit hub '2 designers', open conflict)",
+      "Research & UX design sprint: $25,000–$60,000, 4–8 weeks, 2–4 designers",
+      "Full design & design system: $60,000–$180,000, 8–16 weeks, 3–6 designers",
+      "Embedded design team: $15,000–$40,000/mo, ongoing, 2–5 designers"
+    ],
+    "timeToFirstDesign": "1–2 weeks for us; in-house designer 6–10 weeks (hiring + ramp) (home.ts compare table). Start 1–2 weeks after proposal approval.",
+    "timeZone": "Exact wording to mirror Dallas: 'Eastern Time schedule from Reston HQ, 6–7 hours of overlap with Mountain Time' (table) and 'we work an Eastern Time schedule from Reston with 6–7 hours of daily overlap with Mountain Time' (abstract/body). Arithmetic: ET is 2 hours ahead of MT; a 9–5 ET day overlaps 9–5 MT for 6 hours, 7 if ET work runs to 6 p.m. Never write 'Eastern-based team' or 'our Reston headquarters team' (Dallas F2).",
+    "roles": "No 'researchers' role. Use 'the designers who run your research stay through design and testing' (about.md / home.ts; Dallas F1).",
+    "audit": "If the page describes the UX audit: 'Web Content Accessibility Guidelines (WCAG) 2.2 level AA', findings 'ranked by impact and effort', and it 'ends with a prioritized fix roadmap' (ux-audit hub; Dallas F6/F5). A sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components.",
+    "costFactors": "No count of cost factors ('four variables', '3 drivers'). Write 'The final number depends on …' (Dallas F4). The Denver draft already has no count: keep it that way.",
+    "usabilityRounds": "5–8 participants per round / per user group (usability-testing-services.json).",
+    "interviews": "ux-research hub: 10–15 interview participants per user group. Published Atlanta says 5–12 per role. Do not add a third version; prefer no count on this page.",
+    "priceRangeField": "$5,000–$60,000 (draft and all published location pages; keep).",
+    "conflicts": [
+      "KEYWORD: draft keyword, anchor, eyebrow, H1, metaTitle, metaDescription, keywords[0], ngrams[0], skipgrams, centralEntity, abstract, the body sentence 'When you engage a UX design agency, Denver location…', the pricing body 'For a UX design agency, Denver startups…', the FAQ H2 'UX design agency Denver FAQs' and the last FAQ question all use the no-data keyword or stack it. Replace with 'ux agency denver' via metaPlan and keywordCarrier. keywords[] drops 'ux design agency colorado', 'ui ux design agency denver', 'boulder ux design agency'.",
+      "META: draft metaDescription does not end 'Book a free consultation.' Use metaPlan.",
+      "ROLE (Dallas F1): first H2 answer 'senior researchers and designers' → 'senior designers who run the research, redesign those moments and prove the fix with testing'. Table row 'Specialist mix' → 'Team size and skills': '2–4 designers on a sprint; the designers who run your research stay through design and testing'.",
+      "TIME ZONE (Dallas F2): table cell '6–7 hours each business day' → 'Eastern Time schedule from Reston HQ, 6–7 hours of overlap with Mountain Time'. Body 'collaborate remotely with 6–7 hours of daily overlap with Mountain Time' and abstract 'run with 6–7 hours of daily overlap' → 'work an Eastern Time schedule from Reston with 6–7 hours of daily overlap with Mountain Time'. FAQ 1 'work with our Reston, Virginia headquarters team over video' → 'work with us over video on an Eastern Time schedule from our Reston, Virginia headquarters'.",
+      "PARTICIPANTS: 'Test rounds' item '5 participants each' → '5–8 participants per round for each user group' (usability hub).",
+      "INTERVIEWS: 'Discovery interviews' '5–12 users per segment' conflicts with the ux-research hub (10–15 per user group). Drop the count: 'Conversations with users in each segment, for example …'.",
+      "HONESTY (implied clients/inquiry data): 'Five Colorado industries account for most of the product work we are asked about along the Front Range' → 'Our remote-first UX agency designs for five sectors well represented along the Front Range:'. 'Denver teams typically hand off 6 types of UX work' → 'A Denver team can hand off 6 types of UX work'. 'Denver organizations see 4 returns on UX investment' → 'Better UX gives Denver organizations four practical gains'. Boulder FAQ 'often start with' → 'can start with'.",
+      "UNSOURCED CAPABILITY: outdoor FAQ 'we test in realistic conditions where possible' has no hub source; use 'and can add on-site contextual inquiry when field conditions matter' (ux-research hub: contextual inquiry needs on-site visits). Aerospace FAQ 'Export-controlled or classified material must stay within your own environment' is a compliance-handling statement with no site source; remove it unless the owner confirms.",
+      "IN-HOUSE: the draft table has no in-house column. If one is added, use home.ts '6–10 weeks (hiring + ramp)', never 'several months'.",
+      "STAGES (N1, site-wide, not blocking): the 5 stages sum to 23–45 working days vs '4–8 weeks'. Do not change Denver alone; the owner decides site-wide.",
+      "FACT-CHECK LOG: the Dallas fact-check lists Denver among 'published location pages', but content/locations/ux-design-agency-denver.json is draft: true. Its 'Denver 6–7 h Mountain' cross-reference came from this draft."
+    ]
+  },
+  "metaPlan": {
+    "metaTitle": "UX Agency Denver | SaaS, Aerospace, Outdoor & Energy UX",
+    "metaTitleLength": 55,
+    "metaDescription": "UX agency Denver teams can hire for SaaS, aerospace, outdoor and energy: research, UI design and testing from $5,000. Book a free consultation.",
+    "metaDescriptionLength": 143,
+    "h1": "A remote-first UX agency Denver and Front Range product teams can hire",
+    "eyebrow": "ux agency denver",
+    "heroSubCarrier": "Hero sub holds the literal keyword within the first 60 words after the H1, e.g. 'A UX agency Denver teams can reach on Mountain Time hours: our remote-first team, headquartered in Reston, Virginia, runs user research, interface design and usability testing for SaaS companies, aerospace programs, outdoor brands, health systems and energy operators from Denver to Boulder.' Expand user experience (UX) and user interface (UI) once.",
+    "keywordsField": ["ux agency denver", "denver ux agency", "ux design denver", "denver ui/ux design services", "ux/ui services denver"]
+  },
+  "factCheckList": [
+    { "claim": "Colorado mixes fast-growing software firms (Denver, Boulder, Denver Tech Center)", "lead": "Metro Denver EDC 2023 IT-Software cluster study (Boulder County is inside its 9-county definition): https://www.metrodenver.org/sites/default/files/data_central/2023%20IT%20_%20Software%20Industry%20Cluster%20Study.pdf . No source found yet for the Denver Tech Center specifically; DTC lies in Greenwood Village and Centennial." },
+    { "claim": "Engineering-heavy aerospace and space organizations", "lead": "Metro Denver EDC aerospace cluster study (2020: highest concentration of private aerospace workers, second-largest aerospace economy after California; 2023 edition exists): https://www.metrodenver.org/sites/default/files/data_central/2023%20Aerospace%20Industry%20Cluster%20Study.pdf . Do not name Lockheed Martin Space, ULA or BAE Systems (former Ball Aerospace) unless sourced." },
+    { "claim": "Well-known outdoor and consumer brands", "lead": "VF Corporation (The North Face, JanSport, Smartwool) global HQ in Denver per FY2026 Form 10-K/ARS: https://www.sec.gov/Archives/edgar/data/0000103379/000119312526270631/d49994dars.pdf . Do not say Denver hosts the Outdoor Retailer show (it returned to Salt Lake City from 2023; verify if mentioned)." },
+    { "claim": "Energy and utilities, including oil and gas and renewables", "lead": "Metro Denver EDC energy cluster study (metrodenver.org/regional-data/industry-cluster-studies). If the lab in Golden is named, it is the National Laboratory of the Rockies (renamed from NREL on 2025-12-01): https://www.energy.gov/eere/articles/energy-department-renames-nrel-national-lab-rockies" },
+    { "claim": "Health systems and digital health", "lead": "Metro Denver EDC health and wellness / bioscience cluster study; name no hospital system unless sourced." },
+    { "claim": "Denver and Colorado are on Mountain Time; ET is 2 hours ahead; 6–7 hours overlap", "lead": "49 CFR 71.8 (Mountain zone): https://www.law.cornell.edu/cfr/text/49/71.8 ; overlap is arithmetic (see siteFacts.timeZone)." },
+    { "claim": "Front Range spans Denver to Boulder", "lead": "Colorado Front Range Urban Corridor; any state or USGS/CDOT source." },
+    { "claim": "Boulder and Denver early-stage teams shaping an MVP 'before a funding round'", "lead": "Generic scenario, not a statistic; acceptable only with 'can' (no implied clients)." }
+  ],
+  "layoutNotes": "Keep the draft's block types (paragraph, list, steps, cards, table with intro sentence, FAQ last). Section body text 50–70 words (90 max). Pricing stays a paragraph with the four home.ts lines. No new claims about Colorado clients, offices or local stats.",
+  "funnel": "BOFU",
+  "notes": "Short concept-bindings brief for an existing draft due to publish 2026-10-18; the draft was not edited. Pattern: content/briefs/ux-design-agency-dallas.json with the Dallas fact-check fixes (F1–F6) pre-applied in siteFacts. Do not mention bootcamps, classes, jobs or salary (off-intent volume terms)."
+}
