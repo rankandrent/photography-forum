@@ -1,0 +1,406 @@
+{
+  "slug": "edtech",
+  "pageType": "industry",
+  "target": "content/industries/edtech.json",
+  "route": "/industries/edtech/",
+  "templateFrom": "content/industries/_template.json, filled in the house pattern of content/industries/gaming.json (published 2026-10-16): title, order, metaTitle, metaDescription, hero{eyebrow,h1,sub}, summary, intro, bullets, updated, anchor, keywords, centralEntity, sourceContext, priceRange, abstract, stats, sections[], semantic{entities, ngrams, skipgrams, nlpKeywords}, mentions, relatedServices. Apply the gaming QA and fact-check fixes up front (see siteFacts.preFixed).",
+  "keyword": "edtech ui/ux design services",
+  "volume": 40,
+  "kd": 2,
+  "dataSource": "Ahrefs API v3 keywords-explorer, US, 2026-10-19 (pulled by the orchestrator). SERP intent checked with WebSearch on 2026-10-19.",
+  "keywordWhy": "This is a commercial service query: 40/mo, KD 2. It matches the site's '<entity> UI/UX design services' industry pattern (gaming: 'game UI/UX design services'). Page 1 (WebSearch, 2026-10-19) is almost all vendor service pages: flatirons.com/services/edtech-ui-ux-design, wearetenet.com/edtech-ui-ux-design-services (plus its US, UK, IN and AE copies), Dribbble service listings and linkupst.com/design/services/edtech-ui-ux-design. A service page can satisfy that intent directly. 'edtech design agency' has more volume (60, KD 5), but its page 1 is mixed: octet.design and agencypartner.com service pages next to listicles (insivia 'Top EdTech Web Design Agencies', lazarev '15 educational website design companies', cieden 'top edtech design agencies') and Clutch profiles. That is a list-comparison intent, so it goes in as a secondary with a carrier.",
+  "rejectedKeywords": [
+    { "keyword": "edtech design agency", "why": "60/mo, KD 5. Page 1 is half listicles and Clutch profiles. Used as a secondary with a carrier." },
+    { "keyword": "lms design", "why": "200/mo, KD 0, but the intent is wrong. Page 1 is university LMS course-site design principles (csu.edu.au, pressbooks.nebraska.edu), academic papers (ajet.org.au, arxiv) and vendor LMS-development blogs. It means designing courses inside an LMS (instructional design), not product UI. Do not use it as a keyword. The 'vs instructional design' table answers that confusion honestly." },
+    { "keyword": "ux design education", "why": "80/mo, KD 0. Page 1 is UX courses and bootcamps (swinburne, coursehorse, uxdesigninstitute, BCS 'how UX should be taught'). This is learning-UX intent, not buying UX for an edtech product. Rejected completely." },
+    { "keyword": "education ux design", "why": "50/mo, KD 0. Mixed: teaching UX as a discipline (BCS, Adobe, uxdesign.cc) plus academic reviews. Not commercial. Rejected as a secondary." },
+    { "keyword": "education app design", "why": "40/mo, KD 0. Page 1 is how-to and trend blogs (anyforsoft, onix, adamfard, uxplanet, lollypop). Informational. Dropped from secondary (lesson 2026-10-17). It may appear once in running text but is not a target." },
+    { "keyword": "e learning platform ux design solution", "why": "30/mo. The SERP for 'e learning platform ux design' is guides, portfolio shots and theses (elearningindustry, icons8, dribbble shot). Informational. Kept only as the synonym 'e-learning platform UX design', printed once, not targeted." },
+    { "keyword": "higher-education ui/ux design services", "why": "30/mo. Page 1 is higher-ed web agencies (flatirons, blacksmith) and in-house university UX teams (it.wisc.edu, it.utah.edu). The site has no university or higher-education proof, so targeting it would imply campus clients. Rejected for honesty." },
+    { "keyword": "hire edtech design expert", "why": "30/mo. The literal string cannot be printed grammatically ('hire an edtech design expert' does not match it). Left as a query variant answered by the FAQ, not a secondary." }
+  ],
+  "secondary": [
+    "edtech design agency",
+    "edtech UI UX design agency",
+    "edtech design services",
+    "edtech website design",
+    "edtech UX design",
+    "edtech UX"
+  ],
+  "secondaryNote": "Each secondary was WebSearched on 2026-10-19 or is a word subset of one that was. 'edtech website design' (60) has a mixed page 1 (Dribbble service, agencypartner and halo-lab service pages, plus insivia and webstacks guides). It stays because Elia Wellness had a website in scope, and the FAQ answers it with a service offer. 'edtech ux' and 'ux of edtech' are covered by 'edtech UX design'.",
+  "keywordCarrier": {
+    "spellingNote": "The anchor (lower-cased by scripts/onpage-audit.mjs) is 'edtech UI/UX design services'. has() needs every keyword word longer than 2 letters, and norm() keeps the slash, so the token must print literally as 'UI/UX' (slash, no spaces). 'UI UX', 'UX/UI' and 'UI / UX' do NOT count for the title, H1, description, lead or kwCount. norm() lowercases, so 'EdTech' = 'edtech' in every check. It also removes a hyphen between letters, so 'ed-tech' counts, but 'Ed Tech' (with a space) does NOT. Use 'EdTech' at the start of the title and H1, and 'edtech' mid-sentence. kwCount counts only the exact phrase 'edtech ui/ux design services'. 'edtech UI/UX design' without 'services' does not count toward kwCount, though it is a good form for H2s.",
+    "anchorField": "\"anchor\": \"edtech UI/UX design services\". pageMetadata puts anchorOf(i) first in the meta keywords, so meta-keywords-keyword passes automatically. Do not repeat the anchor in keywords[]. keywords[] starts with the first secondary.",
+    "inBody": [
+      "Our edtech UI/UX design services plan and design the screens learners and course authors use…",
+      "edtech UI/UX design services cover the learner dashboard, course player, course builder, progress and badges, onboarding and the mobile learning app",
+      "edtech UI/UX design services run as a 4–8 week sprint or an 8–16 week full engagement"
+    ],
+    "secondaryCarriers": {
+      "edtech design agency": "as an edtech design agency, we design the learner and author screens, and your engineers build them",
+      "edtech UI UX design agency": "an edtech UI UX design agency that tests prototypes with learners before engineering starts",
+      "edtech design services": "edtech design services for one surface, for example the course player, run as a sprint",
+      "edtech website design": "edtech website design for the marketing site that leads learners into the platform",
+      "edtech UX design": "edtech UX design has to keep learners motivated over weeks, not one session",
+      "e-learning platform UX design (synonym)": "e-learning platform UX design follows the same 5 steps"
+    },
+    "avoid": "Do not stack a noun after the keyword ('edtech UI/UX design services project/cost/team/engagement'). For compounds, write 'an edtech design engagement' or 'an edtech UI sprint'. Cost H2: 'How much do edtech UI/UX design services cost?' ('cost' follows as the verb, which is grammatical). The outline H2s below were checked against this rule: none stacks a noun on the full keyword.",
+    "density": "The visible body of an industry page is about 1,300–1,600 words, including template blocks. Use the exact keyword 8–10 times: hero sub, abstract, 5 H2s, the cost answer and 1–2 FAQs. kwCount must be at least half of the top rival entity. Keep 'Elia Wellness' (10 or fewer), 'learning management system (LMS)' (both forms count, so 'LMS' 8 or fewer) and 'badges' (6 or fewer) in check. Do not write words that contain 'lms' as a substring ('films', 'realms'). 'edtech', 'design' and 'services' alone are not rivals, because their words sit inside the keyword.",
+    "h2Salience": "At least 40% of rendered H2s must carry the keyword or one of its words. The template adds 'EdTech UI UX case studies' (passes on 'edtech') and 'UI UX design services for edtech' (passes). Five section H2s in the outline carry the full keyword. Keep at least 4 of them."
+  },
+  "centralEntity": "edtech UI/UX design services",
+  "entities": [
+    "Elia Wellness",
+    "Live More",
+    "Sydney Adventist Church",
+    "learning management system (LMS)",
+    "learner dashboard",
+    "course player",
+    "course builder",
+    "course authors",
+    "wellness score",
+    "badges",
+    "gamification",
+    "social feed",
+    "pre-course questionnaire",
+    "older adults",
+    "mobile learning",
+    "instructional design",
+    "Figma",
+    "Maze",
+    "Web Content Accessibility Guidelines (WCAG)",
+    "ADA Title II",
+    "Section 508",
+    "Children's Online Privacy Protection Act (COPPA)",
+    "Family Educational Rights and Privacy Act (FERPA)"
+  ],
+  "entityNotes": "Every entry is the literal form the page must print. 'ADA Title II' must print as one phrase: do NOT add a bare 'Americans with Disabilities Act (ADA)' entity, because countIn() is a substring count and 'ada' sits inside 'adapt', 'adaptive' and 'Canada', which would inflate it into a false rival. 'System Usability Scale (SUS)' is left out for the same reason ('sus' sits inside 'consensus' and 'suspend'), so the process step can say 'usability score' or name SUS once without it being scored. 'course player' and 'course builder' are generic-sounding but each needs its own list item. 'older adults' is the case-study wording (adults 50+). Do not use 'seniors' or 'elderly'. 'Live More' is the book title, italic optional, printed once in the Elia section. 'Children's' may render with a straight or curly apostrophe; the bracket form 'COPPA' matches either way. Keep generic high-frequency nouns ('learners', 'students', 'courses', 'platform') OUT of entities.",
+  "attributes": [
+    "full edtech engagement ($60,000–$180,000 over 8–16 weeks, 3–6 designers)",
+    "design sprint ($25,000–$60,000 over 4–8 weeks, 2–4 designers)",
+    "audit of a live learning platform ($5,000–$15,000 over 2–3 weeks)",
+    "target platforms (web app, iOS, Android and website)",
+    "user groups (learners, course authors and administrators)",
+    "learner interviews (5–8 per user group)",
+    "prototype rounds (5 learners per round on Maze)",
+    "developer handoff (annotated Figma files, design tokens and component specs)",
+    "accessibility level (WCAG 2.2 level AA)",
+    "touch targets (44×44 pt on iOS, 48×48 dp on Android)",
+    "parental consent (COPPA consent before collecting data from children under 13)",
+    "learner motivation (badges, progress tracking and scores tied to lessons)"
+  ],
+  "attributeNotes": "The script reads only the label before '(' and needs 60% of its words longer than 3 letters in the text. So the page must print: 'full' + 'edtech' + 'engagement'; 'design sprint'; 'audit' + 'live' + 'learning' + 'platform'; 'target platforms'; 'user groups'; 'learner interviews'; 'prototype rounds'; 'developer handoff'; 'accessibility level'; 'touch targets'; 'parental consent'; 'learner motivation'. The gaming attribute 'time to first design (1–2 weeks)' is deliberately NOT here (see siteFacts.preFixed).",
+  "bindings": {
+    "synonyms": [
+      "edtech UX design",
+      "edtech design services",
+      "e-learning platform UX design",
+      "learning platform design"
+    ],
+    "plural": [
+      "edtech design agency",
+      "edtech UI UX design agency",
+      "edtech website design",
+      "edtech UX"
+    ],
+    "parent": [
+      "digital product design services",
+      "UI UX design services"
+    ],
+    "children": [
+      "learner dashboard",
+      "course player",
+      "course builder",
+      "progress tracking and badges",
+      "learner onboarding",
+      "mobile learning app"
+    ],
+    "related": [
+      "learning management system (LMS)",
+      "gamification",
+      "instructional design",
+      "course authors",
+      "WCAG 2.2",
+      "Figma"
+    ],
+    "usage": "Use each synonym at least once. Name the parent 'digital product design services' in the abstract or the definition section, and link it. Give each child its own list item (title + body) in the 'Which learning screens…' section. 'course builder' doubles as the author and admin console: the item title is 'Course builder and admin console.', but the child phrase 'course builder' must print as written."
+  },
+  "essential": [
+    "edtech UI/UX design services",
+    "learners",
+    "learning platform"
+  ],
+  "essentialNote": "The first sentence under every H2 (the bold answer) names 'edtech UI/UX design services' or a synonym, plus 'learners' or 'learning platform'. QA failed 2 gaming openers for using 'design process' or 'design' instead of the entity. Write 'Our edtech UI/UX design services take…', not 'Our edtech design process takes…'.",
+  "queryVariants": [
+    "edtech ui/ux design services",
+    "edtech design agency",
+    "edtech ui ux design agency",
+    "hire edtech design expert",
+    "e-learning platform ux design"
+  ],
+  "queryVariantsAnswer": "One answer for all: a senior product design team (since 2017, 200+ products) designs the UI and UX of a learning platform: learner dashboard, course player, course builder, progress and badges, onboarding, the mobile learning app and the website. The work is research with learners and course authors, flows, Figma screens, a clickable prototype tested in rounds, and a developer handoff. The client's engineers build it. It is priced as a $60,000–$180,000 full engagement (8–16 weeks, 3–6 designers) or a $25,000–$60,000 design sprint (4–8 weeks, 2–4 designers), and a live learning platform can start with a $5,000–$15,000 audit (2–3 weeks). Edtech proof: Elia Wellness only.",
+  "ambiguous": [
+    { "word": "course", "context": "'online course', 'Live More course', 'course player' or 'course builder'. Never 'of course' or 'course of action' on this page." },
+    { "word": "score", "context": "'wellness score' (Elia's 7-dimension measure) vs a usability score from testing vs a learner's test score. Name which every time; never a bare 'score'." },
+    { "word": "badge", "context": "'learner badges' or 'badges and bucket list' (gamification rewards), never certification or trust badges. Do not imply the site holds certifications." },
+    { "word": "LMS", "context": "Expand at first use: 'learning management system (LMS)'. Elia is a 'wellness LMS', not a school or university LMS. Say which." },
+    { "word": "engagement", "context": "'learner engagement' (behaviour) vs 'design engagement' or 'full engagement' (our commercial package). Never a bare 'engagement' in a sentence that also talks about learners." },
+    { "word": "accessibility", "context": "'WCAG accessibility' or 'accessible UI' vs Elia's challenge wording 'limited access to wellness resources'. Do not mix them in one sentence." },
+    { "word": "module", "context": "'course module' (a unit of lessons), never a code module." },
+    { "word": "audit", "context": "'UX audit of a live learning platform' vs an accessibility audit. A full accessibility audit is quoted separately (ux-audit hub FAQ)." },
+    { "word": "standard", "context": "'accessibility standard' or 'privacy standard' vs Elia's 'standard e-learning tools'. Do not use 'standard' in its everyday sense near the standards list." },
+    { "word": "dashboard", "context": "'learner dashboard' vs 'admin dashboard'. Say whose." }
+  ],
+  "siteFacts": {
+    "company": [
+      "Remote-first US UI/UX agency, HQ Reston, VA, in business since 2017, 200+ products designed (RULES.md confirmed facts). One senior team (parent hub metaDescription)."
+    ],
+    "engagements_homeTs": [
+      "UX audit: $5,000–$15,000, 2–3 weeks (do NOT state an audit team size; see conflicts)",
+      "Research & UX design sprint: $25,000–$60,000, 4–8 weeks, 2–4 designers",
+      "Full design & design system: $60,000–$180,000, 8–16 weeks, 3–6 designers",
+      "Embedded design team: $15,000–$40,000/mo, ongoing, 2–5 designers (optional, not needed on this page)"
+    ],
+    "parentHub": "digital-product-design-services.json. Elia's case study lists digital-product-design-services first, and its scope 'idea to product' matches the hub's 0→1 engagement. $60,000–$180,000, 8–16 weeks (40–80 working days). 5 steps, names and days exact: Discovery and product strategy (5–10 days); User research (5–15 days; 'Researchers interview 5–8 users per user group'); Information architecture and flows (5–10 days); Prototype and validation (10–20 days; '5 users per round complete tasks in the clickable prototype on Maze, and each round ends with a System Usability Scale (SUS) score'); UI design and handoff (15–25 days; WCAG 2.2 level AA, Figma files to engineering). Handoff package: 'Annotated Figma files, design tokens and component specifications'. Price factors (exactly 4): number of platforms, user groups, core user flows and validation rounds. FAQ: 'Do digital product designers write code? No.'",
+    "otherHubs": "web-app-design-services.json: $60,000–$180,000, 8–16 weeks, 6 steps, 5 users per round in Maze; it covers logged-in apps such as admin consoles (good for the course builder and admin item). mobile-app-ui-ux-design-services.json: $25,000–$60,000, 4–8 weeks, 5 users per round, touch targets 44×44 pt (iOS) and 48×48 dp (Android), Apple HIG and Material Design 3. ui-ux-web-design.json: marketing websites, $25,000–$60,000, 4–8 weeks, CMS handoff. ux-audit-services.json deliverables: heuristic evaluation, analytics review, session-recording review, accessibility check (WCAG 2.2 level AA on audited screens), report, prioritized fix roadmap. A full-site accessibility audit is quoted separately. usability-testing-services.json: '5–8 participants per round'.",
+    "priceRangeField": "$60,000–$180,000 (the full engagement, as in gaming.json). The body states the $25,000–$60,000 sprint and the $5,000–$15,000 audit once each, in the home.ts wording.",
+    "processRule": "The process steps use the parent hub's 5 step names and day ranges exactly, with edtech examples. Do not invent a different day split. Step 2 is 'interview 5–8 learners per user group' (hub: 5–8 users per user group). Step 4 is '5 learners per round … on Maze' (hub: 5 users per round).",
+    "preFixed": [
+      "From gaming fact-check F9: never write 'sliced UI assets'. The deliverable is 'annotated Figma files, design tokens and component specs' (parent hub handoff package).",
+      "From gaming fact-check F6: no 'first designs in 1–2 weeks' clause anywhere (it contradicts the 5 steps). There is no 'time to first design' attribute.",
+      "From gaming fact-check F7/F8 and the orchestrator: interviews are 5–8 per user group. In the prototype step, keep the parent hub's '5 learners per round' and do NOT attach that sentence to a link to usability-testing-services, which says 5–8 per round (that pairing failed gaming P14). If usability-testing-services is linked, put the link in the 'Mixed ages and digital confidence' card with no participant count, or write '5–8 participants per round' only in a sentence that describes that service.",
+      "From gaming fact-check F4: price factors are only the hub's 4 (platforms, user groups, core user flows, validation rounds), with edtech examples. Do not add 'screens', 'courses' or 'website scope' as price factors.",
+      "From gaming fact-check F3: no new sprint scope number ('1–2 surfaces'). Say a sprint can cover one surface, for example the course player, without a count.",
+      "From gaming fact-check F5: the audit reviews flows 'against usability heuristics and analytics' with a WCAG 2.2 level AA check, and ends in a 'prioritized fix roadmap'. Do not add inputs such as 'learner reviews' or 'app store reviews'.",
+      "From gaming fact-check F10: the standards H2 answer states a count that equals the number of distinct standards in the list. The outline list has 5 items and 5 standards, so the answer says 'Five'. Do not combine 2 standards in one bullet unless the count is updated.",
+      "From gaming fact-check F11: write WCAG contrast as '4.5:1 contrast for normal-size text' (large text needs 3:1).",
+      "From gaming fact-check F1: repeat the case-study wording; never expand it ('strategy' stays 'strategy', not 'product strategy and research programme').",
+      "From gaming QA: H2 openers use the entity or a synonym ('edtech UI/UX design services take…'). Expand every abbreviation at first use (UI, UX, LMS, WCAG, COPPA, FERPA, ADA). Lower-case a target page's anchor in running text ('startups UI UX design', 'SaaS UI UX design').",
+      "Layout trigger words (components/sections/SemanticSections.tsx kindOf): the cost H2 must contain 'cost' or 'price' (it gets the 'Pricing' block, which prints priceRange). The standards H2 must contain 'standard' and use format 'list' with plain-string items (it gets the 'Standards & compliance' eyebrow). The screens H2 uses item objects {title, body} (the 'What's included' block). The vs H2 uses format 'table'. Do not put 'industr' in a list H2 (it would become the 'Industries' block)."
+    ],
+    "conflicts": [
+      "BUILD vs DESIGN: the home.ts FAQ says 'We deliver design and development', and the parent hub FAQ says 'Do digital product designers write code? No.' (known open conflict). Follow the hub: we deliver Figma files, design tokens and component specs, and the client's engineers build. Never claim LMS development, hosting, SCORM or xAPI packaging, or LTI or SIS integrations.",
+      "ELIA QUOTE: the only client quote ('…for building a comprehensive health digital platform for us!', Geraldine Przybylko, Executive Director) praises 'building'. That feeds the conflict above (lesson 2026-10-11). Do NOT render it as a testimonial and do not quote it on this page. home.testimonial stays undefined.",
+      "PARTICIPANTS PER ROUND: the parent hub says '5 users per round' and usability-testing-services says '5–8 participants per round'. Handling is in siteFacts.preFixed: keep each figure next to its own hub and never mix them in one sentence.",
+      "AUDIT TEAM SIZE: home.ts says '1–2 designers', and ux-audit-services says 2 designers review independently. Do not state an audit team size.",
+      "CASE-STUDY RAIL (honesty, template): app/industries/[slug]/page.tsx shows caseStudiesForIndustry('edtech'). elia-wellness.md has 'industries: []', so the rail would fall back to ALL featured case studies (Nitro, TradeZella, Parents Connect…) under the H2 'EdTech UI UX case studies'. That implies non-education clients did edtech work. Orchestrator action (already planned): set 'industries: [edtech]' in content/case-studies/elia-wellness.md before or with publishing, so the rail shows Elia only.",
+      "LOCATION COPY: ux-design-agency-boston.json L156 lists 'Edtech, for example course platforms, assessment tools and teacher dashboards used on school devices'. ux-design-agency-philadelphia.json L29–33 says we 'concentrate on' higher education (admissions, financial aid, course registration, learning platforms). Those are capability statements with no case study behind them. This page must not echo them as past work ('we designed teacher dashboards', 'our university clients'). The only edtech work is Elia Wellness.",
+      "ELIA SERVICES: elia-wellness.md lists services [digital-product-design-services, web-app-design-services, mobile-app-ui-ux-design-services, ui-ux-web-design]. That supports relatedServices and the across-links. It does not support usability testing or UX audit work on Elia, so do not say Elia was usability-tested or audited.",
+      "'30+' RESULT: the case study says '30+ boost in wellness scores among active users' with no unit. Quote it exactly. Never convert it to '30%' or 'over 30 points'.",
+      "HERO TRUST LOGOS (advisory carried from gaming QA): the HeroTrust row on every industry page shows logos that home.ts L7–8 calls draft placeholders. It has no edtech label, so it is not a page blocker. It remains an open owner question.",
+      "OG IMAGE: pageMetadata uses /og/industries/edtech.png. Check that the build generates it (gaming's was generated at build)."
+    ]
+  },
+  "proof": {
+    "caseStudy": "/case-studies/elia-wellness/ (content/case-studies/elia-wellness.md). This is the ONLY education or learning proof. No other edtech client, school, district, university, bootcamp, tutoring company or count may be claimed or implied.",
+    "supports": [
+      "Elia Wellness is a holistic wellness initiative by the Sydney Adventist Church. It wanted a user-friendly learning management system (LMS) based on its popular book Live More.",
+      "Scope (quote exactly): 'idea to product, strategy, web app, mobile app and website.'",
+      "Audience: older adults, people over 50 (case wording: 'adults 50+', 'older adults', 'people over 50'), with 'very different comfort levels with technology'.",
+      "Challenge (paraphrase allowed): be intuitive; deliver meaningful, measurable wellness content, not just lessons to click through; go further than standard e-learning tools with gamification, social connection and interactive wellness tracking.",
+      "Approach: 'a human-centered approach focused on accessible, easy-to-navigate UI and UX', with 'responsive, mobile-friendly modules'. The platform is built around five experiences: a social feed to share and celebrate milestones; a wellness score across 7 dimensions (emotionally thriving, growth mindset, actively engaged, environmentally attuned, socially connected, physically energised, spiritually empowered); courses that course creators build from blocks (text, images, video and challenges); badges, where lessons unlock items in the learner's bucket list (seeing a sunrise, stretching day); progress monitoring (today's progress and weekly course stats).",
+      "Solution list: course creation for authors (lessons, modules and tutorials), performance tracking and interactive challenges, wellness dimensions and scoring, gamification such as badges, an integrated social feed. Also a desktop course builder for authors.",
+      "Devices: mobile screens (lesson with challenges, wellness score dashboard, personal growth questionnaire). The pre-course questionnaire 'works on tablets too, with large touch targets and simple rating scales.'",
+      "Results (quote exactly): '40% growth in user registrations' (growing from local origins to a worldwide wellness community) and '30+ boost in wellness scores among active users'. Frame both as the platform's reported results. Never attribute them to design alone.",
+      "Images that exist (reuse with the case-study alt text and captions only): /work/elia-wellness/cover.webp ('The Elia Wellness dashboard'), wellness-score.webp, course-editor.webp, badges.webp, course-progress.webp, course-builder.webp, mobile-screens.webp, tablet-questionnaire.webp, social-feed.webp."
+    ],
+    "doesNotSupport": [
+      "Any school, K-12, district, college, university, bootcamp, corporate-training or tutoring client, and any count of edtech products, learners, institutions or courses.",
+      "Children or students as Elia's users. Elia's users are adults 50+, so COPPA and FERPA did NOT apply to Elia. Present COPPA and FERPA only as 'standards that apply' to products for children or schools, never as work we did or compliance we certified.",
+      "Compliance, certification or legal advice: we design consent, role and accessibility patterns. We do not certify WCAG, Section 508, ADA, COPPA or FERPA compliance, and we do not write VPATs or accessibility conformance reports.",
+      "Development or integration: LMS build, SCORM, xAPI, LTI, SIS or SSO integration, video hosting, content migration. The FAQ may say 'No' to these.",
+      "Curriculum, instructional design or course content production. The course builder lets Elia's course creators build lessons; we did not write the Live More course.",
+      "Usability testing or audits on Elia (not in its scope or body). Do not say 'tested with older adults'. Say the questionnaire was designed with large touch targets and simple rating scales.",
+      "Adaptive learning, AI tutoring, proctoring, assessment engines, live classrooms or video conferencing: none appear in the case study.",
+      "Expanding the scope words: 'strategy' stays 'strategy'; do not add 'research programme', 'branding' or 'design system'.",
+      "Leaderboard claims beyond the cover image alt ('a leaderboard' appears there once). Do not build a section around it."
+    ],
+    "otherCaseStudies": "Parents Connect (/case-studies/parents-connect/) is a parenting community with educational content and video episodes. It is NOT an edtech client. Use it at most once, as 'outside learning platforms, the same community patterns…', in the social-feed context. Skip it if the section runs over 70 words. No other case study is relevant.",
+    "quotes": "Do not use Elia's quote (see siteFacts.conflicts ELIA QUOTE)."
+  },
+  "metaPlan": {
+    "title": "EdTech",
+    "order": 8,
+    "anchor": "edtech UI/UX design services",
+    "metaTitle": "EdTech UI/UX Design Services | LMS & E-Learning Platforms",
+    "metaTitleLength": 57,
+    "metaDescription": "EdTech UI/UX design services for LMS and e-learning platforms: learner dashboards, course players, badges and mobile apps. Book a free consultation.",
+    "metaDescriptionLength": 148,
+    "metaNote": "LMS is not expanded in meta (space). Expand it in the hero sub or abstract. The title has no brand name.",
+    "h1": "EdTech UI/UX design services for learning platforms, course players and learner apps",
+    "eyebrow": "EdTech UI/UX design",
+    "heroSub": "Our edtech UI/UX design services plan and design the screens learners and course authors use: the learner dashboard, course player, course builder, progress and badges, and the mobile learning app. One senior team takes a learning platform from idea to tested, developer-ready Figma designs.",
+    "heroSubNote": "The lead check reads the first 60 words after the H1, so the hero sub keeps the exact keyword in its first sentence (as above).",
+    "summary": "UI and UX design for learning platforms: learner dashboards, course players, course builders, badges and mobile learning, tested with learners.",
+    "intro": "Edtech teams bring us the screens learners and course authors use every week: the dashboard, course player, course builder and mobile app, tested before engineering starts.",
+    "bullets": [
+      "Design learner dashboards that show progress at a glance",
+      "Plan course players that mix video, text and challenges",
+      "Give course authors a block-based course builder",
+      "Tie badges and scores to real lesson progress",
+      "Hand annotated Figma files, design tokens and component specs to your engineers"
+    ],
+    "keywordsField": ["edtech design agency", "edtech UI UX design agency", "edtech design services", "edtech website design", "edtech UX design", "e-learning platform UX design"],
+    "relatedServices": ["digital-product-design-services", "web-app-design-services", "mobile-app-ui-ux-design-services", "ui-ux-web-design", "ux-audit-services", "usability-testing-services"],
+    "stats": [
+      { "value": "40%", "label": "growth in user registrations for Elia Wellness" },
+      { "value": "200+", "label": "products designed since 2017" }
+    ],
+    "statsNote": "The '30+ boost in wellness scores among active users' may replace or join the 40% stat. Quote it exactly and attribute it to Elia Wellness.",
+    "sourceContext": "US UI/UX design agency; this industry page serves edtech and e-learning teams building learning platforms, LMS products and learner apps that need the UI and UX layer designed and tested, while their own engineers build it.",
+    "abstract": "Pattern: 'Edtech UI/UX design services shape the user interface (UI) and user experience (UX) of a learning platform, from the learner dashboard and course player to the course builder authors use. They are part of our digital product design services. A full edtech engagement runs 8–16 weeks, costs $60,000–$180,000, and ends with tested Figma designs your engineers build.' Link 'digital product design services' to /services/digital-product-design-services/."
+  },
+  "outline": [
+    {
+      "h2": "What are edtech UI/UX design services?",
+      "format": "paragraph",
+      "answerHint": "Bold definition: edtech UI/UX design services plan how learners move through a learning platform (UX) and design the screens they and course authors see and touch (UI), from the learner dashboard to the mobile app. Body (50–70 words): synonym 'learning platform design'; parent link 'digital product design services' and '/' 'UI UX design services'; the carrier 'as an edtech design agency, we design the learner and author screens, and your engineers build them' (annotated Figma files, design tokens and component specs). Image: /work/elia-wellness/cover.webp with the case-study alt and the caption 'The Elia Wellness dashboard'. Mention Elia in the body sentence next to the image.",
+      "points": ["definition with UI, UX expanded", "synonym: learning platform design", "parent link", "no-code scope line", "image–text fit: Elia dashboard"]
+    },
+    {
+      "h2": "Which learning screens do our edtech UI/UX design services cover?",
+      "format": "list (item objects {title, body})",
+      "answerHint": "Bold: our edtech UI/UX design services cover 6 parts of a learning platform that learners and course authors use, each drawn in every state (default, loading, empty, error and completed). One item per child, 1–2 sentences, one concrete example each.",
+      "points": [
+        "Learner dashboard.: today's progress, next lesson, streaks or scores at a glance (Elia: 'Today's Progress' card and weekly course stats).",
+        "Course player.: video, text, images and challenges in one lesson view, with clear next and back.",
+        "Course builder and admin console.: course authors build lessons and modules from blocks (Elia: text, images, video and challenges). Link /services/web-app-design-services/ 'web app design services' (logged-in admin tools).",
+        "Progress tracking and badges.: gamification tied to lessons, not clicks (Elia: lessons unlock bucket-list items). Plain words 'learner badges'.",
+        "Learner onboarding.: sign-up, the first lesson and a pre-course questionnaire that sets a baseline (Elia: personal growth questionnaire on tablet).",
+        "Mobile learning app.: lessons and challenges on iOS and Android, with touch targets of 44×44 pt and 48×48 dp. Link /services/mobile-app-ui-ux-design-services/ 'mobile app UI UX design services'."
+      ]
+    },
+    {
+      "h2": "What makes edtech UX design different from other app design?",
+      "format": "cards",
+      "answerHint": "Bold: edtech UX design has to keep learners motivated over weeks of a learning platform, serve buyers who are not the users, and work for every age and ability. 4 cards, 1–2 sentences each.",
+      "points": [
+        "Motivation over weeks, not one session: progress, badges and scores tied to lessons. Learner motivation comes from finishing the course, not points for clicks.",
+        "Several user groups on one platform: learners, course authors and administrators (and parents or teachers when children use it). Each gets its own dashboard and permissions.",
+        "Mixed ages and digital confidence: Elia served older adults with 'very different comfort levels with technology'. Large touch targets and simple rating scales on the pre-course questionnaire. Optional link /services/usability-testing-services/ 'usability testing services' with NO participant count.",
+        "Accessibility and privacy as buying criteria: public schools and universities buy against WCAG; children's products need parental consent (details in the standards section, no repeat)."
+      ]
+    },
+    {
+      "h2": "What did edtech UI/UX design deliver for Elia Wellness?",
+      "format": "paragraph",
+      "answerHint": "Bold: for Elia Wellness, a wellness learning management system (LMS) for older adults, our edtech UX design work took the learning platform from idea to product across web app, mobile app and website, and registrations grew 40%. Body (≤ 70 words): the Sydney Adventist Church initiative, the book Live More, scope verbatim, the five experiences named briefly (social feed, wellness score, block-based courses, badges, progress), and the '30+ boost in wellness scores among active users' quoted exactly. Link '/case-studies/elia-wellness/' 'Elia Wellness case study'. Only facts from proof.supports. No testimonial. Optional image: /work/elia-wellness/badges.webp or wellness-score.webp with the case alt and caption.",
+      "points": ["who and why", "scope verbatim", "five experiences", "both results framed as the platform's reported results"]
+    },
+    {
+      "h2": "How does our edtech UI/UX design process work?",
+      "format": "steps",
+      "answerHint": "Bold: our edtech UI/UX design services take a learning platform from discovery to developer handoff in 8–16 weeks (40–80 working days) and 5 steps. NO 'first designs in 1–2 weeks' clause. Use the parent hub's step names and days exactly, with edtech examples.",
+      "points": [
+        "Discovery and product strategy (5–10 days): stakeholder workshops set the user groups (learners, course authors, administrators), the core learning loop and success metrics such as course completion. Link /blog/is-discovery-phase-worth-it/ 'what a discovery phase settles before screens'.",
+        "User research (5–15 days): researchers interview 5–8 learners per user group, and course authors, to find where onboarding, lessons and progress lose them.",
+        "Information architecture and flows (5–10 days): the team maps the course structure (courses, modules, lessons), the onboarding flow and the author's publishing flow.",
+        "Prototype and validation (10–20 days): 5 learners per round complete tasks in a clickable Figma prototype on Maze (parent hub figure; no usability-testing link in this sentence).",
+        "UI design and handoff (15–25 days): designers finish every screen state and hand annotated Figma files, design tokens and component specs to your engineers, with Web Content Accessibility Guidelines (WCAG) 2.2 level AA."
+      ]
+    },
+    {
+      "h2": "Edtech UI/UX design vs instructional design",
+      "format": "table",
+      "answerHint": "Bold: edtech UI/UX design services decide how learners find, take and track courses on the learning platform; instructional design decides what each course teaches and in what order. Then the carrier sentence and 'The table compares both disciplines.' (table intro). Columns: Criterion | Edtech UI/UX design | Instructional design. Rows: Main question; Inputs (learner research, author workflows, analytics vs learning objectives and subject-matter experts); Outputs (flows, prototypes, UI screens and component specs in Figma vs course outlines, lesson scripts, assessments); Validation (prototype rounds with learners vs learning outcomes and assessment results); When to hire (learners get lost, drop out of the course player, authors struggle with the builder vs the content itself is unclear); Who does it ('Our senior design team, as on Elia Wellness' vs 'Your instructional designers or course authors; we do not write curriculum'). Compare disciplines, not vendors. This table also answers the 'lms design' (course design) confusion without targeting that term.",
+      "points": ["discipline comparison, no competitor names", "honest scope: no curriculum", "carrier for 'edtech UX design'"]
+    },
+    {
+      "h2": "How much do edtech UI/UX design services cost?",
+      "format": "paragraph",
+      "answerHint": "Bold: edtech UI/UX design services cost $60,000–$180,000 over 8–16 weeks for a full learning platform, or $25,000–$60,000 over 4–8 weeks for a design sprint. Body (50–70 words): a full engagement uses 3–6 designers and a sprint 2–4. Price follows the parent hub's 4 factors only: platforms (web app, iOS, Android), user groups (learners, course authors, administrators), core user flows such as onboarding and the course player, and validation rounds. A live learning platform starts with an audit: $5,000–$15,000 over 2–3 weeks via /services/ux-audit-services/ 'UX audit services'. Optionally deep-link the hub cost section /services/digital-product-design-services/#how-much-does-digital-product-design-cost. Carrier: 'edtech design services for one surface, for example the course player, run as a sprint'.",
+      "points": ["home.ts lines only", "hub's 4 price factors only", "no per-course or per-screen price", "no audit team size"]
+    },
+    {
+      "h2": "Which accessibility and privacy standards shape edtech UI/UX design services?",
+      "format": "list (plain-string items; the H2 must keep the word 'standards')",
+      "answerHint": "Bold: five accessibility and privacy standards shape edtech UI/UX design services for learning platforms, and each one changes what learners see on screen. Each item = one fact + its effect on screens + the primary link from externalSources. One closing sentence (in the answer or the last item): we design to these standards; legal compliance and certification stay with the product owner.",
+      "points": [
+        "Web Content Accessibility Guidelines (WCAG) 2.2 level AA: keyboard access, visible focus and 4.5:1 contrast for normal-size text across the learner dashboard and course player.",
+        "ADA Title II: the Department of Justice rule requires state and local governments, including public schools and universities, to make web content and mobile apps meet WCAG 2.1 level AA. An April 2026 interim final rule moved the compliance dates to April 26, 2027 (populations of 50,000 or more) and April 26, 2028 (smaller entities). Effect: platforms sold to public institutions are bought against WCAG. Fact-check the dates against ada.gov or the Federal Register; if unconfirmed, drop the dates and keep the WCAG 2.1 AA sentence.",
+        "Section 508: federal agencies must buy accessible information and communication technology, and the Revised 508 Standards incorporate WCAG 2.0 level AA. Effect: learning platforms sold to federal agencies need the same accessible patterns.",
+        "Children's Online Privacy Protection Act (COPPA): operators of services directed to children under 13 must get verifiable parental consent before collecting personal information. The FTC's amended rule took effect June 23, 2025, with compliance due April 22, 2026. Effect: sign-up and onboarding include a parent consent step and collect only what lessons need.",
+        "Family Educational Rights and Privacy Act (FERPA): protects student education records at schools that receive US Department of Education funds. Effect: role-based views, so teachers and administrators see only the records they need, and grades never show on shared screens such as leaderboards."
+      ]
+    },
+    {
+      "h2": "FAQs about edtech UI/UX design services",
+      "format": "faq",
+      "answerHint": "Bold: these answers cover the 5 questions learning platform teams ask most before hiring edtech UI/UX design services.",
+      "points": ["see faqs[]"]
+    }
+  ],
+  "faqs": [
+    { "q": "Have you designed a learning management system (LMS)?", "a": "Yes. For Elia Wellness, a wellness LMS for older adults based on the book Live More, we took the learning platform from idea to product across web app, mobile app and website. User registrations grew 40%. Link /case-studies/elia-wellness/. One project: do not pluralise, and do not say school or university." },
+    { "q": "Do you build the platform or integrate SCORM content?", "a": "No. Our designers deliver annotated Figma files, design tokens and component specs. Your engineers write the code and handle content standards such as SCORM and integrations with other systems. (Matches the hub's 'designers do not write code'.)" },
+    { "q": "Can you redesign a learning platform that is already live?", "a": "Yes. Start with a UX audit of the live learning platform, $5,000–$15,000 over 2–3 weeks. It reviews onboarding, the course player and the course builder against usability heuristics and analytics, with a WCAG 2.2 level AA check. Its prioritized fix roadmap then scopes a design sprint. Link /services/ux-audit-services/." },
+    { "q": "Can you design an edtech product for children under 13?", "a": "Yes. The same 5-step process applies, and onboarding adds a COPPA parental consent step and collects only the data lessons need. Our published edtech work so far is Elia Wellness, which serves older adults, so we do not claim children's products as past work. Optional sibling link: /industries/startups/ 'startups UI UX design' for pre-launch teams." },
+    { "q": "Do you design the edtech website as well as the platform?", "a": "Yes. Edtech website design for the marketing site that leads learners into the platform runs through our UI UX web design practice (link /services/ui-ux-web-design/), and Elia Wellness's scope included its website. Do not add a website price unless it is the ui-ux-web-design hub's $25,000–$60,000 over 4–8 weeks, stated with that link." }
+  ],
+  "faqNotes": "Boolean questions start with Yes or No. 2–3 sentences each. The FAQ answer for 'edtech design agency' and 'hire edtech design expert' is covered by the definition and cost sections (one answer). Do not add a sixth FAQ that restates pricing.",
+  "linkPlan": {
+    "up": [
+      { "href": "/services/digital-product-design-services/", "anchor": "digital product design services", "where": "abstract or definition body (required)" },
+      { "href": "/", "anchor": "UI UX design services", "where": "definition body, once" }
+    ],
+    "acrossServices": [
+      { "href": "/services/web-app-design-services/", "anchor": "web app design services", "where": "course builder and admin console item" },
+      { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services", "where": "mobile learning app item" },
+      { "href": "/services/ui-ux-web-design/", "anchor": "UI UX web design", "where": "website FAQ" },
+      { "href": "/services/ux-audit-services/", "anchor": "UX audit services", "where": "cost body (live platform audit); the FAQ may repeat the concept without a second link" },
+      { "href": "/services/usability-testing-services/", "anchor": "usability testing services", "where": "'Mixed ages and digital confidence' card, no participant count in that sentence" }
+    ],
+    "siblings": [
+      { "href": "/industries/saas/", "anchor": "SaaS UI UX design", "where": "'Several user groups' card (learning platforms sold to institutions share SaaS admin and role patterns). Lower-case nothing: 'SaaS' is an acronym." },
+      { "href": "/industries/startups/", "anchor": "startups UI UX design", "where": "children FAQ, optional. Skip it if the SaaS link is used and the answer runs long." }
+    ],
+    "down": [
+      { "href": "/case-studies/elia-wellness/", "anchor": "Elia Wellness case study", "where": "Elia section (required) and the LMS FAQ" },
+      { "href": "/blog/is-discovery-phase-worth-it/", "anchor": "what a discovery phase settles before screens", "where": "process step 1" }
+    ],
+    "deepLinkOption": { "href": "/services/digital-product-design-services/#how-much-does-digital-product-design-cost", "anchor": "how the full engagement is priced", "where": "cost body, optional; only if it does not push the body past 70 words" },
+    "childrenWithPages": "None of the children (learner dashboard, course player, course builder, progress and badges, onboarding, mobile learning app) has its own page. Do not link them.",
+    "inboundForOrchestrator": [
+      { "source": "content/case-studies/elia-wellness.md", "change": "Set frontmatter 'industries: [edtech]' (honesty: it filters the case-study rail). Link one Overview sentence to /industries/edtech/ with the anchor 'edtech UI/UX design services', e.g. on 'learning management system (LMS)'.", "priority": "required" },
+      { "source": "content/locations/ux-design-agency-boston.json (Edtech bullet, L156)", "change": "Link 'Edtech' (or 'course platforms') to /industries/edtech/ with the anchor 'edtech UI/UX design'.", "priority": "required", "why": "The bullet already names edtech course platforms, so this is a real topic match. It is the only bullet in that list without a link." },
+      { "source": "content/locations/ux-design-agency-philadelphia.json (higher-education bullet, L33)", "change": "Link 'learning platforms' to /industries/edtech/ with the anchor 'learning platforms' (natural phrase; the anchor names the target concept).", "priority": "required", "why": "The bullet names learning platforms and has no link. Learning platforms are what the edtech page covers." },
+      { "source": "content/pages/about.md (Elia Wellness row, L50)", "change": "skip", "priority": "skip", "why": "The row already links the case study, and a second link in a table cell adds little click value." }
+    ],
+    "verified": "Every href was checked against existing files: content/services/{digital-product-design-services,web-app-design-services,mobile-app-ui-ux-design-services,ui-ux-web-design,ux-audit-services,usability-testing-services}.json, content/industries/{saas,startups}.json, content/case-studies/elia-wellness.md, content/blog/is-discovery-phase-worth-it.md. The section id 'how-much-does-digital-product-design-cost' comes from the hub's H2 'How much does digital product design cost?' (sectionId rule)."
+  },
+  "externalSources": [
+    { "url": "https://www.w3.org/TR/WCAG22/", "why": "WCAG 2.2 level AA: 2.1.1 Keyboard, 2.4.7 Focus Visible, 1.4.3 Contrast (Minimum) 4.5:1 for normal-size text (3:1 for large text)." },
+    { "url": "https://www.ada.gov/resources/2024-03-08-web-rule/", "why": "ADA Title II web and mobile accessibility rule (WCAG 2.1 AA for state and local governments, including public schools and universities). Verify that the page reflects the April 2026 interim final rule dates (April 26, 2027 and April 26, 2028). Otherwise cite the Federal Register notice of April 20, 2026, or drop the dates." },
+    { "url": "https://www.access-board.gov/ict/", "why": "Revised 508 Standards; they incorporate WCAG 2.0 Level A and AA by reference." },
+    { "url": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa", "why": "COPPA Rule: verifiable parental consent for children under 13. The amended rule was published April 22, 2025, took effect June 23, 2025, and has a general compliance date of April 22, 2026 (Federal Register 2025-05904)." },
+    { "url": "https://www.federalregister.gov/documents/2025/04/22/2025-05904/childrens-online-privacy-protection-rule", "why": "Primary source for the COPPA effective and compliance dates." },
+    { "url": "https://studentprivacy.ed.gov/ferpa", "why": "FERPA: protects student education records at schools receiving US Department of Education funds. Verify the URL and wording." }
+  ],
+  "serpGaps": [
+    "Page 1 (flatirons, wearetenet, Dribbble listings, linkupst) is service pages with generic capability lists. None verifiably publishes a price range, timeline or team size; we publish ranges from home.ts.",
+    "None separates edtech UI/UX design from instructional design or course production. Our table does, and it is also our honest scope line (no curriculum, no code).",
+    "None names current US standards as design inputs with dates: the ADA Title II rule (and its April 2026 extension), Section 508, the amended COPPA rule (compliance April 22, 2026) and FERPA role-based views. A cieden listing mentions FERPA and COPPA only in passing.",
+    "None shows learning design for older adults (mixed digital confidence, large touch targets, simple rating scales). Elia Wellness covers that first-hand.",
+    "Competitor claims such as '450+ platforms built' (wearetenet) and '120 design awards' (lazarev): do not imitate them, and never invent an edtech count."
+  ],
+  "visuals": [
+    { "type": "hero illustration", "idea": "Learning-platform screen map: learner dashboard, course player, course builder, progress and badges, onboarding questionnaire and mobile app as connected tiles, with roles (learner, course author, administrator) as labels. Generic shapes, no fake product UI." },
+    { "type": "case image", "idea": "Reuse /work/elia-wellness/cover.webp in the definition section and badges.webp or wellness-score.webp in the Elia section, with the existing case-study alt text and captions. No new Elia mock-ups." },
+    { "type": "process timeline", "idea": "The 5 parent-hub steps with edtech examples and day ranges (8–16 weeks), landscape 1200 wide, text ≥ 38px." },
+    { "type": "comparison graphic", "idea": "Edtech UI/UX design vs instructional design: what each decides and produces, mirroring the table (the table stays as the visible text)." },
+    { "type": "standards strip", "idea": "Five standards (WCAG 2.2, ADA Title II, Section 508, COPPA, FERPA), each with the one screen it changes (focus, contrast, consent step, role-based views). Optional." }
+  ],
+  "layoutNotes": "Section detail text is 50–70 words (90 max). Bold only the direct answer. Every table gets an intro sentence ('The table compares both disciplines.'). Every image is a figure with a caption that names the same thing as its alt text, placed after the sentence that names it, never directly after an H2. FAQ last. Nothing collapsed except the FAQ.",
+  "funnel": "bofu",
+  "serviceSupport": 5,
+  "leadAngle": "Two moments. (1) The cost section: a team planning a new learning platform wants the $60,000–$180,000 full engagement, and a team fixing one surface (the course player or onboarding) wants the $25,000–$60,000 sprint. (2) The live-platform FAQ: a team with drop-off in onboarding or the course player wants the $5,000–$15,000 audit. The standards section is a third trigger for teams selling to public schools or federal buyers. The template's lead form and CTA band carry the offer.",
+  "competitorsSeen": [
+    { "domain": "flatirons.com", "url": "https://flatirons.com/services/edtech-ui-ux-design" },
+    { "domain": "wearetenet.com", "url": "https://wearetenet.com/edtech-ui-ux-design-services" },
+    { "domain": "linkupst.com", "url": "https://linkupst.com/design/services/edtech-ui-ux-design" },
+    { "domain": "octet.design", "url": "https://octet.design/edtech-design-agency/" },
+    { "domain": "agencypartner.com", "url": "https://agencypartner.com/edtech-web-design/" },
+    { "domain": "halo-lab.com", "url": "https://www.halo-lab.com/service/web-design-education" }
+  ],
+  "notes": "This is an industry page, not a blog post, so the variety/fingerprints rules do not apply. Competitor pages were not fetched (WebSearch snippets only); never copy their wording or structure. Every regulation date and claim goes to the fact-checker. The 'EdTech' title makes the template H2s read 'EdTech UI UX case studies' and 'UI UX design services for edtech', and the Service schema name 'EdTech UI UX Design Services'. Leave them. order 8 follows gaming (7). competitors.json and the researcher learnings were NOT edited, because the orchestrator said not to edit any other file. Proposed lessons are in the hand-off report."
+}

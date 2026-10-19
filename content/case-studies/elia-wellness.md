@@ -6,7 +6,7 @@ client: Elia Wellness
 logo: Elia Wellness
 result: "40% growth in user registrations"
 services: [digital-product-design-services, web-app-design-services, mobile-app-ui-ux-design-services, ui-ux-web-design]
-industries: []
+industries: [edtech]
 tags: [Wellness, Learning platform, Web & mobile]
 results:
   - { value: "40%", label: "growth in user registrations, from a local community to a worldwide one" }
