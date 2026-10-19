@@ -22,7 +22,7 @@ image: /work/elia-wellness/cover.webp
 
 ## Overview
 
-Elia Wellness is a holistic wellness initiative by the Sydney Adventist Church. It wanted a user-friendly learning management system (LMS) based on its popular book *Live More*. The platform goes beyond traditional e-learning by building wellness into every module: from course creation to social connection, people track, share and celebrate their wellness journey in a responsive, engaging environment.
+Elia Wellness is a holistic wellness initiative by the Sydney Adventist Church. It wanted a user-friendly learning management system (LMS) based on its popular book *Live More*. This work now anchors our [edtech UI/UX design services](/industries/edtech/). The platform goes beyond traditional e-learning by building wellness into every module: from course creation to social connection, people track, share and celebrate their wellness journey in a responsive, engaging environment.
 
 **Scope of work:** idea to product, strategy, web app, mobile app and website.
 

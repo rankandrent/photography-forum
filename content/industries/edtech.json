@@ -32,8 +32,14 @@
   "priceRange": "$60,000–$180,000",
   "abstract": "Edtech UI/UX design services shape the user interface (UI) and user experience (UX) of a learning platform, from the learner dashboard and course player to the course builder that course authors use. They are part of our digital product design services. A full edtech engagement runs 8–16 weeks, costs $60,000–$180,000, and ends with tested Figma designs your engineers build.",
   "stats": [
-    { "value": "40%", "label": "growth in user registrations for Elia Wellness" },
-    { "value": "200+", "label": "products designed since 2017" }
+    {
+      "value": "40%",
+      "label": "growth in user registrations for Elia Wellness"
+    },
+    {
+      "value": "200+",
+      "label": "products designed since 2017"
+    }
   ],
   "sections": [
     {
@@ -54,7 +60,7 @@
       "items": [
         {
           "title": "Learner dashboard.",
-          "body": "The next lesson, today's progress and weekly course stats show at a glance, as on the Today's Progress card we designed for Elia."
+          "body": "The next lesson, today's progress and weekly course stats show at a glance, as on the Today's Progress card and weekly course stats chart we designed for Elia."
         },
         {
           "title": "Course player.",
@@ -70,7 +76,7 @@
         },
         {
           "title": "Learner onboarding.",
-          "body": "Sign-up, the first lesson and a pre-course questionnaire that sets each learner's starting point, like the personal growth questionnaire Elia learners fill in on a tablet."
+          "body": "Sign-up, the first lesson and a pre-course questionnaire, like the personal growth questionnaire Elia learners fill in on a phone or a tablet."
         },
         {
           "title": "Mobile learning app.",
@@ -97,7 +103,7 @@
         },
         {
           "title": "Accessibility and privacy as buying criteria",
-          "body": "Public schools and universities buy learning platforms against Web Content Accessibility Guidelines (WCAG) accessibility rules, and products for children need parental consent before sign-up. The standards list further down names each rule and the screen it changes."
+          "body": "Public schools and universities buy learning platforms against Web Content Accessibility Guidelines (WCAG) accessibility rules, and products for children under 13 need parental consent before they collect a child's personal information. The standards list further down names each rule and the screen it changes."
         }
       ]
     },
@@ -118,7 +124,7 @@
         },
         {
           "title": "User research (5–15 days)",
-          "body": "Researchers interview 5–8 learners per user group, and course authors, to find where onboarding, lessons and progress tracking lose them. These learner interviews shape every later flow."
+          "body": "Researchers interview 5–8 users per user group, such as learners and course authors, to find where onboarding, lessons and progress tracking lose learners. These learner interviews shape every later flow."
         },
         {
           "title": "Information architecture and flows (5–10 days)",
@@ -181,7 +187,7 @@
       "h2": "How much do edtech UI/UX design services cost?",
       "format": "paragraph",
       "answer": "<strong>Edtech UI/UX design services cost $60,000–$180,000 over 8–16 weeks for a full learning platform, or $25,000–$60,000 over 4–8 weeks for a design sprint.</strong>",
-      "body": "<p>A full edtech engagement uses 3–6 designers; a design sprint uses 2–4, and edtech design services for one surface, for example the course player, run as a sprint. Price follows 4 factors: target platforms (web app, iOS, Android and website), user groups, core user flows such as onboarding, and validation rounds. A UX audit of a live learning platform costs $5,000–$15,000 over 2–3 weeks through our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
+      "body": "<p>A full edtech engagement uses 3–6 designers; a design sprint uses 2–4, and edtech design services for one surface, for example the course player, run as a sprint. Price follows 4 factors: target platforms (web app, iOS and Android), user groups, core user flows such as onboarding, and validation rounds. A UX audit of a live learning platform costs $5,000–$15,000 over 2–3 weeks through our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
     },
     {
       "h2": "Which accessibility and privacy standards shape edtech UI/UX design services?",
