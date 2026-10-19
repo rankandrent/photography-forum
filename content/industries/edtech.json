@@ -1,0 +1,310 @@
+{
+  "title": "EdTech",
+  "order": 8,
+  "metaTitle": "EdTech UI/UX Design Services | LMS & E-Learning Platforms",
+  "metaDescription": "EdTech UI/UX design services for LMS and e-learning platforms: learner dashboards, course players, badges and mobile apps. Book a free consultation.",
+  "hero": {
+    "eyebrow": "EdTech UI/UX design",
+    "h1": "EdTech UI/UX design services for learning platforms, course players and learner apps",
+    "sub": "Our edtech UI/UX design services plan and design the screens learners and course authors use: the learner dashboard, course player, course builder, progress and badges, and the mobile learning app. One senior team takes a learning platform or learning management system (LMS) from idea to tested, developer-ready Figma designs."
+  },
+  "summary": "UI and UX design for learning platforms: learner dashboards, course players, course builders, badges and mobile learning, tested with learners.",
+  "intro": "Edtech teams bring us the screens learners and course authors use every week: the dashboard, course player, course builder and mobile app, tested before engineering starts.",
+  "bullets": [
+    "Design learner dashboards that show progress at a glance",
+    "Plan course players that mix video, text and challenges",
+    "Give course authors a block-based course builder",
+    "Tie learner badges and progress tracking to finished lessons",
+    "Hand annotated Figma files, design tokens and component specs to your engineers"
+  ],
+  "updated": "2026-10-19",
+  "anchor": "edtech UI/UX design services",
+  "keywords": [
+    "edtech design agency",
+    "edtech UI UX design agency",
+    "edtech design services",
+    "edtech website design",
+    "edtech UX design",
+    "e-learning platform UX design"
+  ],
+  "centralEntity": "edtech UI/UX design services",
+  "sourceContext": "US UI/UX design agency; this industry page serves edtech and e-learning teams building learning platforms, LMS products and learner apps that need the UI and UX layer designed and tested, while their own engineers build it.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "Edtech UI/UX design services shape the user interface (UI) and user experience (UX) of a learning platform, from the learner dashboard and course player to the course builder that course authors use. They are part of our digital product design services. A full edtech engagement runs 8–16 weeks, costs $60,000–$180,000, and ends with tested Figma designs your engineers build.",
+  "stats": [
+    { "value": "40%", "label": "growth in user registrations for Elia Wellness" },
+    { "value": "200+", "label": "products designed since 2017" }
+  ],
+  "sections": [
+    {
+      "h2": "What are edtech UI/UX design services?",
+      "format": "paragraph",
+      "answer": "<strong>Edtech UI/UX design services plan how learners move through a learning platform (UX) and design the screens they and course authors use (UI), from the learner dashboard to the mobile app.</strong>",
+      "body": "<p>This work is part of our <a href=\"/services/digital-product-design-services/\">digital product design services</a> and draws on the senior team behind our <a href=\"/\">UI UX design services</a>. As an edtech design agency, we design the learner and author screens, and your engineers build them from annotated Figma files, design tokens and component specs. The Elia Wellness dashboard pictured shows that output for a wellness learning platform.</p>",
+      "image": {
+        "src": "/work/elia-wellness/cover.webp",
+        "alt": "Elia Wellness dashboard with a 7-dimension wellness score wheel, the Live More course, a leaderboard, the user's bucket list and challenge progress",
+        "caption": "The Elia Wellness dashboard"
+      }
+    },
+    {
+      "h2": "Which learning screens do our edtech UI/UX design services cover?",
+      "format": "list",
+      "answer": "<strong>Our learning platform design covers 6 parts of the product that learners and course authors use, each drawn in every screen state: default, loading, empty, error and completed.</strong>",
+      "items": [
+        {
+          "title": "Learner dashboard.",
+          "body": "The next lesson, today's progress and weekly course stats show at a glance, as on the Today's Progress card we designed for Elia."
+        },
+        {
+          "title": "Course player.",
+          "body": "One lesson view mixes video, text, images and challenges from the online course, with clear next and back controls, so learners never lose their place."
+        },
+        {
+          "title": "Course builder and admin console.",
+          "body": "Course authors build lessons and course modules from blocks such as text, images, video and challenges, a logged-in tool our <a href=\"/services/web-app-design-services/\">web app design services</a> cover."
+        },
+        {
+          "title": "Progress tracking and badges.",
+          "body": "Gamification, the use of game-style rewards in a learning product, should pay for finished lessons, not clicks. On Elia, lessons unlock bucket-list items such as seeing a sunrise, so learner badges mark real progress."
+        },
+        {
+          "title": "Learner onboarding.",
+          "body": "Sign-up, the first lesson and a pre-course questionnaire that sets each learner's starting point, like the personal growth questionnaire Elia learners fill in on a tablet."
+        },
+        {
+          "title": "Mobile learning app.",
+          "body": "Lessons and challenges on iOS and Android, with touch targets of 44×44 pt on iOS and 48×48 dp on Android, as in our <a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>."
+        }
+      ]
+    },
+    {
+      "h2": "What makes edtech UX design different from other app design?",
+      "format": "cards",
+      "answer": "<strong>Edtech UX design has to keep learners motivated over weeks on a learning platform, serve buyers who are not the users, and work for every age and ability.</strong>",
+      "items": [
+        {
+          "title": "Learner motivation over weeks",
+          "body": "Learner motivation comes from finishing the course, so progress tracking and badges reward completed lessons, not taps. A streak that rewards opening the app teaches learners to open it, not to learn."
+        },
+        {
+          "title": "Several user groups on one platform",
+          "body": "Learners, course authors and administrators each get their own dashboard and permissions, plus parents or teachers when children use the product. Platforms sold to institutions as software as a service (SaaS) share admin and role patterns with our <a href=\"/industries/saas/\">SaaS UI UX design</a> work."
+        },
+        {
+          "title": "Mixed ages and digital confidence",
+          "body": "Elia's older adults had very different comfort levels with technology, so its pre-course questionnaire uses large touch targets and simple rating scales. Our <a href=\"/services/usability-testing-services/\">usability testing services</a> can check such patterns with your own learners."
+        },
+        {
+          "title": "Accessibility and privacy as buying criteria",
+          "body": "Public schools and universities buy learning platforms against Web Content Accessibility Guidelines (WCAG) accessibility rules, and products for children need parental consent before sign-up. The standards list further down names each rule and the screen it changes."
+        }
+      ]
+    },
+    {
+      "h2": "What did edtech UI/UX design deliver for Elia Wellness?",
+      "format": "paragraph",
+      "answer": "<strong>For Elia Wellness, a wellness LMS, our edtech design services took the learning platform from idea to product, and the platform reports 40% growth in user registrations.</strong>",
+      "body": "<p>Elia, a wellness initiative by the Sydney Adventist Church, wanted a learning platform for older adults based on its book <em>Live More</em>. Scope: \"idea to product, strategy, web app, mobile app and website.\" It centers on a social feed, a wellness score across 7 dimensions, block-based online courses, badges and progress monitoring. The platform reports a \"30+ boost in wellness scores among active users.\" Read the <a href=\"/case-studies/elia-wellness/\">Elia Wellness case study</a>.</p>"
+    },
+    {
+      "h2": "How does our edtech UI/UX design process work?",
+      "format": "steps",
+      "answer": "<strong>Our edtech UI/UX design services take a learning platform from discovery to developer handoff in 8–16 weeks (40–80 working days) and 5 steps.</strong>",
+      "items": [
+        {
+          "title": "Discovery and product strategy (5–10 days)",
+          "body": "Stakeholder workshops set the user groups (learners, course authors and administrators), the core learning loop and success metrics such as course completion. Our guide explains <a href=\"/blog/is-discovery-phase-worth-it/\">what a discovery phase settles before screens</a>."
+        },
+        {
+          "title": "User research (5–15 days)",
+          "body": "Researchers interview 5–8 learners per user group, and course authors, to find where onboarding, lessons and progress tracking lose them. These learner interviews shape every later flow."
+        },
+        {
+          "title": "Information architecture and flows (5–10 days)",
+          "body": "The team maps the course structure (courses, course modules and lessons), the learner onboarding flow and the author's publishing flow before any screen is drawn."
+        },
+        {
+          "title": "Prototype and validation (10–20 days)",
+          "body": "Five learners per round complete tasks in a clickable Figma prototype on Maze, and each round ends with a usability score, so prototype rounds catch friction before engineering starts."
+        },
+        {
+          "title": "UI design and handoff (15–25 days)",
+          "body": "Designers finish every screen state and hand annotated Figma files, design tokens and component specs to your engineers, at WCAG 2.2 level AA. The developer handoff is where our design work ends and your build begins."
+        }
+      ]
+    },
+    {
+      "h2": "Edtech UI/UX design vs instructional design",
+      "format": "table",
+      "answer": "<strong>Edtech UX design decides how learners find, take and track courses on a learning platform; instructional design decides what each online course teaches and in what order.</strong> An edtech UI UX design agency tests prototypes with learners before engineering starts, while instructional designers shape the lessons. The table compares both disciplines.",
+      "caption": "Comparison of edtech UI/UX design and instructional design",
+      "columns": [
+        "Criterion",
+        "Edtech UI/UX design",
+        "Instructional design"
+      ],
+      "rows": [
+        [
+          "Main question",
+          "How do learners find, take and track each online course?",
+          "What does each online course teach, and in what order?"
+        ],
+        [
+          "Inputs",
+          "Learner research, course author workflows and analytics",
+          "Learning objectives and subject-matter experts"
+        ],
+        [
+          "Outputs",
+          "Flows, prototypes, UI screens and component specs in Figma",
+          "Course outlines, lesson scripts and assessments"
+        ],
+        [
+          "Validation",
+          "Prototype rounds with 5 learners per round on Maze",
+          "Learning outcomes and assessment results"
+        ],
+        [
+          "When to hire",
+          "Learners get lost, drop out of the course player, or course authors struggle with the course builder",
+          "The course content itself is unclear or does not teach what learners need"
+        ],
+        [
+          "Who does it",
+          "Our senior design team, as on Elia Wellness",
+          "Your instructional designers or course authors; we do not write curriculum"
+        ]
+      ]
+    },
+    {
+      "h2": "How much do edtech UI/UX design services cost?",
+      "format": "paragraph",
+      "answer": "<strong>Edtech UI/UX design services cost $60,000–$180,000 over 8–16 weeks for a full learning platform, or $25,000–$60,000 over 4–8 weeks for a design sprint.</strong>",
+      "body": "<p>A full edtech engagement uses 3–6 designers; a design sprint uses 2–4, and edtech design services for one surface, for example the course player, run as a sprint. Price follows 4 factors: target platforms (web app, iOS, Android and website), user groups, core user flows such as onboarding, and validation rounds. A UX audit of a live learning platform costs $5,000–$15,000 over 2–3 weeks through our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
+    },
+    {
+      "h2": "Which accessibility and privacy standards shape edtech UI/UX design services?",
+      "format": "list",
+      "answer": "<strong>Five accessibility and privacy standards shape edtech UX design for learning platforms, and each one changes what learners see on screen.</strong> We design to these standards; legal compliance and certification stay with the product owner.",
+      "items": [
+        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: this accessibility level asks for keyboard access, visible focus and 4.5:1 contrast for normal-size text, so the learner dashboard and course player work without a mouse.",
+        "<a href=\"https://www.ada.gov/resources/2024-03-08-web-rule/\">ADA Title II</a> of the Americans with Disabilities Act: the Department of Justice rule requires state and local governments, including public schools and universities, to make web content and mobile apps meet WCAG 2.1 level AA, so platforms sold to them are bought against WCAG.",
+        "<a href=\"https://www.access-board.gov/ict/\">Section 508</a>: federal agencies must buy accessible information and communication technology, and the Revised 508 Standards incorporate WCAG 2.0 level AA, so learning platforms sold to federal agencies need the same accessible patterns.",
+        "<a href=\"https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa\">Children's Online Privacy Protection Act (COPPA)</a>: operators of services directed to children under 13 must get verifiable parental consent before collecting personal information, so sign-up adds a parent consent step and collects only what lessons need.",
+        "<a href=\"https://studentprivacy.ed.gov/ferpa\">Family Educational Rights and Privacy Act (FERPA)</a>: it protects student education records at schools that receive US Department of Education funds, so role-based views show teachers and administrators only the records they need."
+      ]
+    },
+    {
+      "h2": "FAQs about edtech UI/UX design services",
+      "format": "faq",
+      "answer": "<strong>These answers cover the 5 questions learning platform teams ask most before hiring an edtech UX design partner.</strong>",
+      "faqs": [
+        {
+          "q": "Have you designed a learning management system (LMS)?",
+          "a": "<p>Yes. For Elia Wellness, a wellness LMS for adults 50+, we took the learning platform from idea to product across web app, mobile app and website. It is our one published edtech project, and the platform reports 40% growth in user registrations.</p>"
+        },
+        {
+          "q": "Do you build the platform or integrate Sharable Content Object Reference Model (SCORM) content?",
+          "a": "<p>No. Our designers deliver annotated Figma files, design tokens and component specs, and your engineers write the code. Your team also handles e-learning content standards such as SCORM and integrations with other systems.</p>"
+        },
+        {
+          "q": "Can you redesign a learning platform that is already live?",
+          "a": "<p>Yes. Start with a UX audit of the live learning platform, $5,000–$15,000 over 2–3 weeks, that reviews onboarding, the course player and the course builder against usability heuristics and analytics, with a WCAG 2.2 level AA check. Its prioritized fix roadmap then scopes a design sprint.</p>"
+        },
+        {
+          "q": "Can you design an edtech product for children under 13?",
+          "a": "<p>Yes. E-learning platform UX design for children follows the same 5 steps, and learner onboarding adds a COPPA parental consent step, with sign-up asking only for the data lessons need. Our published edtech work so far is Elia, which serves older adults, so we do not claim children's products as past work.</p>"
+        },
+        {
+          "q": "Do you design the edtech website as well as the platform?",
+          "a": "<p>Yes. Edtech website design for the marketing site that leads learners into the platform runs through our <a href=\"/services/ui-ux-web-design/\">UI UX web design</a> practice. Elia's scope covered its website as well as the web app and mobile app.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "Elia Wellness",
+      "Live More",
+      "Sydney Adventist Church",
+      "learning management system (LMS)",
+      "learner dashboard",
+      "course player",
+      "course builder",
+      "course authors",
+      "wellness score",
+      "badges",
+      "gamification",
+      "social feed",
+      "pre-course questionnaire",
+      "older adults",
+      "mobile learning",
+      "instructional design",
+      "Figma",
+      "Maze",
+      "Web Content Accessibility Guidelines (WCAG)",
+      "ADA Title II",
+      "Section 508",
+      "Children's Online Privacy Protection Act (COPPA)",
+      "Family Educational Rights and Privacy Act (FERPA)"
+    ],
+    "ngrams": [
+      "edtech ui/ux design services",
+      "learner dashboard",
+      "course player",
+      "course builder",
+      "pre-course questionnaire",
+      "component specs"
+    ],
+    "skipgrams": [
+      "learners … badges",
+      "prototype … learners",
+      "figma … engineers",
+      "parental consent … sign-up"
+    ],
+    "nlpKeywords": [
+      "learning platform",
+      "course authors",
+      "screen state",
+      "touch targets",
+      "parental consent",
+      "developer handoff",
+      "learner motivation",
+      "user groups"
+    ]
+  },
+  "mentions": [
+    "Elia Wellness",
+    "Live More",
+    "Sydney Adventist Church",
+    "learning management system (LMS)",
+    "learner dashboard",
+    "course player",
+    "course builder",
+    "course authors",
+    "wellness score",
+    "badges",
+    "gamification",
+    "social feed",
+    "pre-course questionnaire",
+    "older adults",
+    "mobile learning",
+    "instructional design",
+    "Figma",
+    "Maze",
+    "Web Content Accessibility Guidelines (WCAG)",
+    "ADA Title II",
+    "Section 508",
+    "Children's Online Privacy Protection Act (COPPA)",
+    "Family Educational Rights and Privacy Act (FERPA)"
+  ],
+  "relatedServices": [
+    "digital-product-design-services",
+    "web-app-design-services",
+    "mobile-app-ui-ux-design-services",
+    "ui-ux-web-design",
+    "ux-audit-services",
+    "usability-testing-services"
+  ]
+}
