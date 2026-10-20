@@ -23,17 +23,17 @@ qa: pending
 image: /blog/how-to-design-an-mvp/cover.svg
 ---
 
-A minimum viable product (MVP) starts as one sentence, so before you work out how to design an MVP screen by screen, fill in its blanks:
+A minimum viable product (MVP) rests on one sentence with four blanks, and until each blank holds an answer, working out how to design an MVP screen by screen is guesswork:
 
 > For [target user] who [job they struggle with], the MVP lets them [one core action], so we learn whether [riskiest assumption].
 
-If a blank stays empty, no screen is ready to draw. This guide shows how to design an MVP in 6 steps: the hypothesis, a feature cut list, user flows with their states, wireframes and then user interface (UI) screens, a test with 5 users and the developer handoff. Our user experience (UX) team covers these steps in a 4–8 week engagement in [UI UX design for startups](/services/ui-ux-design-services-for-startups/).
+Here is how to design an MVP in 6 steps, in order: write the hypothesis, cut the feature list, map user flows with their states, draw wireframes and then user interface (UI) screens, test with 5 users and hand off to developers. Our user experience (UX) team runs that sequence as a 4–8 week engagement within [UI UX design for startups](/services/ui-ux-design-services-for-startups/).
 
 ## What does MVP design cover, and what is an MVP not?
 
 **MVP design turns one product hypothesis into 3–5 tested core user flows, screens and a starter design system that a startup's developers can build.**
 
-Minimum viable product design is the slice of product design that covers the interface, user flows and screens of the smallest product that tests one value proposition. MVP design includes everything from the hypothesis to the files developers build from.
+Minimum viable product design is the slice of product design that covers the interface, user flows and screens of the smallest product that tests one value proposition.
 
 Eric Ries's [Lean Startup principles](https://theleanstartup.com/principles) treat the MVP as the quickest way into the build-measure-learn feedback loop: put a product in front of customers, measure how they respond, then decide whether to pivot or persevere. The table compares the MVP with three artifacts founders often mistake for it.
 
@@ -62,13 +62,13 @@ Knowing how to design an MVP starts with what to leave out, and the hypothesis d
 
 The sentence tests one value proposition, faster rebooking, and every later feature is judged against it.
 
-Jobs to be Done fills the blanks with evidence: the method treats a product as something a person hires to make progress on a job, so interviews ask about the tool or workaround each user relies on today. We set the interview count at 5–8 Jobs to be Done interviews.
+Jobs to be Done fills the blanks with evidence: the method treats a product as something a person hires to make progress on a job, so each interview asks about the tool or workaround the user relies on today. We set the interview count at 5–8.
 
 Then write one success signal, an activation event developers can track after launch. Activation rate is the share of early users who complete the core action in their first session; here, new sign-ups who publish a first open slot. Write your signal before you list a single feature.
 
 ## Step 2: how do you build a feature cut list?
 
-**A feature cut list sorts every feature on a startup's MVP list into keep, do by hand or later, leaving 3–5 user flows such as sign-up, the core action and payment.**
+**A feature cut list sorts a startup's MVP features into keep, do by hand or later, leaving 3–5 user flows such as sign-up, the core action and payment.**
 
 Three questions do the sorting. This is our working rule, not a published method:
 
@@ -90,7 +90,7 @@ Illustrative, invented startup:
 
 </details>
 
-The flow count on our startup engagement is 3–5 MVP user flows; the example keeps three, plus account deletion in settings. Two items survive any cut:
+The flow count on our startup engagement is 3–5 MVP user flows; the example keeps three, plus account deletion in settings. Two items survive the cut wherever they apply:
 
 - **Sign-up consent and data deletion**, because the General Data Protection Regulation (GDPR) covers users in the European Union and the California Consumer Privacy Act (CCPA) applies past its revenue or data thresholds.
 - **An in-app delete-account flow** in any iOS app that offers account creation, because Apple App Store Review Guideline 5.1.1(v) requires it.
@@ -118,7 +118,7 @@ Empty states are the screens a user sees before any data exists, such as a sched
 
 </details>
 
-Flow before screens is how we worked on [Vocable, an AI content marketing SaaS we took from idea to MVP](/case-studies/vocable/): we mapped the full creator journey and designed each screen around a problem we heard in stakeholder interviews.
+Mapping before screens is how we worked on Vocable, an artificial intelligence (AI) content marketing platform we took from idea to MVP: we mapped the full creator journey and designed each screen around a problem we heard in stakeholder interviews.
 
 Developers build every state you draw and guess at every state you skip, so list the states under each box before you open a design file.
 
@@ -138,7 +138,7 @@ Real labels show whether a physiotherapist understands "Publish slot" before any
 
 **MVP UI design starts once 5–8 interviews confirm the problem, and it applies each platform's touch target size and contrast ratio from the first screen.**
 
-That order fits pre-seed teams, who need problem interviews and a rough prototype before polished UI. The Apple Human Interface Guidelines and Material Design 3 each set a minimum touch target size for iOS and Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 [Success Criterion 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
+That order fits pre-seed teams, who need problem interviews and a low-fidelity clickable prototype before polished UI; our [startups UI UX design](/industries/startups/) work sizes each design output to the funding stage. The Apple Human Interface Guidelines and Material Design 3 each set a minimum touch target size for iOS and Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 [Success Criterion 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
 
 ![Screen spec card with iOS, Android and web frames annotated with minimum touch target sizes and the 4.5:1 body text contrast ratio](/blog/how-to-design-an-mvp/screen-spec-card.svg "Screen spec card: touch target size and contrast ratio per platform")
 
@@ -215,9 +215,9 @@ Two lines are easy to drop. Without the analytics event, the launch cannot repor
 
 ## How long does MVP design take, and what does a founder do?
 
-**MVP design takes 4–8 weeks, or 20–40 working days, on our startup engagement, and founders spend about 2–4 hours per week on reviews outside the sprint week.**
+**MVP design takes 4–8 weeks, or 20–40 working days, on our startup engagement, and founders spend about 2–4 hours per week on reviews outside the design sprint week.**
 
-The engagement duration is the sum of five steps, and those five steps map onto this guide's six:
+The engagement duration is the sum of five steps that map onto this guide's six:
 
 1. **Design sprint (5 days):** map, sketch, decide on 1 direction, prototype and test with 5 users; drafts steps 1 and 2.
 2. **User research (3–7 days):** 5–8 Jobs to be Done interviews, 1 target persona and a prioritized feature list; firms up steps 1 and 2.
@@ -229,7 +229,7 @@ Founder time follows a fixed rhythm: 2 review sessions of 45 minutes per week, p
 
 The engagement price is $25,000–$60,000, set by the number of MVP flows, the number of platforms, the depth of user research and the scope of the starter design system; the hub shows [what a 4–8 week MVP design engagement costs](/services/ui-ux-design-services-for-startups/#how-much-does-ui-ux-design-for-startups-cost).
 
-Our case study traces [Nitro League from idea to MVP launch plan](/case-studies/nitro/): the racing game's work began with product discovery and stakeholder interviews, and the user flows were mapped from those. Bring your cut sheet and hypothesis sentence to a first call with us, since the Keep column sets the flow count.
+Our case study traces [Nitro League from idea to MVP launch plan](/case-studies/nitro/): the racing game's work began with product discovery and stakeholder interviews, and the user flows were mapped from those. Block the founder review slots in your calendar before the design sprint starts.
 
 ## Which MVP design mistakes cause the most rework?
 
@@ -240,13 +240,13 @@ Six mistakes undo MVP designs, each tied to the step that prevents it:
 - **Screens before the flow map**, because each user flow change then rewrites finished screens (step 3).
 - **Polished UI before a usability test**, because the polish is thrown away when users stall (steps 4 and 5).
 - **No empty or error states**, because developers invent them under deadline (step 3).
-- **Every platform at once**, because each platform adds screens to design and test; start where the core job happens (step 2).
+- **Every platform at once**, because each platform adds screens to design and test before the core job is proven (step 2).
 - **No success signal**, so the launch shows usage but cannot confirm the hypothesis (step 1).
 - **Screens without tokens or components**, because engineers then build a new button per screen (step 6).
 
-If your plan already shows one of these, go back to the step named in parentheses and fix it before the first engineering sprint.
+If your plan shows one of these, return to the step in parentheses before any code is written.
 
-If you would rather not work out how to design an MVP alone, go back to the sentence at the top of this guide. Fill in its four blanks, sort your list into the three columns and [send us your feature list](/contact/) with both. Every project begins with a free consultation and a fixed-scope proposal, and the flow count in your Keep column is one of the four factors that set its price.
+If you would rather not work out how to design an MVP alone, [send us your feature list](/contact/) as it stands today, long or short. Every project begins with a free consultation and a fixed-scope proposal; in the consultation we sort your list into keep, do by hand and later, and size the 3–5 MVP flows that set the proposal's scope.
 
 ## FAQs
 
@@ -256,11 +256,11 @@ Yes, for the first steps of how to design an MVP: founders can write the hypothe
 
 ### How many screens does an MVP need?
 
-Count user flows, not screens: an MVP needs 3–5 user flows, such as sign-up, the core action and payment. Each flow then needs its empty, loading, error and success states, so the screen total follows from the flow map.
+Count user flows, not screens: an MVP needs 3–5 user flows, such as sign-up, the core action and payment. Each user flow then needs its empty, loading, error and success states, so the screen total follows from the flow map.
 
 ### Should you design the MVP for web or mobile first?
 
-Design first for the platform where the target user does the core job; physiotherapists who manage their diary on a clinic computer point to web. A second platform adds screens to design and test, and the number of platforms is one of the four price factors.
+Design first for the platform where the target user does the core job; in the illustrative example, physiotherapists who manage their schedule on a clinic computer point to web. A second platform adds screens to design and test, so it raises the price of the engagement.
 
 ### Does a no-code MVP still need UX design?
 
@@ -268,4 +268,4 @@ Yes. No-code tools change who builds the product, not the user flows, states and
 
 ### How much does MVP design cost?
 
-On this site, MVP design costs $25,000–$60,000 as a 4–8 week startup engagement. Flows, platforms, research depth and the starter design system's scope decide where a project lands.
+Our MVP design work costs $25,000–$60,000 as a 4–8 week startup engagement. The number of MVP flows and platforms, the depth of user research and the scope of the starter design system decide where a project lands.
