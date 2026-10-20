@@ -1,0 +1,395 @@
+{
+  "slug": "how-to-design-an-mvp",
+  "keyword": "how to design an mvp",
+  "keywordCarrier": {
+    "exactString": "how to design an mvp",
+    "spellingNote": "Print it as 'how to design an MVP' (MVP in capitals, article 'an', never 'a MVP'). Frontmatter `keyword` stays exactly 'how to design an mvp'; first meta keyword 'how to design an mvp'. scripts/onpage-audit.mjs: has() skips words of 2 letters or fewer, so the title/H1/description/lead checks pass on 'how' + 'design' + 'mvp' in any order, BUT kwCount (salience) counts only the literal phrase 'how to design an mvp' in that word order. Near-forms that do NOT count toward kwCount: 'how to design a MVP', 'how to design your MVP', 'designing an MVP', 'MVP design', 'how we design an MVP'. The possessive 'how to design an MVP's screens' DOES count (the phrase is a substring). Slug words: 'design' (> 3 letters) passes slug-keyword.",
+    "title": "How to Design an MVP: 6 Steps From Idea to Tested Screens",
+    "titleNote": "57 chars, keyword first (title-keyword-early needs 'how' in the first 25 chars). This is the H1. The 6 steps are H2 2 to H2 7 of the outline; keep that count.",
+    "metaTitle": "How to Design an MVP: Flows, Prototype Tests and Handoff",
+    "metaTitleNote": "56 chars, keyword first. Never put 'startup design agency', 'services' or 'cost' in the title: the hub owns 'UI UX design services for startups' and 'How much does UI UX design for startups cost?'.",
+    "description": "How to design an MVP in 6 steps: one hypothesis, 3 to 5 core flows, wireframes, a 5-user prototype test and a clean handoff. Then book a free consultation.",
+    "descriptionNote": "155 chars (counted: 33 + 16 + 19 + 12 + 24 + 21 + 30). Use as written: keyword first, then what the reader gets, then the MOFU next step. Pronoun check: none. No apostrophes. Facts match the hub (3–5 MVP flows; prototype tested with 5 users; annotated Figma handover).",
+    "inBody": "The keyword is a how-to clause; it works only as the object of a verb or as a heading. Intro first sentence (fill-in hypothesis intro, see variety): 'Before you work out how to design an MVP screen by screen, finish one sentence: For [user] who [job], the MVP lets them [one core action], so we learn whether [riskiest assumption].' Other approved carriers, each read aloud: 'this guide shows how to design an MVP in 6 steps'; 'knowing how to design an MVP starts with what to leave out'; H2 5 'How to design an MVP's screens: wireframes first, then UI'; closing 'If you would rather not work out how to design an MVP alone, …'; FAQ 'How to design an MVP without a designer?' is NOT approved (ungrammatical as a question; write 'Can you design an MVP without a designer?'). Never put the clause in front of a noun ('how to design an MVP guide/process/steps').",
+    "secondary": {
+      "mvp design": "Plain noun phrase, the main synonym. Carrier: 'MVP design is the work of turning one product hypothesis into 3–5 tested user flows that developers can build.' Ahrefs 200 / KD 0. Allowed stacks: 'MVP design process' at most twice; never 'MVP design services' (vendor SERP, hub intent).",
+      "mvp ux design": "Plain noun phrase. Carrier: 'MVP UX design starts with the core user flow, not with the screens.' Ahrefs 90 / KD 5. 'ux design mvp' (100 / KD 5) has the same page 1 (bsscommerce, aufaitux, creolestudios, maze, uxtweak, mockplus) and no natural carrier, so it is covered through this phrase, not printed.",
+      "mvp ui design": "Plain noun phrase. Carrier: 'MVP UI design comes after the wireframes pass a test, not before.' Ahrefs 50 (KD not in the pull)."
+    },
+    "density": "Word-share target 1–2%. The keyword has 5 words, so at about 2,200 body words the maximum is 0.02 x 2,200 / 5 = 8.8 uses. Aim for 6–8 literal uses: H1, first sentence, H2 5, one body sentence in H2 2, one in H2 7, the closing, one FAQ answer. H2 salience: the script counts an H2 when it holds any keyword word longer than 3 letters, which here is only 'design'; 7 of the 10 outline H2s (incl. FAQs) carry 'design' = 70%. Keep 'design' in those H2s. kwCount rule: the literal keyword count must be at least half of the most-mentioned brief entity. 'minimum viable product (MVP)' and any entity made only of keyword words are NOT rivals. The rivals to watch are 'Figma', 'clickable prototype', 'core user flow' and 'usability testing': keep each at 12 literal mentions or fewer (writers repeat 'Figma' in the screens, test and handoff sections). If the keyword sits at 6, no rival may exceed 12."
+  },
+  "secondary": ["mvp design", "mvp ux design", "mvp ui design"],
+  "secondaryNote": "Each secondary was WebSearched on 2026-10-20. 'mvp design' page 1 = how-to guides (mockplus, upsilonit, capicua, xmethod) plus Dribbble/Contra service listings and one Model-View-Presenter software page; same informational intent, with an ambiguity the post must fix ('minimum viable product' next to MVP). 'mvp ux design' = agency guides (creolestudios, bsscommerce, aufaitux, parallelhq, netguru, wearetenet, orientsoftware). 'mvp ui design' = mockplus, purrweb, dbbsoftware, upsilonit plus Dribbble/Contra gigs. NOT added: 'mvp design services' (60/4) and 'mvp ui/ux design services' (40/2): vendor service pages (dribbble, lazarev, shakuro, flatirons), i.e. the hub's own commercial intent. 'mvp web design' (200/3): page 1 = webdesignerdepot MVP web page, musemind/shakuro service pages, lowcode web MVP development, Upwork; it means a launch website or web-app build, a different intent. 'mvp software design' (150/12): ambiguous with software architecture. 'mvp in ux design' (80/3), 'mvp ux meaning' (50/6), 'ux mvp' (90/4): definition queries, parked for a future TOFU post (see notes).",
+  "intent": "Informational / planning (MOFU). The searcher is a founder, first product manager or technical co-founder who has an idea (often a long feature list) and wants the steps to design the first version: what to include, in what order, how to test it and what to give developers. Commercial pull: the hub sells exactly this as a 4–8 week startup engagement.",
+  "volume": 150,
+  "kd": null,
+  "kdNote": "KD was not returned for 'how to design an mvp' in the orchestrator's Ahrefs pull (volume only). Do not estimate it. The closest phrasings in the same pull: mvp design 200/0, ux design mvp 100/5, mvp ux design 90/5, mvp product design 100/14.",
+  "dataSource": "Ahrefs API v3, US, 2026-10-20 (matching-terms pulled by the orchestrator; this agent has no Ahrefs access). how to design an mvp: volume 150, KD not returned. Related (same source): mvp design 200/0; mvp web design 200/3; mvp website design 150; mvp software design 150/12; mvp design and development 150; ux design mvp 100/5; mvp product design 100/14; design mvp 100/0; ux mvp 90/4; mvp ux 90/5; mvp ux design 90/5; mvp in design 90/3; startup ux design 80/0; mvp in ux design 80/3; startup ux 70/0; mvp design services 60/4; mvp ux meaning 50/6; mvp ui design 50; mvp app design 50; startup app design 50; mvp ui/ux design services 40/2; hiring ux designer for startup 40; best ux/ui design agency for ai startup products 40; startup ux consulting 20; startup ux design agency 350/9 (hub head, skipped). Semrush not called this run (Ahrefs data supplied; Semrush returned no_api_units on earlier runs). SERP study: WebSearch 2026-10-20 for 9 queries; WebFetch OK for upsilonit.com, purrweb.com, mockplus.com, spdload.com, ronasit.com; uxplanet.org returned 403. No docs/data/gsc/latest.json exists.",
+  "hub": "ui-ux-design-services-for-startups",
+  "services": ["ui-ux-design-services-for-startups"],
+  "industries": [],
+  "industriesNote": "Left empty on purpose: tagging 'startups' adds no case study (none is tagged with that industry) and would put the post on the industry page, which already owns 'MVP design' in its keywords[]. The hub is the silo.",
+  "author": "faizan-khan",
+  "authorWhy": "Faizan Khan (Sr. Product Designer, content/home.ts) fits product-strategy work from idea to first release, which is what MVP design is. He last wrote is-discovery-phase-worth-it (2026-10-10), 4 posts ago. The writer must not reuse that post's voice devices (skip test, assumption ledger, Nitro mini-case intro). Rejected: talha-saleem (Senior UI/UX Designer) suits the UI half only and wrote ecommerce-ux-audit 2 posts ago; saliha-shahzad (UI/UX Designer) wrote the last startup-adjacent comparison (mobile, 10-11) and suits the future 'mvp app design' angle; sahar-asif wrote the last post; shahmir-farooq is still reserved for the usability test report MOFU; ahmad-ullah wrote 2 audit/testing posts. Contributor: umar-sarwar (default).",
+  "type": "Guide",
+  "funnel": "mofu",
+  "funnelWhy": "New silo: 0 published posts in ui-ux-design-services-for-startups, so funnel.json starts it with 1 BOFU + 1 MOFU (either order). This is the MOFU one. SERP rule (2026-10-06): page 1 for 'how to design an mvp' is how-to guides only (upsilonit, uxplanet, purrweb, mockplus, ronasit, spdload, dbbsoftware), which funnel.json calls MOFU ('planning the work'). Service-support 5: a founder working out the steps of MVP design is the buyer of the hub's 4–8 week engagement, whose outputs are the same steps (sprint, interviews, MVP flows, screens, tested prototype, starter design system). MOFU CTA (case study + consultation) has a real case tagged with this hub: Nitro League (content/case-studies/nitro.md, services include ui-ux-design-services-for-startups; scope 'idea to product… MVP launch plan'). Why not BOFU first: the only BOFU-shaped terms in the pull are 'mvp design services' / 'mvp ui/ux design services' (vendor service pages = the hub's own intent, a blog post cannot win them) and 'hiring ux designer for startup' (40, page 1 = hiring guides and talent marketplaces: uxplanet, wellfound, designproject.io, mindsea, startupgrind, braintrust). That last one is the BOFU candidate for the next run (see notes).",
+  "serviceSupport": 5,
+  "beats": "https://www.upsilonit.com/blog/how-to-design-an-mvp-for-your-startup",
+  "alsoOutranks": [
+    "https://purrweb.com/blog/mvp-design-process",
+    "https://www.mockplus.com/blog/post/mvp-guide-in-ui-ux-design",
+    "https://spdload.com/blog/how-to-design-an-mvp/",
+    "https://ronasit.com/blog/how-to-design-an-mvp/"
+  ],
+  "beatsWhy": "Upsilon (Maria Arinkina, updated 1 April 2025) is #1 for 'how to design an mvp' and #2 for 'mvp design'. Structure: why quality matters -> UX vs UI types -> 7 steps (problem, research, personas, prioritize, wireframes and flows, prototypes and mockups, feedback) -> 5 tips -> cost -> FAQ. It names testing methods without a test plan, says 'must-have features' without a cut rule, ends the process at 'hand to developers' with no handoff contents, has no accessibility or platform guidelines, no success metric and only a self-reported '$2,500–$8,500, 2 weeks' estimate. Purrweb (Georgy Putilov, updated 12 March 2026) is the most detailed (hour estimates per step) but has no testing step in the body and no scope rule. Mockplus (11 October 2025) leans on 10 famous-company examples with unsourced anecdotes. SpdLoad (Nov 2024) and Ronas IT (May 2022) are cost and dev-team pages with dated, partly unsourced statistics.",
+  "centralEntity": "MVP design (designing a minimum viable product: turning one product hypothesis into 3–5 tested core user flows, screens and a starter design system that developers can build)",
+  "bindings": {
+    "synonyms": ["MVP design", "minimum viable product design", "MVP UX design", "MVP UI design"],
+    "plural": ["MVPs", "MVP designs"],
+    "parent": ["UI UX design for startups", "product design"],
+    "children": ["MVP hypothesis", "feature cut list", "core user flow", "low-fidelity wireframes", "clickable prototype", "developer handoff"],
+    "related": ["design sprint", "Jobs to be Done", "usability testing", "starter design system", "investor demo", "product-market fit"],
+    "bindingNote": "Each synonym printed at least once ('minimum viable product design' fits the definition sentence that expands MVP). Parent 'UI UX design for startups' is the UP-link anchor in the intro; 'product design' named in the definition. Each child gets its own H2 or H3: MVP hypothesis (H2 2), feature cut list (H2 3), core user flow (H2 4), low-fidelity wireframes (H2 5), clickable prototype (H2 6), developer handoff (H2 7). Each related concept appears with a fact: design sprint (H2 8 timeline, hub 5 days), Jobs to be Done (H2 2, 5–8 interviews), usability testing (H2 6), starter design system (H2 5, tokens + 20–30 components), investor demo (H2 1 table, industry FAQ wording), product-market fit (H2 1, what an MVP cannot prove alone)."
+  },
+  "essential": ["MVP design", "core user flow", "startup"],
+  "essentialNote": "The first sentence under every H2 names 'MVP design' (or 'how to design an MVP', 'MVP', 'minimum viable product design') plus 'core user flow' or 'startup'. The answerHints below already do this.",
+  "queryVariants": [
+    "how to design an mvp",
+    "mvp design process",
+    "how to design ux for an mvp",
+    "what does mvp design include",
+    "how long does it take to design an mvp"
+  ],
+  "queryVariantsNote": "One answer site-wide, in hub wording: MVP design = 1 hypothesis -> 3–5 MVP flows -> low-fidelity wireframes -> high-fidelity screens + starter design system (tokens + 20–30 core components) -> clickable Figma prototype tested with 5 users (Maze, SUS score) -> annotated Figma files for developers, in 4–8 weeks (20–40 working days). The H2s and the FAQs answer all five variants with these same numbers.",
+  "ambiguous": [
+    { "word": "MVP", "context": "minimum viable product / startup / product (page 1 for 'mvp design' includes the Model-View-Presenter software pattern; expand MVP in the first sentence it appears and keep 'product' or 'startup' nearby in the definition section)" },
+    { "word": "design", "context": "interface, user flows or screens (never graphic design or software architecture)" },
+    { "word": "prototype", "context": "clickable Figma prototype (not a coded prototype or a hardware prototype)" },
+    { "word": "testing", "context": "usability testing with 5 users (not QA testing of code or A/B testing)" },
+    { "word": "sprint", "context": "design sprint, 5 days (not an engineering sprint)" },
+    { "word": "flow", "context": "user flow / core user flow (not cash flow or data flow)" },
+    { "word": "handoff", "context": "developer handoff of annotated Figma files" }
+  ],
+  "siteFacts": {
+    "source": "content/services/ui-ux-design-services-for-startups.json (hub) unless stated",
+    "engagement": "4–8 weeks (20–40 working days), $25,000–$60,000; ends with a tested Figma prototype, development-ready MVP design and a starter design system.",
+    "steps": "5 steps: design sprint (5 days; map, sketch, decide 1 direction, prototype, test with 5 users) -> user research (3–7 days; 5–8 Jobs to be Done interviews -> 1 target persona + prioritized feature list) -> MVP flows and wireframes (4–8 days; 3–5 flows) -> UI design and prototype (5–12 days; high-fidelity screens, starter design system, clickable Figma prototype) -> testing and handover (3–8 days; 5 users test, SUS score recorded, developers receive annotated Figma files).",
+    "deliverables": "6: design sprint (5-day GV Design Sprint, 1 target user, 1 core problem), user interviews (5–8, Jobs to be Done), MVP user flows (3–5, e.g. sign-up, core action, payment), MVP screen designs (Apple HIG and Material Design 3; 44×44 pt iOS, 48×48 dp Android hit targets), clickable prototype (Figma, tested with 5 users in Maze), starter design system (colour, typography and spacing tokens + 20–30 core components).",
+    "priceDrivers": "Number of MVP flows, number of platforms, depth of user research, scope of the starter design system. Hub examples: web MVP, 3 flows, 1 testing round near $25,000; web + mobile, 5 flows, 2 testing rounds + starter design system near $60,000. Do not restate the examples; deep-link the cost section.",
+    "founderTime": "Industry page: 2–4 founder hours per week (2 review sessions of 45 minutes + answers in Figma comments within 1 working day). Hub FAQ: remote sprint with founders joining 2–3 hours per day during the 5 sprint days.",
+    "afterLaunch": "Embedded design team at $15,000–$40,000 per month (hub FAQ).",
+    "accessibility": "Industry page: WCAG 2.2 level AA, 4.5:1 contrast and 24×24 CSS pixel targets built into the first components cost less than a retrofit after Series A; Apple App Store Review Guideline 5.1.1(v) requires in-app account deletion when an app offers account creation, so MVP settings include a delete-account flow.",
+    "conflicts": [
+      "home.ts pricing card 'Research & UX design sprint' says '4–8 weeks · 2–4 designers'; the hub states no designer count. Do not state a team size.",
+      "home.ts FAQ 'We deliver design and development' vs the hub, whose process ends at the development handover. The post covers design up to handoff; stay silent on whether we build the MVP.",
+      "industries/startups.json describes a 4-step process (stage diagnosis, evidence gathering, stage-specific design, founder review) while the hub has 5 steps. Follow the hub's 5 steps and durations.",
+      "industries/startups.json FAQ: a pre-seed startup needs 'problem interviews and a low-fidelity prototype more than polished UI', while the hub sells high-fidelity MVP screens. Not a contradiction if the post says: high-fidelity UI comes only after 5–8 interviews confirm the problem. Use that sequence; never say pre-seed teams need polished UI.",
+      "This hub calls tokens + 20–30 components a 'starter design system'; design-system-services calls a component set at that scale a UI kit (open since 2026-10-08). Use 'starter design system' (this hub's wording) and never call it a full design system.",
+      "MOFU template CTA (app/blog/[slug]/page.tsx): with services [ui-ux-design-services-for-startups] the only related case study is Nitro, so the box prints 'See how we did this for Nitro League' + 'Play-to-earn racing game that secured $5M in 3 months'. Nitro is tagged with this hub, so the box is allowed, but the body must never attribute the $5M to MVP design (the case study says 'the launch on this platform brought in investment'). Orchestrator: accept or override."
+    ]
+  },
+  "entities": [
+    "minimum viable product (MVP)",
+    "UI UX design for startups",
+    "GV Design Sprint",
+    "Jobs to be Done",
+    "value proposition",
+    "concierge MVP",
+    "Eric Ries",
+    "core user flow",
+    "empty states",
+    "low-fidelity wireframes",
+    "clickable prototype",
+    "Figma",
+    "Maze",
+    "usability testing",
+    "System Usability Scale",
+    "Apple Human Interface Guidelines",
+    "Material Design 3",
+    "Web Content Accessibility Guidelines (WCAG)",
+    "design tokens",
+    "starter design system",
+    "Figma Dev Mode",
+    "developer handoff",
+    "activation rate",
+    "investor demo",
+    "product-market fit"
+  ],
+  "entitiesNote": "25 entries, one name each, short form only at the end in brackets. Read aloud: all are phrases the post will literally print. At least 20 must appear with a real fact. Substring check (lesson 2026-10-19): 'System Usability Scale' is given WITHOUT '(SUS)' because the form 'sus' would match inside 'consensus'; the writer may still print 'SUS' after expanding it. 'MVP' as a short form is safe (no common English word contains 'mvp'). 'WCAG' is safe. 'minimum viable product (MVP)' and 'UI UX design for startups' are not salience rivals ('mvp' is a keyword word). Generic high-frequency nouns ('screens', 'features', 'users', 'wireframes' alone) are left out on purpose.",
+  "attributes": [
+    "flow count (3–5 MVP flows)",
+    "engagement duration (4–8 weeks, 20–40 working days)",
+    "engagement price ($25,000–$60,000, published on the hub)",
+    "interview count (5–8 Jobs to be Done interviews)",
+    "test participants (5 users per prototype round)",
+    "component count (20–30 core components)",
+    "touch target size (44×44 pt iOS, 48×48 dp Android, 24×24 CSS px WCAG 2.2)",
+    "contrast ratio (4.5:1 for body text, WCAG 2.2 AA)",
+    "screen fidelity (low-fidelity wireframes first, then high-fidelity UI)",
+    "success signal (one activation event per hypothesis)",
+    "founder time (2–4 hours per week)"
+  ],
+  "attributesNote": "11 entries. The script reads only the words before '(' and needs 60% of those longer than 3 letters in the text, so the writer must print these label nouns literally at least once: 'flow count', 'engagement duration', 'engagement price', 'interview count', 'test participants', 'component count', 'touch target size', 'contrast ratio', 'screen fidelity', 'success signal', 'founder time'.",
+  "ngrams": [
+    "how to design an mvp",
+    "mvp design",
+    "mvp ux design",
+    "mvp ui design",
+    "core user flow",
+    "riskiest assumption",
+    "feature cut list",
+    "clickable prototype",
+    "5 users",
+    "starter design system",
+    "developer handoff",
+    "ui ux design for startups"
+  ],
+  "questions": [
+    "How do you design an MVP step by step?",
+    "What should an MVP include and leave out?",
+    "What is the difference between an MVP, a prototype and an investor demo?",
+    "How many features or flows should an MVP have?",
+    "Should an MVP be low-fidelity or polished?",
+    "How do you test an MVP design before development?",
+    "What does a developer need from the MVP design?",
+    "How long does MVP design take?",
+    "Can you design an MVP without a designer?",
+    "Should you design the MVP for web or mobile first?"
+  ],
+  "serpGaps": [
+    "A written hypothesis: no page 1 guide turns the idea into one testable sentence with a success signal before features are listed. Upsilon and Mockplus start with 'define the problem' in prose; none ties the hypothesis to an activation event developers can instrument.",
+    "A cut rule: every page says 'must-have features only'. Mockplus names MoSCoW and Kano without showing them; Upsilon, SpdLoad and Ronas give no method. None offers a concrete test for cutting a feature (does the core flow break without it? does it test the hypothesis? can a person do it by hand at first, as in a concierge MVP?).",
+    "States, not just screens: no page lists the empty, loading, error and first-run states a core user flow needs, which is where MVPs feel broken.",
+    "Platform and accessibility minimums: no ranking page names Apple Human Interface Guidelines, Material Design 3 or WCAG 2.2 targets (44×44 pt, 48×48 dp, 24×24 CSS px, 4.5:1 contrast). The hub and industry page state all of them.",
+    "A real test plan: Upsilon names first-click tests and heatmaps with no method; Purrweb's body has no testing step (its FAQ gives an unsourced 70% threshold). None gives 5 users per round with a source (NN/g), task wording, a SUS score with its benchmark (MeasuringU), and a rule for what changes after the round.",
+    "Handoff contents: Upsilon and Ronas stop at 'hand to developers'. None lists what the handoff pack holds (annotated Figma files, flows with states, tokens and components, analytics events for the success signal, account deletion flow, open questions).",
+    "Honest timeline: Upsilon says '2 weeks', Purrweb '2–4 weeks', with no step breakdown that includes research and testing. The hub publishes 4–8 weeks across 5 steps with day ranges.",
+    "Freshness and honesty: SpdLoad's '$1 into UX returns $100 (Forrester)' and '52% won't return', Ronas IT's 2021 failure rates and '80% of apps', Mockplus's Dropbox '75,000 signups overnight' are dated or unsourced."
+  ],
+  "outline": [
+    {
+      "h2": "What does MVP design cover, and what is a minimum viable product not?",
+      "answerHint": "MVP design is the work of turning one product hypothesis into 3–5 tested core user flows, high-fidelity screens and a starter design system that a startup's developers can build. A minimum viable product is a working product real users rely on; it is not a clickable prototype, not an investor demo and not version 1 with fewer coats of paint.",
+      "points": [
+        "Intro before this H2 (fill-in hypothesis intro, see variety): first sentence carries the keyword (carrier above) and shows the blank sentence. Second paragraph: what the post gives (6 steps: hypothesis, cut list, flows, screens, 5-user test, handoff) and that it ends with a realistic 4–8 week plan. UP link in the first 300 words: anchor 'UI UX design for startups' -> /services/ui-ux-design-services-for-startups/.",
+        "Expand 'minimum viable product (MVP)' at first use and keep 'product' or 'startup' next to MVP here (disambiguation from the Model-View-Presenter software pattern, which page 1 shows for 'mvp design'). Use 'minimum viable product design' once. Name the parent 'product design'.",
+        "Cite Eric Ries for the MVP idea (The Lean Startup; build-measure-learn) in our own words, one or two sentences, link theleanstartup.com principles page.",
+        "Table, introduced by one sentence: clickable prototype vs investor demo vs MVP vs full product. Columns: who uses it, does it run on real data, what it proves, typical fidelity. Investor demo row in the industry page's wording ('a clickable prototype of the next 2 releases a funding round pays for'). Full product row: the hub's comparison with digital product design is NOT repeated; just say an MVP stops before product-market fit is proven. Visual 1 is this table.",
+        "Do NOT write a discovery-vs-MVP section (is-discovery-phase-worth-it owns 'framing it as discovery phase vs MVP sets up a false choice'). Do not link that post (another silo)."
+      ]
+    },
+    {
+      "h2": "Step 1: how do you turn the idea into one MVP hypothesis?",
+      "answerHint": "MVP design starts with one sentence that names the startup's target user, the job they hire the product for, the one core user flow the MVP offers and the riskiest assumption it tests. Then pick one success signal, such as the share of sign-ups who complete the core action in the first session.",
+      "points": [
+        "Return to the intro's blank sentence and fill it with an illustrative example (invented startup, label it illustrative), e.g. a scheduling tool for independent physiotherapists.",
+        "Jobs to be Done: one sentence of definition, then the hub figure: 5–8 Jobs to be Done interviews about the tool or workaround each user relies on today. 'interview count' attribute printed here.",
+        "Success signal attribute: one activation event per hypothesis, written so developers can track it later (hub benefit wording: activation rate = share of early users who complete the core action in the first session). No uplift figure.",
+        "Value proposition: the hypothesis tests 1 value proposition (hub wording). One sentence.",
+        "Body carrier: 'Knowing how to design an MVP starts with what to leave out, and the hypothesis decides that.' (one literal keyword use)."
+      ]
+    },
+    {
+      "h2": "Step 2: how do you cut the feature list down to 3–5 MVP flows?",
+      "answerHint": "Cut every feature that the core user flow does not need, that does not test the MVP hypothesis, or that a person on the startup team can do by hand for the first users. What survives is usually 3–5 flows, for example sign-up, the core action and payment.",
+      "points": [
+        "Present the three-question cut test as our working rule (label it as our practice, not a statistic). Show it on an illustrative 12-item feature list: keep / do by hand / later.",
+        "Concierge MVP: define in one sentence (a person delivers the service by hand behind a simple interface) and use it for the 'do by hand' column; e.g. manual invoicing before automated billing.",
+        "Flow count attribute: hub '3–5 flows the MVP needs… sign-up, the core action and payment'.",
+        "Must-keep items an MVP cannot cut, from the industry page: sign-up consent and data deletion where GDPR/CCPA apply, and an in-app delete-account flow for iOS apps that offer account creation (Apple App Store Review Guideline 5.1.1(v)). Short ul.",
+        "Visual 2: feature cut sheet (see visuals). Do NOT use RICE (owned by ux-strategy-roadmap) or a scored yes/no flow (is-discovery-phase-worth-it); this is a three-column sort.",
+        "Lead moment 1: founders defend every feature they wrote; an outside facilitator in a 5-day design sprint forces the cut in a day (hub sprint step: 'decide on 1 direction'). One sentence, no claims about other clients."
+      ]
+    },
+    {
+      "h2": "Step 3: how do you map each core user flow and its states?",
+      "answerHint": "Map each core user flow of the MVP from the entry point to the success state before designing a screen, then add the empty, loading, error and first-run states the startup's first users will actually see.",
+      "points": [
+        "Map in FigJam (one sentence); each step is a box, each decision a diamond; the success state is the activation event from step 1.",
+        "Empty states: define in one sentence; first users always see empty lists and dashboards, so each empty state tells the user the next action.",
+        "Error states for the payment and sign-up flows; first-run state (onboarding) in one line each.",
+        "Visual 3: core flow map with states (see visuals).",
+        "MVP UX design carrier sentence here (secondary)."
+      ]
+    },
+    {
+      "h2": "How to design an MVP's screens: low-fidelity wireframes first, then UI",
+      "answerHint": "Design the MVP's screens in two passes: low-fidelity wireframes for every screen in the core user flow, then high-fidelity UI only after interviews and a first test confirm the flow. The startup gets a starter design system of tokens and 20–30 core components, not a full design system.",
+      "points": [
+        "Step 4 of 6. Screen fidelity attribute: wireframes first (grey boxes, real copy), UI after 5–8 interviews confirm the problem (reconciles the industry FAQ on pre-seed teams, see siteFacts.conflicts).",
+        "MVP UI design carrier sentence (secondary).",
+        "Platform rules: Apple Human Interface Guidelines 44×44 pt and Material Design 3 48×48 dp hit targets (hub); WCAG 2.2 AA: 4.5:1 contrast for body text and 24×24 CSS px minimum target (industry page; cite W3C Understanding 2.5.8 and 1.4.3). Attributes 'touch target size' and 'contrast ratio' printed here. Visual 4: spec card.",
+        "Starter design system: design tokens (colour, typography, spacing; one-sentence definition of 'design tokens') + component count 20–30 core components, e.g. buttons, inputs and cards (hub). Never call it a full design system.",
+        "Lead moment 2: the starter design system is where MVPs usually save or lose engineering time later; we build it inside the UI step (hub step 'UI design and prototype, 5–12 days'). One sentence."
+      ]
+    },
+    {
+      "h2": "Step 5: how do you test the MVP design with 5 users before code?",
+      "answerHint": "Test the clickable prototype of the MVP's core user flow with 5 target users before engineers write production code: give each user the flow's main task, watch where they stall, record a System Usability Scale score, and change the design before the startup builds it.",
+      "points": [
+        "Test participants attribute: 5 users per round (hub). Cite Jakob Nielsen, 'Why You Only Need to Test with 5 Users' (NN/g, 2000) for the reasoning, in our own words; one round finds the biggest problems, then fix and test again.",
+        "Tools: clickable Figma prototype tested in Maze (hub). One sentence on moderated sessions over video when the flow is complex.",
+        "Write 3 task prompts for the illustrative example (start from a goal, never name the button).",
+        "System Usability Scale: 10 questions, scored 0–100; cite MeasuringU (Jeff Sauro) for the average of 68. Fact-checker: confirm on measuringu.com. Do not invent a pass threshold; say a score below the average flags the flow for another round.",
+        "Decision after the round: fix and retest / move to handoff / revisit the hypothesis. Plain ul; no flowchart (variety).",
+        "Visual 5: 5-user test plan card."
+      ]
+    },
+    {
+      "h2": "Step 6: what should the MVP design hand to developers?",
+      "answerHint": "The MVP design hands developers annotated Figma files for every screen and state in the core user flows, the starter design system's tokens and components, the success-signal event to track, and a short list of open questions, so the startup's engineers build what was tested.",
+      "points": [
+        "Developer handoff: hub 'developers receive annotated Figma files'. Figma Dev Mode (one sentence: the Figma view where developers inspect measurements, tokens and code snippets; fact-checker to confirm wording on figma.com).",
+        "Handoff pack as a checklist (visual 6 + its text panel): screens with states, flow map, tokens and components, accessibility notes (targets, contrast, focus order), analytics events for the success signal, copy deck, open questions and what was cut for later.",
+        "Carrier with literal keyword: 'The last part of how to design an MVP is the part most guides skip: what the developers receive.'",
+        "Stay silent on whether we build the MVP (siteFacts.conflicts)."
+      ]
+    },
+    {
+      "h2": "How long does MVP design take, and what does the founder do each week?",
+      "answerHint": "MVP design takes 4–8 weeks (20–40 working days) for a startup engagement: a 5-day design sprint, user research, flows and wireframes, UI and prototype, then testing and handover. Founders spend about 2–4 hours per week on reviews.",
+      "points": [
+        "Engagement duration attribute + the hub's 5 steps with day ranges as an ol (design sprint 5 days; user research 3–7 days; MVP flows and wireframes 4–8 days; UI design and prototype 5–12 days; testing and handover 3–8 days). No image here (6-image cap; see visualsNote).",
+        "Founder time attribute: 2 review sessions of 45 minutes per week + Figma comment answers within 1 working day (industry page), and 2–3 hours per day during the remote sprint (hub FAQ).",
+        "State engagement price once in hub wording ($25,000–$60,000, depending on the number of MVP flows, platforms, research depth and the scope of the starter design system) with the deep link /services/ui-ux-design-services-for-startups/#how-much-does-ui-ux-design-for-startups-cost. Do not restate the hub's $25k/$60k examples.",
+        "Main lead moment (see leadAngle). DOWN link to Nitro League: 'Nitro League's scope ran from idea to product and included an MVP launch plan; work started with product discovery and stakeholder interviews, then user flows' (case study wording). Do not attribute the $5M funding to MVP design."
+      ]
+    },
+    {
+      "h2": "Which MVP design mistakes cause the most rework after launch?",
+      "answerHint": "The MVP design mistakes that cause the most rework are designing screens before the core user flow, polishing UI before the startup has tested the flow with users, skipping empty and error states, and handing developers screens without tokens or components.",
+      "points": [
+        "5–6 reasoned bullets (mistake + why it costs rework), each tied back to a step above. Our practice, not statistics.",
+        "Include 'designing for every platform at once': platforms are a hub price driver; pick the platform where the core job happens first.",
+        "Include 'no success signal defined', so the launch cannot tell the team anything.",
+        "Close the section with the hub 'when to hire' deep link: /services/ui-ux-design-services-for-startups/#when-should-a-startup-hire-ui-ux-design-services-for-startups, anchor 'signs a startup needs outside MVP design help'. Do not list the hub's 5 situations.",
+        "Closing paragraph after this section (before FAQs): carrier 'If you would rather not work out how to design an MVP alone, send us your feature list…' + /contact/ link."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Can you design an MVP without a designer?", "hint": "Yes, for the first two steps: founders can write the hypothesis, cut the feature list and sketch flows in FigJam. The risk sits in states, platform rules and testing; one sentence on when a designer pays off (before high-fidelity UI). No invented failure rates." },
+    { "q": "How many screens does an MVP need?", "hint": "Count flows, not screens: 3–5 MVP flows (hub), each with its empty, error and success states. Do not give a screen count (no source)." },
+    { "q": "Should you design the MVP for web or mobile first?", "hint": "Design first for the platform where the target user does the core job; a second platform raises scope and price (hub price driver 'number of platforms'). 2 sentences." },
+    { "q": "Does a no-code MVP still need UX design?", "hint": "Yes. No-code tools change who builds the product, not the flows, states and test the user meets. 2 sentences, no tool comparison." },
+    { "q": "How much does MVP design cost?", "hint": "One intent, one answer: $25,000–$60,000 for a 4–8 week startup engagement on this site, depending on flows, platforms, research depth and the starter design system scope; link the hub cost section. Never quote competitor ranges." }
+  ],
+  "internalTargets": [
+    { "href": "/services/ui-ux-design-services-for-startups/", "anchor": "UI UX design for startups" },
+    { "href": "/services/ui-ux-design-services-for-startups/#how-much-does-ui-ux-design-for-startups-cost", "anchor": "what a 4–8 week MVP design engagement costs" },
+    { "href": "/services/ui-ux-design-services-for-startups/#how-does-the-startup-ui-ux-design-process-work", "anchor": "our 5-step startup design process" },
+    { "href": "/services/ui-ux-design-services-for-startups/#when-should-a-startup-hire-ui-ux-design-services-for-startups", "anchor": "signs a startup needs outside MVP design help" },
+    { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+    { "href": "/case-studies/nitro/", "anchor": "Nitro League from idea to MVP launch plan" },
+    { "href": "/contact/", "anchor": "send us your feature list" }
+  ],
+  "internalTargetsNote": "All verified: content/services/ui-ux-design-services-for-startups.json, content/services/usability-testing-services.json, content/case-studies/nitro.md (route app/case-studies/[slug]/page.tsx), app/contact/page.tsx. Section ids from sectionId() in components/sections/SemanticSections.tsx (lowercase, non-alphanumerics -> '-', trim): 'How much does UI UX design for startups cost?' -> how-much-does-ui-ux-design-for-startups-cost; 'How does the startup UI UX design process work?' -> how-does-the-startup-ui-ux-design-process-work; 'When should a startup hire UI UX design services for startups?' -> when-should-a-startup-hire-ui-ux-design-services-for-startups. The usability-testing-services link is the post's ONE cross-hub link (H2 6, 5-user test); drop it if the link-builder needs the slot. If hub body links are capped at 2, keep the root (intro) and the cost section (H2 8). No sibling posts in this silo yet. Do not link is-discovery-phase-worth-it or any other silo's post. /industries/startups/ is not linked (it is reached from the hub; one link per concept).",
+  "externalSources": [
+    { "url": "https://theleanstartup.com/principles", "why": "Eric Ries, The Lean Startup: the MVP and build-measure-learn loop, for the definition in H2 1. Paraphrase." },
+    { "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/", "why": "Jakob Nielsen (NN/g, 19 March 2000): 5 users per round, then iterate. Supports the hub's 5-user test. Fact-checker: confirm date." },
+    { "url": "https://measuringu.com/sus/", "why": "Jeff Sauro (MeasuringU): System Usability Scale, 10 items, average score 68. Fact-checker: confirm the figure on the live page (WebFetch was DNS-blocked for measuringu.com in an earlier run)." },
+    { "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html", "why": "W3C: WCAG 2.2 Success Criterion 2.5.8 Target Size (Minimum), 24×24 CSS pixels, level AA. Contrast 4.5:1 is SC 1.4.3 (https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html); cite one, mention the other in plain text if the 5-link cap is reached." },
+    { "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility", "why": "Apple Human Interface Guidelines: 44×44 pt minimum control size. Material Design 3 48×48 dp (https://m3.material.io/foundations/designing/structure or the accessibility basics page) can be stated in plain text with the hub as the source. Fact-checker: confirm both pages." },
+    { "url": "https://www.gv.com/sprint/", "why": "GV Design Sprint, 5 days (map, sketch, decide, prototype, test). Plain-text mention if the external cap of 5 is reached." }
+  ],
+  "visuals": [
+    { "type": "four-artifact comparison table", "idea": "Landscape 1200 x max 800, smallest text 38px. Columns: clickable prototype | investor demo | MVP | full product; rows: who uses it, real data?, what it proves, fidelity. MVP column highlighted. Text version (markdown table) in the astext panel under the image. Caption/alt/file name all say 'MVP vs prototype vs investor demo vs full product'." },
+    { "type": "feature cut sheet", "idea": "Illustrative 12-feature list sorted into three columns: Keep (core flow needs it and it tests the hypothesis) / Do by hand first (concierge) / Later. Struck-through items in Later. Caption says illustrative. Text panel = the three lists." },
+    { "type": "core flow map with states", "idea": "One horizontal flow (entry -> sign-up -> core action -> success) with small state tags under each step: empty, loading, error, first-run. Landscape; at most 6 boxes so text stays 38px. Text panel = ol of steps with their states." },
+    { "type": "screen spec card", "idea": "Two phone frames and one browser frame with annotated callouts: 44×44 pt (iOS, Apple HIG), 48×48 dp (Android, Material Design 3), 24×24 CSS px (WCAG 2.2 SC 2.5.8), 4.5:1 body-text contrast (SC 1.4.3). Text panel = table of rule | value | source." },
+    { "type": "5-user test plan card", "idea": "A one-page plan: hypothesis line, 3 task prompts, what to observe, SUS score box (average 68 marked with source), decision row (fix and retest / handoff / revisit hypothesis). Text panel = the same as a list." },
+    { "type": "handoff pack checklist", "idea": "Folder-style checklist of 8 items (screens with states, flow map, tokens and components, accessibility notes, analytics events, copy deck, open questions, cut-for-later list). Text panel = ul." }
+  ],
+  "visualsNote": "6 visuals (image cap). The 4–8 week timeline in H2 8 stays an ol in the text, not an image, because the hub already shows it and the 6-image cap is reached. All landscape (1200 wide, height ≤ 800, smallest text ≥ 38px). Every image sits after the paragraph it explains, never directly under an H2.",
+  "leadAngle": "Three moments. (1) End of the cut-list step: founders defend their own features; a facilitated 5-day design sprint forces the cut to 1 direction (hub sprint step). (2) End of the screens step: the starter design system (tokens + 20–30 core components) is built inside the UI step, so engineers do not invent components later. (3) Main offer in the timeline section and the closing: send us your feature list, and in a free consultation we sort it into keep / by hand / later and size the 3–5 MVP flows; the startup engagement then delivers the sprint, 5–8 interviews, the flows, screens, starter design system and a 5-user tested Figma prototype in 4–8 weeks for $25,000–$60,000 (hub cost section link). MOFU template CTA = Nitro League case study + consultation. Do not promise a written review of the list before the call (not a published offer). No claims about how many founders or startups we work with (implied-client test).",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "fill-in hypothesis sentence (the post opens on a blank one-line MVP hypothesis the reader completes, returned to in step 1). Last 10 intros used: buyer scenario, myth, data point with source, question, definition, mini case (Nitro), contrarian take, itemized receipt, 60-second phone test, before/after roadmap row. Not a repeat.",
+    "h2Frames": ["what does X cover and what is it not", "step 1: how to turn into one", "step 2: how to cut down to", "step 3: how to map and its states", "how to design X's screens: A first, then B", "step 5: how to test with 5 users", "step 6: what should X hand to", "how long and what does the founder do", "which mistakes cause rework", "FAQs"],
+    "sectionOrder": "fill-in hypothesis intro -> definition + four-artifact table -> hypothesis + success signal -> feature cut sheet -> core flow map with states -> wireframes then UI + spec card + starter design system -> 5-user test plan -> handoff pack -> 4–8 week plan + founder time + price link + Nitro -> mistakes + when-to-hire link -> closing offer -> FAQs",
+    "visualTypes": ["four-artifact comparison table", "feature cut sheet", "core flow map with states", "screen spec card", "5-user test plan card", "handoff pack checklist"],
+    "ctaAngle": "send us your feature list -> free consultation that sorts it into keep / by hand / later and sizes the 3–5 MVP flows; Nitro League as the case study",
+    "listStyle": "numbered 6-step spine (Step 1–6 in H2s) + three-column cut sheet + state tags + handoff checklist + mistake bullets (mistake + why)",
+    "differsFrom": "Last 3 site-wide: ux-strategy-roadmap (Guide / before-after roadmap row / RICE card, HEART grid, now-next-later board), ecommerce-ux-audit (Checklist / 60-second phone test), usability-testing-cost-per-participant (Guide / itemized receipt). Differs from all three on intro, H2 frames, section order, visuals, CTA angle and list style (6 of 7; type Guide matches the last post). Silo has no posts. Nearest structural relatives: (a) is-discovery-phase-worth-it (assumptions, skip test, Nitro, discovery vs MVP): do NOT open with Nitro, do NOT build an assumption ledger, a scored yes/no flow or an escalation ladder, and do NOT argue discovery vs MVP; our hypothesis is one sentence, our cut test sorts features into 3 columns. (b) ux-strategy-roadmap: do NOT use RICE, HEART or a now/next/later board for features. (c) usability-testing-cost-per-participant: the 5-user test section is about the task plan, never about participant cost or incentives."
+  },
+  "notes": [
+    "Exact keyword 'how to design an mvp' in title/H1, slug, first sentence, description (prescribed, 155 chars), first meta keyword. No keyword or secondary contains 'vs'. H2 1 compares artifacts as a question, with no 'vs' string; the visual caption may say 'MVP vs prototype vs investor demo vs full product' (caption only, read aloud OK as a label).",
+    "Cannibalisation, hub (anchor 'UI UX design services for startups'; metaTitle 'UI UX Design Services for Startups | MVP to Scale'; tags and ngrams include 'MVP design'): it owns what UI UX design for startups is, the 6 deliverables, the 5-step process, benefits, 'vs digital product design', cost, 'when to hire' and FAQs (research before MVP, remote sprint, design system in MVP, after launch, duration). The post serves the how-to intent the hub cannot (page 1 is all how-to guides). Mitigation: no H2 restates a hub H2; process, price and when-to-hire are deep links; the post never uses 'services for startups' or 'agency' in an H2; 2 UP links + backlink #1.",
+    "Cannibalisation, industries/startups.json (anchor 'Startups UI UX design'; keywords[] includes 'MVP design' and 'UI UX design for startups'): it owns design work per funding stage, stage deliverables, startup UX challenges, 'startup UX vs enterprise product UX', cost and compliance basics. The post uses its facts (founder time, WCAG targets, Apple 5.1.1(v), investor demo vs MVP) as one-line inputs only and adds no funding-stage section.",
+    "Cannibalisation, blog: is-discovery-phase-worth-it (digital-product-design-services silo) owns 'discovery phase vs MVP' (secondary with carrier) and mentions 'a 5-day design sprint for startups'. This post never frames discovery against an MVP and does not link that post (other silo). No other post or brief targets MVP or startup design. grep of content/ for 'mvp|minimum viable' (24 files): hub, industry page, location pages (Austin 12 mentions, in passing), case studies Nitro and Vocable, the discovery post and its brief; none uses a how-to MVP heading.",
+    "Case studies: grep of content/case-studies for 'mvp|idea to|prototype|tested'. Nitro (tagged with this hub): scope 'idea to product, conceptualisation, art direction, sketching and modeling, MVP launch plan, game and website design, and post-launch enhancements'; solution 'We started with product discovery and stakeholder interviews. From these we mapped the user flows and wrote a detailed whitepaper… Professional gamers validated the result.' Writer may use only those facts; do not attribute the $5M funding to MVP design (the case study says the launch on the platform brought in investment). Vocable (not tagged with this hub; may be named once without a link): description 'from idea to MVP', scope 'stakeholder interviews, MVP launch strategy', body 'We mapped the full creator journey and designed each screen around a problem we heard in stakeholder interviews'. Do not attribute its 35% workflow efficiency to MVP design. Nitro was the mini-case intro of is-discovery-phase-worth-it: use it here only in H2 8, not in the intro.",
+    "Honesty, do not use: SpdLoad's 'every $1 invested in UX returns $100 (Forrester)', '52% of users won't return', its US/Ukraine hourly rates and MVP design price tiers, and its CB Insights '42% no market need' (dated, secondhand; only if the fact-checker confirms it on cbinsights.com, else drop); Upsilon's '$2,500–$8,500, at least two weeks' and 'MVP within three months'; Purrweb's '$5,000 average', '$360–$540 per screen', '70% task-completion threshold' and '15–20% added front-end time'; Mockplus's Dropbox '75,000 signups overnight' and its famous-company examples as evidence; Ronas IT's '80% of apps don't survive' and its 2021 failure rates; Lazarev's '40% savings, 3 months faster'; DBB Software's '50% faster'. Every worked example uses an invented startup and says 'illustrative'. No uplift percentages.",
+    "Originality: beats page upsilonit.com (why quality -> UX vs UI types -> 7 steps: problem, research, personas, prioritize, wireframes and flows, prototypes and mockups, feedback -> 5 tips -> cost -> FAQ). Do not use its 7-step order or step names, its 'UX MVP design vs UI MVP design' types section, its pencil analogy, its 5 tips headings or its FAQ wording. Purrweb: no mind-map step, no per-function hour table, no team-roles section. Mockplus: no '10 best MVP examples' section and no tools roundup. SpdLoad/Ronas: no team or hourly-rate sections. Our spine is hypothesis -> cut -> flows with states -> wireframes then UI with platform specs -> 5-user test -> handoff pack. QA checks 5-gram overlap with the beats page (max 5%).",
+    "Future silo posts (Ahrefs, 2026-10-20): BOFU next = 'hiring ux designer for startup' (40, KD not returned; page 1 = uxplanet, wellfound, designproject.io, mindsea.com/startups-hire-designers, startupgrind, braintrust). Angle: first in-house designer hire vs a fixed-scope startup engagement, using home.ts 'Time to first design: 6–10 weeks (hiring + ramp)'; must not rebuild the freelancer/agency matrix of ux-audit-agency-vs-freelancer or mobile-app-design-agency-vs-freelancer. TOFU later = 'mvp in ux design' (80/3) + 'ux mvp' (90/4) + 'mvp ux meaning' (50/6) as one definition post (maze.co/blog/mvp-ux-design, blog.uxtweak.com/mvp-in-ux-design and netsolutions rank); this brief answers the definition in 2–3 sentences only so that post stays open. 'mvp app design' (50) and 'startup app design' (50) need a SERP check. 'mvp web design' (200/3) is launch-website intent, not this silo's MVP product design.",
+    "competitors.json was NOT edited this run (this agent has no Edit tool, and rewriting the 740-line file risks corrupting it). Orchestrator: merge the `competitorsUpdate` block below into docs/content-system/competitors.json (domains, headTermSerps, topPosts).",
+    "CONFLICTS for the orchestrator: see siteFacts.conflicts (home.ts '2–4 designers'; home.ts 'design and development'; industry 4-step vs hub 5-step process; pre-seed polish FAQ; 'starter design system' vs UI kit naming; MOFU CTA box prints Nitro's $5M result on an MVP how-to post)."
+  ],
+  "competitorsUpdate": {
+    "headTermSerps": {
+      "ui-ux-design-services-for-startups": {
+        "keyword": "ui ux design services for startups",
+        "checked": "WebSearch 2026-10-20",
+        "domains": ["ramotion.com (service page /startup-ui-ux-design)", "fayrix.com (service page)", "fuselabcreative.com (service page /services/ui-ux-design-for-startups)", "ronasit.com (2 service pages)", "aufaitux.com (3 service pages)", "cieden.com (service page /ui-ux-for-startups)"],
+        "note": "Service pages only. The hub competes here; blog posts stay on how-to and hiring long-tails."
+      }
+    },
+    "domains": [
+      { "domain": "upsilonit.com", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["how to design an mvp (#1)", "mvp design (#2)", "mvp ui design"] },
+      { "domain": "purrweb.com", "kind": "app development agency blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["how to design an mvp", "mvp ui design", "mvp design process"], "source": "WebSearch + WebFetch 2026-10-20" },
+      { "domain": "mockplus.com", "kind": "design tool blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["mvp design (#1)", "how to design an mvp", "ux design mvp", "mvp ui design (#1)"], "source": "WebSearch + WebFetch 2026-10-20" },
+      { "domain": "spdload.com", "kind": "development agency blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["how to design an mvp"], "source": "WebSearch + WebFetch 2026-10-20" },
+      { "domain": "ronasit.com", "kind": "development agency blog + service pages", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["how to design an mvp", "ui ux design services for startups (service pages)"], "source": "WebSearch + WebFetch 2026-10-20" },
+      { "domain": "uxplanet.org", "kind": "publisher (Medium publication)", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["how to design an mvp", "hiring ux designer for startup (#1)"], "source": "WebSearch 2026-10-20 (WebFetch 403)" },
+      { "domain": "dbbsoftware.com", "kind": "development agency insights", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["how to design an mvp", "mvp ui design"], "source": "WebSearch 2026-10-20" },
+      { "domain": "creolestudios.com", "kind": "development agency blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["mvp ux design (#1)", "ux design mvp"], "source": "WebSearch 2026-10-20" },
+      { "domain": "bsscommerce.com", "kind": "agency services blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["ux design mvp (#1)", "mvp ux design"], "source": "WebSearch 2026-10-20" },
+      { "domain": "capicua.com", "kind": "agency blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["mvp design", "mvp product design"], "source": "WebSearch 2026-10-20" },
+      { "domain": "xmethod.de", "kind": "agency blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["mvp design", "mvp product design"], "source": "WebSearch 2026-10-20" },
+      { "domain": "designproject.io", "kind": "design talent blog", "silos": ["ui-ux-design-services-for-startups"], "seenFor": ["hiring ux designer for startup"], "source": "WebSearch 2026-10-20" },
+      { "domain": "aufaitux.com", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["mvp ux design", "ux design mvp", "ui ux design services for startups (service pages)"] },
+      { "domain": "parallelhq.com", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["mvp ux design (blog, 24 September 2025)", "ux design mvp"] },
+      { "domain": "netguru.com", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["mvp ux design (blog/mvp-ux-design)"] },
+      { "domain": "maze.co", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["ux design mvp (blog/mvp-ux-design)"] },
+      { "domain": "mindsea.com", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["hiring ux designer for startup (startups-hire-designers)"] },
+      { "domain": "lazarev.agency", "addSilo": "ui-ux-design-services-for-startups", "addSeenFor": ["mvp design services (service page)", "mvp product design (service page)"] }
+    ],
+    "topPosts": [
+      { "domain": "upsilonit.com", "url": "https://www.upsilonit.com/blog/how-to-design-an-mvp-for-your-startup", "title": "How to Design an MVP for Your Startup", "keywords": ["how to design an mvp", "mvp design", "mvp ui design"], "estTraffic": null, "silo": "ui-ux-design-services-for-startups", "serviceSupport": 5, "status": "briefed", "brief": "content/briefs/how-to-design-an-mvp.json", "notes": "beats target. Maria Arinkina, updated 1 April 2025. 7 steps without a cut rule, test plan, states or handoff contents; '$2,500–$8,500, 2 weeks' is self-reported (do-not-use)." },
+      { "domain": "purrweb.com", "url": "https://purrweb.com/blog/mvp-design-process", "title": "How to Design UX for an MVP in 2026: step-by-step process", "keywords": ["how to design an mvp", "mvp ui design", "mvp design process"], "estTraffic": null, "silo": "ui-ux-design-services-for-startups", "serviceSupport": 5, "status": "briefed", "brief": "content/briefs/how-to-design-an-mvp.json", "notes": "Georgy Putilov, updated 12 March 2026. Hour estimates per step and per function ($45/h implied); no testing step in the body; all figures self-reported (do-not-use)." },
+      { "domain": "mockplus.com", "url": "https://www.mockplus.com/blog/post/mvp-guide-in-ui-ux-design", "title": "MVP in UI/UX Design: A Complete Guide with Best Practices & Examples", "keywords": ["mvp design", "how to design an mvp", "mvp ui design", "ux design mvp"], "estTraffic": null, "silo": "ui-ux-design-services-for-startups", "serviceSupport": 4, "status": "briefed", "brief": "content/briefs/how-to-design-an-mvp.json", "notes": "Tool vendor, 11 October 2025. 7 principles, 6 steps, 10 famous-company examples (unsourced anecdotes, do-not-use), tools list." },
+      { "domain": "spdload.com", "url": "https://spdload.com/blog/how-to-design-an-mvp/", "title": "How to Design an MVP", "keywords": ["how to design an mvp"], "estTraffic": null, "silo": "ui-ux-design-services-for-startups", "serviceSupport": 4, "status": "briefed", "brief": "content/briefs/how-to-design-an-mvp.json", "notes": "Nov 2024. Cost/team page; Forrester '$1 -> $100', '52% won't return' and US/Ukraine rates are do-not-use." },
+      { "domain": "mindsea.com", "url": "https://mindsea.com/startups-hire-designers/", "title": "When should startups hire designers", "keywords": ["hiring ux designer for startup"], "estTraffic": null, "silo": "ui-ux-design-services-for-startups", "serviceSupport": 5, "status": "candidate", "notes": "Next BOFU candidate for the silo ('hiring ux designer for startup', Ahrefs 40). uxplanet, designproject.io, startupgrind and talent marketplaces (wellfound, braintrust) also rank. Angle: first in-house designer vs fixed-scope engagement; must not rebuild the freelancer/agency matrices of the two published vs posts." },
+      { "domain": "maze.co", "url": "https://maze.co/blog/mvp-ux-design/", "title": "Understanding minimum viable products (MVP) in UX design: A quickstart guide", "keywords": ["ux design mvp", "mvp in ux design", "ux mvp"], "estTraffic": null, "silo": "ui-ux-design-services-for-startups", "serviceSupport": 3, "status": "candidate", "notes": "Future TOFU definition post ('mvp in ux design' 80/3, 'ux mvp' 90/4, 'mvp ux meaning' 50/6). blog.uxtweak.com/mvp-in-ux-design and netsolutions.com/hub/minimum-viable-product/ux also rank. Must not repeat the 6-step spine of how-to-design-an-mvp." }
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/ui-ux-design-services-for-startups.json",
+      "field": "sections[h2='What is UI UX design for startups?'].body",
+      "sentence": "UI UX design for startups differs from digital product design services in scope: startup design ships the smallest product that tests 1 value proposition, while digital product design covers a full 0→1 product with every flow.",
+      "change": "Link the words 'ships the smallest product that tests 1 value proposition' to /blog/how-to-design-an-mvp/ (body is HTML inside <p>; the sentence already links digital product design services, so this adds a second, different target).",
+      "anchor": "ships the smallest product that tests 1 value proposition",
+      "priority": "required",
+      "why": "Pillar -> post link in the same silo on the exact sentence that defines what an MVP does; hub banking for the new post and the first internal link it receives."
+    },
+    {
+      "file": "content/services/ui-ux-design-services-for-startups.json",
+      "field": "sections[h2='What does UI UX design for startups include?'].items[title='MVP user flows.'].body",
+      "sentence": "The 3–5 flows the MVP needs are mapped, for example sign-up, the core action and payment.",
+      "change": "none",
+      "anchor": "",
+      "priority": "skip",
+      "why": "Alternative to #1 on the same page (one link per target per source page)."
+    },
+    {
+      "file": "content/industries/startups.json",
+      "field": "sections[h2='Which design deliverables fit each startup stage?'].items[title='Seed-stage MVPs.'].body",
+      "sentence": "Seed teams ship the smallest product that delivers the core job, for example sign-up, 1 workflow and Stripe billing.",
+      "change": "Wrap 'ship the smallest product that delivers the core job' in <a href=\"/blog/how-to-design-an-mvp/\">…</a>. Item bodies render as HTML (components/sections/SemanticSections.tsx uses <Html as=\"p\" html={c.body} /> for card/list items), so the link works.",
+      "anchor": "ship the smallest product that delivers the core job",
+      "priority": "required",
+      "why": "Real topic match: a seed-stage reader looking at 'Seed-stage MVPs' wants the how-to next. The industry page is not in the silo, but a pillar-adjacent page linking down to a post is allowed, and it is the only other page that ranks for startup design intent. Different page from #1, so one link per target per source page holds."
+    }
+  ]
+}
