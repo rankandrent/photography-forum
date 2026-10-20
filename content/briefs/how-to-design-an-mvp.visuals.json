@@ -1,0 +1,31 @@
+[
+  {
+    "marker": "<!-- visual: four-artifact comparison table | Landscape 1200 x max 800, smallest text 38px. Four columns (clickable prototype, investor demo, MVP, full product) by four rows (who uses it, real data, what it proves, fidelity); MVP column highlighted. Same content as the text panel below. -->",
+    "markdown": "![Comparison table of a clickable prototype, an investor demo, an MVP and a full product by who uses it, real data, what it proves and fidelity](/blog/how-to-design-an-mvp/mvp-vs-prototype-vs-investor-demo.svg \"MVP vs prototype vs investor demo vs full product\")"
+  },
+  {
+    "marker": "<!-- visual: feature cut sheet | Landscape 1200 x max 800, smallest text 38px. Three columns titled Keep, Do by hand first, Later, holding the 12 illustrative features from the text panel; Later items struck through. Label \"Illustrative\" in the corner. -->",
+    "markdown": "![Illustrative feature cut sheet sorting 12 features of a physiotherapy scheduling MVP into keep, do by hand first and later](/blog/how-to-design-an-mvp/feature-cut-sheet.svg \"Illustrative feature cut sheet: 12 features in keep, do by hand first and later\")"
+  },
+  {
+    "marker": "<!-- visual: core flow map with states | Landscape 1200 x max 800, smallest text 38px. One horizontal user flow of 6 boxes (landing, sign-up, empty schedule, add slot, share link, success) with small state tags under each box: loading, error, first-run, empty. Success box marked \"activation event\". -->",
+    "markdown": "![Core user flow map of an illustrative scheduling MVP from landing page to first slot published, with loading, error, empty and first-run state tags under each step](/blog/how-to-design-an-mvp/core-flow-map-with-states.svg \"Core user flow map with states: six steps from landing to first slot published\")"
+  },
+  {
+    "marker": "<!-- visual: screen spec card | Landscape 1200 x max 800, smallest text 38px. Two phone frames (iOS, Android) and one browser frame with callouts: 44x44 pt (Apple HIG), 48x48 dp (Material Design 3), 24x24 CSS px (WCAG 2.2, 2.5.8), 4.5:1 body-text contrast (WCAG 2.2, 1.4.3). -->",
+    "markdown": "![Screen spec card with iOS, Android and web frames annotated with minimum touch target sizes and the 4.5:1 body text contrast ratio](/blog/how-to-design-an-mvp/screen-spec-card.svg \"Screen spec card: touch target size and contrast ratio per platform\")"
+  },
+  {
+    "marker": "<!-- visual: 5-user test plan card | Landscape 1200 x max 800, smallest text 38px. One-page plan card: hypothesis line, 3 task prompts, what to observe, SUS score box with \"average 68 (MeasuringU)\" marked. No decision row (the three decisions stay in the open list below). Label \"Illustrative\". -->",
+    "markdown": "![Illustrative 5-user test plan card for a scheduling MVP with the hypothesis, three task prompts, what to observe and a System Usability Scale score box](/blog/how-to-design-an-mvp/five-user-test-plan.svg \"Illustrative 5-user test plan: hypothesis, tasks, observations and SUS score\")"
+  },
+  {
+    "marker": "<!-- visual: handoff pack checklist | Landscape 1200 x max 800, smallest text 38px. Folder-style checklist with 8 ticked items, matching the text panel below. -->",
+    "markdown": "![Handoff pack checklist of eight items an MVP design hands to developers, from screens with states to the cut-for-later list](/blog/how-to-design-an-mvp/handoff-pack-checklist.svg \"Handoff pack checklist: eight items developers receive\")"
+  },
+  {
+    "frontmatter": {
+      "image": "/blog/how-to-design-an-mvp/cover.svg"
+    }
+  }
+]

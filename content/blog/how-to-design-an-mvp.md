@@ -20,6 +20,7 @@ takeaways:
   - "On our startup engagement, MVP design takes 4–8 weeks and $25,000–$60,000, with 2–4 founder hours per week."
 draft: true
 qa: pending
+image: /blog/how-to-design-an-mvp/cover.svg
 ---
 
 A minimum viable product (MVP) starts as one sentence, so before you work out how to design an MVP screen by screen, fill in its blanks:
@@ -36,7 +37,6 @@ Minimum viable product design is the slice of product design that covers the int
 
 Eric Ries's [Lean Startup principles](https://theleanstartup.com/principles) treat the MVP as the quickest way into the build-measure-learn feedback loop: put a product in front of customers, measure how they respond, then decide whether to pivot or persevere. The table compares the MVP with three artifacts founders often mistake for it.
 
-<!-- visual: four-artifact comparison table | Landscape 1200 x max 800, smallest text 38px. Four columns (clickable prototype, investor demo, MVP, full product) by four rows (who uses it, real data, what it proves, fidelity); MVP column highlighted. Same content as the text panel below. -->
 ![Comparison table of a clickable prototype, an investor demo, an MVP and a full product by who uses it, real data, what it proves and fidelity](/blog/how-to-design-an-mvp/mvp-vs-prototype-vs-investor-demo.svg "MVP vs prototype vs investor demo vs full product")
 
 <details class="astext"><summary>Show as text</summary>
@@ -58,7 +58,7 @@ The investor demo is the usual mix-up: it is a clickable prototype of the next 2
 
 Knowing how to design an MVP starts with what to leave out, and the hypothesis decides that. Here is the intro's sentence filled in for an illustrative startup, a scheduling tool for independent physiotherapists:
 
-> For independent physiotherapists who refill cancelled slots by texting patients one by one, the MVP lets them publish open slots as a booking link, so we learn whether they will hand rebooking to patients instead of texting.
+> For independent physiotherapists who refill canceled slots by texting patients one by one, the MVP lets them publish open slots as a booking link, so we learn whether they will hand rebooking to patients instead of texting.
 
 The sentence tests one value proposition, faster rebooking, and every later feature is judged against it.
 
@@ -78,7 +78,6 @@ Three questions do the sorting. This is our working rule, not a published method
 
 The middle column is a concierge MVP in miniature. A concierge MVP delivers part of the service by hand, with a person from the startup doing work that software will do later, such as manual invoicing before automated billing.
 
-<!-- visual: feature cut sheet | Landscape 1200 x max 800, smallest text 38px. Three columns titled Keep, Do by hand first, Later, holding the 12 illustrative features from the text panel; Later items struck through. Label "Illustrative" in the corner. -->
 ![Illustrative feature cut sheet sorting 12 features of a physiotherapy scheduling MVP into keep, do by hand first and later](/blog/how-to-design-an-mvp/feature-cut-sheet.svg "Illustrative feature cut sheet: 12 features in keep, do by hand first and later")
 
 <details class="astext"><summary>Show as text</summary>
@@ -106,7 +105,6 @@ MVP UX design starts with the core user flow, not with the screens. To design UX
 
 Empty states are the screens a user sees before any data exists, such as a schedule with no slots, so each one names the next action. Loading states cover waits, error states matter most in sign-up and payment, and the first-run state is the one-time onboarding that points at the core action.
 
-<!-- visual: core flow map with states | Landscape 1200 x max 800, smallest text 38px. One horizontal user flow of 6 boxes (landing, sign-up, empty schedule, add slot, share link, success) with small state tags under each box: loading, error, first-run, empty. Success box marked "activation event". -->
 ![Core user flow map of an illustrative scheduling MVP from landing page to first slot published, with loading, error, empty and first-run state tags under each step](/blog/how-to-design-an-mvp/core-flow-map-with-states.svg "Core user flow map with states: six steps from landing to first slot published")
 
 <details class="astext"><summary>Show as text</summary>
@@ -142,7 +140,6 @@ Real labels show whether a physiotherapist understands "Publish slot" before any
 
 That order fits pre-seed teams, who need problem interviews and a rough prototype before polished UI. The Apple Human Interface Guidelines and Material Design 3 each set a minimum touch target size for iOS and Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 [Success Criterion 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
 
-<!-- visual: screen spec card | Landscape 1200 x max 800, smallest text 38px. Two phone frames (iOS, Android) and one browser frame with callouts: 44x44 pt (Apple HIG), 48x48 dp (Material Design 3), 24x24 CSS px (WCAG 2.2, 2.5.8), 4.5:1 body-text contrast (WCAG 2.2, 1.4.3). -->
 ![Screen spec card with iOS, Android and web frames annotated with minimum touch target sizes and the 4.5:1 body text contrast ratio](/blog/how-to-design-an-mvp/screen-spec-card.svg "Screen spec card: touch target size and contrast ratio per platform")
 
 <details class="astext"><summary>Show as text</summary>
@@ -166,11 +163,10 @@ MVPs save or lose engineering time here, so our startup engagement builds the st
 
 Usability testing here means watching target users try the design, not checking code. We set test participants at 5 users per round, following [Jakob Nielsen's 2000 article](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/): he estimated that 5 users uncover about 85% of usability problems, so a budget buys more in several small rounds.
 
-The clickable Figma prototype runs unmoderated in Maze, which records each participant's path and misclicks; a moderated video session suits a user flow with many branches. Write tasks as goals and never name the button: "A patient cancelled tomorrow at 10; make that time bookable" tests the core action, "Tap Publish slot" tests nothing.
+The clickable Figma prototype runs unmoderated in Maze, which records each participant's path and misclicks; a moderated video session suits a user flow with many branches. Write tasks as goals and never name the button: "A patient canceled tomorrow at 10; make that time bookable" tests the core action, "Tap Publish slot" tests nothing.
 
 The System Usability Scale (SUS) is a 10-item questionnaire scored from 0 to 100, and the score is not a percentage. MeasuringU's Jeff Sauro reports an [average SUS score of 68 across 500 studies](https://measuringu.com/sus/).
 
-<!-- visual: 5-user test plan card | Landscape 1200 x max 800, smallest text 38px. One-page plan card: hypothesis line, 3 task prompts, what to observe, SUS score box with "average 68 (MeasuringU)" marked. No decision row (the three decisions stay in the open list below). Label "Illustrative". -->
 ![Illustrative 5-user test plan card for a scheduling MVP with the hypothesis, three task prompts, what to observe and a System Usability Scale score box](/blog/how-to-design-an-mvp/five-user-test-plan.svg "Illustrative 5-user test plan: hypothesis, tasks, observations and SUS score")
 
 <details class="astext"><summary>Show as text</summary>
@@ -178,7 +174,7 @@ The System Usability Scale (SUS) is a 10-item questionnaire scored from 0 to 100
 Illustrative:
 
 - **Hypothesis:** physiotherapists will publish open slots instead of texting patients.
-- **Task 1:** "A patient cancelled tomorrow at 10. Make that time bookable."
+- **Task 1:** "A patient canceled tomorrow at 10. Make that time bookable."
 - **Task 2:** "Send your booking page to a patient who wants a slot next week."
 - **Task 3:** "Check who booked the slot you opened."
 - **Observe:** where each user stalls, misreads a label or asks for help.
@@ -200,7 +196,6 @@ Teams without time to recruit and moderate can hand the round to our [usability 
 
 The last part of how to design an MVP is the part many guides stop short of: what the developers receive. On our startup engagement, the developer handoff delivers annotated Figma files at the end of the testing and handover step. [Figma Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode) is the developer-focused workspace for inspecting designs, measurements, variables and generated code snippets; it needs a paid plan with a Full or Dev seat.
 
-<!-- visual: handoff pack checklist | Landscape 1200 x max 800, smallest text 38px. Folder-style checklist with 8 ticked items, matching the text panel below. -->
 ![Handoff pack checklist of eight items an MVP design hands to developers, from screens with states to the cut-for-later list](/blog/how-to-design-an-mvp/handoff-pack-checklist.svg "Handoff pack checklist: eight items developers receive")
 
 <details class="astext"><summary>Show as text</summary>
