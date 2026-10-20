@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- standalone Node helper for the visual designer, not app code */
 const { chromium } = require(process.env.PW || '/opt/node22/lib/node_modules/playwright');
 (async () => {
   const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' }).catch(()=>chromium.launch());
@@ -10,7 +11,6 @@ const { chromium } = require(process.env.PW || '/opt/node22/lib/node_modules/pla
     const cards=[...svg.children].filter(g=>g.tagName==='g'&&/translate\(\d+ 152\)/.test(g.getAttribute('transform')||''));
     for(const g of cards){
       const card=R(g.children[0]), stage=R(g.children[1]);
-      const dev=[...g.children].find(c=>c.getAttribute('filter')==='url(#dev)'||c.tagName==='g'&&c.querySelector('[filter]'));
       const devs=[...g.querySelectorAll(':scope > g[filter="url(#dev)"], :scope > g > g[filter]')];
       const d=devs.length?devs.map(R):[];
       const dx0=Math.min(...d.map(v=>v.x)), dy0=Math.min(...d.map(v=>v.y)), dx1=Math.max(...d.map(v=>v.x+v.w)), dy1=Math.max(...d.map(v=>v.y+v.h));
