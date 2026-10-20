@@ -26,7 +26,7 @@ A minimum viable product (MVP) starts as one sentence, so before you work out ho
 
 > For [target user] who [job they struggle with], the MVP lets them [one core action], so we learn whether [riskiest assumption].
 
-If a blank stays empty, no screen is ready to draw. This guide shows how to design an MVP in 6 steps: the hypothesis, a feature cut list, user flows with their states, wireframes and then user interface (UI) screens, a test with 5 users and the developer handoff. Our user experience (UX) team covers these steps in a 4–8 week engagement in UI UX design for startups <!-- link: /services/ui-ux-design-services-for-startups/ | UI UX design for startups -->.
+If a blank stays empty, no screen is ready to draw. This guide shows how to design an MVP in 6 steps: the hypothesis, a feature cut list, user flows with their states, wireframes and then user interface (UI) screens, a test with 5 users and the developer handoff. Our user experience (UX) team covers these steps in a 4–8 week engagement in [UI UX design for startups](/services/ui-ux-design-services-for-startups/).
 
 ## What does MVP design cover, and what is an MVP not?
 
@@ -34,7 +34,7 @@ If a blank stays empty, no screen is ready to draw. This guide shows how to desi
 
 Minimum viable product design is the slice of product design that covers the interface, user flows and screens of the smallest product that tests one value proposition. MVP design includes everything from the hypothesis to the files developers build from.
 
-Eric Ries's Lean Startup principles treat the MVP as the quickest way into the build-measure-learn feedback loop: put a product in front of customers, measure how they respond, then decide whether to pivot or persevere. <!-- source: https://theleanstartup.com/principles --> The table compares the MVP with three artifacts founders often mistake for it.
+Eric Ries's [Lean Startup principles](https://theleanstartup.com/principles) treat the MVP as the quickest way into the build-measure-learn feedback loop: put a product in front of customers, measure how they respond, then decide whether to pivot or persevere. The table compares the MVP with three artifacts founders often mistake for it.
 
 <!-- visual: four-artifact comparison table | Landscape 1200 x max 800, smallest text 38px. Four columns (clickable prototype, investor demo, MVP, full product) by four rows (who uses it, real data, what it proves, fidelity); MVP column highlighted. Same content as the text panel below. -->
 ![Comparison table of a clickable prototype, an investor demo, an MVP and a full product by who uses it, real data, what it proves and fidelity](/blog/how-to-design-an-mvp/mvp-vs-prototype-vs-investor-demo.svg "MVP vs prototype vs investor demo vs full product")
@@ -120,6 +120,8 @@ Empty states are the screens a user sees before any data exists, such as a sched
 
 </details>
 
+Flow before screens is how we worked on [Vocable, an AI content marketing SaaS we took from idea to MVP](/case-studies/vocable/): we mapped the full creator journey and designed each screen around a problem we heard in stakeholder interviews.
+
 Developers build every state you draw and guess at every state you skip, so list the states under each box before you open a design file.
 
 ## How to design an MVP's screens: wireframes first, then UI
@@ -138,7 +140,7 @@ Real labels show whether a physiotherapist understands "Publish slot" before any
 
 **MVP UI design starts once 5–8 interviews confirm the problem, and it applies each platform's touch target size and contrast ratio from the first screen.**
 
-That order fits pre-seed teams, who need problem interviews and a rough prototype before polished UI. The Apple Human Interface Guidelines and Material Design 3 each set a minimum touch target size for iOS and Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 Success Criterion 2.5.8 sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. <!-- source: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html --> Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
+That order fits pre-seed teams, who need problem interviews and a rough prototype before polished UI. The Apple Human Interface Guidelines and Material Design 3 each set a minimum touch target size for iOS and Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 [Success Criterion 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
 
 <!-- visual: screen spec card | Landscape 1200 x max 800, smallest text 38px. Two phone frames (iOS, Android) and one browser frame with callouts: 44x44 pt (Apple HIG), 48x48 dp (Material Design 3), 24x24 CSS px (WCAG 2.2, 2.5.8), 4.5:1 body-text contrast (WCAG 2.2, 1.4.3). -->
 ![Screen spec card with iOS, Android and web frames annotated with minimum touch target sizes and the 4.5:1 body text contrast ratio](/blog/how-to-design-an-mvp/screen-spec-card.svg "Screen spec card: touch target size and contrast ratio per platform")
@@ -162,11 +164,11 @@ MVPs save or lose engineering time here, so our startup engagement builds the st
 
 **Test the MVP's clickable prototype with 5 users before production code: give each the core user flow's task, watch where they stall and record a System Usability Scale score.**
 
-Usability testing here means watching target users try the design, not checking code. We set test participants at 5 users per round, following Jakob Nielsen's 2000 article: he estimated that 5 users uncover about 85% of usability problems, so a budget buys more in several small rounds. <!-- source: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/ -->
+Usability testing here means watching target users try the design, not checking code. We set test participants at 5 users per round, following [Jakob Nielsen's 2000 article](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/): he estimated that 5 users uncover about 85% of usability problems, so a budget buys more in several small rounds.
 
 The clickable Figma prototype runs unmoderated in Maze, which records each participant's path and misclicks; a moderated video session suits a user flow with many branches. Write tasks as goals and never name the button: "A patient cancelled tomorrow at 10; make that time bookable" tests the core action, "Tap Publish slot" tests nothing.
 
-The System Usability Scale (SUS) is a 10-item questionnaire scored from 0 to 100, and the score is not a percentage. MeasuringU's Jeff Sauro reports an average SUS score of 68 across 500 studies. <!-- source: https://measuringu.com/sus/ -->
+The System Usability Scale (SUS) is a 10-item questionnaire scored from 0 to 100, and the score is not a percentage. MeasuringU's Jeff Sauro reports an [average SUS score of 68 across 500 studies](https://measuringu.com/sus/).
 
 <!-- visual: 5-user test plan card | Landscape 1200 x max 800, smallest text 38px. One-page plan card: hypothesis line, 3 task prompts, what to observe, SUS score box with "average 68 (MeasuringU)" marked. No decision row (the three decisions stay in the open list below). Label "Illustrative". -->
 ![Illustrative 5-user test plan card for a scheduling MVP with the hypothesis, three task prompts, what to observe and a System Usability Scale score box](/blog/how-to-design-an-mvp/five-user-test-plan.svg "Illustrative 5-user test plan: hypothesis, tasks, observations and SUS score")
@@ -190,13 +192,13 @@ We treat 68 as a flag, not a pass mark. After each round, pick one of three move
 - **Move to the developer handoff** when users finish every task without help and the score is 68 or higher, because more rounds would polish rather than teach.
 - **Revisit the hypothesis** when users finish the tasks but say they would keep texting patients, because the riskiest assumption failed, not the screens.
 
-Teams without time to recruit and moderate can hand the round to our usability testing services <!-- link: /services/usability-testing-services/ | usability testing services -->. Either way, book your 5 participants before the UI pass ends.
+Teams without time to recruit and moderate can hand the round to our [usability testing services](/services/usability-testing-services/). Either way, book your 5 participants before the UI pass ends.
 
 ## Step 6: what should the MVP design hand to developers?
 
 **The MVP design hands developers annotated Figma files for every screen and state in the core user flows, plus tokens, components, the success-signal event and open questions.**
 
-The last part of how to design an MVP is the part many guides stop short of: what the developers receive. On our startup engagement, the developer handoff delivers annotated Figma files at the end of the testing and handover step. Figma Dev Mode is the developer-focused workspace for inspecting designs, measurements, variables and generated code snippets; it needs a paid plan with a Full or Dev seat. <!-- source: https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode -->
+The last part of how to design an MVP is the part many guides stop short of: what the developers receive. On our startup engagement, the developer handoff delivers annotated Figma files at the end of the testing and handover step. [Figma Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode) is the developer-focused workspace for inspecting designs, measurements, variables and generated code snippets; it needs a paid plan with a Full or Dev seat.
 
 <!-- visual: handoff pack checklist | Landscape 1200 x max 800, smallest text 38px. Folder-style checklist with 8 ticked items, matching the text panel below. -->
 ![Handoff pack checklist of eight items an MVP design hands to developers, from screens with states to the cut-for-later list](/blog/how-to-design-an-mvp/handoff-pack-checklist.svg "Handoff pack checklist: eight items developers receive")
@@ -220,7 +222,7 @@ Two lines are easy to drop. Without the analytics event, the launch cannot repor
 
 **MVP design takes 4–8 weeks, or 20–40 working days, on our startup engagement, and founders spend about 2–4 hours per week on reviews outside the sprint week.**
 
-The engagement duration is the sum of five steps. Our 5-step startup design process <!-- link: /services/ui-ux-design-services-for-startups/#how-does-the-startup-ui-ux-design-process-work | our 5-step startup design process --> maps onto this guide's six steps:
+The engagement duration is the sum of five steps, and those five steps map onto this guide's six:
 
 1. **Design sprint (5 days):** map, sketch, decide on 1 direction, prototype and test with 5 users; drafts steps 1 and 2.
 2. **User research (3–7 days):** 5–8 Jobs to be Done interviews, 1 target persona and a prioritized feature list; firms up steps 1 and 2.
@@ -230,9 +232,9 @@ The engagement duration is the sum of five steps. Our 5-step startup design proc
 
 Founder time follows a fixed rhythm: 2 review sessions of 45 minutes per week, plus answers in Figma comments within 1 working day. The remote design sprint asks more, 2–3 hours per day for its 5 days.
 
-The engagement price is $25,000–$60,000, set by the number of MVP flows, the number of platforms, the depth of user research and the scope of the starter design system; the hub shows what a 4–8 week MVP design engagement costs <!-- link: /services/ui-ux-design-services-for-startups/#how-much-does-ui-ux-design-for-startups-cost | what a 4–8 week MVP design engagement costs -->.
+The engagement price is $25,000–$60,000, set by the number of MVP flows, the number of platforms, the depth of user research and the scope of the starter design system; the hub shows [what a 4–8 week MVP design engagement costs](/services/ui-ux-design-services-for-startups/#how-much-does-ui-ux-design-for-startups-cost).
 
-Our case study traces Nitro League from idea to MVP launch plan <!-- link: /case-studies/nitro/ | Nitro League from idea to MVP launch plan -->: the racing game's work began with product discovery and stakeholder interviews, and the user flows were mapped from those. Bring your cut sheet and hypothesis sentence to a first call with us, since the Keep column sets the flow count.
+Our case study traces [Nitro League from idea to MVP launch plan](/case-studies/nitro/): the racing game's work began with product discovery and stakeholder interviews, and the user flows were mapped from those. Bring your cut sheet and hypothesis sentence to a first call with us, since the Keep column sets the flow count.
 
 ## Which MVP design mistakes cause the most rework?
 
@@ -247,9 +249,9 @@ Six mistakes undo MVP designs, each tied to the step that prevents it:
 - **No success signal**, so the launch shows usage but cannot confirm the hypothesis (step 1).
 - **Screens without tokens or components**, because engineers then build a new button per screen (step 6).
 
-If your plan already shows one of these, compare it with the signs a startup needs outside MVP design help <!-- link: /services/ui-ux-design-services-for-startups/#when-should-a-startup-hire-ui-ux-design-services-for-startups | signs a startup needs outside MVP design help -->.
+If your plan already shows one of these, go back to the step named in parentheses and fix it before the first engineering sprint.
 
-If you would rather not work out how to design an MVP alone, go back to the sentence at the top of this guide. Fill in its four blanks, sort your list into the three columns and send us your feature list <!-- link: /contact/ | send us your feature list --> with both. Every project begins with a free consultation and a fixed-scope proposal, and the flow count in your Keep column is one of the four factors that set its price.
+If you would rather not work out how to design an MVP alone, go back to the sentence at the top of this guide. Fill in its four blanks, sort your list into the three columns and [send us your feature list](/contact/) with both. Every project begins with a free consultation and a fixed-scope proposal, and the flow count in your Keep column is one of the four factors that set its price.
 
 ## FAQs
 
@@ -271,4 +273,4 @@ Yes. No-code tools change who builds the product, not the user flows, states and
 
 ### How much does MVP design cost?
 
-On this site, MVP design costs $25,000–$60,000 as a 4–8 week startup engagement. Flows, platforms, research depth and the starter design system's scope decide where a project lands, and the hub's cost section explains each factor.
+On this site, MVP design costs $25,000–$60,000 as a 4–8 week startup engagement. Flows, platforms, research depth and the starter design system's scope decide where a project lands.
