@@ -18,8 +18,8 @@ takeaways:
   - "Map every user flow with its empty, loading, error and first-run states before any high-fidelity UI."
   - "Test the clickable prototype with 5 users per round and record a System Usability Scale score; 68 is the published average."
   - "On our startup engagement, MVP design takes 4–8 weeks and $25,000–$60,000, with 2–4 founder hours per week."
-draft: true
-qa: pending
+draft: false
+qa: pass
 image: /blog/how-to-design-an-mvp/cover.svg
 ---
 
@@ -31,7 +31,7 @@ Here is how to design an MVP in 6 steps, in order: write the hypothesis, cut the
 
 ## What does MVP design cover, and what is an MVP not?
 
-**MVP design turns one product hypothesis into 3–5 tested core user flows, screens and a starter design system that a startup's developers can build.**
+**MVP design turns one product hypothesis into 3–5 tested core user flows, screens and a starter design system that developers can build.**
 
 Minimum viable product design is the slice of product design that covers the interface, user flows and screens of the smallest product that tests one value proposition.
 
@@ -90,12 +90,12 @@ Illustrative, invented startup:
 
 </details>
 
-The flow count on our startup engagement is 3–5 MVP user flows; the example keeps three, plus account deletion in settings. Two items survive the cut wherever they apply:
+The flow count on our startup engagement is 3–5 MVP user flows; the example keeps three, plus account deletion in settings. Two items override the three questions:
 
-- **Sign-up consent and data deletion**, because the General Data Protection Regulation (GDPR) covers users in the European Union and the California Consumer Privacy Act (CCPA) applies past its revenue or data thresholds.
+- **Data deletion on request**, because the General Data Protection Regulation (GDPR) gives people in the European Union a right to erasure when you offer them your product, and the California Consumer Privacy Act (CCPA) gives California consumers a right to delete once a business passes its revenue or data thresholds.
 - **An in-app delete-account flow** in any iOS app that offers account creation, because Apple App Store Review Guideline 5.1.1(v) requires it.
 
-Founders defend every feature they wrote. On our startup engagement the cut happens inside a 5-day GV Design Sprint, whose decide day ends with 1 direction. Run the three questions on your own list first.
+Founders defend every feature they wrote. On our startup engagement, the 5-day GV Design Sprint decides on 1 direction, and the user research step after it turns the interview findings into a prioritized feature list. Run the three questions on your own list first.
 
 ## Step 3: how do you map each core user flow and its states?
 
@@ -138,9 +138,9 @@ Real labels show whether a physiotherapist understands "Publish slot" before any
 
 **MVP UI design starts once 5–8 interviews confirm the problem, and it applies each platform's touch target size and contrast ratio from the first screen.**
 
-That order fits pre-seed teams, who need problem interviews and a low-fidelity clickable prototype before polished UI; our [startups UI UX design](/industries/startups/) work sizes each design output to the funding stage. The Apple Human Interface Guidelines and Material Design 3 each set a minimum touch target size for iOS and Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 [Success Criterion 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
+That order fits pre-seed teams, who need problem interviews and a low-fidelity clickable prototype before polished UI; our [startups UI UX design](/industries/startups/) work sizes each design output to the funding stage. The Apple Human Interface Guidelines set a default control size for iOS, and Material Design 3 sets a minimum touch target size for Android. For the web, Web Content Accessibility Guidelines (WCAG) 2.2 [Success Criterion 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) sets 24 by 24 Cascading Style Sheets (CSS) pixels at level AA, with exceptions such as enough spacing. Success Criterion 1.4.3 adds a contrast ratio of 4.5:1 for body text.
 
-![Screen spec card with iOS, Android and web frames annotated with minimum touch target sizes and the 4.5:1 body text contrast ratio](/blog/how-to-design-an-mvp/screen-spec-card.svg "Screen spec card: touch target size and contrast ratio per platform")
+![Screen spec card with iOS, Android and web frames annotated with touch target sizes and the 4.5:1 body text contrast ratio](/blog/how-to-design-an-mvp/screen-spec-card.svg "Screen spec card: touch target size and contrast ratio per platform")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -182,19 +182,19 @@ Illustrative:
 
 </details>
 
-We treat 68 as a flag, not a pass mark. After each round, pick one of three moves:
+We treat 68 as one signal next to what users do, not as a pass mark on its own. After each round, pick one of three moves:
 
 - **Fix and retest** when users stall on the same step or the score falls below 68, because changed screens need 5 new users to confirm the fix.
-- **Move to the developer handoff** when users finish every task without help and the score is 68 or higher, because more rounds would polish rather than teach.
+- **Move to the developer handoff** when users finish every task without help, the score is 68 or higher and no one says they would keep texting patients, because more rounds would polish rather than teach.
 - **Revisit the hypothesis** when users finish the tasks but say they would keep texting patients, because the riskiest assumption failed, not the screens.
 
-Teams without time to recruit and moderate can hand the round to our [usability testing services](/services/usability-testing-services/). Either way, book your 5 participants before the UI pass ends.
+Teams without time to recruit and moderate can hand testing to our [usability testing services](/services/usability-testing-services/), which include participant recruitment and moderated sessions. Either way, book your 5 participants before the UI pass ends.
 
 ## Step 6: what should the MVP design hand to developers?
 
 **The MVP design hands developers annotated Figma files for every screen and state in the core user flows, plus tokens, components, the success-signal event and open questions.**
 
-The last part of how to design an MVP is the part many guides stop short of: what the developers receive. On our startup engagement, the developer handoff delivers annotated Figma files at the end of the testing and handover step. [Figma Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode) is the developer-focused workspace for inspecting designs, measurements, variables and generated code snippets; it needs a paid plan with a Full or Dev seat.
+The last part of how to design an MVP is the part many guides stop short of: what the developers receive. On our startup engagement, the developer handoff delivers annotated Figma files at the end of the testing and handover step. [Figma Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode) is the developer-focused workspace for inspecting designs, measurements, variables and generated code snippets; it needs a Full or Dev seat on a Professional, Education, Organization, Government or Enterprise plan.
 
 ![Handoff pack checklist of eight items an MVP design hands to developers, from screens with states to the cut-for-later list](/blog/how-to-design-an-mvp/handoff-pack-checklist.svg "Handoff pack checklist: eight items developers receive")
 
@@ -219,7 +219,7 @@ Two lines are easy to drop. Without the analytics event, the launch cannot repor
 
 The engagement duration is the sum of five steps that map onto this guide's six:
 
-1. **Design sprint (5 days):** map, sketch, decide on 1 direction, prototype and test with 5 users; drafts steps 1 and 2.
+1. **Design sprint (5 days):** map, sketch, decide on 1 direction, prototype and test with 5 users; drafts step 1.
 2. **User research (3–7 days):** 5–8 Jobs to be Done interviews, 1 target persona and a prioritized feature list; firms up steps 1 and 2.
 3. **MVP flows and wireframes (4–8 days):** steps 3 and 4's first pass.
 4. **UI design and prototype (5–12 days):** high-fidelity screens, the starter design system and the clickable prototype.

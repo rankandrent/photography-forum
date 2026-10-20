@@ -420,6 +420,50 @@
       "words": 2477,
       "tableCount": 5,
       "listStyle": "bullets + tables"
+    },
+    {
+      "slug": "how-to-design-an-mvp",
+      "hub": "ui-ux-design-services-for-startups",
+      "type": "Guide",
+      "funnel": "mofu",
+      "introStyle": "ordered six-step answer",
+      "h2Frames": [
+        "what does mvp design cover, and what is an mvp not?",
+        "step 1: how do you turn the idea into one mvp hypothesis?",
+        "step 2: how do you build a feature cut list?",
+        "step 3: how do you map each core user flow and its states?",
+        "how to design an mvp's screens: wireframes first, then ui",
+        "step 5: how do you test the clickable prototype with 5 users?",
+        "step 6: what should the mvp design hand to developers?",
+        "how long does mvp design take, and what does a founder do?",
+        "which mvp design mistakes cause the most rework?",
+        "faqs"
+      ],
+      "sectionOrder": [
+        "What does MVP design cover, and what is an MVP not?",
+        "Step 1: how do you turn the idea into one MVP hypothesis?",
+        "Step 2: how do you build a feature cut list?",
+        "Step 3: how do you map each core user flow and its states?",
+        "How to design an MVP's screens: wireframes first, then UI",
+        "Step 5: how do you test the clickable prototype with 5 users?",
+        "Step 6: what should the MVP design hand to developers?",
+        "How long does MVP design take, and what does a founder do?",
+        "Which MVP design mistakes cause the most rework?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "comparison with label rail",
+        "feature cut sheet",
+        "flow map with states",
+        "screen spec card",
+        "5-user test plan with SUS bar",
+        "handoff pack checklist"
+      ],
+      "ctaAngle": "send your feature list; sort it and size 3–5 flows in the consultation",
+      "faqCount": 7,
+      "words": 2556,
+      "tableCount": 2,
+      "listStyle": "steps + bullets"
     }
   ]
 }
