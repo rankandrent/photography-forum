@@ -55,8 +55,10 @@ caption) and style, and checks order and image–text fit.
 5. One sentence introduces every table.
 6. Bold only the direct answer and true key terms.
 7. Section detail text 50–70 words (90 max) on service/industry/location pages.
-8. Infographics are landscape (1200 wide, ≤ 800 tall), smallest text ≥ 38px, so they are short and
-   readable on desktop and phones.
+8. Infographics are landscape (1200 wide, ≥ 1.3:1) and look designer-made: realistic vector mockups,
+   embedded brand font, only the key number large (people scan before they read), spacing on an
+   8-point grid measured to the pixel; the always-visible text version under each image carries the
+   full wording for phones.
 
 ## 3. Links (US6285999, PageRank)
 A page's importance flows from the pages that link to it, split across each page's outgoing links.

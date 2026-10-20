@@ -237,6 +237,10 @@ as `## FAQs` with `### Question?` + answer. Images use
 - Landscape only (owner rule 2026-10-14, "images ki height bohat zyada"): viewBox 1200 wide, height
   ≤ 800, smallest text ≥ 38px. Such images get the full article width (`figure.fig-wide`); taller ones
   are squeezed to 540px.
+- House style (owner rule 2026-10-20): every new infographic follows
+  `docs/content-system/visual-style/README.md` (realistic mockups, redlines, embedded Manrope, scan-first
+  type with only the key number large, 8-point spacing measured to the pixel). It replaces the ≥ 38px
+  text rule above; the always-visible text panel carries readability on phones.
 
 ## Layout-aware pages (owner rule, 2026-10-12, Google patent US12393768B2)
 

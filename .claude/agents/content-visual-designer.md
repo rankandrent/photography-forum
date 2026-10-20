@@ -15,17 +15,20 @@ comparisons are wanted — the writer wraps that text in a collapsed `<details c
 text" block. The image must contain every item of the block, worded exactly.
 Use the brief's `visualTypes`; vary layouts from earlier posts (check `public/blog/*/`), never
 reuse an earlier composition. Make original, copyright-free SVGs in `public/blog/<slug>/<name>.svg`:
-- LANDSCAPE only (owner rule 2026-10-14: tall images are not wanted): viewBox 1200 wide, height ≤ 800
-  (at least 1.3:1, so the page shows it at full article width). Smallest text ≥ 38px weight 600, card
-  labels ≥ 42px weight 800, heading ≥ 50px. Fit content with 2–4 columns, 2×2 grids, left-to-right flows;
-  white or #FBFAFB background, 1px #E8E8EB card borders,
-  rounded 16–24px corners, brand pink #E2225F for emphasis, ink #020101 text, muted #6B6B70,
-  soft pink #FFE3EC fills. Font: `font-family="Manrope, system-ui, sans-serif"`.
-- Clean line-art and flat shapes only: flows, numbered steps, 2×2 frameworks, comparison columns,
-  checklists, journey maps, wireframe sketches. No photos, logos of other brands, or stock art.
-- Text inside the SVG must be real words from the post (≥ 14px at 1200 wide), spelled correctly.
+- HOUSE STYLE (owner rule 2026-10-20, replaces the 2026-10-14 text-size rule): follow
+  `docs/content-system/visual-style/README.md` and match `reference-screen-spec-card.svg`: realistic
+  vector mockups with real UI labels, Figma-style redlines, soft depth, Manrope embedded with
+  `embed-fonts.py`, scan-first type (only the key number is big; body 14–16), an 8-point spacing
+  system measured with `measure-cards.cjs` (equal gaps to the pixel). Still landscape: viewBox 1200
+  wide, ≥ 1.3:1. Fit content with 2–4 columns, 2×2 grids, left-to-right flows;
+  colors, radii and shadows exactly as in visual-style/README.md (pink #E2225F, ink #14111F).
+- Realistic vector illustration of the real object (devices, real UI, boards, documents, charts) plus
+  flows, steps, 2×2 frameworks, comparisons and checklists drawn as designed objects. No photos,
+  logos of other brands, or stock art.
+- Text inside the SVG must be real words from the post, spelled correctly (sizes per the house style).
 - Charts only with numbers that appear in the post with a cited source; label the source on the image.
-- Keep each file under 60 KB; no external references, scripts or embedded fonts.
+- Keep each file under 60 KB; no external references or scripts. Embed only the subset Manrope fonts
+  via embed-fonts.py.
 
 Do NOT edit the post (the link builder edits it at the same time). Write
 `content/briefs/<slug>.visuals.json`: `[{ "marker": "<!-- visual: … -->" (exact text from the post),
