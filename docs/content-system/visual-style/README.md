@@ -55,3 +55,9 @@ always-visible text panel under the image, so the image is for scanning.
 Every item of the image's "Show as text" panel appears on the image word for word; numbers are real
 (compute ratios, never invent); label illustrative examples; no brand logos of other companies; US
 English; file < 60 KB; valid XML.
+
+## Feature image (cover), owner style 2026-10-21
+Every post's cover is made with `make-cover.py <slug>`: 1200×750 (16:10), soft brand-pink background
+with the brand line-art, title top-left (Manrope 700, 54px, ≤ 3 lines), hub pill top-right, author photo,
+name, role and "at UI UX Design Services" bottom-left, brand mark bottom-right, 56px padding. Blog cards
+show it at 16:10 and the post page shows it whole (`.pcover--img`, max 880px wide).
