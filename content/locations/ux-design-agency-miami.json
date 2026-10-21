@@ -4,40 +4,40 @@
   "title": "Miami",
   "city": "Miami",
   "state": "FL",
-  "keyword": "ux design agency miami",
-  "anchor": "UX design agency Miami",
-  "metaTitle": "UX Design Agency Miami | Bilingual Fintech & Travel UX",
-  "metaDescription": "UX design agency Miami fintech, travel, hospitality and real estate teams hire for bilingual English–Spanish research, UI design and testing. From $5,000.",
+  "keyword": "miami ui/ux design services",
+  "anchor": "Miami UI/UX design services",
+  "metaTitle": "Miami UI/UX Design Services | Fintech, Travel & Real Estate",
+  "metaDescription": "Miami UI/UX design services fintech, travel and real estate teams can hire: research, UI design and testing from $5,000. Book a free consultation.",
   "hero": {
-    "eyebrow": "ux design agency miami",
-    "h1": "UX design agency Miami brands use to reach English and Spanish speakers",
-    "sub": "Research and product design for fintech and crypto platforms, travel and hospitality brands and real estate companies selling across South Florida, the US and Latin America. Remote-first, on Eastern Time."
+    "eyebrow": "miami ui/ux design services",
+    "h1": "Miami UI/UX design services for products used in English and Spanish",
+    "sub": "Miami UI/UX design services from a remote-first team headquartered in Reston, Virginia: user research, user experience (UX) and user interface (UI) design and usability testing for fintech and crypto platforms, travel and hospitality brands and real estate companies from Brickell to Coral Gables and across Miami-Dade County, Florida, whose products serve users in the US and Latin America. We work an Eastern Time schedule, the same time zone as Miami."
   },
-  "summary": "Bilingual-ready UX research and product design for Miami fintech, travel, hospitality and real estate teams serving US and Latin American markets.",
-  "updated": "2026-10-02",
+  "summary": "Remote-first Miami UI/UX design services for fintech, travel, hospitality and real estate teams whose products serve English- and Spanish-speaking users.",
+  "updated": "2026-10-21",
   "sections": [
     {
       "h2": "What makes UX design for Miami products different?",
       "format": "paragraph",
-      "answer": "<strong>UX design for Miami products usually has to work for two languages, several countries and a mix of local residents, tourists and international investors in the same release.</strong> That changes research recruiting, content design and how layouts handle text.",
-      "body": "<p>Many South Florida companies treat Latin America as a home market, so an app may need English and Spanish, several currencies and local payment methods. We design bilingual content from the first wireframe and test trust cues, such as WhatsApp support and visible licensing, before users share personal data. We have no Miami office and work on the same Eastern Time clock. See our <a href=\"/services/ux-research-services/\">UX research services</a>.</p>"
+      "answer": "<strong>For Miami products, a remote-first UI/UX design company has to plan for two languages, several countries and a mix of residents, visitors and international buyers in one release.</strong> That changes user research recruiting, content planning and how layouts handle longer text.",
+      "body": "<p>We are a remote-first UX design agency within the wider field of <a href=\"/\">UI UX design services</a>, with no Miami or Florida office, and we work an Eastern Time schedule from Reston, Virginia, the same time zone as Miami. Products that sell into Latin America can need English and Spanish, several currencies and local payment methods, so layouts are planned for both languages from the first wireframe. See our <a href=\"/services/ux-research-services/\">UX research services</a>.</p>"
     },
     {
-      "h2": "Our Miami service menu",
+      "h2": "What can a Miami team hand off to us?",
       "format": "list",
-      "answer": "<strong>Miami clients choose from 6 core services</strong>, combined into one project or booked separately to support an in-house design team.",
+      "answer": "<strong>A Miami team can hand off 6 types of work to our remote-first UX design agency</strong>, combined into one project or booked separately to support an in-house design team.",
       "items": [
         {
-          "title": "Multi-market research.",
-          "body": "Interviews with users in the US and Latin America, for example remittance senders in Miami and recipients abroad."
+          "title": "User research.",
+          "body": "Remote user interviews and analytics for each user group, for example South Florida residents, visitors and overseas buyers, recruited from your customer list or a recruitment panel."
         },
         {
-          "title": "Bilingual content design.",
-          "body": "English and Spanish microcopy written and tested together, so neither version reads like a translation."
+          "title": "UX audit.",
+          "body": "A heuristic usability review plus a Web Content Accessibility Guidelines (WCAG) check against WCAG 2.2 level AA, with findings ranked by impact and effort; the UX audit ends with a prioritized fix roadmap."
         },
         {
           "title": "Onboarding and KYC flows.",
-          "body": "Identity checks, wallet setup and funding steps designed to reduce abandonment without weakening compliance."
+          "body": "Know Your Customer (KYC) identity verification, wallet setup and funding steps designed to reduce abandonment without weakening compliance."
         },
         {
           "title": "Booking and reservation UX.",
@@ -45,22 +45,22 @@
         },
         {
           "title": "Responsive UI design.",
-          "body": "Mobile-first screens in Figma, for example a condo pre-construction showcase with floor plans and inquiry forms."
+          "body": "Mobile-first screens in Figma with a visible language switch and room for longer Spanish strings, which your translators or localization team supply, for example a condo pre-construction showcase with floor plans."
         },
         {
           "title": "Usability testing.",
-          "body": "Remote sessions with English- and Spanish-speaking participants, 5 per language per round."
+          "body": "Moderated remote sessions with 5–8 participants per round for each user group, with design fixes between rounds."
         }
       ]
     },
     {
       "h2": "When should a Miami company bring in a UX partner?",
       "format": "list",
-      "answer": "<strong>Companies usually call a UX design agency Miami teams can brief quickly at 5 moments:</strong>",
+      "answer": "<strong>South Florida companies can bring in a remote-first UX firm Miami teams can brief within their own working day at 5 moments:</strong>",
       "items": [
         "Before launching a Spanish or Portuguese version of a product that was designed in English only.",
         "When a fintech or crypto app sees new users drop out during identity verification or the first deposit.",
-        "Ahead of peak travel season, when booking friction costs the most revenue.",
+        "Ahead of the busiest booking season, when booking friction costs the most revenue.",
         "When a real estate brand needs one site that serves local buyers and international investors.",
         "After a funding round, when the product must grow faster than the design team can hire."
       ]
@@ -68,44 +68,44 @@
     {
       "h2": "How does a Miami project move from brief to build?",
       "format": "steps",
-      "answer": "<strong>A Miami research and design project runs 4–8 weeks in 5 phases</strong>, with research in both languages planned from the start.",
+      "answer": "<strong>A research and design sprint with our remote-first UX design agency takes 4–8 weeks from kick-off to developer handoff</strong> and runs in 5 stages with 2–4 designers, with every review held inside Miami's Eastern Time working day.",
       "items": [
         {
-          "title": "Brief and markets (1–2 days)",
-          "body": "We confirm the goals, the target countries, the languages in scope and the regulatory requirements for each."
+          "title": "Kick-off call (1–2 days)",
+          "body": "We confirm the users, flows, success metrics, markets and languages in scope."
         },
         {
-          "title": "Research in two languages (5–10 days)",
-          "body": "Interviews and an audit run with English and Spanish speakers, and findings are compared side by side."
+          "title": "Learn from users (5–10 days)",
+          "body": "User interviews, analytics and an expert review cover each user group the product serves, and the findings become a short list of opportunities ranked by impact."
         },
         {
           "title": "Direction workshop (2–3 days)",
-          "body": "Remote sessions settle the core flows and content rules; South Florida on-site sessions are possible for larger programs."
+          "body": "Remote sessions settle the core flows and content rules; on-site workshops in South Florida can be added for larger engagements."
         },
         {
-          "title": "Bilingual design (10–20 days)",
-          "body": "Screens and a Figma prototype are built with both languages loaded, so layouts are checked against longer strings."
+          "title": "Design in detail (10–20 days)",
+          "body": "User flows, interface screens and an interactive prototype in Figma, with the Spanish strings your team supplies loaded so layouts are checked against longer text; progress is shared twice a week."
         },
         {
-          "title": "Test and release (5–10 days)",
-          "body": "Each language is tested with its own participants, fixes are applied, and specs and components go to engineering."
+          "title": "Prove and ship (5–10 days)",
+          "body": "A final usability testing round with real users confirms the design, and annotated specs and components move to your engineers."
         }
       ]
     },
     {
-      "h2": "English-only design vs bilingual-ready UX",
+      "h2": "Bilingual-ready vs English-only design for Miami products",
       "format": "table",
-      "answer": "<strong>Bilingual-ready UX plans language, layout and research for English and Spanish from day one, while English-only design adds Spanish later and often has to rework screens.</strong> For a Miami audience, planning early is usually cheaper.",
-      "caption": "Bilingual-ready UX compared with English-only design for Miami products",
+      "answer": "<strong>For South Florida products, a remote-first UX design agency plans bilingual-ready design from the first wireframe: layouts, formats and research cover English- and Spanish-speaking users before build, while English-only design adds Spanish later and reworks screens.</strong> The table compares the two approaches area by area.",
+      "caption": "Bilingual-ready design compared with English-only design for Miami products",
       "columns": [
         "Design area",
-        "Bilingual-ready UX (our approach)",
+        "Bilingual-ready design",
         "English-only design"
       ],
       "rows": [
         [
           "Copy",
-          "English and Spanish written and reviewed together",
+          "Both languages planned in the content structure; Spanish strings from your translators loaded in the prototype",
           "Spanish translated after launch"
         ],
         [
@@ -120,7 +120,7 @@
         ],
         [
           "Research",
-          "Participants recruited in each language",
+          "Participants screened for each user group, including Spanish-speaking users",
           "English speakers only"
         ],
         [
@@ -143,91 +143,104 @@
     {
       "h2": "Miami UX design pricing and budgets",
       "format": "paragraph",
-      "answer": "<strong>A 2–3 week UX audit costs $5,000–$15,000, and a 4–8 week research and design sprint costs $25,000–$60,000.</strong> Adding a second language raises the research and content effort, so it is scoped explicitly in every proposal.",
-      "body": "<p>A full product with a design system ranges from $60,000 to $180,000 over 8–16 weeks, and an embedded team costs $15,000–$40,000 per month. As a UX design agency, Miami founders and marketing leads get a free consultation and a fixed price before kickoff. For a sense of how we approach trading products, read the <a href=\"/case-studies/tradezella/\">TradeZella case study</a>.</p>"
+      "answer": "<strong>Our remote-first Miami UI/UX design services price a focused 2–3 week UX audit at $5,000–$15,000 and a 4–8 week research and design sprint at $25,000–$60,000.</strong> The final number depends on the flows in scope, the platforms, the depth of user research, the number of user groups (for example English- and Spanish-speaking users) and whether a design system is part of the work.",
+      "body": "<p>Complete product redesigns with a design system run $60,000–$180,000 across 8–16 weeks, and an embedded design team costs $15,000–$40,000 per month. Every project begins with a free consultation and a fixed-scope proposal. Compare <a href=\"/services/ux-audit-services/\">UX audit services</a> and <a href=\"/services/usability-testing-services/\">usability testing services</a>, or read the <a href=\"/case-studies/tradezella/\">TradeZella case study</a> for a trading product.</p>"
     },
     {
-      "h2": "Which Miami industries do we support?",
+      "h2": "Which Miami industries do we design for?",
       "format": "list",
-      "answer": "<strong>Our UX design agency supports 5 industries that drive much of Miami's digital economy:</strong>",
+      "answer": "<strong>Our remote-first UX design agency designs for four sectors well represented in Miami and South Florida:</strong>",
       "items": [
-        "Fintech, payments and remittances, for example cross-border transfers and business banking (<a href=\"/industries/finance/\">Finance UI UX design</a>).",
-        "Crypto and web3, for example wallets, exchanges and play-to-earn products like the one in our <a href=\"/case-studies/nitro/\">Nitro case study</a>.",
+        "Fintech, payments, remittances and crypto, for example cross-border transfers, business banking, wallets and exchanges (<a href=\"/industries/finance/\">Finance UI UX design</a>), and play-to-earn products like the one in our <a href=\"/case-studies/nitro/\">Nitro case study</a>.",
         "Travel, cruise and hospitality, for example booking engines, loyalty programs and guest apps.",
-        "Real estate and proptech, for example luxury listings, pre-construction sales and rental platforms.",
-        "Consumer and e-commerce brands selling to US and Latin American shoppers (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>)."
+        "Real estate and proptech, for example luxury listings, pre-construction sales to international buyers and rental platforms.",
+        "Consumer and e-commerce brands, for example online stores selling into US and Latin American markets (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>)."
       ]
     },
     {
-      "h2": "UX design agency Miami FAQs",
+      "h2": "Questions about Miami UI/UX design services",
       "format": "faq",
-      "answer": "<strong>Answers to the 5 questions South Florida product, marketing and founder teams ask us most.</strong>",
+      "answer": "<strong>These five answers cover common questions South Florida product, marketing and founder teams can put to a remote-first UI/UX design company before they commit to a Miami UI/UX project.</strong>",
       "faqs": [
         {
           "q": "Do you have a Miami office?",
-          "a": "<p>No. We are remote-first with headquarters in Reston, Virginia. Because Miami is also on Eastern Time, we share your full working day, and on-site sessions in South Florida can be arranged for larger engagements.</p>"
+          "a": "<p>No. We are a remote-first UX design agency with no Miami or Florida office. Miami teams can work with us over video on an Eastern Time schedule from our Reston, Virginia headquarters, the same time zone as Miami, and we travel to South Florida for on-site workshops on larger engagements. The UI UX design Miami teams can buy from us is research-led: user research, interface design and usability testing, priced as fixed-scope engagements from $5,000. When you shortlist top Miami UX design companies, compare time to start, team size, user research depth and cost model.</p>"
         },
         {
-          "q": "Can you design products in English and Spanish?",
-          "a": "<p>Yes. We design both languages together, test with native speakers of each and hand over a content file that your localization team can maintain. Portuguese and other languages can be scoped on request.</p>"
+          "q": "Can you design a product for English- and Spanish-speaking users?",
+          "a": "<p>Yes. We plan layouts, navigation, a visible language switch and per-country formats for both languages from the first wireframe, and load the Spanish strings your translators or localization team supply into the prototype, so text length is checked before build.</p>"
         },
         {
-          "q": "Do you work with crypto and fintech startups?",
-          "a": "<p>Yes. A UX design agency Miami fintech founders hire from us focuses on trust signals, onboarding and error recovery, while your legal team stays in charge of disclosures and licensing requirements.</p>"
+          "q": "Can you design for crypto and fintech startups?",
+          "a": "<p>Yes. Fintech and crypto founders can hire us for trust signals, onboarding with identity verification, and error recovery, while their legal team stays in charge of disclosures and licensing requirements. See <a href=\"/industries/finance/\">Finance UI UX design</a>.</p>"
         },
         {
-          "q": "Can you recruit research participants in Latin America?",
-          "a": "<p>Yes. We recruit through your customer base or international panels, screen by country and language, and run moderated sessions over video.</p>"
+          "q": "Can user research include customers outside the US?",
+          "a": "<p>Yes. Remote user interviews and usability tests run over video, and participants come from your customer list or a recruitment panel, screened to match each user group.</p>"
         },
         {
-          "q": "How quickly can we start?",
-          "a": "<p>Projects begin 1–2 weeks after the proposal is signed, starting with a brief that confirms markets and languages.</p>"
+          "q": "How soon can a Miami UI/UX project start?",
+          "a": "<p>A Miami UI/UX project with us starts 1–2 weeks after proposal approval, beginning with a kick-off call on the users, flows, success metrics and languages in scope. A sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components; a UX audit ends with a prioritized fix roadmap.</p>"
         }
       ]
     }
   ],
   "faqs": [],
   "keywords": [
-    "ux design agency miami",
-    "ui ux design agency miami",
-    "miami ux design",
-    "bilingual ux design agency",
-    "south florida ux design agency"
+    "miami ui/ux design services",
+    "top miami ux design companies",
+    "ux firm miami",
+    "ui ux design miami"
   ],
-  "centralEntity": "UX design agency in Miami",
-  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led, bilingual-ready product design engagements to Miami fintech, travel, hospitality and real estate teams serving US and Latin American markets.",
-  "abstract": "We work as a remote-first UX design agency; Miami fintech, crypto, travel, hospitality and real estate companies hire us for research, UX and UI design, prototyping and testing in English and Spanish. Work starts at $5,000 for a 2–3 week audit and runs on Eastern Time, the same clock as South Florida.",
+  "centralEntity": "Miami UI/UX design services",
+  "sourceContext": "Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Miami and South Florida fintech, travel, hospitality and real estate teams whose products serve English- and Spanish-speaking users in US and Latin American markets.",
+  "abstract": "We are a remote-first UI/UX design company headquartered in Reston, Virginia, with no Miami or Florida office. Fintech, crypto, travel, hospitality and real estate companies in South Florida can hire our remote-first team for user research, interface design, prototyping and usability testing, including products built for English- and Spanish-speaking users. The smallest engagement is a 2–3 week UX audit from $5,000, and we work an Eastern Time schedule from Reston, the same time zone as Miami.",
   "semantic": {
     "entities": [
       "Miami",
       "South Florida",
+      "Miami-Dade County",
+      "Brickell",
+      "Coral Gables",
       "Latin America",
-      "Spanish",
       "Eastern Time",
+      "Reston, Virginia",
+      "Spanish-speaking users",
+      "language switch",
       "fintech",
       "crypto",
       "travel and hospitality",
+      "cruise",
       "real estate",
-      "Know Your Customer (KYC)"
+      "Know Your Customer (KYC)",
+      "identity verification",
+      "user research",
+      "usability testing",
+      "interactive prototype",
+      "UX audit",
+      "WCAG 2.2",
+      "design system",
+      "Figma",
+      "fixed-scope proposal"
     ],
     "ngrams": [
-      "ux design agency miami",
-      "bilingual ux",
-      "english and spanish",
-      "latin american markets",
-      "south florida"
+      "miami ui/ux design services",
+      "ux firm miami",
+      "south florida",
+      "spanish-speaking users",
+      "latin american markets"
     ],
     "skipgrams": [
-      "agency … miami",
-      "design … spanish",
+      "ui/ux design … miami",
+      "design … spanish-speaking users",
       "ux … latin america"
     ],
     "nlpKeywords": [
-      "bilingual content design",
+      "language switch",
       "onboarding flows",
       "booking engine",
-      "multi-market research",
-      "localization",
+      "identity verification",
+      "user research",
       "usability testing",
       "design system"
     ]
@@ -236,7 +249,7 @@
     "Miami",
     "South Florida",
     "Latin America",
-    "Spanish",
+    "Spanish-speaking users",
     "Eastern Time",
     "fintech",
     "crypto",
