@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "order": 16,
   "title": "Miami",
   "city": "Miami",
@@ -19,7 +19,7 @@
     {
       "h2": "What makes UX design for Miami products different?",
       "format": "paragraph",
-      "answer": "<strong>For Miami products, a remote-first UI/UX design company has to plan for two languages, several countries and a mix of residents, visitors and international buyers in one release.</strong> That changes user research recruiting, content planning and how layouts handle longer text.",
+      "answer": "<strong>For Miami products, a remote-first UI/UX design company plans for a release that can serve two languages, several countries and a mix of residents, visitors and international buyers.</strong> That changes user research recruiting, content planning and how layouts handle longer text.",
       "body": "<p>Our remote-first UX design agency sits within the wider field of <a href=\"/\">UI UX design services</a>. We have no Miami or Florida office and work an Eastern Time schedule from Reston, Virginia, the same time zone as Miami. Products that sell into Latin America can need English and Spanish, several currencies and local payment methods, so layouts are planned for both languages from the first wireframe. See our <a href=\"/services/ux-research-services/\">UX research services</a>.</p>"
     },
     {
@@ -95,7 +95,7 @@
     {
       "h2": "Bilingual-ready vs English-only design for Miami products",
       "format": "table",
-      "answer": "<strong>For South Florida products, a remote-first UX design agency plans bilingual-ready design from the first wireframe, while English-only design adds Spanish later and reworks screens.</strong> In bilingual-ready design, layouts, formats and research cover English- and Spanish-speaking users before build; the table compares the two approaches area by area.",
+      "answer": "<strong>For South Florida products, a remote-first UX design agency plans bilingual-ready design from the first wireframe, while English-only design adds Spanish later and reworks screens.</strong> In bilingual-ready design, layouts, formats and the content structure cover English- and Spanish-speaking users before build; the table compares the two approaches area by area.",
       "caption": "Bilingual-ready design compared with English-only design for Miami products",
       "columns": [
         "Design area",
@@ -119,11 +119,6 @@
           "US formats only"
         ],
         [
-          "Research",
-          "Participants screened for each user group, including Spanish-speaking users",
-          "English speakers only"
-        ],
-        [
           "Language switch",
           "Visible, remembered across sessions",
           "Added later"
@@ -143,15 +138,15 @@
     {
       "h2": "Miami UX design pricing and budgets",
       "format": "paragraph",
-      "answer": "<strong>Our remote-first Miami UI/UX design services cost $5,000–$15,000 for a focused 2–3 week UX audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Price moves with the flows in scope, the platforms, how deep the user research goes, the number of user groups (for example English- and Spanish-speaking users) and whether a design system is included.",
+      "answer": "<strong>Our remote-first Miami UI/UX design services cost $5,000–$15,000 for a focused 2–3 week UX audit and $25,000–$60,000 for a 4–8 week research and design sprint.</strong> Price moves with the flows in scope, the platforms, how deep the user research goes, the number of user groups (for example residents, visitors and overseas buyers) and whether a design system is included.",
       "body": "<p>A full design engagement that includes a design system costs $60,000–$180,000 over 8–16 weeks; an embedded design team is $15,000–$40,000 a month. A free consultation comes first, followed by a fixed-scope proposal. For scope detail, see <a href=\"/services/ux-audit-services/\">UX audit services</a> and <a href=\"/services/usability-testing-services/\">usability testing services</a>, or the <a href=\"/case-studies/tradezella/\">TradeZella case study</a> for a trading product.</p>"
     },
     {
       "h2": "Which Miami industries do we design for?",
       "format": "list",
-      "answer": "<strong>Our remote-first UX design agency focuses on four sectors well represented in Miami and South Florida:</strong>",
+      "answer": "<strong>Our remote-first UX design agency focuses on four sectors found across Miami and South Florida:</strong>",
       "items": [
-        "Fintech, payments, remittances and crypto, for example cross-border transfers, business banking, wallets and exchanges (<a href=\"/industries/finance/\">Finance UI UX design</a>), and play-to-earn products like the one in our <a href=\"/case-studies/nitro/\">Nitro case study</a>.",
+        "Fintech, payments, remittances and crypto, for example cross-border transfers, business banking, wallets and exchanges (<a href=\"/industries/finance/\">Finance UI UX design</a>); our <a href=\"/case-studies/nitro/\">Nitro case study</a> shows the tokenomics and IDO (initial decentralized exchange offering) launch screens we designed for a play-to-earn game.",
         "Travel, cruise and hospitality, for example booking engines, loyalty programs and guest apps.",
         "Real estate and proptech, for example luxury listings, pre-construction sales to international buyers and rental platforms.",
         "Consumer and e-commerce brands, for example online stores selling into US and Latin American markets (<a href=\"/industries/ecommerce/\">E-commerce UI UX design</a>)."
@@ -263,7 +258,7 @@
     "scenes": [
       {
         "icon": "globe",
-        "label": "English and Spanish"
+        "label": "Bilingual screens"
       },
       {
         "icon": "card",
@@ -274,5 +269,6 @@
         "label": "Residents and visitors"
       }
     ]
-  }
+  },
+  "published": "2026-10-21"
 }

@@ -66,7 +66,7 @@
 - After applying: rebuild with SHOW_DRAFTS=1, re-run the scratch on-page score (expect 100) and the 5-gram check (expect ≤ 9%).
 
 ## FIX for the orchestrator (outside the Miami JSON)
-- **T1 (template, visible spelling defect on this page):** `app/location/[slug]/page.tsx` L47–48 call `s.label.toLowerCase()`, so proper nouns print lowercase in the figcaption and alt ("english and spanish"). Replace `s.label.toLowerCase()` in both lines with `(/^(English|Spanish|[A-Z]{2,})\b/.test(s.label) ? s.label : s.label.charAt(0).toLowerCase() + s.label.slice(1))`. Other cities' labels only change their first letter, so their output is unchanged (Denver: "trial-to-paid funnels, mission planning, utility field data"). Rebuild and confirm the Miami caption reads "English and Spanish, local payment methods, residents and visitors".
+- **T1 (template, visible spelling defect on this page):** `app/location/[slug]/page.tsx` L47–48 call `s.label.toLowerCase()`, so proper nouns and acronyms print lowercase in the figcaption and alt (Miami: "english and spanish"; the same defect is live on Austin "startup mvps", "saas activation" and San Francisco "saas platforms", "ai products"). Replace `s.label.toLowerCase()` in both lines with `(/^(English|Spanish)\b|^\S+?[A-Z]/.test(s.label) ? s.label : s.label.charAt(0).toLowerCase() + s.label.slice(1))`. Tested on every location label: only those 5 change (to "English and Spanish", "startup MVPs", "SaaS activation", "SaaS platforms", "AI products"); all other captions are unchanged. Rebuild and confirm the Miami caption reads "UX design for Miami teams: English and Spanish, local payment methods, residents and visitors".
 
 ## Notes (owner, non-blocking)
 - N1: stage durations sum to 23–45 working days vs 4–8 weeks (site-wide, FC N1).
@@ -77,5 +77,6 @@
 ## Guidance for the writer
 No completeness gaps: every H2 has a bold answer, supporting detail and a concrete number, item or step; all 25 entities, 12 attributes, bindings and queryVariants are covered. The problems were copied Denver phrasing, one over-long bold answer, one misplaced phrase and one language-scope word; lessons go to the writer, researcher and designer files.
 
-VERDICT: PASS
 Remaining blockers (QA): none in the Miami JSON. Publishing still needs FC F2, F3, F4, F7 as written, F5 and F6 as merged above (F1 already done), template FIX T1, then a SHOW_DRAFTS rebuild and an on-page re-run.
+
+VERDICT: PASS
