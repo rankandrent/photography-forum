@@ -1,0 +1,253 @@
+{
+  "slug": "ux-design-agency-miami",
+  "pageType": "location",
+  "target": "content/locations/ux-design-agency-miami.json",
+  "keyword": "miami ui/ux design services",
+  "volume": 50,
+  "kd": null,
+  "kdNote": "KD not returned by the orchestrator's Ahrefs pull (n/a). Not estimated.",
+  "dataSource": "Ahrefs API v3 keywords-explorer, US, 2026-10-21",
+  "keywordWhy": "The draft keyword 'ux design agency miami' returned no data and 'ux agency miami' returned 0, so the owner rule bars both. 'miami ui/ux design services' (50/mo) has the highest volume, and its page 1 (WebSearch 2026-10-21) is agency service pages (parallelhq, flatirons, irpr, varenyaz, lazarev) plus the DesignRush Miami list. That is commercial, location-service intent, the same intent as this page. Slug stays 'ux-design-agency-miami'.",
+  "rejectedKeywords": [
+    { "keyword": "ux design agency miami", "why": "no data in Ahrefs. Owner rule: cannot be primary. Remove from keyword, anchor, eyebrow, H1, meta and keywords[]." },
+    { "keyword": "ux agency miami", "why": "0 volume" },
+    { "keyword": "top miami ux design companies", "why": "40/mo, list intent (uxplanet, Clutch, DesignRush, techbehemoths). We cannot rank anyone or call ourselves 'top', so it is used only as the buyer's phrase (FAQ 1)." },
+    { "keyword": "ui ux design miami", "why": "10/mo. Page 1 mixes agencies with Built In jobs and salary pages and Noble Desktop courses (WebSearch 2026-10-21). Secondary, agency context only." },
+    { "keyword": "miami ux design / ui ux design agency miami / bilingual ux design agency / south florida ux design agency", "why": "not in the pull (no volume data). Remove from keywords[]." },
+    { "keyword": "miami ux bootcamps / classes / courses / jobs / salary", "why": "off-intent (learners and job seekers). Do not target or mention." }
+  ],
+  "secondary": [
+    "top Miami UX design companies",
+    "UX firm Miami",
+    "UI UX design Miami",
+    "Miami UX design companies"
+  ],
+  "secondaryNote": "Checked by WebSearch 2026-10-21. 'ux firm miami' returns agency and directory pages (buyer intent, keep). 'ui ux design miami' is mixed (agencies, jobs, salary, courses), so use it only inside an agency sentence. 'top Miami UX design companies' only as the buyer's phrase: 'When you shortlist top Miami UX design companies, compare time to start, team size, user research depth and cost model.' Never claim a rank.",
+  "keywordCarrier": {
+    "spellingNote": "In scripts/onpage-audit.mjs, has() (title, H1, description, lead) needs every keyword word longer than 2 letters, and 'ui/ux' only matches with the slash in that order (compact() strips spaces and hyphens, not slashes). kwCount (salience) counts only the literal phrase 'miami ui/ux design services'. So print 'Miami UI/UX design services' exactly. These forms do NOT count: 'Miami UX/UI design services', 'Miami UI UX design services', 'UI/UX design services in Miami', 'Miami's UI/UX design services' (the apostrophe survives norm()).",
+    "inBody": [
+      "Miami UI/UX design services from a remote-first team headquartered in Reston, Virginia",
+      "our remote-first Miami UI/UX design services price a focused 2–3 week UX audit at $5,000–$15,000",
+      "Questions about Miami UI/UX design services",
+      "before they buy Miami UI/UX design services",
+      "a UX firm Miami teams can brief within their own working day",
+      "the UI UX design Miami teams can buy from us is research-led"
+    ],
+    "avoid": "Never stack a noun after the keyword ('Miami UI/UX design services project/pricing/FAQs/engagement'). For compounds use 'a Miami UI/UX project' or 'a South Florida engagement'. Drop every 'UX design agency Miami …' carrier in the draft (see siteFacts.conflicts KEYWORD).",
+    "density": "The body is about 1,000–1,100 words. Use the literal 'Miami UI/UX design services' 5–6 times, counting the H1 (max = 0.02 × 1,050 ÷ 4 ≈ 5, and 6 is the hard ceiling). kwCount must be at least half the top rival entity, so keep 'South Florida', 'Eastern Time', 'fintech', 'Latin America', 'real estate', 'crypto' and 'Spanish-speaking users' at 10 uses or fewer each. 'Miami' alone is not a rival because its word sits inside the keyword. Do not list bare 'Spanish' as an entity: it would be counted inside every 'Spanish-speaking' and 'English and Spanish'.",
+    "h2Salience": "At least 40% of the H2s must hold 'miami', 'ui/ux', 'design' or 'services'. With the H2s in siteFacts.h2Plan, 8 of 8 pass."
+  },
+  "centralEntity": "Miami UI/UX design services",
+  "entities": [
+    "Miami",
+    "South Florida",
+    "Miami-Dade County",
+    "Brickell",
+    "Coral Gables",
+    "Latin America",
+    "Eastern Time",
+    "Reston, Virginia",
+    "Spanish-speaking users",
+    "language switch",
+    "fintech",
+    "crypto",
+    "travel and hospitality",
+    "cruise",
+    "real estate",
+    "Know Your Customer (KYC)",
+    "identity verification",
+    "user research",
+    "usability testing",
+    "interactive prototype",
+    "UX audit",
+    "WCAG 2.2",
+    "design system",
+    "Figma",
+    "fixed-scope proposal"
+  ],
+  "entitiesNote": "Copy this list into semantic.entities. It replaces the draft's list, which used bare 'Spanish' and had no 'Miami-Dade County', 'Brickell', 'Coral Gables', 'Reston, Virginia', 'language switch', 'identity verification', 'user research', 'interactive prototype', 'UX audit', 'WCAG 2.2', 'design system' or 'fixed-scope proposal' in its entities. Each one needs a real fact in the text: Brickell, Coral Gables and Miami-Dade County go in the hero sub or the first body; WCAG 2.2 goes in the UX audit item; language switch goes in the table row and FAQ 2. Also update 'mentions' (replace 'Spanish' with 'Spanish-speaking users').",
+  "attributes": [
+    "audit price ($5,000–$15,000 over 2–3 weeks)",
+    "sprint price ($25,000–$60,000 over 4–8 weeks)",
+    "full design and design system ($60,000–$180,000 over 8–16 weeks)",
+    "embedded design team ($15,000–$40,000 per month)",
+    "team size (2–4 designers on a sprint)",
+    "time to start (1–2 weeks after proposal approval)",
+    "time zone (Eastern Time schedule from Reston HQ, the same time zone as Miami)",
+    "participants per round (5–8 per user group)",
+    "fixed-scope proposal (after a free consultation)",
+    "on-site workshops (in South Florida for larger engagements)",
+    "language switch (visible and remembered across sessions)",
+    "longer Spanish strings (layouts sized before build)"
+  ],
+  "bindings": {
+    "synonyms": [
+      "UX design agency",
+      "UX firm",
+      "UI/UX design company",
+      "UI UX design Miami"
+    ],
+    "plural": [
+      "Miami UX design companies",
+      "top Miami UX design companies"
+    ],
+    "parent": [
+      "UI UX design services"
+    ],
+    "children": [
+      "user research",
+      "UX audit",
+      "onboarding and KYC flows",
+      "booking and reservation UX",
+      "responsive UI design",
+      "usability testing"
+    ],
+    "related": [
+      "South Florida",
+      "Eastern Time",
+      "Latin America",
+      "Spanish-speaking users",
+      "fixed-scope proposal",
+      "Figma"
+    ],
+    "linkPlan": {
+      "up": { "href": "/", "anchor": "UI UX design services" },
+      "across": [
+        { "href": "/services/ux-research-services/", "anchor": "UX research services" },
+        { "href": "/services/usability-testing-services/", "anchor": "usability testing services" },
+        { "href": "/services/ux-audit-services/", "anchor": "UX audit services" },
+        { "href": "/services/ui-ux-web-design/", "anchor": "UI UX web design" },
+        { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services" }
+      ],
+      "industries": [
+        { "href": "/industries/finance/", "anchor": "Finance UI UX design" },
+        { "href": "/industries/ecommerce/", "anchor": "E-commerce UI UX design" }
+      ],
+      "caseStudies": [
+        { "href": "/case-studies/tradezella/", "anchor": "TradeZella case study", "note": "Already in the draft pricing body. A trading journal (fintech). Do not tie its results to Miami." },
+        { "href": "/case-studies/nitro/", "anchor": "Nitro case study", "note": "Already in the draft crypto item. A play-to-earn web3 game. Do not cite its $5M funding as a design result." }
+      ],
+      "note": "All targets verified to exist (content/services, content/industries, content/case-studies, home = content/home.ts). The draft has no link to '/' with the parent anchor, so add one in the first section body (Denver pattern). /services/ux-audit-services/ and /services/usability-testing-services/ are new links: add them in the hand-off items or the pricing body."
+    }
+  },
+  "children_placement": "Each child is one item in the hand-off list (section 2): User research, UX audit, Onboarding and KYC flows, Booking and reservation UX, Responsive UI design, Usability testing. This replaces the draft items 'Multi-market research' and 'Bilingual content design'.",
+  "essential": [
+    "Miami UI/UX design services",
+    "remote-first",
+    "South Florida"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'Miami UI/UX design services' or a synonym (UX design agency, UX firm, UI/UX design company), plus 'remote-first' or 'South Florida'. 'remote-first' also carries the honesty line (no Miami or Florida office).",
+  "queryVariants": [
+    "miami ui/ux design services",
+    "ux firm miami",
+    "ui ux design miami",
+    "top miami ux design companies",
+    "ux design agency miami"
+  ],
+  "queryVariantsAnswer": "One answer for all: a remote-first UI/UX design company (HQ Reston, Virginia, no Miami or Florida office) that offers user research, interface design and usability testing to South Florida fintech, travel, hospitality and real estate teams, including products built for English- and Spanish-speaking users. It works an Eastern Time schedule, the same time zone as Miami, and prices fixed-scope engagements from $5,000. The 'top companies' variant gets the shortlist criteria sentence in FAQ 1, never a ranking.",
+  "ambiguous": [
+    { "word": "Miami", "context": "Miami, Florida (also Miami University in Ohio, Miami in Oklahoma and the Miami people). Name Florida or South Florida in the hero sub and the first body." },
+    { "word": "Miami Beach", "context": "Miami Beach, Florida, a separate city from Miami (only if used)" },
+    { "word": "Brickell", "context": "Brickell, the financial district of the City of Miami (also a surname)" },
+    { "word": "Coral Gables", "context": "Coral Gables, a city in Miami-Dade County, Florida" },
+    { "word": "Doral", "context": "Doral, Florida, a city in Miami-Dade County (also a golf resort and a brand), only if used" },
+    { "word": "South Florida", "context": "the Miami-Dade, Broward and Palm Beach region (not the University of South Florida in Tampa)" },
+    { "word": "Eastern Time", "context": "the Eastern Time zone and working hours" },
+    { "word": "bilingual", "context": "always 'bilingual-ready design' or 'English- and Spanish-speaking users', a product requirement. Never describe our team as bilingual." },
+    { "word": "season", "context": "the travel booking season (not a TV or sports season)" },
+    { "word": "crypto", "context": "crypto wallets and exchanges (not cryptography or encryption)" },
+    { "word": "booking", "context": "travel and hotel booking flows (not a booking of our team)" },
+    { "word": "audit", "context": "UX audit or usability (never a financial or KYC compliance audit; the fintech item is near)" },
+    { "word": "research", "context": "user research with customers or users" },
+    { "word": "testing", "context": "usability testing with participants" }
+  ],
+  "siteFacts": {
+    "company": [
+      "Remote-first, headquartered in Reston, Virginia. No Miami or Florida office and no local team. No Miami clients may be claimed or implied (RULES.md honesty).",
+      "200+ products designed (home.ts, confirmed fact).",
+      "Designing digital products since 2017 (home.ts, confirmed fact)."
+    ],
+    "language": "NO SPANISH CAPABILITY ON THE SITE. A grep of content/ for spanish|bilingual|multilingual|localiz|translat|portuguese|latin america (2026-10-21, outside this draft) found no page that says the team designs, writes, moderates or tests in Spanish. home.ts, about.md and every service JSON are silent. Rule for this page: bilingual is a requirement of the PRODUCT and its USERS, never a skill of our team. Allowed: planning layouts, navigation, a visible language switch, per-country formats and room for longer Spanish strings; loading Spanish strings that the client's translators or localization team supply; screening participants to match each user group. Not allowed: 'we write/test/moderate in Spanish', 'native speakers on our team', 'bilingual research', 'Portuguese and other languages can be scoped', 'multi-market research in Latin America'. OWNER-Q: can the team moderate sessions or write UX copy in Spanish? If yes, the owner adds it to about.md first and the page can then say so.",
+    "realMiamiClient": "content/case-studies/anyday-app.md says 'XTM Inc., a fintech company based in Miami and Toronto'. This is a real client, but RULES.md says 'Never claim … local clients for any city', and the orchestrator says no implied Miami clients. Default: do not mention XTM, Anyday or any Miami connection on this page. OWNER-Q: may a location page name a real case-study client headquartered in that city? Until the owner answers, leave it out.",
+    "engagements_homeTs": [
+      "UX audit: $5,000–$15,000, 2–3 weeks. Do not state an audit team size (home.ts '1–2 designers' vs ux-audit hub '2 designers', an open conflict).",
+      "Research & UX design sprint: $25,000–$60,000, 4–8 weeks, 2–4 designers",
+      "Full design & design system: $60,000–$180,000, 8–16 weeks, 3–6 designers",
+      "Embedded design team: $15,000–$40,000/mo, ongoing, 2–5 designers"
+    ],
+    "timeToStart": "'1–2 weeks after proposal approval' (published Dallas and Denver; home.ts time to first design 1–2 weeks). Never 'after the proposal is signed'.",
+    "timeZone": "Miami is in the Eastern Time zone, the same zone as Reston. Exact wording: table or short form 'Eastern Time schedule from Reston HQ, the same time zone as Miami'; prose 'we work an Eastern Time schedule from Reston, Virginia, the same time zone as Miami'. No hours figure ('full working day', '8 hours of overlap'): the owner has not confirmed ET working hours (Dallas F2 and N3 still open). Never 'Eastern-based team' or 'our Reston headquarters team'. Reviews can be 'inside Miami's Eastern Time working day'.",
+    "roles": "No 'researchers' role. Use 'the designers who run your research stay through design and testing' (about.md, home.ts; Dallas F1).",
+    "audit": "UX audit item: 'a heuristic usability review plus a Web Content Accessibility Guidelines (WCAG) check against WCAG 2.2 level AA', findings 'ranked by impact and effort', and the UX audit 'ends with a prioritized fix roadmap' (ux-audit hub; Dallas F5/F6).",
+    "sprintDeliverables": "A sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components. No tokens (they belong to the design-system engagement, Denver F5).",
+    "costFactors": "No count ('four variables', '3 drivers'). Write 'The final number depends on the flows in scope, the platforms, the depth of user research, the number of user groups and whether a design system is part of the work.' 'Number of user groups' comes from the ux-research hub cost factors, and an English-speaking and a Spanish-speaking group count as two groups. Do not state language as a separate price line.",
+    "usabilityRounds": "5–8 participants per round for each user group, with design fixes between rounds (usability-testing hub; Denver F4). Never '5 per language per round' or 'repeated until …'.",
+    "interviews": "No interview count. The ux-research hub says 10–15 per user group and the published Atlanta page says 5–12 per role, so a third version must not appear.",
+    "recruiting": "Participants come 'through a recruitment panel or the client's customer list' (ux-research hub). Remote interviews and tests run over video (ux-research hub FAQ). No claim about recruiting by country or through 'international panels'.",
+    "kickoff": "The first step is 'a kick-off call on the users, flows and success metrics in scope' (Denver F6). It covers both the sprint and the audit. Languages in scope may be added: '…, success metrics and languages in scope'.",
+    "onSite": "'On-site workshops in South Florida for larger engagements' is the same offer as on every published location page (owner note from Dallas: it exists only on location pages).",
+    "priceRangeField": "$5,000–$60,000 (keep; the same on all location pages).",
+    "stages": "N1 (site-wide, not blocking): the 5 stages sum to 23–45 working days against 4–8 weeks. Keep the draft's day ranges; the owner decides site-wide.",
+    "h2Plan": [
+      "What makes UX design for Miami products different?",
+      "What can a Miami team hand off to us?",
+      "When should a Miami company bring in a UX partner?",
+      "How does a Miami project move from brief to build?",
+      "Bilingual-ready vs English-only design for Miami products",
+      "Miami UX design pricing and budgets",
+      "Which Miami industries do we design for?",
+      "Questions about Miami UI/UX design services"
+    ],
+    "conflicts": [
+      "KEYWORD: the keyword, anchor, eyebrow, H1, metaTitle, metaDescription, keywords[0], ngrams[0], skipgrams, centralEntity and abstract all use the no-data 'ux design agency miami'. So do the 'When' answer 'a UX design agency Miami teams can brief quickly', the pricing body 'As a UX design agency, Miami founders…', FAQ 3 'A UX design agency Miami fintech founders hire from us' and the FAQ H2 'UX design agency Miami FAQs'. Set keyword 'miami ui/ux design services', anchor 'Miami UI/UX design services', centralEntity 'Miami UI/UX design services', keywords[] = ['miami ui/ux design services', 'top miami ux design companies', 'ux firm miami', 'ui ux design miami'], ngrams = ['miami ui/ux design services', 'ux firm miami', 'south florida', 'spanish-speaking users', 'latin american markets'], skipgrams = ['ui/ux design … miami', 'design … spanish-speaking users', 'ux … latin america']. Meta, H1 and hero values come from metaPlan.",
+      "BILINGUAL CLAIMS (11 places, no site source; replace every one). metaTitle '| Bilingual Fintech & Travel UX' → metaPlan. metaDescription 'hire for bilingual English–Spanish research, UI design and testing' → metaPlan. H1 'brands use to reach English and Spanish speakers' (also implies Miami clients) → metaPlan. summary → 'Remote-first Miami UI/UX design services for fintech, travel, hospitality and real estate teams whose products serve English- and Spanish-speaking users.' sourceContext → 'Remote-first US UI UX agency (Reston, VA) selling research-led product design engagements to Miami and South Florida fintech, travel, hospitality and real estate teams whose products serve English- and Spanish-speaking users in US and Latin American markets.' Section 1 body 'We design bilingual content from the first wireframe' → see S1. Items 'Multi-market research', 'Bilingual content design' and 'Usability testing … English- and Spanish-speaking participants, 5 per language per round' → see S2. Stages 'Research in two languages', 'Bilingual design', 'Each language is tested with its own participants' → see S4. Table column 'Bilingual-ready UX (our approach)' and row 'Research: Participants recruited in each language' → see S5. Pricing 'Adding a second language … scoped explicitly in every proposal' → see S6. FAQ 2 and FAQ 4 → see FAQ fixes.",
+      "S1 (section 1), answer: replace with '<strong>Miami UI/UX design services have to plan for products that can serve two languages, several countries and a mix of South Florida residents, visitors and international buyers in one release.</strong> That changes research recruiting, content planning and how layouts handle longer text.' Body: replace with '<p>We are a remote-first UX design agency within the wider field of <a href=\"/\">UI UX design services</a>, with no Miami or Florida office, and we work an Eastern Time schedule from Reston, Virginia, the same time zone as Miami. Products that sell into Latin America can need English and Spanish, several currencies and local payment methods, so layouts are planned for both languages from the first wireframe. See our <a href=\"/services/ux-research-services/\">UX research services</a>.</p>' (This removes 'Many South Florida companies treat Latin America as a home market' (no source), 'test trust cues, such as WhatsApp support' (no source) and 'on the same Eastern Time clock'.)",
+      "S2 (service menu): rename the H2 to 'What can a Miami team hand off to us?'. Answer: '<strong>A Miami team can hand off 6 types of work to our remote-first UX design agency</strong>, combined into one project or booked separately to support an in-house design team.' (The old 'Miami clients choose from 6 core services' implies Miami clients.) Items: (1) 'User research.' 'Remote user interviews and analytics for each user group, for example South Florida residents, visitors and overseas buyers, recruited from your customer list or a recruitment panel.' (2) 'UX audit.' 'A heuristic usability review plus a Web Content Accessibility Guidelines (WCAG) check against WCAG 2.2 level AA, with findings ranked by impact and effort; the UX audit ends with a prioritized fix roadmap.' (3) 'Onboarding and KYC flows.' Keep the draft body, and expand on first use: 'Know Your Customer (KYC) identity verification, wallet setup and funding steps designed to reduce abandonment without weakening compliance.' (4) 'Booking and reservation UX.' Keep the draft body. (5) 'Responsive UI design.' 'Mobile-first screens in Figma with a visible language switch and room for longer Spanish strings, which your translators or localization team supply, for example a condo pre-construction showcase with floor plans.' (6) 'Usability testing.' 'Moderated remote sessions with 5–8 participants per round for each user group, with design fixes between rounds.'",
+      "S3 ('When' section), answer: replace with '<strong>South Florida companies can bring in a remote-first UX firm Miami teams can brief within their own working day at 5 moments:</strong>' (The old 'Companies usually call…' presents inquiry data we do not have.) Item 3: 'Ahead of peak travel season' → 'Ahead of the busiest booking season, when booking friction costs the most revenue.' Items 1, 2, 4 and 5 stay.",
+      "S4 (process): answer → '<strong>A research and design sprint with our remote-first UX design agency takes 4–8 weeks from kick-off to developer handoff</strong> and runs in 5 stages with 2–4 designers, with every review held inside Miami's Eastern Time working day.' Stages: (1) 'Kick-off call (1–2 days)': 'We confirm the users, flows, success metrics, markets and languages in scope.' (This drops 'the regulatory requirements for each', which claims multi-country regulatory work.) (2) 'Learn from users (5–10 days)': 'User interviews, analytics and an expert review cover each user group the product serves, and the findings become a short list of opportunities ranked by impact.' (3) 'Direction workshop (2–3 days)': keep, but change 'South Florida on-site sessions are possible for larger programs' to 'on-site workshops in South Florida can be added for larger engagements'. (4) 'Design in detail (10–20 days)': 'User flows, interface screens and an interactive prototype in Figma, with the Spanish strings your team supplies loaded so layouts are checked against longer text; progress is shared twice a week.' (5) 'Prove and ship (5–10 days)': 'A final usability testing round with real users confirms the design, and annotated specs and components move to your engineers.'",
+      "S5 (table): rename the H2 to 'Bilingual-ready vs English-only design for Miami products'. Answer: '<strong>For South Florida products, a remote-first UX design agency plans bilingual-ready design from the first wireframe: layouts, formats and research cover English- and Spanish-speaking users before build, while English-only design adds Spanish later and reworks screens.</strong> The table compares the two approaches area by area.' (This drops the unsourced 'planning early is usually cheaper'.) Columns: 'Design area', 'Bilingual-ready design', 'English-only design'. Rows: Copy → 'Both languages planned in the content structure; Spanish strings from your translators loaded in the prototype' / 'Spanish translated after launch'. Research → 'Participants screened for each user group, including Spanish-speaking users' / 'English speakers only'. Layouts, Formats and Language switch rows stay. Caption → 'Bilingual-ready design compared with English-only design for Miami products'.",
+      "S6 (pricing), answer: '<strong>Our remote-first Miami UI/UX design services price a focused 2–3 week UX audit at $5,000–$15,000 and a 4–8 week research and design sprint at $25,000–$60,000.</strong> The final number depends on the flows in scope, the platforms, the depth of user research, the number of user groups (for example English- and Spanish-speaking users) and whether a design system is part of the work.' Body: '<p>Complete product redesigns with a design system run $60,000–$180,000 across 8–16 weeks, and an embedded design team costs $15,000–$40,000 per month. Every project begins with a free consultation and a fixed-scope proposal. Compare <a href=\"/services/ux-audit-services/\">UX audit services</a> and <a href=\"/services/usability-testing-services/\">usability testing services</a>, or read the <a href=\"/case-studies/tradezella/\">TradeZella case study</a> for a trading product.</p>'",
+      "S7 (industries): rename the H2 to 'Which Miami industries do we design for?'. Answer: '<strong>Our remote-first UX design agency designs for five sectors well represented in Miami and South Florida:</strong>' (This drops 'that drive much of Miami's digital economy', which has no source.) Item 1: add 'Know Your Customer (KYC)' only if it was not expanded earlier. Item 2 (crypto and web3) stays only if the fact-checker finds a current source (factCheckList); otherwise merge it into item 1 as 'Fintech, payments, remittances and crypto…', move the Nitro link to the merged item and change the count to four. Item 4: 'luxury listings, pre-construction sales to international buyers and rental platforms'.",
+      "FAQ H2: 'UX design agency Miami FAQs' → 'Questions about Miami UI/UX design services'. Answer: '<strong>These five answers cover common questions South Florida product, marketing and founder teams can put to a remote-first UI/UX design company before they buy Miami UI/UX design services.</strong>' (Denver F7; the old 'the 5 questions … ask us most' implies inquiry data.)",
+      "FAQ 1 'Do you have a Miami office?': '<p>No. We are a remote-first UX design agency with no Miami or Florida office. Miami teams can work with us over video on an Eastern Time schedule from our Reston, Virginia headquarters, the same time zone as Miami, and we travel to South Florida for on-site workshops on larger engagements. When you shortlist top Miami UX design companies, compare time to start, team size, user research depth and cost model.</p>' (This drops 'we share your full working day', an hours claim.)",
+      "FAQ 2: question → 'Can you design a product for English- and Spanish-speaking users?' Answer: '<p>Yes. We plan layouts, navigation, a visible language switch and per-country formats for both languages from the first wireframe, and load the Spanish strings your translators or localization team supply into the prototype, so text length is checked before build.</p>' (This drops 'test with native speakers of each', 'hand over a content file' and 'Portuguese and other languages can be scoped on request'.)",
+      "FAQ 3: question → 'Can you design for crypto and fintech startups?' Answer: '<p>Yes. Fintech and crypto founders can hire us for trust signals, onboarding with identity verification, and error recovery, while their legal team stays in charge of disclosures and licensing requirements. See <a href=\"/industries/finance/\">Finance UI UX design</a>.</p>' (The old 'A UX design agency Miami fintech founders hire from us' implies current clients.)",
+      "FAQ 4: question → 'Can user research include customers outside the US?' Answer: '<p>Yes. Remote user interviews and usability tests run over video, and participants come from your customer list or a recruitment panel, screened to match each user group.</p>' (This drops 'international panels' and 'screen by country and language', which have no source. OWNER-Q on Spanish-language sessions, see siteFacts.language.)",
+      "FAQ 5: question → 'How soon can a Miami UI/UX project start?' Answer: '<p>A Miami UI/UX project with us starts 1–2 weeks after proposal approval, beginning with a kick-off call on the users, flows, success metrics and languages in scope. A sprint ends with research findings, Figma files, an interactive prototype tested with real users, and annotated specs and components; a UX audit ends with a prioritized fix roadmap.</p>' (The old wording said 'after the proposal is signed' and 'a brief that confirms markets and languages'.)",
+      "ABSTRACT: replace with 'We are a remote-first UI/UX design company headquartered in Reston, Virginia, with no Miami or Florida office. Fintech, crypto, travel, hospitality and real estate companies in South Florida can hire our Miami UI/UX design services for user research, interface design, prototyping and usability testing, including products built for English- and Spanish-speaking users. The smallest engagement is a 2–3 week UX audit from $5,000, and we work an Eastern Time schedule from Reston, the same time zone as Miami.' (The old abstract said these companies 'hire us', an implied-client claim, and offered work 'in English and Spanish', a capability claim.)",
+      "NLP KEYWORDS: replace 'bilingual content design', 'multi-market research' and 'localization' with 'language switch', 'identity verification' and 'user research'.",
+      "VISUAL: the scene labels 'English and Spanish', 'Local payment methods' and 'Residents and visitors' describe product requirements. Keep them."
+    ]
+  },
+  "metaPlan": {
+    "metaTitle": "Miami UI/UX Design Services | Fintech, Travel & Real Estate",
+    "metaTitleLength": 59,
+    "metaDescription": "Miami UI/UX design services fintech, travel and real estate teams can hire: research, UI design and testing from $5,000. Book a free consultation.",
+    "metaDescriptionLength": 146,
+    "h1": "Miami UI/UX design services for products used in English and Spanish",
+    "h1Length": 68,
+    "h1Note": "The H1 states a product requirement ('products used in English and Spanish'), not a team skill. If the fact-checker reads it as a language claim, the fallback is 'Miami UI/UX design services for fintech, travel and real estate products' (70).",
+    "eyebrow": "miami ui/ux design services",
+    "heroSub": "Miami UI/UX design services from a remote-first team headquartered in Reston, Virginia: user research, user experience (UX) and user interface (UI) design and usability testing for fintech and crypto platforms, travel and hospitality brands and real estate companies from Brickell to Coral Gables and across Miami-Dade County, Florida, whose products serve users in the US and Latin America. We work an Eastern Time schedule, the same time zone as Miami.",
+    "heroSubNote": "Use as written. The literal keyword opens the first 60 words after the H1. 'offers … for' sectors is a capability statement, and no sector 'works with us' (Denver F3). Brickell, Coral Gables and Miami-Dade County each carry Florida context.",
+    "keywordsField": ["miami ui/ux design services", "top miami ux design companies", "ux firm miami", "ui ux design miami"]
+  },
+  "factCheckList": [
+    { "claim": "Miami is in the Eastern Time zone (same as Reston, Virginia)", "lead": "49 CFR 71.4 and 71.5 (the Eastern/Central boundary puts only the Florida Panhandle west of the Apalachicola River in Central Time): https://www.law.cornell.edu/cfr/text/49/71.5 . No hours figure is stated." },
+    { "claim": "Fintech, payments and remittances well represented in Miami", "lead": "Miami-Dade Beacon Council finance page ('Wall Street South'; Point72, Apollo and Blackstone operations; Latin America investment gateway): https://www.beaconcouncil.com/finance/ . Name no company on the page." },
+    { "claim": "Crypto and web3 well represented in Miami", "lead": "Only 2021–2022 sources found: Blockchain.com US HQ move to Miami and BlockTower Capital's Brickell HQ (refreshmiami.com/news/blocktower-capital-joins-magic-citys-crypto-hub-moves-entire-team-to-new-brickell-hq/). FTX US collapsed in 2022, so never cite it. If no current (2025–2026) source is found, merge the item into fintech (siteFacts.conflicts S7)." },
+    { "claim": "Travel, cruise and hospitality well represented", "lead": "PortMiami FY2025 (Oct 2024–Sep 2025): 8,564,225 cruise passengers, a record (Miami-Dade County release; cruiseindustrynews.com/cruise-news/2025/12/portmiami-8-56-million-cruise-passengers/). Do NOT write 'cruise capital of the world' or 'busiest cruise port': Port Canaveral had 8,602,047 in FY2025 (seatrade-cruise.com)." },
+    { "claim": "Real estate and proptech; international and Latin American buyers", "lead": "MIAMI REALTORS 2025 international report: foreign buyers 15% of Miami-metro home purchases; Colombia and Argentina lead, then Mexico, Brazil and Venezuela. New-construction report (Nov 2025): global buyers 52% of South Florida new construction: https://www.miamirealtors.com/2025/11/11/new-international-report-global-buyer-share-increases-for-miami-new-construction-units-buyers-from-73-countries/ . The page states no percentage." },
+    { "claim": "Products serve English- and Spanish-speaking users in Miami (a product requirement)", "lead": "US Census Bureau ACS table S1601, Miami-Dade County, FL (FIPS 12086), language spoken at home: https://data.census.gov (search 'S1601 Miami-Dade'). DataUSA PUMA figures (55–85% of households Spanish-primary in most Miami-Dade PUMAs) are supporting only. The page states no percentage." },
+    { "claim": "Spanish strings run longer than English, so layouts need room", "lead": "W3C Internationalization, 'Text size in translation': https://www.w3.org/International/articles/article-text-size . State no percentage." },
+    { "claim": "Brickell is in the City of Miami; Coral Gables (and Doral if used) are cities in Miami-Dade County", "lead": "Miami-Dade County municipalities list: https://www.miamidade.gov/global/government/municipalities.page ; City of Miami neighborhood pages for Brickell." },
+    { "claim": "Consumer and e-commerce brands selling to US and Latin American shoppers", "lead": "Beacon Council trade/logistics page or Miami Customs District trade data (WorldCity / Census USA Trade Online). Generic item: acceptable with 'well represented' only if a trade source is found; otherwise keep it as a capability ('for example…')." },
+    { "claim": "Know Your Customer (KYC) identity verification in fintech onboarding", "lead": "content/industries/finance.json (BSA Customer Identification Program); FinCEN 31 CFR 1020.220." },
+    { "claim": "WCAG 2.2 level AA", "lead": "https://www.w3.org/TR/WCAG22/ (W3C Recommendation, 12 December 2024)." },
+    { "claim": "No Spanish-language team capability is stated anywhere on the page", "lead": "Check every surface against siteFacts.language: meta, H1, hero, summary, abstract, items, stages, table, FAQs. FAIL any 'we write/test/moderate in Spanish' wording." },
+    { "claim": "No Miami client implied", "lead": "Run the implied-client test on every sentence (Denver F1–F3, F7, F8): no 'work with us', 'hire us' (past or present-habitual), 'usually call', 'ask us most', 'Miami clients'. XTM/Anyday (Miami and Toronto, case study) is not mentioned (owner question open)." }
+  ],
+  "layoutNotes": "Keep the draft's block types (paragraph, list, steps, table with an intro sentence, list, FAQ last). Section body text 50–70 words (90 max). The S1 body above is about 70 words. Pricing stays a paragraph with the four home.ts lines. Add no statistics to the page. The sector sources are for the fact-checker, not for printing.",
+  "funnel": "BOFU",
+  "notes": "Short concept-bindings brief for an existing draft due to publish 2026-10-21. The draft was not edited. Pattern: the Denver brief, with the Dallas F1–F6 and Denver F1–F8 fixes pre-applied in siteFacts. The draft angle 'Bilingual Fintech & Travel UX' is dropped as a team claim. Bilingual becomes the Miami product requirement ('English- and Spanish-speaking users'), and the fact-checker should confirm that no team-language claim survives. Two OWNER-Qs: (1) can the team moderate or write UX copy in Spanish; (2) may a location page name a real client headquartered in that city (Anyday/XTM, Miami and Toronto)? Do not mention bootcamps, classes, courses, jobs or salary (off-intent volume terms)."
+}
