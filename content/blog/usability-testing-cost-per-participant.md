@@ -1,6 +1,6 @@
 ---
-title: "Usability Testing Cost per Participant: The Full Bill, Line by Line"
-metaTitle: "Usability Testing Cost per Participant: What You Pay"
+title: "Usability Testing Cost per Participant, the Full Bill Line by Line"
+metaTitle: "Usability Testing Cost per Participant | What You Pay"
 description: "Usability testing cost per participant, itemized: incentive, recruiting fee, no-show buffer, moderation and analysis. Then request a fixed-scope proposal."
 date: 2026-10-12
 updated: 2026-10-12

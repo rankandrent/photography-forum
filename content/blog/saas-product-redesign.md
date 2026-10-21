@@ -1,6 +1,6 @@
 ---
-title: "SaaS product redesign: scope, test and roll out without churn"
-metaTitle: "SaaS Product Redesign: Scope, Testing and Rollout Plan"
+title: "SaaS product redesign that you scope, test and roll out without churn"
+metaTitle: "SaaS Product Redesign | Scope, Testing and Rollout Plan"
 description: "Plan a SaaS product redesign around the metric that stalled: scope tier, baseline, safeguards for power users and admins, gated rollout. Send us your funnel."
 date: 2026-10-06
 updated: 2026-10-06

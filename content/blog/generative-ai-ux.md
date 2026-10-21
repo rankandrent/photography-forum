@@ -1,5 +1,5 @@
 ---
-title: "Generative AI in UX design: when speed helps, and judgment decides"
+title: "Generative AI in UX design, where speed helps and judgment decides"
 description: "TODO: 1–2 sentence summary for cards and meta description."
 date: 2026-09-01
 author: Design Team

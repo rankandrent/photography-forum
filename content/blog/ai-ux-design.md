@@ -1,5 +1,5 @@
 ---
-title: "AI UX design: designing human-centered experiences with AI"
+title: "AI UX design for human-centered experiences with AI"
 description: "TODO: 1–2 sentence summary for cards and meta description."
 date: 2026-09-01
 author: Design Team

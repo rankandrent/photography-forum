@@ -1,6 +1,6 @@
 ---
-title: "Design System ROI: Build the Business Case Your CFO Will Sign"
-metaTitle: "Design System ROI: Calculate Payback Before You Fund It"
+title: "Design System ROI and the Business Case Your CFO Will Sign"
+metaTitle: "Design System ROI | Calculate Payback Before You Fund It"
 description: "Design system ROI, step by step: baseline hours, build and upkeep cost, payback month and a one-page CFO business case. Then request a fixed-scope proposal."
 date: 2026-10-08
 updated: 2026-10-08

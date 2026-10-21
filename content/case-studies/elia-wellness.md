@@ -1,6 +1,6 @@
 ---
-title: "Elia Wellness: an interactive wellness learning platform for the 50+ community"
-metaTitle: "Elia Wellness Case Study: Wellness LMS for Adults 50+"
+title: "Elia Wellness, an interactive wellness learning platform for the 50+ community"
+metaTitle: "Elia Wellness Case Study | Wellness LMS for Adults 50+"
 description: "How we took Elia Wellness from idea to product: a wellness learning platform for adults 50+ with courses, wellness scores and badges. Registrations grew 40%."
 client: Elia Wellness
 logo: Elia Wellness

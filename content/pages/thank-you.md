@@ -1,6 +1,6 @@
 ---
 title: "Thank you"
-metaTitle: "Thank You: Your Message Reached Our Design Team"
+metaTitle: "Thank You | Your Message Reached Our Design Team"
 description: "Thanks for contacting UIUXDesignServices.us. A design lead will reply within one business day with next steps for your project."
 noindex: true
 ---

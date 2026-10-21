@@ -1,6 +1,6 @@
 ---
-title: "Vocable: from idea to an AI content marketing SaaS for brands"
-metaTitle: "Vocable Case Study: AI Content Marketing SaaS Design"
+title: "Vocable, from idea to an AI content marketing SaaS for brands"
+metaTitle: "Vocable Case Study | AI Content Marketing SaaS Design"
 description: "How we took Vocable from idea to MVP: an AI content marketing SaaS with one editor for many AI models, templates and research. Workflow efficiency rose 35%."
 client: Vocable
 logo: Vocable

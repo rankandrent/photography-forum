@@ -1,6 +1,6 @@
 ---
-title: "Mass Media Co.: an all-in-one B2B marketing platform for data and campaigns"
-metaTitle: "Mass Media Co. Case Study: B2B Marketing Platform UX"
+title: "Mass Media Co., an all-in-one B2B marketing platform for data and campaigns"
+metaTitle: "Mass Media Co. Case Study | B2B Marketing Platform UX"
 description: "How we revamped the order-taking systems of Mass Media Co. into one B2B marketing platform for data and campaigns: order processing efficiency rose 30%."
 client: Mass Media Co.
 logo: Mass Media Co.

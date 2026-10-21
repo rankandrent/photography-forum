@@ -1,6 +1,6 @@
 ---
-title: "E-commerce UX Audit Checklist: What to Check, Score and Fix"
-metaTitle: "E-commerce UX Audit: Checklist and Severity Scoring"
+title: "E-commerce UX Audit Checklist to Check, Score and Fix Issues"
+metaTitle: "E-commerce UX Audit | Checklist and Severity Scoring"
 description: "E-commerce UX audit checklist from search to checkout: what to check, how to score each issue and what to send us. Then request a fixed-scope proposal."
 date: 2026-10-14
 updated: 2026-10-14

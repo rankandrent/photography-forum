@@ -1,6 +1,6 @@
 ---
-title: "Nitro: a play-to-earn racing game that secured $5M in 3 months"
-metaTitle: "Nitro League Case Study: P2E Game That Raised $5M"
+title: "Nitro, a play-to-earn racing game that secured $5M in 3 months"
+metaTitle: "Nitro League Case Study | P2E Game That Raised $5M"
 description: "How we designed Nitro League, a play-to-earn racing game with upgradeable NFTs, a 3D garage and an NFT marketplace, that secured $5M in 3 months."
 client: Nitro League
 logo: Nitro

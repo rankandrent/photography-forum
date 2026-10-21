@@ -20,6 +20,14 @@ Existing live pages are not rewritten for these rules unless the owner asks. New
 - Entity coverage ≥ 80% of the brief's entities, attribute coverage ≥ 70%, and the central entity
   leads the page (H1, first 60 words, ≥ 40% of H2s, mentioned more than any other entity).
 
+- **Titles (owner rule, final):** no ":" in any title — meta title, og:title, H1, cover title. The meta
+  title starts with the exact primary keyword, then " | " and a short benefit. The H1 carries the
+  exact keyword joined with plain words or a comma.
+- **AI Overview + People Also Ask (owner rule):** read Google's AI Overview for the primary keyword
+  (its text if a tool gives it, else every cited source page) and the PAA questions. Record their
+  entities, attributes, key terms and questions in the brief; the page covers all of them with real
+  facts and answers each question directly in an H2/H3 or FAQ. Missing any one fails QA.
+
 ## 1. Concept bindings (US8126832B2, "Artificial intelligence system", Cognitive Code)
 The system turns words into concepts: root forms (walked → walk), synonyms (canine → dog), composite
 concepts (Central + Park → Central Park), weighted "essential" concepts, context to choose between

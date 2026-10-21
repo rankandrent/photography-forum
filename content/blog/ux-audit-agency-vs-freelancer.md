@@ -1,6 +1,6 @@
 ---
 title: "UX Audit Agency vs Freelancer, AI Tool or In-House Team"
-metaTitle: "UX Audit Agency vs Freelancer vs AI: Who to Hire"
+metaTitle: "UX Audit Agency vs Freelancer vs AI | Who to Hire"
 description: "UX audit agency vs freelancer, in-house team or AI tool: see what each finds, when each fits, and send a 6-input scope sheet for a fixed-scope quote."
 date: 2026-10-07
 updated: 2026-10-07

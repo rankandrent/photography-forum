@@ -1,6 +1,6 @@
 ---
-title: "Anyday App: a secure mobile wallet for same-day payouts"
-metaTitle: "Anyday App Case Study: Fintech Payout Wallet UX Redesign"
+title: "Anyday App, a secure mobile wallet for same-day payouts"
+metaTitle: "Anyday App Case Study | Fintech Payout Wallet UX Redesign"
 description: "How we redesigned the Anyday App, a fintech mobile wallet for same-day wage payouts: 40% higher employee satisfaction and 14 hours saved per week."
 client: Anyday App (XTM Inc.)
 logo: Anyday

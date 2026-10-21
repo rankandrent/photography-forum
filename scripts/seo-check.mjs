@@ -27,6 +27,10 @@ for (const file of pages) {
   if (h1s !== 1) report("error", file, `expected 1 <h1>, found ${h1s}`);
   if (!title) report("error", file, "missing <title>");
   else if (title.length > 65) report("warn", file, `title is ${title.length} chars (aim ≤ 60): "${title}"`);
+  // Owner rule 2026-10-21: no colon in any title (meta title, og:title, H1)
+  if (title.includes(":")) report("error", file, `title contains ":" (owner rule): "${title}"`);
+  const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]?.replace(/<[^>]+>/g, "") ?? "";
+  if (h1.includes(":")) report("error", file, `H1 contains ":" (owner rule): "${h1.trim()}"`);
   if (!desc) report("error", file, "missing meta description");
   else if (desc.length < 70 || desc.length > 160) report("warn", file, `description is ${desc.length} chars (aim 70–160)`);
   if (!/<link rel="canonical"/.test(html)) report("error", file, "missing canonical");

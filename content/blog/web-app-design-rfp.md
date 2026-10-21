@@ -1,6 +1,6 @@
 ---
-title: "Web App Design RFP Template: 9 Sections Agencies Can Price"
-metaTitle: "Web App Design RFP: Template, Scope Inventory and Scoring"
+title: "Web App Design RFP Template With 9 Sections Agencies Can Price"
+metaTitle: "Web App Design RFP | Template, Scope Inventory and Scoring"
 description: "Web app design RFP template: 9 sections, a workflow and role inventory, sample data rules and scoring weights. Then request a fixed-scope proposal."
 date: 2026-10-09
 updated: 2026-10-09

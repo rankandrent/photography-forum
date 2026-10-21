@@ -1,6 +1,6 @@
 ---
-title: "How to Design an MVP: 6 Steps From Idea to Tested Screens"
-metaTitle: "How to Design an MVP: Flows, Prototype Tests and Handoff"
+title: "How to Design an MVP in 6 Steps From Idea to Tested Screens"
+metaTitle: "How to Design an MVP | Flows, Prototype Tests and Handoff"
 description: "How to design an MVP in 6 steps: one hypothesis, 3 to 5 core flows, wireframes, a 5-user prototype test and a clean handoff. Then book a free consultation."
 date: 2026-10-20
 updated: 2026-10-20

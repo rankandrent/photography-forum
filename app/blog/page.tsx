@@ -10,7 +10,7 @@ import { routes } from "@/lib/site";
 const description = "Guides on user research, UX and UI design, design systems, usability testing and product design, written by the designers who do the work.";
 
 export const metadata = pageMetadata({
-  title: "UI UX Design Blog: Guides From Our Design Team",
+  title: "UI UX Design Blog | Guides From Our Design Team",
   description,
   path: routes.blog,
   keywords: ["UI UX design blog", "UX design guides", "user research articles", "product design insights"],

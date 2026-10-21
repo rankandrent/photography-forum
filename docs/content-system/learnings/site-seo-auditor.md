@@ -11,3 +11,6 @@ Each lesson: date, what happened (evidence), the rule to follow next time. Keep 
 ## Lessons (learned from runs, QA, audits and results)
 
 <!-- lessons below -->
+
+- 2026-10-21 (owner rule, final, all pages): no ":" in any title: meta title, og:title, H1 (`title`, `hero.h1`) or `coverTitle`. The meta title starts with the exact primary keyword, then " | " and a short benefit; the H1 carries the exact keyword joined with plain words or a comma. `npm run seo:check` now errors on a colon. Evidence: owner, after the GSC keyword report. Rule: RULES.md Keywords rule 4.
+- 2026-10-21 (owner rule): Google's AI Overview and People Also Ask for the primary keyword are required inputs, never ignored. The brief's `aiOverview` (cited sources, entities, attributes, terms, questions) and `paa` must each be covered on the page with a real fact, and every PAA question answered directly in an H2/H3 or FAQ; one missing item fails QA. Rule: RULES.md Keywords rule 5.

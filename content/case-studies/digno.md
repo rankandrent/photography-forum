@@ -1,6 +1,6 @@
 ---
-title: "Digno: an all-in-one SaaS for performance evaluation in organizations"
-metaTitle: "Digno Case Study: Performance Evaluation SaaS Design"
+title: "Digno, an all-in-one SaaS for performance evaluation in organizations"
+metaTitle: "Digno Case Study | Performance Evaluation SaaS Design"
 description: "How we took Digno from idea to product: a performance evaluation SaaS with an AI scoring engine for employees, departments and whole organizations."
 client: Digno
 logo: Digno

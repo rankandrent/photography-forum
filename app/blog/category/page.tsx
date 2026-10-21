@@ -9,7 +9,7 @@ import { cap, routes } from "@/lib/site";
 
 const description = "Every topic on our UI UX design blog: research and strategy, product design, platforms, dashboards and data, and industry-specific design.";
 
-export const metadata = pageMetadata({ title: "Blog Categories: UI UX Design Topics", description, path: blogRoutes.categories, noindex: getPosts().length === 0 });
+export const metadata = pageMetadata({ title: "Blog Categories | UI UX Design Topics", description, path: blogRoutes.categories, noindex: getPosts().length === 0 });
 
 export default function CategoriesPage() {
   return (
