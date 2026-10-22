@@ -1,0 +1,486 @@
+{
+  "slug": "media",
+  "pageType": "industry",
+  "target": "content/industries/media.json",
+  "route": "/industries/media/",
+  "templateFrom": "content/industries/_template.json, filled in the house pattern of content/industries/edtech.json (anchor, keywords, centralEntity, sourceContext, priceRange, abstract, sections[], semantic{entities, ngrams, skipgrams, nlpKeywords}, mentions, relatedServices, stats)",
+  "keyword": "media ui/ux design services",
+  "volume": 40,
+  "kd": null,
+  "kdNote": "Ahrefs returned no KD for this exact term (difficulty null). Not estimated.",
+  "dataSource": "Ahrefs API v3 keywords-explorer overview, US, checked 2026-10-22: volume 40, KD n/a (re-run by this agent on 2026-10-22, same figures). Google Search Console, 2026-09-21 to 2026-10-18: 5 impressions, 0 clicks, average position 81.8, landing page /location/ (docs/data/gsc/latest.json, fetched 2026-10-21). Semrush: no_api_units on 2026-10-22.",
+  "keywordWhy": "The only media variant with verified volume. In the same 2026-10-22 Ahrefs pull, 17 other variants ('media ux design', 'media ui ux design', 'media ux design agency', 'ux design for media companies', 'publishing ux design', 'news app ux design', 'martech ux design', 'adtech ux design' and more) returned no volume or 0. Google already shows the site for the exact query (5 impressions at 81.8) but on /location/, a city grid with no media copy, so no page satisfies the intent yet (Sturm step 7). Page 1 (WebSearch 2026-10-22) is vendor service pages: swovo.com (ex-flatirons.com) 'Media UI/UX Design Agency', appsmedia.co.uk, valuebound.com media & publishing, halo-lab.com 'Media & Publishing UI/UX design services', plus Behance/DesignRush listings. That confirms commercial service intent, the same pattern as gaming and edtech.",
+  "rejectedKeywords": [
+    { "keyword": "media ux design", "why": "No Ahrefs volume. Page 1 is mixed: a DAM vendor blog about media-file management (hivo.com.au), career pages (mediabistro, neuefische 'from media design to UX/UI'), academic papers. Different intents; used only as a synonym phrase on the page." },
+    { "keyword": "publishing ux design", "why": "No volume, and the site has no publisher or newsroom case study to back a publishing-led page. Kept as a query variant answered honestly in the FAQ." },
+    { "keyword": "news app ux design", "why": "Ahrefs volume 0; reader-app intent we cannot prove." },
+    { "keyword": "martech ux design", "why": "Ahrefs volume null/0." }
+  ],
+  "secondary": [
+    "media UX design",
+    "UI UX design for media companies",
+    "media platform design",
+    "media UI UX design agency",
+    "marketing platform UX design"
+  ],
+  "secondaryNote": "None of these has verified volume (Ahrefs 2026-10-22). They are synonyms and keywords[] entries for concept bindings only, never volume claims. 'media UX design' has a mixed SERP (see rejectedKeywords), so it appears once with a context word ('media UX design for ad sales and content tools'), never as an H2 lead.",
+  "keywordCarrier": {
+    "spellingNote": "anchor (lower-cased by scripts/onpage-audit.mjs) = 'media UI/UX design services'. has() needs every keyword word longer than 2 letters; norm() keeps the slash, so the token must print literally as 'UI/UX' (slash, no spaces). 'UI UX', 'UX/UI' and 'UI / UX' do NOT count for the title, H1, description, lead or kwCount. kwCount counts only the exact phrase 'media ui/ux design services'. 'media UI/UX design' without 'services' is a good H2 form but does not add to kwCount. Note that has() is a substring test, so 'social media' or 'Mass Media Co.' alone would satisfy the word 'media'; the meta surfaces must still print the full phrase.",
+    "anchorField": "\"anchor\": \"media UI/UX design services\". pageMetadata puts anchorOf(i) first in the meta keywords, so meta-keywords-keyword passes automatically. Do not repeat the anchor in keywords[]; keywords[] starts with the first secondary.",
+    "inBody": [
+      "Our media UI/UX design services plan and design the tools media and marketing teams run every day…",
+      "media UI/UX design services cover order management, media sales packages, campaign reporting, audience dashboards and content workflow",
+      "media UI/UX design services run as a 4–8 week sprint or an 8–16 week full project"
+    ],
+    "secondaryCarriers": {
+      "media UX design": "media UX design for ad sales and content tools starts from the roles that use them, not the brand",
+      "UI UX design for media companies": "UI UX design for media companies covers the logged-in tools behind the campaigns, not the ad creative",
+      "media platform design": "media platform design joins order taking, campaigns and reports in one place",
+      "media UI UX design agency": "a media UI UX design agency that tests prototypes with order takers and sales teams before engineering starts",
+      "marketing platform UX design": "marketing platform UX design for content teams, as on Vocable"
+    },
+    "avoid": "Do not stack a noun after the keyword ('media UI/UX design services project/cost/team/engagement'). For compounds write 'a media design project' or 'a media UI sprint'. Never write 'media engagement' (it reads as audience engagement, see ambiguous). Cost H2: 'How much do media UI/UX design services cost?' ('cost' follows as the verb). The outline H2s were checked against this rule: none stacks a noun on the full keyword.",
+    "density": "Visible body of an industry page is about 1,300–1,600 words incl. template blocks. Use the exact keyword 8–10 times: hero sub, abstract, 5 H2s, the cost answer and 1 FAQ. kwCount must be at least half of the top rival entity: keep 'Mass Media Co.' at 8 or fewer, 'Vocable' at 8 or fewer, 'order management' at 6 or fewer, 'audience engagement reports' at 4 or fewer. Generic words ('media', 'design', 'services') are not rivals (their words sit inside the keyword).",
+    "h2Salience": "At least 40% of rendered H2s must carry the keyword or a keyword word longer than 3 letters. The template adds 'Media UI UX case studies', 'UI UX design services for media', 'Media design solutions' (if used) and the FAQ H2; all carry 'media'. Put the full keyword in 5 section H2s (see outline)."
+  },
+  "centralEntity": "media UI/UX design services",
+  "entities": [
+    "Mass Media Co.",
+    "Vocable",
+    "order management",
+    "order takers",
+    "social media sales",
+    "campaign sales",
+    "audience engagement reports",
+    "audience segmentation",
+    "task management dashboard",
+    "omnichannel platform",
+    "personally identifiable information (PII)",
+    "content lifecycle",
+    "content score",
+    "content templates",
+    "AI models",
+    "discovery workshop",
+    "user interviews",
+    "Figma",
+    "Maze",
+    "Web Content Accessibility Guidelines (WCAG)",
+    "California Consumer Privacy Act (CCPA)",
+    "Global Privacy Control",
+    "Federal Trade Commission (FTC)",
+    "native advertising",
+    "CAN-SPAM Act"
+  ],
+  "entityNotes": "Every entry is the literal form the page must print (on-page script matches substrings after norm()). 'information architecture' is used on the page but deliberately NOT an entity, and its short form '(IA)' must never be added: 'ia' sits inside 'media', so a bracket form would be counted at every 'media' and become a false rival far above the keyword. Write 'information architecture' in full every time. 'Mass Media Co.' is the case-study name; print it with 'Co.' (the case uses 'MMC' as short form; do not use 'MMC' on this page). 'CAN-SPAM Act' normalises to 'canspam act', so the hyphen form is fine. 'Global Privacy Control' prints in full (no 'GPC'). Keep generic high-frequency nouns ('campaign', 'content', 'audience', 'publishers', 'advertisers') OUT of entities. 'AI models' appears in the Vocable section ('one editor that switches between AI models from OpenAI, Google, Anthropic and Meta'); do not list the model names as entities.",
+  "attributes": [
+    "full media platform design ($60,000–$180,000 over 8–16 weeks, 3–6 designers)",
+    "design sprint ($25,000–$60,000 over 4–8 weeks, 2–4 designers)",
+    "audit of live media tools ($5,000–$15,000 over 2–3 weeks)",
+    "user roles (order takers, sales teams, creative teams and clients)",
+    "user interviews (5–8 per user group)",
+    "prototype rounds (5 users per round on Maze)",
+    "developer handoff (annotated Figma files, design tokens and component specs)",
+    "accessibility level (WCAG 2.2 level AA)",
+    "dashboard metrics (5–7 metrics per view with a drill-down path)",
+    "target platforms (web app and mobile app)",
+    "privacy choices (opt-out status and Global Privacy Control signals in audience data tools)",
+    "sponsored content labels (clear disclosure next to native advertising)"
+  ],
+  "attributeNotes": "The script reads only the label before '(' and needs 60% of its words longer than 3 letters in the text. So the page must print: 'full' + 'media' + 'platform' + 'design'; 'design sprint'; 'audit' + 'live' + 'media' + 'tools'; 'user roles'; 'user interviews'; 'prototype rounds'; 'developer handoff'; 'accessibility level'; 'dashboard metrics'; 'target platforms'; 'privacy choices'; 'sponsored content labels'. 'full media platform design' replaces the edtech-style 'full <industry> engagement' on purpose: 'engagement' collides with 'audience engagement' on this page. 'dashboard metrics (5–7 per view)' is the dashboard-ux-design hub's figure, stated next to a link to that hub.",
+  "bindings": {
+    "synonyms": [
+      "media UX design",
+      "UI UX design for media companies",
+      "media platform design",
+      "marketing platform UX design"
+    ],
+    "plural": [
+      "media UI/UX design",
+      "media UI UX design agency",
+      "media and marketing platforms",
+      "media UX designers"
+    ],
+    "parent": [
+      "digital product design services",
+      "UI UX design services"
+    ],
+    "children": [
+      "order management",
+      "media sales packages",
+      "campaign reporting",
+      "audience dashboards",
+      "content workflow",
+      "task management"
+    ],
+    "related": [
+      "audience data",
+      "personally identifiable information (PII)",
+      "dashboard UX design",
+      "web app design",
+      "AI content tools",
+      "Figma"
+    ],
+    "usage": "Use each synonym at least once. Name the parent 'digital product design services' in the abstract or the definition section, linked. Give each child its own list item (title + body) in the 'Which media platform screens…' section; 'media sales packages' prints in the item title even though the case says 'social media sales packages'. 'dashboard UX design' and 'web app design' print as links to their hubs."
+  },
+  "essential": [
+    "media UI/UX design services",
+    "media companies",
+    "workflow"
+  ],
+  "essentialNote": "The first sentence under every H2 (the bold answer) names 'media UI/UX design services' or a synonym, plus 'media companies' (or 'media and marketing teams') or 'workflow' (order, campaign or content workflow).",
+  "queryVariants": [
+    "media ui/ux design services",
+    "media ux design",
+    "ui ux design for media companies",
+    "media ui ux design agency",
+    "publishing ux design"
+  ],
+  "queryVariantsAnswer": "One answer for all: a senior product design team (since 2017, 200+ products) designs the UI and UX of the logged-in tools media and marketing companies run on: order management, media sales packages, campaign reporting, audience dashboards and content workflow. The work is discovery, user interviews, information architecture, a clickable Figma prototype tested with users, and a developer handoff; the client's engineers build it. It is priced as a $25,000–$60,000 sprint (4–8 weeks) or a $60,000–$180,000 full project (8–16 weeks), with a $5,000–$15,000 audit (2–3 weeks) for tools already live. Proof: Mass Media Co. (media) and Vocable (content marketing platform) only. For 'publishing UX design' the honest answer is: we design publisher-side ad sales and content tools; we have no newsroom or reader-app case study.",
+  "ambiguous": [
+    { "word": "media", "context": "'media companies', 'media and marketing teams' or 'media sales'. Never bare. 'social media' appears only as 'social media sales' or 'social campaigns such as Facebook marketing' (a channel MMC sells), and never 'media files', 'media queries' or 'media assets' (digital asset management is a different SERP intent, see hivo.com.au)." },
+    { "word": "engagement", "context": "'audience engagement' (a client metric) vs our 'design engagement'. On this page say 'project' or 'sprint' for our work and keep 'engagement' only in 'audience engagement' and 'content engagement'." },
+    { "word": "order", "context": "'media order', 'order takers' or 'order management' (a customer's purchase of campaign products), never sort order." },
+    { "word": "campaign", "context": "'marketing campaign', 'campaign sales' or 'campaign reporting' (not political campaigns)." },
+    { "word": "content", "context": "'marketing content', 'content workflow' or 'content lifecycle' (articles, emails, press releases), not 'page content' of our own UI." },
+    { "word": "report", "context": "'audience engagement report' (client-facing campaign reach) vs the 'UX audit report' we deliver. Name which." },
+    { "word": "channel", "context": "'media channel' (email, audio, video, social) vs sales channel." },
+    { "word": "design", "context": "'UI/UX design' or 'product design' vs ad creative or graphic 'media design'. The vs table settles it." },
+    { "word": "publisher", "context": "'media publisher' (a company selling audiences and ad space). Never imply we have publisher clients." },
+    { "word": "audit", "context": "'UX audit of live media tools' (usability), not a media audit or ad-spend audit." }
+  ],
+  "siteFacts": {
+    "company": [
+      "Remote-first US UI/UX agency, HQ Reston, VA, in business since 2017, 200+ products designed (RULES.md confirmed facts). One senior team (digital-product hub metaDescription: 'from one senior team')."
+    ],
+    "engagements_homeTs": [
+      "UX audit: $5,000–$15,000, 2–3 weeks (do NOT state an audit team size; see conflicts)",
+      "Research & UX design sprint: $25,000–$60,000, 4–8 weeks, 2–4 designers",
+      "Full design & design system: $60,000–$180,000, 8–16 weeks, 3–6 designers",
+      "Embedded design team: $15,000–$40,000/mo, ongoing, 2–5 designers (not needed on this page)"
+    ],
+    "parentHub": "digital-product-design-services.json (Mass Media Co. lists it first in services). $60,000–$180,000, 8–16 weeks (40–80 working days). 5 steps, names and days exact: Discovery and product strategy (5–10 days; 'stakeholder workshops'); User research (5–15 days; 'Researchers interview 5–8 users per user group'); Information architecture and flows (5–10 days); Prototype and validation (10–20 days; '5 users per round complete tasks in the clickable prototype on Maze, and each round ends with a System Usability Scale (SUS) score'); UI design and handoff (15–25 days; WCAG 2.2 level AA, Figma files to engineering, designers stay with the engineers through launch). Handoff package: 'Annotated Figma files, design tokens and component specifications'. Price factors (exactly 4): number of platforms, user groups, core user flows and validation rounds. FAQ: 'Do digital product designers write code? No.'",
+    "otherHubs": "web-app-design-services.json: logged-in software (CRM tools, admin consoles), $60,000–$180,000, 8–16 weeks, 6 steps; FAQ 'Can you redesign an existing web app in phases? Yes. A phased web app redesign starts with the highest-traffic workflow and ships one workflow per release.'; 'data tables, filters, bulk actions, user roles and permission states'. dashboard-ux-design.json: $25,000–$60,000, 4–8 weeks, '5–7 metrics per view, with a drill-down path', 'role-based views', decision inventory, KPI map, '5 users per role' in a 5-task Maze test. ux-research-services: research hub (MMC lists it; scope 'user interviews'). mobile-app-ui-ux-design-services: $25,000–$60,000, 4–8 weeks. ux-audit-services: heuristic evaluation, analytics review, session-recording review, accessibility check (WCAG 2.2 level AA on audited screens), report, prioritized fix roadmap.",
+    "priceRangeField": "$60,000–$180,000 (full project, as edtech.json and gaming.json). The body states the $25,000–$60,000 sprint and the $5,000–$15,000 audit once each, in home.ts wording.",
+    "processRule": "Process steps use the parent hub's 5 step names and day ranges exactly, with media examples. Step 2 = 'interview 5–8 users per user group, such as order takers and sales teams'. Step 4 = '5 users per round … on Maze' (parent hub figure). Do not invent a different day split.",
+    "preFixed": [
+      "From gaming F9: never write 'sliced UI assets'. Deliverable = 'annotated Figma files, design tokens and component specs'.",
+      "From gaming F6: no 'first designs in 1–2 weeks' clause.",
+      "From gaming F7/F8 and P14: keep '5 users per round' in the prototype step and do NOT put a usability-testing-services link in that sentence (that hub says 5–8 per round).",
+      "From gaming F4: price factors are only the parent hub's 4 (platforms, user groups, core user flows, validation rounds), with media examples. Do not add 'channels', 'reports' or 'integrations' as price factors.",
+      "From gaming F3: no sprint scope count. Say a sprint can cover one surface, for example order management or the audience dashboard.",
+      "From gaming F10: the standards H2 answer states the count of distinct standards in the list (4 here: WCAG 2.2, CCPA, FTC native advertising guidance, CAN-SPAM Act). Global Privacy Control sits inside the CCPA item and is not counted as a fifth standard.",
+      "From gaming F11: WCAG contrast is '4.5:1 contrast for normal-size text'.",
+      "From gaming F1 and edtech: repeat case-study wording; never expand scope words ('product revamp' stays 'product revamp').",
+      "From edtech QA (lesson 2026-10-19): no implied-client sentences such as 'media teams bring us…' or 'publishers often ask us…'. One media client (Mass Media Co.) and one content platform (Vocable).",
+      "Layout trigger words (SemanticSections kindOf): the cost H2 contains 'cost'; the standards H2 contains 'standards' and uses format 'list' with plain-string items; the screens H2 uses item objects {title, body}; the vs H2 uses format 'table'. Do not put 'industr' in a list H2."
+    ],
+    "conflicts": [
+      "BUILD vs DESIGN: home.ts FAQ 'We deliver design and development' vs the parent hub FAQ 'Do digital product designers write code? No.' (known open conflict). Follow the hub and the orchestrator: we deliver annotated Figma files, design tokens and component specs; the client's engineers build. Never claim building the order system, ad server, CRM/CDP integrations, data pipelines, AI model integration or hosting.",
+      "MMC 'omnichannel platform' wording: the case says 'The result was an omnichannel platform that handles every marketing touchpoint'. Repeat it as the platform the design defined; do not say we built or launched it.",
+      "AUDIT TEAM SIZE: home.ts '1–2 designers' vs ux-audit-services '2 designers review independently'. Do not state an audit team size.",
+      "PARTICIPANTS: parent hub '5 users per round'; usability-testing-services '5–8 participants per round'; dashboard-ux-design '5 users per role'. Keep each figure next to its own hub; never mix them in one sentence.",
+      "CASE-STUDY RAIL (honesty, template): app/industries/[slug]/page.tsx shows caseStudiesForIndustry('media'); no case study has 'media' in industries, so the rail falls back to ALL featured case studies under the H2 'Media UI UX case studies' (Nitro, Elia, TradeZella…). Orchestrator action before or with publishing: set 'industries: [media]' in content/case-studies/mass-media-co.md (currently []) and 'industries: [saas, media]' in content/case-studies/vocable.md (currently [saas]).",
+      "LOCATION COPY: ux-design-agency-new-york.json L167 ('Media and publishing, for example newsroom tools, subscription paywalls and podcast or video players') and ux-design-agency-atlanta.json L64 ('Media, streaming and entertainment, including content apps, ad platforms and production-management tools') are capability lists with no case study behind newsroom, paywall, streaming or podcast work. This page must not echo them as past work.",
+      "MMC RESULT '2+': the case lists 'Order processing error rate: 2+, reduced from 25%'. The unit is unclear. Do not quote this figure. Quote only '30% increase in order processing efficiency' and, if needed, '53% increase in audience engagement' and '3% improvement in task completion', framed as the platform's reported results.",
+      "VOCABLE '+' RESULTS: '60+ surge in the Vocable user base' and '35+ increase in content engagement and shares' have no unit. Quote exactly or leave out; never convert to %.",
+      "BANNED WORD IN SOURCE: the Vocable case text uses 'seamless'. Do not carry it over (RULES.md banned list).",
+      "OG IMAGE: pageMetadata uses /og/industries/media.png; check that the build generates it, as for gaming and edtech."
+    ]
+  },
+  "proof": {
+    "caseStudies": [
+      "/case-studies/mass-media-co/ (content/case-studies/mass-media-co.md): the ONLY media-company proof.",
+      "/case-studies/vocable/ (content/case-studies/vocable.md): an AI content marketing SaaS (a content platform for brands and creators), NOT a media company. Present it as 'content platform' / 'content marketing platform' proof."
+    ],
+    "supportsMassMediaCo": [
+      "Mass Media Co. (MMC) provides data-driven digital marketing services, using real-time data to make decisions. Its secure audience database holds verified personally identifiable information (PII), which lets MMC build highly targeted campaigns.",
+      "Scope (quote exactly): 'product revamp, user interviews, information architecture (IA), UI and UX design, and web and mobile app design.' (Print the scope with '(IA)' only inside this exact quote, or drop '(IA)': see entityNotes.)",
+      "Challenge: the team used several systems separately; no consistent user experience; order takers struggled to move between disconnected systems to fulfill customer orders; the process would not scale.",
+      "Approach: a discovery workshop with MMC stakeholders and users covering product definition, strategy, information architecture and user flows; result: an omnichannel platform built around five experiences: social media sales (social campaigns such as Facebook marketing packaged as products with goals), campaign sales creation (revenue, cost, total and order count at a glance), audience engagement reports (reach by device, age group and channel), task management (owner, due date, progress per creative task), product and order management (order summary across email, audio, video and H&V channels).",
+      "Solution: task management dashboard (sales operations, open tasks, task flow by client, recent tasks); order management (build an order from data products, digital channels and data processing services with the estimated cost shown as they go); advanced data analytics for audience segmentation; real-time performance tracking.",
+      "Results (quote exactly, framed as reported results, never attributed to design alone): '30% increase in order processing efficiency'; '53% increase in audience engagement'; '3% improvement in task completion'. Do not use the '2+' error-rate line.",
+      "Images (reuse with case alt text and captions only): /work/mass-media-co/cover.webp ('The Mass Media Co. platform'), social-sales.webp ('Social media sales packages'), campaign-sales.webp ('Campaign sales at a glance'), audience-report.webp ('Audience engagement report'), task-cards.webp ('Task progress cards'), order-summary.webp ('Order summary by channel'), task-dashboard.webp ('Task management dashboard'), order-management.webp ('Order management')."
+    ],
+    "supportsVocable": [
+      "Vocable brings content operations into a single platform, centralizing the content lifecycle from ideation to optimization; founder Iman Oubou.",
+      "Scope (quote exactly): 'idea to product, stakeholder interviews, MVP launch strategy, UI and UX design, web app, and product enhancements.'",
+      "Challenge: researching trends took hours; measuring performance across tools was overwhelming; little time left for planning.",
+      "Designed: one editor with multiple AI models (OpenAI, Google, Anthropic, Meta); an idea and headline generator; the full creator journey mapped from stakeholder interviews (planning, drafting, optimizing, publishing); content templates (articles, descriptions, emails, press releases); a built-in keyword research tool; a dashboard with documents completed and in progress, active campaigns and a content plan; an editor with content score, readability and SEO checks and collaborators in the same document.",
+      "Results (quote exactly): '35% increase in overall workflow efficiency', '20% improvement in content quality and consistency'. Optional: '60+ surge in the Vocable user base', '35+ increase in content engagement and shares' exactly as written.",
+      "Images: /work/vocable/dashboard.webp ('Dashboard and content plan'), ai-editor.webp ('Editor with document health'), templates.webp ('Content templates'), cover.webp ('The Vocable workspace')."
+    ],
+    "doesNotSupport": [
+      "Any publisher, newsroom, broadcaster, streaming service, podcast, magazine, ad network or agency client other than Mass Media Co., and any count of media clients or platforms.",
+      "Reader or subscriber apps, paywalls, subscription checkout, video or audio players, newsroom CMS, ad servers or programmatic buying tools as past work. They may appear only as capability via the matching hub (mobile app, web app) with 'no published case study' honesty.",
+      "Development, data engineering, CRM/CDP or ad-tech integration, AI model integration, or hosting.",
+      "Privacy or advertising compliance work, legal advice or certification. We design consent, opt-out and disclosure patterns; compliance stays with the client.",
+      "Calling Vocable a media company or MMC a publisher. MMC is a data-driven digital marketing services company.",
+      "Usability testing on MMC or Vocable beyond what the cases say: MMC = user interviews + discovery workshop; Vocable = stakeholder interviews. Do not say 'tested with order takers on MMC'.",
+      "Attributing any result to design alone."
+    ],
+    "quotes": "Neither case study has a client quote. Do not create a testimonial."
+  },
+  "metaPlan": {
+    "title": "Media",
+    "order": 9,
+    "anchor": "media UI/UX design services",
+    "metaTitle": "Media UI/UX Design Services | Ad Sales & Content Platforms",
+    "metaTitleLength": 58,
+    "metaDescription": "Media UI/UX design services for ad sales, marketing and content teams: order management, campaign reports, audience dashboards. Book a free consultation.",
+    "metaDescriptionLength": 153,
+    "metaNote": "No colon in metaTitle, H1, og:title or coverTitle (RULES.md Keywords rule 4). The metaTitle starts with the exact keyword. The description colon is allowed (descriptions are not titles). No brand name in the title.",
+    "h1": "Media UI/UX design services for ad sales, campaign and content platforms",
+    "eyebrow": "Media UI/UX design",
+    "heroSub": "Our media UI/UX design services plan and design the tools media and marketing teams run every day: order management, media sales packages, campaign reporting, audience dashboards and content workflow. One senior team takes a media platform from discovery to tested, developer-ready Figma designs.",
+    "heroSubNote": "The lead check reads the first 60 words after the H1, so the hero sub keeps the exact keyword in its first sentence. Write it in your own words; the sentence above is a FACT pattern, not text to paste.",
+    "summary": "UI and UX design for media and marketing companies: order management, campaign reporting, audience dashboards and content workflow tools.",
+    "intro": "Pattern only (write in new words): what we design for media and marketing teams (order taking, campaigns, audience reports, content workflow), tested with the people who use them before engineering starts. No implied-client phrasing ('media teams bring us…').",
+    "bullets": [
+      "Join order taking, campaign sales and reports in one platform",
+      "Design order management that shows the estimated cost as the order grows",
+      "Turn audience data into role-based dashboards and client reports",
+      "Map the content lifecycle from idea to publishing in one workflow",
+      "Hand annotated Figma files, design tokens and component specs to your engineers"
+    ],
+    "keywordsField": [
+      "media UX design",
+      "UI UX design for media companies",
+      "media platform design",
+      "media UI UX design agency",
+      "marketing platform UX design"
+    ],
+    "relatedServices": [
+      "digital-product-design-services",
+      "web-app-design-services",
+      "dashboard-ux-design",
+      "ux-research-services",
+      "mobile-app-ui-ux-design-services",
+      "ux-audit-services"
+    ],
+    "stats": [
+      { "value": "30%", "label": "increase in order processing efficiency for Mass Media Co." },
+      { "value": "35%", "label": "increase in overall workflow efficiency for Vocable" },
+      { "value": "200+", "label": "products designed since 2017" }
+    ],
+    "sourceContext": "US UI/UX design agency; this industry page serves media and marketing companies (media sales and ad sales teams, marketing services firms, agencies and content platforms) that need the UI and UX of their logged-in tools designed and tested, while their own engineers build them.",
+    "abstract": "Pattern: 'Media UI/UX design services shape the user interface (UI) and user experience (UX) of the tools media companies run on, from order management and campaign reporting to audience dashboards and content workflow. They are part of our digital product design services. A full media platform design project runs 8–16 weeks, costs $60,000–$180,000, and ends with tested Figma designs your engineers build.' Link 'digital product design services' to /services/digital-product-design-services/."
+  },
+  "aiOverview": {
+    "present": null,
+    "status": "unverified",
+    "method": "Ahrefs v3 serp-overview (country=us, top_positions=20, select=position,url,title,type) was called on 2026-10-22 for 'media ui/ux design services' and 'media ux design': both returned HTTP 200 with \"positions\": [] (no stored SERP snapshot for these low-volume terms). A control call for 'ux design agency' returned 30 rows, so the endpoint and key work. Variants 'media ui ux design', 'media ux design agency', 'ux design for media companies', 'publishing ux design', 'media ui/ux design', 'media app design' and 'media ui design' were also empty. Semrush: no_api_units. WebSearch does not expose AI Overview blocks. No AI Overview text or cited sources could be retrieved, so none is claimed.",
+    "cited": [],
+    "proxySources": [
+      "https://swovo.com/services/media-ui-ux-design (formerly flatirons.com, 301)",
+      "https://www.halo-lab.com/service/ui-ux-design-media",
+      "https://valuebound.com/industry-solutions/media-publishing",
+      "https://au.bastionagency.com/case-study/ux-ui-site-refresh/",
+      "https://www.mediabistro.com/careers/ux-ui-design",
+      "https://hivo.com.au/blog/the-importance-of-user-experience-in-media-management-systems (media-files meaning; disambiguation only)"
+    ],
+    "proxyNote": "Until an AI Overview can be read, the page covers the entities, attributes, terms and questions of the top organic pages below (all WebFetched 2026-10-22). appsmedia.co.uk returned HTTP 500 and is 'Media' in the agency name only.",
+    "entities": ["Figma", "design system", "information architecture", "wireframes", "prototypes", "usability testing", "user research", "WCAG", "paywall", "subscription flows", "newsroom CMS", "video and audio players", "newsletters", "ad units and sponsored content", "campaign management tools for media buyers", "omnichannel content platform", "CRM", "customer data platform"],
+    "attributes": ["engagement length (Halo Lab FAQ: 6–12 weeks; ours: 4–8 week sprint, 8–16 week full project)", "deliverables (journey maps, information architecture, wireframes, UI and design system, annotated Figma handoff)", "web and mobile platforms", "redesign of an existing platform", "whether the agency also develops (ours: no, design only)", "start time"],
+    "terms": ["media UI/UX design", "reader and editor journeys", "engagement and retention", "monetization", "cross-platform consistency", "user feedback", "disconnected systems", "legacy platform modernization", "workflow-driven product design"],
+    "questions": [
+      "What is UI/UX design in the context of media platforms?",
+      "What does media and publishing UX/UI design include?",
+      "How can UI/UX design improve user engagement on media platforms?",
+      "Can UI/UX design impact the monetization of media platforms?",
+      "Can you redesign an existing publishing platform?",
+      "How long does a media UX design engagement take?",
+      "Do you design for advertising and sponsored content?",
+      "Can you also develop the media product?",
+      "Do UX/UI designers need to know how to code?"
+    ],
+    "coverage": "Each proxy entity/attribute/term is covered by a real fact in the outline or marked out of scope with an honest line: paywall, subscription flows, video and audio players and newsroom CMS appear ONLY in the reader-app FAQ as capability with 'no published case study'; 'ad units and sponsored content' → standards item (FTC native advertising); 'campaign management tools for media buyers' → campaign reporting child; 'CRM' and 'customer data platform' → challenges card on audience data (we design the screens; integrations stay with engineers)."
+  },
+  "paa": [],
+  "paaNote": "No PAA rows available (Ahrefs SERP empty, Semrush no units, WebSearch shows no PAA). The proxy questions in aiOverview.questions are answered instead: 'What is UI/UX design in the context of media platforms' → H2 1; 'what does … include' → H2 2; 'improve user engagement' + 'monetization' → FAQ 6; 'redesign an existing platform' → FAQ 3; 'how long' → FAQ 4; 'advertising and sponsored content' → standards H2 (FTC item); 'also develop' + 'need to code' → FAQ 2. If the orchestrator obtains a PAA list later, add any unanswered question to the FAQ.",
+  "outline": [
+    {
+      "h2": "What are media UI/UX design services?",
+      "format": "paragraph",
+      "answerHint": "Bold definition: media UI/UX design services plan how media and marketing teams move through their order, campaign and content workflow (UX) and design the screens they and their clients use (UI). Body (50–70 words): synonym 'UI UX design for media companies' with its carrier; parent link 'digital product design services' and '/' 'UI UX design services'; design-only scope line (Figma files, design tokens and component specs; your engineers build). Image: /work/mass-media-co/cover.webp with the case alt text and caption 'The Mass Media Co. platform', placed after the sentence naming Mass Media Co.",
+      "points": ["definition with UI and UX expanded", "synonym", "parent link", "no-code scope line", "image–text fit"]
+    },
+    {
+      "h2": "Which media platform screens do our media UI/UX design services cover?",
+      "format": "list (item objects {title, body})",
+      "answerHint": "Bold: our media UI/UX design services cover 6 parts of the platforms media companies run on, each drawn in every screen state (default, loading, empty, error and completed). One item per child, 1–2 sentences, one concrete example each.",
+      "points": [
+        "Order management.: order takers build an order from data products, digital channels and data processing services, with the estimated cost shown as the order grows (MMC). Link /services/web-app-design-services/ 'web app design services' (logged-in tools with data tables, filters and permissions).",
+        "Media sales packages.: social media sales and campaign products sold as clear packages with goals attached (MMC 'social media sales' packages such as Facebook marketing).",
+        "Campaign reporting.: campaign sales at a glance (revenue, cost, total, order count) and client-facing audience engagement reports that break reach down by device, age group and channel (MMC).",
+        "Audience dashboards.: role-based views of audience data and audience segmentation, 5–7 metrics per view with a drill-down path. Link /services/dashboard-ux-design/ 'dashboard UX design'.",
+        "Content workflow.: the content lifecycle from idea to publishing in one place: content templates, an editor with a content score and readability checks, AI models in one editor (Vocable).",
+        "Task management.: every creative task with owner, due date and progress, plus a task management dashboard with task flow by client (MMC)."
+      ]
+    },
+    {
+      "h2": "What makes UX design for media companies different?",
+      "format": "cards",
+      "answerHint": "Bold: UI UX design for media companies has to join tools that grew up separately, serve internal teams and their clients at once, and handle audience data with care. 4 cards, 1–2 sentences each. Write in new words.",
+      "points": [
+        "Disconnected systems: MMC's order takers moved between separate systems to fulfill one customer order; the fix is one workflow, not prettier screens.",
+        "Internal teams and clients on one platform: order takers, sales teams and creative teams work inside; clients read audience engagement reports. Each role gets its own view and permissions (web app hub: user roles and permission states).",
+        "Audience data with personal information: MMC's audience database holds verified personally identifiable information (PII), so screens show segments and reach, not raw personal records, and show opt-out status (link forward to the standards list; no repeat). CRM and customer data platform integrations stay with your engineers.",
+        "Content at deadline speed: content marketers juggle research, drafting and measurement across tools (Vocable's challenge); one editor with templates and checks shortens the loop. Sibling link /industries/saas/ 'SaaS UI UX design' for platforms sold as software as a service."
+      ]
+    },
+    {
+      "h2": "What did media UI/UX design deliver for Mass Media Co.?",
+      "format": "paragraph",
+      "answerHint": "Bold: for Mass Media Co., a data-driven digital marketing services company, our media UI/UX design work revamped separate order-taking systems into one omnichannel platform, and the company reports a 30% increase in order processing efficiency. Body (≤70 words): scope quoted exactly (drop '(IA)' or keep it only inside the quote), discovery workshop with stakeholders and users, the five experiences named briefly, '53% increase in audience engagement' quoted as reported. Link /case-studies/mass-media-co/ 'Mass Media Co. case study'. Optional image: /work/mass-media-co/order-management.webp or task-dashboard.webp with case alt and caption.",
+      "points": ["who and why", "scope verbatim", "five experiences", "results as reported results, no '2+' line"]
+    },
+    {
+      "h2": "How did content platform design work for Vocable?",
+      "format": "paragraph",
+      "answerHint": "Bold: for Vocable, an AI content marketing platform, our marketing platform UX design took the product from idea to MVP around the full content lifecycle, and Vocable reports a 35% increase in overall workflow efficiency. Body (≤70 words): scope quoted exactly; creator journey mapped from stakeholder interviews (planning, drafting, optimizing, publishing); one editor with AI models from OpenAI, Google, Anthropic and Meta; content templates; content score; '20% improvement in content quality and consistency'. Say plainly Vocable is a content platform, not a media company. Link /case-studies/vocable/ 'Vocable case study'. Optional image /work/vocable/dashboard.webp ('Dashboard and content plan').",
+      "points": ["content platform framing", "scope verbatim", "creator journey", "results exact"]
+    },
+    {
+      "h2": "How does our media UI/UX design process work?",
+      "format": "steps",
+      "answerHint": "Bold: our media UI/UX design services take a media platform from discovery to developer handoff in 8–16 weeks (40–80 working days) and 5 steps. Parent hub step names and days exactly, media examples.",
+      "points": [
+        "Discovery and product strategy (5–10 days): a discovery workshop with stakeholders and users sets the user roles (order takers, sales teams, creative teams, clients), the core workflow and success metrics such as order processing time. Link /blog/ux-strategy-roadmap/#who-owns-the-roadmap-and-what-does-the-workshop-decide 'what the workshop decides' (that post cites the MMC workshop) OR /blog/is-discovery-phase-worth-it/ 'what a discovery phase settles before screens' (one of the two, not both).",
+        "User research (5–15 days): researchers interview 5–8 users per user group, such as order takers and sales teams, to find where orders, campaigns and reports break between tools. Link /services/ux-research-services/ 'UX research services'.",
+        "Information architecture and flows (5–10 days): the team maps products, orders, campaigns and reports, plus the order flow and the content workflow, before any screen is drawn.",
+        "Prototype and validation (10–20 days): 5 users per round complete tasks in a clickable Figma prototype on Maze (parent hub figure; no usability-testing link in this sentence).",
+        "UI design and handoff (15–25 days): designers finish every screen state and hand annotated Figma files, design tokens and component specs to your engineers, at Web Content Accessibility Guidelines (WCAG) 2.2 level AA, and stay with them through launch."
+      ]
+    },
+    {
+      "h2": "Media UI/UX design vs ad creative design",
+      "format": "table",
+      "answerHint": "Bold: media UI/UX design decides how media and marketing teams take orders, run campaigns and report on audiences inside their platform; ad creative design makes the ads and brand assets audiences see. Then 'The table compares both disciplines.' Columns: Criterion | Media UI/UX design | Ad creative design. Rows: Main question; Users (order takers, sales teams, creative teams and clients vs the audience that sees the ad); Outputs (flows, prototypes, UI screens and component specs in Figma vs ad units, banners, video spots and brand assets); Validation (prototype rounds with 5 users per round vs campaign metrics such as click-through rate); When to hire (orders, campaigns or reports are slow or error-prone across tools vs a campaign needs new creative); Who does it ('Our senior design team, as on Mass Media Co.' vs 'Your creative team or ad agency; we do not produce ad campaigns'). Compare disciplines, not vendors. This settles the 'media design' (graphic/media designer) meaning.",
+      "points": ["discipline comparison, no competitor names", "honest scope: no ad creative", "disambiguates 'design' and 'media design'"]
+    },
+    {
+      "h2": "How much do media UI/UX design services cost?",
+      "format": "paragraph",
+      "answerHint": "Bold: media UI/UX design services cost $60,000–$180,000 over 8–16 weeks for a full media platform design, or $25,000–$60,000 over 4–8 weeks for a design sprint. Body (50–70 words): full project 3–6 designers, sprint 2–4. Price follows the parent hub's 4 factors only, with media examples: platforms (web app, mobile app), user groups (order takers, sales teams, clients), core user flows (order, campaign, report) and validation rounds. Tools already live start with an audit: $5,000–$15,000 over 2–3 weeks via /services/ux-audit-services/ 'UX audit services'. Optional deep link /services/digital-product-design-services/#how-much-does-digital-product-design-cost 'how the full project is priced' only if under 70 words.",
+      "points": ["home.ts lines only", "hub's 4 price factors only", "no per-screen or per-dashboard price", "no audit team size"]
+    },
+    {
+      "h2": "Which privacy and advertising standards shape media UI/UX design services?",
+      "format": "list (plain-string items; the H2 keeps the word 'standards')",
+      "answerHint": "Bold: four privacy, advertising and accessibility standards shape media UI/UX design services, and each one changes what media and marketing teams see on screen. Each item = one fact + its effect on screens + the primary link from externalSources. Closing line: we design to these standards; legal compliance stays with the client. Fact-checker verifies every rule before publishing.",
+      "points": [
+        "Web Content Accessibility Guidelines (WCAG) 2.2 level AA: keyboard access, visible focus and 4.5:1 contrast for normal-size text; colour is never the only way to convey information (success criterion 1.4.1), so audience charts and campaign status also carry labels.",
+        "California Consumer Privacy Act (CCPA), as amended by the CPRA: consumers can opt out of the sale or sharing of their personal information, and businesses must honor opt-out preference signals such as Global Privacy Control. Effect: audience data tools show each segment's opt-out status and keep opted-out records out of campaign builds.",
+        "Federal Trade Commission (FTC) native advertising guidance (Enforcement Policy Statement on Deceptively Formatted Advertisements and the 'Native Advertising: A Guide for Businesses'): ads must be identifiable as ads. Effect: sponsored content labels sit next to the content, in plain words, on every screen and template where it appears.",
+        "CAN-SPAM Act: commercial email needs a clear way to opt out, a valid physical postal address, and opt-outs honored within 10 business days. Effect: the email channel in order and campaign builders includes the unsubscribe and sender details by default."
+      ]
+    },
+    {
+      "h2": "FAQs about media UI/UX design services",
+      "format": "faq",
+      "answerHint": "Bold: these answers cover the 6 questions media and marketing companies ask most before hiring media UI/UX design services.",
+      "points": ["see faqs[]"]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Have you designed software for a media company?",
+      "a": "Yes. For Mass Media Co., a data-driven digital marketing services company, we revamped separate order-taking systems into one omnichannel platform for social media sales, campaign sales, audience engagement reports, task management and order management; it reports a 30% increase in order processing efficiency. Link /case-studies/mass-media-co/. One media client: do not pluralise; Vocable may follow as 'a content marketing platform'."
+    },
+    {
+      "q": "Do you build the platform or write the code?",
+      "a": "No. Our designers deliver annotated Figma files, design tokens and component specs, and your engineers write the code, including ad-tech, CRM and data integrations. (Matches the hub's 'designers do not write code'; answers the proxy questions 'Can you also develop the media product?' and 'Do UX/UI designers need to know how to code?')."
+    },
+    {
+      "q": "Can you redesign media tools that are already in use?",
+      "a": "Yes. Start with a UX audit of the live tools, $5,000–$15,000 over 2–3 weeks: heuristic evaluation, analytics review and a WCAG 2.2 level AA check, ending in a prioritized fix roadmap. A phased redesign then starts with the highest-traffic workflow, for example order management, and ships one workflow per release (web-app hub wording). Link /services/ux-audit-services/ only if the cost section did not already link it; else no link."
+    },
+    {
+      "q": "How long do media UI/UX design services take?",
+      "a": "A UX audit takes 2–3 weeks, a design sprint for one surface such as the audience dashboard takes 4–8 weeks, and a full media platform design takes 8–16 weeks (40–80 working days). Home.ts and hub figures only."
+    },
+    {
+      "q": "Do you design reader or subscriber apps for publishers?",
+      "a": "Yes, as mobile and web app design: reader apps, subscription flows and video or audio players follow the same 5 steps through our mobile app UI UX design services (link /services/mobile-app-ui-ux-design-services/). Our published media work so far is Mass Media Co.'s order, campaign and reporting platform (its scope included web and mobile app design), so we do not claim reader apps, paywalls or newsroom tools as past work."
+    },
+    {
+      "q": "Can better UX design increase audience engagement on a media platform?",
+      "a": "Yes, as one factor among several. On the platform we designed for Mass Media Co., the company reports a 53% increase in audience engagement alongside a 30% increase in order processing efficiency; data, campaigns and client support shaped those results too, so we do not attribute them to design alone. Answers the proxy questions on engagement and monetization."
+    }
+  ],
+  "faqNotes": "Boolean questions start with Yes or No. 2–3 sentences each. No sixth price restatement beyond FAQ 4's durations. 'Have you designed…' FAQ must not imply more than one media client.",
+  "linkPlan": {
+    "up": [
+      { "href": "/services/digital-product-design-services/", "anchor": "digital product design services", "where": "abstract or definition body (required)" },
+      { "href": "/", "anchor": "UI UX design services", "where": "definition body, once" }
+    ],
+    "acrossServices": [
+      { "href": "/services/web-app-design-services/", "anchor": "web app design services", "where": "Order management item" },
+      { "href": "/services/dashboard-ux-design/", "anchor": "dashboard UX design", "where": "Audience dashboards item" },
+      { "href": "/services/ux-research-services/", "anchor": "UX research services", "where": "process step 2" },
+      { "href": "/services/mobile-app-ui-ux-design-services/", "anchor": "mobile app UI UX design services", "where": "reader-app FAQ" },
+      { "href": "/services/ux-audit-services/", "anchor": "UX audit services", "where": "cost body (live-tools audit)" }
+    ],
+    "siblings": [
+      { "href": "/industries/saas/", "anchor": "SaaS UI UX design", "where": "'Content at deadline speed' card (content platforms sold as SaaS, Vocable is tagged saas)" },
+      { "href": "/industries/ecommerce/", "anchor": "e-commerce UI UX design", "where": "Media sales packages item or the 'Internal teams and clients' card, once, only where products, orders and catalogues are compared; skip if the item exceeds 2 sentences" }
+    ],
+    "down": [
+      { "href": "/case-studies/mass-media-co/", "anchor": "Mass Media Co. case study", "where": "MMC section (required) and FAQ 1" },
+      { "href": "/case-studies/vocable/", "anchor": "Vocable case study", "where": "Vocable section (required)" },
+      { "href": "/blog/ux-strategy-roadmap/#who-owns-the-roadmap-and-what-does-the-workshop-decide", "anchor": "what the discovery workshop decides", "where": "process step 1 (alternative: /blog/is-discovery-phase-worth-it/; use one)" }
+    ],
+    "childrenWithPages": "None of the children (order management, media sales packages, campaign reporting, audience dashboards, content workflow, task management) has its own page; 'audience dashboards' links to the dashboard-ux-design hub as the closest service.",
+    "hubBacklink": {
+      "source": "content/services/digital-product-design-services.json",
+      "why": "The parent hub and the best-borrowed source: 267 impressions in GSC 2026-09-21 to 2026-10-18 (dashboard-ux-design and web-app-design-services show none). Mass Media Co. lists digital-product-design-services first in its services.",
+      "where": "sections[0] ('What is digital product design?'), at the END of the `body` paragraph, after the sentence '…with 2 discovery phases and 2 delivery phases.' Top of page, inside body text, so it is a link readers click.",
+      "sentence": "Media and marketing companies use the same process for order, campaign and content tools, as our <a href=\"/industries/media/\">UI UX design for media companies</a> shows.",
+      "anchorWhy": "Synonym anchor from bindings (not the exact keyword), names the target concept; the body grows from about 35 to about 57 words, inside the 70-word limit.",
+      "priority": "required"
+    },
+    "inboundForOrchestrator": [
+      { "source": "content/case-studies/mass-media-co.md", "change": "Set frontmatter 'industries: [media]' (currently []). Honesty: filters the industry case-study rail.", "priority": "required" },
+      { "source": "content/case-studies/vocable.md", "change": "Set frontmatter 'industries: [saas, media]' (currently [saas]).", "priority": "required" },
+      { "source": "content/case-studies/mass-media-co.md Overview (sibling pattern from nitro.md and elia-wellness.md)", "change": "One sentence after the scope line: 'This work now anchors our [media UI/UX design services](/industries/media/).'", "priority": "conditional", "why": "Blocker: the orchestrator asked for ONE backlink this run (the hub). Add it if the orchestrator keeps the edtech/gaming case-study pattern." },
+      { "source": "content/locations/ux-design-agency-new-york.json L167 and ux-design-agency-atlanta.json L64 (media bullets)", "change": "skip", "priority": "skip", "why": "One backlink requested; both bullets list newsroom, paywall and streaming capabilities this page does not prove, so the link would promise something the page does not show. Revisit in the next internal-link run." },
+      { "source": "/location/ (current GSC landing page for the query)", "change": "skip", "priority": "skip", "why": "app/location/page.tsx is a city grid with no body copy, so there is no sentence to link. The new page should replace /location/ for the query once indexed." }
+    ],
+    "verified": "All hrefs checked 2026-10-22 against content/services/*.json, content/industries/{saas,ecommerce}.json, content/case-studies/{mass-media-co,vocable}.md, content/blog/{ux-strategy-roadmap,is-discovery-phase-worth-it}.md (section id derived with sectionId() rule) and public/work/{mass-media-co,vocable}/ images."
+  },
+  "externalSources": [
+    { "url": "https://www.w3.org/TR/WCAG22/", "why": "WCAG 2.2 level AA, contrast 4.5:1, SC 1.4.1 Use of Color" },
+    { "url": "https://oag.ca.gov/privacy/ccpa", "why": "CCPA/CPRA opt-out of sale or sharing; opt-out preference signals. Fact-check the GPC requirement wording against the CCPA regulations (§7025)." },
+    { "url": "https://globalprivacycontrol.org/", "why": "Global Privacy Control signal definition" },
+    { "url": "https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses", "why": "FTC native advertising guidance: ads identifiable as ads, clear disclosures. Verify URL and title." },
+    { "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business", "why": "CAN-SPAM: opt-out mechanism, physical postal address, honor opt-outs within 10 business days. Verify current wording." }
+  ],
+  "serpGaps": [
+    "No page-1 competitor publishes a price, timeline split or team size (swovo none, halo-lab only form budget bands, valuebound none). We publish ranges.",
+    "None shows a media case with numbers: swovo lists NYT/Amplify without metrics, halo-lab shows one branding project, valuebound shows pharma marketing. Mass Media Co. (30% order processing efficiency) is first-hand.",
+    "All page-1 pages focus on reader-facing surfaces (articles, paywalls, players). None covers the business side media companies run on: order taking, media sales packages, campaign reporting, audience dashboards. That is our honest angle and the proof we have.",
+    "None names privacy or advertising rules as design inputs (CCPA opt-outs, Global Privacy Control, FTC native advertising disclosure, CAN-SPAM). Halo Lab names no standard at all.",
+    "None separates product UI/UX from ad creative or 'media design' (the career sense), which confuses the SERP; our vs table does.",
+    "Competitor claims ('500+ projects', '98% client satisfaction', '50+ awards', 'Dozens of media UI UX projects'): do not imitate and do not invent counts."
+  ],
+  "visuals": [
+    { "type": "hero illustration", "idea": "Media platform map: order management, media sales packages, campaign reporting, audience dashboards, content workflow and task management as connected tiles, with roles (order taker, sales team, creative team, client) as labels. Generic shapes, no fake product UI." },
+    { "type": "case images", "idea": "Reuse /work/mass-media-co/cover.webp in the definition section and order-management.webp or task-dashboard.webp in the MMC section; /work/vocable/dashboard.webp in the Vocable section. Existing alt text and captions only. No new mock-ups of either client." },
+    { "type": "before/after flow", "idea": "Order fulfilment before (order taker hops across separate systems) vs after (one order flow with estimated cost shown as it grows), drawn from the MMC challenge; text version lists both flows." },
+    { "type": "process timeline", "idea": "The 5 parent-hub steps with media examples and day ranges (8–16 weeks), landscape 1200 wide, house style." },
+    { "type": "comparison graphic", "idea": "Media UI/UX design vs ad creative design: users, outputs, validation; mirrors the table (the table stays as the visible text)." },
+    { "type": "standards strip", "idea": "Four standards (WCAG 2.2, CCPA with Global Privacy Control, FTC native advertising, CAN-SPAM), each with the one screen element it changes (labels on charts, opt-out status, sponsored label, unsubscribe line)." }
+  ],
+  "layoutNotes": "Section detail text 50–70 words (90 max). Bold only the direct answer. Every table gets an intro sentence. Every image is a figure with a caption that names the same thing as its alt text, after the sentence that names it, never directly after an H2. FAQ last. Nothing collapsed except the FAQ.",
+  "funnel": "bofu",
+  "serviceSupport": 5,
+  "leadAngle": "Three moments. (1) The Mass Media Co. section: an ad sales or marketing services team whose order takers juggle separate systems sees its own problem solved, and the cost section right after offers the $60,000–$180,000 full platform design or a $25,000–$60,000 sprint for one surface (order management or the audience dashboard). (2) The 'redesign tools already in use' FAQ: the $5,000–$15,000 audit as a low-risk first step. (3) The standards list: teams handling audience data with personal information want opt-out and disclosure patterns designed in. The template's lead form and CTA band carry the offer.",
+  "competitorsSeen": [
+    { "domain": "swovo.com", "url": "https://swovo.com/services/media-ui-ux-design", "note": "flatirons.com 301-redirects here; title 'Media UI/UX Design Agency'; 8 FAQ questions; no prices" },
+    { "domain": "halo-lab.com", "url": "https://www.halo-lab.com/service/ui-ux-design-media", "note": "publishing-led (paywalls, newsroom CMS); 6–12 weeks; 10 FAQs; template leftovers" },
+    { "domain": "valuebound.com", "url": "https://valuebound.com/industry-solutions/media-publishing", "note": "Drupal dev shop; no design process" },
+    { "domain": "appsmedia.co.uk", "url": "https://appsmedia.co.uk/service/ux-ui-design", "note": "HTTP 500 on fetch; 'Media' is the agency name, not the industry" },
+    { "domain": "au.bastionagency.com", "url": "https://au.bastionagency.com/case-study/ux-ui-site-refresh/", "note": "publisher masthead refresh case (Private Media); reader-side" }
+  ],
+  "notes": "Industry page, not a blog post: fingerprints/variety rules do not apply. Competitor pages were WebFetched for structure only; never copy their wording, FAQ phrasing or order. The FAQ questions here are reworded and answered from our own facts. Every regulation claim goes to the fact-checker (CCPA GPC wording, FTC guide title and URL, CAN-SPAM 10 business days, WCAG SC 1.4.1). The 'Media' title makes template H2s read 'Media UI UX case studies', 'UI UX design services for media' and 'Media UI UX design FAQs' (the FAQ section h2 overrides the last); the Service schema name becomes 'Media UI UX Design Services'. Leave them. order 9 follows edtech (8). No AI Overview or PAA data could be retrieved (see aiOverview.method); proxy questions from page-1 FAQs are covered instead. competitors.json was not edited (industry run; no blog-topic candidates)."
+}
