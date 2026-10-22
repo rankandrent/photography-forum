@@ -3,7 +3,7 @@ title: "How to choose a UX research agency with a buyer's scorecard"
 metaTitle: "How to Choose a UX Research Agency | Scorecard & Red Flags"
 description: "How to choose a UX research agency: a 1-page brief, a 7-criteria scorecard, 12 pitch-call questions, recruitment tests and data terms. Send us your brief."
 date: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-22
 author: sahar-asif
 type: Guide
 services: [ux-research-services]
@@ -25,6 +25,18 @@ qa: pass
 A product manager has a board meeting in six weeks, an onboarding redesign on the roadmap and three pitches from user experience (UX) research agencies that all promise "interviews, usability testing and actionable insights." The pitches read the same, so the cheapest one starts to look safe. This guide shows how to choose a UX research agency on evidence instead: a 1-page brief, a weighted scorecard, a recruitment test, 12 pitch-call questions and the contract terms that protect your data.
 
 ![Eight-step overview of choosing a UX research agency: name the decision, write a 1-page brief, score 3 agencies, test recruitment, run the pitch call, normalize proposals, lock the contract and start the first 2 weeks](/blog/choose-ux-research-agency/how-to-choose-overview.svg "The 8 steps in this guide")
+
+## When to hire a UX research agency
+
+**Hire a UX research agency when a product decision needs new user evidence and your team lacks the time, the participants or the independence to collect it.** Five moments call for that evidence:
+
+- **A new product starts** before anyone has interviewed target users, so the roadmap rests on guesses.
+- **The product enters a new market** whose users follow different workflows, so old findings stop applying.
+- **Feature adoption stays low** and analytics show the usage but not the reason, which only sessions with users explain.
+- **A redesign is planned** on navigation and information architecture that users have never tested, so a card sort or tree test has to come first.
+- **Teams disagree about priorities** because no shared personas or journey maps exist to settle the argument.
+
+An outside team earns its fee when the users are hard to reach (clinicians, warehouse operators, finance admins), when the decision date comes sooner than a researcher hire, or when findings must stand apart from the people who designed the product. With a researcher on staff and a customer list you can contact, a small evaluative round in-house is often enough. If one of the five moments applies, write the decision sentence below before you call anyone.
 
 ## What decision should the research answer first?
 

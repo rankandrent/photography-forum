@@ -183,8 +183,12 @@
     {
       "h2": "UX research FAQs",
       "format": "faq",
-      "answer": "<strong>These answers cover the 5 questions buyers ask most about UX research services.</strong>",
+      "answer": "<strong>These six answers cover UX research services from research methods and participant counts to remote sessions, personas, startups and consulting.</strong>",
       "faqs": [
+        {
+          "q": "What is UX research consulting, and how does it differ from a full study?",
+          "a": "<p>UX research consulting, also called user research consulting, is senior advice on what your team needs to learn from users, without commissioning a full study. Our <a href=\"/services/ux-consulting-services/\">UX consulting services</a> give that guidance in 2–3 weeks for $5,000–$15,000 through a UX maturity assessment, a product and analytics review and a prioritized UX strategy roadmap.</p><p>A full UX design research study is the programme on this page: 4–8 weeks and $25,000–$60,000, in which our researchers recruit participants, run user interviews and contextual inquiry, and deliver personas, journey maps and a JTBD opportunity map. Start with consulting when you need a plan; commission the study when the plan needs new user evidence.</p>"
+        },
         {
           "q": "What is the difference between generative and evaluative research?",
           "a": "<p>Generative research finds user needs and opportunities before design, for example through user interviews. Evaluative research tests a design against user needs, for example through tree testing or usability testing.</p>"
@@ -195,7 +199,7 @@
         },
         {
           "q": "Can UX research be done remotely?",
-          "a": "<p>Yes. Remote UX research runs user interviews and card sorts over video calls and online tools, for example Zoom and Optimal Workshop; contextual inquiry needs on-site visits.</p>"
+          "a": "<p>Yes. Remote UX research runs user interviews and card sorts over video calls and online tools, for example Zoom and Optimal Workshop; contextual inquiry needs on-site visits. Bioscience and health teams that hire us as a remote-first <a href=\"/location/st-louis-ux-design-agency/\">St. Louis UX design agency</a> get sessions booked around lab and clinic hours.</p>"
         },
         {
           "q": "Does UX research include personas?",
