@@ -1,0 +1,86 @@
+{
+  "page": "/services/ux-audit-services/",
+  "file": "content/services/ux-audit-services.json",
+  "run": "Search Console run 2, page 2 of 2",
+  "date": "2026-10-22",
+  "keyword": "ux audit services",
+  "volume": 500,
+  "kd": 0,
+  "dataSource": "Ahrefs US (via orchestrator brief, 2026-10-22); GSC: position 60.8, 128 impressions",
+  "locked": "slug, metaTitle and og:title unchanged (RULES.md Keywords rule 6)",
+  "gscQueries": {
+    "ux audit services": "H1, hero eyebrow, hero sub (first words), abstract, include answer, hire H2/answer, FAQ intro, affordable FAQ",
+    "ui ux audit services / ui/ux audit services / ux ui audit service": "hero sub (\"also booked as a UI/UX audit\"), definition body (\"buyers ask for a UI UX audit; ours covers both\"), FAQ 'What is the difference between a UI audit and a UX audit?'",
+    "ux audit service": "covered by the singular forms in H2s ('What types of UX audit do we run?') and the hub's service intent; no forced singular string",
+    "user experience audit service(s)": "hero sub, definition body, types answer (\"Our user experience audit services cover 4 product types\")",
+    "ui/ux consulting and audit / ui ux consulting and audit": "FAQ 'Do you offer UI/UX consulting and audit work together?' (starts 'Yes.'; sequence matches the consulting hub's vs-audit answer)",
+    "ux audit agency / ux audit company / companies / website ux audit agency": "FAQ 'How do you choose a UX audit company?' (UX audit agency in last sentence); cost body link to /blog/ux-audit-agency-vs-freelancer/ (existing)",
+    "ux auditing services": "FAQ 'How do you choose a UX audit company?' first sentence",
+    "affordable ux audit services": "FAQ 'What do affordable UX audit services include?' (about.md 'Engagements start at $5,000 for a UX audit'; home.ts 45-minute UX audit session)",
+    "design audit services": "definition body ('a design audit of the product's usability')",
+    "ux audit services and solutions": "not forced as a literal string; the report section answers the intent (each finding pairs the problem with a recommended fix)"
+  },
+  "aiOverview": {
+    "shown": true,
+    "sources": [
+      "https://qubstudio.com/ux-audit-services/",
+      "https://artkai.io/services/user-experience-audit-service",
+      "https://lampa.dev/services/ui-ux-design/ux-audit",
+      "https://oddit.co/collections/ux-audit",
+      "https://www.cardinalpeak.com/product-design-services/user-experience-design-services/ux-audit-services",
+      "https://thedigitalmaze.com/web/ux-audit-services/"
+    ],
+    "extractedBy": "WebFetch of each source, 2026-10-22 (all 6 fetched; 2 YouTube results skipped). No wording copied.",
+    "entities": [
+      { "term": "heuristic evaluation / Jakob Nielsen's heuristics", "sources": "all 6", "coveredIn": "existing include item 1, process step 2; new H3 'Usability heuristics and UI consistency' (consistency and standards), IA H3 (match between the system and the real world), report body (error prevention)" },
+      { "term": "WCAG / W3C / accessibility", "sources": "artkai, cardinalpeak, digitalmaze, qubstudio", "coveredIn": "new H3 'Accessibility against WCAG 2.2' (W3C, Target Size (Minimum), Focus Not Obscured (Minimum)); existing include item 4, FAQ" },
+      { "term": "ADA / EAA (regulation)", "sources": "artkai", "coveredIn": "accessibility H3: WCAG 2.2 AA pass also meets WCAG 2.1 AA, referenced by DOJ 2024 ADA Title II rule and the European standard EN 301 549. The EAA is not named: EN 301 549 is the harmonised standard under the EU Web Accessibility Directive, and its EAA version was not confirmed, so tying it to the EAA would overstate" },
+      { "term": "Google Analytics 4 (GA4)", "sources": "digitalmaze", "coveredIn": "existing include item 2; new analytics H3" },
+      { "term": "usability testing", "sources": "artkai, lampa, digitalmaze, qubstudio", "coveredIn": "existing vs table + definition body; choose FAQ" },
+      { "term": "UI audit vs UX audit (UI consistency, typography, color, contrast, brand)", "sources": "lampa, qubstudio, cardinalpeak", "coveredIn": "new FAQ 'What is the difference between a UI audit and a UX audit?'; heuristics H3" },
+      { "term": "information architecture / navigation / content and messaging", "sources": "cardinalpeak, oddit, lampa, digitalmaze", "coveredIn": "new H3 'Information architecture, navigation and content'" },
+      { "term": "conversion / CRO / drop-off / friction points", "sources": "all", "coveredIn": "new analytics H3; existing benefits, include items" },
+      { "term": "design system / design debt", "sources": "cardinalpeak", "coveredIn": "heuristics H3 (design debt → design system services link)" },
+      { "term": "Core Web Vitals / page speed", "sources": "oddit, digitalmaze, cardinalpeak", "coveredIn": "new H3 'E-commerce UX audit' (defined; consistent with /blog/ecommerce-ux-audit/)" },
+      { "term": "A/B testing", "sources": "artkai, oddit", "coveredIn": "report section last sentence" },
+      { "term": "cognitive walkthrough, competitive benchmarking", "sources": "qubstudio, artkai, lampa, cardinalpeak", "coveredIn": "choose FAQ, as methods a buyer checks in a quote (not claimed as our deliverables; the hub does not list them)" },
+      { "term": "platforms: iOS, Android, web, SaaS, e-commerce", "sources": "cardinalpeak, artkai", "coveredIn": "new H2 'What types of UX audit do we run?' with 4 H3s; mobile H3 uses Apple HIG + Material Design 3 and 44×44 pt / 48×48 dp from ui-ux-design-services-for-startups.json" }
+    ],
+    "attributes": [
+      { "term": "what a UX audit checks", "coveredIn": "new H2 'What does a UX audit check?' (4 H3s)" },
+      { "term": "audit types", "coveredIn": "new H2 'What types of UX audit do we run?' (website, SaaS/web app, mobile app, e-commerce)" },
+      { "term": "deliverables / report contents (annotated screenshots, severity, impact, fix, roadmap, quick wins vs structural)", "coveredIn": "existing include list; new H2 'What does a UX audit report look like?' with an illustrative finding (labelled illustrative)" },
+      { "term": "timeline (competitors 2–4 weeks)", "coveredIn": "existing: ours 2–3 weeks, 10–15 working days" },
+      { "term": "price (competitors unpublished or $2,250–$20,000+)", "coveredIn": "existing cost section ($5,000–$15,000, 4 factors); new affordable FAQ (from $5,000, 45-minute UX audit session)" },
+      { "term": "UX audit vs usability testing", "coveredIn": "existing table section" },
+      { "term": "small products benefit too", "coveredIn": "existing FAQ 'Is a UX audit worth it for a small website?'" },
+      { "term": "process steps", "coveredIn": "existing 4-step process" }
+    ],
+    "questions": [
+      { "q": "What is a UX audit?", "coveredIn": "H2 1" },
+      { "q": "What does a UX audit include / what deliverables do we get?", "coveredIn": "include H2 + report H2" },
+      { "q": "How much does a UX audit cost?", "coveredIn": "cost H2" },
+      { "q": "How long does a UX audit take?", "coveredIn": "process H2 + FAQ" },
+      { "q": "What are the types of UX audit?", "coveredIn": "types H2" },
+      { "q": "Can an audit cover just one part of the product / is it only for large products?", "coveredIn": "FAQ small website + affordable FAQ (narrow scope)" },
+      { "q": "What are WCAG guidelines?", "coveredIn": "accessibility H3" },
+      { "q": "Why does my website need a UX audit?", "coveredIn": "benefits + when-to-hire H2s" }
+    ],
+    "notUsed": "Competitor prices, review counts, project counts, client names (e.g. Braxley Bands), named in-house frameworks (Pyramid of Product Greatness, UX Health Check tiers), tools we do not state (Jira, Miro, Calendly), customer journey maps and market reports as deliverables, and the unverified stats on lampa.dev (88% / 75% / load-time conversion figures)."
+  },
+  "paa": [
+    { "q": "How much does a UX audit cost?", "coveredIn": "H2 'How much does a UX audit cost?' ($5,000–$15,000, site price only) + affordable FAQ" },
+    { "q": "What are UX audits?", "coveredIn": "H2 'What is a UX audit?' (first sentence = definition)" },
+    { "q": "What does UX stand for?", "coveredIn": "new FAQ 'What does UX stand for?'" }
+  ],
+  "internalLinks": {
+    "/blog/ecommerce-ux-audit/": "moved from the definition body to the new 'E-commerce UX audit' H3 (one link per target)",
+    "/blog/ux-audit-agency-vs-freelancer/": "already linked in the cost body (fragment link); not repeated",
+    "/services/design-system-services/": "new, heuristics H3, anchor 'design system services' (existing site anchor)",
+    "/services/saas-ux-design/": "new, SaaS H3, anchor 'SaaS UX design' (existing site anchor)"
+  },
+  "conflicts": [
+    "Reviewer count: this hub says '2 designers' (process step 2) and '2 senior UX designers' (vs table); home.ts engagement card says '1–2 designers'. Left unchanged (hub wins per RULES concept-binding rule 5); owner or fact-checker to decide.",
+    "The consulting hub writer (run 2, page 1) also added a 'What does UX stand for?' FAQ; this page's answer is worded independently and adds the UI vs UX audit angle."
+  ]
+}

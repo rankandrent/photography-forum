@@ -8,7 +8,7 @@
   "hero": {
     "eyebrow": "UX audit services",
     "h1": "UX audit services that pinpoint where users struggle and why",
-    "sub": "A heuristic review, analytics deep-dive, and usability findings delivered as a prioritized fix list with effort estimates."
+    "sub": "Our UX audit services, also booked as a UI/UX audit or user experience audit, review your website, software-as-a-service (SaaS) product or mobile app and deliver a prioritized fix list with effort estimates."
   },
   "summary": "Heuristic review, analytics, and usability findings turned into a prioritized fix list.",
   "tags": [
@@ -21,7 +21,7 @@
     "ecommerce",
     "saas"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-22",
   "centralEntity": "UX audit",
   "sourceContext": "US UI/UX design agency; this page sells the UX audit engagement and books audit calls.",
   "priceRange": "$5,000–$15,000",
@@ -31,7 +31,31 @@
       "h2": "What is a UX audit?",
       "format": "paragraph",
       "answer": "<strong>A UX audit is an expert evaluation of a website or app that finds usability issues, explains their cause and ranks each fix by impact and effort.</strong> Senior designers run the review against usability heuristics, WCAG 2.2 accessibility criteria and product analytics.",
-      "body": "<p>A UX audit differs from <a href=\"/services/usability-testing-services/\">usability testing services</a> in one way: designers evaluate the product, not recruited users. The audit therefore finishes in 2–3 weeks and covers every key user flow, while a usability test covers 3–5 tasks in depth. A website UX audit and an app UX audit follow the same method; only the platform guidelines change. For online stores, our <a href=\"/blog/ecommerce-ux-audit/\">e-commerce UX audit checklist</a> shows the store-specific checks, from site search to guest checkout.</p>"
+      "body": "<p>Teams also call it a user experience audit or a design audit of the product's usability. When the review covers the user interface (UI) too, buyers ask for a UI UX audit; ours covers both. Designers inspect the product instead of watching recruited users, which separates it from <a href=\"/services/usability-testing-services/\">usability testing services</a>. A website UX audit and an app UX audit follow the same method; only the platform guidelines change.</p>"
+    },
+    {
+      "h2": "What does a UX audit check?",
+      "format": "paragraph",
+      "answer": "<strong>A UX audit checks 4 areas of a website or app: usability heuristics with UI consistency, accessibility, analytics and conversion, and information architecture with content.</strong>",
+      "body": "<p>Each area answers one question about your users: can they read the interface, can everyone operate it, where do they drop off, and can they find what they came for? Findings from all 4 areas are merged into one UX audit report, so a contrast failure and a funnel drop-off on the same screen become one recommended fix instead of two separate tickets.</p>",
+      "h3s": [
+        {
+          "h3": "Usability heuristics and UI consistency",
+          "body": "<p>Designers score each key flow against Jakob Nielsen's 10 usability heuristics. The heuristic \"consistency and standards\" covers the UI audit side: three button styles for one action, mixed date formats or an icon that changes meaning between screens. Repeated inconsistencies point to design debt, which <a href=\"/services/design-system-services/\">design system services</a> fix at the component level.</p>"
+        },
+        {
+          "h3": "Accessibility against WCAG 2.2",
+          "body": "<p>Audited screens are checked against WCAG 2.2 level AA from the World Wide Web Consortium (W3C), including the criteria version 2.2 added, such as Target Size (Minimum) and Focus Not Obscured (Minimum). A WCAG 2.2 AA pass also meets WCAG 2.1 AA, the level referenced by the US Department of Justice's 2024 Americans with Disabilities Act (ADA) Title II rule and by the European standard EN 301 549.</p>"
+        },
+        {
+          "h3": "Analytics, conversion and drop-off",
+          "body": "<p>Google Analytics 4 funnels show where users leave a sign-up, onboarding or checkout flow, and Hotjar or Microsoft Clarity recordings show what they did just before. Together they turn a drop-off number into a cause, for example a coupon field that sends shoppers off to search for codes. The cause, not the number, sets the conversion rate fix.</p>"
+        },
+        {
+          "h3": "Information architecture, navigation and content",
+          "body": "<p>The review follows the navigation labels, menu depth and page hierarchy users rely on, and reads key copy such as plan names, error messages and button labels. These are scored under the heuristic \"match between the system and the real world\", so a menu item named after an internal project code is a typical information architecture finding.</p>"
+        }
+      ]
     },
     {
       "h2": "What does a UX audit include?",
@@ -52,7 +76,7 @@
         },
         {
           "title": "Accessibility check.",
-          "body": "Audited screens are checked against WCAG 2.2 level AA, for example colour contrast of 4.5:1 for body text."
+          "body": "Audited screens are checked against WCAG 2.2 level AA, for example color contrast of 4.5:1 for body text."
         },
         {
           "title": "UX audit report.",
@@ -65,13 +89,37 @@
       ]
     },
     {
+      "h2": "What types of UX audit do we run?",
+      "format": "paragraph",
+      "answer": "<strong>Our user experience audit services cover 4 product types: a website UX audit, a SaaS or web app UX audit, a mobile app UX audit and an e-commerce UX audit.</strong>",
+      "body": "<p>The method stays the same for all 4 product types: heuristic evaluation, analytics review, accessibility check and a prioritized fix roadmap. What changes is the list of user flows, the platform guidelines and the data source. Kick-off therefore starts by naming the product type and its key flows, from 3–4 on a marketing website to 8–10 across a web app and mobile app.</p>",
+      "h3s": [
+        {
+          "h3": "Website UX audit",
+          "body": "<p>A website UX audit follows visitors from landing pages to the form or demo request that counts as a conversion. A typical scope covers 3–4 flows, such as the home page to a contact form and the pricing page to a demo request, which keeps the audit near the $5,000 end of the price range.</p>"
+        },
+        {
+          "h3": "SaaS and web app UX audit",
+          "body": "<p>A SaaS UX audit covers sign-up, onboarding and the core task flows for each user group, for example an admin who sets permissions and a member who does the daily work. Product analytics show where trial users stall before they reach value. Teams that redesign afterwards continue with <a href=\"/services/saas-ux-design/\">SaaS UX design</a>.</p>"
+        },
+        {
+          "h3": "Mobile app UX audit",
+          "body": "<p>A mobile app UX audit adds Apple's Human Interface Guidelines (HIG) for iOS and Material Design 3 for Android to the usability heuristics. Typical checks are hit targets of 44×44 pt on iOS and 48×48 dp on Android, gestures that conflict with system navigation and permission prompts that appear before users see the app's value.</p>"
+        },
+        {
+          "h3": "E-commerce UX audit",
+          "body": "<p>An e-commerce UX audit follows a shopper from site search and category pages to the product page, cart and guest checkout, and reads page speed from Core Web Vitals field data, Google's real-user metrics for loading, responsiveness and layout stability. Our <a href=\"/blog/ecommerce-ux-audit/\">e-commerce UX audit checklist</a> lists each store check and the data that flags it.</p>"
+        }
+      ]
+    },
+    {
       "h2": "How does the UX audit process work?",
       "format": "steps",
       "answer": "<strong>The UX audit process takes 2–3 weeks (10–15 working days) and runs in 4 steps</strong>, from kick-off to the roadmap handover.",
       "items": [
         {
           "title": "Kick-off and goals (1–2 days)",
-          "body": "We agree the user flows, user groups and metrics in scope, and receive analytics access."
+          "body": "We agree on the user flows, user groups and metrics in scope, and receive analytics access."
         },
         {
           "title": "Expert review (5–7 days)",
@@ -86,6 +134,12 @@
           "body": "We present the UX audit report in a 60-minute session and hand over the prioritized fix roadmap."
         }
       ]
+    },
+    {
+      "h2": "What does a UX audit report look like?",
+      "format": "paragraph",
+      "answer": "<strong>A UX audit report turns each usability issue into one evidenced finding, then sorts the findings into a fix roadmap with quick wins first.</strong>",
+      "body": "<p>An illustrative finding from a sign-up flow: password rules appear only after an error. The finding shows the screenshot, the broken heuristic (error prevention), a severity rating of 3 out of 4, the recommended fix (show the rules beside the field) and an effort estimate of 1 development day. High-traffic fixes can go to A/B testing before a full release.</p>"
     },
     {
       "h2": "What are the benefits of a UX audit?",
@@ -179,7 +233,7 @@
     {
       "h2": "UX audit FAQs",
       "format": "faq",
-      "answer": "<strong>These answers cover the 5 questions buyers ask most about UX audit services.</strong>",
+      "answer": "<strong>These 10 answers about UX audit services cover scope, accessibility, data access, reports, timing, entry price, UI vs UX audits, choosing a provider and consulting.</strong>",
       "faqs": [
         {
           "q": "Is a UX audit worth it for a small website?",
@@ -200,6 +254,26 @@
         {
           "q": "How long does a UX audit take?",
           "a": "<p>A UX audit takes 2–3 weeks, which equals 10–15 working days, from kick-off to the roadmap handover.</p>"
+        },
+        {
+          "q": "What does UX stand for?",
+          "a": "<p>UX stands for user experience: how easily a person finds, understands and completes tasks in a website or app, and how that feels. UI stands for user interface, the screens, controls and visual design the person touches, so a UX audit examines the whole journey while a UI review examines its visual layer.</p>"
+        },
+        {
+          "q": "What is the difference between a UI audit and a UX audit?",
+          "a": "<p>A UI audit reviews the visual layer: typography, color contrast, spacing and whether components look and behave the same on every screen. A UX audit reviews whether users complete their tasks, from navigation to error recovery. Our UI UX audit covers both, because the \"consistency and standards\" heuristic and the WCAG 2.2 contrast checks sit inside the same review.</p>"
+        },
+        {
+          "q": "What do affordable UX audit services include?",
+          "a": "<p>Affordable UX audit services start with a narrow scope: a single-platform website UX audit of 3–4 user flows costs about $5,000, the price at which our engagements start, and still includes the accessibility check and the fix roadmap. For a first look before you commit, book a 45-minute UX audit session; we review your product and identify its top three friction points.</p>"
+        },
+        {
+          "q": "How do you choose a UX audit company?",
+          "a": "<p>Compare UX auditing services on 3 points: the methods in the quote, how a finding is written and who reviews your product. A strong answer names the usability methods (heuristic evaluation, cognitive walkthrough, analytics review, competitive benchmarking or usability testing), shows findings with a severity rating and an effort estimate, and names senior designers. The same test applies to a UX audit agency, a product studio or a freelancer.</p>"
+        },
+        {
+          "q": "Do you offer UI/UX consulting and audit work together?",
+          "a": "<p>Yes. UI/UX consulting and audit work fit one sequence: start with the UX audit when the interface problem is already known, or with UX consulting when no UX plan exists. The audit's prioritized fix roadmap then gives the consulting work an evidence-based backlog for strategy, team process and design.</p>"
         }
       ]
     }
@@ -215,7 +289,14 @@
       "Microsoft Clarity",
       "conversion rate",
       "task success rate",
-      "usability testing"
+      "usability testing",
+      "user experience audit",
+      "UI UX audit",
+      "information architecture",
+      "Human Interface Guidelines",
+      "Material Design 3",
+      "Core Web Vitals",
+      "A/B testing"
     ],
     "ngrams": [
       "ux audit services",
@@ -223,7 +304,13 @@
       "website ux audit",
       "ux audit report",
       "ux audit checklist",
-      "heuristic evaluation"
+      "heuristic evaluation",
+      "ui ux audit",
+      "user experience audit",
+      "mobile app ux audit",
+      "saas ux audit",
+      "e-commerce ux audit",
+      "ux audit company"
     ],
     "skipgrams": [
       "audit … user experience",
@@ -252,6 +339,13 @@
     "Microsoft Clarity",
     "conversion rate",
     "task success rate",
-    "usability testing"
+    "usability testing",
+    "user experience audit",
+    "UI UX audit",
+    "information architecture",
+    "Human Interface Guidelines",
+    "Material Design 3",
+    "Core Web Vitals",
+    "A/B testing"
   ]
 }
