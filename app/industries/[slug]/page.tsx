@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Benefits, CardList, CtaBand, Faq, FinalCta, Resources, ServiceGrid } from "@/components/sections/Blocks";
@@ -103,6 +104,7 @@ export default async function IndustryPage({ params }: Props) {
         id="industry-services"
         eyebrow="Services"
         heading={h.services ?? `UI UX design services for ${lower(i.title)}`}
+        intro={<>We apply our core <Link href={routes.home}>UI UX design services</Link> to {lower(i.title)} products: user research, UX and UI design, design systems and usability testing.</>}
         services={services.length ? services : getServices().slice(0, 6)}
         allHref={routes.services}
         tone="light"

@@ -25,7 +25,7 @@ export default function LocationsHub() {
         tone="light"
         crumbs={[{ name: "Locations", path: routes.locations }]}
         eyebrow="Locations"
-        h1={<>UI UX design for product teams <em>across the US</em></>}
+        h1={<>UX design agency locations <em>across the US</em></>}
         sub="Senior researchers and designers working with teams in every major US tech market, remote-first with on-site workshops when the work needs it."
         stats={home.hero.stats}
       />

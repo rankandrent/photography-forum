@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { notFound } from "next/navigation";
@@ -79,6 +80,7 @@ export default async function LocationPage({ params }: Props) {
         id="location-services"
         eyebrow="Services"
         heading={`UI UX design services for ${l.city} teams`}
+        intro={<>{l.city} teams get the same <Link href={routes.home}>UI UX design services</Link> we offer across the US: user research, UX and UI design, design systems and usability testing, run remotely by senior designers.</>}
         services={services}
         allHref={routes.services}
       />

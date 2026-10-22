@@ -78,7 +78,7 @@ export function ServiceGrid({
   intro,
 }: {
   id?: string;
-  intro?: string;
+  intro?: ReactNode;
   eyebrow?: string;
   heading: string;
   services: Pick<Service, "slug" | "title" | "summary" | "tags" | "anchor">[];
@@ -108,7 +108,7 @@ export function ServiceGrid({
         </div>
         {allHref && (
           <div style={{ marginTop: 40 }}>
-            <Link href={allHref} className="btn btn--dark-outline">View all UI UX design services</Link>
+            <Link href={allHref} className="btn btn--dark-outline">See the full service catalog</Link>
           </div>
         )}
       </div>
