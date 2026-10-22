@@ -170,7 +170,7 @@
       "answer": "<strong>5 standards and regulations shape supply chain UX:</strong> OSHA forklift rules, FMCSA driver rules, GS1 barcodes, DSCSA and WCAG 2.2.",
       "items": [
         "Occupational Safety and Health Administration (OSHA) powered industrial truck standard (29 CFR 1910.178): forklift-mounted apps lock non-essential input while the truck moves.",
-        "Federal Motor Carrier Safety Administration (FMCSA) rules (49 CFR 392.80 and 392.82): driver apps block texting and handheld interaction while the vehicle moves.",
+        "Federal Motor Carrier Safety Administration (FMCSA) rules (49 CFR 392.80 and 392.82): drivers must not text or use a hand-held mobile phone while driving, including stops in traffic, so driver apps keep typing and handheld input out of the driving flow.",
         "GS1 barcode standards: scan flows accept GS1-128, GS1 DataMatrix and Serial Shipping Container Code (SSCC) labels and display parsed lot, expiry and serial fields.",
         "Drug Supply Chain Security Act (DSCSA): pharmaceutical warehouses verify product identifiers at receiving, so screens show serial-number checks and flag suspect product.",
         "Web Content Accessibility Guidelines (WCAG) 2.2 level AA: shipper and carrier portals meet 4.5:1 text contrast, and handheld targets exceed the 24×24 CSS pixel minimum."
@@ -183,7 +183,7 @@
       "faqs": [
         {
           "q": "Do you design transportation and logistics software?",
-          "a": "<p>Yes. Our supply chain UI UX design services cover transportation management system (TMS) software, fleet and yard apps and control-tower views for dispatch teams, for example a load board that flags tenders still waiting for carrier acceptance. Driver apps capture proof of delivery and block handheld interaction while the vehicle moves, as FMCSA rules require, and each logistics UX prototype is tested by operators on the real devices they use.</p>"
+          "a": "<p>Yes. Our supply chain UI UX design services cover transportation management system (TMS) software, fleet and yard apps and control-tower views for dispatch teams, for example a load board that flags tenders still waiting for carrier acceptance. Driver apps capture proof of delivery and keep typing and handheld phone use out of the driving flow, because FMCSA rules (49 CFR 392.80 and 392.82) bar commercial drivers from texting or using a hand-held mobile phone while driving, including stops in traffic. Each logistics UX prototype is tested by operators on the real devices they use.</p>"
         },
         {
           "q": "Do you design for Zebra and Honeywell handheld scanners?",

@@ -32,7 +32,7 @@ A product manager has a board meeting in six weeks, an onboarding redesign on th
 
 - **A new product starts** before anyone has interviewed target users, so the roadmap rests on guesses.
 - **The product enters a new market** whose users follow different workflows, so old findings stop applying.
-- **Feature adoption stays low** and analytics show the usage but not the reason, which only sessions with users explain.
+- **Feature adoption stays low** and analytics show the usage but not the reason, which sessions with users can explain.
 - **A redesign is planned** on navigation and information architecture that users have never tested, so a card sort or tree test has to come first.
 - **Teams disagree about priorities** because no shared personas or journey maps exist to settle the argument.
 

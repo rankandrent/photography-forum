@@ -80,7 +80,7 @@ export default async function LocationPage({ params }: Props) {
         id="location-services"
         eyebrow="Services"
         heading={`UI UX design services for ${l.city} teams`}
-        intro={<>{l.city} teams get the same <Link href={routes.home}>UI UX design services</Link> we offer across the US: user research, UX and UI design, design systems and usability testing, run remotely by senior designers.</>}
+        intro={<>These are the same <Link href={routes.home}>UI UX design services</Link> we deliver nationwide (user research, UX and UI design, design systems and usability testing), run remote-first by senior researchers and designers.</>}
         services={services}
         allHref={routes.services}
       />

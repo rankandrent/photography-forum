@@ -1,0 +1,123 @@
+{
+ "run": "GSC run 1",
+ "deployed": "2026-10-22",
+ "range": {
+  "startDate": "2026-09-21",
+  "endDate": "2026-10-18"
+ },
+ "note": "Positions before run 1; compare with the GSC pull 3-4 weeks after deploy.",
+ "queries": [
+  {
+   "query": "ui ux design services",
+   "clicks": 12,
+   "impressions": 746,
+   "ctr": 1.61,
+   "position": 52.3
+  },
+  {
+   "query": "ux design services",
+   "clicks": 2,
+   "impressions": 597,
+   "ctr": 0.34,
+   "position": 38.3
+  },
+  {
+   "query": "ecommerce ux design services",
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 68.7
+  },
+  {
+   "query": "phoenix ux agency",
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 6.9
+  },
+  {
+   "query": "st louis ux design agency",
+   "clicks": 0,
+   "impressions": 13,
+   "ctr": 0,
+   "position": 12.2
+  },
+  {
+   "query": "supply chain ui/ux design services",
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 20.6
+  },
+  {
+   "query": "transportation ui/ux design services",
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 20.5
+  },
+  {
+   "query": "ui ux design services for startups",
+   "clicks": 0,
+   "impressions": 21,
+   "ctr": 0,
+   "position": 74
+  },
+  {
+   "query": "ui/ux design services",
+   "clicks": 0,
+   "impressions": 291,
+   "ctr": 0,
+   "position": 52.6
+  },
+  {
+   "query": "user research consulting",
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 23.1
+  },
+  {
+   "query": "ux design agency silicon valley",
+   "clicks": 0,
+   "impressions": 42,
+   "ctr": 0,
+   "position": 13
+  },
+  {
+   "query": "ux designer services",
+   "clicks": 0,
+   "impressions": 15,
+   "ctr": 0,
+   "position": 34.9
+  },
+  {
+   "query": "ux research agency",
+   "clicks": 0,
+   "impressions": 20,
+   "ctr": 0,
+   "position": 35.4
+  },
+  {
+   "query": "ux research consulting",
+   "clicks": 0,
+   "impressions": 16,
+   "ctr": 0,
+   "position": 30.7
+  },
+  {
+   "query": "ux research services",
+   "clicks": 0,
+   "impressions": 109,
+   "ctr": 0,
+   "position": 18.3
+  },
+  {
+   "query": "when to hire a ux research agency",
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 17.5
+  }
+ ]
+}
