@@ -67,7 +67,7 @@
         },
         {
           "title": "Media sales packages.",
-          "body": "Sales teams package social media sales, such as Facebook marketing, and other campaign products as clear offers with goals attached, so a buyer knows what each package delivers."
+          "body": "For social media sales, sales teams package social campaigns, such as Facebook marketing, as clear offers with goals attached, so a buyer knows what each package delivers."
         },
         {
           "title": "Campaign reporting.",
@@ -98,15 +98,15 @@
         },
         {
           "title": "Internal teams and clients on one platform",
-          "body": "Order takers, sales teams and creative teams work inside the platform, while clients read audience engagement reports. Each of these user roles gets its own view and permission states, so a client never lands in the order screens."
+          "body": "On a media platform, order takers, sales teams and creative teams work inside the tool, while clients read audience engagement reports. Each of these user roles needs its own view and permission states, so clients open their reports, not the order screens."
         },
         {
           "title": "Audience data with personal information",
-          "body": "That platform's audience database holds verified personally identifiable information (PII), so screens show segments and reach instead of raw personal records, plus each segment's opt-out status. Customer relationship management (CRM) and customer data platform integrations stay with your engineers."
+          "body": "That platform's audience database holds verified personally identifiable information (PII). Screens for data like this need to show segments and reach instead of raw personal records, plus each segment's opt-out status. Customer relationship management (CRM) and customer data platform integrations stay with your engineers."
         },
         {
           "title": "Content at deadline speed",
-          "body": "Content marketers lose hours to trend research and to measuring performance across tools, the problem Vocable set out to solve. AI content tools with one editor, templates and built-in checks shorten that loop. Content platforms billed by subscription, known as software as a service (SaaS), follow patterns from our <a href=\"/industries/saas/\">SaaS UI UX design</a> work."
+          "body": "Content marketers lose hours to trend research and to measuring performance across tools, the problem Vocable set out to solve. AI content tools with one editor, templates and built-in checks shorten that loop. Content platforms delivered online as software as a service (SaaS) follow patterns from our <a href=\"/industries/saas/\">SaaS UI UX design</a> work."
         }
       ]
     },
@@ -129,7 +129,7 @@
       "items": [
         {
           "title": "Discovery and product strategy (5–10 days)",
-          "body": "A discovery workshop with stakeholders and users sets the user roles (order takers, sales teams, creative teams and clients), the core workflow and success metrics such as order processing time. Our roadmap guide explains <a href=\"/blog/ux-strategy-roadmap/#who-owns-the-roadmap-and-what-does-the-workshop-decide\">what the discovery workshop decides</a>."
+          "body": "A discovery workshop with stakeholders and users sets the user roles (order takers, sales teams, creative teams and clients), the core workflow and success metrics such as order processing time. Our discovery guide lists <a href=\"/blog/is-discovery-phase-worth-it/#what-does-a-discovery-phase-hand-to-your-designers\">what a discovery phase hands to your designers</a>."
         },
         {
           "title": "User research (5–15 days)",
@@ -145,14 +145,14 @@
         },
         {
           "title": "UI design and handoff (15–25 days)",
-          "body": "Every screen state is finished at the accessibility level of Web Content Accessibility Guidelines (WCAG) 2.2 level AA. The developer handoff gives your engineers annotated Figma files, design tokens and component specs, and the designers stay with them through launch."
+          "body": "Every screen state is finished to one accessibility level, Web Content Accessibility Guidelines (WCAG) 2.2 level AA. The developer handoff gives your engineers annotated Figma files, design tokens and component specs, and the designers stay with them through launch."
         }
       ]
     },
     {
       "h2": "Media UI/UX design vs ad creative design",
       "format": "table",
-      "answer": "<strong>Media UX design for ad sales and content tools decides how media and marketing teams take orders, run campaigns and report on audiences; ad creative design makes the ads audiences see.</strong> Graphic media design, the career sense of the term, sits on the creative side. The table sets the two disciplines side by side.",
+      "answer": "<strong>Media UX design for ad sales and content tools decides how media and marketing teams run orders, campaigns and audience reports; ad creative design makes the ads audiences see.</strong> Graphic media design, the career sense of the term, sits on the creative side. The table sets the two disciplines side by side.",
       "caption": "Comparison of media UI/UX design and ad creative design",
       "columns": [
         "Criterion",
@@ -196,14 +196,14 @@
       "h2": "How much do media UI/UX design services cost?",
       "format": "paragraph",
       "answer": "<strong>Media UI/UX design services cost media companies $60,000–$180,000 for a full media platform design across 8–16 weeks, or $25,000–$60,000 for a 4–8 week design sprint.</strong>",
-      "body": "<p>A full media platform design needs 3–6 designers, while a design sprint for one surface, such as the audience dashboard, needs 2–4. Four factors move the price: target platforms (web app and mobile app), user groups such as order takers and clients, core user flows such as order taking, and validation rounds. A UX audit of live media tools runs 2–3 weeks at $5,000–$15,000 with our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
+      "body": "<p>A full media platform design, with a reusable design system, needs 3–6 designers, while a design sprint for one surface, such as the audience dashboard, needs 2–4. Four factors move the price: target platforms (web app and mobile app), user groups such as order takers and clients, core user flows such as order taking, and validation rounds. A UX audit of live media tools runs 2–3 weeks at $5,000–$15,000 with our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
     },
     {
       "h2": "Which privacy and advertising standards shape media UI/UX design services?",
       "format": "list",
       "answer": "<strong>Four accessibility, privacy and advertising standards shape media platform design, and each one changes what media and marketing teams and their clients see on screen.</strong> Our designers apply them in the screens; legal sign-off and compliance remain your company's responsibility.",
       "items": [
-        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: 4.5:1 contrast for normal-size text, keyboard operation with a visible focus indicator, and, under success criterion 1.4.1, color is never the only way to convey information, so audience charts and campaign status also carry text labels.",
+        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: 4.5:1 contrast for normal-size text, keyboard operation with a visible focus indicator, and, under success criterion 1.4.1, color is never the only visual means of conveying information, so audience charts and campaign status also carry text labels.",
         "<a href=\"https://oag.ca.gov/privacy/ccpa\">California Consumer Privacy Act (CCPA)</a>: consumers can ask businesses to stop selling or sharing their personal information, including through a user-enabled <a href=\"https://globalprivacycontrol.org/\">Global Privacy Control</a> signal that covered businesses must honor, so audience data tools show privacy choices such as each segment's opt-out status and keep opted-out records out of campaign builds.",
         "<a href=\"https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses\">Federal Trade Commission (FTC)</a> guidance on native advertising: an ad must be identifiable as an ad, with the disclosure as close as possible to it, so sponsored content labels sit next to the content, in plain words, on every screen and template where it appears.",
         "<a href=\"https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business\">CAN-SPAM Act</a>: commercial email needs a clear way to opt out and a valid physical postal address, and opt-outs must be honored within 10 business days, so the email channel in order and campaign builders adds the unsubscribe line and sender details by default."
@@ -227,16 +227,16 @@
           "a": "<p>Yes. A 2–3 week UX audit of the live media tools comes first, with a heuristic evaluation, an analytics review and a WCAG 2.2 level AA check that end in a prioritized fix roadmap. A phased redesign then starts with the highest-traffic workflow, for example the order flow, and ships one workflow per release.</p>"
         },
         {
-          "q": "How long does a media design project take?",
+          "q": "How long does media platform design take?",
           "a": "<p>A UX audit of live media tools takes 2–3 weeks, and a design sprint for one surface, such as the audience dashboard, takes 4–8 weeks. A full media platform design takes 8–16 weeks, or 40–80 working days.</p>"
         },
         {
           "q": "Do you design reader or subscriber apps for media publishers?",
-          "a": "<p>Yes. Publishing UX design for reader apps, subscription flows and video or audio players runs on the same 5-step process in our <a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>. None of that is published work yet: our media case study is an order, campaign and reporting platform for a marketing services company, whose scope covered web and mobile app design, and we list no reader app, paywall or newsroom tool among our projects.</p>"
+          "a": "<p>Yes. Publishing UX design for reader apps, subscription flows and video or audio players runs through our <a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>, a 5-step process of 4–8 weeks. None of that is published work yet: our media case study is an order, campaign and reporting platform for a marketing services company, whose scope covered web and mobile app design, and we list no reader app, paywall or newsroom tool among our projects.</p>"
         },
         {
           "q": "Can better UX design increase audience engagement on a media platform?",
-          "a": "<p>Yes, as one factor among several. The marketing platform in our media case study reports a 53% increase in audience engagement alongside a 30% increase in order processing efficiency. Data, campaigns and client support shaped those results too, so we never credit audience engagement or monetization gains to design alone.</p>"
+          "a": "<p>Yes, as one factor among several. The marketing platform in our media case study reports a 53% increase in audience engagement alongside a 30% increase in order processing efficiency. The platform also brought advanced data analytics, real-time performance tracking and dedicated client support, so we never credit audience engagement or monetization gains to design alone.</p>"
         }
       ]
     }

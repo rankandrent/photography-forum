@@ -90,6 +90,24 @@
           "slug": "how-to-design-an-mvp"
         }
       ]
+    },
+    {
+      "date": "2026-10-22",
+      "goal": "daily rotation INDUSTRY day: 1 new industry page",
+      "jobs": [
+        {
+          "type": "industry",
+          "slug": "media",
+          "keyword": "media ui/ux design services",
+          "volume": 40,
+          "dataSource": "Ahrefs API v3, US, 2026-10-22; GSC 5 impressions 2026-09-21..10-18",
+          "proof": [
+            "mass-media-co",
+            "vocable"
+          ],
+          "notes": "Ahrefs had no SERP (no AI Overview/PAA data) for this keyword; competitor page-1 questions used. QA PASS (suitability PASS, overlap edtech 2.86%, gaming 1.81%); fact-check F1-F7 applied by QA. Backlink: digital-product-design-services definition. Open owner items: hero logo NBCUniversal on a media page; Vocable media tag; design-and-development conflict."
+        }
+      ]
     }
   ],
   "posts": [
