@@ -19,7 +19,7 @@
     "ux consultants": "checklist answer (\"compare UX consultants\"), checklist item 6, FAQ \"What does a UX consultant do?\"",
     "ui ux consultant(s)": "checklist item 2 (\"a good UI UX consultant\")",
     "ux strategy and consulting": "types card 1 title (\"UX strategy and consulting for a live product\")",
-    "ui ux consulting and audit": "FAQ \"Is UX consulting different from a UX audit?\" last sentence"
+    "ui ux consulting and audit": "owned by /services/ux-audit-services/ (GSC ranks only the audit page for it; QA run 2) - do not add the exact phrase here"
   },
   "aiOverview": {
     "shown": true,

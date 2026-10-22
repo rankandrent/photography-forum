@@ -31,13 +31,13 @@
       "h2": "What is a UX audit?",
       "format": "paragraph",
       "answer": "<strong>A UX audit is an expert evaluation of a website or app that finds usability issues, explains their cause and ranks each fix by impact and effort.</strong> Senior designers run the review against usability heuristics, WCAG 2.2 accessibility criteria and product analytics.",
-      "body": "<p>Teams also call it a user experience audit or a design audit of the product's usability. When the review covers the user interface (UI) too, buyers ask for a UI UX audit; ours covers both. Designers inspect the product instead of watching recruited users, which separates it from <a href=\"/services/usability-testing-services/\">usability testing services</a>. A website UX audit and an app UX audit follow the same method; only the platform guidelines change.</p>"
+      "body": "<p>Teams also call it a user experience audit or a design audit of the product's usability. When the review covers the user interface (UI) too, buyers ask for a UI UX audit; ours covers both. Designers inspect the product instead of watching recruited users, which separates it from <a href=\"/services/usability-testing-services/\">usability testing services</a>. A website UX audit and an app UX audit follow the same method with different user flows, platform guidelines and data sources.</p>"
     },
     {
       "h2": "What does a UX audit check?",
       "format": "paragraph",
       "answer": "<strong>A UX audit checks 4 areas of a website or app: usability heuristics with UI consistency, accessibility, analytics and conversion, and information architecture with content.</strong>",
-      "body": "<p>Each area answers one question about your users: can they read the interface, can everyone operate it, where do they drop off, and can they find what they came for? Findings from all 4 areas are merged into one UX audit report, so a contrast failure and a funnel drop-off on the same screen become one recommended fix instead of two separate tickets.</p>",
+      "body": "<p>Each area answers one question about your users: can they understand and use the interface, can everyone operate it, where do they drop off, and can they find what they came for? Findings from all 4 areas are merged into one UX audit report, so when a contrast failure explains a funnel drop-off on the same screen, the report gives one recommended fix instead of two separate tickets.</p>",
       "h3s": [
         {
           "h3": "Usability heuristics and UI consistency",
@@ -45,7 +45,7 @@
         },
         {
           "h3": "Accessibility against WCAG 2.2",
-          "body": "<p>Audited screens are checked against WCAG 2.2 level AA from the World Wide Web Consortium (W3C), including the criteria version 2.2 added, such as Target Size (Minimum) and Focus Not Obscured (Minimum). A WCAG 2.2 AA pass also meets WCAG 2.1 AA, the level referenced by the US Department of Justice's 2024 Americans with Disabilities Act (ADA) Title II rule and by the European standard EN 301 549.</p>"
+          "body": "<p>Audited screens are checked against WCAG 2.2 level AA from the World Wide Web Consortium (W3C), including the criteria version 2.2 added, such as Target Size (Minimum) and Focus Not Obscured (Minimum). A WCAG 2.2 AA pass also meets WCAG 2.1 AA, the level the US Department of Justice's 2024 Americans with Disabilities Act (ADA) Title II rule adopts. The European standard EN 301 549 moved to WCAG 2.2 AA in version 4.1.1, published in September 2026.</p>"
         },
         {
           "h3": "Analytics, conversion and drop-off",
@@ -123,7 +123,7 @@
         },
         {
           "title": "Expert review (5–7 days)",
-          "body": "2 designers run the heuristic evaluation, analytics review, session-recording review and accessibility check independently."
+          "body": "1–2 designers run the heuristic evaluation, analytics review, session-recording review and accessibility check; on a two-designer audit, each reviewer works independently."
         },
         {
           "title": "Synthesis and scoring (2–4 days)",
@@ -177,7 +177,7 @@
       "rows": [
         [
           "Who evaluates",
-          "2 senior UX designers",
+          "1–2 senior UX designers",
           "5–8 recruited users per round"
         ],
         [
@@ -216,7 +216,7 @@
       "h2": "How much does a UX audit cost?",
       "format": "paragraph",
       "answer": "<strong>A UX audit costs $5,000–$15,000 and takes 2–3 weeks.</strong> The price depends on 4 factors: the number of user flows, the number of platforms, the number of user groups and the depth of the accessibility check.",
-      "body": "<p>A single-platform website UX audit with 3–4 flows sits near $5,000. A web app and mobile app audit with 8–10 flows, 2 user groups and a full WCAG 2.2 AA check sits near $15,000. Teams that need the fixes designed afterwards continue with <a href=\"/services/ux-consulting-services/\">UX consulting services</a> or a design sprint. Comparing this with a freelancer's or an AI tool's quote? Send each provider <a href=\"/blog/ux-audit-agency-vs-freelancer/#what-should-you-send-before-asking-for-a-quote\">the six scope inputs that make UX audit quotes comparable</a>.</p>"
+      "body": "<p>A single-platform website UX audit with 3–4 flows sits near $5,000. A web app and mobile app audit with 8–10 flows, 2 user groups and a full WCAG 2.2 AA check sits near $15,000. Fixes that need designing continue in a design sprint, and a UX strategy beyond the fixes comes from <a href=\"/services/ux-consulting-services/\">UX consulting services</a>. Comparing this with a freelancer's or an artificial intelligence (AI) tool's quote? Send each provider <a href=\"/blog/ux-audit-agency-vs-freelancer/#what-should-you-send-before-asking-for-a-quote\">the six scope inputs that make UX audit quotes comparable</a>.</p>"
     },
     {
       "h2": "When should a company hire UX audit services?",
@@ -257,7 +257,7 @@
         },
         {
           "q": "What does UX stand for?",
-          "a": "<p>UX stands for user experience: how easily a person finds, understands and completes tasks in a website or app, and how that feels. UI stands for user interface, the screens, controls and visual design the person touches, so a UX audit examines the whole journey while a UI review examines its visual layer.</p>"
+          "a": "<p>UX stands for user experience: how easily a person finds, understands and completes tasks in a website or app, and how that feels. A UX audit measures that ease: it finds where users of your website or app hesitate, make errors or give up, and explains why.</p>"
         },
         {
           "q": "What is the difference between a UI audit and a UX audit?",
@@ -269,7 +269,7 @@
         },
         {
           "q": "How do you choose a UX audit company?",
-          "a": "<p>Compare UX auditing services on 3 points: the methods in the quote, how a finding is written and who reviews your product. A strong answer names the usability methods (heuristic evaluation, cognitive walkthrough, analytics review, competitive benchmarking or usability testing), shows findings with a severity rating and an effort estimate, and names senior designers. The same test applies to a UX audit agency, a product studio or a freelancer.</p>"
+          "a": "<p>Compare UX auditing services on 3 points: the methods in the quote, how a finding is written and who reviews your product. A strong quote names the usability methods (heuristic evaluation, cognitive walkthrough, analytics review, competitive benchmarking or usability testing), shows findings with a severity rating and an effort estimate, and names senior designers. The same test applies to a UX audit agency, a product studio or a freelancer.</p>"
         },
         {
           "q": "Do you offer UI/UX consulting and audit work together?",
