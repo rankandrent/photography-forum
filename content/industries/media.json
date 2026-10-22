@@ -1,0 +1,332 @@
+{
+  "title": "Media",
+  "order": 9,
+  "metaTitle": "Media UI/UX Design Services | Ad Sales & Content Platforms",
+  "metaDescription": "Media UI/UX design services for ad sales, marketing and content teams: order management, campaign reports, audience dashboards. Book a free consultation.",
+  "hero": {
+    "eyebrow": "Media UI/UX design",
+    "h1": "Media UI/UX design services for ad sales, campaign and content platforms",
+    "sub": "Our media UI/UX design services shape the tools media and marketing teams open every working day, from order management and media sales packages to campaign reporting, audience dashboards and content workflow. A single senior team carries a media platform from the discovery workshop to tested Figma designs your developers can build."
+  },
+  "summary": "UI and UX design for media and marketing companies: order management, campaign reporting, audience dashboards and content workflow tools.",
+  "intro": "We design the logged-in tools media and marketing teams depend on, from order taking and campaign sales to audience reports and content workflow, and test them with the people who use them before engineering starts.",
+  "bullets": [
+    "Join order taking, campaign sales and reports in one platform",
+    "Design order management that shows the estimated cost as the order grows",
+    "Turn audience data into role-based dashboards and client reports",
+    "Map the content lifecycle from idea to publishing in one workflow",
+    "Hand annotated Figma files, design tokens and component specs to your engineers"
+  ],
+  "updated": "2026-10-22",
+  "anchor": "media UI/UX design services",
+  "keywords": [
+    "media UX design",
+    "UI UX design for media companies",
+    "media platform design",
+    "media UI UX design agency",
+    "marketing platform UX design"
+  ],
+  "centralEntity": "media UI/UX design services",
+  "sourceContext": "US UI/UX design agency; this industry page serves media and marketing companies (media sales and ad sales teams, marketing services firms, agencies and content platforms) that need the UI and UX of their logged-in tools designed and tested, while their own engineers build them.",
+  "priceRange": "$60,000–$180,000",
+  "abstract": "Media UI/UX design services cover the user experience (UX) and user interface (UI) of the logged-in tools media companies sell and report with: order management, campaign reporting, audience dashboards and content workflow. The work sits inside our digital product design services. A full media platform design project takes 8–16 weeks at $60,000–$180,000, and your engineers build from the tested Figma files.",
+  "stats": [
+    {
+      "value": "30%",
+      "label": "increase in order processing efficiency for Mass Media Co."
+    },
+    {
+      "value": "35%",
+      "label": "increase in overall workflow efficiency for Vocable"
+    },
+    {
+      "value": "200+",
+      "label": "products designed since 2017"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "What are media UI/UX design services?",
+      "format": "paragraph",
+      "answer": "<strong>Media UI/UX design services shape how media and marketing teams move orders, campaigns and content through their workflow, and design the screens those teams and their clients use.</strong>",
+      "body": "<p>UI UX design for media companies covers the logged-in tools behind the campaigns, not the ad creative. It sits under our <a href=\"/services/digital-product-design-services/\">digital product design services</a>, run by the senior team that delivers our <a href=\"/\">UI UX design services</a>. We hand over annotated Figma files, design tokens and component specs, and the code stays with your engineers. The image shows the platform we designed for Mass Media Co.</p>",
+      "image": {
+        "src": "/work/mass-media-co/cover.webp",
+        "alt": "Mass Media Co. platform screens: campaign planning, a reach report, an audience chart, a product table and a 250M audience figure",
+        "caption": "The Mass Media Co. platform"
+      }
+    },
+    {
+      "h2": "Which media platform screens do our media UI/UX design services cover?",
+      "format": "list",
+      "answer": "<strong>Media platform design covers 6 parts of the tools media companies run on, with every screen drawn in its empty, loading, error, default and completed states.</strong>",
+      "items": [
+        {
+          "title": "Order management.",
+          "body": "Order takers build a media order from data products, digital channels and data processing services, with the estimated cost shown as the order grows. Our <a href=\"/services/web-app-design-services/\">web app design services</a> cover such logged-in tools, including data tables, filters and permission states."
+        },
+        {
+          "title": "Media sales packages.",
+          "body": "Sales teams package social media sales, such as Facebook marketing, and other campaign products as clear offers with goals attached, so a buyer knows what each package delivers."
+        },
+        {
+          "title": "Campaign reporting.",
+          "body": "Campaign sales show revenue, cost, total and order count at a glance, and client-facing audience engagement reports break campaign reach down by device, age group and media channel."
+        },
+        {
+          "title": "Audience dashboards.",
+          "body": "Role-based views turn audience data and audience segmentation into dashboard metrics, 5–7 per view with a drill-down path, the pattern our <a href=\"/services/dashboard-ux-design/\">dashboard UX design</a> work follows."
+        },
+        {
+          "title": "Content workflow.",
+          "body": "The content lifecycle runs from idea to publishing in one place, with content templates, artificial intelligence (AI) writing help and an editor that shows a content score and readability checks, as on Vocable."
+        },
+        {
+          "title": "Task management.",
+          "body": "Every creative task carries an owner, a due date and its progress, and a task management dashboard shows sales operations, open tasks and task flow by client."
+        }
+      ]
+    },
+    {
+      "h2": "What makes UX design for media companies different?",
+      "format": "cards",
+      "answer": "<strong>UI UX design for media companies has to join tools that grew up separately, serve internal teams and their clients in one workflow, and handle audience data with care.</strong>",
+      "items": [
+        {
+          "title": "Disconnected systems",
+          "body": "On the marketing services platform in our case study below, order takers moved between separate systems to fulfill one customer order, and the process would not scale. The answer was one order workflow, not a new look for each tool."
+        },
+        {
+          "title": "Internal teams and clients on one platform",
+          "body": "Order takers, sales teams and creative teams work inside the platform, while clients read audience engagement reports. Each of these user roles gets its own view and permission states, so a client never lands in the order screens."
+        },
+        {
+          "title": "Audience data with personal information",
+          "body": "That platform's audience database holds verified personally identifiable information (PII), so screens show segments and reach instead of raw personal records, plus each segment's opt-out status. Customer relationship management (CRM) and customer data platform integrations stay with your engineers."
+        },
+        {
+          "title": "Content at deadline speed",
+          "body": "Content marketers lose hours to trend research and to measuring performance across tools, the problem Vocable set out to solve. AI content tools with one editor, templates and built-in checks shorten that loop. Content platforms billed by subscription, known as software as a service (SaaS), follow patterns from our <a href=\"/industries/saas/\">SaaS UI UX design</a> work."
+        }
+      ]
+    },
+    {
+      "h2": "What did media UI/UX design deliver for Mass Media Co.?",
+      "format": "paragraph",
+      "answer": "<strong>For Mass Media Co., media UI/UX design defined one omnichannel platform and order workflow in place of separate systems, and the company reports a 30% increase in order processing efficiency.</strong>",
+      "body": "<p>The company sells data-driven digital marketing services. Scope: \"product revamp, user interviews, information architecture (IA), UI and UX design, and web and mobile app design.\" After a discovery workshop with stakeholders and users, the platform took shape around five experiences: social media sales, campaign sales creation, audience engagement reports, task management, and product and order management. It also reports a \"53% increase in audience engagement.\" Read the <a href=\"/case-studies/mass-media-co/\">Mass Media Co. case study</a>.</p>"
+    },
+    {
+      "h2": "How did content platform design work for Vocable?",
+      "format": "paragraph",
+      "answer": "<strong>For an AI content marketing platform, marketing platform UX design took Vocable from idea to minimum viable product (MVP), and it reports a 35% increase in overall workflow efficiency.</strong>",
+      "body": "<p>This client is a content platform, not a media company. Scope: \"idea to product, stakeholder interviews, MVP launch strategy, UI and UX design, web app, and product enhancements.\" Stakeholder interviews mapped the creator journey: planning, drafting, optimizing and publishing. Writers switch between AI models from OpenAI, Google, Anthropic and Meta in one editor. The platform reports a \"20% improvement in content quality and consistency.\" Read the <a href=\"/case-studies/vocable/\">Vocable case study</a>.</p>"
+    },
+    {
+      "h2": "Which steps does media UI/UX design follow?",
+      "format": "steps",
+      "answer": "<strong>Media platform design runs in 5 steps over 8–16 weeks (40–80 working days), from the discovery workshop to developer handoff, around the workflow your media and marketing teams follow.</strong>",
+      "items": [
+        {
+          "title": "Discovery and product strategy (5–10 days)",
+          "body": "A discovery workshop with stakeholders and users sets the user roles (order takers, sales teams, creative teams and clients), the core workflow and success metrics such as order processing time. Our roadmap guide explains <a href=\"/blog/ux-strategy-roadmap/#who-owns-the-roadmap-and-what-does-the-workshop-decide\">what the discovery workshop decides</a>."
+        },
+        {
+          "title": "User research (5–15 days)",
+          "body": "Researchers talk to 5–8 users per user group, such as order takers and sales teams, and the user interviews show where orders, campaigns and audience reports break between tools. Our <a href=\"/services/ux-research-services/\">UX research services</a> run this step."
+        },
+        {
+          "title": "Information architecture and flows (5–10 days)",
+          "body": "Designers build the sitemap and user-flow diagrams for products, orders, campaigns and audience reports, including the order flow and the content workflow, ahead of the first screen."
+        },
+        {
+          "title": "Prototype and validation (10–20 days)",
+          "body": "Prototype rounds are usability testing on a clickable Figma prototype: 5 users per round complete tasks on Maze, such as building a media order, and each round ends with a System Usability Scale (SUS) score."
+        },
+        {
+          "title": "UI design and handoff (15–25 days)",
+          "body": "Every screen state is finished at the accessibility level of Web Content Accessibility Guidelines (WCAG) 2.2 level AA. The developer handoff gives your engineers annotated Figma files, design tokens and component specs, and the designers stay with them through launch."
+        }
+      ]
+    },
+    {
+      "h2": "Media UI/UX design vs ad creative design",
+      "format": "table",
+      "answer": "<strong>Media UX design for ad sales and content tools decides how media and marketing teams take orders, run campaigns and report on audiences; ad creative design makes the ads audiences see.</strong> Graphic media design, the career sense of the term, sits on the creative side. The table sets the two disciplines side by side.",
+      "caption": "Comparison of media UI/UX design and ad creative design",
+      "columns": [
+        "Criterion",
+        "Media UI/UX design",
+        "Ad creative design"
+      ],
+      "rows": [
+        [
+          "Main question",
+          "How do teams take orders, sell campaigns and report on audiences in one platform?",
+          "What should the ad or brand asset look and sound like?"
+        ],
+        [
+          "Users",
+          "Order takers, sales teams, creative teams and clients",
+          "The audience that sees the ad"
+        ],
+        [
+          "Outputs",
+          "User flows, wireframes, a clickable Figma prototype, UI screens and component specs",
+          "Ad units, banners, video spots and brand assets"
+        ],
+        [
+          "Validation",
+          "5 users per round complete tasks in a Maze prototype test",
+          "Campaign metrics such as click-through rate"
+        ],
+        [
+          "When to hire",
+          "Orders, campaigns or audience reports are slow or error-prone across separate tools",
+          "A marketing campaign needs new creative"
+        ],
+        [
+          "Who does it",
+          "Our senior designers, as for the marketing services platform above",
+          "Your creative team or ad agency; we do not produce ad campaigns"
+        ]
+      ]
+    },
+    {
+      "h2": "How much do media UI/UX design services cost?",
+      "format": "paragraph",
+      "answer": "<strong>Media UI/UX design services cost media companies $60,000–$180,000 for a full media platform design across 8–16 weeks, or $25,000–$60,000 for a 4–8 week design sprint.</strong>",
+      "body": "<p>A full media platform design needs 3–6 designers, while a design sprint for one surface, such as the audience dashboard, needs 2–4. Four factors move the price: target platforms (web app and mobile app), user groups such as order takers and clients, core user flows such as order taking, and validation rounds. A UX audit of live media tools runs 2–3 weeks at $5,000–$15,000 with our <a href=\"/services/ux-audit-services/\">UX audit services</a>.</p>"
+    },
+    {
+      "h2": "Which privacy and advertising standards shape media UI/UX design services?",
+      "format": "list",
+      "answer": "<strong>Four accessibility, privacy and advertising standards shape media platform design, and each one changes what media and marketing teams and their clients see on screen.</strong> Our designers apply them in the screens; legal sign-off and compliance remain your company's responsibility.",
+      "items": [
+        "<a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a> level AA: 4.5:1 contrast for normal-size text, keyboard operation with a visible focus indicator, and, under success criterion 1.4.1, color is never the only way to convey information, so audience charts and campaign status also carry text labels.",
+        "<a href=\"https://oag.ca.gov/privacy/ccpa\">California Consumer Privacy Act (CCPA)</a>: consumers can ask businesses to stop selling or sharing their personal information, including through a user-enabled <a href=\"https://globalprivacycontrol.org/\">Global Privacy Control</a> signal that covered businesses must honor, so audience data tools show privacy choices such as each segment's opt-out status and keep opted-out records out of campaign builds.",
+        "<a href=\"https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses\">Federal Trade Commission (FTC)</a> guidance on native advertising: an ad must be identifiable as an ad, with the disclosure as close as possible to it, so sponsored content labels sit next to the content, in plain words, on every screen and template where it appears.",
+        "<a href=\"https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business\">CAN-SPAM Act</a>: commercial email needs a clear way to opt out and a valid physical postal address, and opt-outs must be honored within 10 business days, so the email channel in order and campaign builders adds the unsubscribe line and sender details by default."
+      ]
+    },
+    {
+      "h2": "FAQs about media UI/UX design services",
+      "format": "faq",
+      "answer": "<strong>Six answers help media companies judge a media UI UX design agency before work starts: past media work, code, live redesigns, timing, reader apps and audience engagement.</strong>",
+      "faqs": [
+        {
+          "q": "Have you designed software for a media company?",
+          "a": "<p>Yes. For <a href=\"/case-studies/mass-media-co/\">Mass Media Co.</a>, a data-driven digital marketing services company, we designed one omnichannel platform for social media sales, campaign sales, audience reports, task management and order taking in place of separate systems. It is our one published media project, and Vocable, a content marketing platform, is the closest related work.</p>"
+        },
+        {
+          "q": "Do you build the platform or write the code?",
+          "a": "<p>No. We stop at design, and your developers build the platform, including ad-tech, CRM and data integrations, from the annotated Figma files, design tokens and component specs we hand over. Our designers stay available to them through launch.</p>"
+        },
+        {
+          "q": "Can you redesign media tools that are already in use?",
+          "a": "<p>Yes. A 2–3 week UX audit of the live media tools comes first, with a heuristic evaluation, an analytics review and a WCAG 2.2 level AA check that end in a prioritized fix roadmap. A phased redesign then starts with the highest-traffic workflow, for example the order flow, and ships one workflow per release.</p>"
+        },
+        {
+          "q": "How long does a media design project take?",
+          "a": "<p>A UX audit of live media tools takes 2–3 weeks, and a design sprint for one surface, such as the audience dashboard, takes 4–8 weeks. A full media platform design takes 8–16 weeks, or 40–80 working days.</p>"
+        },
+        {
+          "q": "Do you design reader or subscriber apps for media publishers?",
+          "a": "<p>Yes. Publishing UX design for reader apps, subscription flows and video or audio players runs on the same 5-step process in our <a href=\"/services/mobile-app-ui-ux-design-services/\">mobile app UI UX design services</a>. None of that is published work yet: our media case study is an order, campaign and reporting platform for a marketing services company, whose scope covered web and mobile app design, and we list no reader app, paywall or newsroom tool among our projects.</p>"
+        },
+        {
+          "q": "Can better UX design increase audience engagement on a media platform?",
+          "a": "<p>Yes, as one factor among several. The marketing platform in our media case study reports a 53% increase in audience engagement alongside a 30% increase in order processing efficiency. Data, campaigns and client support shaped those results too, so we never credit audience engagement or monetization gains to design alone.</p>"
+        }
+      ]
+    }
+  ],
+  "semantic": {
+    "entities": [
+      "Mass Media Co.",
+      "Vocable",
+      "order management",
+      "order takers",
+      "social media sales",
+      "campaign sales",
+      "audience engagement reports",
+      "audience segmentation",
+      "task management dashboard",
+      "omnichannel platform",
+      "personally identifiable information (PII)",
+      "content lifecycle",
+      "content score",
+      "content templates",
+      "AI models",
+      "discovery workshop",
+      "user interviews",
+      "Figma",
+      "Maze",
+      "Web Content Accessibility Guidelines (WCAG)",
+      "California Consumer Privacy Act (CCPA)",
+      "Global Privacy Control",
+      "Federal Trade Commission (FTC)",
+      "native advertising",
+      "CAN-SPAM Act"
+    ],
+    "ngrams": [
+      "media ui/ux design services",
+      "order management",
+      "audience engagement reports",
+      "content lifecycle",
+      "sponsored content labels",
+      "component specs"
+    ],
+    "skipgrams": [
+      "order takers … systems",
+      "audience data … opt-out",
+      "figma … engineers",
+      "sponsored content … native advertising"
+    ],
+    "nlpKeywords": [
+      "media companies",
+      "media and marketing teams",
+      "order workflow",
+      "campaign reporting",
+      "audience dashboards",
+      "developer handoff",
+      "user roles",
+      "screen state"
+    ]
+  },
+  "mentions": [
+    "Mass Media Co.",
+    "Vocable",
+    "order management",
+    "order takers",
+    "social media sales",
+    "campaign sales",
+    "audience engagement reports",
+    "audience segmentation",
+    "task management dashboard",
+    "omnichannel platform",
+    "personally identifiable information (PII)",
+    "content lifecycle",
+    "content score",
+    "content templates",
+    "AI models",
+    "discovery workshop",
+    "user interviews",
+    "Figma",
+    "Maze",
+    "Web Content Accessibility Guidelines (WCAG)",
+    "California Consumer Privacy Act (CCPA)",
+    "Global Privacy Control",
+    "Federal Trade Commission (FTC)",
+    "native advertising",
+    "CAN-SPAM Act"
+  ],
+  "relatedServices": [
+    "digital-product-design-services",
+    "web-app-design-services",
+    "dashboard-ux-design",
+    "ux-research-services",
+    "mobile-app-ui-ux-design-services",
+    "ux-audit-services"
+  ]
+}

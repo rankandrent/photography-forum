@@ -6,7 +6,7 @@ client: Vocable
 logo: Vocable
 result: "35% increase in overall workflow efficiency"
 services: [saas-ux-design, digital-product-design-services, web-app-design-services, ux-research-services]
-industries: [saas]
+industries: [saas, media]
 tags: [AI, SaaS, Content marketing]
 results:
   - { value: "35%", label: "increase in overall workflow efficiency" }

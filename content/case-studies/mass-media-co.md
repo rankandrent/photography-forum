@@ -6,7 +6,7 @@ client: Mass Media Co.
 logo: Mass Media Co.
 result: "30% increase in order processing efficiency"
 services: [digital-product-design-services, web-app-design-services, dashboard-ux-design, mobile-app-ui-ux-design-services, ux-research-services]
-industries: []
+industries: [media]
 tags: [Marketing technology, B2B platform, Web & mobile]
 results:
   - { value: "30%", label: "increase in order processing efficiency" }

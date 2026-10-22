@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T15:06:10.158Z",
+ "generated": "2026-10-22T05:09:31.267Z",
  "pages": [
   {
    "type": "blog",
@@ -319,7 +319,7 @@
    "failed": [],
    "title": "UI UX Design Case Studies | Our Work & Results",
    "h1": "Products we designed, and the results they drove",
-   "words": 313
+   "words": 314
   },
   {
    "type": "content",
@@ -329,7 +329,7 @@
    "failed": [],
    "title": "Mass Media Co. Case Study | B2B Marketing Platform UX",
    "h1": "Mass Media Co., an all-in-one B2B marketing platform for data and campaigns",
-   "words": 757
+   "words": 762
   },
   {
    "type": "content",
@@ -369,7 +369,7 @@
    "failed": [],
    "title": "Vocable Case Study | AI Content Marketing SaaS Design",
    "h1": "Vocable, from idea to an AI content marketing SaaS for brands",
-   "words": 748
+   "words": 753
   },
   {
    "type": "archive",
@@ -439,7 +439,17 @@
    "failed": [],
    "title": "UI UX Design by Industry | Healthcare, Fintech & SaaS",
    "h1": "UI UX design services for your industry",
-   "words": 288
+   "words": 309
+  },
+  {
+   "type": "content",
+   "route": "/industries/media/",
+   "keyword": "media ui/ux design services",
+   "score": 100,
+   "failed": [],
+   "title": "Media UI/UX Design Services | Ad Sales & Content Platforms",
+   "h1": "Media UI/UX design services for ad sales, campaign and content platforms",
+   "words": 2626
   },
   {
    "type": "content",
@@ -669,7 +679,7 @@
    "failed": [],
    "title": "Dashboard UX Design Services | Role-Based KPI Dashboards",
    "h1": "Dashboard UX design that turns dense data into clear decisions",
-   "words": 1555
+   "words": 1560
   },
   {
    "type": "content",
@@ -699,7 +709,7 @@
    "failed": [],
    "title": "Digital Product Design Services | Strategy to Launch",
    "h1": "Digital product design services from first idea to launch",
-   "words": 1643
+   "words": 1648
   },
   {
    "type": "content",
@@ -749,7 +759,7 @@
    "failed": [],
    "title": "Mobile App UI UX Design Services | iOS & Android",
    "h1": "Mobile app UI UX design services for apps people keep using",
-   "words": 1723
+   "words": 1728
   },
   {
    "type": "content",
@@ -799,7 +809,7 @@
    "failed": [],
    "title": "UX Audit Services | Heuristic Review & Fix Roadmap",
    "h1": "UX audit services that pinpoint where users struggle and why",
-   "words": 1571
+   "words": 1576
   },
   {
    "type": "content",
@@ -819,7 +829,7 @@
    "failed": [],
    "title": "UX Research Services | User Interviews & Journey Maps",
    "h1": "UX research services that define what to build before you build it",
-   "words": 1634
+   "words": 1639
   },
   {
    "type": "content",
@@ -829,7 +839,7 @@
    "failed": [],
    "title": "Web App Design Services | UX & UI for Complex Web Apps",
    "h1": "Web app design services for complex products that stay simple",
-   "words": 1630
+   "words": 1635
   },
   {
    "type": "archive",
