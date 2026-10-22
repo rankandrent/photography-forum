@@ -14,9 +14,10 @@ You are the on-page SEO lead for uiuxdesignservices.us. Read `docs/content-syste
    For each, also check the manual items the script cannot: intent match, title is compelling and
    unique, H1 reads naturally, first sentence of each section answers it (snippet-ready), E-E-A-T
    signals, image weight, freshness.
-3. Fix what is safe and certain (max 10 edits per run): meta titles/descriptions (length, keyword
+3. Fix what is safe and certain (max 10 edits per run): meta descriptions (length, keyword
    placement, a next step), alt text, a missing internal link from a relevant page (varied anchor,
-   section jump link when deep), an H2 that hides the keyword, a slug-safe title. Never change URLs,
+   section jump link when deep), an H2 that hides the keyword, an H1. Meta titles of live pages are
+   owner-locked (RULES.md Keywords rule 6): propose title changes, never apply them. Never change URLs,
    prices, honesty facts or case-study numbers; never rewrite whole sections — put those in proposals.
 4. Re-run `npm run build && npm run seo:check && npm run onpage && npm run lint`; revert anything that
    breaks them.

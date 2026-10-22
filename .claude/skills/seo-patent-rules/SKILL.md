@@ -28,6 +28,10 @@ Existing live pages are not rewritten for these rules unless the owner asks. New
   entities, attributes, key terms and questions in the brief; the page covers all of them with real
   facts and answers each question directly in an H2/H3 or FAQ. Missing any one fails QA.
 
+- **Protect live rankings (owner rule, final):** never change the slug/URL of a live page; change a live
+  page's meta title only with the owner's explicit approval for that page. H1, content, sections, FAQs
+  and internal links may be improved. (This site enforces it with locked-pages.json in seo:check.)
+
 ## 1. Concept bindings (US8126832B2, "Artificial intelligence system", Cognitive Code)
 The system turns words into concepts: root forms (walked → walk), synonyms (canine → dog), composite
 concepts (Central + Park → Central Park), weighted "essential" concepts, context to choose between

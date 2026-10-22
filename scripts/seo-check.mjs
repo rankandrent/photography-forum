@@ -15,6 +15,7 @@ const pages = walk(OUT).filter((f) => f.endsWith("index.html"));
 let errors = 0, warnings = 0;
 const report = (lvl, file, msg) => { if (lvl === "error") errors++; else warnings++; console.log(`${lvl === "error" ? "✗" : "!"} ${file.replace(OUT, "") || "/"}  ${msg}`); };
 const titles = new Map(), descs = new Map();
+const live = new Map(); // route → meta title of every indexable page
 
 for (const file of pages) {
   const html = fs.readFileSync(file, "utf8");
@@ -45,6 +46,7 @@ for (const file of pages) {
     if (!href.startsWith("/_next") && !exists(href)) report("error", file, `broken link → ${href}`);
   }
   titles.set(title, [...(titles.get(title) || []), route]);
+  live.set(route, title);
   descs.set(desc, [...(descs.get(desc) || []), route]);
 }
 // ---- Semantic-SEO checks (Koray-style) on service & industry pages ----
@@ -146,6 +148,21 @@ for (const f of fs.readdirSync(SVC_DIR).filter((x) => x.endsWith(".json") && !x.
 }
 }
 if (!lintCount) console.log("✓ writing rules: all service and industry pages pass");
+
+// Owner rule 2026-10-22: a live page's slug never changes and its meta title changes only with the
+// owner's approval. docs/content-system/locked-pages.json records every indexable route and its title;
+// new pages are added automatically. To apply an owner-approved title change, edit that page's entry.
+const LOCK = "docs/content-system/locked-pages.json";
+const locked = fs.existsSync(LOCK) ? JSON.parse(fs.readFileSync(LOCK, "utf8")) : { note: "", pages: {} };
+locked.note = "Live pages: slug never changes; meta title changes only with owner approval (then edit the entry). Maintained by scripts/seo-check.mjs.";
+for (const [route, title] of Object.entries(locked.pages)) {
+  if (!live.has(route)) report("error", OUT + route, `locked page is missing: slug changed or page removed/noindexed (owner rule: never change a live slug)`);
+  else if (live.get(route) !== title) report("error", OUT + route, `meta title of a live page changed without owner approval: "${title}" → "${live.get(route)}" (if approved, update ${LOCK})`);
+}
+let added = 0;
+for (const [route, title] of live) if (!(route in locked.pages)) { locked.pages[route] = title; added++; }
+if (added && !errors) fs.writeFileSync(LOCK, JSON.stringify({ note: locked.note, pages: Object.fromEntries(Object.entries(locked.pages).sort()) }, null, 1) + "\n");
+if (added) console.log(`locked-pages: ${added} new page(s) ${errors ? "not saved (fix errors first)" : "added"}`);
 
 console.log(`\n${pages.length} pages checked · ${errors} errors · ${warnings} warnings`);
 process.exit(errors ? 1 : 0);

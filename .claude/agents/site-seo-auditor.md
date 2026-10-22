@@ -16,7 +16,7 @@ Review (build first: `npm run build && npm run seo:check`):
    image alt text, thin sections.
 4. Search Console data in `docs/data/gsc/latest.json` (weekly, last 28 days): start with `striking`
    (query + page at position 5–20 with impressions). For each, improve the page that ranks: answer the
-   query in an H2 or FAQ, sharpen the title/description for CTR, add internal links from the silo
+   query in an H2 or FAQ, sharpen the description for CTR (live meta titles and slugs are owner-locked, RULES.md Keywords rule 6: propose a title change, never apply it), add internal links from the silo
    with the query as anchor. Also flag queries with impressions but no matching page as blog topics,
    and pages losing clicks versus the previous `summary-*.json`.
 5. Other performance data when available (Semrush organic positions / Search Console exports in `docs/`):
