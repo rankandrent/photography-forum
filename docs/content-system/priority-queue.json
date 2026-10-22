@@ -1,0 +1,18 @@
+{
+  "note": "Owner-approved priority queue (2026-10-22): UX research cluster to lift /services/ux-research-services/ (GSC position 18) into the top 10. The daily routine publishes 2 posts per day from the top of this list (in order) until every item is published, then the normal rotation resumes. Volumes: Ahrefs API v3, US, 2026-10-22. Every post: hub ux-research-services, links to the hub with the anchor \"UX research services\", never targets \"ux research services\" or \"ux research agency\" (hub and choose-ux-research-agency own them), title starts with the exact keyword and has no colon. Set status to \"published\" with the slug and date when done.",
+  "hub": "ux-research-services",
+  "postsPerDay": 2,
+  "items": [
+    { "order": 1, "keyword": "contextual inquiry", "volume": 700, "kd": 6, "source": "team topic 9", "angle": "Contextual inquiry, why watching users work beats asking them questions", "status": "pending" },
+    { "order": 2, "keyword": "customer journey map template", "volume": 5100, "kd": 0, "source": "Claude", "angle": "Downloadable customer journey map template with a worked example; covers 'user journey map' (4,900) inside this post, no separate post", "status": "pending" },
+    { "order": 3, "keyword": "ux research methods", "volume": 700, "kd": 35, "source": "team topic 5", "angle": "Decision guide, which UX research method answers your question (cluster pillar; links to every other cluster post as they publish)", "status": "pending" },
+    { "order": 4, "keyword": "card sorting", "volume": 1300, "kd": 15, "source": "Claude", "angle": "Open, closed and hybrid card sorting for information architecture", "status": "pending" },
+    { "order": 5, "keyword": "importance of ux research", "volume": 70, "kd": 0, "source": "team topics 1 + 4 merged", "angle": "The real cost of skipping UX research, with the 'we already know our users' myths folded in", "status": "pending" },
+    { "order": 6, "keyword": "generative vs evaluative research", "volume": 100, "kd": 0, "source": "team topic 7", "angle": "Are you exploring the problem or testing a solution; also covers 'generative research' (200) and 'evaluative research' (200)", "status": "pending" },
+    { "order": 7, "keyword": "user persona template", "volume": 900, "kd": 24, "source": "Claude", "angle": "Research-based persona template (downloadable), built from interviews, not guesses", "status": "pending" },
+    { "order": 8, "keyword": "quantitative ux research", "volume": 150, "kd": 1, "source": "team topic 6", "angle": "Qualitative vs quantitative UX research, when to use each and how to combine them (qualitative 100, vs 90)", "status": "pending" },
+    { "order": 9, "keyword": "ux roi", "volume": 80, "kd": 11, "source": "team topics 2 + 3 merged", "angle": "UX research ROI and a one-page business case leadership will fund; must not repeat the design-system-roi or ux-strategy-roadmap frames", "status": "pending" },
+    { "order": 10, "keyword": "healthcare ux research", "volume": 80, "kd": null, "source": "team topic 10", "angle": "Studying clinicians and patients without breaking HIPAA; also links /industries/healthcare/; every HIPAA claim fact-checked against hhs.gov", "status": "pending" }
+  ],
+  "later": ["jobs to be done interview questions (20-30/mo, team topic 8)", "affinity mapping (1,400, KD 31)", "tree testing (600, KD 34)", "jobs to be done framework (1,300, KD 48)"]
+}
