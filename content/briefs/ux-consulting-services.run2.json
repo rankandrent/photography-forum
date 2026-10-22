@@ -1,0 +1,87 @@
+{
+  "page": "/services/ux-consulting-services/",
+  "file": "content/services/ux-consulting-services.json",
+  "run": "Search Console run 2, page 1 of 2",
+  "date": "2026-10-22",
+  "keyword": "ux consulting services",
+  "volume": 500,
+  "kd": 1,
+  "dataSource": "Ahrefs US (via orchestrator brief, 2026-10-22); GSC 2026-09-21 to 2026-10-18: best position 30, page avg 55, 171 impressions",
+  "locked": "slug and metaTitle unchanged (RULES.md Keywords rule 6)",
+  "gscQueries": {
+    "ux consulting services": "H1, hero eyebrow, include answer, hire H2/answer, types answer (\"Our UX consulting services run as 4 types…\")",
+    "ui ux consulting services": "UX consulting vs UX design answer (\"…UX design consulting services or UI UX consulting services…\")",
+    "ux consulting service": "types card 1 body (\"The core UX consulting service: …\")",
+    "ui consulting services": "FAQ \"What does UX stand for?\" (\"…a request for UI consulting services starts from the same review\")",
+    "user experience design consulting": "FAQ \"What does UX stand for?\" second sentence",
+    "ux design consulting (services)": "UX consulting vs UX design answer",
+    "ux consulting company": "H2 \"What should you look for in a UX consulting company?\" + answer; proof body last sentence",
+    "ux consultants": "checklist answer (\"compare UX consultants\"), checklist item 6, FAQ \"What does a UX consultant do?\"",
+    "ui ux consultant(s)": "checklist item 2 (\"a good UI UX consultant\")",
+    "ux strategy and consulting": "types card 1 title (\"UX strategy and consulting for a live product\")",
+    "ui ux consulting and audit": "FAQ \"Is UX consulting different from a UX audit?\" last sentence"
+  },
+  "aiOverview": {
+    "shown": true,
+    "sources": [
+      "https://www.nngroup.com/consulting/",
+      "https://reloadux.com/blog/ux-consulting-services-benefits/",
+      "https://uxfirm.com/",
+      "https://www.daffodilsw.com/ui-ux-design-services/uiux-consulting/",
+      "https://www.userlytics.com/user-experience-research/ux-consulting/",
+      "https://uxstudioteam.com/ux-blog/ux-consulting",
+      "https://excited.agency/services/ux-consulting",
+      "https://fuselabcreative.com/user-experience-design-consultant/"
+    ],
+    "extractedBy": "WebFetch of each source, 2026-10-22 (all 8 fetched). No wording copied.",
+    "entities": [
+      { "term": "UX maturity assessment / UX maturity model (NN/g)", "sources": "nngroup, uxstudio", "coveredIn": "existing: definition answer, include item 2, process step 3, benefits card 4; new: checklist item 2, types card 4" },
+      { "term": "UX strategy", "sources": "nngroup, uxstudio, excited, uxfirm", "coveredIn": "existing throughout; new: types card 1 and 2" },
+      { "term": "heuristic evaluation / expert review", "sources": "nngroup, uxfirm, daffodil, userlytics, fuselab", "coveredIn": "existing include item 3 (usability heuristics); vs-audit table" },
+      { "term": "user research / UX research", "sources": "all", "coveredIn": "existing pricing body (UX research services link); new checklist item 3 (past user research)" },
+      { "term": "usability testing", "sources": "uxfirm, daffodil, userlytics", "coveredIn": "new vs-design table row 'Main output' (prototypes tested with real users)" },
+      { "term": "user journey mapping / personas", "sources": "reloadux, daffodil, userlytics, uxstudio, excited", "coveredIn": "new checklist item 3 (personas or journey maps)" },
+      { "term": "Google HEART framework / success metrics", "sources": "uxstudio", "coveredIn": "existing include item 4; new types card 2, checklist item 5" },
+      { "term": "workshops and team training", "sources": "nngroup, uxstudio", "coveredIn": "existing include item 6, process step 4; new checklist item 6" },
+      { "term": "accessibility / WCAG", "sources": "daffodil, fuselab", "coveredIn": "new types card 5 (WCAG 2.2 level AA via UX audit)" },
+      { "term": "AI feature / AI interface advisory, AI readiness", "sources": "reloadux, uxstudio, fuselab", "coveredIn": "new types card 3; FAQ 'Is UX at risk from AI?'" },
+      { "term": "pre-build UX strategy", "sources": "fuselab", "coveredIn": "new types card 2" },
+      { "term": "startups / MVP validation", "sources": "reloadux, excited", "coveredIn": "new FAQ 'Is UX consulting worth it for startups?'" },
+      { "term": "roadmap / prioritized action plan", "sources": "reloadux, excited, fuselab, uxstudio", "coveredIn": "existing include item 5 (RICE), process step 4" },
+      { "term": "UI (user interface) vs UX", "sources": "reloadux, daffodil, uxstudio", "coveredIn": "new FAQ 'What does UX stand for?', vs-design answer" }
+    ],
+    "attributes": [
+      { "term": "consulting vs design (consultants advise, do not produce designs)", "coveredIn": "new section 'UX consulting vs UX design' (table, 6 rows); FAQ 'What does a UX consultant do?'" },
+      { "term": "senior lead / who leads the engagement", "coveredIn": "new checklist item 1; vs-design row 'Who does the work'" },
+      { "term": "engagement length", "coveredIn": "existing process (2–3 weeks); vs-design row 'Timeline'" },
+      { "term": "cost / price range", "coveredIn": "existing pricing section; vs-design row; FAQ 'How much does it cost to hire a UX designer?' (site prices only)" },
+      { "term": "remote delivery", "coveredIn": "new FAQ 'Can UX consulting be done remotely?'" },
+      { "term": "selection criteria (portfolio/case studies, data-driven, clear method, metrics)", "coveredIn": "new checklist section, 8 items" },
+      { "term": "real proof / case study", "coveredIn": "new section 'What does UX consulting look like on a real project?' (Mass Media Co. discovery workshop, own facts only, result credited to the whole revamp)" },
+      { "term": "consulting types", "coveredIn": "new section 'Which types of UX consulting do we offer?' (5 cards)" },
+      { "term": "ongoing vs one-off engagement", "coveredIn": "existing FAQ 'Can UX consulting be ongoing?'; new types card 4" }
+    ],
+    "questions": [
+      { "q": "What does a UX consultant do?", "coveredIn": "FAQ 1 (extended)" },
+      { "q": "How does UX consulting differ from UX design?", "coveredIn": "new H2 'UX consulting vs UX design'" },
+      { "q": "What should I look for when hiring a UX consultant?", "coveredIn": "new H2 'What should you look for in a UX consulting company?'" },
+      { "q": "Is UX consulting worth it for startups?", "coveredIn": "new FAQ" },
+      { "q": "Can UX consulting be done remotely?", "coveredIn": "new FAQ" },
+      { "q": "When should a company hire a UX consultant?", "coveredIn": "existing H2 'When should a leadership team hire UX consulting services?'" },
+      { "q": "What deliverables does UX consulting include?", "coveredIn": "existing include section" },
+      { "q": "How long does it take and what does it cost?", "coveredIn": "existing process + pricing sections, FAQ 'How long…'" }
+    ],
+    "notUsed": "Competitor client lists, awards, team names, their price ranges (e.g. NN/g $40K–$200K, Fuselab $25,000 start) and Forrester ROI figure: not our facts. Severity scales and Section 508 documentation belong to audit work; the UX audit hub owns them."
+  },
+  "paa": [
+    { "q": "What does an UX consultant do?", "coveredIn": "FAQ 'What does a UX consultant do?' (first sentence = direct answer)" },
+    { "q": "Is UX at risk of AI?", "coveredIn": "FAQ 'Is UX at risk from AI?' (starts 'No.'; home.ts whyUs 'AI accelerates, does not replace')" },
+    { "q": "How much does it cost to hire an UX designer?", "coveredIn": "FAQ 'How much does it cost to hire a UX designer?' (home.ts pricing ranges only)" },
+    { "q": "What does UX stand for?", "coveredIn": "FAQ 'What does UX stand for?'" }
+  ],
+  "proof": {
+    "caseStudy": "/case-studies/mass-media-co/",
+    "why": "Only case file whose approach is consulting-type work: 'We ran a discovery workshop with MMC stakeholders and users to understand the business goals and align the product revamp strategy with them. The workshop covered product definition, strategy, information architecture and user flows.'",
+    "factsQuoted": ["several separate systems for order taking", "discovery workshop with stakeholders and users", "product definition, strategy, information architecture and user flows", "30% increase in order processing efficiency (credited to the full revamp, not consulting alone)"]
+  }
+}

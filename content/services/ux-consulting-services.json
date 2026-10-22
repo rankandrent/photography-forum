@@ -21,7 +21,7 @@
     "saas",
     "startups"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-22",
   "centralEntity": "UX consulting",
   "sourceContext": "US UI/UX design agency; this page sells senior UX strategy and advisory engagements to product leaders who need a prioritized UX roadmap.",
   "priceRange": "$5,000–$15,000",
@@ -111,6 +111,33 @@
       ]
     },
     {
+      "h2": "Which types of UX consulting do we offer?",
+      "format": "list",
+      "answer": "<strong>Our UX consulting services come in 4 types, from UX strategy for a live product to artificial intelligence (AI) feature advisory; accessibility reviews run through our UX audit.</strong>",
+      "items": [
+        {
+          "title": "UX strategy and consulting for a live product.",
+          "body": "The core UX consulting service: stakeholder interviews, a product and analytics review and a prioritized roadmap in 2–3 weeks, for example when retention stalls and nobody can name the cause."
+        },
+        {
+          "title": "Pre-build UX strategy.",
+          "body": "Before leadership funds design work on a new product line, the engagement sets UX goals, HEART metrics and a roadmap, so the first design sprint starts from agreed priorities."
+        },
+        {
+          "title": "AI feature advisory.",
+          "body": "For an AI feature, the product review checks trust (how users know the AI is right), transparency (what the system is doing) and actionability (what the user does next)."
+        },
+        {
+          "title": "Ongoing UX advisory.",
+          "body": "After the roadmap, advisory continues as an embedded design team at $15,000–$40,000 per month, with weekly sessions and quarterly roadmap reviews that track UX maturity."
+        },
+        {
+          "title": "Accessibility review.",
+          "body": "Accessibility questions go to our UX audit, which checks audited screens against Web Content Accessibility Guidelines (WCAG) 2.2 level AA; a full-site accessibility audit is quoted separately."
+        }
+      ]
+    },
+    {
       "h2": "UX consulting vs UX audit",
       "format": "table",
       "answer": "<strong>UX consulting sets strategy for the product, the team and the design process; a UX audit evaluates the product interface only.</strong> Companies start with UX consulting if no UX plan exists, and start with a UX audit if the interface problem is already known. If you go the audit route, our guide on <a href=\"/blog/ux-audit-agency-vs-freelancer/\">choosing between a UX audit agency, a freelancer or an AI tool</a> shows what each provider type finds.",
@@ -159,6 +186,49 @@
       ]
     },
     {
+      "h2": "UX consulting vs UX design",
+      "format": "table",
+      "answer": "<strong>UX consulting decides what your product team fixes and in what order; UX design produces the flows, prototypes and screens that carry out that plan.</strong> Requests for UX design consulting services or UI UX consulting services often cover both the advice and the user interface (UI) screens, so the table compares the two on 6 criteria.",
+      "caption": "Comparison of UX consulting and UX design work",
+      "columns": [
+        "Criterion",
+        "UX consulting",
+        "UX design"
+      ],
+      "rows": [
+        [
+          "Question it answers",
+          "What should the product team fix first, and why?",
+          "What should each user flow and screen look like?"
+        ],
+        [
+          "Main output",
+          "UX strategy roadmap, UX metrics framework and team coaching",
+          "User flows, wireframes, interactive prototypes tested with real users and high-fidelity screens"
+        ],
+        [
+          "Who does the work",
+          "A senior UX consultant with your leadership team",
+          "2–4 designers in a research and UX design sprint, 3–6 in a full design engagement"
+        ],
+        [
+          "Timeline",
+          "2–3 weeks",
+          "4–8 weeks for a sprint, 8–16 weeks for full design and a design system"
+        ],
+        [
+          "Price on this site",
+          "$5,000–$15,000",
+          "$25,000–$60,000 for a sprint, $60,000–$180,000 for full design"
+        ],
+        [
+          "Choose it when",
+          "No agreed UX plan, metrics or priority order exists",
+          "The roadmap is agreed and the screens need designing"
+        ]
+      ]
+    },
+    {
       "h2": "How much does UX consulting cost?",
       "format": "paragraph",
       "answer": "<strong>UX consulting costs $5,000–$15,000 and takes 2–3 weeks.</strong> The price depends on 4 factors: the number of products, the number of stakeholder interviews, the number of teams coached and the need for ongoing advisory.",
@@ -177,17 +247,58 @@
       ]
     },
     {
+      "h2": "What should you look for in a UX consulting company?",
+      "format": "list",
+      "answer": "<strong>Look for a UX consulting company that names its senior lead, works from evidence, scores every recommendation and fixes scope and price in writing.</strong> Use these 8 checks to compare UX consultants:",
+      "items": [
+        "A named senior lead, because the person who runs the stakeholder interviews and the roadmap workshop sets the quality of the plan; ask who that is before you sign.",
+        "A published maturity model, so a good UI UX consultant scores your team against the Nielsen Norman Group UX maturity model now and again next quarter.",
+        "Evidence before opinion: expect requests for analytics access, Google Analytics 4 funnels and past user research such as personas or journey maps in the first days, because advice without evidence is a guess.",
+        "A scoring method such as RICE prioritization, so design and engineering agree on the order of work instead of arguing over it.",
+        "A metric for every initiative, for example an activation rate target from the Google HEART framework, so you can tell whether a fix worked.",
+        "Coaching that stays with your team, because UX consultants leave after weeks; working sessions on methods such as Jobs to be Done interviews let the team run the roadmap alone.",
+        "A fixed scope and price in writing, so deliverables, weeks and cost cannot drift; every project with us begins with a free consultation and a fixed-scope proposal.",
+        "Case studies that explain decisions, because screens alone show design skill; ask for one project where discovery shaped the product strategy."
+      ]
+    },
+    {
+      "h2": "What does UX consulting look like on a real project?",
+      "format": "paragraph",
+      "answer": "<strong>Our Mass Media Co. project shows UX consulting work inside a larger revamp: a discovery workshop that set the product strategy and user flows first.</strong>",
+      "body": "<p>Mass Media Co. ran order taking across separate systems. The <a href=\"/case-studies/mass-media-co/\">Mass Media Co. case study</a> describes a discovery workshop with stakeholders and users that aligned the revamp strategy with business goals and covered product definition, strategy, information architecture and user flows. The whole revamp reported a 30% increase in order processing efficiency, so credit that figure to the full project. Ask any UX consulting company for a case like this.</p>"
+    },
+    {
       "h2": "UX consulting FAQs",
       "format": "faq",
-      "answer": "<strong>These answers cover the 5 questions buyers ask most about UX consulting services.</strong>",
+      "answer": "<strong>These answers cover what UX consultants do, what the work costs and takes, how it differs from audits and design, AI, and fit for startups and remote teams.</strong>",
       "faqs": [
         {
           "q": "What does a UX consultant do?",
-          "a": "<p>A UX consultant assesses a product, the product team and the design process, then delivers a prioritized UX strategy roadmap and coaches the team to execute the roadmap.</p>"
+          "a": "<p>A UX consultant assesses a product, the product team and the design process, then delivers a prioritized UX strategy roadmap and coaches the team to execute the roadmap. UX consultants advise rather than design, so screen work is quoted as a design sprint or a full design engagement.</p>"
+        },
+        {
+          "q": "What does UX stand for?",
+          "a": "<p>UX stands for user experience, which is how a person finds, understands and uses a product to finish a task. User experience design consulting reviews that experience and the team behind it, and the product review checks the user interface (UI), the layer users see and touch, in each key flow, so a request for UI consulting services starts from the same review.</p>"
         },
         {
           "q": "Is UX consulting different from a UX audit?",
-          "a": "<p>Yes. UX consulting covers strategy, team process and UX maturity, while a UX audit covers only the usability issues in the product interface.</p>"
+          "a": "<p>Yes. UX consulting covers strategy, team process and UX maturity, while a UX audit covers only the usability issues in the product interface. Teams that want UI UX consulting and audit work together can book both, and the audit's fix roadmap then becomes an input to the UX strategy roadmap.</p>"
+        },
+        {
+          "q": "How much does it cost to hire a UX designer?",
+          "a": "<p>Hiring UX designers through our agency costs $5,000–$15,000 for a 2–3 week UX audit with 1–2 designers, $25,000–$60,000 for a 4–8 week research and UX design sprint with 2–4 designers, and $15,000–$40,000 per month for an embedded team of 2–5 designers. Full design with a design system runs $60,000–$180,000 over 8–16 weeks, and UX consulting costs $5,000–$15,000 over 2–3 weeks.</p>"
+        },
+        {
+          "q": "Is UX consulting worth it for startups?",
+          "a": "<p>Yes, for a startup with a live product whose activation rate or retention has stalled without a clear cause, because an engagement for 1 product and 6 stakeholder interviews sits near $5,000 and names the fixes first. A startup without a product yet gets more from <a href=\"/services/ui-ux-design-services-for-startups/\">UI UX design for startups</a>, which validates a minimum viable product (MVP) in 4–8 weeks.</p>"
+        },
+        {
+          "q": "Can UX consulting be done remotely?",
+          "a": "<p>Yes. We deliver UX consulting services remote-first to product teams across the United States from our headquarters in Reston, Virginia, so the stakeholder interviews, the product and analytics review and the roadmap workshop run without an on-site visit. Your team shares product and analytics access in the first 2–3 days, during the stakeholder interview step.</p>"
+        },
+        {
+          "q": "Is UX at risk from AI?",
+          "a": "<p>No. We use AI to accelerate production work, but the judgment about what to design still comes from research with real users and pattern recognition across 200+ products. AI features add UX work rather than remove it, because users need to trust the output, see what the system is doing and know what to do next.</p>"
         },
         {
           "q": "Can UX consulting be ongoing?",
@@ -215,7 +326,9 @@
       "Google Analytics 4",
       "Jobs to be Done",
       "Double Diamond",
-      "activation rate"
+      "activation rate",
+      "WCAG 2.2",
+      "Mass Media Co."
     ],
     "ngrams": [
       "ux consulting services",
@@ -223,7 +336,10 @@
       "ux strategy",
       "ux consultant",
       "ux maturity",
-      "ux strategy roadmap"
+      "ux strategy roadmap",
+      "ux consulting company",
+      "ux consultants",
+      "ui ux consulting services"
     ],
     "skipgrams": [
       "consulting … user experience",
@@ -252,6 +368,8 @@
     "Google Analytics 4",
     "Jobs to be Done",
     "Double Diamond",
-    "activation rate"
+    "activation rate",
+    "WCAG 2.2",
+    "Mass Media Co."
   ]
 }
