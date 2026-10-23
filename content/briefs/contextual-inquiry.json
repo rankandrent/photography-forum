@@ -1,0 +1,701 @@
+{
+  "slug": "contextual-inquiry",
+  "keyword": "contextual inquiry",
+  "keywordCarrier": {
+    "exactString": "contextual inquiry",
+    "spellingNote": "Print it as 'contextual inquiry' (lowercase mid-sentence, 'Contextual inquiry' at sentence start). Never 'contextual enquiry' (UK spelling), never the short form 'CI' (2 letters, appears inside many words and adds nothing to kwCount). Frontmatter `keyword` stays exactly 'contextual inquiry'; first meta keyword 'contextual inquiry'. Plain 2-word noun phrase: works as subject or object, so no special carrier is needed. kwCount counts the literal phrase; plural 'contextual inquiries' does NOT contain it ('inquiries' != 'inquiry'), so keep the plural to 2-3 uses.",
+    "title": "Contextual Inquiry, Why Watching Users Work Beats Asking Questions",
+    "titleNote": "66 chars (45-70 rule). This is the H1 and the coverTitle. Exact keyword first, joined with a comma, NO colon (Keywords rule 4). It carries the owner's angle.",
+    "metaTitle": "Contextual Inquiry | Watch Users Work, Then Ask Why",
+    "metaTitleNote": "51 chars, starts with the exact keyword then ' | ', no colon. Never put 'UX research services', 'UX research agency', 'cost' or 'services' in the title: the hub and choose-ux-research-agency own them.",
+    "description": "Contextual inquiry shows what users do, not what they recall. Learn the 4 principles, a 2-hour session plan and the questions to ask. Get the free checklist.",
+    "descriptionNote": "157 chars (counted with python). Use as written: keyword first, then what the reader gets, then the TOFU next step (the template CTA is the free checklist). Pronoun check: 'they recall' -> users (nearest noun). No apostrophes, no colon. '2-hour session plan' matches H2 6 (session length about 2 hours, Holtzblatt via Wikipedia, fact-checker confirms).",
+    "inBody": "Intro first sentence (said-vs-did split, see variety), keyword inside the first 60 words: e.g. 'Ask a warehouse receiving clerk how she checks in a delivery and she describes four taps on a handheld; watch her do it during a contextual inquiry and you count eleven steps, a clipboard and a phone call.' Label the clerk as an illustrative composite, never a client. Other approved carriers, each read aloud: 'contextual inquiry is a UX research method in which a researcher watches users do real work in their own setting and asks about it as it happens'; 'a contextual inquiry session runs about 2 hours'; 'the four principles of contextual inquiry'; 'contextual inquiry questions are asked at natural pauses, not from a script'. Stack rule: 'contextual inquiry' + noun ('contextual inquiry session/study/questions/example/template') at most 5 times in the body outside H2s; H2 7 ('contextual inquiry questions') and H2 8 ('Contextual inquiry example') are the only stacked H2s.",
+    "secondary": {
+      "what is contextual inquiry": "Question form. Literal in H2 1 ('What is contextual inquiry?'). Ahrefs 90 / KD 5. SERP = the same AIO sources (NN/g, Wikipedia, think.design): same intent.",
+      "contextual inquiry example": "Noun phrase. Literal in H2 8 ('Contextual inquiry example, a warehouse receiving study'). Ahrefs 90 / KD 3. SERP = NN/g, UserTesting, dscout, HubSpot, Atlassian, Maze: same intent.",
+      "contextual inquiry questions": "Noun phrase. Literal in H2 7. Ahrefs 50 / KD 4. SERP = NN/g, UserTesting, HubSpot, dscout, Nulab, Atlassian: same intent.",
+      "contextual inquiry ux": "Ahrefs 150 / KD 0, same AIO sources (NN/g, UserTesting, Reddit). Not printable literally; covered by 'contextual inquiry in UX research' (definition sentence) and the UX context of the whole page. Do not force 'contextual inquiry UX'.",
+      "contextual inquiry template": "Ahrefs 40 / KD 2. SERP mixes Mural and Notion template pages with the same guides. Covered by the field-note sheet H3 inside H2 7 ('a contextual inquiry template for field notes'), once; no download is promised (no asset exists)."
+    },
+    "density": "Word-share target 1-2%. The keyword has 2 words, so at about 2,200 body words the maximum is 0.02 x 2,200 / 2 = 22 uses. Aim for 16-20 literal uses (H1, first sentence, 9 H2s, body, closing, 2 FAQ answers). H2 salience: 9 of 11 H2s (incl. FAQs) carry the exact keyword = 82%. Rivals (scripts/onpage-audit.mjs: entities not made only of keyword words): 'user interviews', 'usability testing', 'affinity diagram', 'field notes', 'contextual interview', 'Contextual Design', 'journey map'. Keep each at or below 2x the keyword count; in practice keep 'user interviews' and 'usability testing' under 12 each (the comparison section invites repetition)."
+  },
+  "secondary": [
+    "what is contextual inquiry",
+    "contextual inquiry example",
+    "contextual inquiry questions",
+    "contextual inquiry ux",
+    "contextual inquiry template"
+  ],
+  "secondaryNote": "No entry contains 'vs'. Tested and NOT added: 'contextual interview' (Ahrefs 50 / KD 0) because its page 1 mixes clinical psychology (PMC 'patient-centered contextual interview', ACT 'Contextual Interview Template' PDFs) with UX; it is used as a synonym with the UX context word, never as a target. 'contextual design' (90 / KD 2) is the parent methodology, printed as an entity, not targeted. 'ethnographic research ux' (50 / KD 1) is a related entity (comparison row). 'contextual inquiry vs user interview' and 'field study ux' have 0 volume.",
+  "intent": "Informational (TOFU, problem-aware). The searcher is a product manager, designer or junior researcher who has heard of contextual inquiry and wants to know what it is, how it differs from interviews and usability tests, and how to run one. Service pull: contextual inquiry is a named deliverable of the hub ('Researchers observe 4-6 users in the real work setting'), and it is the method in-house teams find hardest to run (site access, consent, synthesis), so a reader who decides they need it is a plausible buyer of the hub programme.",
+  "volume": 700,
+  "kd": 6,
+  "dataSource": "Ahrefs API v3 keywords-explorer/overview, US, re-verified by this agent on 2026-10-23: contextual inquiry 700 / KD 6 (intent informational; SERP features ai_overview, ai_overview_sitelink, image_th, video_th, question, sitelink, image). Same call: contextual inquiry ux 150/0; what is contextual inquiry 90/5; contextual inquiry example 90/3; contextual design 90/2; contextual inquiry questions 50/4; contextual inquiry method 50/n.a.; contextual interview 50/0; ethnographic research ux 50/1; contextual inquiry definition 40/5; contextual inquiry template 40/2; contextual inquiry vs user interview 0; field study ux 0. Ahrefs serp-overview (country us, top 20) 2026-10-23 for 'contextual inquiry', 'contextual inquiry ux', 'what is contextual inquiry', 'contextual inquiry example', 'contextual inquiry questions', 'contextual interview', 'contextual inquiry template' (snapshot dated 2026-10-03). Semrush: no_api_units on 2026-10-23 (one test call). GSC docs/data/gsc/latest.json (2026-09-21 to 2026-10-18): no query containing 'contextual' or 'inquiry'. WebFetch OK 2026-10-23: nngroup.com (contextual-inquiry, remote-contextual-inquiry, how-many-users video page), en.wikipedia.org, dscout.com, luma-institute.com, usertesting.com, think.design, ux247.com, maze.co, looppanel.com, atlassian.com. Blocked/empty: reddit.com (fetch blocked), youtube.com (no description returned).",
+  "aiOverview": {
+    "present": true,
+    "status": "verified (Ahrefs serp-overview row type 'ai_overview' at position 1, snapshot 2026-10-03; AIO text itself not returned by the tool)",
+    "cited": [
+      "https://www.nngroup.com/articles/contextual-inquiry/",
+      "https://en.wikipedia.org/wiki/Contextual_inquiry",
+      "https://dscout.com/people-nerds/behind-scenes-contextual-inquiry",
+      "https://www.luma-institute.com/contextual-inquiry/",
+      "https://www.usertesting.com/blog/contextual-inquiry",
+      "https://think.design/user-design-research/contextual-inquiry/",
+      "https://www.youtube.com/watch?v=DRv9MpPj9Mo",
+      "https://www.nngroup.com/videos/how-many-users-contextual-inquiry/"
+    ],
+    "citedAlsoFor": "'contextual inquiry ux' AIO cites nngroup.com/articles/contextual-inquiry, usertesting.com/blog/contextual-inquiry and the r/UXResearch thread 'Do you know what contextual inquiry is?' (reddit fetch blocked; covered by the definition and misconception lines).",
+    "passages": {
+      "nngroup": "Contextual inquiry is a type of ethnographic field study in which researchers observe and interview a small number of users in their own environment while they work (Kim Flaherty, 6 Dec 2020). 4 grounding principles (context, partnership, interpretation, focus); 4-part session (primer, transition, contextual interview with a watch-then-discuss loop, wrap-up); master-apprentice model; sessions from 1 hour to several days; risks: interview mode, complaint session, researcher bias.",
+      "wikipedia": "Contextual inquiry is a user-centered design research method, part of the Contextual Design methodology (Holtzblatt and Beyer). One-on-one interview of about two hours; 4 users for a small task up to 30 or more; interpretation sessions with 3-8 team members; affinity diagram, work models, personas; reveals tacit knowledge; resource-intensive.",
+      "dscout": "A semi-structured interview that combines questions with observation in the participant's own environment; active inquiry vs passive inquiry; Hawthorne effect and social desirability bias; wrap-up to check interpretations (Nikki Anderson, 20 Jun 2023).",
+      "luma": "Interviewing and observing people in their own environment, approaching the work as an apprentice; benefits: real behavior, empathy, tests assumptions, credibility with stakeholders; 9-step quick guide incl. consent and recording.",
+      "usertesting": "A user-centered research method in which researchers watch and question people as they complete tasks in their everyday surroundings; 4 principles; 5-step process; observer bias; user behaviors vs self-reported behaviors; informed consent; remote observation as an alternative (Jennifer Henderson, 18 Apr 2024).",
+      "thinkdesign": "Participants are observed performing tasks and narrate what they do, leading the session more than in a standard interview; best for complex or enterprise systems and specialised work; disadvantages: time- and resource-intensive, interpretation, expectation management.",
+      "nngroupVideo": "Mayya Azarova (9 Sep 2022): 'how many users' has three parts, users per visit, visits per day and total visits, and the total depends on the project. No transcript on the page."
+    },
+    "entities": [
+      "Karen Holtzblatt",
+      "Hugh Beyer",
+      "Contextual Design",
+      "Nielsen Norman Group",
+      "master-apprentice model",
+      "ethnography",
+      "field study",
+      "user-centered design",
+      "tacit knowledge",
+      "mental models",
+      "Hawthorne effect",
+      "social desirability bias",
+      "affinity diagram",
+      "work models",
+      "personas",
+      "interpretation session",
+      "usability testing",
+      "user interviews",
+      "informed consent"
+    ],
+    "attributes": [
+      "natural work environment",
+      "4 principles (context, partnership, interpretation, focus)",
+      "4-part session (primer, transition, contextual interview, wrap-up)",
+      "session length (about 2 hours; 1 hour to several days)",
+      "sample size (small; 4 to 30 or more by scope)",
+      "active or passive inquiry",
+      "interpretation team (3-8 people)",
+      "recording with permission (audio, video, photos)",
+      "resource cost (travel, hours per user, analysis time)",
+      "remote variant ('semicontextual', screen-based desk work, 2-3 hour cap)"
+    ],
+    "terms": [
+      "observe and interview",
+      "watch and learn, stop and discuss",
+      "workarounds",
+      "interruptions",
+      "external resources",
+      "what users say vs what they do",
+      "self-reported behavior",
+      "small sample",
+      "complex or expert work",
+      "early discovery",
+      "shared understanding",
+      "semi-structured interview",
+      "observer bias",
+      "complaint session"
+    ],
+    "questions": [
+      "What is contextual inquiry?",
+      "What are the four principles of contextual inquiry?",
+      "How do you conduct a contextual inquiry?",
+      "How many users should you visit for contextual inquiry?",
+      "When is contextual inquiry not useful?",
+      "What are the risks of contextual inquiry?",
+      "Can contextual inquiry be done remotely?",
+      "How is contextual inquiry different from interviews and usability testing?"
+    ],
+    "coverage": "Every entity, attribute and term above maps to a planned H2/H3/FAQ: definition + Holtzblatt/Beyer/Contextual Design/master-apprentice/user-centered design -> H2 1; tacit knowledge, mental models, said vs did, self-reported behavior, Hawthorne effect, social desirability bias -> H2 2; 4 principles + shared understanding + complaint session -> H2 3; ethnography, field study, user interviews, usability testing, semi-structured interview -> H2 4; complex or expert work, early discovery, when not useful -> H2 5; 4-part session, watch and learn / stop and discuss, active or passive inquiry, informed consent, recording with permission, session length, observer bias -> H2 6; workarounds, interruptions, external resources -> H2 7 field-note sheet; interpretation session (3-8), affinity diagram, work models, personas -> H2 9; sample size, resource cost -> H2 10 + FAQ 1; remote variant -> FAQ 3."
+  },
+  "paa": [
+    "What are the four principles of contextual inquiry?",
+    "What is the difference between contextual inquiry and ethnography?",
+    "What is an example of contextual?",
+    "What does contextual mean in simple terms?",
+    "What is an example of contextual analysis?",
+    "What are the benefits of contextual inquiry?",
+    "Can you provide an example of contextual inquiry?",
+    "What are examples of contextual factors?",
+    "What are contextual inquiries?",
+    "What is the primary objective of contextual inquiry?",
+    "How to conduct a contextual inquiry?"
+  ],
+  "paaNote": "Sources: Ahrefs serp-overview 'question' rows for contextual inquiry, contextual inquiry ux, what is contextual inquiry, contextual inquiry example, contextual inquiry questions, contextual inquiry template (2026-10-23). Mapping (first sentence = direct answer): four principles -> H2 3; vs ethnography -> H3 inside H2 4; 'what does contextual mean in simple terms' + 'example of contextual' + 'examples of contextual factors' + 'example of contextual analysis' -> H3 'What does contextual mean in contextual inquiry?' inside H2 1 (one sentence on the everyday meaning 'depending on the surrounding situation', then the UX meaning: contextual factors = place, tools, people, interruptions, time pressure; one sentence that contextual analysis in UX is the interpretation step, linked forward to H2 9); benefits -> FAQ 5; example -> H2 8; 'what are contextual inquiries' -> H2 1; primary objective -> FAQ 4; how to conduct -> H2 6. Dropped as off-topic (contextual interview SERP, job-interview meaning): 'What is a red flag in an interview?', 'What is the 30-60-90 rule in an interview?', 'What are the four different types of interviews?', 'What are examples of inquiry questions?' (school inquiry learning).",
+  "hub": "ux-research-services",
+  "services": [
+    "ux-research-services"
+  ],
+  "industries": [],
+  "industriesNote": "None. The illustrative example is a warehouse receiving study (supply chain), but tagging the supply-chain industry would add an industry facet the post does not serve, and no case study ties our research to a supply-chain client. TOFU CTA does not use relatedCaseStudies, so the tag has no CTA effect either way.",
+  "author": "ahmad-ullah",
+  "authorWhy": "Ahmad Ullah (Principal UX Designer, content/home.ts) fits a research-method post that ends in design decisions. He last wrote usability-testing-cost-per-participant (2026-10-12), 4 posts ago. Rejected: sahar-asif (Senior Manager UX) wrote 2 of the last 4 posts incl. the only post in this silo; keep her for the 'ux research methods' pillar or 'importance of ux research'. faizan-khan wrote the last post. talha-saleem (Senior UI/UX Designer) suits UI-heavy topics. shahmir-farooq (Sr. Communication Designer) has still not written; suggested for the parallel 'customer journey map template' post (visual artefact), so the two cluster posts of the day differ in author. Contributor: umar-sarwar (default).",
+  "type": "Article",
+  "funnel": "tofu",
+  "funnelWhy": "Silo count (ledger.json): 1 published post, choose-ux-research-agency (BOFU) = TOFU 0% (target 50), MOFU 0% (target 30), BOFU 100% (target 20). TOFU is furthest below target. SERP rule (2026-10-06): page 1 is definitions and method guides (NN/g, Wikipedia, Reddit, UserTesting, dscout, LUMA, think.design, ux247, Maze, Looppanel), Ahrefs intent informational only, so the stage is TOFU, not MOFU. TOFU minimum service-support is 3; this topic scores 4. The orchestrator allowed MOFU/TOFU; TOFU is the rule-based choice. Template effect: TOFU prints the free checklist CTA (email capture), not a case study, which suits this silo because no case study describes contextual inquiry (see notes).",
+  "serviceSupport": 4,
+  "serviceSupportWhy": "4, not 5: the reader is learning a method, not shopping. But contextual inquiry is one of the hub's 6 named deliverables, it is the hub method that needs site visits, recruiting and synthesis time, and the hub cost section names on-site contextual inquiry as a price driver, so a reader who concludes 'we need this' maps straight to the hub programme.",
+  "beats": "https://www.usertesting.com/blog/contextual-inquiry",
+  "alsoOutranks": [
+    "https://dscout.com/people-nerds/behind-scenes-contextual-inquiry",
+    "https://think.design/user-design-research/contextual-inquiry/",
+    "https://ux247.com/contextual-inquiry/",
+    "https://www.luma-institute.com/contextual-inquiry/",
+    "https://maze.co/blog/contextual-inquiry/"
+  ],
+  "beatsWhy": "UserTesting (Jennifer Henderson, 18 Apr 2024; position 6, Ahrefs est. 90 visits/mo, AIO-cited, DR 84) is the most complete vendor guide, but it gives no session length, no participant count, no observer count, no analysis method beyond naming 'coding schemes', one sentence on consent, remote only as 'an alternative', a hypothetical school example and no criteria for choosing CI over interviews or usability tests. NN/g (Kim Flaherty 2020, position 2) is the authority on principles and session structure: cite it, never mirror its H2 order (why, when not, how, 4 principles, 4-part session, risks) or its auto-insurance anecdote. ux247 (agency, DR 26, position 11) has no numbers, no examples and no method choice. Our edge: the said-vs-did argument as the spine, a comparison table with criteria, numbers with named sources (2-hour session, 4-30+ users, 3-8 interpretation team, NN/g remote 2-3 hour cap), a field-note sheet, a worked illustrative example carried through to synthesis, and first-hand programme facts from the hub.",
+  "centralEntity": "contextual inquiry (a generative UX research method in which a researcher observes users doing real work in their own setting and interviews them about it as it happens, under the 4 principles of context, partnership, interpretation and focus)",
+  "bindings": {
+    "synonyms": [
+      "contextual interview",
+      "field observation",
+      "contextual research"
+    ],
+    "plural": [
+      "contextual inquiries",
+      "contextual inquiry sessions"
+    ],
+    "parent": [
+      "generative research",
+      "UX research"
+    ],
+    "children": [
+      "context principle",
+      "partnership principle",
+      "interpretation principle",
+      "focus principle",
+      "session primer",
+      "wrap-up"
+    ],
+    "related": [
+      "ethnography",
+      "user interviews",
+      "usability testing",
+      "affinity diagram",
+      "personas",
+      "journey map"
+    ],
+    "bindingNote": "Each synonym printed at least once: 'contextual interview' only with a UX context word ('the contextual interview at the heart of the session'; FAQ 6), 'field observation' (hub metaDescription wording) in H2 1 or 4, 'contextual research' in H2 4 or 5. Parent: H2 1 says contextual inquiry is a generative research method within UX research; the UP link anchor is 'UX research services'. Children: the 4 principles each get an H3 or table row in H2 3 (print 'context', 'partnership', 'interpretation', 'focus' each as a named principle); 'session primer' and 'wrap-up' are rows of the session strip in H2 6 (print 'primer' as 'session primer' once). Related: each with a fact (comparison table H2 4; affinity diagram, personas, journey map in H2 9)."
+  },
+  "essential": [
+    "contextual inquiry",
+    "observation",
+    "real work setting"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'contextual inquiry' (or a synonym) plus 'observation'/'observing'/'watching' or 'real work setting'. The answerHints below already do this.",
+  "queryVariants": [
+    "what is contextual inquiry",
+    "contextual inquiry in ux research",
+    "how to conduct a contextual inquiry",
+    "contextual inquiry example",
+    "contextual inquiry questions"
+  ],
+  "queryVariantsNote": "One answer site-wide: contextual inquiry = observe 4-6 users per user group (hub figure for our programme) doing real work in their own setting, with an interview woven into the observation, about 2 hours per session, under the 4 principles, followed by an interpretation session. This matches the hub ('Researchers observe 4-6 users in the real work setting, for example a warehouse shift or a hospital ward') and its process step 'Generative fieldwork (7-15 days)'.",
+  "ambiguous": [
+    {
+      "word": "inquiry",
+      "context": "contextual inquiry, users, observation (never a sales inquiry or a contact-form inquiry)"
+    },
+    {
+      "word": "contextual",
+      "context": "users' real work setting (not contextual advertising or contextual analysis of a text)"
+    },
+    {
+      "word": "interview",
+      "context": "user interview / contextual interview with users (not a job interview or a clinical intake interview)"
+    },
+    {
+      "word": "observation",
+      "context": "observing users at work (not a medical or statistical observation)"
+    },
+    {
+      "word": "focus",
+      "context": "the focus principle / research focus (not a focus group, which is a different method; say so once in H2 4 or FAQ)"
+    },
+    {
+      "word": "interpretation",
+      "context": "interpretation principle or interpretation session with the team"
+    },
+    {
+      "word": "field",
+      "context": "field study / fieldwork with users (not a form field)"
+    }
+  ],
+  "siteFacts": {
+    "source": "content/services/ux-research-services.json (hub) unless stated",
+    "deliverable": "Hub deliverable item: 'Contextual inquiry. Researchers observe 4-6 users in the real work setting, for example a warehouse shift or a hospital ward.'",
+    "programme": "UX research programme: 4-8 weeks (20-40 working days), $25,000-$60,000, 5 steps: research framing (2-4 days), participant recruitment (3-6 days), generative fieldwork (7-15 days: 'Researchers run user interviews and contextual inquiry sessions and record every session'), evaluative studies (4-8 days), synthesis and readout (4-7 days: 'Findings are tagged in Dovetail, turned into personas, journey maps and a JTBD opportunity map, and presented in a 90-minute readout').",
+    "priceDriver": "Hub cost body: 'A programme with 3 user groups, 20 user interviews, on-site contextual inquiry and hard-to-recruit participants, for example hospital clinicians, sits near $60,000.' Do not restate the example; say on-site contextual inquiry is one of the things that moves the price and deep-link /services/ux-research-services/#how-much-does-ux-research-cost.",
+    "interviews": "Hub: 10-15 one-hour interviews (deliverable list) and FAQ '10-15 interview participants per user group'. Use these only in the comparison row for user interviews.",
+    "generativeEvaluative": "Hub FAQ: 'Generative research finds user needs and opportunities before design, for example through user interviews. Evaluative research tests a design against user needs, for example through tree testing or usability testing.' Contextual inquiry is generative (hub abstract).",
+    "remote": "Hub FAQ 'Can UX research be done remotely?': 'Remote UX research runs user interviews and card sorts over video calls and online tools, for example Zoom and Optimal Workshop; contextual inquiry needs on-site visits.' See CONFLICT 1.",
+    "usability": "Hub table: usability testing checks whether a design works, 1-3 weeks per round; hub FAQ: 5 participants per round of qualitative usability testing (NN/g).",
+    "conflicts": [
+      "CONFLICT 1 (hub vs external source): the hub FAQ says 'contextual inquiry needs on-site visits', while NN/g (Kate Kaplan, 13 Nov 2022) documents remote contextual inquiry as a 'semicontextual' variant that works for screen-based desk work. Writer: state our practice in hub terms ('in our UX research programme, contextual inquiry runs on-site'), then report NN/g's remote variant with its limits (only the user is in context; suits single-screen desk work; NN/g caps sessions at 2-3 hours). Never write that we run contextual inquiry remotely. Orchestrator: consider asking the owner whether the hub FAQ should say 'contextual inquiry works best on-site'.",
+      "CONFLICT 2 (sibling page vs hub): content/locations/ux-design-agency-san-francisco.json says 'Interviews and contextual inquiry with 5-12 users per role'; the hub says contextual inquiry observes 4-6 users. Follow the hub (lesson 2026-10-18); do not print 5-12.",
+      "CONFLICT 3 (home.ts anecdote): home.ts says 'For one healthcare client, that meant 40+ hours shadowing MDS nurses in skilled nursing facilities.' No case study in content/case-studies/ describes it (grep for shadow|observ|MDS|nurse found nothing). Do not use it in the post (lesson 2026-10-12). OWNER-Q: if the owner confirms it and allows an anonymised mention, it is the ideal first-hand line for H2 10."
+    ]
+  },
+  "entities": [
+    "Karen Holtzblatt",
+    "Hugh Beyer",
+    "Contextual Design",
+    "master-apprentice model",
+    "Nielsen Norman Group",
+    "generative research",
+    "ethnography",
+    "user interviews",
+    "usability testing",
+    "focus group",
+    "tacit knowledge",
+    "mental models",
+    "workarounds",
+    "Hawthorne effect",
+    "social desirability bias",
+    "informed consent",
+    "field notes",
+    "interpretation session",
+    "affinity diagram",
+    "work models",
+    "personas",
+    "journey map",
+    "Jobs to be Done",
+    "Dovetail",
+    "screen sharing"
+  ],
+  "entitiesNote": "25 entries, one name each, no slashes, no short forms. Read aloud as phrases the post will literally print. At least 20 must appear with a real fact. 'focus group' appears once to separate it from the focus principle (H2 4 or FAQ). 'screen sharing' belongs to the remote FAQ (NN/g asks for the entire desktop to be shared). 'Jobs to be Done' and 'Dovetail' come from the hub synthesis step. Not rivals: none is made only of keyword words; see density for the ones to cap.",
+  "attributes": [
+    "session length (about 2 hours per user)",
+    "participant count (4-6 users per user group in our programme)",
+    "session structure (primer, transition, contextual interview, wrap-up)",
+    "inquiry mode (active or passive)",
+    "research focus (the question the product team must answer)",
+    "work setting (the user's own desk, floor, ward or vehicle)",
+    "interpretation team (3-8 people)",
+    "recording consent (permission before audio, video or photos)",
+    "fieldwork duration (7-15 days inside a 4-8 week programme)",
+    "programme price ($25,000-$60,000, published on the hub)",
+    "remote session cap (2-3 hours, NN/g)"
+  ],
+  "attributesNote": "11 entries. The script reads only the words before '(' and needs 60% of those longer than 3 letters in the text, so the writer prints these label nouns literally: 'session length', 'participant count', 'session structure', 'inquiry mode', 'research focus', 'work setting', 'interpretation team', 'recording consent', 'fieldwork duration', 'programme price' (hub spelling 'programme'), 'remote session cap' (write it as 'a remote session cap of 2-3 hours').",
+  "ngrams": [
+    "contextual inquiry",
+    "watch users work",
+    "real work setting",
+    "four principles",
+    "contextual interview",
+    "field notes",
+    "said versus did",
+    "interpretation session",
+    "affinity diagram",
+    "generative research",
+    "ux research services"
+  ],
+  "questions": [
+    "What is contextual inquiry?",
+    "Why is observing users more reliable than asking them?",
+    "What are the four principles of contextual inquiry?",
+    "How is contextual inquiry different from user interviews and usability testing?",
+    "What is the difference between contextual inquiry and ethnography?",
+    "When should you not use contextual inquiry?",
+    "How do you conduct a contextual inquiry?",
+    "What questions do you ask in a contextual inquiry?",
+    "How many participants does a contextual inquiry need?",
+    "How do you analyze contextual inquiry data?",
+    "Can contextual inquiry be done remotely?",
+    "What are the benefits of contextual inquiry?"
+  ],
+  "serpGaps": [
+    "The argument itself: every ranking page defines the method; none makes the case, with an example, for why observed behavior beats self-report (tacit knowledge, recall, social desirability) and when it does not (Hawthorne effect). The owner's angle is the gap.",
+    "Numbers with sources: UserTesting, dscout, LUMA, Maze, Looppanel and ux247 give no participant count; only Looppanel gives a session length (2-4 hours, unsourced). Holtzblatt's ~2-hour session, 4 to 30+ users and the 3-8 person interpretation team (via Wikipedia) and NN/g's 2-3 hour remote cap are not on any vendor page.",
+    "Method choice: pages say CI differs from interviews and usability tests, but none gives criteria in a table (setting, data type, session length, sample, question it answers, output).",
+    "Analysis: UserTesting names 'coding schemes', Maze and Looppanel name affinity mapping in one line; nobody shows the path from field notes to an interpretation session, affinity diagram, work models and then personas, journey maps and a JTBD opportunity map.",
+    "Note-taking: no page gives a field-note sheet with columns for the step, the tool or artifact, the workaround and the question to ask at the next pause.",
+    "Example carried through: examples are hypothetical one-liners (UserTesting school, Maze 'Rush' app, Looppanel nurses, think.design fitness coach). None follows one study from session to finding to design decision.",
+    "Remote: only NN/g treats it properly; vendors mention it in a line. We give its limits in one FAQ (our programme runs on-site).",
+    "Consent and access: one sentence on every page; nobody lists what to agree before the visit (site access, recording, screens with customer data, photos)."
+  ],
+  "outline": [
+    {
+      "h2": "What is contextual inquiry?",
+      "answerHint": "Contextual inquiry is a generative UX research method in which a researcher observes users doing real work in their own work setting and asks about each step as it happens. Karen Holtzblatt and Hugh Beyer developed it as the field step of Contextual Design.",
+      "points": [
+        "Intro before this H2 (said-vs-did split, see variety): 2-3 sentences. The illustrative receiving clerk SAYS 'scan the pallet, confirm the count, done'; observation SHOWS a paper packing list, a second screen to look up the purchase order, a phone call to the buyer and a sticky note for the damaged carton. Keyword in the first sentence (carrier above). Then one sentence on what the post gives: the principles, a session plan, the questions, a field-note sheet and the path to design decisions.",
+        "UP link to the hub within the first 300 words, anchor exactly 'UX research services' (required by the orchestrator), e.g. 'contextual inquiry is one of the six deliverables in our UX research services'.",
+        "Definition paragraph: name the parent (generative research within UX research; expand 'user experience (UX)' once), the master-apprentice model (the user is the expert, the researcher learns like an apprentice), and Contextual Design (Holtzblatt and Beyer; fact-checker confirms the first-edition year 1997/1998 and that the 2nd edition 'Contextual Design: Design for Life' is 2016/2017; print only the confirmed year). Use the synonym 'field observation' once.",
+        "H3 'What does contextual mean in contextual inquiry?' (PAA cluster): everyday meaning first ('depending on the surrounding situation'), then the UX meaning: the contextual factors are the place, the tools and artifacts, the other people, the interruptions and the time pressure. One sentence: in UX, contextual analysis is the interpretation step covered in H2 9.",
+        "Answer 'what are contextual inquiries' implicitly (one session = one contextual inquiry; a study = several)."
+      ]
+    },
+    {
+      "h2": "Why does contextual inquiry beat asking users what they do?",
+      "answerHint": "Contextual inquiry beats asking because observation in the real work setting captures what users do, while an interview captures what they remember and are willing to say. Experts automate steps they no longer notice (tacit knowledge), so they leave them out of any answer.",
+      "points": [
+        "This is the owner's angle; make it the argument of the post, not a list of benefits. Three causes, each with one explanation: tacit knowledge (Wikipedia/Holtzblatt), recall gaps (people summarise a typical day, not the real one), social desirability bias (dscout) (people describe the correct procedure, not the workaround).",
+        "Visual 1: said-vs-did split card (see visuals), placed after the paragraph it explains; text version under it.",
+        "Counterpoint, honest: observation changes behavior too (Hawthorne effect; dscout lists tactics such as rapport and longer sessions). Explain why CI limits it: the user does their own work on their own deadline, so the task pulls them back to normal behavior. Label this reasoning as practitioner reasoning, no statistic.",
+        "Do NOT use the Margaret Mead quote LUMA prints ('What people say, what people do…'): the attribution is not verifiable. Do NOT reuse NN/g's auto-insurance autosave anecdote."
+      ]
+    },
+    {
+      "h2": "What are the four principles of contextual inquiry?",
+      "answerHint": "The four principles of contextual inquiry are context, partnership, interpretation and focus: observe users in the real work setting, share control of the session with them, check your interpretation with them on the spot, and steer every observation toward the research focus.",
+      "points": [
+        "One H3 or table row per principle (children): what the researcher does, and the mistake it prevents (context -> recalled summaries; partnership -> a Q&A interview; interpretation -> researcher assumptions; focus -> a tour of everything). The 'mistake it prevents' column is our framing.",
+        "Visual 2: four-principles tile card (see visuals).",
+        "Credit: Holtzblatt and Beyer; NN/g (Kim Flaherty, 2020). Write in our own words; do not copy NN/g's or UserTesting's principle definitions.",
+        "Disambiguate 'focus' (the focus principle) from a focus group in one clause."
+      ]
+    },
+    {
+      "h2": "How is contextual inquiry different from user interviews, usability testing and ethnography?",
+      "answerHint": "Contextual inquiry combines observation and interviewing in the user's real work setting; user interviews rely on recall away from the work, usability testing observes set tasks on your design, and ethnography observes a whole culture over weeks without the focused interview.",
+      "points": [
+        "One sentence introduces the table (table-intro rule). Table rows: setting | what you learn | data type | typical session | sample | best question it answers | main output. Columns: contextual inquiry | user interviews (hub: 10-15 one-hour interviews per user group) | usability testing (hub: 5 participants per round, 1-3 weeks per round) | ethnography. Visual 3 is this table; text version under it.",
+        "H3 'What is the difference between contextual inquiry and ethnography?' (PAA): first sentence = direct answer; contextual inquiry is a focused, shorter form of ethnographic field study (NN/g calls it a type of ethnographic field study) with a design question and an interview built in.",
+        "The ONE cross-hub link: /services/usability-testing-services/ with anchor 'usability testing services' in the usability testing cell or the sentence after the table.",
+        "Use synonym 'contextual research' once. Mention 'focus group' once as the method CI is often confused with in name only (if not used in H2 3)."
+      ]
+    },
+    {
+      "h2": "When should you use contextual inquiry, and when is it the wrong method?",
+      "answerHint": "Use contextual inquiry early, when the product team does not yet understand how users do complex, expert or physical work in their real work setting. Skip it when the question is about menu labels, a single simple task or numbers across many users.",
+      "points": [
+        "Use when (ul): complex or expert workflows (enterprise software, clinical, logistics), work that depends on the physical environment or other people, a redesign where analytics show drop-off without a reason, a new market whose users work differently (hub 'when to invest' situations; deep link /services/ux-research-services/#when-should-a-product-team-invest-in-ux-research-services is NOT needed; keep links lean).",
+        "Wrong method when (ul): information architecture questions (card sorting and tree testing fit better, Maze makes the same point; card sorting is a future cluster post, plain text now), single simple tasks, quantitative questions (survey or analytics), no access to the real setting.",
+        "Visual 4: method decision tree (see visuals): 3 questions -> contextual inquiry / user interviews / usability testing / card sorting / survey or analytics. Text version under it.",
+        "Future link target (plain text now): the 'ux research methods' pillar post."
+      ]
+    },
+    {
+      "h2": "How do you run a contextual inquiry session?",
+      "answerHint": "A contextual inquiry session runs about 2 hours in the user's real work setting and has 4 parts: a short primer, a transition into observation, the contextual interview where you watch and then ask at natural pauses, and a wrap-up where the user corrects your interpretation.",
+      "points": [
+        "Before the visit (ol): research focus in one sentence; recruit 4-6 users per user group (hub figure for our programme; Wikipedia: 4 for a small task to 30 or more); agree site access, recording consent and what may not be filmed (screens with customer data); pair an interviewer with a note-taker.",
+        "The session (ol, 4 parts): session primer (introductions, consent, what you will do), transition (from interview mode to 'work as you normally would'), contextual interview (watch, then ask at natural pauses: NN/g's watch-and-learn / stop-and-discuss loop, credit it), wrap-up (play back what you understood; the user corrects it).",
+        "Inquiry mode: active (questions during the work) vs passive (questions at the end), credit dscout; when to use each (passive for fast or safety-critical work).",
+        "Session length: about 2 hours (Wikipedia, citing Holtzblatt; fact-checker confirms); NN/g says 1 hour to several days by scope. Visual 5: 2-hour session strip with an example time split, labelled 'example plan'.",
+        "Observer bias and the complaint-session risk in one sentence each, with the fix (stick to the research focus; ask for the last real instance, not opinions).",
+        "Lead moment 1 (end of section): site access, consent and recruiting are the hard part for in-house teams; one natural sentence that our programme schedules recruitment as its own step (hub: participant recruitment 3-6 days). No invented claims."
+      ]
+    },
+    {
+      "h2": "Which contextual inquiry questions should you ask, and what should you write down?",
+      "answerHint": "Good contextual inquiry questions point at what the user just did in the real work setting: 'What made you open that second screen?' beats 'How do you usually check orders?'. Write down each step, the tool or artifact used, every workaround and interruption, and the question to ask at the next pause.",
+      "points": [
+        "Question bank as a ul in 4 groups: opening (about their role and today's work), during observation (about the step just seen), probing workarounds and external resources ('Where did that number come from?'), wrap-up (playback). 10-14 questions total, written in our own words; no copying of HubSpot, Nulab or UserTesting lists. Include 3 'avoid' examples (leading, hypothetical, future-preference questions) with the better version.",
+        "H3 'A contextual inquiry template for field notes': Visual 6 = field-note sheet (see visuals); its text version is the template table (time | what the user did | tool or artifact | workaround or breakdown | question for the next pause | my interpretation, to check in wrap-up). This covers 'contextual inquiry template' (40/mo). No downloadable file is promised.",
+        "Photos and artifacts: collect copies of sticky notes, printouts and spreadsheets only with permission (recording consent)."
+      ]
+    },
+    {
+      "h2": "Contextual inquiry example, a warehouse receiving study",
+      "answerHint": "This contextual inquiry example follows an illustrative study of warehouse receiving clerks: observation in the real work setting showed a paper packing list, a purchase-order lookup on a second screen and a phone call for every short shipment, none of which came up when the clerks were asked how receiving works.",
+      "points": [
+        "Label the whole example illustrative (composite users, invented details); never imply a client. It reuses the intro clerk so the post has one thread.",
+        "Short narrative in 4 beats: research focus ('why does receiving take longer than the system shows?'), 5 sessions at 2 sites (illustrative), 3 observations with the question asked at the pause, and what the wrap-up corrected.",
+        "No outcome percentage. End with the 2-3 design questions the observations raised (e.g. show the purchase order on the handheld; a short-shipment flow), which H2 9 turns into decisions.",
+        "This is the second stacked H2 ('Contextual inquiry example'); no colon (comma is fine)."
+      ]
+    },
+    {
+      "h2": "How do you turn field notes into design decisions?",
+      "answerHint": "After contextual inquiry, the team turns field notes from the real work setting into decisions in an interpretation session: 3-8 people replay each session, write one insight per note, group the notes in an affinity diagram, and draw work models that feed personas, journey maps and a Jobs to be Done opportunity map.",
+      "points": [
+        "First sentence must name contextual inquiry (or 'field observation') + one essential concept (see answerHint).",
+        "Steps (ol): interpretation session within 48 hours of each visit (our practice; label it) with 3-8 people (Wikipedia/Holtzblatt); one insight per note; affinity diagram across sessions; work models (Contextual Design names flow, sequence, artifact, cultural and physical models; fact-checker confirms the 5 names in the 2nd edition before printing them, else write 'work models such as flow and sequence models'); then the outputs our programme delivers (hub synthesis step: tagged in Dovetail, personas, journey maps and a JTBD opportunity map, 90-minute readout).",
+        "No image in this section (6-image cap): the notes-to-decisions path is the ol above, in text. See visualsNote for the optional swap.",
+        "Journey map: name it as one output with one sentence; no template content and no steps for building a journey map (the parallel 'customer journey map template' post owns that). Future link target: /blog/customer-journey-map-template/ (plain text until published).",
+        "Lead moment 2: synthesis is where in-house studies stall (notes pile up, no one owns the readout); one natural sentence pointing to the hub process step (deep link /services/ux-research-services/#how-does-the-ux-research-process-work, anchor e.g. 'how our 5-step UX research process runs synthesis and the readout')."
+      ]
+    },
+    {
+      "h2": "What does a contextual inquiry study take, and when should you bring in researchers?",
+      "answerHint": "A contextual inquiry study takes travel to the real work setting, about 2 hours per session plus a few hours of interpretation per session, and 4-6 users per user group. Bring in a research team when you cannot get site access, cannot spare researchers for two weeks of fieldwork, or need the findings turned into personas and journey maps your product team will use.",
+      "points": [
+        "Benefits vs limitations as two short ul (reasoned, not generic): benefits answer PAA (tacit knowledge, real workarounds, credibility with stakeholders, detail surveys cannot give); limitations (resource cost: travel and hours per user, Wikipedia; small sample; access restrictions; observer effect).",
+        "Effort numbers in our programme (hub wording only): generative fieldwork 7-15 days inside a 4-8 week programme; on-site contextual inquiry is one of the factors that moves the programme price toward the top of $25,000-$60,000 (deep link /services/ux-research-services/#how-much-does-ux-research-cost, anchor e.g. 'what moves the price of a UX research programme'). State the price once. Do not build a cost section (hub owns 'How much does UX research cost?').",
+        "Main lead moment and offer (see leadAngle). Second UP link to /services/ux-research-services/ (anchor varies, e.g. 'our UX research programme'; the exact anchor 'UX research services' is used once early). Sideways link to /blog/choose-ux-research-agency/ (anchor e.g. 'how to compare research agencies before you hire one') for readers who will outsource. Close with /contact/.",
+        "Do not use the home.ts MDS-nurses line (CONFLICT 3)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many participants does a contextual inquiry need?",
+      "hint": "Our programme observes 4-6 users per user group (hub). Holtzblatt's guidance via Wikipedia: as few as 4 for a small, focused task, up to 30 or more for a large scope. NN/g frames it as users per visit, visits per day and total visits. 2-3 sentences."
+    },
+    {
+      "q": "How long does a contextual inquiry session take?",
+      "hint": "About 2 hours per user (Wikipedia, Holtzblatt); NN/g: 1 hour to several days depending on scope; remote sessions capped at 2-3 hours (NN/g). Same figure as H2 6 (one intent, one answer)."
+    },
+    {
+      "q": "Can contextual inquiry be done remotely?",
+      "hint": "Yes, for screen-based desk work: NN/g calls it 'semicontextual' because only the user is in context; share the entire desktop through screen sharing, keep the researcher camera off during observation, cap sessions at 2-3 hours. It misses physical work, several monitors and in-person interaction. Our programme runs contextual inquiry on-site (hub; CONFLICT 1)."
+    },
+    {
+      "q": "What is the primary objective of contextual inquiry?",
+      "hint": "To understand how users actually do their work, including the tacit steps and workarounds they cannot report, so the product team designs for the real workflow. 2 sentences, first is the answer."
+    },
+    {
+      "q": "What are the benefits of contextual inquiry?",
+      "hint": "Short answer listing 4: real behavior instead of recall, tacit knowledge and workarounds, detail tied to real tasks, stakeholder credibility from seeing users at work. Same items as H2 10 benefits, new wording."
+    },
+    {
+      "q": "Is a contextual interview the same as contextual inquiry?",
+      "hint": "Not exactly. In UX research the contextual interview is the central part of a contextual inquiry session (the watch-and-ask loop); many teams use the terms interchangeably. Add one clause that 'contextual interview' also names a clinical interviewing technique, which is unrelated."
+    }
+  ],
+  "internalTargets": [
+    {
+      "href": "/services/ux-research-services/",
+      "anchor": "UX research services"
+    },
+    {
+      "href": "/services/ux-research-services/#how-does-the-ux-research-process-work",
+      "anchor": "how our 5-step UX research process runs synthesis and the readout"
+    },
+    {
+      "href": "/services/ux-research-services/#how-much-does-ux-research-cost",
+      "anchor": "what moves the price of a UX research programme"
+    },
+    {
+      "href": "/services/usability-testing-services/",
+      "anchor": "usability testing services"
+    },
+    {
+      "href": "/blog/choose-ux-research-agency/",
+      "anchor": "how to compare research agencies before you hire one"
+    },
+    {
+      "href": "/contact/",
+      "anchor": "tell us what you need to learn about your users"
+    }
+  ],
+  "internalTargetsNote": "All verified 2026-10-23: content/services/ux-research-services.json, content/services/usability-testing-services.json, content/blog/choose-ux-research-agency.md (published, same silo), app/contact/page.tsx. Section ids from sectionId() in components/sections/SemanticSections.tsx (lowercase, non-alphanumerics to '-', trim; the hub sections have no explicit id): 'How does the UX research process work?' -> how-does-the-ux-research-process-work; 'How much does UX research cost?' -> how-much-does-ux-research-cost. The usability-testing hub is the post's ONE cross-hub link. No DOWN link: no case study describes contextual inquiry or observation (grep of content/case-studies for observ|shadow|on-site|contextual found nothing; Mass Media Co., Parents Connect, TradeZella and Vocable list interviews only). Future internal-link targets (NOT published, plain text only, link-builder adds links when each goes live): ux research methods (pillar, /blog/ux-research-methods/), card sorting (/blog/card-sorting/, from the 'wrong method' list in H2 5), importance of ux research, generative vs evaluative research (from H2 1 'generative research'), user persona template (from H2 9 personas), quantitative ux research (from H2 5 'numbers across many users'), ux roi, healthcare ux research (clinical example in H2 5), customer journey map template (from H2 9 journey maps; parallel brief). Slugs are expected forms; the link-builder must confirm the real slug.",
+  "externalSources": [
+    {
+      "url": "https://www.nngroup.com/articles/contextual-inquiry/",
+      "why": "NN/g, Kim Flaherty, 6 Dec 2020: contextual inquiry as a type of ethnographic field study, 4 principles, 4-part session, watch-and-learn / stop-and-discuss loop, 1 hour to several days, risks. WebFetch OK 2026-10-23. Paraphrase; never copy its H2 order or anecdote."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/remote-contextual-inquiry/",
+      "why": "NN/g, Kate Kaplan, 13 Nov 2022: remote 'semicontextual' inquiry, suited to screen-based desk work, share the entire desktop, camera off during observation, 2-3 hour cap. WebFetch OK 2026-10-23. For FAQ 3."
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Contextual_inquiry",
+      "why": "Holtzblatt and Beyer origin, ~2-hour one-on-one session, 4 to 30+ users, interpretation session of 3-8 people, tacit knowledge, resource cost. WebFetch OK. Fact-checker: prefer a primary source for the numbers if one is found (Contextual Design 2nd ed., Elsevier/O'Reilly listing; InContext Design); otherwise cite Wikipedia by name."
+    },
+    {
+      "url": "https://dscout.com/people-nerds/behind-scenes-contextual-inquiry",
+      "why": "Nikki Anderson, 20 Jun 2023: active vs passive inquiry, Hawthorne effect and social desirability bias. WebFetch OK."
+    },
+    {
+      "url": "https://shop.elsevier.com/books/contextual-design/holtzblatt/978-0-12-800894-2",
+      "why": "Contextual Design: Design for Life (2nd ed.), Holtzblatt and Beyer, Morgan Kaufmann, listed November 2016 (library records say 2017). For the Contextual Design entity and work models. Fact-checker confirms the date to print."
+    }
+  ],
+  "visuals": [
+    {
+      "type": "said-vs-did split card",
+      "idea": "Landscape 1200 x max 800. Left column 'What the clerk said in an interview' (1 short quote: scan, confirm count, done); right column 'What observation showed' (5 observed steps: paper packing list, PO lookup on a second screen, recount, phone call to the buyer, sticky note for the damaged carton). Caption: 'Illustrative composite'. Text version under the image. Placed in H2 2."
+    },
+    {
+      "type": "four-principles tiles",
+      "idea": "4 tiles in a row (not a 2x2 matrix): Context, Partnership, Interpretation, Focus; each tile: what the researcher does + the mistake it prevents. Text version = the same 4 rows. H2 3."
+    },
+    {
+      "type": "method comparison table",
+      "idea": "4 columns (contextual inquiry highlighted, user interviews, usability testing, ethnography) x 6 rows (setting, what you learn, typical session, sample, best question, main output). Text version = the markdown table. H2 4."
+    },
+    {
+      "type": "method decision tree",
+      "idea": "3 yes/no questions (Is the work complex, expert or physical? Do you need to see the real setting? Is the question about labels/structure or about numbers?) leading to contextual inquiry, user interviews, usability testing, card sorting, survey or analytics. Landscape, left to right. Text version as a nested list. H2 5."
+    },
+    {
+      "type": "2-hour session strip",
+      "idea": "Horizontal timeline of one session: session primer, transition, contextual interview (watch / ask loop drawn as repeating ticks), wrap-up; example minutes on each block, labelled 'example plan'. Text version as an ol. H2 6."
+    },
+    {
+      "type": "field-note sheet mockup",
+      "idea": "A realistic note sheet (house style mockup) with 6 columns: time | what the user did | tool or artifact | workaround or breakdown | question for the next pause | interpretation to check; 3 filled illustrative rows from the warehouse example. Text version = the template table. H2 7."
+    }
+  ],
+  "visualsNote": "6 images (cap). The notes-to-decisions path in H2 9 is an ol in text, not an image, to stay at 6. If the visual designer prefers, swap the decision tree (H2 5) for a notes-to-decisions flow (field notes -> interpretation session -> affinity diagram -> work models -> personas / journey maps / JTBD opportunity map) and turn H2 5 into two lists. Follow docs/content-system/visual-style/README.md.",
+  "leadAngle": "Two soft moments and one offer (TOFU, no hard sell). (1) End of H2 6: site access, recording consent and recruiting 4-6 users per user group are what stall in-house studies; our programme makes participant recruitment its own step (hub: 3-6 days). (2) End of H2 9: synthesis is where notes pile up; our programme ends in tagged findings, personas, journey maps, a JTBD opportunity map and a 90-minute readout (deep link to the process). (3) Main offer in H2 10: if your question needs field observation and your team cannot spend 7-15 days of fieldwork, tell us what you need to learn about your users and we will say in a free consultation whether contextual inquiry or interviews will answer it; the full programme runs 4-8 weeks, $25,000-$60,000 (hub cost section link). The template TOFU CTA (free checklist, email capture) sits after H2 3. Do not promise a written study plan or a free pilot session (not published offers).",
+  "variety": {
+    "type": "Article",
+    "introStyle": "said-vs-did split (what one illustrative user says in an interview vs what observation shows). Used so far site-wide: buyer scenario, myth, data point with source, question, definition, mini case, contrarian take, itemized receipt, 60-second phone test, before/after roadmap row, ordered six-step answer. Not a repeat; nearest is the before/after row (ux-strategy-roadmap), which rewrote a document row, not a user's behavior.",
+    "h2Frames": [
+      "what is X",
+      "why X beats Y (argument)",
+      "what are the four principles",
+      "how is X different from A, B and C",
+      "when to use and when not",
+      "how to run a session",
+      "which questions and what to record",
+      "X example (worked)",
+      "how to turn notes into decisions",
+      "what it takes + when to bring in help",
+      "FAQs"
+    ],
+    "sectionOrder": "said-vs-did intro -> definition + 'contextual' meaning -> argument (why observing beats asking, Hawthorne counterpoint) -> 4 principles -> comparison table + ethnography H3 -> use/skip + decision tree -> session plan -> questions + field-note sheet -> worked example -> synthesis path -> effort, limits, help -> FAQs",
+    "visualTypes": [
+      "said-vs-did split card",
+      "four-principles tiles",
+      "method comparison table",
+      "method decision tree",
+      "2-hour session strip",
+      "field-note sheet mockup"
+    ],
+    "ctaAngle": "tell us what you need to learn about your users -> free consultation on whether contextual inquiry or interviews will answer it (TOFU checklist CTA from the template)",
+    "listStyle": "argument paragraphs + principle tiles + criteria table + use/skip bullet pairs + session ol + grouped question bank with 'avoid -> better' pairs + note-sheet table + synthesis ol",
+    "differsFrom": "Last 3 site-wide (ledger date order): how-to-design-an-mvp (Guide / ordered six-step answer), ux-strategy-roadmap (Guide / before-after row), ecommerce-ux-audit (Checklist / 60-second phone test). Differs on type (Article), intro, H2 frames, section order, visuals, CTA angle and list style (7 of 7). Silo's only post: choose-ux-research-agency (Guide / buyer scenario; scorecard, red-flag map): differs on all 7. Nearest structural relatives: (a) is-discovery-phase-worth-it (the only other Article): do NOT reuse its skip test, assumption ledger or escalation ladder; our decision tree picks a method, not buy/skip. (b) usability-testing-cost-per-participant (same research family): do NOT reuse its recruitment difficulty ladder or itemized receipt. (c) ux-strategy-roadmap 'evidence ledger': our field-note sheet is an observation sheet, keep the visual distinct (handwritten-sheet mockup, not a ledger card)."
+  },
+  "notes": [
+    "Exact keyword 'contextual inquiry' in H1/title, slug, first sentence, description (prescribed, 157 chars), first meta keyword, metaTitle start. No colon in metaTitle, H1 or coverTitle. No keyword or secondary contains 'vs'.",
+    "Cannibalisation check (2026-10-23): grep of content/ for 'contextual inquiry' found it only as a hub deliverable/method (ux-research-services sections, FAQ and semantic entities), as a method word in choose-ux-research-agency (2 lines), and in 3 location pages (Denver FAQ, Houston 'Contextual inquiry report.' item and entity, San Francisco item). No page has it as keyword, metaTitle, anchor or H2. The hub keyword is 'UX research services'; this post never targets 'ux research services', 'ux research agency', 'ux research cost' or 'ux research process' and has no H2 on cost, deliverables or process (deep links instead). GSC: no 'contextual' or 'inquiry' queries yet.",
+    "Parallel brief 'customer journey map template': this post mentions journey maps only as one synthesis output (one sentence in H2 9, plus the comparison-table output cell and the hub deliverable wording). No journey-map steps, template, stages or example here. The two briefs share the hub UP link only.",
+    "Case studies: no DOWN link. No case study describes contextual inquiry, observation or shadowing. Do not present Mass Media Co., Parents Connect, TradeZella or Vocable (interviews only) as contextual inquiry work. The worked example is an illustrative composite and must be labelled so.",
+    "Honesty, do not use: the Margaret Mead quote (unverifiable attribution, printed by LUMA); NN/g's auto-insurance autosave anecdote; Maze's 'seven out of 10 users checked Maps' (hypothetical); Looppanel's unsourced '2 to 4 hours' and '15 to 30 minutes' introduction; Atlassian's swag and 180-minute play format; the home.ts MDS-nurses shadowing line (CONFLICT 3). No uplift or ROI number for contextual inquiry anywhere.",
+    "Fact-checker list: (1) Contextual Design first-edition year (1997 vs 1998 printings) and 2nd-edition year (Elsevier Nov 2016 vs library 2017); NN/g's fetched summary mentioned 1990, which is the first published description of the method per Wikipedia, not the book. (2) ~2-hour session, 4 to 30+ users, 3-8 person interpretation session (Wikipedia; primary source preferred). (3) The five work model names. (4) NN/g remote 2-3 hour cap and 'semicontextual' wording. (5) dscout active/passive inquiry naming.",
+    "Originality: beats page usertesting.com (in-UX -> importance -> methodology (process, principles) -> prepping (objectives, users, site, questions) -> challenges -> conducting -> extracting insights -> best practices -> FAQ). Do not use its order, its 5-step process names ('planning and preparation, contextual observation, engagement and interviewing, documentation and analysis, iterative refinement'; think.design uses the same 4), its do's-and-don'ts block or its 3 FAQs in the same wording. Our spine is the argument (said vs did) and the order is argument -> principles -> comparison -> use/skip -> session -> questions/notes -> example -> synthesis -> effort. QA checks 5-gram overlap with the beats page (max 5%).",
+    "CONFLICTS for the orchestrator: see siteFacts.conflicts 1-3 (hub remote FAQ vs NN/g; San Francisco 5-12 vs hub 4-6; home.ts MDS anecdote without a case study, OWNER-Q).",
+    "Template CTA check (lesson 2026-10-14/10-20): funnel tofu -> the template prints the generic 'UI/UX design readiness checklist' email capture, no price and no case study, so there is no price or case-study conflict."
+  ],
+  "competitorsUpdate": {
+    "note": "For the orchestrator to merge into docs/content-system/competitors.json (this agent writes no shared registry in full).",
+    "domains": [
+      {
+        "domain": "usertesting.com",
+        "kind": "research platform blog",
+        "silos": [
+          "ux-research-services",
+          "usability-testing-services"
+        ],
+        "seenFor": [
+          "contextual inquiry",
+          "contextual inquiry ux",
+          "contextual inquiry questions"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "dscout.com",
+        "kind": "research platform blog (People Nerds)",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "contextual inquiry",
+          "contextual inquiry example",
+          "contextual inquiry template"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "think.design",
+        "kind": "agency method library",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "contextual inquiry",
+          "what is contextual inquiry"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "ux247.com",
+        "kind": "UX research agency blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "contextual inquiry"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "looppanel.com",
+        "kind": "research tool blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "contextual inquiry ux"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      }
+    ],
+    "topPosts": [
+      {
+        "domain": "usertesting.com",
+        "url": "https://www.usertesting.com/blog/contextual-inquiry",
+        "title": "Contextual inquiry: A comprehensive guide for UX researchers",
+        "keywords": [
+          "contextual inquiry",
+          "contextual inquiry ux",
+          "contextual inquiry questions",
+          "contextual inquiry example"
+        ],
+        "estTraffic": 90,
+        "silo": "ux-research-services",
+        "serviceSupport": 4,
+        "status": "briefed",
+        "brief": "content/briefs/contextual-inquiry.json"
+      },
+      {
+        "domain": "dscout.com",
+        "url": "https://dscout.com/people-nerds/behind-scenes-contextual-inquiry",
+        "title": "Sneak a Peek Behind the Scenes with Contextual Inquiry",
+        "keywords": [
+          "contextual inquiry",
+          "contextual inquiry example"
+        ],
+        "estTraffic": 49,
+        "silo": "ux-research-services",
+        "serviceSupport": 4,
+        "status": "briefed",
+        "brief": "content/briefs/contextual-inquiry.json"
+      }
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/ux-research-services.json",
+      "field": "sections[h2='What do UX research services include?'].items[title='Contextual inquiry.'].body",
+      "sentence": "Researchers observe 4–6 users in the real work setting, for example a warehouse shift or a hospital ward.",
+      "change": "Link the words 'observe 4–6 users in the real work setting' to /blog/contextual-inquiry/ (item bodies render as HTML via <Html as=\"p\">, lesson 2026-10-20).",
+      "anchor": "observe 4–6 users in the real work setting",
+      "priority": "required",
+      "why": "Pillar -> post link in the same silo on the exact deliverable the post explains; hub banking for the new post."
+    },
+    {
+      "file": "content/blog/choose-ux-research-agency.md",
+      "field": "body, line under 'What decision should the research answer first?'",
+      "sentence": "**Generative research** answers \"what should we build?\", so the agency needs field time for user interviews and contextual inquiry.",
+      "change": "Link 'contextual inquiry' to /blog/contextual-inquiry/.",
+      "anchor": "contextual inquiry",
+      "priority": "required",
+      "why": "Sideways link inside the silo from the only published sibling, on a sentence that names the method; a reader judging agency field time will click to learn what it involves."
+    },
+    {
+      "file": "content/locations/ux-design-agency-houston.json",
+      "field": "item 'Contextual inquiry report.'",
+      "sentence": "",
+      "change": "none",
+      "anchor": "",
+      "priority": "skip",
+      "why": "Location pages are conversion paths (RULES.md internal-link rule 6) and the post is TOFU; a link would pull a ready local buyer away from the CTA."
+    }
+  ]
+}
