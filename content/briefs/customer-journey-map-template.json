@@ -1,0 +1,829 @@
+{
+  "slug": "customer-journey-map-template",
+  "keyword": "customer journey map template",
+  "keywordCarrier": {
+    "exactString": "customer journey map template",
+    "spellingNote": "Plain 4-word noun phrase, all words > 3 letters except 'map' (3 letters): has() needs every word longer than 2 letters, so 'map' counts. Print it lower case in prose ('a customer journey map template'), title case only in the H1/meta title. kwCount counts only the literal phrase in this order. Near-forms that do NOT count: 'customer journey mapping template', 'journey map template', 'customer journey template', 'template for a customer journey map', 'customer journey map templates' DOES count (substring). Frontmatter keyword and first meta keyword: 'customer journey map template'. Slug words pass slug-keyword.",
+    "title": "Customer Journey Map Template, With a Worked Example From Research",
+    "titleNote": "66 chars, no colon (Keywords rule 4), exact keyword first, joined with a comma. This is the H1 (frontmatter `title`).",
+    "metaTitle": "Customer Journey Map Template | Free Download and Example",
+    "metaTitleNote": "57 chars. Starts with the exact keyword word for word, then ' | ' and the benefit. No colon. Never add 'services', 'agency' or 'UX research' (hub owns 'UX Research Services | User Interviews & Journey Maps').",
+    "coverTitle": "Customer Journey Map Template",
+    "coverTitleNote": "No colon. Cover subline (optional, not a title): 'Free PDF, SVG and CSV + a worked example'.",
+    "description": "Customer journey map template, free in PDF, SVG and CSV, with a worked example and 7 steps to fill each lane from user research. Then get our free checklist.",
+    "descriptionNote": "157 chars (python len). Use as written: keyword first, what the reader gets, then the TOFU next step (the template's email-capture checklist). Pronoun check: none ('each lane' names its noun). No apostrophes. Formats match the download plan (PNG also ships but is not named, to stay under 158).",
+    "inBody": "Intro first sentence (two-versions-of-one-cell intro, see variety) must carry the literal keyword, e.g. 'Every customer journey map template has the same empty cell under Stage 2, Thinking, and what you write there decides whether the map is evidence or fiction.' Other approved carriers, each read aloud: 'Download the customer journey map template below in PDF, SVG, PNG or CSV'; H2 1 'What is a customer journey map template, and what does ours include?'; 'A customer journey map template only saves time if every cell can point to a source'; H2 'Customer journey map template, filled in, an illustrative clinic scheduling example'; closing 'If you would rather not fill the customer journey map template alone, …'. Never stack nouns after it ('customer journey map template download/example/guide') except the one H2 6 comma form above.",
+    "secondary": {
+      "user journey map": "Secondary, Ahrefs 4,900 / KD 24 (covered inside this post, no separate post). Plain noun phrase. Carrier: 'A user journey map uses the same grid, scoped to one product task instead of the whole customer relationship.' Must appear in H2 2, the H3 on user flows, one FAQ and the worked-example section (the example is a user journey map of one task). 5–8 literal uses total (salience rival, see density).",
+      "journey map template": "Ahrefs 600 / KD 22, same page-1 intent (NN/g digital template, Miro, Smaply). Carrier: 'A journey map template is only the grid; the research fills it.' 1–2 uses.",
+      "customer journey map example": "Ahrefs 500 / KD 14, page 1 = example galleries (Creately, Piktochart, Lucid, Edrawsoft, The CX Lead). Covered by H2 6. Carrier: 'This customer journey map example is illustrative: the clinic and its numbers are invented to show how evidence fills each lane.' 1 use.",
+      "ux journey map": "Ahrefs 350 / KD 13, parent topic 'user journey map'. Carrier in H2 2: 'Product teams often call the product-scoped version a UX journey map.' 1 use.",
+      "user journey map template": "Ahrefs 200 / KD 9, page 1 = template tools (Quadratic, Lucid, Visily, Slickplan, Visme). Carrier: 'The same file works as a user journey map template: rename the stages to the steps of one task.' 1 use.",
+      "customer journey mapping template": "Ahrefs 150 / KD 22, AI Overview present. Carrier: 'Some teams search for a customer journey mapping template; it is the same artefact.' 1 use (also a binding synonym)."
+    },
+    "density": "Word-share target 1–2%. 4-word keyword at about 2,400 body words: max 0.02 x 2,400 / 4 = 12 uses. Aim 9–11 literal uses: H1, first sentence, download box, H2 1, H2 3, H2 6, one body sentence each in H2 4 and H2 5, the closing, one FAQ answer. H2 share: an H2 counts when it holds 'customer', 'journey' or 'template'; 9 of 10 outline H2s do (90%). kwCount rule: the literal keyword must be at least half of the most-mentioned rival entity. NOT rivals (all words inside the keyword): 'customer journey map', 'journey map', 'journey maps' (substring forms). Rivals to watch: 'user journey map' (cap 2x keyword count, aim 5–8), 'persona' (writers repeat it in every step; cap 18 at 10 keyword uses), 'contextual inquiry' (cap 12), 'touchpoints' (cap 12), 'service blueprint' (cap 6). 'pain points' and 'emotions' are left out of entities on purpose (generic, high frequency)."
+  },
+  "secondary": [
+    "user journey map",
+    "journey map template",
+    "customer journey map example",
+    "ux journey map",
+    "user journey map template",
+    "customer journey mapping template"
+  ],
+  "secondaryNote": "All volumes Ahrefs API v3 keywords-explorer/overview, US, 2026-10-23 (this agent's own call). Each secondary SERP checked 2026-10-23: 'user journey map' via Ahrefs serp-overview (NN/g, Figma, Coursera, Smaply, UXtweak, IBM, Salesforce: definition + how-to, same informational intent); 'journey map template', 'customer journey map example', 'ux journey map', 'user journey map template' via WebSearch (template tools and example galleries; same intent). NOT added: 'customer journey map' (14,000 / KD 56) and 'customer journey mapping' (3,700 / KD 56, parent topic 'customer journey software'): head definition terms with KD 56, a later pillar candidate, not winnable by this post; 'journey map' (9,700 / KD 34) has parent topic 'journeymap minecraft' (mixed intent); 'service blueprint' (2,800 / 30), 'empathy map' (5,900 / 21) and 'experience map' (350 / 5) are separate concepts: they get one disambiguation row each, not a target. 'free customer journey map template' (100 / 21), 'customer journey map template ppt' (70 / 1), 'customer journey map template excel' (40 / 3), 'b2b customer journey map template' (60 / 28), 'what is a user journey map' (90 / 0), 'user journey map vs user flow' (20 / 8), 'user journey vs customer journey' (40 / 1), 'journey map vs service blueprint' (30 / 5): covered by sections/FAQs, not printed as targets.",
+  "intent": "Informational with commercial-investigation tone (Ahrefs intents: informational + commercial). The searcher wants a ready-made grid to download and copy, and an example showing what goes in each cell. Two groups search it: CX/marketing people (lifecycle maps) and product/UX teams (task journeys). The post serves both with editable stages, and leads product teams toward research-backed maps, which the hub sells.",
+  "volume": 5100,
+  "kd": 0,
+  "dataSource": "Ahrefs API v3, US, 2026-10-23 (re-verified by this agent; orchestrator's 2026-10-22 figures confirmed): customer journey map template 5,100 / KD 0 / traffic potential 10 / parent topic 'customer journey map template excel' / SERP features ai_overview, ai_overview_sitelink, image_th, video_th, question. user journey map 4,900 / KD 24 / TP 4,500 / features ai_overview, ai_overview_sitelink, question. Ahrefs serp-overview (top 20) pulled 2026-10-23 for both keywords. Ahrefs site-explorer top-pages (US, 2026-10-22) for looppanel.com and userinterviews.com. Semrush: organic_research returned no_api_units on 2026-10-23. WebFetch OK: userinterviews.com, nngroup.com (3 pages), figma.com/resource-library, atlassian.com, offers.hubspot.com, miro.com, ixdf.org, coursera.org, optimizely.com, online.hbs.edu, looppanel.com, projectmanager.com, deckary.com, nice.com, marvelapp.com, support.microsoft.com. 403: figma.com/templates/customer-journey-map, canva.com. threerooms.com returned a truncated page. GSC (docs/data/gsc/latest.json, 2026-09-21..10-18): no journey-map query yet.",
+  "tpNote": "Traffic potential 10 for the primary is an Ahrefs artefact: its parent topic is 'customer journey map template excel', whose top page earns little. The page that actually ranks for the primary (looppanel.com/blog/user-journey-map-templates) has 699 est. US visits/month with the primary as its top keyword (Ahrefs top-pages, 2026-10-22). Do not read TP 10 as low demand.",
+  "hub": "ux-research-services",
+  "services": [
+    "ux-research-services"
+  ],
+  "industries": [],
+  "industriesNote": "Left empty. The worked example is an illustrative clinic scheduling app; tagging 'healthcare' would put a template post on the healthcare industry page and change related case studies. The future 'healthcare ux research' post (queue item 10) owns that angle.",
+  "author": "sahar-asif",
+  "authorWhy": "Sahar Asif (Senior Manager UX | KAM, content/home.ts) wrote this silo's first post (choose-ux-research-agency) and ux-strategy-roadmap (2026-10-17, 3 posts ago); a research-deliverable post fits her UX lead role. The parallel contextual-inquiry brief (content/briefs/contextual-inquiry.json) already took ahmad-ullah (Principal UX Designer), so the two cluster posts publishing the same day get different authors. Voice devices from her earlier posts must NOT be reused: buyer-scenario intro, red-flag lists, proposal comparison (choose-ux-research-agency); before/after row, RICE/HEART, now-next-later board (ux-strategy-roadmap). Rejected: shahmir-farooq (Sr. Communication Designer) suits the template's visual production, not research method; faizan-khan wrote the last post; talha-saleem and saliha-shahzad are UI roles. Contributor: umar-sarwar (default).",
+  "type": "Guide",
+  "funnel": "tofu",
+  "funnelWhy": "Silo ux-research-services has 1 published post (choose-ux-research-agency, BOFU) = 100% BOFU, 0% TOFU (target 50%), 0% MOFU (30%). TOFU is furthest below target. The parallel contextual-inquiry brief does not change that: after both, TOFU still trails or ties. SERP rule (2026-10-06): page 1 is template galleries (Miro, Canva, Confluence, HubSpot, FigJam, IxDF, ProjectManager, Threerooms) and roundup/how-to posts (Looppanel, User Interviews, Deckary, HubSpot blog): a resource/learning SERP = TOFU. TOFU min service-support 3: met (see serviceSupport). TOFU template CTA (app/blog/[slug]/page.tsx) prints the 'UI/UX design readiness checklist' email capture, which is fine; the template itself is downloaded directly (see downloadAsset).",
+  "serviceSupport": 3,
+  "serviceSupportWhy": "3, not higher: many searchers are marketers who want a lifecycle diagram for a slide and will never commission research. It reaches 3 because the hub sells journey maps as a named deliverable (content/services/ux-research-services.json: 'Personas and journey maps … 1 journey map per persona') and the post's angle (fill it from interviews and contextual inquiry, not guesses) shows product teams the work the hub does. Lead moments are aimed at product/UX teams only.",
+  "beats": "https://www.looppanel.com/blog/user-journey-map-templates",
+  "alsoOutranks": [
+    "https://www.userinterviews.com/blog/best-customer-journey-map-templates-examples",
+    "https://www.projectmanager.com/templates/customer-journey-map-template",
+    "https://www.threerooms.com/resources/free-customer-journey-map-template",
+    "https://deckary.com/blog/customer-journey-map-examples"
+  ],
+  "beatsWhy": "Looppanel (Theertha Raj, 4 Nov 2024) is organic #3 for the primary and its top keyword (Ahrefs: ~699 US visits/month). Structure: definitions of user/customer journey mapping -> why a template -> 7 third-party templates (FigJam, Miro, Canva, NN/g PDF, PowerPoint, Figma, UXPressia; numbering error, two '6.') -> what to include (6 H4 groups) -> 8 steps -> a Reddit section with an empty heading -> FAQs. It hosts no template of its own beyond tool links, says 'base your map on actual user behavior' but gives no method for turning interviews into cells, no evidence marking, no worked example and no disambiguation table. User Interviews (#1 AIO-cited roundup) curates 150+ links, cites 3 NN/g survey figures secondhand and also skips how to fill cells from interviews. ProjectManager offers an Excel file (5 marketing stages) with no research step. Deckary has 5 worked examples whose numbers are unsourced. Our post wins on: an own, ungated template in 4 formats, an evidence lane (heard / observed / measured / assumed), a method-to-lane map, a fully worked example, and a map-type disambiguation table.",
+  "centralEntity": "customer journey map template (a reusable grid of journey stages and lanes, persona, scenario, actions, thoughts, emotions, pain points, evidence, opportunities and owners, that a team fills with user research to produce a customer journey map)",
+  "bindings": {
+    "synonyms": [
+      "journey map template",
+      "user journey map template",
+      "customer journey mapping template",
+      "UX journey map"
+    ],
+    "plural": [
+      "customer journey map templates",
+      "journey maps",
+      "customer journey maps"
+    ],
+    "parent": [
+      "UX research",
+      "journey mapping"
+    ],
+    "children": [
+      "persona and scenario header",
+      "journey stages",
+      "touchpoints",
+      "emotion curve",
+      "evidence lane",
+      "opportunities and owners"
+    ],
+    "related": [
+      "service blueprint",
+      "experience map",
+      "empathy map",
+      "user flow",
+      "contextual inquiry",
+      "user interviews"
+    ],
+    "bindingNote": "Each synonym printed at least once (carriers in keywordCarrier.secondary). Parent 'UX research' in the intro (UP link anchor 'UX research services' sits next to it) and 'journey mapping' in the H2 1 definition (hub entity). Each child = one row of the template anatomy table in H2 1 and one H3 or list item in H2 3: persona and scenario header, journey stages, touchpoints, emotion curve, evidence lane, opportunities and owners. Each related concept gets a fact: service blueprint, experience map, empathy map, user flow (H2 2 table + H3), contextual inquiry and user interviews (H2 4 method map + H2 5 steps, hub counts)."
+  },
+  "essential": [
+    "customer journey map template",
+    "user research",
+    "persona"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'customer journey map template' (or 'customer journey map', 'journey map', 'user journey map') plus 'user research' (or 'research', 'interviews', 'contextual inquiry') or 'persona'. The answerHints below do this.",
+  "queryVariants": [
+    "customer journey map template",
+    "user journey map template",
+    "how to create a customer journey map",
+    "customer journey map example",
+    "what should a customer journey map include"
+  ],
+  "queryVariantsNote": "One answer site-wide, in hub wording: a journey map is built per persona (hub: 2–4 personas, 1 journey map per persona) from user interviews (hub: 10–15 one-hour interviews per user group) and contextual inquiry (hub: 4–6 users observed in the real work setting), synthesized in Dovetail, with steps, emotions and pain points per stage (hub example 'first-time setup'). The H2s and FAQs answer all five variants with these same facts.",
+  "ambiguous": [
+    {
+      "word": "map",
+      "context": "journey map / customer journey map (not a site map, a user flow diagram or a geographic map; Ahrefs shows 'journey map' parent topic 'journeymap minecraft')"
+    },
+    {
+      "word": "template",
+      "context": "downloadable journey map grid in PDF, SVG, PNG or CSV (not a website or Figma UI template)"
+    },
+    {
+      "word": "research",
+      "context": "user research: interviews, contextual inquiry, analytics (not market research or desk research)"
+    },
+    {
+      "word": "persona",
+      "context": "research-based persona from interviews (not a marketing buyer persona invented in a workshop)"
+    },
+    {
+      "word": "stage",
+      "context": "journey stage of one scenario (not a funnel stage or a project phase)"
+    },
+    {
+      "word": "flow",
+      "context": "user flow, a screen-by-screen path (not a workflow tool or cash flow)"
+    },
+    {
+      "word": "blueprint",
+      "context": "service blueprint: frontstage, backstage and support processes"
+    }
+  ],
+  "siteFacts": {
+    "source": "content/services/ux-research-services.json (hub) unless stated",
+    "deliverable": "Hub item 'Personas and journey maps': 'Findings become 2–4 personas and 1 journey map per persona, for example the steps, emotions and pain points of first-time setup.' Use these numbers and the 'first-time setup' framing; the worked example is a first-time setup journey on purpose.",
+    "interviews": "Hub item 'User interviews': '10–15 one-hour interviews uncover goals and pain points'. Hub FAQ: '10–15 interview participants per user group'. Use 10–15 per user group. Do not use the hub startup FAQ figure (8–10) or any location-page figure.",
+    "contextualInquiry": "Hub item: 'Researchers observe 4–6 users in the real work setting, for example a warehouse shift or a hospital ward.' Hub FAQ: contextual inquiry needs on-site visits (remote interviews and card sorts work over video). CONFLICT already raised by the contextual-inquiry brief: NN/g documents a remote 'semicontextual' variant. In this post state on-site observation as our practice ('in our programme, contextual inquiry runs on site') and do not discuss remote variants (the contextual-inquiry post owns that).",
+    "synthesis": "Hub step 5 'Synthesis and readout (4–7 days)': 'Findings are tagged in Dovetail, turned into personas, journey maps and a JTBD opportunity map, and presented in a 90-minute readout.'",
+    "programme": "4–8 weeks (20–40 working days), $25,000–$60,000, 5 steps: research framing 2–4 days; participant recruitment 3–6 days; generative fieldwork 7–15 days; evaluative studies 4–8 days; synthesis and readout 4–7 days. State the price once with the deep link to the cost section; do not restate the hub's $25k/$60k examples.",
+    "whenToHire": "Hub list item: 'Teams disagree about priorities, if no shared personas or journey maps exist.' Usable as the trigger in H2 9.",
+    "siblingFacts": "saas-ux-design.json step 'Lifecycle journey mapping (3–5 days)': sign-up to renewal, drop-off points, user roles, upgrade moments. ux-design-agency-columbus.json: 'Journey maps' = end-to-end maps connecting customer view and employee view; 'Journey workshop (2–3 days)'. Do not restate these durations in this post (they belong to other engagements); never give a standalone 'journey mapping' price or duration.",
+    "conflicts": [
+      "No published price or duration exists for a journey map on its own; the hub sells it inside the 4–8 week programme. The writer must not offer a standalone journey-mapping engagement or price. If the owner wants one, that is an OWNER-Q.",
+      "home.ts process step 'Discovery and research' lists 'Personas, journey maps, research report' with timeline '1–4 weeks', while the hub says 4–8 weeks. Follow the hub (4–8 weeks); do not quote home.ts's 1–4 weeks.",
+      "Vocable (content/case-studies/vocable.md) is the only case study that describes a journey map: 'We mapped the full creator journey and designed each screen around a problem we heard in stakeholder interviews: planning, drafting, optimizing and publishing.' Those were STAKEHOLDER interviews, not user interviews or contextual inquiry. The writer may say exactly that and name the 4 phases; never say the Vocable map came from user interviews, and never attribute the 35% workflow-efficiency result to journey mapping.",
+      "Download gating: RULES.md/template give TOFU an email-capture checklist; this brief makes the template itself ungated (linkable asset). If the owner wants the template gated too, that is an OWNER-Q; gating would reduce its value as a link target."
+    ]
+  },
+  "entities": [
+    "customer journey map",
+    "user journey map",
+    "journey stages",
+    "touchpoints",
+    "persona",
+    "scenario",
+    "emotion curve",
+    "evidence lane",
+    "current-state map",
+    "future-state map",
+    "day-in-the-life map",
+    "service blueprint",
+    "experience map",
+    "empathy map",
+    "user flow",
+    "hypothesis map",
+    "contextual inquiry",
+    "user interviews",
+    "affinity mapping",
+    "Dovetail",
+    "Nielsen Norman Group (NN/g)",
+    "FigJam",
+    "Miro",
+    "PowerPoint"
+  ],
+  "entitiesNote": "24 entries, one name each, short form only at the end. All are phrases the post prints literally. 'customer journey map' is not a salience rival (all words inside the keyword). 'pain points', 'emotions', 'actions' and 'opportunities' are left out (generic, high-frequency; they still appear as lane names). 'UX research' is not listed (hub entity, appears with the UP link). 'Jobs to be Done' left out to keep the post on journey maps (hub owns JTBD opportunity map). Substring check: no short form collides ('NN/g' is safe).",
+  "attributes": [
+    "stage count (5–7 stages per map, named from research)",
+    "lane count (8 lanes in our template)",
+    "interview count (10–15 interviews per user group)",
+    "observation count (4–6 contextual inquiry sessions)",
+    "evidence level (heard, observed, measured or assumed)",
+    "map scope (one persona and one scenario per map)",
+    "persona count (2–4 personas, 1 journey map each)",
+    "file formats (PDF, SVG, PNG and CSV)",
+    "emotion scale (from -2 to +2)",
+    "research timeline (4–8 weeks for a full UX research programme)",
+    "review cadence (after each new study or major release)"
+  ],
+  "attributesNote": "11 entries. The script reads the words before '(' and needs 60% of those longer than 3 letters in the text, so print these label nouns literally at least once: 'stage count', 'lane count', 'interview count', 'observation count', 'evidence level', 'map scope', 'persona count', 'file formats', 'emotion scale', 'research timeline', 'review cadence'. Values in brackets are hub facts (interviews, contextual inquiry, personas, timeline) or our template's own design (lanes, scale, evidence levels); 'review cadence' is our practice, not a statistic.",
+  "aiOverview": {
+    "present": true,
+    "keyword": "customer journey map template",
+    "method": "Ahrefs serp-overview (US, top 20, 2026-10-23), rows typed ai_overview / ai_overview_sitelink. The AI Overview text itself was not returned; entities/terms below come from WebFetch of each cited page.",
+    "cited": [
+      "https://miro.com/templates/customer-journey-maps/",
+      "https://www.canva.com/templates/s/customer-journey-map/",
+      "https://www.atlassian.com/software/confluence/templates/customer-journey-mapping",
+      "https://www.userinterviews.com/blog/best-customer-journey-map-templates-examples",
+      "https://www.youtube.com/watch?v=68ZXwI5L4kY",
+      "https://offers.hubspot.com/customer-journey-map-template",
+      "https://www.figma.com/templates/customer-journey-map/",
+      "https://www.figma.com/templates/customer-journey-mapping/",
+      "https://ixdf.org/templates/customer-journey-map",
+      "https://www.youtube.com/watch?v=eU8hqeC88jM",
+      "https://www.youtube.com/watch?v=gtVpAHZHMkc"
+    ],
+    "citedNote": "Canva and both Figma template pages returned 403; YouTube videos not fetched (titles only: 'make an effective customer journey map in 1 hour', '6 steps for beginners', 'detailed customer journey map').",
+    "secondKeyword": {
+      "keyword": "user journey map",
+      "present": true,
+      "cited": [
+        "https://www.nngroup.com/articles/journey-mapping-101/",
+        "https://www.figma.com/resource-library/user-journey-map/",
+        "https://www.optimizely.com/optimization-glossary/user-journey-map",
+        "https://www.coursera.org/articles/creating-user-journey-maps-a-guide",
+        "https://www.nice.com/info/mastering-the-user-journey-map-best-practices-and-examples",
+        "https://online.hbs.edu/blog/post/customer-journey-map",
+        "https://marvelapp.com/blog/beginners-guide-user-journey-mapping/",
+        "https://www.youtube.com/watch?v=RMj56_fkEEY",
+        "https://www.youtube.com/watch?v=ImxH9qZ0MQQ",
+        "https://www.youtube.com/watch?v=HwaO_RwjGsQ"
+      ]
+    },
+    "entities": [
+      "customer journey map",
+      "user journey map",
+      "persona (actor)",
+      "scenario",
+      "expectations",
+      "journey phases or stages",
+      "touchpoints",
+      "channels",
+      "actions",
+      "thoughts and mindsets",
+      "emotions",
+      "pain points",
+      "opportunities",
+      "internal ownership",
+      "metrics and KPIs",
+      "current-state map",
+      "future-state map",
+      "day-in-the-life map",
+      "service blueprint",
+      "empathy map",
+      "experience map",
+      "user flow",
+      "hypothesis map",
+      "Miro",
+      "FigJam",
+      "Confluence",
+      "Canva",
+      "HubSpot",
+      "Excel",
+      "PowerPoint",
+      "Nielsen Norman Group"
+    ],
+    "attributes": [
+      "one point of view (one actor) per map",
+      "stages vary by scenario (common marketing set: awareness, consideration, purchase or decision, retention, advocacy; some add onboarding)",
+      "emotion shown as one line of highs and lows",
+      "actions rooted in data, mindsets from customer verbatims",
+      "opportunities carry an owner and a metric",
+      "map types: current-state, future-state, day in the life, service blueprint, circular",
+      "formats: whiteboard (Miro, FigJam), slides (PowerPoint), spreadsheet (Excel), PDF",
+      "validate and iterate: maps are living documents"
+    ],
+    "terms": [
+      "visualization of the process a person goes through to accomplish a goal",
+      "touchpoints",
+      "pain points",
+      "moments of delight",
+      "moment of truth",
+      "frontstage and backstage",
+      "hypothesis map vs research map",
+      "living document",
+      "golden opportunities (Confluence wording, do not reuse)",
+      "validate and refine"
+    ],
+    "questions": [
+      "What is a customer journey map?",
+      "What should a customer journey map template include?",
+      "How do you create a customer journey map?",
+      "Which stages should a customer journey map have?",
+      "How is a user journey map different from a customer journey map?",
+      "How is a journey map different from a service blueprint, an experience map and an empathy map?",
+      "Should a journey map be based on research or assumptions?",
+      "Can ChatGPT or AI create a customer journey map?"
+    ],
+    "coverage": "Every entity/attribute/term above is covered with a real fact: definitions and components in H2 1; all map types and user flow in H2 2; stages and the 5-stage marketing set vs research-named task stages in H2 3; evidence (verbatims, observed actions, measured data) in H2 4; hypothesis map vs research map in H2 4–5; owners and metrics in H2 7; tools (Miro, FigJam, PowerPoint, Excel/Google Sheets via CSV) in the download box and FAQs. Confluence, Canva and HubSpot are named once in the 'other templates' sentence of H2 1 with what each offers (Confluence page template with 4 fields; HubSpot 7 gated templates; Canva visual layouts). 'moment of truth' and 'frontstage and backstage' get one sentence each (H2 3 and H2 2). Never copy their wording."
+  },
+  "paa": [
+    "What is customer journey mapping?",
+    "What are the 7 steps of the customer journey?",
+    "How to create a journey map in PowerPoint?",
+    "What is a user journey?",
+    "What are the 7 steps to map the customer journey?",
+    "How do I create a user journey map?",
+    "Can you provide an example of a user journey map?",
+    "What is the difference between a user journey map and a user flow?"
+  ],
+  "paaNote": "From Ahrefs serp-overview rows typed 'question' (first 4: customer journey map template; last 4: user journey map), 2026-10-23. Placement, first sentence = direct answer: 'What is customer journey mapping?' -> H3 under H2 1. 'What are the 7 steps of the customer journey?' -> H3 under H2 3 (answer: there is no single standard; one common 7-stage set + why research should name stages). 'How to create a journey map in PowerPoint?' -> FAQ 1. 'What is a user journey?' -> H3 under H2 2. 'What are the 7 steps to map the customer journey?' and 'How do I create a user journey map?' -> H2 5 is the 7-step answer (H2 wording carries 'in 7 steps'); FAQ 2 gives the short form for the user journey map wording with the same steps. 'Can you provide an example of a user journey map?' -> H2 6 (the worked example is a user journey map of one task; say so). 'What is the difference between a user journey map and a user flow?' -> H3 under H2 2.",
+  "ngrams": [
+    "customer journey map template",
+    "customer journey map",
+    "user journey map",
+    "journey map template",
+    "journey stages",
+    "emotion curve",
+    "evidence lane",
+    "contextual inquiry",
+    "user interviews",
+    "service blueprint",
+    "current-state map",
+    "ux research services"
+  ],
+  "questions": [
+    "What is a customer journey map template?",
+    "What should a customer journey map include?",
+    "What is the difference between a customer journey map and a user journey map?",
+    "How is a journey map different from a service blueprint or an experience map?",
+    "Which stages should a journey map use?",
+    "How do you fill a journey map from user interviews and contextual inquiry?",
+    "How many interviews do you need for a journey map?",
+    "How do you mark which cells are assumptions?",
+    "What does a finished customer journey map look like?",
+    "How do you turn a journey map into decisions?",
+    "How often should you update a journey map?",
+    "Can AI create a customer journey map?"
+  ],
+  "serpGaps": [
+    "Own template, ungated: of page 1, HubSpot, IxDF and Threerooms gate behind a form; Miro, FigJam, Canva and Confluence need an account in their tool; Looppanel and User Interviews only link to other people's templates. No page offers a free, ungated file in PDF + SVG + PNG + CSV that works in any tool.",
+    "Evidence marking: no ranking template has a lane for where each cell came from. NN/g's cheat sheet separates hypothesis maps from research maps, but no template lets a team mark each cell heard / observed / measured / assumed.",
+    "Method-to-lane mapping: Looppanel and User Interviews say 'use real research' and list methods; none says which method fills which lane (interviews -> thoughts and expectations; contextual inquiry -> actions, workarounds, touchpoints; analytics -> drop-off; support tickets -> pain points) or how many sessions (hub: 10–15 interviews per user group, 4–6 contextual inquiry sessions).",
+    "A worked example where every cell is traceable: Deckary has 5 examples with unsourced numbers; HBS uses a 3-stage T-Mobile sketch; Figma's examples are illustrative without evidence. None shows a full filled template with the source of each cell.",
+    "Disambiguation in one table: the user journey map vs customer journey map vs user flow vs service blueprint vs experience map vs empathy map question is split across Figma, Coursera, Optimizely and NN/g; no template page answers it next to the download.",
+    "Stages: HBS gives 5 stages in one section and 3 in another; ProjectManager imposes 5 marketing stages. None explains when to use lifecycle stages vs task stages named from research, though PAA asks for '7 steps of the customer journey'.",
+    "Decisions, not wall art: Miro and NN/g mention owners and metrics; none of the template pages shows an opportunities lane with an owner and a metric per stage.",
+    "PowerPoint (PAA): no ranking page explains how to edit a downloaded SVG template in PowerPoint (Insert > Pictures, then Convert to Shape, per Microsoft support)."
+  ],
+  "outline": [
+    {
+      "h2": "What is a customer journey map template, and what does ours include?",
+      "answerHint": "A customer journey map template is a reusable grid that a team fills with user research to show how one persona moves through one scenario: journey stages across the top, and lanes for actions, touchpoints, thoughts, emotions, pain points, evidence, opportunities and owners down the side. Ours has 6 header fields, 5 editable stages and 8 lanes, and downloads free as PDF, SVG, PNG and CSV.",
+      "points": [
+        "Intro before this H2 (see variety.introStyle): one template cell (Stage 2, Thinking) written two ways: a guessed sticky note vs a research-backed cell with a quote and its source ('heard in 7 of 12 interviews', illustrative). First sentence carries the keyword. Second paragraph: what the post gives (the download, a worked example, 7 steps to fill it from research). UP link in the first 300 words: anchor 'UX research services' -> /services/ux-research-services/ attached to a sentence naming UX research as the parent discipline.",
+        "Download block at the END of the intro, before H2 1 (the h2-then-text rule only governs what follows an H2): one sentence carrier 'Download the customer journey map template below in PDF, SVG, PNG or CSV' + a ul of 4 direct links (see downloadAsset.files), each link text naming the format (e.g. 'PDF, US Letter landscape'), plus one line linking the worked-example PDF.",
+        "Definition in our words, citing NN/g Journey Mapping 101 (Sarah Gibbons) for 'a visualization of the process a person goes through to accomplish a goal' (paraphrase, link). Name the parent concepts: journey mapping is a UX research method; the hub delivers 1 journey map per persona.",
+        "H3 'What is customer journey mapping?' (PAA): direct answer first sentence: the process of researching and drawing the stages a persona goes through, the actions, thoughts and emotions at each stage, and the opportunities they reveal.",
+        "Template anatomy table (intro sentence before it), one row per child concept: persona and scenario header (actor, scenario and goal, expectations, research base: methods, n, dates), journey stages (5 editable columns), and 8 lanes: Doing (actions), Touchpoints and channels, Thinking (verbatim quotes), Feeling (emotion curve on an emotion scale from -2 to +2), Pain points, Evidence lane (source + evidence level), Opportunities, Owner and metric. Visual 1 is the blank template with this anatomy annotated; its astext panel is this table.",
+        "Attributes printed here: lane count, file formats, emotion scale.",
+        "One sentence on other templates (AIO entities): Miro and FigJam boards need an account; Confluence's page template uses 4 fields per stage; HubSpot's 7 templates sit behind a form; Canva offers visual layouts. Factual, no disparagement, no links needed (cap externals)."
+      ]
+    },
+    {
+      "h2": "How does a customer journey map differ from a user journey map and other UX maps?",
+      "answerHint": "A customer journey map follows one persona across the whole relationship with a company, from first awareness to renewal or support, while a user journey map follows one persona through one product task, such as first-time setup. Both come from user research; service blueprints, experience maps, empathy maps and user flows answer different questions.",
+      "points": [
+        "Comparison table (intro sentence first), visual 3: rows = customer journey map, user journey map (UX journey map), experience map, service blueprint, empathy map, user flow; columns = point of view, scope, time order (chronological or not), question it answers, when to use. Source: NN/g 'UX Mapping Methods Compared' (Sarah Gibbons, 5 Nov 2017) for experience map / journey map / service blueprint / empathy map distinctions, paraphrased and cited once. Service blueprint row names frontstage, backstage and support processes.",
+        "H3 'What is a user journey?' (PAA): the sequence of steps a person takes in a product to reach one goal; the user journey map adds what they think and feel at each step.",
+        "H3 'User journey map vs user flow' (PAA, heading may use 'vs' as a label; carrier: 'the user journey map vs user flow question'): a user flow is a screen-by-screen diagram of the paths a generic user can take, with no emotions or quotes and no persona; a user journey map is one research-based persona's experience, including what happens outside the product.",
+        "Carriers for 'user journey map' and 'ux journey map' here (see keywordCarrier.secondary). State that the downloadable template works for both: rename the stages.",
+        "Do not reuse Figma's or Coursera's wording; Coursera's 'user journey map is an umbrella term' framing is not ours."
+      ]
+    },
+    {
+      "h2": "Which stages and lanes should your customer journey map template use?",
+      "answerHint": "Use the stages your user research finds for the scenario, usually 5–7, and the 8 lanes in our customer journey map template; marketing lifecycle stages (awareness, consideration, purchase, retention, advocacy) fit a brand-wide map, while a product task needs stages named after what the persona actually does.",
+      "points": [
+        "H3 'What are the 7 steps of the customer journey?' (PAA): first sentence: there is no single standard; sources list 3 to 7 stages. Give one common 7-stage lifecycle set (awareness, consideration, decision, purchase, onboarding, retention, advocacy) as an option, then say why research-named stages beat it for product work. Stage count attribute.",
+        "H3 'Map types: current state, future state and day in the life': one definition each (AIO entities). The download is a current-state map by default; a future-state map reuses the grid after research.",
+        "Lanes explained one by one as a short list with what evidence each needs (no image: the anatomy is visual 1). Mention 'moment of truth' once: the stage where the emotion curve drops lowest is where the persona decides to stay or leave.",
+        "Map scope attribute: one persona and one scenario per map (NN/g one point of view; hub 1 journey map per persona). Persona count attribute (hub 2–4).",
+        "Carrier: 'A customer journey map template only saves time if every cell can point to a source.'"
+      ]
+    },
+    {
+      "h2": "Where does the evidence for each journey map lane come from?",
+      "answerHint": "Each lane of a journey map needs a different kind of user research: interviews fill the thinking, expectations and quotes; contextual inquiry fills the actions, workarounds and touchpoints you only see by watching; analytics and support tickets fill drop-off and pain-point frequency. A hypothesis map built from team knowledge is a starting point, marked 'assumed'.",
+      "points": [
+        "Visual 4: evidence source map (method -> lanes). Text panel = table method | lanes it fills | what it cannot tell you.",
+        "Interview count attribute: 10–15 one-hour user interviews per user group (hub). Observation count attribute: contextual inquiry with 4–6 users in the real work setting (hub), e.g. a clinic front desk. Contextual inquiry gets one sentence of definition only + the link to /blog/contextual-inquiry/ when live (that post owns the method; do not explain how to run a contextual inquiry here).",
+        "Evidence level attribute: the 4-level key heard / observed / measured / assumed, with one example each. NN/g (Kate Kaplan, 'When and How to Create Customer Journey Maps', 2016) calls journey mapping a qualitative-research process and says quantitative data alone cannot build the story: cite once, paraphrase.",
+        "Hypothesis map: NN/g cheat sheet term; a team draft from what it already knows is useful to plan the research, never a deliverable. Every hypothesis cell is marked 'assumed' in the evidence lane.",
+        "Lead moment 1 (one sentence, no client claims): the observed lane is the one teams cannot fill from a desk; our researchers run the 4–6 contextual inquiry sessions inside the hub's generative fieldwork step (7–15 days)."
+      ]
+    },
+    {
+      "h2": "How do you fill a customer journey map template from research, in 7 steps?",
+      "answerHint": "Fill a customer journey map template in 7 steps: fix one persona and one scenario, collect the evidence you already have, run user interviews, observe users with contextual inquiry, tag and cluster the findings, write each lane with its evidence level, then validate the map with users and stakeholders and give each opportunity an owner.",
+      "points": [
+        "ol of 7 steps, each with its output (this is the PAA answer for '7 steps to map the customer journey' and 'how do I create a user journey map'): 1 frame scope (persona, scenario, research questions); 2 gather existing evidence (analytics, support tickets, past studies) and draft a hypothesis map; 3 run 10–15 user interviews per user group (hub); 4 run contextual inquiry with 4–6 users (hub); 5 tag and cluster in Dovetail with affinity mapping (one-sentence definition; affinity mapping is a future cluster topic, no link); 6 write each lane, quote verbatims, plot the emotion curve, mark evidence levels; 7 validate (walk 2–3 participants or frontline staff through it), assign owners and metrics, set a review cadence.",
+        "Visual 5: 7-step strip with the output of each step. Text panel = the ol (do not repeat the steps a third time in prose).",
+        "Research timeline attribute: in our UX research programme these steps run inside the hub's 4–8 weeks (research framing -> recruitment -> generative fieldwork -> evaluative studies -> synthesis and readout); deep link 'our 5-step UX research process' -> /services/ux-research-services/#how-does-the-ux-research-process-work. Quote the hub step that produces the map: 'Synthesis and readout (4–7 days): Findings are tagged in Dovetail, turned into personas, journey maps and a JTBD opportunity map, and presented in a 90-minute readout.' Never assign map output to another hub step.",
+        "One body carrier with the literal keyword in step 6."
+      ]
+    },
+    {
+      "h2": "Customer journey map template, filled in for an illustrative clinic scheduling app",
+      "answerHint": "This customer journey map example follows a clinic practice manager through the first month of a staff-scheduling app, from sign-up to the first published rota; it is a user journey map of one product task, and every cell names its evidence. The clinic, the app and every number are illustrative.",
+      "points": [
+        "Label as illustrative in the first sentence and in the caption (honesty: no client). Persona 'Dana, practice manager at a 3-site physiotherapy clinic' (invented). Research base line: 12 interviews with practice managers + 5 contextual inquiry visits to front desks (illustrative, within hub ranges).",
+        "Stages (research-named, 5): Sign up and import staff; Set shift rules; Build the first rota; Publish and handle swaps; Month-end hours export. Each stage: one action, one touchpoint, one quote, emotion -2..+2, one pain point (e.g. the spreadsheet workaround kept 'just in case', echoing the hub's interview example), evidence level, one opportunity with owner and metric.",
+        "Visual 2 = the full worked example (also a download, see downloadAsset). Text panel = the filled grid as a markdown table (5 stage columns x 8 lanes).",
+        "Answer the PAA 'Can you provide an example of a user journey map?' in the first two sentences (say this is one).",
+        "This section is also the 'customer journey map example' carrier. Do not borrow Deckary's industries (SaaS onboarding, skincare, orthopedic surgery, mortgage, fine dining) or HBS's T-Mobile."
+      ]
+    },
+    {
+      "h2": "How do you turn a journey map into decisions instead of wall art?",
+      "answerHint": "A journey map turns into decisions when each opportunity on it has one owner, one metric and a date, and when the team ranks opportunities by the persona's lowest emotion points and the strength of the research evidence behind them.",
+      "points": [
+        "Ranking rule (our practice, not a statistic): severity on the emotion curve x evidence level (observed/measured outrank heard, heard outranks assumed). Small 3-column example from the worked example (opportunity, owner, metric).",
+        "Review cadence attribute: update after each new study or major release; keep the evidence lane dated. Living document (AIO term).",
+        "DOWN link: /case-studies/vocable/ anchor 'how we mapped the Vocable creator journey'. Use only the case study's words: the creator journey was mapped from stakeholder interviews into 4 phases (planning, drafting, optimizing, publishing) and each screen was designed around a problem heard in those interviews. Do not call them user interviews; do not cite the 35% result.",
+        "Hub trigger (hub 'when to invest' list): teams that disagree about priorities with no shared personas or journey maps. Lead moment 2 in one sentence.",
+        "Do not use the NN/g survey percentages that User Interviews quotes secondhand (27%, 13%, 13%) unless the fact-checker finds them on nngroup.com; default: leave out."
+      ]
+    },
+    {
+      "h2": "Which customer journey map mistakes make the template useless?",
+      "answerHint": "The customer journey map mistakes that make a template useless are presenting an assumption-only map as user research, mapping several personas on one grid, forcing marketing funnel stages onto a product task, drawing an emotion curve without quotes, and leaving opportunities without an owner.",
+      "points": [
+        "6 bullets (mistake + why it breaks the map + the lane or step that fixes it). Include 'too many lanes: a 14-lane map nobody reads' and 'never updated'.",
+        "Visual 6: pre-share map quality checklist (8 checks: one persona, one scenario, stages named from research, every quote sourced, evidence level on every cell, emotion curve backed by quotes, every opportunity has owner + metric, review date set). Text panel = the checklist ul. Do not repeat the 6 mistakes as the checklist; the checklist is positive pass/fail checks."
+      ]
+    },
+    {
+      "h2": "When should a research team build the customer journey map with you?",
+      "answerHint": "Bring in a research team when the journey map has to settle a product decision, the persona is hard to reach or observe, or the team's own map is mostly 'assumed' cells; our UX research programme delivers 2–4 personas with 1 journey map each, built from 10–15 interviews per user group and contextual inquiry.",
+      "points": [
+        "Hub facts only (siteFacts): deliverable wording, interview and contextual inquiry counts, Dovetail synthesis, 90-minute readout, 4–8 weeks. Price once: $25,000–$60,000, linked 'what a 4–8 week research programme costs' -> /services/ux-research-services/#how-much-does-ux-research-cost. No standalone journey-map price (siteFacts.conflicts).",
+        "Deep link 'personas and journey maps our research programme delivers' -> /services/ux-research-services/#what-do-ux-research-services-include.",
+        "Sideways link: 'how to choose a UX research agency' -> /blog/choose-ux-research-agency/ for readers comparing providers (one sentence).",
+        "Closing paragraph (main leadAngle): carrier 'If you would rather not fill the customer journey map template alone, send us the hypothesis map you already have…' + /contact/ link + second UP link to the hub ('UX research services' again is fine as the end-of-post hub link, or 'our UX research programme')."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you make a customer journey map in PowerPoint?",
+      "hint": "PAA. First sentence direct: insert our SVG file (Insert > Pictures), right-click and choose Convert to Shape to edit each box and label, or paste the CSV into a PowerPoint table. Microsoft support confirms Convert to Shape for SVG in Microsoft 365 (cite). Mention it applies to PowerPoint for Microsoft 365 and 2019+ per the support page; fact-checker to confirm wording."
+    },
+    {
+      "q": "How do I create a user journey map?",
+      "hint": "PAA, same answer as H2 5 in 2–3 sentences: pick one persona and one product task, fill the same template's lanes from 10–15 interviews and contextual inquiry, name stages after the task's steps, then validate. Link #how-do-you-fill-a-customer-journey-map-template-from-research-in-7-steps (in-page anchor; confirm the generated id after build)."
+    },
+    {
+      "q": "Can you build a customer journey map template in Excel or Google Sheets?",
+      "hint": "Yes. Open our CSV file in Excel, Google Sheets or Numbers: rows are lanes, columns are stages. A spreadsheet suits evidence notes and links; a visual board suits workshops. NN/g also publishes a spreadsheet journey-map template (optional mention, no link if the external cap is reached)."
+    },
+    {
+      "q": "How many personas should one journey map cover?",
+      "hint": "One. Each map follows one persona through one scenario; the hub delivers 2–4 personas with 1 journey map per persona. If two personas share a journey, map both and compare."
+    },
+    {
+      "q": "Can AI create a customer journey map?",
+      "hint": "Yes, as a first draft only: an AI tool such as ChatGPT can propose stages and a hypothesis map, but every cell it writes is 'assumed' until interviews or observation back it. Answer starts with Yes (boolean rule). No tool comparisons."
+    },
+    {
+      "q": "How often should you update a customer journey map?",
+      "hint": "After each new study or major release that touches the journey (review cadence attribute), and keep the evidence lane dated so stale cells are visible. Our practice; no invented interval statistic."
+    }
+  ],
+  "internalTargets": [
+    {
+      "href": "/services/ux-research-services/",
+      "anchor": "UX research services"
+    },
+    {
+      "href": "/services/ux-research-services/#how-does-the-ux-research-process-work",
+      "anchor": "our 5-step UX research process"
+    },
+    {
+      "href": "/services/ux-research-services/#what-do-ux-research-services-include",
+      "anchor": "personas and journey maps our research programme delivers"
+    },
+    {
+      "href": "/services/ux-research-services/#how-much-does-ux-research-cost",
+      "anchor": "what a 4–8 week research programme costs"
+    },
+    {
+      "href": "/blog/choose-ux-research-agency/",
+      "anchor": "how to choose a UX research agency"
+    },
+    {
+      "href": "/case-studies/vocable/",
+      "anchor": "how we mapped the Vocable creator journey"
+    },
+    {
+      "href": "/blog/contextual-inquiry/",
+      "anchor": "how to run a contextual inquiry",
+      "priority": "conditional",
+      "blocker": "Slug confirmed by content/briefs/contextual-inquiry.json ('slug': 'contextual-inquiry'), written in parallel on 2026-10-23 and not yet published. Link only if content/blog/contextual-inquiry.md exists and is not a draft at publish time; otherwise leave the sentence unlinked and let the link-builder add it later."
+    },
+    {
+      "href": "/contact/",
+      "anchor": "send us the hypothesis map you already have"
+    }
+  ],
+  "internalTargetsNote": "Verified 2026-10-23: content/services/ux-research-services.json; content/blog/choose-ux-research-agency.md (same silo, published); content/case-studies/vocable.md (services include ux-research-services; route app/case-studies/[slug]); app/contact/page.tsx. Section ids from sectionId() in components/sections/SemanticSections.tsx (lowercase, non-alphanumerics -> '-', trim), applied as the <section id>: 'How does the UX research process work?' -> how-does-the-ux-research-process-work; 'What do UX research services include?' -> what-do-ux-research-services-include; 'How much does UX research cost?' -> how-much-does-ux-research-cost. Required UP anchor exactly 'UX research services' (owner constraint) in the intro. No cross-hub link planned (usability-testing-services not needed; validation is a walkthrough, not a usability test round). Do not link other silos' posts. Future cluster posts (ux research methods, card sorting, importance of ux research, generative vs evaluative research, user persona template, quantitative ux research, ux roi, healthcare ux research) are NOT published: no links; the persona lane may later link to 'user persona template' when it ships (link-builder task).",
+  "externalSources": [
+    {
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "why": "NN/g, Sarah Gibbons (9 Dec 2018, reviewed 15 Jul 2026): definition and key components (actor, scenario and expectations, phases, actions/mindsets/emotions, opportunities). AIO-cited for 'user journey map'. Paraphrase."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/ux-mapping-cheat-sheet/",
+      "why": "NN/g, Sarah Gibbons (5 Nov 2017): empathy map vs customer journey map vs experience map vs service blueprint; hypothesis maps vs research maps. Source for the H2 2 table and the hypothesis-map term."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/customer-journey-mapping/",
+      "why": "NN/g, Kate Kaplan (31 Jul 2016): journey mapping is a qualitative-research process; field studies, contextual inquiry, diary studies; quantitative data alone cannot build the story; synthesize before visualizing."
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/office/edit-svg-images-in-microsoft-office-365-69f29d39-194a-4072-8c35-dbe5e7ea528c",
+      "why": "Microsoft support 'Edit SVG images in Microsoft 365': Convert to Shape for SVG in PowerPoint; supports the PowerPoint FAQ (PAA)."
+    }
+  ],
+  "externalSourcesNote": "4 links (cap 5). Do not link competitors (Looppanel, User Interviews, HubSpot, Miro). Optional 5th: NN/g journey map digital template (https://www.nngroup.com/articles/journey-map-digital-template/) in the Excel FAQ, only if the fact-checker confirms the page.",
+  "downloadAsset": {
+    "summary": "A real, ungated linkable asset produced in-house by content-visual-designer from one SVG source. Two artefacts (blank template + worked example), 4 formats. Direct links in the post (markdown links to files under public/blog/customer-journey-map-template/), no form.",
+    "files": [
+      {
+        "path": "/blog/customer-journey-map-template/customer-journey-map-template.pdf",
+        "what": "Blank template, 1 page, US Letter landscape (11 x 8.5 in), for printing and filling by hand or with PDF annotations. Letter prints on A4 with 'fit to page', so no separate A4 file.",
+        "how": "Render the SVG with Playwright Chromium page.pdf({ landscape: true, format: 'Letter', printBackground: true }). Verified present on this machine: /opt/node22/lib/node_modules/playwright and /opt/pw-browsers/chromium (used by docs/content-system/visual-style/screenshot.cjs)."
+      },
+      {
+        "path": "/blog/customer-journey-map-template/customer-journey-map-template.svg",
+        "what": "Blank template, editable vector: import into Figma, FigJam, Miro, Illustrator, or PowerPoint (Convert to Shape). Fonts outlined or embedded per visual-style README (embed-fonts.py) so it renders without Manrope installed.",
+        "how": "The source file the designer draws; text kept as live <text> where possible so it stays editable after import."
+      },
+      {
+        "path": "/blog/customer-journey-map-template/customer-journey-map-template.png",
+        "what": "Blank template raster, 3300 x 2550 px (Letter landscape at 300 dpi) for slides, Miro/Canva upload and printing.",
+        "how": "sharp (node_modules/sharp 0.35.5 with librsvg, verified) from the SVG: sharp(svg, { density: 300 }).png()."
+      },
+      {
+        "path": "/blog/customer-journey-map-template/customer-journey-map-template.csv",
+        "what": "Spreadsheet version for Excel, Google Sheets and Numbers: first block = 6 header fields (Persona, Scenario and goal, Expectations, Research base, Map owner, Last updated) as label,value rows; then a grid with column A = lane names (Doing, Touchpoints and channels, Thinking, Feeling (-2 to +2), Pain points, Evidence (source + level), Opportunities, Owner and metric) and columns B–F = Stage 1 … Stage 5. UTF-8, comma-separated, empty cells.",
+        "how": "Hand-written plain text; the writer may paste the same grid as the astext table under visual 1."
+      },
+      {
+        "path": "/blog/customer-journey-map-template/customer-journey-map-example.pdf",
+        "what": "The worked example (illustrative clinic scheduling app), filled, 1 page Letter landscape, footer 'Illustrative example, not a client project'.",
+        "how": "Same pipeline from the worked-example SVG (visual 2 at print size)."
+      }
+    ],
+    "inPostImages": "Visual 1 (blank template anatomy) and visual 2 (worked example) are the 1200-wide landscape web versions; they are NOT the download files (print files are larger and have a fill-in area). Each in-post image caption ends with 'Download it below' only where the download links sit right after the intro (keep one download block; a second short link line after visual 2 for the example PDF is fine).",
+    "templateSpec": "Header (6 fields): Persona, Scenario and goal, Expectations, Research base (methods, number of sessions, dates), Map owner, Last updated. Columns: 5 stage columns titled 'Stage 1 … Stage 5' with a note 'rename from research; add up to 7'. Lanes (8): Doing; Touchpoints and channels; Thinking (quote + participant ID); Feeling (emotion curve, grid lines at -2, 0, +2); Pain points; Evidence (source + level: H heard, O observed, M measured, A assumed); Opportunities; Owner and metric. Footer: evidence key, 'uiuxdesignservices.us/blog/customer-journey-map-template/' credit line, and 'Free to use and adapt' (license wording: OWNER-Q, see notes).",
+    "gating": "Ungated by design (linkable asset). The TOFU template CTA still offers the readiness checklist by email; do not put the template behind EmailCapture.",
+    "checks": "Content-qa: confirm each file exists under public/blog/customer-journey-map-template/, opens, and that the PDF and PNG show the same lanes as the SVG and CSV. Static export serves /public as-is, so no route work is needed. Add `download` attribute only if the markdown renderer supports it; plain links are fine."
+  },
+  "visuals": [
+    {
+      "type": "annotated blank template (anatomy)",
+      "idea": "The customer journey map template itself at web size (1200 x ≤800): header strip with 6 fields, 5 stage columns, 8 lane rows, callout labels on the persona and scenario header, emotion curve lane, evidence lane and owner and metric lane. Text panel = the anatomy table (part | what goes in it | evidence it needs). Caption/alt/file name: 'customer journey map template anatomy'."
+    },
+    {
+      "type": "filled worked example",
+      "idea": "Illustrative clinic scheduling app: 5 research-named stages, all 8 lanes filled in short phrases, emotion curve with its lowest point at 'Publish and handle swaps', evidence letters (H/O/M/A) in each cell. Badge 'Illustrative example'. Text panel = full markdown table. File 'customer-journey-map-example.svg'."
+    },
+    {
+      "type": "map-type comparison matrix",
+      "idea": "6 rows (customer journey map, user journey map, experience map, service blueprint, empathy map, user flow) x 4 columns (point of view, scope, in time order?, answers the question). Customer journey map row highlighted. Text panel = table. Caption names 'customer journey map vs user journey map vs other UX maps'."
+    },
+    {
+      "type": "evidence source map",
+      "idea": "Left: 5 research sources (user interviews, contextual inquiry, analytics, support tickets, usability tests) with session counts where the hub gives them (10–15 interviews per user group; 4–6 contextual inquiry users); right: the 8 lanes; connector lines show which source fills which lane; the 4-level evidence key below. Text panel = table method | lanes | blind spot."
+    },
+    {
+      "type": "7-step fill strip",
+      "idea": "Horizontal strip of 7 numbered steps, each with its output chip (scope sheet, hypothesis map, interview notes, observation notes, tagged clusters in Dovetail, filled map, validated map with owners). Text panel = the ol from H2 5 (it IS the ol; do not repeat in prose)."
+    },
+    {
+      "type": "pre-share quality checklist card",
+      "idea": "8 pass/fail checks as a card with tick boxes. Text panel = ul."
+    }
+  ],
+  "visualsNote": "6 visuals (cap). Landscape, 1200 wide, height ≤ 800, house style per docs/content-system/visual-style/README.md (realistic mockup look: the template drawn as a printed sheet or a board). Each image sits after the paragraph it explains, never directly under an H2. Visuals 1 and 2 share their SVG source with the download files (see downloadAsset).",
+  "leadAngle": "Three moments, aimed at product and UX teams. (1) H2 4, observed lane: teams cannot fill the 'observed' cells from a desk; our researchers run 4–6 contextual inquiry sessions inside the hub's generative fieldwork step (7–15 days). (2) H2 7: a map with mostly 'assumed' cells cannot settle a priority argument; the hub lists 'teams disagree about priorities, if no shared personas or journey maps exist' as a reason to invest. (3) Main offer in H2 9 and the closing: send us the hypothesis map you already have (the blank template filled from team knowledge); in a free consultation we mark which cells need evidence and which methods would fill them; the UX research programme then delivers 2–4 personas with 1 journey map each from 10–15 interviews per user group and contextual inquiry, synthesized in Dovetail and presented in a 90-minute readout, in 4–8 weeks for $25,000–$60,000 (cost-section link). Do not promise a written review before the call (not a published offer). No claims about how many teams we have mapped for (implied-client test).",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "two versions of one template cell (the same 'Stage 2, Thinking' cell written as a guess and as a sourced research finding; the post returns to it in H2 4). Last 11 intros: buyer scenario, myth, data point with source, question, definition, mini case (Nitro), contrarian take, itemized receipt, 60-second phone test, before/after roadmap row, ordered six-step answer. Not a repeat (closest is before/after roadmap row: that rewrote a roadmap item; this contrasts evidence levels in one cell).",
+    "h2Frames": [
+      "what is X and what does ours include",
+      "how does X differ from Y and other maps",
+      "which stages and lanes should X use",
+      "where does the evidence for each lane come from",
+      "how do you fill X from research, in 7 steps",
+      "X, filled in for an illustrative example",
+      "how do you turn X into decisions instead of wall art",
+      "which X mistakes make it useless",
+      "when should a research team build X with you",
+      "FAQs"
+    ],
+    "sectionOrder": "two-cell intro + download links -> definition + anatomy + other templates -> map-type disambiguation matrix -> stages (7-stage PAA) and lanes + map types -> evidence source map + evidence key + hypothesis map -> 7-step fill strip -> full worked example -> decisions (owner, metric, ranking) + Vocable -> mistakes + quality checklist -> when to bring in research + price link + closing offer -> FAQs",
+    "visualTypes": [
+      "annotated blank template (anatomy)",
+      "filled worked example",
+      "map-type comparison matrix",
+      "evidence source map",
+      "7-step fill strip",
+      "pre-share quality checklist card"
+    ],
+    "ctaAngle": "download the template (ungated) -> send us your hypothesis map; free consultation marks which cells need evidence and which methods fill them",
+    "listStyle": "anatomy table + comparison matrix + method-to-lane table + 7-step ol + filled grid table + mistake bullets (mistake + fix) + pass/fail checklist",
+    "differsFrom": "Last 3 site-wide (ledger.json posts, date order): how-to-design-an-mvp (Guide / ordered six-step answer / step-numbered H2 spine, feature cut sheet, handoff checklist), ux-strategy-roadmap (Guide / before-after roadmap row / RICE, HEART, now-next-later), ecommerce-ux-audit (Checklist / 60-second phone test / grouped checklists). Differs from all three on intro, H2 frames, section order, visual types, CTA angle and list style (6 of 7; type Guide repeats). Silo's last post: choose-ux-research-agency (Guide / buyer scenario / criteria, red flags, proposal comparison): differs on 6 of 7. Nearest structural relatives: (a) how-to-design-an-mvp: its H2s are 'Step 1…Step 6'; this post must NOT number its H2s as steps (only H2 5 holds an ol of 7 steps) and must not end with a handoff checklist. (b) web-app-design-rfp (template/checklist post): do not build a section-by-section 'what goes in each section' spine; our anatomy is one table. (c) Parallel contextual-inquiry brief: this post never explains how to run a contextual inquiry (one-sentence definition + link only). Fingerprints note: fingerprints.json still has entries in `fields` (lesson 2026-10-17); this check used ledger.json order."
+  },
+  "notes": [
+    "Exact keyword 'customer journey map template' in: metaTitle (first words), H1/title (first words), coverTitle, slug, first sentence, description (first words), first meta keyword. No colon in any title surface (checked: metaTitle 57 chars, H1 66 chars, both colon-free). The only 'vs' strings are the H3 label 'User journey map vs user flow' (carrier: 'the user journey map vs user flow question') and visual captions.",
+    "Cannibalisation check (grep 'journey' across content/, 2026-10-23): hub ux-research-services (metaTitle 'UX Research Services | User Interviews & Journey Maps'; deliverable 'Personas and journey maps'; tags 'Journey mapping'; ngram 'journey map') owns journey mapping as a SERVICE; this post owns the template/how-to intent (page 1 is template galleries and guides, which a service page cannot answer). Mitigation: no H2 says 'services' or 'agency'; the hub's deliverable, price and process are deep links; 2 UP links. saas-ux-design.json ('Lifecycle journey mapping (3–5 days)') and ux-design-agency-columbus.json ('Journey maps', 'Journey workshop (2–3 days)', keywords 'journey mapping', 'claims journey') mention journey maps as engagement steps; neither targets template/how-to queries. choose-ux-research-agency mentions journey maps 3 times as deliverables. ux-consulting-services mentions past journey maps as evidence. No blog post, brief or page targets 'customer journey map template', 'user journey map' or 'journey map template'. No GSC query contains 'journey' (2026-09-21..10-18).",
+    "Parallel brief (contextual inquiry, queue item 1): intents kept distinct. That post owns how to run a contextual inquiry (method, sessions, roles, notes); this post uses it only as the source of the 'Doing' and 'Touchpoints' lanes, with the hub's 4–6 users figure and one link. Ask the contextual-inquiry writer to link back here from its 'what you do with the findings' section with an anchor such as 'turn observations into a journey map' (link-builder task after both publish).",
+    "Future cluster posts (not published, no links): ux research methods (pillar; should link down to this post), card sorting, importance of ux research, generative vs evaluative research, user persona template (sibling template post: must NOT reuse this post's evidence lane / H-O-M-A key / two-cell intro; the persona lane here should link to it once it ships), quantitative ux research, ux roi, healthcare ux research (the illustrative clinic example here must not become a HIPAA discussion; leave regulation out).",
+    "Honesty, do not use: Deckary's numbers (34% lost in 7 days, 41% lift, NPS 12 vs 34, etc.: unsourced, invented by the author); NiCE's 'almost 90% of CX professionals report a positive impact' (no source); User Interviews' secondhand NN/g survey figures (27% / 13% / 13%) unless the fact-checker finds them on nngroup.com; Looppanel's '42k users' template claim; HubSpot's 'thousands of professionals'; Miro template use counts; HBS T-Mobile story (not ours, not needed). The worked example is invented and labelled 'illustrative' in text, caption and the PDF footer. No uplift percentages anywhere.",
+    "Originality: beats page looppanel.com (definitions -> why template -> 7 third-party templates -> what to include (6 groups) -> 8 steps -> Reddit -> FAQs). Do not list third-party templates as a roundup, do not use its 6 'what to include' group names as headings, its 8 step names or its FAQ wording. User Interviews: no 'by type' example gallery. ProjectManager: no 5-stage marketing default. Our spine: own template anatomy -> disambiguation matrix -> stages/lanes -> evidence by method -> 7 fill steps -> worked example -> decisions -> mistakes -> research help. QA 5-gram overlap with the beats page must stay ≤ 5%.",
+    "OWNER-Q: license line on the downloadable files. Proposed footer: 'Free to use and adapt. uiuxdesignservices.us'. A formal license (e.g. CC BY 4.0) is an owner decision; until answered, use the plain line and no license name.",
+    "OWNER-Q / CONFLICT: home.ts process step 'Discovery and research' says '1–4 weeks' for personas and journey maps; the hub says 4–8 weeks. Post follows the hub.",
+    "competitors.json was NOT edited (shared registry; merge the `competitorsUpdate` block below). Semrush returned no_api_units; competitor traffic comes from Ahrefs site-explorer top-pages (US, 2026-10-22)."
+  ],
+  "competitorsUpdate": {
+    "headTermSerps": {
+      "ux-research-services:customer journey map template": {
+        "keyword": "customer journey map template",
+        "checked": "Ahrefs serp-overview 2026-10-23",
+        "domains": [
+          "miro.com (template gallery, AIO)",
+          "canva.com (templates, AIO)",
+          "atlassian.com (Confluence template, AIO)",
+          "userinterviews.com (blog roundup, AIO)",
+          "offers.hubspot.com (gated templates, AIO)",
+          "figma.com (FigJam templates, AIO)",
+          "ixdf.org (gated template, AIO)",
+          "projectmanager.com (#2, Excel template)",
+          "looppanel.com (#3, blog roundup)",
+          "threerooms.com (#6)",
+          "blog.hubspot.com (#7)",
+          "deckary.com (#9)"
+        ],
+        "note": "Template galleries + 3 blog roundups. Our post competes with an own ungated multi-format template."
+      },
+      "ux-research-services:user journey map": {
+        "keyword": "user journey map",
+        "checked": "Ahrefs serp-overview 2026-10-23",
+        "domains": [
+          "nngroup.com (#2, AIO)",
+          "figma.com resource library (#3, AIO)",
+          "coursera.org (#5, AIO)",
+          "smaply.com (#6)",
+          "uxtweak.com (#7, examples)",
+          "uxpressia.com (#8, tool)",
+          "ibm.com (#9)",
+          "salesforce.com (#10)",
+          "optimizely.com (AIO)",
+          "nice.com (AIO)",
+          "online.hbs.edu (AIO)",
+          "marvelapp.com (AIO)"
+        ]
+      }
+    },
+    "domains": [
+      {
+        "domain": "looppanel.com",
+        "kind": "research tool blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "customer journey map template (#3, top keyword; ~699 US visits/mo, Ahrefs)",
+          "ux journey map"
+        ],
+        "source": "Ahrefs serp-overview + top-pages 2026-10-23, WebFetch OK"
+      },
+      {
+        "domain": "userinterviews.com",
+        "kind": "research platform blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "customer journey map template (AIO cited)",
+          "journey map template (top keyword, ~359 visits/mo)",
+          "customer journey software (tools post, ~292 visits/mo)"
+        ],
+        "source": "Ahrefs 2026-10-23, WebFetch OK"
+      },
+      {
+        "domain": "projectmanager.com",
+        "kind": "PM software template library",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "customer journey map template (#2)"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "deckary.com",
+        "kind": "consulting templates blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "customer journey map template (#9)"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "smaply.com",
+        "kind": "journey mapping tool blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "user journey map (#6)",
+          "journey map template"
+        ],
+        "source": "Ahrefs + WebSearch 2026-10-23"
+      },
+      {
+        "domain": "uxtweak.com",
+        "kind": "research tool blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "user journey map (#7, examples)"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-23"
+      },
+      {
+        "domain": "nngroup.com",
+        "kind": "publisher (research)",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "user journey map (#2, AIO)",
+          "journey map template (digital template)"
+        ],
+        "source": "Ahrefs + WebSearch 2026-10-23, WebFetch OK"
+      }
+    ],
+    "topPosts": [
+      {
+        "domain": "looppanel.com",
+        "url": "https://www.looppanel.com/blog/user-journey-map-templates",
+        "title": "7 Free User Journey Map Templates (and How to Use Them)",
+        "keywords": [
+          "customer journey map template",
+          "user journey map template",
+          "journey map template"
+        ],
+        "estTraffic": 699,
+        "silo": "ux-research-services",
+        "serviceSupport": 3,
+        "status": "briefed",
+        "brief": "content/briefs/customer-journey-map-template.json",
+        "notes": "beats target. Theertha Raj, 4 Nov 2024. Roundup of third-party templates, no own file, no method-to-lane mapping, empty Reddit heading, duplicate numbering, '42k users' claim unsourced (do-not-use)."
+      },
+      {
+        "domain": "userinterviews.com",
+        "url": "https://www.userinterviews.com/blog/best-customer-journey-map-templates-examples",
+        "title": "Best Customer Journey Map Templates and Examples",
+        "keywords": [
+          "journey map template",
+          "customer journey map template",
+          "customer journey map example"
+        ],
+        "estTraffic": 359,
+        "silo": "ux-research-services",
+        "serviceSupport": 3,
+        "status": "briefed",
+        "brief": "content/briefs/customer-journey-map-template.json",
+        "notes": "AIO-cited. 150+ link roundup; NN/g survey figures quoted secondhand (do-not-use unless verified at source)."
+      },
+      {
+        "domain": "userinterviews.com",
+        "url": "https://www.userinterviews.com/blog/tools-for-customer-journey-mapping",
+        "title": "Tools for customer journey mapping",
+        "keywords": [
+          "customer journey software"
+        ],
+        "estTraffic": 292,
+        "silo": "ux-research-services",
+        "serviceSupport": 2,
+        "status": "candidate",
+        "notes": "Tool roundup; low service-support (software buyers). Do not brief unless the silo needs a tools post; would need serviceSupport ≥ 3."
+      }
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/ux-research-services.json",
+      "field": "sections[h2='What do UX research services include?'].items[title='Personas and journey maps.'].body",
+      "sentence": "Findings become 2–4 personas and 1 journey map per persona, for example the steps, emotions and pain points of first-time setup.",
+      "change": "Wrap '1 journey map per persona' in <a href=\"/blog/customer-journey-map-template/\">…</a>. Item bodies render as HTML (SemanticSections uses <Html as=\"p\" html={c.body} />, verified in the how-to-design-an-mvp run).",
+      "anchor": "1 journey map per persona",
+      "priority": "required",
+      "why": "Pillar -> post link in the same silo on the exact sentence that names the deliverable; hub banking for the new post. Does not change the hub's live metaTitle or slug (rule 6: body links are allowed)."
+    },
+    {
+      "file": "content/blog/choose-ux-research-agency.md",
+      "field": "body, line with 'a tagged research repository (for example in Dovetail), personas, journey maps and an opportunity map'",
+      "sentence": "Then ask which deliverables outlive the project: a tagged research repository (for example in Dovetail), personas, journey maps and an opportunity map.",
+      "change": "Link 'journey maps' to /blog/customer-journey-map-template/.",
+      "anchor": "journey maps",
+      "priority": "required",
+      "why": "Same-silo sideways link from the only published silo post (61 GSC impressions, 2026-09-21..10-18); real topic match (a buyer checking what a journey map deliverable should look like)."
+    },
+    {
+      "file": "content/locations/ux-design-agency-columbus.json",
+      "field": "sections deliverables item 'Journey maps.'",
+      "sentence": "End-to-end maps that connect the customer view with the employee view…",
+      "change": "none",
+      "anchor": "",
+      "priority": "skip",
+      "why": "Location page sits outside the silo and its journey map is customer + employee view (closer to a service blueprint); a link would muddle the post's scope."
+    }
+  ]
+}
