@@ -46,7 +46,7 @@ Write the decision as one sentence and attach the user groups and the deadline. 
 
 Then mark the research type it needs:
 
-- **Generative research** answers "what should we build?", so the agency needs field time for user interviews and contextual inquiry.
+- **Generative research** answers "what should we build?", so the agency needs field time for user interviews and [contextual inquiry](/blog/contextual-inquiry/).
 - **Evaluative research** answers "does this design work?", so the agency needs a prototype to put in front of users through usability testing, tree tests or concept tests.
 
 Many decisions need both modes, generative first and evaluative second, which is how our [UX research services](/services/ux-research-services/) are structured.
@@ -133,7 +133,7 @@ Pick three recommendations from the sample deliverable and follow each one back:
 
 No evidence behind it means opinion; no owner means it never ships.
 
-Then ask which deliverables outlive the project: a tagged research repository (for example in Dovetail), personas, journey maps and an opportunity map. The repository matters most, because your next study starts from it.
+Then ask which deliverables outlive the project: a tagged research repository (for example in Dovetail), personas, [journey maps](/blog/customer-journey-map-template/) and an opportunity map. The repository matters most, because your next study starts from it.
 
 ## 12 questions to ask on the pitch call
 

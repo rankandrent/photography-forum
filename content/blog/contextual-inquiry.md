@@ -19,7 +19,7 @@ takeaways:
   - "Observation catches the tacit steps, workarounds and interruptions that users leave out when you only ask them."
   - "Field notes become design decisions in an interpretation session of 3–8 people, then an affinity diagram and work models."
 draft: false
-qa: pending
+qa: pass
 image: "/blog/contextual-inquiry/cover.svg"
 ---
 

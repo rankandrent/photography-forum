@@ -1,7 +1,7 @@
 [
   {
     "marker": "<!-- visual: download files (content-visual-designer produces all five from one SVG source, per brief downloadAsset): blank template customer-journey-map-template.pdf (US Letter landscape), .svg (editable, fonts embedded), .png (3300×2550), .csv (header block + 8 lanes × Stage 1–5), and the filled worked example customer-journey-map-example.pdf with footer \"Illustrative example, not a client project\". Every file footer: \"Free to use and adapt. uiuxdesignservices.us\" -->",
-    "markdown": "![Customer journey map template download preview: the blank US Letter landscape sheet with 6 header fields, 5 stage columns and 8 lanes, next to five download files (PDF, editable SVG, 3300 × 2550 PNG, CSV and the illustrative worked example PDF)](/blog/customer-journey-map-template/customer-journey-map-template-downloads.svg \"Customer journey map template downloads, free to use and adapt\")"
+    "markdown": "![Preview of the customer journey map template downloads: the blank US Letter landscape sheet with 6 header fields, 5 stage columns and 8 lanes, next to five download files (PDF, editable SVG, 3300 × 2550 PNG, CSV and the illustrative worked example PDF)](/blog/customer-journey-map-template/customer-journey-map-template-downloads.svg \"Customer journey map template downloads, free to use and adapt\")"
   },
   {
     "marker": "<!-- visual: annotated blank template anatomy, file customer-journey-map-template-anatomy.svg, 1200×≤800, the template drawn as a printed sheet: header strip (6 fields), 5 stage columns, 8 lane rows; callouts on the persona and scenario header, emotion curve lane, evidence lane and owner and metric lane. Alt/caption: \"Customer journey map template anatomy\" -->",

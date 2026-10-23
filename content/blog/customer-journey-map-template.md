@@ -19,20 +19,20 @@ takeaways:
   - "A journey map drives decisions only when each opportunity has one owner, one metric and a date."
   - "Our template is free to download in PDF, SVG, PNG and CSV, with an illustrative worked example."
 draft: false
-qa: pending
+qa: pass
 image: "/blog/customer-journey-map-template/cover.svg"
 ---
 
-Every customer journey map template has the same empty cell under Stage 2, Thinking, and what you write there decides whether the map is evidence or fiction. Written in a workshop, the cell says "Users find setup confusing." Written after research, it says "'Where do I say Sarah only works Tuesdays?' Heard in 9 of 12 interviews, seen in 4 of 5 site visits" (an illustrative example).
+Our customer journey map template has an empty cell under Stage 2, Thinking, and what you write there decides whether the map is evidence or fiction. Written in a workshop, the cell says "Users find setup confusing." Written after research, it says "'Where do I say Sarah only works Tuesdays?' Heard in 9 of 12 interviews, seen in 4 of 5 site visits" (an illustrative example).
 
-The second cell names who said it, how often and where to check, so a product team can act on it. Journey mapping is a user experience (UX) research method, and this guide from the team behind our [UX research services](/services/ux-research-services/) gives you the template, a worked example and 7 steps to fill every lane from user research.
+Only the research version tells a product team who said it, how often and where to look, and that is what makes a cell worth acting on. Journey mapping sits inside user experience (UX) research, the discipline behind our [UX research services](/services/ux-research-services/); below you get the template, a worked example and 7 steps to fill every lane from user research.
 
-Download the customer journey map template below in four file formats, with no form to fill. Each file has the same 6 header fields, 5 stage columns and 8 lanes. Free to use and adapt.
+Download the customer journey map template below in four file formats, with no form to fill. Each blank template file has the same 6 header fields, 5 stage columns and 8 lanes. Free to use and adapt.
 
-![Customer journey map template download preview: the blank US Letter landscape sheet with 6 header fields, 5 stage columns and 8 lanes, next to five download files (PDF, editable SVG, 3300 × 2550 PNG, CSV and the illustrative worked example PDF)](/blog/customer-journey-map-template/customer-journey-map-template-downloads.svg "Customer journey map template downloads, free to use and adapt")
+![Preview of the customer journey map template downloads: the blank US Letter landscape sheet with 6 header fields, 5 stage columns and 8 lanes, next to five download files (PDF, editable SVG, 3300 × 2550 PNG, CSV and the illustrative worked example PDF)](/blog/customer-journey-map-template/customer-journey-map-template-downloads.svg "Customer journey map template downloads, free to use and adapt")
 
 - [Portable Document Format (PDF), US Letter landscape](/blog/customer-journey-map-template/customer-journey-map-template.pdf)
-- [Scalable Vector Graphics (SVG), editable in Figma, FigJam, Miro or PowerPoint](/blog/customer-journey-map-template/customer-journey-map-template.svg)
+- [Scalable Vector Graphics (SVG), editable in Figma or PowerPoint](/blog/customer-journey-map-template/customer-journey-map-template.svg)
 - [Portable Network Graphics (PNG), 3300 × 2550 px](/blog/customer-journey-map-template/customer-journey-map-template.png)
 - [Comma-separated values (CSV), for Excel or Google Sheets](/blog/customer-journey-map-template/customer-journey-map-template.csv)
 - [Worked example, filled in (illustrative PDF)](/blog/customer-journey-map-template/customer-journey-map-example.pdf)
@@ -41,7 +41,7 @@ Download the customer journey map template below in four file formats, with no f
 
 **A customer journey map template is a reusable grid that a team fills with user research to show how one persona moves through one scenario, stage by stage.**
 
-Nielsen Norman Group (NN/g) describes a journey map as [a picture of the process a person goes through to accomplish a goal](https://www.nngroup.com/articles/journey-mapping-101/). The template is that picture before anyone draws on it: journey stages across the top, lanes down the side. Ours has 6 header fields, 5 editable stage columns and a lane count of 8. Its file formats are PDF, SVG, PNG and CSV, and the Feeling lane uses an emotion scale from -2 to +2.
+Nielsen Norman Group (NN/g) describes a journey map as [a picture of the process a person goes through to accomplish a goal](https://www.nngroup.com/articles/journey-mapping-101/). The template is that picture before anyone draws on it: a persona and scenario header, journey stages across the top, and lanes down the side for actions, touchpoints, thoughts, emotions, pain points, evidence, opportunities and owners. Ours has 6 header fields, 5 editable stage columns and a lane count of 8. Its file formats are PDF, SVG, PNG and CSV, and the Feeling lane uses an emotion scale from -2 to +2.
 
 The table lists each part of the template and what goes in it.
 
@@ -64,7 +64,7 @@ The table lists each part of the template and what goes in it.
 
 </details>
 
-Tool templates differ mainly in where they live: Miro and FigJam boards need an account, Confluence offers a wiki page template, HubSpot's templates sit behind a download form and Canva offers visual layouts. Ours is a plain file that opens in all of them, so fill the header before any stage.
+Tool templates differ mainly in where they live: Miro and FigJam boards need an account, Confluence offers a wiki page template, HubSpot's templates sit behind a download form and Canva offers visual layouts. Ours needs no account or form: place the PNG or PDF on a Miro or FigJam board, edit the SVG in Figma or PowerPoint, or open the CSV in a spreadsheet. Whichever you pick, fill the header before any stage.
 
 ### What is customer journey mapping?
 
@@ -95,7 +95,7 @@ NN/g's [UX mapping cheat sheet](https://www.nngroup.com/articles/ux-mapping-chea
 
 </details>
 
-A service blueprint adds the frontstage and backstage actions of staff plus their support processes, so draw one after a journey map shows where the problem sits. An empathy map skips time order, and an experience map covers people in general, before any product exists.
+A service blueprint adds the frontstage and backstage actions of staff plus their support processes, so draw one after a journey map shows where the problem sits. An empathy map skips time order, and an experience map covers people in general rather than one product, which is why NN/g places it before a customer journey map.
 
 ### What is a user journey?
 
@@ -117,15 +117,15 @@ We set the stage count at 5–7 per map, because fewer hides the hard moments an
 
 ### What are the 7 steps of the customer journey?
 
-**No single standard defines a 7-step customer journey; one common 7-stage set is awareness, consideration, decision, purchase, onboarding, retention and advocacy.**
+**No single standard defines a 7-step customer journey; one published 7-stage set is awareness, consideration, decision, purchase, use, loyalty and advocacy.**
 
-That set suits a lifecycle customer journey map for a whole brand or product lifecycle; the lifecycle journey mapping step of our [SaaS UX design](/services/saas-ux-design/) process maps every stage from sign-up to renewal. For product work, stages named from interviews beat it: "Consideration" tells a designer nothing about which screen to change, while "Set shift rules" does.
+That set suits a lifecycle customer journey map for a whole brand or product lifecycle; for a software-as-a-service (SaaS) product, the lifecycle journey mapping step of our [SaaS UX design](/services/saas-ux-design/) process covers the in-product part of a lifecycle, every stage from sign-up to renewal. For product work, stages named from interviews beat it: "Consideration" tells a designer nothing about which screen to change, while "Set shift rules" does.
 
 ### Current-state, future-state and day-in-the-life maps
 
 **A current-state map shows today's journey, a future-state map shows the journey you plan to build, and a day-in-the-life map covers one person's whole working day.**
 
-The download is a current-state map by default; a future-state map reuses the grid after research, and a day-in-the-life map suits shift work, where your product is one tool among many, such as the picker and dispatcher shifts our researchers shadow for [supply chain UI UX design](/industries/supply-chain/).
+The download is a current-state map by default; a future-state map reuses the grid after research, and a day-in-the-life map suits shift work, where your product's user interface (UI) is one screen among many, such as the picker and dispatcher shifts our researchers shadow for [supply chain UI UX design](/industries/supply-chain/). A circular map draws the stages as a loop, for journeys that repeat, such as a monthly subscription renewal.
 
 ### What each lane needs
 
@@ -134,7 +134,7 @@ A customer journey map template only saves time if every cell can point to a sou
 - **Persona and scenario header:** the research base line (methods, sessions, dates) lets readers judge the map first.
 - **Journey stages:** named after what participants did, in their order.
 - **Touchpoints:** every screen, email, call and person, since problems often sit between channels.
-- **Emotion curve:** its lowest point is the moment of truth, where the user decides to stay or leave; high points are moments of delight.
+- **Emotion curve:** its sharpest highs and lows flag likely moments of truth, where the user forms a lasting opinion and decides to stay or leave; the highs are moments of delight, but check the lowest point first.
 - **Evidence lane:** source and evidence level for every cell, so guesses stay visible.
 - **Opportunities and owners:** one internal owner and one metric each, or nobody acts on them.
 
@@ -144,7 +144,7 @@ The Thinking lane holds thoughts and mindsets as verbatim quotes, never a team s
 
 **Each journey map lane needs its own kind of user research: interviews fill Thinking, contextual inquiry fills Doing and Touchpoints, and analytics and support tickets count pain points.**
 
-NN/g's Kate Kaplan calls journey mapping [a qualitative-research process](https://www.nngroup.com/articles/customer-journey-mapping/) and notes that quantitative data alone cannot build the story. Numbers back up a map; they never write it.
+Kate Kaplan's NN/g guide on [when and how to create customer journey maps](https://www.nngroup.com/articles/customer-journey-mapping/) treats journey mapping as a qualitative-research process and notes that quantitative data alone cannot build the story. Numbers back up a map; they never write it.
 
 Our research program plans an interview count of 10–15 one-hour user interviews per user group. Contextual inquiry means watching people do real work where they do it and asking about it as they go; we set the observation count at 4–6 users, on site, for example at a clinic front desk. Our guide on [how to run a contextual inquiry](/blog/contextual-inquiry/) covers the method itself.
 
@@ -171,7 +171,7 @@ The evidence lane gives every cell an evidence level from a four-letter key:
 - **M, measured:** counted in analytics or support tickets.
 - **A, assumed:** team knowledge nobody has checked yet.
 
-The intro's workshop cell is an A; its research cell is an H and an O. NN/g calls a map built from what a team already knows a hypothesis map, and the hypothesis map vs research map distinction matters: the first plans a study, the second is the deliverable. Observed cells cannot be filled from a desk; our researchers run those 4–6 sessions in our program's generative fieldwork step (7–15 days). Mark every cell on your map before you book interviews.
+The intro's workshop cell is an A; its research cell is an H and an O. NN/g calls a map built from what a team already knows a hypothesis map, and the hypothesis map vs research map distinction matters: the first plans a study, the second is the deliverable. Session recordings show only the screen, so observed cells about the work around it need site visits; our researchers run those 4–6 sessions in our program's generative fieldwork step (7–15 days). Mark every cell on your map before you book interviews.
 
 ## How do you fill a customer journey map template in 7 steps?
 
@@ -187,13 +187,13 @@ These steps answer how to create a customer journey map and how to create a user
 6. **Write each lane.** Name stages from the clusters, quote verbatims, plot the emotion curve and mark evidence levels. Output: a sourced map.
 7. **Validate and assign.** Walk 2–3 participants or frontline staff through it, validate and refine, then give each opportunity an owner and a metric. Output: a validated map.
 
-In our program these steps sit inside a research timeline of 4–8 weeks, run as our 5-step UX research process; the map comes out of its synthesis and readout step (4–7 days). Start with step 2 this week, because a hypothesis map shows which interviews to book.
+In our program, the interviews and contextual inquiry of steps 3 and 4 run in the generative fieldwork step of our 5-step UX research process, and the map comes out of its synthesis and readout step (4–7 days), inside a research timeline of 4–8 weeks. Start with step 2 this week, because a hypothesis map shows which interviews to book.
 
 ## Customer journey map template, filled in (illustrative)
 
 **This customer journey map example is illustrative: a user journey map of one practice manager's first month with a clinic scheduling app, built from invented user research.**
 
-Yes, this is an example of a user journey map; the clinic, the app, the people and every number are made up. Dana manages a 3-site physiotherapy clinic, the scenario is first-time setup, and the research base reads 12 interviews with practice managers and 5 contextual inquiry visits to front desks.
+It doubles as an example of a user journey map, since it follows one product task; the clinic, the app, the people and every number are made up. Dana manages a 3-site physiotherapy clinic, the scenario is first-time setup, and the research base reads 12 interviews with practice managers and 5 contextual inquiry visits to front desks.
 
 ![Customer journey map example, illustrative clinic scheduling app: 5 research-named stages for practice manager Dana, all 8 lanes filled, an emotion curve that bottoms out at -2 on Publish and handle swaps, and H, O and M evidence chips](/blog/customer-journey-map-template/customer-journey-map-example.svg "Customer journey map example, illustrative clinic scheduling app")
 
@@ -214,11 +214,11 @@ Illustrative example, not a client project.
 
 </details>
 
-Read the Evidence row first: every opportunity rests on H, O or M evidence, none on an A. The emotion curve bottoms out at stage 4, so swaps are Dana's moment of truth. Print the [filled example PDF](/blog/customer-journey-map-template/customer-journey-map-example.pdf) beside your blank copy and compare your lanes row by row.
+Read the Evidence row first: every opportunity rests on H, O or M evidence, none on an A. The emotion curve bottoms out at stage 4, so swaps are Dana's likely moment of truth. Print the [filled example PDF](/blog/customer-journey-map-template/customer-journey-map-example.pdf) beside your blank copy and compare your lanes row by row.
 
 ## How do you turn a journey map into decisions, not wall art?
 
-**A journey map drives decisions when every opportunity has one owner, one metric and a date, and the team ranks them by the lowest emotion points and the user research behind each.**
+**A journey map drives decisions when every opportunity carries one owner, one metric and a date, and the team ranks opportunities by emotion low point and user research evidence.**
 
 Our ranking rule weighs how far the emotion curve drops against the evidence level: observed and measured outrank heard, and heard outranks assumed. The table ranks the worked example's top three opportunities with their internal ownership and metric.
 
@@ -228,9 +228,9 @@ Our ranking rule weighs how far the emotion curve drops against the evidence lev
 | 2 | One screen for all shift rules (2, -1, H and O) | Design lead | Time to set shift rules |
 | 3 | Side-by-side check view (3, 0, H and O) | Design lead | Rotas published without the spreadsheet |
 
-Pick each metric from the key performance indicators (KPIs) the owner already reports, so the map's metrics and KPIs need no new dashboard. A journey map is a living document; the FAQ on updates gives our review cadence. In [how we mapped the Vocable creator journey](/case-studies/vocable/), stakeholder interviews split the creator's work into four phases, planning, drafting, optimizing and publishing, and each screen answered a problem heard in those interviews.
+Pick each metric from the key performance indicators (KPIs) the owner already reports, so the map's metrics and KPIs need no new dashboard. A journey map is a living document; the FAQ on updates gives our review cadence. For a real case, see [how we mapped the Vocable creator journey](/case-studies/vocable/): the team mapped the full creator journey and designed each screen around a problem heard in stakeholder interviews, across planning, drafting, optimizing and publishing.
 
-A map of mostly A cells cannot settle a priority argument, and a team that disagrees about priorities with no shared personas or journey maps is in a situation where we advise investing in UX research. Put an owner's name in every Opportunities cell before the meeting ends.
+A map of mostly A cells cannot settle a priority argument, and when a team disagrees about priorities without shared personas or journey maps, we advise investing in UX research. Put an owner's name in every Opportunities cell before the meeting ends.
 
 ## Which customer journey map mistakes waste the template?
 
@@ -247,17 +247,17 @@ Before you share a map, check that every quote carries a participant ID, every c
 
 ## When should researchers build your customer journey map?
 
-**Bring in a user research team when a customer journey map must settle a product decision, your users are hard to reach or observe, or your own map is mostly assumed cells.**
+**A customer journey map needs user researchers when it must settle a product decision, its users are hard to observe, or most of its cells are still assumed.**
 
 The personas and journey maps our research program delivers are 2–4 personas with 1 journey map each, built from 10–15 interviews per user group and contextual inquiry, tagged in Dovetail and presented in a 90-minute readout. The program costs $25,000–$60,000; see [what a 4–8 week research program costs](/services/ux-research-services/#how-much-does-ux-research-cost) and, when comparing providers, [how to choose a UX research agency](/blog/choose-ux-research-agency/).
 
-Filled from team knowledge alone, a customer journey map template becomes a hypothesis map, and its A cells are a research plan waiting to be booked. [Send us the hypothesis map you already have](/contact/), and in the consultation we mark which cells need evidence and which method would fill each. Every project begins with a free consultation and a fixed-scope proposal.
+Filled from team knowledge alone, a customer journey map template becomes a hypothesis map, and each A cell names a question the evidence table can assign a method to. The proposal can be scoped around those open cells once you [send us the hypothesis map you already have](/contact/). Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
 ### How do you make a customer journey map in PowerPoint?
 
-Insert our SVG file with Insert > Pictures, then select it and use the Convert to Shape option to edit each box and label. Microsoft's guide to [editing SVG images in Microsoft 365](https://support.microsoft.com/en-us/office/edit-svg-images-in-microsoft-office-365-69f29d39-194a-4072-8c35-dbe5e7ea528c) describes that option; for a table instead, paste the CSV grid into a PowerPoint table.
+Insert our SVG file with Insert > Pictures, then right-click it and use the Convert to Shape option to edit each piece of the grid separately. Microsoft's guide to [editing SVG images in Microsoft 365](https://support.microsoft.com/en-us/office/edit-svg-images-in-microsoft-office-365-69f29d39-194a-4072-8c35-dbe5e7ea528c) describes that option; for a table instead, paste the CSV grid into a PowerPoint table.
 
 ### How do I create a user journey map?
 

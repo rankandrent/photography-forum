@@ -108,6 +108,20 @@
           "notes": "Ahrefs had no SERP (no AI Overview/PAA data) for this keyword; competitor page-1 questions used. QA PASS (suitability PASS, overlap edtech 2.86%, gaming 1.81%); fact-check F1-F7 applied by QA. Backlink: digital-product-design-services definition. Open owner items: hero logo NBCUniversal on a media page; Vocable media tag; design-and-development conflict."
         }
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "goal": "priority queue: 2 UX research cluster posts (owner, 2/day)",
+      "jobs": [
+        {
+          "hub": "ux-research-services",
+          "slug": "contextual-inquiry"
+        },
+        {
+          "hub": "ux-research-services",
+          "slug": "customer-journey-map-template"
+        }
+      ]
     }
   ],
   "posts": [
@@ -273,6 +287,40 @@
       "kd": null,
       "dataSource": "Ahrefs API v3, US, 2026-10-20",
       "notes": "First post in the startups silo (MOFU). Visuals redone after a container restart. QA: intro/closing rewritten (pattern overlap), Vocable link dropped (not hub-tagged), 6th link /industries/startups/. Fact-check loop 1: F1 Apple 44pt is default not minimum; F2 GDPR/CCPA → data deletion rights; F3 feature list comes from user research step, not the sprint; F4 Figma Dev Mode plans; F5 SUS 68 not a pass mark alone; F6 Vocable wording; F7 usability testing scope. US spelling canceled. Backlink: startups hub definition. Open owner items: industries/startups.json L178 GDPR overstatement; MOFU CTA box prints Nitro $5M; design-and-development conflict."
+    },
+    {
+      "slug": "contextual-inquiry",
+      "hub": "ux-research-services",
+      "keyword": "contextual inquiry",
+      "funnel": "tofu",
+      "author": "ahmad-ullah",
+      "date": "2026-10-23",
+      "words": 3498,
+      "images": 5,
+      "internalLinks": 9,
+      "externalLinks": 5,
+      "qaLoops": 1,
+      "volume": 700,
+      "kd": 6,
+      "dataSource": "Ahrefs API v3, US, 2026-10-23",
+      "notes": "Priority queue item 1. AI Overview 8 sources, 11 PAA. Fact-check F1-F7 (4-6 users not per user group; usability session 45-60 min; Mass Media Co. wording; dscout guest author; no 48-hour claim; 4 to 30+ users; 7-15 days fieldwork) applied by QA; 2 unsourced generalizations softened. Backlinks: hub contextual inquiry item, choose-ux-research-agency generative research line."
+    },
+    {
+      "slug": "customer-journey-map-template",
+      "hub": "ux-research-services",
+      "keyword": "customer journey map template",
+      "funnel": "tofu",
+      "author": "sahar-asif",
+      "date": "2026-10-23",
+      "words": 3906,
+      "images": 5,
+      "internalLinks": 8,
+      "externalLinks": 4,
+      "qaLoops": 1,
+      "volume": 5100,
+      "kd": 0,
+      "dataSource": "Ahrefs API v3, US, 2026-10-23",
+      "notes": "Priority queue item 2. Linkable asset: blank template PDF/SVG/PNG/CSV + example PDF, ungated, \"Free to use and adapt.\" AI Overview + 8 PAA. Fact-check F1-F11 applied by QA (SVG editable only in Figma/PowerPoint; Canity 7-stage list; moment of truth hedged; Vocable wording). Backlinks: hub personas and journey maps item, choose-ux-research-agency deliverables line. Open owner items: licence line, home.ts 1-4 weeks vs hub 4-8 weeks, hub interviews-per-group arithmetic."
     }
   ],
   "audits": []

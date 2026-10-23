@@ -464,6 +464,86 @@
       "words": 2556,
       "tableCount": 2,
       "listStyle": "steps + bullets"
+    },
+    {
+      "slug": "contextual-inquiry",
+      "hub": "ux-research-services",
+      "type": "Guide",
+      "funnel": "tofu",
+      "introStyle": "said-versus-did illustrative contrast",
+      "h2Frames": [
+        "what is contextual inquiry?",
+        "why does contextual inquiry beat asking users what they do?",
+        "what are the four principles of contextual inquiry?",
+        "how does contextual inquiry compare with other methods?",
+        "when should you use contextual inquiry, and when not?",
+        "how do you conduct a contextual inquiry?",
+        "which contextual inquiry questions should you ask?",
+        "contextual inquiry example, a warehouse receiving study",
+        "how do you turn field notes into design decisions?",
+        "what does contextual inquiry take, and who should run it?",
+        "faqs"
+      ],
+      "sectionOrder": [
+        "What is contextual inquiry?",
+        "Why does contextual inquiry beat asking users what they do?",
+        "What are the four principles of contextual inquiry?",
+        "How does contextual inquiry compare with other methods?",
+        "When should you use contextual inquiry, and when not?",
+        "How do you conduct a contextual inquiry?",
+        "Which contextual inquiry questions should you ask?",
+        "Contextual inquiry example, a warehouse receiving study",
+        "How do you turn field notes into design decisions?",
+        "What does contextual inquiry take, and who should run it?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "said vs did split card",
+        "four principles tiles",
+        "method comparison table",
+        "2-hour session strip",
+        "field-note sheet mockup"
+      ],
+      "ctaAngle": "tell us what you need to learn about your users; free consultation"
+    },
+    {
+      "slug": "customer-journey-map-template",
+      "hub": "ux-research-services",
+      "type": "Template",
+      "funnel": "tofu",
+      "introStyle": "empty-cell hook with downloads first",
+      "h2Frames": [
+        "what is a customer journey map template, and what's in ours?",
+        "how does a customer journey map differ from other ux maps?",
+        "which stages and lanes belong in a journey map template?",
+        "where does evidence for each journey map lane come from?",
+        "how do you fill a customer journey map template in 7 steps?",
+        "customer journey map template, filled in (illustrative)",
+        "how do you turn a journey map into decisions, not wall art?",
+        "which customer journey map mistakes waste the template?",
+        "when should researchers build your customer journey map?",
+        "faqs"
+      ],
+      "sectionOrder": [
+        "What is a customer journey map template, and what's in ours?",
+        "How does a customer journey map differ from other UX maps?",
+        "Which stages and lanes belong in a journey map template?",
+        "Where does evidence for each journey map lane come from?",
+        "How do you fill a customer journey map template in 7 steps?",
+        "Customer journey map template, filled in (illustrative)",
+        "How do you turn a journey map into decisions, not wall art?",
+        "Which customer journey map mistakes waste the template?",
+        "When should researchers build your customer journey map?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "downloads preview + file list",
+        "annotated template anatomy",
+        "map-type comparison matrix",
+        "evidence source map",
+        "filled worked example"
+      ],
+      "ctaAngle": "download the free template; send the hypothesis map for a free consultation"
     }
   ]
 }
