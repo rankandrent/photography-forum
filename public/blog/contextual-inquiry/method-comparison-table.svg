@@ -68,12 +68,11 @@
 <text x="24" y="255.1" font-size="14" font-weight="800" fill="#14111F">Typical session</text>
 <text x="188" y="255.1" font-size="14" font-weight="700" fill="#14111F">About 2 hours</text>
 <text x="422" y="255.1" font-size="14" font-weight="500" fill="#2B2733">1 hour (our program)</text>
-<text x="656" y="255.1" font-size="14" font-weight="500" fill="#2B2733">1–3 weeks per round (our</text>
-<text x="656" y="275.1" font-size="14" font-weight="500" fill="#2B2733">program)</text>
+<text x="656" y="255.1" font-size="14" font-weight="500" fill="#2B2733">45–60 minutes (our program)</text>
 <text x="890" y="255.1" font-size="14" font-weight="500" fill="#2B2733">Weeks or longer of immersion</text>
 <line x1="24" y1="296" x2="1080" y2="296" stroke="#F1ECF4"/>
 <text x="24" y="327.1" font-size="14" font-weight="800" fill="#14111F">Sample</text>
-<text x="188" y="327.1" font-size="14" font-weight="700" fill="#14111F">4–6 users per user group</text>
+<text x="188" y="327.1" font-size="14" font-weight="700" fill="#14111F">4–6 users</text>
 <text x="188" y="347.1" font-size="14" font-weight="700" fill="#14111F">(our program)</text>
 <text x="422" y="327.1" font-size="14" font-weight="500" fill="#2B2733">10–15 per user group (our</text>
 <text x="422" y="347.1" font-size="14" font-weight="500" fill="#2B2733">program)</text>

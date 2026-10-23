@@ -198,7 +198,7 @@
     "contextual inquiry example",
     "contextual inquiry questions"
   ],
-  "queryVariantsNote": "One answer site-wide: contextual inquiry = observe 4-6 users per user group (hub figure for our programme) doing real work in their own setting, with an interview woven into the observation, about 2 hours per session, under the 4 principles, followed by an interpretation session. This matches the hub ('Researchers observe 4-6 users in the real work setting, for example a warehouse shift or a hospital ward') and its process step 'Generative fieldwork (7-15 days)'.",
+  "queryVariantsNote": "One answer site-wide: contextual inquiry = observe 4-6 users (hub figure for our programme) doing real work in their own setting, with an interview woven into the observation, about 2 hours per session, under the 4 principles, followed by an interpretation session. This matches the hub ('Researchers observe 4-6 users in the real work setting, for example a warehouse shift or a hospital ward') and its process step 'Generative fieldwork (7-15 days)'.",
   "ambiguous": [
     {
       "word": "inquiry",
@@ -274,7 +274,7 @@
   "entitiesNote": "25 entries, one name each, no slashes, no short forms. Read aloud as phrases the post will literally print. At least 20 must appear with a real fact. 'focus group' appears once to separate it from the focus principle (H2 4 or FAQ). 'screen sharing' belongs to the remote FAQ (NN/g asks for the entire desktop to be shared). 'Jobs to be Done' and 'Dovetail' come from the hub synthesis step. Not rivals: none is made only of keyword words; see density for the ones to cap.",
   "attributes": [
     "session length (about 2 hours per user)",
-    "participant count (4-6 users per user group in our programme)",
+    "participant count (4-6 users in our programme)",
     "session structure (primer, transition, contextual interview, wrap-up)",
     "inquiry mode (active or passive)",
     "research focus (the question the product team must answer)",
@@ -379,7 +379,7 @@
       "h2": "How do you run a contextual inquiry session?",
       "answerHint": "A contextual inquiry session runs about 2 hours in the user's real work setting and has 4 parts: a short primer, a transition into observation, the contextual interview where you watch and then ask at natural pauses, and a wrap-up where the user corrects your interpretation.",
       "points": [
-        "Before the visit (ol): research focus in one sentence; recruit 4-6 users per user group (hub figure for our programme; Wikipedia: 4 for a small task to 30 or more); agree site access, recording consent and what may not be filmed (screens with customer data); pair an interviewer with a note-taker.",
+        "Before the visit (ol): research focus in one sentence; recruit 4-6 users (hub figure for our programme; Wikipedia: 4 for a small task to 30 or more); agree site access, recording consent and what may not be filmed (screens with customer data); pair an interviewer with a note-taker.",
         "The session (ol, 4 parts): session primer (introductions, consent, what you will do), transition (from interview mode to 'work as you normally would'), contextual interview (watch, then ask at natural pauses: NN/g's watch-and-learn / stop-and-discuss loop, credit it), wrap-up (play back what you understood; the user corrects it).",
         "Inquiry mode: active (questions during the work) vs passive (questions at the end), credit dscout; when to use each (passive for fast or safety-critical work).",
         "Session length: about 2 hours (Wikipedia, citing Holtzblatt; fact-checker confirms); NN/g says 1 hour to several days by scope. Visual 5: 2-hour session strip with an example time split, labelled 'example plan'.",
@@ -419,7 +419,7 @@
     },
     {
       "h2": "What does a contextual inquiry study take, and when should you bring in researchers?",
-      "answerHint": "A contextual inquiry study takes travel to the real work setting, about 2 hours per session plus a few hours of interpretation per session, and 4-6 users per user group. Bring in a research team when you cannot get site access, cannot spare researchers for two weeks of fieldwork, or need the findings turned into personas and journey maps your product team will use.",
+      "answerHint": "A contextual inquiry study takes travel to the real work setting, about 2 hours per session plus a few hours of interpretation per session, and 4-6 users. Bring in a research team when you cannot get site access, cannot spare researchers for two weeks of fieldwork, or need the findings turned into personas and journey maps your product team will use.",
       "points": [
         "Benefits vs limitations as two short ul (reasoned, not generic): benefits answer PAA (tacit knowledge, real workarounds, credibility with stakeholders, detail surveys cannot give); limitations (resource cost: travel and hours per user, Wikipedia; small sample; access restrictions; observer effect).",
         "Effort numbers in our programme (hub wording only): generative fieldwork 7-15 days inside a 4-8 week programme; on-site contextual inquiry is one of the factors that moves the programme price toward the top of $25,000-$60,000 (deep link /services/ux-research-services/#how-much-does-ux-research-cost, anchor e.g. 'what moves the price of a UX research programme'). State the price once. Do not build a cost section (hub owns 'How much does UX research cost?').",
@@ -431,7 +431,7 @@
   "faqs": [
     {
       "q": "How many participants does a contextual inquiry need?",
-      "hint": "Our programme observes 4-6 users per user group (hub). Holtzblatt's guidance via Wikipedia: as few as 4 for a small, focused task, up to 30 or more for a large scope. NN/g frames it as users per visit, visits per day and total visits. 2-3 sentences."
+      "hint": "Our programme observes 4-6 users (hub). Holtzblatt's guidance via Wikipedia: as few as 4 for a small, focused task, up to 30 or more for a large scope. NN/g frames it as users per visit, visits per day and total visits. 2-3 sentences."
     },
     {
       "q": "How long does a contextual inquiry session take?",
@@ -530,7 +530,7 @@
     }
   ],
   "visualsNote": "6 images (cap). The notes-to-decisions path in H2 9 is an ol in text, not an image, to stay at 6. If the visual designer prefers, swap the decision tree (H2 5) for a notes-to-decisions flow (field notes -> interpretation session -> affinity diagram -> work models -> personas / journey maps / JTBD opportunity map) and turn H2 5 into two lists. Follow docs/content-system/visual-style/README.md.",
-  "leadAngle": "Two soft moments and one offer (TOFU, no hard sell). (1) End of H2 6: site access, recording consent and recruiting 4-6 users per user group are what stall in-house studies; our programme makes participant recruitment its own step (hub: 3-6 days). (2) End of H2 9: synthesis is where notes pile up; our programme ends in tagged findings, personas, journey maps, a JTBD opportunity map and a 90-minute readout (deep link to the process). (3) Main offer in H2 10: if your question needs field observation and your team cannot spend 7-15 days of fieldwork, tell us what you need to learn about your users and we will say in a free consultation whether contextual inquiry or interviews will answer it; the full programme runs 4-8 weeks, $25,000-$60,000 (hub cost section link). The template TOFU CTA (free checklist, email capture) sits after H2 3. Do not promise a written study plan or a free pilot session (not published offers).",
+  "leadAngle": "Two soft moments and one offer (TOFU, no hard sell). (1) End of H2 6: site access, recording consent and recruiting 4-6 users are what stall in-house studies; our programme makes participant recruitment its own step (hub: 3-6 days). (2) End of H2 9: synthesis is where notes pile up; our programme ends in tagged findings, personas, journey maps, a JTBD opportunity map and a 90-minute readout (deep link to the process). (3) Main offer in H2 10: if your question needs field observation and your team cannot spend 7-15 days of fieldwork, tell us what you need to learn about your users and we will say in a free consultation whether contextual inquiry or interviews will answer it; the full programme runs 4-8 weeks, $25,000-$60,000 (hub cost section link). The template TOFU CTA (free checklist, email capture) sits after H2 3. Do not promise a written study plan or a free pilot session (not published offers).",
   "variety": {
     "type": "Article",
     "introStyle": "said-vs-did split (what one illustrative user says in an interview vs what observation shows). Used so far site-wide: buyer scenario, myth, data point with source, question, definition, mini case, contrarian take, itemized receipt, 60-second phone test, before/after roadmap row, ordered six-step answer. Not a repeat; nearest is the before/after row (ux-strategy-roadmap), which rewrote a document row, not a user's behavior.",

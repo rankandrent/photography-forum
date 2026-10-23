@@ -23,9 +23,9 @@ qa: pending
 image: "/blog/contextual-inquiry/cover.svg"
 ---
 
-Ask a warehouse receiving clerk how she checks in a delivery and she says "scan the pallet, confirm the count, done"; watch her during a contextual inquiry and you see a paper packing list, a second screen for the purchase order, a call to the buyer and a sticky note on a damaged carton. The clerk is an illustrative composite, not a client, but the gap is real in most expert work.
+Ask a warehouse receiving clerk how she checks in a delivery and she says "scan the pallet, confirm the count, done"; watch her during a contextual inquiry and you see a paper packing list, a second screen for the purchase order, a call to the buyer and a sticky note on a damaged carton. The clerk is an illustrative composite, not a client, but the gap between what people say and what they do is the reason the method exists.
 
-In user experience (UX) research, this said versus did gap is the reason the method exists: you watch users work in their real work setting, then ask why at natural pauses. Below are the four principles, a 2-hour session plan, the questions to ask, a field-note sheet and the path to design decisions. The method is one of the six deliverables in our [UX research services](/services/ux-research-services/), and we run it on-site.
+This said versus did gap is why user experience (UX) researchers watch users work in their real work setting and ask why at natural pauses, instead of trusting what people report. Running it well takes four principles, a 2-hour session plan, questions tied to what the user just did, a field-note sheet and a way to turn notes into design decisions, and each gets its own section here. It is also one of the six deliverables in our [UX research services](/services/ux-research-services/), and we run it on-site.
 
 ## What is contextual inquiry?
 
@@ -39,7 +39,7 @@ The master-apprentice model sets the roles: the user is the expert, and the rese
 
 **In everyday English, contextual means depending on the surrounding situation; in contextual research with users, it means the real work setting around the task being observed.**
 
-The contextual factors are the place, the tools and artifacts, the other people, the interruptions and the time pressure: for the clerk, a loud dock, a scanner, the buyer and a waiting truck. In UX research, contextual analysis is the interpretation step that turns observations into patterns, covered in the field-notes section. List the contextual factors around your product's main task before you plan a visit.
+The contextual factors are the place, the tools and artifacts, the other people, the interruptions and the time pressure: for the clerk, a loud dock, a scanner, the buyer and a waiting truck. In UX research, contextual analysis is the interpretation step that turns observations into patterns, such as the warehouse cluster "clerks cannot see the expected quantity" in the section on turning field notes into design decisions. List the contextual factors around your product's main task before you plan a visit.
 
 ## Why does contextual inquiry beat asking users what they do?
 
@@ -67,7 +67,7 @@ Illustrative composite, not a client.
 
 </details>
 
-Observation changes behavior too: under the Hawthorne effect, people act differently while watched. Nikki Anderson of dscout counters it with [rapport, longer sessions and a reminder that you are evaluating the product, not them](https://dscout.com/people-nerds/behind-scenes-contextual-inquiry). Our practitioner view is that real deadlines limit it further: a truck waiting at the dock pulls the clerk back to her usual shortcuts. If your evidence is all self-report, plan one observed session before you design.
+Observation changes behavior too: under the Hawthorne effect, people act differently while watched. Nikki Anderson, writing for dscout's People Nerds, counters it with [rapport, longer sessions and a reminder that you are evaluating the product, not them](https://dscout.com/people-nerds/behind-scenes-contextual-inquiry). Our practitioner view is that real deadlines limit it further: a truck waiting at the dock pulls the clerk back to her usual shortcuts. If your evidence is all self-report, plan one observed session before you design.
 
 ## What are the four principles of contextual inquiry?
 
@@ -104,14 +104,14 @@ The table compares the four methods by setting, data, sample and output.
 |---|---|---|---|---|
 | Setting | The user's own work setting | A call or room away from the work | Your design, in a lab or remote | The group's everyday life |
 | Data type | Observed behavior plus explanation | Self-reported behavior and opinions | Performance on set tasks | Observed culture and norms |
-| Typical session | About 2 hours | 1 hour (our program) | 1–3 weeks per round (our program) | Weeks or longer of immersion |
-| Sample | 4–6 users per user group (our program) | 10–15 per user group (our program) | 5 per round (NN/g) | One community |
+| Typical session | About 2 hours | 1 hour (our program) | 45–60 minutes (our program) | Weeks or longer of immersion |
+| Sample | 4–6 users (our program) | 10–15 per user group (our program) | 5 per round (NN/g) | One community |
 | Best question | How is this work really done? | What do users want, and why? | Does this design work? | How does this group live? |
 | Main output | Work models, personas, journey maps | Needs, personas, jobs | Ranked usability issues | A description of the culture |
 
 </details>
 
-User interviews are a semi-structured interview away from the work: quick to schedule and good for motivations, but every answer passes through memory. Our [Mass Media Co. platform revamp](/case-studies/mass-media-co/) is an interview-led example: its scope listed user interviews, and a discovery workshop with stakeholders and users covered information architecture and user flows. Usability testing is evaluative and checks a design you already have, the job of our [usability testing services](/services/usability-testing-services/). Pick the column whose best question matches yours.
+User interviews are a semi-structured interview away from the work: quick to schedule and good for motivations, but every answer passes through memory. Our [Mass Media Co. platform revamp](/case-studies/mass-media-co/) listed user interviews in its scope, next to a discovery workshop with stakeholders and users that covered information architecture and user flows. Usability testing is evaluative and checks a design you already have, the job of our [usability testing services](/services/usability-testing-services/). Pick the column whose best question matches yours.
 
 ### What is the difference between contextual inquiry and ethnography?
 
@@ -125,8 +125,8 @@ Ethnography comes from anthropology and describes a whole culture, usually with 
 
 The method fits these situations:
 
-- **Complex or expert work** (enterprise software, clinical work, logistics), because experts skip the most steps when describing it. In [supply chain UI UX design](/industries/supply-chain/), our researchers shadow pickers and dispatchers across shifts and record scan sequences and interruptions.
-- **Work shaped by the room or other people**, such as a hospital ward, because interruptions and external resources only show up on site. In our [healthcare UI UX design](/industries/healthcare/) work, researchers shadow nurses and physicians.
+- **Complex or expert work** (enterprise software, clinical work, logistics), because much of an expert's routine is tacit knowledge they leave out when describing it. Our [supply chain UX design](/industries/supply-chain/) process includes a floor-observation step in which researchers shadow pickers and dispatchers across shifts and record scan sequences and interruptions.
+- **Work shaped by the room or other people**, such as a hospital ward, because interruptions and external resources only show up on site. Our process for [healthcare products](/industries/healthcare/) includes a clinician-shadowing step with nurses and physicians.
 - **Drop-off in analytics with no known reason**, because numbers show where users leave and observation shows why.
 - **A new market**, because your team's mental models of the job no longer apply.
 
@@ -146,7 +146,7 @@ If your product matches the first list, schedule observed sessions before the fi
 Prepare four things before the visit:
 
 1. Write the research focus as one sentence, for example "Why does receiving take longer than the system shows?"
-2. Recruit 4–6 users per user group, our program's figure (the FAQs give the published range).
+2. Recruit 4–6 users, our program's figure (the FAQs give Holtzblatt's wider range).
 3. Agree site access and recording consent: informed consent for audio, video and photos, and what stays off camera, such as screens with customer data.
 4. Pair an interviewer with a note-taker, who writes the field notes.
 
@@ -173,14 +173,14 @@ Site access, consent and recruiting are where in-house studies stall, so our pro
 
 ## Which contextual inquiry questions should you ask?
 
-**Good questions in a contextual interview point at what the user just did in the real work setting: "What made you open that second screen?" beats "How do you usually check orders?"**
+**Good contextual interview questions point at what the user just did in the real work setting: "What made you open that second screen?" beats "How do you usually check orders?"**
 
 Group the question bank by session moment:
 
 - **Opening:** "What does your role cover on a normal shift?" "Which part of today's work should I watch most closely?"
-- **During observation:** "What happens if you skip that step?"
-- **Workarounds and external resources:** "Where did that number come from?" "Who wrote this sticky note?"
-- **Wrap-up:** "Here is what I think happened; what did I get wrong?"
+- **During observation:** "What were you checking just then?" "What happens if you skip that step?" "Is today a normal day, or is something different?"
+- **Workarounds and external resources:** "Where did that number come from?" "Who wrote this sticky note?" "When did you start keeping that list?"
+- **Wrap-up:** "Here is what I think happened; what did I get wrong?" "Which step did I not see today?"
 
 Three question types to avoid, with a better version:
 
@@ -214,9 +214,7 @@ The last column matters most: each interpretation is checked in the wrap-up, so 
 
 Every detail is invented; no client is described. The research focus was "Why does receiving take longer than the warehouse system shows?", with 5 sessions at 2 sites, in active mode except during forklift unloading.
 
-1. A clerk read a paper packing list before scanning. Asked what the paper tells her, she pointed to supplier notes about substituted items.
-2. She opened the purchase order on a second screen, because the handheld shows what was scanned, not what was expected.
-3. She phoned the buyer about a short shipment. Asked who decides next, she said only the buyer can accept one.
+Session 1 produced the three rows on the field-note sheet above, each answered at the next natural pause; the paper turned out to carry supplier notes about substituted items. A habit became a pattern only when it repeated: clerks at both sites opened the purchase order on a second screen, and none had mentioned it when asked how receiving works.
 
 In the wrap-up, the researcher read the sticky note as a damage record, and the clerk corrected it: the note reminds her to file a claim with the carrier.
 
@@ -226,7 +224,7 @@ The study ends with three design questions: should the handheld show the expecte
 
 **After field observation, the team turns field notes from the real work setting into decisions in an interpretation session, then groups the insights in an affinity diagram.**
 
-1. Hold an interpretation session within 48 hours of each visit (our practice), with an interpretation team of 3–8 people (Wikipedia's range for Holtzblatt's method); the researcher retells the session and the group writes one insight per note.
+1. Hold an interpretation session soon after each visit, while the observations are fresh, with an interpretation team of 3–8 people (Wikipedia's range for Holtzblatt's method); the researcher retells the session and the group writes one insight per note.
 2. Group notes from all sessions in an affinity diagram, by user problem, not by screen.
 3. Draw work models such as flow and sequence models, which show who hands what to whom and in which order.
 4. Turn the clusters into personas, a journey map per persona and a Jobs to be Done opportunity map that ranks user jobs.
@@ -237,7 +235,7 @@ Synthesis is where notes pile up and nobody owns the readout. In our program, sy
 
 ## What does contextual inquiry take, and who should run it?
 
-**A contextual research study takes travel to the real work setting, about 2 hours per user plus interpretation time, and 4–6 users per user group in our program.**
+**A contextual research study takes travel to the real work setting, about 2 hours per user plus interpretation time, and 4–6 users in our program.**
 
 The FAQs list the benefits; the limits are these:
 
@@ -245,17 +243,17 @@ The FAQs list the benefits; the limits are these:
 - **A small sample**, so findings explain behavior but do not measure it.
 - **Access**, since sites with customer data or safety rules need approval first.
 
-In our UX research program, the fieldwork duration is 7–15 days inside a 4–8 week engagement, and the program price is $25,000–$60,000. On-site contextual inquiry is one of the things that pushes a program toward the top of that range; see [what moves the price of a UX research program](/services/ux-research-services/#how-much-does-ux-research-cost).
+Fieldwork in our UX research program lasts 7–15 days inside a 4–8 week engagement priced at $25,000–$60,000, and on-site contextual inquiry is one reason a program lands near the top of that range. The [UX research pricing examples](/services/ux-research-services/#how-much-does-ux-research-cost) show what a program at each end of it includes.
 
-Bring in a research team when you cannot get site access, cannot spare people for two weeks of fieldwork, or need personas and journey maps your product team will use. Before you hire, read [how to compare research agencies before you hire one](/blog/choose-ux-research-agency/).
+Bring in a research team when nobody in-house has time to arrange site visits, consent and recruiting, when you cannot spare people for 7–15 days of fieldwork, or when you need personas and journey maps your product team will use. If you plan to outsource, read [how to compare research agencies before you hire one](/blog/choose-ux-research-agency/).
 
-A research question picks the method before a budget does. [Tell us what you need to learn about your users](/contact/) and which decision it feeds, so the first conversation is about matching the method to the question. Every project begins with a free consultation and a fixed-scope proposal.
+Contextual inquiry earns its travel cost only when the answer lives in the work itself, not in what people remember about it. If you cannot tell which kind of question you have, [tell us what you need to learn about your users](/contact/) and we will name the method that fits, observation or not. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
 ### How many participants does a study need?
 
-Our program sets a participant count of 4–6 users per user group. Holtzblatt's guidance, as Wikipedia reports it, runs from 4 users for a single, small task to 30 or more for a large scope, and NN/g's Mayya Azarova [splits the count](https://www.nngroup.com/videos/how-many-users-contextual-inquiry/) into users per visit, visits per day and total visits.
+Our program sets a participant count of 4–6 users. Holtzblatt's guidance, as Wikipedia reports it, runs from as few as 4 users for a single, small task to 30 or more, and NN/g's Mayya Azarova [splits the count](https://www.nngroup.com/videos/how-many-users-contextual-inquiry/) into users per visit, visits per day and total visits.
 
 ### How long does one session take?
 
@@ -271,7 +269,7 @@ The primary objective is to understand how users really do their work, including
 
 ### What are the benefits of contextual inquiry?
 
-It replaces recall with observed behavior and surfaces the tacit knowledge and workarounds that surveys miss. Its findings are tied to real tasks, and stakeholders who watch a clip of a user at work stop arguing from opinion.
+It replaces recall with observed behavior and surfaces the tacit knowledge and workarounds that surveys miss. Its findings are tied to real tasks, and stakeholders who watch a clip of a user at work argue less from opinion.
 
 ### Is a contextual interview the same as contextual inquiry?
 
