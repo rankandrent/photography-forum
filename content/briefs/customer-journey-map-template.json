@@ -797,6 +797,22 @@
       }
     ]
   },
+  "related": {
+    "linkBuilderRun": "2026-10-23",
+    "internalLinks": [
+      "/services/ux-research-services/ (hub root, anchor 'UX research services', intro, about word 100)",
+      "/services/ux-research-services/#how-much-does-ux-research-cost (hub cost fragment = closing UP link, H2 'When should researchers build your customer journey map?')",
+      "/services/saas-ux-design/ (the one allowed other hub, anchor 'SaaS UX design', H3 'What are the 7 steps of the customer journey?', on the hub's own 'Lifecycle journey mapping' step wording)",
+      "/industries/supply-chain/ (anchor 'supply chain UI UX design', H3 on day-in-the-life maps, on the industry page's own 'shadow pickers and dispatchers across shifts')",
+      "/blog/contextual-inquiry/ (same silo, anchor 'how to run a contextual inquiry', H2 evidence section; conditional marker resolved because the post publishes the same day)",
+      "/case-studies/vocable/ (anchor 'how we mapped the Vocable creator journey', stakeholder-interview wording only)",
+      "/blog/choose-ux-research-agency/ (same silo, anchor 'how to choose a UX research agency')",
+      "/contact/ (anchor 'Send us the hypothesis map you already have', closing)"
+    ],
+    "internalCountNote": "8 contextual links to other pages = TOFU 8–12 minimum. Hub cap applied to the brief's internalTargets (lesson 2026-10-23): the #how-does-the-ux-research-process-work and #what-do-ux-research-services-include fragments and the second root link in the closing were unlinked, their facts kept as plain text. Cost fragment kept because siteFacts requires the price to carry the cost deep link. Next allowed candidate if QA vetoes the SaaS or supply-chain link: /case-studies/mass-media-co/ (hub-tagged, scope 'user interviews') on the interview-count sentence, or the user persona template post when it ships.",
+    "externalSources": "4 links, all WebFetch-verified 2026-10-23: NN/g journey-mapping-101 ('a visualization of the process that a person goes through in order to accomplish a goal'; 'one point of view per map'); NN/g ux-mapping-cheat-sheet (point of view, scope, chronological per map; hypothesis maps vs research maps); NN/g customer-journey-mapping (Kaplan, 31 Jul 2016: 'This is a qualitative-research process', 'quantitative data alone cannot build a story'); Microsoft support SVG page ('Convert to Shape option', Insert > Pictures > This Device). Optional 5th (NN/g digital template) not added.",
+    "inPageAnchor": "FAQ link #how-do-you-fill-a-customer-journey-map-template-in-7-steps matches slugify() of the H2 'How do you fill a customer journey map template in 7 steps?'."
+  },
   "backlinkSuggestions": [
     {
       "file": "content/services/ux-research-services.json",
@@ -815,6 +831,15 @@
       "anchor": "journey maps",
       "priority": "required",
       "why": "Same-silo sideways link from the only published silo post (61 GSC impressions, 2026-09-21..10-18); real topic match (a buyer checking what a journey map deliverable should look like)."
+    },
+    {
+      "file": "content/blog/contextual-inquiry.md",
+      "field": "body, H2 'How do you turn field notes into design decisions?' (#how-do-you-turn-field-notes-into-design-decisions), paragraph after the 4-step list",
+      "sentence": "A journey map lays out one persona's steps, emotions and pain points over time, and our customer journey map template shows how observed steps fill its Doing and Touchpoints lanes.",
+      "change": "Already present as of 2026-10-23 (added by the contextual-inquiry link builder): 'customer journey map template' -> /blog/customer-journey-map-template/. Keep it; no edit needed. Same silo, reciprocal of this post's 'how to run a contextual inquiry' link.",
+      "anchor": "customer journey map template",
+      "priority": "required (already applied)",
+      "why": "Same-silo sideways link at the exact step where field notes become journey maps; the sentence names the Doing and Touchpoints lanes this post fills from contextual inquiry."
     },
     {
       "file": "content/locations/ux-design-agency-columbus.json",

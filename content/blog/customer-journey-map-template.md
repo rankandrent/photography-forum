@@ -118,13 +118,13 @@ We set the stage count at 5–7 per map, because fewer hides the hard moments an
 
 **No single standard defines a 7-step customer journey; one common 7-stage set is awareness, consideration, decision, purchase, onboarding, retention and advocacy.**
 
-That set suits a lifecycle customer journey map for a whole brand. For product work, stages named from interviews beat it: "Consideration" tells a designer nothing about which screen to change, while "Set shift rules" does.
+That set suits a lifecycle customer journey map for a whole brand or product lifecycle; the lifecycle journey mapping step of our [SaaS UX design](/services/saas-ux-design/) process maps every stage from sign-up to renewal. For product work, stages named from interviews beat it: "Consideration" tells a designer nothing about which screen to change, while "Set shift rules" does.
 
 ### Current-state, future-state and day-in-the-life maps
 
 **A current-state map shows today's journey, a future-state map shows the journey you plan to build, and a day-in-the-life map covers one person's whole working day.**
 
-The download is a current-state map by default; a future-state map reuses the grid after research, and a day-in-the-life map suits shift work, where your product is one tool among many.
+The download is a current-state map by default; a future-state map reuses the grid after research, and a day-in-the-life map suits shift work, where your product is one tool among many, such as the picker and dispatcher shifts our researchers shadow for [supply chain UI UX design](/industries/supply-chain/).
 
 ### What each lane needs
 
@@ -145,7 +145,7 @@ The Thinking lane holds thoughts and mindsets as verbatim quotes, never a team s
 
 NN/g's Kate Kaplan calls journey mapping [a qualitative-research process](https://www.nngroup.com/articles/customer-journey-mapping/) and notes that quantitative data alone cannot build the story. Numbers back up a map; they never write it.
 
-Our research program plans an interview count of 10–15 one-hour user interviews per user group. Contextual inquiry means watching people do real work where they do it and asking about it as they go; we set the observation count at 4–6 users, on site, for example at a clinic front desk. Our guide on how to run a contextual inquiry <!-- link: /blog/contextual-inquiry/ (conditional per brief: add only once the post is published; link-builder confirms) --> covers the method itself.
+Our research program plans an interview count of 10–15 one-hour user interviews per user group. Contextual inquiry means watching people do real work where they do it and asking about it as they go; we set the observation count at 4–6 users, on site, for example at a clinic front desk. Our guide on [how to run a contextual inquiry](/blog/contextual-inquiry/) covers the method itself.
 
 The table maps each research source to the lanes it fills and its blind spot.
 
@@ -186,7 +186,7 @@ These steps answer how to create a customer journey map and how to create a user
 6. **Write each lane.** Name stages from the clusters, quote verbatims, plot the emotion curve and mark evidence levels. Output: a sourced map.
 7. **Validate and assign.** Walk 2–3 participants or frontline staff through it, validate and refine, then give each opportunity an owner and a metric. Output: a validated map.
 
-In our program these steps sit inside a research timeline of 4–8 weeks, run as [our 5-step UX research process](/services/ux-research-services/#how-does-the-ux-research-process-work); the map comes out of its synthesis and readout step (4–7 days). Start with step 2 this week, because a hypothesis map shows which interviews to book.
+In our program these steps sit inside a research timeline of 4–8 weeks, run as our 5-step UX research process; the map comes out of its synthesis and readout step (4–7 days). Start with step 2 this week, because a hypothesis map shows which interviews to book.
 
 ## Customer journey map template, filled in (illustrative)
 
@@ -229,7 +229,7 @@ Our ranking rule weighs how far the emotion curve drops against the evidence lev
 
 Pick each metric from the key performance indicators (KPIs) the owner already reports, so the map's metrics and KPIs need no new dashboard. A journey map is a living document; the FAQ on updates gives our review cadence. In [how we mapped the Vocable creator journey](/case-studies/vocable/), stakeholder interviews split the creator's work into four phases, planning, drafting, optimizing and publishing, and each screen answered a problem heard in those interviews.
 
-A map of mostly A cells cannot settle a priority argument, and teams that disagree about priorities with no shared personas or journey maps match a situation our UX research page lists for investing in research. Put an owner's name in every Opportunities cell before the meeting ends.
+A map of mostly A cells cannot settle a priority argument, and a team that disagrees about priorities with no shared personas or journey maps is in a situation where we advise investing in UX research. Put an owner's name in every Opportunities cell before the meeting ends.
 
 ## Which customer journey map mistakes waste the template?
 
@@ -248,9 +248,9 @@ Before you share a map, check that every quote carries a participant ID, every c
 
 **Bring in a user research team when a customer journey map must settle a product decision, your users are hard to reach or observe, or your own map is mostly assumed cells.**
 
-The [personas and journey maps our research program delivers](/services/ux-research-services/#what-do-ux-research-services-include) are 2–4 personas with 1 journey map each, built from 10–15 interviews per user group and contextual inquiry, tagged in Dovetail and presented in a 90-minute readout. The program costs $25,000–$60,000; see [what a 4–8 week research program costs](/services/ux-research-services/#how-much-does-ux-research-cost) and, when comparing providers, [how to choose a UX research agency](/blog/choose-ux-research-agency/).
+The personas and journey maps our research program delivers are 2–4 personas with 1 journey map each, built from 10–15 interviews per user group and contextual inquiry, tagged in Dovetail and presented in a 90-minute readout. The program costs $25,000–$60,000; see [what a 4–8 week research program costs](/services/ux-research-services/#how-much-does-ux-research-cost) and, when comparing providers, [how to choose a UX research agency](/blog/choose-ux-research-agency/).
 
-Filled from team knowledge alone, a customer journey map template becomes a hypothesis map, and its A cells are a research plan waiting to be booked. [Send us the hypothesis map you already have](/contact/), and in the consultation we mark which cells need evidence and which method would fill each. Every project begins with a free consultation and a fixed-scope proposal, and [our UX research program](/services/ux-research-services/) sets out the rest.
+Filled from team knowledge alone, a customer journey map template becomes a hypothesis map, and its A cells are a research plan waiting to be booked. [Send us the hypothesis map you already have](/contact/), and in the consultation we mark which cells need evidence and which method would fill each. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
