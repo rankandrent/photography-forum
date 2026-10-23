@@ -18,8 +18,9 @@ takeaways:
   - "A session runs about 2 hours in four parts: session primer, transition, contextual interview and wrap-up."
   - "Observation catches the tacit steps, workarounds and interruptions that users leave out when you only ask them."
   - "Field notes become design decisions in an interpretation session of 3–8 people, then an affinity diagram and work models."
-draft: true
+draft: false
 qa: pending
+image: "/blog/contextual-inquiry/cover.svg"
 ---
 
 Ask a warehouse receiving clerk how she checks in a delivery and she says "scan the pallet, confirm the count, done"; watch her during a contextual inquiry and you see a paper packing list, a second screen for the purchase order, a call to the buyer and a sticky note on a damaged carton. The clerk is an illustrative composite, not a client, but the gap is real in most expert work.
@@ -50,7 +51,7 @@ Three causes open the gap between what users say and what they do:
 - **Recall.** Asked about a typical day, people describe the rule, not the last real instance, so self-reported behavior smooths over interruptions.
 - **Social desirability bias.** People describe the correct procedure, because a sticky note or a call that skips the system looks like breaking the rules.
 
-<!-- visual: said-vs-did split card. Left: "What the clerk said in an interview" (one quote). Right: "What observation showed" (5 steps). Caption: "Illustrative composite". -->
+![Contextual inquiry said versus did gap: an interview video call with the receiving clerk saying “Scan the pallet, confirm the count, done.” beside 5 observed steps, from checking a paper packing list and opening the purchase order on a second screen to recounting a carton by hand, phoning the buyer about a short shipment and sticking a note on a damaged carton; illustrative composite, not a client](/blog/contextual-inquiry/said-vs-did-receiving-clerk.svg "What the clerk said vs what observation showed (illustrative composite)")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -74,7 +75,7 @@ Observation changes behavior too: under the Hawthorne effect, people act differe
 
 Holtzblatt and Beyer set the principles, and NN/g's Kim Flaherty restates them in her 2020 guide. The "mistake it prevents" column is our framing.
 
-<!-- visual: four-principles tiles, 4 tiles in one row (Context, Partnership, Interpretation, Focus); each shows what the researcher does and the mistake it prevents. -->
+![Four principles of contextual inquiry as four tiles, context, partnership, interpretation and focus, each with an illustration, what the researcher does and the mistake it prevents](/blog/contextual-inquiry/four-principles-tiles.svg "The four principles of contextual inquiry and the mistake each prevents")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -95,7 +96,7 @@ The interpretation principle builds shared understanding, because the user fixes
 
 The table compares the four methods by setting, data, sample and output.
 
-<!-- visual: method comparison table, first column highlighted, then user interviews, usability testing, ethnography; rows as in the text version. -->
+![Comparison table of contextual inquiry, highlighted, against user interviews, usability testing and ethnography by setting, data type, typical session, sample, best question and main output](/blog/contextual-inquiry/method-comparison-table.svg "Contextual inquiry compared with user interviews, usability testing and ethnography")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -151,7 +152,7 @@ Prepare four things before the visit:
 
 The session structure below is an example plan for a 2-hour visit.
 
-<!-- visual: 2-hour session strip, horizontal timeline of the four blocks with minutes; watch/ask loop as repeating ticks; label "example plan". -->
+![Contextual inquiry session timeline for an example 120-minute plan: session primer 10 min, transition 5 min, contextual interview 90 min with a repeating watch and learn, stop and discuss loop, and wrap-up 15 min](/blog/contextual-inquiry/two-hour-session-plan.svg "Example plan for a 2-hour contextual inquiry session")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -191,7 +192,7 @@ Three question types to avoid, with a better version:
 
 **Field notes from each observation session work best as one row per observed step, with columns for the workaround seen and the question for the next pause.**
 
-<!-- visual: field-note sheet mockup (handwritten observation sheet, not a ledger card), 6 columns, 3 filled illustrative rows from the warehouse example. -->
+![Contextual inquiry field-note sheet on a clipboard with six columns, time, what the user did, tool or artifact, workaround or breakdown, question for the next pause and interpretation to check in wrap-up, filled with three illustrative warehouse receiving rows](/blog/contextual-inquiry/field-note-sheet.svg "Contextual inquiry field-note template with three illustrative rows")
 
 <details class="astext"><summary>Show as text</summary>
 
