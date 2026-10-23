@@ -1,0 +1,27 @@
+[
+  {
+    "marker": "<!-- visual: download files (content-visual-designer produces all five from one SVG source, per brief downloadAsset): blank template customer-journey-map-template.pdf (US Letter landscape), .svg (editable, fonts embedded), .png (3300×2550), .csv (header block + 8 lanes × Stage 1–5), and the filled worked example customer-journey-map-example.pdf with footer \"Illustrative example, not a client project\". Every file footer: \"Free to use and adapt. uiuxdesignservices.us\" -->",
+    "markdown": "![Customer journey map template download preview: the blank US Letter landscape sheet with 6 header fields, 5 stage columns and 8 lanes, next to five download files (PDF, editable SVG, 3300 × 2550 PNG, CSV and the illustrative worked example PDF)](/blog/customer-journey-map-template/customer-journey-map-template-downloads.svg \"Customer journey map template downloads, free to use and adapt\")"
+  },
+  {
+    "marker": "<!-- visual: annotated blank template anatomy, file customer-journey-map-template-anatomy.svg, 1200×≤800, the template drawn as a printed sheet: header strip (6 fields), 5 stage columns, 8 lane rows; callouts on the persona and scenario header, emotion curve lane, evidence lane and owner and metric lane. Alt/caption: \"Customer journey map template anatomy\" -->",
+    "markdown": "![Customer journey map template anatomy: the blank sheet with numbered callouts on the persona and scenario header, journey stages and all 8 lanes, with redlines on the header, Feeling, Evidence and Owner and metric lanes, and a legend of what goes in each part](/blog/customer-journey-map-template/customer-journey-map-template-anatomy.svg \"Customer journey map template anatomy\")"
+  },
+  {
+    "marker": "<!-- visual: map-type comparison matrix, file customer-journey-map-vs-other-ux-maps.svg: 6 rows (customer journey map highlighted, user journey map, experience map, service blueprint, empathy map, user flow) × 4 columns (point of view, scope, in time order?, question it answers). Caption: \"Customer journey map vs user journey map vs other UX maps\" -->",
+    "markdown": "![Comparison matrix of six UX maps (customer journey map highlighted, user journey map, experience map, service blueprint, empathy map, user flow) by point of view, scope, time order and the question each answers](/blog/customer-journey-map-template/customer-journey-map-vs-other-ux-maps.svg \"Customer journey map vs user journey map vs other UX maps\")"
+  },
+  {
+    "marker": "<!-- visual: evidence source map, file journey-map-evidence-source-map.svg: left, 5 research sources (user interviews 10–15 per user group, contextual inquiry 4–6 users, analytics, support tickets, usability tests); right, the 8 lanes; connector lines show which source fills which lane. No evidence key on the image (the key is open text below). Caption: \"Journey map evidence source map: which research fills which lane\" -->",
+    "markdown": "![Evidence source map: user interviews, contextual inquiry, analytics, support tickets and usability tests, each with the journey map lanes it fills and what it cannot tell you, connected by lines to the header and the 8 lanes](/blog/customer-journey-map-template/journey-map-evidence-source-map.svg \"Journey map evidence source map: which research fills which lane\")"
+  },
+  {
+    "marker": "<!-- visual: filled worked example, file customer-journey-map-example.svg (same source as the example PDF): 5 research-named stages, 8 lanes in short phrases, emotion curve lowest at \"Publish and handle swaps\", H/O/M/A letters in each evidence cell, badge \"Illustrative example\". Alt/caption: \"Customer journey map example, illustrative clinic scheduling app\" -->",
+    "markdown": "![Customer journey map example, illustrative clinic scheduling app: 5 research-named stages for practice manager Dana, all 8 lanes filled, an emotion curve that bottoms out at -2 on Publish and handle swaps, and H, O and M evidence chips](/blog/customer-journey-map-template/customer-journey-map-example.svg \"Customer journey map example, illustrative clinic scheduling app\")"
+  },
+  {
+    "frontmatter": {
+      "image": "/blog/customer-journey-map-template/cover.svg"
+    }
+  }
+]

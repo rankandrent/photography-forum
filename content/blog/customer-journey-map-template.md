@@ -18,8 +18,9 @@ takeaways:
   - "Mark every cell heard, observed, measured or assumed, so a hypothesis map never passes as research."
   - "A journey map drives decisions only when each opportunity has one owner, one metric and a date."
   - "Our template is free to download in PDF, SVG, PNG and CSV, with an illustrative worked example."
-draft: true
+draft: false
 qa: pending
+image: "/blog/customer-journey-map-template/cover.svg"
 ---
 
 Every customer journey map template has the same empty cell under Stage 2, Thinking, and what you write there decides whether the map is evidence or fiction. Written in a workshop, the cell says "Users find setup confusing." Written after research, it says "'Where do I say Sarah only works Tuesdays?' Heard in 9 of 12 interviews, seen in 4 of 5 site visits" (an illustrative example).
@@ -28,7 +29,7 @@ The second cell names who said it, how often and where to check, so a product te
 
 Download the customer journey map template below in four file formats, with no form to fill. Each file has the same 6 header fields, 5 stage columns and 8 lanes. Free to use and adapt.
 
-<!-- visual: download files (content-visual-designer produces all five from one SVG source, per brief downloadAsset): blank template customer-journey-map-template.pdf (US Letter landscape), .svg (editable, fonts embedded), .png (3300×2550), .csv (header block + 8 lanes × Stage 1–5), and the filled worked example customer-journey-map-example.pdf with footer "Illustrative example, not a client project". Every file footer: "Free to use and adapt. uiuxdesignservices.us" -->
+![Customer journey map template download preview: the blank US Letter landscape sheet with 6 header fields, 5 stage columns and 8 lanes, next to five download files (PDF, editable SVG, 3300 × 2550 PNG, CSV and the illustrative worked example PDF)](/blog/customer-journey-map-template/customer-journey-map-template-downloads.svg "Customer journey map template downloads, free to use and adapt")
 
 - [Portable Document Format (PDF), US Letter landscape](/blog/customer-journey-map-template/customer-journey-map-template.pdf)
 - [Scalable Vector Graphics (SVG), editable in Figma, FigJam, Miro or PowerPoint](/blog/customer-journey-map-template/customer-journey-map-template.svg)
@@ -44,7 +45,7 @@ Nielsen Norman Group (NN/g) describes a journey map as [a picture of the process
 
 The table lists each part of the template and what goes in it.
 
-<!-- visual: annotated blank template anatomy, file customer-journey-map-template-anatomy.svg, 1200×≤800, the template drawn as a printed sheet: header strip (6 fields), 5 stage columns, 8 lane rows; callouts on the persona and scenario header, emotion curve lane, evidence lane and owner and metric lane. Alt/caption: "Customer journey map template anatomy" -->
+![Customer journey map template anatomy: the blank sheet with numbered callouts on the persona and scenario header, journey stages and all 8 lanes, with redlines on the header, Feeling, Evidence and Owner and metric lanes, and a legend of what goes in each part](/blog/customer-journey-map-template/customer-journey-map-template-anatomy.svg "Customer journey map template anatomy")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -79,7 +80,7 @@ A user journey map uses the same grid, scoped to one product task instead of the
 
 NN/g's [UX mapping cheat sheet](https://www.nngroup.com/articles/ux-mapping-cheat-sheet/) separates the other maps by point of view, scope and time order. The table compares six maps on those points and the question each answers.
 
-<!-- visual: map-type comparison matrix, file customer-journey-map-vs-other-ux-maps.svg: 6 rows (customer journey map highlighted, user journey map, experience map, service blueprint, empathy map, user flow) × 4 columns (point of view, scope, in time order?, question it answers). Caption: "Customer journey map vs user journey map vs other UX maps" -->
+![Comparison matrix of six UX maps (customer journey map highlighted, user journey map, experience map, service blueprint, empathy map, user flow) by point of view, scope, time order and the question each answers](/blog/customer-journey-map-template/customer-journey-map-vs-other-ux-maps.svg "Customer journey map vs user journey map vs other UX maps")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -149,7 +150,7 @@ Our research program plans an interview count of 10–15 one-hour user interview
 
 The table maps each research source to the lanes it fills and its blind spot.
 
-<!-- visual: evidence source map, file journey-map-evidence-source-map.svg: left, 5 research sources (user interviews 10–15 per user group, contextual inquiry 4–6 users, analytics, support tickets, usability tests); right, the 8 lanes; connector lines show which source fills which lane. No evidence key on the image (the key is open text below). Caption: "Journey map evidence source map: which research fills which lane" -->
+![Evidence source map: user interviews, contextual inquiry, analytics, support tickets and usability tests, each with the journey map lanes it fills and what it cannot tell you, connected by lines to the header and the 8 lanes](/blog/customer-journey-map-template/journey-map-evidence-source-map.svg "Journey map evidence source map: which research fills which lane")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -194,7 +195,7 @@ In our program these steps sit inside a research timeline of 4–8 weeks, run as
 
 Yes, this is an example of a user journey map; the clinic, the app, the people and every number are made up. Dana manages a 3-site physiotherapy clinic, the scenario is first-time setup, and the research base reads 12 interviews with practice managers and 5 contextual inquiry visits to front desks.
 
-<!-- visual: filled worked example, file customer-journey-map-example.svg (same source as the example PDF): 5 research-named stages, 8 lanes in short phrases, emotion curve lowest at "Publish and handle swaps", H/O/M/A letters in each evidence cell, badge "Illustrative example". Alt/caption: "Customer journey map example, illustrative clinic scheduling app" -->
+![Customer journey map example, illustrative clinic scheduling app: 5 research-named stages for practice manager Dana, all 8 lanes filled, an emotion curve that bottoms out at -2 on Publish and handle swaps, and H, O and M evidence chips](/blog/customer-journey-map-template/customer-journey-map-example.svg "Customer journey map example, illustrative clinic scheduling app")
 
 <details class="astext"><summary>Show as text</summary>
 
