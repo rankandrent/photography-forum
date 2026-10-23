@@ -669,6 +669,29 @@
       }
     ]
   },
+  "related": {
+    "linkBuilderRun": "2026-10-23",
+    "internalLinks": [
+      {"href": "/services/ux-research-services/", "anchor": "UX research services", "where": "intro paragraph 2 (about word 110), hub UP link 1"},
+      {"href": "/case-studies/mass-media-co/", "anchor": "Mass Media Co. platform revamp", "where": "H2 4, paragraph after the comparison table, on the user-interviews sentence (new sentence, case-study facts only: scope 'user interviews', discovery workshop with stakeholders and users covering IA and user flows). Not presented as contextual inquiry; services list includes ux-research-services."},
+      {"href": "/services/usability-testing-services/", "anchor": "usability testing services", "where": "H2 4, the ONE cross-hub link"},
+      {"href": "/industries/supply-chain/", "anchor": "supply chain UI UX design", "where": "H2 5, 'Complex or expert work' bullet; industry page fact: researchers shadow pickers and dispatchers across shifts and record scan sequences and interruptions"},
+      {"href": "/industries/healthcare/", "anchor": "healthcare UI UX design", "where": "H2 5, 'Work shaped by the room' bullet; industry page fact: researchers shadow nurses and physicians"},
+      {"href": "/blog/customer-journey-map-template/", "anchor": "customer journey map template", "where": "H2 9, journey map sentence. CONDITIONAL: same silo, publishes today; remove the link if that post does not go live with this one."},
+      {"href": "/services/ux-research-services/#how-much-does-ux-research-cost", "anchor": "what moves the price of a UX research program", "where": "H2 10, hub UP link 2 (price sentence, lesson 2026-10-09)"},
+      {"href": "/blog/choose-ux-research-agency/", "anchor": "how to compare research agencies before you hire one", "where": "H2 10, sideways"},
+      {"href": "/contact/", "anchor": "Tell us what you need to learn about your users", "where": "H2 10, CTA sentence"}
+    ],
+    "internalCountNote": "9 body links (TOFU 8-12). Hub links cut from 4 to 2: removed the root link on 'our UX research program' (H2 10, duplicate target) and the #how-does-the-ux-research-process-work fragment (H2 9); the H2 9 sentence now states the step in plain text ('synthesis and readout is a step of its own (4-7 days)', hub wording).",
+    "externalSources": [
+      {"url": "https://en.wikipedia.org/wiki/Contextual_inquiry", "verified": "WebFetch 2026-10-23: 'fully described in Contextual Design in 1997', ~two-hour one-on-one, 4 to 30 or more users, 3-8 team members, tacit knowledge, resource-intensive"},
+      {"url": "https://www.nngroup.com/articles/contextual-inquiry/", "verified": "WebFetch 2026-10-23: 'a type of ethnographic field study that involves in-depth observation and interviews of a small sample of users' (Kim Flaherty, 6 Dec 2020); watch and learn loop; an hour or two to several days. NOTE for fact-checker: NN/g dates Contextual Design to 1990, Wikipedia to 1997 (post prints 1997 citing Wikipedia)."},
+      {"url": "https://dscout.com/people-nerds/behind-scenes-contextual-inquiry", "verified": "WebFetch 2026-10-23: Hawthorne effect countered by rapport, longer sessions, 'Remind participants that you are evaluating the product, not them'; passive inquiry = 'All clarifying questions are asked at the end'"},
+      {"url": "https://www.nngroup.com/videos/how-many-users-contextual-inquiry/", "verified": "WebFetch 2026-10-23: Mayya Azarova, 9 Sep 2022, three answers (per visit, per day, total)"},
+      {"url": "https://www.nngroup.com/articles/remote-contextual-inquiry/", "verified": "WebFetch 2026-10-23: Kate Kaplan, 13 Nov 2022, 'semicontextual', whole desktop shared, camera off during observation, 2-3 hours, desk-based single-screen work"}
+    ],
+    "siteSearch": "WebSearch site:uiuxdesignservices.us \"contextual inquiry\" 2026-10-23: no pages indexed. npm run links:find not run (no Bash); orchestrator to run it after build."
+  },
   "backlinkSuggestions": [
     {
       "file": "content/services/ux-research-services.json",
@@ -687,6 +710,15 @@
       "anchor": "contextual inquiry",
       "priority": "required",
       "why": "Sideways link inside the silo from the only published sibling, on a sentence that names the method; a reader judging agency field time will click to learn what it involves."
+    },
+    {
+      "file": "content/blog/customer-journey-map-template.md",
+      "field": "body, H2 'Where does evidence for each journey map lane come from?', paragraph 2",
+      "sentence": "Our guide on how to run a contextual inquiry <!-- link: /blog/contextual-inquiry/ ... --> covers the method itself.",
+      "change": "Replace the marker by linking 'how to run a contextual inquiry' to /blog/contextual-inquiry/ (that post's own link-builder may already do this). Only when both posts publish.",
+      "anchor": "how to run a contextual inquiry",
+      "priority": "conditional",
+      "why": "Same-silo sibling publishing the same day; the sentence already promises this post."
     },
     {
       "file": "content/locations/ux-design-agency-houston.json",

@@ -110,7 +110,7 @@ The table compares the four methods by setting, data, sample and output.
 
 </details>
 
-User interviews are a semi-structured interview away from the work: quick to schedule and good for motivations, but every answer passes through memory. Usability testing is evaluative and checks a design you already have, the job of our [usability testing services](/services/usability-testing-services/). Pick the column whose best question matches yours.
+User interviews are a semi-structured interview away from the work: quick to schedule and good for motivations, but every answer passes through memory. Our [Mass Media Co. platform revamp](/case-studies/mass-media-co/) is an interview-led example: its scope listed user interviews, and a discovery workshop with stakeholders and users covered information architecture and user flows. Usability testing is evaluative and checks a design you already have, the job of our [usability testing services](/services/usability-testing-services/). Pick the column whose best question matches yours.
 
 ### What is the difference between contextual inquiry and ethnography?
 
@@ -124,8 +124,8 @@ Ethnography comes from anthropology and describes a whole culture, usually with 
 
 The method fits these situations:
 
-- **Complex or expert work** (enterprise software, clinical work, logistics), because experts skip the most steps when describing it.
-- **Work shaped by the room or other people**, such as a hospital ward, because interruptions and external resources only show up on site.
+- **Complex or expert work** (enterprise software, clinical work, logistics), because experts skip the most steps when describing it. In [supply chain UI UX design](/industries/supply-chain/), our researchers shadow pickers and dispatchers across shifts and record scan sequences and interruptions.
+- **Work shaped by the room or other people**, such as a hospital ward, because interruptions and external resources only show up on site. In our [healthcare UI UX design](/industries/healthcare/) work, researchers shadow nurses and physicians.
 - **Drop-off in analytics with no known reason**, because numbers show where users leave and observation shows why.
 - **A new market**, because your team's mental models of the job no longer apply.
 
@@ -230,9 +230,9 @@ The study ends with three design questions: should the handheld show the expecte
 3. Draw work models such as flow and sequence models, which show who hands what to whom and in which order.
 4. Turn the clusters into personas, a journey map per persona and a Jobs to be Done opportunity map that ranks user jobs.
 
-A journey map lays out one persona's steps, emotions and pain points over time. In the warehouse example, the cluster "clerks cannot see the expected quantity" becomes a decision: show it on the handheld.
+A journey map lays out one persona's steps, emotions and pain points over time, and our [customer journey map template](/blog/customer-journey-map-template/) shows how observed steps fill its Doing and Touchpoints lanes. In the warehouse example, the cluster "clerks cannot see the expected quantity" becomes a decision: show it on the handheld.
 
-Synthesis is where notes pile up and nobody owns the readout. In our program, findings are tagged in Dovetail and presented in a 90-minute readout; see [how our 5-step UX research process runs synthesis and the readout](/services/ux-research-services/#how-does-the-ux-research-process-work). Book the interpretation sessions when you book the visits.
+Synthesis is where notes pile up and nobody owns the readout. In our program, synthesis and readout is a step of its own (4–7 days): findings are tagged in Dovetail and presented in a 90-minute readout. Book the interpretation sessions when you book the visits.
 
 ## What does contextual inquiry take, and who should run it?
 
@@ -244,7 +244,7 @@ The FAQs list the benefits; the limits are these:
 - **A small sample**, so findings explain behavior but do not measure it.
 - **Access**, since sites with customer data or safety rules need approval first.
 
-In [our UX research program](/services/ux-research-services/), the fieldwork duration is 7–15 days inside a 4–8 week engagement, and the program price is $25,000–$60,000. On-site observation pushes a program toward the top of that range, as the hub's note on [what moves the price of a UX research program](/services/ux-research-services/#how-much-does-ux-research-cost) shows.
+In our UX research program, the fieldwork duration is 7–15 days inside a 4–8 week engagement, and the program price is $25,000–$60,000. On-site contextual inquiry is one of the things that pushes a program toward the top of that range; see [what moves the price of a UX research program](/services/ux-research-services/#how-much-does-ux-research-cost).
 
 Bring in a research team when you cannot get site access, cannot spare people for two weeks of fieldwork, or need personas and journey maps your product team will use. Before you hire, read [how to compare research agencies before you hire one](/blog/choose-ux-research-agency/).
 
