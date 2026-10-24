@@ -14,15 +14,15 @@ keyword: "ux research methods"
 funnel: tofu
 takeaways:
   - "Pick UX research methods from the research question: a why question needs a qualitative method, a how-many question a quantitative one."
-  - "Nielsen Norman Group sorts every method by data source (say or do), data type (why or how many) and context of use."
+  - "Nielsen Norman Group's landscape sorts methods by data source (say or do), data type (why or how many) and context of use."
   - "Sample sizes differ by method: 5 participants per round of qualitative usability testing, 10–15 interview participants per user group, 40 for a quantitative test."
-  - "Most product decisions need 2–3 methods, each answering the question the previous one raised."
+  - "Nearly every project benefits from more than one method, so plan on 2–3, each answering the question the previous one raised."
 draft: false
 qa: pending
 image: "/blog/ux-research-methods/cover.svg"
 ---
 
-UX research methods each answer a different kind of question, and one product meeting can raise three at once: why do trial users stall at setup, can people find invoices in the new menu, and how many accounts hit the export bug? The first calls for user interviews, the second for a tree test and the third for product analytics or a survey. The meeting is an illustrative composite, not a client.
+UX research methods each answer a different kind of question, and one product meeting can raise three at once: why do trial users stall at setup, can people find invoices in the new menu, and how many accounts hit the export bug? The first calls for user interviews, the second for a tree test and the third for product analytics or a survey. The meeting is invented for illustration.
 
 Picking the study from the research question, not from the method your team ran last time, is the core of user experience (UX) research. Our [UX research services](/services/ux-research-services/) combine five of these methods in one program. The sections below route eight product questions to a method, place each on Nielsen Norman Group's map, match it to a stage and give its sample size.
 
@@ -30,11 +30,11 @@ Picking the study from the research question, not from the method your team ran 
 
 **UX research methods are the techniques a product team uses to collect evidence about users, such as interviews, surveys and usability testing, and each one answers a different research question.**
 
-They are the working tools of UX research, the discipline that studies what users try to do and where they struggle. UX research in turn serves user-centered design, the approach of ISO 9241-210, titled "Human-centred design for interactive systems". Teams also call the toolkit user research methods or UX research techniques.
+They are the working tools of UX research, the discipline that studies what users try to do and where they struggle. UX research in turn serves user-centered design, the approach of ISO 9241-210, titled "Human-centred design for interactive systems". Teams also call the toolkit user research methods, user experience research methods or UX research techniques.
 
 ### What is the UX methodology, and how does it differ from a method?
 
-**The UX methodology is user-centered design, the research methodology that grounds each product decision in evidence about users; methods and techniques are the tools that gather it.**
+**The usual UX methodology is user-centered design, the design approach that grounds each product decision in evidence about users; UX research methods and techniques are the tools that gather that evidence.**
 
 Dovetail's guide to method vs methodology puts it simply: a method is a procedure for reaching an objective, and a methodology is the strategy underneath it. The third level below is our own framing:
 
@@ -61,9 +61,9 @@ Lists of "seven types" mix these with other categories and vary by author. In pr
 
 ## Which UX research method answers your research question?
 
-**The UX research method that answers your research question best is the one built for that kind of question, so no single technique is the most effective.**
+**Pick the UX research method by the kind of research question: interviews for why, usability tests for whether people can complete a task, analytics or surveys for how many.**
 
-A flawless survey still cannot explain why people abandon a form. Find your question below to see when to use each method, run the primary one and keep the backup for when time or traffic runs short.
+No single technique is the most effective, because a flawless survey still cannot explain why people abandon a form. Find your question below to see when to use each method, run the primary one and keep the backup for when time or traffic runs short.
 
 ![Question router board wiring eight product questions to a primary UX research method, a backup method and what each method cannot tell you](/blog/ux-research-methods/research-question-router.svg "UX research methods matched to eight product questions")
 
@@ -82,13 +82,13 @@ A flawless survey still cannot explain why people abandon a form. Find your ques
 
 </details>
 
-The rule behind every row: a why question needs a qualitative method, a how-many question a quantitative one, and a question about future behavior is unreliable in any method. Our practitioner view is that people predict their own behavior poorly, so ask about the last time instead.
+The rule behind most rows: a why question needs a qualitative method, a how-many question a quantitative one, and a question about future behavior is unreliable in any method. Self-predictions are weak evidence, so ask what people did last time.
 
 Our guide on [how open, closed and hybrid card sorting work](/blog/card-sorting/) covers the structure row, and workflow questions go to [contextual inquiry, where you watch users do real work](/blog/contextual-inquiry/). Write your question as one sentence, then pick its row.
 
 ## What are the main types of UX research?
 
-**The main types of UX research match a research question to two axes, the gap between what people say vs what they do, and why against how many.**
+**The main types of UX research come from two axes, what people say vs what they do, and why against how many, so each research question falls in one quadrant.**
 
 Christian Rohrer's landscape for Nielsen Norman Group (NN/g), [When to Use Which User-Experience Research Methods](https://www.nngroup.com/articles/which-ux-research-methods/), places 20 methods on three dimensions, and most lists of the types of user research methods echo them:
 
@@ -107,19 +107,19 @@ Christian Rohrer's landscape for Nielsen Norman Group (NN/g), [When to Use Which
 
 </details>
 
-Some methods sit in the middle: a usability test is qualitative with 5 participants and quantitative with 40. Two practical axes sit on top, moderation (moderated or unmoderated) and research setting (remote or in-person), both described in the User Interviews field guide chapter on types of user research. A later guide covers quantitative UX research in depth. Label each planned study on all three NN/g dimensions before you choose a tool.
+Some methods sit in the middle: a usability test is qualitative with 5 participants and quantitative with 40. Two practical axes sit on top, moderation (moderated or unmoderated) and research setting (remote or in-person), both described in the User Interviews field guide chapter on types of user research. A later guide will cover quantitative UX research in depth. Label each planned study on all three NN/g dimensions before you choose a tool.
 
 ### What is the difference between attitudinal and behavioral research?
 
 **Attitudinal research records what people say about a product, while behavioral research records what they do, and Rohrer advises that most usability studies should rely on behavior.**
 
-Interviews and surveys are self-reported; usability tests and analytics capture observed behavior. When a question involves both belief and action, pair one of each.
+Interviews and surveys are self-reported; usability tests and analytics capture observed behavior. A user who says "I export every report" in an interview can be checked against export events in analytics before the team builds around that habit. When a question involves both belief and action, pair one of each.
 
 ### What is the difference between qualitative and quantitative UX research?
 
 **Qualitative UX research explains why something happens and how to fix it, while quantitative UX research measures how many users are affected and how much.**
 
-Qualitative research runs on small samples and interpretation; quantitative research needs larger samples and statistics, such as enough traffic for statistical significance in an A/B test. Start qualitative when you do not yet know what to count.
+Qualitative research runs on small samples and interpretation; quantitative research needs larger samples and statistics, such as enough traffic for statistical significance in an A/B test. Five usability sessions can show that a date picker confuses people; only analytics or a survey can say how many of your users hit it. Start qualitative when you do not yet know what to count.
 
 ## Which UX research methods fit each product stage?
 
@@ -132,13 +132,13 @@ NN/g's time dimension names three stages: strategize, design, and launch and ass
 <details class="astext"><summary>Show as text</summary>
 
 - **Strategize (generative):** user interviews, field studies, diary studies, participatory design. Our program: research framing (2–4 days), then generative fieldwork with user interviews and contextual inquiry (7–15 days).
-- **Design (formative):** card sorting, tree testing, concept testing, usability testing. Our program: evaluative studies (4–8 days), where card sorts, tree tests and concept tests check the early information architecture and design concepts.
+- **Design (formative):** card sorting, tree testing, usability testing, unmoderated testing. Our program: evaluative studies (4–8 days), where card sorts, tree tests and concept tests check the early information architecture and design concepts.
 - **Launch and assess (summative):** usability benchmarking, A/B testing, clickstream analytics, surveys.
 - **After launch (continuous):** Net Promoter Score (NPS) and feedback surveys, product analytics, support feedback.
 
 </details>
 
-A planned guide on generative and evaluative research goes deeper on that split. Mark your product's stage today, because it removes half the router's rows.
+A planned guide on generative and evaluative research will go deeper on that split. Mark your product's stage today, because it removes half the router's rows.
 
 ## UX research methods by sample size, length and output
 
@@ -173,7 +173,7 @@ The rows fall into three families. **Talk to users:** interviews, focus groups, 
 
 **Measure users:** A/B testing, analytics and clickstream analytics count behavior on the live product, and usability benchmarking repeats scripted tasks to set a benchmark and track it across releases. Heuristic evaluation sits outside all three: experts review the interface against usability principles with no users, so it flags likely problems cheaply but proves none.
 
-Quantitative sample sizes and hard-to-reach users are where in-house plans stall, so our program gives participant recruitment its own step of 3–6 days. Check the sample size column against your recruiting reach before you commit.
+Recruiting is the hidden cost in this table: a card sort with 30–50 participants or a quantitative test with 40 needs screening and scheduling before any session runs. Our program budgets a 3–6 day participant recruitment step ahead of fieldwork for that reason. Check the sample size column against your recruiting reach before you commit.
 
 ## How do you combine UX research methods?
 
@@ -193,11 +193,11 @@ Two methods that agree let you triangulate: a drop-off seen in analytics and exp
 
 </details>
 
-Take the meeting's first question, why trial users stall at setup, as an illustrative example. Analytics puts the stall on the team-invite screen, five interviews show that admins' mental models of roles do not match the product's, and a usability test of a redesigned prototype shows whether new admins now pick a role unaided. Each method answered one question, and no single one answered all three.
+Take the meeting's first question, why trial users stall at setup, as an illustrative example. Analytics puts the stall on the team-invite screen, a round of admin interviews shows that their mental models of roles do not match the product's, and a usability test of a redesigned prototype shows whether new admins now pick a role unaided. Each method answered one question, and no single one answered all three.
 
 Our program follows the same logic: research plan, participant recruitment, interviews and contextual inquiry, then card sorts and tree tests on the early information architecture, plus concept testing of design ideas. Synthesis turns the findings into personas and journey maps (2–4 personas, 1 journey map per persona) and a Jobs to be Done (JTBD) opportunity map. Our [customer journey map template](/blog/customer-journey-map-template/) shows how evidence from several methods fills each lane, and a user persona template is planned.
 
-In a real engagement for a B2B marketing platform, we ran user interviews alongside the [Mass Media Co. discovery workshop](/case-studies/mass-media-co/) with stakeholders and users, which covered product definition, strategy, information architecture and user flows.
+In a real engagement for a business-to-business (B2B) marketing platform, the scope of work listed user interviews, and the [Mass Media Co. discovery workshop](/case-studies/mass-media-co/) we ran with stakeholders and users covered product definition, strategy, information architecture and user flows.
 
 Findings fragment across methods at synthesis, which is why our five-step research program ends with findings tagged in Dovetail and a 90-minute readout. Before you run a second method, write down what the first must hand it.
 
@@ -215,7 +215,7 @@ Method cost comes from three lines: recruiting, researcher hours and tools. The 
 | Existing analytics instead of a new survey | Where behavior changes | Attitudes and reasons |
 | One 5-user usability round instead of none | The biggest usability problems | Any percentage or rate |
 
-For a startup, 8–10 user interviews set a floor: they show which problem to solve before engineering budget goes into a build. The cheapest useful study is one whose answer changes a product decision; if no result would change the plan, keep the budget.
+For a startup, a study of, for example, 8–10 user interviews shows which problem to solve before engineering budget goes into a build. The cheapest useful study is one whose answer changes a product decision; if no result would change the plan, keep the budget.
 
 ## Which mistakes make UX research methods mislead you?
 
@@ -232,17 +232,17 @@ Check your current study plan against this list before you recruit.
 
 ## When should a research team run the study for you?
 
-**Bring in a research team when the product decision needs two or more user research methods, hard-to-recruit participants or synthesis that nobody in-house has time to run.**
+**Hand the study to a research team once the product decision needs two or more user research methods, hard-to-recruit participants or synthesis your team has no hours for.**
 
 Three signals point to outside help:
 
 - **Several methods for one decision**, because each needs its own recruit, script and analysis before synthesis joins them.
-- **Hard-to-recruit users** such as hospital clinicians, because screening and scheduling them takes longer than a panel order; a planned guide on healthcare UX research covers them.
+- **Hard-to-recruit users** such as hospital clinicians, because screening and scheduling them takes longer than a panel order; a planned guide on healthcare UX research will cover them.
 - **No researcher on the team**, because recruiting, sessions and synthesis span weeks.
 
-Our program runs 4–8 weeks and costs $25,000–$60,000, and [what sets the price of a research program](/services/ux-research-services/#how-much-does-ux-research-cost) is the number of user groups, participants and methods, plus recruitment difficulty. Planned guides on the importance of UX research and on UX return on investment (ROI) cover whether that spend pays off, and you can read [how to compare research agencies before you hire one](/blog/choose-ux-research-agency/).
+Our program runs 4–8 weeks and costs $25,000–$60,000, and [what sets the price of a research program](/services/ux-research-services/#how-much-does-ux-research-cost) is the number of user groups, participants and methods, plus recruitment difficulty. Planned guides on the importance of UX research and on UX return on investment (ROI) will cover whether that spend pays off, and you can read [how to compare research agencies before you hire one](/blog/choose-ux-research-agency/).
 
-Write the question down first, as one sentence that ends in the decision it settles, and run it through the router before anyone books a participant. Teams whose row points to three methods and a recruit nobody can staff can [send us your research question](/contact/) with that decision attached. Every project begins with a free consultation and a fixed-scope proposal.
+Write the question down first, as one sentence that ends in the decision it settles, and run it through the router before anyone books a participant. A row that points to three methods and a recruit nobody can staff is the moment to [send us your research question](/contact/), so the first call starts from your decision rather than from a method list. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
