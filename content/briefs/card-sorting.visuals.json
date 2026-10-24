@@ -1,0 +1,27 @@
+[
+  {
+    "marker": "<!-- visual: three-panel sort board mockup — the same 6 settings cards from the worked example in 3 panels: open (participant-named piles), closed (fixed columns Account, Team, Billing, Integrations), hybrid (fixed columns plus one participant-added column \"Data and exports\"); labelled \"Illustrative\" -->",
+    "markdown": "![Card sorting types compared on three sort board mockups with the same 6 settings cards: an open sort with participant-named piles People, Money, Reports and Connections, a closed sort with fixed Account, Team, Billing and Integrations groups, and a hybrid sort with the fixed groups plus a participant-added Data and exports group, each with who names groups, best stage and main output; illustrative](/blog/card-sorting/card-sorting-open-closed-hybrid-board.svg \"Open, closed and hybrid card sorting on one set of cards (illustrative)\")"
+  },
+  {
+    "marker": "<!-- visual: sort-type decision tree — left-to-right yes/no flow from \"Do you have categories you must keep?\" to open sort, hybrid sort, closed sort or tree test instead; caption \"Sort-type decision tree\" -->",
+    "markdown": "![Sort-type decision tree flowing left to right from “Do you have categories you must keep?” to open sort, hybrid sort, or a second question, “What do you need to learn?”, which leads to closed sort or tree test instead](/blog/card-sorting/card-sorting-sort-type-decision-tree.svg \"Sort-type decision tree\")"
+  },
+  {
+    "marker": "<!-- visual: sample correlation line chart — X participants (5, 15, 30, 60), Y correlation with the 168-user result (0.75, 0.90, 0.95, 0.98), annotation at 15 with only that number large, source line \"Jakob Nielsen, NN/g, 2004\" -->",
+    "markdown": "![Card sorting sample size line chart: correlation with the 168-user result rises from 0.75 at 5 participants to 0.90 at 15, 0.95 at 30 and 0.98 at 60, with 0.90 at 15 participants highlighted; source Jakob Nielsen, Nielsen Norman Group, 2004](/blog/card-sorting/card-sorting-participants-correlation-chart.svg \"Card sort sample size and correlation with the 168-user result (Nielsen, 2004)\")"
+  },
+  {
+    "marker": "<!-- visual: annotated similarity matrix and dendrogram — illustrative 8×8 matrix excerpt with heat shading beside a dendrogram with a dashed cut line; split card \"Export billing history\" highlighted; callouts for one cell, one cluster and the cut; labelled \"Illustrative data\" -->",
+    "markdown": "![Annotated card sorting similarity matrix of 8 settings cards with heat-shaded cells beside a dendrogram with a dashed cut line, callouts for one cell, an early cluster, the cut line and the split card Export billing history; illustrative data](/blog/card-sorting/card-sorting-similarity-matrix-dendrogram.svg \"Card sorting similarity matrix and dendrogram, annotated (illustrative data)\")"
+  },
+  {
+    "marker": "<!-- visual: before/after settings menu — two app sidebars, 9 old groups vs 5 new groups, 2 cross-links marked, the split card \"Export billing history\" traced from old to new position; labelled \"Illustrative composite\" -->",
+    "markdown": "![Settings menu before and after a card sort: a sidebar with 9 groups beside a sidebar with 5 groups, the split card Export billing history traced from Billing to Billing and plans, and cross-links from Data and integrations and from Team and permissions; illustrative composite](/blog/card-sorting/card-sorting-settings-menu-before-after.svg \"Settings menu before and after the card sort (illustrative composite)\")"
+  },
+  {
+    "frontmatter": {
+      "image": "/blog/card-sorting/cover.svg"
+    }
+  }
+]
