@@ -310,9 +310,9 @@
     "sample correlation (0.90 at 15 users, Nielsen 2004)",
     "pilot test (one run with a colleague before launch)",
     "study duration (inside the 4-8 day evaluative studies step)",
-    "programme price ($25,000-$60,000, published on the hub)"
+    "program price ($25,000-$60,000, published on the hub)"
   ],
-  "attributesNote": "11 entries. The script reads only the words before '(' and needs 60% of those longer than 3 letters in the text, so print these label nouns literally: 'card count', 'participant count', 'sort type', 'moderation mode', 'session length', 'grouping depth', 'similarity score', 'sample correlation', 'pilot test', 'study duration', 'programme price' (hub spelling 'programme').",
+  "attributesNote": "11 entries. The script reads only the words before '(' and needs 60% of those longer than 3 letters in the text, so print these label nouns literally: 'card count', 'participant count', 'sort type', 'moderation mode', 'session length', 'grouping depth', 'similarity score', 'sample correlation', 'pilot test', 'study duration', 'program price' (hub spelling 'programme').",
   "ngrams": [
     "card sorting",
     "card sort",
