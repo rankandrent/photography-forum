@@ -744,7 +744,7 @@
       "file": "content/services/ux-research-services.json",
       "field": "sections[h2='What do UX research services include?'].items[title='Card sort and tree test.'].body",
       "sentence": "Optimal Workshop studies test the information architecture (IA), for example the menu labels that 30–50 participants expect.",
-      "change": "Link 'the menu labels that 30–50 participants expect' to /blog/card-sorting/ (item bodies render as HTML via <Html as=\"p\">).",
+      "change": "Link 'the menu labels that 30–50 participants expect' to /blog/card-sorting/#how-many-cards-and-participants-does-a-card-sort-need (item bodies render HTML; the sibling Contextual inquiry item already carries an <a>). Result: \"Optimal Workshop studies test the information architecture (IA), for example <a href=\\\"/blog/card-sorting/#how-many-cards-and-participants-does-a-card-sort-need\\\">the menu labels that 30–50 participants expect</a>.\" Section id = slugify() of the H2 'How many cards and participants does a card sort need?', verified by the link-builder 2026-10-24.",
       "anchor": "the menu labels that 30–50 participants expect",
       "priority": "required",
       "why": "Pillar -> post link on the exact deliverable the post explains; same pattern as the contextual-inquiry item."
@@ -753,7 +753,7 @@
       "file": "content/blog/contextual-inquiry.md",
       "field": "body, H2 'When should you use contextual inquiry, and when not?', bullet 'Menu labels or navigation'",
       "sentence": "**Menu labels or navigation**, because card sorting and tree testing answer information architecture questions faster.",
-      "change": "Link 'card sorting' to /blog/card-sorting/.",
+      "change": "Link 'card sorting' to /blog/card-sorting/ (line 135, under H2 #when-should-you-use-contextual-inquiry-and-when-not). Result: \"**Menu labels or navigation**, because [card sorting](/blog/card-sorting/) and tree testing answer information architecture questions faster.\" contextual-inquiry.md has no existing link to /blog/card-sorting/ (checked 2026-10-24).",
       "anchor": "card sorting",
       "priority": "required",
       "why": "Sideways link in the silo on a sentence that sends the reader to this method."
@@ -762,7 +762,7 @@
       "file": "content/blog/choose-ux-research-agency.md",
       "field": "body, bullet 'A redesign is planned' (line 36)",
       "sentence": "- **A redesign is planned** on navigation and information architecture that users have never tested, so a card sort or tree test has to come first.",
-      "change": "Link 'a card sort' to /blog/card-sorting/.",
+      "change": "Link 'a card sort' to /blog/card-sorting/#how-to-run-a-card-sorting-study-step-by-step (line 36, under H2 'When to hire a UX research agency'; the reader scoping a redesign wants to see what the study involves). Result: \"- **A redesign is planned** on navigation and information architecture that users have never tested, so [a card sort](/blog/card-sorting/#how-to-run-a-card-sorting-study-step-by-step) or tree test has to come first.\"",
       "anchor": "a card sort",
       "priority": "required",
       "why": "Sideways link from a buyer post; a reader scoping a redesign will click to see what the card sort involves."
@@ -773,9 +773,37 @@
       "sentence": "the pillar's card sorting row or paragraph",
       "change": "Link to /blog/card-sorting/ with a card-sorting anchor.",
       "anchor": "card sorting",
-      "priority": "conditional",
-      "why": "Blocker: the pillar is written in parallel today; the link-builder adds it once both files exist."
+      "priority": "done",
+      "why": "Already present: ux-research-methods.md line 86 links /blog/card-sorting/ with 'how open, closed and hybrid card sorting work'. No action."
     }
   ],
+  "related": {
+    "linkBuilderRun": "2026-10-24",
+    "funnelAtLinking": "tofu (frontmatter; orchestrator relabeled from the brief's mofu), so internal range 8–12.",
+    "internalLinks": [
+      { "href": "/services/ux-research-services/", "anchor": "UX research services", "where": "intro paragraph 2 (within first 300 words)", "bucket": "hub 1/2" },
+      { "href": "/blog/ux-research-methods/", "anchor": "overview of where this method sits among UX research methods", "where": "H2 What is card sorting", "bucket": "silo pillar post (publishes today, draft:true at linking; remove the link if it does not go live)" },
+      { "href": "/case-studies/mass-media-co/", "anchor": "Mass Media Co. discovery workshop", "where": "When does a card sort help, 'Merging products' bullet (added sentence; case study scope words only: separate systems -> one platform, workshop covered information architecture and user flows; no card sort implied)", "bucket": "case study 1" },
+      { "href": "/blog/contextual-inquiry/", "anchor": "watching users work in their real setting", "where": "When does a card sort help, skip list", "bucket": "sibling" },
+      { "href": "/industries/saas/", "anchor": "SaaS UI UX design", "where": "worked example (added sentence from saas.json: each tenant holds its own users and roles; account-level vs personal settings)", "bucket": "industry 1" },
+      { "href": "/services/web-app-design-services/", "anchor": "web app design services", "where": "tree testing H2", "bucket": "other hub (1 max)" },
+      { "href": "/services/ux-research-services/#how-much-does-ux-research-cost", "anchor": "what a UX research program with a card sort costs", "where": "tree testing H2, closing price sentence", "bucket": "hub 2/2" },
+      { "href": "/contact/", "anchor": "share the menu or sitemap with us", "where": "closing paragraph", "bucket": "contact" }
+    ],
+    "internalCountNote": "8 internal links (TOFU 8–12). Removed: second root hub link ('UX research program', duplicate target) and the #how-does-the-ux-research-process-work fragment (hub cap 2); its fact stays as plain text ('90-minute readout, the last of its five steps'). customer-journey-map-template was considered for the affinity-mapping H3 but skipped: the pillar + contextual-inquiry already fill the 0–2 same-cluster post bucket.",
+    "externalLinks": [
+      "https://www.nngroup.com/articles/card-sorting-definition/ (definition, 30–50 cards, 15 / 30–50 participants, limits; WebFetch OK 2026-10-24)",
+      "https://www.nngroup.com/articles/card-sorting-how-many-users-to-test/ (15 users, 0.75/0.90/0.95/0.98, 168 users, Tullis and Wood 20–30, similarity-score warning; WebFetch OK)",
+      "https://www.lyssna.com/blog/card-sorting-tools/ (free plans: Lyssna three seats, UXtweak 15 responses/month, Maze 1 study/month; page dated 09 Jul 2026, not April; WebFetch OK)",
+      "https://dovetail.com/ux/open-vs-closed-card-sorting/ ('5–30 minutes depending on the number of cards and complexity'; WebFetch OK)",
+      "https://dscout.com/people-nerds/card-sorting ('Usually, card sorts last 60 minutes' = general guidance, not an example; WebFetch OK)"
+    ],
+    "removedExternalLinks": [
+      { "url": "https://en.wikipedia.org/wiki/Card_sorting", "why": "cap 5; verified (knowledge elicitation, open generative / closed evaluative, reverse = tree testing, modified-Delphi by Celeste Paul, remote lacks personal interaction, Spencer 2009). Kept as named plain text 'Wikipedia's entry on the method'." },
+      { "url": "https://www.optimalworkshop.com/101-guides/card-sorting-101/introduction-to-card-sorting", "why": "cap 5; verified open/closed/hybrid definitions and analysis names (similarity matrix, dendrograms, standardization grid, popular placements matrix). Plain text 'Optimal Workshop's Card Sorting 101 introduction'." },
+      { "url": "https://www.nngroup.com/articles/card-sorting-tree-testing-differences/", "why": "cap 5; verified (Samhita Tankala, 23 Feb 2024: 'Card sorting is used to generate ideas for an IA while tree testing is used to evaluate IA options'; text-based outline). Plain text 'Samhita Tankala's February 2024 NN/g comparison'. First swap candidate if QA prefers a primary source over Lyssna." },
+      { "url": "https://www.optimalworkshop.com/blog/comes-first-card-sorting-tree-testing", "why": "cap 5; verified (29 Mar 2016: tree test existing IA, card sort, tree test new IA with the same or very similar tasks). Plain text 'Optimal Workshop's 2016 post on which comes first'." }
+    ]
+  },
   "date": "2026-10-24"
 }
