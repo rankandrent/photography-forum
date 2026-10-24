@@ -371,5 +371,11 @@
       "notes": "Priority queue item 4 (TOFU). AI Overview, 17 PAA, disambiguation H3. Fact-check F1-F7 (NN/g hybrid reason, Maze free plan has no card sorting, UXtweak 20-card cap, pilot with small group, Lyssna follow-up questions, Dovetail no format, NN/g limits list). Backlinks: hub card sort item, contextual-inquiry, choose-ux-research-agency."
     }
   ],
-  "audits": []
+  "audits": [],
+  "incidents": [
+    {
+      "date": "2026-10-24",
+      "what": "Cloudflare Workers Builds stopped triggering after commit ab386aa (2026-10-22); pushes 03f8883, ad57637 and 43518bb were not built, so 4 posts stayed 404. Owner re-checked the GitHub app and Cloudflare build connection; this commit re-triggers the build."
+    }
+  ]
 }
