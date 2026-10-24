@@ -18,7 +18,7 @@ takeaways:
   - "Sample sizes differ by method: 5 participants per round of qualitative usability testing, 10–15 interview participants per user group, 40 for a quantitative test."
   - "Nearly every project benefits from more than one method, so plan on 2–3, each answering the question the previous one raised."
 draft: false
-qa: pending
+qa: pass
 image: "/blog/ux-research-methods/cover.svg"
 ---
 

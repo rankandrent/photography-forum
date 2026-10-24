@@ -32,7 +32,9 @@
       "kd": 35,
       "source": "team topic 5",
       "angle": "Decision guide, which UX research method answers your question (cluster pillar; links to every other cluster post as they publish)",
-      "status": "pending"
+      "status": "published",
+      "slug": "ux-research-methods",
+      "published": "2026-10-24"
     },
     {
       "order": 4,
@@ -41,7 +43,9 @@
       "kd": 15,
       "source": "Claude",
       "angle": "Open, closed and hybrid card sorting for information architecture",
-      "status": "pending"
+      "status": "published",
+      "slug": "card-sorting",
+      "published": "2026-10-24"
     },
     {
       "order": 5,

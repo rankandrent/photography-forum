@@ -132,12 +132,12 @@ The method fits these situations:
 
 It is the wrong method in these cases:
 
-- **Menu labels or navigation**, because card sorting and tree testing answer information architecture questions faster.
+- **Menu labels or navigation**, because [card sorting](/blog/card-sorting/) and tree testing answer information architecture questions faster.
 - **A single simple task**, such as a password reset, because a short usability test covers it.
 - **Numbers across many users**, because a small sample gives no percentages; use a survey or analytics.
 - **No access to the real setting**, because the session becomes an interview; run user interviews and say so.
 
-If your product matches the first list, schedule observed sessions before the first wireframe.
+If your product matches the first list, schedule observed sessions before the first wireframe. If it matches the second, [choosing between UX research methods](/blog/ux-research-methods/#which-ux-research-method-answers-your-research-question) by the question you need answered points to the better fit.
 
 ## How do you conduct a contextual inquiry?
 

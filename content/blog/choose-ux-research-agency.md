@@ -33,7 +33,7 @@ A product manager has a board meeting in six weeks, an onboarding redesign on th
 - **A new product starts** before anyone has interviewed target users, so the roadmap rests on guesses.
 - **The product enters a new market** whose users follow different workflows, so old findings stop applying.
 - **Feature adoption stays low** and analytics show the usage but not the reason, which sessions with users can explain.
-- **A redesign is planned** on navigation and information architecture that users have never tested, so a card sort or tree test has to come first.
+- **A redesign is planned** on navigation and information architecture that users have never tested, so [a card sort](/blog/card-sorting/#how-to-run-a-card-sorting-study-step-by-step) or tree test has to come first.
 - **Teams disagree about priorities** because no shared personas or journey maps exist to settle the argument.
 
 An outside team earns its fee when the users are hard to reach (clinicians, warehouse operators, finance admins), when the decision date comes sooner than a researcher hire, or when findings must stand apart from the people who designed the product. With a researcher on staff and a customer list you can contact, a small evaluative round in-house is often enough. If one of the five moments applies, write the decision sentence below before you call anyone.

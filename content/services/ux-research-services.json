@@ -31,7 +31,7 @@
       "h2": "What is UX research?",
       "format": "paragraph",
       "answer": "<strong>UX research, also called user research, is the systematic study of user goals, behaviours and problems through interviews, observation and testing, conducted to guide product and design decisions.</strong> UX research runs in 2 modes: generative research finds what to build, and evaluative research checks whether a design works for users.",
-      "body": "<p>UX research differs from <a href=\"/services/usability-testing-services/\">usability testing services</a> in breadth: usability testing measures task success on an existing design, while a UX research programme also studies needs, workflows and markets before any design exists. The UX research method follows the human-centred design process of ISO 9241-210.</p>"
+      "body": "<p>UX research differs from <a href=\"/services/usability-testing-services/\">usability testing services</a> in breadth: usability testing measures task success on an existing design, while a UX research programme also studies needs, workflows and markets before any design exists. The UX research method follows the human-centred design process of ISO 9241-210. Our guide to <a href=\"/blog/ux-research-methods/\">UX research methods</a> shows which method answers which product question.</p>"
     },
     {
       "h2": "What do UX research services include?",
@@ -52,7 +52,7 @@
         },
         {
           "title": "Card sort and tree test.",
-          "body": "Optimal Workshop studies test the information architecture (IA), for example the menu labels that 30–50 participants expect."
+          "body": "Optimal Workshop studies test the information architecture (IA), for example <a href=\"/blog/card-sorting/#how-many-cards-and-participants-does-a-card-sort-need\">the menu labels that 30–50 participants expect</a>."
         },
         {
           "title": "Personas and journey maps.",

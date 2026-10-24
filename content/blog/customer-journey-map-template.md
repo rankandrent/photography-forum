@@ -148,7 +148,7 @@ Kate Kaplan's NN/g guide on [when and how to create customer journey maps](https
 
 Our research program plans an interview count of 10–15 one-hour user interviews per user group. Contextual inquiry means watching people do real work where they do it and asking about it as they go; we set the observation count at 4–6 users, on site, for example at a clinic front desk. Our guide on [how to run a contextual inquiry](/blog/contextual-inquiry/) covers the method itself.
 
-The table maps each research source to the lanes it fills and its blind spot.
+The table maps each research source to the lanes it fills and its blind spot; for sample sizes and outputs across 12 studies, see [how UX research methods compare on sample size and output](/blog/ux-research-methods/#ux-research-methods-by-sample-size-length-and-output).
 
 ![Evidence source map: user interviews, contextual inquiry, analytics, support tickets and usability tests, each with the journey map lanes it fills and what it cannot tell you, connected by lines to the header and the 8 lanes](/blog/customer-journey-map-template/journey-map-evidence-source-map.svg "Journey map evidence source map: which research fills which lane")
 

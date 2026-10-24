@@ -157,7 +157,7 @@
   "author": "faizan-khan",
   "authorWhy": "Faizan Khan (Sr. Product Designer, content/home.ts): a decision guide that maps product questions to studies fits product strategy (RULES.md: product strategy -> a product designer). Last post how-to-design-an-mvp (2026-10-20), 3 posts ago: rotation OK. Rejected: sahar-asif (Senior Manager UX, the natural research lead; the CI brief reserved her for this pillar, but she wrote customer-journey-map-template yesterday, 1 post ago) - orchestrator may swap to her if a research-lead byline matters more than rotation; ahmad-ullah wrote contextual-inquiry yesterday; talha-saleem / saliha-shahzad (UI roles) suit the parallel card-sorting post (information architecture). Contributor: umar-sarwar (default).",
   "type": "Comparison",
-  "funnel": "mofu",
+  "funnel": "tofu",
   "funnelWhy": "Silo count (ledger.json, 2026-10-24): 3 published = choose-ux-research-agency (BOFU), contextual-inquiry (TOFU), customer-journey-map-template (TOFU): TOFU 67% (target 50), MOFU 0% (target 30), BOFU 33% (target 20). MOFU is furthest below target. SERP rule (2026-10-06): page 1 is 'which to use and when' choosing guides (NN/g 'When to Use Which', Maze 'and When to Use Them', Baymard 'Which to Use and When', formbricks 'How to Choose', progress 'Which Ones to Use'), i.e. teams comparing approaches and planning the work, which funnel.json calls MOFU, not definitions (TOFU) or vendor/price pages (BOFU). Ahrefs flags 'user research methods' as informational + commercial. MOFU minimum service-support 4; this topic scores 4. The parallel card-sorting brief is expected to be TOFU (method how-to), so the two posts of the day differ in stage. Fallback: if QA judges the post definitional, relabel TOFU (checklist CTA) without other changes.",
   "serviceSupport": 4,
   "serviceSupportWhy": "4, not 5: the reader is choosing a study, not yet shopping for a vendor. But the answer to most real product questions is 2-3 methods plus recruiting and synthesis, which is exactly the hub programme (5 steps, interviews + contextual inquiry + card sort/tree test + personas/journey maps/JTBD, 4-8 weeks). The post ends each method family where an in-house team typically stalls (recruiting, sample sizes for quantitative work, synthesis).",
@@ -613,43 +613,79 @@
       {
         "domain": "maze.co",
         "kind": "research tool blog/guides",
-        "silos": ["ux-research-services"],
-        "seenFor": ["ux research methods", "user research methods", "types of user research", "ux research techniques", "ux research methodology", "types of ux research"],
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "ux research methods",
+          "user research methods",
+          "types of user research",
+          "ux research techniques",
+          "ux research methodology",
+          "types of ux research"
+        ],
         "source": "Ahrefs serp-overview 2026-10-24 (add ux-research-services to the existing maze.co entry)"
       },
       {
         "domain": "formbricks.com",
         "kind": "survey tool blog",
-        "silos": ["ux-research-services"],
-        "seenFor": ["user research methods", "types of user research", "user experience research methods"],
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "user research methods",
+          "types of user research",
+          "user experience research methods"
+        ],
         "source": "Ahrefs serp-overview 2026-10-24"
       },
       {
         "domain": "figr.design",
         "kind": "AI design tool blog",
-        "silos": ["ux-research-services"],
-        "seenFor": ["ux research methods", "user research methods"],
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "ux research methods",
+          "user research methods"
+        ],
         "source": "Ahrefs serp-overview 2026-10-24"
       },
       {
         "domain": "progress.com",
         "kind": "software vendor blog",
-        "silos": ["ux-research-services"],
-        "seenFor": ["user research methods", "types of user research"],
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "user research methods",
+          "types of user research"
+        ],
         "source": "Ahrefs serp-overview 2026-10-24"
       },
       {
         "domain": "userinterviews.com",
         "kind": "research recruiting platform field guide",
-        "silos": ["ux-research-services"],
-        "seenFor": ["types of user research", "ux research methods", "ux research techniques"],
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "types of user research",
+          "ux research methods",
+          "ux research techniques"
+        ],
         "source": "Ahrefs serp-overview 2026-10-24 (add ux-research-services to the existing entry)"
       },
       {
         "domain": "nngroup.com",
         "kind": "UX research institute (citable source, not a target)",
-        "silos": ["ux-research-services"],
-        "seenFor": ["ux research methods (articles/which-ux-research-methods, #2)", "types of user research (articles/research-methods-glossary)"],
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "ux research methods (articles/which-ux-research-methods, #2)",
+          "types of user research (articles/research-methods-glossary)"
+        ],
         "source": "Ahrefs serp-overview 2026-10-24 (add ux-research-services to the existing entry)"
       }
     ],
@@ -658,7 +694,12 @@
         "domain": "maze.co",
         "url": "https://maze.co/guides/ux-research/methods/",
         "title": "11 UX Research Methods and When to Use Them",
-        "keywords": ["ux research methods", "user research methods", "types of user research", "ux research techniques"],
+        "keywords": [
+          "ux research methods",
+          "user research methods",
+          "types of user research",
+          "ux research techniques"
+        ],
         "estTraffic": 473,
         "silo": "ux-research-services",
         "serviceSupport": 4,
@@ -669,7 +710,9 @@
         "domain": "formbricks.com",
         "url": "https://formbricks.com/blog/user-research-methods",
         "title": "User Research Methods: 13 Techniques and How to Choose (2026)",
-        "keywords": ["user research methods"],
+        "keywords": [
+          "user research methods"
+        ],
         "estTraffic": 89,
         "silo": "ux-research-services",
         "serviceSupport": 4,
@@ -680,7 +723,9 @@
         "domain": "userinterviews.com",
         "url": "https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-types",
         "title": "Types of User Research Methods",
-        "keywords": ["types of user research"],
+        "keywords": [
+          "types of user research"
+        ],
         "estTraffic": 166,
         "silo": "ux-research-services",
         "serviceSupport": 4,
@@ -742,5 +787,6 @@
     "removedInternalLinks": "Hub #how-does-the-ux-research-process-work (3rd hub link, over the 1-2 cap); sentence kept as plain text 'our five-step research program ends with findings tagged in Dovetail and a 90-minute readout'. FAQ 'five steps' line 'the hub page lists the days for each step' rewritten to 'with recruitment and synthesis each scheduled as a step of its own'; 'from our hub page' and 'Our hub's startup example' reworded (no unlinked page references).",
     "externalSources": "5 links, all WebFetch-verified 2026-10-24: nngroup which-ux-research-methods (Rohrer, 17 Jul 2022: 20 methods, 3 dimensions, 'most usability studies should rely on behavior', 'nearly all projects would benefit from multiple research methods'); csus.libguides.com/res-meth/quant-res ('Four types of Quantitative Research': descriptive, comparative, quasi-experimental, experimental) REPLACES gcu.edu, whose page lists 5+ designs, not four; nngroup research-methods-glossary (Budiu, 10 Sep 2023: summative 'usually by comparing it with that of a competitor or of one of its own prior versions', focus group 6-9); nngroup why-you-only-need-to-test-with-5-users (Nielsen, 18 Mar 2000, 85%); nngroup videos/why-40-participants-quantitative-research (Laubheimer, 7 Oct 2024).",
     "removedExternalLinks": "Verified but unlinked to meet the 5 cap, named in text instead: dovetail.com/research/method-vs-methodology ('Dovetail's guide to method vs methodology'; quotes match); enmu.libguides.com/EmpiricalResearch/designing (Creswell and Poth book title printed in full; page confirms the 5 approaches and the 4th edition, but lists both 2018 call number and 2017-01-25 publication date: fact-checker to confirm 2018); userinterviews.com user-research-types ('User Interviews field guide chapter on types of user research'; moderated/unmoderated, remote/in-person, continuous research confirmed); nngroup.com/articles/synthetic-users ('their NN/g article on synthetic users', Rosala and Moran, 21 Jun 2024; 'Treat the data ... as hypotheses that need testing' confirmed). Removed: gcu.edu types-quantitative-research-methods-designs (does not support 'four types')."
-  }
+  },
+  "funnelNote": "Orchestrator 2026-10-24: relabelled TOFU so the MOFU CTA box does not show Mass Media Co.'s 30% revamp result next to a methods post."
 }

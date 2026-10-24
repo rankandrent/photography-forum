@@ -161,7 +161,7 @@
   "author": "talha-saleem",
   "authorWhy": "Talha Saleem (Senior UI/UX Designer, content/home.ts) fits a navigation and labels topic where research turns into menus and screens. He last wrote ecommerce-ux-audit (2026-10-14), 5 posts ago. Rejected: ahmad-ullah (wrote contextual-inquiry yesterday), sahar-asif (wrote customer-journey-map-template yesterday and is the natural author of the parallel ux-research-methods pillar), faizan-khan (Sr. Product Designer; suits the later 'importance of ux research' or 'ux roi'), shahmir-farooq (Sr. Communication Designer; suits 'user persona template'), saliha-shahzad (UI/UX Designer; suits the later tree-testing post). Contributor: umar-sarwar (default).",
   "type": "Guide",
-  "funnel": "mofu",
+  "funnel": "tofu",
   "funnelWhy": "Silo count (ledger.json, 2026-10-24): choose-ux-research-agency (BOFU), contextual-inquiry (TOFU), customer-journey-map-template (TOFU) = TOFU 67% (target 50), MOFU 0% (target 30), BOFU 33% (target 20). MOFU is furthest below target. The parallel 'ux research methods' pillar is unknown at writing time; if it also takes MOFU the silo ends at 2/2/1 (40/40/20), still closer to target than leaving MOFU at 0. SERP rule (2026-10-06): page 1 is method guides with how-to sections (NN/g, UXtweak, Wikipedia, Optimal Workshop, Miro templates, IBM Design), and this brief's angle is planning the study (sort type, sample, tools, analysis, sequence), which funnel.json calls MOFU ('teams ... planning the work'). MOFU minimum service-support 4; this scores 4. Fallback: if the orchestrator rejects the CTA conflict below, relabel to TOFU (the outline works for both; only the CTA changes).",
   "serviceSupport": 4,
   "serviceSupportWhy": "4, not 5: the reader is planning a method, not buying yet. But 'Card sort and tree test' is a named hub deliverable (Optimal Workshop studies, 30-50 participants), the hub cost body prices '1 card sort' into its $25,000 example, and the hub lists 'A redesign is planned, if the navigation and information architecture have never been tested' as a reason to invest. A reader who realizes they need 30-50 recruited participants per user group plus a tree test maps straight to the programme.",
@@ -781,14 +781,54 @@
     "linkBuilderRun": "2026-10-24",
     "funnelAtLinking": "tofu (frontmatter; orchestrator relabeled from the brief's mofu), so internal range 8–12.",
     "internalLinks": [
-      { "href": "/services/ux-research-services/", "anchor": "UX research services", "where": "intro paragraph 2 (within first 300 words)", "bucket": "hub 1/2" },
-      { "href": "/blog/ux-research-methods/", "anchor": "overview of where this method sits among UX research methods", "where": "H2 What is card sorting", "bucket": "silo pillar post (publishes today, draft:true at linking; remove the link if it does not go live)" },
-      { "href": "/case-studies/mass-media-co/", "anchor": "Mass Media Co. discovery workshop", "where": "When does a card sort help, 'Merging products' bullet (added sentence; case study scope words only: separate systems -> one platform, workshop covered information architecture and user flows; no card sort implied)", "bucket": "case study 1" },
-      { "href": "/blog/contextual-inquiry/", "anchor": "watching users work in their real setting", "where": "When does a card sort help, skip list", "bucket": "sibling" },
-      { "href": "/industries/saas/", "anchor": "SaaS UI UX design", "where": "worked example (added sentence from saas.json: each tenant holds its own users and roles; account-level vs personal settings)", "bucket": "industry 1" },
-      { "href": "/services/web-app-design-services/", "anchor": "web app design services", "where": "tree testing H2", "bucket": "other hub (1 max)" },
-      { "href": "/services/ux-research-services/#how-much-does-ux-research-cost", "anchor": "what a UX research program with a card sort costs", "where": "tree testing H2, closing price sentence", "bucket": "hub 2/2" },
-      { "href": "/contact/", "anchor": "share the menu or sitemap with us", "where": "closing paragraph", "bucket": "contact" }
+      {
+        "href": "/services/ux-research-services/",
+        "anchor": "UX research services",
+        "where": "intro paragraph 2 (within first 300 words)",
+        "bucket": "hub 1/2"
+      },
+      {
+        "href": "/blog/ux-research-methods/",
+        "anchor": "overview of where this method sits among UX research methods",
+        "where": "H2 What is card sorting",
+        "bucket": "silo pillar post (publishes today, draft:true at linking; remove the link if it does not go live)"
+      },
+      {
+        "href": "/case-studies/mass-media-co/",
+        "anchor": "Mass Media Co. discovery workshop",
+        "where": "When does a card sort help, 'Merging products' bullet (added sentence; case study scope words only: separate systems -> one platform, workshop covered information architecture and user flows; no card sort implied)",
+        "bucket": "case study 1"
+      },
+      {
+        "href": "/blog/contextual-inquiry/",
+        "anchor": "watching users work in their real setting",
+        "where": "When does a card sort help, skip list",
+        "bucket": "sibling"
+      },
+      {
+        "href": "/industries/saas/",
+        "anchor": "SaaS UI UX design",
+        "where": "worked example (added sentence from saas.json: each tenant holds its own users and roles; account-level vs personal settings)",
+        "bucket": "industry 1"
+      },
+      {
+        "href": "/services/web-app-design-services/",
+        "anchor": "web app design services",
+        "where": "tree testing H2",
+        "bucket": "other hub (1 max)"
+      },
+      {
+        "href": "/services/ux-research-services/#how-much-does-ux-research-cost",
+        "anchor": "what a UX research program with a card sort costs",
+        "where": "tree testing H2, closing price sentence",
+        "bucket": "hub 2/2"
+      },
+      {
+        "href": "/contact/",
+        "anchor": "share the menu or sitemap with us",
+        "where": "closing paragraph",
+        "bucket": "contact"
+      }
     ],
     "internalCountNote": "8 internal links (TOFU 8–12). Removed: second root hub link ('UX research program', duplicate target) and the #how-does-the-ux-research-process-work fragment (hub cap 2); its fact stays as plain text ('90-minute readout, the last of its five steps'). customer-journey-map-template was considered for the affinity-mapping H3 but skipped: the pillar + contextual-inquiry already fill the 0–2 same-cluster post bucket.",
     "externalLinks": [
@@ -799,11 +839,24 @@
       "https://dscout.com/people-nerds/card-sorting ('Usually, card sorts last 60 minutes' = general guidance, not an example; WebFetch OK)"
     ],
     "removedExternalLinks": [
-      { "url": "https://en.wikipedia.org/wiki/Card_sorting", "why": "cap 5; verified (knowledge elicitation, open generative / closed evaluative, reverse = tree testing, modified-Delphi by Celeste Paul, remote lacks personal interaction, Spencer 2009). Kept as named plain text 'Wikipedia's entry on the method'." },
-      { "url": "https://www.optimalworkshop.com/101-guides/card-sorting-101/introduction-to-card-sorting", "why": "cap 5; verified open/closed/hybrid definitions and analysis names (similarity matrix, dendrograms, standardization grid, popular placements matrix). Plain text 'Optimal Workshop's Card Sorting 101 introduction'." },
-      { "url": "https://www.nngroup.com/articles/card-sorting-tree-testing-differences/", "why": "cap 5; verified (Samhita Tankala, 23 Feb 2024: 'Card sorting is used to generate ideas for an IA while tree testing is used to evaluate IA options'; text-based outline). Plain text 'Samhita Tankala's February 2024 NN/g comparison'. First swap candidate if QA prefers a primary source over Lyssna." },
-      { "url": "https://www.optimalworkshop.com/blog/comes-first-card-sorting-tree-testing", "why": "cap 5; verified (29 Mar 2016: tree test existing IA, card sort, tree test new IA with the same or very similar tasks). Plain text 'Optimal Workshop's 2016 post on which comes first'." }
+      {
+        "url": "https://en.wikipedia.org/wiki/Card_sorting",
+        "why": "cap 5; verified (knowledge elicitation, open generative / closed evaluative, reverse = tree testing, modified-Delphi by Celeste Paul, remote lacks personal interaction, Spencer 2009). Kept as named plain text 'Wikipedia's entry on the method'."
+      },
+      {
+        "url": "https://www.optimalworkshop.com/101-guides/card-sorting-101/introduction-to-card-sorting",
+        "why": "cap 5; verified open/closed/hybrid definitions and analysis names (similarity matrix, dendrograms, standardization grid, popular placements matrix). Plain text 'Optimal Workshop's Card Sorting 101 introduction'."
+      },
+      {
+        "url": "https://www.nngroup.com/articles/card-sorting-tree-testing-differences/",
+        "why": "cap 5; verified (Samhita Tankala, 23 Feb 2024: 'Card sorting is used to generate ideas for an IA while tree testing is used to evaluate IA options'; text-based outline). Plain text 'Samhita Tankala's February 2024 NN/g comparison'. First swap candidate if QA prefers a primary source over Lyssna."
+      },
+      {
+        "url": "https://www.optimalworkshop.com/blog/comes-first-card-sorting-tree-testing",
+        "why": "cap 5; verified (29 Mar 2016: tree test existing IA, card sort, tree test new IA with the same or very similar tasks). Plain text 'Optimal Workshop's 2016 post on which comes first'."
+      }
     ]
   },
-  "date": "2026-10-24"
+  "date": "2026-10-24",
+  "funnelNote": "Orchestrator 2026-10-24: relabelled TOFU so the MOFU CTA box does not show Mass Media Co.'s 30% revamp result next to a methods post."
 }

@@ -544,6 +544,84 @@
         "filled worked example"
       ],
       "ctaAngle": "download the free template; send the hypothesis map for a free consultation"
+    },
+    {
+      "slug": "ux-research-methods",
+      "hub": "ux-research-services",
+      "type": "Comparison",
+      "funnel": "tofu",
+      "introStyle": "three-question triage",
+      "h2Frames": [
+        "what are ux research methods?",
+        "which ux research method answers your research question?",
+        "what are the main types of ux research?",
+        "which ux research methods fit each product stage?",
+        "ux research methods by sample size, length and output",
+        "how do you combine ux research methods?",
+        "which ux research methods work on a small budget?",
+        "which mistakes make ux research methods mislead you?",
+        "when should a research team run the study for you?",
+        "faqs"
+      ],
+      "sectionOrder": [
+        "What are UX research methods?",
+        "Which UX research method answers your research question?",
+        "What are the main types of UX research?",
+        "Which UX research methods fit each product stage?",
+        "UX research methods by sample size, length and output",
+        "How do you combine UX research methods?",
+        "Which UX research methods work on a small budget?",
+        "Which mistakes make UX research methods mislead you?",
+        "When should a research team run the study for you?",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "question router patch board",
+        "attitudinal/behavioral x qual/quant whiteboard 2x2",
+        "product-stage strip with program lane",
+        "12 method spec cards",
+        "method combination relay chain"
+      ],
+      "ctaAngle": "tell us the product question; free consultation once"
+    },
+    {
+      "slug": "card-sorting",
+      "hub": "ux-research-services",
+      "type": "Guide",
+      "funnel": "tofu",
+      "introStyle": "one card, three piles hook",
+      "h2Frames": [
+        "what is card sorting in ux research?",
+        "when does a card sort help your information architecture?",
+        "open, closed or hybrid card sorting, which fits your stage?",
+        "how many cards and participants does a card sort need?",
+        "how to run a card sorting study, step by step",
+        "how do you analyze card sorting results?",
+        "card sorting example, regrouping a saas settings menu",
+        "which card sorting tools fit open, closed and hybrid sorts?",
+        "why tree testing comes after card sorting",
+        "faqs"
+      ],
+      "sectionOrder": [
+        "What is card sorting in UX research?",
+        "When does a card sort help your information architecture?",
+        "Open, closed or hybrid card sorting, which fits your stage?",
+        "How many cards and participants does a card sort need?",
+        "How to run a card sorting study, step by step",
+        "How do you analyze card sorting results?",
+        "Card sorting example, regrouping a SaaS settings menu",
+        "Which card sorting tools fit open, closed and hybrid sorts?",
+        "Why tree testing comes after card sorting",
+        "FAQs"
+      ],
+      "visualTypes": [
+        "open/closed/hybrid board",
+        "sort-type decision tree",
+        "participants correlation chart",
+        "similarity matrix + dendrogram",
+        "settings menu before/after"
+      ],
+      "ctaAngle": "send us that menu or sitemap; free consultation once"
     }
   ]
 }

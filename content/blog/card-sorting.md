@@ -19,17 +19,17 @@ takeaways:
   - "Plan at least 15 participants per user group; at 15, Jakob Nielsen's data correlates 0.90 with a 168-user result."
   - "Read the similarity matrix and dendrogram next to participant comments, then tree test the new menu."
 draft: false
-qa: pending
+qa: pass
 image: "/blog/card-sorting/cover.svg"
 ---
 
 "Export billing history" is one card in an illustrative card sorting study for a software as a service (SaaS) project-management app, and participants file it in three piles: Billing, Reports and Account. Nobody filed it wrong. The split says the settings menu needs a cross-link or a clearer label, and finding such splits before anyone draws a wireframe is what the method is for.
 
-Teams use this user experience (UX) research method when a menu must be built or rebuilt, and it is one of the six deliverables in our [UX research services](/services/ux-research-services/). The sections take its decisions in order: sort type, sample size, the run, analysis, a worked example (invented for teaching), tools and the tree test that follows.
+Teams use this user experience (UX) research method when a menu must be built or rebuilt, and in our [UX research services](/services/ux-research-services/) it runs as a card sort and tree test pair. Each decision gets a section, in the order you meet it: sort type, sample size, the run, analysis, a worked example (invented for teaching), tools and the tree test that follows.
 
 ## What is card sorting in UX research?
 
-**Card sorting is a UX research method in which participants group labeled cards into categories, so a team can shape an information architecture (IA) that matches their mental models.**
+**Card sorting is a UX research method in which participants group labeled cards into categories, so a team can shape an information architecture (IA) that matches users' mental models.**
 
 Each card names one content item or feature, and in most sorts participants name each group. Information architecture is how a product's content is organized, labeled and connected into menus; mental models are users' expectations of where things live. [Nielsen Norman Group (NN/g) defines the method](https://www.nngroup.com/articles/card-sorting-definition/) by that act of placing labeled cards into groups, and in user interface (UI) and UX design its output feeds navigation labels.
 
@@ -54,8 +54,8 @@ If your question is where users expect a setting to live, read on.
 Run one for:
 
 - **A new product with no taxonomy**, because users' groupings beat the org chart.
-- **Navigation never tested before a redesign**, which our hub lists as a reason to invest in research.
-- **Merging products**, because each team's categories fit only its own product. When several separate systems became one platform, the [Mass Media Co. discovery workshop](/case-studies/mass-media-co/) covered information architecture and user flows.
+- **Navigation never tested before a redesign**, which we list as a reason to invest in UX research.
+- **Merging products**, because each team's categories fit only its own product. When Mass Media Co. replaced several separate order-taking systems with one platform, [the discovery workshop behind that merger](/case-studies/mass-media-co/) covered information architecture alongside user flows.
 - **Audiences that group differently**, such as admins and end users, where Wikipedia finds the method most useful.
 - **Internal jargon in menus**, because an open sort surfaces users' words.
 
@@ -87,13 +87,13 @@ Optimal Workshop's Card Sorting 101 introduction defines the three sort types th
 
 ### Open card sorting
 
-**An open sort is the discovery format: participants group cards however they like and name each group.**
+**An open sort is the discovery format: participants invent the groups and label each one in their own words.**
 
 It uncovers mental models and users' own words. Wikipedia classes open sorts as generative, and NN/g calls them the most common type. Use one when you have content but no structure you trust.
 
 ### Closed card sorting
 
-**A closed sort gives participants predefined categories and asks them to place every card in one.**
+**A closed sort hands participants a fixed set of predefined categories, and every card must go into one of them.**
 
 It checks a set of groups, so Wikipedia classes it as evaluative; that generative versus evaluative split is the core difference. NN/g generally prefers a tree test for validating structure, because it shows whether people find items, not just where they file them. Use one when category names are fixed.
 
@@ -101,9 +101,9 @@ It checks a set of groups, so Wikipedia classes it as evaluative; that generativ
 
 **A hybrid sort fixes some categories and lets participants add their own, which suits redesigns that keep part of the menu.**
 
-NN/g generally advises against hybrids because results mix two kinds of data, so analyze participant-added groups apart from placements in your set groups.
+NN/g generally advises against hybrids because the predefined categories bias participants toward similarly structured groups, so analyze participant-added groups apart from placements in your set groups.
 
-In modified-Delphi card sorting, credited by Wikipedia to Celeste Paul, each participant refines the previous participant's structure. Reverse card sorting is another name for tree testing. Our program runs card sorts in its evaluative studies step, because by then interviews have produced an early structure to check and reshape.
+In modified-Delphi card sorting, credited by Wikipedia to Celeste Paul, each participant refines the previous participant's structure. Reverse card sorting is another name for tree testing. Our program runs card sorts in its evaluative studies step, which follows generative fieldwork and checks the early information architecture.
 
 ![Sort-type decision tree flowing left to right from “Do you have categories you must keep?” to open sort, hybrid sort, or a second question, “What do you need to learn?”, which leads to closed sort or tree test instead](/blog/card-sorting/card-sorting-sort-type-decision-tree.svg "Sort-type decision tree")
 
@@ -118,7 +118,7 @@ In modified-Delphi card sorting, credited by Wikipedia to Celeste Paul, each par
 
 </details>
 
-When choosing between an open and a closed card sort, start from the decision tree's first question, not your tool's default.
+When choosing between an open and a closed card sort, start from the sort-type decision tree's first question, not your tool's default.
 
 ## How many cards and participants does a card sort need?
 
@@ -143,17 +143,17 @@ Source: Jakob Nielsen, Nielsen Norman Group, 2004.
 
 </details>
 
-For a quantitative study, NN/g's 2024 guide gives 30–50 participants. Count each user group separately, since admins and end users group cards differently. Our program runs Optimal Workshop studies with 30–50 participants. Recruiting that many matched people is where in-house sorts tend to stall, so participant recruitment is its own 3–6 day step. Count your user groups before you budget incentives.
+For a quantitative study, NN/g's 2024 guide gives 30–50 participants, and our program runs its Optimal Workshop studies in that range. Count each user group separately, since admins and end users group cards differently. Finding that many matched people is the slow part of a card sort, and in our program participant recruitment runs 3–6 days ahead of the first session, so budget incentives per user group.
 
 ## How to run a card sorting study, step by step
 
-**To run a card sort, list the content, write the cards, pick the sort type and format, recruit, pilot, then run it with follow-up questions.**
+**To run a card sort, list the content, write the cards, pick an open, closed or hybrid sort and its format, recruit, pilot, then run it with follow-up questions.**
 
 1. **Inventory the content and write one research question**, because a sort with two questions answers neither.
 2. **Write the cards** to the rules above, and have an outsider read them for jargon.
-3. **Choose the sort type and format** from the decision tree and the table below.
+3. **Choose the sort type and format** from the sort-type decision tree and the table below.
 4. **Recruit participants per user group**, screening for people who use that part of the product.
-5. **Pilot test with one colleague**, as NN/g advises, and rewrite any card they hesitate over.
+5. **Pilot test with a small group of participants**, as NN/g advises, and rewrite any card they hesitate over.
 6. **Run the sort with follow-up questions**: why a card went where it did, and which cards were hard.
 
 In our program, the card sort and its tree test run inside the 4–8 day evaluative studies step, so the study duration fits that window. In-house, keep the order: recruit, pilot, launch.
@@ -179,7 +179,7 @@ The FAQs give session lengths. Book moderated sessions first, so their comments 
 - **One research question per sort**, so groups answer one decision.
 - **Plain card labels**, so the sort tests grouping, not vocabulary.
 - **A "not sure" pile**, so nobody forces a card into a wrong group.
-- **A pilot**, so a confusing card costs one session.
+- **A pilot**, so a confusing card is fixed before the full sample sees it.
 - **Some moderated sessions**, as NN/g recommends, so each cluster has a reason.
 
 Copy these into your study plan.
@@ -188,7 +188,7 @@ Copy these into your study plan.
 
 **Analysis of a card sort reads card pairs in a similarity matrix, clusters in a dendrogram and participants' group names, then checks each pattern against comments before it shapes the menu.**
 
-Each similarity matrix cell shows the share of participants who put two cards together, the pair's similarity score; a card with no strong partner is one users cannot place. Hierarchical cluster analysis joins the closest pairs into a dendrogram, and where you cut it sets the number of top-level groups. Cut where groups make sense to users and the business.
+Each similarity matrix cell shows the share of participants who put two cards together, the pair's similarity score or participant agreement; a card with no strong partner is one users cannot place. Hierarchical cluster analysis joins the closest pairs into a dendrogram, and where you cut it sets the number of top-level groups. Cut where groups make sense to users and the business.
 
 ![Annotated card sorting similarity matrix of 8 settings cards with heat-shaded cells beside a dendrogram with a dashed cut line, callouts for one cell, an early cluster, the cut line and the split card Export billing history; illustrative data](/blog/card-sorting/card-sorting-similarity-matrix-dendrogram.svg "Card sorting similarity matrix and dendrogram, annotated (illustrative data)")
 
@@ -217,7 +217,9 @@ The sort shows users' mental models; affinity mapping organizes what the team le
 
 **This illustrative example sends 36 settings cards from a project-management app to an open card sort and turns 9 scattered menu groups into 5 that users recognize.**
 
-Every figure here is invented for teaching, not research data or a client result. The cards included Change password, Two-factor authentication, Invite teammates, Set member roles, Download invoices, Change plan, Export billing history and Connect Slack. Three clusters dominated: people, money and connections. "Export billing history" split between money and a participant pile called "Reports", because some read "export" as data work. "Two-factor authentication" split between account and team groups, because admins set it for everyone. It mirrors a split we design for in [SaaS UI UX design](/industries/saas/): each tenant holds its own users and roles, so screens separate account-level settings from personal settings.
+Every figure here is invented for teaching, not research data or a client result. The cards included Change password, Two-factor authentication, Invite teammates, Set member roles, Download invoices, Update payment method, Change plan, Export billing history and Connect Slack. Four clusters dominated (account, people, money and connections), and the matrix excerpt above shows the first three.
+
+"Export billing history" landed in the three piles from the opening: Billing, Reports and Account. The "Reports" placements came from participants who read "export" as data work. "Two-factor authentication" split between account and team groups, because admins set it for everyone. That second split mirrors one we design for in [SaaS UI UX design](/industries/saas/): each tenant holds its own users and roles, so screens separate account-level settings from personal settings.
 
 ![Settings menu before and after a card sort: a sidebar with 9 groups beside a sidebar with 5 groups, the split card Export billing history traced from Billing to Billing and plans, and cross-links from Data and integrations and from Team and permissions; illustrative composite](/blog/card-sorting/card-sorting-settings-menu-before-after.svg "Settings menu before and after the card sort (illustrative composite)")
 
@@ -243,16 +245,16 @@ The table compares six options by sort types and best fit.
 |---|---|---|
 | Optimal Workshop | Open, closed, hybrid | Large unmoderated studies, built-in dendrogram |
 | Maze | Open, closed | Teams already testing prototypes in Maze |
-| Lyssna | Open, closed, hybrid | Sorts followed by survey questions |
+| Lyssna | Open, closed, hybrid | Sorts with follow-up questions |
 | UXtweak | Open, closed, hybrid | Long card lists imported in bulk |
 | Miro or FigJam | Any, by hand | Moderated remote sessions |
-| Paper index cards | Open or hybrid | In-person moderated sessions |
+| Paper index cards | Open, closed or hybrid | In-person moderated sessions |
 
-For a free tool, [Lyssna's 2026 roundup of card sorting tools](https://www.lyssna.com/blog/card-sorting-tools/) lists free plans for Lyssna (three seats), UXtweak (15 responses a month) and Maze (1 study a month); index cards are free but manual. The best software fits your analysis output and participant panel; we use Optimal Workshop. Pilot in two tools before you pay.
+For a free tool, [Lyssna's 2026 roundup of card sorting tools](https://www.lyssna.com/blog/card-sorting-tools/) lists free plans for Lyssna (three seats) and UXtweak (15 responses a month, with card sorts capped at 20 cards on UXtweak's free plan), while Maze offers card sorting only on paid plans; index cards are free but manual. The best software fits your analysis output and participant panel; we use Optimal Workshop. Pilot in two tools before you pay.
 
 ## Why tree testing comes after card sorting
 
-**A card sort proposes a menu from users' groupings and tree testing checks it, because a tree test asks participants to find items in a text-only version of the new structure.**
+**A card sort proposes a menu from users' groupings, and tree testing then checks it by asking participants to find items in a text-only version of that menu.**
 
 So the card sorting vs tree testing question is about order, not choice. Samhita Tankala's February 2024 NN/g comparison describes the first as generating ideas for an information architecture and the second as evaluating one.
 
@@ -264,9 +266,9 @@ So the card sorting vs tree testing question is about order, not choice. Samhita
 
 Optimal Workshop's 2016 post on which comes first sets the order: tree test the current menu, run the card sort, draft the structure, then tree test it with the same tasks. As a tree testing example, the invoice task above scores success (did people end in Team and permissions?) and directness (did they get there without backtracking?).
 
-In our program, the card sort and tree test are one deliverable in Optimal Workshop, and our [web app design services](/services/web-app-design-services/) validate navigation with tree tests of, for example, 10–15 tasks. A full UX research program runs 4–8 weeks at a program price of $25,000–$60,000, and the hub shows [what a UX research program with a card sort costs](/services/ux-research-services/#how-much-does-ux-research-cost): a program with 1 user group, 10 user interviews and 1 card sort sits near $25,000.
+In our program, the card sort and tree test are one deliverable in Optimal Workshop, and our [web app design services](/services/web-app-design-services/) validate navigation with tree tests of, for example, 10–15 tasks. A full UX research program runs 4–8 weeks at a program price of $25,000–$60,000, and our pricing section explains [what a UX research program with a card sort costs](/services/ux-research-services/#how-much-does-ux-research-cost): a program with 1 user group, 10 user interviews and 1 card sort sits near $25,000.
 
-One label in three piles looks small, yet it decides where a whole menu branch lives. Pick your sort type from the decision tree, budget 15 or more participants per user group and write the tree test tasks before the first card goes out. Your current menu or sitemap is the brief for that work, whether your team runs the study or you [share the menu or sitemap with us](/contact/). Every project begins with a free consultation and a fixed-scope proposal.
+One label in three piles looks small, yet it decides where a whole menu branch lives. Three choices protect that decision: the sort type from the sort-type decision tree, 15 or more participants per user group, and tree test tasks drafted alongside the cards. Your current menu or sitemap is the starting brief either way, so run the study in-house or [send us that menu or sitemap](/contact/) and we will suggest the sort type and sample it needs. Every project begins with a free consultation and a fixed-scope proposal.
 
 ## FAQs
 
@@ -276,7 +278,7 @@ Both, depending on how you run it. Moderated sessions with around 15 participant
 
 ### How long does a card sort session take?
 
-Session length for an unmoderated online sort is about 5–30 minutes, depending on the card count, per [Dovetail's guide](https://dovetail.com/ux/open-vs-closed-card-sorting/). [dscout's guide](https://dscout.com/people-nerds/card-sorting) tells researchers to plan for 60 minutes, which suits a moderated session where participants explain their choices.
+Session length for a card sort is about 5–30 minutes, depending on the number of cards and their complexity, per [Dovetail's guide](https://dovetail.com/ux/open-vs-closed-card-sorting/). [dscout's guide](https://dscout.com/people-nerds/card-sorting) tells researchers to plan for 60 minutes, which suits a moderated session where participants explain their choices.
 
 ### Can you run a card sort remotely?
 
@@ -284,7 +286,7 @@ Yes. Remote card sorting runs unmoderated in online tools such as Optimal Worksh
 
 ### What are the limits of a card sort?
 
-A card sort shows how users group content, not whether they find it in a real interface. NN/g names three limits: no site context, a grouping depth of one level, and fatigue past 50 cards, when a large Miscellaneous pile grows.
+A card sort shows how users group content, not whether they find it in a real interface. NN/g's limits include no site context, a grouping depth of one level, and fatigue past 50 cards, when a large Miscellaneous pile grows.
 
 ### Should a card sort come before or after wireframes?
 
