@@ -375,7 +375,8 @@
   "incidents": [
     {
       "date": "2026-10-24",
-      "what": "Cloudflare Workers Builds stopped triggering after commit ab386aa (2026-10-22); pushes 03f8883, ad57637 and 43518bb were not built, so 4 posts stayed 404. Owner re-checked the GitHub app and Cloudflare build connection; this commit re-triggers the build."
+      "what": "Cloudflare Workers Builds stopped triggering after commit ab386aa (2026-10-22); pushes 03f8883, ad57637 and 43518bb were not built, so 4 posts stayed 404. Owner re-checked the GitHub app and Cloudflare build connection; this commit re-triggers the build.",
+      "resolved": "2026-10-24: the Cloudflare Workers and Pages GitHub app had only 'rankview' selected; owner re-selected uiuxdesignservices.us and seoservicesedmonton.ca. Rule: whenever a new site is connected to Cloudflare, keep all three repos selected in the app's repository access."
     }
   ]
 }
