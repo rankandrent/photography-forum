@@ -6,3 +6,7 @@ next-env.d.ts
 .env*.local
 .DS_Store
 .wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars
