@@ -1,0 +1,739 @@
+{
+  "slug": "ux-research-methods",
+  "keyword": "ux research methods",
+  "keywordCarrier": {
+    "exactString": "ux research methods",
+    "spellingNote": "Print it as 'UX research methods' (capital UX, lowercase rest mid-sentence; 'UX research methods' at sentence start). scripts/onpage-audit.mjs: has() skips words of 2 letters or fewer, so meta checks would also pass on 'research methods', but kwCount (salience) counts only the literal phrase 'ux research methods' in that order (lesson 2026-10-18). These near-forms do NOT count: 'UX research method' (singular), 'user research methods', 'UX research techniques', 'research methods for UX', 'UX-research methods'. Frontmatter `keyword` stays exactly 'ux research methods'; first meta keyword 'ux research methods'. Plain 3-word noun phrase: works as subject or object; no special carrier needed.",
+    "title": "UX Research Methods, Which One Answers Your Question",
+    "titleNote": "52 chars (45-70 rule). H1 and coverTitle. Exact keyword first, joined with a comma, NO colon (Keywords rule 4). Carries the owner's angle (team topic 5).",
+    "metaTitle": "UX Research Methods | Match the Method to Your Question",
+    "metaTitleNote": "55 chars, exact keyword first then ' | ', no colon. Never add 'services', 'agency', 'cost' or 'process' (hub, choose-ux-research-agency and the hub process H2 own them).",
+    "description": "UX research methods sorted by the question each one answers, with sample sizes, timing and outputs. Pick your next study, then book a free consultation.",
+    "descriptionNote": "152 chars (counted with python 2026-10-24). Use as written: keyword first, what the reader gets, then the MOFU next step (consultation; the template MOFU CTA adds the case study). Pronoun check: 'each one' -> each UX research method (subject of the sentence), correct. No colon, no apostrophe.",
+    "inBody": "Intro (three-question triage, see variety), keyword in the first 60 words, e.g. 'Three questions came out of one product meeting: why do trial users stall at setup, can people find invoices in the new menu, and how many accounts hit the export bug. Each needs a different study, and that is the whole job of choosing UX research methods: start from the question, not from the method you ran last time.' Label the meeting as an illustrative composite, never a client. Approved carriers, each read aloud: 'UX research methods are the ways a team collects evidence about users'; 'choosing UX research methods'; 'the UX research methods in this guide'; 'combine UX research methods'; 'UX research methods for a small budget'. Stack rule: 'UX research methods' + noun ('UX research methods table/guide/list') at most 3 times outside the H2s.",
+    "density": "Word-share target 1-2%. 3-word keyword, expected body about 2,600 words: max uses = 0.02 x 2,600 / 3 = about 17. Aim for 12-16 literal uses (H1, first sentence, 5-6 H2s, body, closing, 1-2 FAQ answers). H2 salience: h2Share counts any H2 holding 'research' or 'methods' (words > 3 letters), so every planned H2 passes; still, 7 of the 10 H2s (incl. FAQs) carry the exact keyword. Rivals (entities whose words are not all inside the keyword): 'usability testing', 'user interviews', 'card sorting', 'contextual inquiry', 'A/B testing', 'tree testing', 'qualitative research', 'quantitative research'. kwCount must be at least half the top rival: keep 'usability testing' and 'user interviews' at or below 2x the keyword count (in practice under 24 each) and keep the method spec table cells short. Do NOT list 'user research methods' as an entity (it would become a rival); it is a secondary/synonym only."
+  },
+  "secondary": [
+    "user research methods",
+    "ux research techniques",
+    "types of user research",
+    "user research techniques",
+    "types of ux research",
+    "user experience research methods",
+    "ux research methodology",
+    "ux research methods cheat sheet"
+  ],
+  "secondaryNote": "Ahrefs keywords-explorer/overview 2026-10-24 (US): user research methods 500/34 (parent topic ux research methods); ux research techniques 200/39; types of user research 150/12; user research techniques 150/28; types of ux research 100/30; user experience research methods 100/1; ux research methodology 70/35; user research methodology 70/37; ux research methods cheat sheet 50/0. Ahrefs serp-overview for 7 of them (2026-10-24) shows the SAME page 1 (NN/g which-ux-research-methods #2, Maze #3, User Interviews, uxtweak, Harvard EA, Figma, Baymard, formbricks, progress) and the same AI Overview sources, so all share one intent and one page. Placement: 'user research methods' as the synonym in the definition sentence + 1 H3 ('Is user research the same as UX research?'); 'UX research techniques' and 'types of UX research' in H2 1 and H2 3 first sentences; 'UX research methodology' in the method-vs-methodology H3; 'cheat sheet' = the method spec table (H2 5) introduced as 'a one-table UX research methods cheat sheet'. No entry contains 'vs'. Tested and NOT targeted: 'qualitative ux research methods' (200/8) and 'quantitative ux research methods' (200/7): priority-queue item 8 ('quantitative ux research', qual vs quant) owns them; H2 3 gives the qual/quant dimension in one section and names that future post in plain text. 'generative research methods' (150/5) and 'evaluative research methods' (90/0): priority-queue item 6 owns them; H2 4 stays a stage map. 'ux research process' (200/36): the hub H2 'How does the UX research process work?' owns it (lesson 2026-10-05); only one FAQ deep-links it. 'ux research method' (60/38): singular, same SERP, covered naturally. Zero volume: 'ux research toolkit', 'when to use which ux research method'. 'attitudinal vs behavioral research' 10/no KD: entity, not a target.",
+  "intent": "Commercial-investigation / planning (MOFU). The searcher is a product manager, designer or design lead who has a product question and must pick a study: which method, how many participants, how long, what comes out. Every ranking page lists methods; the job here is to choose. A reader who works out that the question needs several methods, recruiting and synthesis is a plausible buyer of the hub programme (which combines 5 named methods in 4-8 weeks).",
+  "volume": 700,
+  "kd": 35,
+  "dataSource": "Ahrefs API v3 keywords-explorer/overview, US, re-verified by this agent on 2026-10-24: ux research methods 700 / KD 35 / traffic potential 1,600, parent topic 'user research methods', intent informational, SERP features ai_overview, ai_overview_sitelink, image_th, video_th, sitelink, question (identical to the 2026-10-22 queue figure). Same call: user research methods 500/34 (TP 1,500; intents informational + commercial); ux research techniques 200/39; qualitative ux research methods 200/8; quantitative ux research methods 200/7; ux research process 200/36; types of user research 150/12; user research techniques 150/28; generative research methods 150/5; types of ux research 100/30; user experience research methods 100/1; evaluative research methods 90/0; ux research methodology 70/35; user research methodology 70/37; ux research method 60/38; ux research methods cheat sheet 50/0; attitudinal vs behavioral research 10; ux research toolkit 0; when to use which ux research method 0. Ahrefs serp-overview (country us, top 20) 2026-10-24 for: ux research methods, user research methods, types of user research, ux research techniques, ux research methodology, user experience research methods, types of ux research. Ahrefs site-explorer/top-pages (mode exact, US, 2026-10-23): nngroup which-ux-research-methods 1,172 visits/105 kw; maze.co/guides/ux-research/methods 473/59; uxtweak 170/32; userinterviews user-research-types 166/38; formbricks 89/14. Semrush not called (Ahrefs answered every question; lesson 2026-10-23). GSC docs/data/gsc/latest.json (2026-09-21 to 2026-10-18): no query containing 'method'; the hub gets 'ux research services' (109 impr, pos 18.3). WebFetch OK 2026-10-24: nngroup.com (which-ux-research-methods, research-methods-glossary, card-sorting-how-many-users-to-test, synthetic-users, videos/why-40-participants), maze.co, userinterviews.com (2 pages), figma.com, baymard.com, figr.design, formbricks.com, progress.com, leanlab.co, usertesting.com, contentsquare.com, dovetail.com (method-vs-methodology). Blocked/empty: enterprisearchitecture.harvard.edu (403), uxtweak.com (empty body), uxdesign.cc (403), youtube.com (not fetched, no text).",
+  "aiOverview": {
+    "present": true,
+    "status": "verified (Ahrefs serp-overview row type 'ai_overview' at position 1 for the primary and all 6 tested variants; the AIO text itself is not returned by the tool)",
+    "cited": [
+      "https://www.nngroup.com/articles/which-ux-research-methods/",
+      "https://maze.co/guides/ux-research/methods/",
+      "https://www.nngroup.com/articles/research-methods-glossary/",
+      "https://www.userinterviews.com/ux-research-field-guide-module/user-research-methods",
+      "https://www.figma.com/resource-library/ux-design-research-methods/",
+      "https://www.youtube.com/watch?v=B7eWE2JJp8M&t=33",
+      "https://enterprisearchitecture.harvard.edu/user-research-methods-and-recommendations",
+      "https://www.uxtweak.com/ux-research/methods/",
+      "https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-types",
+      "https://figr.design/blog/user-research-methods",
+      "https://www.leanlab.co/blog/a-simple-guide-to-user-research-methods-for-ux-designers"
+    ],
+    "citedAlsoFor": "Variants add: formbricks.com/blog/user-research-methods, progress.com/blogs/user-research-methods-what-which-ones-why, youtube BtKHHIBJnL8 ('15 User Research Methods to Know Beyond Usability Testing') (user research methods); usertesting.com/blog/what-is-ux-research, nngroup.com/articles/user-interviews, contentsquare.com/guides/ux-research/methods, nngroup video comparing-qualitative-and-quantitative-ux-research, youtube 4ldPT4nbx5c (Maze '9 UX research methods'), youtube OtUWbsvCujM ('When to Use Which UX Research Method') (types of user research); baymard.com/blog/ux-research-methods (techniques, user experience research methods).",
+    "passages": {
+      "nngroupWhich": "Christian Rohrer, NN/g, 17 Jul 2022 (reviewed 15 Jul 2026): 20 methods mapped on a 3-dimensional framework: attitudinal vs behavioral (what people say vs what they do), qualitative vs quantitative (why / how to fix vs how many / how much; collected directly vs through an instrument), and context of product use (natural, scripted, limited, not using the product). Time dimension: Strategize (generative: field studies, diary studies, interviews, surveys, participatory design, concept testing), Design (formative: card sorting, tree testing, usability testing, remote moderated and unmoderated testing), Launch and Assess (summative: usability benchmarking, unmoderated UX testing, A/B testing, clickstream analytics, surveys). Nearly every project benefits from combining methods; many teams rely on one or two familiar ones.",
+      "nngroupGlossary": "Raluca Budiu, 10 Sep 2023: one-line definitions incl. first-click test, five-second test, desirability study, think-aloud protocol, Wizard of Oz, formative vs summative method, quantitative usability testing, focus group (6-9 people), tree testing, diary study (days or months), ethnographic study = field study in UX.",
+      "maze": "No byline or date: 11 methods (interviews, field studies, focus groups, diary studies, surveys, card sorting, tree testing, usability testing, five-second testing, A/B testing, concept testing); 3 pairs (qual/quant, attitudinal/behavioral, generative/evaluative); choose by goals, design stage and insight type; 'the method you can get buy-in, budget and time for'. Missing: a question-to-method map, sample sizes, durations, costs.",
+      "userInterviewsTypes": "User Interviews field guide, updated 1 Nov 2025: generative (discovery), evaluative and continuous research (NPS, product analytics, support feedback after launch); qual vs quant; attitudinal vs behavioral; remote vs in-person; moderated vs unmoderated.",
+      "userInterviewsModule": "Module intro only: names quant/qual, generative/evaluative, attitudinal/behavioral, moderated/unmoderated; choose by product-cycle stage, research goals, data needed; mentions a 'Decision Driven Research framework' without explaining it.",
+      "figma": "Ana Boyer: quantitative (analytics, A/B testing) vs qualitative; methods by phase (strategy: personas, interviews, card sorting; design: task analysis, eye tracking, surveys; launch: A/B testing, analytics, diaries). No numbers.",
+      "figr": "30 Jan 2026, no author: what people say vs what they do; 'big four' methods (interviews, surveys, usability testing, field studies); layering methods (interviews find a pain point, a survey sizes it); 5 users find about 85% of usability problems (NN/g). Unsourced anecdotes ($500,000 dashboard, 87%) - do not use.",
+      "leanlab": "13 Jan 2025: categories (qual/quant, attitudinal/behavioral, generative/evaluative); choose by stage, budget, timeline, audience; mix methods. No numbers or sources.",
+      "formbricks": "Johannes, 3 May 2026: 13 methods, 3 dimensions, a question-to-method table and a comparison matrix with participant ranges (interviews 6-12, CI 4-8, card sorting 15-30, tree testing 50+, diary 10-20 for 2-4 weeks, A/B 1,000+). Several ranges unsourced - do not copy.",
+      "progress": "Suzanne Scacca, 21 Jan 2025: 12 methods incl. heuristic review (no users), when to use each by stage; no sample sizes or costs.",
+      "usertesting": "18 Dec 2023: types of UX research and when to use them (3 pairs); 5 methods; what users say and do often differ.",
+      "baymard": "Carl MacDonald, 15 Jul 2026: usability-evaluation methods only (heuristic evaluation, usability testing, cognitive walkthrough, UX audit) and how mature teams combine them. Vendor claims - do not use."
+    },
+    "entities": [
+      "Nielsen Norman Group",
+      "Christian Rohrer",
+      "attitudinal research",
+      "behavioral research",
+      "qualitative research",
+      "quantitative research",
+      "context of use",
+      "generative research",
+      "evaluative research",
+      "formative",
+      "summative",
+      "continuous research",
+      "user interviews",
+      "field study",
+      "contextual inquiry",
+      "diary study",
+      "survey",
+      "focus group",
+      "participatory design",
+      "concept testing",
+      "card sorting",
+      "tree testing",
+      "usability testing",
+      "moderated testing",
+      "unmoderated testing",
+      "usability benchmarking",
+      "first-click test",
+      "five-second test",
+      "eyetracking",
+      "A/B testing",
+      "analytics",
+      "clickstream analytics",
+      "heuristic evaluation"
+    ],
+    "attributes": [
+      "what people say vs what they do",
+      "why and how to fix vs how many and how much",
+      "context of product use (natural, scripted, limited, none)",
+      "product stage (strategize, design, launch and assess)",
+      "sample size per method",
+      "study length",
+      "main output per method",
+      "moderated or unmoderated",
+      "remote or in-person",
+      "budget, time and buy-in as constraints"
+    ],
+    "terms": [
+      "research question",
+      "when to use",
+      "combine methods",
+      "triangulate",
+      "information architecture",
+      "mental models",
+      "self-reported",
+      "observed behavior",
+      "statistical significance",
+      "prototype",
+      "live product",
+      "discovery",
+      "benchmark",
+      "synthetic users"
+    ],
+    "questions": [
+      "What are UX research methods?",
+      "What are the main types of UX research?",
+      "Which UX research method should I use?",
+      "When should you use each UX research method?",
+      "What is the difference between qualitative and quantitative UX research?",
+      "What is the difference between attitudinal and behavioral research?",
+      "How do you combine UX research methods?"
+    ],
+    "coverage": "Definition, method vs methodology vs technique, user research = UX research -> H2 1 + H3s. Question-to-method router (research question, observed behavior, self-reported, information architecture, mental models, live product, prototype) -> H2 2. NN/g 3 dimensions incl. Rohrer, attitudinal/behavioral, qual/quant, context of use (natural, scripted, limited, none), 'why and how to fix vs how many and how much' -> H2 3. Strategize/design/launch and assess, generative/formative/summative/evaluative/continuous research, discovery -> H2 4. Every method entity with sample size, study length, main output, moderated or unmoderated, remote or in-person -> H2 5 table + family paragraphs (eyetracking, five-second test, first-click test, participatory design, heuristic evaluation, usability benchmarking, clickstream analytics each get one table row or sentence). Combine / triangulate -> H2 6. Budget, time and buy-in -> H2 7. Statistical significance, benchmark -> H2 5 quantitative rows + H2 8 mistakes. Synthetic users -> FAQ 1."
+  },
+  "paa": [
+    "What are the 7 types of research methods?",
+    "Is UX research being replaced by AI?",
+    "What are the 7 types of qualitative research methods?",
+    "What are the four types of research methods?",
+    "What are the different types of user research methods?",
+    "What is the 5-user rule for user testing?",
+    "Is user research the same as UX research?",
+    "What are the three types of user testing?",
+    "What are the five steps of UX research?",
+    "What is the UX methodology?",
+    "What are the most effective research techniques?",
+    "What is the difference between user research and UX research?"
+  ],
+  "paaNote": "Sources: Ahrefs serp-overview 'question' rows 2026-10-24 for the primary and its 6 same-intent variants (lesson 2026-10-23). Mapping (first sentence = direct answer): the 4 generic academic questions ('7 types of research methods', '7 basic research methods', '7 major types of research', 'four types of research methods', '7 types of qualitative research methods') -> ONE disambiguation H3 inside H2 1 'How do UX research methods relate to academic research types?': no single standard list of 7 exists; academic texts group quantitative designs (commonly descriptive, correlational, quasi-experimental, experimental) and qualitative approaches (Creswell and Poth name 5: narrative, phenomenology, grounded theory, ethnography, case study); then the UX meaning: UX research methods are applied techniques chosen by product question, and the ethnography idea survives as field studies and contextual inquiry. Fact-checker confirms both lists before print; if the 4 quantitative designs cannot be sourced, print only the Creswell list and say textbooks differ. 'Is UX research being replaced by AI?' -> FAQ 1 (No; NN/g synthetic users). 'Different types of user research methods' -> H2 3. '5-user rule' -> FAQ 2. 'Is user research the same as UX research' + 'difference between user research and UX research' -> H3 in H2 1 (Yes, same thing; hub says 'UX research, also called user research'). 'Three types of user testing' -> FAQ 3 (sources disagree; answer with moderated vs unmoderated, qualitative vs quantitative, remote vs in-person, hub usability wording). 'Five steps of UX research' -> FAQ 4 (our 5 hub steps, deep link to hub process section; no process H2, the hub owns it). 'What is the UX methodology' -> H3 'Method, methodology or technique?' in H2 1. 'Most effective research techniques' -> first sentence of H2 2 (the effective one is the one that answers your question; no universal best). Dropped with reasons: 'What are the 7 pillars of UX design?' (methodology variant SERP; a UX design facets question, Morville's honeycomb, not research methods), 'What are the different types of UX?' (design disciplines, off-intent), 'Is UX research still in demand?' (career/job-market question; no verifiable US labor statistic for UX researchers exists in BLS; off-intent for a buyer guide). QA must not fail the page for these three.",
+  "hub": "ux-research-services",
+  "services": [
+    "ux-research-services"
+  ],
+  "industries": [],
+  "industriesNote": "None. Adding an industry cannot reorder relatedCaseStudies (it only filters; order is date desc then file order), and any industry match would only add non-research case studies to the 'more' list. See the MOFU CTA CONFLICT in notes.",
+  "author": "faizan-khan",
+  "authorWhy": "Faizan Khan (Sr. Product Designer, content/home.ts): a decision guide that maps product questions to studies fits product strategy (RULES.md: product strategy -> a product designer). Last post how-to-design-an-mvp (2026-10-20), 3 posts ago: rotation OK. Rejected: sahar-asif (Senior Manager UX, the natural research lead; the CI brief reserved her for this pillar, but she wrote customer-journey-map-template yesterday, 1 post ago) - orchestrator may swap to her if a research-lead byline matters more than rotation; ahmad-ullah wrote contextual-inquiry yesterday; talha-saleem / saliha-shahzad (UI roles) suit the parallel card-sorting post (information architecture). Contributor: umar-sarwar (default).",
+  "type": "Comparison",
+  "funnel": "mofu",
+  "funnelWhy": "Silo count (ledger.json, 2026-10-24): 3 published = choose-ux-research-agency (BOFU), contextual-inquiry (TOFU), customer-journey-map-template (TOFU): TOFU 67% (target 50), MOFU 0% (target 30), BOFU 33% (target 20). MOFU is furthest below target. SERP rule (2026-10-06): page 1 is 'which to use and when' choosing guides (NN/g 'When to Use Which', Maze 'and When to Use Them', Baymard 'Which to Use and When', formbricks 'How to Choose', progress 'Which Ones to Use'), i.e. teams comparing approaches and planning the work, which funnel.json calls MOFU, not definitions (TOFU) or vendor/price pages (BOFU). Ahrefs flags 'user research methods' as informational + commercial. MOFU minimum service-support 4; this topic scores 4. The parallel card-sorting brief is expected to be TOFU (method how-to), so the two posts of the day differ in stage. Fallback: if QA judges the post definitional, relabel TOFU (checklist CTA) without other changes.",
+  "serviceSupport": 4,
+  "serviceSupportWhy": "4, not 5: the reader is choosing a study, not yet shopping for a vendor. But the answer to most real product questions is 2-3 methods plus recruiting and synthesis, which is exactly the hub programme (5 steps, interviews + contextual inquiry + card sort/tree test + personas/journey maps/JTBD, 4-8 weeks). The post ends each method family where an in-house team typically stalls (recruiting, sample sizes for quantitative work, synthesis).",
+  "beats": "https://maze.co/guides/ux-research/methods/",
+  "alsoOutranks": [
+    "https://www.uxtweak.com/ux-research/methods/",
+    "https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-types",
+    "https://formbricks.com/blog/user-research-methods",
+    "https://www.progress.com/blogs/user-research-methods-what-which-ones-why",
+    "https://figr.design/blog/user-research-methods"
+  ],
+  "beatsWhy": "Maze (position 3, Ahrefs 473 US visits/mo, 59 keywords, top keyword 'ux research methods', AIO-cited, no byline or date) is the most-visited vendor guide we can realistically pass. It lists 11 methods with TL;DRs, 3 classification pairs and a 3-factor 'how to choose' (goals, stage, insight type), but has no question-to-method map, scattered sample sizes, no study lengths, no costs, no combination recipe, no ethics/recruiting, and its own table contradicts its body on diary studies. NN/g (Rohrer, position 2, 1,172 visits) is the authority: cite its framework by name, never mirror its order (3 dimensions -> context -> time -> art -> 20 methods) or reproduce its landscape chart (draw our own, credit the framework). formbricks already has a question-to-method table with unsourced participant ranges: our router must be organised by the DECISION the team faces, give sourced or hub numbers only, and never reuse formbricks' rows. Our edge: question-first router as the spine, a method spec table with sourced sample sizes (NN/g 5 qual / 40 quant; hub 10-15 interviews per user group, 4-6 contextual inquiry users, 30-50 card-sort/tree-test participants), study length and output, a stage map tied to a real 5-step programme, a combination recipe, a lean-budget section, a mistakes section, and an honest AI/synthetic-users answer.",
+  "centralEntity": "UX research methods (the techniques a product team uses to collect evidence about users, for example user interviews, contextual inquiry, surveys, card sorting, tree testing, usability testing, A/B testing and analytics, chosen by the question they answer and classified by NN/g as attitudinal or behavioral, qualitative or quantitative, and by context of use)",
+  "bindings": {
+    "synonyms": [
+      "user research methods",
+      "UX research techniques",
+      "user research techniques",
+      "types of UX research"
+    ],
+    "plural": [
+      "UX research methods",
+      "UX research method"
+    ],
+    "parent": [
+      "UX research",
+      "user-centered design"
+    ],
+    "children": [
+      "user interviews",
+      "contextual inquiry",
+      "surveys",
+      "card sorting",
+      "tree testing",
+      "usability testing",
+      "A/B testing",
+      "diary studies"
+    ],
+    "related": [
+      "research question",
+      "research plan",
+      "participant recruitment",
+      "synthesis",
+      "personas",
+      "journey maps"
+    ],
+    "bindingNote": "Each synonym printed at least once: 'user research methods' in the definition sentence of H2 1; 'UX research techniques' in H2 1 (method vs technique H3); 'user research techniques' once in H2 5 or FAQ; 'types of UX research' in the first sentence of H2 3. Parent: H2 1 says UX research methods are the toolkit of UX research (expand 'user experience (UX)' once) and that UX research serves user-centered design (ISO 9241-210, hub wording 'human-centred design process of ISO 9241-210'; print the ISO number once). Children: each gets a table row in H2 5 and a sentence in its family paragraph; 'diary studies' and 'surveys' print in plural at least once. Related: 'research question' leads H2 2, 'research plan' + 'participant recruitment' + 'synthesis' in H2 6/H2 10 (hub deliverable and step names), personas and journey maps as the hub outputs (link journey maps to /blog/customer-journey-map-template/)."
+  },
+  "essential": [
+    "UX research methods",
+    "research question",
+    "product decision"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'UX research methods' (or a synonym from bindings) plus 'research question' or 'product decision' (or 'the question'/'the decision' only when the full phrase appeared in the same paragraph). The answerHints below do this.",
+  "queryVariants": [
+    "which ux research method should i use",
+    "types of user research",
+    "ux research methods and when to use them",
+    "how to choose a user research method",
+    "ux research methods cheat sheet"
+  ],
+  "queryVariantsNote": "One answer site-wide: pick the method from the research question and the product stage; qualitative methods with small samples for why/how-to-fix (5 users per usability round, 10-15 interviews per user group, 4-6 contextual inquiry users), quantitative methods with large samples for how many/how much (40 for quantitative usability, enough traffic for statistical significance in A/B tests); most real decisions need 2-3 methods combined. These figures match ux-research-services.json and usability-testing-services.json.",
+  "ambiguous": [
+    {
+      "word": "method",
+      "context": "UX research method / research method with users (not a code method or a design method like a design sprint)"
+    },
+    {
+      "word": "methodology",
+      "context": "research methodology, the strategy behind the methods (not a project-management methodology like Agile, except where the Agile example is explicitly used)"
+    },
+    {
+      "word": "testing",
+      "context": "usability testing / A/B testing / tree testing with users (not software QA testing)"
+    },
+    {
+      "word": "survey",
+      "context": "user survey / in-product survey (not a land or market-size survey)"
+    },
+    {
+      "word": "analytics",
+      "context": "product analytics / clickstream analytics of user behavior (not business intelligence reporting)"
+    },
+    {
+      "word": "focus",
+      "context": "focus group with users (one place only; not 'research focus')"
+    },
+    {
+      "word": "field",
+      "context": "field study with users (not a form field)"
+    }
+  ],
+  "siteFacts": {
+    "source": "content/services/ux-research-services.json (hub) unless stated",
+    "definition": "Hub: 'UX research, also called user research, is the systematic study of user goals, behaviours and problems through interviews, observation and testing, conducted to guide product and design decisions.' 2 modes: generative finds what to build, evaluative checks whether a design works.",
+    "deliverables": "Hub 6 deliverables: research plan; user interviews (10-15 one-hour interviews); contextual inquiry (observe 4-6 users in the real work setting); card sort and tree test (Optimal Workshop, 30-50 participants); personas (2-4) and journey maps (1 per persona); Jobs to be Done opportunity map.",
+    "process": "Hub 5 steps, 4-8 weeks (20-40 working days): research framing (2-4 days), participant recruitment (3-6 days), generative fieldwork (7-15 days: user interviews and contextual inquiry), evaluative studies (4-8 days: card sorts, tree tests and concept tests), synthesis and readout (4-7 days: tagged in Dovetail, personas, journey maps, JTBD opportunity map, 90-minute readout). Quote these step bodies when the post ties a method to a step (lesson 2026-10-20); never assign an output to a step whose body does not name it.",
+    "price": "$25,000-$60,000 for the programme; depends on user groups, participants, number of methods, recruitment difficulty (hub cost H2). State once with the deep link; no cost section.",
+    "participants": "Hub FAQ: 10-15 interview participants per user group; 5 per round of qualitative usability testing (NN/g). Usability hub FAQ: 5 users per qualitative round, 40 for a quantitative test (NN/g). Usability hub: moderated has a researcher present; unmoderated runs on tools such as Maze without a researcher; A/B testing needs enough traffic to reach statistical significance; a single usability round takes 1-3 weeks.",
+    "remote": "Hub FAQ: remote UX research runs user interviews and card sorts over video calls and online tools (Zoom, Optimal Workshop); contextual inquiry needs on-site visits (CONFLICT 1 of the contextual-inquiry brief still open; in this post say 'in our programme, contextual inquiry runs on-site').",
+    "ai": "home.ts: 'We use AI to accelerate production. The judgment about what to design comes from research and pattern recognition across 200+ products.' Usable for FAQ 1 as our stance.",
+    "conflicts": [
+      "CONFLICT 1 (hub vs external source): the hub card sort item says 30-50 participants; NN/g (Nielsen 2004) recommends 15 for card sorting. Writer: print '30-50 participants in our programme' and nothing else for card sorting; the parallel card-sorting post owns the sample-size discussion. Orchestrator: make sure the card-sorting brief follows the same hub figure or explains NN/g's 15 as a minimum, so the silo has one answer.",
+      "CONFLICT 2 (template MOFU CTA): with services [ux-research-services] and no industries, relatedCaseStudies returns Mass Media Co. first (date 2026-10-09, file order), so the inline CTA prints 'See how we did this for Mass Media Co.' + '30% increase in order processing efficiency'. That result was not caused by choosing research methods; the case study's research is 'user interviews' and a discovery workshop with stakeholders and users (scope line, body line 43). Writer: never attribute the 30% to research in the body; if Mass Media Co. is mentioned, use only 'user interviews and a discovery workshop with stakeholders and users covering IA and user flows'. Orchestrator: accept, or relabel TOFU (checklist CTA) if the owner objects.",
+      "CONFLICT 3 (formbricks vs hub numbers): formbricks prints contextual inquiry 4-8 and interviews 6-12; follow the hub (4-6; 10-15 per user group). Do not print formbricks ranges.",
+      "home.ts MDS-nurses shadowing anecdote: no case study behind it (contextual-inquiry brief CONFLICT 3). Do not use."
+    ]
+  },
+  "entities": [
+    "Nielsen Norman Group",
+    "Christian Rohrer",
+    "attitudinal research",
+    "behavioral research",
+    "qualitative research",
+    "quantitative research",
+    "context of use",
+    "generative research",
+    "evaluative research",
+    "summative evaluation",
+    "user interviews",
+    "contextual inquiry",
+    "field study",
+    "diary studies",
+    "surveys",
+    "focus group",
+    "concept testing",
+    "card sorting",
+    "tree testing",
+    "usability testing",
+    "unmoderated testing",
+    "A/B testing",
+    "clickstream analytics",
+    "first-click test",
+    "synthetic users"
+  ],
+  "entitiesNote": "25 entries, one name each, literal forms, no slashes except the fixed term 'A/B testing' (print it exactly so). At least 20 must appear with a real fact. 'summative evaluation' is printed once in H2 4 with 'formative' in the same sentence ('formative studies improve a design; a summative evaluation measures the finished one'). 'synthetic users' belongs to FAQ 1. 'Christian Rohrer' is credited in H2 3 as the author of NN/g's landscape. Rivals to cap: see keywordCarrier.density.",
+  "attributes": [
+    "research question (the product decision the study must inform)",
+    "data type (qualitative or quantitative)",
+    "data source (attitudinal or behavioral)",
+    "context of use (natural, scripted, limited or none)",
+    "product stage (strategize, design, launch and assess)",
+    "sample size (5 per qualitative usability round; 40 for quantitative; 10-15 interviews per user group)",
+    "study length (days for a survey or tree test, weeks for a diary study)",
+    "main output (findings, metrics, IA, personas)",
+    "moderation (moderated or unmoderated)",
+    "research setting (remote or in-person)",
+    "method cost (recruiting, researcher hours, tools)"
+  ],
+  "attributesNote": "11 entries. The script reads the words before '(' and needs 60% of those longer than 3 letters in the text. Print these label nouns literally: 'research question', 'data type', 'data source', 'context of use', 'product stage', 'sample size', 'study length', 'main output', 'moderation', 'research setting', 'method cost'. The H2 5 table column headers should use 'sample size', 'study length' and 'main output' verbatim. 'study length' values must come from the hub/usability hub (1-3 weeks per usability round, 7-15 days of fieldwork) or be stated as typical ranges without numbers.",
+  "ngrams": [
+    "ux research methods",
+    "user research methods",
+    "research question",
+    "attitudinal vs behavioral",
+    "qualitative vs quantitative",
+    "context of use",
+    "generative research",
+    "evaluative research",
+    "what people say vs what they do",
+    "combine methods",
+    "ux research services"
+  ],
+  "keywordCarrierSecondary": {
+    "attitudinal vs behavioral": "the attitudinal vs behavioral split (what people say against what they do)",
+    "qualitative vs quantitative": "the qualitative vs quantitative question (why, or how many)",
+    "what people say vs what they do": "the gap between what people say vs what they do"
+  },
+  "questions": [
+    "What are UX research methods?",
+    "What is the difference between a research method, a methodology and a technique?",
+    "Is user research the same as UX research?",
+    "Which UX research method answers my question?",
+    "What are the main types of UX research?",
+    "What is the difference between attitudinal and behavioral research?",
+    "What is the difference between qualitative and quantitative UX research?",
+    "Which UX research methods fit each product stage?",
+    "How many participants does each UX research method need?",
+    "How do you combine UX research methods?",
+    "Which UX research methods work on a small budget?",
+    "Is UX research being replaced by AI?",
+    "What is the 5-user rule?"
+  ],
+  "serpGaps": [
+    "Question first: every ranking page is organised by method (a list of 11-20 methods) or by stage; only formbricks maps questions to methods, in one table without reasoning or sources. None starts from the product decision a team faces and routes it to a method with the reason.",
+    "Method vs methodology vs technique: NN/g, Maze, Figma and User Interviews use the words interchangeably; User Interviews' own module is titled 'Methodologies' and Figma calls activities 'methodologies'. Nobody defines the three levels with one example chain.",
+    "Sourced numbers: Maze, Figma, progress, Leanlab and Contentsquare give no sample sizes or study lengths; formbricks gives ranges with no source. We give NN/g 5 qual / 40 quant, NN/g focus group size, and the hub's own 10-15 interviews, 4-6 contextual inquiry users and 30-50 card-sort participants, each with the source.",
+    "Combination recipe: NN/g says to combine; figr gives one interview-then-survey example. Nobody shows a full sequence (analytics finds where -> interviews find why -> card sort/tree test fixes structure -> usability test checks the fix -> A/B test measures it) with what each step hands the next.",
+    "Constraints: Maze mentions 'buy-in, budget and time' in one line; nobody says which methods survive a small budget and what you lose with each shortcut.",
+    "Mistakes: no ranking page lists the common method-choice errors (asking users to predict future behavior, surveys for why questions, 5 users for a metric, testing IA in interviews, one method for everything).",
+    "AI: PAA asks whether UX research is being replaced by AI; no ranking methods page answers it. NN/g's synthetic-users article (Rosala and Moran 2024) gives a sourced answer.",
+    "Stage map tied to a real programme: stage lists exist (NN/g, Figma) but none shows how a real engagement sequences them in days."
+  ],
+  "outline": [
+    {
+      "h2": "What are UX research methods?",
+      "answerHint": "UX research methods are the techniques a product team uses to collect evidence about users, for example user interviews, surveys, card sorting and usability testing, and each one answers a different kind of research question. Teams also call them user research methods or UX research techniques.",
+      "points": [
+        "Intro before this H2 (three-question triage, see variety): 3 illustrative questions from one product meeting, each needing a different method; keyword in the first sentence or within 60 words (carrier above). Then one sentence on what the guide gives: a question router, the NN/g dimensions, a stage map, a method table with sample sizes, a combination recipe and the mistakes to avoid.",
+        "UP link within the first 300 words, anchor exactly 'UX research services' (required by the orchestrator), e.g. 'our UX research services combine five of these methods in one programme'.",
+        "Definition paragraph: parent = UX research (hub definition: 'also called user research'); expand 'user experience (UX)' once; UX research serves user-centered design (ISO 9241-210, hub wording).",
+        "H3 'Method, methodology or technique?' (PAA 'What is the UX methodology?'; owner's concept binding): a methodology is the strategy and reasoning behind the study (e.g. user-centered design, or an ethnographic approach); a method is the procedure that collects data (e.g. usability testing); a technique is a specific way of running part of a method (e.g. the think-aloud protocol inside a usability test, or a five-second test). Source the method/methodology split to Dovetail (7 Mar 2023) or describe it as common usage; 'technique' level is our framing, say so plainly. One sentence: in everyday UX writing the three words are used interchangeably, which is why 'UX research methodology' and 'UX research techniques' searches land on the same pages. Visual 1 sits here.",
+        "H3 'Is user research the same as UX research?' (PAA x2): Yes; first sentence starts 'Yes.' Hub: 'UX research, also called user research'. One sentence on market research vs user research to sharpen it (market research asks who buys and at what price; user research asks how people use and struggle).",
+        "H3 'How do UX research methods relate to academic research types?' (PAA cluster '7 types', 'four types', '7 types of qualitative'): see paaNote for the exact content and fact-check condition. Keep to 1 short paragraph + 1 short list; end with the UX meaning."
+      ]
+    },
+    {
+      "h2": "Which UX research method answers your research question?",
+      "answerHint": "The right UX research method is the one that answers your research question at the lowest cost: ask why users do something and you need interviews or observation, ask whether they can complete a task and you need usability testing, ask how many do it and you need analytics, a survey or an A/B test.",
+      "points": [
+        "This is the owner's angle and the spine of the post. Answer the PAA 'most effective research techniques' in the first two sentences (no universal best; effective = fits the question and the product decision).",
+        "The router (Visual 2 + text version as a table): 8 question families, written as the question a PM actually asks, each -> primary method -> backup method -> what it cannot tell you. Families (our own wording; do not mirror formbricks rows): (1) 'What problem should we solve next?' -> user interviews / contextual inquiry; (2) 'How do people really do this work today?' -> contextual inquiry / field study / diary studies; (3) 'Where will people look for this?' (structure, labels) -> card sorting / tree testing; (4) 'Can people complete this task on our design?' -> usability testing (moderated) / unmoderated testing; (5) 'Which version performs better?' -> A/B testing (live product with enough traffic) / first-click test on a prototype; (6) 'How many users have this problem?' -> surveys / analytics; (7) 'Where do users drop off?' -> analytics and clickstream analytics, then interviews for the why; (8) 'Does this concept make sense before we build it?' -> concept testing / participatory design.",
+        "Rule of thumb under the table: a 'why' question needs a qualitative method, a 'how many' question a quantitative one, and 'what will you do in future' questions are unreliable in any method (people predict their own behavior poorly; state as practitioner reasoning, no statistic).",
+        "Card sorting appears here only as the method for family 3 (one sentence) with a link to /blog/card-sorting/ (anchor e.g. 'how open, closed and hybrid card sorting work'; CONDITIONAL on that post publishing today, else plain text).",
+        "Contextual inquiry: one sentence + link to /blog/contextual-inquiry/ (anchor e.g. 'contextual inquiry, where you watch users do real work')."
+      ]
+    },
+    {
+      "h2": "What are the main types of UX research, and how do they differ?",
+      "answerHint": "The main types of UX research sort methods on two axes from Nielsen Norman Group's landscape: attitudinal methods capture what people say and behavioral methods capture what they do, while qualitative methods explain why and quantitative methods measure how many and how much.",
+      "points": [
+        "First sentence must print 'types of UX research' (synonym) + 'research question' or 'product decision' in the next sentence.",
+        "Credit: Christian Rohrer, NN/g, 'When to Use Which User-Experience Research Methods' (2022, reviewed 2026). Explain the 3 dimensions in our words: attitudinal vs behavioral (carrier in keywordCarrierSecondary), qualitative vs quantitative (collected directly vs through an instrument; analysed by interpretation vs maths), context of use (natural, scripted, limited, none) with one method example each (field study; usability benchmarking; card sorting or concept testing; desirability study).",
+        "Visual 3: our own 2x2 map (behavioral <-> attitudinal on one axis, qualitative <-> quantitative on the other) placing about 12 methods; caption credits the NN/g framework; drawn new, NOT a copy of NN/g's chart (different layout, our method selection and placement checked against NN/g's text). Text version: a 4-quadrant list.",
+        "One short paragraph: methods that sit in the middle (usability testing can be qualitative with 5 users or quantitative with 40, NN/g; surveys can carry open questions). Name the future post 'quantitative UX research' in plain text as the place for the qual/quant deep dive (link-builder adds the link when it publishes).",
+        "Also mention moderated vs unmoderated and remote vs in-person as two practical axes (User Interviews field guide lists them; hub/usability-hub wording for moderated/unmoderated)."
+      ]
+    },
+    {
+      "h2": "Which UX research methods fit each product stage?",
+      "answerHint": "UX research methods follow the product stage: generative methods such as interviews and field studies shape what to build, formative evaluative methods such as card sorting, tree testing and usability testing improve the design, and summative methods such as A/B testing, benchmarking and analytics measure the product after launch.",
+      "points": [
+        "NN/g time dimension (strategize, design, launch and assess) mapped to generative, formative, summative; add 'continuous research' after launch (User Interviews: NPS and feedback surveys, product analytics, support feedback).",
+        "Print 'summative evaluation' once next to 'formative' (entity).",
+        "Visual 4: stage strip (left to right) with 3-4 methods per stage AND the matching step of our programme underneath (research framing; generative fieldwork 7-15 days; evaluative studies 4-8 days: 'Card sorts, tree tests and concept tests check the early information architecture and design concepts'). Quote hub step bodies; do not invent outputs for steps.",
+        "Keep generative vs evaluative to this section; name the future post 'generative vs evaluative research' in plain text (link later). Do not restate the hub FAQ wording; paraphrase it."
+      ]
+    },
+    {
+      "h2": "UX research methods compared, sample size, study length and output",
+      "answerHint": "UX research methods differ most in sample size, study length and main output: qualitative usability testing needs about 5 users per round, interviews 10-15 per user group, and quantitative studies about 40 participants or enough traffic for statistical significance, while outputs range from findings and quotes to metrics and an information architecture.",
+      "points": [
+        "One sentence introduces the table (table-intro rule) and calls it 'a one-table UX research methods cheat sheet'. Visual 5 = this table as a spec-card infographic; text version = the markdown table.",
+        "Columns: method | answers | data type | data source | sample size | study length | main output | moderation. Rows (12): user interviews (hub 10-15 per user group, one hour each); contextual inquiry (hub 4-6 users, on-site in our programme, about 2 hours a session per the contextual-inquiry post); field study; diary studies (days to weeks; NN/g glossary 'days or months'); surveys (large samples; no fixed number, depends on the margin of error you need); focus group (NN/g glossary 6-9 people; NN/g landscape says 3-12; print one with its source, fact-checker picks); concept testing; card sorting (hub 30-50 in our programme, one row only); tree testing (hub 30-50 alongside the card sort); usability testing (5 per qualitative round, 40 quantitative, NN/g; 1-3 weeks per round, usability hub); A/B testing (enough traffic for statistical significance; live product); analytics and clickstream analytics (existing data; no recruiting).",
+        "Under the table, 3 short family paragraphs (talk to users / watch users / measure users) that mention first-click test, five-second test, eyetracking (needs special equipment; behavioral), participatory design, usability benchmarking and heuristic evaluation (expert review, no users; progress.com), each with one fact.",
+        "Print 'user research techniques' once here (synonym).",
+        "ONE cross-hub link: /services/usability-testing-services/ (anchor 'usability testing services') in the usability testing row's paragraph.",
+        "Lead moment 1 (end of section): sample sizes for quantitative methods and recruiting hard-to-reach users are where in-house plans stall; one natural sentence that our programme schedules participant recruitment as its own step (hub: 3-6 days)."
+      ]
+    },
+    {
+      "h2": "How do you combine UX research methods in one study?",
+      "answerHint": "You combine UX research methods by letting each one answer the question the previous one raised: analytics shows where users drop off, interviews explain why, a card sort or tree test fixes the structure, a usability test checks the fix, and an A/B test measures it on the live product.",
+      "points": [
+        "Visual 6: combination chain (5 linked steps, what each hands to the next). Text version as an ol.",
+        "Explain triangulation in one sentence (two methods agreeing on a finding is stronger evidence than one).",
+        "Worked illustrative example (label it illustrative, no client): the triage intro's 'trial users stall at setup' question taken through 3 methods with what each produced. No outcome percentage.",
+        "Our programme as the real-world pattern: research plan -> recruitment -> generative fieldwork (interviews + contextual inquiry) -> evaluative studies (card sorts, tree tests, concept tests) -> synthesis (Dovetail tagging, 2-4 personas, 1 journey map per persona, JTBD opportunity map, 90-minute readout). Link journey maps to /blog/customer-journey-map-template/ (anchor e.g. 'customer journey map template').",
+        "Lead moment 2: synthesis across methods is where findings fragment; one sentence pointing to how our 5-step programme ends in one readout (deep link /services/ux-research-services/#how-does-the-ux-research-process-work, anchor e.g. 'how our five-step research programme runs')."
+      ]
+    },
+    {
+      "h2": "Which UX research methods work on a small budget or a tight deadline?",
+      "answerHint": "On a small budget, the UX research methods that still answer a research question are 5-user usability tests, a handful of interviews with existing customers, unmoderated tree tests and the analytics you already have; what you give up is sample breadth, hard-to-recruit users and observation in the real setting.",
+      "points": [
+        "Table or 2-column list: shortcut -> what it still tells you -> what you lose (e.g. recruit from your customer list instead of a panel -> fast, but biased to current users; unmoderated instead of moderated -> scale, but no follow-up questions; remote interviews instead of contextual inquiry -> cheaper, but recall instead of observation).",
+        "Hub fact: 'UX research for a startup, for example 8-10 user interviews, shows which problem to solve' (hub FAQ). Use it as the minimum viable study example.",
+        "Maze's 'buy-in, budget and time' point: do not quote it; make our own point that the cheapest useful study is the one whose answer changes a decision."
+      ]
+    },
+    {
+      "h2": "Which mistakes make UX research methods give the wrong answer?",
+      "answerHint": "UX research methods give the wrong answer when the method does not match the research question: asking users to predict what they will do, running a survey to learn why, reporting a percentage from 5 usability participants, or testing navigation labels in an interview.",
+      "points": [
+        "6 mistakes as a ul, each with the fix: (1) method-first planning (the team runs the method it knows; NN/g notes many teams rely on one or two); (2) asking about future behavior; (3) surveys for why questions; (4) percentages from qualitative samples (5 users find problems, they do not measure rates; quantitative needs about 40, NN/g); (5) IA questions in interviews instead of card sorting/tree testing; (6) no research question written down before recruiting (the hub's research plan deliverable fixes it).",
+        "Different visual style from the router: no image here (6-image cap)."
+      ]
+    },
+    {
+      "h2": "When should a research team choose and run the UX research methods for you?",
+      "answerHint": "Bring in a research team when the product decision needs two or more UX research methods, hard-to-recruit participants or on-site observation, or when nobody on your team can spend 4-8 weeks recruiting, running sessions and synthesising the findings.",
+      "points": [
+        "MOFU close: 3 short signals (several methods needed; regulated or hard-to-recruit users such as clinicians, hub cost example; no in-house researcher). Then the offer (leadAngle).",
+        "Price once with deep link: $25,000-$60,000, 4-8 weeks, set by user groups, participants, number of methods and recruitment difficulty (anchor e.g. 'what sets the price of a research programme' -> /services/ux-research-services/#how-much-does-ux-research-cost).",
+        "Second UP link to the hub root with a varied anchor (e.g. 'our UX research programme'); the exact 'UX research services' anchor is used once early.",
+        "Sideways: /blog/choose-ux-research-agency/ (anchor e.g. 'how to compare research agencies before you hire one').",
+        "Close with /contact/ (anchor e.g. 'send us your research question').",
+        "Plain-text list of future cluster posts is NOT a separate section: name them in context where they fit (quantitative UX research in H2 3, generative vs evaluative research in H2 4, user persona template in H2 6 personas, importance of UX research and UX ROI in this H2's first paragraph, healthcare UX research next to the clinicians example). No links until each publishes."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is UX research being replaced by AI?",
+      "hint": "No. AI tools speed up transcription, tagging and first-pass synthesis, but synthetic users (AI profiles that mimic a user group) give overly favorable, shallow answers and cannot replace research with real people; NN/g (Maria Rosala and Kate Moran, 21 Jun 2024) says use them for desk research and hypotheses only. Our stance (home.ts): AI accelerates production, the judgment comes from research."
+    },
+    {
+      "q": "What is the 5-user rule for usability testing?",
+      "hint": "Jakob Nielsen's guidance (NN/g, 2000) that 5 users per round find most usability problems in a qualitative test, so several small rounds beat one big one. It does not apply to quantitative studies (about 40, NN/g) or to card sorting. Same figures as H2 5. Fact-checker confirms the '85%' figure before it is printed; if unsure, omit the percentage."
+    },
+    {
+      "q": "What are the three types of user testing?",
+      "hint": "There is no single standard trio; teams usually mean moderated vs unmoderated, qualitative vs quantitative, or remote vs in-person usability testing. One sentence each, usability hub wording for moderated/unmoderated."
+    },
+    {
+      "q": "What are the five steps of UX research?",
+      "hint": "In our programme: research framing, participant recruitment, generative fieldwork, evaluative studies, synthesis and readout (hub). Name the steps only, with the deep link /services/ux-research-services/#how-does-the-ux-research-process-work; no durations list here (hub owns the process)."
+    },
+    {
+      "q": "How many UX research methods should one study use?",
+      "hint": "Usually 2-3: one to find or explain the problem and one to check or measure the answer (NN/g: nearly every project benefits from more than one method). Our programme runs generative fieldwork and evaluative studies in one engagement (hub)."
+    }
+  ],
+  "internalTargets": [
+    {
+      "href": "/services/ux-research-services/",
+      "anchor": "UX research services"
+    },
+    {
+      "href": "/blog/contextual-inquiry/",
+      "anchor": "contextual inquiry, where you watch users do real work"
+    },
+    {
+      "href": "/blog/customer-journey-map-template/",
+      "anchor": "customer journey map template"
+    },
+    {
+      "href": "/blog/card-sorting/",
+      "anchor": "how open, closed and hybrid card sorting work"
+    },
+    {
+      "href": "/services/usability-testing-services/",
+      "anchor": "usability testing services"
+    },
+    {
+      "href": "/services/ux-research-services/#how-does-the-ux-research-process-work",
+      "anchor": "how our five-step research programme runs"
+    },
+    {
+      "href": "/services/ux-research-services/#how-much-does-ux-research-cost",
+      "anchor": "what sets the price of a research programme"
+    },
+    {
+      "href": "/blog/choose-ux-research-agency/",
+      "anchor": "how to compare research agencies before you hire one"
+    },
+    {
+      "href": "/contact/",
+      "anchor": "send us your research question"
+    }
+  ],
+  "internalTargetsNote": "Verified 2026-10-24: content/services/ux-research-services.json, content/services/usability-testing-services.json, content/blog/contextual-inquiry.md and content/blog/customer-journey-map-template.md (both published 2026-10-23, same silo), content/blog/choose-ux-research-agency.md (published), app/contact/page.tsx. /blog/card-sorting/ does NOT exist yet (no content/blog/card-sorting.md, no brief at 2026-10-24 start): CONDITIONAL, link only if it publishes with this post, else plain text 'card sorting'. Hub section ids via sectionId() (lowercase, non-alphanumerics to '-'): how-does-the-ux-research-process-work, how-much-does-ux-research-cost. Optional deep links into the cluster posts (blog ids via lib/blog.ts slugify): /blog/contextual-inquiry/#when-should-you-use-contextual-inquiry-and-when-not (heading 'When should you use contextual inquiry, and when not?', fits H2 2 family 2), /blog/customer-journey-map-template/#where-does-evidence-for-each-journey-map-lane-come-from (heading lists the methods that fill each lane; fits H2 6). Use at most one link per target page. ONE cross-hub link: usability-testing-services. No DOWN link with a research-method claim: no case study describes method choice; Mass Media Co. (user interviews + discovery workshop) may be linked only with that literal scope (see CONFLICT 2). Future cluster posts, plain text only (priority-queue items 5-10): importance of UX research, generative vs evaluative research, user persona template, quantitative UX research, UX ROI, healthcare UX research.",
+  "externalSources": [
+    {
+      "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+      "why": "Christian Rohrer, NN/g, 17 Jul 2022 (reviewed 15 Jul 2026): 3-dimensional framework (attitudinal/behavioral, qualitative/quantitative, context of use), time dimension (strategize, design, launch and assess; generative, formative, summative), 20 methods, combine methods. Paraphrase; never copy its order or chart."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/research-methods-glossary/",
+      "why": "Raluca Budiu, NN/g, 10 Sep 2023: definitions of first-click test, five-second test, formative/summative, focus group 6-9 people, diary study, tree testing."
+    },
+    {
+      "url": "https://www.nngroup.com/videos/why-40-participants-quantitative-research/",
+      "why": "Page Laubheimer, NN/g, 7 Oct 2024: about 40 participants for most quantitative studies. Matches usability hub FAQ."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/synthetic-users/",
+      "why": "Maria Rosala and Kate Moran, NN/g, 21 Jun 2024: synthetic users supplement but never substitute for real-user research; overly favorable, shallow. For FAQ 1."
+    },
+    {
+      "url": "https://dovetail.com/research/method-vs-methodology/",
+      "why": "Dovetail editorial (reviewed by Cathy Heath), updated 7 Mar 2023: method = procedure to accomplish an objective; methodology = the underlying strategy. For the H2 1 H3."
+    },
+    {
+      "url": "https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-types",
+      "why": "User Interviews field guide (updated 1 Nov 2025): continuous research after launch; moderated vs unmoderated, remote vs in-person axes."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/",
+      "why": "Jakob Nielsen, NN/g, 2000: the 5-user guidance for qualitative usability rounds. Not fetched this run; fact-checker confirms date and the 85% figure before print."
+    }
+  ],
+  "visuals": [
+    {
+      "type": "method, methodology, technique ladder",
+      "idea": "Three nested levels shown as a ladder or nested cards, left to right: methodology (user-centered design) -> method (usability testing) -> technique (think-aloud protocol), each with a one-line definition. Landscape 1200 x max 800. Text version under it. H2 1 H3."
+    },
+    {
+      "type": "question router board",
+      "idea": "A switchboard/lookup layout (not a yes/no tree): 8 product questions in plain words on the left, each routed to a primary method chip and a backup chip on the right, with a small 'cannot tell you' note. Text version = the router table. H2 2. Must look different from the contextual-inquiry comparison table and the CJM map-type matrix."
+    },
+    {
+      "type": "attitudinal-behavioral x qual-quant 2x2 map",
+      "idea": "Our own drawing: x axis qualitative (why) -> quantitative (how many), y axis attitudinal (say) -> behavioral (do); about 12 method dots with labels; caption credits the NN/g framework by Christian Rohrer. Text version = 4 quadrant lists. H2 3."
+    },
+    {
+      "type": "product-stage strip with programme steps",
+      "idea": "Horizontal strip: strategize (generative) | design (formative) | launch and assess (summative) | after launch (continuous), 3-4 methods per stage, and a second row showing the matching steps of our 5-step programme with day ranges from the hub. Text version as a list. H2 4."
+    },
+    {
+      "type": "method spec cards",
+      "idea": "12 compact cards in a 4 x 3 grid (one per method): name, data type tag, sample size, study length, main output; only the sample size number set large (house style scan-first). Text version = the H2 5 markdown table. H2 5."
+    },
+    {
+      "type": "combination chain",
+      "idea": "5 linked steps (analytics -> interviews -> card sort or tree test -> usability test -> A/B test) with what each hands the next on the connectors. Text version as an ol. H2 6."
+    }
+  ],
+  "visualsNote": "6 images (cap). The budget table (H2 7) and mistakes list (H2 8) stay in text. Follow docs/content-system/visual-style/README.md (landscape, max height 800, realistic house style). No visual may reproduce NN/g's landscape image or Maze's/formbricks' tables.",
+  "leadAngle": "Moment the reader wants the hub: after the router and spec table, the reader sees that a real product question usually needs 2-3 methods, a recruit of 10-15 people per user group, and synthesis across them. (1) End of H2 5: recruiting and quantitative sample sizes stall in-house plans; our programme makes participant recruitment its own step (hub: 3-6 days). (2) End of H2 6: findings fragment across methods; our programme ends in one readout (tagged in Dovetail, personas, journey maps, JTBD opportunity map, 90-minute readout). (3) Offer in H2 9: send us your research question and we will tell you in a free consultation which methods answer it and whether you need a full study; the programme runs 4-8 weeks, $25,000-$60,000 (hub cost section link). MOFU template CTA (case study + consultation) sits after H2 3; see CONFLICT 2. Do not promise a free research plan, a written method recommendation or a pilot study (not published offers).",
+  "variety": {
+    "type": "Comparison",
+    "introStyle": "three-question triage (three illustrative questions from one product meeting, each routed to a different method in the first paragraph). Used so far site-wide: buyer scenario, myth, data point with source, question, definition, mini case, contrarian take, itemized receipt, 60-second phone test, before/after roadmap row, ordered six-step answer, said-versus-did contrast, empty-cell hook. Nearest is 'question' (a single rhetorical question); this one routes three concrete questions to three methods.",
+    "h2Frames": [
+      "what are X (+ method/methodology/technique, same-as, academic types H3s)",
+      "which X answers your question (router)",
+      "what are the types and how do they differ (landscape)",
+      "which X fit each stage",
+      "X compared on sample size, length, output",
+      "how do you combine X",
+      "which X work on a small budget",
+      "which mistakes make X give the wrong answer",
+      "when should a team run X for you",
+      "FAQs"
+    ],
+    "sectionOrder": "triage intro -> definition + 3 H3s -> question router -> NN/g dimensions 2x2 -> stage strip -> spec table (cheat sheet) -> combination chain -> budget shortcuts -> mistakes -> when to bring in a team -> FAQs",
+    "visualTypes": [
+      "method, methodology, technique ladder",
+      "question router board",
+      "attitudinal-behavioral x qual-quant 2x2 map",
+      "product-stage strip with programme steps",
+      "method spec cards",
+      "combination chain"
+    ],
+    "ctaAngle": "send us your research question -> free consultation on which methods answer it (MOFU case study + consultation from the template)",
+    "listStyle": "router table + quadrant lists + stage list + 8-column spec table + combination ol + shortcut/what-you-lose table + mistake/fix bullets",
+    "differsFrom": "Last 3 site-wide and last 3 in the silo (ledger date order): customer-journey-map-template (Template / empty-cell hook; downloads, anatomy, map matrix, evidence map, filled example), contextual-inquiry (Guide / said-vs-did; split card, principle tiles, method comparison table, session strip, field-note sheet), how-to-design-an-mvp (Guide / ordered six-step answer), choose-ux-research-agency (Guide / buyer scenario; scorecard, red-flag map). Differs on type (Comparison), intro, H2 frames, section order, visuals, CTA angle and list style (7 of 7). Nearest structural relatives: (a) contextual-inquiry's comparison table (CI vs interviews vs usability vs ethnography): do NOT rebuild it; our spec table has 12 methods and different columns, and the router is organised by question, not by method. (b) The CI brief planned a 'method decision tree' (not shipped): our router is a lookup board, not a yes/no tree. (c) Comparison posts mobile-app-design-agency-vs-freelancer and ux-audit-agency-vs-freelancer: do NOT reuse their provider matrix, hybrid flow or scope sheet."
+  },
+  "notes": [
+    "Exact keyword 'ux research methods' in H1/title, slug, first 60 words, description (prescribed, 152 chars), first meta keyword, metaTitle start. No colon in metaTitle, H1 or coverTitle. No keyword or secondary contains 'vs'; three ngrams do and have carriers in keywordCarrierSecondary.",
+    "Cannibalisation check 2026-10-24: grep of content/ for 'research method' found only the hub ('The UX research method follows...', FAQ intro 'from research methods and participant counts'), the usability hub ('Usability testing is a research method') and contextual-inquiry.md ('a generative UX research method'). No page has it as keyword, metaTitle, anchor or H2. GSC: no 'method' query. This post never targets 'ux research services', 'ux research agency', 'ux research cost' or 'ux research process', has no cost or process H2 (deep links instead), and keeps the hub FAQ generative/evaluative answer to one stage section (future post owns it).",
+    "Parallel brief 'card sorting' (being written today): this post gives card sorting ONE router row (family 3), ONE spec-table row and one sentence; no open/closed/hybrid explanation, no steps, no analysis, no sample-size debate (CONFLICT 1). It links to /blog/card-sorting/ only if that post publishes the same day.",
+    "Pillar duty: this post links DOWN to every published cluster post (contextual-inquiry, customer-journey-map-template; card-sorting when live) and names future cluster topics in plain text in context (see H2 9 points). After publish, the link-builder should add a link from each cluster post's first relevant mention of 'UX research methods' or 'research methods' back to this pillar (see backlinkSuggestions).",
+    "Honesty, do not use: figr's $500,000 dashboard, 87% and 2-to-6-week anecdotes (unsourced); formbricks' participant ranges (unsourced; CONFLICT 3); Baymard's '200,000 hours', '700+ guidelines' and Fortune-500 claims (vendor marketing); Maze's diary-study table tags (contradictory); any ROI or uplift number for research; the home.ts MDS-nurses anecdote. The 3-question meeting in the intro and the worked example in H2 6 are illustrative composites; say so.",
+    "Fact-checker list: (1) Rohrer article date 2022 and 'reviewed 15 Jul 2026' wording; (2) focus group size: NN/g glossary 6-9 vs NN/g landscape 3-12 (print one with its source); (3) Nielsen 5-user article year (2000) and whether to print 85%; (4) Laubheimer 40-participant video date; (5) Creswell and Poth 5 approaches (4th ed., 2018) and the 4 quantitative designs for the academic H3; (6) Rosala and Moran 2024 synthetic users wording; (7) Dovetail method/methodology definitions.",
+    "Originality: beats page maze.co (what are methods -> 3 type pairs -> 11 methods with TL;DR and 'when to conduct' -> best type -> how to choose (goals, stage, insight) -> FAQ). Our order starts with the router and never lists methods one by one as H3s. Do not reuse Maze's method TL;DR format, its 3-step 'how to choose', its quotes from named practitioners or its FAQ wording. QA checks 5-gram overlap with the beats page (max 5%).",
+    "CONFLICTS for the orchestrator: siteFacts.conflicts 1-3 (hub 30-50 vs NN/g 15 card sort; MOFU CTA prints Mass Media Co. 30% result; formbricks numbers) plus the still-open CI CONFLICT 1 (hub 'contextual inquiry needs on-site visits').",
+    "Template CTA check (lessons 2026-10-14/10-20): funnel mofu -> inline CTA prints cases[0] = Mass Media Co. ('30% increase in order processing efficiency'); not caused by method choice (CONFLICT 2). Hub priceRange is not printed in the MOFU variant when a case exists."
+  ],
+  "competitorsUpdate": {
+    "note": "For the orchestrator to merge into docs/content-system/competitors.json (this agent does not rewrite the shared registry).",
+    "domains": [
+      {
+        "domain": "maze.co",
+        "kind": "research tool blog/guides",
+        "silos": ["ux-research-services"],
+        "seenFor": ["ux research methods", "user research methods", "types of user research", "ux research techniques", "ux research methodology", "types of ux research"],
+        "source": "Ahrefs serp-overview 2026-10-24 (add ux-research-services to the existing maze.co entry)"
+      },
+      {
+        "domain": "formbricks.com",
+        "kind": "survey tool blog",
+        "silos": ["ux-research-services"],
+        "seenFor": ["user research methods", "types of user research", "user experience research methods"],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      },
+      {
+        "domain": "figr.design",
+        "kind": "AI design tool blog",
+        "silos": ["ux-research-services"],
+        "seenFor": ["ux research methods", "user research methods"],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      },
+      {
+        "domain": "progress.com",
+        "kind": "software vendor blog",
+        "silos": ["ux-research-services"],
+        "seenFor": ["user research methods", "types of user research"],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      },
+      {
+        "domain": "userinterviews.com",
+        "kind": "research recruiting platform field guide",
+        "silos": ["ux-research-services"],
+        "seenFor": ["types of user research", "ux research methods", "ux research techniques"],
+        "source": "Ahrefs serp-overview 2026-10-24 (add ux-research-services to the existing entry)"
+      },
+      {
+        "domain": "nngroup.com",
+        "kind": "UX research institute (citable source, not a target)",
+        "silos": ["ux-research-services"],
+        "seenFor": ["ux research methods (articles/which-ux-research-methods, #2)", "types of user research (articles/research-methods-glossary)"],
+        "source": "Ahrefs serp-overview 2026-10-24 (add ux-research-services to the existing entry)"
+      }
+    ],
+    "topPosts": [
+      {
+        "domain": "maze.co",
+        "url": "https://maze.co/guides/ux-research/methods/",
+        "title": "11 UX Research Methods and When to Use Them",
+        "keywords": ["ux research methods", "user research methods", "types of user research", "ux research techniques"],
+        "estTraffic": 473,
+        "silo": "ux-research-services",
+        "serviceSupport": 4,
+        "status": "briefed",
+        "brief": "content/briefs/ux-research-methods.json"
+      },
+      {
+        "domain": "formbricks.com",
+        "url": "https://formbricks.com/blog/user-research-methods",
+        "title": "User Research Methods: 13 Techniques and How to Choose (2026)",
+        "keywords": ["user research methods"],
+        "estTraffic": 89,
+        "silo": "ux-research-services",
+        "serviceSupport": 4,
+        "status": "briefed",
+        "brief": "content/briefs/ux-research-methods.json"
+      },
+      {
+        "domain": "userinterviews.com",
+        "url": "https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-types",
+        "title": "Types of User Research Methods",
+        "keywords": ["types of user research"],
+        "estTraffic": 166,
+        "silo": "ux-research-services",
+        "serviceSupport": 4,
+        "status": "briefed",
+        "brief": "content/briefs/ux-research-methods.json"
+      }
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "file": "content/blog/contextual-inquiry.md",
+      "field": "body, H2 'When should you use contextual inquiry, and when not?' (the 'wrong method' list) or the first sentence that says 'research method'",
+      "sentence": "",
+      "change": "Link the phrase about choosing a different method (e.g. 'a different research method') to /blog/ux-research-methods/. Link-builder picks the exact sentence after build with npm run links:find.",
+      "anchor": "choosing between UX research methods",
+      "priority": "required",
+      "why": "Cluster post -> pillar link in the same silo; the section is literally about picking another method, so a reader will click."
+    },
+    {
+      "file": "content/blog/customer-journey-map-template.md",
+      "field": "body, H2 'Where does evidence for each journey map lane come from?'",
+      "sentence": "",
+      "change": "Link the first mention of the research methods that fill the lanes to /blog/ux-research-methods/.",
+      "anchor": "which UX research method fills each lane",
+      "priority": "required",
+      "why": "Same silo; the section lists methods as evidence sources, which the pillar explains."
+    },
+    {
+      "file": "content/services/ux-research-services.json",
+      "field": "sections[h2='UX research FAQs'].answer ('...from research methods and participant counts...')",
+      "sentence": "These six answers cover UX research services from research methods and participant counts to remote sessions, personas, startups and consulting.",
+      "change": "none on this sentence",
+      "anchor": "",
+      "priority": "skip",
+      "why": "Section-intro sentence; a link here would sit in the FAQ header, not where a reader decides. Prefer the next suggestion."
+    },
+    {
+      "file": "content/services/ux-research-services.json",
+      "field": "sections[h2='What is UX research?'].answer, sentence 2 ('UX research runs in 2 modes: generative research finds what to build, and evaluative research checks whether a design works for users.')",
+      "sentence": "UX research runs in 2 modes: generative research finds what to build, and evaluative research checks whether a design works for users.",
+      "change": "Add after it, in body: one natural sentence such as 'Our guide to <a href=\"/blog/ux-research-methods/\">UX research methods</a> shows which method answers which product question.' Hub banking from pillar money page to the cluster pillar post. Live page: body edits allowed, title untouched (Keywords rule 6).",
+      "anchor": "UX research methods",
+      "priority": "required",
+      "why": "Hub -> cluster pillar link on the exact concept; the hub is the page we are trying to lift (GSC pos 18), and the post passes topical depth back up."
+    },
+    {
+      "file": "content/blog/choose-ux-research-agency.md",
+      "field": "body, H2 'What decision should the research answer first?'",
+      "sentence": "",
+      "change": "Link the sentence about generative vs evaluative methods to /blog/ux-research-methods/ (anchor on the method choice, not the agency).",
+      "anchor": "which research method fits the decision",
+      "priority": "required",
+      "why": "Only BOFU sibling; buyers judging an agency's method fit will click. Keep it to one link (BOFU stays lean, RULES.md link rule 6)."
+    }
+  ]
+}
