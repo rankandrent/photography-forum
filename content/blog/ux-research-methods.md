@@ -35,7 +35,7 @@ They are the working tools of UX research, the discipline that studies what user
 
 **The UX methodology is user-centered design, the research methodology that grounds each product decision in evidence about users; methods and techniques are the tools that gather it.**
 
-For Dovetail's editors, [a method is a procedure for reaching an objective, and a methodology is the strategy underneath it](https://dovetail.com/research/method-vs-methodology/). The third level below is our own framing:
+Dovetail's guide to method vs methodology puts it simply: a method is a procedure for reaching an objective, and a methodology is the strategy underneath it. The third level below is our own framing:
 
 - **Methodology:** the strategy, for example user-centered design or an ethnographic approach.
 - **Method:** the procedure that collects data, for example a usability test.
@@ -53,8 +53,8 @@ The useful contrast is with market research, which asks who buys and at what pri
 
 **User research techniques borrow from academic research, but no single standard list of seven research methods exists, and UX teams choose by product decision rather than by textbook category.**
 
-- **Quantitative designs** are often taught as four types: [descriptive, correlational, quasi-experimental and experimental](https://www.gcu.edu/blog/doctoral-journey/types-quantitative-research-methods-designs).
-- **Qualitative approaches** number five in John Creswell and Cheryl Poth's [Qualitative Inquiry and Research Design: Choosing Among Five Approaches](https://enmu.libguides.com/EmpiricalResearch/designing) (4th edition, 2018): narrative research, phenomenology, grounded theory, ethnography and case study.
+- **Quantitative designs** are often taught as four types, for example [descriptive, comparative, quasi-experimental and experimental](https://csus.libguides.com/res-meth/quant-res) in Sacramento State's library guide, though textbooks differ on the exact set.
+- **Qualitative approaches** number five in John Creswell and Cheryl Poth's *Qualitative Inquiry and Research Design: Choosing Among Five Approaches* (4th edition, 2018): narrative research, phenomenology, grounded theory, ethnography and case study.
 
 Lists of "seven types" mix these with other categories and vary by author. In product work, ethnography lives on as the field study and contextual inquiry, and the experiment returns as A/B testing. Start from your question, then find the method.
 
@@ -106,7 +106,7 @@ Christian Rohrer's landscape for Nielsen Norman Group (NN/g), [When to Use Which
 
 </details>
 
-Some methods sit in the middle: a usability test is qualitative with 5 participants and quantitative with 40. Two practical axes sit on top, moderation (moderated or unmoderated) and research setting (remote or in-person), both described in the [User Interviews field guide](https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-types). A later guide covers quantitative UX research in depth. Label each planned study on all three NN/g dimensions before you choose a tool.
+Some methods sit in the middle: a usability test is qualitative with 5 participants and quantitative with 40. Two practical axes sit on top, moderation (moderated or unmoderated) and research setting (remote or in-person), both described in the User Interviews field guide chapter on types of user research. A later guide covers quantitative UX research in depth. Label each planned study on all three NN/g dimensions before you choose a tool.
 
 ### What is the difference between attitudinal and behavioral research?
 
@@ -124,7 +124,7 @@ Qualitative research runs on small samples and interpretation; quantitative rese
 
 **User research methods follow the product stage, so the same product decision gets generative methods before design, formative methods during it and summative methods after launch.**
 
-NN/g's time dimension names three stages: strategize, design, and launch and assess. Generative research, such as interviews, a diary study or participatory design, shapes what to build during discovery. Evaluative research then checks the work: formative studies improve a design in progress, and a summative evaluation measures the finished product, often against a competitor, per [NN/g's methods glossary](https://www.nngroup.com/articles/research-methods-glossary/). After launch, the User Interviews guide adds continuous research that keeps feedback flowing.
+NN/g's time dimension names three stages: strategize, design, and launch and assess. Generative research, such as interviews, a diary study or participatory design, shapes what to build during discovery. Evaluative research then checks the work: formative studies improve a design in progress, and a summative evaluation measures the finished product, usually against a competitor or an earlier version of itself, per [NN/g's methods glossary](https://www.nngroup.com/articles/research-methods-glossary/). After launch, the User Interviews guide adds continuous research that keeps feedback flowing.
 
 <!-- visual: product-stage strip with program steps — horizontal strip strategize | design | launch and assess | after launch, 3–4 method chips per stage, and a second row with the matching steps of our 5-step program and their day ranges from the hub. -->
 
@@ -143,7 +143,7 @@ A planned guide on generative and evaluative research goes deeper on that split.
 
 **User research techniques differ most in sample size, from 5 participants per round of qualitative usability testing to 40 for a quantitative test, as the research question demands.**
 
-The table below is a one-table UX research methods cheat sheet that compares 12 methods on the question each answers, data type, data source, sample size, study length, main output and moderation. "Our program" marks figures from our hub page.
+The table below is a one-table UX research methods cheat sheet that compares 12 methods on the question each answers, data type, data source, sample size, study length, main output and moderation. "Our program" marks figures from our own research program.
 
 <!-- visual: method spec cards — 12 compact cards in a 4 x 3 grid, one per method: name, data type tag, sample size (the only large number), study length, main output. -->
 
@@ -196,7 +196,9 @@ Take the meeting's first question, why trial users stall at setup, as an illustr
 
 Our program follows the same logic: research plan, participant recruitment, interviews and contextual inquiry, then card sorts and tree tests on the early information architecture, plus concept testing of design ideas. Synthesis turns the findings into personas and journey maps (2–4 personas, 1 journey map per persona) and a Jobs to be Done (JTBD) opportunity map. Our [customer journey map template](/blog/customer-journey-map-template/) shows how evidence from several methods fills each lane, and a user persona template is planned.
 
-Findings fragment across methods at synthesis, which is why [how our five-step research program runs](/services/ux-research-services/#how-does-the-ux-research-process-work) ends with findings tagged in Dovetail and a 90-minute readout. Before you run a second method, write down what the first must hand it.
+In a real engagement for a B2B marketing platform, we ran user interviews alongside the [Mass Media Co. discovery workshop](/case-studies/mass-media-co/) with stakeholders and users, which covered product definition, strategy, information architecture and user flows.
+
+Findings fragment across methods at synthesis, which is why our five-step research program ends with findings tagged in Dovetail and a 90-minute readout. Before you run a second method, write down what the first must hand it.
 
 ## Which UX research methods work on a small budget?
 
@@ -212,7 +214,7 @@ Method cost comes from three lines: recruiting, researcher hours and tools. The 
 | Existing analytics instead of a new survey | Where behavior changes | Attitudes and reasons |
 | One 5-user usability round instead of none | The biggest usability problems | Any percentage or rate |
 
-Our hub's startup example sets a floor: 8–10 user interviews show which problem to solve before engineering budget goes into a build. The cheapest useful study is one whose answer changes a product decision; if no result would change the plan, keep the budget.
+For a startup, 8–10 user interviews set a floor: they show which problem to solve before engineering budget goes into a build. The cheapest useful study is one whose answer changes a product decision; if no result would change the plan, keep the budget.
 
 ## Which mistakes make UX research methods mislead you?
 
@@ -245,7 +247,7 @@ Write the question down first, as one sentence that ends in the decision it sett
 
 ### Is UX research being replaced by AI?
 
-No. Artificial intelligence (AI) speeds up transcription, tagging and first-pass synthesis, but [synthetic users](https://www.nngroup.com/articles/synthetic-users/), AI-generated profiles that simulate a user group, cannot stand in for real people. NN/g's Maria Rosala and Kate Moran (2024) advise against using them as a replacement and suggest treating their output as hypotheses to test. We use AI to speed up production, while the judgment about what to design comes from research and pattern recognition across 200+ products.
+No. Artificial intelligence (AI) speeds up transcription, tagging and first-pass synthesis, but synthetic users, AI-generated profiles that simulate a user group, cannot stand in for real people. In their NN/g article on synthetic users, Maria Rosala and Kate Moran (2024) advise against using them as a replacement and suggest treating their output as hypotheses to test. We use AI to speed up production, while the judgment about what to design comes from research and pattern recognition across 200+ products.
 
 ### What is the 5-user rule for usability testing?
 
@@ -257,7 +259,7 @@ No single standard trio exists; teams usually mean one of three pairs. Moderated
 
 ### What are the five steps of UX research?
 
-In our program the five steps are research framing, participant recruitment, generative fieldwork, evaluative studies, and synthesis and readout. Together they take 4–8 weeks (20–40 working days), and the hub page lists the days for each step.
+In our program the five steps are research framing, participant recruitment, generative fieldwork, evaluative studies, and synthesis and readout. Together they take 4–8 weeks (20–40 working days), with recruitment and synthesis each scheduled as a step of its own.
 
 ### How many UX research methods should one study use?
 

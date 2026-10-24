@@ -692,9 +692,9 @@
   "backlinkSuggestions": [
     {
       "file": "content/blog/contextual-inquiry.md",
-      "field": "body, H2 'When should you use contextual inquiry, and when not?' (the 'wrong method' list) or the first sentence that says 'research method'",
-      "sentence": "",
-      "change": "Link the phrase about choosing a different method (e.g. 'a different research method') to /blog/ux-research-methods/. Link-builder picks the exact sentence after build with npm run links:find.",
+      "field": "body, H2 'When should you use contextual inquiry, and when not?' (#when-should-you-use-contextual-inquiry-and-when-not), closing line right after the 'wrong method' list (line 140)",
+      "sentence": "If your product matches the first list, schedule observed sessions before the first wireframe.",
+      "change": "Append one sentence after it: 'If it matches the second, [choosing between UX research methods](/blog/ux-research-methods/#which-ux-research-method-answers-your-research-question) by the question you need answered points to the better fit.' Jump id from lib/blog.ts slugify of the H2 'Which UX research method answers your research question?'. Not on line 32 (bold extractive answer).",
       "anchor": "choosing between UX research methods",
       "priority": "required",
       "why": "Cluster post -> pillar link in the same silo; the section is literally about picking another method, so a reader will click."
@@ -702,9 +702,9 @@
     {
       "file": "content/blog/customer-journey-map-template.md",
       "field": "body, H2 'Where does evidence for each journey map lane come from?'",
-      "sentence": "",
-      "change": "Link the first mention of the research methods that fill the lanes to /blog/ux-research-methods/.",
-      "anchor": "which UX research method fills each lane",
+      "sentence": "The table maps each research source to the lanes it fills and its blind spot.",
+      "change": "Replace with (still introduces the table, table-intro rule): 'The table maps each research source to the lanes it fills and its blind spot; for sample sizes and outputs across 12 studies, see [how UX research methods compare on sample size and output](/blog/ux-research-methods/#ux-research-methods-by-sample-size-length-and-output).' Line 151, section #where-does-evidence-for-each-journey-map-lane-come-from. Anchor changed from 'which UX research method fills each lane' because the pillar does not answer lanes; the anchor must promise what the target section answers.",
+      "anchor": "how UX research methods compare on sample size and output",
       "priority": "required",
       "why": "Same silo; the section lists methods as evidence sources, which the pillar explains."
     },
@@ -721,7 +721,7 @@
       "file": "content/services/ux-research-services.json",
       "field": "sections[h2='What is UX research?'].answer, sentence 2 ('UX research runs in 2 modes: generative research finds what to build, and evaluative research checks whether a design works for users.')",
       "sentence": "UX research runs in 2 modes: generative research finds what to build, and evaluative research checks whether a design works for users.",
-      "change": "Add after it, in body: one natural sentence such as 'Our guide to <a href=\"/blog/ux-research-methods/\">UX research methods</a> shows which method answers which product question.' Hub banking from pillar money page to the cluster pillar post. Live page: body edits allowed, title untouched (Keywords rule 6).",
+      "change": "Add to the same section's `body` field (renders HTML, already holds an <a>), appended after '...the human-centred design process of ISO 9241-210.': ' Our guide to <a href=\"/blog/ux-research-methods/\">UX research methods</a> shows which method answers which product question.' Not in `answer` (keep the bold extractive answer link-free). Live page: body edits allowed, title untouched (Keywords rule 6).",
       "anchor": "UX research methods",
       "priority": "required",
       "why": "Hub -> cluster pillar link on the exact concept; the hub is the page we are trying to lift (GSC pos 18), and the post passes topical depth back up."
@@ -732,8 +732,15 @@
       "sentence": "",
       "change": "Link the sentence about generative vs evaluative methods to /blog/ux-research-methods/ (anchor on the method choice, not the agency).",
       "anchor": "which research method fits the decision",
-      "priority": "required",
-      "why": "Only BOFU sibling; buyers judging an agency's method fit will click. Keep it to one link (BOFU stays lean, RULES.md link rule 6)."
+      "priority": "optional",
+      "why": "Only BOFU sibling; buyers judging an agency's method fit will click. Keep it to one link (BOFU stays lean, RULES.md link rule 6). Link-builder 2026-10-24: downgraded to optional (orchestrator asked for hub + 2 cluster posts only). card-sorting.md line 35 already links up to this pillar, so no suggestion is needed there."
     }
-  ]
+  ],
+  "related": {
+    "linkBuilderRun": "2026-10-24",
+    "internalCount": "9 body links: hub root (line 26, exact anchor 'UX research services', within first 300 words), hub #how-much-does-ux-research-cost (closing section), /services/usability-testing-services/ (the one other hub), /blog/card-sorting/, /blog/contextual-inquiry/, /blog/customer-journey-map-template/, /blog/choose-ux-research-agency/, /case-studies/mass-media-co/ (hub-tagged; sentence uses only its scope 'user interviews' and 'We ran a discovery workshop with MMC stakeholders and users ... covered product definition, strategy, information architecture and user flows'; reused existing sitewide anchor 'Mass Media Co. discovery workshop'), /contact/. Inside TOFU 8-12 and MOFU 6-10.",
+    "removedInternalLinks": "Hub #how-does-the-ux-research-process-work (3rd hub link, over the 1-2 cap); sentence kept as plain text 'our five-step research program ends with findings tagged in Dovetail and a 90-minute readout'. FAQ 'five steps' line 'the hub page lists the days for each step' rewritten to 'with recruitment and synthesis each scheduled as a step of its own'; 'from our hub page' and 'Our hub's startup example' reworded (no unlinked page references).",
+    "externalSources": "5 links, all WebFetch-verified 2026-10-24: nngroup which-ux-research-methods (Rohrer, 17 Jul 2022: 20 methods, 3 dimensions, 'most usability studies should rely on behavior', 'nearly all projects would benefit from multiple research methods'); csus.libguides.com/res-meth/quant-res ('Four types of Quantitative Research': descriptive, comparative, quasi-experimental, experimental) REPLACES gcu.edu, whose page lists 5+ designs, not four; nngroup research-methods-glossary (Budiu, 10 Sep 2023: summative 'usually by comparing it with that of a competitor or of one of its own prior versions', focus group 6-9); nngroup why-you-only-need-to-test-with-5-users (Nielsen, 18 Mar 2000, 85%); nngroup videos/why-40-participants-quantitative-research (Laubheimer, 7 Oct 2024).",
+    "removedExternalLinks": "Verified but unlinked to meet the 5 cap, named in text instead: dovetail.com/research/method-vs-methodology ('Dovetail's guide to method vs methodology'; quotes match); enmu.libguides.com/EmpiricalResearch/designing (Creswell and Poth book title printed in full; page confirms the 5 approaches and the 4th edition, but lists both 2018 call number and 2017-01-25 publication date: fact-checker to confirm 2018); userinterviews.com user-research-types ('User Interviews field guide chapter on types of user research'; moderated/unmoderated, remote/in-person, continuous research confirmed); nngroup.com/articles/synthetic-users ('their NN/g article on synthetic users', Rosala and Moran, 21 Jun 2024; 'Treat the data ... as hypotheses that need testing' confirmed). Removed: gcu.edu types-quantitative-research-methods-designs (does not support 'four types')."
+  }
 }
