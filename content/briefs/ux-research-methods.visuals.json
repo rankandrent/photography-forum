@@ -1,0 +1,27 @@
+[
+  {
+    "marker": "<!-- visual: question router board — switchboard layout, not a yes/no tree: 8 plain-language product questions on the left, each wired to a primary method chip and a backup chip, with a small \"cannot tell you\" note per row. Must look unlike the contextual-inquiry comparison table. -->",
+    "markdown": "![Question router board wiring eight product questions to a primary UX research method, a backup method and what each method cannot tell you](/blog/ux-research-methods/research-question-router.svg \"UX research methods matched to eight product questions\")"
+  },
+  {
+    "marker": "<!-- visual: attitudinal-behavioral x qual-quant 2x2 map — our own drawing, x axis qualitative (why) to quantitative (how many), y axis attitudinal (say) to behavioral (do), about 12 labelled method dots; caption credits the NN/g framework by Christian Rohrer. Not a copy of NN/g's chart. -->",
+    "markdown": "![Whiteboard 2x2 of UX research methods, attitudinal vs behavioral and qualitative vs quantitative, with 15 methods on sticky notes](/blog/ux-research-methods/attitudinal-behavioral-qual-quant-map.svg \"Attitudinal vs behavioral and qualitative vs quantitative UX research methods, our drawing of the NN/g framework by Christian Rohrer\")"
+  },
+  {
+    "marker": "<!-- visual: product-stage strip with program steps — horizontal strip strategize | design | launch and assess | after launch, 3–4 method chips per stage, and a second row with the matching steps of our 5-step program and their day ranges from the hub. -->",
+    "markdown": "![Research plan board of UX research methods by product stage, strategize, design, launch and assess and after launch, with our program steps and day ranges](/blog/ux-research-methods/product-stage-research-methods.svg \"UX research methods for each product stage, with our program steps\")"
+  },
+  {
+    "marker": "<!-- visual: method spec cards — 12 compact cards in a 4 x 3 grid, one per method: name, data type tag, sample size (the only large number), study length, main output. -->",
+    "markdown": "![Twelve UX research method cards showing data type, data source, sample size, study length, main output and moderation](/blog/ux-research-methods/ux-research-method-spec-cards.svg \"UX research methods cheat sheet by sample size, length and output\")"
+  },
+  {
+    "marker": "<!-- visual: combination chain — 5 linked steps left to right, with what each step hands the next written on the connectors. -->",
+    "markdown": "![Five-step chain of UX research methods, analytics, user interviews, card sorting or tree testing, a usability test and A/B testing, with what each step hands the next](/blog/ux-research-methods/research-method-combination-chain.svg \"How UX research methods combine, each one handing its finding to the next\")"
+  },
+  {
+    "frontmatter": {
+      "image": "/blog/ux-research-methods/cover.svg"
+    }
+  }
+]

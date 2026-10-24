@@ -17,8 +17,9 @@ takeaways:
   - "Nielsen Norman Group sorts every method by data source (say or do), data type (why or how many) and context of use."
   - "Sample sizes differ by method: 5 participants per round of qualitative usability testing, 10–15 interview participants per user group, 40 for a quantitative test."
   - "Most product decisions need 2–3 methods, each answering the question the previous one raised."
-draft: true
+draft: false
 qa: pending
+image: "/blog/ux-research-methods/cover.svg"
 ---
 
 UX research methods each answer a different kind of question, and one product meeting can raise three at once: why do trial users stall at setup, can people find invoices in the new menu, and how many accounts hit the export bug? The first calls for user interviews, the second for a tree test and the third for product analytics or a survey. The meeting is an illustrative composite, not a client.
@@ -64,7 +65,7 @@ Lists of "seven types" mix these with other categories and vary by author. In pr
 
 A flawless survey still cannot explain why people abandon a form. Find your question below to see when to use each method, run the primary one and keep the backup for when time or traffic runs short.
 
-<!-- visual: question router board — switchboard layout, not a yes/no tree: 8 plain-language product questions on the left, each wired to a primary method chip and a backup chip, with a small "cannot tell you" note per row. Must look unlike the contextual-inquiry comparison table. -->
+![Question router board wiring eight product questions to a primary UX research method, a backup method and what each method cannot tell you](/blog/ux-research-methods/research-question-router.svg "UX research methods matched to eight product questions")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -95,7 +96,7 @@ Christian Rohrer's landscape for Nielsen Norman Group (NN/g), [When to Use Which
 - **Data type:** the qualitative vs quantitative question (why, or how many). Qualitative data comes from watching or hearing people; quantitative data arrives through an instrument such as a user survey or analytics tool.
 - **Context of use:** natural (a field study), scripted (usability benchmarking), limited (card sorting) or none (a desirability study, where people pick words for their reaction to a product).
 
-<!-- visual: attitudinal-behavioral x qual-quant 2x2 map — our own drawing, x axis qualitative (why) to quantitative (how many), y axis attitudinal (say) to behavioral (do), about 12 labelled method dots; caption credits the NN/g framework by Christian Rohrer. Not a copy of NN/g's chart. -->
+![Whiteboard 2x2 of UX research methods, attitudinal vs behavioral and qualitative vs quantitative, with 15 methods on sticky notes](/blog/ux-research-methods/attitudinal-behavioral-qual-quant-map.svg "Attitudinal vs behavioral and qualitative vs quantitative UX research methods, our drawing of the NN/g framework by Christian Rohrer")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -126,7 +127,7 @@ Qualitative research runs on small samples and interpretation; quantitative rese
 
 NN/g's time dimension names three stages: strategize, design, and launch and assess. Generative research, such as interviews, a diary study or participatory design, shapes what to build during discovery. Evaluative research then checks the work: formative studies improve a design in progress, and a summative evaluation measures the finished product, usually against a competitor or an earlier version of itself, per [NN/g's methods glossary](https://www.nngroup.com/articles/research-methods-glossary/). After launch, the User Interviews guide adds continuous research that keeps feedback flowing.
 
-<!-- visual: product-stage strip with program steps — horizontal strip strategize | design | launch and assess | after launch, 3–4 method chips per stage, and a second row with the matching steps of our 5-step program and their day ranges from the hub. -->
+![Research plan board of UX research methods by product stage, strategize, design, launch and assess and after launch, with our program steps and day ranges](/blog/ux-research-methods/product-stage-research-methods.svg "UX research methods for each product stage, with our program steps")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -145,7 +146,7 @@ A planned guide on generative and evaluative research goes deeper on that split.
 
 The table below is a one-table UX research methods cheat sheet that compares 12 methods on the question each answers, data type, data source, sample size, study length, main output and moderation. "Our program" marks figures from our own research program.
 
-<!-- visual: method spec cards — 12 compact cards in a 4 x 3 grid, one per method: name, data type tag, sample size (the only large number), study length, main output. -->
+![Twelve UX research method cards showing data type, data source, sample size, study length, main output and moderation](/blog/ux-research-methods/ux-research-method-spec-cards.svg "UX research methods cheat sheet by sample size, length and output")
 
 <details class="astext"><summary>Show as text</summary>
 
@@ -180,7 +181,7 @@ Quantitative sample sizes and hard-to-reach users are where in-house plans stall
 
 Two methods that agree let you triangulate: a drop-off seen in analytics and explained in interviews beats either alone. Rohrer notes that nearly all projects gain when teams combine methods, yet many use only the one or two they know best.
 
-<!-- visual: combination chain — 5 linked steps left to right, with what each step hands the next written on the connectors. -->
+![Five-step chain of UX research methods, analytics, user interviews, card sorting or tree testing, a usability test and A/B testing, with what each step hands the next](/blog/ux-research-methods/research-method-combination-chain.svg "How UX research methods combine, each one handing its finding to the next")
 
 <details class="astext"><summary>Show as text</summary>
 
