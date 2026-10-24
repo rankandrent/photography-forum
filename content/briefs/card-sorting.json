@@ -1,0 +1,781 @@
+{
+  "slug": "card-sorting",
+  "keyword": "card sorting",
+  "keywordCarrier": {
+    "exactString": "card sorting",
+    "spellingNote": "Print 'card sorting' (lowercase mid-sentence, 'Card sorting' at sentence start), always as two words. kwCount counts the literal phrase after norm() in scripts/onpage-audit.mjs, which deletes in-word hyphens: 'card-sorting' becomes 'cardsorting' and does NOT count, so never hyphenate it (write 'a card sorting study', not 'a card-sorting study'). 'card sort' and 'card sorts' never contain 'card sorting' either. Use 'card sort' as the synonym (bindings) 4-6 times, never as a substitute for the keyword in the H1, first sentence, description or H2s. 'open/closed/hybrid/modified-Delphi card sorting' all contain the literal phrase and count. Plain 2-word noun phrase: works as subject ('Card sorting shows...') or modifier ('card sorting tools'), so no special carrier is needed. Frontmatter keyword exactly 'card sorting'; first meta keyword 'card sorting'.",
+    "title": "Card Sorting Guide to Open, Closed and Hybrid Sorts for Navigation",
+    "titleNote": "66 chars (45-70 rule, counted with python). H1 and coverTitle. Exact keyword first, NO colon (Keywords rule 4). Carries the owner's angle (open, closed, hybrid; information architecture expressed as navigation, the word buyers use).",
+    "metaTitle": "Card Sorting | Open, Closed and Hybrid Sorts for Navigation",
+    "metaTitleNote": "59 chars, starts with the exact keyword then ' | ', no colon. Never put 'UX research services', 'UX research agency', 'UX research methods', 'cost' or 'tree testing' in the title (hub, choose-ux-research-agency, the parallel pillar and the future tree-testing post own them).",
+    "description": "Card sorting shows how users group content. Choose open, closed or hybrid, size the study, read the results, plan a tree test, then book a free consultation.",
+    "descriptionNote": "157 chars (python). Use as written: keyword first, what the reader gets, then the MOFU next step (consultation). Pronoun check: no pronouns. No apostrophes, no colon.",
+    "inBody": "Keyword in the first sentence of the intro paragraph that follows the one-card hook, at the latest within the first 60 words (the hook itself may open with the card label). Literal uses: 16-20 in about 2,300 words (max = 0.02 x 2,300 / 2 = 23). 8 of 10 H2s carry the literal phrase (see outline); that already meets the 40% H2 rule.",
+    "secondary": {
+      "card sorting vs tree testing": "the card sorting vs tree testing question is about order, not choice"
+    },
+    "density": "Rivals to cap (each must stay at or below 2x the literal 'card sorting' count, ideally under it): 'tree testing' (max 12 uses), 'information architecture' (max 12; write 'information architecture (IA)' once, then vary with 'navigation', 'site structure', 'menu'), 'open card sorting' / 'closed card sorting' / 'hybrid card sorting' each contain the keyword, so every use also counts toward kwCount."
+  },
+  "secondary": [
+    "card sort",
+    "card sorting ux",
+    "what is card sorting",
+    "open card sorting",
+    "closed card sorting",
+    "hybrid card sorting",
+    "card sorting example",
+    "card sorting analysis",
+    "card sorting tools",
+    "card sorting vs tree testing",
+    "how to do card sorting"
+  ],
+  "secondaryNote": "All from ONE Ahrefs keywords-explorer/overview call, US, 2026-10-24 (figures in dataSource). Page 1 checked with Ahrefs serp-overview for every entry: all UX-method guides except 'card sorting tools', whose page 1 mixes UX tool lists (maze, figma, optimalworkshop, uxtweak, freecardsort, lyssna) with shopping rows for trading-card sorting trays; keep it as an H2 about UX tools and add the disambiguation context word ('online card sorting tools for UX research'). 'card sorting vs tree testing' is the only 'vs' entry; carrier in keywordCarrier.secondary. Tested and NOT added: 'card sorting template' (250/3, parent topic 'card sorting online', page 1 = Miro/FigJam boards; we ship no template file, so no promise); 'remote card sorting' (100/7, parent topic 'free card sorting tool', tool intent; covered by the format H3 and FAQ 3); 'card sorting method' (50, Ahrefs KD 75 and parent topic 'visa gift card balance' = data noise; the word 'method' is used naturally); 'moderated card sorting' (0); 'open vs closed card sorting' (10, folded into H2 3); 'card sorting information architecture' (10, folded into H2 2); 'information architecture' (5,400/45, broad parent concept, printed as an entity, never targeted); 'tree testing' (600/34) reserved for the future tree-testing post (priority-queue 'later').",
+  "intent": "Informational with planning intent (MOFU). The searcher is a product designer, PM or design lead who must restructure navigation (new product, redesign, merged products, crowded settings or help center) and wants to know which card sort to run, how many cards and participants, how to read the results and what to do next. Service pull: 'Card sort and tree test' is one of the hub's 6 named deliverables (Optimal Workshop studies, 30-50 participants) and sits in the hub's 'Evaluative studies (4-8 days)' step; recruiting 30-50 participants per user group and reading a dendrogram are where in-house teams stall.",
+  "volume": 1300,
+  "kd": 15,
+  "dataSource": "Ahrefs API v3 keywords-explorer/overview, US, re-verified by this agent on 2026-10-24 (matches the queue figure of 2026-10-22): card sorting 1,300 / KD 15 (informational; SERP features ai_overview, ai_overview_sitelink, image_th, sitelink, question, image; traffic potential 1,100, parent topic 'card sorting'). Same call: card sort 350/0 (TP 10, parent 'closed card sort'); card sorting template 250/3; card sorting ux 200/0 (TP 1,300); card sorting tools 200/3; open card sorting 150/13; closed card sorting 150/0; card sorting example 150/7; what is card sorting 100/15; remote card sorting 100/7; card sorting analysis 80/2; card sorting vs tree testing 80/2; hybrid card sorting 70/0; online card sorting 70/10; card sorting exercise 70/20; card sorting ux research 70/16; card sorting method 50/75 (noise); how to do card sorting 30/0; card sorting information architecture 10/11; open vs closed card sorting 10/1; moderated card sorting 0; tree testing 600/34; information architecture 5,400/45. 'is card sorting qualitative or quantitative' 70/mo from Ahrefs site-explorer/top-pages (top keyword of ixdf.org/literature/topics/card-sorting, 2026-10-20 snapshot). Ahrefs serp-overview (country us, top 20) 2026-10-24 for card sorting, card sorting ux, what is card sorting, open card sorting, card sorting example, card sort, card sorting tools, how to do card sorting, closed card sorting, hybrid card sorting, card sorting analysis, card sorting vs tree testing. Semrush: no_api_units on 2026-10-24 (one test call). GSC docs/data/gsc/latest.json: no query containing 'card', 'sort', 'tree' or 'architecture'. WebFetch OK 2026-10-24: nngroup.com (card-sorting-definition, card-sorting-how-many-users-to-test, card-sorting-tree-testing-differences), en.wikipedia.org, optimalworkshop.com (intro guide, product page, 'which comes first' blog), ixdf.org, userinterviews.com, dovetail.com, uxdesigninstitute.com, uxarmy.com, maze.co, dscout.com, mightybytes.com. Empty/blocked: uxtweak.com/card-sorting (empty body), measuringu.com (bot check), youtube.com (not fetched).",
+  "aiOverview": {
+    "present": true,
+    "status": "verified (Ahrefs serp-overview row type 'ai_overview' at position 1 for card sorting, card sorting ux, what is card sorting, open card sorting, card sorting example, card sort, card sorting tools; AIO text itself not returned by the tool). 'how to do card sorting' has an AIO that cites greeting-card storage pages (pinterest, thecrownedgoat, youtube): Google reads it as physical card organizing, which is why the disambiguation H3 matters.",
+    "cited": [
+      "https://www.nngroup.com/articles/card-sorting-definition/",
+      "https://en.wikipedia.org/wiki/Card_sorting",
+      "https://www.uxtweak.com/card-sorting/"
+    ],
+    "citedAlsoFor": {
+      "card sorting ux": [
+        "https://www.uxdesigninstitute.com/blog/card-sorting-in-ux-what-is-it/",
+        "https://ixdf.org/literature/article/the-pros-and-cons-of-card-sorting-in-ux-research",
+        "https://www.userinterviews.com/ux-research-field-guide-chapter/card-sorting",
+        "https://www.optimalworkshop.com/product/card-sorting",
+        "https://www.optimalworkshop.com/101-guides/card-sorting-101/introduction-to-card-sorting",
+        "https://dovetail.com/ux/card-sorting/",
+        "https://measuringu.com/card-sorting/"
+      ],
+      "what is card sorting": [
+        "https://medium.com/design-ibm/card-sorting-a-powerful-simple-research-method-9d1566be9b62"
+      ],
+      "open card sorting": [
+        "https://dovetail.com/ux/open-vs-closed-card-sorting/",
+        "https://www.optimalworkshop.com/101-guides/card-sorting-101/open-card-sort"
+      ],
+      "card sort": [
+        "https://dscout.com/people-nerds/card-sorting",
+        "https://miro.com/templates/card-sorting/"
+      ],
+      "card sorting tools": [
+        "https://www.uxtweak.com/card-sort-tool/",
+        "https://www.figma.com/templates/card-sorting-tool/",
+        "https://freecardsort.com/"
+      ]
+    },
+    "passages": {
+      "nngroup": "Samhita Tankala and Katie Sherwin, 2 Feb 2024: 'Card sorting is a research method in which study participants place individually labeled cards into groups.' Open (most common), closed (validation; NN/g generally prefers tree testing for that), hybrid (NN/g generally advises against). Moderated vs unmoderated. 30-50 cards to avoid fatigue. At least 15 participants qualitative, 30-50 quantitative. Process: create cards, organize, label groups, analyze; pilot first; avoid repeating identical words across labels. Analysis: similarity matrix, standardization grid, dendrograms, plus moderated sessions for the why. Limits: no site context, one level of grouping, fatigue over 50 cards (big Miscellaneous pile), hard to interpret. Tree testing (reverse card sorting) evaluates an existing structure.",
+      "wikipedia": "Card sorting is a knowledge elicitation technique in which participants sort items into groups; used in UX design, information architecture and cognitive psychology. Open = generative, closed = evaluative, reverse card sorting = tree testing, modified-Delphi (Celeste Paul). Analysis: similarity/dissimilarity matrices feed hierarchical clustering (dendrograms) or multidimensional scaling; edit distance; Jaccard distance. Most useful when no accepted taxonomy exists or audiences group items differently. Cites Nielsen 1995 and 2004, Donna Spencer 2009 'Card Sorting: Designing Usable Categories'.",
+      "uxtweak": "Body did not load via WebFetch (empty). From Ahrefs sitelinks: 'What is card sorting?', 'Card sorting and UX', tool CTA. Treated as a tool-vendor complete guide; covered by the same entities.",
+      "nngroup-users": "Jakob Nielsen, 18 Jul 2004, 'Card Sorting: How Many Users to Test': test 15 users; correlation with the full 168-user data set 0.75 at 5 users, 0.90 at 15, 0.95 at 30, 0.98 at 60; Tullis and Wood suggested 20-30; card sorting is generative so it needs more users than a qualitative usability test; do not build the structure from similarity scores alone.",
+      "optimal-sequence": "Optimal Workshop blog, 29 Mar 2016: tree test the existing IA first (baseline), run an open card sort, then tree test the proposed IA with the same tasks.",
+      "userinterviews": "30-60 cards, 40 'sweet spot' (attributed to experts); at least 15 participants (NN/g); spreadsheet analysis method by Shanshan Ma; card sorts are generative and usually followed by tree tests.",
+      "dovetail": "Open/closed/hybrid table (who creates categories, best for, outputs: dendrograms, similarity matrices, results matrix, popular placements matrix); at least 15 qualitative, 30 quantitative; sessions of 5-30 minutes depending on card count."
+    },
+    "entities": [
+      "information architecture",
+      "mental models",
+      "open card sorting",
+      "closed card sorting",
+      "hybrid card sorting",
+      "tree testing",
+      "reverse card sorting",
+      "modified-Delphi card sorting",
+      "similarity matrix",
+      "dendrogram",
+      "hierarchical cluster analysis",
+      "standardization grid",
+      "popular placements matrix",
+      "Nielsen Norman Group",
+      "Jakob Nielsen",
+      "Optimal Workshop",
+      "Miro",
+      "index cards",
+      "pilot test"
+    ],
+    "attributes": [
+      "card count (30-50 cards)",
+      "participant count (at least 15 qualitative, 30-50 quantitative)",
+      "sort type (open, closed or hybrid)",
+      "moderation (moderated or unmoderated)",
+      "session length (5-30 minutes unmoderated)",
+      "grouping depth (one level of categories)",
+      "agreement (share of participants who put two cards together)",
+      "correlation (0.90 at 15 users)"
+    ],
+    "terms": [
+      "participants place labeled cards into groups",
+      "name each group",
+      "predefined categories",
+      "uncover mental models",
+      "navigation and labels",
+      "generative versus evaluative",
+      "Miscellaneous pile",
+      "remote card sorting",
+      "follow-up questions",
+      "similarity score"
+    ],
+    "questions": [
+      "What is card sorting?",
+      "What are the types of card sorting?",
+      "How many participants does a card sort need?",
+      "How many cards should a card sort have?",
+      "How do you analyze card sorting results?",
+      "What is the difference between card sorting and tree testing?",
+      "What are the limitations of card sorting?",
+      "Which card sorting tool should you use?"
+    ]
+  },
+  "paa": [
+    "What is the card sorting technique?",
+    "How to do card sorting?",
+    "What is a good free card sorting tool?",
+    "What is card sorting in UI/UX?",
+    "What is the UX card sorting activity?",
+    "What is the difference between card sorting and affinity mapping?",
+    "What is the best card sorting software?",
+    "Can you provide an example of card sorting?",
+    "What is the difference between card sorting and tree testing?",
+    "How to make a card sorting?",
+    "What is open and closed card sorting?",
+    "What is the difference between an open sort and a closed sort?",
+    "What does card sorting mean?",
+    "What are the different types of card sorting?",
+    "What are the best practices for card sorting?",
+    "What is the card sorting methodology?",
+    "Can you provide an example of tree testing?"
+  ],
+  "paaNote": "Sources: Ahrefs serp-overview 'question' rows 2026-10-24 for card sorting, card sorting ux, what is card sorting, open card sorting, card sorting example, card sort, card sorting analysis, card sorting vs tree testing, how to do card sorting, closed card sorting, hybrid card sorting. Mapping (first sentence = direct answer): technique / 'what does card sorting mean' / 'in UI/UX' / 'UX card sorting activity' / 'methodology' -> H2 1; types + 'open and closed' + 'open sort vs closed sort' -> H2 3; how to do / how to make -> H2 5; best practices -> H3 'Card sorting best practices' at the end of H2 5 (5 bullets, our own wording); affinity mapping -> H3 in H2 6; example -> H2 7; free tool + best software -> H2 8; card sorting vs tree testing + example of tree testing -> H2 9 (one illustrative tree-test task sentence). Generic-word questions folded into ONE disambiguation H3 in H2 1 ('Which card sorting does this guide cover?'): 'How should I sort my cards?', 'How do card sorters work?', 'How much is a card sorter?', 'What is the best sorting algorithm for cards?', 'What are the different ways to sort cards?', 'How to score the Wisconsin card sorting test?', 'What is the activity card sort assessment?' (one sentence each meaning: deck/trading-card sorting and sorter machines, sorting algorithms, the Wisconsin Card Sorting Test in neuropsychology, the Activity Card Sort in occupational therapy, classroom card sorts; then the UX meaning). Dropped as off-topic with no answer: 'How to sort cards to sell?' (trading-card resale), 'How to use cards in Magic Sort?' (mobile game), 'What are some activities for sorting?' (classroom), 'What is the best card sorting tray?' and 'What is the fastest way to sort a deck of cards?' (physical cards), 'What are the three types of user testing?' (generic, owned by the usability-testing hub).",
+  "hub": "ux-research-services",
+  "services": [
+    "ux-research-services"
+  ],
+  "industries": [],
+  "industriesNote": "None. The worked example is a B2B SaaS settings menu, but tagging 'saas' would change relatedCaseStudies ordering only toward TradeZella/Vocable/Digno, none of which describes card sorting; keep it untagged so the CTA logic stays predictable (see CONFLICT 3).",
+  "author": "talha-saleem",
+  "authorWhy": "Talha Saleem (Senior UI/UX Designer, content/home.ts) fits a navigation and labels topic where research turns into menus and screens. He last wrote ecommerce-ux-audit (2026-10-14), 5 posts ago. Rejected: ahmad-ullah (wrote contextual-inquiry yesterday), sahar-asif (wrote customer-journey-map-template yesterday and is the natural author of the parallel ux-research-methods pillar), faizan-khan (Sr. Product Designer; suits the later 'importance of ux research' or 'ux roi'), shahmir-farooq (Sr. Communication Designer; suits 'user persona template'), saliha-shahzad (UI/UX Designer; suits the later tree-testing post). Contributor: umar-sarwar (default).",
+  "type": "Guide",
+  "funnel": "mofu",
+  "funnelWhy": "Silo count (ledger.json, 2026-10-24): choose-ux-research-agency (BOFU), contextual-inquiry (TOFU), customer-journey-map-template (TOFU) = TOFU 67% (target 50), MOFU 0% (target 30), BOFU 33% (target 20). MOFU is furthest below target. The parallel 'ux research methods' pillar is unknown at writing time; if it also takes MOFU the silo ends at 2/2/1 (40/40/20), still closer to target than leaving MOFU at 0. SERP rule (2026-10-06): page 1 is method guides with how-to sections (NN/g, UXtweak, Wikipedia, Optimal Workshop, Miro templates, IBM Design), and this brief's angle is planning the study (sort type, sample, tools, analysis, sequence), which funnel.json calls MOFU ('teams ... planning the work'). MOFU minimum service-support 4; this scores 4. Fallback: if the orchestrator rejects the CTA conflict below, relabel to TOFU (the outline works for both; only the CTA changes).",
+  "serviceSupport": 4,
+  "serviceSupportWhy": "4, not 5: the reader is planning a method, not buying yet. But 'Card sort and tree test' is a named hub deliverable (Optimal Workshop studies, 30-50 participants), the hub cost body prices '1 card sort' into its $25,000 example, and the hub lists 'A redesign is planned, if the navigation and information architecture have never been tested' as a reason to invest. A reader who realizes they need 30-50 recruited participants per user group plus a tree test maps straight to the programme.",
+  "beats": "https://uxarmy.com/blog/card-sorting-information-architecture/",
+  "alsoOutranks": [
+    "https://ixdf.org/literature/article/the-pros-and-cons-of-card-sorting-in-ux-research",
+    "https://maze.co/guides/card-sorting/",
+    "https://www.mightybytes.com/insights/card-sorting-ux/",
+    "https://www.uxdesigninstitute.com/blog/card-sorting-in-ux-what-is-it/"
+  ],
+  "beatsWhy": "UXArmy (Kuldeep Kulshreshtha, updated 3 Aug 2026; position 2 for 'card sorting ux', Ahrefs ~39 US visits/mo across 2 URLs) is the closest agency/tool rival and covers the same angle (open/closed/hybrid, vs tree testing, 6-step process, sample size, mistakes, analysis, 8 FAQs). Its gaps: the example is a shopping anecdote, not a card sort; no card list, matrix, dendrogram or resulting menu; no rule for reading agreement; hybrid analysis unexplained; sample sizes contradict each other (20-30, 15, 30 minimum, FAQ 15-30) and Tullis and Wood is unlinked; an unsourced '25 pieces of information' trigger. IxDF (position ~8 for analysis, ~32 visits) gives 5-25 participants and up to 100 cards with no source and no analysis method; Maze gives 15-30 qualitative with no card count; Mightybytes is a 2013 library case with no types or tree test. Our edge: one consistent sample answer with the Nielsen 2004 correlation curve, a decision tree for sort type, a worked illustrative SaaS settings sort carried from cards to matrix to menu to tree-test task, a disambiguation block Google clearly needs (the 'how to do card sorting' AIO cites greeting-card storage), the tree-test-first sequence (Optimal Workshop), and first-hand programme facts from the hub. Different structure from UXArmy: it opens with an anecdote and puts vs-tree-testing before the process; we open with one card in three piles, put sample sizing before the runbook and close on tree testing as the next step.",
+  "centralEntity": "card sorting (a UX research method in which participants group labeled cards, each naming one piece of content or feature, into categories that make sense to them, so the team can build or check an information architecture that matches users' mental models; run as an open, closed or hybrid sort)",
+  "bindings": {
+    "synonyms": [
+      "card sort",
+      "card sorting study",
+      "card sorting exercise"
+    ],
+    "plural": [
+      "card sorts",
+      "card sorting studies"
+    ],
+    "parent": [
+      "UX research",
+      "information architecture"
+    ],
+    "children": [
+      "open card sorting",
+      "closed card sorting",
+      "hybrid card sorting",
+      "moderated card sorting",
+      "unmoderated card sorting",
+      "modified-Delphi card sorting"
+    ],
+    "related": [
+      "tree testing",
+      "similarity matrix",
+      "dendrogram",
+      "mental models",
+      "navigation labels",
+      "affinity mapping"
+    ],
+    "bindingNote": "Each synonym printed at least once: 'card sort' 4-6 times (H2 4 title, steps), 'card sorting study' in H2 5, 'card sorting exercise' once in H2 1. Parent: H2 1 says card sorting is a UX research method used to shape information architecture; expand 'user experience (UX)' and 'information architecture (IA)' once. Children: open/closed/hybrid each get an H3 in H2 3; moderated/unmoderated are rows of the format table (H3 in H2 5); modified-Delphi card sorting gets one sentence + source (Celeste Paul via Wikipedia) in H2 3. Related: each with a fact (matrix and dendrogram in H2 6, affinity mapping H3 in H2 6, tree testing H2 9, mental models in H2 1, navigation labels in H2 2/7)."
+  },
+  "essential": [
+    "card sorting",
+    "information architecture",
+    "open, closed or hybrid sort"
+  ],
+  "essentialNote": "The first sentence under every H2 names 'card sorting' (or 'card sort') plus 'information architecture'/'navigation'/'menu' OR one sort type (open, closed, hybrid). The answerHints below do this.",
+  "queryVariants": [
+    "what is card sorting",
+    "how to do card sorting",
+    "open vs closed card sorting",
+    "how many participants for card sorting",
+    "card sorting in ux"
+  ],
+  "queryVariantsNote": "One answer site-wide: card sorting = participants group 30-50 labeled cards (NN/g) into categories; open to discover groupings, closed to check set categories, hybrid when some categories are fixed; at least 15 participants for qualitative and 30-50 for quantitative (NN/g), and our programme runs Optimal Workshop studies with 30-50 participants (hub); results read through a similarity matrix and dendrogram plus participant comments; the draft structure is then tree tested. Matches the hub item 'Card sort and tree test. Optimal Workshop studies test the information architecture (IA), for example the menu labels that 30-50 participants expect.'",
+  "ambiguous": [
+    {
+      "word": "card",
+      "context": "labeled card / index card in a UX study, users, menu (never a playing card, trading card, gift card or credit card)"
+    },
+    {
+      "word": "sorting",
+      "context": "participants grouping cards, categories (never a sorting algorithm or sorting a deck)"
+    },
+    {
+      "word": "card sorting test",
+      "context": "say 'card sorting study'; 'test' alone recalls the Wisconsin Card Sorting Test (neuropsychology), named once only in the disambiguation H3"
+    },
+    {
+      "word": "tree",
+      "context": "tree testing / the site tree or menu hierarchy (never a decision tree or a data-structure tree; the decision-tree visual is captioned 'sort-type decision tree')"
+    },
+    {
+      "word": "architecture",
+      "context": "always 'information architecture' or IA (never software or building architecture)"
+    },
+    {
+      "word": "open / closed",
+      "context": "open card sort / closed card sort (never an open or closed ticket, survey or question; when 'open-ended question' appears, say 'open-ended')"
+    },
+    {
+      "word": "agreement",
+      "context": "participant agreement on a grouping (never a contract)"
+    },
+    {
+      "word": "labels",
+      "context": "card labels or navigation labels (never product or shipping labels)"
+    }
+  ],
+  "siteFacts": {
+    "source": "content/services/ux-research-services.json (hub) unless stated",
+    "deliverable": "Hub item: 'Card sort and tree test. Optimal Workshop studies test the information architecture (IA), for example the menu labels that 30-50 participants expect.' Our programme's participant figure is 30-50 (matches NN/g's quantitative range). Follow this wording for our practice.",
+    "processStep": "Hub step 4: 'Evaluative studies (4-8 days): Card sorts, tree tests and concept tests check the early information architecture and design concepts.' It follows 'Participant recruitment (3-6 days)' and 'Generative fieldwork (7-15 days)' and precedes 'Synthesis and readout (4-7 days)'. Do not split the 4-8 days into card-sort and tree-test days (not published).",
+    "programme": "4-8 weeks (20-40 working days), $25,000-$60,000, 5 steps (hub).",
+    "price": "Hub cost body: 'A programme with 1 user group, 10 user interviews and 1 card sort sits near $25,000.' Say once that a card sort is part of the smallest programme and deep-link /services/ux-research-services/#how-much-does-ux-research-cost; never price a card sort on its own (no published standalone price).",
+    "remote": "Hub FAQ: 'Remote UX research runs user interviews and card sorts over video calls and online tools, for example Zoom and Optimal Workshop.'",
+    "whenToInvest": "Hub list: 'A redesign is planned, if the navigation and information architecture have never been tested.'",
+    "siblings": "web-app-design-services: 'Designers build the navigation model and validate the navigation model with card sorting and tree testing'; IA deliverable 'validated with tree testing in Optimal Workshop, for example 10-15 tasks per test'. ui-ux-web-design: sitemap and navigation labels tested in an Optimal Workshop tree test. Location pages (Seattle console navigation, Denver catalog/settings menu, San Francisco SaaS settings area, Chicago carrier portal, New York CMS, Los Angeles video library) describe card sorts as capabilities only: do not quote them as client work.",
+    "caseStudies": "No case study describes card sorting or tree testing (grep of content/case-studies for 'card sort|tree test' = nothing). Mass Media Co. scope lists 'information architecture (IA)' and its discovery workshop 'covered product definition, strategy, information architecture and user flows'. Parents Connect lists 'intuitive navigation' as a feature. Neither is a card sort.",
+    "conflicts": [
+      "CONFLICT 1 (method class): the hub abstract and FAQ class card sorting with evaluative research, while Nielsen (NN/g 2004) and userinterviews.com call card sorting generative, and Wikipedia calls open sorts generative and closed sorts evaluative. Writer: 'Open card sorting is generative and closed card sorting is evaluative (cite Wikipedia/NN/g). In our programme card sorts run in the evaluative studies step because they check an early structure drafted from interviews.' Never write that card sorting as a whole is evaluative. Orchestrator: ask the owner whether the hub abstract may say 'card sorting checks and shapes the information architecture' instead.",
+      "CONFLICT 2 (same numbers, different units): NN/g recommends 30-50 CARDS, and the hub and NN/g quantitative range give 30-50 PARTICIPANTS. Writer always prints the unit next to the range ('30-50 cards', '30-50 participants') and never puts the two ranges in one sentence.",
+      "CONFLICT 3 (MOFU CTA): app/blog/[slug]/page.tsx prints cases[0] for MOFU. relatedCaseStudies (services overlap, date desc, then file order) returns mass-media-co first: 'See how we did this for Mass Media Co.' + '30% increase in order processing efficiency'. That result came from the whole platform revamp, not a card sort, and no case study describes card sorting. Writer never attributes the 30% or any result to card sorting. Orchestrator decides: accept (MMC scope did include IA), or relabel the post TOFU (checklist CTA, no case study) per funnelWhy fallback.",
+      "CONFLICT 4 (tool names): Optimal Workshop's product page (2026-10-24) calls the tools 'Optimal Card Sorting' and 'Tree Testing'; NN/g 2024 still says 'OptimalSort' and 'Treejack'. Writer uses 'Optimal Workshop' (hub wording) and may add 'formerly OptimalSort' only if the fact-checker confirms."
+    ]
+  },
+  "entities": [
+    "information architecture",
+    "mental models",
+    "open card sorting",
+    "closed card sorting",
+    "hybrid card sorting",
+    "moderated card sorting",
+    "unmoderated card sorting",
+    "modified-Delphi card sorting",
+    "reverse card sorting",
+    "tree testing",
+    "similarity matrix",
+    "dendrogram",
+    "hierarchical cluster analysis",
+    "standardization grid",
+    "popular placements matrix",
+    "affinity mapping",
+    "Nielsen Norman Group",
+    "Jakob Nielsen",
+    "Donna Spencer",
+    "Optimal Workshop",
+    "Maze",
+    "Lyssna",
+    "Miro",
+    "index cards",
+    "pilot test"
+  ],
+  "entitiesNote": "25 entries, one name each, no slashes, no short forms (no '(IA)': 'ia' sits inside many words; write 'information architecture (IA)' in text once). At least 20 must appear with a real fact. 'Wisconsin Card Sorting Test' is deliberately NOT an entity: it appears once in the disambiguation H3 only. 'navigation' and 'menu' are high-frequency nouns kept out of entities (lesson 2026-10-14). Lyssna and Maze: fact-checker confirms each still offers card sorting on 2026-10-24 before the tools H2 names them.",
+  "attributes": [
+    "card count (30-50 cards per study, NN/g)",
+    "participant count (at least 15 qualitative, 30-50 quantitative; 30-50 in our programme)",
+    "sort type (open, closed or hybrid)",
+    "moderation mode (moderated or unmoderated)",
+    "session length (5-30 minutes unmoderated, Dovetail)",
+    "grouping depth (one level of categories per sort)",
+    "similarity score (share of participants who put two cards in the same group)",
+    "sample correlation (0.90 at 15 users, Nielsen 2004)",
+    "pilot test (one run with a colleague before launch)",
+    "study duration (inside the 4-8 day evaluative studies step)",
+    "programme price ($25,000-$60,000, published on the hub)"
+  ],
+  "attributesNote": "11 entries. The script reads only the words before '(' and needs 60% of those longer than 3 letters in the text, so print these label nouns literally: 'card count', 'participant count', 'sort type', 'moderation mode', 'session length', 'grouping depth', 'similarity score', 'sample correlation', 'pilot test', 'study duration', 'programme price' (hub spelling 'programme').",
+  "ngrams": [
+    "card sorting",
+    "card sort",
+    "open card sorting",
+    "closed card sorting",
+    "hybrid card sorting",
+    "information architecture",
+    "mental models",
+    "similarity matrix",
+    "tree testing",
+    "navigation labels",
+    "ux research services"
+  ],
+  "questions": [
+    "What is card sorting?",
+    "Which card sorting does this guide cover?",
+    "When does card sorting help, and when is it the wrong method?",
+    "What are the different types of card sorting?",
+    "What is the difference between open and closed card sorting?",
+    "How many cards should a card sort have?",
+    "How many participants does card sorting need?",
+    "Is card sorting qualitative or quantitative?",
+    "How do you do card sorting?",
+    "Moderated or unmoderated card sorting?",
+    "How do you analyze card sorting results?",
+    "What is the difference between card sorting and affinity mapping?",
+    "Can you provide an example of card sorting?",
+    "What is the best card sorting software, and is there a free card sorting tool?",
+    "What is the difference between card sorting and tree testing?",
+    "What are the limitations of card sorting?"
+  ],
+  "serpGaps": [
+    "One consistent sample answer: page 1 gives 5-25 (IxDF), 15-30 (Maze), 15 / 20-30 / 30 minimum (UXArmy), 10-15 open and 30-50 closed (dscout). Nobody shows WHY with Nielsen's 2004 correlation data (0.75 at 5, 0.90 at 15, 0.95 at 30, 0.98 at 60) as a chart, or says the count is per user group.",
+    "A sort-type decision rule: pages describe open, closed and hybrid but none gives a yes/no path (Do categories exist? Are they fixed by business or regulation? Is the content new?) with the output each sort type produces.",
+    "A worked example carried end to end: examples are anecdotes (UXArmy toy shopping), hypothetical setups (dscout Google Shopping) or a 2013 case without the final structure (Mightybytes). Nobody shows the card list, a similarity matrix excerpt, the dendrogram cut, the resulting menu and the tree-test task that checks it.",
+    "Reading the matrix: pages name similarity matrices and dendrograms but do not explain what a cell means, where to cut a dendrogram, what to do with cards that split across groups (cross-link or duplicate) or how participant comments overrule a weak cluster.",
+    "Sequence with tree testing: only Optimal Workshop's 2016 blog gives the 'tree test current, card sort, tree test new' order; ranking guides present tree testing as a separate comparison, not as the next step with a reusable task set.",
+    "Disambiguation: Google's AIO for 'how to do card sorting' cites greeting-card storage and PAA mixes trading-card sorters, sorting algorithms and the Wisconsin Card Sorting Test. No UX guide separates the meanings, so a short disambiguation block helps both users and the AIO.",
+    "Limits stated honestly: only NN/g lists limits (no context, one level, fatigue past 50 cards). Vendors omit them. We add when NOT to run a card sort (a findability problem in an existing menu = tree test first)."
+  ],
+  "outline": [
+    {
+      "h2": "What is card sorting in UX research?",
+      "answerHint": "Card sorting is a user experience (UX) research method in which participants group labeled cards, each naming one piece of content or one feature, into categories that make sense to them, so the team can build an information architecture (IA) that matches users' mental models.",
+      "points": [
+        "Intro BEFORE this H2 (variety: 'one card, three piles'): open on a single card label from the worked example, e.g. 'Export billing history'. In an illustrative sort, some participants file it under Billing, some under Reports, some under Account. That split is the finding: the menu needs a cross-link or a new label. Then: keyword in the first sentence of the second paragraph at the latest (within 60 words), and one sentence on what the post gives (sort type choice, sample size, a 6-step runbook, how to read results, a worked example, tools, tree testing next).",
+        "UP link early (within the first 150 words): 'Card sorting is one of the six deliverables in our UX research services' -> /services/ux-research-services/ anchor exactly 'UX research services'.",
+        "Definition paragraph: parent = UX research; used to shape information architecture; name 'mental models'; one sentence on origin in knowledge elicitation (Wikipedia) and the standard book (Donna Spencer, 'Card Sorting: Designing Usable Categories', 2009; fact-checker confirms year). Use 'card sorting exercise' once. Answer 'Is card sorting qualitative or quantitative?' in one sentence here or FAQ 1: both, moderated sessions give reasons, large unmoderated samples give similarity scores.",
+        "Link UP to the pillar: one sentence placing card sorting among methods -> /blog/ux-research-methods/ anchor 'how card sorting fits among UX research methods' (CONDITIONAL: publishes today; remove if not live).",
+        "H3 'Which card sorting does this guide cover?' (disambiguation, PAA fold): one line each, everyday meaning first: sorting a deck or trading cards (card sorters, trays), sorting algorithms in computer science, the Wisconsin Card Sorting Test in neuropsychology, the Activity Card Sort in occupational therapy, classroom card sorts. Then: this guide covers the UX research method for menus and site structure. Keep to 5 short lines."
+      ]
+    },
+    {
+      "h2": "When does card sorting help your information architecture?",
+      "answerHint": "Card sorting helps when you must create or rebuild an information architecture and do not yet know how users group the content, for example a new product, a redesign, two products merging or a settings area that grew one item per release.",
+      "points": [
+        "List of 4-5 situations (ul), each with why: new product with no taxonomy; redesign where the hub says navigation and IA were never tested; merging products or sites; content that different user groups label differently (Wikipedia: most useful when audiences group items differently); internal jargon in menus.",
+        "When it is the wrong method (ul, 3 items): users cannot find things in an existing menu -> tree test the current structure first; the problem is a task flow or a form -> usability testing; you need to know why users need the feature at all -> user interviews or contextual inquiry. Sideways link: 'contextual inquiry' -> /blog/contextual-inquiry/ anchor 'watching users work in their real setting' (only here; natural, method choice).",
+        "Limits (NN/g 2024): no site context, one level of grouping per sort, fatigue past 50 cards.",
+        "Close: if your redesign touches navigation, plan the card sort before wireframes."
+      ]
+    },
+    {
+      "h2": "Open, closed or hybrid card sorting, which fits your stage?",
+      "answerHint": "Open card sorting lets participants create and name their own groups, closed card sorting asks them to place cards into categories you set, and hybrid card sorting gives set categories but lets participants add new ones; pick by how much of the structure already exists.",
+      "points": [
+        "Image: three-panel sort board (visual 1) right after the answer paragraph; text panel = table with rows: who names groups, best stage, question it answers, main output, typical analysis.",
+        "H3 'Open card sorting': discovery, new IA, learns users' words for groups; generative (Wikipedia); output similarity matrix + dendrogram + participant labels.",
+        "H3 'Closed card sorting': categories fixed (by business, regulation, existing product); checks whether cards land where expected; evaluative (Wikipedia); output results matrix / popular placements matrix; NN/g generally prefers tree testing for validating a structure - say so.",
+        "H3 'Hybrid card sorting': some categories fixed, others open; suits redesigns; NN/g generally advises against it because results mix two kinds of data, so say how to read new categories separately.",
+        "One sentence each on modified-Delphi card sorting (Celeste Paul; each participant refines the previous model; via Wikipedia) and reverse card sorting (= tree testing, forward reference to H2 9).",
+        "Decision tree visual (visual 2) at the end: 3 yes/no questions -> open / hybrid / closed / tree test instead. Keyword carrier: 'open vs closed' never as a stacked noun; write 'choosing between an open and a closed card sort'."
+      ]
+    },
+    {
+      "h2": "How many cards and participants does a card sort need?",
+      "answerHint": "A card sort needs 30-50 cards (NN/g) and at least 15 participants per user group for a qualitative study, or 30-50 participants for a quantitative one; our programme runs Optimal Workshop studies with 30-50 participants.",
+      "points": [
+        "Cards: 30-50 cards to avoid fatigue (NN/g 2024); one level of granularity; no repeated words across labels (NN/g); plain user words, not internal codes; avoid labels that give the answer (the same word as a category).",
+        "Participants: Jakob Nielsen (NN/g, 18 Jul 2004) recommends 15; correlation with a 168-user data set 0.75 at 5, 0.90 at 15, 0.95 at 30, 0.98 at 60; Tullis and Wood suggested 20-30 (cited by Nielsen). Card sorting needs more users than a 5-user usability test because it is generative. Chart visual 3 (sample correlation curve) right after this paragraph; text panel = 4-row table.",
+        "Per user group: different groups (e.g. admins vs end users) each need their own sample; state this as the reason studies grow.",
+        "Our practice (hub): 30-50 participants per study in Optimal Workshop. Recruitment is its own 3-6 day step in our programme (hub). Soft lead line: recruiting 30-50 matched participants per group is where in-house sorts stall.",
+        "Respect CONFLICT 2 (print units)."
+      ]
+    },
+    {
+      "h2": "How to run a card sorting study, step by step",
+      "answerHint": "To run a card sorting study, list the content, write 30-50 cards, choose the sort type and format, recruit participants, pilot the study, run it with follow-up questions and then analyze the groups.",
+      "points": [
+        "Numbered list (ol) of 6 steps, our wording, not UXArmy's order: 1 content inventory and research question; 2 write and review cards (rules from H2 4); 3 choose sort type and format; 4 recruit and screen participants per user group; 5 pilot test with one colleague (NN/g) and fix confusing labels; 6 run and ask follow-up questions (why did this card go here, which cards were hard).",
+        "Runbook visual 4 (strip of 6 steps with the output of each step, no invented durations; note that in our programme the card sort and tree test sit inside the 4-8 day evaluative studies step).",
+        "H3 'Moderated or unmoderated, in person or remote?': table introduced by one sentence: moderated (think-aloud, reasons, smaller sample, about 60 minutes per dscout example) vs unmoderated (online, larger sample, 5-30 minutes per Dovetail), in person with index cards vs remote. Our practice: remote over Zoom and Optimal Workshop (hub FAQ). Answer 'remote card sorting' here.",
+        "H3 'Card sorting best practices' (PAA): 5 bullets in our own words, each one line: one research question per sort; plain labels; a 'not sure' pile allowed; pilot first; mix a few moderated sessions with the unmoderated sample (NN/g).",
+        "Lead line (MOFU): 'We run this as part of the evaluative studies step...' one natural invitation."
+      ]
+    },
+    {
+      "h2": "How do you analyze card sorting results?",
+      "answerHint": "Card sorting analysis looks at which cards participants put together (similarity matrix), how those pairs cluster into groups (dendrogram from hierarchical cluster analysis) and what participants called the groups, then checks the patterns against their comments.",
+      "points": [
+        "Similarity matrix: each cell = share of participants who placed two cards in the same group (similarity score); explain how to read one row.",
+        "Dendrogram: built by hierarchical cluster analysis; where you cut it sets how many top-level groups you get; cut where the groups make sense to users and to the business, not at a fixed number.",
+        "Standardization grid (merge synonymous group names, e.g. 'Billing' and 'Payments') and, for closed sorts, the popular placements matrix (Optimal Workshop 101 guide names both).",
+        "Split cards: a card that lands in 2-3 groups needs a cross-link, a duplicate entry or a clearer label (example card from the intro). Combine with comments: Nielsen 2004 warns against building a structure from similarity scores alone.",
+        "Spreadsheet route for paper sorts: card x group count table, then percentages (userinterviews/dscout describe it; paraphrase, do not copy thresholds).",
+        "Annotated readout visual 5 (illustrative matrix excerpt + dendrogram with the cut line), text panel = what each mark means.",
+        "H3 'How is card sorting different from affinity mapping?' (PAA): card sorting = participants group content items to shape navigation; affinity mapping = researchers cluster their own notes and observations during synthesis. One link-free sentence (affinity mapping is a later post; plain text only).",
+        "Soft lead at the end: reading clusters next to session comments is where senior researchers earn their fee; our programme ends in a 90-minute readout (hub step 5). Deep link /services/ux-research-services/#how-does-the-ux-research-process-work anchor 'how our 5-step UX research process turns results into a readout'."
+      ]
+    },
+    {
+      "h2": "Card sorting example, regrouping a SaaS settings menu",
+      "answerHint": "In this illustrative card sorting example, 36 cards from a project-management app's settings menu go to an open card sort, and the results turn 9 scattered menu groups into 5 groups users recognize, with 2 cross-links for split cards.",
+      "points": [
+        "Label clearly: 'Illustrative composite, not client data'. All numbers here are invented inputs for teaching; do not present them as research findings or client results.",
+        "Card list excerpt (8-10 of the 36 cards), the 3 main clusters, the split card from the intro, the resulting menu.",
+        "Before/after menu visual 6 (old 9 groups vs new 5 groups, cross-links marked); text panel = two lists.",
+        "End with one tree-test task that checks the new structure ('Where would you change who can see invoices?'), handing over to H2 9.",
+        "Do NOT name any client; do not say 'a client of ours'. The Seattle/San Francisco location page lines are capability statements, not cases."
+      ]
+    },
+    {
+      "h2": "Which card sorting tools fit open, closed and hybrid sorts?",
+      "answerHint": "Online card sorting tools for UX research, such as Optimal Workshop, Maze and Lyssna, run open, closed and hybrid sorts and produce the similarity matrix and dendrogram for you, while Miro boards and paper index cards suit small moderated sorts.",
+      "points": [
+        "Table introduced by one sentence: tool, sort types, moderated/unmoderated fit, analysis outputs, free option. Fact-checker verifies each row on 2026-10-24 (plans, free tiers, whether each tool still offers hybrid sorts). No prices unless the fact-checker confirms them from the vendor page.",
+        "Rows: Optimal Workshop (our tool, hub; 'Optimal Card Sorting' on its product page, CONFLICT 4), Maze, Lyssna, UXtweak, Miro or FigJam boards (manual analysis), paper index cards. Free options answer the PAA 'good free card sorting tool' (freecardsort.com and template boards appear on page 1; fact-checker confirms before naming).",
+        "Selection rule: pick the tool by analysis output and recruiting panel, not by drag-and-drop UI.",
+        "Context word in every sentence that says 'card sorting tools' ('online', 'UX research'), because the 'card sorting tools' SERP also shows trading-card trays."
+      ]
+    },
+    {
+      "h2": "Why tree testing comes after card sorting",
+      "answerHint": "Card sorting proposes a structure from users' groupings and tree testing checks it, because tree testing (sometimes called reverse card sorting) asks participants to find items in a text-only version of the new menu.",
+      "points": [
+        "Carrier: 'the card sorting vs tree testing question is about order, not choice'. Short comparison table (purpose, what participants do, method class, output) introduced by one sentence; NN/g (Tankala, 23 Feb 2024) for the difference.",
+        "Sequence (visual: IA research flow could replace visual 6 if the designer prefers; see visualsNote): tree test the current menu for a baseline, run an open or hybrid card sort, draft the new structure, tree test it with the same tasks (Optimal Workshop blog, 29 Mar 2016).",
+        "Example of a tree test task (PAA): reuse the task from H2 7; one sentence on what success and directness tell you. Keep tree testing to this H2 (future tree-testing post owns the deep how-to; plain text, no link).",
+        "Our practice (hub): card sort and tree test are one deliverable in Optimal Workshop inside the evaluative studies step; sibling hub fact: tree tests often use 10-15 tasks per test (web-app-design-services; may link that hub ONCE as the cross-hub link with anchor 'web app design services' where the tested structure becomes screens, or skip).",
+        "Main offer (MOFU): send us your current menu or sitemap and we will tell you in a free consultation which sort type and sample your structure needs; the full programme runs 4-8 weeks at $25,000-$60,000, and a programme with 1 user group, 10 interviews and 1 card sort sits near the low end (deep link to the hub cost section, anchor 'what a UX research programme with a card sort costs'). Second UP link here: /services/ux-research-services/ anchor 'UX research programme' (vary). Link /contact/ anchor 'send us your current menu or sitemap'."
+      ]
+    },
+    {
+      "h2": "FAQs",
+      "answerHint": "See faqs.",
+      "points": [
+        "4-6 questions as H3, first sentence = direct answer, boolean questions start Yes/No."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is card sorting qualitative or quantitative?",
+      "hint": "Both. Moderated sorts with 15 or so participants give reasons (qualitative); unmoderated sorts with 30-50 participants give similarity scores you can compare (quantitative). NN/g ranges. Same numbers as H2 4."
+    },
+    {
+      "q": "How long does a card sorting session take?",
+      "hint": "About 5-30 minutes for an unmoderated online sort depending on the card count (Dovetail); a moderated session with follow-up questions runs longer, around an hour in dscout's example. Do not invent our own session length."
+    },
+    {
+      "q": "Can card sorting be done remotely?",
+      "hint": "Yes. Remote card sorting runs in online tools such as Optimal Workshop, and moderated sessions run over video calls such as Zoom (hub FAQ wording). Remote loses some of the in-person conversation (Wikipedia), so add a few moderated sessions."
+    },
+    {
+      "q": "What are the limitations of card sorting?",
+      "hint": "Card sorting shows how users group content but not whether they can find it in a real interface: no site context, one level of grouping per sort, fatigue past 50 cards (NN/g). Tree testing and usability testing cover the rest."
+    },
+    {
+      "q": "Should you run card sorting before or after wireframes?",
+      "hint": "Before. Card sorting shapes the menu and site structure, which the wireframes then use; tree test the structure before high-fidelity design. Matches hub step order (evaluative studies before synthesis and design)."
+    },
+    {
+      "q": "How many card sorts does a redesign need?",
+      "hint": "Usually one sort per user group whose content differs, followed by a tree test; a second sort only when the first leaves large split groups. No invented counts; frame as rule of thumb from the method, not a statistic."
+    }
+  ],
+  "internalTargets": [
+    {
+      "href": "/services/ux-research-services/",
+      "anchor": "UX research services"
+    },
+    {
+      "href": "/blog/ux-research-methods/",
+      "anchor": "how card sorting fits among UX research methods"
+    },
+    {
+      "href": "/blog/contextual-inquiry/",
+      "anchor": "watching users work in their real setting"
+    },
+    {
+      "href": "/services/ux-research-services/#how-does-the-ux-research-process-work",
+      "anchor": "how our 5-step UX research process turns results into a readout"
+    },
+    {
+      "href": "/services/ux-research-services/#how-much-does-ux-research-cost",
+      "anchor": "what a UX research programme with a card sort costs"
+    },
+    {
+      "href": "/contact/",
+      "anchor": "send us your current menu or sitemap"
+    }
+  ],
+  "internalTargetsNote": "Verified 2026-10-24: content/services/ux-research-services.json, content/blog/contextual-inquiry.md (published 2026-10-23, same silo), app/contact/page.tsx. /blog/ux-research-methods/ is NOT yet a file: it is briefed in parallel and publishes the same day; link-builder keeps it only if that post is live, otherwise removes the sentence's link. Section ids via sectionId() (lowercase, non-alphanumerics to '-'): 'How does the UX research process work?' -> how-does-the-ux-research-process-work; 'How much does UX research cost?' -> how-much-does-ux-research-cost. Optional single cross-hub link: /services/web-app-design-services/ anchor 'web app design services' in H2 9 (verified file); the usability-testing hub is NOT linked here (contextual-inquiry already uses that slot pattern; one cross-hub max). No DOWN link: no case study describes card sorting. Do not link customer-journey-map-template (no natural place) or choose-ux-research-agency from the body (it links in, see backlinkSuggestions). Future targets (NOT published, plain text only): tree testing, affinity mapping, generative vs evaluative research, importance of ux research.",
+  "externalSources": [
+    {
+      "url": "https://www.nngroup.com/articles/card-sorting-definition/",
+      "why": "NN/g, Samhita Tankala and Katie Sherwin, 2 Feb 2024: definition, open/closed/hybrid stance, 30-50 cards, at least 15 qualitative / 30-50 quantitative participants, pilot, analysis outputs, limits. AIO-cited. Paraphrase; never mirror its H2 order."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/card-sorting-how-many-users-to-test/",
+      "why": "Jakob Nielsen, 18 Jul 2004: 15 users; correlations 0.75/0.90/0.95/0.98 at 5/15/30/60 users vs 168; Tullis and Wood 20-30; do not rely on similarity scores alone. Data for visual 3."
+    },
+    {
+      "url": "https://www.nngroup.com/articles/card-sorting-tree-testing-differences/",
+      "why": "NN/g, Samhita Tankala, 23 Feb 2024: card sorting generates, tree testing evaluates; order."
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Card_sorting",
+      "why": "Knowledge elicitation origin, open = generative / closed = evaluative, reverse card sorting = tree testing, modified-Delphi (Celeste Paul), similarity matrix -> hierarchical clustering -> dendrogram. AIO-cited."
+    },
+    {
+      "url": "https://www.optimalworkshop.com/blog/comes-first-card-sorting-tree-testing",
+      "why": "Optimal Workshop, 29 Mar 2016: tree test current IA, open card sort, tree test new IA with the same tasks."
+    },
+    {
+      "url": "https://www.optimalworkshop.com/101-guides/card-sorting-101/introduction-to-card-sorting",
+      "why": "Open/closed/hybrid definitions; names similarity matrix, dendrograms, standardization grid, popular placements matrix. AIO-cited."
+    },
+    {
+      "url": "https://dovetail.com/ux/open-vs-closed-card-sorting/",
+      "why": "Open/closed/hybrid outputs; 5-30 minute unmoderated session length. AIO-cited for 'open card sorting'."
+    },
+    {
+      "url": "https://www.userinterviews.com/ux-research-field-guide-chapter/card-sorting",
+      "why": "Card sorts are generative; spreadsheet analysis method; tree tests follow. AIO-cited. For CONFLICT 1 support."
+    }
+  ],
+  "visuals": [
+    {
+      "type": "three-panel sort board mockup",
+      "idea": "Landscape 1200 x max 800. The same 6 cards from the worked example shown in 3 panels: open (participant-named piles), closed (fixed category columns), hybrid (fixed columns + one participant-added column). Realistic tool-like mockup per visual-style README. Text panel = the H2 3 comparison table. Placed after the H2 3 answer paragraph."
+    },
+    {
+      "type": "sort-type decision tree",
+      "idea": "Left-to-right yes/no flow: Does a structure exist? -> No: open card sort. Yes: Are the categories fixed by business or regulation? -> Yes: closed card sort (or tree test if you only need findability). Partly: hybrid card sort. Caption 'Sort-type decision tree'. Text panel = nested list. End of H2 3."
+    },
+    {
+      "type": "sample correlation line chart",
+      "idea": "X axis participants (5, 15, 30, 60), Y axis correlation with the 168-user result (0.75, 0.90, 0.95, 0.98), Nielsen 2004 source line, one annotation at 15. Only the key number large. Text panel = 4-row table with the source. H2 4."
+    },
+    {
+      "type": "6-step runbook strip",
+      "idea": "Horizontal strip of the 6 steps from H2 5, each with its output (card list, pilot fixes, raw sorts...). No durations except a note that the study sits in the 4-8 day evaluative studies step of our programme. Text panel = ol. H2 5."
+    },
+    {
+      "type": "annotated similarity matrix and dendrogram",
+      "idea": "Illustrative 8x8 matrix excerpt (heat shading) beside a dendrogram with a dashed cut line and one split card highlighted; redline callouts explain a cell, a cluster and the cut. Labelled 'Illustrative data'. Text panel = what each callout means. H2 6."
+    },
+    {
+      "type": "before/after settings menu",
+      "idea": "Two app sidebars: 9 old groups vs 5 new groups, 2 cross-links marked, the split card 'Export billing history' traced. Labelled 'Illustrative composite'. Text panel = two lists. H2 7. Alternative if the designer prefers: IA research flow for H2 9 (tree test current -> card sort -> draft IA -> tree test new -> wireframes)."
+    }
+  ],
+  "visualsNote": "6 images (cap). The tools table (H2 8) and the card sorting vs tree testing table (H2 9) stay as markdown tables. Follow docs/content-system/visual-style/README.md. Never reproduce a competitor diagram (UXArmy, Maze, NN/g figures).",
+  "leadAngle": "MOFU, three moments. (1) End of H2 4: recruiting 30-50 matched participants per user group is where in-house card sorts stall; in our programme participant recruitment is its own 3-6 day step (hub). (2) End of H2 6: reading clusters against session comments decides the menu; our programme ends in tagged findings and a 90-minute readout (hub step 5, deep link). (3) Main offer in H2 9: send us your current menu or sitemap and we will say in a free consultation which sort type and sample it needs; the card sort and tree test run in Optimal Workshop inside the 4-8 day evaluative studies step of a 4-8 week, $25,000-$60,000 programme (cost deep link). The template MOFU CTA (case study + consultation) sits mid-article; see CONFLICT 3. Do not promise a free card sort, a standalone card-sort price or a written study plan (not published offers).",
+  "variety": {
+    "type": "Guide",
+    "introStyle": "one card, three piles (a single card label from the post's own worked example and the three groups participants filed it under). Used so far site-wide: buyer scenario, myth, data point with source, question, definition, mini case, contrarian take, itemized receipt, 60-second phone test, before/after roadmap row, ordered six-step answer, said-vs-did split, empty-cell hook. Not a repeat.",
+    "h2Frames": [
+      "what is X in UX research",
+      "when does X help (and when not)",
+      "A, B or C, which fits your stage",
+      "how many (sample sizing)",
+      "how to run X step by step",
+      "how to analyze X results",
+      "X example (worked, illustrative)",
+      "which X tools",
+      "why Y comes after X",
+      "FAQs"
+    ],
+    "sectionOrder": "one-card hook -> definition + disambiguation -> when / when not -> sort types + decision tree -> sample sizing with chart -> 6-step runbook + format H3 + best practices -> analysis + affinity mapping H3 -> worked example -> tools table -> tree testing next + offer -> FAQs",
+    "visualTypes": [
+      "three-panel sort board mockup",
+      "sort-type decision tree",
+      "sample correlation line chart",
+      "6-step runbook strip",
+      "annotated similarity matrix and dendrogram",
+      "before/after settings menu"
+    ],
+    "ctaAngle": "send us your current menu or sitemap -> free consultation on which sort type and sample it needs (MOFU template CTA)",
+    "listStyle": "decision rules + numbered runbook + tool table + chart data table",
+    "differsFrom": "Last 3 site-wide: how-to-design-an-mvp, contextual-inquiry, customer-journey-map-template; last silo posts: choose-ux-research-agency, contextual-inquiry, customer-journey-map-template. Differs on intro style, H2 frames, section order, visual types, CTA angle and list style (6 of 7; type Guide repeats). Nearest structural relative: contextual-inquiry (method guide, same silo, same author pool). Do NOT reuse from it: the method comparison table across 4 methods, the 'when to use / when not' decision tree layout, the session strip, the field-note sheet, the said-vs-did device or its closing 'tell us what you need to learn about your users'. The parallel ux-research-methods pillar owns the cross-method decision guide: this post compares only card sort types and card sorting vs tree testing."
+  },
+  "notes": [
+    "Exact keyword 'card sorting' in H1/title, slug, first 60 words, description (prescribed, 157 chars), first meta keyword, metaTitle start. No colon in metaTitle, H1 or coverTitle. Only 'card sorting vs tree testing' contains 'vs'; carrier given.",
+    "Cannibalisation check 2026-10-24: grep of content/ for 'card sort' finds it only as a hub deliverable/process/FAQ line, a web-app-design-services process line, 6 location-page capability lines, and method mentions in contextual-inquiry.md and choose-ux-research-agency.md. No page has it as keyword, metaTitle, anchor or H2. Hub keyword 'UX research services' is never targeted; no H2 on cost, deliverables or process (deep links).",
+    "Parallel pillar 'ux research methods': this post stays on the method itself (types, sample, runbook, analysis, tools, tree testing next). No cross-method comparison table, no 'which research method' H2. One up-link sentence to the pillar in H2 1.",
+    "Future tree-testing post (priority-queue 'later'): this post owns 'card sorting vs tree testing' as one H2; the tree-testing brief must not add a 'vs card sorting' H2 and should link back here.",
+    "Honesty: no case study describes card sorting; the worked example and the intro card are an illustrative composite and must be labelled. Location-page lines (Seattle, Denver, San Francisco, Chicago, New York, Los Angeles) are capabilities, never client work. Do not use UXArmy's '25 pieces of information' trigger or its Shopee figures, IxDF's '5 to 25 participants' or 'up to 100 cards' (unsourced), or Mightybytes' library percentages (another agency's client data). Use NN/g and Nielsen 2004 figures only, with links.",
+    "Analysis thresholds: do not print a 'good agreement' cut-off percentage (no authoritative source found). Describe reading the matrix qualitatively.",
+    "Originality: QA fails 5-gram overlap above 5% with the beats page (UXArmy). Do not reuse its H2 wording ('Card Sorting Process: 6 Steps', 'Common Card Sorting Mistakes to Avoid') or its order (anecdote -> types -> vs tree testing -> process -> sample size).",
+    "CONFLICTS 1-4 in siteFacts.conflicts for the orchestrator (method class, cards vs participants units, MOFU CTA case study, Optimal Workshop tool names).",
+    "Semrush unavailable (no_api_units); all figures Ahrefs, recorded with date."
+  ],
+  "competitorsUpdate": {
+    "note": "For the orchestrator to merge into docs/content-system/competitors.json (this agent does not rewrite the shared registry).",
+    "domains": [
+      {
+        "domain": "uxarmy.com",
+        "kind": "UX research platform + agency blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "card sorting ux",
+          "hybrid card sorting"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      },
+      {
+        "domain": "maze.co",
+        "kind": "research platform guides",
+        "silos": [
+          "ux-research-services",
+          "usability-testing-services"
+        ],
+        "seenFor": [
+          "card sorting tools",
+          "card sorting analysis",
+          "card sorting example",
+          "card sorting vs tree testing"
+        ],
+        "source": "Ahrefs serp-overview + top-pages 2026-10-24"
+      },
+      {
+        "domain": "uxtweak.com",
+        "kind": "research platform guides",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "card sorting",
+          "card sorting analysis",
+          "card sorting tools"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      },
+      {
+        "domain": "ixdf.org",
+        "kind": "education publisher",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "card sorting ux",
+          "card sorting example",
+          "card sorting analysis"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      },
+      {
+        "domain": "mightybytes.com",
+        "kind": "agency blog",
+        "silos": [
+          "ux-research-services"
+        ],
+        "seenFor": [
+          "card sorting ux"
+        ],
+        "source": "Ahrefs serp-overview 2026-10-24"
+      }
+    ],
+    "topPosts": [
+      {
+        "domain": "uxarmy.com",
+        "url": "https://uxarmy.com/blog/card-sorting-information-architecture/",
+        "title": "Card Sorting Information Architecture: 6 Proven Steps (2026)",
+        "keywords": [
+          "card sorting ux",
+          "card sorting technique",
+          "hybrid card sorting"
+        ],
+        "estTraffic": 39,
+        "ourSilo": "ux-research-services",
+        "status": "briefed",
+        "brief": "card-sorting"
+      },
+      {
+        "domain": "maze.co",
+        "url": "https://maze.co/guides/card-sorting/card-sorting-tools/",
+        "title": "8 Best Card Sorting Tools for UX Research",
+        "keywords": [
+          "card sorting tools"
+        ],
+        "estTraffic": 132,
+        "ourSilo": "ux-research-services",
+        "status": "candidate",
+        "note": "Covered by H2 8 of card-sorting; no separate post (tool listicle, service-support 2)."
+      },
+      {
+        "domain": "maze.co",
+        "url": "https://maze.co/guides/tree-testing/vs-card-sorting/",
+        "title": "Tree Testing vs. Card Sorting: Which is Right for You?",
+        "keywords": [
+          "tree testing vs card sorting"
+        ],
+        "estTraffic": 62,
+        "ourSilo": "ux-research-services",
+        "status": "briefed",
+        "brief": "card-sorting (H2 9)"
+      },
+      {
+        "domain": "ixdf.org",
+        "url": "https://ixdf.org/literature/article/the-pros-and-cons-of-card-sorting-in-ux-research",
+        "title": "Card Sorting: The Ultimate Guide for 2026",
+        "keywords": [
+          "ux card sorting",
+          "card sorting analysis"
+        ],
+        "estTraffic": 32,
+        "ourSilo": "ux-research-services",
+        "status": "briefed",
+        "brief": "card-sorting"
+      }
+    ]
+  },
+  "backlinkSuggestions": [
+    {
+      "file": "content/services/ux-research-services.json",
+      "field": "sections[h2='What do UX research services include?'].items[title='Card sort and tree test.'].body",
+      "sentence": "Optimal Workshop studies test the information architecture (IA), for example the menu labels that 30–50 participants expect.",
+      "change": "Link 'the menu labels that 30–50 participants expect' to /blog/card-sorting/ (item bodies render as HTML via <Html as=\"p\">).",
+      "anchor": "the menu labels that 30–50 participants expect",
+      "priority": "required",
+      "why": "Pillar -> post link on the exact deliverable the post explains; same pattern as the contextual-inquiry item."
+    },
+    {
+      "file": "content/blog/contextual-inquiry.md",
+      "field": "body, H2 'When should you use contextual inquiry, and when not?', bullet 'Menu labels or navigation'",
+      "sentence": "**Menu labels or navigation**, because card sorting and tree testing answer information architecture questions faster.",
+      "change": "Link 'card sorting' to /blog/card-sorting/.",
+      "anchor": "card sorting",
+      "priority": "required",
+      "why": "Sideways link in the silo on a sentence that sends the reader to this method."
+    },
+    {
+      "file": "content/blog/choose-ux-research-agency.md",
+      "field": "body, bullet 'A redesign is planned' (line 36)",
+      "sentence": "- **A redesign is planned** on navigation and information architecture that users have never tested, so a card sort or tree test has to come first.",
+      "change": "Link 'a card sort' to /blog/card-sorting/.",
+      "anchor": "a card sort",
+      "priority": "required",
+      "why": "Sideways link from a buyer post; a reader scoping a redesign will click to see what the card sort involves."
+    },
+    {
+      "file": "content/blog/ux-research-methods.md",
+      "field": "card sorting entry (parallel post)",
+      "sentence": "the pillar's card sorting row or paragraph",
+      "change": "Link to /blog/card-sorting/ with a card-sorting anchor.",
+      "anchor": "card sorting",
+      "priority": "conditional",
+      "why": "Blocker: the pillar is written in parallel today; the link-builder adds it once both files exist."
+    }
+  ],
+  "date": "2026-10-24"
+}
